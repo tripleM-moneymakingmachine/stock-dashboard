@@ -47,10 +47,13 @@ jobs:
       - name: CFETS bond lending fees (daily and monthly, by tenor)
         run: node scripts/fetch-bond-lending.mjs || echo "bond lending fetch failed; keeping the committed file"
 
+      - name: Bond-equity rotation flows and signal (CSI 300, CN10Y, margin balance, ETF turnover)
+        run: node scripts/fetch-china-flows.mjs || echo "flows build failed; keeping the committed file"
+
       - name: Commit if changed
         id: commit
         run: |
-          git add data/cgb-master.json data/china.json data/bond-lending.json
+          git add data/cgb-master.json data/china.json data/bond-lending.json data/china-flows.json
           if [ -f data/pb-master.json ]; then git add data/pb-master.json; fi
           if git diff --cached --quiet; then
             echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0

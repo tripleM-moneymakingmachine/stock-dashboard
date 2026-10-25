@@ -156,6 +156,44 @@ section.crecap{margin-top:0}
 .cr-src{font-size:12px;color:var(--muted);margin:6px 0 0}.cr-src a{color:var(--accent)}
 @media (max-width:700px){.crecap{padding:16px 14px}.cr-r{grid-template-columns:minmax(0,1fr) auto auto auto auto}.cr-t{grid-column:1/-1;font-size:13px;color:var(--muted)}.cr-hd span:last-child{display:none}.cr-bk{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Bond <-> equity rotation */
+.flows{margin:0 0 28px}
+.flows h2{margin-top:2px}
+.fl-top{display:grid;grid-template-columns:minmax(220px,280px) minmax(0,1fr);gap:12px;margin:0 0 12px}
+.fl-chip{border:1px solid var(--line);border-radius:6px;padding:14px;background:var(--panel)}
+.fl-chip b{display:block;font:600 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fl-chip span{display:block;font:700 26px/1.1 var(--f-display);margin:8px 0 2px}
+.fl-chip em{display:block;font:600 20px var(--f-mono);font-style:normal;font-variant-numeric:tabular-nums}
+.fl-chip small{display:block;font:500 11px var(--f-mono);color:var(--muted);margin-top:6px}
+.fl-chip.up{border-left:4px solid var(--up)}.fl-chip.up span,.fl-chip.up em{color:var(--up)}
+.fl-chip.down{border-left:4px solid var(--down)}.fl-chip.down span,.fl-chip.down em{color:var(--down)}
+.fl-chip.mut{border-left:4px solid var(--muted)}
+.fl-comp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.fl-comp>div{border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:var(--panel);min-width:0}
+.fl-comp b{display:block;font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.fl-comp small{display:block;font:500 11px var(--f-mono);color:var(--muted)}
+.fl-comp .v{display:block;font:600 18px var(--f-mono);font-variant-numeric:tabular-nums;margin:4px 0}
+.fl-bar{position:relative;display:block;height:6px;background:var(--accent-soft);border-radius:3px;margin:6px 0 4px}
+.fl-bar::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--muted)}
+.fl-bar i{position:absolute;top:0;bottom:0;border-radius:3px}
+.fl-head{font:600 16px/1.4 var(--f-body);margin:0 0 12px;max-width:100ch}
+.fl-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.fl-two{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:16px}
+.fl-now h3{font:600 17px var(--f-body);margin:0 0 6px}.fl-now p{margin:0 0 10px;max-width:90ch}
+.fl-ph{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.fl-ph li{border-left:2px solid var(--line);padding:0 0 0 12px}
+.fl-ph b{display:block;font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.fl-ph strong{display:block;font-weight:600;margin:2px 0}.fl-ph p{margin:0;font-size:14px;color:var(--muted)}
+#flStats small{display:block;font:500 11px var(--f-mono);color:var(--muted);margin-top:2px;white-space:normal}
+.fl-tag{font:600 11px var(--f-mono);padding:2px 6px;border-radius:3px;white-space:nowrap}
+.fl-tag.up{background:color-mix(in srgb,var(--up) 15%,transparent);color:var(--up)}
+.fl-tag.down{background:color-mix(in srgb,var(--down) 15%,transparent);color:var(--down)}
+.fl-ep td.up,.fl-ep .up{color:var(--up)}.fl-ep td.down{color:var(--down)}
+.fl-ep{width:100%;border-collapse:collapse;font:500 12px var(--f-mono);font-variant-numeric:tabular-nums}
+.fl-ep th,.fl-ep td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.fl-ep th{color:var(--muted);font-weight:600}.fl-ep th:nth-child(-n+2),.fl-ep td:nth-child(-n+2){text-align:left}
+.mut{color:var(--muted)}
+@media (max-width:820px){.fl-top,.fl-two{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -166,6 +204,48 @@ section.crecap{margin-top:0}
   <p class="lede" id="lede">China government bond (CGB) yields from ChinaBond (CCDC), the official curve compiled by China Central Depository &amp; Clearing, and every outstanding CGB listed by bond code and ISIN with its CFETS interbank traded yield. The page re-checks every minute.</p>
 
   <section id="crecap" class="crecap" data-src="../data/china-recap.json" data-china="../data/china.json" aria-label="China bond market recap and views" hidden></section>
+
+  <section id="flows" class="flows" aria-labelledby="flH" hidden>
+    <div class="eyebrow">Fund flows · China equities vs CGBs · weekly</div>
+    <h2 id="flH">Bond ↔ equity rotation</h2>
+    <p class="sub">China stocks and bonds tend to move inversely: when equities slump, money hides in CGBs, and when policy revives stocks, funds sell duration to buy equities. This panel follows that switch with weekly flow proxies (margin financing debt for leveraged equity money, and the 30Y CGB ETF's share of ETF turnover for bond demand). It combines them with equity and yield momentum into a Bond Rotation Signal, back-tested walk-forward over the full history.</p>
+    <p class="fl-head" id="flHead"></p>
+    <div class="fl-top" id="flSig"></div>
+    <div class="fl-grid">
+      <div class="panel">
+        <div class="chead"><h3>CSI 300 vs 10Y CGB yield, with signal regimes</h3><div class="ctl" style="margin:0;gap:8px"><div class="btns" id="flInv" role="group" aria-label="Yield axis"></div><div class="btns" id="flRng" role="group" aria-label="Range"></div></div></div>
+        <div id="flMain" style="height:380px"></div>
+        <div class="leg" id="flMainLeg" aria-live="polite"></div>
+        <p class="note">Shading shows the signal's regime each week. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
+      </div>
+      <div class="panel">
+        <div class="chead"><h3>Flows: margin debt vs bond ETF demand</h3></div>
+        <div id="flFlow" style="height:240px"></div>
+        <div class="leg" id="flFlowLeg" aria-live="polite"></div>
+        <p class="note">Bars: weekly change in the Shanghai + Shenzhen margin financing balance (RMB bn, left axis). Line: 30Y CGB ETF (511090) turnover as a share of 511090 + CSI 300 ETF (510300) turnover (right axis). Rising bars with a falling line means money is moving into equities. Falling bars with a rising line means it is moving back into bonds.</p>
+      </div>
+      <div class="panel">
+        <div class="chead"><h3>Bond Rotation Signal</h3><div class="btns" id="flCorr" role="group" aria-label="Overlay"></div></div>
+        <div id="flSigC" style="height:220px"></div>
+        <div class="leg" id="flSigLeg" aria-live="polite"></div>
+        <p class="note">Signal = average of four z-scores, each measured against its own trailing 52 weeks: −CSI 300 4-week return, −margin balance 4-week % change, +bond ETF turnover share vs its 26-week average, and −10Y 4-week change. Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 26-week correlation of weekly CSI 300 returns with weekly 10Y yield changes. It runs positive when the rotation is driving prices (stocks up, yields up).</p>
+      </div>
+      <div class="panel">
+        <div class="chead"><h3>Back-test</h3><div class="btns" id="flBtMode" role="group" aria-label="Back-test units"></div></div>
+        <div class="stats" id="flStats"></div>
+        <div id="flBt" style="height:240px;margin-top:12px"></div>
+        <div class="leg" id="flBtLeg" aria-live="polite"></div>
+        <p class="note" id="flBtNote"></p>
+        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Weeks</th><th>10Y at start</th><th>10Y 4w after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
+        <p class="note">* still running, measured to the latest week.</p>
+      </div>
+      <div class="fl-two">
+        <div class="panel fl-now" id="flNow"></div>
+        <div class="panel"><h3 style="font:600 17px var(--f-body);margin:0 0 10px">How the switch has played out</h3><ol class="fl-ph" id="flPhases"></ol></div>
+      </div>
+    </div>
+    <p class="note" id="flCav"></p>
+  </section>
 
   <div class="tiles" id="tiles" role="group" aria-label="Benchmark tenors"></div>
 
@@ -299,11 +379,12 @@ section.crecap{margin-top:0}
     <p class="note" id="bNote"></p>
   </section>
 
-  <footer id="foot">Curve and tenor history: ChinaBond (CCDC) 中债国债收益率曲线, yield to maturity, published for each business day after the Beijing close. Policy bank curve: ChinaBond (CCDC) 中债政策性金融债收益率曲线 for China Development Bank (国开), Agricultural Development Bank of China (农发) and Export-Import Bank of China (进出口), yield to maturity; dots are each issuer's bonds traded on CFETS today. Bond list, ISINs, coupons and maturities: CFETS bond information (chinamoney.com.cn). Traded yields: CFETS interbank cash-bond deals, intraday. Bond lending: CFETS 债券借贷日报 (daily, by tenor, published ~22:00 Beijing) and 债券借贷月报 (monthly, by tenor and bond type). Coupon shown is the bond's fixed coupon; discount bills have none. Yields in percent; changes in basis points. CGB futures (TS, TF, T, TL): delayed quotes, daily and 5-minute history from Sina Finance; official settlement prices from CFFEX daily statistics; implied yields computed by the dashboard from the cheapest-to-deliver bond and CFFEX conversion factors. Indicative, not an offer to trade.</footer>
+  <footer id="foot">Curve and tenor history: ChinaBond (CCDC) 中债国债收益率曲线, yield to maturity, published for each business day after the Beijing close. Policy bank curve: ChinaBond (CCDC) 中债政策性金融债收益率曲线 for China Development Bank (国开), Agricultural Development Bank of China (农发) and Export-Import Bank of China (进出口), yield to maturity; dots are each issuer's bonds traded on CFETS today. Bond list, ISINs, coupons and maturities: CFETS bond information (chinamoney.com.cn). Traded yields: CFETS interbank cash-bond deals, intraday. Bond lending: CFETS 债券借贷日报 (daily, by tenor, published ~22:00 Beijing) and 债券借贷月报 (monthly, by tenor and bond type). Coupon shown is the bond's fixed coupon; discount bills have none. Yields in percent; changes in basis points. CGB futures (TS, TF, T, TL): delayed quotes, daily and 5-minute history from Sina Finance; official settlement prices from CFFEX daily statistics; implied yields computed by the dashboard from the cheapest-to-deliver bond and CFFEX conversion factors. Bond ↔ equity rotation: weekly CSI 300, China 10Y government bond yield, Shanghai + Shenzhen margin financing balance, and 511090 / 510300 ETF turnover from Eastmoney; signal and back-test computed by the dashboard. Indicative, not an offer to trade.</footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="../assets/china.js?v=7"></script>
 <script src="../assets/china-recap.js?v=1"></script>
+<script src="../assets/china-flows.js?v=1"></script>
 <script src="../assets/china-lending.js?v=1"></script>
 <script src="../assets/china-futures.js?v=8"></script>
 </body>
