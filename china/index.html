@@ -115,6 +115,46 @@ section{margin-top:40px}
 .empty{padding:24px;color:var(--muted);text-align:center}
 footer{font-size:12px;color:var(--muted);margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 footer a{color:var(--accent)}
+section.crecap{margin-top:0}
+.crecap{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:18px 20px;margin:0 0 28px}
+.crecap h2{font-size:20px;margin:6px 0 6px}
+.cr-sum{margin:0 0 12px;max-width:88ch}
+.cr-dr{margin:0 0 14px;padding-left:18px;font-size:14px}.cr-dr li{margin:0 0 6px}
+.cr-h3{font:600 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:16px 0 8px}
+.cr-h3 span{color:var(--muted);letter-spacing:.04em;text-transform:none;font-weight:500}
+.cr-dwrap{overflow-x:auto}
+.cr-dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
+.cr-dt th{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px 6px 0;border-bottom:1px solid var(--line)}
+.cr-dt td{padding:7px 10px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.cr-dt td:first-child{font-weight:600;white-space:nowrap}
+.cr-dt td:nth-child(2){font:500 12.5px var(--f-mono);font-variant-numeric:tabular-nums;width:32%}
+.cr-view{font-size:14.5px;margin:14px 0 4px;max-width:90ch;padding:10px 12px;background:var(--accent-soft);border-radius:4px}
+.cr-bk{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:10px}
+.cr-b{border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:13.5px;min-width:0}
+.cr-b p{margin:6px 0 0}
+.cr-bh{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.cr-bh b{font-size:14.5px}
+.cr-tag{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:3px;border:1px solid currentColor}
+.cr-tag.rich{color:var(--down)}.cr-tag.cheap{color:var(--up)}.cr-tag.fair{color:var(--muted)}
+.cr-st{font:500 12px var(--f-mono);color:var(--muted)}
+.cr-m{margin-top:8px}
+.cr-ml{font:500 11.5px var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}.cr-ml b{color:var(--ink)}
+.cr-bar{position:relative;height:6px;border-radius:3px;margin:6px 0 2px;background:linear-gradient(90deg,color-mix(in srgb,var(--down) 55%,transparent),color-mix(in srgb,var(--line) 80%,transparent) 50%,color-mix(in srgb,var(--up) 55%,transparent))}
+.cr-bar i{position:absolute;top:-3px;width:3px;height:12px;margin-left:-1.5px;background:var(--ink);border-radius:1px}
+.cr-bl{display:flex;justify-content:space-between;font:500 10px var(--f-mono);color:var(--muted)}
+.cr-call{font-weight:500}
+.cr-all{margin-top:16px}
+.cr-all summary{cursor:pointer;font:600 12px var(--f-mono);color:var(--accent);padding:4px 0}
+.cr-tbl{border-top:1px solid var(--line);font-size:13.5px;margin-top:8px}
+.cr-r{display:grid;grid-template-columns:84px 70px 56px 56px 60px minmax(0,1fr);gap:4px 12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line)}
+.cr-hd{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:6px 0}
+.cr-g{font:600 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);padding:12px 0 2px}
+.cr-n{font-weight:600}
+.cr-v,.cr-c{font:500 13px var(--f-mono);font-variant-numeric:tabular-nums}
+.cr-c{color:var(--muted)}
+.cr-note{font-size:13.5px;color:var(--muted);margin:12px 0 6px;max-width:90ch}
+.cr-src{font-size:12px;color:var(--muted);margin:6px 0 0}.cr-src a{color:var(--accent)}
+@media (max-width:700px){.crecap{padding:16px 14px}.cr-r{grid-template-columns:minmax(0,1fr) auto auto auto auto}.cr-t{grid-column:1/-1;font-size:13px;color:var(--muted)}.cr-hd span:last-child{display:none}.cr-bk{grid-template-columns:minmax(0,1fr)}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -124,6 +164,8 @@ footer a{color:var(--accent)}
   <div class="eyebrow">China government bonds · ChinaBond curve · CFETS</div>
   <h1>China</h1>
   <p class="lede" id="lede">China government bond (CGB) yields from ChinaBond (CCDC), the official curve compiled by China Central Depository &amp; Clearing, and every outstanding CGB listed by bond code and ISIN with its CFETS interbank traded yield. The page re-checks every minute.</p>
+
+  <section id="crecap" class="crecap" data-src="../data/china-recap.json" data-china="../data/china.json" aria-label="China bond market recap and views" hidden></section>
 
   <div class="tiles" id="tiles" role="group" aria-label="Benchmark tenors"></div>
 
@@ -261,6 +303,7 @@ footer a{color:var(--accent)}
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="../assets/china.js?v=7"></script>
+<script src="../assets/china-recap.js?v=1"></script>
 <script src="../assets/china-lending.js?v=1"></script>
 <script src="../assets/china-futures.js?v=8"></script>
 </body>

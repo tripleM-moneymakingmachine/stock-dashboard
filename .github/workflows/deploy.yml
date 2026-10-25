@@ -137,6 +137,7 @@ jobs:
           if [ -f data/fx-fwd.json ]; then cp data/fx-fwd.json _site/data/; fi
           mkdir -p _site/fx && cp fx/index.html _site/fx/
           if [ -f data/china.json ]; then cp data/china.json _site/data/; fi
+          if [ -f data/china-recap.json ]; then cp data/china-recap.json _site/data/; fi
           if [ -f data/bond-lending.json ]; then cp data/bond-lending.json _site/data/; fi
           if [ -f data/cgb-futures.json ]; then cp data/cgb-futures.json _site/data/; fi
           mkdir -p _site/china && cp china/index.html _site/china/

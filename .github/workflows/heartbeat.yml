@@ -63,6 +63,13 @@ jobs:
                 echo "$sgd $sg SGT fed funds refresh dispatched"; fedday=$sgd
               fi
             fi
+            # China bonds (CCDC curve, CFETS yields): once a day at 18:45-19:15 Singapore, after CCDC's
+            # 17:30 curve and CFETS's ~18:00 valuations (china-bonds.yml's own cron is a backup)
+            if [ "$((10#$sg))" -ge 1845 ] && [ "$((10#$sg))" -le 1915 ] && [ "${cnday:-}" != "$sgd" ]; then
+              if gh workflow run china-bonds.yml -R "$REPO" --ref main; then
+                echo "$sgd $sg SGT China bonds refresh dispatched"; cnday=$sgd
+              fi
+            fi
             sleep 60
           done
 

@@ -1,0 +1,73 @@
+{
+ "session": "2026-10-23",
+ "asof": "Fri Oct 23, 2026",
+ "commentary_asof": "Fri Oct 23, 2026",
+ "horizon": "1–2 weeks",
+ "headline": "Overnight-rate switch pins CGBs near 1-year lows; the 5Y belly and policy bank spreads look stretched",
+ "summary": "China government bonds held near their lowest yields in at least a year as the PBOC moved toward an overnight policy rate. The CCDC 10-year ended the week at 1.640%, just above Tuesday's 1.635% low, and the 5-year led with a 2.8bp fall. The long end lagged: after regulators warned against crowded long-bond trades, the 30-year finished 0.7bp higher at about 2.07% and TL futures fell 0.6% from Tuesday's peak. Policy bank bonds outperformed again, and CDB 10-year traded only about 3bp over CGBs.",
+ "drivers": [
+  ["PBOC moves to an overnight policy rate", "At the Financial Street Forum on Oct 19, Governor Pan said the PBOC will study making overnight reverse repos its main tool, since DR001 is already its target rate. A scheduled overnight series began on Oct 21, capped at RMB1tn a day through Nov 2. By Friday the PBOC was injecting RMB258bn overnight with no 7-day operation. With DR001 near 1.26% against the 1.40% 7-day rate, markets read the switch as a de facto cut, and the CCDC 10-year hit 1.635% on Oct 20."],
+  ["Data beat, but bonds looked through it", "Q3 GDP grew 4.5% (forecast 4.4%), and September retail sales (1.1%) and industrial output (5.5%) were the strongest since March. The beat came mainly from exports, while property investment fell 20.6% year to date and M2 growth slowed to an 18-month low of 7.2%. CPI rose 0.9%, slightly below forecast, and the jump in PPI to 5.0% was mostly oil-driven cost push, so it did not lift yields."],
+  ["Regulators lean on the long end", "On Oct 15 some brokers and banks were told to rein in long-bond trading, and smaller banks in several provinces were asked to cut duration. That capped the rally. The 30-year is about 1.6bp off its Oct 20 low, and the 10-year has since held a 1.635–1.645% range."],
+  ["Asset scarcity squeezes spreads", "Equities fell, with ChiNext still about 40% below its June peak. Bond funds took in so much cash that 150+ products limited subscriptions, and the RMB1.3tn ultra-long special bond programme finished issuing on Oct 16. Investors reached for any yield above CGBs, pushing CDB spreads over CGBs to their 1-year tights from 2 to 10 years."]
+ ],
+ "data": [
+  ["Q3 GDP (Oct 19)", "4.5% y/y (f 4.4%, p 4.3%); 1.2% q/q", "Firmer growth, near the bottom of the 4.5–5% target. It eases pressure for stimulus but was not strong enough to sell bonds."],
+  ["Sep activity (Oct 19)", "IP 5.5% (f 5.4%); retail 1.1% (f 0.5–0.6%); FAI −7.2% YTD; property −20.6%", "Growth is led by exports and AI-linked output, with households and property still weak. It does not challenge low yields."],
+  ["Sep CPI / PPI (Oct 14)", "CPI 0.9% (f 1.0%), core 1.0%; PPI 5.0% (f 4.4–4.5%), highest since Jun 2022", "Cost-push from oil and AI components, not demand. Bonds ignore it unless core CPI follows."],
+  ["Sep credit (Oct 14)", "New loans RMB1.08tn (f 0.98tn); TSF 3.55tn; M2 7.2% (f 7.4%); M1 3.2%", "Loan growth is at a record-low 4.8% and money growth is slowing. Weak credit demand keeps banks buying bonds."],
+  ["LPR (Oct 20)", "1Y 3.00%, 5Y 3.50%, unchanged for a 17th month", "As expected. The policy signal now comes from the overnight-rate switch, not the LPR."],
+  ["Sep PMIs (Sep 30)", "Manufacturing 50.1 (p 49.8); non-manufacturing 50.2 (p 49.0)", "Back above 50. October's print on Oct 31 is the next test for the rally."]
+ ],
+ "view": ["My view:", "Range-bound with a mild bullish bias over the next 1–2 weeks. Expect the CCDC 10-year between 1.60% and 1.68%: funding stays cheap and the overnight anchor is coming, but regulators have signalled discomfort below about 1.62%. Rather than adding more duration, own the 10-year against the rich 5–7Y belly and against policy banks. An overnight rate set at or below 1.25%, or a weak October PMI, would open 1.60%. A pro-growth Fifth Plenum communiqué or an equity rebound would push back toward 1.68%."],
+ "buckets": [
+  {"name": "CGB 1–2Y", "tag": "Rich", "stance": "Neutral", "m": {"type": "lvl", "a": "cgb:2"},
+   "why": "The 1-year (1.18%) and 2-year (1.25%) yield below DR001 near 1.26%, so they carry negatively. They already price an overnight policy rate around 1.25%, so the front end needs an actual cut to rally further.",
+   "call": "Hold; don't chase below 1.20% on the 2-year. Add only if the overnight rate is set below 1.25%."},
+  {"name": "CGB 5–7Y belly", "tag": "Rich", "stance": "Underweight", "m": {"type": "fly", "a": "cgb:2", "b": "cgb:5", "c": "cgb:10"},
+   "why": "The 5-year (1.353%) and 7-year (1.455%) are at 1-year lows and led this week's rally. The 2s5s10s fly is near its most negative in a year, so the belly is expensive against both wings, and the 5s10s curve, at about 29bp, is steep for this year.",
+   "call": "Switch 5Y into 10Y (5s10s flattener) from ~29bp, target 25bp, stop 31bp."},
+  {"name": "CGB 10Y", "tag": "Fair", "stance": "Overweight vs belly", "m": {"type": "fly", "a": "cgb:7", "b": "cgb:10", "c": "cgb:20"},
+   "why": "In outright terms the 10-year is near its 1-year low at 1.640%. Against the 7-year and 20-year, though, the 7s10s20s fly is cheaper than average, so it is the best value on the curve for duration.",
+   "call": "Range 1.60–1.68%. Buy toward 1.665–1.68%; take profit near 1.61%."},
+  {"name": "CGB 30Y", "tag": "Fair", "stance": "Neutral", "m": {"type": "spr", "a": "cgb:10", "b": "cgb:30"},
+   "why": "The 10s30s spread is 43bp, a little below its 1-year average. Regulatory pressure, smaller banks cutting duration and steady supply (a 30-year sold at 2.06% on Oct 23) argue against chasing.",
+   "call": "Neutral. Add above 2.10% (10s30s ~46bp); poor risk/reward below 2.05%."},
+  {"name": "Policy banks 2–10Y vs CGB", "tag": "Rich", "stance": "Underweight vs CGB", "m": {"type": "spr", "a": "cgb:10", "b": "cdb:10"},
+   "why": "CDB 10-year trades only about 3bp over CGB, against a 1-year average near 10bp. ADBC and EXIM are similar, and 2Y–5Y spreads are also at 1-year tights. Policy banks will need to fund the RMB800bn of new policy financing tools and Q4 lending, so supply risk is on the side of wider spreads.",
+   "call": "Switch CDB 10Y into CGB 10Y at ~3bp, target 8bp, stop 1bp."},
+  {"name": "ADBC/EXIM vs CDB 10Y", "tag": "Cheap", "stance": "Prefer ADBC/EXIM", "m": {"type": "spr", "a": "cdb:10", "b": "adbc:10"},
+   "why": "ADBC 10-year yields about 3bp more than CDB, at the wider end of the year. EXIM is about 2bp over CDB, roughly its average. If you have to own policy bank paper, the non-CDB names pay for their slightly lower liquidity.",
+   "call": "Hold ADBC/EXIM 10Y rather than CDB 10Y for the ~2–3bp pickup."},
+  {"name": "Policy banks 20–30Y", "tag": "Fair", "stance": "Neutral", "m": {"type": "spr", "a": "cgb:30", "b": "cdb:30"},
+   "why": "The CDB 30-year trades about 11bp over CGB, mid-range for the year, so the long end has not joined the squeeze. It is a reasonable place to keep policy bank exposure, but it is not cheap.",
+   "call": "Neutral; move policy bank exposure here from 10Y if underweighting the belly."}
+ ],
+ "rows": {
+  "cgb:1": {"note": "Little changed near 1.18% on the week; yields below overnight funding (DR001 ~1.26%)."},
+  "cgb:2": {"note": "Slipped ~1bp on the week to about 1.25%; already prices an overnight policy rate near 1.25%."},
+  "cgb:5": {"note": "Led the week, down about 2.8bp to 1.353%, a 1-year low; the richest point on the curve."},
+  "cgb:7": {"note": "Down about 1.5bp to 1.455%, just above Tuesday's 1-year low."},
+  "cgb:10": {"note": "Down about 1bp to 1.640%; hit 1.635% on Oct 20, then stalled after regulators' warning."},
+  "cgb:30": {"note": "Up about 0.7bp to about 2.07% after a 2.051% low on Oct 20; TL futures fell 0.6% from Tuesday's peak."},
+  "cdb:2": {"note": "Down about 2.5bp on the week to 1.364%, just 12bp over CGB."},
+  "cdb:5": {"note": "Down about 3bp to 1.447%, about 9bp over CGB, the tightest in a year."},
+  "cdb:10": {"note": "Down about 1.4bp to 1.674%, only about 3bp over CGB, near its 1-year tight."},
+  "cdb:30": {"note": "Up about 0.7bp to 2.178%, tracking CGB; the spread is steady at about 11bp."},
+  "adbc:5": {"note": "Down about 3bp to 1.479%, about 13bp over CGB."},
+  "adbc:10": {"note": "Down about 2.4bp to 1.703%, about 6bp over CGB and 3bp over CDB."},
+  "exim:5": {"note": "Down about 3bp to 1.471%, about 12bp over CGB."},
+  "exim:10": {"note": "Down about 2.4bp to 1.694%, about 5bp over CGB."}
+ },
+ "watch": "Next: the CCP Fifth Plenum (Oct 26–29) communiqué, September industrial profits (Oct 27), the Fed (Oct 28), October PMIs (Sat Oct 31, 09:30 Beijing), the end of the overnight repo series and the rate the PBOC sets when it switches (Nov 2), and Hong Kong accepting CGBs as margin collateral from Nov 2.",
+ "sources": [
+  ["Reuters via Yahoo (PBOC overnight rate)", "https://malaysia.news.yahoo.com/chinas-central-bank-studies-making-104255751.html"],
+  ["Reuters via MarketScreener (LPR)", "https://marketscreener.com/news/china-leaves-loan-rates-steady-for-17th-consecutive-month-ce785cdbde8bf221"],
+  ["CNBC (Q3 GDP, Sep activity)", "https://cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html"],
+  ["CNBC (Sep CPI, PPI)", "https://cnbc.com/2026/10/14/producer-prices-in-china-rise-fastest-since-june-2022-on-fuel-costs.html"],
+  ["Reuters via Investing.com (Sep credit)", "https://investing.com/news/economy-news/china-september-new-bank-loans-jump-more-than-expected-on-stimulus-seasonal-boost-4948504"],
+  ["Xinhua Finance via Sina (bond daily, Oct 23)", "https://finance.sina.com.cn/jjxw/2026-10-23/doc-iniweyws1926827.shtml"],
+  ["Cailian Press (regulator warning, Oct 16)", "https://www.cls.cn/detail/2506324"],
+  ["EconoTimes (overnight repo series)", "https://econotimes.com/China-Keeps-Loan-Rates-Steady-as-New-Overnight-Repo-Series-Starts-1760072"]
+ ]
+}

@@ -1,6 +1,6 @@
 name: China government bonds
 
-# Daily, after ChinaBond (CCDC) publishes the day's curve (~17:00–18:00 Beijing): update the CGB master list
+# Daily, after ChinaBond (CCDC) publishes the day's curve (~17:30 Beijing; CFETS valuations ~18:00): update the CGB master list
 # (new bond codes, ISINs, coupons, maturities from CFETS), rebuild data/china.json and data/bond-lending.json (CFETS bond lending fees) and commit them, so the
 # deploy always has a fresh committed copy even if a later live fetch fails. The deploy workflow also
 # re-fetches data/china.json on every refresh for intraday CFETS traded yields.
@@ -12,7 +12,7 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "40 10 * * 1-5"   # 18:40 Singapore / Beijing
+    - cron: "45 10 * * *"     # 18:45 Singapore / Beijing, every day (catches weekend make-up workdays; heartbeat.yml also dispatches it at 18:45)
     - cron: "10 1 * * 1-5"    # 09:10, catches a curve published late the evening before
     - cron: "35 14 * * 1-5"   # 22:35, after CFETS publishes the day's bond lending bulletin (22:00 Beijing)
 
