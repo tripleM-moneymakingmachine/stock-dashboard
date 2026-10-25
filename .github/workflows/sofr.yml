@@ -1,0 +1,59 @@
+name: SOFR futures (daily settle, US tab)
+
+# US tab, "SOFR futures": rebuilds data/sofr.json from the CME Three-Month SOFR (SR3) strip and commits it,
+# so the day-on-day, week-to-date and month-to-date changes and the time-series charts have a settle for
+# every session. Yahoo does not serve a daily history for SR3 contracts, so this committed file IS the
+# history: each run records that session's closing price for every contract (and the previous session's,
+# if missing). The deploy workflow re-fetches delayed quotes on every hourly refresh but never commits.
+# Runs after the 17:00 ET close (05:xx Singapore) and again later in case GitHub drops the first run.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/fetch-sofr.mjs", ".github/workflows/sofr.yml"]
+  schedule:
+    - cron: "25 21 * * 1-5"   # 05:25 Singapore (17:25 New York, EDT)
+    - cron: "40 22 * * 1-5"   # 06:40 Singapore (also covers 17:25 EST in winter)
+    - cron: "10 13 * * 1-5"   # 21:10 Singapore, intraday snapshot during the US session
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: sofr
+  cancel-in-progress: false
+
+jobs:
+  sofr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: SOFR futures strip, settles and SOFR fixing
+        run: node scripts/fetch-sofr.mjs
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          git add data/sofr.json
+          if git diff --cached --quiet; then
+            echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh SOFR futures ($(TZ=Asia/Singapore date '+%Y-%m-%d %H:%M') SGT)"
+          git pull -q --rebase --autostash origin main
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

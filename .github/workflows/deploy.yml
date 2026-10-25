@@ -121,6 +121,9 @@ jobs:
       - name: Fetch CGB bond futures (CFFEX TS, TF, T, TL; delayed quotes and implied yields)
         run: node scripts/fetch-cgb-futures.mjs || echo "CGB futures fetch failed; using the committed file"
 
+      - name: Fetch SOFR futures (CME SR3 strip; delayed quotes for the US tab)
+        run: node scripts/fetch-sofr.mjs || echo "SOFR futures fetch failed; using the committed file"
+
       - name: Assemble site
         run: |
           mkdir -p _site/data _site/assets
@@ -142,6 +145,9 @@ jobs:
           if [ -f data/cgb-futures.json ]; then cp data/cgb-futures.json _site/data/; fi
           if [ -f data/china-flows.json ]; then cp data/china-flows.json _site/data/; fi
           mkdir -p _site/china && cp china/index.html _site/china/
+          if [ -f data/sofr.json ]; then cp data/sofr.json _site/data/; fi
+          if [ -f data/us-recap.json ]; then cp data/us-recap.json _site/data/; fi
+          mkdir -p _site/us && cp us/index.html _site/us/
           cp data/datacenter.json data/ai-debt.json _site/data/
           if [ -f data/curves.json ]; then cp data/curves.json _site/data/; fi
           mkdir -p _site/datacenter && cp datacenter/index.html _site/datacenter/
