@@ -47,6 +47,12 @@ jobs:
             else
               gap=900                                    # pre-market, after-hours, overnight
             fi
+            # US tab SOFR futures: refresh at least every 15 min from Mon 06:00 to Sat 05:00 Singapore
+            # (CME Globex week), whatever the New York rule above says
+            sdow=$(TZ=Asia/Singapore date +%u); shm=$((10#$(TZ=Asia/Singapore date +%H%M)))
+            if { [ "$sdow" -eq 1 ] && [ "$shm" -ge 600 ]; } || { [ "$sdow" -ge 2 ] && [ "$sdow" -le 5 ]; } || { [ "$sdow" -eq 6 ] && [ "$shm" -lt 500 ]; }; then
+              [ "$gap" -gt 900 ] && gap=900
+            fi
             now=$(date +%s)
             if [ $(( now - last )) -ge "$gap" ]; then
               if gh workflow run deploy.yml -R "$REPO" --ref main; then
