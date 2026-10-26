@@ -1,30 +1,30 @@
 {
- "session": "2026-10-23",
- "asof": "Fri Oct 23, 2026",
- "tone": "down",
- "headline": "Brent jumps to $116 on Houthi attacks; Dow −1.2% as selling moves from tech to blue chips",
- "summary": "A broad but orderly decline. The Dow opened about 1% lower and stayed there, while the Nasdaq briefly turned positive on a chip rebound before slipping into the red late; the S&P 500 finished near its low. Nearly three in four S&P 500 stocks fell and decliners led advancers about 1.7 to 1 on the NYSE, with staples, consumer discretionary, financials and telecoms the weakest groups while energy hit a record and tech edged up.",
+ "session": "2026-10-26",
+ "asof": "Mon Oct 26, 2026",
+ "tone": "up",
+ "headline": "Anthropic's IPO filing revives the AI trade; chips jump ~3% and Nasdaq +0.8% as oil eases",
+ "summary": "A tech-led rebound that faded from its highs. Stocks opened higher as oil slipped, then climbed through the morning once Anthropic's S-1 hit, with the S&P 500 up about 0.9% and the Nasdaq about 1.2% by late morning before both gave back part of the gain into the close. Tech (+1.7%) and industrials (+1.4%) led while communication services fell 1.6%; breadth stayed thin, with new 52-week lows still outnumbering new highs.",
  "stats": [
-  ["S&P 500", "7,623.68", -0.52],
-  ["Nasdaq", "25,955.34", -0.21],
-  ["Dow", "52,215.16", -1.23],
-  ["Russell 2000", "2,775.90", -0.29],
-  ["SOX (chips)", "≈10,779", 0.44],
-  ["VIX", "19.45", 2.21, true],
-  ["US 10Y", "4.99%", "+4bp"],
-  ["WTI crude", "$103.27", 3.8]
+  ["S&P 500", "7,676.77", 0.70],
+  ["Nasdaq", "26,169.38", 0.83],
+  ["Dow", "52,361.58", 0.28],
+  ["Russell 2000", "2,786.42", 0.38],
+  ["SOX (chips)", "≈11,100", 3.0],
+  ["VIX", "18.39", -5.45, true],
+  ["US 10Y", "4.98%", "−2bp"],
+  ["WTI crude", "$101.76", -1.46]
  ],
  "drivers": [
-  ["Oil surge revives inflation worries", "Houthi attacks on Saudi energy sites and an oil spill reported off the UAE sent Brent up 3.1% to $116.72, its highest settle since April, and WTI up 3.8% to $103.27. Consumer sentiment hovered near a record low on rising prices; energy stocks rose 2.5% to a record, with SLB up about 7% on a profit beat and Chevron up 2.9%."],
-  ["Selling rotates into blue chips", "Defensive and old-economy names that held up on Thursday gave ground: staples, discretionary and financials each fell more than 1%. American Express lost 3.7% despite a raised forecast as it announced 5% job cuts, JPMorgan and Citi fell 1.5%, Caterpillar 2.4% and Eli Lilly 2.5%."],
-  ["Chips steady after the rout", "The SOX recovered 0.44% after Thursday's 6.7% plunge and S&P tech rose 0.35%. Memory led: Micron gained 2.5% and SK hynix about 4% after it dropped the Solidigm IPO review; AMD and Intel rose 1.7%, while Nvidia slipped about 0.6% and Apple briefly passed it in market value."],
-  ["SpaceX wireless report hits telecoms", "A report that SpaceX is seeking access to thousands of US cell sites for a fourth wireless carrier sank AT&T and T-Mobile about 8% and Verizon 1.2%, while tower owners Crown Castle (+9%) and American Tower (+4%) rallied. Cybersecurity stocks jumped 6–8% on fresh AI-found software flaws; Bloom Energy fell 11% after results."]
+  ["Anthropic S-1 lifts AI and chips", "Anthropic's public IPO filing showed $16.3 billion of first-half revenue and hundreds of billions of dollars of multi-year compute commitments with SpaceX, Microsoft, Amazon, Google and others, easing worries about AI demand. The SOX rose about 3% after a steep October slide: Nvidia gained about 2.5% and led the S&P 500, Micron about 3%, Arm 6.3%, and optical names Lumentum (+8.2%), Applied Optoelectronics (+7.3%) and Coherent (+5.9%) topped the gainers."],
+  ["Oil steps back from six-month highs", "Hopes of mediation between the US and Iran cut WTI 1.5% to $101.76 and December Brent 0.9% to $110.74, despite continued Houthi attacks on Saudi Arabia. Treasury yields were little changed before the Fed: the 10-year slipped to about 4.98% and the 2-year edged up to 4.71% after a slightly soft $69 billion auction."],
+  ["AI funding strains still bite", "Meta fell 1.3% after laying out plans to raise up to $95 billion in equity for AI spending, and Verizon lost 3.7% on a revenue miss, dragging communication services. Neoclouds swung after Elon Musk warned debt markets were shutting out AI-only compute renters: CoreWeave dropped 5.5% early before ending up 3.6%."],
+  ["Tesla rallies; Brazil collapses", "Tesla jumped 5.2% to a three-month high after a Barclays upgrade to overweight. Brazil's Bovespa sank 14.7% after President Lula's surprise reelection raised fiscal worries, pulling down US-listed Petrobras (−14% to −16%) and MercadoLibre (−8%)."]
  ],
- "week": "For the week: Russell 2000 +2.0%, Dow +0.4% (third weekly gain), S&P 500 −0.5% (second weekly loss), Nasdaq −0.7%, as Meta's spending shock and oil near post-war highs outweighed earnings tracking more than 30% growth. The 10-year yield still fell about 11bp on the week, staying just under 5%.",
- "watch": "Next: a third of the S&P 500 reports, including Alphabet, Microsoft and Amazon, whose AI capex plans are in focus; the Fed decides Oct 28 alongside SK hynix results, Intel reports Oct 29, and the Nov 3 midterms follow.",
+ "week": "Monday alone more than erased the S&P 500's 0.5% loss of last week, leaving it about 1.8% below its early-October record; the backdrop remains a 10-year yield near 5% (off a 24-year high of 5.37% on Oct 7), oil above $100 and a Fed that hiked to 4% in September.",
+ "watch": "Next: the Fed decides Wednesday Oct 28 (a hold is widely expected; Chair Warsh's tone on further hikes is the focus), with Alphabet, Microsoft and SK hynix reporting the same day, Amazon, Intel and Samsung on Thursday alongside GDP and inflation data, and the Nov 3 midterms after that.",
  "sources": [
-  ["AP", "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-friday-10-23-2026"],
-  ["Reuters / Yahoo Finance", "https://finance.yahoo.com/markets/stocks/articles/wall-st-set-open-lower-130848087.html"],
-  ["LA Times (AP)", "https://latimes.com/business/story/2026-10-23/wall-street-loses-ground-under-pressure-from-rising-oil-prices"]
+  ["AP", "https://wtop.com/national/2026/10/how-major-us-stock-indexes-fared-monday-10-26-2026"],
+  ["Reuters", "https://lse.co.uk/news/us-stocks-equities-end-higher-as-anthropics-ipo-filing-buoys-ai-stocks-p5ycjlhs9x9swfk.html"],
+  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rally-as-investors-parse-anthropic-ipo-filing-busy-week-of-tech-earnings-153428995.html"]
  ]
 }
