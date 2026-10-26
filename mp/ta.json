@@ -1,50 +1,50 @@
 {
- "asof": "Oct 23, 2026",
- "close": 38.3,
+ "asof": "Oct 26, 2026",
+ "close": 37.47,
  "bias": {
-  "en": "Bearish · another 52-week low intraday",
-  "zh": "偏空 · 盘中再创 52 周新低"
+  "en": "Bearish · lowest close in a year",
+  "zh": "偏空 · 收于一年最低"
  },
  "read": [
   {
-   "en": "MP Materials fell 0.7% on Oct 23 to $38.30, trading between $37.11 and $38.87 on light volume (0.61 times average). It is below all its falling averages: 5-day ($38.87), 10-day ($40.19), 30-day ($45.39), 100-day ($50.84) and 200-day ($55.81). MACD has been below its signal since Aug 31 and below zero, with the histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($43.43), and RSI is 30.",
-   "zh": "MP Materials 10月23日下跌 0.7%，收于 $38.30，盘中区间 $37.11–38.87，成交清淡（为平均水平的 0.61 倍）。股价位于所有下行均线下方：5 日（$38.87）、10 日（$40.19）、30 日（$45.39）、100 日（$50.84）和 200 日均线（$55.81）。MACD 自 8月31日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$43.43），RSI 为 30。"
+   "en": "MP Materials fell 2.2% on Oct 26 to $37.47, its lowest close in 52 weeks, trading between $37.30 and $38.47. It is below all its falling averages: 5-day ($38.58), 10-day ($39.60), 30-day ($44.95), 100-day ($50.53) and 200-day ($55.69). MACD has been below its signal since Aug 31 and below zero, with the histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($42.54), and RSI is 28.5, oversold.",
+   "zh": "MP Materials 10月26日下跌 2.2%，收于 $37.47，为 52 周最低收盘价，盘中区间 $37.30–38.47。股价位于所有下行均线下方：5 日（$38.58）、10 日（$39.60）、30 日（$44.95）、100 日（$50.53）和 200 日均线（$55.69）。MACD 自 8月31日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$42.54），RSI 为 28.5，处于超卖区。"
   },
   {
-   "en": "A new 52-week low at $37.11 undercut the $37.57–37.81 lows, but the close again held above them. Resistance is $38.6–38.9 (Oct 15 low, 5-day, Oct 23 high), then $40–40.2 (10-day) and $43.4–44.5 (SAR, Oct 1 low). Support is $37.1–37.8, then $35. A close above $40.2 would target $43.4; a close below $37.1 would open $35.",
-   "zh": "盘中再创 52 周新低 $37.11，跌破 $37.57–37.81 低点，但收盘再次守在其上方。阻力为 $38.6–38.9（10月15日低点、5 日均线、10月23日高点），其次 $40–40.2（10 日均线）和 $43.4–44.5（SAR、10月1日低点）。支撑为 $37.1–37.8，其次 $35。若收盘站上 $40.2，下一目标看 $43.4；若收盘跌破 $37.1，将打开 $35。"
+   "en": "The close slipped below the $37.57–37.81 lows of Oct 22 and Jul 29, though the $37.11 intraday low of Oct 23 held. Resistance is $37.6–38.6 (those lows, 5-day), then $39.6–40 (10-day) and $42.5–44.5 (SAR, Oct 1 low). Support is $37.1 (52-week low), then $35. A close above $38.6 would target $39.6–40; a close below $37.1 would open $35.",
+   "zh": "收盘跌破 10月22日和7月29日的 $37.57–37.81 低点，但 10月23日盘中低点 $37.11 守住。阻力为 $37.6–38.6（上述低点、5 日均线），其次 $39.6–40（10 日均线）和 $42.5–44.5（SAR、10月1日低点）。支撑为 $37.1（52 周低点），其次 $35。若收盘站上 $38.6，下一目标看 $39.6–40；若收盘跌破 $37.1，将打开 $35。"
   }
  ],
  "levels": {
   "r": [
    [
-    38.9,
+    37.8,
     {
-     "en": "Oct 15 low $38.6; 5-day average $38.87; Oct 23 high",
-     "zh": "10月15日低点 $38.6；5日均线 $38.87；10月23日高点"
+     "en": "Oct 22 and Jul 29 lows ($37.57–37.81), now resistance; 5-day average $38.58",
+     "zh": "10月22日和7月29日低点（$37.57–37.81），已转为阻力；5日均线 $38.58"
     }
    ],
    [
-    40.2,
+    39.6,
     {
-     "en": "10-day average $40.19; $40 round number",
-     "zh": "10日均线 $40.19；$40 整数关口"
+     "en": "10-day average $39.60; $40 round number",
+     "zh": "10日均线 $39.60；$40 整数关口"
     }
    ],
    [
-    44,
+    43.5,
     {
-     "en": "SAR $43.4; Oct 1 low $44.5",
-     "zh": "SAR $43.4；10月1日低点 $44.5"
+     "en": "SAR $42.5; Oct 1 low $44.5",
+     "zh": "SAR $42.5；10月1日低点 $44.5"
     }
    ]
   ],
   "s": [
    [
-    37.5,
+    37.1,
     {
-     "en": "52-week lows: Oct 23 $37.11, Oct 22 $37.57, Jul 29 $37.81",
-     "zh": "52周低点：10月23日 $37.11、10月22日 $37.57、7月29日 $37.81"
+     "en": "52-week low (Oct 23, $37.11)",
+     "zh": "52周低点（10月23日，$37.11）"
     }
    ],
    [

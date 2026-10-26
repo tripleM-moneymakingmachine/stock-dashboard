@@ -1,57 +1,57 @@
 {
- "asof": "Oct 23, 2026",
- "close": 642.62,
+ "asof": "Oct 26, 2026",
+ "close": 630.56,
  "bias": {
-  "en": "Uptrend under pressure · testing the 100 and 200-day",
-  "zh": "上升趋势承压 · 考验 100 日和 200 日均线"
+  "en": "Turning bearish · closed below the 100 and 200-day",
+  "zh": "转弱 · 收于 100 日和 200 日均线下方"
  },
  "read": [
   {
-   "en": "Meta fell 1.0% on Oct 23 to $642.62, trading between $633.27 and $648.04. It is below the falling 5-day ($677.7) and 10-day ($707.8) and rising 30-day ($715.4), and above the rising 100-day ($630.8) and 200-day ($632.5). MACD has been below its signal since Oct 2 and is now below zero, histogram widening; Parabolic SAR has been bearish since Oct 16 ($747.49), and RSI is 36.",
-   "zh": "Meta 10月23日下跌 1.0%，收于 $642.62，盘中区间 $633.27–648.04。股价位于下行的 5 日（$677.7）和 10 日（$707.8）以及上行的 30 日均线（$715.4）下方，高于上行的 100 日（$630.8）和 200 日均线（$632.5）。MACD 自 10月2日起位于信号线下方，现已跌破零轴，柱状图扩大；抛物线 SAR 自 10月16日起看空（$747.49），RSI 为 36。"
+   "en": "Meta fell 1.9% on Oct 26 to $630.56, trading between $627.82 and $647.69 on 1.6 times average volume. It is below the falling 5-day ($662.8) and 10-day ($696.5), the rising 30-day ($714.2), and just below the rising 100-day ($630.9) and 200-day ($632.5). MACD has been below its signal since Oct 2 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 16 ($736.07), and RSI is 34.",
+   "zh": "Meta 10月26日下跌 1.9%，收于 $630.56，盘中区间 $627.82–647.69，成交量为平均水平的 1.6 倍。股价位于下行的 5 日（$662.8）和 10 日（$696.5）及上行的 30 日均线（$714.2）下方，并略低于上行的 100 日（$630.9）和 200 日均线（$632.5）。MACD 自 10月2日起位于信号线及零轴下方，柱状图扩大；抛物线 SAR 自 10月16日起看空（$736.07），RSI 为 34。"
   },
   {
-   "en": "The $633.3 low dipped under the $638.6–639.7 support (Dec 12, 2025 and Oct 22 lows) before the close recovered above it. Resistance is $648 (Oct 23 high), then $677.7–681 (5-day, Oct 22 high) and $690–694. Support is $633–639.7, then $630.8–632.5 (100 and 200-day) and $600 (Jan 20 low). A close below $630 would open $600; a close above $648 would target $678–681.",
-   "zh": "盘中低点 $633.3 一度跌破 $638.6–639.7 支撑（2025年12月12日和10月22日低点），随后收盘回到其上方。阻力为 $648（10月23日高点），其次 $677.7–681（5 日均线、10月22日高点）和 $690–694。支撑为 $633–639.7，其次 $630.8–632.5（100 日和 200 日均线）和 $600（1月20日低点）。若收盘跌破 $630，将打开 $600；若收盘站上 $648，下一目标看 $678–681。"
+   "en": "The close broke $633–639.7 support and slipped under the 100 and 200-day, now resistance. Resistance is $630.9–639.7 (100 and 200-day, Oct 22 low), then $647.7–648 (Oct 23 and 26 highs) and $662.8 (5-day). Support is $627.8 (Oct 26 low), then $612.4 (Aug 11 high) and $600 (Jan 20 low). A close below $627.8 would open $600–612; a close back above $639.7 would target $648.",
+   "zh": "收盘跌破 $633–639.7 支撑，并滑落至 100 日和 200 日均线下方，这些位置转为阻力。阻力为 $630.9–639.7（100 日和 200 日均线、10月22日低点），其次 $647.7–648（10月23日和26日高点）和 $662.8（5 日均线）。支撑为 $627.8（10月26日低点），其次 $612.4（8月11日高点）和 $600（1月20日低点）。若收盘跌破 $627.8，将打开 $600–612；若收盘重新站上 $639.7，下一目标看 $648。"
   }
  ],
  "levels": {
   "r": [
    [
+    635,
+    {
+     "en": "100 and 200-day averages ($630.9–632.5); Oct 22 low $639.7, now resistance",
+     "zh": "100日和200日均线（$630.9–632.5）；10月22日低点 $639.7，转为阻力"
+    }
+   ],
+   [
     648,
     {
-     "en": "Oct 23 high",
-     "zh": "10月23日高点"
+     "en": "Oct 23 and Oct 26 highs ($647.7–648.0)",
+     "zh": "10月23日和10月26日高点（$647.7–648.0）"
     }
    ],
    [
-    680,
+    662.8,
     {
-     "en": "5-day average $677.7; Oct 22 high $681.1; Sep 21 gap top $679.6",
-     "zh": "5日均线 $677.7；10月22日高点 $681.1；9月21日缺口上沿 $679.6"
-    }
-   ],
-   [
-    692,
-    {
-     "en": "Oct 21 low $690.1; Oct 19 low $693.9",
-     "zh": "10月21日低点 $690.1；10月19日低点 $693.9"
+     "en": "5-day average",
+     "zh": "5日均线"
     }
    ]
   ],
   "s": [
    [
-    636,
+    627.8,
     {
-     "en": "Oct 22 low $639.7; Dec 12, 2025 low $638.6; Oct 23 low $633.3",
-     "zh": "10月22日低点 $639.7；2025年12月12日低点 $638.6；10月23日低点 $633.3"
+     "en": "Oct 26 low",
+     "zh": "10月26日低点"
     }
    ],
    [
-    631.5,
+    612.4,
     {
-     "en": "200-day $632.5 and 100-day $630.8 averages",
-     "zh": "200日均线 $632.5 和 100日均线 $630.8"
+     "en": "Aug 11 high",
+     "zh": "8月11日高点"
     }
    ],
    [

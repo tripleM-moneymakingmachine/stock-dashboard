@@ -1,45 +1,52 @@
 {
- "asof": "Oct 23, 2026",
- "close": 877.55,
+ "asof": "Oct 26, 2026",
+ "close": 903.7,
  "bias": {
-  "en": "Bearish · reclaimed $858",
-  "zh": "偏空 · 收复 $858"
+  "en": "Bearish · back at the 10-day average",
+  "zh": "偏空 · 回到 10 日均线"
  },
  "read": [
   {
-   "en": "Micron rose 2.5% on Oct 23 to $877.55, trading between $858.34 and $891.89. It is below the falling 5-day ($889.7), 10-day ($911.5), 30-day ($996.0) and 100-day ($972.8) averages, and above the rising 200-day ($732.1). MACD has been below its signal since Oct 6 and is below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 7 ($969.16), and RSI is 38.",
-   "zh": "美光 10月23日上涨 2.5%，收于 $877.55，盘中区间 $858.34–891.89。股价位于下行的 5 日（$889.7）、10 日（$911.5）、30 日（$996.0）和 100 日均线（$972.8）下方，高于上行的 200 日均线（$732.1）。MACD 自 10月6日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月7日起看空（$969.16），RSI 为 38。"
+   "en": "Micron rose 3.0% on Oct 26 to $903.70, trading between $882.77 and $915.75. It is above the falling 5-day ($889.5) and 10-day ($903.0) averages and the rising 200-day ($735.0), and below the falling 30-day ($995.3) and 100-day ($971.0). MACD has been below its signal since Oct 6 and is below zero, with the histogram narrowing; Parabolic SAR has been bearish since Oct 7 ($954.77), and RSI is 42.",
+   "zh": "美光 10月26日上涨 3.0%，收于 $903.70，盘中区间 $882.77–915.75。股价位于下行的 5 日（$889.5）和 10 日均线（$903.0）以及上行的 200 日均线（$735.0）上方，低于下行的 30 日（$995.3）和 100 日均线（$971.0）。MACD 自 10月6日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月7日起看空（$954.77），RSI 为 42。"
   },
   {
-   "en": "The close reclaimed $858 (Oct 15 low), and the $891.9 high stalled at the $881.5–890 resistance. Resistance is $881.5–891.9 (Oct 20–21 lows, 5-day, Oct 23 high), then $903–911.5 (Sep 14 low, 10-day) and $969 (SAR). Support is $849–858, then $804 (Jul 17 low) and $732–738 (200-day, Jul 29 low). A close above $892 would target $905–911; a close below $849 would open $804.",
-   "zh": "收盘收复 $858（10月15日低点），$891.9 高点受阻于 $881.5–890 阻力区。阻力为 $881.5–891.9（10月20–21日低点、5 日均线、10月23日高点），其次 $903–911.5（9月14日低点、10 日均线）和 $969（SAR）。支撑为 $849–858，其次 $804（7月17日低点）和 $732–738（200 日均线、7月29日低点）。若收盘站上 $892，下一目标看 $905–911；若收盘跌破 $849，将打开 $804。"
+   "en": "The close broke the $888 resistance (5-day) and is testing $903–907 (10-day, Sep 14 low). Resistance is $915.8 (Oct 26 high), then $928.5 (Oct 21 high) and $955 (SAR), with the 100-day at $971. Support is $883–890 (Oct 26 low, 5-day), then $849–858 and $804 (Jul 17 low). A close above $916 would target $928–955; a close below $883 would open $849–858.",
+   "zh": "收盘突破 $888 阻力（5 日均线），正在测试 $903–907（10 日均线、9月14日低点）。阻力为 $915.8（10月26日高点），其次 $928.5（10月21日高点）和 $955（SAR），100 日均线位于 $971。支撑为 $883–890（10月26日低点、5 日均线），其次 $849–858 和 $804（7月17日低点）。若收盘站上 $916，下一目标看 $928–955；若收盘跌破 $883，将打开 $849–858。"
   }
  ],
  "levels": {
   "r": [
    [
-    888,
+    916,
     {
-     "en": "Oct 20 low $881.5; 5-day average $889.7; Oct 23 high $891.9",
-     "zh": "10月20日低点 $881.5；5日均线 $889.7；10月23日高点 $891.9"
+     "en": "Oct 26 high $915.8; 10-day average $903.0 just below",
+     "zh": "10月26日高点 $915.8；10日均线 $903.0 在其下方"
     }
    ],
    [
-    907,
+    928.5,
     {
-     "en": "Sep 14 low $902.6; 10-day average $911.5",
-     "zh": "9月14日低点 $902.6；10日均线 $911.5"
+     "en": "Oct 21 high",
+     "zh": "10月21日高点"
     }
    ],
    [
-    969.2,
+    955,
     {
-     "en": "Parabolic SAR",
-     "zh": "抛物线 SAR"
+     "en": "Parabolic SAR $954.8",
+     "zh": "抛物线 SAR $954.8"
     }
    ]
   ],
   "s": [
+   [
+    888,
+    {
+     "en": "5-day average $889.5; Oct 26 low $882.8",
+     "zh": "5日均线 $889.5；10月26日低点 $882.8"
+    }
+   ],
    [
     854,
     {
@@ -52,13 +59,6 @@
     {
      "en": "Jul 17 low",
      "zh": "7月17日低点"
-    }
-   ],
-   [
-    735,
-    {
-     "en": "Jul 29 low $737.9; 200-day average $732.1",
-     "zh": "7月29日低点 $737.9；200日均线 $732.1"
     }
    ]
   ]

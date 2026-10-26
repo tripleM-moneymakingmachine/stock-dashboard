@@ -1,57 +1,64 @@
 {
- "asof": "Oct 23, 2026",
- "close": 209.29,
+ "asof": "Oct 26, 2026",
+ "close": 221.5,
  "bias": {
-  "en": "Bearish · holding just above $204",
-  "zh": "偏空 · 勉强守在 $204 上方"
+  "en": "Bearish · rebounding into the 5-day average",
+  "zh": "偏空 · 反弹至 5 日均线"
  },
  "read": [
   {
-   "en": "Coherent rose 0.7% on Oct 23 to $209.29, trading between $203.55 and $215.38. It is below the falling 5-day ($223.7), 10-day ($244.3), 30-day ($284.8) and 100-day ($313.5) averages and the rising 200-day ($295.4). MACD has been below its signal since Oct 12 and is below zero; Parabolic SAR has been bearish since Oct 12 ($275.80), and RSI is 30.",
-   "zh": "Coherent 10月23日上涨 0.7%，收于 $209.29，盘中区间 $203.55–215.38。股价位于下行的 5 日（$223.7）、10 日（$244.3）、30 日（$284.8）和 100 日均线（$313.5）以及上行的 200 日均线（$295.4）下方。MACD 自 10月12日起位于信号线及零轴下方；抛物线 SAR 自 10月12日起看空（$275.80），RSI 为 30。"
+   "en": "Coherent rose 5.8% on Oct 26 to $221.50, trading between $208.86 and $225.66. It is at the falling 5-day ($221.6) and below the falling 10-day ($237.7), 30-day ($283.3) and 100-day ($311.6) averages and the rising 200-day ($295.6). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($264.24), and RSI is 35.",
+   "zh": "Coherent 10月26日上涨 5.8%，收于 $221.50，盘中区间 $208.86–225.66。股价位于下行的 5 日均线（$221.6）附近，低于下行的 10 日（$237.7）、30 日（$283.3）和 100 日均线（$311.6）以及上行的 200 日均线（$295.6）。MACD 自 10月12日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$264.24），RSI 为 35。"
   },
   {
-   "en": "The $203.55 low dipped under the $204.4–204.6 support (Feb 17 and Oct 22 lows) before the close recovered; the $215.4 high stayed under the $217.8–220.7 resistance. Resistance is $215.4, then $217.8–220.7 (Oct 20 and Jul 29 lows) and $223.7–231.6 (5-day, Oct 16 low). Support is $203.6–204.6, then $200. A close above $220.7 would target $231.6; a close below $203.5 would open $200.",
-   "zh": "盘中低点 $203.55 一度跌破 $204.4–204.6 支撑（2月17日和10月22日低点），随后收盘回升；$215.4 高点仍在 $217.8–220.7 阻力下方。阻力为 $215.4，其次 $217.8–220.7（10月20日和7月29日低点）和 $223.7–231.6（5 日均线、10月16日低点）。支撑为 $203.6–204.6，其次 $200。若收盘站上 $220.7，下一目标看 $231.6；若收盘跌破 $203.5，将打开 $200。"
+   "en": "The rebound cleared $215.4 and the $217.8–220.7 resistance (Oct 20 and Jul 29 lows), now support, and closed at the 5-day. Resistance is $221.6–225.7 (5-day, Oct 26 high), then $231.6–231.8 (Oct 16 and 19 lows) and $237.7 (10-day). Support is $217.8–220.7, then $208.9 (Oct 26 low) and $203.6–204.6. A close above $225.7 would target $231.6–237.7; a close below $217.8 would reopen $204–209.",
+   "zh": "反弹突破 $215.4 及 $217.8–220.7 阻力（10月20日和7月29日低点），该区域转为支撑，收盘落在 5 日均线。阻力为 $221.6–225.7（5 日均线、10月26日高点），其次 $231.6–231.8（10月16日和19日低点）和 $237.7（10 日均线）。支撑为 $217.8–220.7，其次 $208.9（10月26日低点）和 $203.6–204.6。若收盘站上 $225.7，下一目标看 $231.6–237.7；若收盘跌破 $217.8，将重新打开 $204–209。"
   }
  ],
  "levels": {
   "r": [
    [
-    215.4,
+    223.6,
     {
-     "en": "Oct 23 high",
-     "zh": "10月23日高点"
+     "en": "5-day average $221.6; Oct 26 high $225.7",
+     "zh": "5日均线 $221.6；10月26日高点 $225.7"
     }
    ],
    [
-    219,
+    231.7,
     {
-     "en": "Oct 20 low $217.8; Jul 29 low $220.7, now resistance",
-     "zh": "10月20日低点 $217.8；7月29日低点 $220.7，转为阻力"
+     "en": "Oct 16 and Oct 19 lows ($231.6–231.8)",
+     "zh": "10月16日和10月19日低点（$231.6–231.8）"
     }
    ],
    [
-    228,
+    237.7,
     {
-     "en": "5-day average $223.7; Oct 16 low $231.6",
-     "zh": "5日均线 $223.7；10月16日低点 $231.6"
+     "en": "10-day average",
+     "zh": "10日均线"
     }
    ]
   ],
   "s": [
    [
-    204,
+    219,
     {
-     "en": "Feb 17 low $204.6; Oct 22 and Oct 23 lows ($203.6–204.4)",
-     "zh": "2月17日低点 $204.6；10月22日和10月23日低点（$203.6–204.4）"
+     "en": "Oct 20 low $217.8; Jul 29 low $220.7, reclaimed",
+     "zh": "10月20日低点 $217.8；7月29日低点 $220.7，已收复"
     }
    ],
    [
-    200,
+    208.9,
     {
-     "en": "Round number",
-     "zh": "整数关口"
+     "en": "Oct 26 low",
+     "zh": "10月26日低点"
+    }
+   ],
+   [
+    204,
+    {
+     "en": "Oct 22 and Oct 23 lows ($203.6–204.4); Feb 17 low $204.6",
+     "zh": "10月22日和10月23日低点（$203.6–204.4）；2月17日低点 $204.6"
     }
    ]
   ]

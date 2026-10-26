@@ -1,50 +1,57 @@
 {
- "asof": "Oct 23, 2026",
- "close": 321.68,
+ "asof": "Oct 26, 2026",
+ "close": 329.17,
  "bias": {
-  "en": "Bearish · pressing the $321 lows",
-  "zh": "偏空 · 逼近 $321 低点"
+  "en": "Bearish · bounced off $321–324, at the 5-day average",
+  "zh": "偏空 · 自 $321–324 反弹至 5 日均线"
  },
  "read": [
   {
-   "en": "Broadcom fell 0.5% on Oct 23 to $321.68, trading between $320.23 and $327.70. It is below all its falling averages: 5-day ($330.3), 10-day ($338.3), 30-day ($349.6), 100-day ($374.5) and 200-day ($367.8). MACD has been below its signal since Oct 15 and below zero, with the histogram widening; Parabolic SAR has been bearish since Oct 13 ($358.43), and RSI is 34.",
-   "zh": "博通 10月23日下跌 0.5%，收于 $321.68，盘中区间 $320.23–327.70。股价位于所有下行均线下方：5 日（$330.3）、10 日（$338.3）、30 日（$349.6）、100 日（$374.5）和 200 日均线（$367.8）。MACD 自 10月15日起位于信号线及零轴下方，柱状图扩大；抛物线 SAR 自 10月13日起看空（$358.43），RSI 为 34。"
+   "en": "Broadcom rose 2.3% on Oct 26 to $329.17, trading between $323.30 and $332.12. It is just below the falling 5-day average ($329.3) and below the falling 10-day ($335.8), 30-day ($349.1), 100-day ($373.0) and 200-day ($367.8). MACD has been below its signal since Oct 15 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 13 ($353.84), and RSI is 40.",
+   "zh": "博通 10月26日上涨 2.3%，收于 $329.17，盘中区间 $323.30–332.12。股价略低于下行的 5 日均线（$329.3），并低于下行的 10 日（$335.8）、30 日（$349.1）、100 日（$373.0）和 200 日均线（$367.8）。MACD 自 10月15日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月13日起看空（$353.84），RSI 为 40。"
   },
   {
-   "en": "The close slipped to the bottom of the $321.4–324.1 support (Dec 17 and Oct 10, 2025 lows), and the $320.2 low undercut it intraday. Resistance is $324.1, then $330–331 (5-day, Oct 22 high) and $338–341 (10-day, Oct 20 high). Support is $320.2, then $314.1 (Jan 23 low) and $307–308.5. A close below $320 would open $314; a close above $331 would target $335–338.",
-   "zh": "收盘滑落至 $321.4–324.1 支撑（2025年12月17日和10月10日低点）底部，盘中低点 $320.2 一度跌破该区间。阻力为 $324.1，其次 $330–331（5 日均线、10月22日高点）和 $338–341（10 日均线、10月20日高点）。支撑为 $320.2，其次 $314.1（1月23日低点）和 $307–308.5。若收盘跌破 $320，将打开 $314；若收盘站上 $331，下一目标看 $335–338。"
+   "en": "The low held the $321.4–324.1 zone and the close moved back above it; the $332.1 high faded. Resistance is $329.3–332.1 (5-day, Oct 22 and 26 highs), then $335.8 (10-day, Sep 16 low) and $341.1 (Oct 20 high). Support is $321.4–324.1, then $320.2 (Oct 23 low) and $314.1. A close above $332.1 would target $336–341; a close below $320.2 would open $314.",
+   "zh": "低点守住 $321.4–324.1 区间，收盘重回该区间上方；盘中高点 $332.1 未能守住。阻力为 $329.3–332.1（5 日均线、10月22日和26日高点），其次 $335.8（10 日均线、9月16日低点）和 $341.1（10月20日高点）。支撑为 $321.4–324.1，其次 $320.2（10月23日低点）和 $314.1。若收盘站上 $332.1，下一目标看 $336–341；若收盘跌破 $320.2，将打开 $314。"
   }
  ],
  "levels": {
   "r": [
    [
-    324.1,
+    331,
     {
-     "en": "Top of the Dec 17 and Oct 10, 2025 lows zone ($321.4–324.1)",
-     "zh": "2025年12月17日和10月10日低点区间顶部（$321.4–324.1）"
+     "en": "5-day average $329.3; Oct 22 high $330.8; Oct 26 high $332.1",
+     "zh": "5日均线 $329.3；10月22日高点 $330.8；10月26日高点 $332.1"
     }
    ],
    [
-    330.5,
+    335.8,
     {
-     "en": "5-day average $330.3; Oct 22 high $330.8",
-     "zh": "5日均线 $330.3；10月22日高点 $330.8"
+     "en": "10-day average; Sep 16 low $335.8",
+     "zh": "10日均线；9月16日低点 $335.8"
     }
    ],
    [
-    338.3,
+    341.1,
     {
-     "en": "10-day average; Oct 20 high $341.1",
-     "zh": "10日均线；10月20日高点 $341.1"
+     "en": "Oct 20 high",
+     "zh": "10月20日高点"
     }
    ]
   ],
   "s": [
    [
+    323.5,
+    {
+     "en": "Dec 17 and Oct 10, 2025 lows zone ($321.4–324.1); Oct 26 low $323.3",
+     "zh": "2025年12月17日和10月10日低点区（$321.4–324.1）；10月26日低点 $323.3"
+    }
+   ],
+   [
     320.2,
     {
-     "en": "Oct 23 low; Dec 17, 2025 low $321.4",
-     "zh": "10月23日低点；2025年12月17日低点 $321.4"
+     "en": "Oct 23 low",
+     "zh": "10月23日低点"
     }
    ],
    [
@@ -52,13 +59,6 @@
     {
      "en": "Jan 23 low",
      "zh": "1月23日低点"
-    }
-   ],
-   [
-    308,
-    {
-     "en": "Mar 2 and Mar 19 lows ($307.2–308.5)",
-     "zh": "3月2日和3月19日低点（$307.2–308.5）"
     }
    ]
   ]

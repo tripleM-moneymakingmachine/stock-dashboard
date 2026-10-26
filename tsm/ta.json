@@ -1,64 +1,64 @@
 {
- "asof": "Oct 23, 2026",
- "close": 418.51,
+ "asof": "Oct 26, 2026",
+ "close": 424.37,
  "bias": {
-  "en": "Uptrend under pressure · reclaimed $412.5",
-  "zh": "上升趋势承压 · 收复 $412.5"
+  "en": "Uptrend under pressure · back above the 10-day, under the 100-day",
+  "zh": "上升趋势承压 · 重回 10 日均线上方，受制于 100 日均线"
  },
  "read": [
   {
-   "en": "TSMC rose 1.5% on Oct 23 to $418.51, trading between $411.15 and $421.31. It is below the falling 5-day ($421.6), 10-day ($426.2), 30-day ($442.4) and 100-day ($429.7) averages, and above the rising 200-day ($397.6). MACD has been below its signal since Oct 9 and is below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($438.23), and RSI is 41.",
-   "zh": "台积电 10月23日上涨 1.5%，收于 $418.51，盘中区间 $411.15–421.31。股价位于下行的 5 日（$421.6）、10 日（$426.2）、30 日（$442.4）和 100 日均线（$429.7）下方，高于上行的 200 日均线（$397.6）。MACD 自 10月9日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月8日起看空（$438.23），RSI 为 41。"
+   "en": "TSMC rose 1.4% on Oct 26 to $424.37, trading between $417.72 and $428.85. It is just above the falling 5-day ($422.4) and 10-day ($424.2) averages, below the falling 30-day ($442.6) and 100-day ($429.6), and above the rising 200-day ($398.2). MACD has been below its signal since Oct 9 and is below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($434.50), and RSI is 45.",
+   "zh": "台积电 10月26日上涨 1.4%，收于 $424.37，盘中区间 $417.72–428.85。股价略高于下行的 5 日（$422.4）和 10 日均线（$424.2），低于下行的 30 日（$442.6）和 100 日均线（$429.6），高于上行的 200 日均线（$398.2）。MACD 自 10月9日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月8日起看空（$434.50），RSI 为 45。"
   },
   {
-   "en": "The close reclaimed the $412.5 Sep 15 low, support again. Resistance is $419–421.9 (Jun 26 low, 5-day, Oct 22 high), then $426–430 (10 and 100-day) and $438 (SAR). Support is $412.5, then $405.2–411.2 (Aug 24, Oct 15, 22 and 23 lows) and $397.6 (200-day). A close above $421.9 would target $430; a close below $405 would open $397.6.",
-   "zh": "收盘收复 $412.5（9月15日低点），该位置重新成为支撑。阻力为 $419–421.9（6月26日低点、5 日均线、10月22日高点），其次 $426–430（10 日和 100 日均线）和 $438（SAR）。支撑为 $412.5，其次 $405.2–411.2（8月24日、10月15日、22日和23日低点）和 $397.6（200 日均线）。若收盘站上 $421.9，下一目标看 $430；若收盘跌破 $405，将打开 $397.6。"
+   "en": "The close cleared $421.9 (Oct 22 high), now support; the high stalled under the 100-day. Resistance is $428.9–429.6 (Oct 26 high, 100-day), then $434.5–435.2 (SAR, Oct 21 high) and $442.6 (30-day). Support is $421.9–424.2 (5 and 10-day, Oct 22 high), then $417.7 (Oct 26 low) and $412.5 (Sep 15 low). A close above $429.6 would target $435; a close below $417.7 would reopen $412.5.",
+   "zh": "收盘突破 $421.9（10月22日高点），该位置转为支撑；盘中高点在 100 日均线下方受阻。阻力为 $428.9–429.6（10月26日高点、100 日均线），其次 $434.5–435.2（SAR、10月21日高点）和 $442.6（30 日均线）。支撑为 $421.9–424.2（5 日和 10 日均线、10月22日高点），其次 $417.7（10月26日低点）和 $412.5（9月15日低点）。若收盘站上 $429.6，下一目标看 $435；若收盘跌破 $417.7，将重新打开 $412.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    420.5,
+    429.2,
     {
-     "en": "5-day average $421.6; Jun 26 low $419.2; Oct 22 high $421.9",
-     "zh": "5日均线 $421.6；6月26日低点 $419.2；10月22日高点 $421.9"
+     "en": "Oct 26 high $428.9; 100-day average $429.6",
+     "zh": "10月26日高点 $428.9；100日均线 $429.6"
     }
    ],
    [
-    428,
+    434.8,
     {
-     "en": "10-day $426.2 and 100-day $429.7 averages",
-     "zh": "10日均线 $426.2 和 100日均线 $429.7"
+     "en": "Parabolic SAR $434.5; Oct 21 high $435.2",
+     "zh": "抛物线 SAR $434.5；10月21日高点 $435.2"
     }
    ],
    [
-    438.2,
+    442.6,
     {
-     "en": "Parabolic SAR",
-     "zh": "抛物线 SAR"
+     "en": "30-day average",
+     "zh": "30日均线"
     }
    ]
   ],
   "s": [
    [
+    422,
+    {
+     "en": "5 and 10-day averages ($422.4–424.2); Oct 22 high $421.9, cleared",
+     "zh": "5日和10日均线（$422.4–424.2）；10月22日高点 $421.9，已突破"
+    }
+   ],
+   [
+    417.7,
+    {
+     "en": "Oct 26 low",
+     "zh": "10月26日低点"
+    }
+   ],
+   [
     412.5,
     {
-     "en": "Sep 15 low, reclaimed",
-     "zh": "9月15日低点，已收复"
-    }
-   ],
-   [
-    408,
-    {
-     "en": "Aug 24 low $405.2; Oct 15 low $407.1; Oct 22–23 lows ($410.2–411.2)",
-     "zh": "8月24日低点 $405.2；10月15日低点 $407.1；10月22–23日低点（$410.2–411.2）"
-    }
-   ],
-   [
-    397.6,
-    {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "Sep 15 low; Oct 22 low $410.2",
+     "zh": "9月15日低点；10月22日低点 $410.2"
     }
    ]
   ]

@@ -1,18 +1,18 @@
 {
- "asof": "Oct 23, 2026",
- "close": 308.85,
+ "asof": "Oct 26, 2026",
+ "close": 309,
  "bias": {
-  "en": "Bearish · stuck under the May low",
-  "zh": "偏空 · 受困于 5 月低点下方"
+  "en": "Bearish · capped at the May low again",
+  "zh": "偏空 · 再度受制于 5 月低点"
  },
  "read": [
   {
-   "en": "Teradyne closed flat on Oct 23 at $308.85, trading between $304.27 and $317.79. It is below the falling 5-day ($327.0), 10-day ($342.7), 30-day ($375.6) and 100-day ($378.9) averages and the rising 200-day ($347.5). MACD has been below its signal since Oct 12 and below zero; Parabolic SAR has been bearish since Oct 8 ($369.20), and RSI is 33.",
-   "zh": "泰瑞达 10月23日收平于 $308.85，盘中区间 $304.27–317.79。股价位于下行的 5 日（$327.0）、10 日（$342.7）、30 日（$375.6）和 100 日均线（$378.9）以及上行的 200 日均线（$347.5）下方。MACD 自 10月12日起位于信号线及零轴下方；抛物线 SAR 自 10月8日起看空（$369.20），RSI 为 33。"
+   "en": "Teradyne closed flat on Oct 26 at $309.00, trading between $306.44 and $320.00. It is below the falling 5-day ($321.7), 10-day ($335.2), 30-day ($374.9) and 100-day ($377.9) averages and the rising 200-day ($348.0). MACD has been below its signal since Oct 12 and below zero; Parabolic SAR has been bearish since Oct 8 ($357.51), and RSI is 33.",
+   "zh": "泰瑞达 10月26日收平于 $309.00，盘中区间 $306.44–320.00。股价位于下行的 5 日（$321.7）、10 日（$335.2）、30 日（$374.9）和 100 日均线（$377.9）以及上行的 200 日均线（$348.0）下方。MACD 自 10月12日起位于信号线及零轴下方；抛物线 SAR 自 10月8日起看空（$357.51），RSI 为 33。"
   },
   {
-   "en": "The $317.8 high faded, leaving the close just under the $309.4 May 19 low, still resistance. Resistance is $309.4–317.8, then $322.3–327 (Oct 20 low, September lows, 5-day) and $331.9 (Oct 15 low). Support is $304.3 (Oct 23 low), then $301–301.9 and $296.8 (spring and July lows). A close below $301 would open $296.8; a close above $317.8 would target $322–327.",
-   "zh": "$317.8 高点未能守住，收盘略低于 $309.4（5月19日低点），该位置仍为阻力。阻力为 $309.4–317.8，其次 $322.3–327（10月20日低点、9 月低点、5 日均线）和 $331.9（10月15日低点）。支撑为 $304.3（10月23日低点），其次 $301–301.9 和 $296.8（春季和 7 月低点）。若收盘跌破 $301，将打开 $296.8；若收盘站上 $317.8，下一目标看 $322–327。"
+   "en": "A push to $320 faded; the close stayed under the $309.4 May 19 low, still resistance. Resistance is $309.4–320 (May 19 low, Oct 26 high), then $321.7–327 (5-day, Oct 20 and September lows). Support is $304.3–306.4 (Oct 23 and 26 lows), then $301–301.9 and $296.8 (spring and July lows). A close below $301 would open $296.8; above $320, $322–327.",
+   "zh": "冲高至 $320 后回落，收盘仍低于 $309.4（5月19日低点），该位置仍为阻力。阻力为 $309.4–320（5月19日低点、10月26日高点），其次 $321.7–327（5 日均线、10月20日和 9 月低点）。支撑为 $304.3–306.4（10月23日和26日低点），其次 $301–301.9 和 $296.8（春季和 7 月低点）。若收盘跌破 $301，将打开 $296.8；若站上 $320，则看 $322–327。"
   }
  ],
  "levels": {
@@ -20,15 +20,15 @@
    [
     309.4,
     {
-     "en": "May 19 low, still resistance; Oct 23 high $317.8",
-     "zh": "5月19日低点，仍为阻力；10月23日高点 $317.8"
+     "en": "May 19 low, still resistance; Oct 26 high $320",
+     "zh": "5月19日低点，仍为阻力；10月26日高点 $320"
     }
    ],
    [
     324,
     {
-     "en": "Oct 20 low $322.3; September lows ($326–326.4); 5-day average $327.0",
-     "zh": "10月20日低点 $322.3；9月低点（$326–326.4）；5日均线 $327.0"
+     "en": "5-day average $321.7; Oct 20 low $322.3; September lows ($326–326.4)",
+     "zh": "5日均线 $321.7；10月20日低点 $322.3；9月低点（$326–326.4）"
     }
    ],
    [
@@ -41,10 +41,10 @@
   ],
   "s": [
    [
-    304.3,
+    305.4,
     {
-     "en": "Oct 23 low",
-     "zh": "10月23日低点"
+     "en": "Oct 23 and Oct 26 lows ($304.3–306.4)",
+     "zh": "10月23日和10月26日低点（$304.3–306.4）"
     }
    ],
    [

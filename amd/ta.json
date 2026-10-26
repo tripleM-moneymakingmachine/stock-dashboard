@@ -1,64 +1,64 @@
 {
- "asof": "Oct 23, 2026",
- "close": 516.79,
+ "asof": "Oct 26, 2026",
+ "close": 531.28,
  "bias": {
-  "en": "Uptrend under pressure · capped by the 100-day average",
-  "zh": "上升趋势承压 · 受制于 100 日均线"
+  "en": "Uptrend under pressure · back above the 100-day average",
+  "zh": "上升趋势承压 · 重回 100 日均线上方"
  },
  "read": [
   {
-   "en": "AMD rose 1.7% on Oct 23 to $516.79, trading between $508.36 and $523.92. It is below the falling 5-day ($530.1) and 10-day ($551.2) and the rising 30-day ($582.4) and 100-day ($526.6), but above the rising 200-day ($402.1). MACD has been below its signal since Oct 9 and below zero, histogram narrowing slightly; Parabolic SAR has been bearish since Oct 8 ($563.64), and RSI is 39.",
-   "zh": "AMD 10月23日上涨 1.7%，收于 $516.79，盘中区间 $508.36–523.92。股价位于下行的 5 日（$530.1）和 10 日（$551.2）以及上行的 30 日（$582.4）和 100 日均线（$526.6）下方，但高于上行的 200 日均线（$402.1）。MACD 自 10月9日起位于信号线及零轴下方，柱状图略有收窄；抛物线 SAR 自 10月8日起看空（$563.64），RSI 为 39。"
+   "en": "AMD rose 2.8% on Oct 26 to $531.28, trading between $514.01 and $533.50. It is above the falling 5-day ($528.7) and rising 100-day ($526.5) and 200-day ($403.7) averages, and below the falling 10-day ($544.9) and rising 30-day ($583.7). MACD has been below its signal since Oct 9 and is now below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($552.65), and RSI is 43.",
+   "zh": "AMD 10月26日上涨 2.8%，收于 $531.28，盘中区间 $514.01–533.50。股价位于下行的 5 日（$528.7）以及上行的 100 日（$526.5）和 200 日均线（$403.7）上方，低于下行的 10 日（$544.9）和上行的 30 日均线（$583.7）。MACD 自 10月9日起位于信号线下方，现已跌破零轴，柱状图收窄；抛物线 SAR 自 10月8日起看空（$552.65），RSI 为 43。"
   },
   {
-   "en": "The rebound stayed under Wednesday's break: the $523.9 high stopped short of the $526.6–530 zone (100-day, Oct 22 high), still resistance. Resistance is $526.6–530, then $548–551 (Oct 20 high, 10-day) and $563.6 (SAR). Support is $508.4 (Oct 23 low), then $495–502.6 (late-June and early-July lows, Oct 22 low) and $460. A close above $530 would target $548–551; a close below $495 would open $460.",
-   "zh": "反弹未能收复周三破位：$523.9 高点未触及 $526.6–530 区间（100 日均线、10月22日高点），该区间仍为阻力。阻力为 $526.6–530，其次 $548–551（10月20日高点、10 日均线）和 $563.6（SAR）。支撑为 $508.4（10月23日低点），其次 $495–502.6（6 月下旬和 7 月初低点、10月22日低点）和 $460。若收盘站上 $530，下一目标看 $548–551；若收盘跌破 $495，将打开 $460。"
+   "en": "The close reclaimed the $526.5–530 zone (100-day, Oct 22 high). Resistance is $533.5–535.7 (Oct 26 high, Oct 19 low), then $544.9–548.1 (10-day, Oct 20 high) and $552.7–556.8 (SAR, Oct 21 high). Support is $526.5–530, then $514 (Oct 26 low) and $502.6–508.4 (Oct 22 and 23 lows). A close above $535.7 would target $545–553; a close below $526.5 would put $508 back in play.",
+   "zh": "收盘收复 $526.5–530 区间（100 日均线、10月22日高点）。阻力为 $533.5–535.7（10月26日高点、10月19日低点），其次 $544.9–548.1（10 日均线、10月20日高点）和 $552.7–556.8（SAR、10月21日高点）。支撑为 $526.5–530，其次 $514（10月26日低点）和 $502.6–508.4（10月22日和23日低点）。若收盘站上 $535.7，下一目标看 $545–553；若收盘跌破 $526.5，将重新指向 $508。"
   }
  ],
  "levels": {
   "r": [
    [
-    527,
+    535.7,
     {
-     "en": "100-day average ($526.6); Oct 22 high $530.0",
-     "zh": "100日均线（$526.6）；10月22日高点 $530.0"
+     "en": "Oct 19 low; Oct 26 high $533.5",
+     "zh": "10月19日低点；10月26日高点 $533.5"
     }
    ],
    [
-    549,
+    546.5,
     {
-     "en": "Oct 20 high $548.1; 10-day average $551.2",
-     "zh": "10月20日高点 $548.1；10日均线 $551.2"
+     "en": "10-day average $544.9; Oct 20 high $548.1",
+     "zh": "10日均线 $544.9；10月20日高点 $548.1"
     }
    ],
    [
-    563.6,
+    553,
     {
-     "en": "Parabolic SAR",
-     "zh": "抛物线 SAR"
+     "en": "Parabolic SAR $552.65; Oct 21 high $556.8",
+     "zh": "抛物线 SAR $552.65；10月21日高点 $556.8"
     }
    ]
   ],
   "s": [
    [
-    508.4,
+    528,
     {
-     "en": "Oct 23 low",
-     "zh": "10月23日低点"
+     "en": "100-day average $526.5; Oct 22 high $530.0, now support",
+     "zh": "100日均线 $526.5；10月22日高点 $530.0，转为支撑"
     }
    ],
    [
-    497,
+    514,
     {
-     "en": "Late-June and early-July lows ($495–498); Oct 22 low $502.6",
-     "zh": "6月下旬和7月初低点（$495–498）；10月22日低点 $502.6"
+     "en": "Oct 26 low",
+     "zh": "10月26日低点"
     }
    ],
    [
-    460,
+    505.5,
     {
-     "en": "Jul 17 low",
-     "zh": "7月17日低点"
+     "en": "Oct 22 and Oct 23 lows ($502.6–508.4)",
+     "zh": "10月22日和23日低点（$502.6–508.4）"
     }
    ]
   ]

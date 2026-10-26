@@ -1,18 +1,18 @@
 {
- "asof": "Oct 23, 2026",
- "close": 248,
+ "asof": "Oct 26, 2026",
+ "close": 249.09,
  "bias": {
-  "en": "Turning bearish · MACD crossed down, lost $248.6",
-  "zh": "转空 · MACD 下穿，失守 $248.6"
+  "en": "Turning bearish · capped at $250",
+  "zh": "转弱 · 受制于 $250"
  },
  "read": [
   {
-   "en": "Amazon fell 1.0% on Oct 23 to $248.00, trading between $246.45 and $250.01. It is below the rising 5-day ($257.2), 10-day ($256.3) and 30-day ($253.4) averages and the falling 100-day ($251.8), and above the rising 200-day ($243.3). MACD crossed below its signal on Oct 23 but is still above zero; Parabolic SAR has been bearish since Oct 22 ($264.99), and RSI is 43.",
-   "zh": "亚马逊 10月23日下跌 1.0%，收于 $248.00，盘中区间 $246.45–250.01。股价位于上行的 5 日（$257.2）、10 日（$256.3）和 30 日均线（$253.4）以及下行的 100 日均线（$251.8）下方，高于上行的 200 日均线（$243.3）。MACD 于 10月23日下穿信号线，但仍在零轴上方；抛物线 SAR 自 10月22日起看空（$264.99），RSI 为 43。"
+   "en": "Amazon edged up 0.4% on Oct 26 to $249.09, trading between $247.24 and $250.79. It is below the falling 5-day ($254.5), 10-day ($255.2) and 100-day ($251.8) averages and the rising 30-day ($253.3), and above the rising 200-day ($243.3). MACD crossed below its signal on Oct 23 and is now below zero; Parabolic SAR has been bearish since Oct 22 ($264.25), and RSI is 44.",
+   "zh": "亚马逊 10月26日微涨 0.4%，收于 $249.09，盘中区间 $247.24–250.79。股价位于下行的 5 日（$254.5）、10 日（$255.2）和 100 日均线（$251.8）以及上行的 30 日均线（$253.3）下方，高于上行的 200 日均线（$243.3）。MACD 于 10月23日下穿信号线，现已跌破零轴；抛物线 SAR 自 10月22日起看空（$264.25），RSI 为 44。"
   },
   {
-   "en": "The MACD cross confirms Wednesday's turn, and the close slipped under the $248.6 Oct 15–16 lows, now resistance. Resistance is $248.6–250, then $251.8–253.4 (100 and 30-day) and $256–258.4 (5 and 10-day, Oct 22 high). Support is $246.5 (Oct 23 low), then $243.3–244.7 (200-day, September lows). A close above $253.4 would target $258; a close below $243.3 would open the $226 July lows.",
-   "zh": "MACD 下穿确认了周三的转弱，收盘跌破 $248.6（10月15–16日低点），该位置转为阻力。阻力为 $248.6–250，其次 $251.8–253.4（100 日和 30 日均线）和 $256–258.4（5 日和 10 日均线、10月22日高点）。支撑为 $246.5（10月23日低点），其次 $243.3–244.7（200 日均线、9 月低点）。若收盘站上 $253.4，下一目标看 $258；若收盘跌破 $243.3，将打开 $226 的 7 月低点。"
+   "en": "A narrow day: the $250.8 high tested the $248.6–250 resistance and the close stayed just under $249.3, while the low held above Friday's $246.5. Resistance is $249.3–250.8, then $251.8–253.3 (100 and 30-day) and $254.5–255.2 (5 and 10-day). Support is $246.5, then $243.3–244.7 (200-day, September lows). A close above $253.3 would target $255–258; a close below $243.3 would open the $226 July lows.",
+   "zh": "窄幅震荡：盘中高点 $250.8 测试 $248.6–250 阻力，收盘仍略低于 $249.3，低点守住上周五的 $246.5。阻力为 $249.3–250.8，其次 $251.8–253.3（100 日和 30 日均线）和 $254.5–255.2（5 日和 10 日均线）。支撑为 $246.5，其次 $243.3–244.7（200 日均线、9 月低点）。若收盘站上 $253.3，下一目标看 $255–258；若收盘跌破 $243.3，将打开 7 月低点 $226。"
   }
  ],
  "levels": {
@@ -20,22 +20,22 @@
    [
     249.3,
     {
-     "en": "Oct 15 and Oct 16 lows $248.6, now resistance; Oct 23 high $250.0",
-     "zh": "10月15日和10月16日低点 $248.6，转为阻力；10月23日高点 $250.0"
+     "en": "Oct 15 and Oct 16 lows $248.6, now resistance; Oct 26 high $250.8",
+     "zh": "10月15日和16日低点 $248.6，转为阻力；10月26日高点 $250.8"
     }
    ],
    [
     252.6,
     {
-     "en": "100 and 30-day averages ($251.8–253.4)",
-     "zh": "100日和30日均线（$251.8–253.4）"
+     "en": "100 and 30-day averages ($251.8–253.3)",
+     "zh": "100日和30日均线（$251.8–253.3）"
     }
    ],
    [
-    257,
+    255,
     {
-     "en": "5 and 10-day averages ($256.3–257.2); Oct 22 high $258.4",
-     "zh": "5日和10日均线（$256.3–257.2）；10月22日高点 $258.4"
+     "en": "5 and 10-day averages ($254.5–255.2)",
+     "zh": "5日和10日均线（$254.5–255.2）"
     }
    ]
   ],
@@ -43,8 +43,8 @@
    [
     246.5,
     {
-     "en": "Oct 23 low",
-     "zh": "10月23日低点"
+     "en": "Oct 23 low; Oct 26 low $247.2",
+     "zh": "10月23日低点；10月26日低点 $247.2"
     }
    ],
    [

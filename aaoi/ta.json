@@ -1,34 +1,27 @@
 {
- "asof": "Oct 23, 2026",
- "close": 67.51,
+ "asof": "Oct 26, 2026",
+ "close": 71.94,
  "bias": {
-  "en": "Bearish · stalled under the $73 break",
-  "zh": "偏空 · 反弹受阻于 $73 破位处"
+  "en": "Bearish · rebounding into the 5-day average",
+  "zh": "偏空 · 反弹至 5 日均线"
  },
  "read": [
   {
-   "en": "AAOI slipped 0.8% on Oct 23 to $67.51, trading between $67.15 and $71.20, inside Wednesday's range. It is below the falling 5-day ($73.6), 10-day ($81.2), 30-day ($97.7) and 100-day ($119.8) averages and the rising 200-day ($113.1). MACD has been below its signal since Oct 13 and is below zero, histogram flat; Parabolic SAR has been bearish since Oct 12 ($99.06), and RSI is 30.",
-   "zh": "AAOI 10月23日下跌 0.8%，收于 $67.51，盘中区间 $67.15–71.20，处于周三区间之内。股价位于下行的 5 日（$73.6）、10 日（$81.2）、30 日（$97.7）和 100 日均线（$119.8）以及上行的 200 日均线（$113.1）下方。MACD 自 10月13日起位于信号线及零轴下方，柱状图持平；抛物线 SAR 自 10月12日起看空（$99.06），RSI 为 30。"
+   "en": "Applied Optoelectronics jumped 6.6% on Oct 26 to $71.94, trading between $66.51 and $74.39. It is below the falling 5-day ($72.3), 10-day ($78.3), 30-day ($96.9) and 100-day ($118.7) averages and the rising 200-day ($113.3). MACD has been below its signal since Oct 13 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($94.47), and RSI is 35.",
+   "zh": "Applied Optoelectronics 10月26日大涨 6.6%，收于 $71.94，盘中区间 $66.51–74.39。股价位于下行的 5 日（$72.3）、10 日（$78.3）、30 日（$96.9）和 100 日均线（$118.7）以及上行的 200 日均线（$113.3）下方。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$94.47），RSI 为 35。"
   },
   {
-   "en": "The bounce stalled at $71.2, below the $73 level broken on Wednesday, and the low held above $66.3. Resistance is $71.2 (Oct 23 high), then $73–73.6 (Oct 20 low, 5-day) and $76 (Jul 29 low). Support is $65.6–66.3 (Oct 22 low, Feb 27 gap low), then $60. A close above $73.6 would target $76; a close below $65.6 would open $60.",
-   "zh": "反弹止步于 $71.2，未能收复周三跌破的 $73，低点守在 $66.3 上方。阻力为 $71.2（10月23日高点），其次 $73–73.6（10月20日低点、5 日均线）和 $76（7月29日低点）。支撑为 $65.6–66.3（10月22日低点、2月27日缺口低点），其次 $60。若收盘站上 $73.6，下一目标看 $76；若收盘跌破 $65.6，将打开 $60。"
+   "en": "The close cleared $71.2 (Oct 23 high); the $74.4 high poked above the $73 break level but did not hold. Resistance is $72.3–74.4 (5-day, Oct 20 low, Oct 26 high), then $76 (Jul 29 low) and $78.3 (10-day). Support is $71.2, then $65.6–66.5 (Oct 22 and 26 lows, Feb 27 gap low) and $60. A close above $74.4 would target $76–78; below $65.6, $60.",
+   "zh": "收盘站上 $71.2（10月23日高点）；盘中高点 $74.4 一度突破 $73 破位水平，但未能守住。阻力为 $72.3–74.4（5 日均线、10月20日低点、10月26日高点），其次 $76（7月29日低点）和 $78.3（10 日均线）。支撑为 $71.2，其次 $65.6–66.5（10月22日和26日低点、2月27日缺口低点）和 $60。若收盘站上 $74.4，下一目标看 $76–78；跌破 $65.6 则看 $60。"
   }
  ],
  "levels": {
   "r": [
    [
-    71.2,
-    {
-     "en": "Oct 23 high",
-     "zh": "10月23日高点"
-    }
-   ],
-   [
     73.3,
     {
-     "en": "Oct 20 low $73.05; 5-day average $73.6",
-     "zh": "10月20日低点 $73.05；5日均线 $73.6"
+     "en": "5-day average $72.3; Oct 20 low $73.05; Oct 26 high $74.4",
+     "zh": "5日均线 $72.3；10月20日低点 $73.05；10月26日高点 $74.4"
     }
    ],
    [
@@ -37,14 +30,28 @@
      "en": "Jul 29 low",
      "zh": "7月29日低点"
     }
+   ],
+   [
+    78.3,
+    {
+     "en": "10-day average",
+     "zh": "10日均线"
+    }
    ]
   ],
   "s": [
    [
+    71.2,
+    {
+     "en": "Oct 23 high, now support",
+     "zh": "10月23日高点，转为支撑"
+    }
+   ],
+   [
     66,
     {
-     "en": "Oct 22 low $66.3; Feb 27 gap low $65.6",
-     "zh": "10月22日低点 $66.3；2月27日缺口低点 $65.6"
+     "en": "Oct 22 and Oct 26 lows ($66.3–66.5); Feb 27 gap low $65.6",
+     "zh": "10月22日和26日低点（$66.3–66.5）；2月27日缺口低点 $65.6"
     }
    ],
    [
