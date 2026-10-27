@@ -1,45 +1,52 @@
 {
- "asof": "Oct 26, 2026",
- "close": 316.8,
+ "asof": "Oct 27, 2026",
+ "close": 320.58,
  "bias": {
-  "en": "Bearish · broke the January low, RSI under 30",
-  "zh": "偏空 · 跌破 1 月低点，RSI 低于 30"
+  "en": "Bearish · steadying at the January low",
+  "zh": "偏空 · 在 1 月低点企稳"
  },
  "read": [
   {
-   "en": "Alphabet fell 1.1% on Oct 26 to $316.80, closing near the day's low of $316.60 after trading as high as $321.48. It is below the falling 5-day ($327.3), 10-day ($337.2), 30-day ($343.1) and 100-day ($348.1) averages and the rising 200-day ($341.3). MACD has been below its signal since Oct 16 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 16 ($350.09), and RSI is 29.5.",
-   "zh": "Alphabet 10月26日下跌 1.1%，收于 $316.80，盘中最高 $321.48，收在全日低点 $316.60 附近。股价位于下行的 5 日（$327.3）、10 日（$337.2）、30 日（$343.1）和 100 日均线（$348.1）以及上行的 200 日均线（$341.3）下方。MACD 自 10月16日起位于信号线及零轴下方，柱状图扩大；抛物线 SAR 自 10月16日起看空（$350.09），RSI 为 29.5。"
+   "en": "Alphabet rose 1.2% on Oct 27 to $320.58, trading between $316.90 and $323.88, ending a run of five lower closes. It is below the falling 5-day ($323.3), 10-day ($333.9), 30-day ($342.3) and 100-day ($347.6) averages and the rising 200-day ($341.2). MACD has been below its signal since Oct 16 and below zero, histogram narrowing slightly; Parabolic SAR has been bearish since Oct 16 ($346.07), and RSI is 34.",
+   "zh": "Alphabet 10月27日上涨 1.2%，收于 $320.58，盘中区间 $316.90–323.88，结束连续五日收低。股价位于下行的 5 日（$323.3）、10 日（$333.9）、30 日（$342.3）和 100 日均线（$347.6）以及上行的 200 日均线（$341.2）下方。MACD 自 10月16日起位于信号线及零轴下方，柱状图略有收窄；抛物线 SAR 自 10月16日起看空（$346.07），RSI 为 34。"
   },
   {
-   "en": "The close broke $319.4 (Jan 21 low), now resistance, for a fifth straight lower close. Resistance is $319.4–321.5 (Jan 21 low, Oct 26 high), then $322–324.5 (Oct 22 low, Oct 23 high) and $327.3 (5-day). Support is $314.9 (Jul 23 low), then $310.3 (Jan 2 low) and $300. A close below $314.9 would open $310; a close above $321.5 would target $324.5–327.3.",
-   "zh": "收盘跌破 $319.4（1月21日低点），该位置转为阻力，已连续第五个交易日收低。阻力为 $319.4–321.5（1月21日低点、10月26日高点），其次 $322–324.5（10月22日低点、10月23日高点）和 $327.3（5 日均线）。支撑为 $314.9（7月23日低点），其次 $310.3（1月2日低点）和 $300。若收盘跌破 $314.9，将打开 $310；若收盘站上 $321.5，下一目标看 $324.5–327.3。"
+   "en": "The close moved back above $319.4 (Jan 21 low) and the $321.5 Oct 26 high, while the $323.9 high stopped at the 5-day. Resistance is $322–324.5 (5-day, Oct 23 high), then $331.4 (Oct 22 high) and $333.9 (10-day). Support is $316.6–319.4, then $314.9 (Jul 23 low) and $310.3 (Jan 2 low). A close above $324.5 would target $331–334; below $316.6, $310–315.",
+   "zh": "收盘重新站上 $319.4（1月21日低点）和 10月26日高点 $321.5，盘中高点 $323.9 在 5 日均线处受阻。阻力为 $322–324.5（5 日均线、10月23日高点），其次 $331.4（10月22日高点）和 $333.9（10 日均线）。支撑为 $316.6–319.4，其次 $314.9（7月23日低点）和 $310.3（1月2日低点）。若收盘站上 $324.5，下一目标看 $331–334；若跌破 $316.6，则看 $310–315。"
   }
  ],
  "levels": {
   "r": [
    [
-    320.5,
+    323.5,
     {
-     "en": "Jan 21 low $319.4, now resistance; Oct 26 high $321.5",
-     "zh": "1月21日低点 $319.4，转为阻力；10月26日高点 $321.5"
+     "en": "5-day average $323.3; Oct 22 low $322.0; Oct 27 high $323.9; Oct 23 high $324.5",
+     "zh": "5日均线 $323.3；10月22日低点 $322.0；10月27日高点 $323.9；10月23日高点 $324.5"
     }
    ],
    [
-    323.3,
+    331.4,
     {
-     "en": "Oct 22 low $322.0; Oct 23 high $324.5",
-     "zh": "10月22日低点 $322.0；10月23日高点 $324.5"
+     "en": "Oct 22 high",
+     "zh": "10月22日高点"
     }
    ],
    [
-    327.3,
+    333.9,
     {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "10-day average",
+     "zh": "10日均线"
     }
    ]
   ],
   "s": [
+   [
+    318,
+    {
+     "en": "Jan 21 low $319.4, reclaimed; Oct 26 and Oct 27 lows ($316.6–316.9)",
+     "zh": "1月21日低点 $319.4，已收复；10月26日和10月27日低点（$316.6–316.9）"
+    }
+   ],
    [
     314.9,
     {
@@ -52,13 +59,6 @@
     {
      "en": "Jan 2 low",
      "zh": "1月2日低点"
-    }
-   ],
-   [
-    300,
-    {
-     "en": "Round number",
-     "zh": "整数关口"
     }
    ]
   ]

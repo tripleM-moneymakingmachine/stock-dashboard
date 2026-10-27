@@ -1,57 +1,50 @@
 {
- "asof": "Oct 26, 2026",
- "close": 127.74,
+ "asof": "Oct 27, 2026",
+ "close": 126.3,
  "bias": {
-  "en": "Bearish · bounce reaches the 5-day average",
-  "zh": "偏空 · 反弹触及 5 日均线"
+  "en": "Bearish · rejected again at $128.5",
+  "zh": "偏空 · 再度在 $128.5 受阻"
  },
  "read": [
   {
-   "en": "Corning rose 3.3% on Oct 26 to $127.74, trading between $122.77 and $128.56 on 1.6 times average volume. It is below the falling 5-day ($128.5), 10-day ($133.5), 30-day ($148.1) and 100-day ($163.5) averages and the rising 200-day ($154.9). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($141.13), and RSI is 37.",
-   "zh": "康宁 10月26日上涨 3.3%，收于 $127.74，盘中区间 $122.77–128.56，成交量为平均水平的 1.6 倍。股价位于下行的 5 日（$128.5）、10 日（$133.5）、30 日（$148.1）和 100 日均线（$163.5）以及上行的 200 日均线（$154.9）下方。MACD 自 10月12日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$141.13），RSI 为 37。"
+   "en": "Corning fell 1.1% on Oct 27 to $126.30, trading between $121.76 and $128.48 on about twice average volume. It is below the falling 5-day ($127.3), 10-day ($131.3), 30-day ($147.5) and 100-day ($162.7) averages and the rising 200-day ($155.1). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($137.65), and RSI is 36.",
+   "zh": "康宁 10月27日下跌 1.1%，收于 $126.30，盘中区间 $121.76–128.48，成交量约为平均水平的 2 倍。股价位于下行的 5 日（$127.3）、10 日（$131.3）、30 日（$147.5）和 100 日均线（$162.7）以及上行的 200 日均线（$155.1）下方。MACD 自 10月12日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$137.65），RSI 为 36。"
   },
   {
-   "en": "The close reclaimed the $126.7–127.6 resistance (Mar 30 and Oct 20 lows), now support; the $128.56 high stopped at the 5-day. Resistance is $128.5–128.6, then $131.6–133.5 (Oct 16 and 15 lows, 10-day) and $137.4–137.7 (Oct 16 and 19 highs). Support is $126.7–127.6, then $121.8–122.8 and $120 (Mar 9 low). A close above $128.6 would target $131.6–133.5; a close below $126.7 would reopen $122.",
-   "zh": "收盘收复 $126.7–127.6 阻力（3月30日和10月20日低点），该区域转为支撑；$128.56 高点止于 5 日均线。阻力为 $128.5–128.6，其次 $131.6–133.5（10月16日和15日低点、10 日均线）和 $137.4–137.7（10月16日和19日高点）。支撑为 $126.7–127.6，其次 $121.8–122.8 和 $120（3月9日低点）。若收盘站上 $128.6，下一目标看 $131.6–133.5；若收盘跌破 $126.7，将重新打开 $122。"
+   "en": "The $128.5 high stalled again and the close slipped back under $126.7–127.6 (Mar 30 and Oct 20 lows), now resistance. Resistance is $126.7–127.6, then $128.5–128.6 (Oct 26–27 highs) and $131.3–132.8 (10-day, Oct 15–16 lows). Support is $121.8–122.8, then $120 (Mar 9 low) and $114.5 (Jul 28 low). A close below $121.8 would open $114.5–120; above $128.6, $131–133.",
+   "zh": "盘中高点 $128.5 再度受阻，收盘重新跌破 $126.7–127.6（3月30日和10月20日低点），该区间转为阻力。阻力为 $126.7–127.6，其次 $128.5–128.6（10月26–27日高点）和 $131.3–132.8（10 日均线、10月15–16日低点）。支撑为 $121.8–122.8，其次 $120（3月9日低点）和 $114.5（7月28日低点）。若收盘跌破 $121.8，将打开 $114.5–120；若站上 $128.6，则看 $131–133。"
   }
  ],
  "levels": {
   "r": [
    [
+    127.3,
+    {
+     "en": "5-day average; Mar 30 low $126.7 and Oct 20 low $127.6, lost again",
+     "zh": "5日均线；3月30日低点 $126.7 和10月20日低点 $127.6，再度失守"
+    }
+   ],
+   [
     128.5,
     {
-     "en": "5-day average $128.5; Oct 26 high $128.6",
-     "zh": "5日均线 $128.5；10月26日高点 $128.6"
+     "en": "Oct 26 and Oct 27 highs ($128.48–128.58)",
+     "zh": "10月26日和10月27日高点（$128.48–128.58）"
     }
    ],
    [
-    132.6,
+    132,
     {
-     "en": "Oct 16 low $131.6; Oct 15 low $132.75; 10-day average $133.5",
-     "zh": "10月16日低点 $131.6；10月15日低点 $132.75；10日均线 $133.5"
-    }
-   ],
-   [
-    137.5,
-    {
-     "en": "Oct 16 and Oct 19 highs ($137.4–137.7)",
-     "zh": "10月16日和10月19日高点（$137.4–137.7）"
+     "en": "10-day average $131.3; Oct 16 and Oct 15 lows ($131.6–132.75)",
+     "zh": "10日均线 $131.3；10月16日和10月15日低点（$131.6–132.75）"
     }
    ]
   ],
   "s": [
    [
-    127,
+    122.3,
     {
-     "en": "Mar 30 low $126.7; Oct 20 low $127.6, reclaimed",
-     "zh": "3月30日低点 $126.7；10月20日低点 $127.6，已收复"
-    }
-   ],
-   [
-    122.5,
-    {
-     "en": "Oct 22, Oct 23 and Oct 26 lows ($121.8–122.8)",
-     "zh": "10月22日、10月23日和10月26日低点（$121.8–122.8）"
+     "en": "Oct 22, Oct 23, Oct 26 and Oct 27 lows ($121.8–122.8)",
+     "zh": "10月22日、23日、26日和27日低点（$121.8–122.8）"
     }
    ],
    [
@@ -59,6 +52,13 @@
     {
      "en": "Mar 9 low",
      "zh": "3月9日低点"
+    }
+   ],
+   [
+    114.5,
+    {
+     "en": "Jul 28 low",
+     "zh": "7月28日低点"
     }
    ]
   ]

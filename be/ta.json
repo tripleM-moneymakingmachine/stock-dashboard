@@ -1,50 +1,57 @@
 {
- "asof": "Oct 26, 2026",
- "close": 203.92,
+ "asof": "Oct 27, 2026",
+ "close": 218.5,
  "bias": {
-  "en": "Bearish · reclaimed $197.5, capped at $211",
-  "zh": "偏空 · 收复 $197.5，受阻于 $211"
+  "en": "Bearish · rebound tests the 10 and 200-day",
+  "zh": "偏空 · 反弹测试 10 日和 200 日均线"
  },
  "read": [
   {
-   "en": "Bloom Energy rose 5.5% on Oct 26 to $203.92, trading between $192.15 and $210.86 on 1.4 times average volume. It is below the falling 5-day ($215.2), 10-day ($226.3), 30-day ($260.2) and 100-day ($247.5) averages and the rising 200-day ($219.7). MACD has been below its signal since Oct 8 and below zero, histogram narrowing slightly; Parabolic SAR has been bearish since Oct 8 ($241.14), and RSI is 37.",
-   "zh": "Bloom Energy 10月26日上涨 5.5%，收于 $203.92，盘中区间 $192.15–210.86，成交量为平均水平的 1.4 倍。股价位于下行的 5 日（$215.2）、10 日（$226.3）、30 日（$260.2）和 100 日均线（$247.5）以及上行的 200 日均线（$219.7）下方。MACD 自 10月8日起位于信号线及零轴下方，柱状图略有收窄；抛物线 SAR 自 10月8日起看空（$241.14），RSI 为 37。"
+   "en": "Bloom Energy rose 7.1% on Oct 27 to $218.50, trading between $211.29 and $224.16. It is above the falling 5-day ($214.4) and just below the rising 200-day ($220.1) and falling 10-day ($221.8), with the falling 30-day ($258.8) and 100-day ($246.8) higher still. MACD has been below its signal since Oct 8 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($232.80), and RSI is 42.",
+   "zh": "Bloom Energy 10月27日上涨 7.1%，收于 $218.50，盘中区间 $211.29–224.16。股价位于下行的 5 日均线（$214.4）上方，略低于上行的 200 日均线（$220.1）和下行的 10 日均线（$221.8），下行的 30 日（$258.8）和 100 日均线（$246.8）更高。MACD 自 10月8日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月8日起看空（$232.80），RSI 为 42。"
   },
   {
-   "en": "The close reclaimed $197.5 (Sep 1 low), now support again, while the $210.9 high stalled at the $210.7–213.1 resistance (Oct 22 and 20 lows). Resistance is $210.7–213.1, then $215.2 (5-day) and $219.7 (200-day). Support is $197.5, then $189–192.2 (Oct 23 and 26 lows) and $185.9 (Aug 24 low). A close above $213.1 would target $219.7; a close below $197.5 would reopen $186–189.",
-   "zh": "收盘收复 $197.5（9月1日低点），该位置重新成为支撑；$210.9 高点受阻于 $210.7–213.1 阻力（10月22日和20日低点）。阻力为 $210.7–213.1，其次 $215.2（5 日均线）和 $219.7（200 日均线）。支撑为 $197.5，其次 $189–192.2（10月23日和26日低点）和 $185.9（8月24日低点）。若收盘站上 $213.1，下一目标看 $219.7；若收盘跌破 $197.5，将重新打开 $186–189。"
+   "en": "The close cleared $210.7–213.1 (Oct 22 and 20 lows) and the 5-day, now support; the $224.2 high faded below the close at the 200 and 10-day. Resistance is $220.1–221.8, then $224.2 (Oct 27 high) and $232.8 (SAR). Support is $211.3–214.4 (Oct 27 low, 5-day), then $197.5 (Sep 1 low) and $189–192.2. A close above $221.8 would target $224–233; below $211, $197.5.",
+   "zh": "收盘突破 $210.7–213.1（10月22日和20日低点）及 5 日均线，二者转为支撑；盘中高点 $224.2 回落，收于 200 日和 10 日均线下方。阻力为 $220.1–221.8，其次 $224.2（10月27日高点）和 $232.8（SAR）。支撑为 $211.3–214.4（10月27日低点、5 日均线），其次 $197.5（9月1日低点）和 $189–192.2。若收盘站上 $221.8，下一目标看 $224–233；若跌破 $211，则看 $197.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    211.5,
+    221,
     {
-     "en": "Oct 26 high $210.9; Oct 22 and Oct 20 lows ($210.7–213.1)",
-     "zh": "10月26日高点 $210.9；10月22日和10月20日低点（$210.7–213.1）"
+     "en": "200-day average $220.1; 10-day average $221.8",
+     "zh": "200日均线 $220.1；10日均线 $221.8"
     }
    ],
    [
-    215.2,
+    224.2,
     {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "Oct 27 high",
+     "zh": "10月27日高点"
     }
    ],
    [
-    219.7,
+    232.8,
     {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "Parabolic SAR; Oct 16 high $233.6",
+     "zh": "抛物线 SAR；10月16日高点 $233.6"
     }
    ]
   ],
   "s": [
    [
+    212.5,
+    {
+     "en": "5-day average $214.4; Oct 27 low $211.3; Oct 20 and Oct 22 lows ($210.7–213.1), cleared",
+     "zh": "5日均线 $214.4；10月27日低点 $211.3；10月20日和10月22日低点（$210.7–213.1），已突破"
+    }
+   ],
+   [
     197.5,
     {
-     "en": "Sep 1 low, reclaimed",
-     "zh": "9月1日低点，已收复"
+     "en": "Sep 1 low",
+     "zh": "9月1日低点"
     }
    ],
    [
@@ -52,13 +59,6 @@
     {
      "en": "Oct 26 low $192.2; Oct 23 low $189.0",
      "zh": "10月26日低点 $192.2；10月23日低点 $189.0"
-    }
-   ],
-   [
-    185.9,
-    {
-     "en": "Aug 24 low",
-     "zh": "8月24日低点"
     }
    ]
   ]

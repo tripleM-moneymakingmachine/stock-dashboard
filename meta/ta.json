@@ -1,52 +1,45 @@
 {
- "asof": "Oct 26, 2026",
- "close": 630.56,
+ "asof": "Oct 27, 2026",
+ "close": 620.19,
  "bias": {
-  "en": "Turning bearish · closed below the 100 and 200-day",
-  "zh": "转弱 · 收于 100 日和 200 日均线下方"
+  "en": "Bearish · broke the Oct 26 low under the 100 and 200-day",
+  "zh": "偏空 · 在 100 日和 200 日均线下方跌破 10月26日低点"
  },
  "read": [
   {
-   "en": "Meta fell 1.9% on Oct 26 to $630.56, trading between $627.82 and $647.69 on 1.6 times average volume. It is below the falling 5-day ($662.8) and 10-day ($696.5), the rising 30-day ($714.2), and just below the rising 100-day ($630.9) and 200-day ($632.5). MACD has been below its signal since Oct 2 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 16 ($736.07), and RSI is 34.",
-   "zh": "Meta 10月26日下跌 1.9%，收于 $630.56，盘中区间 $627.82–647.69，成交量为平均水平的 1.6 倍。股价位于下行的 5 日（$662.8）和 10 日（$696.5）及上行的 30 日均线（$714.2）下方，并略低于上行的 100 日（$630.9）和 200 日均线（$632.5）。MACD 自 10月2日起位于信号线及零轴下方，柱状图扩大；抛物线 SAR 自 10月16日起看空（$736.07），RSI 为 34。"
+   "en": "Meta fell 1.6% on Oct 27 to $620.19, trading between $619.22 and $628.46 on 2.6 times average volume. It is below the falling 5-day ($648.0), 10-day ($682.3) and 30-day ($712.5), the rising 100-day ($630.8) and the falling 200-day ($632.3). MACD has been below its signal since Oct 2 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 16 ($723.08), and RSI is 32.",
+   "zh": "Meta 10月27日下跌 1.6%，收于 $620.19，盘中区间 $619.22–628.46，成交量为平均水平的 2.6 倍。股价位于下行的 5 日（$648.0）、10 日（$682.3）和 30 日均线（$712.5）、上行的 100 日均线（$630.8）以及下行的 200 日均线（$632.3）下方。MACD 自 10月2日起位于信号线及零轴下方，柱状图扩大；抛物线 SAR 自 10月16日起看空（$723.08），RSI 为 32。"
   },
   {
-   "en": "The close broke $633–639.7 support and slipped under the 100 and 200-day, now resistance. Resistance is $630.9–639.7 (100 and 200-day, Oct 22 low), then $647.7–648 (Oct 23 and 26 highs) and $662.8 (5-day). Support is $627.8 (Oct 26 low), then $612.4 (Aug 11 high) and $600 (Jan 20 low). A close below $627.8 would open $600–612; a close back above $639.7 would target $648.",
-   "zh": "收盘跌破 $633–639.7 支撑，并滑落至 100 日和 200 日均线下方，这些位置转为阻力。阻力为 $630.9–639.7（100 日和 200 日均线、10月22日低点），其次 $647.7–648（10月23日和26日高点）和 $662.8（5 日均线）。支撑为 $627.8（10月26日低点），其次 $612.4（8月11日高点）和 $600（1月20日低点）。若收盘跌破 $627.8，将打开 $600–612；若收盘重新站上 $639.7，下一目标看 $648。"
+   "en": "The close broke $627.8 (Oct 26 low), now resistance. Resistance is $627.8–632.3 (Oct 26 low, 100 and 200-day), then $639.7 (Oct 22 low) and $648 (5-day, Oct 23 and 26 highs). Support is $612.4 (Aug 11 high), then $600 (Jan 20 low) and $577.1 (Jul 9 low). A close below $612.4 would open $600; above $632.3, $640–648.",
+   "zh": "收盘跌破 $627.8（10月26日低点），该位转为阻力。阻力为 $627.8–632.3（10月26日低点、100 日和 200 日均线），其次 $639.7（10月22日低点）和 $648（5 日均线、10月23日和26日高点）。支撑为 $612.4（8月11日高点），其次 $600（1月20日低点）和 $577.1（7月9日低点）。若收盘跌破 $612.4，将打开 $600；若重新站上 $632.3，则看 $640–648。"
   }
  ],
  "levels": {
   "r": [
    [
-    635,
+    630,
     {
-     "en": "100 and 200-day averages ($630.9–632.5); Oct 22 low $639.7, now resistance",
-     "zh": "100日和200日均线（$630.9–632.5）；10月22日低点 $639.7，转为阻力"
+     "en": "100 and 200-day averages ($630.8–632.3); Oct 26 low $627.8, now resistance",
+     "zh": "100日和200日均线（$630.8–632.3）；10月26日低点 $627.8，已转为阻力"
+    }
+   ],
+   [
+    639.7,
+    {
+     "en": "Oct 22 low",
+     "zh": "10月22日低点"
     }
    ],
    [
     648,
     {
-     "en": "Oct 23 and Oct 26 highs ($647.7–648.0)",
-     "zh": "10月23日和10月26日高点（$647.7–648.0）"
-    }
-   ],
-   [
-    662.8,
-    {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "5-day average $648.0; Oct 23 and Oct 26 highs ($647.7–648.0)",
+     "zh": "5日均线 $648.0；10月23日和10月26日高点（$647.7–648.0）"
     }
    ]
   ],
   "s": [
-   [
-    627.8,
-    {
-     "en": "Oct 26 low",
-     "zh": "10月26日低点"
-    }
-   ],
    [
     612.4,
     {
@@ -59,6 +52,13 @@
     {
      "en": "Jan 20 low",
      "zh": "1月20日低点"
+    }
+   ],
+   [
+    577.1,
+    {
+     "en": "Jul 9 low",
+     "zh": "7月9日低点"
     }
    ]
   ]

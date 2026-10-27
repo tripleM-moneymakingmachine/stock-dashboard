@@ -1,64 +1,64 @@
 {
- "asof": "Oct 26, 2026",
- "close": 531.28,
+ "asof": "Oct 27, 2026",
+ "close": 560.26,
  "bias": {
-  "en": "Uptrend under pressure · back above the 100-day average",
-  "zh": "上升趋势承压 · 重回 100 日均线上方"
+  "en": "Uptrend under pressure · SAR turned bullish, 30-day next",
+  "zh": "承压上升趋势 · SAR 转为看多，下一关口 30 日均线"
  },
  "read": [
   {
-   "en": "AMD rose 2.8% on Oct 26 to $531.28, trading between $514.01 and $533.50. It is above the falling 5-day ($528.7) and rising 100-day ($526.5) and 200-day ($403.7) averages, and below the falling 10-day ($544.9) and rising 30-day ($583.7). MACD has been below its signal since Oct 9 and is now below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($552.65), and RSI is 43.",
-   "zh": "AMD 10月26日上涨 2.8%，收于 $531.28，盘中区间 $514.01–533.50。股价位于下行的 5 日（$528.7）以及上行的 100 日（$526.5）和 200 日均线（$403.7）上方，低于下行的 10 日（$544.9）和上行的 30 日均线（$583.7）。MACD 自 10月9日起位于信号线下方，现已跌破零轴，柱状图收窄；抛物线 SAR 自 10月8日起看空（$552.65），RSI 为 43。"
+   "en": "AMD rose 5.5% on Oct 27 to $560.26, trading between $538.50 and $563.91. It is above the falling 5-day ($533.8) and 10-day ($540.4) and the rising 100-day ($526.9) and 200-day ($405.5), and below the rising 30-day ($585.6). MACD has been below its signal since Oct 9 and below zero, histogram narrowing; Parabolic SAR flipped bullish on Oct 27 ($502.60), and RSI is 50.",
+   "zh": "AMD 10月27日上涨 5.5%，收于 $560.26，盘中区间 $538.50–563.91。股价位于下行的 5 日（$533.8）和 10 日均线（$540.4）以及上行的 100 日（$526.9）和 200 日均线（$405.5）上方，低于上行的 30 日均线（$585.6）。MACD 自 10月9日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 于 10月27日转为看多（$502.60），RSI 为 50。"
   },
   {
-   "en": "The close reclaimed the $526.5–530 zone (100-day, Oct 22 high). Resistance is $533.5–535.7 (Oct 26 high, Oct 19 low), then $544.9–548.1 (10-day, Oct 20 high) and $552.7–556.8 (SAR, Oct 21 high). Support is $526.5–530, then $514 (Oct 26 low) and $502.6–508.4 (Oct 22 and 23 lows). A close above $535.7 would target $545–553; a close below $526.5 would put $508 back in play.",
-   "zh": "收盘收复 $526.5–530 区间（100 日均线、10月22日高点）。阻力为 $533.5–535.7（10月26日高点、10月19日低点），其次 $544.9–548.1（10 日均线、10月20日高点）和 $552.7–556.8（SAR、10月21日高点）。支撑为 $526.5–530，其次 $514（10月26日低点）和 $502.6–508.4（10月22日和23日低点）。若收盘站上 $535.7，下一目标看 $545–553；若收盘跌破 $526.5，将重新指向 $508。"
+   "en": "The close cleared $535.7, $546.5 and $553–556.8 (Oct 21 close and high), now support. Resistance is $563.9–568.6 (Oct 27 and Oct 15 highs), then $585.6 (30-day) and $591.9 (Oct 14 high). Support is $552.7–556.8, then $538.5–540.4 (Oct 27 low, 10-day) and $526.9–533.8 (100 and 5-day). A close above $568.6 would target $585.6; below $538.5, $527–534.",
+   "zh": "收盘突破 $535.7、$546.5 和 $553–556.8（10月21日收盘价和高点），这些位置转为支撑。阻力为 $563.9–568.6（10月27日和10月15日高点），其次 $585.6（30 日均线）和 $591.9（10月14日高点）。支撑为 $552.7–556.8，其次 $538.5–540.4（10月27日低点、10 日均线）和 $526.9–533.8（100 日和 5 日均线）。若收盘站上 $568.6，下一目标看 $585.6；若跌破 $538.5，则看 $527–534。"
   }
  ],
  "levels": {
   "r": [
    [
-    535.7,
+    566,
     {
-     "en": "Oct 19 low; Oct 26 high $533.5",
-     "zh": "10月19日低点；10月26日高点 $533.5"
+     "en": "Oct 27 high $563.9; Oct 15 high $568.6",
+     "zh": "10月27日高点 $563.9；10月15日高点 $568.6"
     }
    ],
    [
-    546.5,
+    585.6,
     {
-     "en": "10-day average $544.9; Oct 20 high $548.1",
-     "zh": "10日均线 $544.9；10月20日高点 $548.1"
+     "en": "30-day average",
+     "zh": "30日均线"
     }
    ],
    [
-    553,
+    591.9,
     {
-     "en": "Parabolic SAR $552.65; Oct 21 high $556.8",
-     "zh": "抛物线 SAR $552.65；10月21日高点 $556.8"
+     "en": "Oct 14 high",
+     "zh": "10月14日高点"
     }
    ]
   ],
   "s": [
    [
-    528,
+    554,
     {
-     "en": "100-day average $526.5; Oct 22 high $530.0, now support",
-     "zh": "100日均线 $526.5；10月22日高点 $530.0，转为支撑"
+     "en": "Oct 21 close $552.7 and high $556.8, now support",
+     "zh": "10月21日收盘价 $552.7 和高点 $556.8，转为支撑"
     }
    ],
    [
-    514,
+    540,
     {
-     "en": "Oct 26 low",
-     "zh": "10月26日低点"
+     "en": "10-day average $540.4; Oct 27 low $538.5",
+     "zh": "10日均线 $540.4；10月27日低点 $538.5"
     }
    ],
    [
-    505.5,
+    530,
     {
-     "en": "Oct 22 and Oct 23 lows ($502.6–508.4)",
-     "zh": "10月22日和23日低点（$502.6–508.4）"
+     "en": "5-day average $533.8; 100-day average $526.9",
+     "zh": "5日均线 $533.8；100日均线 $526.9"
     }
    ]
   ]

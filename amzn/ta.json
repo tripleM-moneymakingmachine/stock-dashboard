@@ -1,50 +1,57 @@
 {
- "asof": "Oct 26, 2026",
- "close": 249.09,
+ "asof": "Oct 27, 2026",
+ "close": 253.1,
  "bias": {
-  "en": "Turning bearish · capped at $250",
-  "zh": "转弱 · 受制于 $250"
+  "en": "Turning bearish · back above $250, capped at the 10 and 30-day",
+  "zh": "转弱 · 重回 $250 上方，受制于 10 日和 30 日均线"
  },
  "read": [
   {
-   "en": "Amazon edged up 0.4% on Oct 26 to $249.09, trading between $247.24 and $250.79. It is below the falling 5-day ($254.5), 10-day ($255.2) and 100-day ($251.8) averages and the rising 30-day ($253.3), and above the rising 200-day ($243.3). MACD crossed below its signal on Oct 23 and is now below zero; Parabolic SAR has been bearish since Oct 22 ($264.25), and RSI is 44.",
-   "zh": "亚马逊 10月26日微涨 0.4%，收于 $249.09，盘中区间 $247.24–250.79。股价位于下行的 5 日（$254.5）、10 日（$255.2）和 100 日均线（$251.8）以及上行的 30 日均线（$253.3）下方，高于上行的 200 日均线（$243.3）。MACD 于 10月23日下穿信号线，现已跌破零轴；抛物线 SAR 自 10月22日起看空（$264.25），RSI 为 44。"
+   "en": "Amazon rose 1.6% on Oct 27 to $253.10, trading between $248.71 and $254.67. It is above the falling 5-day ($252.6) and 100-day ($251.8) and the rising 200-day ($243.3), and just below the falling 30-day ($253.5) and 10-day ($254.7). MACD crossed below its signal on Oct 23 and is below zero; Parabolic SAR has been bearish since Oct 22 ($263.54), and RSI is 49.",
+   "zh": "亚马逊 10月27日上涨 1.6%，收于 $253.10，盘中区间 $248.71–254.67。股价位于下行的 5 日（$252.6）和 100 日均线（$251.8）以及上行的 200 日均线（$243.3）上方，略低于下行的 30 日（$253.5）和 10 日均线（$254.7）。MACD 于 10月23日下穿信号线，位于零轴下方；抛物线 SAR 自 10月22日起看空（$263.54），RSI 为 49。"
   },
   {
-   "en": "A narrow day: the $250.8 high tested the $248.6–250 resistance and the close stayed just under $249.3, while the low held above Friday's $246.5. Resistance is $249.3–250.8, then $251.8–253.3 (100 and 30-day) and $254.5–255.2 (5 and 10-day). Support is $246.5, then $243.3–244.7 (200-day, September lows). A close above $253.3 would target $255–258; a close below $243.3 would open the $226 July lows.",
-   "zh": "窄幅震荡：盘中高点 $250.8 测试 $248.6–250 阻力，收盘仍略低于 $249.3，低点守住上周五的 $246.5。阻力为 $249.3–250.8，其次 $251.8–253.3（100 日和 30 日均线）和 $254.5–255.2（5 日和 10 日均线）。支撑为 $246.5，其次 $243.3–244.7（200 日均线、9 月低点）。若收盘站上 $253.3，下一目标看 $255–258；若收盘跌破 $243.3，将打开 7 月低点 $226。"
+   "en": "The close cleared the $249.3–250.8 cap and the 100-day, now support, but the $254.7 high stopped at the 10-day. Resistance is $253.5–254.7 (30 and 10-day), then $255.6 (Oct 15–16 highs) and $262.5–263.5 (Oct 19–21 closes, SAR). Support is $250.8–251.8, then $246.5–248.7 (Oct 23 and 27 lows) and $243.3–244.7 (200-day, September lows). A close above $255.6 would target $262–265; below $248.7, $244.",
+   "zh": "收盘突破 $249.3–250.8 上限和 100 日均线，二者转为支撑，但盘中高点 $254.7 在 10 日均线处受阻。阻力为 $253.5–254.7（30 日和 10 日均线），其次 $255.6（10月15–16日高点）和 $262.5–263.5（10月19–21日收盘价、SAR）。支撑为 $250.8–251.8，其次 $246.5–248.7（10月23日和27日低点）和 $243.3–244.7（200 日均线、9 月低点）。若收盘站上 $255.6，下一目标看 $262–265；若跌破 $248.7，则看 $244。"
   }
  ],
  "levels": {
   "r": [
    [
-    249.3,
+    254.5,
     {
-     "en": "Oct 15 and Oct 16 lows $248.6, now resistance; Oct 26 high $250.8",
-     "zh": "10月15日和16日低点 $248.6，转为阻力；10月26日高点 $250.8"
+     "en": "30 and 10-day averages ($253.5–254.7); Oct 27 high $254.67",
+     "zh": "30日和10日均线（$253.5–254.7）；10月27日高点 $254.67"
     }
    ],
    [
-    252.6,
+    255.6,
     {
-     "en": "100 and 30-day averages ($251.8–253.3)",
-     "zh": "100日和30日均线（$251.8–253.3）"
+     "en": "Oct 15 and Oct 16 highs ($255.5–255.6)",
+     "zh": "10月15日和10月16日高点（$255.5–255.6）"
     }
    ],
    [
-    255,
+    263.5,
     {
-     "en": "5 and 10-day averages ($254.5–255.2)",
-     "zh": "5日和10日均线（$254.5–255.2）"
+     "en": "Parabolic SAR; Oct 19–21 closes ($262.4–262.6)",
+     "zh": "抛物线 SAR；10月19–21日收盘价（$262.4–262.6）"
     }
    ]
   ],
   "s": [
    [
-    246.5,
+    251.3,
     {
-     "en": "Oct 23 low; Oct 26 low $247.2",
-     "zh": "10月23日低点；10月26日低点 $247.2"
+     "en": "100-day average $251.8; Oct 26 high $250.8, now support",
+     "zh": "100日均线 $251.8；10月26日高点 $250.8，转为支撑"
+    }
+   ],
+   [
+    247.5,
+    {
+     "en": "Oct 23 low $246.5; Oct 27 low $248.7",
+     "zh": "10月23日低点 $246.5；10月27日低点 $248.7"
     }
    ],
    [
@@ -52,13 +59,6 @@
     {
      "en": "Sep 16 and Sep 28 lows ($244.3–244.7); 200-day average $243.3",
      "zh": "9月16日和9月28日低点（$244.3–244.7）；200日均线 $243.3"
-    }
-   ],
-   [
-    226,
-    {
-     "en": "Jun 25 and Jul 29 lows ($225.6–226.2)",
-     "zh": "6月25日和7月29日低点（$225.6–226.2）"
     }
    ]
   ]

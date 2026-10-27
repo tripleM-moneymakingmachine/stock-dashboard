@@ -1,34 +1,27 @@
 {
- "asof": "Oct 26, 2026",
- "close": 90.47,
+ "asof": "Oct 27, 2026",
+ "close": 93.74,
  "bias": {
-  "en": "Bearish · rebound stalls at the 10-day average",
-  "zh": "偏空 · 反弹受阻于 10 日均线"
+  "en": "Bearish, improving · SAR turns bullish, above the 10-day",
+  "zh": "偏空但改善 · SAR 转多，站上 10 日均线"
  },
  "read": [
   {
-   "en": "Intel rose 4.0% on Oct 26 to $90.47, trading between $86.46 and $92.09. It is above the falling 5-day ($89.5) and rising 200-day ($86.1) averages, and below the falling 10-day ($92.6), 30-day ($106.9) and 100-day ($105.6). MACD has been below its signal since Oct 5 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 5 ($92.72), and RSI is 38.",
-   "zh": "英特尔 10月26日上涨 4.0%，收于 $90.47，盘中区间 $86.46–92.09。股价位于下行的 5 日（$89.5）和上行的 200 日均线（$86.1）上方，低于下行的 10 日（$92.6）、30 日（$106.9）和 100 日均线（$105.6）。MACD 自 10月5日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月5日起看空（$92.72），RSI 为 38。"
+   "en": "Intel rose 3.6% on Oct 27 to $93.74, trading between $91.86 and $94.98. It is above the falling 5-day ($89.9) and 10-day ($91.7) and the rising 200-day ($86.3), and below the falling 30-day ($106.8) and 100-day ($105.5). MACD has been below its signal since Oct 5 and below zero, histogram narrowing toward a cross; Parabolic SAR flipped bullish on Oct 27 ($84.65), and RSI is 43.",
+   "zh": "英特尔 10月27日上涨 3.6%，收于 $93.74，盘中区间 $91.86–94.98。股价位于下行的 5 日（$89.9）和 10 日均线（$91.7）以及上行的 200 日均线（$86.3）上方，低于下行的 30 日（$106.8）和 100 日均线（$105.5）。MACD 自 10月5日起位于信号线及零轴下方，柱状图收窄、接近交叉；抛物线 SAR 于 10月27日转为看多（$84.65），RSI 为 43。"
   },
   {
-   "en": "The close cleared $87.9 and the $88.8–89.8 resistance (Oct 20 low, 5-day), now support, while the $92.1 high stopped under the 10-day and SAR ($92.6–92.7). Resistance is $92.1–92.7, then $94.4–95.4 (Oct 21 and 19 highs) and $97.7–98.2 (Oct 13–14 lows). Support is $88.8–89.5, then $86.1 (200-day) and $84.6–85.1. A close above $92.7 would target $95.4; a close below $88.8 would reopen $86.",
-   "zh": "收盘突破 $87.9 及 $88.8–89.8 阻力（10月20日低点、5 日均线），该区域转为支撑；$92.1 高点受阻于 10 日均线和 SAR（$92.6–92.7）下方。阻力为 $92.1–92.7，其次 $94.4–95.4（10月21日和19日高点）和 $97.7–98.2（10月13–14日低点）。支撑为 $88.8–89.5，其次 $86.1（200 日均线）和 $84.6–85.1。若收盘站上 $92.7，下一目标看 $95.4；若收盘跌破 $88.8，将重新打开 $86。"
+   "en": "The close cleared $92.1–92.7 (Oct 26 high, 10-day, old SAR), now support, and the high passed $94.4 (Oct 21 high) before stopping under $95.4. Resistance is $95–95.4 (Oct 27 and 19 highs), then $97.7–98.2 (Oct 13–14 lows) and $101.3 (Oct 14 high). Support is $91.7–92.1, then $88.8–89.9 (Oct 20 low, 5-day) and $86.3 (200-day). A close above $95.4 would target $98; below $91.7, $89.",
+   "zh": "收盘突破 $92.1–92.7（10月26日高点、10 日均线、原 SAR），该区间转为支撑；盘中高点越过 $94.4（10月21日高点），止步于 $95.4 下方。阻力为 $95–95.4（10月27日和19日高点），其次 $97.7–98.2（10月13–14日低点）和 $101.3（10月14日高点）。支撑为 $91.7–92.1，其次 $88.8–89.9（10月20日低点、5 日均线）和 $86.3（200 日均线）。若收盘站上 $95.4，下一目标看 $98；若跌破 $91.7，则看 $89。"
   }
  ],
  "levels": {
   "r": [
    [
-    92.4,
+    95.2,
     {
-     "en": "10-day average $92.6; Parabolic SAR $92.7; Oct 26 high $92.1",
-     "zh": "10日均线 $92.6；抛物线 SAR $92.7；10月26日高点 $92.1"
-    }
-   ],
-   [
-    95.4,
-    {
-     "en": "Oct 19 high; Oct 21 high $94.4",
-     "zh": "10月19日高点；10月21日高点 $94.4"
+     "en": "Oct 27 high $95.0; Oct 19 high $95.4",
+     "zh": "10月27日高点 $95.0；10月19日高点 $95.4"
     }
    ],
    [
@@ -37,28 +30,35 @@
      "en": "Oct 13 and Oct 14 lows ($97.7–98.2)",
      "zh": "10月13日和10月14日低点（$97.7–98.2）"
     }
+   ],
+   [
+    101.3,
+    {
+     "en": "Oct 14 high",
+     "zh": "10月14日高点"
+    }
    ]
   ],
   "s": [
    [
-    89.2,
+    91.9,
     {
-     "en": "5-day average $89.5; Oct 20 low $88.8",
-     "zh": "5日均线 $89.5；10月20日低点 $88.8"
+     "en": "10-day average $91.7; Oct 27 low $91.9; Oct 26 high $92.1, cleared",
+     "zh": "10日均线 $91.7；10月27日低点 $91.9；10月26日高点 $92.1，已突破"
     }
    ],
    [
-    86.1,
+    89.4,
+    {
+     "en": "5-day average $89.9; Oct 20 low $88.8",
+     "zh": "5日均线 $89.9；10月20日低点 $88.8"
+    }
+   ],
+   [
+    86.3,
     {
      "en": "200-day average",
      "zh": "200日均线"
-    }
-   ],
-   [
-    85,
-    {
-     "en": "Aug 24 low $85.1; Oct 22 low $84.6",
-     "zh": "8月24日低点 $85.1；10月22日低点 $84.6"
     }
    ]
   ]

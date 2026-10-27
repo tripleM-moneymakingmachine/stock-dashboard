@@ -1,27 +1,27 @@
 {
- "asof": "Oct 26, 2026",
- "close": 198.84,
+ "asof": "Oct 27, 2026",
+ "close": 198.73,
  "bias": {
-  "en": "Uptrend · back above the 10-day average",
-  "zh": "上升趋势 · 重回 10 日均线上方"
+  "en": "Uptrend · capped at $200–202",
+  "zh": "上升趋势 · 受制于 $200–202"
  },
  "read": [
   {
-   "en": "Palantir rose 1.1% on Oct 26 to $198.84, trading between $192.91 and $200.05. It is above the falling 5-day ($197.2) and 10-day ($197.6) averages and the rising 30-day ($191.7), 100-day ($160.1) and 200-day ($153.3). MACD has been below its signal since Oct 16 but is above zero, with the histogram narrowing; Parabolic SAR has been bearish since Oct 15 ($206.43), and RSI is 56.",
-   "zh": "Palantir 10月26日上涨 1.1%，收于 $198.84，盘中区间 $192.91–200.05。股价位于下行的 5 日（$197.2）和 10 日均线（$197.6）以及上行的 30 日（$191.7）、100 日（$160.1）和 200 日均线（$153.3）上方。MACD 自 10月16日起位于信号线下方，但仍在零轴上方，柱状图收窄；抛物线 SAR 自 10月15日起看空（$206.43），RSI 为 56。"
+   "en": "Palantir slipped 0.1% on Oct 27 to $198.73, trading between $196.79 and $201.83. It is level with the rising 5-day ($198.5) and above the falling 10-day ($196.7) and the rising 30-day ($192.6), 100-day ($160.7) and 200-day ($153.4) averages. MACD has been below its signal since Oct 16 but is above zero, with the histogram narrowing; Parabolic SAR has been bearish since Oct 15 ($205.55), and RSI is 56.",
+   "zh": "Palantir 10月27日小跌 0.1%，收于 $198.73，盘中区间 $196.79–201.83。股价与上行的 5 日均线（$198.5）持平，位于下行的 10 日均线（$196.7）以及上行的 30 日（$192.6）、100 日（$160.7）和 200 日均线（$153.4）上方。MACD 自 10月16日起位于信号线下方，但仍在零轴上方，柱状图收窄；抛物线 SAR 自 10月15日起看空（$205.55），RSI 为 56。"
   },
   {
-   "en": "The close cleared the 10-day average, the $198.7 resistance, after a dip to $192.9; $200 capped the high. Resistance is $200–200.1, then $202.6–203.6 (Oct 16, 21 and 22 highs) and $206.4 (SAR). Support is $197.2–197.6 (5 and 10-day), then $189.4–191.7 (30-day, Oct 20, 21 and 23 lows) and $184.5. A close above $203.6 would open $206–213; a close below $189.4 would open $184.5.",
-   "zh": "盘中下探 $192.9 后，收盘站上 10 日均线（$198.7 阻力）；$200 压住盘中高点。阻力为 $200–200.1，其次 $202.6–203.6（10月16日、21日和22日高点）和 $206.4（SAR）。支撑为 $197.2–197.6（5 日和 10 日均线），其次 $189.4–191.7（30 日均线、10月20日、21日和23日低点）和 $184.5。若收盘站上 $203.6，将打开 $206–213；若收盘跌破 $189.4，将打开 $184.5。"
+   "en": "The $201.8 high pushed through $200 but the close slipped back below it; no level changed. Resistance is $200–201.8, then $202.6–203.6 and $205.6 (SAR). Support is $196.7–198.5 (5 and 10-day, Oct 27 low), then $189.4–192.6 (30-day, Oct 20, 21 and 23 lows) and $184.5. A close above $203.6 would open $206–213; below $189.4, $184.5.",
+   "zh": "盘中高点 $201.8 一度突破 $200，但收盘回落至其下方；关键位未变。阻力为 $200–201.8，其次 $202.6–203.6和 $205.6（SAR）。支撑为 $196.7–198.5（5 日和 10 日均线、10月27日低点），其次 $189.4–192.6（30 日均线、10月20日、21日和23日低点）和 $184.5。若收盘站上 $203.6，将打开 $206–213；若跌破 $189.4，则看 $184.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    200,
+    201,
     {
-     "en": "Oct 26 high $200.05; $200 round number",
-     "zh": "10月26日高点 $200.05；$200 整数关口"
+     "en": "Oct 27 high $201.8; $200 round number",
+     "zh": "10月27日高点 $201.8；$200 整数关口"
     }
    ],
    [
@@ -32,26 +32,26 @@
     }
    ],
    [
-    206.4,
+    205.6,
     {
-     "en": "Parabolic SAR; 52-week high $212.9 (Oct 12)",
-     "zh": "抛物线 SAR；52周高点 $212.9（10月12日）"
+     "en": "Parabolic SAR $205.55; 52-week high $212.9 (Oct 12)",
+     "zh": "抛物线 SAR $205.55；52周高点 $212.9（10月12日）"
     }
    ]
   ],
   "s": [
    [
-    197.4,
+    197.6,
     {
-     "en": "5-day $197.2 and 10-day $197.6 averages",
-     "zh": "5日均线 $197.2 和 10日均线 $197.6"
+     "en": "5-day $198.5 and 10-day $196.7 averages; Oct 27 low $196.8",
+     "zh": "5日均线 $198.5 和 10日均线 $196.7；10月27日低点 $196.8"
     }
    ],
    [
     191,
     {
-     "en": "30-day average $191.7; Oct 20, 21 and 23 lows ($189.4–190.6)",
-     "zh": "30日均线 $191.7；10月20日、21日和23日低点（$189.4–190.6）"
+     "en": "30-day average $192.6; Oct 20, 21 and 23 lows ($189.4–190.6)",
+     "zh": "30日均线 $192.6；10月20日、21日和23日低点（$189.4–190.6）"
     }
    ],
    [

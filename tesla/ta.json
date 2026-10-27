@@ -1,29 +1,22 @@
 {
- "asof": "Oct 26, 2026",
- "close": 391.62,
+ "asof": "Oct 27, 2026",
+ "close": 407.46,
  "bias": {
-  "en": "Uptrend · cleared the $388 cap and the 200-day",
-  "zh": "上升趋势 · 突破 $388 上限和 200 日均线"
+  "en": "Uptrend · at the $409 Apr 17 high",
+  "zh": "上升趋势 · 逼近 4月17日高点 $409"
  },
  "read": [
   {
-   "en": "Tesla rose 5.2% on Oct 26 to $391.62, trading between $383.84 and $397.27 on 1.5 times average volume. It is above the rising 5-day ($379.7), 10-day ($372.6) and 30-day ($370.6) averages and the falling 100-day ($367.9) and 200-day ($386.1). MACD crossed back above its signal on Oct 26 and is above zero; Parabolic SAR has been bullish since Oct 21 ($353.16), and RSI is 60.",
-   "zh": "特斯拉 10月26日上涨 5.2%，收于 $391.62，盘中区间 $383.84–397.27，成交量为均量的 1.5 倍。股价位于上行的 5 日（$379.7）、10 日（$372.6）和 30 日均线（$370.6）以及下行的 100 日（$367.9）和 200 日均线（$386.1）上方。MACD 于 10月26日重新上穿信号线，且位于零轴上方；抛物线 SAR 自 10月21日起看多（$353.16），RSI 为 60。"
+   "en": "Tesla rose 4.0% on Oct 27 to $407.46, trading between $395.25 and $408.45. It is above the rising 5-day ($386.5), 10-day ($375.8) and 30-day ($372.3) averages and the falling 100-day ($367.8) and 200-day ($385.9). MACD has been above its signal since Oct 26 and above zero, histogram widening; Parabolic SAR has been bullish since Oct 21 ($355.80), and RSI is 66.",
+   "zh": "特斯拉 10月27日上涨 4.0%，收于 $407.46，盘中区间 $395.25–408.45。股价位于上行的 5 日（$386.5）、10 日（$375.8）和 30 日均线（$372.3）以及下行的 100 日（$367.8）和 200 日均线（$385.9）上方。MACD 自 10月26日起位于信号线上方且在零轴之上，柱状图扩大；抛物线 SAR 自 10月21日起看多（$355.80），RSI 为 66。"
   },
   {
-   "en": "The close cleared the $388 cap and the 200-day ($386.1), now support. Resistance is $397.3 (Oct 26 high), then $409.3 (Apr 17 high) and $416.4–420.3 (Mar 11 and Feb 25 highs). Support is $386.1–388.9 (200-day, $388 cap, Oct 22 high), then $377.6–379.7 (Oct 20 high, 5-day) and $367.9–372.6 (10, 30 and 100-day). A close above $397.3 would target $409; below $386, $378.",
-   "zh": "收盘突破 $388 上限和 200 日均线（$386.1），二者转为支撑。阻力为 $397.3（10月26日高点），其次 $409.3（4月17日高点）和 $416.4–420.3（3月11日和2月25日高点）。支撑为 $386.1–388.9（200 日均线、$388 上限、10月22日高点），其次 $377.6–379.7（10月20日高点、5 日均线）和 $367.9–372.6（10 日、30 日和 100 日均线）。若收盘站上 $397.3，下一目标看 $409；若重新跌破 $386，则看 $378。"
+   "en": "The close cleared the $397.3 Oct 26 high, now support, and the high stopped just under $409.3 (Apr 17 high). Resistance is $409.3, then $416.4–420.3 (Mar 11 and Feb 25 highs) and $432.9 (Jul 1 high). Support is $395.3–397.3 (Oct 27 low, Oct 26 high), then $385.9–388.9 ($388 cap, 5 and 200-day) and $372.3–377.6. A close above $409.3 would target $416–420; below $395, $388.",
+   "zh": "收盘突破 10月26日高点 $397.3，该位转为支撑；盘中高点止步于 $409.3（4月17日高点）下方。阻力为 $409.3，其次 $416.4–420.3（3月11日和2月25日高点）和 $432.9（7月1日高点）。支撑为 $395.3–397.3（10月27日低点、10月26日高点），其次 $385.9–388.9（$388 上限、5 日和 200 日均线）和 $372.3–377.6。若收盘站上 $409.3，下一目标看 $416–420；若跌破 $395，则看 $388。"
   }
  ],
  "levels": {
   "r": [
-   [
-    397.3,
-    {
-     "en": "Oct 26 high",
-     "zh": "10月26日高点"
-    }
-   ],
    [
     409.3,
     {
@@ -37,28 +30,35 @@
      "en": "Mar 11 and Feb 25 highs ($416.4–420.3)",
      "zh": "3月11日和2月25日高点（$416.4–420.3）"
     }
+   ],
+   [
+    432.9,
+    {
+     "en": "Jul 1 high",
+     "zh": "7月1日高点"
+    }
    ]
   ],
   "s": [
    [
+    396.3,
+    {
+     "en": "Oct 26 high $397.3, cleared; Oct 27 low $395.3",
+     "zh": "10月26日高点 $397.3，已突破；10月27日低点 $395.3"
+    }
+   ],
+   [
     388,
     {
-     "en": "$388 cap since March, cleared; 200-day average $386.1; Oct 22 high $388.86",
-     "zh": "3月以来 $388 上限，已突破；200日均线 $386.1；10月22日高点 $388.86"
+     "en": "$388 cap since March; 5 and 200-day averages ($385.9–386.5); Oct 22 high $388.86",
+     "zh": "3月以来 $388 上限；5日和200日均线（$385.9–386.5）；10月22日高点 $388.86"
     }
    ],
    [
-    378.5,
+    375,
     {
-     "en": "Oct 20 high $377.6, cleared; 5-day average $379.7",
-     "zh": "10月20日高点 $377.6，已突破；5日均线 $379.7"
-    }
-   ],
-   [
-    370,
-    {
-     "en": "10, 30 and 100-day averages ($367.9–372.6)",
-     "zh": "10日、30日和100日均线（$367.9–372.6）"
+     "en": "10 and 30-day averages ($372.3–375.8); Oct 20 high $377.6",
+     "zh": "10日和30日均线（$372.3–375.8）；10月20日高点 $377.6"
     }
    ]
   ]

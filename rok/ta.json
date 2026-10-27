@@ -1,64 +1,64 @@
 {
- "asof": "Oct 26, 2026",
- "close": 429.89,
+ "asof": "Oct 27, 2026",
+ "close": 439.2,
  "bias": {
-  "en": "Neutral · inside the average cluster",
-  "zh": "中性 · 位于均线密集区内"
+  "en": "Turning bullish · MACD and SAR flipped up",
+  "zh": "转为看多 · MACD 与 SAR 翻多"
  },
  "read": [
   {
-   "en": "Rockwell rose 0.9% on Oct 26 to $429.89, trading $427.15–433.78 on light volume (0.61 times average). It is above the rising 5-day ($429.2), falling 10-day ($427.5) and rising 200-day ($426.5) averages, and below the rising 30-day ($430.9) and falling 100-day ($446.6). MACD has been below its signal since Oct 13 and below zero, near a cross; Parabolic SAR has been bearish since Oct 8 ($440.80), and RSI is 49.",
-   "zh": "罗克韦尔自动化 10月26日上涨 0.9%，收于 $429.89，盘中区间 $427.15–433.78，成交清淡（为平均水平的 0.61 倍）。股价位于上行的 5 日（$429.2）、下行的 10 日（$427.5）和上行的 200 日均线（$426.5）上方，低于上行的 30 日（$430.9）和下行的 100 日均线（$446.6）。MACD 自 10月13日起位于信号线及零轴下方，接近交叉；抛物线 SAR 自 10月8日起看空（$440.80），RSI 为 49。"
+   "en": "Rockwell rose 2.2% on Oct 27 to $439.20, trading between $431.01 and $441.43. It is above the rising 5-day ($431.5), falling 10-day ($428.2), rising 30-day ($431.7) and rising 200-day ($426.7) averages, and below the falling 100-day ($446.3). MACD crossed above its signal on Oct 27, still below zero; Parabolic SAR flipped bullish on Oct 27 ($412.65), and RSI is 55.",
+   "zh": "罗克韦尔 10月27日上涨 2.2%，收于 $439.20，盘中区间 $431.01–441.43。股价位于上行的 5 日（$431.5）、下行的 10 日（$428.2）、上行的 30 日（$431.7）和上行的 200 日均线（$426.7）上方，低于下行的 100 日均线（$446.3）。MACD 于 10月27日上穿信号线，仍在零轴下方；抛物线 SAR 于 10月27日翻为看多（$412.65），RSI 为 55。"
   },
   {
-   "en": "The close cleared the 5, 10 and 200-day averages; the 30-day still caps it. Resistance is $430.9–433.8 (30-day, Oct 26 high), then $436 (Sep 8 high) and $440.8–441.4 (SAR, Oct 21 high). Support is $426.5–429.2 (5, 10 and 200-day), then $415.7–418.8 and $412.7–413.9 (Oct 15 and 20 lows). A close above $433.8 would target $436–441; a close below $426.5 would open $415.7–418.8.",
-   "zh": "收盘站上 5 日、10 日和 200 日均线；30 日均线仍形成压制。阻力为 $430.9–433.8（30 日均线、10月26日高点），其次 $436（9月8日高点）和 $440.8–441.4（SAR、10月21日高点）。支撑为 $426.5–429.2（5 日、10 日和 200 日均线），其次 $415.7–418.8 和 $412.7–413.9（10月15日和20日低点）。若收盘站上 $433.8，下一目标看 $436–441；若收盘跌破 $426.5，将打开 $415.7–418.8。"
+   "en": "The close cleared the $431.7–436 resistance, now support, and stopped at the $441.4 Oct 21 high. Resistance is $441.4, then $446.3 (100-day) and $454.7–460.2 (Aug 17 and Oct 6 highs). Support is $431–436 (5 and 30-day), then $426.7–428.2 (10 and 200-day) and $412.7 (SAR, Oct 15 low). A close above $441.4 would target $446; below $431, $427.",
+   "zh": "收盘突破 $431.7–436 阻力，该区间转为支撑，并止步于 10月21日高点 $441.4。阻力为 $441.4，其次 $446.3（100 日均线）和 $454.7–460.2（8月17日和10月6日高点）。支撑为 $431–436（5 日和 30 日均线），其次 $426.7–428.2（10 日和 200 日均线）和 $412.7（SAR、10月15日低点）。若收盘站上 $441.4，下一目标看 $446；若跌破 $431，则看 $427。"
   }
  ],
  "levels": {
   "r": [
    [
-    432,
+    441.4,
     {
-     "en": "30-day average $430.9; Oct 26 high $433.8",
-     "zh": "30日均线 $430.9；10月26日高点 $433.8"
+     "en": "Oct 21 high",
+     "zh": "10月21日高点"
     }
    ],
    [
-    436,
+    446.3,
     {
-     "en": "Sep 8 high; Oct 14 high $435.9",
-     "zh": "9月8日高点；10月14日高点 $435.9"
+     "en": "100-day average",
+     "zh": "100日均线"
     }
    ],
    [
-    441,
+    457,
     {
-     "en": "Oct 21 high $441.4; Parabolic SAR $440.8",
-     "zh": "10月21日高点 $441.4；抛物线 SAR $440.8"
+     "en": "Aug 17 high $454.7; Oct 6 high $460.2",
+     "zh": "8月17日高点 $454.7；10月6日高点 $460.2"
     }
    ]
   ],
   "s": [
    [
-    428,
+    433,
     {
-     "en": "5, 10 and 200-day averages ($426.5–429.2); Oct 26 low $427.2",
-     "zh": "5日、10日和200日均线（$426.5–429.2）；10月26日低点 $427.2"
+     "en": "5-day $431.5 and 30-day $431.7 averages; Sep 8 high $436, cleared; Oct 27 low $431.0",
+     "zh": "5日均线 $431.5 和 30日均线 $431.7；9月8日高点 $436，已突破；10月27日低点 $431.0"
     }
    ],
    [
-    417,
+    427.5,
     {
-     "en": "Oct 22 low $417.6; May 19 low $418.8; Oct 23 low $415.7",
-     "zh": "10月22日低点 $417.6；5月19日低点 $418.8；10月23日低点 $415.7"
+     "en": "10-day $428.2 and 200-day $426.7 averages",
+     "zh": "10日均线 $428.2 和 200日均线 $426.7"
     }
    ],
    [
-    413,
+    412.7,
     {
-     "en": "Oct 15 low $412.7; Oct 20 low $413.9",
-     "zh": "10月15日低点 $412.7；10月20日低点 $413.9"
+     "en": "Parabolic SAR; Oct 15 low",
+     "zh": "抛物线 SAR；10月15日低点"
     }
    ]
   ]
