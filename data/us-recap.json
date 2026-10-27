@@ -1,28 +1,28 @@
 {
- "session": "2026-10-26",
- "asof": "Settles Mon 26 Oct 2026 · written Tue 27 Oct",
- "headline": "SR3 adds back 2027 hikes into the FOMC, peaking at 4.655% in U7; consensus still sees one more move. Keep fading 2027.",
- "summary": "The strip sold off Monday, led by the 2027 contracts: implied rates rose 4.5–5.5bp in H7–U7, led by SR3M7 (+5.5bp to 4.615%), while U6 (+0.5bp) and Z6 (+2bp) barely moved and the 2029 contracts added only 0.5–1.5bp. That cuts into, but does not undo, October's rally: 2027 contracts remain 16–24bp lower in rate than at the 30 September (modelled) settle, Z7 the most at −23.9bp. The peak is still SR3U7 at 4.655%, 73.5bp above the latest 3.92% SOFR fixing, with 17.5bp of easing priced from there to Z9. Economists are far less hawkish: all 100 in Reuters' poll see a December hike, and most of the Fed's September projections stop one hike later, at 4.00–4.25%.",
+ "session": "2026-10-27",
+ "asof": "Settles Tue 27 Oct 2026 · written Wed 28 Oct",
+ "headline": "A confidence beat lifts SR3's 2027 hikes again into the FOMC; U7 peaks at 4.69%, well past consensus. Fade still on, near its stop.",
+ "summary": "The strip sold off for a second day, again led by 2027: implied rates rose 3–4bp from H7 to H8, with U7 and Z7 up 4bp, while Z6 was unchanged at 4.20% and U6 eased 0.7bp. Over two sessions M7 and U7 are 8bp higher in rate, trimming October's rally to 16.4bp and 18.5bp, and Z7 is 21.2bp lower than at the end-September (modelled) settle. The peak is SR3U7 at 4.69%, 76bp above the latest 3.93% SOFR fixing, with 19.5bp of easing priced from there to Z9. Consensus remains one or two more hikes: all 100 Reuters economists see December, and about 60% see the cycle ending at 4.00–4.25%.",
  "drivers": [
   [
-   "Hawkish pause risk priced into 2027",
-   "With no data out, desks leaned toward a hawkish hold on Wednesday: Deutsche Bank expects a hawkish message even without a move, and BMO expects at least one dissent from Hammack. The 2-year yield rose 3.2bp to 4.712%, its largest two-day gain (7.6bp) since 24 September, and M7 led the strip at +5.5bp."
+   "Consumer confidence beat every forecast",
+   "The Conference Board index jumped 7.5 points to 91.7, the highest since June, against forecasts near 80–81, with the present-situation gauge up 8.6 to 120.4 and the jobs differential up 2.4 points. A firmer consumer on the eve of the FOMC is what pushed H7–U7 3–4bp higher."
   ],
   [
-   "A soft start to $213bn of note supply",
-   "The $69bn 2-year auction cleared at 4.708% with a 0.3bp tail, a 2.59 bid-to-cover (2.63 last time) and indirects at 45.7% against 57.8%. The $70bn 5-year (Tue), $30bn 2-year FRN (Wed) and $44bn 7-year (Thu) follow, all settling on 2 November."
+   "Five-year auction was solid, not enough to rally",
+   "The $70bn 5-year cleared at 4.845% (0.3bp tail) with a 2.33 bid-to-cover against a 2.31 average and indirects at 60% (54% last time), well below September's 5.033% stop. The 2-year still edged up about 1bp to near 4.72%, so supply was not the source of the selloff; the $30bn FRN (Wed) and $44bn 7-year (Thu) remain."
   ],
   [
-   "Oil gave back the spike, not the premium",
-   "Brent traded near $110 early on Iran diplomacy but recovered to settle only $0.91 lower at $115.81, with WTI down $1.51 at $101.76, as Houthi attacks on Saudi Arabia kept supply risk in place. That oil could not hold a 6% drop helps explain why the front end did not rally."
+   "FOMC positioning: hold, with hawks heard",
+   "Previews line up behind a hold on Wednesday and a December hike: Goldman sees a hike every other meeting, ING a December move then a long pause, and Rabobank and ING flag possible hike dissents from Hammack, Kashkari and Logan. Fed funds futures carried 12% odds of a move on Wednesday at Monday's close."
   ],
   [
-   "Funding firmer into month-end",
-   "SOFR fixed at 3.92% for 23 October, the highest print since the September hike and 4bp over EFFR (3.88%), with the 99th percentile at 4.00%. About 44% of SR3U6's quarter is now fixed; month-end and the 2 November coupon settlements are the next test."
+   "Oil fell, funding firmed",
+   "Brent settled $1.93 lower at $113.88 and WTI back under $100 at $99.90 on diplomacy headlines, which did not help 2027 contracts. SOFR printed 3.93% for 26 October, 5bp over EFFR (3.88%) and above IORB (3.90%), with the 99th percentile at 4.01%; the FHLBNY flags Canadian year-end and MBS paydowns on 30 October as the next test."
   ]
  ],
- "spreads": "The curve steepened in the whites on Monday as 2027 sold off more than December: U6/Z6 +26bp (+1.5bp on the day), Z6/H7 +25.5bp (+2.5bp) and H7/M7 +16bp (+1bp), while M7/U7 slipped to +4bp and U7/Z7 to −2bp (−1bp each). Month to date the whites remain much flatter (U6/Z6 −6.3bp, Z6/H7 −6bp, Z6/Z7 −14.1bp to +43.5bp). The H7/M7/U7 fly rose 2bp to +12bp as M7 took the brunt of the selloff, while M7/U7/Z7 held at +6bp. Past the peak, the reds and greens show 1–3bp of easing per quarter: Z7/Z8 −9.5bp and U7/Z8 −11.5bp (both a little more inverted, −1.5bp and −2.5bp on the day), Z8/Z9 −6bp; no month-to-date base exists for the 2028–29 contracts, whose settle history starts 22 October.",
- "fed": "Fed funds futures, last recorded at Friday's close, price 2.5bp for Wednesday (about 10% odds of a hike), 21.5bp cumulative by December (a 79% chance of at least one hike), 43.9bp by March, 61.3bp by June and a 68.5bp peak at the September 2027 FOMC (implied EFFR 4.565%). That is down from 26.5bp, 52.1bp and a 74.5bp peak a week earlier and from 30.6bp, 63.4bp and 94bp at the end of September. SR3 is a little more hawkish after Monday: U7 at 4.655% sits about 9bp over the ZQ peak, of which roughly 4bp is the SOFR–EFFR basis and the rest Monday's 4.5bp selloff. Consensus is one hike: 94 of 100 Reuters economists see a hold this week and all 100 a December move, and in September 12 of 18 projections showed one more hike and four showed two. The market still carries roughly 45bp of 2027 tightening that most forecasters do not.",
+ "spreads": "The whites steepened again as 2027 sold off and December held: U6/Z6 +26.7bp (+0.7bp on the day), Z6/H7 +28bp (+3bp, +5bp on the week) and H7/M7 +16bp (+0.5bp), with M7/U7 at +5bp and U7/Z7 flat at −2.5bp. Z6/Z7 widened 4bp to +46.5bp and Z6/M7 3.5bp to +44bp, though both remain narrower month to date (−11.2bp and −6.4bp). The flies were steady: H7/M7/U7 at +11bp (flat) and M7/U7/Z7 at +7.5bp (+0.5bp). Beyond the peak the reds and greens inverted further because the 2029 contracts lagged: Z7/Z8 −11bp (−1.5bp), U7/Z8 −13.5bp (−1.5bp, −4.5bp on the week) and Z8/Z9 −6bp (−1bp); the 2028–29 settle history starts 22 October, so there is no month-to-date base.",
+ "fed": "Fed funds futures, last recorded at Monday's close, price 3bp for Wednesday (12% odds of a hike), 22.7bp cumulative by December (81% chance of at least one hike), 48.6bp by March, 66.8bp by June and a 73bp peak at the September 2027 FOMC (implied EFFR 4.61%). That is up from 21.5bp, 43.9bp and 68.5bp at Friday's close, but still below a week ago (26.3bp by December, 55.2bp by March, 78bp peak) and well below end-September (30.6bp, 63.4bp and a 94bp peak). SR3 is consistent: U7 at 4.69% sits 8bp over the ZQ peak, about 5bp of it the SOFR–EFFR basis and the rest Tuesday's 4bp selloff, which ZQ has not yet recorded. Against that, 94 of 100 Reuters economists see a hold this week, all 100 a December hike and roughly 60% a 4.00–4.25% peak, while 12 of 18 September projections showed one more hike this year; the market still carries close to 50bp of 2027 tightening that most forecasters do not.",
  "ideas": [
   {
    "kind": "core",
@@ -44,8 +44,8 @@
     "Stop": "+48bp",
     "Horizon": "to the Dec 9 FOMC"
    },
-   "why": "Open and 3.5bp against at +41.5bp after Monday's 2027-led selloff, but still 9.3bp narrower than at end-September and 6.5bp from the stop. Z6 holds the December hike everyone expects, while M7 carries the extra 2027 hikes neither the dots nor the Street project; a hold without guidance and a 3.1% core PCE in line should let M7 recover. No change to levels.",
-   "risk": "A hawkish Warsh or dissents that validate a hiking path into 2027 would widen the spread toward the +48bp stop."
+   "why": "Open and 6bp against at +44bp after two 2027-led selloffs, 4bp from the stop, but still 6.4bp narrower than at end-September. Nothing in the confidence beat changes the case: Z6 holds the December hike everyone expects, while M7 carries a second and third hike neither the dots nor most economists project. Levels unchanged; the FOMC is the test, and a hold without hiking guidance should let M7 recover.",
+   "risk": "Hike dissents or a Warsh nod to faster tightening would widen the spread through the +48bp stop."
   },
   {
    "kind": "hedge",
@@ -67,7 +67,7 @@
     "Stop": "+2bp",
     "Horizon": "3–6 months"
    },
-   "why": "Open and 1.5bp in favour at −9.5bp: Monday's selloff hit Z7 (+3.5bp) more than Z8 (+2bp), exactly the move this hedge is meant to cover. If the Fed does take SOFR past 4.6% into $115 oil, the easing that follows is likely larger than the 17.5bp now priced from the peak to Z9. Keep at about half the core size.",
+   "why": "Open and 3bp in favour at −11bp: Tuesday's selloff hit Z7 (+4bp) more than Z8 (+2.5bp), so the hedge again offset part of the core's loss. If the Fed takes SOFR toward 4.7% with Brent above $110, the easing that follows is likely larger than the 19.5bp now priced from the U7 peak to Z9. Keep at about half the core size.",
    "risk": "A 'higher for longer' plateau through 2028 with no cuts would push the spread back toward flat."
   },
   {
@@ -76,33 +76,33 @@
    "trade": "Avoid outright longs in SR3U6",
    "code": "U6",
    "levels": {
-    "Level": "96.060 (3.940%)",
+    "Level": "96.067 (3.933%)",
     "Why neutral": "fixings, not the Fed, drive it now"
    },
-   "why": "About 44% of U6's quarter is fixed and the latest fixing printed 3.92%, above the 3.88% EFFR, so funding pressure can only cost a long while only 2.5bp of a hike is priced for Wednesday. U6 moved just 0.5bp on Monday; revisit after the FOMC and the month-end prints.",
+   "why": "About 45% of U6's quarter is now fixed and SOFR printed 3.93%, 5bp over EFFR, so firmer month-end funding can only cost a long, while only 3bp of a hike is priced for Wednesday. U6 eased 0.7bp on Tuesday and is just 0.2bp lower on the week; revisit after the FOMC and the 30 October and 2 November prints.",
    "risk": "A surprise hike on Wednesday would cost U6 roughly 10bp; a dovish surprise would lift it only a few bp."
   }
  ],
  "watch": [
   [
-   "Tue 27 Oct",
-   "5-year note auction ($70bn), consumer confidence",
-   "A second soft auction would extend Monday's 2027 selloff."
-  ],
-  [
    "Wed 28 Oct",
-   "FOMC decision, Warsh press conference",
-   "Hold expected (2.5bp priced); hawkish dissents would firm December and challenge the core trade."
+   "FOMC decision, Warsh press conference; $30bn 2-year FRN",
+   "Hold expected (3bp priced); hike dissents would firm December and test the core trade's stop."
   ],
   [
    "Thu 29 Oct",
-   "Q3 GDP and September PCE",
-   "Core PCE seen at 3.1% y/y and GDP near 3.1–3.2%; a hot core print lifts H7–U7."
+   "Q3 GDP, September PCE, $44bn 7-year auction",
+   "Core PCE seen near 3.1% y/y and GDP near 3%; a hot core print lifts H7–U7."
   ],
   [
    "Fri 30 Oct",
-   "Q3 employment cost index, month-end",
-   "ECI seen at 0.8%; month-end and 2 Nov coupon settlement test the 3.92% SOFR print."
+   "Q3 employment cost index, Chicago PMI, month-end",
+   "ECI seen at 0.7–0.8%; Canadian year-end and MBS paydowns test SOFR's 3.93% print."
+  ],
+  [
+   "Mon 2 Nov",
+   "ISM manufacturing; coupon settlement",
+   "Prices paid was 77.9 in September; $213bn of notes settle the same day."
   ],
   [
    "Tue 3 Nov",
@@ -117,38 +117,38 @@
   [
    "Daily",
    "Brent and Gulf headlines",
-   "Brent at $115.81 is the main risk to fading 2027 hikes; $120 is the pain point."
+   "Brent at $113.88 remains the main risk to fading 2027 hikes; $120 is the pain point."
   ]
  ],
  "sources": [
   [
-   "Newsquawk: 2-year auction",
-   "https://newsquawk.com/headlines/us-treasury-sells-usd-69bln-in-2-year-notes-tails-03bps"
+   "Dow Jones via MarketScreener: 5-year auction",
+   "https://marketscreener.com/news/u-s-five-year-yield-declines-from-previous-month-in-auction-ce785cddde89f626"
   ],
   [
-   "CNBC: Treasury yields, 26 Oct",
-   "https://cnbc.com/2026/10/26/us-treasury-yields-investors-feds-interest-rate-decision-.html"
+   "Conference Board: October consumer confidence",
+   "https://prnewswire.com/news-releases/us-consumer-confidence-increased-in-october-302920731.html"
   ],
   [
-   "Dow Jones via Morningstar: 2-year yield",
-   "https://kessler-prod.reta52d8.eas.morningstar.com/news/dow-jones/202610267128/2-year-treasury-yield-rises-to-4712-data-talk"
+   "CNBC: Treasury yields, 27 Oct",
+   "https://cnbc.com/amp/2026/10/27/treasury-yields-federal-reserve-monetary-policy-meeting.html"
   ],
   [
-   "USA Today: October Fed preview",
-   "https://usatoday.com/story/money/economy/2026/10/26/federal-reserve-october-2026-interest-rate-decision-preview/92362597007"
+   "Newsquawk: FOMC preview",
+   "https://newsquawk.com/headlines/preview-federal-reserve-rate-decision-due-wednesday-october-28th-at-1800gmt1400edt"
   ],
   [
-   "Political.org: Fed week preview",
-   "https://political.org/2026/10/26/fed-expected-to-hold-rates-steady-this-week-after-september-hike-but-markets-price-in-a-december-increase"
+   "ING Think: Fed preview",
+   "https://think.ing.com/downloads/pdf/article/federal-reserve-preview-a-pause-before-a-december-hike"
   ],
   [
-   "Oklahoma Energy Today: oil close",
-   "https://okenergytoday.com/2026/10/crude-oil-prices-see-drop-on-hopes-of-end-to-hostilities"
+   "Reuters via Central Oregon Daily: oil settle",
+   "https://centraloregondaily.com/news/consumer/oil-falls-almost-2-as-middle-east-talks-help-ease-supply-worries/article_e298017d-2c58-55c3-b13c-b51757e3ab6a.html"
   ],
   [
-   "Dow Jones via MarketScreener: data week ahead",
-   "https://uk.marketscreener.com/news/3q-gdp-growth-seen-higher-data-week-ahead-update-ce785cdcdf8cf321"
+   "CryptoSlate: FHLBNY funding note",
+   "https://cryptoslate.com/bitcoins-liquidity-test-shifts-to-treasury-dealers-two-year-high-in-bill-holdings"
   ]
  ],
- "disclaimer": "Research view written from the 26 Oct settles and the sources above, for information only and not investment advice. Futures are leveraged; size spread trades by DV01 (each SR3 contract is $25 per bp)."
+ "disclaimer": "Research view written from the 27 Oct settles and the sources above, for information only and not investment advice. Futures are leveraged; size spread trades by DV01 (each SR3 contract is $25 per bp)."
 }
