@@ -6,10 +6,10 @@
  "shares": 156380000.0,
  "beta": "1.75",
  "snapshot": {
-  "price": "$402.68",
-  "date": "Oct 9, 2026",
-  "mcap": "$63.0B",
-  "range": "$132–484"
+  "price": "$323.68",
+  "date": "Oct 27, 2026",
+  "mcap": "$50.6B",
+  "range": "$144–488"
  },
  "eyebrow": {
   "en": "Teradyne, Inc. · Common stock · North Reading, Massachusetts",
@@ -20,56 +20,56 @@
   "zh": "每颗 AI 芯片必经的测试关卡，<em>业务规模一年翻倍</em>。"
  },
  "lede": {
-  "en": "Teradyne makes the machines that test chips before they ship, plus Universal Robots cobots and MiR mobile robots. AI demand doubled revenue to a record $1.33B last quarter: compute test grew nearly sixfold and memory test hit a record on HBM and DRAM. The catch is lumpiness and price: Q3 guidance of $1.20–1.30B is a step down, and the stock trades at about 55 times trailing earnings.",
-  "zh": "泰瑞达生产芯片出厂前所用的测试设备，另有 Universal Robots 协作机器人和 MiR 移动机器人。AI 需求使上季营收翻倍至创纪录的 13.3 亿美元：计算类测试增长近六倍，存储测试在 HBM 和 DRAM 带动下创新高。问题在于订单波动与估值：Q3 指引 12–13 亿美元，环比回落，股价约为过去四季盈利的 55 倍。"
+  "en": "Teradyne makes the machines that test chips before they ship, plus Universal Robots cobots and MiR mobile robots. AI demand lifted Q3 revenue 70% to $1.31B, above the top of guidance, with record memory and integrated-systems test and profitable Robotics. The catch is lumpiness and price: the Q4 guide of $1.25–1.35B is flat with Q3, inventory is rising, and the stock fell about 6% after hours on the report.",
+  "zh": "泰瑞达生产芯片出厂前所用的测试设备，另有 Universal Robots 协作机器人和 MiR 移动机器人。AI 需求推动 Q3 营收增长 70% 至 13.1 亿美元，高于指引上限，存储与集成系统测试创纪录，机器人业务实现盈利。问题在于订单波动与估值：Q4 指引 12.5–13.5 亿美元，与 Q3 持平，库存上升，财报公布后股价盘后下跌约 6%。"
  },
  "valuation": {
   "k": {
    "en": "P/E (trailing)",
    "zh": "市盈率（过去四季）"
   },
-  "v": "~55×",
+  "v": "~37×",
   "s": {
-   "en": "GAAP EPS $7.29 · ~44× 2026 consensus adj. EPS $9.11",
-   "zh": "GAAP 每股 $7.29 · 按 2026 年调整后每股一致预期 $9.11 约 44 倍"
+   "en": "GAAP EPS $8.71 · ~30× next-year consensus EPS ~$10.84",
+   "zh": "GAAP 每股 $8.71 · 按明年一致预期每股约 $10.84 约 30 倍"
   }
  },
  "analysts": {
   "k": {
-   "en": "Q3 2026 guide",
-   "zh": "2026 Q3 指引"
+   "en": "Q4 2026 guide",
+   "zh": "2026 Q4 指引"
   },
-  "v": "$1.20–1.30B",
+  "v": "$1.25–1.35B",
   "s": {
-   "en": "adj. EPS $1.85–2.15 · gross margin 58–59%",
-   "zh": "调整后每股 $1.85–2.15 · 毛利率 58–59%"
+   "en": "adj. EPS $1.95–2.25 · GAAP $1.88–2.18",
+   "zh": "调整后每股 $1.95–2.25 · GAAP $1.88–2.18"
   }
  },
  "earnings": {
-  "v": "Oct 27",
+  "v": "Late Jan",
   "s": {
-   "en": "Q3 2026 and Q4 guide · after the close",
-   "zh": "2026 第三季及 Q4 指引 · 美股收盘后"
+   "en": "Q4 2026 and 2027 outlook · date not yet set",
+   "zh": "2026 第四季及 2027 展望 · 日期未定"
   }
  },
  "sub_price": {
-  "en": "Daily closes with the 50-day average. Teradyne has roughly doubled this year, but has swung between about $320 and $484 since June.",
-  "zh": "每日收盘价与50日均线。泰瑞达今年股价约翻倍，但自6月以来收盘价在约 $320 至 $484 之间大幅波动。"
+  "en": "Daily closes with the 50-day average. Teradyne has roughly doubled over the past year, but has swung between about $309 and $484 since June.",
+  "zh": "每日收盘价与50日均线。泰瑞达过去一年股价约翻倍，但自6月以来收盘价在约 $309 至 $484 之间大幅波动。"
  },
  "sub_rev": {
-  "en": "Revenue in US$ millions, with GAAP gross margin on the right axis. Teradyne's fiscal year is the calendar year (quarters end on the Sunday nearest the month end). Revenue sat near $600–750M a quarter from 2023 to 2025, then jumped on AI test demand. The last bar is the $1.25B midpoint of Q3 2026 guidance.",
-  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率。泰瑞达财年与日历年一致（季度结束于最接近月末的周日）。2023 至 2025 年季度营收约在 6–7.5 亿美元，之后因 AI 测试需求跃升。最后一根柱为 2026 年 Q3 指引中值 12.5 亿美元。"
+  "en": "Revenue in US$ millions, with GAAP gross margin on the right axis. Teradyne's fiscal year is the calendar year (quarters end on the Sunday nearest the month end). Revenue sat near $600–750M a quarter from 2023 to 2025, then jumped on AI test demand. The last bar is the $1.30B midpoint of Q4 2026 guidance.",
+  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率。泰瑞达财年与日历年一致（季度结束于最接近月末的周日）。2023 至 2025 年季度营收约在 6–7.5 亿美元，之后因 AI 测试需求跃升。最后一根柱为 2026 年 Q4 指引中值 13.0 亿美元。"
  },
  "rev_cells": [
   {
    "k": {
-    "en": "Q2 2026",
-    "zh": "2026 Q2"
+    "en": "Q3 2026",
+    "zh": "2026 Q3"
    },
-   "v": "$1.33B",
+   "v": "$1.31B",
    "s": {
-    "en": "+104% YoY · +4% QoQ · record",
-    "zh": "同比 +104% · 环比 +4% · 创纪录"
+    "en": "+70% YoY · −2% QoQ · beat ~$1.27B",
+    "zh": "同比 +70% · 环比 −2% · 高于约 12.7 亿预期"
    }
   },
   {
@@ -77,21 +77,21 @@
     "en": "Semiconductor Test",
     "zh": "半导体测试"
    },
-   "v": "$1.12B",
+   "v": "$1.07B",
    "s": {
-    "en": "+128% YoY · SoC $843M, compute ~70% of it",
-    "zh": "同比 +128% · SoC 8.43 亿，其中计算约占 70%"
+    "en": "third quarter above $1B · −4% QoQ",
+    "zh": "连续第三季超过 10 亿 · 环比 −4%"
    }
   },
   {
    "k": {
-    "en": "Memory test",
-    "zh": "存储测试"
+    "en": "Memory and IST",
+    "zh": "存储与集成系统测试"
    },
-   "v": "$212M",
+   "v": "Record",
    "s": {
-    "en": "record · HBM, DRAM, NAND · book-to-bill >2",
-    "zh": "创纪录 · HBM、DRAM、NAND · 订单出货比 >2"
+    "en": "HBM, DRAM and hard-disk-drive test",
+    "zh": "HBM、DRAM 与硬盘测试"
    }
   },
   {
@@ -99,10 +99,10 @@
     "en": "Product Test",
     "zh": "产品测试"
    },
-   "v": "$107M",
+   "v": "$138M",
    "s": {
-    "en": "+26% YoY · board and optical test",
-    "zh": "同比 +26% · 电路板与光学测试"
+    "en": "+29% QoQ · high-speed interconnect",
+    "zh": "环比 +29% · 高速互连"
    }
   },
   {
@@ -110,10 +110,10 @@
     "en": "Robotics",
     "zh": "机器人"
    },
-   "v": "$100M",
+   "v": "$96M",
    "s": {
-    "en": "+33% YoY · +9% QoQ",
-    "zh": "同比 +33% · 环比 +9%"
+    "en": "best Q3 ever · profitable",
+    "zh": "史上最佳第三季 · 实现盈利"
    }
   },
   {
@@ -121,10 +121,10 @@
     "en": "EPS",
     "zh": "每股收益"
    },
-   "v": "$2.38",
+   "v": "$2.17",
    "s": {
-    "en": "GAAP · adj. $2.47 (+333% YoY) · GM 59.8%",
-    "zh": "GAAP · 调整后 $2.47（同比 +333%）· 毛利率 59.8%"
+    "en": "GAAP · adj. $2.29 vs ~$2.07 est. · GM 59.1%",
+    "zh": "GAAP · 调整后 $2.29，预期约 $2.07 · 毛利率 59.1%"
    }
   }
  ],
@@ -132,12 +132,12 @@
   {
    "kind": "plus",
    "h": {
-    "en": "AI compute test",
-    "zh": "AI 计算测试"
+    "en": "AI across the chain",
+    "zh": "AI 贯穿全链条"
    },
    "p": {
-    "en": "Compute revenue grew nearly 600% from a year ago and AI drove over 60% of sales. Teradyne qualified a second AI hyperscaler and shipped a merchant GPU order.",
-    "zh": "计算类营收同比增长近 600%，AI 相关占销售六成以上。泰瑞达已完成第二家 AI 超大规模客户的验证，并交付一笔商用 GPU 订单。"
+    "en": "CEO Greg Smith said demand spanned the AI value chain, from memory and hard-disk-drive test to high-speed interconnect and robotics, lifting Q3 above the top of guidance.",
+    "zh": "CEO 格雷格·史密斯表示，需求覆盖 AI 全产业链，从存储与硬盘测试到高速互连及机器人，推动 Q3 业绩高于指引上限。"
    }
   },
   {
@@ -147,19 +147,19 @@
     "zh": "存储与 HBM"
    },
    "p": {
-    "en": "Memory test hit a record $212M, its third quarter above $200M, with orders over twice shipments. Management sees the 2026 memory test market more than 40% larger than 2025.",
-    "zh": "存储测试创下 2.12 亿美元纪录，连续第三季超过 2 亿，订单为出货两倍以上。管理层预计 2026 年存储测试市场较 2025 年扩大逾 40%。"
+    "en": "Memory and Integrated Systems Test both set revenue records in Q3 on AI-related demand, after memory orders ran at over twice shipments in Q2.",
+    "zh": "受 AI 需求带动，存储测试与集成系统测试营收在 Q3 双双创纪录；此前 Q2 存储订单已达出货量的两倍以上。"
    }
   },
   {
    "kind": "watch",
    "h": {
-    "en": "Q3 report and Q4 guide",
-    "zh": "Q3 财报与 Q4 指引"
+    "en": "Flat Q4 guide",
+    "zh": "Q4 指引持平"
    },
    "p": {
-    "en": "The Q3 guide of $1.20–1.30B is below Q2's $1.33B on compute order timing and soft mobile. The market will look for Q4 guidance to show growth resuming.",
-    "zh": "因计算订单时点与手机疲软，Q3 指引 12–13 亿美元低于 Q2 的 13.3 亿。市场将关注 Q4 指引能否重回增长。"
+    "en": "The Q4 guide of $1.25–1.35B and $1.95–2.25 adjusted EPS beat consensus of about $1.28B and $2.03, but the midpoint is flat with Q3 and below Q2's $1.33B record. The call is on Oct 28.",
+    "zh": "Q4 指引营收 12.5–13.5 亿美元、调整后每股 $1.95–2.25，高于约 12.8 亿和 $2.03 的预期，但中值与 Q3 持平，低于 Q2 的 13.3 亿纪录。电话会议于10月28日举行。"
    }
   },
   {
@@ -169,19 +169,19 @@
     "zh": "机器人业务扭转"
    },
    "p": {
-    "en": "After a 2025 restructuring that cut about 150 jobs, Robotics grew 33% to $100M. A U.S. factory is due to open later this year, and a cobot dispute with Elite Robots was settled in October.",
-    "zh": "经过 2025 年裁员约 150 人的重组，机器人营收增长 33% 至 1 亿美元。美国工厂预计今年稍后投产，与 Elite Robots 的协作机器人纠纷已于10月和解。"
+    "en": "After a 2025 restructuring that cut about 150 jobs, Robotics posted its best Q3 at $96M and turned a profit. A U.S. factory is due to open later this year.",
+    "zh": "经过 2025 年裁员约 150 人的重组，机器人业务录得史上最佳第三季营收 9,600 万美元并实现盈利。美国工厂预计今年稍后投产。"
    }
   },
   {
    "kind": "risk",
    "h": {
-    "en": "Lumpy orders",
-    "zh": "订单波动"
+    "en": "Lumpy orders and inventory",
+    "zh": "订单波动与库存"
    },
    "p": {
-    "en": "Test spending moves in big, uneven waves tied to a few chip makers. Revenue fell from $951M in Q3 2021 to $600M in Q1 2024 in the last downturn.",
-    "zh": "测试设备支出集中于少数芯片厂，波动大且不均。上一轮下行中，营收由 2021 年 Q3 的 9.51 亿美元降至 2024 年 Q1 的 6.0 亿。"
+    "en": "Test spending moves in big, uneven waves tied to a few chip makers; revenue fell from $951M in Q3 2021 to $600M in Q1 2024. Inventory days rose to about 98 from 69 in Q2.",
+    "zh": "测试设备支出集中于少数芯片厂，波动大且不均；营收曾由 2021 年 Q3 的 9.51 亿美元降至 2024 年 Q1 的 6.0 亿。库存天数由 Q2 的 69 天升至约 98 天。"
    }
   },
   {
@@ -191,21 +191,21 @@
     "zh": "估值与波动"
    },
    "p": {
-    "en": "At about 55 times trailing GAAP earnings, the stock prices in more growth. It fell 34% from its Jun 30 record close to Jul 29 before rebounding.",
-    "zh": "按过去四季 GAAP 盈利计约 55 倍，股价已反映更多增长。股价曾由 6月30日收盘纪录跌至 7月29日，跌幅 34%，之后反弹。"
+    "en": "At about 37 times trailing GAAP earnings, the stock still prices in growth. It is about a third below its $488 high, and fell about 6% after hours despite the beat.",
+    "zh": "按过去四季 GAAP 盈利计约 37 倍，股价仍反映增长预期。股价较 $488 高点低约三分之一，财报超预期后盘后仍跌约 6%。"
    }
   }
  ],
  "calendar": [
   {
-   "date": "Oct 27, 2026",
+   "date": "Oct 28, 2026",
    "h": {
-    "en": "Q3 2026 earnings",
-    "zh": "2026 第三季财报"
+    "en": "Q3 earnings call",
+    "zh": "第三季财报电话会议"
    },
    "p": {
-    "en": "After US close; call 8:30am ET Oct 28 (8:30pm SGT). Guidance is $1.20–1.30B of revenue and $1.85–2.15 adjusted EPS.",
-    "zh": "美股收盘后；电话会议美东时间10月28日上午8:30（新加坡时间晚上8:30）。指引为营收 12–13 亿美元、调整后每股 $1.85–2.15。"
+    "en": "8:30am ET (8:30pm SGT). Watch for comments on 2027 demand, compute order timing and inventory.",
+    "zh": "美东时间上午8:30（新加坡时间晚上8:30）。关注 2027 年需求、计算类订单时点与库存的说法。"
    }
   },
   {
@@ -226,40 +226,40 @@
     "zh": "2026 第四季财报"
    },
    "p": {
-    "en": "Full-year 2026 results and the first read on 2027, which management expects to be another growth year.",
-    "zh": "2026 全年业绩及对 2027 年的首次展望，管理层预计 2027 年继续增长。"
+    "en": "Guide: revenue $1.25–1.35B, adjusted EPS $1.95–2.25. Full-year 2026 results and the first read on 2027.",
+    "zh": "指引：营收 12.5–13.5 亿美元，调整后每股 $1.95–2.25。2026 全年业绩及对 2027 年的首次展望。"
    }
   }
  ],
  "sources": [
   [
-   "Q2 2026 results (Teradyne)",
-   "https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results"
+   "Q3 2026 results (Teradyne)",
+   "https://investors.teradyne.com/news-events/press-releases/detail/455/teradyne-reports-third-quarter-2026-results"
   ],
   [
-   "Q2 2026 earnings call transcript (Investing.com)",
-   "https://investing.com/news/transcripts/earnings-call-transcript-teradyne-tops-q2-2026-estimates-on-ai-demand-93CH-4820636"
+   "Q3 beat, Q4 guide vs. consensus (Investing.com)",
+   "https://investing.com/news/earnings/teradyne-falls-6-despite-strongerthanexpected-q3-print-guidance-93CH-4977003"
   ],
   [
-   "Quarterly income statement (Stock Analysis)",
-   "https://stockanalysis.com/stocks/ter/financials/?p=quarterly"
+   "Q3 vs. estimates, margins and inventory (StockStory)",
+   "https://finance.yahoo.com/markets/stocks/articles/teradyne-nasdaq-ter-exceeds-q3-205013655.html"
   ],
   [
-   "Recent news, analyst targets and consensus (MarketBeat)",
-   "https://marketbeat.com/instant-alerts/price-teradyne-nasdaq-ter-shares-down-32-whats-next-2026-10-08"
+   "Stock falls despite beat (Investor's Business Daily)",
+   "https://investors.com/news/technology/teradyne-stock-q3-2026-earnings-ter"
   ],
   [
-   "Earnings date estimate (MarketBeat)",
-   "https://www.marketbeat.com/earnings/reports/2026-10-27-teradyne-inc-stock/"
+   "Q3 2026 earnings call, Oct 28 (Teradyne)",
+   "https://investors.teradyne.com/news-events/ir-calendar/detail/20261028-q3-2026-teradyne-inc-earnings-conference-call"
   ],
   [
-   "Price, market cap, beta and daily history: Stocklake, as of Oct 9, 2026",
+   "Price, market cap, 52-week range and forward P/E: Stocklake, as of Oct 28, 2026",
    "https://finance.yahoo.com/quote/TER"
   ]
  ],
  "foot": {
-  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Teradyne, Inc.",
-  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Teradyne, Inc. 无关联。"
+  "en": "Fundamentals as of Oct 28, 2026 (Q3 2026 results). For information only, not investment advice. Not affiliated with Teradyne, Inc.",
+  "zh": "基本面数据截至 2026年10月28日（2026 年第三季业绩）。仅供参考，不构成投资建议。与 Teradyne, Inc. 无关联。"
  },
  "quarters": [
   [
@@ -421,27 +421,28 @@
    59.79,
    32.94,
    2.38
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   1306,
+   59.06,
+   30.78,
+   2.17
   ]
  ],
  "guide": [
-  "Q3 2026e",
-  1250,
-  "Sep 2026 · guidance midpoint",
-  "2026年9月 · 指引中值"
+  "Q4 2026e",
+  1300,
+  "Dec 2026 · guidance midpoint",
+  "2026年12月 · 指引中值"
  ],
  "fcf": {
   "sub": {
-   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Teradyne's fiscal year is the calendar year. Shaded bars and italic rows are estimates.",
-   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年 Q3 至 2026 年 Q2 共 20 个季度。泰瑞达财年与日历年一致。浅色柱与斜体行为估算。"
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Teradyne's fiscal year is the calendar year. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年 Q4 至 2026 年 Q3 共 20 个季度。泰瑞达财年与日历年一致。浅色柱与斜体行为估算。"
   },
   "hist": [
-   [
-    "Q3 2021",
-    "Sep 2021",
-    522.66,
-    29.21,
-    493.45
-   ],
    [
     "Q4 2021",
     "Dec 2021",
@@ -574,22 +575,22 @@
     469.14,
     90.71,
     378.43
+   ],
+   [
+    "Q3 2026",
+    "Sep 2026",
+    313.61,
+    86.32,
+    227.29
    ]
   ],
   "est": [
    [
-    "Q3 2026",
-    "Sep 2026",
-    380,
-    85,
-    295
-   ],
-   [
     "Q4 2026",
     "Dec 2026",
-    420,
+    400,
     90,
-    330
+    310
    ],
    [
     "Q1 2027",
@@ -601,9 +602,16 @@
    [
     "Q2 2027",
     "Jun 2027",
-    450,
+    420,
     90,
-    360
+    330
+   ],
+   [
+    "Q3 2027",
+    "Sep 2027",
+    350,
+    90,
+    260
    ]
   ],
   "cash": {
@@ -611,20 +619,20 @@
     "en": "Cash",
     "zh": "现金"
    },
-   "v": "$355M",
+   "v": "$461M",
    "s": {
-    "en": "Jun 28, 2026 · +$162M long-term securities · revolver repaid",
-    "zh": "2026年6月28日 · 另有 1.62 亿长期证券 · 循环贷款已还清"
+    "en": "Sep 27, 2026 · +$164M marketable securities · no debt",
+    "zh": "2026年9月27日 · 另有 1.64 亿有价证券 · 无负债"
    }
   },
   "read": [
    {
-    "en": "Teradyne's free cash flow is lumpy and often weakest in the first quarter: it was negative in Q1 2022, Q1 2023 and Q1 2024. The AI ramp changed the scale. Q2 2026 produced $378M, the best quarter since 2021, and the last four quarters add up to about $800M, even though Q3 2025 was only $2M as inventory built.",
-    "zh": "泰瑞达自由现金流波动大，第一季常为最弱：2022、2023 和 2024 年 Q1 均为负。AI 放量改变了规模。2026 年 Q2 自由现金流 3.78 亿美元，为 2021 年以来最佳，近四季合计约 8 亿，尽管 2025 年 Q3 因备货仅 200 万。"
+    "en": "Teradyne's free cash flow is lumpy and often weakest in the first quarter: it was negative in Q1 2022, Q1 2023 and Q1 2024. The AI ramp changed the scale. Q3 2026 produced $227M on $314M of operating cash flow and $86M of capex, down from Q2's $378M record as inventory built, and the last four quarters add up to about $1.0B.",
+    "zh": "泰瑞达自由现金流波动大，第一季常为最弱：2022、2023 和 2024 年 Q1 均为负。AI 放量改变了规模。2026 年 Q3 经营现金流 3.14 亿美元、资本开支 8,600 万，自由现金流 2.27 亿，因库存增加低于 Q2 的 3.78 亿纪录；近四季合计约 10 亿美元。"
    },
    {
-    "en": "My base case uses the $1.25B Q3 guide midpoint, a similar level in Q4 and into 2027, with capex near $85–90M a quarter as the company adds capacity. That gives about $1.15B over four quarters. The main risk is order timing: a pause in compute or memory orders would cut revenue and cash quickly, as in 2023–24.",
-    "zh": "我的基准情景采用 Q3 指引中值 12.5 亿美元，Q4 及 2027 年初维持相近水平，资本开支随扩产保持每季约 8,500 万–9,000 万美元，四季合计约 11.5 亿美元。主要风险是订单时点：计算或存储订单一旦暂停，营收与现金会迅速下滑，如 2023–24 年。"
+    "en": "My base case uses the $1.30B Q4 guide midpoint and a similar level into 2027, with capex near $85–90M a quarter and a seasonally weak Q1. That gives about $1.05B over four quarters. The main risk is order timing: a pause in compute or memory orders, with inventory already up, would cut revenue and cash quickly, as in 2023–24.",
+    "zh": "我的基准情景采用 Q4 指引中值 13.0 亿美元，2027 年维持相近水平，资本开支每季约 8,500 万–9,000 万美元，Q1 季节性偏弱，四季合计约 10.5 亿美元。主要风险是订单时点：在库存已上升的情况下，计算或存储订单一旦暂停，营收与现金会迅速下滑，如 2023–24 年。"
    }
   ],
   "out": [
@@ -634,8 +642,8 @@
      "zh": "股息"
     },
     "p": {
-     "en": "$0.13 a share, about $20M a quarter.",
-     "zh": "每股 $0.13，每季约 2,000 万美元。"
+     "en": "$0.13 a share, about $20M a quarter; $61M paid in the first nine months.",
+     "zh": "每股 $0.13，每季约 2,000 万美元；前三季共派 6,100 万。"
     }
    },
    {
@@ -644,18 +652,18 @@
      "zh": "回购"
     },
     "p": {
-     "en": "$702M bought back in 2025, but only $74M in the first half of 2026.",
-     "zh": "2025 年回购 7.02 亿美元，但 2026 年上半年仅 7,400 万。"
+     "en": "Picked up to $99M in Q3, for $174M in the first nine months of 2026, versus $702M in 2025.",
+     "zh": "Q3 回购增至 9,900 万美元，2026 年前三季合计 1.74 亿，2025 年全年为 7.02 亿。"
     }
    },
    {
     "h": {
-     "en": "Capex and deals",
-     "zh": "资本开支与并购"
+     "en": "Capex and inventory",
+     "zh": "资本开支与库存"
     },
     "p": {
-     "en": "Capex rose to $91M in Q2. Teradyne bought TestInsight in April and invested in Bright Machines in October.",
-     "zh": "Q2 资本开支升至 9,100 万美元。泰瑞达4月收购 TestInsight，10月投资 Bright Machines。"
+     "en": "Capex was $86M in Q3 and $242M in nine months; inventory days rose to about 98.",
+     "zh": "Q3 资本开支 8,600 万美元，前三季 2.42 亿；库存天数升至约 98 天。"
     }
    }
   ],
@@ -666,45 +674,45 @@
      "zh": "AI 测试量"
     },
     "p": {
-     "en": "Semiconductor Test revenue topped $1B for two quarters in a row.",
-     "zh": "半导体测试营收连续两季超过 10 亿美元。"
+     "en": "Semiconductor Test revenue topped $1B for a third straight quarter.",
+     "zh": "半导体测试营收连续第三季超过 10 亿美元。"
     }
    },
    {
     "h": {
-     "en": "Memory orders",
-     "zh": "存储订单"
+     "en": "Memory and IST",
+     "zh": "存储与集成系统测试"
     },
     "p": {
-     "en": "Memory book-to-bill above 2 points to more shipments in the second half.",
-     "zh": "存储订单出货比高于 2，预示下半年出货增加。"
+     "en": "Both set revenue records in Q3 on AI-related demand.",
+     "zh": "受 AI 需求带动，两者在 Q3 营收均创纪录。"
     }
    },
    {
     "h": {
-     "en": "Robotics recovery",
-     "zh": "机器人复苏"
+     "en": "Robotics profit",
+     "zh": "机器人盈利"
     },
     "p": {
-     "en": "Robotics sales grew 33% after the 2025 cost cuts.",
-     "zh": "2025 年削减成本后，机器人销售增长 33%。"
+     "en": "Robotics turned profitable on its best Q3 revenue.",
+     "zh": "机器人业务以史上最佳第三季营收实现盈利。"
     }
    }
   ],
   "bridge": [
    [
     {
-     "en": "Cash, Jun 2026",
-     "zh": "2026年6月现金"
+     "en": "Cash, Sep 2026",
+     "zh": "2026年9月现金"
     },
-    355
+    461
    ],
    [
     {
      "en": "Free cash flow, 4 quarters (est.)",
      "zh": "4季自由现金流（估）"
     },
-    1150
+    1065
    ],
    [
     {
@@ -718,29 +726,29 @@
      "en": "Buybacks (est.)",
      "zh": "回购（估）"
     },
-    -500
+    -400
    ]
   ],
   "bridgeEnd": {
-   "en": "Cash, Jun 2027 (est.)",
-   "zh": "2027年6月现金（估）"
+   "en": "Cash, Sep 2027 (est.)",
+   "zh": "2027年9月现金（估）"
   },
   "bridgeNote": {
-   "en": "Teradyne has almost no debt. Buybacks slowed in 2026 while it spent on capacity and deals, so cash could build if that pace holds; acquisitions are not in this bridge.",
-   "zh": "泰瑞达几乎无负债。2026 年回购放缓，资金用于扩产与并购，若此节奏持续，现金可能累积；本测算未计入并购。"
+   "en": "Teradyne has no debt and another $164M in marketable securities. Buybacks picked up in Q3 but remain well below 2025's pace, so cash could build if that holds; acquisitions are not in this bridge.",
+   "zh": "泰瑞达无负债，另有 1.64 亿美元有价证券。Q3 回购回升，但仍远低于 2025 年的节奏，若此节奏持续，现金可能累积；本测算未计入并购。"
   },
   "src": [
+   [
+    "Q3 2026 results with cash flow and balance sheet (Teradyne)",
+    "https://investors.teradyne.com/news-events/press-releases/detail/455/teradyne-reports-third-quarter-2026-results"
+   ],
    [
     "Quarterly cash flow statement (Stock Analysis)",
     "https://stockanalysis.com/stocks/ter/financials/cash-flow-statement/?p=quarterly"
    ],
    [
-    "Balance sheet (Stock Analysis)",
-    "https://stockanalysis.com/stocks/ter/financials/balance-sheet/?p=quarterly"
-   ],
-   [
-    "Q2 2026 results",
-    "https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results"
+    "Q3 free cash flow margin and inventory days (StockStory)",
+    "https://finance.yahoo.com/markets/stocks/articles/teradyne-nasdaq-ter-exceeds-q3-205013655.html"
    ]
   ]
  }

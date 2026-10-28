@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Teradyne's fiscal year is the calendar year. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年 Q3 至 2026 年 Q2 共 20 个季度。泰瑞达财年与日历年一致。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Teradyne's fiscal year is the calendar year. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年 Q4 至 2026 年 Q3 共 20 个季度。泰瑞达财年与日历年一致。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q3 2021",
-   "Sep 2021",
-   522.66,
-   29.21,
-   493.45
-  ],
   [
    "Q4 2021",
    "Dec 2021",
@@ -143,22 +136,22 @@ window.FCF = {
    469.14,
    90.71,
    378.43
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   313.61,
+   86.32,
+   227.29
   ]
  ],
  "est": [
   [
-   "Q3 2026",
-   "Sep 2026",
-   380,
-   85,
-   295
-  ],
-  [
    "Q4 2026",
    "Dec 2026",
-   420,
+   400,
    90,
-   330
+   310
   ],
   [
    "Q1 2027",
@@ -170,9 +163,16 @@ window.FCF = {
   [
    "Q2 2027",
    "Jun 2027",
-   450,
+   420,
    90,
-   360
+   330
+  ],
+  [
+   "Q3 2027",
+   "Sep 2027",
+   350,
+   90,
+   260
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash",
    "zh": "现金"
   },
-  "v": "$355M",
+  "v": "$461M",
   "s": {
-   "en": "Jun 28, 2026 · +$162M long-term securities · revolver repaid",
-   "zh": "2026年6月28日 · 另有 1.62 亿长期证券 · 循环贷款已还清"
+   "en": "Sep 27, 2026 · +$164M marketable securities · no debt",
+   "zh": "2026年9月27日 · 另有 1.64 亿有价证券 · 无负债"
   }
  },
  "read": [
   {
-   "en": "Teradyne's free cash flow is lumpy and often weakest in the first quarter: it was negative in Q1 2022, Q1 2023 and Q1 2024. The AI ramp changed the scale. Q2 2026 produced $378M, the best quarter since 2021, and the last four quarters add up to about $800M, even though Q3 2025 was only $2M as inventory built.",
-   "zh": "泰瑞达自由现金流波动大，第一季常为最弱：2022、2023 和 2024 年 Q1 均为负。AI 放量改变了规模。2026 年 Q2 自由现金流 3.78 亿美元，为 2021 年以来最佳，近四季合计约 8 亿，尽管 2025 年 Q3 因备货仅 200 万。"
+   "en": "Teradyne's free cash flow is lumpy and often weakest in the first quarter: it was negative in Q1 2022, Q1 2023 and Q1 2024. The AI ramp changed the scale. Q3 2026 produced $227M on $314M of operating cash flow and $86M of capex, down from Q2's $378M record as inventory built, and the last four quarters add up to about $1.0B.",
+   "zh": "泰瑞达自由现金流波动大，第一季常为最弱：2022、2023 和 2024 年 Q1 均为负。AI 放量改变了规模。2026 年 Q3 经营现金流 3.14 亿美元、资本开支 8,600 万，自由现金流 2.27 亿，因库存增加低于 Q2 的 3.78 亿纪录；近四季合计约 10 亿美元。"
   },
   {
-   "en": "My base case uses the $1.25B Q3 guide midpoint, a similar level in Q4 and into 2027, with capex near $85–90M a quarter as the company adds capacity. That gives about $1.15B over four quarters. The main risk is order timing: a pause in compute or memory orders would cut revenue and cash quickly, as in 2023–24.",
-   "zh": "我的基准情景采用 Q3 指引中值 12.5 亿美元，Q4 及 2027 年初维持相近水平，资本开支随扩产保持每季约 8,500 万–9,000 万美元，四季合计约 11.5 亿美元。主要风险是订单时点：计算或存储订单一旦暂停，营收与现金会迅速下滑，如 2023–24 年。"
+   "en": "My base case uses the $1.30B Q4 guide midpoint and a similar level into 2027, with capex near $85–90M a quarter and a seasonally weak Q1. That gives about $1.05B over four quarters. The main risk is order timing: a pause in compute or memory orders, with inventory already up, would cut revenue and cash quickly, as in 2023–24.",
+   "zh": "我的基准情景采用 Q4 指引中值 13.0 亿美元，2027 年维持相近水平，资本开支每季约 8,500 万–9,000 万美元，Q1 季节性偏弱，四季合计约 10.5 亿美元。主要风险是订单时点：在库存已上升的情况下，计算或存储订单一旦暂停，营收与现金会迅速下滑，如 2023–24 年。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "股息"
    },
    "p": {
-    "en": "$0.13 a share, about $20M a quarter.",
-    "zh": "每股 $0.13，每季约 2,000 万美元。"
+    "en": "$0.13 a share, about $20M a quarter; $61M paid in the first nine months.",
+    "zh": "每股 $0.13，每季约 2,000 万美元；前三季共派 6,100 万。"
    }
   },
   {
@@ -213,18 +213,18 @@ window.FCF = {
     "zh": "回购"
    },
    "p": {
-    "en": "$702M bought back in 2025, but only $74M in the first half of 2026.",
-    "zh": "2025 年回购 7.02 亿美元，但 2026 年上半年仅 7,400 万。"
+    "en": "Picked up to $99M in Q3, for $174M in the first nine months of 2026, versus $702M in 2025.",
+    "zh": "Q3 回购增至 9,900 万美元，2026 年前三季合计 1.74 亿，2025 年全年为 7.02 亿。"
    }
   },
   {
    "h": {
-    "en": "Capex and deals",
-    "zh": "资本开支与并购"
+    "en": "Capex and inventory",
+    "zh": "资本开支与库存"
    },
    "p": {
-    "en": "Capex rose to $91M in Q2. Teradyne bought TestInsight in April and invested in Bright Machines in October.",
-    "zh": "Q2 资本开支升至 9,100 万美元。泰瑞达4月收购 TestInsight，10月投资 Bright Machines。"
+    "en": "Capex was $86M in Q3 and $242M in nine months; inventory days rose to about 98.",
+    "zh": "Q3 资本开支 8,600 万美元，前三季 2.42 亿；库存天数升至约 98 天。"
    }
   }
  ],
@@ -235,45 +235,45 @@ window.FCF = {
     "zh": "AI 测试量"
    },
    "p": {
-    "en": "Semiconductor Test revenue topped $1B for two quarters in a row.",
-    "zh": "半导体测试营收连续两季超过 10 亿美元。"
+    "en": "Semiconductor Test revenue topped $1B for a third straight quarter.",
+    "zh": "半导体测试营收连续第三季超过 10 亿美元。"
    }
   },
   {
    "h": {
-    "en": "Memory orders",
-    "zh": "存储订单"
+    "en": "Memory and IST",
+    "zh": "存储与集成系统测试"
    },
    "p": {
-    "en": "Memory book-to-bill above 2 points to more shipments in the second half.",
-    "zh": "存储订单出货比高于 2，预示下半年出货增加。"
+    "en": "Both set revenue records in Q3 on AI-related demand.",
+    "zh": "受 AI 需求带动，两者在 Q3 营收均创纪录。"
    }
   },
   {
    "h": {
-    "en": "Robotics recovery",
-    "zh": "机器人复苏"
+    "en": "Robotics profit",
+    "zh": "机器人盈利"
    },
    "p": {
-    "en": "Robotics sales grew 33% after the 2025 cost cuts.",
-    "zh": "2025 年削减成本后，机器人销售增长 33%。"
+    "en": "Robotics turned profitable on its best Q3 revenue.",
+    "zh": "机器人业务以史上最佳第三季营收实现盈利。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash, Jun 2026",
-    "zh": "2026年6月现金"
+    "en": "Cash, Sep 2026",
+    "zh": "2026年9月现金"
    },
-   355
+   461
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   1150
+   1065
   ],
   [
    {
@@ -287,29 +287,29 @@ window.FCF = {
     "en": "Buybacks (est.)",
     "zh": "回购（估）"
    },
-   -500
+   -400
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash, Jun 2027 (est.)",
-  "zh": "2027年6月现金（估）"
+  "en": "Cash, Sep 2027 (est.)",
+  "zh": "2027年9月现金（估）"
  },
  "bridgeNote": {
-  "en": "Teradyne has almost no debt. Buybacks slowed in 2026 while it spent on capacity and deals, so cash could build if that pace holds; acquisitions are not in this bridge.",
-  "zh": "泰瑞达几乎无负债。2026 年回购放缓，资金用于扩产与并购，若此节奏持续，现金可能累积；本测算未计入并购。"
+  "en": "Teradyne has no debt and another $164M in marketable securities. Buybacks picked up in Q3 but remain well below 2025's pace, so cash could build if that holds; acquisitions are not in this bridge.",
+  "zh": "泰瑞达无负债，另有 1.64 亿美元有价证券。Q3 回购回升，但仍远低于 2025 年的节奏，若此节奏持续，现金可能累积；本测算未计入并购。"
  },
  "src": [
+  [
+   "Q3 2026 results with cash flow and balance sheet (Teradyne)",
+   "https://investors.teradyne.com/news-events/press-releases/detail/455/teradyne-reports-third-quarter-2026-results"
+  ],
   [
    "Quarterly cash flow statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/ter/financials/cash-flow-statement/?p=quarterly"
   ],
   [
-   "Balance sheet (Stock Analysis)",
-   "https://stockanalysis.com/stocks/ter/financials/balance-sheet/?p=quarterly"
-  ],
-  [
-   "Q2 2026 results",
-   "https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results"
+   "Q3 free cash flow margin and inventory days (StockStory)",
+   "https://finance.yahoo.com/markets/stocks/articles/teradyne-nasdaq-ter-exceeds-q3-205013655.html"
   ]
  ]
 };

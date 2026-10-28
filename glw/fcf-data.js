@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Corning's fiscal year is the calendar year. Q2 2026 operating cash flow includes a $1.0B upfront customer prepayment. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度。康宁财年即日历年。2026 年第二季经营现金流含 10 亿美元客户预付款。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Corning's fiscal year is the calendar year. Q2 2026 operating cash flow includes a $1.0B upfront customer prepayment. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第四季至 2026 年第三季共 20 个季度。康宁财年即日历年。2026 年第二季经营现金流含 10 亿美元客户预付款。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q3 2021",
-   "Sep 2021",
-   895,
-   401,
-   494
-  ],
   [
    "Q4 2021",
    "Dec 2021",
@@ -143,22 +136,22 @@ window.FCF = {
    1717,
    422,
    1295
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   1061,
+   545,
+   516
   ]
  ],
  "est": [
   [
-   "Q3 2026",
-   "Sep 2026",
-   950,
-   600,
-   350
-  ],
-  [
    "Q4 2026",
    "Dec 2026",
    1250,
-   650,
-   600
+   700,
+   550
   ],
   [
    "Q1 2027",
@@ -173,6 +166,13 @@ window.FCF = {
    1000,
    550,
    450
+  ],
+  [
+   "Q3 2027",
+   "Sep 2027",
+   1150,
+   600,
+   550
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash",
    "zh": "现金"
   },
-  "v": "$2.50B",
+  "v": "$2.54B",
   "s": {
-   "en": "Jun 30, 2026 · debt $9.4B",
-   "zh": "2026年6月30日 · 债务 94 亿"
+   "en": "Sep 30, 2026 · debt $8.2B",
+   "zh": "2026年9月30日 · 债务 82 亿"
   }
  },
  "read": [
   {
-   "en": "Corning's free cash flow is seasonal: the March quarter is the weakest (negative in 2023, 2024 and 2025) and the second half is stronger. Q2 2026 showed a record $1.30B, but about $1.0B of that was a customer paying upfront for future fiber supply, so the underlying figure was closer to $300M. The last four quarters add up to about $2.4B, or about $1.4B without the prepayment.",
-   "zh": "康宁自由现金流有季节性：3月季度最弱（2023、2024、2025 年均为负），下半年较强。2026 年第二季录得创纪录的 13.0 亿美元，但其中约 10 亿是客户为未来光纤供货预付的款项，剔除后约 3 亿。近四季合计约 24 亿美元，剔除预付款约 14 亿。"
+   "en": "Corning's free cash flow is seasonal: the March quarter is the weakest (negative in 2023, 2024 and 2025) and the second half is stronger. Q3 2026 brought $516M (operating cash flow $1.06B less $545M of capex; Corning's adjusted figure is $661M). Q2's record $1.30B included a $1.0B customer prepayment, so the last four quarters add up to about $2.5B, or about $1.5B without it.",
+   "zh": "康宁自由现金流有季节性：3月季度最弱（2023、2024、2025 年均为负），下半年较强。2026 年第三季为 5.16 亿美元（经营现金流 10.6 亿减资本开支 5.45 亿；公司口径调整后为 6.61 亿）。第二季创纪录的 13.0 亿含 10 亿客户预付款，因此近四季合计约 25 亿美元，剔除后约 15 亿。"
   },
   {
-   "en": "My base case lifts capex to about $600–650M a quarter in the second half, in line with the ~$2B plan for 2026, and lets operating cash flow grow with sales of about $5B a quarter. That gives about $1.4B over four quarters. The main risk is that AI fiber orders slow after Corning has built capacity: spending and depreciation would stay high while volumes fell.",
-   "zh": "我的基准情景假设下半年资本开支升至每季约 6–6.5 亿美元，与 2026 年约 20 亿的计划一致，经营现金流随每季约 50 亿美元的销售增长，四季合计约 14 亿美元。主要风险是康宁扩产后 AI 光纤订单放缓：开支与折旧维持高位而销量下滑。"
+   "en": "My base case has capex of about $700M in Q4, completing the ~$2B 2026 plan, then $500–600M a quarter in 2027, with operating cash flow growing with core sales above $5B a quarter. That gives about $1.55B over four quarters. The main risk is that AI fiber orders slow after Corning has built capacity: spending and depreciation would stay high while volumes fell.",
+   "zh": "我的基准情景假设 Q4 资本开支约 7 亿美元，完成 2026 年约 20 亿的计划，2027 年每季 5–6 亿，经营现金流随每季逾 50 亿美元的核心销售增长，四季合计约 15.5 亿美元。主要风险是康宁扩产后 AI 光纤订单放缓：开支与折旧维持高位而销量下滑。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "资本开支"
    },
    "p": {
-    "en": "About $2B in 2026, mostly for Optical; $754M was spent in the first half.",
-    "zh": "2026 年约 20 亿美元，主要投向光通信；上半年已支出 7.54 亿。"
+    "en": "About $2B in 2026, mostly for Optical; $1.30B was spent in the first nine months.",
+    "zh": "2026 年约 20 亿美元，主要投向光通信；前九个月已支出 13.0 亿。"
    }
   },
   {
@@ -213,8 +213,8 @@ window.FCF = {
     "zh": "股息"
    },
    "p": {
-    "en": "About $240M a quarter at $0.28 per share.",
-    "zh": "每股 $0.28，每季约 2.4 亿美元。"
+    "en": "About $260M a quarter at $0.28 per share.",
+    "zh": "每股 $0.28，每季约 2.6 亿美元。"
    }
   },
   {
@@ -223,8 +223,8 @@ window.FCF = {
     "zh": "债务"
    },
    "p": {
-    "en": "About $9.4B of debt against $2.5B of cash; about $0.7B is due within a year.",
-    "zh": "债务约 94 亿美元，现金 25 亿；约 7 亿一年内到期。"
+    "en": "About $8.2B of debt against $2.5B of cash; about $0.9B is due within a year.",
+    "zh": "债务约 82 亿美元，现金 25 亿；约 9 亿一年内到期。"
    }
   }
  ],
@@ -235,8 +235,8 @@ window.FCF = {
     "zh": "客户预付款"
    },
    "p": {
-    "en": "A $1.0B prepayment in Q2 under a deal running to 2029; contract liabilities were $2.7B in June.",
-    "zh": "Q2 收到 10 亿美元预付款，合约期至 2029 年；6月合约负债为 27 亿。"
+    "en": "Customer deposits added $639M of cash in the first nine months, mainly the $1.0B Q2 prepayment under a deal running to 2029.",
+    "zh": "前九个月客户订金带来 6.39 亿美元现金，主要来自 Q2 一项期至 2029 年协议的 10 亿美元预付款。"
    }
   },
   {
@@ -245,8 +245,8 @@ window.FCF = {
     "zh": "销量增长"
    },
    "p": {
-    "en": "Core sales are guided up 16% in Q3, with Optical margins rising.",
-    "zh": "Q3 核心销售指引增长 16%，光通信利润率上升。"
+    "en": "Core sales are guided up 19% in Q4, with Optical margins rising.",
+    "zh": "Q4 核心销售指引增长 19%，光通信利润率上升。"
    }
   },
   {
@@ -263,53 +263,53 @@ window.FCF = {
  "bridge": [
   [
    {
-    "en": "Cash, Jun 2026",
-    "zh": "2026年6月现金"
+    "en": "Cash, Sep 2026",
+    "zh": "2026年9月现金"
    },
-   2504
+   2537
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   1400
+   1550
   ],
   [
    {
     "en": "Dividends (est.)",
     "zh": "股息（估）"
    },
-   -970
+   -1050
   ],
   [
    {
     "en": "Buybacks (est.)",
     "zh": "回购（估）"
    },
-   -300
+   -150
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash, Jun 2027 (est.)",
-  "zh": "2027年6月现金（估）"
+  "en": "Cash, Sep 2027 (est.)",
+  "zh": "2027年9月现金（估）"
  },
  "bridgeNote": {
-  "en": "Leaves out any share sales under the $2B program and the ~$0.7B of debt due within a year, which could be repaid or refinanced.",
-  "zh": "未计入 20 亿美元增发计划下的任何售股，也未计入约 7 亿一年内到期、可能偿还或再融资的债务。"
+  "en": "Leaves out any share sales under the $2B program and the ~$0.9B of debt due within a year, which could be repaid or refinanced. No shares were bought back in Q3.",
+  "zh": "未计入 20 亿美元增发计划下的任何售股，也未计入约 9 亿一年内到期、可能偿还或再融资的债务。Q3 未回购股票。"
  },
  "src": [
+  [
+   "Q3 2026 release with cash flow and balance sheet (Corning)",
+   "https://s203.q4cdn.com/212458750/files/content_files/Corning-Incorporated-Third-Quarter-2026-Earnings-Release-with-Financials-2026-10-27.pdf"
+  ],
   [
    "Quarterly cash flow statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/glw/financials/cash-flow-statement/?p=quarterly"
   ],
   [
-   "Balance sheet (Stock Analysis)",
-   "https://stockanalysis.com/stocks/glw/financials/balance-sheet/?p=quarterly"
-  ],
-  [
-   "Q3 2026 preview: capex and funding (Drillr)",
-   "https://drillr.ai/article/glw-corning-q3-2026-earnings-preview-ai-optical-fiber-capex-funding"
+   "Q3 2026 call transcript (Motley Fool)",
+   "https://fool.com/earnings/call-transcripts/2026/10/27/corning-glw-q3-2026-earnings-call-transcript"
   ]
  ]
 };

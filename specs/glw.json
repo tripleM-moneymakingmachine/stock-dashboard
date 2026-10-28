@@ -3,13 +3,13 @@
  "ticker": "GLW",
  "exchange": "NYSE",
  "name": "Corning",
- "shares": 861390000.0,
+ "shares": 863000000.0,
  "beta": "1.12",
  "snapshot": {
-  "price": "$156.68",
-  "date": "Oct 9, 2026",
-  "mcap": "$135.0B",
-  "range": "$78–255"
+  "price": "$126.30",
+  "date": "Oct 27, 2026",
+  "mcap": "$109.0B",
+  "range": "$77–272"
  },
  "eyebrow": {
   "en": "Corning Incorporated · Common stock · Corning, New York",
@@ -20,56 +20,56 @@
   "zh": "一家 175 年历史的玻璃制造商，<em>为 AI 数据中心重新布线</em>。"
  },
  "lede": {
-  "en": "Corning makes specialty glass, ceramics and optical fiber. AI data centers are now the engine: Optical Communications sales rose 32% to $2.07B last quarter, and the upgraded Springboard plan targets a $20B annual sales run rate by the end of 2026 and $40B by 2030. The catch is the cost of getting there, with about $2B of capex this year and a new $2B share-sale program, and a stock that went from $255 to $124 and back to $157 since late June.",
-  "zh": "康宁生产特种玻璃、陶瓷和光纤。AI 数据中心已成为增长引擎：上季光通信销售增长 32% 至 20.7 亿美元，升级后的 Springboard 计划目标是 2026 年底年化销售达 200 亿美元、2030 年达 400 亿美元。代价是扩张成本：今年资本开支约 20 亿美元，并新设 20 亿美元的增发计划；股价自6月底以来由 $255 跌至 $124，再回到 $157。"
+  "en": "Corning makes specialty glass, ceramics and optical fiber. AI data centers are now the engine: Optical Communications sales rose 44% to $2.38B last quarter, and core sales already hit a $20.3B annual run rate, beating the end-2026 Springboard target a quarter early; the plan aims for $40B by 2030. The catch is the cost, with $1.3B of capex in nine months and a $2B share-sale program, and a stock that went from $255 to $124 and sits near $126 after the Q3 beat.",
+  "zh": "康宁生产特种玻璃、陶瓷和光纤。AI 数据中心已成为增长引擎：上季光通信销售增长 44% 至 23.8 亿美元，核心销售年化已达 203 亿美元，提前一季超过 Springboard 计划 2026 年底的目标；计划 2030 年达 400 亿美元。代价是扩张成本：前九个月资本开支 13 亿美元，另有 20 亿美元增发计划；股价由 $255 跌至 $124，Q3 超预期后仍在 $126 附近。"
  },
  "valuation": {
   "k": {
-   "en": "P/E (2026)",
-   "zh": "市盈率（2026）"
+   "en": "P/E (2027)",
+   "zh": "市盈率（2027）"
   },
-  "v": "~48×",
+  "v": "~29×",
   "s": {
-   "en": "core EPS consensus $3.28 · GAAP trailing ~72×",
-   "zh": "核心每股收益一致预期 $3.28 · GAAP 滚动约 72 倍"
+   "en": "core EPS consensus $4.42 · GAAP trailing ~51×",
+   "zh": "核心每股收益一致预期 $4.42 · GAAP 滚动约 51 倍"
   }
  },
  "analysts": {
   "k": {
-   "en": "Q3 2026 guide",
-   "zh": "2026 Q3 指引"
+   "en": "Q4 2026 guide",
+   "zh": "2026 Q4 指引"
   },
-  "v": "$4.9–5.0B",
+  "v": "$5.2–5.3B",
   "s": {
-   "en": "core sales +16% · core EPS $0.85–0.89",
-   "zh": "核心销售 +16% · 核心每股 $0.85–0.89"
+   "en": "core sales +19% · core EPS $0.96–1.00",
+   "zh": "核心销售 +19% · 核心每股 $0.96–1.00"
   }
  },
  "earnings": {
-  "v": "Oct 27",
+  "v": "Late Jan",
   "s": {
-   "en": "Q3 2026 results and Q4 outlook",
-   "zh": "2026 Q3 业绩及 Q4 展望"
+   "en": "Q4 2026 results and 2027 outlook",
+   "zh": "2026 Q4 业绩及 2027 展望"
   }
  },
  "sub_price": {
-  "en": "Daily closes with the 50-day average. Corning nearly tripled from about $86 a year ago to a $255 close on Jun 29, then fell to $124 on Jul 29 after its Q2 report. Since August it has traded mostly between $143 and $170.",
-  "zh": "每日收盘价与50日均线。康宁由一年前约 $86 涨近两倍至 6月29日收盘 $255，Q2 财报后于 7月29日跌至 $124。8月以来大致在 $143 至 $170 之间波动。"
+  "en": "Daily closes with the 50-day average. Corning nearly tripled from about $86 a year ago to a $255 close on Jun 29, then fell to $124 on Jul 29 after its Q2 report. After trading mostly between $143 and $170 from August to mid-October, it slid to $124 on Oct 22 and closed at $126 on Oct 27 after its Q3 beat.",
+  "zh": "每日收盘价与50日均线。康宁由一年前约 $86 涨近两倍至 6月29日收盘 $255，Q2 财报后于 7月29日跌至 $124。8月至10月中旬大致在 $143 至 $170 之间波动，10月22日跌至 $124，10月27日 Q3 超预期后收于 $126。"
  },
  "sub_rev": {
-  "en": "Revenue in US$ millions (GAAP net sales), with GAAP gross margin on the right axis. Corning's fiscal year is the calendar year. Corning guides on \"core\" sales, which use fixed or hedged currency rates and have run about $180–230M above GAAP sales in recent quarters. The last bar is my GAAP estimate for Q3 2026: the $4.9–5.0B core guide minus that gap.",
-  "zh": "营收单位为百万美元（GAAP 净销售额），右轴为 GAAP 毛利率。康宁财年即日历年。公司以“核心”销售给出指引，核心销售采用固定或对冲汇率，近几季比 GAAP 销售高约 1.8–2.3 亿美元。最后一根柱为我对 2026 年第三季 GAAP 销售的估算：49–50 亿美元核心指引减去该差额。"
+  "en": "Revenue in US$ millions (GAAP net sales), with GAAP gross margin on the right axis. Corning's fiscal year is the calendar year. Corning guides on \"core\" sales, which use fixed or hedged currency rates and have run about $180–230M above GAAP sales in recent quarters ($226M in Q3 2026). The last bar is my GAAP estimate for Q4 2026: the $5.2–5.3B core guide minus that gap.",
+  "zh": "营收单位为百万美元（GAAP 净销售额），右轴为 GAAP 毛利率。康宁财年即日历年。公司以“核心”销售给出指引，核心销售采用固定或对冲汇率，近几季比 GAAP 销售高约 1.8–2.3 亿美元（2026 年第三季为 2.26 亿）。最后一根柱为我对 2026 年第四季 GAAP 销售的估算：52–53 亿美元核心指引减去该差额。"
  },
  "rev_cells": [
   {
    "k": {
-    "en": "Q2 2026",
-    "zh": "2026 Q2"
+    "en": "Q3 2026",
+    "zh": "2026 Q3"
    },
-   "v": "$4.51B",
+   "v": "$4.86B",
    "s": {
-    "en": "GAAP +17% YoY · core $4.74B",
-    "zh": "GAAP 同比 +17% · 核心 47.4 亿"
+    "en": "GAAP +18% YoY · core $5.08B (+19%)",
+    "zh": "GAAP 同比 +18% · 核心 50.8 亿（+19%）"
    }
   },
   {
@@ -77,21 +77,10 @@
     "en": "Optical Communications",
     "zh": "光通信"
    },
-   "v": "$2.07B",
+   "v": "$2.38B",
    "s": {
-    "en": "+32% YoY · net income $438M (+77%)",
-    "zh": "同比 +32% · 净利 4.38 亿（+77%）"
-   }
-  },
-  {
-   "k": {
-    "en": "Glass Innovations",
-    "zh": "玻璃创新"
-   },
-   "v": "$1.46B",
-   "s": {
-    "en": "+1% YoY · Display + Specialty Materials",
-    "zh": "同比 +1% · 显示 + 特种材料"
+    "en": "+44% YoY · net income $532M (+80%)",
+    "zh": "同比 +44% · 净利 5.32 亿（+80%）"
    }
   },
   {
@@ -99,10 +88,10 @@
     "en": "Solar (incl. Hemlock)",
     "zh": "太阳能（含 Hemlock）"
    },
-   "v": "$438M",
+   "v": "$436M",
    "s": {
-    "en": "+90% YoY · net loss $7M",
-    "zh": "同比 +90% · 净亏 700 万"
+    "en": "+37% YoY · net loss $7M",
+    "zh": "同比 +37% · 净亏 700 万"
    }
   },
   {
@@ -110,10 +99,10 @@
     "en": "Gross margin",
     "zh": "毛利率"
    },
-   "v": "36.1%",
+   "v": "37.3%",
    "s": {
-    "en": "GAAP · core 39.6% (+120 bp)",
-    "zh": "GAAP · 核心 39.6%（+120 基点）"
+    "en": "GAAP · core 40.5% (+150 bp)",
+    "zh": "GAAP · 核心 40.5%（+150 基点）"
    }
   },
   {
@@ -121,10 +110,21 @@
     "en": "EPS",
     "zh": "每股收益"
    },
-   "v": "$0.64",
+   "v": "$0.78",
    "s": {
-    "en": "GAAP +19% · core $0.78 (+30%)",
-    "zh": "GAAP +19% · 核心 $0.78（+30%）"
+    "en": "GAAP +56% · core $0.91 vs $0.88 est.",
+    "zh": "GAAP +56% · 核心 $0.91，预期 $0.88"
+   }
+  },
+  {
+   "k": {
+    "en": "Q4 2026 outlook",
+    "zh": "2026 Q4 展望"
+   },
+   "v": "$5.2–5.3B",
+   "s": {
+    "en": "core sales +19% · EPS $0.96–1.00 vs $0.93 est.",
+    "zh": "核心销售 +19% · 每股 $0.96–1.00，预期 $0.93"
    }
   }
  ],
@@ -136,8 +136,8 @@
     "zh": "AI 光纤需求"
    },
    "p": {
-    "en": "Enterprise Networks sales rose 65% to $1.27B, with Gen AI products growing faster. Corning has multiyear supply deals with Meta (up to $6B), Amazon, NVIDIA and, since September, AT&T (over $3B).",
-    "zh": "企业网络销售增长 65% 至 12.7 亿美元，生成式 AI 产品增长更快。康宁已与 Meta（最高 60 亿美元）、亚马逊、英伟达签订多年供货协议，9月又与 AT&T 签下逾 30 亿美元合约。"
+    "en": "Enterprise Networks sales rose 84% and generative AI product sales more than doubled. Corning has multiyear supply deals with Meta (up to $6B), Amazon, NVIDIA and AT&T (over $3B), and management says new long-term deals share the cost and risk of added capacity.",
+    "zh": "企业网络销售增长 84%，生成式 AI 产品销售增长逾一倍。康宁已与 Meta（最高 60 亿美元）、亚马逊、英伟达及 AT&T（逾 30 亿美元）签订多年供货协议，管理层表示新的长期协议由客户分担扩产成本与风险。"
    }
   },
   {
@@ -147,8 +147,8 @@
     "zh": "利润率上升"
    },
    "p": {
-    "en": "Core operating margin rose 190 bp to 20.9% and Optical net income grew 77%, faster than sales.",
-    "zh": "核心营业利润率提升 190 基点至 20.9%，光通信净利增长 77%，快于销售增速。"
+    "en": "Core operating margin rose 310 bp to 22.7% and core ROIC 330 bp to 16.7%. Optical net income grew 80%, faster than its 44% sales growth, and the Q4 guide calls for core EPS up about 36% again.",
+    "zh": "核心营业利润率提升 310 基点至 22.7%，核心投资回报率提升 330 基点至 16.7%。光通信净利增长 80%，快于 44% 的销售增速；Q4 指引核心每股收益再增约 36%。"
    }
   },
   {
@@ -158,8 +158,8 @@
     "zh": "太阳能爬坡"
    },
    "p": {
-    "en": "Solar (Hemlock polysilicon plus US wafers) grew 90% but lost $7M after a plant shutdown. Management expects better profit from Q3, building toward more than $3B of revenue.",
-    "zh": "太阳能业务（Hemlock 多晶硅加美国硅片）增长 90%，但因工厂停机检修亏损 700 万美元。管理层预计 Q3 起利润改善，目标收入逾 30 亿美元。"
+    "en": "Solar grew 37% to $436M but still lost $7M; the ramp is running slower than planned and the CFO says it drags on group margin for now. New US Section 232 trade action should help pricing on the way to a $3B-plus revenue stream.",
+    "zh": "太阳能业务增长 37% 至 4.36 亿美元，但仍亏损 700 万；爬坡慢于计划，CFO 表示目前拖累集团利润率。美国新的 232 条款贸易措施应有助定价，目标收入逾 30 亿美元。"
    }
   },
   {
@@ -169,8 +169,8 @@
     "zh": "扩产资金"
    },
    "p": {
-    "en": "Capex is set at about $2B for 2026. Corning took a $1.0B customer prepayment, sold $500M of warrants to NVIDIA and set up a $2B at-the-market share program in September.",
-    "zh": "2026 年资本开支约 20 亿美元。康宁收取了 10 亿美元客户预付款，向英伟达出售 5 亿美元认股权证，并于9月设立 20 亿美元的市价增发计划。"
+    "en": "Capex was $545M in Q3 and $1.30B in nine months, on track for about $2B this year. Adjusted free cash flow still reached $2.27B year to date, helped by customer prepayments, and a $2B at-the-market share program is in place.",
+    "zh": "Q3 资本开支 5.45 亿美元，前九个月 13.0 亿，全年约 20 亿。在客户预付款帮助下，年初至今调整后自由现金流仍达 22.7 亿美元，另设有 20 亿美元的市价增发计划。"
    }
   },
   {
@@ -180,8 +180,8 @@
     "zh": "预期偏高"
    },
    "p": {
-    "en": "At about 48 times 2026 core EPS consensus, little room is left for misses. In July an in-line guide sent the stock down 12% in a day.",
-    "zh": "按 2026 年核心每股收益一致预期计约 48 倍，容错空间很小。7月仅符合预期的指引就令股价单日下跌 12%。"
+    "en": "At about 29 times 2027 core EPS consensus, beats are not enough: the stock slipped 1% on a beat-and-raise quarter, after a 12% drop on the July guide. Truist cut its target to $175 on valuation while raising estimates.",
+    "zh": "按 2027 年核心每股收益一致预期计约 29 倍，单纯超预期已不够：本季业绩与指引双双超预期，股价仍跌 1%；7月指引曾令股价单日下跌 12%。Truist 上调盈利预测，但因估值将目标价下调至 175 美元。"
    }
   },
   {
@@ -191,23 +191,12 @@
     "zh": "客户集中与传统业务"
    },
    "p": {
-    "en": "The top two Optical customers were 28% of segment sales in 2025. Management expects handheld units to fall about 15% this year on memory prices, a drag on Gorilla Glass, and Life Sciences sales fell 15%.",
-    "zh": "2025 年光通信前两大客户占该部门销售 28%。管理层预计今年手机等手持设备出货因内存涨价下降约 15%，拖累大猩猩玻璃；生命科学销售下降 15%。"
+    "en": "The top two Optical customers were 28% of segment sales in 2025. Glass Innovations sales fell 3% to $1.51B as handheld demand weakens on memory prices, and Life Sciences and emerging businesses lost $28M on $290M of sales.",
+    "zh": "2025 年光通信前两大客户占该部门销售 28%。受内存涨价导致手持设备需求走弱影响，玻璃创新销售下降 3% 至 15.1 亿美元；生命科学及新兴业务销售 2.9 亿美元，亏损 2800 万。"
    }
   }
  ],
  "calendar": [
-  {
-   "date": "Oct 27, 2026",
-   "h": {
-    "en": "Q3 2026 earnings",
-    "zh": "2026 Q3 财报"
-   },
-   "p": {
-    "en": "Guide is $4.9–5.0B core sales and $0.85–0.89 core EPS; Q3 should reach the $20B annualized run rate a quarter early.",
-    "zh": "指引为核心销售 49–50 亿美元、核心每股 $0.85–0.89；Q3 有望提前一季达到 200 亿美元年化销售。"
-   }
-  },
   {
    "date": "Nov 13, 2026",
    "h": {
@@ -226,44 +215,44 @@
     "zh": "2026 Q4 财报"
    },
    "p": {
-    "en": "Full-year results, the 2027 capex plan and a check on the end-2026 Springboard target. Last year's report came on Feb 3.",
-    "zh": "全年业绩、2027 年资本开支计划及 Springboard 2026 年底目标的检验。去年财报于 2月3日发布。"
+    "en": "Guide is $5.2–5.3B core sales and $0.96–1.00 core EPS, a run rate near $21B. Expect the 2027 capex plan; last year's report came on Feb 3.",
+    "zh": "指引为核心销售 52–53 亿美元、核心每股 $0.96–1.00，年化约 210 亿美元。届时预计公布 2027 年资本开支计划；去年财报于 2月3日发布。"
    }
   }
  ],
  "sources": [
   [
-   "Q2 2026 results (Corning, via Business Wire)",
-   "https://businesswire.com/news/home/20260727590976/en/Cornings-Strong-Second-Quarter-2026-Financial-Results1-Demonstrate-Progress-on-Recently-Upgraded-Springboard-Plan"
+   "Q3 2026 results release (Corning)",
+   "https://s203.q4cdn.com/212458750/files/content_files/Corning-Incorporated-Third-Quarter-2026-Earnings-Release-with-Financials-2026-10-27.pdf"
   ],
   [
-   "Q2 2026 segment results (Quartr)",
-   "https://quartr.com/events/corning-incorporated-glw-q2-2026_oz31t9oR"
+   "Q3 2026 call transcript (Motley Fool)",
+   "https://fool.com/earnings/call-transcripts/2026/10/27/corning-glw-q3-2026-earnings-call-transcript"
   ],
   [
-   "Q3 2026 earnings preview: capex, funding, risks (Drillr)",
-   "https://drillr.ai/article/glw-corning-q3-2026-earnings-preview-ai-optical-fiber-capex-funding"
+   "Q3 beat vs. estimates and segments (Zacks via Yahoo Finance)",
+   "https://finance.yahoo.com/markets/stocks/articles/glw-q3-earnings-beat-estimates-150500942.html"
+  ],
+  [
+   "Q3 slides: stock falls on capex concerns (Investing.com)",
+   "https://investing.com/news/company-news/corning-q3-2026-slides-beats-estimates-stock-falls-on-capex-concerns-93CH-4975910"
+  ],
+  [
+   "Truist cuts target to $175 (Investing.com)",
+   "https://investing.com/news/analyst-ratings/truist-cuts-corning-stock-price-target-on-valuation-to-175-93CH-4976686"
   ],
   [
    "Quarterly income statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/glw/financials/?p=quarterly"
   ],
   [
-   "AT&T and Corning fiber agreement (AT&T)",
-   "https://about.att.com/story/2026/att-corning-engineer-connected-world.html"
-  ],
-  [
-   "$2B at-the-market program, 8-K (Stock Titan)",
-   "https://www.stocktitan.net/sec-filings/GLW/8-k-corning-inc-ny-reports-material-event-448a5103dd2d.html"
-  ],
-  [
-   "Price, market cap, beta and analyst data: MarketBeat and Stocklake, as of Oct 9, 2026",
-   "https://marketbeat.com/instant-alerts/analyst-corning-nyse-glw-upgraded-to-buy-at-wall-street-zen-2026-10-10"
+   "Price, market cap and range: Stocklake; EPS consensus: WallStreetZen, as of Oct 28, 2026",
+   "https://wallstreetzen.com/stocks/us/nyse/glw/stock-forecast"
   ]
  ],
  "foot": {
-  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Corning Incorporated.",
-  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Corning Incorporated 无关联。"
+  "en": "Fundamentals as of Oct 28, 2026 (Q3 2026 results). For information only, not investment advice. Not affiliated with Corning Incorporated.",
+  "zh": "基本面数据截至 2026年10月28日（2026 年第三季业绩）。仅供参考，不构成投资建议。与 Corning Incorporated 无关联。"
  },
  "quarters": [
   [
@@ -425,27 +414,28 @@
    36.14,
    15.65,
    0.64
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   4855,
+   37.28,
+   18.8,
+   0.78
   ]
  ],
  "guide": [
-  "Q3 2026e",
-  4720,
-  "Sep 2026 · $4.95B core guide midpoint less ~$230M core-to-GAAP gap (my estimate)",
-  "2026年9月 · 核心指引中值 49.5 亿减约 2.3 亿核心与 GAAP 差额（本人估算）"
+  "Q4 2026e",
+  5020,
+  "Dec 2026 · $5.25B core guide midpoint less ~$230M core-to-GAAP gap (my estimate)",
+  "2026年12月 · 核心指引中值 52.5 亿减约 2.3 亿核心与 GAAP 差额（本人估算）"
  ],
  "fcf": {
   "sub": {
-   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Corning's fiscal year is the calendar year. Q2 2026 operating cash flow includes a $1.0B upfront customer prepayment. Shaded bars and italic rows are estimates.",
-   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度。康宁财年即日历年。2026 年第二季经营现金流含 10 亿美元客户预付款。浅色柱与斜体行为估算。"
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Corning's fiscal year is the calendar year. Q2 2026 operating cash flow includes a $1.0B upfront customer prepayment. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第四季至 2026 年第三季共 20 个季度。康宁财年即日历年。2026 年第二季经营现金流含 10 亿美元客户预付款。浅色柱与斜体行为估算。"
   },
   "hist": [
-   [
-    "Q3 2021",
-    "Sep 2021",
-    895,
-    401,
-    494
-   ],
    [
     "Q4 2021",
     "Dec 2021",
@@ -578,22 +568,22 @@
     1717,
     422,
     1295
+   ],
+   [
+    "Q3 2026",
+    "Sep 2026",
+    1061,
+    545,
+    516
    ]
   ],
   "est": [
    [
-    "Q3 2026",
-    "Sep 2026",
-    950,
-    600,
-    350
-   ],
-   [
     "Q4 2026",
     "Dec 2026",
     1250,
-    650,
-    600
+    700,
+    550
    ],
    [
     "Q1 2027",
@@ -608,6 +598,13 @@
     1000,
     550,
     450
+   ],
+   [
+    "Q3 2027",
+    "Sep 2027",
+    1150,
+    600,
+    550
    ]
   ],
   "cash": {
@@ -615,20 +612,20 @@
     "en": "Cash",
     "zh": "现金"
    },
-   "v": "$2.50B",
+   "v": "$2.54B",
    "s": {
-    "en": "Jun 30, 2026 · debt $9.4B",
-    "zh": "2026年6月30日 · 债务 94 亿"
+    "en": "Sep 30, 2026 · debt $8.2B",
+    "zh": "2026年9月30日 · 债务 82 亿"
    }
   },
   "read": [
    {
-    "en": "Corning's free cash flow is seasonal: the March quarter is the weakest (negative in 2023, 2024 and 2025) and the second half is stronger. Q2 2026 showed a record $1.30B, but about $1.0B of that was a customer paying upfront for future fiber supply, so the underlying figure was closer to $300M. The last four quarters add up to about $2.4B, or about $1.4B without the prepayment.",
-    "zh": "康宁自由现金流有季节性：3月季度最弱（2023、2024、2025 年均为负），下半年较强。2026 年第二季录得创纪录的 13.0 亿美元，但其中约 10 亿是客户为未来光纤供货预付的款项，剔除后约 3 亿。近四季合计约 24 亿美元，剔除预付款约 14 亿。"
+    "en": "Corning's free cash flow is seasonal: the March quarter is the weakest (negative in 2023, 2024 and 2025) and the second half is stronger. Q3 2026 brought $516M (operating cash flow $1.06B less $545M of capex; Corning's adjusted figure is $661M). Q2's record $1.30B included a $1.0B customer prepayment, so the last four quarters add up to about $2.5B, or about $1.5B without it.",
+    "zh": "康宁自由现金流有季节性：3月季度最弱（2023、2024、2025 年均为负），下半年较强。2026 年第三季为 5.16 亿美元（经营现金流 10.6 亿减资本开支 5.45 亿；公司口径调整后为 6.61 亿）。第二季创纪录的 13.0 亿含 10 亿客户预付款，因此近四季合计约 25 亿美元，剔除后约 15 亿。"
    },
    {
-    "en": "My base case lifts capex to about $600–650M a quarter in the second half, in line with the ~$2B plan for 2026, and lets operating cash flow grow with sales of about $5B a quarter. That gives about $1.4B over four quarters. The main risk is that AI fiber orders slow after Corning has built capacity: spending and depreciation would stay high while volumes fell.",
-    "zh": "我的基准情景假设下半年资本开支升至每季约 6–6.5 亿美元，与 2026 年约 20 亿的计划一致，经营现金流随每季约 50 亿美元的销售增长，四季合计约 14 亿美元。主要风险是康宁扩产后 AI 光纤订单放缓：开支与折旧维持高位而销量下滑。"
+    "en": "My base case has capex of about $700M in Q4, completing the ~$2B 2026 plan, then $500–600M a quarter in 2027, with operating cash flow growing with core sales above $5B a quarter. That gives about $1.55B over four quarters. The main risk is that AI fiber orders slow after Corning has built capacity: spending and depreciation would stay high while volumes fell.",
+    "zh": "我的基准情景假设 Q4 资本开支约 7 亿美元，完成 2026 年约 20 亿的计划，2027 年每季 5–6 亿，经营现金流随每季逾 50 亿美元的核心销售增长，四季合计约 15.5 亿美元。主要风险是康宁扩产后 AI 光纤订单放缓：开支与折旧维持高位而销量下滑。"
    }
   ],
   "out": [
@@ -638,8 +635,8 @@
      "zh": "资本开支"
     },
     "p": {
-     "en": "About $2B in 2026, mostly for Optical; $754M was spent in the first half.",
-     "zh": "2026 年约 20 亿美元，主要投向光通信；上半年已支出 7.54 亿。"
+     "en": "About $2B in 2026, mostly for Optical; $1.30B was spent in the first nine months.",
+     "zh": "2026 年约 20 亿美元，主要投向光通信；前九个月已支出 13.0 亿。"
     }
    },
    {
@@ -648,8 +645,8 @@
      "zh": "股息"
     },
     "p": {
-     "en": "About $240M a quarter at $0.28 per share.",
-     "zh": "每股 $0.28，每季约 2.4 亿美元。"
+     "en": "About $260M a quarter at $0.28 per share.",
+     "zh": "每股 $0.28，每季约 2.6 亿美元。"
     }
    },
    {
@@ -658,8 +655,8 @@
      "zh": "债务"
     },
     "p": {
-     "en": "About $9.4B of debt against $2.5B of cash; about $0.7B is due within a year.",
-     "zh": "债务约 94 亿美元，现金 25 亿；约 7 亿一年内到期。"
+     "en": "About $8.2B of debt against $2.5B of cash; about $0.9B is due within a year.",
+     "zh": "债务约 82 亿美元，现金 25 亿；约 9 亿一年内到期。"
     }
    }
   ],
@@ -670,8 +667,8 @@
      "zh": "客户预付款"
     },
     "p": {
-     "en": "A $1.0B prepayment in Q2 under a deal running to 2029; contract liabilities were $2.7B in June.",
-     "zh": "Q2 收到 10 亿美元预付款，合约期至 2029 年；6月合约负债为 27 亿。"
+     "en": "Customer deposits added $639M of cash in the first nine months, mainly the $1.0B Q2 prepayment under a deal running to 2029.",
+     "zh": "前九个月客户订金带来 6.39 亿美元现金，主要来自 Q2 一项期至 2029 年协议的 10 亿美元预付款。"
     }
    },
    {
@@ -680,8 +677,8 @@
      "zh": "销量增长"
     },
     "p": {
-     "en": "Core sales are guided up 16% in Q3, with Optical margins rising.",
-     "zh": "Q3 核心销售指引增长 16%，光通信利润率上升。"
+     "en": "Core sales are guided up 19% in Q4, with Optical margins rising.",
+     "zh": "Q4 核心销售指引增长 19%，光通信利润率上升。"
     }
    },
    {
@@ -698,53 +695,53 @@
   "bridge": [
    [
     {
-     "en": "Cash, Jun 2026",
-     "zh": "2026年6月现金"
+     "en": "Cash, Sep 2026",
+     "zh": "2026年9月现金"
     },
-    2504
+    2537
    ],
    [
     {
      "en": "Free cash flow, 4 quarters (est.)",
      "zh": "4季自由现金流（估）"
     },
-    1400
+    1550
    ],
    [
     {
      "en": "Dividends (est.)",
      "zh": "股息（估）"
     },
-    -970
+    -1050
    ],
    [
     {
      "en": "Buybacks (est.)",
      "zh": "回购（估）"
     },
-    -300
+    -150
    ]
   ],
   "bridgeEnd": {
-   "en": "Cash, Jun 2027 (est.)",
-   "zh": "2027年6月现金（估）"
+   "en": "Cash, Sep 2027 (est.)",
+   "zh": "2027年9月现金（估）"
   },
   "bridgeNote": {
-   "en": "Leaves out any share sales under the $2B program and the ~$0.7B of debt due within a year, which could be repaid or refinanced.",
-   "zh": "未计入 20 亿美元增发计划下的任何售股，也未计入约 7 亿一年内到期、可能偿还或再融资的债务。"
+   "en": "Leaves out any share sales under the $2B program and the ~$0.9B of debt due within a year, which could be repaid or refinanced. No shares were bought back in Q3.",
+   "zh": "未计入 20 亿美元增发计划下的任何售股，也未计入约 9 亿一年内到期、可能偿还或再融资的债务。Q3 未回购股票。"
   },
   "src": [
+   [
+    "Q3 2026 release with cash flow and balance sheet (Corning)",
+    "https://s203.q4cdn.com/212458750/files/content_files/Corning-Incorporated-Third-Quarter-2026-Earnings-Release-with-Financials-2026-10-27.pdf"
+   ],
    [
     "Quarterly cash flow statement (Stock Analysis)",
     "https://stockanalysis.com/stocks/glw/financials/cash-flow-statement/?p=quarterly"
    ],
    [
-    "Balance sheet (Stock Analysis)",
-    "https://stockanalysis.com/stocks/glw/financials/balance-sheet/?p=quarterly"
-   ],
-   [
-    "Q3 2026 preview: capex and funding (Drillr)",
-    "https://drillr.ai/article/glw-corning-q3-2026-earnings-preview-ai-optical-fiber-capex-funding"
+    "Q3 2026 call transcript (Motley Fool)",
+    "https://fool.com/earnings/call-transcripts/2026/10/27/corning-glw-q3-2026-earnings-call-transcript"
    ]
   ]
  }

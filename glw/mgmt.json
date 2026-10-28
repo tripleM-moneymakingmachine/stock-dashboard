@@ -1,31 +1,31 @@
 {
  "ticker": "GLW",
- "asof": "2026-10-11",
+ "asof": "2026-10-28",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-07-28",
+ "reported": "2026-10-27",
  "timing": "bmo",
- "pre_close": 143.09,
+ "pre_close": 127.74,
  "react": {
-  "date": "2026-07-28",
-  "close": 125.77,
-  "pct": -12.1
+  "date": "2026-10-27",
+  "close": 126.3,
+  "pct": -1.1
  },
  "since": {
-  "date": "2026-10-26",
-  "close": 128.52,
-  "pct": -10.2
+  "date": "2026-10-27",
+  "close": 126.3,
+  "pct": -1.1
  },
  "review": {
   "en": [
-   "Core sales rose 17% to $4.74B and EPS of $0.78 beat, both above Corning's own range; Optical Communications grew 32% to $2.07B, operating margin rose to 20.9% and free cash flow was $1.42B. Corning signed a multiyear, multibillion-dollar fiber deal with Amazon and a partnership with NVIDIA to expand US optical connectivity capacity tenfold. But the Q3 core sales guide of $4.9–5.0B came in below the ~$5.0B consensus. CEO Wendell Weeks reaffirmed the Springboard targets of a $20B sales run rate by the end of 2026.",
-   "The guide sank the stock, which fell as much as 18% intraday, on pace for its worst day since 2002, and closed 12% lower; it dragged down optical peers including Lumentum, Coherent and Marvell. Shares had already roughly halved from their late-June peak, so buyers returned fast: by Aug 4 the stock was 11% above the pre-report close and it peaked near $173 on Aug 17. It has since traded with the optical group and sits about 10% above its pre-report level."
+   "Core sales rose 19% to $5.08B and core EPS of $0.91 beat the $0.88 consensus, both above Corning's own range. Optical Communications grew 44% to $2.38B, with Enterprise Networks up 84% and generative AI products more than doubling, and core operating margin rose 310 bp to 22.7%. The Q4 guide of $5.2–5.3B and $0.96–1.00 topped the $0.93 EPS consensus, a run rate near $21B. CEO Wendell Weeks said growth is accelerating; CFO Ed Schlesinger stressed long-term deals that share expansion costs.",
+   "Shares traded about 3% lower before the open, near $124, as investors weighed heavy capex, GAAP sales that trailed some estimates and a Solar ramp running slower than planned. They swung between $121.75 and $128.48 during the session and closed 1.1% lower at $126.30, after an 8% drop on Oct 22 in a broad chip selloff. Truist trimmed its target to $175 on valuation even as it raised its estimates."
   ],
   "zh": [
-   "核心销售额增长 17% 至 47.4 亿美元，每股收益 0.78 美元超预期，均高于公司自身指引；光通信业务增长 32% 至 20.7 亿美元，营业利润率升至 20.9%，自由现金流 14.2 亿美元。康宁与亚马逊签订多年期、价值数十亿美元的光纤协议，并与英伟达合作将美国光连接产能扩大十倍。但第三季核心销售指引 49–50 亿美元低于约 50 亿美元的预期。CEO 温德尔·威克斯重申 Springboard 计划：2026 年底实现 200 亿美元年化销售额。",
-   "指引令股价重挫，盘中一度下跌 18%，有望创 2002 年以来最差单日表现，最终收跌 12%，并拖累 Lumentum、Coherent、Marvell 等光通信股。股价此前已较 6 月下旬高点腰斩，买盘很快回流：8 月 4 日已较财报前收盘高 11%，8 月 17 日见顶约 173 美元。此后随光通信板块波动，目前较财报前高约 10%。"
+   "核心销售增长 19% 至 50.8 亿美元，核心每股收益 0.91 美元高于 0.88 美元的市场预期，均超出公司自身指引。光通信增长 44% 至 23.8 亿美元，其中企业网络增长 84%，生成式 AI 产品增长逾一倍；核心营业利润率提升 310 基点至 22.7%。第四季指引为 52–53 亿美元、每股 0.96–1.00 美元，高于 0.93 美元的每股预期，年化约 210 亿美元。CEO 温德尔·威克斯表示增长正在加速；CFO 埃德·施莱辛格强调长期协议由客户分担扩产成本。",
+   "开盘前股价下跌约 3% 至约 124 美元，投资者顾虑高额资本开支、GAAP 销售低于部分预期，以及太阳能爬坡慢于计划。盘中在 121.75 至 128.48 美元之间震荡，收跌 1.1% 至 126.30 美元；此前 10 月 22 日已在芯片股普跌中下跌 8%。Truist 虽上调盈利预测，但因估值将目标价下调至 175 美元。"
   ]
  },
  "ceo": {
@@ -52,16 +52,16 @@
  },
  "sources": [
   {
-   "t": "Jul 28 selloff (CNBC)",
-   "u": "https://www.cnbc.com/2026/07/28/corning-glw-stock-optical-ai.html"
+   "t": "Q3 2026 call transcript (Motley Fool)",
+   "u": "https://fool.com/earnings/call-transcripts/2026/10/27/corning-glw-q3-2026-earnings-call-transcript"
   },
   {
-   "t": "Q2 2026 call transcript",
-   "u": "https://news.alphastreet.com/corning-incorporated-glw-q2-2026-earnings-call-transcript"
+   "t": "Stock falls on capex concerns (Investing.com)",
+   "u": "https://investing.com/news/company-news/corning-q3-2026-slides-beats-estimates-stock-falls-on-capex-concerns-93CH-4975910"
   },
   {
-   "t": "Amazon and NVIDIA deals",
-   "u": "https://finance.yahoo.com/markets/stocks/articles/corning-q2-2026-earnings-beat-113418264.html"
+   "t": "Truist cuts target to $175 (Investing.com)",
+   "u": "https://investing.com/news/analyst-ratings/truist-cuts-corning-stock-price-target-on-valuation-to-175-93CH-4976686"
   }
  ]
 }
