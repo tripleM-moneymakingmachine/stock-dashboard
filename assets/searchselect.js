@@ -23,7 +23,8 @@
   const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
   let uid = 0;
-  const norm = (s) => (s || "").toLowerCase().replace(/[·–—]/g, " ").replace(/\s+/g, " ").trim();
+  // Lower-case, punctuation to spaces; tokens then match the start of a word ("5" finds 5Y, not 0.25)
+  const norm = (s) => " " + (s || "").toLowerCase().replace(/[^a-z0-9.%\u4e00-\u9fff]+/g, " ").trim();
 
   function enhance(sel) {
     if (sel.dataset.ssDone || sel.multiple) return;
@@ -51,8 +52,8 @@
       for (const o of sel.options) {
         if (o.disabled) continue;
         const g = o.parentElement.tagName === "OPTGROUP" ? o.parentElement.label : "";
-        const hay = norm(o.text + " " + o.value + " " + g);
-        if (toks.length && !toks.every((t) => hay.includes(t))) continue;
+        const hay = norm(o.text + " " + g);
+        if (toks.length && !toks.every((t) => hay.includes(" " + t))) continue;
         if (++n > MAX_ROWS) break;
         if (g && g !== lastG) { const h = document.createElement("li"); h.className = "g"; h.textContent = g; h.setAttribute("role", "presentation"); ul.appendChild(h); }
         lastG = g;
@@ -95,7 +96,7 @@
     });
     // pointerdown + preventDefault keeps focus in the box so the tap registers before blur
     ul.addEventListener("pointerdown", (e) => e.preventDefault());
-    ul.addEventListener("click", (e) => { const li = e.target.closest("li[role=option]"); if (li) pick(+li.dataset.i); });
+    ul.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); const li = e.target.closest("li[role=option]"); if (li) pick(+li.dataset.i); });
     inp.addEventListener("blur", () => setTimeout(() => { if (document.activeElement !== inp) hide(); }, 120));
     // The label around the select would otherwise forward taps to the hidden select
     const lab = sel.closest("label"); if (lab) lab.addEventListener("click", (e) => { if (!box.contains(e.target)) { e.preventDefault(); inp.focus(); } });
