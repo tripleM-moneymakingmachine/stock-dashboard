@@ -1,0 +1,45 @@
+name: USD/TWD equity flows
+
+# Daily after the Taipei close (TWSE posts institutional flows ~15:00 Taipei): fetch USD/TWD, TAIEX and the foreign
+# investor (FINI) net buy, rebuild data/twd-flows.json (the FX tab's USD/TWD equity flow signal) and commit it.
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Most TWSE calls this run (back-fill)"
+        type: string
+        default: "900"
+  schedule:
+    - cron: "20 8 * * 1-5"    # 16:20 Taipei / Singapore
+    - cron: "30 13 * * 1-5"   # 21:30, catches a late TWSE file and the latest USD/TWD
+
+permissions:
+  contents: write
+
+concurrency:
+  group: twd-flows
+  cancel-in-progress: false
+
+jobs:
+  twd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: USD/TWD, TAIEX and FINI flows, then the signal
+        run: node scripts/fetch-twd-flows.mjs --max ${{ inputs.max || '60' }}
+
+      - name: Commit if changed
+        run: |
+          git add data/twd-flows.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh USD/TWD equity flows"
+          git pull -q --rebase origin main
+          git push
