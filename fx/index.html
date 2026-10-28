@@ -142,7 +142,7 @@ section.fxrecap{margin-top:0}
   <nav class="tabs" aria-label="Dashboard sections"><a href="../">Stocks</a><a href="../macro/">Macro</a><a href="../us/">US</a><a href="./" aria-current="page">FX</a><a href="../china/">China</a><a href="../datacenter/">Datacenter</a><a href="../robotics/">Robotics</a><a href="../merger/">SpaceX vs Tesla</a><a href="../portfolio/">Portfolio</a><a href="../options/">Options</a></nav>
   <div class="eyebrow">Currencies · Charts · Calendar · News</div>
   <h1>FX</h1>
-  <p class="lede">The major pairs, nine Asian currencies against the US dollar, and the euro and yuan against the yen. Rates refresh about every 10 minutes in US hours and every 15 minutes the rest of the weekday; this page re-checks every minute. Pick a tile to chart it. <a href="#fwd" style="color:var(--accent);white-space:nowrap">NDF forward curves ↓</a></p>
+  <p class="lede">The major pairs, nine Asian currencies against the US dollar, and the euro and yuan against the yen. Rates refresh about every 10 minutes in US hours and every 15 minutes the rest of the weekday; this page re-checks every minute. Pick a tile to chart it. <a href="#fwd" style="color:var(--accent);white-space:nowrap">NDF forward curves ↓</a> · <a href="#twd" style="color:var(--accent);white-space:nowrap">USD/TWD flow signal ↓</a></p>
 
   <section id="fxrecap" class="fxrecap" data-src="../data/fx-recap.json" data-fx="../data/fx.json" aria-label="Previous New York session FX recap and calls" hidden></section>
 
@@ -163,6 +163,8 @@ section.fxrecap{margin-top:0}
       <p class="note" id="chNote"></p>
     </div>
   </section>
+
+  <section id="twd" class="tw" aria-labelledby="twH" hidden></section>
 
   <section aria-labelledby="fwdH">
     <div class="panel" id="fwd" data-src="../data/fx-fwd.json" hidden></div>
@@ -186,6 +188,7 @@ section.fxrecap{margin-top:0}
 <script src="../assets/fx.js?v=3"></script>
 <script src="../assets/fx-recap.js?v=3"></script>
 <script src="../assets/fx-fwd.js?v=4"></script>
+<script src="../assets/twd-flows.js?v=1"></script>
 <script src="../assets/news.js?v=5"></script>
 <script src="../assets/stock-picker.js?v=1"></script>
 </body>

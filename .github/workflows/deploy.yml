@@ -138,6 +138,7 @@ jobs:
           mkdir -p _site/macro && cp macro/index.html _site/macro/
           cp data/fx.json data/fx-news.json _site/data/
           if [ -f data/fx-fwd.json ]; then cp data/fx-fwd.json _site/data/; fi
+          if [ -f data/twd-flows.json ]; then cp data/twd-flows.json _site/data/; fi
           mkdir -p _site/fx && cp fx/index.html _site/fx/
           if [ -f data/china.json ]; then cp data/china.json _site/data/; fi
           if [ -f data/china-recap.json ]; then cp data/china-recap.json _site/data/; fi

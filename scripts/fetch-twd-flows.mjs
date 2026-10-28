@@ -101,4 +101,4 @@ const out = {
   raw,
 };
 writeFileSync(OUT, JSON.stringify(out));
-log(`wrote ${OUT}` + (built.latest ? `: signal ${built.latest.S} on ${built.latest.date}` : ""));
+log(`wrote ${OUT}` + (built.latest ? `: pressure ${built.latest.A}, exhaustion ${built.latest.C} on ${built.latest.date}` : ""));
