@@ -1,18 +1,18 @@
 {
- "asof": "Oct 27, 2026",
- "close": 260.15,
+ "asof": "Oct 28, 2026",
+ "close": 255.8,
  "bias": {
-  "en": "Uptrend · stalled under $268, RSI overbought",
-  "zh": "上升趋势 · 受阻于 $268 下方，RSI 超买"
+  "en": "Uptrend · second fade under $268, at the 5-day",
+  "zh": "上升趋势 · 再度在 $268 下方回落，回到 5 日均线"
  },
  "read": [
   {
-   "en": "Zscaler closed flat on Oct 27 at $260.15, trading between $255.32 and $267.87, after six straight gains. It is above all its rising averages: 5-day ($249.0), 10-day ($232.1), 30-day ($215.7), 100-day ($173.4) and 200-day ($166.4). MACD has been above its signal since Oct 22 and above zero; Parabolic SAR has been bullish since Oct 22 ($209.46), and RSI is 73.",
-   "zh": "Zscaler 10月27日收平于 $260.15，盘中区间 $255.32–267.87，此前连涨六日。股价位于所有上行均线上方：5 日（$249.0）、10 日（$232.1）、30 日（$215.7）、100 日（$173.4）和 200 日均线（$166.4）。MACD 自 10月22日起位于信号线上方且在零轴之上；抛物线 SAR 自 10月22日起看多（$209.46），RSI 为 73。"
+   "en": "Zscaler fell 1.7% on Oct 28 to $255.80, trading between $254.29 and $265.99. It is above the rising 5-day ($253.9), 10-day ($235.6), 30-day ($217.9), 100-day ($174.6) and 200-day ($166.6) averages. MACD has been above its signal since Oct 22 and above zero, histogram flattening; Parabolic SAR has been bullish since Oct 22 ($214.14), and RSI is 70, just off overbought.",
+   "zh": "Zscaler 10月28日下跌 1.7%，收于 $255.80，盘中区间 $254.29–265.99。股价位于上行的 5 日（$253.9）、10 日（$235.6）、30 日（$217.9）、100 日（$174.6）和 200 日均线（$166.6）上方。MACD 自 10月22日起位于信号线上方且在零轴之上，柱状图走平；抛物线 SAR 自 10月22日起看多（$214.14），RSI 为 70，刚从超买区回落。"
   },
   {
-   "en": "A push to $267.9 faded, closing under the $261.5 Oct 26 high; RSI is above 70 for a third day. Resistance is $261.5, then $267.9–270.1 (Oct 27 high, Nov 26, 2025 high) and $289.7. Support is $255.3–255.6 (Oct 27 low, Oct 23 high), then $249–250 (5-day, round number) and $241.2. A close above $268 would target $270–290; a close below $255 would open $250.",
-   "zh": "盘中冲高至 $267.9 后回落，收盘仍低于 10月26日高点 $261.5；RSI 连续第三日高于 70。阻力为 $261.5，其次 $267.9–270.1（10月27日高点、2025年11月26日高点）和 $289.7。支撑为 $255.3–255.6（10月27日低点、10月23日高点），其次 $249–250（5 日均线、整数关口）和 $241.2。若收盘站上 $268，下一目标看 $270–290；若收盘跌破 $255，将打开 $250。"
+   "en": "A second push toward $268 faded at $266, and the close held the $255.5 support (Oct 27 low, Oct 23 high) after a dip to $254.3. No level changed. Resistance is $261.5 (Oct 26 high), then $266–270.1 (Oct 27–28 highs, Nov 26, 2025 high) and $289.7. Support is $253.9–255.6 (5-day, Oct 23 high), then $250 and $241.2 (Oct 22 high). A close above $268 would target $270–290; below $253.9, $250.",
+   "zh": "第二次冲击 $268 在 $266 处回落，盘中下探 $254.3 后收盘守住 $255.5 支撑（10月27日低点、10月23日高点）。关键位未变。阻力为 $261.5（10月26日高点），其次 $266–270.1（10月27–28日高点、2025年11月26日高点）和 $289.7。支撑为 $253.9–255.6（5 日均线、10月23日高点），其次 $250 和 $241.2（10月22日高点）。若收盘站上 $268，下一目标看 $270–290；若跌破 $253.9，则看 $250。"
   }
  ],
  "levels": {
@@ -27,8 +27,8 @@
    [
     269,
     {
-     "en": "Oct 27 high $267.9; Nov 26, 2025 high $270.1",
-     "zh": "10月27日高点 $267.9；2025年11月26日高点 $270.1"
+     "en": "Oct 27–28 highs ($266.0–267.9); Nov 26, 2025 high $270.1",
+     "zh": "10月27–28日高点（$266.0–267.9）；2025年11月26日高点 $270.1"
     }
    ],
    [
@@ -41,17 +41,17 @@
   ],
   "s": [
    [
-    255.5,
+    254.7,
     {
-     "en": "Oct 27 low $255.3; Oct 23 high $255.6",
-     "zh": "10月27日低点 $255.3；10月23日高点 $255.6"
+     "en": "5-day average $253.9; Oct 23 high $255.6; Oct 28 low $254.3",
+     "zh": "5日均线 $253.9；10月23日高点 $255.6；10月28日低点 $254.3"
     }
    ],
    [
     250,
     {
-     "en": "5-day average $249.0; $250 round number",
-     "zh": "5日均线 $249.0；$250 整数关口"
+     "en": "$250 round number",
+     "zh": "$250 整数关口"
     }
    ],
    [

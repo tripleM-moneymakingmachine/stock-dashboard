@@ -1,18 +1,18 @@
 {
- "asof": "Oct 27, 2026",
- "close": 531.33,
+ "asof": "Oct 28, 2026",
+ "close": 531.01,
  "bias": {
-  "en": "Uptrend · holding the 5 and 10-day averages",
-  "zh": "上升趋势 · 守住 5 日和 10 日均线"
+  "en": "Uptrend · stalling under $535.6",
+  "zh": "上升趋势 · 受阻于 $535.6 下方"
  },
  "read": [
   {
-   "en": "Microsoft slipped 0.2% on Oct 27 to $531.33, trading between $528.33 and $534.70. It is above the falling 5-day ($528.5) and level with the falling 10-day ($531.0) averages, and above the rising 30-day ($519.8), 100-day ($462.0) and 200-day ($437.1). MACD has been below its signal since Oct 19 but is above zero, with the histogram narrow; Parabolic SAR has been bearish since Oct 16 ($544.17), and RSI is 56.",
-   "zh": "微软 10月27日小跌 0.2%，收于 $531.33，盘中区间 $528.33–534.70。股价位于下行的 5 日均线（$528.5）上方，与下行的 10 日均线（$531.0）持平，并位于上行的 30 日（$519.8）、100 日（$462.0）和 200 日均线（$437.1）上方。MACD 自 10月19日起位于信号线下方，但仍在零轴上方，柱状图窄幅；抛物线 SAR 自 10月16日起看空（$544.17），RSI 为 56。"
+   "en": "Microsoft slipped 0.1% on Oct 28 to $531.01, trading between $526.14 and $534.57. It is just above the falling 5-day ($528.11) and 10-day ($530.74) averages and above the rising 30-day ($521.16), 100-day ($463.15) and 200-day ($437.32). MACD has been below its signal since Oct 19, above zero, histogram narrowing; Parabolic SAR has been bearish since Oct 16 ($542.47), and RSI is 56.",
+   "zh": "微软 10月28日下跌 0.1%，收于 $531.01，盘中区间 $526.14–534.57。股价略高于下行的 5 日（$528.11）和 10 日均线（$530.74），并位于上行的 30 日（$521.16）、100 日（$463.15）和 200 日均线（$437.32）上方。MACD 自 10月19日起位于信号线下方、零轴之上，柱状图收窄；抛物线 SAR 自 10月16日起看空（$542.47），RSI 为 56。"
   },
   {
-   "en": "No level changed: the close held the 5 and 10-day, and the $534.7 high stopped below the $535.6 Oct 19 high. Resistance is $534.7–535.6, then $543.8–544.2 (Oct 16 high, SAR) and $551–554. Support is $528.3–531 (5 and 10-day), then $515.7–519.8 (Oct 23 low, 30-day) and $497–502. A close above $535.6 would target $544; a close below $515.7 would open $497–502.",
-   "zh": "关键位未变：收盘守住 5 日和 10 日均线，盘中高点 $534.7 止步于 10月19日高点 $535.6 下方。阻力为 $534.7–535.6，其次 $543.8–544.2（10月16日高点、SAR）和 $551–554。支撑为 $528.3–531（5 日和 10 日均线），其次 $515.7–519.8（10月23日低点、30 日均线）和 $497–502。若收盘站上 $535.6，下一目标看 $544；若收盘跌破 $515.7，将打开 $497–502。"
+   "en": "No level changed: the close held the 5 and 10-day and the $534.6 high again stopped below the $535.6 Oct 19 high. Resistance is $534.6–535.6, then $542.5–543.8 (SAR, Oct 16 high) and $551–554. Support is $526–531 (5 and 10-day, Oct 28 low), then $515.7–521.2 (Oct 23 low, 30-day) and $497–502. A close above $535.6 would target $543; a close below $515.7 would open $497–502.",
+   "zh": "关键位未变：收盘守住 5 日和 10 日均线，盘中高点 $534.6 再次止步于 10月19日高点 $535.6 下方。阻力为 $534.6–535.6，其次 $542.5–543.8（SAR、10月16日高点）和 $551–554。支撑为 $526–531（5 日和 10 日均线、10月28日低点），其次 $515.7–521.2（10月23日低点、30 日均线）和 $497–502。若收盘站上 $535.6，下一目标看 $543；若跌破 $515.7，则看 $497–502。"
   }
  ],
  "levels": {
@@ -20,15 +20,15 @@
    [
     535.6,
     {
-     "en": "Oct 19 high; Oct 27 high $534.7",
-     "zh": "10月19日高点；10月27日高点 $534.7"
+     "en": "Oct 19 high; Oct 27–28 highs ($534.6–534.7)",
+     "zh": "10月19日高点；10月27–28日高点（$534.6–534.7）"
     }
    ],
    [
-    544,
+    543,
     {
-     "en": "Oct 16 high $543.8; SAR $544.2",
-     "zh": "10月16日高点 $543.8；SAR $544.2"
+     "en": "Parabolic SAR $542.5; Oct 16 high $543.8",
+     "zh": "抛物线 SAR $542.5；10月16日高点 $543.8"
     }
    ],
    [
@@ -41,17 +41,17 @@
   ],
   "s": [
    [
-    529.5,
+    529,
     {
-     "en": "5-day $528.5 and 10-day $531.0 averages; Oct 27 low $528.3",
-     "zh": "5日均线 $528.5 和 10日均线 $531.0；10月27日低点 $528.3"
+     "en": "5-day $528.1 and 10-day $530.7 averages; Oct 28 low $526.1",
+     "zh": "5日均线 $528.1 和10日均线 $530.7；10月28日低点 $526.1"
     }
    ],
    [
-    517,
+    518,
     {
-     "en": "30-day average $519.8; Oct 23 low $515.7",
-     "zh": "30日均线 $519.8；10月23日低点 $515.7"
+     "en": "30-day average $521.2; Oct 23 low $515.7",
+     "zh": "30日均线 $521.2；10月23日低点 $515.7"
     }
    ],
    [

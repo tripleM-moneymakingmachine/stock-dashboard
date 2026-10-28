@@ -1,27 +1,27 @@
 {
- "asof": "Oct 27, 2026",
- "close": 40.87,
+ "asof": "Oct 28, 2026",
+ "close": 41.06,
  "bias": {
-  "en": "Bearish · rebound reclaimed the 5 and 10-day",
-  "zh": "偏空 · 反弹收复 5 日和 10 日均线"
+  "en": "Bearish, improving · MACD and SAR turned up",
+  "zh": "偏空但改善 · MACD 与 SAR 转多"
  },
  "read": [
   {
-   "en": "MP Materials rose 9.1% on Oct 27 to $40.87, trading between $38.00 and $41.04. It is above the falling 5-day ($38.94) and 10-day ($39.44) averages and below the falling 30-day ($44.67), 100-day ($50.28) and 200-day ($55.59). MACD has been below its signal since Aug 31 and below zero, with the histogram almost at a cross; Parabolic SAR has been bearish since Oct 12 ($41.78), and RSI is 42.",
-   "zh": "MP Materials 10月27日上涨 9.1%，收于 $40.87，盘中区间 $38.00–41.04。股价位于下行的 5 日（$38.94）和 10 日均线（$39.44）上方，低于下行的 30 日（$44.67）、100 日（$50.28）和 200 日均线（$55.59）。MACD 自 8月31日起位于信号线及零轴下方，柱状图几乎收窄至交叉；抛物线 SAR 自 10月12日起看空（$41.78），RSI 为 42。"
+   "en": "MP Materials rose 0.5% on Oct 28 to $41.06, trading between $39.69 and $41.36. It is above the falling 5-day ($39.25) and 10-day ($39.55) averages and below the falling 30-day ($44.41), 100-day ($50.10) and 200-day ($55.47). MACD crossed above its signal on Oct 28, still below zero; Parabolic SAR turned bullish on Oct 28 ($37.11), and RSI is 43.",
+   "zh": "MP Materials 10月28日上涨 0.5%，收于 $41.06，盘中区间 $39.69–41.36。股价位于下行的 5 日（$39.25）和 10 日均线（$39.55）上方，低于下行的 30 日（$44.41）、100 日（$50.10）和 200 日均线（$55.47）。MACD 于 10月28日上穿信号线，仍在零轴下方；抛物线 SAR 于 10月28日转为看多（$37.11），RSI 为 43。"
   },
   {
-   "en": "The rebound cleared the $37.8 and $39.6–40 resistances, now support. Resistance is $41.0–41.8 (Oct 27 high, SAR), then $42.5 (Oct 16 high) and $44.5–44.7 (Oct 1 low, 30-day). Support is $39.4–40, then $38–38.9 (Oct 27 low, 5-day) and $37.1 (52-week low). A close above $41.8 would flip the SAR and target $42.5–44.7; below $39.4, $38.",
-   "zh": "反弹突破 $37.8 和 $39.6–40 阻力，二者转为支撑。阻力为 $41.0–41.8（10月27日高点、SAR），其次 $42.5（10月16日高点）和 $44.5–44.7（10月1日低点、30 日均线）。支撑为 $39.4–40，其次 $38–38.9（10月27日低点、5 日均线）和 $37.1（52 周低点）。若收盘站上 $41.8，SAR 将翻多，下一目标看 $42.5–44.7；若跌破 $39.4，则看 $38。"
+   "en": "The close held the 5 and 10-day, but the $41.36 high stayed under $41.8. Resistance is $41.4–41.8 (Oct 28 high), then $42.5 (Oct 16 high) and $44.4–44.5 (30-day, Oct 1 low). Support is $39.3–39.7 (5 and 10-day, Oct 28 low), then $38 (Oct 27 low) and $37.1 (52-week low, SAR). A close above $41.8 would target $42.5–44.5; below $39.3, $38.",
+   "zh": "收盘守住 5 日和 10 日均线，但盘中高点 $41.36 仍低于 $41.8。阻力为 $41.4–41.8（10月28日高点），其次 $42.5（10月16日高点）和 $44.4–44.5（30 日均线、10月1日低点）。支撑为 $39.3–39.7（5 日和 10 日均线、10月28日低点），其次 $38（10月27日低点）和 $37.1（52 周低点、SAR）。若收盘站上 $41.8，下一目标看 $42.5–44.5；若跌破 $39.3，则看 $38。"
   }
  ],
  "levels": {
   "r": [
    [
-    41.8,
+    41.6,
     {
-     "en": "Parabolic SAR $41.78; Oct 27 high $41.04",
-     "zh": "抛物线 SAR $41.78；10月27日高点 $41.04"
+     "en": "Oct 28 high $41.36; $41.8 Oct 27 cap",
+     "zh": "10月28日高点 $41.36；10月27日 $41.8 压力"
     }
    ],
    [
@@ -32,33 +32,33 @@
     }
    ],
    [
-    44.6,
+    44.5,
     {
-     "en": "Oct 1 low $44.49; 30-day average $44.67",
-     "zh": "10月1日低点 $44.49；30日均线 $44.67"
+     "en": "30-day average $44.41; Oct 1 low $44.49",
+     "zh": "30日均线 $44.41；10月1日低点 $44.49"
     }
    ]
   ],
   "s": [
    [
-    39.6,
+    39.5,
     {
-     "en": "10-day average $39.44 and $40 round number, cleared",
-     "zh": "10日均线 $39.44 和 $40 整数关口，已突破"
+     "en": "5 and 10-day averages ($39.25–39.55); Oct 28 low $39.69",
+     "zh": "5日和10日均线（$39.25–39.55）；10月28日低点 $39.69"
     }
    ],
    [
-    38.5,
+    38,
     {
-     "en": "5-day average $38.94; Oct 27 low $38.00; Oct 22 and Jul 29 lows ($37.57–37.81)",
-     "zh": "5日均线 $38.94；10月27日低点 $38.00；10月22日和7月29日低点（$37.57–37.81）"
+     "en": "Oct 27 low $38.00; Oct 22 low $37.57",
+     "zh": "10月27日低点 $38.00；10月22日低点 $37.57"
     }
    ],
    [
     37.1,
     {
-     "en": "52-week low (Oct 23, $37.11)",
-     "zh": "52周低点（10月23日，$37.11）"
+     "en": "52-week low (Oct 23, $37.11); Parabolic SAR",
+     "zh": "52周低点（10月23日，$37.11）；抛物线 SAR"
     }
    ]
   ]

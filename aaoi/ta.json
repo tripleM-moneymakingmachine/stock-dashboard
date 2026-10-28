@@ -1,64 +1,64 @@
 {
- "asof": "Oct 27, 2026",
- "close": 76.95,
+ "asof": "Oct 28, 2026",
+ "close": 82.22,
  "bias": {
-  "en": "Bearish · reclaimed the 10-day average",
-  "zh": "偏空 · 收复 10 日均线"
+  "en": "Bearish, improving · cleared $81, SAR at $87",
+  "zh": "偏空但改善 · 突破 $81，SAR 位于 $87"
  },
  "read": [
   {
-   "en": "Applied Optoelectronics rose 7.0% on Oct 27 to $76.95, trading between $71.08 and $77.28. It is above the falling 5-day ($72.4) and 10-day ($76.2) averages and below the falling 30-day ($96.3) and 100-day ($117.4) and the rising 200-day ($113.5). MACD has been below its signal since Oct 13 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($90.53), and RSI is 39.",
-   "zh": "Applied Optoelectronics 10月27日上涨 7.0%，收于 $76.95，盘中区间 $71.08–77.28。股价位于下行的 5 日（$72.4）和 10 日均线（$76.2）上方，低于下行的 30 日（$96.3）和 100 日均线（$117.4）以及上行的 200 日均线（$113.5）。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$90.53），RSI 为 39。"
+   "en": "AAOI rose 6.8% on Oct 28 to $82.22, trading between $77.02 and $82.28. It is above the falling 5-day ($73.3) and 10-day ($75.8) averages and below the falling 30-day ($95.8) and 100-day ($116.5) and the rising 200-day ($113.8). MACD has been below its signal since Oct 13 and below zero, histogram narrowing toward a cross; Parabolic SAR has been bearish since Oct 12 ($87.13), and RSI is 44.",
+   "zh": "AAOI 10月28日上涨 6.8%，收于 $82.22，盘中区间 $77.02–82.28。股价位于下行的 5 日（$73.3）和 10 日均线（$75.8）上方，低于下行的 30 日（$95.8）和 100 日均线（$116.5）以及上行的 200 日均线（$113.8）。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 自 10月12日起看空（$87.13），RSI 为 44。"
   },
   {
-   "en": "The close cleared $73.3 and $76 (Jul 29 low, 10-day), now support. Resistance is $77.3 (Oct 27 high), then $80.5–81.3 (Oct 19 and 21 highs) and $90.5 (SAR). Support is $76–76.2, then $71.1–72.4 (Oct 23 high, Oct 27 low, 5-day) and $66.3–66.5 (Oct 22 and 26 lows). A close above $77.3 would target $80.5–81.3; below $76, $71–72.",
-   "zh": "收盘突破 $73.3 和 $76（7月29日低点、10 日均线），二者转为支撑。阻力为 $77.3（10月27日高点），其次 $80.5–81.3（10月19日和21日高点）和 $90.5（SAR）。支撑为 $76–76.2，其次 $71.1–72.4（10月23日高点、10月27日低点、5 日均线）和 $66.3–66.5（10月22日和26日低点）。若收盘站上 $77.3，下一目标看 $80.5–81.3；若跌破 $76，则看 $71–72。"
+   "en": "The close cleared $77.3 (Oct 27 high) and $80.5–81.3 (Oct 19 and 21 highs), now support. Resistance is $83.4–85.0 (Oct 15–16 highs), then $87.1 (SAR) and $95.8 (30-day). Support is $80.5–81.3, then $75.8–77.3 (10-day, Oct 27 high, Oct 28 low) and $73.3 (5-day). A close above $85 would target $87–96; below $80.5, $76–77.",
+   "zh": "收盘突破 $77.3（10月27日高点）和 $80.5–81.3（10月19日和21日高点），这些位置转为支撑。阻力为 $83.4–85.0（10月15–16日高点），其次 $87.1（SAR）和 $95.8（30 日均线）。支撑为 $80.5–81.3，其次 $75.8–77.3（10 日均线、10月27日高点、10月28日低点）和 $73.3（5 日均线）。若收盘站上 $85，下一目标看 $87–96；若跌破 $80.5，则看 $76–77。"
   }
  ],
  "levels": {
   "r": [
    [
-    77.3,
+    84.2,
     {
-     "en": "Oct 27 high",
-     "zh": "10月27日高点"
+     "en": "Oct 15 and Oct 16 highs ($83.4–85.0)",
+     "zh": "10月15日和10月16日高点（$83.4–85.0）"
     }
    ],
    [
-    81,
-    {
-     "en": "Oct 19 and Oct 21 highs ($80.5–81.3)",
-     "zh": "10月19日和10月21日高点（$80.5–81.3）"
-    }
-   ],
-   [
-    90.5,
+    87.1,
     {
      "en": "Parabolic SAR",
      "zh": "抛物线 SAR"
+    }
+   ],
+   [
+    95.8,
+    {
+     "en": "30-day average",
+     "zh": "30日均线"
     }
    ]
   ],
   "s": [
    [
-    76,
+    81,
     {
-     "en": "Jul 29 low $76.0; 10-day average $76.2, now support",
-     "zh": "7月29日低点 $76.0；10日均线 $76.2，转为支撑"
+     "en": "Oct 19 and Oct 21 highs ($80.5–81.3), now support",
+     "zh": "10月19日和10月21日高点（$80.5–81.3），已转为支撑"
     }
    ],
    [
-    71.5,
+    76.5,
     {
-     "en": "Oct 23 high $71.2; Oct 27 low $71.1; 5-day average $72.4",
-     "zh": "10月23日高点 $71.2；10月27日低点 $71.1；5日均线 $72.4"
+     "en": "10-day average $75.8; Oct 27 high $77.3; Oct 28 low $77.0",
+     "zh": "10日均线 $75.8；10月27日高点 $77.3；10月28日低点 $77.0"
     }
    ],
    [
-    66,
+    73.3,
     {
-     "en": "Oct 22 and Oct 26 lows ($66.3–66.5)",
-     "zh": "10月22日和10月26日低点（$66.3–66.5）"
+     "en": "5-day average",
+     "zh": "5日均线"
     }
    ]
   ]

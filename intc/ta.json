@@ -1,29 +1,22 @@
 {
- "asof": "Oct 27, 2026",
- "close": 93.74,
+ "asof": "Oct 28, 2026",
+ "close": 95.53,
  "bias": {
-  "en": "Bearish, improving · SAR turns bullish, above the 10-day",
-  "zh": "偏空但改善 · SAR 转多，站上 10 日均线"
+  "en": "Bearish, improving · cleared $95.4, MACD nearing a cross",
+  "zh": "偏空但改善 · 突破 $95.4，MACD 接近交叉"
  },
  "read": [
   {
-   "en": "Intel rose 3.6% on Oct 27 to $93.74, trading between $91.86 and $94.98. It is above the falling 5-day ($89.9) and 10-day ($91.7) and the rising 200-day ($86.3), and below the falling 30-day ($106.8) and 100-day ($105.5). MACD has been below its signal since Oct 5 and below zero, histogram narrowing toward a cross; Parabolic SAR flipped bullish on Oct 27 ($84.65), and RSI is 43.",
-   "zh": "英特尔 10月27日上涨 3.6%，收于 $93.74，盘中区间 $91.86–94.98。股价位于下行的 5 日（$89.9）和 10 日均线（$91.7）以及上行的 200 日均线（$86.3）上方，低于下行的 30 日（$106.8）和 100 日均线（$105.5）。MACD 自 10月5日起位于信号线及零轴下方，柱状图收窄、接近交叉；抛物线 SAR 于 10月27日转为看多（$84.65），RSI 为 43。"
+   "en": "Intel rose 1.9% on Oct 28 to $95.53, trading between $93.00 and $95.68. It is above the falling 5-day ($90.4) and 10-day ($91.4) averages and the rising 200-day ($86.6), and below the falling 30-day ($106.6) and 100-day ($105.4). MACD has been below its signal since Oct 5 and below zero, histogram narrowing toward a cross; Parabolic SAR has been bullish since Oct 27 ($84.86), and RSI is 45.",
+   "zh": "英特尔 10月28日上涨 1.9%，收于 $95.53，盘中区间 $93.00–95.68。股价位于下行的 5 日（$90.4）和 10 日均线（$91.4）以及上行的 200 日均线（$86.6）上方，低于下行的 30 日（$106.6）和 100 日均线（$105.4）。MACD 自 10月5日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 自 10月27日起看多（$84.86），RSI 为 45。"
   },
   {
-   "en": "The close cleared $92.1–92.7 (Oct 26 high, 10-day, old SAR), now support, and the high passed $94.4 (Oct 21 high) before stopping under $95.4. Resistance is $95–95.4 (Oct 27 and 19 highs), then $97.7–98.2 (Oct 13–14 lows) and $101.3 (Oct 14 high). Support is $91.7–92.1, then $88.8–89.9 (Oct 20 low, 5-day) and $86.3 (200-day). A close above $95.4 would target $98; below $91.7, $89.",
-   "zh": "收盘突破 $92.1–92.7（10月26日高点、10 日均线、原 SAR），该区间转为支撑；盘中高点越过 $94.4（10月21日高点），止步于 $95.4 下方。阻力为 $95–95.4（10月27日和19日高点），其次 $97.7–98.2（10月13–14日低点）和 $101.3（10月14日高点）。支撑为 $91.7–92.1，其次 $88.8–89.9（10月20日低点、5 日均线）和 $86.3（200 日均线）。若收盘站上 $95.4，下一目标看 $98；若跌破 $91.7，则看 $89。"
+   "en": "The close cleared $95–95.4 (Oct 27 and 19 highs), now support, though the high stopped at $95.7. Resistance is $97.7–98.2 (Oct 13–14 lows), then $101.3 (Oct 14 high) and $105.4 (100-day). Support is $93–95.4 (Oct 28 low, Oct 19 and 27 highs), then $90.4–91.4 (5 and 10-day) and $86.6 (200-day). A close above $98.2 would target $101–105; below $93, $91.",
+   "zh": "收盘突破 $95–95.4（10月27日和19日高点），该区间转为支撑，但盘中高点止步于 $95.7。阻力为 $97.7–98.2（10月13–14日低点），其次 $101.3（10月14日高点）和 $105.4（100 日均线）。支撑为 $93–95.4（10月28日低点、10月19日和27日高点），其次 $90.4–91.4（5 日和 10 日均线）和 $86.6（200 日均线）。若收盘站上 $98.2，下一目标看 $101–105；若跌破 $93，则看 $91。"
   }
  ],
  "levels": {
   "r": [
-   [
-    95.2,
-    {
-     "en": "Oct 27 high $95.0; Oct 19 high $95.4",
-     "zh": "10月27日高点 $95.0；10月19日高点 $95.4"
-    }
-   ],
    [
     98,
     {
@@ -37,25 +30,32 @@
      "en": "Oct 14 high",
      "zh": "10月14日高点"
     }
+   ],
+   [
+    105.4,
+    {
+     "en": "100-day average",
+     "zh": "100日均线"
+    }
    ]
   ],
   "s": [
    [
-    91.9,
+    94.2,
     {
-     "en": "10-day average $91.7; Oct 27 low $91.9; Oct 26 high $92.1, cleared",
-     "zh": "10日均线 $91.7；10月27日低点 $91.9；10月26日高点 $92.1，已突破"
+     "en": "Oct 19 and Oct 27 highs ($95.0–95.4), cleared; Oct 28 low $93.0",
+     "zh": "10月19日和10月27日高点（$95.0–95.4），已突破；10月28日低点 $93.0"
     }
    ],
    [
-    89.4,
+    90.9,
     {
-     "en": "5-day average $89.9; Oct 20 low $88.8",
-     "zh": "5日均线 $89.9；10月20日低点 $88.8"
+     "en": "5 and 10-day averages ($90.4–91.4)",
+     "zh": "5日和10日均线（$90.4–91.4）"
     }
    ],
    [
-    86.3,
+    86.6,
     {
      "en": "200-day average",
      "zh": "200日均线"
