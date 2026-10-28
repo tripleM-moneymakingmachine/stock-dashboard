@@ -1,6 +1,6 @@
 {
  "ticker": "TER",
- "asof": "2026-10-28",
+ "asof": "2026-10-29",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 323.68,
  "react": {
-  "date": "2026-10-27",
-  "close": 306.0,
-  "pct": -5.5,
-  "ah": true
+  "date": "2026-10-28",
+  "close": 313.24,
+  "pct": -3.2
  },
  "since": {
-  "date": "2026-10-27",
-  "close": 323.68,
-  "pct": 0.0
+  "date": "2026-10-28",
+  "close": 313.24,
+  "pct": -3.2
  },
  "review": {
   "en": [
-   "Revenue rose 70% to $1.31B, above the top of guidance and the ~$1.27B consensus, and non-GAAP EPS of $2.29 beat about $2.07. CEO Greg Smith said demand spanned the AI value chain: Memory and Integrated Systems Test set records, Semiconductor Test brought in $1.07B, and Robotics had its best Q3 at $96M and turned a profit. The Q4 guide of $1.25–1.35B and $1.95–2.25 of EPS topped consensus, but its midpoint is flat with Q3. The call is on Oct 28 at 8:30am ET.",
-   "Shares rose 4.8% to $323.68 in the regular session before the report, then fell about 5.5% after hours to $306 despite the beat. Investors weighed a flat Q4 midpoint, inventory days rising to 98 from 69, and whether AI test demand can keep compounding after revenue doubled in a year. At $306 the stock would sit about 37% below its $488 high."
+   "Revenue rose 70% to $1.31B, above the top of guidance and the ~$1.27B consensus, and non-GAAP EPS of $2.29 beat about $2.07. CEO Greg Smith said demand spanned the AI value chain: Memory and Integrated Systems Test set records, Semiconductor Test brought in $1.07B, and Robotics had its best Q3 at $96M and turned a profit. The Q4 guide of $1.25–1.35B and $1.95–2.25 of EPS topped consensus, but its midpoint is flat with Q3.",
+   "Shares rose 4.8% to $323.68 before the report, fell about 6% after hours, then opened at $302.68 and hit $295 in the morning as the call did little to ease worries. They recovered to close down 3.2% at $313.24 in a flat market. Investors focused on the flat Q4 revenue midpoint and EPS guided below Q3's $2.29, inventory days rising to 98 from 69, and a rich valuation after a 60% gain this year; Argus cut its target to $382."
   ],
   "zh": [
-   "营收增长 70% 至 13.1 亿美元，高于指引上限及约 12.7 亿美元的市场预期；非 GAAP 每股收益 2.29 美元，高于约 2.07 美元预期。CEO 格雷格·史密斯表示需求覆盖整个 AI 价值链：内存测试与集成系统测试均创纪录，半导体测试营收 10.7 亿美元，机器人业务以 9,600 万美元创第三季最佳并实现盈利。第四季指引营收 12.5–13.5 亿美元、每股收益 1.95–2.25 美元，高于预期，但中值与第三季持平。电话会议定于美东时间 10 月 28 日上午 8:30。",
-   "财报前常规交易时段股价上涨 4.8% 至 323.68 美元，财报后尽管业绩超预期，盘后仍下跌约 5.5% 至 306 美元。投资者担心第四季指引中值持平、库存天数由 69 天升至 98 天，以及营收一年内翻倍后 AI 测试需求能否持续增长。若以 306 美元计，股价较 488 美元高点低约 37%。"
+   "营收增长 70% 至 13.1 亿美元，高于指引上限及约 12.7 亿美元的市场预期；非 GAAP 每股收益 2.29 美元，高于约 2.07 美元预期。CEO 格雷格·史密斯表示需求覆盖整个 AI 价值链：内存测试与集成系统测试均创纪录，半导体测试营收 10.7 亿美元，机器人业务以 9,600 万美元创第三季最佳并实现盈利。第四季指引营收 12.5–13.5 亿美元、每股收益 1.95–2.25 美元，高于预期，但中值与第三季持平。",
+   "财报前股价上涨 4.8% 至 323.68 美元，盘后下跌约 6%；电话会议未能缓解担忧，次日开盘报 302.68 美元，早盘一度跌至 295 美元。在大盘持平的情况下，收盘回升至 313.24 美元，跌 3.2%。投资者关注第四季营收指引中值持平、每股收益指引低于第三季的 2.29 美元、库存天数由 69 天升至 98 天，以及今年上涨约 60% 后估值偏高；Argus 将目标价下调至 382 美元。"
   ]
  },
  "ceo": {
@@ -57,12 +56,12 @@
    "u": "https://finance.yahoo.com/markets/stocks/articles/teradyne-reports-third-quarter-2026-203000331.html"
   },
   {
-   "t": "Beat vs estimates and after-hours move (Investing.com)",
-   "u": "https://investing.com/news/earnings/teradyne-falls-6-despite-strongerthanexpected-q3-print-guidance-93CH-4977003"
+   "t": "Q3 2026 call transcript (Investing.com)",
+   "u": "https://investing.com/news/transcripts/earnings-call-transcript-teradyne-beats-q3-2026-estimates-but-shares-fall-93CH-4979648"
   },
   {
-   "t": "Q3 vs consensus, inventory days (StockStory via Yahoo)",
-   "u": "https://finance.yahoo.com/markets/stocks/articles/teradyne-nasdaq-ter-exceeds-q3-205013655.html"
+   "t": "Why the stock slid on Oct 28 (Investing.com)",
+   "u": "https://investing.com/news/stock-market-news/why-is-teradyne-stock-sliding-today-93CH-4979589"
   },
   {
    "t": "CFO appointment",

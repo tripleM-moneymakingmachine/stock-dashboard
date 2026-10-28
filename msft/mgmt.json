@@ -1,31 +1,32 @@
 {
  "ticker": "MSFT",
- "asof": "2026-10-11",
+ "asof": "2026-10-29",
  "quarter": {
-  "en": "Q4 FY2026 (June quarter)",
-  "zh": "2026 财年第四季（6 月季度）"
+  "en": "Q1 FY2027 (September quarter)",
+  "zh": "2027 财年第一季（9 月季度）"
  },
- "reported": "2026-07-29",
+ "reported": "2026-10-28",
  "timing": "amc",
- "pre_close": 390.54,
+ "pre_close": 531.01,
  "react": {
-  "date": "2026-07-30",
-  "close": 451.1,
-  "pct": 15.5
+  "date": "2026-10-28",
+  "close": 552.25,
+  "pct": 4.0,
+  "ah": true
  },
  "since": {
-  "date": "2026-10-27",
-  "close": 531.33,
-  "pct": 36.1
+  "date": "2026-10-28",
+  "close": 531.01,
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "Revenue rose 18% to $90.0B and EPS of $4.74 beat $4.24. Azure growth accelerated to 43% in constant currency, above the ~40% expected, and Azure passed $100B of revenue for the fiscal year. Commercial bookings backlog jumped 84% to $678B and paid Microsoft 365 Copilot seats topped 30 million. CFO Amy Hood guided Azure growth to 45% next quarter, above the 41% consensus. CEO Satya Nadella pointed to broad AI demand across Azure and Copilot.",
-   "The stock jumped 15.5% the next day, one of its biggest one-day gains in years, and kept climbing to $493 by Aug 4, 26% above the pre-report close. Faster Azure growth and a huge backlog convinced investors the AI spending is turning into revenue, easing the capex worries that hit other cloud names. Microsoft has held those gains since and is the best performer in the group after its report."
+   "Revenue rose 19% to $92.3B against $90.7B expected, and EPS excluding OpenAI of $4.89 beat $4.73. Azure, reported in dollars for the first time, grew 48% to $33.2B, above the 44–45% guide. CFO Amy Hood guided December-quarter revenue to $96.0–97.1B, above the $95.6B consensus, and Azure to 49–50%, saying demand still exceeds supply. Capex of $45.2B fell short as third-party capacity slipped; she expects over $50B next quarter and faster spending later. Operating margin widened to 49.8%, and CEO Satya Nadella said Copilot daily users rose about 50%.",
+   "Shares closed at $531.01 before the report and rose about 4% after hours to roughly $552, trading between 2% and 5% higher. Faster Azure growth and a strong guide eased the AI-spending worries that Meta and Alphabet had revived, and positive free cash flow of $18.6B helped. A backlog flat at $677B and a capex shortfall that is partly timing tempered the gains. The first full session, on Oct 29, is still to come."
   ],
   "zh": [
-   "营收增长 18% 至 900 亿美元，每股收益 4.74 美元高于 4.24 美元预期。Azure 按固定汇率增速加快至 43%，高于约 40% 的预期，全财年营收首破 1,000 亿美元。商业订单积压增长 84% 至 6,780 亿美元，Microsoft 365 Copilot 付费席位突破 3,000 万。CFO 艾米·胡德指引下季 Azure 增长 45%，高于 41% 的预期。CEO 萨提亚·纳德拉强调 Azure 与 Copilot 的 AI 需求全面增长。",
-   "次日股价大涨 15.5%，为多年来最大单日涨幅之一，并持续上涨至 8 月 4 日的 493 美元，较财报前收盘高 26%。Azure 提速和庞大积压订单让投资者相信 AI 投入正转化为营收，缓解了困扰其他云厂商的资本开支担忧。此后涨幅一直保持，是同业中财报后表现最好的。"
+   "营收增长 19% 至 923 亿美元，高于 907 亿美元预期；不含 OpenAI 的每股收益 4.89 美元高于 4.73 美元。Azure 首次以美元金额披露，增长 48% 至 332 亿美元，高于 44–45% 的指引。CFO 艾米·胡德指引 12 月季度营收 960–971 亿美元，高于 956 亿的一致预期，Azure 增长 49–50%，并称需求仍超供给。因第三方产能交付推迟，资本开支 452 亿美元低于计划；她预计下季超过 500 亿，之后支出加快。营业利润率升至 49.8%，CEO 萨提亚·纳德拉称 Copilot 日活用户增长约 50%。",
+   "财报前股价收于 531.01 美元，盘后上涨约 4% 至约 552 美元，涨幅在 2% 至 5% 之间波动。Azure 提速和强劲指引缓解了 Meta 与 Alphabet 重新引发的 AI 支出担忧，186 亿美元的正自由现金流也起到支撑。积压订单持平于 6,770 亿美元，以及部分属于时间差的资本开支不足，限制了涨幅。10 月 29 日首个完整交易日的表现尚待观察。"
   ]
  },
  "ceo": {
@@ -52,12 +53,16 @@
  },
  "sources": [
   {
-   "t": "Q4 FY26 results (CNBC)",
-   "u": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html"
+   "t": "Q1 FY27 press release (Microsoft)",
+   "u": "https://www.microsoft.com/en-us/investor/earnings/FY-2027-Q1/press-release-webcast"
   },
   {
-   "t": "Q4 FY26 breakdown",
-   "u": "https://indmoney.com/blog/us-stocks/microsoft-q4-results-why-msft-stock-jumped"
+   "t": "Q1 FY27 results, guidance and after-hours move (CNBC)",
+   "u": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
+  },
+  {
+   "t": "Q1 FY27 call coverage (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/stocks/live/microsoft-earnings-live-microsoft-beats-q1-expectations-on-top-and-bottom-line-on-ai-growth-204510452.html"
   }
  ]
 }

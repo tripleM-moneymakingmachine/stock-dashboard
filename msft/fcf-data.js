@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q1 FY22 to Q4 FY26. Microsoft's fiscal year ends June 30. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第一季至 FY26 第四季共 20 个季度。微软财年截至6月30日。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q2 FY22 to Q1 FY27. Microsoft's fiscal year ends June 30. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第二季至 FY27 第一季共 20 个季度。微软财年截至6月30日。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q1 FY22",
-   "Sep 2021",
-   24540,
-   5810,
-   18730
-  ],
   [
    "Q2 FY22",
    "Dec 2021",
@@ -143,36 +136,43 @@ window.FCF = {
    55441,
    35802,
    19639
+  ],
+  [
+   "Q1 FY27",
+   "Sep 2026",
+   58000,
+   39367,
+   18633
   ]
  ],
  "est": [
   [
-   "Q1 FY27",
-   "Sep 2026",
-   50000,
-   42000,
-   8000
-  ],
-  [
    "Q2 FY27",
    "Dec 2026",
-   40000,
+   45000,
    44000,
-   -4000
+   1000
   ],
   [
    "Q3 FY27",
    "Mar 2027",
-   55000,
-   45000,
+   58000,
+   48000,
    10000
   ],
   [
    "Q4 FY27",
    "Jun 2027",
-   62000,
-   47000,
-   15000
+   66000,
+   52000,
+   14000
+  ],
+  [
+   "Q1 FY28",
+   "Sep 2027",
+   66000,
+   54000,
+   12000
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash & investments",
    "zh": "现金及投资"
   },
-  "v": "$76.8B",
+  "v": "$64.6B",
   "s": {
-   "en": "Jun 30, 2026 · net cash $36.5B",
-   "zh": "2026年6月30日 · 净现金 365 亿"
+   "en": "Sep 30, 2026 · net cash $29.2B",
+   "zh": "2026年9月30日 · 净现金 292 亿"
   }
  },
  "read": [
   {
-   "en": "Microsoft has produced positive free cash flow in all 20 quarters, usually $15–25B, with a seasonal dip in the December quarter when taxes are paid. Cash capex more than doubled in two years, from $44.5B in FY24 to $115.9B in FY26, yet FY26 free cash flow was still $67B because operating cash flow grew almost as fast.",
-   "zh": "微软 20 个季度自由现金流全部为正，通常 150–250 亿美元，12月季度因缴税季节性走低。两年内现金资本开支由 FY24 的 445 亿增至 FY26 的 1159 亿，翻倍有余，但经营现金流几乎同步增长，FY26 自由现金流仍达 670 亿美元。"
+   "en": "Microsoft has produced positive free cash flow in all 20 quarters, usually $15–25B, with a seasonal dip in the December quarter when taxes are paid. Cash capex more than doubled in two years, from $44.5B in FY24 to $115.9B in FY26, and was $39.4B in Q1 FY27, up 103%; free cash flow fell 27% to $18.6B but stayed positive as operating cash flow rose 29% to $58.0B.",
+   "zh": "微软 20 个季度自由现金流全部为正，通常 150–250 亿美元，12月季度因缴税季节性走低。两年内现金资本开支由 FY24 的 445 亿增至 FY26 的 1159 亿，翻倍有余；FY27 第一季为 394 亿，增 103%。自由现金流降 27% 至 186 亿美元，但因经营现金流增 29% 至 580 亿而保持为正。"
   },
   {
-   "en": "Management expects about $50B of capex in Q1 FY27 including leases, and higher spending through fiscal 2027. I assume cash capex of $42–47B a quarter against operating cash flow of $40–62B, giving about $29B over four quarters, much less than FY26 and roughly what the dividend costs.",
-   "zh": "管理层预计 FY27 第一季含租赁资本开支约 500 亿美元，全年支出更高。我假设每季现金资本开支 420–470 亿、经营现金流 400–620 亿，四季合计约 290 亿美元，远低于 FY26，约等于股息支出。"
+   "en": "Management expects over $50B of capex including leases in Q2 FY27, accelerating in the second half as delayed third-party capacity arrives, and says free cash flow will stay positive through FY27. I assume cash capex of $44–54B a quarter against operating cash flow of $45–66B, giving about $37B over four quarters, less than the roughly $47B that dividends and buybacks cost.",
+   "zh": "管理层预计 FY27 第二季含租赁资本开支超 500 亿美元，下半财年随延迟的第三方产能到位而加速，并称 FY27 自由现金流将保持为正。我假设每季现金资本开支 440–540 亿、经营现金流 450–660 亿，四季合计约 370 亿美元，低于股息与回购约 470 亿的支出。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "数据中心与 GPU"
    },
    "p": {
-    "en": "$115.9B of cash capex in FY26 plus finance leases; Q4 capex including leases was about $41B.",
-    "zh": "FY26 现金资本开支 1159 亿美元，另有融资租赁；第四季含租赁资本开支约 410 亿。"
+    "en": "$39.4B of cash capex in Q1 FY27; capex including finance leases was $45.2B, about 75% on short-lived chips.",
+    "zh": "FY27 第一季现金资本开支 394 亿美元；含融资租赁资本开支 452 亿，约 75% 用于短寿命芯片。"
    }
   },
   {
@@ -213,8 +213,8 @@ window.FCF = {
     "zh": "股息"
    },
    "p": {
-    "en": "About $6.8B a quarter.",
-    "zh": "每季约 68 亿美元。"
+    "en": "About $7.3B a quarter after the raise to $0.98 a share.",
+    "zh": "上调至每股 0.98 美元后，每季约 73 亿美元。"
    }
   },
   {
@@ -223,8 +223,8 @@ window.FCF = {
     "zh": "回购"
    },
    "p": {
-    "en": "About $4.6B a quarter recently.",
-    "zh": "近期每季约 46 亿美元。"
+    "en": "About $4.4B in Q1 FY27.",
+    "zh": "FY27 第一季约 44 亿美元。"
    }
   }
  ],
@@ -235,8 +235,8 @@ window.FCF = {
     "zh": "云与 Office"
    },
    "p": {
-    "en": "Operating cash flow of $55.4B in Q4, up 30%.",
-    "zh": "第四季经营现金流 554 亿美元，增 30%。"
+    "en": "Operating cash flow of $58.0B in Q1 FY27, up 29%.",
+    "zh": "FY27 第一季经营现金流 580 亿美元，增 29%。"
    }
   },
   {
@@ -245,48 +245,48 @@ window.FCF = {
     "zh": "已签约积压订单"
    },
    "p": {
-    "en": "$678B of commercial RPO, about 30% due within 12 months.",
-    "zh": "商业剩余履约义务 6780 亿美元，约 30% 在 12 个月内确认。"
+    "en": "$677B of commercial RPO, up 73% but flat with June.",
+    "zh": "商业剩余履约义务 6770 亿美元，同比增 73%，但与6月持平。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash & investments, Jun 2026",
-    "zh": "2026年6月现金及投资"
+    "en": "Cash & investments, Sep 2026",
+    "zh": "2026年9月现金及投资"
    },
-   76800
+   64600
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   29000
+   37000
   ],
   [
    {
-    "en": "Dividends (~$6.8B a quarter)",
-    "zh": "股息（每季约68亿）"
+    "en": "Dividends (~$7.3B a quarter)",
+    "zh": "股息（每季约73亿）"
    },
-   -27000
+   -29200
   ],
   [
    {
-    "en": "Buybacks (~$4.6B a quarter)",
-    "zh": "回购（每季约46亿）"
+    "en": "Buybacks (~$4.4B a quarter)",
+    "zh": "回购（每季约44亿）"
    },
-   -18400
+   -17600
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash & investments, Jun 2027 (est.)",
-  "zh": "2027年6月现金及投资（估）"
+  "en": "Cash & investments, Sep 2027 (est.)",
+  "zh": "2027年9月现金及投资（估）"
  },
  "bridgeNote": {
-  "en": "Excludes debt maturities and new borrowing.",
-  "zh": "未计入债务到期及新增借款。"
+  "en": "Excludes debt maturities (Microsoft repaid $4.9B in Q1 FY27) and new borrowing, which management says it will use when attractive.",
+  "zh": "未计入债务到期（FY27 第一季偿还 49 亿美元）及新增借款；管理层称会在条件有利时动用外部融资。"
  },
  "extraNote": {
   "en": "Capex here is cash purchases of property and equipment; management's capex figure also includes finance leases.",
@@ -298,12 +298,16 @@ window.FCF = {
    "https://stockanalysis.com/stocks/msft/financials/cash-flow-statement/?p=quarterly"
   ],
   [
-   "Q4 FY26 recap: FCF",
-   "https://research.aardvarklabs.co/research/msft/earnings/2026-fq4/msft-2026-fq4-recap"
+   "Quarterly balance sheet (Stock Analysis)",
+   "https://stockanalysis.com/stocks/msft/financials/balance-sheet/?p=quarterly"
   ],
   [
-   "Net cash (Tech CEO Daily)",
-   "https://techceodaily.com/data/which-big-tech-companies-carry-the-most-debt"
+   "Q1 FY27: FCF, capex and funding (CNBC)",
+   "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
+  ],
+  [
+   "Q1 FY27 cash flow and leases (Stock Titan)",
+   "https://www.stocktitan.net/articles/microsoft-q1-fiscal-2027-earnings-azure-growth-ai-spending"
   ]
  ]
 };

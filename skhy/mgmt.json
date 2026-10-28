@@ -1,6 +1,6 @@
 {
  "ticker": "SKHY",
- "asof": "2026-10-28",
+ "asof": "2026-10-29",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,24 +9,23 @@
  "timing": "krx",
  "pre_close": 145.36,
  "react": {
-  "date": "2026-10-27",
-  "close": 154.24,
-  "pct": 6.1,
-  "ah": true
+  "date": "2026-10-28",
+  "close": 164.7,
+  "pct": 13.3
  },
  "since": {
-  "date": "2026-10-27",
-  "close": 145.36,
-  "pct": 0.0
+  "date": "2026-10-28",
+  "close": 164.7,
+  "pct": 13.3
  },
  "review": {
   "en": [
    "Record revenue of ₩104.6 trillion (+328%) and operating profit of ₩83.3 trillion (+632%, an 80% margin) beat consensus of about ₩98 trillion and ₩77 trillion, as DRAM prices rose by a high-20s % and HBM4 went into full shipment. Net profit of ₩39.8 trillion trailed forecasts on currency and investment losses. CFO Kim Woo-hyun guided Q4 DRAM bits up mid-20% and NAND up mid-single digits, said LTAs with 14 customers cover over half of 2027–28 capacity, and set about ₩100 trillion of 2026 shareholder returns.",
-   "The results came out before the Seoul open on Oct 28, after the Oct 27 US close. The Nasdaq ADS, which had closed at $145.36, rose about 6% after hours to $154, and Seoul shares climbed nearly 8% in the morning, lifting the KOSPI almost 6%. Investors focused on the record operating margin, the payout and management's view that DRAM and HBM supply is effectively sold out through 2029."
+   "The results came out before the Seoul open on Oct 28, after the Oct 27 US close of $145.36. Seoul shares closed up 10.9%, lifting the KOSPI 6.6% back above 6,000, and the Nasdaq ADS then jumped 13.3% to $164.70 on about twice normal volume, back above its $149 listing price; Micron rose 5.9%. Investors focused on the record 80% margin, an extra ₩60 trillion of shareholder returns and management's view that memory supply stays short through 2030."
   ],
   "zh": [
    "营收创纪录达 104.6 万亿韩元（+328%），营业利润 83.3 万亿韩元（+632%，利润率 80%），超过约 98 万亿和 77 万亿韩元的市场预期；DRAM 价格环比上涨近 30%，HBM4 全面出货。受汇兑与投资损失影响，净利润 39.8 万亿韩元低于预期。CFO 金宇贤指引 Q4 DRAM 出货量环比增约 25%、NAND 增中个位数，与 14 家客户的长期协议覆盖 2027–28 年过半产能，并定下 2026 年约 100 万亿韩元的股东回报。",
-   "业绩于 10 月 28 日首尔开盘前、美股 10 月 27 日收盘后公布。纳斯达克 ADS 收于 145.36 美元，盘后上涨约 6% 至 154 美元；首尔股价早盘上涨近 8%，带动 KOSPI 涨近 6%。投资者关注创纪录的营业利润率、股东回报，以及管理层称 DRAM 与 HBM 至 2029 年供应基本售罄。"
+   "业绩于 10 月 28 日首尔开盘前公布，此前美股 10 月 27 日收于 145.36 美元。首尔股价收涨 10.9%，带动 KOSPI 上涨 6.6%，重返 6,000 点上方；随后纳斯达克 ADS 大涨 13.3% 至 164.70 美元，成交量约为平日两倍，重回 149 美元上市价上方；美光上涨 5.9%。投资者关注创纪录的 80% 利润率、追加 60 万亿韩元的股东回报，以及管理层认为内存供应短缺将持续至 2030 年。"
   ]
  },
  "ceo": {
@@ -61,12 +60,12 @@
    "u": "https://investing.com/news/transcripts/earnings-call-transcript-sk-hynix-posts-record-q3-2026-results-shares-jump-after-hours-93CH-4977343"
   },
   {
-   "t": "Beat vs LSEG estimates (CNBC)",
-   "u": "https://cnb.cx/4iIzGZH"
+   "t": "First-session close (Motley Fool)",
+   "u": "https://fool.com/coverage/stock-market-today/2026/10/28/stock-market-today-oct-28-sk-hynix-surges-on-record-q3-results-and-ai-memory-demand"
   },
   {
-   "t": "Seoul reaction (Korea Times)",
-   "u": "https://koreatimes.co.kr/economy/20261028/seoul-stocks-up-nearly-6-wednesday-morning-on-sk-hynix-earnings"
+   "t": "Seoul close and shareholder returns (Asia Business Daily)",
+   "u": "https://asiae.co.kr/en/article/2026102816203154547"
   }
  ]
 }

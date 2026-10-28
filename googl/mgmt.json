@@ -1,31 +1,32 @@
 {
  "ticker": "GOOGL",
- "asof": "2026-10-11",
+ "asof": "2026-10-29",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-07-22",
+ "reported": "2026-10-28",
  "timing": "amc",
- "pre_close": 342.09,
+ "pre_close": 324.89,
  "react": {
-  "date": "2026-07-23",
-  "close": 317.69,
-  "pct": -7.1
+  "date": "2026-10-28",
+  "close": 291.1,
+  "pct": -10.4,
+  "ah": true
  },
  "since": {
-  "date": "2026-10-26",
-  "close": 316.8,
-  "pct": -7.4
+  "date": "2026-10-28",
+  "close": 324.89,
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "Revenue rose 24% to $119.8B, ahead of forecasts, and operating income grew 30% to $40.8B. Google Cloud was the standout: revenue up 82% to $24.8B with a 35.6% operating margin. Headline EPS was inflated by about $98B of unrealized gains on equity stakes. Capex hit $44.9B in the quarter and the 2026 plan was raised again, to $195–205B from $180–190B, pushing free cash flow slightly negative. CFO Anat Ashkenazi said Alphabet is still supply-constrained, with strong demand from cloud customers and internal teams.",
-   "Shares fell 3.5% after hours and closed down 7.1% the next day, as the capex increase and negative free cash flow overshadowed the cloud beat. The selloff reversed quickly: by Aug 4 the stock was 10% above the pre-report close as investors warmed to cloud growth and margins and peers' results eased AI-spending worries. It then drifted back into the $340–350 range."
+   "Revenue rose 25% to $127.6B, a touch below the ~$128.2B consensus, and GAAP EPS of $2.12 missed about $3.02 after an $8.7B loss on equity stakes. Google Cloud was the standout again: revenue up 103% to $30.7B with a 36.2% margin, helped by TPU system sales. Search grew 12% and YouTube ads 9%, both slower than in Q2. CFO Anat Ashkenazi kept the $195–205B capex plan and said 2027 will rise significantly. Sundar Pichai cited huge AI demand and said Alphabet is racing to add capacity.",
+   "Shares closed up 1.3% at $324.89 before the report, then fell about 10% after hours to roughly $291. The EPS miss and slower Search and YouTube growth outweighed the Cloud beat, and free cash flow of −$9.1B was far worse than the near-breakeven analysts expected as capex reached $51.4B. Investors also face a 2027 capex step-up with no figure until February. The first full session after the report, on Oct 29, is still pending."
   ],
   "zh": [
-   "营收增长 24% 至 1,198 亿美元，高于预期，营业利润增长 30% 至 408 亿美元。谷歌云表现最突出：营收增长 82% 至 248 亿美元，营业利润率 35.6%。每股收益因约 980 亿美元股权投资未实现收益而被抬高。本季资本开支 449 亿美元，2026 年计划再次上调至 1,950–2,050 亿美元（原为 1,800–1,900 亿），自由现金流转为小幅负值。CFO 阿纳特·阿什肯纳齐表示公司仍受产能制约，云客户与内部需求都很强。",
-   "盘后下跌 3.5%，次日收跌 7.1%，资本开支上调与负自由现金流盖过了云业务亮眼表现。抛售很快逆转：至 8 月 4 日股价已较财报前收盘高 10%，投资者认可云业务的增长和利润率，同业财报也缓解了 AI 开支担忧。之后股价回落至 340–350 美元区间。"
+   "营收增长 25% 至 1,276 亿美元，略低于约 1,282 亿美元的市场预期；因股权投资亏损 87 亿美元，GAAP 每股收益 2.12 美元，不及约 3.02 美元预期。谷歌云再度领跑：营收增长 103% 至 307 亿美元，利润率 36.2%，TPU 系统销售助力明显。搜索增长 12%、YouTube 广告增长 9%，均较第二季放缓。CFO 阿纳特·阿什肯纳齐维持 1,950–2,050 亿美元的资本开支计划，并表示 2027 年将显著增加。桑达尔·皮查伊称 AI 需求巨大，公司正全力扩充产能。",
+   "财报前股价收涨 1.3% 至 324.89 美元，财报后盘后下跌约 10% 至约 291 美元。每股收益不及预期以及搜索和 YouTube 增长放缓盖过了云业务的亮眼表现；资本开支达 514 亿美元，自由现金流 −91 亿美元，远差于分析师预期的接近收支平衡。投资者还需面对 2027 年资本开支上升，而具体数字要到 2 月才公布。财报后首个完整交易日（10 月 29 日）尚未开始。"
   ]
  },
  "ceo": {
@@ -52,12 +53,16 @@
  },
  "sources": [
   {
-   "t": "Q2 2026 live coverage (CNBC)",
-   "u": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html"
+   "t": "Q3 2026 earnings release (Alphabet)",
+   "u": "https://abc.xyz/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf"
   },
   {
-   "t": "Q2 2026 slides",
-   "u": "https://www.investing.com/news/company-news/alphabet-q2-2026-slides-24-revenue-growth-cloud-surges-despite-capex-93CH-4807148"
+   "t": "Q3 2026 live coverage (CNBC)",
+   "u": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+  },
+  {
+   "t": "Revenue miss, cash burn and after-hours move (Reuters)",
+   "u": "https://www.aol.com/articles/alphabets-google-cloud-unit-beats-200614000.html"
   }
  ]
 }

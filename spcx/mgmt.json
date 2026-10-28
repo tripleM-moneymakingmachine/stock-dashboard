@@ -1,6 +1,6 @@
 {
  "ticker": "SPCX",
- "asof": "2026-10-22",
+ "asof": "2026-10-29",
  "quarter": {
   "en": "Q3 2026 (first profitable quarter as a public company)",
   "zh": "2026年第三季（上市后首个盈利季度）"
@@ -14,18 +14,18 @@
   "pct": 7.8
  },
  "since": {
-  "date": "2026-10-27",
-  "close": 148.58,
-  "pct": 0.5
+  "date": "2026-10-28",
+  "close": 145.23,
+  "pct": -1.7
  },
  "review": {
   "en": [
    "Revenue rose 161% to $14.58B, well above the ~$12.9B consensus, and SpaceX turned its first profit as a public company: $2.8B operating income, $4.4B net income and $0.35 EPS against roughly $0.13 expected. Super Intelligence tripled to $7.56B and became the largest segment; Starlink grew 69% to $5.25B. CFO Bret Johnsen guided Q4 capex to $35–40B, Q1 2027 revenue to $33–37B and a $100B run rate by December, citing a $63B backlog. Musk targets about 3 GW of compute by year-end and at least 10 GW more in 2027, and confirmed special committees are weighing a Tesla merger.",
-   "Shares closed at $147.79 before the report and swung between about −2% and +5% after hours, as a light Starlink subscriber count and heavy Q4 capex offset the beat. The stock then gapped up to $160.56 at the open, touched $166.18 and closed up 7.8% at $159.31 on more than twice normal volume. Drivers were the Q1 2027 guide of $33–37B, far above the ~$22B analysts had modeled, a wave of price-target increases and the Tesla merger committees; chip stocks rose about 2% in sympathy."
+   "Shares closed at $147.79 before the report, then jumped 7.8% to $159.31 in the first session on a Q1 2027 guide far above the ~$22B modeled. The gain vanished next day: the stock fell 9.1% to $144.75 on twice normal volume as a tech selloff after Meta's report met the expiry of lockups on about 1.3 billion shares and worries over Q4 capex. It then traded between $145 and $149, closing Oct 28 at $145.23, 1.7% below the pre-report close."
   ],
   "zh": [
    "营收增长 161% 至 145.8 亿美元，远超约 129 亿美元的预期；SpaceX 实现上市后首次盈利：营业利润 28 亿、净利润 44 亿美元，每股收益 $0.35，预期约 $0.13。超级智能收入增至三倍达 75.6 亿，成为最大板块；星链增长 69% 至 52.5 亿。CFO 布雷特·约翰森指引第四季资本开支 350–400 亿、2027 年第一季营收 330–370 亿，并称12月年化收入可达 1000 亿，依据为 630 亿未完成订单。马斯克目标年底算力约 3 GW、2027 年再增至少 10 GW，并确认特别委员会正评估与特斯拉合并。",
-   "财报前股价收于 147.79 美元，盘后在约 −2% 至 +5% 间波动，因星链新增用户偏少及第四季资本开支庞大抵消了业绩超预期的利好。次日开盘跳空高开至 160.56 美元，盘中最高 166.18 美元，收涨 7.8% 至 159.31 美元，成交量为平日两倍多。推动因素包括 2027 年第一季营收指引 330–370 亿美元（远高于分析师约 220 亿的预测）、多家机构上调目标价，以及与特斯拉合并的特别委员会；芯片股随之上涨约 2%。"
+   "财报前股价收于 147.79 美元，首个交易日因 2027 年第一季营收指引远高于约 220 亿美元的预测，大涨 7.8% 至 159.31 美元。次日涨幅全数回吐：Meta 财报后科技股遭抛售，约 13 亿股禁售到期，加上市场担忧第四季资本开支，股价在两倍于平日的成交量下大跌 9.1% 至 144.75 美元。此后在 145 至 149 美元间震荡，10 月 28 日收于 145.23 美元，较财报前收盘价低 1.7%。"
   ]
  },
  "ceo": {
@@ -64,8 +64,9 @@
    "u": "https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/"
   },
   {
-   "t": "First-session close (Motley Fool)",
-   "u": "https://fool.com/coverage/stock-market-today/2026/10/21/stock-market-today-oct-21-space-exploration-technologies-surges-on-q3-earnings-beat"
+   "t": "Next-day reversal and lockup expiry (Business Insider)",
+   "u": "https://markets.businessinsider.com/news/stocks/ignore-the-naysayers-says-top-investor-as-spacex-stock-takes-a-wild-ride-1036658989"
   }
- ]
+ ],
+ "followup_done": true
 }

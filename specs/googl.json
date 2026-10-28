@@ -6,10 +6,10 @@
  "shares": 12102000000.0,
  "beta": "1.21",
  "snapshot": {
-  "price": "$351.66",
-  "date": "Oct 9, 2026",
-  "mcap": "$4.26T",
-  "range": "$236–409"
+  "price": "$324.89",
+  "date": "Oct 28, 2026",
+  "mcap": "$3.93T",
+  "range": "$274–403"
  },
  "eyebrow": {
   "en": "Alphabet Inc. · Class A · Mountain View, California",
@@ -20,18 +20,18 @@
   "zh": "搜索仍在赚钱，<em>云业务一飞冲天</em>。"
  },
  "lede": {
-  "en": "Alphabet grew revenue 24% to $119.8B last quarter, its twelfth straight double-digit quarter, as Google Cloud jumped 82%. The cost is capex: guided to $195–205B this year and higher again in 2027, which turned free cash flow negative in Q2 for the first time in about two decades.",
-  "zh": "Alphabet 上季营收增 24% 至 1198 亿美元，连续第12个季度双位数增长，Google Cloud 大增 82%。代价是资本开支：今年指引 1950–2050 亿美元，2027 年还将更高，令第二季自由现金流约二十年来首次转负。"
+  "en": "Alphabet grew revenue 25% to $127.6B in Q3, its thirteenth straight double-digit quarter, as Google Cloud more than doubled, up 103%. The cost is capex: $51.4B in the quarter, with $195–205B planned this year and significantly more in 2027, which pushed free cash flow to −$9.1B, its second negative quarter in a row.",
+  "zh": "Alphabet 第三季营收增 25% 至 1276 亿美元，连续第13个季度双位数增长，Google Cloud 增长 103%，规模翻倍有余。代价是资本开支：单季 514 亿美元，今年计划 1950–2050 亿美元，2027 年还将显著增加，令自由现金流降至 −91 亿美元，连续第二个季度为负。"
  },
  "valuation": {
   "k": {
    "en": "P/E",
    "zh": "市盈率"
   },
-  "v": "~29×",
+  "v": "~21×",
   "s": {
-   "en": "Q3 consensus EPS $3.04 × 4 · trailing GAAP ~18× incl. investment gains",
-   "zh": "Q3 一致预期每股 $3.04 × 4 · 含投资收益的 GAAP 历史约 18 倍"
+   "en": "FY2027 consensus EPS $15.35 · trailing GAAP ~17× incl. investment gains",
+   "zh": "2027 财年一致预期每股 $15.35 · 含投资收益的 GAAP 历史约 17 倍"
   }
  },
  "analysts": {
@@ -39,37 +39,37 @@
    "en": "Analyst target",
    "zh": "分析师目标价"
   },
-  "v": "$432",
+  "v": "$431",
   "s": {
-   "en": "consensus · range $350–485",
-   "zh": "一致预期 · 区间 $350–485"
+   "en": "consensus · range $350–485 · Q4 revenue est. ~$142B",
+   "zh": "一致预期 · 区间 $350–485 · Q4 营收预期约 1421 亿"
   }
  },
  "earnings": {
-  "v": "Oct 28",
+  "v": "Early Feb",
   "s": {
-   "en": "Q3 2026 · expected, after close",
-   "zh": "2026 第三季 · 预计，盘后"
+   "en": "Q4 2026 · expected, after close",
+   "zh": "2026 第四季 · 预计，盘后"
   }
  },
  "sub_price": {
-  "en": "Daily closes with the 50-day average. The stock traded between about $236 and $409 over the past year.",
-  "zh": "每日收盘价与50日均线。过去一年股价在约 $236 至 $409 间。"
+  "en": "Daily closes with the 50-day average. The stock traded between about $274 and $403 over the past year.",
+  "zh": "每日收盘价与50日均线。过去一年股价在约 $274 至 $403 间。"
  },
  "sub_rev": {
-  "en": "Revenue in US$ millions, with gross margin on the right axis. Q2 2026 GAAP EPS of $9.11 includes about $99B of gains on stakes such as SpaceX and Anthropic. Alphabet gives no revenue guidance, so the last bar is analyst consensus for Q3 2026.",
-  "zh": "营收单位为百万美元，右轴为毛利率。2026 第二季 GAAP 每股 $9.11 含约 990 亿美元 SpaceX、Anthropic 等持股收益。Alphabet 不提供营收指引，最后一根柱为 2026 第三季分析师一致预期。"
+  "en": "Revenue in US$ millions, with gross margin on the right axis. Q3 2026 GAAP EPS of $2.12 includes an $8.7B loss on equity stakes (−$0.55 a share), after about $99B of gains lifted Q2 to $9.11. Alphabet gives no revenue guidance, so the last bar is analyst consensus for Q4 2026, implied from the full-year estimate.",
+  "zh": "营收单位为百万美元，右轴为毛利率。2026 第三季 GAAP 每股 $2.12 含 87 亿美元股权投资亏损（每股 −$0.55），而第二季因约 990 亿美元收益被推高至 $9.11。Alphabet 不提供营收指引，最后一根柱为由全年预期推算的 2026 第四季分析师一致预期。"
  },
  "rev_cells": [
   {
    "k": {
-    "en": "Q2 2026",
-    "zh": "2026 Q2"
+    "en": "Q3 2026",
+    "zh": "2026 Q3"
    },
-   "v": "$119.8B",
+   "v": "$127.6B",
    "s": {
-    "en": "+24% YoY · 12th double-digit quarter",
-    "zh": "同比 +24% · 连续12季双位数"
+    "en": "+25% YoY · 13th double-digit quarter",
+    "zh": "同比 +25% · 连续13季双位数"
    }
   },
   {
@@ -77,10 +77,10 @@
     "en": "Google Cloud",
     "zh": "Google Cloud"
    },
-   "v": "$24.8B",
+   "v": "$30.7B",
    "s": {
-    "en": "+82% · $8.8B operating income",
-    "zh": "+82% · 营业利润 88 亿"
+    "en": "+103% · $11.1B op. income, 36.2% margin",
+    "zh": "+103% · 营业利润 111 亿，利润率 36.2%"
    }
   },
   {
@@ -88,32 +88,32 @@
     "en": "Search & other",
     "zh": "搜索及其他"
    },
-   "v": "$63.3B",
+   "v": "$63.4B",
    "s": {
-    "en": "+17% YoY",
-    "zh": "同比 +17%"
+    "en": "+12% YoY · 17% in Q2",
+    "zh": "同比 +12% · Q2 为 17%"
    }
   },
   {
    "k": {
-    "en": "YouTube ads",
-    "zh": "YouTube 广告"
+    "en": "GAAP EPS",
+    "zh": "GAAP 每股收益"
    },
-   "v": "$11.1B",
+   "v": "$2.12",
    "s": {
-    "en": "+13% YoY",
-    "zh": "同比 +13%"
+    "en": "vs ~$3.02 consensus · $8.7B stake loss",
+    "zh": "一致预期约 $3.02 · 持股亏损 87 亿"
    }
   },
   {
    "k": {
-    "en": "Cloud backlog",
-    "zh": "云业务积压订单"
+    "en": "2026 capex guide",
+    "zh": "2026 资本开支指引"
    },
-   "v": "$514B",
+   "v": "$195–205B",
    "s": {
-    "en": "up from $490B in Q1",
-    "zh": "Q1 为 4900 亿"
+    "en": "kept · $51.4B in Q3 · 2027 \"significantly\" higher",
+    "zh": "维持 · Q3 为 514 亿 · 2027 年\"显著\"更高"
    }
   },
   {
@@ -121,10 +121,10 @@
     "en": "Op. margin",
     "zh": "营业利润率"
    },
-   "v": "34.0%",
+   "v": "31.8%",
    "s": {
-    "en": "32.4% a year ago",
-    "zh": "一年前 32.4%"
+    "en": "30.5% a year ago",
+    "zh": "一年前 30.5%"
    }
   }
  ],
@@ -136,19 +136,19 @@
     "zh": "云业务加速"
    },
    "p": {
-    "en": "Cloud growth sped up from 48% at the end of 2025 to 63% in Q1 and 82% in Q2, and its operating income tripled. Existing customers are exceeding their commitments by more than 50%.",
-    "zh": "云业务增速由 2025 年底的 48% 提升至 Q1 的 63%、Q2 的 82%，营业利润增至三倍。现有客户用量超出承诺逾 50%。"
+    "en": "Cloud growth sped up from 48% at the end of 2025 to 63% in Q1, 82% in Q2 and 103% in Q3, and operating income tripled to $11.1B at a 36.2% margin. Sales of TPU systems were a meaningful contributor.",
+    "zh": "云业务增速由 2025 年底的 48% 提升至 Q1 的 63%、Q2 的 82% 和 Q3 的 103%，营业利润增至三倍达 111 亿美元，利润率 36.2%。TPU 系统销售贡献显著。"
    }
   },
   {
-   "kind": "plus",
+   "kind": "watch",
    "h": {
-    "en": "Search holds up in the AI era",
-    "zh": "AI 时代搜索稳健"
+    "en": "Search and YouTube slow",
+    "zh": "搜索与 YouTube 放缓"
    },
    "p": {
-    "en": "Search revenue grew 17% as AI Overviews and AI Mode drew more queries. The Gemini app reached 950M monthly users.",
-    "zh": "AI 概览与 AI 模式带来更多查询，搜索收入增长 17%。Gemini 应用月活达 9.5 亿。"
+    "en": "Search revenue growth slowed to 12% from 17% as it lapped a strong quarter, and YouTube ads to 9% from 13%. Query growth was the fastest in five years and the Gemini app reached 1B users.",
+    "zh": "搜索收入增速因基数较高由 17% 放缓至 12%，YouTube 广告由 13% 放缓至 9%。查询量增速为五年来最快，Gemini 应用用户达 10 亿。"
    }
   },
   {
@@ -158,8 +158,8 @@
     "zh": "资本开支与融资"
    },
    "p": {
-    "en": "The 2026 capex guide was raised twice, to $195–205B, and 2027 will be \"significantly\" higher. Alphabet stopped buybacks and raised about $106B in the first half through bonds, stock and a mandatory convertible.",
-    "zh": "2026 年资本开支指引两度上调至 1950–2050 亿美元，2027 年将\"显著\"更高。Alphabet 停止回购，上半年通过债券、股票和强制可转换优先股募资约 1060 亿美元。"
+    "en": "The 2026 capex guide stayed at $195–205B; with $132B spent in nine months, Q4 implies $63–73B. 2027 will be \"significantly\" higher, with details on the Q4 call. Buybacks remain paused; Q3 added $28.7B of notes and $12.4B of stock sold at the market.",
+    "zh": "2026 年资本开支指引维持 1950–2050 亿美元；前九个月已花 1320 亿，意味着第四季需 630–730 亿。2027 年将\"显著\"更高，详情将在第四季电话会公布。回购仍暂停；第三季新增 287 亿美元票据及 124 亿美元按市价发行股票。"
    }
   },
   {
@@ -169,19 +169,19 @@
     "zh": "账面收益扰动每股收益"
    },
    "p": {
-    "en": "Q2 net income of $112B included about $99B of unrealized gains, mostly on the SpaceX stake. GAAP earnings will move with those holdings.",
-    "zh": "第二季净利润 1120 亿美元中约 990 亿为未实现收益，主要来自 SpaceX 持股。GAAP 盈利会随这些持股波动。"
+    "en": "Q2 net income included about $99B of unrealized gains, mostly on the SpaceX stake; in Q3 an $8.7B loss on equity securities cut EPS by $0.55 and drove the miss. GAAP earnings will move with those holdings.",
+    "zh": "第二季净利润含约 990 亿美元未实现收益，主要来自 SpaceX 持股；第三季股权证券亏损 87 亿美元，使每股收益减少 $0.55，导致不及预期。GAAP 盈利会随这些持股波动。"
    }
   },
   {
    "kind": "risk",
    "h": {
-    "en": "Supply constraints",
-    "zh": "供给受限"
+    "en": "Cash burn and supply",
+    "zh": "现金消耗与供给"
    },
    "p": {
-    "en": "Management says Alphabet is still supply-constrained; cloud growth depends on getting chips, power and data centers online.",
-    "zh": "管理层表示仍受供给限制；云业务增长取决于芯片、电力和数据中心能否到位。"
+    "en": "Free cash flow was −$9.1B against near-breakeven expectations. Management says demand still exceeds capacity; cloud growth depends on getting chips, power and data centers online, partly through third-party capacity.",
+    "zh": "自由现金流为 −91 亿美元，而市场预期接近收支平衡。管理层表示需求仍超过产能；云业务增长取决于芯片、电力和数据中心能否到位，部分依赖第三方算力。"
    }
   },
   {
@@ -198,25 +198,14 @@
  ],
  "calendar": [
   {
-   "date": "Oct 28, 2026",
-   "h": {
-    "en": "Q3 2026 earnings (expected)",
-    "zh": "2026 第三季财报（预计）"
-   },
-   "p": {
-    "en": "After US close (Oct 29 morning SGT). Consensus: revenue ~$127.4B, EPS ~$3.04.",
-    "zh": "美股收盘后（新加坡时间10月29日早上）。一致预期：营收约 1274 亿美元，每股约 $3.04。"
-   }
-  },
-  {
    "date": "Early Feb 2027",
    "h": {
     "en": "Q4 and FY26 results",
     "zh": "第四季及 2026 全年业绩"
    },
    "p": {
-    "en": "Expected to include the 2027 capex outlook.",
-    "zh": "预计将给出 2027 年资本开支展望。"
+    "en": "Expected to include the 2027 capex outlook. Consensus Q4 revenue ~$142B.",
+    "zh": "预计将给出 2027 年资本开支展望。第四季营收一致预期约 1421 亿美元。"
    }
   },
   {
@@ -229,45 +218,56 @@
     "en": "Date not yet announced.",
     "zh": "日期未公布。"
    }
+  },
+  {
+   "date": "Late Jul 2027",
+   "h": {
+    "en": "Q2 2027 earnings",
+    "zh": "2027 第二季财报"
+   },
+   "p": {
+    "en": "Date not yet announced.",
+    "zh": "日期未公布。"
+   }
   }
  ],
  "sources": [
   [
-   "Alphabet Q2 2026: Cloud +82%, capex raised",
+   "Alphabet Q3 2026 earnings release",
+   "https://abc.xyz/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf"
+  ],
+  [
+   "Q3 2026 call: CEO remarks (Google)",
+   "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026"
+  ],
+  [
+   "Q3 2026 vs LSEG estimates and capex comments (CNBC)",
+   "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+  ],
+  [
+   "Q3 2026 revenue miss and cash burn (Reuters)",
+   "https://www.aol.com/articles/alphabets-google-cloud-unit-beats-200614000.html"
+  ],
+  [
+   "Q3 2026 segments, capex and backlog (Stock Titan)",
+   "https://stocktitan.net/articles/alphabet-q3-2026-earnings-google-cloud-doubles-search-slows"
+  ],
+  [
+   "Q2 2026: Cloud +82%, capex raised",
    "https://howtheymake.money/en/blog/goog-q2-2026-cloud-82-capex-hike"
-  ],
-  [
-   "Q2 2026 vs estimates",
-   "https://globalexpresstime.com/article/google-cloud-surges-82percent-as-alphabets-q2-revenue-tops-dollar119b"
-  ],
-  [
-   "Q2 2026 backlog and SpaceX gain (The Next Web)",
-   "https://thenextweb.com/news/alphabet-q2-2026-capex-205bn-cloud-82"
-  ],
-  [
-   "First-half 2026 cash flows and funding",
-   "https://zandigital.in/alphabet-equity-raise-cash-flow"
-  ],
-  [
-   "Q2 2026 segment detail",
-   "https://pomegra.io/news/alphabet-q2-2026-revenue-jumps-24-on-cloud-and-ai-surge"
-  ],
-  [
-   "Tech debt and equity raises, Oct 2026 (BNN Bloomberg)",
-   "https://bnnbloomberg.ca/business/artificial-intelligence/2026/10/07/tech-companies-tap-debt-equity-to-fund-ai-and-cloud-expansion"
   ],
   [
    "Quarterly income statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/googl/financials/?p=quarterly"
   ],
   [
-   "Price, market cap, beta, targets and earnings date: Financial Modeling Prep, as of Oct 9, 2026",
+   "Price, market cap, targets and consensus estimates: Financial Modeling Prep, as of Oct 28, 2026",
    "https://finance.yahoo.com/quote/GOOGL"
   ]
  ],
  "foot": {
-  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Alphabet Inc..",
-  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Alphabet Inc. 无关联。"
+  "en": "Fundamentals as of Oct 28, 2026 (Q3 2026 results). For information only, not investment advice. Not affiliated with Alphabet Inc..",
+  "zh": "基本面数据截至 2026年10月28日（2026 第三季业绩）。仅供参考，不构成投资建议。与 Alphabet Inc. 无关联。"
  },
  "quarters": [
   [
@@ -429,27 +429,28 @@
    61.65,
    34.03,
    9.11
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   127577,
+   59.7,
+   31.81,
+   2.12
   ]
  ],
  "guide": [
-  "Q3 2026e",
-  127353,
-  "Sep 2026 · analyst consensus",
-  "2026年9月 · 分析师一致预期"
+  "Q4 2026e",
+  142085,
+  "Dec 2026 · analyst consensus",
+  "2026年12月 · 分析师一致预期"
  ],
  "fcf": {
   "sub": {
-   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Shaded bars and italic rows are estimates.",
-   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度。浅色柱与斜体行为估算。"
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第四季至 2026 年第三季共 20 个季度。浅色柱与斜体行为估算。"
   },
   "hist": [
-   [
-    "Q3 2021",
-    "Sep 2021",
-    25539,
-    6819,
-    18720
-   ],
    [
     "Q4 2021",
     "Dec 2021",
@@ -582,36 +583,43 @@
     39069,
     44924,
     -5855
+   ],
+   [
+    "Q3 2026",
+    "Sep 2026",
+    42290,
+    51355,
+    -9065
    ]
   ],
   "est": [
    [
-    "Q3 2026",
-    "Sep 2026",
-    48000,
-    57000,
-    -9000
-   ],
-   [
     "Q4 2026",
     "Dec 2026",
-    52000,
-    62000,
-    -10000
+    50000,
+    68000,
+    -18000
    ],
    [
     "Q1 2027",
     "Mar 2027",
     55000,
-    65000,
-    -10000
+    72000,
+    -17000
    ],
    [
     "Q2 2027",
     "Jun 2027",
-    50000,
-    70000,
-    -20000
+    52000,
+    76000,
+    -24000
+   ],
+   [
+    "Q3 2027",
+    "Sep 2027",
+    55000,
+    80000,
+    -25000
    ]
   ],
   "cash": {
@@ -619,20 +627,20 @@
     "en": "Cash & securities",
     "zh": "现金及有价证券"
    },
-   "v": "~$242B",
+   "v": "~$265B",
    "s": {
-    "en": "Jun 30, 2026",
-    "zh": "2026年6月30日"
+    "en": "Sep 30, 2026",
+    "zh": "2026年9月30日"
    }
   },
   "read": [
    {
-    "en": "Alphabet has been one of the most reliable cash machines in the market: free cash flow of $13–25B in most quarters and about $317B over these five years, which paid for $13–16B of buybacks a quarter. That changed in 2026. Capex doubled to $44.9B in Q2 and free cash flow was −$5.9B.",
-    "zh": "Alphabet 一直是市场上最稳定的现金机器之一：多数季度自由现金流 130–250 亿美元，五年合计约 3170 亿，足以支撑每季 130–160 亿美元的回购。2026 年情况改变：第二季资本开支翻倍至 449 亿美元，自由现金流 −59 亿。"
+    "en": "Alphabet has been one of the most reliable cash machines in the market: free cash flow of $13–25B in most quarters and about $289B over these five years, which paid for $13–16B of buybacks a quarter. That changed in 2026. Capex more than doubled from a year earlier to $51.4B in Q3, operating cash flow slipped to $42.3B and free cash flow was −$9.1B, the second negative quarter in a row.",
+    "zh": "Alphabet 一直是市场上最稳定的现金机器之一：多数季度自由现金流 130–250 亿美元，五年合计约 2890 亿，足以支撑每季 130–160 亿美元的回购。2026 年情况改变：第三季资本开支同比翻倍有余至 514 亿美元，经营现金流降至 423 亿，自由现金流 −91 亿，连续第二个季度为负。"
    },
    {
-    "en": "With 2026 capex guided at $195–205B and $80.6B spent in the first half, the second half needs about $119B, roughly $57–62B a quarter, against $48–52B of operating cash flow. I expect about −$9 to −10B a quarter for the rest of 2026 and a bigger gap in 2027 as capex rises again, roughly −$49B over four quarters. Alphabet has pre-funded much of it: about $106B raised in the first half from bonds, stock and a mandatory convertible, plus a $20–25B bond sale in October.",
-    "zh": "2026 年资本开支指引 1950–2050 亿美元，上半年已花 806 亿，下半年需约 1190 亿，即每季 570–620 亿，而经营现金流约 480–520 亿。我预计 2026 年余下每季约 −90 至 −100 亿美元，2027 年随资本开支再升缺口扩大，四季合计约 −490 亿。Alphabet 已预先筹资：上半年通过债券、股票和强制可转换优先股募资约 1060 亿美元，10月再发 200–250 亿美元债券。"
+    "en": "With 2026 capex guided at $195–205B and $132.0B spent in the first nine months, Q4 needs $63–73B against roughly $50B of operating cash flow. I expect about −$18B in Q4 and a similar or bigger gap each quarter of 2027 as capex rises again, roughly −$84B over four quarters. Funding keeps coming: Q3 added $28.7B of notes and $12.4B of stock sold at the market, with $27.6B of that program left, and cash and securities rose to $265.1B.",
+    "zh": "2026 年资本开支指引 1950–2050 亿美元，前九个月已花 1320 亿，第四季需 630–730 亿，而经营现金流约 500 亿。我预计第四季约 −180 亿美元，2027 年随资本开支再升，每季缺口相当或更大，四季合计约 −840 亿。融资持续：第三季新增 287 亿美元票据及 124 亿美元按市价发行股票，该计划尚余 276 亿额度，现金及有价证券升至 2651 亿美元。"
    }
   ],
   "out": [
@@ -642,8 +650,8 @@
      "zh": "AI 数据中心与 TPU"
     },
     "p": {
-     "en": "About 60% of Q2 capex went to servers and chips (including TPUs) and 40% to data centers and networking.",
-     "zh": "第二季资本开支约 60% 用于服务器与芯片（含 TPU），40% 用于数据中心与网络。"
+     "en": "Q3 capex was $51.4B, up from $24.0B a year earlier; the full-year guide implies $63–73B in Q4.",
+     "zh": "第三季资本开支 514 亿美元，一年前为 240 亿；全年指引意味着第四季 630–730 亿。"
     }
    },
    {
@@ -652,8 +660,8 @@
      "zh": "股息"
     },
     "p": {
-     "en": "About $2.7B a quarter. Buybacks were paused in 2026 after $28B in the first half of 2025.",
-     "zh": "每季约 27 亿美元。2025 年上半年回购 280 亿后，2026 年暂停回购。"
+     "en": "About $2.9B a quarter including the preferred. No buybacks in 2026 so far, after $28B in the first half of 2025.",
+     "zh": "含优先股每季约 29 亿美元。2025 年上半年回购 280 亿后，2026 年至今未回购。"
     }
    },
    {
@@ -662,8 +670,8 @@
      "zh": "新增债务利息"
     },
     "p": {
-     "en": "Net debt raised was about $56B in the first half, including a 100-year bond, with more in October.",
-     "zh": "上半年净举债约 560 亿美元（含百年期债券），10月再发债。"
+     "en": "Q3 interest expense was $967M, still below $1.8B of interest income, after $56B of net debt in the first half and $28.7B of notes in Q3.",
+     "zh": "第三季利息支出 9.67 亿美元，仍低于 18 亿利息收入；上半年净举债 560 亿，第三季再发 287 亿票据。"
     }
    }
   ],
@@ -674,8 +682,8 @@
      "zh": "广告与订阅"
     },
     "p": {
-     "en": "Google Services earned $94.5B of revenue in Q2, up 15%, and still funds most of the build-out.",
-     "zh": "第二季 Google 服务营收 945 亿美元，增长 15%，仍是扩建的主要资金来源。"
+     "en": "Google Services earned $96.3B of revenue in Q3, up 11%, with $39.2B of operating income, and still funds most of the build-out.",
+     "zh": "第三季 Google 服务营收 963 亿美元，增长 11%，营业利润 392 亿，仍是扩建的主要资金来源。"
     }
    },
    {
@@ -684,8 +692,8 @@
      "zh": "云业务积压订单"
     },
     "p": {
-     "en": "$514B of contracted cloud work yet to be booked as revenue.",
-     "zh": "已签约但尚未确认的云业务收入达 5140 亿美元。"
+     "en": "$514B of contracted cloud work yet to be booked as revenue at the end of June; the Q3 release gives no update.",
+     "zh": "截至6月底已签约但尚未确认的云业务收入达 5140 亿美元；第三季财报未更新该数字。"
     }
    },
    {
@@ -694,52 +702,45 @@
      "zh": "已募资金"
     },
     "p": {
-     "en": "First half 2026: $56.2B net debt, $30.5B of common stock and $19.1B of mandatory convertible preferred, including Berkshire Hathaway's $10B purchase.",
-     "zh": "2026 年上半年：净债务 562 亿美元、普通股 305 亿、强制可转换优先股 191 亿，含伯克希尔 100 亿美元认购。"
+     "en": "Q3 2026: $28.7B of senior notes and $12.4B of Class A and C stock sold at the market. First half: $56.2B net debt, $30.5B of common stock and $19.1B of mandatory convertible preferred.",
+     "zh": "2026 年第三季：287 亿美元优先无担保票据及 124 亿美元按市价发行 A 类和 C 类股。上半年：净债务 562 亿美元、普通股 305 亿、强制可转换优先股 191 亿。"
     }
    }
   ],
   "bridge": [
    [
     {
-     "en": "Cash & securities, Jun 2026",
-     "zh": "2026年6月现金及证券"
+     "en": "Cash & securities, Sep 2026",
+     "zh": "2026年9月现金及证券"
     },
-    242500
+    265100
    ],
    [
     {
      "en": "Free cash flow, 4 quarters (est.)",
      "zh": "4季自由现金流（估）"
     },
-    -49000
+    -84000
    ],
    [
     {
-     "en": "Dividends (~$2.7B a quarter)",
-     "zh": "股息（每季约27亿）"
+     "en": "Dividends (~$2.9B a quarter)",
+     "zh": "股息（每季约29亿）"
     },
-    -10800
-   ],
-   [
-    {
-     "en": "October bond sale (midpoint)",
-     "zh": "10月发债（中值）"
-    },
-    22500
+    -11600
    ]
   ],
   "bridgeEnd": {
-   "en": "Cash & securities, Jun 2027 (est.)",
-   "zh": "2027年6月现金及证券（估）"
+   "en": "Cash & securities, Sep 2027 (est.)",
+   "zh": "2027年9月现金及证券（估）"
   },
   "bridgeNote": {
-   "en": "Bond size is the midpoint of the reported $20–25B. Excludes any restart of buybacks or further capital raising.",
-   "zh": "债券规模取报道的 200–250 亿中值。未计入恢复回购或进一步融资。"
+   "en": "Excludes further at-the-market stock sales ($27.6B left at Sep 30), new bond issues and any restart of buybacks.",
+   "zh": "未计入进一步按市价发行股票（9月30日尚余 276 亿）、新发债券或恢复回购。"
   },
   "extraNote": {
-   "en": "Gains on equity stakes such as SpaceX and Anthropic do not affect cash flow. The cash figure is as reported in coverage of the Q2 10-Q.",
-   "zh": "SpaceX、Anthropic 等持股收益不影响现金流。现金数字取自第二季10-Q相关报道。"
+   "en": "Gains and losses on equity stakes such as SpaceX and Anthropic do not affect cash flow. The cash figure is from the Q3 release balance sheet.",
+   "zh": "SpaceX、Anthropic 等持股的收益与亏损不影响现金流。现金数字取自第三季财报资产负债表。"
   },
   "src": [
    [
@@ -747,16 +748,16 @@
     "https://stockanalysis.com/stocks/googl/financials/cash-flow-statement/?p=quarterly"
    ],
    [
-    "First-half 2026 cash flows",
+    "Q3 2026 cash flow, balance sheet and financing (Alphabet release)",
+    "https://abc.xyz/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf"
+   ],
+   [
+    "Q3 capex, FCF and capex guide (Stock Titan)",
+    "https://stocktitan.net/articles/alphabet-q3-2026-earnings-google-cloud-doubles-search-slows"
+   ],
+   [
+    "First-half 2026 cash flows and funding",
     "https://zandigital.in/alphabet-equity-raise-cash-flow"
-   ],
-   [
-    "Q2 capex and guidance",
-    "https://ceevis.com/alphabet-q2-2026-earnings-cloud-capex-analysis"
-   ],
-   [
-    "Cash balance (Jun 30)",
-    "https://adalytica.com/news/berkshire-alphabet-ai-bet-afb2b917"
    ]
   ]
  }
