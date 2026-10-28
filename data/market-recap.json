@@ -1,30 +1,30 @@
 {
- "session": "2026-10-27",
- "asof": "Tue Oct 27, 2026",
+ "session": "2026-10-28",
+ "asof": "Wed Oct 28, 2026",
  "tone": "up",
- "headline": "$63B Broadcom–Anthropic chip financing extends the AI rebound; Nasdaq +1.2%, Boeing caps Dow",
- "summary": "A narrow, tech-led advance on the eve of the Fed. Stocks opened mixed, then firmed through the morning as chipmakers rallied for a third day and upbeat consumer-confidence and durable-goods data landed, with the S&P 500 holding most of a 0.7% midday gain into the close. Tech led and energy lagged as oil slid below $100; advancers beat decliners about 1.8 to 1 on the NYSE, yet most S&P 500 members fell and Boeing's slide left the Dow flat.",
+ "headline": "Fed holds with two hike dissents; memory chips lift the S&P 0.3% as Micron jumps 5.9%",
+ "summary": "A quiet, narrow up day around the Fed. The major indexes hovered near unchanged before and after the 2 p.m. decision, swung during Chair Warsh's press conference and closed modestly higher, with the VIX easing to 16.91. Tech, financials and energy led while utilities, real estate and staples fell; the equal-weight S&P 500 finished flat, NYSE breadth was roughly even and Nasdaq advancers beat decliners about 1.5 to 1.",
  "stats": [
-  ["S&P 500", "7,722.60", 0.60],
-  ["Nasdaq", "26,477.81", 1.18],
-  ["Dow", "52,377.57", 0.03],
-  ["Russell 2000", "2,818.87", 1.16],
-  ["SOX (chips)", "≈11,400", 3.0],
-  ["VIX", "17.52", -4.73, true],
-  ["US 10Y", "4.99%", "flat"],
-  ["WTI crude", "$99.90", -1.83]
+  ["S&P 500", "7,743.98", 0.28],
+  ["Nasdaq", "26,549.85", 0.27],
+  ["Dow", "52,475.10", 0.19],
+  ["Russell 2000", "2,830.51", 0.41],
+  ["SOX (chips)", "4th up day", 1.8],
+  ["VIX", "16.91", -3.48, true],
+  ["US 10Y", "5.02%", "+3bp"],
+  ["WTI crude", "$102.78", 2.88]
  ],
  "drivers": [
-  ["Broadcom deal keeps the AI trade going", "Banks including Bank of America, Citi and Morgan Stanley plus Blackstone lined up $63 billion to finance Broadcom AI chips and networking gear leased to Anthropic, a day after its IPO filing. Broadcom rose about 4%, AMD 5.4%, Intel 3.6% and Micron 2.8%, while Nvidia lagged at +0.9%; the SOX gained about 3% for a third straight rise and neocloud CoreWeave jumped 7.9%."],
-  ["Oil drops back under $100", "Talks in Tehran between Iran, Saudi Arabia, Pakistan and Turkey revived hopes of ending the US–Iran war, sending WTI down 1.8% to $99.90 and Brent 1.7% to $113.88. Energy was the weakest sector, refiners fell, and airlines and cruise lines rallied (Royal Caribbean +5.5% after raising its profit outlook)."],
-  ["Strong data, steady yields before the Fed", "Consumer confidence jumped to 91.7 against forecasts near 81 and September durable-goods orders rose 1.8%, with computer orders up again. The 10-year Treasury yield ended little changed near 4.99% after a solid 5-year auction, with a Fed hold at 3.75–4% widely expected Wednesday and a December hike still priced."],
-  ["Earnings split: Boeing sinks, UPS soars", "Boeing fell 10.7%, its worst day since 2020, on a wider-than-expected loss and a delayed 737 production ramp, single-handedly holding the Dow flat; Xylem lost 14.2% on a cut forecast and Sherwin-Williams 2.7% on a profit miss. UPS climbed 5.8% after raising its outlook, and Meta slipped 1.6% after enlarging its equity raise to $97.5 billion, with Nvidia, AMD and Broadcom offering to buy up to $5 billion."]
+  ["Fed holds, but the hawks are louder", "The Fed kept rates at 3.75–4% in a 10–2 vote, with Governor Cook and Cleveland Fed President Hammack dissenting for a quarter-point hike; the statement upgraded the economy, called inflation still elevated and said it will deliver price stability. Warsh gave no forward guidance and said meetings will drop to seven next year; the curve steepened as the 2-year yield slipped about 3bp to 4.71% while the 10-year rose 3bp to 5.02%, and December hike odds climbed to about 85% from 78%."],
+  ["SK hynix blowout fuels the memory trade", "SK hynix said quarterly operating profit jumped more than sevenfold to 83.3 trillion won and that demand should outrun supply through 2030; its US-listed shares rose 13.3% and Micron 5.9%, the biggest single lift to the S&P 500. Arm gained about 4% and AMD and Marvell about 3%, taking the SOX up 1.8% for a fourth straight gain and tech to the top of the sector table (+0.8%)."],
+  ["Oil back above $100 on a Saudi refinery strike", "Yemen's Houthis claimed a missile hit on Saudi Arabia's 550,000-barrel-a-day Ras Tanura refinery, and WTI rose 2.9% to $102.78, reversing Tuesday's drop; Iranian talk of giving diplomacy a chance trimmed the highs. Energy stocks were among the leaders and higher crude added to the upward pressure on long-dated yields."],
+  ["Earnings: Vertiv soars, Alphabet sinks late", "Vertiv jumped 16.5% after beating and raising its outlook, GE HealthCare rose 6.6% and Wendy's 15.1% on a Trian buyout offer, while Boston Scientific fell 5.8% on a soft forecast and Robinhood 3.3% on a profit miss. After the bell Microsoft rose about 2–4% on Azure revenue of $33.2 billion, but Alphabet fell about 8% on a revenue miss and its first-ever negative free cash flow (−$9.1 billion) as AI spending surged."]
  ],
- "week": "Two days into the week the S&P 500 is up 1.3% and the Nasdaq 2.0%, leaving the S&P 500 about 1.2% below its early-October record; the backdrop is a 10-year yield near 5%, oil around $100 and a Fed that hiked in September, with markets pricing another hike in December.",
- "watch": "Next: the Fed decides Wednesday Oct 28 (a hold is widely expected; Chair Warsh's press conference is the focus), with Alphabet, Microsoft and SK hynix reporting the same day, then Amazon, Intel and Samsung on Thursday alongside the ECB, GDP and inflation data, and the Nov 3 midterms.",
+ "week": "Three days into the week the S&P 500 is up 1.6%, the Nasdaq 2.3%, the Russell 2000 2.0% and the Dow 0.5%, leaving the S&P 500 about 0.9% below its Oct 5 record of 7,811.54; the backdrop is a 10-year yield above 5%, oil above $100 and a Fed leaning toward a December hike.",
+ "watch": "Next: Thursday Oct 29 brings PCE inflation and the first Q3 GDP estimate plus the ECB decision, the market's first reaction to Alphabet and Microsoft, and earnings from Amazon, Intel, Samsung, Eli Lilly, Mastercard and Caterpillar, ahead of the Nov 3 midterms.",
  "sources": [
-  ["AP", "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-201833241.html"],
-  ["Reuters", "https://marketscreener.com/news/wall-street-ends-higher-on-revived-ai-momentum-ce785cddde81f423"],
-  ["Kiplinger", "https://kiplinger.com/investing/stocks/nasdaq-jumps-308-points-on-broadcoms-big-gains-stock-market-today"]
+  ["AP", "https://finance.yahoo.com/news/major-us-stock-indexes-fared-202041732.html"],
+  ["Reuters", "https://virginiabusiness.com/wall-street-rises-fed-holds-rates-steady-earnings"],
+  ["Kiplinger", "https://kiplinger.com/investing/stocks/stocks-rise-despite-inflation-and-war-talk-stock-market-today"]
  ]
 }
