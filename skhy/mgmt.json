@@ -1,31 +1,32 @@
 {
  "ticker": "SKHY",
- "asof": "2026-10-11",
+ "asof": "2026-10-28",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-07-29",
+ "reported": "2026-10-28",
  "timing": "krx",
- "pre_close": 130.17,
+ "pre_close": 145.36,
  "react": {
-  "date": "2026-07-29",
-  "close": 126.79,
-  "pct": -2.6
+  "date": "2026-10-27",
+  "close": 154.24,
+  "pct": 6.1,
+  "ah": true
  },
  "since": {
   "date": "2026-10-27",
   "close": 145.36,
-  "pct": 11.7
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "Record revenue of ₩79.3 trillion (+257%) and operating profit of ₩60.5 trillion (+557%, a 76% margin), yet both missed consensus of about ₩84 trillion and ₩64 trillion. Net profit of ₩93.9 trillion was swelled by gains from exiting the Kioxia stake. HBM4 entered mass shipment, long-term supply deals now cover about ten customers, and capex will land at the top of the plan. CEO Kwak Noh-jung has said the memory shortage should peak in 2027, with demand outrunning supply beyond 2030.",
-   "Seoul shares fell about 10% on the miss. The Nasdaq ADS had already dropped 9% on Jul 28 in the AI-hardware selloff and slipped another 2.6% after the results, as investors also worried about rising capex. It rebounded 17.5% on Jul 30 with chip stocks, then climbed to about $199 in early September as memory prices kept rising. Measured from the last ADS close before the report, it is up about 30%."
+   "Record revenue of ₩104.6 trillion (+328%) and operating profit of ₩83.3 trillion (+632%, an 80% margin) beat consensus of about ₩98 trillion and ₩77 trillion, as DRAM prices rose by a high-20s % and HBM4 went into full shipment. Net profit of ₩39.8 trillion trailed forecasts on currency and investment losses. CFO Kim Woo-hyun guided Q4 DRAM bits up mid-20% and NAND up mid-single digits, said LTAs with 14 customers cover over half of 2027–28 capacity, and set about ₩100 trillion of 2026 shareholder returns.",
+   "The results came out before the Seoul open on Oct 28, after the Oct 27 US close. The Nasdaq ADS, which had closed at $145.36, rose about 6% after hours to $154, and Seoul shares climbed nearly 8% in the morning, lifting the KOSPI almost 6%. Investors focused on the record operating margin, the payout and management's view that DRAM and HBM supply is effectively sold out through 2029."
   ],
   "zh": [
-   "营收创纪录达 79.3 万亿韩元（+257%），营业利润 60.5 万亿韩元（+557%，利润率 76%），但均未达约 84 万亿和 64 万亿韩元的市场预期。退出铠侠持股的收益令净利润膨胀至 93.9 万亿韩元。HBM4 已开始量产出货，长期供货协议覆盖约十家客户，资本开支将落在计划上限。CEO 郭鲁正此前表示内存短缺将在 2027 年见顶，需求将在 2030 年后仍超过供给。",
-   "首尔股价因不及预期下跌约 10%。纳斯达克 ADS 在 7 月 28 日 AI 硬件抛售中已跌 9%，财报后再跌 2.6%，投资者同时担心资本开支上升。7 月 30 日随芯片股反弹 17.5%，9 月初在内存持续涨价带动下升至约 199 美元。以财报前最后一个 ADS 收盘价计算，目前上涨约 30%。"
+   "营收创纪录达 104.6 万亿韩元（+328%），营业利润 83.3 万亿韩元（+632%，利润率 80%），超过约 98 万亿和 77 万亿韩元的市场预期；DRAM 价格环比上涨近 30%，HBM4 全面出货。受汇兑与投资损失影响，净利润 39.8 万亿韩元低于预期。CFO 金宇贤指引 Q4 DRAM 出货量环比增约 25%、NAND 增中个位数，与 14 家客户的长期协议覆盖 2027–28 年过半产能，并定下 2026 年约 100 万亿韩元的股东回报。",
+   "业绩于 10 月 28 日首尔开盘前、美股 10 月 27 日收盘后公布。纳斯达克 ADS 收于 145.36 美元，盘后上涨约 6% 至 154 美元；首尔股价早盘上涨近 8%，带动 KOSPI 涨近 6%。投资者关注创纪录的营业利润率、股东回报，以及管理层称 DRAM 与 HBM 至 2029 年供应基本售罄。"
   ]
  },
  "ceo": {
@@ -46,22 +47,26 @@
   },
   "since": null,
   "bio": {
-   "en": "Vice president, CFO and head of finance. A finance specialist who came up through SK Group affiliates; handled the SEC review for the record $26.5B US ADS listing in July 2026 and now manages a net cash pile of around ₩69 trillion.",
-   "zh": "副社长、CFO 兼财务负责人。出身 SK 集团各关联公司的财务专家，负责 2026 年 7 月创纪录的 265 亿美元美国 ADS 上市的美国证交会审核事宜，目前管理约 69 万亿韩元的净现金。"
+   "en": "Vice president, CFO and head of finance. A finance specialist who came up through SK Group affiliates; handled the SEC review for the record $26.5B US ADS listing in July 2026 and now manages a net cash pile of ₩98.7 trillion at the end of September.",
+   "zh": "副社长、CFO 兼财务负责人。出身 SK 集团各关联公司的财务专家，负责 2026 年 7 月创纪录的 265 亿美元美国 ADS 上市的美国证交会审核事宜，目前管理截至 9 月底 98.7 万亿韩元的净现金。"
   }
  },
  "sources": [
   {
-   "t": "Q2 2026 results (CNBC)",
-   "u": "https://www.cnbc.com/2026/07/29/sk-hynix-earnings-profit-revenue-hbm-memory.html"
+   "t": "Q3 2026 results (SK hynix)",
+   "u": "https://techpowerup.com/354203/sk-hynix-announces-3q26-financial-results"
   },
   {
-   "t": "Q2 2026 call transcript",
-   "u": "https://investing.com/news/transcripts/earnings-call-transcript-sk-hynix-posts-record-q2-2026-results-as-shares-fall-93CH-4818480"
+   "t": "Q3 2026 call transcript and after-hours move (Investing.com)",
+   "u": "https://investing.com/news/transcripts/earnings-call-transcript-sk-hynix-posts-record-q3-2026-results-shares-jump-after-hours-93CH-4977343"
   },
   {
-   "t": "Miss vs. estimates (Quartz)",
-   "u": "https://qz.com/sk-hynix-q2-2026-earnings-record-profit-misses-estimates-072926"
+   "t": "Beat vs LSEG estimates (CNBC)",
+   "u": "https://cnb.cx/4iIzGZH"
+  },
+  {
+   "t": "Seoul reaction (Korea Times)",
+   "u": "https://koreatimes.co.kr/economy/20261028/seoul-stocks-up-nearly-6-wednesday-morning-on-sk-hynix-earnings"
   }
  ]
 }
