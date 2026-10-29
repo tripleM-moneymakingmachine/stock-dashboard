@@ -7,7 +7,7 @@ on:
   # The data workflow commits with the Actions token, which does not trigger a push run,
   # so republish whenever it finishes (otherwise new portfolio data waits for the next cron).
   workflow_run:
-    workflows: ["Save daily prices for the technical read", "Options book"]
+    workflows: ["Save daily prices for the technical read", "Options book", "USD/TWD equity flows"]
     types: [completed]
   # Price refreshes (10 min regular hours, 15 min pre/after/overnight) are dispatched by
   # heartbeat.yml, because GitHub was dropping most of this workflow's own cron runs.

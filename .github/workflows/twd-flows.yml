@@ -9,6 +9,12 @@ on:
         description: "Most TWSE calls this run (back-fill)"
         type: string
         default: "900"
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-twd-flows.mjs
+      - scripts/twd-signal.mjs
+      - .github/workflows/twd-flows.yml
   schedule:
     - cron: "20 8 * * 1-5"    # 16:20 Taipei / Singapore
     - cron: "30 13 * * 1-5"   # 21:30, catches a late TWSE file and the latest USD/TWD
