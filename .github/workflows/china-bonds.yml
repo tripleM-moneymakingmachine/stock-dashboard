@@ -11,6 +11,12 @@ on:
         description: "Re-read every bond's detail (slow, ~15 min)"
         type: boolean
         default: false
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-pb-master.mjs
+      - scripts/fetch-cgb-master.mjs
+      - .github/workflows/china-bonds.yml
   schedule:
     - cron: "45 10 * * *"     # 18:45 Singapore / Beijing, every day (catches weekend make-up workdays; heartbeat.yml also dispatches it at 18:45)
     - cron: "10 1 * * 1-5"    # 09:10, catches a curve published late the evening before
@@ -27,7 +33,7 @@ concurrency:
 jobs:
   china:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -38,8 +44,8 @@ jobs:
       - name: Update the CGB master list (code, ISIN, coupon, maturity)
         run: node scripts/fetch-cgb-master.mjs ${{ inputs.full && '--full' || '' }} || echo "master update failed; keeping the committed list"
 
-      - name: Update the policy bank bond list (CDB, ADBC, EXIM bonds seen trading; ISIN, coupon, maturity)
-        run: node scripts/fetch-pb-master.mjs || echo "policy bank master update failed; keeping the committed list"
+      - name: Update the policy bank bond list (every CDB, ADBC, EXIM bond on the CFETS list; ISIN, coupon, maturity)
+        run: node scripts/fetch-pb-master.mjs ${{ inputs.full && '--full' || '' }} || echo "policy bank master update failed; keeping the committed list"
 
       - name: CCDC curve, history and CFETS bond yields
         run: node scripts/fetch-china.mjs

@@ -11,7 +11,7 @@
   const bp = (v, n = 1) => v == null || !isFinite(v) ? "–" : `${v > 0 ? "+" : ""}${(+v).toFixed(n)}`;
   const cls = (v) => v == null || !isFinite(v) || Math.abs(v) < 0.05 ? "" : v > 0 ? "up" : "down"; // yields up = green, as on the Macro tab
   let D = null;
-  const st = { cvMax: 30, pbMax: 30, pbK: "cdb", hT: 10, hR: "6M", hA: "t:10", hB: "", hC: "", hD: "", q: "", type: "All", mat: "", grp: "bucket", traded: false, sort: "ttm", dir: 1 };
+  const st = { cvMax: 30, pbMax: 30, pbK: "cdb", hT: 10, hR: "6M", hA: "t:10", hB: "", hC: "", hD: "", q: "", iss: "All", type: "All", mat: "", grp: "bucket", traded: false, sort: "ttm", dir: 1 };
 
   // ---------- series helpers ----------
   const ser = (t) => D?.tenors?.[t] || [];
@@ -292,10 +292,34 @@
   // ---------- bonds table ----------
   const BUCKETS = [[0, 1, "Up to 1 year"], [1, 3, "1 – 3 years"], [3, 5, "3 – 5 years"], [5, 7, "5 – 7 years"], [7, 10, "7 – 10 years"], [10, 20, "10 – 20 years"], [20, 30, "20 – 30 years"], [30, 99, "Over 30 years"]];
   const bucket = (t) => BUCKETS.findIndex(([, b]) => t <= b + 1e-9);
+  // Table rows: outstanding CGBs plus every outstanding policy bank bond (each issuer's register, with today's
+  // CFETS trade where there is one). Built once per data load.
+  const ISS = ["All", "CGB", "CDB", "ADBC", "EXIM"];
+  const typeOf = (n = "") => /贴现/.test(n) ? "Discount" : /超长期?特别/.test(n) ? "Ultra-long special" : /特别/.test(n) ? "Special" : /储蓄/.test(n) ? "Savings" : "Coupon";
+  const ageDays = (d) => d ? (Date.now() - Date.parse(d)) / 864e5 : 1e9;
+  let allRows = null, allFor = null;
+  function allBonds() {
+    if (allFor === D && allRows) return allRows;
+    const out = (D.bonds || []).map((b) => ({ ...b, iss: "CGB" }));
+    for (const [k, p] of Object.entries(D.pb || {})) {
+      const tr = new Map((p.bonds || []).map((b) => [b.code, b]));
+      const seen = new Set();
+      for (const r of [...(p.reg || []), ...(p.bonds || [])]) {
+        if (!r?.code || seen.has(r.code)) continue; seen.add(r.code);
+        const t = tr.get(r.code) || {};
+        const o = { code: r.code, isin: r.isin || t.isin || null, name: r.name || t.name || null, type: typeOf(r.name || t.name), coupon: r.coupon ?? t.coupon ?? null, issue: r.issue || t.issue || null, mat: r.mat || t.mat || null, ttm: t.ttm ?? r.ttm, curve: t.curve ?? r.curve ?? null, last: t.last ?? null, wavg: t.wavg ?? null, chg: t.chg ?? null, vs: t.vs ?? null, iss: p.short || k.toUpperCase() };
+        if (o.ttm == null || o.ttm <= 0) continue;
+        out.push(o);
+      }
+    }
+    out.forEach((b) => { b.isNew = ageDays(b.issue) <= 30; });
+    allFor = D; return (allRows = out);
+  }
   const COLS = [
-    ["code", "Code", (b) => `<td class="code">${esc(b.code)}</td>`],
+    ["code", "Code", (b) => `<td class="code">${esc(b.code)}${b.isNew ? ` <span class="new" title="Issued ${esc(b.issue)}">New</span>` : ""}</td>`],
     ["isin", "ISIN", (b) => `<td>${esc(b.isin || "–")}</td>`],
     ["name", "Name", (b) => `<td class="nm" title="${esc(b.name)}">${esc(b.name || "–")}</td>`],
+    ["iss", "Issuer", (b) => `<td><span class="is ${esc(b.iss)}">${esc(b.iss)}</span></td>`],
     ["type", "Type", (b) => `<td><span class="ty ${esc(b.type.split(" ")[0])}">${esc(b.type)}</span></td>`],
     ["coupon", "Coupon %", (b) => `<td>${b.type === "Discount" ? "–" : f2(b.coupon, 2)}</td>`],
     ["mat", "Maturity", (b) => `<td>${esc(b.mat || "–")}</td>`],
@@ -308,8 +332,9 @@
   ];
   function rows() {
     const q = st.q.trim().toLowerCase();
-    return (D.bonds || []).filter((b) =>
+    return allBonds().filter((b) =>
       (!q || [b.code, b.isin, b.name].some((x) => String(x || "").toLowerCase().includes(q))) &&
+      (st.iss === "All" || (st.iss === "New" ? b.isNew : b.iss === st.iss)) &&
       (st.type === "All" || (st.type === "Special" ? /Special/.test(b.type) : b.type === st.type)) &&
       (!st.mat || (() => { const [lo, hi] = st.mat.split("-").map(Number); return b.ttm >= lo && b.ttm < hi; })()) &&
       (!st.traded || b.last != null))
@@ -321,6 +346,9 @@
       });
   }
   function table() {
+    const nNew = allBonds().filter((b) => b.isNew).length;
+    $("bIss").innerHTML = [...ISS, ...(nNew ? ["New"] : [])].map((t) => `<button type="button" data-k="${t}" aria-pressed="${t === st.iss}">${t === "New" ? `New issues (${nNew})` : t}</button>`).join("");
+    $("bIss").querySelectorAll("button").forEach((b) => b.onclick = () => { st.iss = b.dataset.k; table(); });
     $("bType").innerHTML = ["All", "Coupon", "Special", "Discount"].map((t) => `<button type="button" aria-pressed="${t === st.type}">${t}</button>`).join("");
     $("bType").querySelectorAll("button").forEach((b) => b.onclick = () => { st.type = b.textContent; table(); });
     $("bGrp").innerHTML = [["bucket", "By tenor"], ["none", "Ungrouped"]].map(([k, l]) => `<button type="button" data-k="${k}" aria-pressed="${k === st.grp}">${l}</button>`).join("");
@@ -340,18 +368,18 @@
       });
     } else html = R.map(line).join("");
     $("bBody").innerHTML = html;
-    const all = D.bonds || [];
-    $("bNote").textContent = `${R.length} of ${all.length} outstanding CGBs shown · ${all.filter((b) => b.isin).length} with an ISIN on file · ${all.filter((b) => b.last != null).length} traded on CFETS ${D.tradeDay || "today"}. New issues can show no ISIN or coupon for a few days until CFETS publishes them. Click a column header to sort.`;
+    const all = allBonds(), n = (k) => all.filter((b) => b.iss === k).length;
+    $("bNote").textContent = `${R.length} of ${all.length} outstanding bonds shown (CGB ${n("CGB")}, CDB ${n("CDB")}, ADBC ${n("ADBC")}, EXIM ${n("EXIM")}) · ${all.filter((b) => b.isin).length} with an ISIN on file · ${all.filter((b) => b.last != null).length} traded on CFETS today · ${nNew} issued in the last 30 days, tagged New. Policy bank bonds are compared with their own issuer's CCDC curve. New issues can show no ISIN or coupon for a few days until CFETS publishes them. Click a column header to sort.`;
   }
   $("bQ").oninput = (e) => { st.q = e.target.value; table(); };
   $("bTr").onchange = (e) => { st.traded = e.target.checked; table(); };
   $("bMat").onchange = (e) => { st.mat = e.target.value; table(); };
   $("bDl").onclick = () => {
-    const head = ["code", "isin", "name", "type", "coupon_pct", "issue", "maturity", "years_left", "ccdc_curve_pct", "cfets_last_pct", "cfets_wavg_pct", "chg_bp", "vs_curve_bp"];
+    const head = ["code", "isin", "name", "issuer", "type", "coupon_pct", "issue", "maturity", "years_left", "ccdc_curve_pct", "cfets_last_pct", "cfets_wavg_pct", "chg_bp", "vs_curve_bp"];
     const q = (v) => v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v;
-    const body = rows().map((b) => [b.code, b.isin, b.name, b.type, b.coupon, b.issue, b.mat, b.ttm, b.curve, b.last, b.wavg, b.chg, b.vs].map(q).join(","));
+    const body = rows().map((b) => [b.code, b.isin, b.name, b.iss, b.type, b.coupon, b.issue, b.mat, b.ttm, b.curve, b.last, b.wavg, b.chg, b.vs].map(q).join(","));
     const blob = new Blob(["﻿" + [head.join(","), ...body].join("\n")], { type: "text/csv;charset=utf-8" });
-    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `cgb-by-code-isin-${D.curve?.date || "latest"}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `china-bonds-by-code-isin-${D.curve?.date || "latest"}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
   };
 
   function rngButtons() {

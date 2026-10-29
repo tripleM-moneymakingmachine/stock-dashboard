@@ -156,8 +156,8 @@ for (const p of PB) {
     }).filter(Boolean).sort((a, b) => a.ttm - b.ttm);
   } else if (prev.pbTradeDay === today) // keep this session's earlier read
     pb[p.k].bonds = (prev.pb?.[p.k]?.bonds || []).filter((b) => !CAPITAL.test(b.name || "")).map((b) => b.mat ? b : { ...b, mat: shDate(Date.parse(today + "T12:00:00+08:00") + b.ttm * 365.25 * 864e5), est: true });
-  // Register: every outstanding bond of this issuer seen trading on CFETS (carried from the previous file, the
-  // master list and today's trades), for the futures tab's cash comparison. Exact maturities win over estimates.
+  // Register: every outstanding bond of this issuer (carried from the previous file, the full CFETS list in the
+  // master and today's trades), for the futures tab's cash comparison. Exact maturities win over estimates.
   const reg = new Map();
   const put = (b) => {
     if (!b?.code || !b.mat || b.mat <= today || CAPITAL.test(b.name || "")) return;
@@ -168,7 +168,8 @@ for (const p of PB) {
   (prev.pb?.[p.k]?.reg || []).forEach(put);
   pb[p.k].bonds.forEach(put);
   Object.values(pbm).filter((b) => b.issuer === p.k && b.mat).forEach((b) => put({ ...b, name: b.name || reg.get(b.code)?.name }));
-  pb[p.k].reg = [...reg.values()].map((b) => ({ ...b, ttm: +yrs(b.mat).toFixed(3) })).sort((a, b) => a.ttm - b.ttm);
+  // each register bond also carries this issuer's CCDC curve yield at its remaining term, for the bond table
+  pb[p.k].reg = [...reg.values()].map((b) => { const ttm = yrs(b.mat), cy = c ? interp(c, ttm) : null; return { ...b, ttm: +ttm.toFixed(3), curve: cy == null ? null : +cy.toFixed(4) }; }).sort((a, b) => a.ttm - b.ttm);
 }
 
 // 4. Bonds: outstanding CGBs from the master list, plus anything traded that the list does not have yet
