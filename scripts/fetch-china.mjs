@@ -44,9 +44,9 @@ let master = { bonds: {} };
 try { master = JSON.parse(readFileSync("data/cgb-master.json", "utf8")); } catch { log("no data/cgb-master.json yet"); }
 
 // CCDC curve on one day (null when that day has no curve yet)
-async function curveOn(id, d, ms) {
+async function curveOn(id, d, ms, minPts = 11) {
   const j = await post(`https://yield.chinabond.com.cn/cbweb-mn/yc/searchYc?xyzSelect=txy&&workTimes=${d}&&dxbj=0&&qxll=0,&&yqqxN=N&&yqqxK=K&&ycDefIds=${id},&&wrjxCBFlag=0&&locale=zh_CN`, CCDC, "", ms);
-  const s = (Array.isArray(j) ? j : []).find((x) => x?.seriesData?.length > 10);
+  const s = (Array.isArray(j) ? j : []).find((x) => x?.seriesData?.length >= minPts);
   return s ? { date: s.worktime || d, pts: s.seriesData.map(([t, y]) => [+(+t).toFixed(4), +(+y).toFixed(4)]).filter(([t, y]) => isFinite(t) && isFinite(y)) } : null;
 }
 const interp = (pts, x) => {
@@ -115,14 +115,20 @@ for (const p of PB) {
 
 // 2b. CCDC AAA NCD curve (tenors out to the curve's end, typically 1Y)
 const ncdWas = prev.ncd || {};
-let ncdCurve = curve && ncdWas.curve?.date === curve.date ? ncdWas.curve : null;
-for (let i = 0; i < 3 && !ncdCurve && curve && pbLeft() > 0; i++) {
+// its own time budget (the policy bank curves can use up theirs); the NCD curve only runs to 1Y, so it can have
+// fewer points than the long curves; CCDC ids are tried as listed and in lower case
+let ncdCurve = curve && ncdWas.curve?.date === curve.date && ncdWas.curve.pts?.length ? ncdWas.curve : null;
+const ncdStart = Date.now(), ncdLeft = () => 60000 - (Date.now() - ncdStart);
+for (let i = 0; i < 3 && !ncdCurve && curve && ncdLeft() > 0; i++) {
   const d = addDays(curve.date, -i);
-  try { ncdCurve = await curveOn(NCD.id, d, 20000); } catch (e) { log(`NCD curve ${d} failed: ${e.message}`); }
+  for (const id of [NCD.id, NCD.id.toLowerCase()]) {
+    if (ncdCurve) break;
+    try { ncdCurve = await curveOn(id, d, 20000, 3); if (ncdCurve) NCD.useId = id; } catch (e) { log(`NCD curve ${d} failed: ${e.message}`); }
+  }
 }
 if (!ncdCurve) { ncdCurve = ncdWas.curve || null; log(`NCD curve: ${ncdCurve ? "kept previous" : "none"}`); } else log(`NCD curve: ${ncdCurve.date}, ${ncdCurve.pts.length} points, to ${ncdCurve.pts.at(-1)?.[0]}Y`);
 const ncdTens = ncdCurve ? TENORS.filter((t) => t <= ncdCurve.pts.at(-1)[0] + 1e-9) : [];
-const ncdTenors = ncdCurve && pbLeft() > 0 ? await history(NCD.id, ncdCurve, ncdWas.tenors, ncdTens, "NCD", 20000) : (ncdWas.tenors || {});
+const ncdTenors = ncdCurve && ncdLeft() > 0 ? await history(NCD.useId || NCD.id, ncdCurve, ncdWas.tenors, ncdTens, "NCD", 20000) : (ncdWas.tenors || {});
 
 // 3. CFETS cash-bond trades today: CGBs, plus policy bank bonds sorted by issuer
 let trades = {}, tradeTime = null, pbTrades = {}, pbTradeTime = null, ncdTrades = {}, ncdTradeTime = null;
