@@ -1,30 +1,30 @@
 {
- "session": "2026-10-28",
- "asof": "Wed Oct 28, 2026",
- "tone": "up",
- "headline": "Fed holds with two hike dissents; memory chips lift the S&P 0.3% as Micron jumps 5.9%",
- "summary": "A quiet, narrow up day around the Fed. The major indexes hovered near unchanged before and after the 2 p.m. decision, swung during Chair Warsh's press conference and closed modestly higher, with the VIX easing to 16.91. Tech, financials and energy led while utilities, real estate and staples fell; the equal-weight S&P 500 finished flat, NYSE breadth was roughly even and Nasdaq advancers beat decliners about 1.5 to 1.",
+ "session": "2026-10-29",
+ "asof": "Thu Oct 29, 2026",
+ "tone": "down",
+ "headline": "Alphabet's record 12.6% plunge revives AI-spending fears; Nasdaq −1.4% as small caps rally",
+ "summary": "A lopsided rotation day rather than a broad sell-off. Megacap tech and software slid from the open and the Nasdaq never recovered, but more than 400 S&P 500 members rose, the Russell 2000 gained 1% and Nasdaq advancers edged out decliners; healthcare led the sector table while communication services and tech fell the most, and the VIX rose only modestly to 17.20.",
  "stats": [
-  ["S&P 500", "7,743.98", 0.28],
-  ["Nasdaq", "26,549.85", 0.27],
-  ["Dow", "52,475.10", 0.19],
-  ["Russell 2000", "2,830.51", 0.41],
-  ["SOX (chips)", "4th up day", 1.8],
-  ["VIX", "16.91", -3.48, true],
-  ["US 10Y", "5.02%", "+3bp"],
-  ["WTI crude", "$102.78", 2.88]
+  ["S&P 500", "7,720.39", -0.3],
+  ["Nasdaq", "26,184.72", -1.38],
+  ["Dow", "52,342.56", -0.25],
+  ["Russell 2000", "2,859.22", 1.02],
+  ["SOX (chips)", "11,518.20", -1.42],
+  ["VIX", "17.20", 1.71, true],
+  ["US 10Y", "4.99%", "−5bp"],
+  ["WTI crude", "$102.00", -0.76]
  ],
  "drivers": [
-  ["Fed holds, but the hawks are louder", "The Fed kept rates at 3.75–4% in a 10–2 vote, with Governor Cook and Cleveland Fed President Hammack dissenting for a quarter-point hike; the statement upgraded the economy, called inflation still elevated and said it will deliver price stability. Warsh gave no forward guidance and said meetings will drop to seven next year; the curve steepened as the 2-year yield slipped about 3bp to 4.71% while the 10-year rose 3bp to 5.02%, and December hike odds climbed to about 85% from 78%."],
-  ["SK hynix blowout fuels the memory trade", "SK hynix said quarterly operating profit jumped more than sevenfold to 83.3 trillion won and that demand should outrun supply through 2030; its US-listed shares rose 13.3% and Micron 5.9%, the biggest single lift to the S&P 500. Arm gained about 4% and AMD and Marvell about 3%, taking the SOX up 1.8% for a fourth straight gain and tech to the top of the sector table (+0.8%)."],
-  ["Oil back above $100 on a Saudi refinery strike", "Yemen's Houthis claimed a missile hit on Saudi Arabia's 550,000-barrel-a-day Ras Tanura refinery, and WTI rose 2.9% to $102.78, reversing Tuesday's drop; Iranian talk of giving diplomacy a chance trimmed the highs. Energy stocks were among the leaders and higher crude added to the upward pressure on long-dated yields."],
-  ["Earnings: Vertiv soars, Alphabet sinks late", "Vertiv jumped 16.5% after beating and raising its outlook, GE HealthCare rose 6.6% and Wendy's 15.1% on a Trian buyout offer, while Boston Scientific fell 5.8% on a soft forecast and Robinhood 3.3% on a profit miss. After the bell Microsoft rose about 2–4% on Azure revenue of $33.2 billion, but Alphabet fell about 8% on a revenue miss and its first-ever negative free cash flow (−$9.1 billion) as AI spending surged."]
+  ["Alphabet's worst day on record", "Google's parent fell 12.6%, erasing roughly $500 billion in value, after a slight revenue miss ($127.6 billion), a 114% jump in quarterly capex to $51.4 billion and negative free cash flow; it was the main drag on the indexes. Microsoft gave up an early earnings pop to close slightly lower, and a Bloomberg basket of AI winners fell 2.7%."],
+  ["Software and chips sell off", "ServiceNow sank about 27% and Fortinet about 20% on soft guidance, revived fears of AI disruption in software and dragged Salesforce down 4.6%. The SOX fell 1.4%, ending a four-day run, as Micron dropped 5.0%, AMD 2.1% and Broadcom 1.9%, while Marvell slid about 13% on reports it is in advanced talks to buy Lumentum; Amazon lost 4.3% ahead of its results."],
+  ["Hot growth, in-line PCE pull yields lower", "Q3 GDP grew at a 3.4% annualized pace, the fastest in a year and above the 3.1% forecast, while September PCE prices rose 0.5% on the month for a 3.6% annual rate, roughly as expected. Treasuries still rallied on the tech-led haven bid: the 10-year fell about 5bp to 4.99% and the 2-year about 7bp to 4.67%."],
+  ["Rotation into healthcare and small caps", "Eli Lilly rose about 6% after raising its revenue outlook on weight-loss drug demand, helping healthcare lead, while Caterpillar dropped about 9.5% after holding its growth targets. Oil eased 0.8% to $102.00 as a renewed US push to restart Iran peace talks offset supply worries."]
  ],
- "week": "Three days into the week the S&P 500 is up 1.6%, the Nasdaq 2.3%, the Russell 2000 2.0% and the Dow 0.5%, leaving the S&P 500 about 0.9% below its Oct 5 record of 7,811.54; the backdrop is a 10-year yield above 5%, oil above $100 and a Fed leaning toward a December hike.",
- "watch": "Next: Thursday Oct 29 brings PCE inflation and the first Q3 GDP estimate plus the ECB decision, the market's first reaction to Alphabet and Microsoft, and earnings from Amazon, Intel, Samsung, Eli Lilly, Mastercard and Caterpillar, ahead of the Nov 3 midterms.",
+ "week": "Four days into the week the S&P 500 is up 1.3%, the Nasdaq 0.9%, the Dow 0.2% and the Russell 2000 3.0%, leaving the S&P 500 about 1.2% below its Oct 5 record of 7,811.54; the backdrop is a 10-year yield near 5%, oil above $100 and a Fed leaning toward a December hike.",
+ "watch": "Next: Friday's reaction to after-hours drops in Amazon (about −6% to −7% on heavy capex and a light Q4 outlook) and Intel (about −16% on a weak Q4 revenue guide), then the Nov 3 midterms and next week's October jobs report.",
  "sources": [
-  ["AP", "https://finance.yahoo.com/news/major-us-stock-indexes-fared-202041732.html"],
-  ["Reuters", "https://virginiabusiness.com/wall-street-rises-fed-holds-rates-steady-earnings"],
-  ["Kiplinger", "https://kiplinger.com/investing/stocks/stocks-rise-despite-inflation-and-war-talk-stock-market-today"]
+  ["AP", "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-202131547.html"],
+  ["Reuters", "https://miamiherald.com/news/business/article317837280.html"],
+  ["Bloomberg", "https://swissinfo.ch/eng/nasdaq-100-falls-as-alphabets-sales-fuel-ai-angst:-markets-wrap/92292231"]
  ]
 }
