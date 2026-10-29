@@ -51,6 +51,49 @@ async function yahoo(sym, tz = "Asia/Taipei") {
   return [...m.entries()].sort((a, b) => (a[0] < b[0] ? -1 : 1));
 }
 
+// ---------- TWSE TAIEX closes (fills days Yahoo is missing or late on) ----------
+// MI_5MINS_HIST returns one month of daily TAIEX OHLC. Dates are "2026/10/28" (en) or ROC "115/10/28" (zh).
+async function twseTaiexMonth(ym) { // ym = YYYYMM → [[YYYY-MM-DD, close], ...]
+  for (const lang of ["en", "zh"]) {
+    try {
+      const u = `https://www.twse.com.tw/rwd/${lang}/indices/MI_5MINS_HIST?date=${ym}01&response=json`;
+      const j = await (await get(u, { Accept: "application/json", Referer: "https://www.twse.com.tw/en/" })).json();
+      if (j.stat !== "OK" || !j.data?.length) continue;
+      let ci = (j.fields || []).findIndex((f) => /clos|收盤/i.test(f));
+      if (ci < 0) ci = j.data[0].length - 1;
+      const rows = [];
+      for (const r of j.data) {
+        const m = String(r[0]).trim().match(/^(\d{2,4})\/(\d{1,2})\/(\d{1,2})$/);
+        const c = +String(r[ci]).replace(/,/g, "");
+        if (!m || !(c > 0)) continue;
+        const y = +m[1] < 1911 ? +m[1] + 1911 : +m[1];
+        rows.push([`${y}-${m[2].padStart(2, "0")}-${m[3].padStart(2, "0")}`, +c.toPrecision(7)]);
+      }
+      if (rows.length) return rows;
+    } catch (e) { log(`TWSE TAIEX ${ym} (${lang}): ${e.message}`); }
+    await sleep(2600);
+  }
+  return [];
+}
+
+async function fillTaiexFromTwse(taiex) {
+  const now = new Date(Date.now() + 8 * 3600e3); // Taipei
+  const yms = [];
+  for (let k = 1; k >= 0; k--) { const d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - k, 1)); yms.push(`${d.getUTCFullYear()}${String(d.getUTCMonth() + 1).padStart(2, "0")}`); }
+  const m = new Map(taiex || []);
+  let added = 0, fixed = 0;
+  for (const ym of yms) {
+    for (const [d, c] of await twseTaiexMonth(ym)) {
+      if (d < BEG) continue;
+      if (!m.has(d)) added++; else if (Math.abs(m.get(d) - c) > 0.01) fixed++;
+      m.set(d, c); // TWSE is the official close, so it wins over Yahoo
+    }
+    await sleep(2600);
+  }
+  log(`TWSE TAIEX: +${added} days Yahoo was missing, ${fixed} closes corrected`);
+  return [...m.entries()].sort((a, b) => (a[0] < b[0] ? -1 : 1));
+}
+
 // ---------- TWSE FINI net buy ----------
 async function finiDay(d) { // d = YYYY-MM-DD → TWD bn, or null when TWSE has no data (holiday)
   const u = `https://www.twse.com.tw/rwd/en/fund/BFI82U?type=day&dayDate=${d.replace(/-/g, "")}&response=json`;
@@ -69,6 +112,7 @@ async function fetchRaw(maxCalls) {
   await tryY("taiex", "^TWII");
   await tryY("dxy", "DX-Y.NYB", "America/New_York");
   await tryY("usdkrw", "KRW=X");
+  try { out.taiex = await fillTaiexFromTwse(out.taiex); } catch (e) { log(`TWSE TAIEX fill failed (${e.message}); using Yahoo only`); }
   // FINI: one TWSE call per TAIEX trading day not yet cached (recent 5 days are always re-read in case of revisions)
   const have = new Map((out.fini || []).map((r) => [r[0], r]));
   const days = (out.taiex || []).map((r) => r[0]);
@@ -95,7 +139,7 @@ let built = {};
 try { built = buildSignal(raw) || {}; } catch (e) { log("signal build failed:", e.message); built = prev ? Object.fromEntries(Object.entries(prev).filter(([k]) => !["raw", "updated"].includes(k))) : {}; }
 const out = {
   updated: Math.floor(Date.now() / 1000),
-  src: "USD/TWD (TWD=X), TAIEX (^TWII), dollar index and USD/KRW: Yahoo Finance daily closes. Foreign investor net buy: TWSE 三大法人買賣金額統計表 (BFI82U), foreign and mainland investors excluding foreign dealers, TWD bn.",
+  src: "USD/TWD (TWD=X), TAIEX (^TWII, gaps filled from TWSE MI_5MINS_HIST), dollar index and USD/KRW: Yahoo Finance daily closes. Foreign investor net buy: TWSE 三大法人買賣金額統計表 (BFI82U), foreign and mainland investors excluding foreign dealers, TWD bn.",
   ...built,
   notes: prev?.notes || null,
   raw,
