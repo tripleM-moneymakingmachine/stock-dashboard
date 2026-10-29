@@ -117,10 +117,11 @@ for (const p of PB) {
 const ncdWas = prev.ncd || {};
 // its own time budget (the policy bank curves can use up theirs); the NCD curve only runs to 1Y, so it can have
 // fewer points than the long curves; CCDC ids are tried as listed and in lower case
-let ncdCurve = curve && ncdWas.curve?.date === curve.date && ncdWas.curve.pts?.length ? ncdWas.curve : null;
+let ncdCurve = ncdWas.curve?.date === today && ncdWas.curve.pts?.length ? ncdWas.curve : null;
 const ncdStart = Date.now(), ncdLeft = () => 60000 - (Date.now() - ncdStart);
-for (let i = 0; i < 3 && !ncdCurve && curve && ncdLeft() > 0; i++) {
-  const d = addDays(curve.date, -i);
+// newest day first, from today (CCDC can publish the NCD curve before the CGB curve this file last read)
+for (let i = 0; i < 5 && !ncdCurve && curve && ncdLeft() > 0; i++) {
+  const d = addDays(today, -i);
   for (const id of [NCD.id, NCD.id.toLowerCase()]) {
     if (ncdCurve) break;
     try { ncdCurve = await curveOn(id, d, 20000, 3); if (ncdCurve) NCD.useId = id; } catch (e) { log(`NCD curve ${d} failed: ${e.message}`); }
