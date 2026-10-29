@@ -302,7 +302,7 @@
   const bucket = (t) => BUCKETS.findIndex(([, b]) => t <= b + 1e-9);
   // Table rows: outstanding CGBs plus every outstanding policy bank bond (each issuer's register, with today's
   // CFETS trade where there is one). Built once per data load.
-  const ISS = ["All", "CGB", "CDB", "ADBC", "EXIM"];
+  const ISS = ["All", "CGB", "CDB", "ADBC", "EXIM", "NCD"];
   const typeOf = (n = "") => /贴现/.test(n) ? "Discount" : /超长期?特别/.test(n) ? "Ultra-long special" : /特别/.test(n) ? "Special" : /储蓄/.test(n) ? "Savings" : "Coupon";
   const ageDays = (d) => d ? (Date.now() - Date.parse(d)) / 864e5 : 1e9;
   let allRows = null, allFor = null;
@@ -320,6 +320,8 @@
         out.push(o);
       }
     }
+    // NCDs: those traded on CFETS (today, or the last session before today's first trades), vs the AAA NCD curve
+    for (const b of D.ncd?.bonds || []) if (b.ttm > 0) out.push({ ...b, type: "NCD", coupon: null, issue: null, iss: "NCD" });
     out.forEach((b) => { b.isNew = ageDays(b.issue) <= 30; });
     allFor = D; return (allRows = out);
   }
@@ -329,8 +331,8 @@
     ["name", "Name", (b) => `<td class="nm" title="${esc(b.name)}">${esc(b.name || "–")}</td>`],
     ["iss", "Issuer", (b) => `<td><span class="is ${esc(b.iss)}">${esc(b.iss)}</span></td>`],
     ["type", "Type", (b) => `<td><span class="ty ${esc(b.type.split(" ")[0])}">${esc(b.type)}</span></td>`],
-    ["coupon", "Coupon %", (b) => `<td>${b.type === "Discount" ? "–" : f2(b.coupon, 2)}</td>`],
-    ["mat", "Maturity", (b) => `<td>${esc(b.mat || "–")}</td>`],
+    ["coupon", "Coupon %", (b) => `<td>${b.type === "Discount" || b.type === "NCD" ? "–" : f2(b.coupon, 2)}</td>`],
+    ["mat", "Maturity", (b) => `<td${b.est ? ' title="Estimated from CFETS remaining term"' : ""}>${esc(b.mat || "–")}${b.est ? "*" : ""}</td>`],
     ["ttm", "Left (Y)", (b) => `<td>${f2(b.ttm, 2)}</td>`],
     ["curve", "CCDC curve %", (b) => `<td>${f2(b.curve, 4)}</td>`],
     ["last", "CFETS last %", (b) => `<td>${f2(b.last, 4)}</td>`],
@@ -377,7 +379,7 @@
     } else html = R.map(line).join("");
     $("bBody").innerHTML = html;
     const all = allBonds(), n = (k) => all.filter((b) => b.iss === k).length;
-    $("bNote").textContent = `${R.length} of ${all.length} outstanding bonds shown (CGB ${n("CGB")}, CDB ${n("CDB")}, ADBC ${n("ADBC")}, EXIM ${n("EXIM")}) · ${all.filter((b) => b.isin).length} with an ISIN on file · ${all.filter((b) => b.last != null).length} traded on CFETS today · ${nNew} issued in the last 30 days, tagged New. Policy bank bonds are compared with their own issuer's CCDC curve. New issues can show no ISIN or coupon for a few days until CFETS publishes them. Click a column header to sort.`;
+    $("bNote").textContent = `${R.length} of ${all.length} outstanding bonds shown (CGB ${n("CGB")}, CDB ${n("CDB")}, ADBC ${n("ADBC")}, EXIM ${n("EXIM")}, NCD ${n("NCD")}) · ${all.filter((b) => b.isin).length} with an ISIN on file · ${all.filter((b) => b.last != null).length} traded on CFETS today · ${nNew} issued in the last 30 days, tagged New. Policy bank bonds are compared with their own issuer's CCDC curve. NCDs: tens of thousands are outstanding, so only those traded on CFETS ${D.ncd?.tradeDay || "today"} are listed, compared with CCDC's AAA commercial bank NCD curve${D.ncd?.curve?.date ? ` (${D.ncd.curve.date})` : ""}, so lower-rated banks show a positive spread; * marks a maturity estimated from CFETS's remaining term. New issues can show no ISIN or coupon for a few days until CFETS publishes them. Click a column header to sort.`;
   }
   $("bQ").oninput = (e) => { st.q = e.target.value; table(); };
   $("bTr").onchange = (e) => { st.traded = e.target.checked; table(); };

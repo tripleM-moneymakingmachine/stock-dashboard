@@ -93,7 +93,7 @@ section{margin-top:40px}
 .bt tr.g td span{color:var(--muted);letter-spacing:.04em;text-transform:none;font-weight:500;margin-left:8px}
 .bt tr:not(.g):hover td{background:var(--accent-soft)}
 .ty{display:inline-block;font:600 9.5px var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
-.ty.Special,.ty.Ultra-long{border-color:var(--c3);color:var(--c3)}.is{font-size:11px;font-weight:600;letter-spacing:.02em}.is.CDB{color:var(--c3)}.is.ADBC{color:var(--c5)}.is.EXIM{color:var(--c4,var(--c1))}.new{display:inline-block;font-size:10px;font-weight:600;padding:0 5px;border-radius:8px;background:var(--up,#2a7);color:#fff;vertical-align:1px}.ty.Discount{border-color:var(--c2);color:var(--c2)}
+.ty.Special,.ty.Ultra-long{border-color:var(--c3);color:var(--c3)}.is{font-size:11px;font-weight:600;letter-spacing:.02em}.is.CDB{color:var(--c3)}.is.ADBC{color:var(--c5)}.is.EXIM{color:var(--c4,var(--c1))}.is.NCD{color:var(--c6)}.ty.NCD{border-color:var(--c6);color:var(--c6)}.new{display:inline-block;font-size:10px;font-weight:600;padding:0 5px;border-radius:8px;background:var(--up,#2a7);color:#fff;vertical-align:1px}.ty.Discount{border-color:var(--c2);color:var(--c2)}
 .fstamp{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;margin:0 0 14px;font:500 12.5px var(--f-mono)}
 .fstamp b{font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-size:10.5px;margin-right:4px}
 .fstamp i.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin:0 6px 0 2px;vertical-align:middle}
@@ -367,7 +367,7 @@ section.crecap{margin-top:0}
 
   <section aria-labelledby="bH">
     <h2 id="bH">Bonds by code and ISIN</h2>
-    <p class="sub" id="bSub">Every outstanding China government bond and policy bank bond (China Development Bank, Agricultural Development Bank, Export-Import Bank), one row per bond code with its ISIN. Curve yield is the issuer's CCDC curve read at the bond's remaining term; traded yield is the latest CFETS interbank deal today, and "vs curve" is the difference in basis points.</p>
+    <p class="sub" id="bSub">Every outstanding China government bond and policy bank bond (China Development Bank, Agricultural Development Bank, Export-Import Bank), plus bank negotiable certificates of deposit (NCDs) traded on CFETS, one row per bond code with its ISIN. Curve yield is the issuer's CCDC curve read at the bond's remaining term; traded yield is the latest CFETS interbank deal today, and "vs curve" is the difference in basis points.</p>
     <div class="ctl">
       <input type="search" id="bQ" placeholder="Code, ISIN or name" aria-label="Search bonds by code, ISIN or name">
       <div class="btns" id="bIss" role="group" aria-label="Issuer"></div>

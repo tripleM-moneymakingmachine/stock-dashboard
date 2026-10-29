@@ -29,6 +29,9 @@ const PB = [
   { k: "exim", id: "8a8b2ca0567e033b01567ea9c1d96af8", short: "EXIM", name: "Export-Import Bank of China", cn: "中债进出口行债收益率曲线", re: /进出|进出口银行/ },
 ];
 const CAPITAL = /二级资本|资本债|资本补充|永续/;
+// Negotiable certificates of deposit (同业存单): there are tens of thousands outstanding, so the table lists the
+// ones traded on CFETS today, each against CCDC's commercial bank NCD curve for AAA issuers.
+const NCD = { id: "8308218D1D030E0DE0540010E03EE6DA", cn: "中债商业银行同业存单收益率曲线(AAA)", re: /同业存单|\dCD\d|CD\d{3}/ };
 async function post(url, headers, body = "", ms = 30000) {
   const r = await fetch(url, { method: "POST", headers, body, signal: AbortSignal.timeout(ms) });
   if (!r.ok) throw new Error(`HTTP ${r.status} ${url.split("?")[0]}`);
@@ -110,8 +113,19 @@ for (const p of PB) {
   pb[p.k] = { short: p.short, name: p.name, cn: p.cn, curve: c, tenors: ten, bonds: [] };
 }
 
+// 2b. CCDC AAA NCD curve (tenors out to the curve's end, typically 1Y)
+const ncdWas = prev.ncd || {};
+let ncdCurve = curve && ncdWas.curve?.date === curve.date ? ncdWas.curve : null;
+for (let i = 0; i < 3 && !ncdCurve && curve && pbLeft() > 0; i++) {
+  const d = addDays(curve.date, -i);
+  try { ncdCurve = await curveOn(NCD.id, d, 20000); } catch (e) { log(`NCD curve ${d} failed: ${e.message}`); }
+}
+if (!ncdCurve) { ncdCurve = ncdWas.curve || null; log(`NCD curve: ${ncdCurve ? "kept previous" : "none"}`); } else log(`NCD curve: ${ncdCurve.date}, ${ncdCurve.pts.length} points, to ${ncdCurve.pts.at(-1)?.[0]}Y`);
+const ncdTens = ncdCurve ? TENORS.filter((t) => t <= ncdCurve.pts.at(-1)[0] + 1e-9) : [];
+const ncdTenors = ncdCurve && pbLeft() > 0 ? await history(NCD.id, ncdCurve, ncdWas.tenors, ncdTens, "NCD", 20000) : (ncdWas.tenors || {});
+
 // 3. CFETS cash-bond trades today: CGBs, plus policy bank bonds sorted by issuer
-let trades = {}, tradeTime = null, pbTrades = {}, pbTradeTime = null;
+let trades = {}, tradeTime = null, pbTrades = {}, pbTradeTime = null, ncdTrades = {}, ncdTradeTime = null;
 try {
   const j = await post("https://www.chinamoney.com.cn/ags/ms/cm-u-md-bond/CbtPri?flag=1&lang=cn&abdAssetEncdShrtDesc=&emaEntyEncdShrtDesc=", CFETS);
   const num = (v) => { const x = parseFloat(v); return isFinite(x) ? x : null; };
@@ -124,13 +138,19 @@ try {
       continue;
     }
     const nm = `${r.abdAssetEncdShrtDesc || ""} ${r.abdAssetEncdFullDescByRmb || ""}`;
+    if (NCD.re.test(nm)) {
+      if (rec.last == null) continue;
+      ncdTrades[r.bondcode] = { ...rec, short: r.abdAssetEncdShrtDesc || name };
+      if (r.showDate && (!ncdTradeTime || r.showDate > ncdTradeTime)) ncdTradeTime = r.showDate;
+      continue;
+    }
     const p = PB.find((x) => x.re.test(nm));
     // policy financial bonds only: a policy bank's own capital bonds (二级资本债, 永续债) price off other curves
     if (!p || rec.last == null || CAPITAL.test(nm)) continue;
     pbTrades[r.bondcode] = { ...rec, short: r.abdAssetEncdShrtDesc || name, issuer: p.k };
     if (r.showDate && (!pbTradeTime || r.showDate > pbTradeTime)) pbTradeTime = r.showDate;
   }
-  log(`CFETS trades: ${Object.keys(trades).length} CGBs; policy banks ${PB.map((p) => `${p.short} ${Object.values(pbTrades).filter((b) => b.issuer === p.k).length}`).join(", ")}`);
+  log(`CFETS trades: ${Object.keys(trades).length} CGBs, ${Object.keys(ncdTrades).length} NCDs; policy banks ${PB.map((p) => `${p.short} ${Object.values(pbTrades).filter((b) => b.issuer === p.k).length}`).join(", ")}`);
 } catch (e) { log(`trades failed: ${e.message}`); }
 if (!Object.keys(trades).length && prev.tradeDay === today) { // keep this session's earlier read
   for (const b of prev.bonds || []) if (b.last != null) trades[b.code] = { name: b.name, isin: b.isin, last: b.last, wavg: b.wavg, px: b.px, chg: b.chg, t: prev.tradeTime };
@@ -172,6 +192,19 @@ for (const p of PB) {
   pb[p.k].reg = [...reg.values()].map((b) => { const ttm = yrs(b.mat), cy = c ? interp(c, ttm) : null; return { ...b, ttm: +ttm.toFixed(3), curve: cy == null ? null : +cy.toFixed(4) }; }).sort((a, b) => a.ttm - b.ttm);
 }
 
+// NCDs traded today, with maturity from CFETS's remaining term and the spread to the AAA NCD curve. Before the
+// first trades of a session, the previous session's list is kept (its trade day is shown on the page).
+const ncdFresh = Object.keys(ncdTrades).length > 0;
+const issuerOfNcd = (n = "") => n.replace(/^\d{2}/, "").replace(/(CD|同业存单).*$/, "").trim() || null;
+const ncdBonds = ncdFresh ? Object.entries(ncdTrades).map(([code, b]) => {
+  const m = String(b.ttm || "").match(/([\d.]+)\s*([YD])/i), ttm = m ? (m[2].toUpperCase() === "D" ? +m[1] / 365 : +m[1]) : null;
+  if (!(ttm > 0)) return null;
+  const base = String(b.t || today).slice(0, 10);
+  const cy = ncdCurve ? interp(ncdCurve.pts, ttm) : null;
+  return { code, isin: b.isin, name: b.short, bank: issuerOfNcd(b.short), mat: shDate(Date.parse(base + "T12:00:00+08:00") + ttm * 365.25 * 864e5), est: true, ttm: +ttm.toFixed(3), last: b.last, wavg: b.wavg, chg: b.chg, curve: cy == null ? null : +cy.toFixed(4), vs: cy == null ? null : +((b.last - cy) * 100).toFixed(1) };
+}).filter(Boolean).sort((a, b) => a.ttm - b.ttm) : (ncdWas.bonds || []);
+const ncd = { name: "Negotiable certificates of deposit", cn: NCD.cn, curve: ncdCurve, tenors: ncdTenors, bonds: ncdBonds, tradeDay: ncdFresh ? today : ncdWas.tradeDay || null, tradeTime: ncdFresh ? ncdTradeTime : ncdWas.tradeTime || null };
+
 // 4. Bonds: outstanding CGBs from the master list, plus anything traded that the list does not have yet
 const typeOf = (n = "") => /贴现/.test(n) ? "Discount" : /超长期?特别/.test(n) ? "Ultra-long special" : /特别/.test(n) ? "Special" : /储蓄/.test(n) ? "Savings" : "Coupon";
 const ttmYears = (mat, fallback) => {
@@ -208,11 +241,11 @@ const out = {
   src: "ChinaBond (CCDC) China government bond yield curve (yield to maturity); bond list and ISINs from CFETS bond information; traded yields from the CFETS interbank cash-bond trade feed",
   curve, tenors, bonds, tradeDay: Object.keys(trades).length ? today : prev.tradeDay || null, tradeTime,
   masterUpdated: master.updated || null,
-  pb, pbTradeDay: pbFresh ? today : prev.pbTradeDay || null, pbTradeTime: pbFresh ? pbTradeTime : prev.pbTradeTime || null,
+  pb, ncd, pbTradeDay: pbFresh ? today : prev.pbTradeDay || null, pbTradeTime: pbFresh ? pbTradeTime : prev.pbTradeTime || null,
   pbSrc: "ChinaBond (CCDC) policy bank bond yield curves (中债政策性金融债收益率曲线: CDB 国开, ADBC 农发, EXIM 进出口; yield to maturity); traded yields from the CFETS interbank cash-bond trade feed",
 };
 mkdirSync("data", { recursive: true });
 writeFileSync("data/china.json", JSON.stringify(out));
-const msg = `China: CCDC curve ${curve?.date ?? "none"}, 10Y ${tenors[10]?.at(-1)?.[1] ?? "–"}; ${bonds.length} bonds (${bonds.filter((b) => b.isin).length} with ISIN, ${bonds.filter((b) => b.last != null).length} traded today); policy banks: ${PB.map((p) => `${p.short} ${pb[p.k].curve?.date ?? "none"} 10Y ${pb[p.k].tenors[10]?.at(-1)?.[1] ?? "–"} (${pb[p.k].bonds.length} traded, ${pb[p.k].reg.length} on register, ${pb[p.k].reg.filter((b) => b.est).length} estimated maturity)`).join(", ")}`;
+const msg = `China: CCDC curve ${curve?.date ?? "none"}, 10Y ${tenors[10]?.at(-1)?.[1] ?? "–"}; ${bonds.length} bonds (${bonds.filter((b) => b.isin).length} with ISIN, ${bonds.filter((b) => b.last != null).length} traded today); policy banks: ${PB.map((p) => `${p.short} ${pb[p.k].curve?.date ?? "none"} 10Y ${pb[p.k].tenors[10]?.at(-1)?.[1] ?? "–"} (${pb[p.k].bonds.length} traded, ${pb[p.k].reg.length} on register, ${pb[p.k].reg.filter((b) => b.est).length} estimated maturity)`).join(", ")}; NCDs: AAA curve ${ncdCurve?.date ?? "none"}, ${ncdBonds.length} traded (${ncd.tradeDay ?? "–"})`;
 log(msg); summary(`- ${msg}`);
 if (!curve && !bonds.length) process.exit(1);
