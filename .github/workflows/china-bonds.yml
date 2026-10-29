@@ -16,6 +16,7 @@ on:
     paths:
       - scripts/fetch-pb-master.mjs
       - scripts/fetch-cgb-master.mjs
+      - scripts/fetch-china.mjs
       - .github/workflows/china-bonds.yml
   schedule:
     - cron: "45 10 * * *"     # 18:45 Singapore / Beijing, every day (catches weekend make-up workdays; heartbeat.yml also dispatches it at 18:45)
