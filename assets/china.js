@@ -11,7 +11,7 @@
   const bp = (v, n = 1) => v == null || !isFinite(v) ? "–" : `${v > 0 ? "+" : ""}${(+v).toFixed(n)}`;
   const cls = (v) => v == null || !isFinite(v) || Math.abs(v) < 0.05 ? "" : v > 0 ? "up" : "down"; // yields up = green, as on the Macro tab
   let D = null;
-  const st = { cvMax: 30, pbMax: 30, pbK: "cdb", hT: 10, hR: "6M", hA: "t:10", hB: "", hC: "", hD: "", q: "", iss: "All", type: "All", mat: "", grp: "bucket", traded: false, sort: "ttm", dir: 1 };
+  const st = { cvMax: 30, pbMax: 30, pbK: "cdb", hT: 10, hR: "6M", hA: "t:10", hB: "", hC: "", hD: "", hSec: "", q: "", iss: "All", type: "All", mat: "", grp: "bucket", traded: false, sort: "ttm", dir: 1 };
 
   // ---------- series helpers ----------
   const ser = (t) => D?.tenors?.[t] || [];
@@ -192,17 +192,23 @@
   };
   const legShort = (k) => { const [x, a, c] = parts(k); return x === "t" ? `CGB ${lab(+a)}` : x === "b" ? a : x === "q" ? `${bank(a)} ${lab(+c)}` : `${bank(a)} ${c}`; };
   const isTraded = (k) => { const [x, a, c] = parts(k); return x === "b" ? findB(null, a)?.last != null : x === "p" ? findB(a, c)?.last != null : true; };
+  // maturity sectors for the bond pickers (the "Maturity sector" menu narrows Lines A–D to one sector)
+  const SECTORS = [[0, 2, "less than 2Y"], [2, 5, "2Y – 5Y"], [5, 10, "5Y – 10Y"], [10, 20, "10Y – 20Y"], [20, 30, "20Y – 30Y"], [30, 50.01, "30Y – 50Y"]];
   function legOptions(sel, none, tradedOnly) {
-    const grp = [[0, 2, "less than 2Y"], [2, 5, "2Y – 5Y"], [5, 10, "5Y – 10Y"], [10, 20, "10Y – 20Y"], [20, 30, "20Y – 30Y"], [30, 999, "more than 30Y"]];
-    const bonds = (D.bonds || []).filter((b) => b.mat && (!tradedOnly || b.last != null)).sort((a, b) => a.ttm - b.ttm);
+    const sec = st.hSec ? st.hSec.split("-").map(Number) : null;
+    const inSec = (b) => !sec || (b.ttm >= sec[0] && b.ttm < sec[1]);
+    const grp = SECTORS.filter(([lo]) => !sec || lo === sec[0]);
+    const keep = (k, code) => sel === (k ? `p:${k}:${code}` : `b:${code}`); // the current pick stays listed
+    const bonds = (D.bonds || []).filter((b) => b.mat && (!tradedOnly || b.last != null) && (inSec(b) || keep(null, b.code))).sort((a, b) => a.ttm - b.ttm);
     const o = (v, t) => `<option value="${esc(v)}"${v === sel ? " selected" : ""}>${esc(t)}</option>`;
     const row = (b, pre) => `${pre}${b.code} · ${b.name || "–"} · ${b.coupon != null ? f2(b.coupon, 2) + "%" : b.type || "–"} · ${b.mat}${b.est ? " (est.)" : ""} · ${f2(b.ttm, 2)}Y${b.last != null ? ` · CFETS last ${f2(b.last, 4)}%` : ""}`;
     const banks = ["cdb", "adbc", "exim"].filter((k) => D?.pb?.[k]?.curve);
     return (none ? o("", "None") : "") +
       `<optgroup label="CGB · CCDC standard tenors">${TEN.map((t) => o(`t:${t}`, `CGB ${lab(t)} (CCDC curve)`)).join("")}</optgroup>` +
       banks.map((k) => { const ts = TEN.filter((t) => pbTen(k, t).length); return ts.length ? `<optgroup label="${esc(bank(k))} · CCDC ${esc(bank(k))} curve standard tenors">${ts.map((t) => o(`q:${k}:${t}`, `${bank(k)} ${lab(t)} (CCDC ${bank(k)} curve)`)).join("")}</optgroup>` : ""; }).join("") +
-      grp.map(([lo, hi, l]) => { const g = bonds.filter((b) => b.ttm >= lo && b.ttm < hi); return g.length ? `<optgroup label="CGB ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`b:${b.code}`, row(b, ""))).join("")}</optgroup>` : ""; }).join("") +
-      banks.map((k) => { const g = pbList(k).filter((b) => b.mat && b.ttm > 0 && (!tradedOnly || b.last != null)).sort((a, b) => a.ttm - b.ttm); return g.length ? `<optgroup label="${esc(bank(k))} ${tradedOnly ? "traded on CFETS" : "bonds (seen trading on CFETS)"}">${g.map((b) => o(`p:${k}:${b.code}`, row(b, bank(k) + " "))).join("")}</optgroup>` : ""; }).join("");
+      grp.map(([lo, hi, l]) => { const g = bonds.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && keep(null, b.code) && lo === sec[0] && !inSec(b))); return g.length ? `<optgroup label="CGB ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`b:${b.code}`, row(b, ""))).join("")}</optgroup>` : ""; }).join("") +
+      banks.map((k) => { const all = pbList(k).filter((b) => b.mat && b.ttm > 0 && (!tradedOnly || b.last != null)).sort((a, b) => a.ttm - b.ttm);
+        return grp.map(([lo, hi, l]) => { const g = all.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && lo === sec[0] && keep(k, b.code) && !inSec(b))); return g.length ? `<optgroup label="${esc(bank(k))} ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`p:${k}:${b.code}`, row(b, bank(k) + " "))).join("")}</optgroup>` : ""; }).join(""); }).join("");
   }
   const tkey = (p) => { if (p?.time == null) return null; const t = p.time; return typeof t === "object" ? `${t.year}-${String(t.month).padStart(2, "0")}-${String(t.day).padStart(2, "0")}` : t; };
   // Lines: A (set by tenor buttons/tiles), B, C, D. C and D list tenors plus only the bonds with a CFETS last yield today.
@@ -245,6 +251,8 @@
     ["hA", "hB", "hC", "hD", "hSwap"].forEach((id) => { $(id).disabled = isS; });
     $("hA").onchange = (e) => { st.hA = e.target.value; st.hT = st.hA.startsWith("t:") ? st.hA.slice(2) : "bond"; tiles(); hist(true); };
     ["hB", "hC", "hD"].forEach((id) => { $(id).onchange = (e) => { st[id] = e.target.value; hist(true); }; });
+    $("hSec").value = st.hSec; $("hSec").disabled = isS;
+    $("hSec").onchange = (e) => { st.hSec = e.target.value; hist(true); };
     $("hSwap").onclick = () => { if (!st.hB) return; [st.hA, st.hB] = [st.hB, st.hA]; st.hT = st.hA.startsWith("t:") ? st.hA.slice(2) : "bond"; tiles(); hist(true); };
     if (window.LightweightCharts) {
       const o = chartOpts(), pf = { type: "price", precision: isS ? 1 : 3, minMove: isS ? 0.1 : 0.001 }, pf1 = { type: "price", precision: 1, minMove: 0.1 };

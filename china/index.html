@@ -282,6 +282,15 @@ section.crecap{margin-top:0}
       <div class="chead"><h3 id="hH">Tenor history</h3><div class="btns" id="hRng" role="group" aria-label="History range"></div></div>
       <div class="btns" id="hTen" role="group" aria-label="Tenor" style="margin-bottom:10px"></div>
       <div class="ctl" id="hCmp" style="margin-bottom:10px">
+        <label>Maturity sector <select id="hSec" aria-label="Show only bonds in this maturity sector in Lines A–D">
+          <option value="">All sectors</option>
+          <option value="0-2">Less than 2Y</option>
+          <option value="2-5">2Y – 5Y</option>
+          <option value="5-10">5Y – 10Y</option>
+          <option value="10-20">10Y – 20Y</option>
+          <option value="20-30">20Y – 30Y</option>
+          <option value="30-50.01">30Y – 50Y</option>
+        </select></label>
         <label><i class="hsw" style="background:var(--c1)"></i>Line A <select id="hA" aria-label="Line A: tenor or bond"></select></label>
         <label><i class="hsw" style="background:var(--c2)"></i>Line B <select id="hB" aria-label="Line B: tenor or bond to compare"></select></label>
         <button type="button" class="dl" id="hSwap" style="margin-left:0">Swap A ⇄ B</button>
@@ -370,7 +379,7 @@ section.crecap{margin-top:0}
         <option value="5-10">5Y – 10Y</option>
         <option value="10-20">10Y – 20Y</option>
         <option value="20-30">20Y – 30Y</option>
-        <option value="30-999">More than 30Y</option>
+        <option value="30-50.01">30Y – 50Y</option>
       </select></label>
       <div class="btns" id="bGrp" role="group" aria-label="Group rows"></div>
       <label><input type="checkbox" id="bTr"> Traded today only</label>
