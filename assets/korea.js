@@ -308,7 +308,7 @@
   // Table rows: KTBs plus MSB / KDB / IBK / KEXIM bonds (each issuer's register, with the latest OTC trade where
   // there is one), plus AAA bank debentures traded in the latest session. Built once per data load.
   const ISS = ["All", "KTB", "MSB", "KDB", "IBK", "KEXIM", "Bank"];
-  const typeOf = (n = "") => /물가/.test(n) ? "Inflation-linked" : /할인|재정증권/.test(n) ? "Discount" : /녹색|그린|ESG/.test(n) ? "Green" : "Coupon";
+  const typeOf = (n = "") => /물가/.test(n) ? "Inflation-linked" : /할인|재정증권|할\d|\sDC\d/.test(n) ? "Discount" : /녹색|그린|ESG/.test(n) ? "Green" : "Coupon";
   const ageDays = (d) => d ? (Date.now() - Date.parse(d)) / 864e5 : 1e9;
   let allRows = null, allFor = null;
   function allBonds() {
