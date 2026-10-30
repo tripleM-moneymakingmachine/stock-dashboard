@@ -1,64 +1,64 @@
 {
- "asof": "Oct 28, 2026",
- "close": 95.53,
+ "asof": "Oct 30, 2026",
+ "close": 65.76,
  "bias": {
-  "en": "Bearish, improving · cleared $95.4, MACD nearing a cross",
-  "zh": "偏空但改善 · 突破 $95.4，MACD 接近交叉"
+  "en": "Bearish · collapsed below the 200-day, April gap filled",
+  "zh": "看空 · 暴跌跌破 200 日均线，4月缺口已回补"
  },
  "read": [
   {
-   "en": "Intel rose 1.9% on Oct 28 to $95.53, trading between $93.00 and $95.68. It is above the falling 5-day ($90.4) and 10-day ($91.4) averages and the rising 200-day ($86.6), and below the falling 30-day ($106.6) and 100-day ($105.4). MACD has been below its signal since Oct 5 and below zero, histogram narrowing toward a cross; Parabolic SAR has been bullish since Oct 27 ($84.86), and RSI is 45.",
-   "zh": "英特尔 10月28日上涨 1.9%，收于 $95.53，盘中区间 $93.00–95.68。股价位于下行的 5 日（$90.4）和 10 日均线（$91.4）以及上行的 200 日均线（$86.6）上方，低于下行的 30 日（$106.6）和 100 日均线（$105.4）。MACD 自 10月5日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 自 10月27日起看多（$84.86），RSI 为 45。"
+   "en": "Intel plunged 28.6% on Oct 30 to $65.76, trading between $63.20 and $68.77 on 4.6 times average volume, after a 3.6% drop on Oct 29. It is below the falling 5-day ($87.5), 10-day ($88.7), 30-day ($104.6) and 100-day ($104.8) averages and the rising 200-day ($86.9). MACD has been below its signal since Oct 5, below zero, histogram widening; Parabolic SAR turned bearish on Oct 30 ($95.68), and RSI is 25.",
+   "zh": "英特尔 10月30日暴跌 28.6%，收于 $65.76，盘中区间 $63.20–68.77，成交量为均量的 4.6 倍；此前 10月29日下跌 3.6%。股价位于下行的 5 日（$87.5）、10 日（$88.7）、30 日（$104.6）和 100 日均线（$104.8）以及上行的 200 日均线（$86.9）下方。MACD 自 10月5日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 于 10月30日转为看空（$95.68），RSI 为 25。"
   },
   {
-   "en": "The close cleared $95–95.4 (Oct 27 and 19 highs), now support, though the high stopped at $95.7. Resistance is $97.7–98.2 (Oct 13–14 lows), then $101.3 (Oct 14 high) and $105.4 (100-day). Support is $93–95.4 (Oct 28 low, Oct 19 and 27 highs), then $90.4–91.4 (5 and 10-day) and $86.6 (200-day). A close above $98.2 would target $101–105; below $93, $91.",
-   "zh": "收盘突破 $95–95.4（10月27日和19日高点），该区间转为支撑，但盘中高点止步于 $95.7。阻力为 $97.7–98.2（10月13–14日低点），其次 $101.3（10月14日高点）和 $105.4（100 日均线）。支撑为 $93–95.4（10月28日低点、10月19日和27日高点），其次 $90.4–91.4（5 日和 10 日均线）和 $86.6（200 日均线）。若收盘站上 $98.2，下一目标看 $101–105；若跌破 $93，则看 $91。"
+   "en": "The drop broke all three written supports, $93–95.4, $90.4–91.4 and the 200-day, and filled the April gap ($68.3–79.6). Resistance is $68.3–68.8 (Apr 23 and Oct 30 highs), then $79.6 (Apr 24 low) and $84.7–86.9 (Oct 22 low, 200-day). Support is $63.2–65 (Oct 30 low, Apr 20–22 lows), then $62.1 and $58.4 (Apr 9 low). A close above $68.8 would target $79.6; below $63.2, $62.",
+   "zh": "此次下跌跌破此前三道支撑 $93–95.4、$90.4–91.4 和 200 日均线，并回补 4月跳空缺口（$68.3–79.6）。阻力为 $68.3–68.8（4月23日和10月30日高点），其次 $79.6（4月24日低点）和 $84.7–86.9（10月22日低点、200 日均线）。支撑为 $63.2–65（10月30日低点、4月20–22日低点），其次 $62.1 和 $58.4（4月9日低点）。若收盘站上 $68.8，下一目标看 $79.6；若跌破 $63.2，则看 $62。"
   }
  ],
  "levels": {
   "r": [
    [
-    98,
+    68.5,
     {
-     "en": "Oct 13 and Oct 14 lows ($97.7–98.2)",
-     "zh": "10月13日和10月14日低点（$97.7–98.2）"
+     "en": "Apr 23 high $68.3; Oct 30 high $68.8",
+     "zh": "4月23日高点 $68.3；10月30日高点 $68.8"
     }
    ],
    [
-    101.3,
+    79.6,
     {
-     "en": "Oct 14 high",
-     "zh": "10月14日高点"
+     "en": "Apr 24 low, top of the April gap",
+     "zh": "4月24日低点，4月缺口上沿"
     }
    ],
    [
-    105.4,
+    85.8,
     {
-     "en": "100-day average",
-     "zh": "100日均线"
+     "en": "Oct 22 low $84.65; 200-day average $86.9, lost",
+     "zh": "10月22日低点 $84.65；200日均线 $86.9，已跌破"
     }
    ]
   ],
   "s": [
    [
-    94.2,
+    64,
     {
-     "en": "Oct 19 and Oct 27 highs ($95.0–95.4), cleared; Oct 28 low $93.0",
-     "zh": "10月19日和10月27日高点（$95.0–95.4），已突破；10月28日低点 $93.0"
+     "en": "Oct 30 low $63.2; Apr 20 and Apr 22 lows ($64.5–65.0)",
+     "zh": "10月30日低点 $63.2；4月20日和4月22日低点（$64.5–65.0）"
     }
    ],
    [
-    90.9,
+    62.1,
     {
-     "en": "5 and 10-day averages ($90.4–91.4)",
-     "zh": "5日和10日均线（$90.4–91.4）"
+     "en": "Apr 13 and Apr 14 lows ($62.1–62.2)",
+     "zh": "4月13日和4月14日低点（$62.1–62.2）"
     }
    ],
    [
-    86.6,
+    58.4,
     {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "Apr 9 low",
+     "zh": "4月9日低点"
     }
    ]
   ]

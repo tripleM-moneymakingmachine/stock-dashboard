@@ -1,64 +1,57 @@
 {
- "asof": "Oct 28, 2026",
- "close": 416,
+ "asof": "Oct 30, 2026",
+ "close": 390.09,
  "bias": {
-  "en": "Bearish, improving · SAR flipped bullish, 200-day overhead",
-  "zh": "偏空但改善 · SAR 转多，上方为 200 日均线"
+  "en": "Bearish · faded from $426, back under the 5 and 10-day",
+  "zh": "偏空 · 自 $426 回落，跌回 5 日和 10 日均线下方"
  },
  "read": [
   {
-   "en": "Applied Materials rose 5.1% on Oct 28 to $416.00, trading between $401.44 and $421.83. It is above the falling 5-day ($390.5) and 10-day ($401.9) averages and below the rising 200-day ($443.5) and the falling 30-day ($461.6) and 100-day ($511.0). MACD has been below its signal since Oct 13 and below zero, histogram narrowing toward a cross; Parabolic SAR turned bullish on Oct 28 ($372.80), and RSI is 42.",
-   "zh": "应用材料 10月28日上涨 5.1%，收于 $416.00，盘中区间 $401.44–421.83。股价位于下行的 5 日（$390.5）和 10 日均线（$401.9）上方，低于上行的 200 日均线（$443.5）以及下行的 30 日（$461.6）和 100 日均线（$511.0）。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 于 10月28日转为看多（$372.80），RSI 为 42。"
+   "en": "Applied Materials fell 7.5% on Oct 30 to $390.09, trading between $382.62 and $405.20 on 1.5 times average volume. It is below the rising 5-day ($402.3) and 200-day ($444.5) and the falling 10-day ($399.1), 30-day ($460.0) and 100-day ($509.2). MACD has been below its signal since Oct 13 and below zero, histogram narrowing toward a cross; Parabolic SAR has been bullish since Oct 28 ($375.89), and RSI is 36.",
+   "zh": "应用材料 10月30日下跌 7.5%，收于 $390.09，盘中区间 $382.62–405.20，成交量为均量的 1.5 倍。股价低于上行的 5 日（$402.3）和 200 日均线（$444.5），以及下行的 10 日（$399.1）、30 日（$460.0）和 100 日均线（$509.2）。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 自 10月28日起看多（$375.89），RSI 为 36。"
   },
   {
-   "en": "The close cleared $398–414 (Oct 27 high, 10-day, Oct 16 low, Oct 21 high), now support, and turned the SAR bullish. Resistance is $421.8–427.7 (Oct 28 and Oct 19 highs), then $434.6 (Oct 15 high) and $443.5 (200-day). Support is $407.3–414, then $399–402 (10-day, Oct 28 low) and $390.5 (5-day). A close above $427.7 would target $435–443; below $407, $399–402.",
-   "zh": "收盘突破 $398–414（10月27日高点、10 日均线、10月16日低点、10月21日高点），这些位置转为支撑，SAR 也随之转多。阻力为 $421.8–427.7（10月28日和10月19日高点），其次 $434.6（10月15日高点）和 $443.5（200 日均线）。支撑为 $407.3–414，其次 $399–402（10 日均线、10月28日低点）和 $390.5（5 日均线）。若收盘站上 $427.7，下一目标看 $435–443；若跌破 $407，则看 $399–402。"
+   "en": "The $426.5 Oct 29 high stopped under $427.7, and the drop broke all three written supports ($390.5–414), now resistance. Resistance is $399.1–405.2 (10 and 5-day, Oct 30 high), then $407.3–409.9 (Oct 16 and Oct 29 lows) and $426.5–427.7. Support is $382.6 (Oct 30 low), then $372.8–377.1 (Oct 23 and Apr 29 lows, SAR). A close above $405.2 would target $410–427; below $372.8, a bearish SAR flip.",
+   "zh": "10月29日高点 $426.5 未能突破 $427.7，随后的下跌跌破此前全部三道支撑（$390.5–414），这些位置转为阻力。阻力为 $399.1–405.2（10 日和 5 日均线、10月30日高点），其次 $407.3–409.9（10月16日和10月29日低点）和 $426.5–427.7。支撑为 $382.6（10月30日低点），其次 $372.8–377.1（10月23日和4月29日低点、SAR）。若收盘站上 $405.2，下一目标看 $410–427；若跌破 $372.8，SAR 将转空。"
   }
  ],
  "levels": {
   "r": [
    [
-    424.8,
+    402,
     {
-     "en": "Oct 28 high $421.8; Oct 19 high $427.7",
-     "zh": "10月28日高点 $421.8；10月19日高点 $427.7"
+     "en": "10 and 5-day averages ($399.1–402.3); Oct 30 high $405.2",
+     "zh": "10日和5日均线（$399.1–402.3）；10月30日高点 $405.2"
     }
    ],
    [
-    434.6,
+    408.6,
     {
-     "en": "Oct 15 high",
-     "zh": "10月15日高点"
+     "en": "Oct 29 low $409.9; Oct 16 low $407.3",
+     "zh": "10月29日低点 $409.9；10月16日低点 $407.3"
     }
    ],
    [
-    443.5,
+    427,
     {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "Oct 29 high $426.5; Oct 19 high $427.7",
+     "zh": "10月29日高点 $426.5；10月19日高点 $427.7"
     }
    ]
   ],
   "s": [
    [
-    410.6,
+    382.6,
     {
-     "en": "Oct 16 low $407.3; Oct 21 high $414, now support",
-     "zh": "10月16日低点 $407.3；10月21日高点 $414，已转为支撑"
+     "en": "Oct 30 low",
+     "zh": "10月30日低点"
     }
    ],
    [
-    400,
+    375,
     {
-     "en": "10-day average $401.9; Oct 28 low $401.4; Oct 27 high $399",
-     "zh": "10日均线 $401.9；10月28日低点 $401.4；10月27日高点 $399"
-    }
-   ],
-   [
-    390.5,
-    {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "Parabolic SAR $375.9; Apr 29 low $377.1; Oct 23 low $372.8",
+     "zh": "抛物线 SAR $375.9；4月29日低点 $377.1；10月23日低点 $372.8"
     }
    ]
   ]

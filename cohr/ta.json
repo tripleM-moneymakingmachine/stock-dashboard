@@ -1,64 +1,64 @@
 {
- "asof": "Oct 28, 2026",
- "close": 239.59,
+ "asof": "Oct 30, 2026",
+ "close": 210.32,
  "bias": {
-  "en": "Bearish, improving · pressing the $243.6 Oct 21 high under the SAR",
-  "zh": "偏空但改善 · 逼近 10月21日高点 $243.6，仍低于 SAR"
+  "en": "Bearish · SAR flipped back, near the $203.6 October low",
+  "zh": "看空 · SAR 重新转空，接近 10月低点 $203.6"
  },
  "read": [
   {
-   "en": "Coherent rose 1.6% on Oct 28 to $239.59, trading between $232.50 and $242.74. It is above the falling 5-day ($222.8) and 10-day ($229.9) averages and below the falling 30-day ($280.4) and 100-day ($308.3) and the rising 200-day ($296.2). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($246.37), and RSI is 42.",
-   "zh": "Coherent 10月28日上涨 1.6%，收于 $239.59，盘中区间 $232.50–242.74。股价位于下行的 5 日（$222.8）和 10 日均线（$229.9）上方，低于下行的 30 日（$280.4）和 100 日均线（$308.3）以及上行的 200 日均线（$296.2）。MACD 自 10月12日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$246.37），RSI 为 42。"
+   "en": "Coherent fell 11.3% on Oct 30 to $210.32, trading between $203.87 and $222.62 on 1.6 times average volume, after the Oct 29 high stalled at $246.9. It is below the rising 5-day ($228.9), falling 10-day ($226.3), 30-day ($274.9) and 100-day ($305.2), and rising 200-day ($296.5) averages. MACD has been below its signal since Oct 12, below zero; Parabolic SAR turned bearish on Oct 30 ($246.90), and RSI is 35.",
+   "zh": "Coherent 10月30日下跌 11.3%，收于 $210.32，盘中区间 $203.87–222.62，成交量为均量的 1.6 倍；此前 10月29日高点止步于 $246.9。股价位于上行的 5 日（$228.9）、下行的 10 日（$226.3）、30 日（$274.9）和 100 日（$305.2）以及上行的 200 日均线（$296.5）下方。MACD 自 10月12日起位于信号线下方且在零轴之下；抛物线 SAR 于 10月30日转为看空（$246.90），RSI 为 35。"
   },
   {
-   "en": "The close cleared the $236.9 Oct 27 high, now support; the high stopped just under $243.6 (Oct 21 high). Resistance is $242.7–243.6, then $246.4 (SAR) and $252.3 (Oct 15 high). Support is $232.5–236.9 (Oct 28 low, Oct 27 high), then $229.9 (10-day) and $222.3–222.8 (Oct 27 low, 5-day). A close above $243.6 would target $246–252; below $232.5, $222–230.",
-   "zh": "收盘突破 10月27日高点 $236.9，该位转为支撑；盘中高点止步于 $243.6（10月21日高点）下方。阻力为 $242.7–243.6，其次 $246.4（SAR）和 $252.3（10月15日高点）。支撑为 $232.5–236.9（10月28日低点、10月27日高点），其次 $229.9（10 日均线）和 $222.3–222.8（10月27日低点、5 日均线）。若收盘站上 $243.6，下一目标看 $246–252；若跌破 $232.5，则看 $222–230。"
+   "en": "The drop broke all three written supports, $232.5–236.9, $229.9 (10-day) and $222.3–222.8, now resistance. Resistance is $222.3–222.6 (Oct 27 low, Oct 30 high), then $226.3–228.9 (10 and 5-day) and $243–246.9 (Oct 28 high, SAR). Support is $203.6–203.9 (Oct 23 and Oct 30 lows), then $200.2 (Dec–Jan highs) and $183.6 (Dec 29 low). A close above $222.6 would target $226–229; below $203.6, $200.",
+   "zh": "此次下跌跌破此前三道支撑 $232.5–236.9、$229.9（10 日均线）和 $222.3–222.8，这些位置转为阻力。阻力为 $222.3–222.6（10月27日低点、10月30日高点），其次 $226.3–228.9（10 日和 5 日均线）和 $243–246.9（10月28日高点、SAR）。支撑为 $203.6–203.9（10月23日和10月30日低点），其次 $200.2（12月至1月高点）和 $183.6（12月29日低点）。若收盘站上 $222.6，下一目标看 $226–229；若跌破 $203.6，则看 $200。"
   }
  ],
  "levels": {
   "r": [
    [
-    243.2,
+    222.5,
     {
-     "en": "Oct 28 high $242.7; Oct 21 high $243.6",
-     "zh": "10月28日高点 $242.7；10月21日高点 $243.6"
+     "en": "Oct 27 low $222.25, lost; Oct 30 high $222.6",
+     "zh": "10月27日低点 $222.25，已跌破；10月30日高点 $222.6"
     }
    ],
    [
-    246.4,
+    227.6,
     {
-     "en": "Parabolic SAR",
-     "zh": "抛物线 SAR"
+     "en": "10 and 5-day averages ($226.3–228.9)",
+     "zh": "10日和5日均线（$226.3–228.9）"
     }
    ],
    [
-    252.3,
+    245,
     {
-     "en": "Oct 15 high",
-     "zh": "10月15日高点"
+     "en": "Oct 28 high $243; Parabolic SAR and Oct 29 high $246.9",
+     "zh": "10月28日高点 $243；抛物线 SAR 及10月29日高点 $246.9"
     }
    ]
   ],
   "s": [
    [
-    234.7,
+    203.7,
     {
-     "en": "Oct 27 high $236.9, cleared; Oct 28 low $232.5",
-     "zh": "10月27日高点 $236.9，已突破；10月28日低点 $232.5"
+     "en": "Oct 23 low $203.55; Oct 30 low $203.9",
+     "zh": "10月23日低点 $203.55；10月30日低点 $203.9"
     }
    ],
    [
-    229.9,
+    200.2,
     {
-     "en": "10-day average",
-     "zh": "10日均线"
+     "en": "Dec 10 and Jan 5 highs ($200.2); $200 round number",
+     "zh": "12月10日和1月5日高点（$200.2）；$200 整数关口"
     }
    ],
    [
-    222.5,
+    183.6,
     {
-     "en": "5-day average $222.8; Oct 27 low $222.25",
-     "zh": "5日均线 $222.8；10月27日低点 $222.25"
+     "en": "Dec 29 low",
+     "zh": "12月29日低点"
     }
    ]
   ]

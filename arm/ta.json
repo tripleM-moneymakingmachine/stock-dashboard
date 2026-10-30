@@ -1,64 +1,64 @@
 {
- "asof": "Oct 28, 2026",
- "close": 235.9,
+ "asof": "Oct 30, 2026",
+ "close": 205.97,
  "bias": {
-  "en": "Bearish, improving · back above the 200-day, SAR bullish",
-  "zh": "偏空但改善 · 重回 200 日均线上方，SAR 转多"
+  "en": "Bearish · lost the 200-day and the October lows",
+  "zh": "偏空 · 跌破 200 日均线和 10 月低点"
  },
  "read": [
   {
-   "en": "Arm rose 4.1% on Oct 28 to $235.90, trading between $228.10 and $237.00. It is above the rising 200-day ($227.8) and the falling 5-day ($221.3) and 10-day ($225.5) averages, and below the falling 30-day ($268.6) and 100-day ($283.6). MACD has been below its signal since Oct 7 and below zero, histogram narrowing toward a cross; Parabolic SAR turned bullish on Oct 28 ($208.30), and RSI is 44.",
-   "zh": "Arm 10月28日上涨 4.1%，收于 $235.90，盘中区间 $228.10–237.00。股价位于上行的 200 日均线（$227.8）以及下行的 5 日（$221.3）和 10 日均线（$225.5）上方，低于下行的 30 日（$268.6）和 100 日均线（$283.6）。MACD 自 10月7日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 于 10月28日转为看多（$208.30），RSI 为 44。"
+   "en": "Arm fell 10.0% on Oct 30 to $205.97, trading between $198.77 and $209.00 on 2.3 times average volume. It is below the rising 5-day ($224.1) and falling 10-day ($221.7), the falling 30-day ($265.0) and 100-day ($281.2) and the rising 200-day ($228.9). MACD has been below its signal since Oct 7 and below zero, histogram widening again; Parabolic SAR turned bearish on Oct 30 ($237.88), and RSI is 35.",
+   "zh": "Arm 10月30日下跌 10.0%，收于 $205.97，盘中区间 $198.77–209.00，成交量为均量的 2.3 倍。股价低于上行的 5 日（$224.1）和下行的 10 日均线（$221.7），以及下行的 30 日（$265.0）、100 日均线（$281.2）和上行的 200 日均线（$228.9）。MACD 自 10月7日起位于信号线及零轴下方，柱状图再度扩大；抛物线 SAR 于 10月30日转为看空（$237.88），RSI 为 35。"
   },
   {
-   "en": "The close cleared the 200-day and $229 (Oct 21 high), now support, and turned the SAR bullish; the $237 high stopped under $238–239.4. Resistance is $238–239.4 (Sep 14 low, Oct 16 high), then $243.1–245.9 (Jul 17 low, Oct 15 high) and $250.2 (Oct 14 high). Support is $227.8–229, then $225.5 (10-day) and $221.3 (5-day). A close above $239.4 would target $245–250; below $227.8, $221–225.",
-   "zh": "收盘突破 200 日均线和 $229（10月21日高点），这些位置转为支撑，SAR 也随之转多；盘中高点 $237 止步于 $238–239.4 下方。阻力为 $238–239.4（9月14日低点、10月16日高点），其次 $243.1–245.9（7月17日低点、10月15日高点）和 $250.2（10月14日高点）。支撑为 $227.8–229，其次 $225.5（10 日均线）和 $221.3（5 日均线）。若收盘站上 $239.4，下一目标看 $245–250；若跌破 $227.8，则看 $221–225。"
+   "en": "The slide broke all three written supports ($221.3–229, incl. the 200-day) and the $208.3–208.5 Oct 22–23 lows, now resistance, and flipped the SAR bearish. Resistance is $208.3–209, then $221.7–224.1 (10 and 5-day) and $228.9 (200-day). Support is $198.8–200.9 (Oct 30 and May 12 lows), then $193.9–195 (Apr 28–29 lows) and $178.5–179.4. A close above $209 would target $222–224; below $198.8, $194.",
+   "zh": "下跌跌破此前全部三道支撑（$221.3–229，含 200 日均线）以及 10月22–23日低点 $208.3–208.5，这些位置转为阻力，SAR 也转为看空。阻力为 $208.3–209，其次 $221.7–224.1（10 日和 5 日均线）和 $228.9（200 日均线）。支撑为 $198.8–200.9（10月30日和5月12日低点），其次 $193.9–195（4月28–29日低点）和 $178.5–179.4。若收盘站上 $209，下一目标看 $222–224；若跌破 $198.8，则看 $194。"
   }
  ],
  "levels": {
   "r": [
    [
-    238.5,
+    208.6,
     {
-     "en": "Sep 14 low $238.0; Oct 16 high $239.4",
-     "zh": "9月14日低点 $238.0；10月16日高点 $239.4"
+     "en": "Oct 22–23 lows ($208.3–208.5), lost; Oct 30 high $209.0",
+     "zh": "10月22–23日低点（$208.3–208.5），已跌破；10月30日高点 $209.0"
     }
    ],
    [
-    244.5,
+    223,
     {
-     "en": "Jul 17 low $243.1; Oct 15 high $245.9",
-     "zh": "7月17日低点 $243.1；10月15日高点 $245.9"
+     "en": "10 and 5-day averages ($221.7–224.1)",
+     "zh": "10日和5日均线（$221.7–224.1）"
     }
    ],
    [
-    250.2,
+    228.9,
     {
-     "en": "Oct 14 high",
-     "zh": "10月14日高点"
+     "en": "200-day average; Oct 29 close $228.8",
+     "zh": "200日均线；10月29日收盘价 $228.8"
     }
    ]
   ],
   "s": [
    [
-    228.5,
+    199.8,
     {
-     "en": "200-day average $227.8; Oct 21 high $229.0, now support; Oct 28 low $228.1",
-     "zh": "200日均线 $227.8；10月21日高点 $229.0，已转为支撑；10月28日低点 $228.1"
+     "en": "Oct 30 low $198.8; May 12 low $200.9",
+     "zh": "10月30日低点 $198.8；5月12日低点 $200.9"
     }
    ],
    [
-    225.5,
+    194.5,
     {
-     "en": "10-day average; Oct 26 high $225.7",
-     "zh": "10日均线；10月26日高点 $225.7"
+     "en": "Apr 28–29 lows ($193.9–195.0)",
+     "zh": "4月28–29日低点（$193.9–195.0）"
     }
    ],
    [
-    221.3,
+    179,
     {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "Apr 22 low $178.5; Apr 21 high $179.4",
+     "zh": "4月22日低点 $178.5；4月21日高点 $179.4"
     }
    ]
   ]

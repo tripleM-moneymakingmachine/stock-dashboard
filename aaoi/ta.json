@@ -1,38 +1,38 @@
 {
- "asof": "Oct 28, 2026",
- "close": 82.22,
+ "asof": "Oct 30, 2026",
+ "close": 69.05,
  "bias": {
-  "en": "Bearish, improving · cleared $81, SAR at $87",
-  "zh": "偏空但改善 · 突破 $81，SAR 位于 $87"
+  "en": "Bearish · gave back the rebound, back near the October lows",
+  "zh": "偏空 · 反弹回吐，回到 10 月低点附近"
  },
  "read": [
   {
-   "en": "AAOI rose 6.8% on Oct 28 to $82.22, trading between $77.02 and $82.28. It is above the falling 5-day ($73.3) and 10-day ($75.8) averages and below the falling 30-day ($95.8) and 100-day ($116.5) and the rising 200-day ($113.8). MACD has been below its signal since Oct 13 and below zero, histogram narrowing toward a cross; Parabolic SAR has been bearish since Oct 12 ($87.13), and RSI is 44.",
-   "zh": "AAOI 10月28日上涨 6.8%，收于 $82.22，盘中区间 $77.02–82.28。股价位于下行的 5 日（$73.3）和 10 日均线（$75.8）上方，低于下行的 30 日（$95.8）和 100 日均线（$116.5）以及上行的 200 日均线（$113.8）。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 自 10月12日起看空（$87.13），RSI 为 44。"
+   "en": "AAOI fell 12.8% on Oct 30 to $69.05, trading between $65.77 and $74.25 on 1.4 times average volume. It is below the rising 5-day ($75.9) and falling 10-day ($74.7) averages, the falling 30-day ($94.0) and 100-day ($114.3) and the rising 200-day ($114.2). MACD has been below its signal since Oct 13 and below zero, histogram widening again; Parabolic SAR has been bearish since Oct 12 ($83.31), and RSI is 36.",
+   "zh": "AAOI 10月30日大跌 12.8%，收于 $69.05，盘中区间 $65.77–74.25，成交量为均量的 1.4 倍。股价低于上行的 5 日（$75.9）和下行的 10 日均线（$74.7），以及下行的 30 日（$94.0）、100 日均线（$114.3）和上行的 200 日均线（$114.2）。MACD 自 10月13日起位于信号线及零轴下方，柱状图再度扩大；抛物线 SAR 自 10月12日起看空（$83.31），RSI 为 36。"
   },
   {
-   "en": "The close cleared $77.3 (Oct 27 high) and $80.5–81.3 (Oct 19 and 21 highs), now support. Resistance is $83.4–85.0 (Oct 15–16 highs), then $87.1 (SAR) and $95.8 (30-day). Support is $80.5–81.3, then $75.8–77.3 (10-day, Oct 27 high, Oct 28 low) and $73.3 (5-day). A close above $85 would target $87–96; below $80.5, $76–77.",
-   "zh": "收盘突破 $77.3（10月27日高点）和 $80.5–81.3（10月19日和21日高点），这些位置转为支撑。阻力为 $83.4–85.0（10月15–16日高点），其次 $87.1（SAR）和 $95.8（30 日均线）。支撑为 $80.5–81.3，其次 $75.8–77.3（10 日均线、10月27日高点、10月28日低点）和 $73.3（5 日均线）。若收盘站上 $85，下一目标看 $87–96；若跌破 $80.5，则看 $76–77。"
+   "en": "The Oct 29 high stalled at the $83.3 SAR and the slide broke all three written supports ($73.3–81.3), now resistance. Resistance is $74.3–75.9 (Oct 30 high, 10 and 5-day), then $82.3–83.3 (Oct 28–29 highs, SAR) and $94.0 (30-day). Support is $65.6–66.3 (Oct 30, Oct 22 and Feb 27 lows), then $59.3 (Feb 25 high). A close above $75.9 would target $82–83; below $65.6, $59.",
+   "zh": "10月29日高点受阻于 $83.3 的 SAR，随后的下跌跌破此前全部三道支撑（$73.3–81.3），这些位置转为阻力。阻力为 $74.3–75.9（10月30日高点、10 日和 5 日均线），其次 $82.3–83.3（10月28–29日高点、SAR）和 $94.0（30 日均线）。支撑为 $65.6–66.3（10月30日、10月22日和2月27日低点），其次 $59.3（2月25日高点）。若收盘站上 $75.9，下一目标看 $82–83；若跌破 $65.6，则看 $59。"
   }
  ],
  "levels": {
   "r": [
    [
-    84.2,
+    75,
     {
-     "en": "Oct 15 and Oct 16 highs ($83.4–85.0)",
-     "zh": "10月15日和10月16日高点（$83.4–85.0）"
+     "en": "Oct 30 high $74.25; 10 and 5-day averages ($74.7–75.9)",
+     "zh": "10月30日高点 $74.25；10日和5日均线（$74.7–75.9）"
     }
    ],
    [
-    87.1,
+    82.8,
     {
-     "en": "Parabolic SAR",
-     "zh": "抛物线 SAR"
+     "en": "Oct 28–29 highs ($82.3–83.3); Parabolic SAR $83.31",
+     "zh": "10月28–29日高点（$82.3–83.3）；抛物线 SAR $83.31"
     }
    ],
    [
-    95.8,
+    94,
     {
      "en": "30-day average",
      "zh": "30日均线"
@@ -41,24 +41,17 @@
   ],
   "s": [
    [
-    81,
+    66,
     {
-     "en": "Oct 19 and Oct 21 highs ($80.5–81.3), now support",
-     "zh": "10月19日和10月21日高点（$80.5–81.3），已转为支撑"
+     "en": "Oct 30 low $65.77; Oct 22 low $66.28; Feb 27 low $65.57",
+     "zh": "10月30日低点 $65.77；10月22日低点 $66.28；2月27日低点 $65.57"
     }
    ],
    [
-    76.5,
+    59.3,
     {
-     "en": "10-day average $75.8; Oct 27 high $77.3; Oct 28 low $77.0",
-     "zh": "10日均线 $75.8；10月27日高点 $77.3；10月28日低点 $77.0"
-    }
-   ],
-   [
-    73.3,
-    {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "Feb 25 high $59.25",
+     "zh": "2月25日高点 $59.25"
     }
    ]
   ]

@@ -1,64 +1,64 @@
 {
- "asof": "Oct 28, 2026",
- "close": 313.24,
+ "asof": "Oct 30, 2026",
+ "close": 274.37,
  "bias": {
-  "en": "Bearish · lost $320 again, bounced off $295",
-  "zh": "偏空 · 再度失守 $320，自 $295 反弹"
+  "en": "Bearish · broke $295, lowest close since March, RSI oversold",
+  "zh": "偏空 · 跌破 $295，创 3月以来最低收盘，RSI 超卖"
  },
  "read": [
   {
-   "en": "Teradyne fell 3.2% on Oct 28 to $313.24, trading between $295.00 and $317.00 on 1.7 times average volume. It is just above the falling 5-day ($312.7) and below the falling 10-day ($324.9), 30-day ($373.7) and 100-day ($376.6) averages and the rising 200-day ($349.0). MACD has been below its signal since Oct 12, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($340.07), and RSI is 36.",
-   "zh": "泰瑞达 10月28日下跌 3.2%，收于 $313.24，盘中区间 $295.00–317.00，成交量为均量的 1.7 倍。股价略高于下行的 5 日均线（$312.7），低于下行的 10 日（$324.9）、30 日（$373.7）和 100 日均线（$376.6）以及上行的 200 日均线（$349.0）。MACD 自 10月12日起位于信号线及零轴下方，柱状图收窄；抛物线 SAR 自 10月8日起看空（$340.07），RSI 为 36。"
+   "en": "Teradyne fell 7.4% on Oct 30 to $274.37, its lowest close since Mar 6, trading between $266.39 and $284.16 on 2.7 times average volume. It is below the falling 5-day ($303.3), 10-day ($315.2), 30-day ($368.6) and 100-day ($374.8) averages and the rising 200-day ($349.5). MACD has been below its signal since Oct 12, below zero, histogram widening slightly; Parabolic SAR has been bearish since Oct 8 ($322.58), and RSI is 29, oversold.",
+   "zh": "泰瑞达 10月30日下跌 7.4%，收于 $274.37，为 3月6日以来最低收盘，盘中区间 $266.39–284.16，成交量为均量的 2.7 倍。股价位于下行的 5 日（$303.3）、10 日（$315.2）、30 日（$368.6）和 100 日均线（$374.8）以及上行的 200 日均线（$349.5）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图略有扩大；抛物线 SAR 自 10月8日起看空（$322.58），RSI 为 29，处于超卖区。"
   },
   {
-   "en": "The close lost the $319.5–320 support (Oct 26 high), now resistance; a dip to $295, under the $304–306 lows and the $296.8 Jul 17 low, recovered above the $309.4 May 19 low. Resistance is $317–320, then $324.9–328.8 (10-day, Oct 27 high) and $340.1 (SAR). Support is $309.4, then $304.3–306.4 and $295–296.8. A close above $320 would target $325–329; below $309, $305.",
-   "zh": "收盘跌破 $319.5–320 支撑（10月26日高点），该位转为阻力；盘中下探 $295，跌破 $304–306 低点和 7月17日低点 $296.8，随后回升至 5月19日低点 $309.4 上方。阻力为 $317–320，其次 $324.9–328.8（10 日均线、10月27日高点）和 $340.1（SAR）。支撑为 $309.4，其次 $304.3–306.4 和 $295–296.8。若收盘站上 $320，下一目标看 $325–329；若跌破 $309，则看 $305。"
+   "en": "Two more losses broke all three written supports, $309.4 (May 19 low), $304.3–306.4 and $295–296.8, now resistance. Resistance is $295–296.8, then $303.3–304.3 (5-day, Oct 23 low) and $315.2–317 (10-day, Oct 28 high). Support is $273.1 (Mar 30 low), then $262.3–266.4 (Oct 30 low, Feb and Mar lows) and $240.7–241 (Jan 28 and Feb 2 lows). A close above $296.8 would target $303–304; below $262, $241.",
+   "zh": "再跌两日跌破此前三道支撑 $309.4（5月19日低点）、$304.3–306.4 和 $295–296.8，这些位置转为阻力。阻力为 $295–296.8，其次 $303.3–304.3（5 日均线、10月23日低点）和 $315.2–317（10 日均线、10月28日高点）。支撑为 $273.1（3月30日低点），其次 $262.3–266.4（10月30日低点及2月、3月低点）和 $240.7–241（1月28日和2月2日低点）。若收盘站上 $296.8，下一目标看 $303–304；若跌破 $262，则看 $241。"
   }
  ],
  "levels": {
   "r": [
    [
-    318.5,
+    296,
     {
-     "en": "Oct 26 high $320, lost; Oct 28 high $317",
-     "zh": "10月26日高点 $320，已跌破；10月28日高点 $317"
+     "en": "Oct 28 low $295; Jul 17 low $296.8, lost",
+     "zh": "10月28日低点 $295；7月17日低点 $296.8，已失守"
     }
    ],
    [
-    326.9,
+    303.8,
     {
-     "en": "10-day average $324.9; Oct 27 high $328.8",
-     "zh": "10日均线 $324.9；10月27日高点 $328.8"
+     "en": "5-day average $303.3; Oct 23 low $304.3",
+     "zh": "5日均线 $303.3；10月23日低点 $304.3"
     }
    ],
    [
-    340.1,
+    316,
     {
-     "en": "Parabolic SAR; 200-day average $349.0 above",
-     "zh": "抛物线 SAR；其上为 200日均线 $349.0"
+     "en": "10-day average $315.2; Oct 28 high $317",
+     "zh": "10日均线 $315.2；10月28日高点 $317"
     }
    ]
   ],
   "s": [
    [
-    309.4,
+    273.1,
     {
-     "en": "May 19 low",
-     "zh": "5月19日低点"
+     "en": "Mar 30 low",
+     "zh": "3月30日低点"
     }
    ],
    [
-    305.4,
+    264.7,
     {
-     "en": "Oct 23 and Oct 26 lows ($304.3–306.4)",
-     "zh": "10月23日和10月26日低点（$304.3–306.4）"
+     "en": "Oct 30 low $266.4; Mar 9 low $263.0; Feb 4–5 lows ($262.3–263.2)",
+     "zh": "10月30日低点 $266.4；3月9日低点 $263.0；2月4–5日低点（$262.3–263.2）"
     }
    ],
    [
-    296,
+    241,
     {
-     "en": "Oct 28 low $295; Jul 17 low $296.8",
-     "zh": "10月28日低点 $295；7月17日低点 $296.8"
+     "en": "Jan 28 and Feb 2 lows ($240.7–241.0)",
+     "zh": "1月28日和2月2日低点（$240.7–241.0）"
     }
    ]
   ]
