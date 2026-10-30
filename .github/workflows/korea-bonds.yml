@@ -1,0 +1,68 @@
+name: Korea government bonds
+
+# Daily after the KOFIA close (final quotes at 15:30 KST; OTC trade summaries by bond follow in the evening):
+# rebuild data/korea.json (KTB curve, MSB / KDB / IBK / KEXIM curves, KTBs by code and ISIN), data/ktb-futures.json
+# (KTB futures fair value from the delivery baskets) and data/korea-flows.json (KOSPI <-> KTB rotation signal),
+# commit them and redeploy. The first run back-fills a year of OTC trades (~10 minutes); later runs are incremental.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/kofia.mjs
+      - scripts/fetch-korea.mjs
+      - scripts/fetch-ktb-futures.mjs
+      - scripts/fetch-korea-flows.mjs
+      - .github/workflows/korea-bonds.yml
+  schedule:
+    - cron: "40 9 * * 1-5"    # 17:40 Singapore (18:40 Seoul), after the KOFIA close and OTC summaries
+    - cron: "10 12 * * 1-5"   # 20:10 Singapore, catches late OTC reports
+    - cron: "40 0 * * 2-6"    # 08:40 Singapore next morning, safety net
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: korea-bonds
+  cancel-in-progress: false
+
+jobs:
+  korea:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: KTB curve, quasi-sovereign curves, bonds by ISIN (KOFIA)
+        run: node scripts/fetch-korea.mjs || echo "korea fetch failed; keeping the committed file"
+
+      - name: KTB futures fair value from delivery baskets (KOFIA)
+        run: node scripts/fetch-ktb-futures.mjs || echo "futures fetch failed; keeping the committed file"
+
+      - name: KOSPI <-> KTB rotation flows and signal
+        run: node scripts/fetch-korea-flows.mjs || echo "flows build failed; keeping the committed file"
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          for f in data/korea.json data/ktb-master.json data/ktb-futures.json data/korea-flows.json; do [ -f "$f" ] && git add "$f"; done
+          if git diff --cached --quiet; then
+            echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh Korea government bond data"
+          git pull -q --rebase origin main
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
