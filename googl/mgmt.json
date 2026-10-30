@@ -1,6 +1,6 @@
 {
  "ticker": "GOOGL",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 324.89,
  "react": {
-  "date": "2026-10-28",
-  "close": 291.1,
-  "pct": -10.4,
-  "ah": true
+  "date": "2026-10-29",
+  "close": 283.82,
+  "pct": -12.6
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 324.89,
-  "pct": 0.0
+  "date": "2026-10-29",
+  "close": 283.82,
+  "pct": -12.6
  },
  "review": {
   "en": [
    "Revenue rose 25% to $127.6B, a touch below the ~$128.2B consensus, and GAAP EPS of $2.12 missed about $3.02 after an $8.7B loss on equity stakes. Google Cloud was the standout again: revenue up 103% to $30.7B with a 36.2% margin, helped by TPU system sales. Search grew 12% and YouTube ads 9%, both slower than in Q2. CFO Anat Ashkenazi kept the $195–205B capex plan and said 2027 will rise significantly. Sundar Pichai cited huge AI demand and said Alphabet is racing to add capacity.",
-   "Shares closed up 1.3% at $324.89 before the report, then fell about 10% after hours to roughly $291. The EPS miss and slower Search and YouTube growth outweighed the Cloud beat, and free cash flow of −$9.1B was far worse than the near-breakeven analysts expected as capex reached $51.4B. Investors also face a 2027 capex step-up with no figure until February. The first full session after the report, on Oct 29, is still pending."
+   "Shares closed up 1.3% at $324.89 before the report and fell about 10% after hours. In the first session, on Oct 29, they closed down 12.6% at $283.82, the worst day since Alphabet listed, erasing about $500B of market value. Free cash flow of −$9.1B against about −$2.7B expected, Search growth slowing to 12% and a messy call outweighed the Cloud beat; the drop pulled the Nasdaq down 1.4%."
   ],
   "zh": [
    "营收增长 25% 至 1,276 亿美元，略低于约 1,282 亿美元的市场预期；因股权投资亏损 87 亿美元，GAAP 每股收益 2.12 美元，不及约 3.02 美元预期。谷歌云再度领跑：营收增长 103% 至 307 亿美元，利润率 36.2%，TPU 系统销售助力明显。搜索增长 12%、YouTube 广告增长 9%，均较第二季放缓。CFO 阿纳特·阿什肯纳齐维持 1,950–2,050 亿美元的资本开支计划，并表示 2027 年将显著增加。桑达尔·皮查伊称 AI 需求巨大，公司正全力扩充产能。",
-   "财报前股价收涨 1.3% 至 324.89 美元，财报后盘后下跌约 10% 至约 291 美元。每股收益不及预期以及搜索和 YouTube 增长放缓盖过了云业务的亮眼表现；资本开支达 514 亿美元，自由现金流 −91 亿美元，远差于分析师预期的接近收支平衡。投资者还需面对 2027 年资本开支上升，而具体数字要到 2 月才公布。财报后首个完整交易日（10 月 29 日）尚未开始。"
+   "财报前股价收涨 1.3% 至 324.89 美元，盘后下跌约 10%。首个交易日（10 月 29 日）收跌 12.6% 至 283.82 美元，为上市以来最差单日表现，市值蒸发约 5,000 亿美元。自由现金流 −91 亿美元（预期约 −27 亿）、搜索增速放缓至 12%，加上表现欠佳的电话会议，盖过了云业务的亮眼成绩；这一跌幅拖累纳斯达克指数下跌 1.4%。"
   ]
  },
  "ceo": {
@@ -61,8 +60,8 @@
    "u": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
   },
   {
-   "t": "Revenue miss, cash burn and after-hours move (Reuters)",
-   "u": "https://www.aol.com/articles/alphabets-google-cloud-unit-beats-200614000.html"
+   "t": "Worst day on record (Fortune)",
+   "u": "https://fortune.com/2026/10/29/alphabet-stock-worst-day-sp-500-nasdaq-dow"
   }
  ]
 }

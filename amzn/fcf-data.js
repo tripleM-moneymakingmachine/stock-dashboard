@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第四季至 2026 年第三季共 20 个季度。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q3 2021",
-   "Sep 2021",
-   7313,
-   15748,
-   -8435
-  ],
   [
    "Q4 2021",
    "Dec 2021",
@@ -143,36 +136,43 @@ window.FCF = {
    45387,
    54208,
    -8821
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   42422,
+   77259,
+   -34837
   ]
  ],
  "est": [
   [
-   "Q3 2026",
-   "Sep 2026",
-   40000,
-   58000,
-   -18000
-  ],
-  [
    "Q4 2026",
    "Dec 2026",
+   62000,
    60000,
-   63600,
-   -3600
+   2000
   ],
   [
    "Q1 2027",
    "Mar 2027",
    30000,
-   62000,
-   -32000
+   70000,
+   -40000
   ],
   [
    "Q2 2027",
    "Jun 2027",
    50000,
-   65000,
-   -15000
+   75000,
+   -25000
+  ],
+  [
+   "Q3 2027",
+   "Sep 2027",
+   48000,
+   80000,
+   -32000
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash & securities",
    "zh": "现金及有价证券"
   },
-  "v": "$123.0B",
+  "v": "$114.2B",
   "s": {
-   "en": "Jun 30, 2026",
-   "zh": "2026年6月30日"
+   "en": "Sep 30, 2026 · long-term debt $173.1B",
+   "zh": "2026年9月30日 · 长期债务 1731 亿"
   }
  },
  "read": [
   {
-   "en": "Amazon's free cash flow is seasonal: weak or negative in the first half, strong in the holiday quarter. Over five years it swung between about −$18B and +$28B a quarter. In 2026 capex jumped to $44–54B a quarter, so even the strong quarters barely break even and the first half was −$27B.",
-   "zh": "亚马逊自由现金流有季节性：上半年弱或为负，假日季强。五年间每季在约 −180 亿至 +280 亿美元之间波动。2026 年资本开支跃升至每季 440–540 亿，即使旺季也仅勉强持平，上半年为 −270 亿。"
+   "en": "Amazon's free cash flow is seasonal: weak or negative in the first half, strong in the holiday quarter. That pattern has broken in 2026: capex has climbed from $44B in Q1 to $77B in Q3, so even a record $42B of Q3 operating cash flow left −$35B, and the first nine months add up to −$62B.",
+   "zh": "亚马逊自由现金流有季节性：上半年弱或为负，假日季强。2026 年这一规律被打破：资本开支从第一季 440 亿升至第三季 770 亿，即使第三季经营现金流达 424 亿，自由现金流仍为 −350 亿，前九个月合计 −620 亿。"
   },
   {
-   "en": "With about $220B of cash capex guided for 2026 and $98B spent in the first half, the second half needs about $122B. I expect about −$18B in Q3, roughly breakeven in the holiday quarter, and a deeper hole in early 2027 if capex keeps rising: about −$69B over four quarters, funded by its cash and new bonds.",
-   "zh": "2026 年现金资本开支指引约 2200 亿美元，上半年已花 980 亿，下半年需约 1220 亿。我预计第三季约 −180 亿、假日季约持平；若资本开支继续上升，2027 年初缺口加深：四季合计约 −690 亿，以现金和新发债券弥补。"
+   "en": "Amazon kept its ~$220B 2026 cash capex plan, which on paper leaves under $50B for Q4; given the Q3 pace I assume about $60B, roughly offset by holiday cash flow. Jassy says 2027 will be meaningfully higher, so I expect −$25B to −$40B a quarter in 2027: about −$95B over four quarters, funded by cash and new bonds.",
+   "zh": "亚马逊维持 2026 年约 2200 亿美元现金资本开支计划，账面上第四季不足 500 亿；按第三季节奏，我假设约 600 亿，与假日季现金流大致相抵。贾西称 2027 年将明显更高，因此我预计 2027 年每季 −250 亿至 −400 亿：四季合计约 −950 亿，以现金和新发债券弥补。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "AI 数据中心"
    },
    "p": {
-    "en": "Cash capex of $53.1B in Q2, mostly AWS and generative AI, with ~$220B planned for 2026.",
-    "zh": "第二季现金资本开支 531 亿美元，主要用于 AWS 与生成式 AI，2026 年计划约 2200 亿。"
+    "en": "$77.3B of property and equipment purchases in Q3, about $20B above estimates, mostly AWS and AI; 2027 will be meaningfully higher.",
+    "zh": "第三季购置物业及设备 773 亿美元，比预期高约 200 亿，主要用于 AWS 与 AI；2027 年将明显更高。"
    }
   },
   {
@@ -213,8 +213,8 @@ window.FCF = {
     "zh": "零部件成本上升"
    },
    "p": {
-    "en": "The capex guide rose partly because memory got more expensive.",
-    "zh": "资本开支指引上调部分因内存涨价。"
+    "en": "Memory and other component prices have raised the cost of each unit of capacity.",
+    "zh": "内存等零部件涨价推高了单位产能成本。"
    }
   }
  ],
@@ -225,8 +225,8 @@ window.FCF = {
     "zh": "经营现金流"
    },
    "p": {
-    "en": "$161B over the trailing 12 months, up 33%.",
-    "zh": "近12月 1610 亿美元，增 33%。"
+    "en": "$168.3B over the trailing 12 months, up 29%.",
+    "zh": "近12月 1683 亿美元，增 29%。"
    }
   },
   {
@@ -235,34 +235,34 @@ window.FCF = {
     "zh": "发行债券"
    },
    "p": {
-    "en": "$59.5B of debt issued in Q1 2026 and $22.9B in Q2.",
-    "zh": "2026 年第一季举债 595 亿美元，第二季 229 亿。"
+    "en": "Long-term debt reached $173.1B at Sep 30 after heavy issuance in 2026.",
+    "zh": "2026 年大量发债后，9月30日长期债务达 1731 亿美元。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash & securities, Jun 2026",
-    "zh": "2026年6月现金及证券"
+    "en": "Cash & securities, Sep 2026",
+    "zh": "2026年9月现金及证券"
    },
-   123000
+   114200
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   -68600
+   -95000
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash & securities, Jun 2027 (est.)",
-  "zh": "2027年6月现金及证券（估）"
+  "en": "Cash & securities, Sep 2027 (est.)",
+  "zh": "2027年9月现金及证券（估）"
  },
  "bridgeNote": {
-  "en": "Before any new bonds; Amazon has been issuing debt regularly in 2026.",
-  "zh": "未计入新发债券；亚马逊 2026 年持续发债。"
+  "en": "Before any new bonds; Amazon has issued debt regularly in 2026 and is likely to keep doing so.",
+  "zh": "未计入新发债券；亚马逊 2026 年持续发债，预计还会继续。"
  },
  "extraNote": {
   "en": "The Anthropic gain is a non-cash markup and does not affect cash flow.",
@@ -274,12 +274,12 @@ window.FCF = {
    "https://stockanalysis.com/stocks/amzn/financials/cash-flow-statement/?p=quarterly"
   ],
   [
-   "Q2 2026 call: capex",
-   "https://fool.com/earnings/call-transcripts/2026/08/07/amazon-amzn-q2-2026-earnings-call-transcript"
+   "Q3 2026 release: cash flow and balance sheet",
+   "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
   ],
   [
-   "Q2 2026 10-Q: liquidity",
-   "https://keid.app/filings/870977278358589440"
+   "Q3 2026 call: 2027 capex",
+   "https://wabx.net/2026/10/29/amazon-projects-fourth-quarter-sales-below-estimates"
   ]
  ]
 };

@@ -1,31 +1,32 @@
 {
  "ticker": "SNDK",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
-  "en": "Q4 FY2026 (June quarter)",
-  "zh": "2026 财年第四季（6 月季度）"
+  "en": "Q1 FY2027 (September quarter, ended Oct 2)",
+  "zh": "2027 财年第一季（9 月季度，截至 10 月 2 日）"
  },
- "reported": "2026-08-05",
+ "reported": "2026-10-29",
  "timing": "amc",
- "pre_close": 1350.5,
+ "pre_close": 1330.05,
  "react": {
-  "date": "2026-08-06",
-  "close": 1258.58,
-  "pct": -6.8
+  "date": "2026-10-29",
+  "close": 1295.05,
+  "pct": -2.6,
+  "ah": true
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 1404.77,
-  "pct": 4.0
+  "date": "2026-10-29",
+  "close": 1330.05,
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "Revenue rose 372% to $8.97B at an 84.6% gross margin, and non-GAAP EPS of $39.25 beat the ~$34.6 consensus; data-center revenue roughly doubled from Q1 to $2.98B. The board added $14B to the buyback. The Q1 guide of $10.3–10.8B and $44–46 EPS was about in line, with margins of 83–85%. CFO Luis Visoso stressed new long-term deals with eight customers, covering over half of fiscal 2027 bits and about two-thirds of 2028, to make NAND less cyclical.",
-   "The stock had jumped 11% the day before and fell 5.4% on report day, then another 6.8% the next session, since the revenue guide sat slightly below consensus and margins looked to have peaked. It hit $1,212 on Aug 7, about 10% below the pre-report close. The Aug 13 investor day, which laid out the multi-year agreements, sent it up 13.7%, and it now trades well above the pre-report level."
+   "Revenue rose 378% to $11.0B against $10.7B expected, and non-GAAP EPS of $49.51 beat the ~$47.15 consensus, both above the company's own range. Data-center revenue jumped 61% in a quarter to $4.8B, and gross margin edged up to 85.1%. The Q2 guide of $12.2–12.6B and $55–57 EPS (pre-split) topped consensus of about $12.3B and $53.3. CEO David Goeckeler said demand keeps growing; CFO Luis Visoso said about half of FY27 bits are under long-term deals and the pipeline exceeds supply through the decade. The board approved an 8-for-1 split.",
+   "Shares fell 5.3% to $1,330.05 in the regular session before the report, after jumping 7.7% the day before. After hours they swung between about $1,295 (−2.6%) and $1,368 (+2.9%) as investors weighed the beat, the higher guide and the split against the valuation after a roughly 550% one-year run and a 29% drop in consumer sales. The first full session after the report, on Oct 30, is still to come."
   ],
   "zh": [
-   "营收增长 372% 至 89.7 亿美元，毛利率 84.6%，非 GAAP 每股收益 39.25 美元，高于约 34.6 美元的预期；数据中心营收较上季约翻倍至 29.8 亿美元。董事会追加 140 亿美元回购。第一季指引营收 103–108 亿美元、每股收益 44–46 美元，基本符合预期，毛利率 83–85%。CFO 路易斯·维索索强调与八家客户签订的长期协议，覆盖 2027 财年过半、2028 财年约三分之二的出货量，以降低 NAND 的周期性。",
-   "股价前一天大涨 11%，财报当天跌 5.4%，次日再跌 6.8%：营收指引略低于预期，且毛利率似已见顶。8 月 7 日低见 1,212 美元，较财报前收盘低约 10%。8 月 13 日投资者日详细介绍多年期协议，股价大涨 13.7%，目前明显高于财报前水平。"
+   "营收增长 378% 至 110 亿美元，高于 107 亿美元的预期；非 GAAP 每股收益 49.51 美元，高于约 47.15 美元的一致预期，两者均超出公司自身指引。数据中心营收单季环比增长 61% 至 48 亿美元，毛利率小幅升至 85.1%。第二季指引营收 122–126 亿美元、每股收益 55–57 美元（拆股前），高于约 123 亿美元和 53.3 美元的预期。CEO 大卫·格克勒称需求持续增长；CFO 路易斯·维索索表示 FY27 约一半出货位元已纳入长期协议，潜在需求在本十年内都超过供给。董事会批准 1 拆 8 股票分割。",
+   "股价在财报前的常规交易时段下跌 5.3% 至 1,330.05 美元，前一天曾大涨 7.7%。盘后股价在约 1,295 美元（−2.6%）与 1,368 美元（+2.9%）之间波动：投资者一方面看到业绩超预期、指引上调和拆股，另一方面权衡一年约 550% 涨幅后的估值以及消费者营收下滑 29%。财报后首个完整交易日（10 月 30 日）尚未开始。"
   ]
  },
  "ceo": {
@@ -52,12 +53,16 @@
  },
  "sources": [
   {
-   "t": "Q4 FY26 call transcript",
-   "u": "https://investing.com/news/transcripts/earnings-call-transcript-sandisk-beats-q4-2026-forecasts-shares-slide-93CH-4839552"
+   "t": "Q1 FY27 results and Q2 guidance",
+   "u": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-10-29-sandisk-reports-fiscal-first-quarter-2027-financial-results"
   },
   {
-   "t": "Q4 FY26 guidance read",
-   "u": "https://stockhub.kr/en/insights/sandisk-fy4q26-earnings-20260806"
+   "t": "Q1 FY27 call transcript and after-hours move",
+   "u": "https://investing.com/news/transcripts/earnings-call-transcript-sandisk-beats-q1-2027-estimates-shares-fall-93CH-4985403"
+  },
+  {
+   "t": "After-hours rebound and split dates",
+   "u": "https://blockonomi.com/sandisk-corporation-sndk-stock-data-center-revenue-jumps-61-as-company-unveils-8-for-1-split"
   }
  ]
 }

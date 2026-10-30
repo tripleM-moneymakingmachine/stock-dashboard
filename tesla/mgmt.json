@@ -1,6 +1,6 @@
 {
  "ticker": "TSLA",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -14,18 +14,18 @@
   "pct": -3.1
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 404.22,
-  "pct": 4.6
+  "date": "2026-10-29",
+  "close": 403.3,
+  "pct": 4.4
  },
  "review": {
   "en": [
    "Revenue was flat at $28.05B, slightly above the ~$27.9B consensus, and adjusted EPS of $0.48 beat $0.45, but GAAP EPS fell to $0.22 and operating income dropped 56% to $718M as R&D rose 69%. Margins recovered: gross margin 19.6%, auto ex-credits 18.1% and energy 33%, helped by tariff refunds. Free cash flow swung to +$1.53B as capex eased to $4.73B. CFO Vaibhav Taneja cut 2026 capex to about $20B from over $25B, and Musk said the car backlog is the largest in four years, battery supply still limits output, and unsupervised FSD for owners is targeted around Q2 2027.",
-   "Shares had closed up 3.4% at $386.47 into the report and first rose after hours on the EPS beat, then turned lower when the capex cut was read as AI and robot spending lagging plan. In the first session they briefly traded back above the prior close, then closed down 3.1% at $374.58 as the Nasdaq fell 2.6% on AI-spending worries led by Meta. Optimus customer deliveries pushed to around end-2027 and a lower long-range sales goal added to the caution."
+   "Shares closed up 3.4% at $386.47 into the report and rose after hours on the EPS beat, then turned lower as the capex cut was read as AI and robot spending lagging plan; the first session closed down 3.1% at $374.58 amid Meta-led AI worries. The next week reversed it: a Barclays upgrade to Overweight with a $450 target, partly on a possible SpaceX merger, lifted the stock 5.2% on Oct 26 and 4.0% on Oct 27. It closed at $403.30 on Oct 29, 4.4% above the pre-report close."
   ],
   "zh": [
    "营收持平于 280.5 亿美元，略高于约 279 亿的预期；经调整每股收益 0.48 美元高于 0.45 美元，但 GAAP 每股收益降至 0.22 美元，研发增长 69% 使营业利润下滑 56% 至 7.18 亿美元。利润率回升：毛利率 19.6%，不含积分的汽车毛利率 18.1%，能源毛利率 33%（受关税退款带动）。资本开支降至 47.3 亿美元，自由现金流转正至 +15.3 亿。CFO 瓦伊巴夫·塔内贾将 2026 年资本开支由逾 250 亿下调至约 200 亿美元；马斯克称汽车订单积压为四年来最大，电池供应仍限制产量，面向车主的无人监督 FSD 目标约为 2027 年第二季。",
-   "财报前股价收涨 3.4% 至 386.47 美元，盘后最初因每股收益超预期而上涨；资本开支下调被解读为 AI 与机器人投入落后于计划后转跌。首个交易日盘中一度回到前收盘价之上，但在 Meta 引发的 AI 支出担忧拖累纳斯达克下跌 2.6% 之际，收跌 3.1% 至 374.58 美元。Optimus 客户交付推迟至约 2027 年底，以及下调的长期销量目标，也令市场谨慎。"
+   "财报前股价收涨 3.4% 至 386.47 美元，盘后因每股收益超预期上涨，随后资本开支下调被解读为 AI 与机器人投入落后于计划而转跌；首个交易日在 Meta 引发的 AI 担忧中收跌 3.1% 至 374.58 美元。随后一周走势逆转：巴克莱将评级上调至“增持”、目标价 450 美元，部分理由是可能与 SpaceX 合并，推动股价 10 月 26 日上涨 5.2%、27 日上涨 4.0%。10 月 29 日收于 403.30 美元，较财报前收盘高 4.4%。"
   ]
  },
  "ceo": {
@@ -60,8 +60,9 @@
    "u": "https://za.investing.com/news/stock-market-news/earnings-call-transcript-tesla-beats-q3-2026-estimates-as-stock-slips-after-hours-93CH-4517968"
   },
   {
-   "t": "First-session move (Yahoo Finance)",
-   "u": "https://finance.yahoo.com/markets/stocks/article/tesla-stock-slips-despite-q3-earnings-beat-better-than-expected-capex-spend-101521707.html"
+   "t": "Barclays upgrade and rally (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/stocks/articles/tesla-jumps-5-barclays-raises-053537378.html"
   }
- ]
+ ],
+ "followup_done": true
 }

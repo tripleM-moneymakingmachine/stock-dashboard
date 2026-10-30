@@ -2,38 +2,38 @@
 
 Investor dashboards, EN / 中文, light / dark:
 
-- **Arm Holdings (ARM)** — `arm/index.html` → https://angcharles.github.io/stock-dashboard/arm/
-- **Tesla (TSLA)** — `tesla/index.html` → https://angcharles.github.io/stock-dashboard/tesla/
-- **Sandisk (SNDK)** — `sndk/index.html` → https://angcharles.github.io/stock-dashboard/sndk/
-- **Intel (INTC)** — `intc/index.html` → https://angcharles.github.io/stock-dashboard/intc/
-- **SpaceX (SPCX)** — `spcx/index.html` → https://angcharles.github.io/stock-dashboard/spcx/
-- **Micron (MU)** — `mu/index.html` → https://angcharles.github.io/stock-dashboard/mu/
-- **Lumentum (LITE)** — `lite/index.html` → https://angcharles.github.io/stock-dashboard/lite/
-- **Coherent (COHR)** — `cohr/index.html` → https://angcharles.github.io/stock-dashboard/cohr/
-- **Alphabet (GOOGL)** — `googl/index.html` → https://angcharles.github.io/stock-dashboard/googl/
-- **Meta (META)** — `meta/index.html` → https://angcharles.github.io/stock-dashboard/meta/
-- **NVIDIA (NVDA)** — `nvda/index.html` → https://angcharles.github.io/stock-dashboard/nvda/
-- **Zscaler (ZS)** — `zs/index.html` → https://angcharles.github.io/stock-dashboard/zs/
-- **Bloom Energy (BE)** — `be/index.html` → https://angcharles.github.io/stock-dashboard/be/
-- **Applied Optoelectronics (AAOI)** — `aaoi/index.html` → https://angcharles.github.io/stock-dashboard/aaoi/
-- **AMD (AMD)** — `amd/index.html` → https://angcharles.github.io/stock-dashboard/amd/
-- **MP Materials (MP)** — `mp/index.html` → https://angcharles.github.io/stock-dashboard/mp/
-- **Amazon (AMZN)** — `amzn/index.html` → https://angcharles.github.io/stock-dashboard/amzn/
-- **Microsoft (MSFT)** — `msft/index.html` → https://angcharles.github.io/stock-dashboard/msft/
-- **Marvell (MRVL)** — `mrvl/index.html` → https://angcharles.github.io/stock-dashboard/mrvl/
-- **SK hynix (SKHY)** — `skhy/index.html` → https://angcharles.github.io/stock-dashboard/skhy/
-- **TSMC (TSM)** — `tsm/index.html` → https://angcharles.github.io/stock-dashboard/tsm/
-- **Broadcom (AVGO)** — `avgo/index.html` → https://angcharles.github.io/stock-dashboard/avgo/
-- **Rockwell Automation (ROK)** — `rok/index.html` → https://angcharles.github.io/stock-dashboard/rok/
-- **Applied Materials (AMAT)** — `amat/index.html` → https://angcharles.github.io/stock-dashboard/amat/
-- **ASML (ASML)** — `asml/index.html` → https://angcharles.github.io/stock-dashboard/asml/
-- **Palantir (PLTR)** — `pltr/index.html` → https://angcharles.github.io/stock-dashboard/pltr/
-- **Corning (GLW)** — `glw/index.html` → https://angcharles.github.io/stock-dashboard/glw/
-- **Teradyne (TER)** — `ter/index.html` → https://angcharles.github.io/stock-dashboard/ter/
+- **Arm Holdings (ARM)** — `arm/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/arm/
+- **Tesla (TSLA)** — `tesla/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/tesla/
+- **Sandisk (SNDK)** — `sndk/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/sndk/
+- **Intel (INTC)** — `intc/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/intc/
+- **SpaceX (SPCX)** — `spcx/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/spcx/
+- **Micron (MU)** — `mu/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/mu/
+- **Lumentum (LITE)** — `lite/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/lite/
+- **Coherent (COHR)** — `cohr/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/cohr/
+- **Alphabet (GOOGL)** — `googl/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/googl/
+- **Meta (META)** — `meta/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/meta/
+- **NVIDIA (NVDA)** — `nvda/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/nvda/
+- **Zscaler (ZS)** — `zs/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/zs/
+- **Bloom Energy (BE)** — `be/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/be/
+- **Applied Optoelectronics (AAOI)** — `aaoi/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/aaoi/
+- **AMD (AMD)** — `amd/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/amd/
+- **MP Materials (MP)** — `mp/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/mp/
+- **Amazon (AMZN)** — `amzn/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/amzn/
+- **Microsoft (MSFT)** — `msft/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/msft/
+- **Marvell (MRVL)** — `mrvl/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/mrvl/
+- **SK hynix (SKHY)** — `skhy/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/skhy/
+- **TSMC (TSM)** — `tsm/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/tsm/
+- **Broadcom (AVGO)** — `avgo/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/avgo/
+- **Rockwell Automation (ROK)** — `rok/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/rok/
+- **Applied Materials (AMAT)** — `amat/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/amat/
+- **ASML (ASML)** — `asml/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/asml/
+- **Palantir (PLTR)** — `pltr/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/pltr/
+- **Corning (GLW)** — `glw/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/glw/
+- **Teradyne (TER)** — `ter/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/ter/
 
-- **SpaceX vs Tesla merger** — `merger/index.html` → https://angcharles.github.io/stock-dashboard/merger/ (financial metrics, 2024–28 forecasts, capex & backlog, exchange-ratio math, merger scenarios with share-price impact, verdict)
+- **SpaceX vs Tesla merger** — `merger/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/merger/ (financial metrics, 2024–28 forecasts, capex & backlog, exchange-ratio math, merger scenarios with share-price impact, verdict)
 
-Each page covers price, revenue mix, financials, free cash flow, watch list, calendar and sources. The root `index.html` (https://angcharles.github.io/stock-dashboard/) lists every stock with its latest price.
+Each page covers price, revenue mix, financials, free cash flow, watch list, calendar and sources. The root `index.html` (https://triplem-moneymakingmachine.github.io/stock-dashboard/) lists every stock with its latest price.
 
 ## Ranking on the main page
 - The stock cards on `index.html` are ordered from most to least bullish (Claude's judgment), with a rank, a tier (Bullish / Constructive / Neutral / Cautious) and a one-line reason on each card. A Claude scheduled task re-ranks them after every US session (Tue–Sat 8:22am SGT) by reordering the cards, editing the `rk` and `why` lines and the "Ranked by Claude as of" date.
@@ -151,7 +151,7 @@ Note: GitHub pauses scheduled workflows in a repo with no activity for 60 days. 
 1. Create a public repo named `stock-dashboard`.
 2. Upload everything in this repo.
 3. Settings → Pages → Source: **GitHub Actions**.
-4. Sites appear at `https://angcharles.github.io/stock-dashboard/` plus `/arm/`, `/tesla/`, `/sndk/` and `/intc/`.
+4. Sites appear at `https://triplem-moneymakingmachine.github.io/stock-dashboard/` plus `/arm/`, `/tesla/`, `/sndk/` and `/intc/`.
 
 For information only, not investment advice. Not affiliated with Arm Holdings plc, Tesla, Inc., Sandisk Corporation or Intel Corporation.
 

@@ -1,6 +1,6 @@
 {
  "ticker": "MSFT",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
   "en": "Q1 FY2027 (September quarter)",
   "zh": "2027 财年第一季（9 月季度）"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 531.01,
  "react": {
-  "date": "2026-10-28",
-  "close": 552.25,
-  "pct": 4.0,
-  "ah": true
+  "date": "2026-10-29",
+  "close": 530.14,
+  "pct": -0.2
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 531.01,
-  "pct": 0.0
+  "date": "2026-10-29",
+  "close": 530.14,
+  "pct": -0.2
  },
  "review": {
   "en": [
    "Revenue rose 19% to $92.3B against $90.7B expected, and EPS excluding OpenAI of $4.89 beat $4.73. Azure, reported in dollars for the first time, grew 48% to $33.2B, above the 44–45% guide. CFO Amy Hood guided December-quarter revenue to $96.0–97.1B, above the $95.6B consensus, and Azure to 49–50%, saying demand still exceeds supply. Capex of $45.2B fell short as third-party capacity slipped; she expects over $50B next quarter and faster spending later. Operating margin widened to 49.8%, and CEO Satya Nadella said Copilot daily users rose about 50%.",
-   "Shares closed at $531.01 before the report and rose about 4% after hours to roughly $552, trading between 2% and 5% higher. Faster Azure growth and a strong guide eased the AI-spending worries that Meta and Alphabet had revived, and positive free cash flow of $18.6B helped. A backlog flat at $677B and a capex shortfall that is partly timing tempered the gains. The first full session, on Oct 29, is still to come."
+   "Shares closed at $531.01 before the report and rose about 4% after hours to roughly $552 on the Azure beat, the strong guide and $18.6B of free cash flow. The gain faded in the first session, on Oct 29: the stock closed down 0.2% at $530.14 as Alphabet's record drop hit AI stocks and the Nasdaq fell 1.4%. A planned $25B bond sale and a full-year capex estimate trimmed to $170B on delayed GPU contracts also drew attention."
   ],
   "zh": [
    "营收增长 19% 至 923 亿美元，高于 907 亿美元预期；不含 OpenAI 的每股收益 4.89 美元高于 4.73 美元。Azure 首次以美元金额披露，增长 48% 至 332 亿美元，高于 44–45% 的指引。CFO 艾米·胡德指引 12 月季度营收 960–971 亿美元，高于 956 亿的一致预期，Azure 增长 49–50%，并称需求仍超供给。因第三方产能交付推迟，资本开支 452 亿美元低于计划；她预计下季超过 500 亿，之后支出加快。营业利润率升至 49.8%，CEO 萨提亚·纳德拉称 Copilot 日活用户增长约 50%。",
-   "财报前股价收于 531.01 美元，盘后上涨约 4% 至约 552 美元，涨幅在 2% 至 5% 之间波动。Azure 提速和强劲指引缓解了 Meta 与 Alphabet 重新引发的 AI 支出担忧，186 亿美元的正自由现金流也起到支撑。积压订单持平于 6,770 亿美元，以及部分属于时间差的资本开支不足，限制了涨幅。10 月 29 日首个完整交易日的表现尚待观察。"
+   "财报前股价收于 531.01 美元，因 Azure 超预期、指引强劲及 186 亿美元自由现金流，盘后上涨约 4% 至约 552 美元。首个交易日（10 月 29 日）涨幅消失：Alphabet 创纪录下跌拖累 AI 股，纳斯达克指数跌 1.4%，股价收跌 0.2% 至 530.14 美元。计划发行 250 亿美元债券，以及因 GPU 合同推迟而将全年资本开支预估下调至 1,700 亿美元，也受到关注。"
   ]
  },
  "ceo": {
@@ -61,8 +60,8 @@
    "u": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
   },
   {
-   "t": "Q1 FY27 call coverage (Yahoo Finance)",
-   "u": "https://finance.yahoo.com/markets/stocks/live/microsoft-earnings-live-microsoft-beats-q1-expectations-on-top-and-bottom-line-on-ai-growth-204510452.html"
+   "t": "First-session move: bond plan, AI selloff (Invezz)",
+   "u": "https://invezz.com/news/2026/10/29/microsoft-stock-falls-as-25b-bond-plan-draws-focus-despite-azure-growth"
   }
  ]
 }

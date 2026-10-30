@@ -1,6 +1,6 @@
 {
  "ticker": "META",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -14,18 +14,18 @@
   "pct": -7.0
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 612.49,
-  "pct": -12.2
+  "date": "2026-10-29",
+  "close": 624.52,
+  "pct": -10.5
  },
  "review": {
   "en": [
    "Revenue rose 26% to $64.6B, beating ~$63.3B, as ad impressions grew 10% and price per ad 14%. GAAP EPS of $3.83 absorbed a $9.89B charge for the youth-safety deal with 52 attorneys general; excluding it, EPS was $7.40 and operating margin 35.4%. Capex of $34.9B outran operating cash flow, so free cash flow was −$2.1B and there were no buybacks. The Q4 guide of $73–76B tops consensus, 2026 capex was narrowed to $135–145B, and CFO Susan Li expects strong growth through 2027, with Reality Labs losses narrowing to ~$15B. Zuckerberg said Muse passed 10M users in six weeks; a non-voting Class C share is planned for January.",
-   "Shares first rose about 3.8% after hours, then reversed: in the first session they closed down 7.0% at $648.85, erasing the stock's 2026 gain. Negative free cash flow, signed lease and contract commitments of over $800B and the non-voting Class C plan, read as a way to raise equity for AI, revived funding worries; Meta's credit default swap spreads hit records. The selloff spread to chipmakers and other AI spenders, and the Nasdaq fell 2.6%."
+   "Shares first rose about 3.8% after hours, then closed down 7.0% at $648.85 in the first session as negative free cash flow, over $800B of commitments and the non-voting Class C plan revived funding worries. The slide continued: on Oct 26 Meta priced a $25B share sale at $625, with $12.5B of convertible preferred and a planned $60B at-the-market program, and the stock fell to $612.49 by Oct 28 before closing at $624.52 on Oct 29, 10.5% below its pre-report close."
   ],
   "zh": [
    "营收增长 26% 至 646 亿美元，高于约 633 亿的预期，广告展示量增 10%、单价增 14%。GAAP 每股收益 3.83 美元，计入与 52 位州总检察长达成青少年安全和解的 98.9 亿美元费用；剔除后每股 7.40 美元，营业利润率 35.4%。资本开支 349 亿美元超过经营现金流，自由现金流为 −21 亿美元，当季未回购。第四季营收指引 730–760 亿美元高于预期，2026 年资本开支区间收窄至 1,350–1,450 亿美元；CFO Susan Li 预计 2027 年全年保持强劲增长，Reality Labs 亏损收窄至约 150 亿。扎克伯格称 Muse 六周内用户突破 1000 万；公司计划于明年 1 月推出无投票权 C 类股。",
-   "盘后股价一度上涨约 3.8%，随后反转：首个交易日收跌 7.0% 至 648.85 美元，抹去 2026 年全部涨幅。自由现金流为负、已签署租约和合同承诺逾 8,000 亿美元，以及被解读为可为 AI 发行股权融资的无投票权 C 类股计划，重新引发融资担忧；Meta 信用违约互换利差创纪录。抛售蔓延至芯片股及其他 AI 投资大户，纳斯达克指数下跌 2.6%。"
+   "盘后股价一度上涨约 3.8%，首个交易日却收跌 7.0% 至 648.85 美元：自由现金流为负、逾 8,000 亿美元的承诺以及无投票权 C 类股计划重新引发融资担忧。跌势随后延续：10 月 26 日 Meta 以每股 625 美元定价 250 亿美元增发，另有 125 亿美元强制可转换优先股及计划中的 600 亿美元按市价发行计划；股价至 10 月 28 日跌至 612.49 美元，10 月 29 日收于 624.52 美元，较财报前收盘低 10.5%。"
   ]
  },
  "ceo": {
@@ -60,8 +60,9 @@
    "u": "https://www.investing.com/news/transcripts/earnings-call-transcript-meta-beats-q3-2026-estimates-as-ai-push-lifts-shares-93CH-4964260"
   },
   {
-   "t": "First-session selloff (CNBC)",
-   "u": "https://cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
+   "t": "$25B share sale and $60B ATM plan (Investing.com)",
+   "u": "https://ca.investing.com/news/stock-market-news/why-is-meta-platforms-stock-sliding-today-93CH-4906272"
   }
- ]
+ ],
+ "followup_done": true
 }

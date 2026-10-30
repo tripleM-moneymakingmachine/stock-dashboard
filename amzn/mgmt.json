@@ -1,31 +1,32 @@
 {
  "ticker": "AMZN",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-07-30",
+ "reported": "2026-10-29",
  "timing": "amc",
- "pre_close": 235.5,
+ "pre_close": 243.79,
  "react": {
-  "date": "2026-07-31",
-  "close": 271.58,
-  "pct": 15.3
+  "date": "2026-10-29",
+  "close": 226.97,
+  "pct": -6.9,
+  "ah": true
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 254.6,
-  "pct": 8.1
+  "date": "2026-10-29",
+  "close": 243.79,
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "Sales rose 20% to $200.6B, ahead of forecasts. AWS grew 37% to $42.2B, its fastest pace since 2021, with a 39% operating margin. Net income of $62.6B included a $53.4B gain on the Anthropic stake. Free cash flow turned negative (−$7.6B) on heavy AI capex, and the Q3 sales guide of $197–202B was below consensus. CEO Andy Jassy said even with more spending Amazon won't have enough capacity for 2026 or likely 2027, and called demand already lined up for 2028 striking.",
-   "Shares jumped 9% after hours and closed up 15.3% the next day, against an options-implied move of about 4.6%: AWS reaccelerating mattered more than cash flow or the soft guide. The rally reached $284 on Aug 3, 21% above the pre-report close, then much of it faded through September toward $246 as AI-spending worries returned. The stock is still about 11% above its pre-report level."
+   "Revenue rose 12% to $201.9B, just short of the ~$202.2B consensus, and EPS of $1.89 missed $1.97; moving Prime Day into Q2 cost about 4 points of growth. AWS accelerated for a sixth quarter to 39.3% ($46.0B, 38.7% margin) with a $578B backlog, and operating margin hit a record 13.9%. CEO Andy Jassy projected AWS growth above 40% in 2027 and 2028 and said capex will rise meaningfully next year. The Q4 guide of $240–247B brackets the ~$244.5B consensus.",
+   "Shares fell 4.3% to $243.79 in the session before the report as Alphabet's slide hit AI spenders, then dropped nearly 7% after hours to about $227. Q3 capex of $77.3B, roughly $20B above estimates, pushed trailing free cash flow to −$42.4B and outweighed the AWS beat and the long-range targets; Jefferies called the results mostly weak. The first full session, on Oct 30, is still to come."
   ],
   "zh": [
-   "销售额增长 20% 至 2,006 亿美元，高于预期。AWS 增长 37% 至 422 亿美元，为 2021 年以来最快，营业利润率 39%。626 亿美元净利润中包含对 Anthropic 持股的 534 亿美元收益。大规模 AI 资本开支令自由现金流转负（−76 亿美元），第三季销售指引 1,970–2,020 亿美元低于预期。CEO 安迪·贾西表示即使加大投入，2026 年乃至 2027 年产能仍将不足，并称已锁定的 2028 年需求相当惊人。",
-   "盘后大涨 9%，次日收涨 15.3%，远超期权隐含的约 4.6% 波动：AWS 重新加速比现金流和偏弱指引更重要。涨势在 8 月 3 日达到 284 美元，较财报前收盘高 21%，9 月 AI 开支担忧再起，涨幅大部分回吐至约 246 美元。目前仍较财报前高约 11%。"
+   "营收增长 12% 至 2,019 亿美元，略低于约 2,022 亿美元的一致预期；每股收益 1.89 美元，不及 1.97 美元。Prime Day 移至第二季拖累增速约 4 个百分点。AWS 连续第六个季度加速，增长 39.3%（460 亿美元，利润率 38.7%），积压订单 5,780 亿美元；营业利润率创纪录达 13.9%。CEO 安迪·贾西预计 AWS 在 2027 和 2028 年增速均超 40%，并称明年资本开支将明显增加。第四季营收指引 2,400–2,470 亿美元，涵盖约 2,445 亿的一致预期。",
+   "财报前一交易日，Alphabet 大跌拖累 AI 投资大户，股价下跌 4.3% 至 243.79 美元；财报后盘后再跌近 7% 至约 227 美元。第三季资本开支 773 亿美元，比预期高出约 200 亿，使近 12 个月自由现金流降至 −424 亿美元，盖过了 AWS 超预期和长期目标；Jefferies 称业绩整体偏弱。10 月 30 日首个完整交易日的表现尚待观察。"
   ]
  },
  "ceo": {
@@ -52,12 +53,16 @@
  },
  "sources": [
   {
-   "t": "Q2 2026 results (CNBC)",
-   "u": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html"
+   "t": "Q3 2026 earnings release (SEC)",
+   "u": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
   },
   {
-   "t": "Priced vs. actual move",
-   "u": "https://movesurge.com/insights/amazon-amzn-options-priced-move-vs-actual-2026-07-30"
+   "t": "Q3 2026 call transcript (Investing.com)",
+   "u": "https://investing.com/news/transcripts/earnings-call-transcript-amazon-q3-2026-misses-eps-as-shares-fall-after-hours-93CH-4985489"
+  },
+  {
+   "t": "Capex, cash burn and after-hours move (Reuters)",
+   "u": "https://wabx.net/2026/10/29/amazon-projects-fourth-quarter-sales-below-estimates"
   }
  ]
 }

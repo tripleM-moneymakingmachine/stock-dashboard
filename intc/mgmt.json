@@ -1,31 +1,32 @@
 {
  "ticker": "INTC",
- "asof": "2026-10-29",
+ "asof": "2026-10-30",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-07-23",
+ "reported": "2026-10-29",
  "timing": "amc",
- "pre_close": 100.23,
+ "pre_close": 92.07,
  "react": {
-  "date": "2026-07-24",
-  "close": 92.32,
-  "pct": -7.9
+  "date": "2026-10-29",
+  "close": 70.97,
+  "pct": -22.9,
+  "ah": true
  },
  "since": {
-  "date": "2026-10-28",
-  "close": 95.53,
-  "pct": -4.7
+  "date": "2026-10-29",
+  "close": 92.07,
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "Revenue of $16.1B rose 25%, Intel's fastest growth since 2011, and came in $1.8B above the guide midpoint; non-GAAP EPS of $0.42 doubled the ~$0.21 consensus and gross margin reached 41.8%. Data Center and AI grew 59% to $6.3B. But Intel booked an $11.0B GAAP loss, the foundry still lost about $2.1B, and free cash flow was negative as capex rose. CEO Lip-Bu Tan credited AI demand and better manufacturing; the Q3 guide is $0.38 EPS, with flat PC sales because of the memory shortage.",
-   "The stock had risen about 160% in the year before the report. It rose 3% after hours, then fell 7.9% the next day and kept sliding to $81.88 by Jul 29, 18% below the pre-report close, as investors focused on foundry losses, cash burn and valuation, and several analysts moved to Hold. It bounced 11% with the chip rally on Jul 30 and has since climbed back above the pre-report price."
+   "Revenue rose 21% to $16.5B, in line with the ~$16.5B consensus, and non-GAAP EPS of $0.52 beat $0.40 as gross margin reached 44.1%, two points above guide. Data Center and AI grew 78% to $7.3B, its best in 15 years, while PC chips fell 5% on the memory shortage. The Q4 guide of $15.5B and $0.25 EPS fell well short of about $17.1B and $0.43. CEO Lip-Bu Tan said supply, not demand, limits servers; CFO David Zinsner expects PC softness through H1 2027 and no positive cash flow in 2026.",
+   "Shares closed at $92.07 before the report, already 35% below the June high, and fell as much as 23% after hours, ending the evening near $70.97. The weak guide drove the drop: a deadly explosion shut the Israel fab for two weeks, costing about $600M of revenue over two quarters and about 2 points of Q4 margin, on top of PC weakness. The selloff spread to other chip stocks. The first full session, on Oct 30, is still to come."
   ],
   "zh": [
-   "营收 161 亿美元，增长 25%，为 2011 年以来最快增速，较指引中值高出 18 亿美元；非 GAAP 每股收益 0.42 美元，是约 0.21 美元预期的两倍，毛利率 41.8%。数据中心与 AI 业务增长 59% 至 63 亿美元。但 GAAP 净亏损 110 亿美元，代工业务仍亏损约 21 亿美元，资本开支上升令自由现金流为负。CEO 陈立武将成绩归功于 AI 需求与制造执行改善；第三季指引每股收益 0.38 美元，并预计内存短缺下 PC 销量持平。",
-   "财报前一年股价已上涨约 160%。盘后上涨 3%，但次日下跌 7.9%，并持续走低至 7 月 29 日的 81.88 美元，较财报前收盘低 18%：投资者聚焦代工亏损、现金消耗和估值，多家券商下调至「持有」。7 月 30 日随芯片股反弹 11%，此后已重回财报前价位之上。"
+   "营收增长 21% 至 165 亿美元，与约 165 亿美元的预期持平；非 GAAP 每股收益 0.52 美元，高于 0.40 美元预期，毛利率 44.1%，比指引高 2 个百分点。数据中心与 AI 业务增长 78% 至 73 亿美元，为 15 年来最佳，PC 芯片则因内存短缺下滑 5%。第四季指引营收 155 亿美元、每股收益 0.25 美元，远低于约 171 亿美元和 0.43 美元的预期。CEO 陈立武称服务器受限于供应而非需求；CFO 津斯纳预计 PC 疲软持续至 2027 年上半年，2026 年现金流不会为正。",
+   "财报前收盘价为 92.07 美元，已较 6 月高点低 35%；盘后一度下跌 23%，夜盘收于约 70.97 美元。疲弱指引是主因：一场致命爆炸令以色列晶圆厂停产两周，两个季度内损失约 6 亿美元营收，并拖累第四季毛利率约 2 个百分点，叠加 PC 疲软。抛售蔓延至其他芯片股。10 月 30 日的首个完整交易日尚未开始。"
   ]
  },
  "ceo": {
@@ -52,12 +53,16 @@
  },
  "sources": [
   {
-   "t": "Q2 2026 results (CNBC)",
-   "u": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html"
+   "t": "Q3 2026 results and Q4 guidance (Intel)",
+   "u": "https://d1io3yog0oux5.cloudfront.net/_3e3cf6c803aeb76df367ace23b2ada5d/intel/news/2026-10-29_Intel_Reports_Third_Quarter_2026_Financial_1786.pdf"
   },
   {
-   "t": "Q2 2026 slides and reaction",
-   "u": "https://investing.com/news/company-news/intel-q2-2026-slides-revenue-surges-25-ai-drives-record-growth-93CH-4810222"
+   "t": "Q3 2026 results vs. estimates (CNBC)",
+   "u": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html"
+  },
+  {
+   "t": "Israel fab blast and after-hours drop (Reuters via Straits Times)",
+   "u": "https://www.straitstimes.com/business/intel-shares-drop-21-on-israel-factory-blast-pc-weakness"
   }
  ]
 }
