@@ -13,6 +13,7 @@ on:
       - scripts/fetch-korea.mjs
       - scripts/fetch-ktb-futures.mjs
       - scripts/fetch-korea-flows.mjs
+      - scripts/ust-transmission.mjs
       - .github/workflows/korea-bonds.yml
   schedule:
     - cron: "40 9 * * 1-5"    # 17:40 Singapore (18:40 Seoul), after the KOFIA close and OTC summaries
