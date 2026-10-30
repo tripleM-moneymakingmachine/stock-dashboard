@@ -21,6 +21,7 @@ const CGB = "2c9081e50a2f9606010a3068cae70001"; // 中债国债收益率曲线
 const TENORS = [0.25, 0.5, 1, 2, 3, 5, 7, 10, 15, 20, 30, 40, 50];
 const shDate = (ms) => new Date(ms).toLocaleDateString("en-CA", { timeZone: "Asia/Shanghai" });
 const today = shDate(Date.now());
+const dayOf = (t) => (t && /^\d{4}-\d{2}-\d{2}/.test(t) ? t.slice(0, 10) : today); // label trades by the CFETS deal date, not the run date (weekend runs return Friday's deals)
 const addDays = (d, n) => shDate(Date.parse(d + "T12:00:00+08:00") + n * 864e5);
 // CCDC policy bank bond curves (yield to maturity). `re` matches the issuer in a CFETS bond name.
 const PB = [
@@ -210,7 +211,7 @@ const ncdBonds = ncdFresh ? Object.entries(ncdTrades).map(([code, b]) => {
   const cy = ncdCurve ? interp(ncdCurve.pts, ttm) : null;
   return { code, isin: b.isin, name: b.short, bank: issuerOfNcd(b.short), mat: shDate(Date.parse(base + "T12:00:00+08:00") + ttm * 365.25 * 864e5), est: true, ttm: +ttm.toFixed(3), last: b.last, wavg: b.wavg, chg: b.chg, curve: cy == null ? null : +cy.toFixed(4), vs: cy == null ? null : +((b.last - cy) * 100).toFixed(1) };
 }).filter(Boolean).sort((a, b) => a.ttm - b.ttm) : (ncdWas.bonds || []);
-const ncd = { name: "Negotiable certificates of deposit", cn: NCD.cn, curve: ncdCurve, tenors: ncdTenors, bonds: ncdBonds, tradeDay: ncdFresh ? today : ncdWas.tradeDay || null, tradeTime: ncdFresh ? ncdTradeTime : ncdWas.tradeTime || null };
+const ncd = { name: "Negotiable certificates of deposit", cn: NCD.cn, curve: ncdCurve, tenors: ncdTenors, bonds: ncdBonds, tradeDay: ncdFresh ? dayOf(ncdTradeTime) : ncdWas.tradeDay || null, tradeTime: ncdFresh ? ncdTradeTime : ncdWas.tradeTime || null };
 
 // 4. Bonds: outstanding CGBs from the master list, plus anything traded that the list does not have yet
 const typeOf = (n = "") => /贴现/.test(n) ? "Discount" : /超长期?特别/.test(n) ? "Ultra-long special" : /特别/.test(n) ? "Special" : /储蓄/.test(n) ? "Savings" : "Coupon";
@@ -246,9 +247,9 @@ bonds.sort((a, b) => a.ttm - b.ttm || (a.code < b.code ? -1 : 1));
 const out = {
   updated: Math.floor(Date.now() / 1000),
   src: "ChinaBond (CCDC) China government bond yield curve (yield to maturity); bond list and ISINs from CFETS bond information; traded yields from the CFETS interbank cash-bond trade feed",
-  curve, tenors, bonds, tradeDay: Object.keys(trades).length ? today : prev.tradeDay || null, tradeTime,
+  curve, tenors, bonds, tradeDay: Object.keys(trades).length ? dayOf(tradeTime) : prev.tradeDay || null, tradeTime,
   masterUpdated: master.updated || null,
-  pb, ncd, pbTradeDay: pbFresh ? today : prev.pbTradeDay || null, pbTradeTime: pbFresh ? pbTradeTime : prev.pbTradeTime || null,
+  pb, ncd, pbTradeDay: pbFresh ? dayOf(pbTradeTime) : prev.pbTradeDay || null, pbTradeTime: pbFresh ? pbTradeTime : prev.pbTradeTime || null,
   pbSrc: "ChinaBond (CCDC) policy bank bond yield curves (中债政策性金融债收益率曲线: CDB 国开, ADBC 农发, EXIM 进出口; yield to maturity); traded yields from the CFETS interbank cash-bond trade feed",
 };
 mkdirSync("data", { recursive: true });

@@ -74,7 +74,14 @@
     const data = (r.data || []).map(([n, v, i]) => `<tr><td>${esc(n)}</td><td>${esc(v)}</td><td>${esc(i)}</td></tr>`).join("");
     const src = (r.sources || []).map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>`).join(" · ");
     const curveDate = last ? new Date(last + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }) : "";
+    const sg = (sec) => new Date(sec * 1000).toLocaleString("en-SG", { timeZone: "Asia/Singapore", weekday: "short", day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit" });
+    const dd = (t) => new Date(t.slice(0, 10) + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" });
+    const upd = [c?.updated ? `<b>Last updated ${esc(sg(c.updated))} SGT</b>` : "",
+      curveDate ? `CCDC curves: ${esc(curveDate)} close` : "",
+      c?.tradeTime ? `CFETS deals to ${esc(c.tradeTime.slice(11, 16))} Beijing ${esc(dd(c.tradeTime))}` : "",
+      r.commentary_asof ? `commentary ${esc(r.commentary_asof)}` : ""].filter(Boolean).join(" · ");
     box.innerHTML =
+      (upd ? `<p class="cr-upd">${upd}</p>` : "") +
       `<div class="eyebrow">China bond market · CCDC close ${esc(r.asof)}</div>` +
       `<h2>${esc(r.headline)}</h2>` +
       `<p class="cr-sum">${esc(r.summary)}</p>` +
