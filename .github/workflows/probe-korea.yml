@@ -1,0 +1,29 @@
+name: probe-korea
+
+# Temporary: checks which Korean data endpoints answer from a runner, commits the results.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/probe-korea.mjs, .github/workflows/probe-korea.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/probe-korea.mjs
+      - run: |
+          git add data/bench/korea-probe.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "probe-korea results" || exit 0
+          git pull -q --rebase origin main
+          git push
