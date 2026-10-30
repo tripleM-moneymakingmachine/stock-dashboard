@@ -399,6 +399,9 @@
   function render(first) {
     tiles(); rngButtons(); cgbPanel(); pbPanel(); hist(first); table();
     const upd = D.updated ? new Date(D.updated * 1000).toLocaleString("en-SG", { timeZone: "Asia/Singapore", dateStyle: "medium", timeStyle: "short" }) : "–";
+    const bs = $("bSub"); if (bs) { bs.dataset.base ||= bs.innerHTML;
+      const tt = D.tradeTime ? ` · CFETS deals to ${D.tradeTime.slice(11, 16)} Beijing ${D.tradeTime.slice(0, 10)}` : "";
+      bs.innerHTML = `<b>Last updated ${esc(upd)} SGT${esc(tt)}</b><br>${bs.dataset.base}`; }
     $("lede").innerHTML = `China government bond (CGB) yields from ChinaBond (CCDC), the official curve compiled by China Central Depository &amp; Clearing, CCDC's policy bank curves (CDB, ADBC, EXIM), and every outstanding CGB listed by bond code and ISIN with its CFETS interbank traded yield. Latest CCDC curve: <b>${esc(D.curve?.date || "–")}</b>. Data refreshed ${esc(upd)} Singapore time; the page re-checks every minute.`;
   }
   async function load(first) {
