@@ -1,26 +1,26 @@
 {
- "session": "2026-10-29",
- "asof": "Thu Oct 29, 2026",
- "commentary_asof": "Thu Oct 29, 2026",
+ "session": "2026-10-30",
+ "asof": "Fri Oct 30, 2026",
+ "commentary_asof": "Fri Oct 30, 2026",
  "horizon": "1–2 weeks",
- "headline": "A tech-led stock slump sends CGBs to new lows; the belly leads as the 10Y nears 1.62%",
- "summary": "CGBs rallied again on Thursday as Chinese tech stocks slumped. The CCDC 10-year fell 1.1bp to 1.623% and the 30-year 0.2bp to 2.047%, both 1-year lows, while the belly led: the 7-year dropped 1.7bp to 1.431% and the 5-year 1.1bp to 1.330%, so 10s30s steepened 0.9bp to 42.3bp. Policy banks lagged slightly: CDB 10-year fell 0.9bp to 1.661%, 3.8bp over CGB, with ADBC and EXIM about 6.6bp and 5.7bp over.",
+ "headline": "PBOC confirms a 1.25% overnight anchor and long-bond profit-taking lifts the 10Y CCDC to 1.65%",
+ "summary": "CGBs sold off on Friday even though stocks stayed weak. The CCDC 10-year rose 2.7bp to 1.650% and the 30-year 3.6bp to 2.083%, while the 20-year led with a 4.5bp jump; on the week the 10-year is up 1.0bp, though still 3.2bp lower over the month. Policy banks fell in line: CDB 10-year rose 3.2bp to 1.693%, 4.3bp over CGB, with ADBC and EXIM about 6.9bp and 6.0bp over.",
  "drivers": [
   [
-   "Tech selloff, bonds bid",
-   "The ChiNext fell 4.45% and the STAR 50 about 4.3% as AI hardware and chip stocks slid after Alphabet's miss and weak Samsung chip profits; the Shanghai Composite lost 0.82% to 3,651 on RMB1.56tn turnover. Wednesday's bond profit-taking reversed, with T futures up 0.11% and TL up 0.09%."
+   "Profit-taking in ultra-longs",
+   "The 30-year future (TL) fell 0.94% to 117.42, its biggest one-day drop since March, with T down 0.21% and TS down 0.06%; cash yields rose 2–3bp. Desks said bonds had fully priced the good news and that demand to lock in gains on ultra-long bonds was strong, so the market overreacted to small shifts."
   ],
   [
-   "Overnight cash at the cap",
-   "The PBOC rolled RMB1tn of overnight repos and added RMB115bn of 7-day repos at 1.40%, a RMB115bn net injection. DR001 held near 1.28% and overnight Shibor at 1.282%, so carry stays cheap into the Nov 2 end of the overnight series and the expected switch to an overnight policy rate."
+   "Overnight anchor set at 1.25%",
+   "The PBOC said that from Nov 2 it will run overnight reverse repos every working day at a fixed 1.25%, while 7-day operations move to fixed-quantity, multiple-price tenders mainly around tax days and month-ends. Other tools will be priced off the overnight rate with unchanged spreads. The 2-year was already near 1.22–1.25%, so the confirmation brought no new easing and buyers stepped back."
   ],
   [
-   "Crowding near 1.60%",
-   "With the active 10-year (260016) at about 1.61%, dealers report banks turning sellers and funds taking profit, and several desks expect a range until the new DR001 anchor is set. That limited the 10-year and especially the 30-year, which barely moved."
+   "Month-end funding a little firmer",
+   "The PBOC rolled RMB1tn of overnight repos and added RMB15bn of 7-day repos at 1.40%, a RMB15bn net injection. Overnight Shibor rose 0.7bp to 1.289% and 7-day 5.2bp to 1.392% into month-end, a small rise that added to the selling at the front end."
   ],
   [
-   "Fed hold, plenum, supply",
-   "The Fed held at 3.75–4% with two hawkish dissents and US 10-year yields near 5%, but the yuan sits near a June 2022 high, so there is no external pressure. The plenum focused on Party discipline, not the economy. CDB sold 3-year and 10-year bonds at 1.337% and 1.652% with 4.3x and 7.6x cover, while Industrial Securities sees about RMB2.5tn of net government bond supply in Nov–Dec."
+   "Weak stocks and soft US yields did not help",
+   "The CSI 300 headed for a 12th weekly loss, with roughly 4,450 A-shares down and about 850 up. US 10-year yields fell 6.6bp to 4.937% and the yuan held near its strongest since 2022. Those normally support CGBs, which shows positioning drove the day. Up to RMB2.2tn of net government bond supply expected in Nov–Dec also weighs on the long end."
   ]
  ],
  "data": [
@@ -62,7 +62,7 @@
  ],
  "view": [
   "My view:",
-  "Mildly bullish for the next 1–2 weeks, with the 10-year expected in a 1.59–1.65% CCDC range. The tech selloff, overnight cash at the RMB1tn cap and a likely overnight policy rate near 1.25% from Nov 2 support duration, but banks selling near 1.60% and Nov–Dec supply cap the long end. I prefer 10-year CGBs over the rich 5–7Y belly and over policy banks, and stay neutral on the 30-year. An overnight rate at or below 1.25% or a soft October PMI would take the 10-year toward 1.59–1.60%; an equity rebound or a heavy November supply calendar would push it back to 1.65%."
+  "Neutral, leaning to buy dips, for the next 1–2 weeks, with the 10-year expected in a 1.62–1.67% CCDC range (shifted up from 1.59–1.65%). The 1.25% overnight rate is now confirmed rather than a fresh cut, ultra-long positions are crowded and Nov–Dec supply is heavy, so the rally needs a new catalyst. Weak credit, a 12-week equity slide and cheap overnight funding still limit the selloff, so I would buy 10-year CGBs near 1.65% rather than the rich 5–7Y belly or policy banks, and stay neutral on the 30-year. A soft October PMI on Saturday or more equity losses would take the 10-year back to 1.62%; a strong PMI or a heavy November supply calendar could push it to 1.67–1.68%."
  ],
  "buckets": [
   {
@@ -73,8 +73,8 @@
     "type": "lvl",
     "a": "cgb:2"
    },
-   "why": "The 2-year fell 1.1bp to 1.222%, a 1-year low (0th percentile, average 1.312%), and the 1-year at 1.165% is about 12bp below overnight Shibor (1.282%). The front end already prices an overnight policy rate near 1.25%.",
-   "call": "Hold; don't chase below 1.20% on the 2-year. Add only if the overnight rate is set below 1.25%."
+   "why": "The 2-year rose 2.4bp to 1.246%, flat on the week and in the 16th percentile of its 1-year range (average 1.311%); the 1-year at 1.171% is about 12bp below overnight Shibor (1.289%). With the overnight anchor confirmed at 1.25%, the front end has little room left to rally.",
+   "call": "Hold; add 2-year CGBs only above 1.27%, or if the overnight rate is cut below 1.25%."
   },
   {
    "name": "CGB 5–7Y belly",
@@ -86,7 +86,7 @@
     "b": "cgb:5",
     "c": "cgb:10"
    },
-   "why": "The 5-year (1.330%) and 7-year (1.431%) set new lows, and the 2s5s10s fly is −18.6bp, a 1-year low (0th percentile, average −7.5bp); 5s7s10s is −9.2bp (1st percentile). The 5s10s flattener from ~29bp is open and flat at 29.4bp (81st percentile, average 26.4bp), inside the 31bp stop.",
+   "why": "The 5-year rose 2.3bp to 1.353% and the 7-year 2.9bp to 1.460%, but the belly is still the richest part of the curve: 2s5s10s is −18.9bp, a 1-year low (0th percentile, average −7.5bp), and 5s7s10s is −8.4bp (2nd percentile). The 5s10s flattener from ~29bp is open at 29.7bp (91st percentile, average 26.4bp), inside the 31bp stop.",
    "call": "Keep the 5Y-into-10Y switch (5s10s flattener) from ~29bp, target 25bp, stop 31bp."
   },
   {
@@ -99,8 +99,8 @@
     "b": "cgb:10",
     "c": "cgb:20"
    },
-   "why": "The 10-year fell 1.1bp to 1.623%, a 1-year low, but against its neighbours it is still cheap: the 7s10s20s fly is −21.8bp, in the 96th percentile against a −29.3bp average. The buy level (1.65–1.66%) was not reached and the 1.61% take-profit is 1bp away.",
-   "call": "Range 1.59–1.65%. Buy on a back-up to 1.645–1.65%; take profit near 1.61%."
+   "why": "The 10-year rose 2.7bp to 1.650%, reaching the 1.645–1.65% buy level, so the long is now on. It is cheap against its neighbours: the 7s10s20s fly is −23.9bp, in the 86th percentile against a −29.3bp average, while the level is still only in the 4th percentile of the year.",
+   "call": "Long from 1.65%, target 1.61%, stop 1.68%; add on a move to 1.665%."
   },
   {
    "name": "CGB 30Y",
@@ -111,7 +111,7 @@
     "a": "cgb:10",
     "b": "cgb:30"
    },
-   "why": "10s30s steepened 0.9bp to 42.3bp, in the 25th percentile and below its 45.5bp average, as the 30-year lagged with a 0.2bp fall to 2.047%. Weak credit demand supports it, but it is the most crowded trade and supply is due in November.",
+   "why": "10s30s steepened 0.9bp to 43.3bp, in the 30th percentile and below its 45.5bp average, as the 30-year rose 3.6bp to 2.083% on profit-taking. The 20-year jumped 4.5bp to 2.079%, almost level with the 30-year, so the ultra-long sector is cheapening as a block, and supply is heavy in Nov–Dec. The 2.10% add level has not been reached.",
    "call": "Neutral. Add above 2.10% (10s30s ~46bp); poor risk/reward below 2.05%."
   },
   {
@@ -123,7 +123,7 @@
     "a": "cgb:10",
     "b": "cdb:10"
    },
-   "why": "CDB 10-year is 3.8bp over CGB, in the 3rd percentile against a 10.0bp average, and CDB 2-year and 5-year spreads (13.3bp and 10.0bp) sit in the 3rd percentiles. The switch from ~3bp is open and slightly in the money (+0.8bp); policy banks lagged today's rally despite solid CDB auctions.",
+   "why": "CDB 10-year is 4.3bp over CGB, in the 5th percentile against a 10.0bp average, and CDB 2-year and 5-year spreads (12.3bp and 11.0bp) are in the 2nd and 11th percentiles. The switch from ~3bp is open and 1.3bp in the money, as CDB 10-year (+3.2bp) sold off slightly more than CGB.",
    "call": "Keep the CDB 10Y into CGB 10Y switch from ~3bp, target 8bp, stop 1bp."
   },
   {
@@ -135,7 +135,7 @@
     "a": "cdb:10",
     "b": "adbc:10"
    },
-   "why": "ADBC 10-year yields 2.9bp more than CDB, in the 73rd percentile against a 1.2bp average; EXIM is 1.9bp over, at its 2.0bp average. Recent ADBC and CDB auctions drew strong cover, so the pickup is about supply and liquidity, not credit.",
+   "why": "ADBC 10-year yields 2.6bp more than CDB, in the 70th percentile against a 1.3bp average; EXIM is 1.6bp over, slightly below its 2.0bp average. EXIM sold a 1-year bond at 1.3003% with 3.1x cover, so the pickup reflects supply and liquidity, not credit.",
    "call": "Hold ADBC/EXIM 10Y rather than CDB 10Y for the ~2–3bp pickup."
   },
   {
@@ -147,87 +147,87 @@
     "a": "cgb:20",
     "b": "cdb:20"
    },
-   "why": "CDB 20-year is 6.4bp over CGB and the 30-year 11.0bp, both at the bottom of their 1-year ranges (averages 10.8bp and 12.8bp). Policy bank long bonds simply track CGBs, so there is no spread cushion if supply picks up.",
+   "why": "CDB 20-year is 4.9bp over CGB, a 1-year low (0th percentile, average 10.8bp), and the 30-year 11.0bp (17th percentile, average 12.8bp). Policy bank long bonds sold off in step with CGBs today, so the spread offers no cushion if supply picks up.",
    "call": "Prefer CGB 20–30Y to CDB 20–30Y; revisit policy bank long bonds above a 13bp 30-year spread."
   }
  ],
  "rows": {
   "cgb:1": {
-   "note": "Down 0.4bp to 1.165%, about 12bp below overnight Shibor (1.282%)."
+   "note": "Up 0.6bp to 1.171% today, down 0.8bp on the week; about 12bp below overnight Shibor."
   },
   "cgb:2": {
-   "note": "Down 1.1bp to 1.222%, a 1-year low, pricing a ~1.25% overnight policy rate."
+   "note": "Up 2.4bp to 1.246%, flat on the week, near the new 1.25% overnight policy rate."
   },
   "cgb:5": {
-   "note": "Down 1.1bp to 1.330%, another 1-year low; still the richest point on the curve."
+   "note": "Up 2.3bp to 1.353%, flat on the week; still the richest point on the curve."
   },
   "cgb:7": {
-   "note": "Down 1.7bp to 1.431%, a new 1-year low; led the curve today."
+   "note": "Up 2.9bp to 1.460%, up 0.4bp on the week, after Thursday's 1-year low."
   },
   "cgb:10": {
-   "note": "Down 1.1bp to 1.623%, a 1-year low, as tech stocks slumped."
+   "note": "Up 2.7bp to 1.650%, up 1.0bp on the week, as long-bond profit-taking hit."
   },
   "cgb:30": {
-   "note": "Down 0.2bp to 2.047%, lagging as banks took profit; 10s30s at 42.3bp."
+   "note": "Up 3.6bp to 2.083%, up 1.5bp on the week; TL futures fell 0.94%."
   },
   "cdb:2": {
-   "note": "Down 0.2bp to 1.355%, about 13bp over CGB, near the 1-year tight."
+   "note": "Up 1.4bp to 1.369%, up 0.5bp on the week; about 12bp over CGB, a 1-year tight."
   },
   "cdb:5": {
-   "note": "Down 1.5bp to 1.429%, about 10bp over CGB."
+   "note": "Up 3.4bp to 1.463%, up 1.6bp on the week; about 11bp over CGB."
   },
   "cdb:10": {
-   "note": "Down 0.9bp to 1.661%, about 3.8bp over CGB; 10Y auction at 1.652%, 7.6x cover."
+   "note": "Up 3.2bp to 1.693%, up 1.9bp on the week; about 4.3bp over CGB."
   },
   "cdb:30": {
-   "note": "Down 0.2bp to 2.157%, tracking CGB; about 11bp over, the 1-year tight."
+   "note": "Up 3.6bp to 2.193%, up 1.5bp on the week; about 11bp over CGB."
   },
   "adbc:5": {
-   "note": "Down 1.0bp to 1.458%, about 13bp over CGB."
+   "note": "Up 3.4bp to 1.492%, up 1.2bp on the week; about 14bp over CGB."
   },
   "adbc:10": {
-   "note": "Down 0.7bp to 1.690%, about 6.6bp over CGB and 2.9bp over CDB."
+   "note": "Up 2.9bp to 1.719%, up 1.6bp on the week; about 6.9bp over CGB, 2.6bp over CDB."
   },
   "exim:5": {
-   "note": "Down 0.4bp to 1.458%, about 13bp over CGB."
+   "note": "Up 3.4bp to 1.491%, up 2.1bp on the week; about 14bp over CGB."
   },
   "exim:10": {
-   "note": "Down 0.7bp to 1.680%, about 5.7bp over CGB and 1.9bp over CDB."
+   "note": "Up 2.9bp to 1.710%, up 1.6bp on the week; about 6.0bp over CGB, 1.6bp over CDB."
   }
  },
- "watch": "Next: October PMIs (Sat Oct 31), the end of the overnight repo series and the overnight policy rate the PBOC sets (Nov 2), Hong Kong accepting CGBs as margin collateral from Nov 2, the US midterms (Nov 3), November MoF and local bond calendars, then October trade, inflation and credit data.",
+ "watch": "Next: official October PMIs (Sat Oct 31; manufacturing f 50.0, p 50.1), the first daily 1.25% overnight operations and the RatingDog PMI (Mon Nov 2), Hong Kong accepting CGBs as margin collateral from Nov 2, the US midterms (Nov 3), November MoF and local bond calendars, then October trade, inflation and credit data.",
  "sources": [
   [
-   "Xinhua Finance via Sina (bond daily, Oct 29)",
-   "https://finance.sina.com.cn/money/bond/2026-10-29/doc-iniwwtuv8787796.shtml"
+   "Xinhua Finance (bond daily, Oct 30)",
+   "https://www.cnfin.com/zs-lb/detail/20261030/4488903_1.html"
   ],
   [
-   "Cailian Press (bond close, Oct 29)",
-   "https://www.cls.cn/detail/2519280"
+   "Reuters via MarketScreener (PBOC overnight repos, Oct 30)",
+   "https://marketscreener.com/news/china-s-central-bank-to-conduct-overnight-reserve-repos-every-working-day-from-november-2-rate-at-1-ce785fdbdb8df227"
   ],
   [
-   "Xinhua (China stocks, Oct 29)",
-   "https://english.news.cn/20261029/a7319d2ff0324987b22b578b84226f0a/c.html"
+   "Eastmoney (PBOC notice, Oct 30)",
+   "https://finance.eastmoney.com/a/202610303916569143.html"
   ],
   [
-   "Xinhua Finance (policy rate switch, Oct 26)",
-   "https://cnfin.com/yw-lb/detail/20261026/4486136_1.html"
+   "NetEase / CNEV (PBOC operations, Oct 30)",
+   "https://www.163.com/dy/article/LAFUUMB10519C6T9.html"
   ],
   [
-   "Saxo (Asia quick take, Oct 29)",
-   "https://home.saxo/en-sg/content/articles/macro/asia-market-quick-take-october-29-2026-29102026"
+   "Reuters via Economic Times (China stocks, Oct 30)",
+   "https://m.economictimes.com/markets/us-stocks/news/global-market-china-stocks-extend-losing-streak-to-12-weeks-as-global-ai-selloff-hits-tech-shares/articleshow/135346469.cms"
   ],
   [
-   "Reuters via EconoTimes (yuan fixing, Oct 29)",
-   "https://econotimes.com/Reuters-Yuan-Hits-June-2022-High-as-China-Sets-Weaker-Than-Forecast-Fixing-1765589"
+   "Reuters via MarketScreener (PMI poll, Oct 30)",
+   "https://uk.marketscreener.com/news/china-s-factory-activity-seen-flat-in-october-ce785fdbd888f227"
   ],
   [
-   "Xinhua (plenum communiqué, Oct 29)",
-   "https://english.news.cn/20261029/93e4751ce130460da0f9d7392e23d8c6/c.html"
+   "Bloomberg (Nov–Dec bond supply, Oct 28)",
+   "https://bloomberg.com/news/articles/2026-10-28/chinese-government-to-speed-bond-sales-to-stimulate-growth"
   ],
   [
-   "NBD (Fed decision, Oct 29)",
-   "https://nbd.com.cn/articles/2026-10-28/4624038.html"
+   "Agu (A-share breadth, Oct 30)",
+   "https://agu-app.com/daily/2026-10-30"
   ]
  ]
 }
