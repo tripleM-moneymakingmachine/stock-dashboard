@@ -32,10 +32,17 @@ const ISS = [
   { k: "ktb", short: "KTB", re: /^국고채|재정증권/ },
   { k: "msb", short: "MSB", re: /통안|통화안정/ },
   { k: "kdb", short: "KDB", name: "Korea Development Bank", kr: "산업금융채권", re: /산업금융|^산금/ },
-  { k: "ibk", short: "IBK", name: "Industrial Bank of Korea", kr: "중소기업금융채권", re: /중소기업금융|^중기/ },
-  { k: "kexim", short: "KEXIM", name: "Export-Import Bank of Korea", kr: "수출입금융채권", re: /수출입/ },
+  { k: "ibk", short: "IBK", name: "Industrial Bank of Korea", kr: "중소기업은행 채권", re: /중소기업은행|^기업은행/ },
+  { k: "kexim", short: "KEXIM", name: "Export-Import Bank of Korea", kr: "수출입금융채권", re: /수출입금융/ },
 ];
-const issuerOf = (t) => { for (const i of ISS) if (i.re.test(t.name)) return i.k; if (t.kind === "은행채" && /^AAA/.test(t.rating)) return "bank"; return null; };
+// left out: STRIPS (원금/이자분리), floating-rate notes (변), and subordinated / contingent capital paper
+const SKIP = /분리|\(변\)|조건부|후순위|\(후\)|\(후|후\)|영구|자본증권/;
+const issuerOf = (t) => {
+  if (SKIP.test(t.name)) return null;
+  for (const i of ISS) if (i.re.test(t.name)) return i.k;
+  if (t.kind === "은행채" && (!t.rating || /^AAA/.test(t.rating))) return "bank";
+  return null;
+};
 // remaining term "YYMMDD" (years, months, days) → years and maturity date
 function remain(rem, d) {
   const m = /^(\d{2})(\d{2})(\d{2})$/.exec(rem || ""); if (!m) return null;
@@ -50,7 +57,7 @@ function nameInfo(name, k) {
   const c = /(\d{5})-(\d{4})/.exec(name);
   if (c && (k === "ktb" || k === "msb")) { const v = +c[1] / 1000; if (v > 0 && v < 20) o.coupon = v; }
   const p = /\((\d{2}-\d{1,2})\)/.exec(name); if (p && k === "ktb") o.code = p[1];
-  o.type = /물가/.test(name) ? "Inflation-linked" : /재정증권|할인/.test(name) ? "Discount" : /녹색|그린|ESG/.test(name) ? "Green" : "Coupon";
+  o.type = /물가/.test(name) ? "Inflation-linked" : /재정증권|할인|할\d|\sDC\d/.test(name) ? "Discount" : /녹색|그린|ESG/.test(name) ? "Green" : "Coupon";
   return o;
 }
 
@@ -91,9 +98,14 @@ function fitSpread(obs) { // obs: [{t, s (bp), w}]
     let sw = 0, sx = 0, sy = 0, sxx = 0, sxy = 0;
     for (const { t, s, w } of o) { const f = nsF(t); sw += w; sx += w * f; sy += w * s; sxx += w * f * f; sxy += w * f * s; }
     const det = sw * sxx - sx * sx, span = Math.max(...o.map((q) => q.t)) - Math.min(...o.map((q) => q.t));
-    if (o.length < 5 || span < 1.5 || Math.abs(det) < 1e-9) { const a = sy / sw; return { a, b: 0 }; } // flat spread
-    const b = (sw * sxy - sx * sy) / det, a = (sy - b * sx) / sw;
-    return { a, b: Math.max(-150, Math.min(150, b)) };
+    if (o.length < 6 || span < 1.5 || Math.abs(det) < 1e-9) { // flat spread: weighted median
+      const q = [...o].sort((x, y) => x.s - y.s); let acc = 0; const half = sw / 2;
+      for (const x of q) { acc += x.w; if (acc >= half) return { a: x.s, b: 0 }; }
+      return { a: sy / sw, b: 0 };
+    }
+    let b = Math.max(-60, Math.min(60, (sw * sxy - sx * sy) / det));
+    const a = (sy - b * sx) / sw;
+    return { a, b };
   };
   let o = obs, p = solve(o);
   for (let k = 0; k < 2; k++) {
@@ -134,7 +146,10 @@ const curve = { date: lastD, pts: curvePts };
 
 // ---------- 2. OTC trades: today + backfill of the fitted curves ----------
 const tradeDates = dates.slice(-BACKFILL); // business days (from the KTB quotes)
-const have = new Set((prev.pb?.kdb?.tenors?.[1] || []).map(([d]) => d));
+const FIT_VERSION = 2; // bump to rebuild the register and the fitted-curve history from scratch
+const same = prev.fitVersion === FIT_VERSION;
+if (!same) master = { bonds: {} };
+const have = new Set(same ? (prev.pb?.kdb?.tenors?.[1] || []).map(([d]) => d) : []);
 const need = tradeDates.filter((d) => !have.has(d) || d >= addDays(lastD, -5)); // always redo the last week
 const otc = new Map(); // date -> trades
 async function pool(list, n, fn) { let i = 0; await Promise.all(Array.from({ length: n }, async () => { while (i < list.length) { const x = list[i++]; await fn(x); } })); }
@@ -156,14 +171,14 @@ for (const [d, rows] of [...otc.entries()].sort()) for (const t of rows) {
   const o = reg[t.isin] || {};
   reg[t.isin] = { k, isin: t.isin, name: t.name, code: ni.code || o.code || null, coupon: ni.coupon ?? o.coupon ?? null, type: ni.type, mat: o.mat || rm.mat, first: o.first && o.first < d ? o.first : d, last: !o.last || d > o.last ? d : o.last };
 }
-for (const [isin, b] of Object.entries(reg)) if (b.mat < today) delete reg[isin];
+for (const [isin, b] of Object.entries(reg)) if (b.mat < today || SKIP.test(b.name)) delete reg[isin];
 writeFileSync(MASTER, JSON.stringify({ updated: Math.floor(Date.now() / 1000), src: "KOFIA OTC trade summaries by bond (일자별 거래현황): every KTB, MSB, KDB, IBK and KEXIM bond seen trading over the counter in the last year", bonds: reg }));
 log(`register: ${Object.keys(reg).length} bonds`);
 
 // fitted spread curves per day
 const FIT = ["kdb", "ibk", "kexim", "bank"];
 const FIT_T = [0.25, 0.5, 1, 2, 3, 5, 7, 10, 15, 20];
-const fitHist = {}; for (const k of FIT) { fitHist[k] = {}; const pt = k === "bank" ? prev.ncd?.tenors : prev.pb?.[k]?.tenors; for (const t of FIT_T) fitHist[k][t] = new Map(pt?.[t] || []); }
+const fitHist = {}; for (const k of FIT) { fitHist[k] = {}; const pt = !same ? null : k === "bank" ? prev.ncd?.tenors : prev.pb?.[k]?.tenors; for (const t of FIT_T) fitHist[k][t] = new Map(pt?.[t] || []); }
 const fitNow = {};
 for (const d of need) {
   const i = tradeDates.indexOf(d), win = tradeDates.slice(Math.max(0, i - 2), i + 1);
@@ -173,8 +188,8 @@ for (const d of need) {
     const f = ktbFn(H, wd); if (!f) continue;
     for (const t of otc.get(wd)) {
       const k = issuerOf(t); if (!obs[k]) continue;
-      const rm = remain(t.rem, wd); if (!rm || rm.ttm < 0.08 || t.y == null) continue;
-      const s = (t.y - f(rm.ttm)) * 100; if (!isFinite(s) || Math.abs(s) > 250) continue;
+      const rm = remain(t.rem, wd); if (!rm || rm.ttm < 0.25 || t.y == null) continue; // very short paper prices off money markets
+      const s = (t.y - f(rm.ttm)) * 100; if (!isFinite(s) || s < -60 || s > 200) continue;
       obs[k].push({ t: rm.ttm, s, w: Math.max(1, Math.sqrt((t.amt || t.vol || 1) / 1e5)) * (wd === d ? 1.5 : 1) });
     }
   }
@@ -210,7 +225,7 @@ for (const t of todayT) {
 const ktbTr = new Map((traded.ktb || []).map((b) => [b.isin, b]));
 const bonds = Object.values(reg).filter((b) => b.k === "ktb").map((b) => {
   const ttm = ttmOn(b.mat, tradeDay || lastD), t = ktbTr.get(b.isin);
-  return { code: b.code || b.isin.slice(2, 11), isin: b.isin, name: b.name, type: b.type, coupon: b.coupon, issue: b.first <= tradeDates[0] ? null : b.first, mat: b.mat, ttm: r4(ttm), curve: r4(fT(ttm)), last: t?.last ?? null, wavg: t?.wavg ?? null, px: t?.px ?? null, vol: t?.vol ?? null, chg: t?.chg ?? null, vs: t?.vs ?? null, n: t?.n ?? null };
+  return { code: b.code || b.isin.slice(2, 11), isin: b.isin, name: b.name, type: b.type, coupon: b.coupon, issue: b.first <= tradeDates[0] ? null : b.first, mat: b.mat, ttm: r4(ttm), curve: r4(fT(ttm)), last: t?.last ?? null, wavg: t?.wavg ?? null, px: t?.px ?? null, vol: t?.vol ?? null, amt: t?.amt ?? null, chg: t?.chg ?? null, vs: t?.vs ?? null, n: t?.n ?? null };
 }).filter((b) => b.ttm > 0).sort((a, b) => a.ttm - b.ttm);
 
 // ---------- 4. quasi-sovereign curves ----------
@@ -246,7 +261,7 @@ const out = {
   src: "KOFIA (Korea Financial Investment Association) bond information service: final-quote yields at 15:30 KST and daily OTC trades by bond",
   curve, tenors, bonds,
   tradeDay, prevTradeDay: prevTD, tradeTime: tradeDay ? `${tradeDay} 15:30` : null,
-  masterUpdated: Math.floor(Date.now() / 1000),
+  masterUpdated: Math.floor(Date.now() / 1000), fitVersion: FIT_VERSION,
   pb, ncd, mm,
   pbTradeDay: tradeDay, pbTradeTime: tradeDay ? `${tradeDay} 15:30` : null,
   pbSrc: "MSB: KOFIA final quotes. KDB, IBK, KEXIM and AAA bank debentures: KTB curve plus a Nelson-Siegel spread fitted to the last three sessions' KOFIA OTC trades",
