@@ -179,6 +179,18 @@ section.crecap{margin-top:0}
 .fl-bar i{position:absolute;top:0;bottom:0;border-radius:3px}
 .fl-head{font:600 16px/1.4 var(--f-body);margin:0 0 12px;max-width:100ch}
 .fl-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.ut-on{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;border:1px solid var(--line);border-left:3px solid var(--c1);border-radius:6px;padding:10px 14px;margin:0 0 12px;font:500 12.5px var(--f-mono);background:var(--panel)}
+.ut-on b{font:600 10.5px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ut-two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px;margin-top:14px}
+.ut-sc{display:block;width:100%;height:300px}.ut-sc text{font:500 10px var(--f-mono);fill:var(--muted)}
+.ut-t{width:100%;border-collapse:collapse;font:500 12px var(--f-mono);font-variant-numeric:tabular-nums}
+.ut-t th{font:600 10px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right;padding:6px;border-bottom:1px solid var(--line)}
+.ut-t td{text-align:right;padding:6px;border-bottom:1px solid color-mix(in srgb,var(--line) 55%,transparent)}
+.ut-t th:first-child,.ut-t td:first-child{text-align:left;white-space:normal}
+.ut-t tr.live td{background:var(--accent-soft)}
+.fl-ust{margin-top:10px;font:500 12.5px/1.5 var(--f-mono);color:var(--muted)}.fl-ust b{color:var(--ink)}
+@media (max-width:820px){.ut-two{grid-template-columns:minmax(0,1fr)}}
+
 .fl-two{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:16px}
 .fl-now h3{font:600 17px var(--f-body);margin:0 0 6px}.fl-now p{margin:0 0 10px;max-width:90ch}
 .fl-ph{list-style:none;margin:0;padding:0;display:grid;gap:10px}
@@ -212,6 +224,7 @@ section.crecap{margin-top:0}
     <p class="sub">Korean retail money swings between stocks and bonds: when KOSPI runs, leveraged margin credit and broker deposits pile in and KTB demand fades; when stocks crack, deleveraging money parks in duration. This panel follows that switch with weekly flow proxies (KOFIA margin credit balance for leveraged equity money, and the 30Y KTB ETF\'s share of ETF turnover for bond demand) and combines them with equity and yield momentum into a Bond Rotation Signal, back-tested walk-forward. Same method as the China tab, so the two signals can be compared.</p>
     <p class="fl-head" id="flHead"></p>
     <div class="fl-top" id="flSig"></div>
+    <p class="fl-ust" id="flUst"></p>
     <div class="fl-grid">
       <div class="panel">
         <div class="chead"><h3>KOSPI vs 10Y KTB yield, with signal regimes</h3><div class="ctl" style="margin:0;gap:8px"><div class="btns" id="flInv" role="group" aria-label="Yield axis"></div><div class="btns" id="flRng" role="group" aria-label="Range"></div></div></div>
@@ -239,6 +252,38 @@ section.crecap{margin-top:0}
         <p class="note" id="flBtNote"></p>
         <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Weeks</th><th>10Y at start</th><th>10Y 4w after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
         <p class="note">* still running, measured to the latest week.</p>
+      </div>
+      <div class="panel" id="ust" hidden>
+        <div class="chead"><h3 id="utH">US Treasury → KTB transmission</h3><div class="btns" id="utRng" role="group" aria-label="Range"></div></div>
+        <p class="note" style="margin-top:0">Korean bonds open each day after New York has closed, so the overnight US Treasury move is the first thing KTBs price. This panel measures how much of it carries over, and the back-test below checks whether the rotation signal works better once that global part is stripped out.</p>
+        <div class="ut-on" id="utOn"></div>
+        <div class="stats" id="utStats"></div>
+        <div class="ut-two">
+          <div>
+            <div class="mut" style="font:500 11px var(--f-mono);margin:4px 0">10Y KTB vs 10Y US Treasury (weekly) and the KTB − UST spread</div>
+            <div id="utLvl" style="height:260px"></div>
+            <div class="leg" id="utLvlLeg" aria-live="polite"></div>
+          </div>
+          <div>
+            <div class="mut" style="font:500 11px var(--f-mono);margin:4px 0">Rolling 60-day beta and correlation of the KTB 10Y daily move to the overnight US 10Y move</div>
+            <div id="utRoll" style="height:260px"></div>
+            <div class="leg" id="utRollLeg" aria-live="polite"></div>
+          </div>
+        </div>
+        <div class="ut-two">
+          <div>
+            <div class="mut" style="font:500 11px var(--f-mono);margin:4px 0">Last 250 days: overnight US 10Y change (x) vs KTB 10Y change (y), bp</div>
+            <svg class="ut-sc" id="utSc" role="img" aria-label="Scatter of daily KTB 10Y changes against overnight US 10Y changes"></svg>
+          </div>
+          <div>
+            <div class="mut" style="font:500 11px var(--f-mono);margin:4px 0">How KTBs followed the US move, by size of the overnight move</div>
+            <div style="overflow-x:auto"><table class="ut-t" aria-label="KTB response by size of the US move"><thead><tr><th>US 10Y overnight</th><th>Days</th><th>Avg US bp</th><th>Avg KTB bp</th><th>Same way</th></tr></thead><tbody id="utBk"></tbody></table></div>
+            <div style="overflow-x:auto;margin-top:12px"><table class="ut-t" aria-label="Transmission by year"><thead><tr><th>Year</th><th>Beta 10Y</th><th>Beta 3Y</th><th>Corr</th><th>R²</th><th>KTB sd</th><th>UST sd</th></tr></thead><tbody id="utYr"></tbody></table></div>
+          </div>
+        </div>
+        <h3 style="font:600 15px var(--f-body);margin:18px 0 6px">Does adding Treasuries improve the signal? Back-test variants</h3>
+        <div style="overflow-x:auto"><table class="ut-t" aria-label="Signal variants back-tested outright and UST-hedged"><thead><tr><th rowspan="2">Variant</th><th colspan="4">Outright 10Y KTB</th><th colspan="4">UST-hedged (KTB − β × UST)</th></tr><tr><th>Bp</th><th>Sharpe</th><th>Rally ✓</th><th>Sell-off ✓</th><th>Bp</th><th>Sharpe</th><th>Max DD</th><th>Rally ✓ / Sell-off ✓</th></tr></thead><tbody id="utVar"></tbody></table></div>
+        <p class="note" id="utNote"></p>
       </div>
       <div class="fl-two">
         <div class="panel fl-now" id="flNow"></div>
@@ -382,7 +427,7 @@ section.crecap{margin-top:0}
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="../assets/korea.js?v=2"></script>
 <script src="../assets/korea-recap.js?v=1"></script>
-<script src="../assets/korea-flows.js?v=1"></script>
+<script src="../assets/korea-flows.js?v=2"></script>
 <script src="../assets/korea-mm.js?v=1"></script>
 <script src="../assets/korea-futures.js?v=1"></script>
 <script src="../assets/searchselect.js?v=2"></script>

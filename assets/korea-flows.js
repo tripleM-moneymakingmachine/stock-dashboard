@@ -14,15 +14,17 @@
   const fmtD = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
   const REG = { 1: ["Bond rally", "up"], 0: ["Neutral", "mut"], [-1]: ["Bond sell-off", "down"] };
   const RNG = { "1Y": 52, "2Y": 104, All: 9999 };
-  const st = { rng: "2Y", inv: true, corr: false, bt: "bp" };
-  let D, charts = [], syncing = false;
+  const st = { rng: "2Y", inv: true, corr: false, bt: "hedged", ur: "2Y" };
+  let D, U, charts = [], utCharts = [], syncing = false;
 
   fetch("../data/korea-flows.json?t=" + Date.now(), { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
     if (!d || !d.series?.length) return;
-    D = d; box.hidden = false;
-    head(); story(); stats(); draw();
-    new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
-    matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", draw);
+    D = d; U = d.ust || null; box.hidden = false;
+    if (!U && st.bt === "hedged") st.bt = "bp";
+    head(); story(); stats(); draw(); utDraw();
+    const redraw = () => { draw(); utDraw(); };
+    new MutationObserver(redraw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", redraw);
   });
 
   const rows = () => { const n = RNG[st.rng]; return D.series.slice(-n); };
@@ -46,6 +48,8 @@
       }).join("")}</div>`;
     const n = D.notes;
     $("flHead").textContent = n?.headline || "";
+    const A = U?.weekly?.attr;
+    $("flUst").innerHTML = A ? `<b>US Treasury check:</b> over the last 4 weeks the 10Y KTB moved <b>${sgn(A.ktbBp)}bp</b>. The US 10Y moved ${sgn(A.ustBp)}bp, which at the current weekly beta of ${A.beta.toFixed(2)} accounts for <b>${sgn(A.ustPartBp)}bp</b>; the Korea-specific (local) part is <b>${sgn(A.localBp)}bp</b>. The rotation signal is built to call the local part, so the back-test below is shown UST-hedged by default.` : "";
   }
 
   function story() {
@@ -58,6 +62,17 @@
   function stats() {
     const b = D.backtest;
     const pc = (x) => x == null ? "—" : Math.round(x * 100) + "%";
+    if (st.bt === "hedged" && U) {
+      const h = U.variants[0].hedged, o = U.variants[0].outright;
+      $("flStats").innerHTML = [
+        ["\"Bond rally\" calls", `${pc(h.rally.hit)} right`, `${h.rally.n} weeks, hedged next-4w (outright ${pc(o.rally.hit)})`],
+        ["\"Bond sell-off\" calls", `${pc(h.selloff.hit)} right`, `${h.selloff.n} weeks, hedged next-4w (outright ${pc(o.selloff.hit)})`],
+        ["Long/short, UST-hedged", `${sgn(h.cumBp)}bp`, `Sharpe ${h.sharpe} · max DD ${h.maxDdBp}bp · vol ${h.volBp}bp/yr`],
+        ["Long/short, outright", `${sgn(o.cumBp)}bp`, `Sharpe ${o.sharpe} · max DD ${o.maxDdBp}bp · vol ${o.volBp}bp/yr`],
+        ...U.periods.map((p) => [`${p.label}`, `${sgn(p.hedged.cumBp)}bp hedged`, `Sharpe ${p.hedged.sharpe} hedged vs ${p.outright.sharpe} outright`]),
+      ].map(([t, v, x]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
+      $("flBtNote").textContent = `UST-hedged back-test, ${fmtD(U.variants[0].from)} – ${fmtD(b.to)}: each week the position is long (rally call) or short (sell-off call) the 10Y KTB against β × the 10Y US Treasury, with β the trailing 26-week weekly beta known at the time (now ${U.weekly.beta}). That removes the part of the KTB move that simply followed Treasuries, and isolates the Korea-specific move the rotation signal is designed to call. Treasury levels are the last New York close before each KOFIA close, so there is no look-ahead. "Right" is judged on the hedged move over the next ${b.horizonWeeks} weeks. Switch to "Outright 10Y" for the unhedged version.`;
+    } else {
     $("flStats").innerHTML = [
       ["\"Bond rally\" calls", `${pc(b.rally.hit)} right`, `${b.rally.n} weeks · avg next-4w ${sgn(b.rally.avgFwdBp)}bp`],
       ["\"Bond sell-off\" calls", `${pc(b.selloff.hit)} right`, `${b.selloff.n} weeks · avg next-4w ${sgn(b.selloff.avgFwdBp)}bp`],
@@ -67,6 +82,7 @@
       ["Always long 10Y", `${sgn(b.holdBp)}bp`, `Sharpe ${b.holdSharpe} · max DD ${b.holdMaxDdBp}bp`],
     ].map(([t, v, s]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(s)}</small></div>`).join("");
     $("flBtNote").textContent = `Back-test ${fmtD(b.from)} – ${fmtD(b.to)}, ${b.weeks} weeks. Each week's signal is computed only from data up to that week and positions the following week. "Right" means the 10Y moved the called way over the next ${b.horizonWeeks} weeks. P&L is the 10Y yield change captured, in bp (a 1bp fall is +1bp for a long). The long/flat strategy holds duration only in "bond rally" weeks (about ${Math.round((D.curve.filter((r) => r[7] > 0).length / D.curve.length) * 100)}% of the time). In 30Y KTB ETF (439870) terms: long/flat ${sgn(b.etfLongPct, 1, "%")}, long/short ${sgn(b.etfStratPct, 1, "%")}, buy-and-hold ${sgn(b.etfHoldPct, 1, "%")}.`;
+    }
     $("flEp").innerHTML = D.episodes.slice().reverse().map((e) => {
       const ok = e.type === "rally" ? e.bp < 0 : e.bp > 0;
       return `<tr><td>${esc(fmtD(e.from))}</td><td><span class="fl-tag ${e.type === "rally" ? "up" : "down"}">${e.type === "rally" ? "Bond rally" : "Bond sell-off"}</span></td><td>${e.weeks}</td><td>${e.y0.toFixed(3)}%</td><td>${e.y1.toFixed(3)}%</td><td class="${ok ? "up" : "down"}">${sgn(e.bp)}bp${e.open ? " *" : ""}</td><td>${e.open ? "running" : ok ? "✓" : "✗"}</td></tr>`;
@@ -136,19 +152,27 @@
       $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Rotation Signal <b>${sgn(r[6], 2)}</b> → ${esc(lab)}</span>${st.corr ? `<span><i style="background:${c5}"></i>26-week stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">week of ${esc(fmtD(r[0]))}</span>`;
     });
     // 4. Back-test curve
-    const bd = D.curve.filter((r) => r[0] >= R[0][0]), base = D.curve.filter((r) => r[0] < R[0][0]).at(-1);
-    const off = (i) => (base ? base[i] : 0);
+    const bd = D.curve.filter((r) => r[0] >= R[0][0]); let base0 = D.curve.filter((r) => r[0] < R[0][0]).at(-1);
+    const off = (i) => (base0 ? base0[i] ?? 0 : 0);
     const e = LightweightCharts.createChart($("flBt"), opts());
-    const ix = st.bt === "bp" ? [3, 1, 2] : [6, 4, 5], unit = st.bt === "bp" ? "bp" : "%";
-    const lines = [[ix[0], up, "Long/flat on signal", 2.5], [ix[1], c1, "Long/short on signal", 1.5], [ix[2], css("--muted"), "Always long", 1.5]].map(([i, col, name, w]) => {
-      const l = e.addLineSeries({ color: col, lineWidth: w, priceLineVisible: false, lastValueVisible: true, title: "", priceFormat: { type: "custom", formatter: (v) => v.toFixed(st.bt === "bp" ? 0 : 1) + unit } });
-      l.setData(bd.map((r) => ({ time: r[0], value: +(r[i] - off(i)).toFixed(2) })));
+    const H = st.bt === "hedged" && U;
+    const ix = H ? [2, 1, 11] : st.bt === "bp" ? [3, 1, 2] : [6, 4, 5], unit = st.bt === "etf" ? "%" : "bp";
+    if (H) { // merge the hedged curve (cols 1, 2) with the outright long/short (col 11) on the same dates
+      const hm = new Map(U.hedgedCurve.map((x) => [x[0], x])), om = new Map(D.curve.map((x) => [x[0], x[1]]));
+      bd.length = 0; U.hedgedCurve.filter((x) => x[0] >= R[0][0]).forEach((x) => { const row = [x[0], x[1], x[2]]; row[11] = om.get(x[0]) ?? null; bd.push(row); });
+      const b0 = U.hedgedCurve.filter((x) => x[0] < R[0][0]).at(-1), o0 = D.curve.filter((x) => x[0] < R[0][0]).at(-1);
+      base0 = b0 ? [b0[0], b0[1], b0[2]] : null; if (base0) base0[11] = o0 ? o0[1] : 0;
+    }
+    const names = H ? ["Long/flat, UST-hedged", "Long/short, UST-hedged", "Long/short, outright"] : ["Long/flat on signal", "Long/short on signal", "Always long"];
+    const lines = [[ix[0], up, names[0], 2.5], [ix[1], c1, names[1], 1.5], [ix[2], css("--muted"), names[2], 1.5]].map(([i, col, name, w]) => {
+      const l = e.addLineSeries({ color: col, lineWidth: w, priceLineVisible: false, lastValueVisible: true, title: "", priceFormat: { type: "custom", formatter: (v) => v.toFixed(st.bt === "etf" ? 1 : 0) + unit } });
+      l.setData(bd.filter((r) => r[i] != null).map((r) => ({ time: r[0], value: +(r[i] - off(i)).toFixed(2) })));
       return [l, i, col, name];
     });
     e.subscribeCrosshairMove((p) => {
       const r = p?.time ? bd.find((x) => x[0] === p.time) : bd.at(-1);
       if (!r) return;
-      $("flBtLeg").innerHTML = lines.map(([, i, col, name]) => `<span><i style="background:${col}"></i>${name} <b>${sgn(r[i] - off(i), 1, unit)}</b></span>`).join("") + `<span class="mut">${st.bt === "bp" ? "10Y bp captured" : "439870 ETF return"} since ${esc(fmtD(bd[0][0]))}</span>`;
+      $("flBtLeg").innerHTML = lines.map(([, i, col, name]) => `<span><i style="background:${col}"></i>${name} <b>${sgn(r[i] - off(i), 1, unit)}</b></span>`).join("") + `<span class="mut">${st.bt === "etf" ? "439870 ETF return" : st.bt === "hedged" ? "bp captured" : "10Y bp captured"} since ${esc(fmtD(bd[0][0]))}</span>`;
     });
 
     charts = [a, b, c, e];
@@ -163,7 +187,68 @@
     $("flFlowLeg").innerHTML = `<span><i style="background:${c2};height:8px"></i>Margin credit added <b>${sgn(r[4], 1)} tn</b></span><span><i style="background:${c1};height:8px"></i>Margin credit repaid</span><span class="mut">balance KRW ${r[3]?.toFixed(1)} tn</span><span><i style="background:${c3}"></i>30Y KTB ETF share of ETF turnover <b>${r[5] == null ? "—" : r[5].toFixed(2) + "%"}</b></span>`;
     $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Rotation Signal <b>${sgn(r[6], 2)}</b> → ${esc(REG[r[7] ?? 0][0])}</span>${st.corr ? `<span><i style="background:${c5}"></i>26-week stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}`;
     const b = bd.at(-1);
-    if (b) $("flBtLeg").innerHTML = lines.map(([, i, col, name]) => `<span><i style="background:${col}"></i>${name} <b>${sgn(b[i] - off(i), 1, unit)}</b></span>`).join("") + `<span class="mut">${st.bt === "bp" ? "10Y bp captured" : "439870 ETF return"} since ${esc(fmtD(bd[0][0]))}</span>`;
+    if (b) $("flBtLeg").innerHTML = lines.map(([, i, col, name]) => `<span><i style="background:${col}"></i>${name} <b>${sgn(b[i] - off(i), 1, unit)}</b></span>`).join("") + `<span class="mut">${st.bt === "etf" ? "439870 ETF return" : st.bt === "hedged" ? "bp captured" : "10Y bp captured"} since ${esc(fmtD(bd[0][0]))}</span>`;
+  }
+
+  // ---------- US Treasury → KTB transmission ----------
+  function utDraw() {
+    if (!U || !$("ust")) return;
+    $("ust").hidden = false;
+    utCharts.forEach((c) => c.remove()); utCharts = [];
+    const dl = U.daily, wk = U.weekly, c1 = css("--c1"), c2 = css("--c2"), c3 = css("--c3"), c5 = css("--c5"), mut = css("--muted");
+    const on = dl.overnight;
+    $("utOn").innerHTML = on ? `<b>Overnight read</b><span>New York ${esc(fmtD(on.to))}${on.sessions > 1 ? ` (${on.sessions} sessions)` : ""}: US 10Y <b>${sgn(on.du)}bp</b>${on.du2 != null ? `, 2Y ${sgn(on.du2)}bp` : ""}</span><span>→ at the 1-year beta of ${dl.y1.beta.toFixed(2)}, KTB 10Y would open about <b>${sgn(on.impliedKtbBp)}bp</b> from the ${esc(fmtD(dl.to))} KOFIA close</span>` : `<b>Overnight read</b><span>No New York session since the last KOFIA close.</span>`;
+    const pc = (x) => x == null ? "—" : Math.round(x * 100) + "%";
+    $("utStats").innerHTML = [
+      ["Daily beta, last year", `${dl.y1.beta.toFixed(2)}`, `KTB bp per 1bp US move · corr ${dl.y1.corr} · R² ${dl.y1.r2}`],
+      ["Daily beta, last 60 days", `${dl.d60.beta.toFixed(2)}`, `corr ${dl.d60.corr} · 3Y KTB beta (1Y) ${dl.beta3y1}`],
+      ["US rallies vs sell-offs", `${dl.down.beta.toFixed(2)} / ${dl.up.beta.toFixed(2)}`, `beta when US yields fall / rise (${dl.from.slice(0, 4)}–)`],
+      ["Big US moves (≥7bp)", `${pc(dl.bigMoves.sameDir)} same way`, `${dl.bigMoves.n} days · median pass-through ${dl.bigMoves.medianPassThrough}`],
+      ["Next-day spill-over", `${dl.nextDay.beta.toFixed(2)}`, `corr ${dl.nextDay.corr}: KTBs price the US move on the day`],
+      ["Weekly beta (26w)", `${wk.beta.toFixed(2)}`, `corr ${wk.corr} · weekly moves pass through more than daily`],
+      ["KTB − UST 10Y", `${sgn(wk.spreadBp, 0)}bp`, `${Math.round(wk.spreadPct * 100)}th pct of 52w (${wk.spreadLo52} to ${wk.spreadHi52})`],
+    ].map(([t, v, x]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
+    const RW = { "1Y": 52, "2Y": 104, All: 9999 }[st.ur];
+    const S = D.series.filter((r) => r[15] != null).slice(-RW);
+    // levels
+    const a = LightweightCharts.createChart($("utLvl"), { ...opts(), leftPriceScale: { visible: true, borderColor: css("--line") } });
+    const k = a.addLineSeries({ color: c1, lineWidth: 2, priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } }); k.setData(S.map((r) => ({ time: r[0], value: r[2] })));
+    const u = a.addLineSeries({ color: c5, lineWidth: 2, priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } }); u.setData(S.map((r) => ({ time: r[0], value: r[15] })));
+    const sp = a.addAreaSeries({ priceScaleId: "left", lineColor: alpha(mut, 0.8), topColor: alpha(mut, 0.18), bottomColor: alpha(mut, 0.02), lineWidth: 1, priceLineVisible: false, lastValueVisible: true, priceFormat: { type: "custom", formatter: (v) => v.toFixed(0) + "bp" } });
+    sp.setData(S.map((r) => ({ time: r[0], value: r[17] })));
+    a.priceScale("left").applyOptions({ scaleMargins: { top: 0.6, bottom: 0.02 } }); a.priceScale("right").applyOptions({ scaleMargins: { top: 0.05, bottom: 0.45 } });
+    const lv = (r) => { if (r) $("utLvlLeg").innerHTML = `<span><i style="background:${c1}"></i>KTB 10Y <b>${r[2].toFixed(3)}%</b></span><span><i style="background:${c5}"></i>UST 10Y <b>${r[15].toFixed(2)}%</b></span><span><i style="background:${alpha(mut, 0.5)};height:8px"></i>KTB − UST <b>${sgn(r[17], 0)}bp</b></span><span class="mut">week of ${esc(fmtD(r[0]))} · β ${r[16] ?? "—"}</span>`; };
+    a.subscribeCrosshairMove((p) => lv(p?.time ? S.find((x) => x[0] === p.time) : S.at(-1))); lv(S.at(-1)); a.timeScale().fitContent();
+    // rolling beta / corr
+    const cut = S[0]?.[0] || "";
+    const RR = dl.roll.filter((x) => x[0] >= cut);
+    const b = LightweightCharts.createChart($("utRoll"), opts());
+    const bb = b.addLineSeries({ color: c1, lineWidth: 2, priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } }); bb.setData(RR.map((x) => ({ time: x[0], value: x[1] })));
+    const cc = b.addLineSeries({ color: c3, lineWidth: 1.5, priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } }); cc.setData(RR.map((x) => ({ time: x[0], value: x[2] })));
+    bb.createPriceLine({ price: dl.all.beta, color: mut, lineStyle: 2, lineWidth: 1, axisLabelVisible: true, title: "avg β" });
+    const rl = (x) => { if (x) $("utRollLeg").innerHTML = `<span><i style="background:${c1}"></i>60-day beta <b>${x[1].toFixed(2)}</b></span><span><i style="background:${c3}"></i>60-day correlation <b>${x[2].toFixed(2)}</b></span><span class="mut">${esc(fmtD(x[0]))}</span>`; };
+    b.subscribeCrosshairMove((p) => rl(p?.time ? RR.find((x) => x[0] === p.time) : RR.at(-1))); rl(RR.at(-1)); b.timeScale().fitContent();
+    utCharts = [a, b];
+    // scatter
+    const svg = $("utSc"), W = Math.max(300, svg.clientWidth || 520), Hh = 300, P = { l: 36, r: 10, t: 10, b: 26 };
+    svg.setAttribute("viewBox", `0 0 ${W} ${Hh}`);
+    const pts = dl.scatter, mx = Math.max(12, ...pts.map((p) => Math.abs(p[1]))), my = Math.max(10, ...pts.map((p) => Math.abs(p[2])));
+    const X = (v) => P.l + (v + mx) / (2 * mx) * (W - P.l - P.r), Y = (v) => P.t + (my - v) / (2 * my) * (Hh - P.t - P.b);
+    let g = `<line x1="${X(-mx)}" x2="${X(mx)}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--line)"/><line x1="${X(0)}" x2="${X(0)}" y1="${Y(my)}" y2="${Y(-my)}" stroke="var(--line)"/>`;
+    for (const v of [-10, -5, 5, 10]) if (Math.abs(v) <= mx) g += `<text x="${X(v)}" y="${Hh - 8}" text-anchor="middle">${v}</text>`;
+    for (const v of [-10, -5, 5, 10]) if (Math.abs(v) <= my) g += `<text x="${P.l - 4}" y="${Y(v) + 3}" text-anchor="end">${v}</text>`;
+    const last = pts.at(-1);
+    g += pts.map((p) => `<circle cx="${X(p[1]).toFixed(1)}" cy="${Y(p[2]).toFixed(1)}" r="2.6" fill="${c1}" fill-opacity=".35"><title>${p[0]}: US ${sgn(p[1])}bp, KTB ${sgn(p[2])}bp</title></circle>`).join("");
+    const be = dl.y1.beta; g += `<line x1="${X(-mx)}" y1="${Y(-mx * be)}" x2="${X(mx)}" y2="${Y(mx * be)}" stroke="${c5}" stroke-width="2"/>`;
+    g += `<line x1="${X(-mx)}" y1="${Y(-mx)}" x2="${X(mx)}" y2="${Y(mx)}" stroke="${mut}" stroke-dasharray="3 3"/>`;
+    if (last) g += `<circle cx="${X(last[1])}" cy="${Y(last[2])}" r="5" fill="none" stroke="${css("--ink")}" stroke-width="1.5"/><text x="${X(last[1]) + 8}" y="${Y(last[2]) - 6}" fill="${css("--ink")}">${esc(last[0])}</text>`;
+    g += `<text x="${W - P.r}" y="${P.t + 10}" text-anchor="end">fit β ${be.toFixed(2)} · dashed = 1:1</text>`;
+    svg.innerHTML = g;
+    const bl = (b) => b.lo <= -99 ? `below −${-b.hi}bp` : b.hi >= 99 ? `above +${b.lo}bp` : `${b.lo > 0 ? "+" : b.lo < 0 ? "−" : ""}${Math.abs(b.lo)} to ${b.hi > 0 ? "+" : b.hi < 0 ? "−" : ""}${Math.abs(b.hi)}bp`;
+    $("utBk").innerHTML = dl.buckets.map((b) => `<tr><td>${bl(b)}</td><td>${b.n}</td><td>${sgn(b.du)}</td><td>${sgn(b.dk)}</td><td>${b.lo === -2 ? "—" : pc(b.same)}</td></tr>`).join("");
+    $("utYr").innerHTML = dl.byYear.map((y) => `<tr><td>${y.year}${y.n < 200 ? "*" : ""}</td><td>${y.beta.toFixed(2)}</td><td>${y.beta3?.toFixed(2) ?? "—"}</td><td>${y.corr.toFixed(2)}</td><td>${y.r2.toFixed(2)}</td><td>${y.sdK}</td><td>${y.sdU}</td></tr>`).join("");
+    $("utVar").innerHTML = U.variants.map((v) => `<tr class="${v.live ? "live" : ""}"><td>${esc(v.k)} · ${esc(v.name)}${v.live ? " <b>(live)</b>" : ""}</td><td>${sgn(v.outright.cumBp, 0)}</td><td>${v.outright.sharpe}</td><td>${pc(v.outright.rally.hit)}</td><td>${pc(v.outright.selloff.hit)}</td><td>${sgn(v.hedged.cumBp, 0)}</td><td><b>${v.hedged.sharpe}</b></td><td>${v.hedged.maxDdBp}</td><td>${pc(v.hedged.rally.hit)} / ${pc(v.hedged.selloff.hit)}</td></tr>`).join("");
+    $("utNote").textContent = `${U.method} Daily sample ${fmtD(dl.from)} – ${fmtD(dl.to)} (${dl.all.n} Seoul sessions; * partial year). Reading: adding the US 10Y trend to the signal (S1, S2) lowers the Sharpe, and the US trend alone (S4) has no edge: last week's Treasury move does not predict next week's KTB move, because KTBs absorb it the same day. Treasuries matter as the hedge, not as a predictor: trading the live signal against β × UST raises the Sharpe and the hit rates and cuts the drawdown, in both halves of the sample.`;
   }
 
   // ---------- controls ----------
@@ -178,7 +263,8 @@
     });
   };
   btns("flRng", Object.keys(RNG).map((k) => [k, k]), "rng");
+  btns("utRng", Object.keys(RNG).map((k) => [k, k]), "ur", () => utDraw());
   btns("flInv", [["true", "Yield inverted"], ["false", "Yield normal"]], "inv");
   btns("flCorr", [["false", "Signal only"], ["true", "+ correlation"]], "corr");
-  btns("flBtMode", [["bp", "10Y bp"], ["etf", "439870 ETF %"]], "bt");
+  btns("flBtMode", [["hedged", "UST-hedged bp"], ["bp", "Outright 10Y bp"], ["etf", "439870 ETF %"]], "bt", () => { stats(); draw(); });
 })();

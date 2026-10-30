@@ -13,6 +13,7 @@
 // Usage: node scripts/fetch-korea-flows.mjs. Anything that fails keeps the previous series.
 import { readFileSync, writeFileSync } from "node:fs";
 import { finalQuoteHistory, kst, addDays } from "./kofia.mjs";
+import { study } from "./ust-transmission.mjs";
 
 const OUT = "data/korea-flows.json";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
@@ -202,21 +203,27 @@ function build(raw) {
     csiPeak52: Math.max(...W.slice(-52).map((w) => w.csi)), y10Low52: Math.min(...W.slice(-52).map((w) => w.y10)), y10High52: Math.max(...W.slice(-52).map((w) => w.y10)),
   };
   bt.curveCols = ["date", "strategyBp", "holdBp", "longFlatBp", "etfStrategyPct", "etfHoldPct", "etfLongFlatPct", "position"];
-  return { series, backtest: bt, curve, episodes, latest };
+  return { series, backtest: bt, curve, episodes, latest, W };
 }
 
 // ---------- run ----------
-const raw = await fetchRaw();
+const raw = process.argv.includes("--raw") ? prev.raw : await fetchRaw(); // --raw: rebuild from the committed raw series, no network
 for (const k of ["kospi", "kr10y", "margin"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
 const b = build(raw);
 // investor deposits alongside (not in the signal: a level, read in the commentary)
 const dep = new Map(raw.deposits.map((r) => [weekKey(r[0]), r[1]]));
 b.latest.deposits = dep.get(weekKey(b.latest.date)) ?? raw.deposits.at(-1)?.[1] ?? null;
 const d4 = raw.deposits.at(-5)?.[1]; b.latest.deposits4 = b.latest.deposits != null && d4 ? +(b.latest.deposits - d4).toFixed(2) : null;
+// US Treasury transmission study and the UST-hedged back-test (scripts/ust-transmission.mjs)
+let ust = null;
+try { ust = study(raw, b.W); } catch (e) { log(`UST study failed: ${e.message}`); }
+if (ust) b.series.forEach((row, i) => row.push(b.W[i].ust ?? null, r2(b.W[i].beta, 2), r2(b.W[i].sp, 1)));
+delete b.W;
 const out = {
+  ust,
   updated: Math.floor(Date.now() / 1000),
-  src: "Naver Finance: KOSPI and ETF weekly charts (KODEX 국고채30년액티브 439870, KODEX 200 069500). KOFIA: 10Y KTB final quote; freesis margin credit balance (신용공여 잔고) and investor deposits (투자자예탁금). Weekly, last trading day of each week.",
-  cols: ["date", "kospi", "kr10y", "marginTn", "marginWkChgTn", "bondEtfSharePct", "signal", "regime", "corr26w", "etf439870", "eq4Pct", "margin4Pct", "bondShareDevPp", "dy4Bp", "z"],
+  src: "US Treasury daily par yields (2Y, 10Y; home.treasury.gov). Naver Finance: KOSPI and ETF weekly charts (KODEX 국고채30년액티브 439870, KODEX 200 069500). KOFIA: 10Y KTB final quote; freesis margin credit balance (신용공여 잔고) and investor deposits (투자자예탁금). Weekly, last trading day of each week.",
+  cols: ["date", "kospi", "kr10y", "marginTn", "marginWkChgTn", "bondEtfSharePct", "signal", "regime", "corr26w", "etf439870", "eq4Pct", "margin4Pct", "bondShareDevPp", "dy4Bp", "z", "ust10y", "betaUst26w", "ktbUstSpreadBp"],
   method: {
     window: "4-week changes; z-scores vs trailing 52 weeks (min 26); thresholds ±0.5",
     components: ["KOSPI 4-week return (inverted)", "Margin credit 4-week % change (inverted)", "30Y KTB ETF turnover share: 4-week avg minus 26-week avg", "10Y KTB yield 4-week change (inverted)"],
