@@ -41,12 +41,47 @@ async function freesis(obj, from) {
   return (j.ds1 || []).map((x) => ({ ...x, d: `${x.TMPV1.slice(0, 4)}-${x.TMPV1.slice(4, 6)}-${x.TMPV1.slice(6)}` })).sort((a, b) => a.d.localeCompare(b.d));
 }
 
+// US Treasury daily par yields (official, ~15:30 New York), 2Y and 10Y. Yahoo ^TNX as a 10Y fallback.
+async function treasury(from) {
+  const out = { u2: [], u10: [] }, y0 = +from.slice(0, 4), y1 = new Date().getUTCFullYear();
+  for (let yr = y0; yr <= y1; yr++) {
+    const r = await fetch(`https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/${yr}/all?type=daily_treasury_yield_curve&field_tdr_date_value=${yr}&page&_format=csv`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(45000) });
+    if (!r.ok) throw new Error(`Treasury ${yr} HTTP ${r.status}`);
+    const lines = (await r.text()).trim().split(/\r?\n/), head = lines[0].split(",").map((h) => h.replace(/"/g, "").trim());
+    const i2 = head.indexOf("2 Yr"), i10 = head.indexOf("10 Yr");
+    for (const ln of lines.slice(1)) {
+      const f = ln.split(","), [mm, dd, yy] = f[0].replace(/"/g, "").split("/"), d = `${yy}-${mm}-${dd}`;
+      if (d < from) continue;
+      if (+f[i2] > 0) out.u2.push([d, +f[i2]]); if (+f[i10] > 0) out.u10.push([d, +f[i10]]);
+    }
+  }
+  for (const k of ["u2", "u10"]) out[k].sort((a, b) => a[0].localeCompare(b[0]));
+  if (out.u10.length < 200) throw new Error("short Treasury history");
+  return out;
+}
+async function yahooTnx(from) {
+  const r = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX?period1=${Math.floor(Date.parse(from) / 1000)}&period2=${Math.floor(Date.now() / 1000)}&interval=1d`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(30000) });
+  const j = await r.json(), q = j.chart.result[0];
+  return q.timestamp.map((t, i) => [new Date((t - 4 * 3600) * 1000).toISOString().slice(0, 10), q.indicators.quote[0].close[i]]).filter(([, v]) => v > 0).map(([d, v]) => [d, +v.toFixed(3)]);
+}
+
 async function fetchRaw() {
   const p = prev?.raw || {};
   const tryGet = async (name, fn) => { try { const v = await fn(); log(`${name}: ${v.length} weeks, last ${v.at(-1)[0]}`); return v; } catch (e) { log(`${name} failed (${e.message}); keeping previous`); return p[name] || []; } };
   return {
     kospi: await tryGet("kospi", async () => (await naver("KOSPI", "week", 260)).map(([d, c]) => [d, c])),
     kr10y: await tryGet("kr10y", async () => lastOfWeek((await finalQuoteHistory(["3013"], BEG, kst()))["3013"])),
+    ...(await (async () => { // daily KTB 3Y/10Y (KOFIA) for the US Treasury transmission study
+      try { const h = await finalQuoteHistory(["3000", "3013"], BEG, kst()); log(`daily KTB: ${h["3013"].length} days`); return { ktb3d: h["3000"], ktb10d: h["3013"] }; }
+      catch (e) { log(`daily KTB failed (${e.message}); keeping previous`); return { ktb3d: p.ktb3d || [], ktb10d: p.ktb10d || [] }; }
+    })()),
+    ...(await (async () => {
+      try { const t = await treasury(BEG); log(`UST: ${t.u10.length} days, last ${t.u10.at(-1)[0]}`); return { ust2d: t.u2, ust10d: t.u10 }; }
+      catch (e) {
+        log(`Treasury failed (${e.message}); trying Yahoo ^TNX`);
+        try { const u = await yahooTnx(BEG); return { ust2d: p.ust2d || [], ust10d: u }; } catch (e2) { log(`Yahoo failed (${e2.message}); keeping previous`); return { ust2d: p.ust2d || [], ust10d: p.ust10d || [] }; }
+      }
+    })()),
     margin: await tryGet("margin", async () => lastOfWeek((await freesis("STATSCU0100000070BO", BEG)).map((x) => [x.d, +(x.TMPV2 / 1e6).toFixed(2)]))),
     deposits: await tryGet("deposits", async () => lastOfWeek((await freesis("STATSCU0100000060BO", BEG)).map((x) => [x.d, +(x.TMPV2 / 1e6).toFixed(2)]))),
     bondEtf: await tryGet("bondEtf", async () => (await naver("439870", "week", 260)).map(([d, c, v]) => [d, c, +(c * v / 1e9).toFixed(2)])),
