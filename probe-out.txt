@@ -1,0 +1,422 @@
+probe-id run 2026-10-31T13:18:10.777Z
+
+### PHEI home
+URL   https://www.phei.co.id/
+FINAL https://www.phei.co.id/
+HTTP  200  text/html; charset=utf-8  50290 bytes  4593ms
+TITLE PT Penilai Harga Efek Indonesia
+LINKS
+  /Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css?cdv=36
+  /Portals/_default/skins/xcillion/css/jquery.smartmenus.bootstrap.css?cdv=36
+  /Portals/_default/skins/xcillion/Menus/MainMenu/MainMenu.css?cdv=36
+  /Portals/_default/skins/xcillion/skin.css?cdv=36
+  /Portals/_default/skins/xcillion/css/w3.css?cdv=36
+  /Portals/0/home.css?cdv=36
+  /Portals/0/favicon.ico?ver=trQemnmk9Qzk2BNBnUOEAQ%3d%3d
+  /ScriptResource.axd?d=NJmAwtEo3IrHZAykNN-YK5jdicZh1GipFygdFP297XX2SrySZqTbPiclx3u4yfrvAcJjCIyUH4glBGOu4Ja2chbWGn86db1_xa76q6J-yaPbsm08fQSCWDTd2pIklVQmqVD0iA2&amp;t=5c0e0825
+  /Portals/_default/skins/xcillion/bootstrap/js/bootstrap.min.js?cdv=36
+  /Portals/_default/skins/xcillion/js/jquery.smartmenus.js?cdv=36
+  /Portals/_default/skins/xcillion/js/jquery.smartmenus.bootstrap.js?cdv=36
+  /Portals/_default/skins/xcillion/js/scripts.js?cdv=36
+  /Portals/0/logoPHEI.png?ver=1GROzwx4c39ZtvwPfr-wfw%3d%3d
+  https://www.facebook.com/PT-Penilai-Harga-Efek-Indonesia-PHEI-353604945744449
+  Portals/_default/Skins/Xcillion/Component/images/facebook-f.svg
+  Portals/_default/Skins/Xcillion/Component/images/twitter.svg
+  Portals/_default/Skins/Xcillion/Component/images/youtube.svg
+  Portals/_default/Skins/Xcillion/Component/images/instagram.svg
+  https://www.linkedin.com/company/penilai-harga-efek-indonesia
+  Portals/_default/Skins/Xcillion/Component/images/linkedin-in.svg
+  https://www.phei.co.id/Produk-dan-Layanan/HPW-dan-Imbal-Hasil
+  https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+  /portals/0/headerhomepage.png
+  Portals/_default/Skins/Xcillion/Component/images/logo_ojk.png
+  Portals/_default/Skins/Xcillion/Component/images/logo-idx.png
+  Portals/_default/Skins/Xcillion/Component/images/logo-kpei.png
+  Portals/_default/Skins/Xcillion/Component/images/logo-ksei.png
+  Portals/_default/Skins/Xcillion/Component/images/logo-ticmi.png
+  Portals/_default/Skins/Xcillion/Component/images/logo-sipf.png
+  /DesktopModules/PopUp/Popup.aspx?popUp=true
+  DesktopModules/phei/phei_cb_CreditSpreadMatrix/images/bg_002.gif
+  DesktopModules/phei/phei_BondIndikator/images/Find.png
+TEXT  ange 0,9793 Change (%) 0,23 Search Saturday 31-Okt-2026 Toggle navigation Tentang PHEI Sekilas PHEI Visi, Misi dan Nilai Inti Organisasi Tata Kelola Rangkaian Sejarah Karir Produk dan Layanan HPW dan Imbal Hasil Laporan Riset Indeks Sistem Aplikasi SoBFI Data HPW dan Imbal Hasil Indeks Credit Spread Matrix Informasi Efek Lainnya IGBF Publikasi Pengumuman Berita PHEI Berita Pasar IBMD Metodologi Area Pelanggan Akses Masuk TheNewBIPS SISO Retail Peraturan Rekan Kami IGSYC per 30-Oktober-2026 Credit Spread Matrix per 30-Oktober-2026 &nbsp; Tenor (Year) AAA AA A BBB &nbsp; 0,1 38,24 52,95 142,75 242,90 1,0 50,63 71,39 149,90 308,63 2,0 53,68 81,48 158,43 342,11 3,0 53,01 81,88 154,09 347,56 4,0 53,84 82,76 152,88 354,35 5,0 55,59 85,00 156,59 367,72 6,0 57,23 87,39 162,29 384,12 7,0 58,38 89,22 167,68 399,88 8,0 59,07 90,39 171,85 413,07 9,0 59,44 91,08 174,72 423,22 10,0 59,62 91,44 176,56 430,59 Indonesia Bond Indexes per 30-Oktober-2026 Index Type &nbsp; Indonesia Composite Bond Index (ICBI) INDOBeX Government Total Return INDOBeX Corporate Total Return Range &nbsp; 1 Week 1 Month 3 Months 6 Months 9 Months 12 Months Copyright 2026 by PT Penilai Harga Efek Indonesia | Sangkalan 
+
+### PHEI en home
+URL   https://www.phei.co.id/en-us/
+FINAL https://www.phei.co.id/en-us/
+HTTP  200  text/html; charset=utf-8  48109 bytes  2018ms
+TITLE PT Penilai Harga Efek Indonesia
+LINKS
+  /Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css?cdv=36
+  /Portals/_default/skins/xcillion/css/jquery.smartmenus.bootstrap.css?cdv=36
+  /Portals/_default/skins/xcillion/Menus/MainMenu/MainMenu.css?cdv=36
+  /Portals/_default/skins/xcillion/skin.css?cdv=36
+  /Portals/_default/skins/xcillion/css/w3.css?cdv=36
+  /Portals/0/home.css?cdv=36
+  /Portals/0/favicon.ico?ver=trQemnmk9Qzk2BNBnUOEAQ%3d%3d
+  /ScriptResource.axd?d=NJmAwtEo3IrHZAykNN-YK5jdicZh1GipFygdFP297XX2SrySZqTbPiclx3u4yfrvAcJjCIyUH4glBGOu4Ja2chbWGn86db1_xa76q6J-yaPbsm08fQSCWDTd2pIklVQmqVD0iA2&amp;t=5c0e0825
+  /Portals/_default/skins/xcillion/bootstrap/js/bootstrap.min.js?cdv=36
+  /Portals/_default/skins/xcillion/js/jquery.smartmenus.js?cdv=36
+  /Portals/_default/skins/xcillion/js/jquery.smartmenus.bootstrap.js?cdv=36
+  /Portals/_default/skins/xcillion/js/scripts.js?cdv=36
+  /Portals/0/logoPHEI.png?ver=1GROzwx4c39ZtvwPfr-wfw%3d%3d
+  https://www.facebook.com/PT-Penilai-Harga-Efek-Indonesia-PHEI-353604945744449
+  ../Portals/_default/Skins/Xcillion/Component/images/facebook-f.svg
+  ../Portals/_default/Skins/Xcillion/Component/images/twitter.svg
+  ../Portals/_default/Skins/Xcillion/Component/images/youtube.svg
+  ../Portals/_default/Skins/Xcillion/Component/images/instagram.svg
+  https://www.linkedin.com/company/penilai-harga-efek-indonesia
+  ../Portals/_default/Skins/Xcillion/Component/images/linkedin-in.svg
+  https://www.phei.co.id/en-us/Products-and-Services/Fair-Prices-and-Yield
+  https://www.phei.co.id/en-us/Data/Fair-Prices-and-Yield
+  /portals/0/headerhomepage.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo_ojk.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-idx.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-kpei.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-ksei.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-ticmi.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-sipf.png
+  /DesktopModules/PopUp/Popup.aspx?popUp=true
+TEXT   Search Saturday 31-Oct-2026 Toggle navigation About PHEI PHEI Overview Vision Mission Core Value Organization Corporate Governance History and Milestones Career Products and Services Fair Prices and Yield Research Reports Bond Indexes System App SoBFI Data Fair Prices and Yield Bond Indexes Credit Spread Matrix Securities Infomation Others IGBF Publication Announcement PHEI News Market News IBMD Methodology Member Area Logins TheNewBIPS SISO Retail Regulations Our Partners IGSYC per 30-October-2026 Credit Spread Matrix per 30-October-2026 &nbsp; Tenor (Year) AAA AA A BBB &nbsp; 0.1 38.24 52.95 142.75 242.90 1.0 50.63 71.39 149.90 308.63 2.0 53.68 81.48 158.43 342.11 3.0 53.01 81.88 154.09 347.56 4.0 53.84 82.76 152.88 354.35 5.0 55.59 85.00 156.59 367.72 6.0 57.23 87.39 162.29 384.12 7.0 58.38 89.22 167.68 399.88 8.0 59.07 90.39 171.85 413.07 9.0 59.44 91.08 174.72 423.22 10.0 59.62 91.44 176.56 430.59 Indonesia Bond Indexes per 30-October-2026 Index Type &nbsp; Indonesia Composite Bond Index (ICBI) INDOBeX Government Total Return INDOBeX Corporate Total Return Range &nbsp; 1 Week 1 Month 3 Months 6 Months 9 Months 12 Months Copyright 2026 by PT Penilai Harga Efek Indonesia | Disc
+
+### PHEI data
+URL   https://www.phei.co.id/Data
+FINAL https://www.phei.co.id/Data
+HTTP  404  text/html; charset=utf-8  21897 bytes  512ms
+TITLE 404 Error Page
+LINKS
+  /Portals/_default/Skins/Xcillion/bootstrap/css/bootstrap.min.css?cdv=36
+  /Portals/_default/Skins/Xcillion/css/jquery.smartmenus.bootstrap.css?cdv=36
+  /Portals/_default/Skins/Xcillion/Menus/MainMenu/MainMenu.css?cdv=36
+  /Portals/_default/Skins/Xcillion/skin.css?cdv=36
+  /Portals/_default/Skins/Xcillion/css/w3.css?cdv=36
+  /Portals/0/favicon.ico?ver=trQemnmk9Qzk2BNBnUOEAQ%3d%3d
+  /ScriptResource.axd?d=NJmAwtEo3IrHZAykNN-YK5jdicZh1GipFygdFP297XX2SrySZqTbPiclx3u4yfrvAcJjCIyUH4glBGOu4Ja2chbWGn86db1_xa76q6J-yaPbsm08fQSCWDTd2pIklVQmqVD0iA2&amp;t=5c0e0825
+  /Portals/_default/Skins/Xcillion/bootstrap/js/bootstrap.min.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/jquery.smartmenus.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/jquery.smartmenus.bootstrap.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/scripts.js?cdv=36
+  /Portals/0/logoPHEI.png?ver=1GROzwx4c39ZtvwPfr-wfw%3d%3d
+  https://www.phei.co.id/Produk-dan-Layanan/HPW-dan-Imbal-Hasil
+  https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+TEXT   404 Error Page Search Search Toggle navigation Tentang PHEI Sekilas PHEI Visi, Misi dan Nilai Inti Organisasi Tata Kelola Rangkaian Sejarah Karir Produk dan Layanan HPW dan Imbal Hasil Laporan Riset Indeks Sistem Aplikasi SoBFI Data HPW dan Imbal Hasil Indeks Credit Spread Matrix Informasi Efek Lainnya IGBF Publikasi Pengumuman Berita PHEI Berita Pasar IBMD Metodologi Area Pelanggan Akses Masuk TheNewBIPS SISO Retail Peraturan Rekan Kami Sorry, the page you are looking for cannot be found and might have been removed, had its name changed, or is temporarily unavailable. It is recommended that you start again from the homepage. Feel free to contact us if the problem persists or if you cannot find what you’re looking for. Copyright 2026 by PT Penilai Harga Efek Indonesia Terms Of Use | Privacy Statement 
+
+### PHEI yield curve
+URL   https://www.phei.co.id/Data/Yield-Curve
+FINAL https://www.phei.co.id/Data/Yield-Curve
+HTTP  404  text/html; charset=utf-8  21909 bytes  504ms
+TITLE 404 Error Page
+LINKS
+  /Portals/_default/Skins/Xcillion/bootstrap/css/bootstrap.min.css?cdv=36
+  /Portals/_default/Skins/Xcillion/css/jquery.smartmenus.bootstrap.css?cdv=36
+  /Portals/_default/Skins/Xcillion/Menus/MainMenu/MainMenu.css?cdv=36
+  /Portals/_default/Skins/Xcillion/skin.css?cdv=36
+  /Portals/_default/Skins/Xcillion/css/w3.css?cdv=36
+  /Portals/0/favicon.ico?ver=trQemnmk9Qzk2BNBnUOEAQ%3d%3d
+  /Data/Yield-Curve
+  /ScriptResource.axd?d=NJmAwtEo3IrHZAykNN-YK5jdicZh1GipFygdFP297XX2SrySZqTbPiclx3u4yfrvAcJjCIyUH4glBGOu4Ja2chbWGn86db1_xa76q6J-yaPbsm08fQSCWDTd2pIklVQmqVD0iA2&amp;t=5c0e0825
+  /Portals/_default/Skins/Xcillion/bootstrap/js/bootstrap.min.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/jquery.smartmenus.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/jquery.smartmenus.bootstrap.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/scripts.js?cdv=36
+  /Portals/0/logoPHEI.png?ver=1GROzwx4c39ZtvwPfr-wfw%3d%3d
+  https://www.phei.co.id/Produk-dan-Layanan/HPW-dan-Imbal-Hasil
+  https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+TEXT   404 Error Page Search Search Toggle navigation Tentang PHEI Sekilas PHEI Visi, Misi dan Nilai Inti Organisasi Tata Kelola Rangkaian Sejarah Karir Produk dan Layanan HPW dan Imbal Hasil Laporan Riset Indeks Sistem Aplikasi SoBFI Data HPW dan Imbal Hasil Indeks Credit Spread Matrix Informasi Efek Lainnya IGBF Publikasi Pengumuman Berita PHEI Berita Pasar IBMD Metodologi Area Pelanggan Akses Masuk TheNewBIPS SISO Retail Peraturan Rekan Kami Sorry, the page you are looking for cannot be found and might have been removed, had its name changed, or is temporarily unavailable. It is recommended that you start again from the homepage. Feel free to contact us if the problem persists or if you cannot find what you’re looking for. Copyright 2026 by PT Penilai Harga Efek Indonesia Terms Of Use | Privacy Statement 
+
+### PHEI HPW
+URL   https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+FINAL https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+HTTP  200  text/html; charset=utf-8  82606 bytes  1894ms
+TITLE HPW dan Imbal Hasil
+LINKS
+  /Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css?cdv=36
+  /Portals/_default/skins/xcillion/css/jquery.smartmenus.bootstrap.css?cdv=36
+  /Portals/_default/skins/xcillion/Menus/MainMenu/MainMenu.css?cdv=36
+  /Portals/_default/skins/xcillion/skin.css?cdv=36
+  /Portals/_default/skins/xcillion/css/w3.css?cdv=36
+  /Portals/0/favicon.ico?ver=trQemnmk9Qzk2BNBnUOEAQ%3d%3d
+  /Data/HPW-dan-Imbal-Hasil
+  /ScriptResource.axd?d=NJmAwtEo3IrHZAykNN-YK5jdicZh1GipFygdFP297XX2SrySZqTbPiclx3u4yfrvAcJjCIyUH4glBGOu4Ja2chbWGn86db1_xa76q6J-yaPbsm08fQSCWDTd2pIklVQmqVD0iA2&amp;t=5c0e0825
+  /Portals/_default/skins/xcillion/bootstrap/js/bootstrap.min.js?cdv=36
+  /Portals/_default/skins/xcillion/js/jquery.smartmenus.js?cdv=36
+  /Portals/_default/skins/xcillion/js/jquery.smartmenus.bootstrap.js?cdv=36
+  /Portals/_default/skins/xcillion/js/scripts.js?cdv=36
+  /Portals/0/logoPHEI.png?ver=1GROzwx4c39ZtvwPfr-wfw%3d%3d
+  https://www.facebook.com/PT-Penilai-Harga-Efek-Indonesia-PHEI-353604945744449
+  ../Portals/_default/Skins/Xcillion/Component/images/facebook-f.svg
+  ../Portals/_default/Skins/Xcillion/Component/images/twitter.svg
+  ../Portals/_default/Skins/Xcillion/Component/images/youtube.svg
+  ../Portals/_default/Skins/Xcillion/Component/images/instagram.svg
+  https://www.linkedin.com/company/penilai-harga-efek-indonesia
+  ../Portals/_default/Skins/Xcillion/Component/images/linkedin-in.svg
+  https://www.phei.co.id/Produk-dan-Layanan/HPW-dan-Imbal-Hasil
+  https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+  ../Portals/_default/Skins/Xcillion/Component/images/logo_ojk.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-idx.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-kpei.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-ksei.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-ticmi.png
+  ../Portals/_default/Skins/Xcillion/Component/images/logo-sipf.png
+TEXT   HPW dan Imbal Hasil Beranda Peta Situs Kontak FAQ ICBI &#x25BC; 431,3520 Previous 432,3313 Change 0,9793 Change (%) 0,23 Search Saturday 31-Okt-2026 Toggle navigation Tentang PHEI Sekilas PHEI Visi, Misi dan Nilai Inti Organisasi Tata Kelola Rangkaian Sejarah Karir Produk dan Layanan HPW dan Imbal Hasil Laporan Riset Indeks Sistem Aplikasi SoBFI Data HPW dan Imbal Hasil Indeks Credit Spread Matrix Informasi Efek Lainnya IGBF Publikasi Pengumuman Berita PHEI Berita Pasar IBMD Metodologi Area Pelanggan Akses Masuk TheNewBIPS SISO Retail Peraturan Rekan Kami IGSYC Benchmark and Retail Fair Prices Corporate Bond Yield by Tenor Indonesia Government Securities Yield Curve per 30-Oktober-2026 Tenor Year Today Yesterday 0,1 6,2794 6,2452 1,0 6,8615 6,7954 2,0 7,0098 6,9624 3,0 7,2261 7,1538 4,0 7,4090 7,3257 5,0 7,5217 7,4440 6,0 7,5805 7,5137 7,0 7,6082 7,5509 8,0 7,6204 7,5695 9,0 7,6255 7,5783 10,0 7,6275 7,5824 11,0 7,6283 7,5842 12,0 7,6286 7,5850 13,0 7,6288 7,5853 14,0 7,6288 7,5854 15,0 7,6288 7,5855 Tenor Year Today Yesterday 16,0 7,6288 7,5855 17,0 7,6288 7,5855 18,0 7,6288 7,5855 19,0 7,6288 7,5855 20,0 7,6288 7,5855 21,0 7,6288 7,5855 22,0 7,6288 7,5855 23,0 7,6288 7,5855 24,0
+
+### PHEI IGSYC
+URL   https://www.phei.co.id/Data/IGSYC
+FINAL https://www.phei.co.id/Data/IGSYC
+HTTP  404  text/html; charset=utf-8  21903 bytes  507ms
+TITLE 404 Error Page
+LINKS
+  /Portals/_default/Skins/Xcillion/bootstrap/css/bootstrap.min.css?cdv=36
+  /Portals/_default/Skins/Xcillion/css/jquery.smartmenus.bootstrap.css?cdv=36
+  /Portals/_default/Skins/Xcillion/Menus/MainMenu/MainMenu.css?cdv=36
+  /Portals/_default/Skins/Xcillion/skin.css?cdv=36
+  /Portals/_default/Skins/Xcillion/css/w3.css?cdv=36
+  /Portals/0/favicon.ico?ver=trQemnmk9Qzk2BNBnUOEAQ%3d%3d
+  /Data/IGSYC
+  /ScriptResource.axd?d=NJmAwtEo3IrHZAykNN-YK5jdicZh1GipFygdFP297XX2SrySZqTbPiclx3u4yfrvAcJjCIyUH4glBGOu4Ja2chbWGn86db1_xa76q6J-yaPbsm08fQSCWDTd2pIklVQmqVD0iA2&amp;t=5c0e0825
+  /Portals/_default/Skins/Xcillion/bootstrap/js/bootstrap.min.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/jquery.smartmenus.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/jquery.smartmenus.bootstrap.js?cdv=36
+  /Portals/_default/Skins/Xcillion/js/scripts.js?cdv=36
+  /Portals/0/logoPHEI.png?ver=1GROzwx4c39ZtvwPfr-wfw%3d%3d
+  https://www.phei.co.id/Produk-dan-Layanan/HPW-dan-Imbal-Hasil
+  https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil
+TEXT   404 Error Page Search Search Toggle navigation Tentang PHEI Sekilas PHEI Visi, Misi dan Nilai Inti Organisasi Tata Kelola Rangkaian Sejarah Karir Produk dan Layanan HPW dan Imbal Hasil Laporan Riset Indeks Sistem Aplikasi SoBFI Data HPW dan Imbal Hasil Indeks Credit Spread Matrix Informasi Efek Lainnya IGBF Publikasi Pengumuman Berita PHEI Berita Pasar IBMD Metodologi Area Pelanggan Akses Masuk TheNewBIPS SISO Retail Peraturan Rekan Kami Sorry, the page you are looking for cannot be found and might have been removed, had its name changed, or is temporarily unavailable. It is recommended that you start again from the homepage. Feel free to contact us if the problem persists or if you cannot find what you’re looking for. Copyright 2026 by PT Penilai Harga Efek Indonesia Terms Of Use | Privacy Statement 
+
+### IDX IGSYC page
+URL   https://www.idx.co.id/id/data-pasar/obligasi-sukuk/indonesia-government-securities-yield-curve-igsyc/
+FINAL https://www.idx.co.id/id/data-pasar/obligasi-sukuk/indonesia-government-securities-yield-curve-igsyc/
+HTTP  403  text/html; charset=UTF-8  5547 bytes  128ms
+NOTE  Cloudflare challenge page
+TITLE Attention Required! | Cloudflare
+TEXT   Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access idx.co.id Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: a532f1f4cae1ae14 &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### IDX IGSYC api 1
+URL   https://www.idx.co.id/primary/BondSukuk/GetIgsyc
+FINAL https://www.idx.co.id/primary/BondSukuk/GetIgsyc
+HTTP  403  text/html; charset=UTF-8  5547 bytes  8ms
+NOTE  Cloudflare challenge page
+TITLE Attention Required! | Cloudflare
+TEXT   Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access idx.co.id Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: a532f1f4eb1bae14 &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### IDX IGSYC api 2
+URL   https://www.idx.co.id/primary/BondSukuk/GetIndonesiaGovernmentSecuritiesYieldCurve
+FINAL https://www.idx.co.id/primary/BondSukuk/GetIndonesiaGovernmentSecuritiesYieldCurve
+HTTP  403  text/html; charset=UTF-8  5547 bytes  13ms
+NOTE  Cloudflare challenge page
+TITLE Attention Required! | Cloudflare
+TEXT   Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access idx.co.id Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: a532f1f4fb44ae14 &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### IDX IGSYC api 3
+URL   https://www.idx.co.id/primary/IndonesiaGovernmentSecuritiesYieldCurve/GetData
+FINAL https://www.idx.co.id/primary/IndonesiaGovernmentSecuritiesYieldCurve/GetData
+HTTP  403  text/html; charset=UTF-8  5547 bytes  11ms
+NOTE  Cloudflare challenge page
+TITLE Attention Required! | Cloudflare
+TEXT   Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access idx.co.id Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: a532f1f50b75ae14 &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### IDX bond list api
+URL   https://www.idx.co.id/primary/ListedBond/GetBondSukuk?start=0&length=10
+FINAL https://www.idx.co.id/primary/ListedBond/GetBondSukuk?start=0&length=10
+HTTP  403  text/html; charset=UTF-8  5547 bytes  9ms
+NOTE  Cloudflare challenge page
+TITLE Attention Required! | Cloudflare
+TEXT   Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access idx.co.id Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: a532f1f51bb0ae14 &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### IDX JCI chart
+URL   https://www.idx.co.id/primary/Home/GetIndexList
+FINAL https://www.idx.co.id/primary/Home/GetIndexList
+HTTP  403  text/html; charset=UTF-8  5547 bytes  9ms
+NOTE  Cloudflare challenge page
+TITLE Attention Required! | Cloudflare
+TEXT   Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access idx.co.id Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page. Cloudflare Ray ID: a532f1f52bfaae14 &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### DJPPR home
+URL   https://www.djppr.kemenkeu.go.id/
+ERROR TypeError: fetch failed / ERR_TLS_CERT_ALTNAME_INVALID  5904ms
+
+### DJPPR ownership
+URL   https://www.djppr.kemenkeu.go.id/kepemilikansbn
+ERROR TypeError: fetch failed / ERR_TLS_CERT_ALTNAME_INVALID  4580ms
+
+### DJPPR auction SUN
+URL   https://www.djppr.kemenkeu.go.id/hasillelangsun
+ERROR TypeError: fetch failed / ERR_TLS_CERT_ALTNAME_INVALID  4493ms
+
+### DJPPR data SBN
+URL   https://www.djppr.kemenkeu.go.id/datasbn
+ERROR TypeError: fetch failed / ERR_TLS_CERT_ALTNAME_INVALID  4012ms
+
+### BI rate
+URL   https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx
+FINAL https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx
+HTTP  200  text/html; charset=utf-8  659915 bytes  2758ms
+TITLE Indikator
+LINKS
+  https://www.bi.go.id:443/id/statistik/indikator/bi-rate.aspx
+  ./bi-rate.aspx
+  /id/fungsi-utama/moneter/bi-rate
+  /id/fungsi-utama/moneter/indonia-jibor/default.aspx
+  /id/publikasi/lelang/
+  /id/publikasi/lelang/operasi-moneter/
+  /id/publikasi/lelang/non-operasi-moneter/default.aspx
+  /id/layanan/lelang-jasa-barang/
+  /id/informasi-publik/penghargaan/default.aspx
+  https://www.bi.go.id/id/fungsi-utama/moneter/bi-rate/default.aspx
+  https://www.bi.go.id/id/fungsi-utama/moneter/indonia-jibor/default.aspx
+TEXT   kewenangan pengelolaan Bank Indonesia demi mencapai dan memelihara stabilitas nilai Rupiah. Moneter Stabilitas Sistem Keuangan Sistem Pembayaran dan Pengelolaan Uang Rupiah Inflasi Indikator Moneter BI-Rate Operasi Moneter INDONIA dan Harga Pasar Uang Lainnya JISDOR, Kurs Acuan Non-USD/IDR, dan Kurs Transaksi Pasar Keuangan Ekonomi dan Keuangan Syariah Ikhtisar Instrumen Kebijakan Makroprudensial Protokol Manajemen Krisis Koordinasi BI dengan Lembaga/Otoritas Lain Pengembangan UMKM Keuangan Inklusif Keuangan Berkelanjutan Sistem Pembayaran Nilai Besar Sistem Pembayaran Ritel Pengelolaan Uang Rupiah Perizinan Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme Standardisasi Kompetensi Blueprint Sistem Pembayaran Indonesia Rupiah Rupiah Informasi seputar Rupiah sebagai mata uang Republik Indonesia yang dikelola oleh Bank Indonesia sesuai dengan Undang Undang. Gambar Uang Uang Rupiah Yang Dicabut Pencegahan dan Pemberantasan Uang Rupiah Palsu Cinta, Bangga, Paham Rupiah Proyek Garuda: Digital Rupiah Publikasi Publikasi Produk publikasi Bank Indonesia meliputi peraturan, laporan, dan kajian, serta kalender kegiatan Bank Indonesia. Ruang Media Kalender Peraturan Transaksi Laporan Ka
+
+### BI INDONIA
+URL   https://www.bi.go.id/id/statistik/indikator/indonia.aspx
+FINAL https://www.bi.go.id/id/statistik/indikator/indonia.aspx
+HTTP  200  text/html; charset=utf-8  599964 bytes  917ms
+TITLE Indikator
+LINKS
+  https://www.bi.go.id:443/id/statistik/indikator/indonia.aspx
+  ./indonia.aspx
+  /id/fungsi-utama/moneter/bi-rate
+  /id/fungsi-utama/moneter/indonia-jibor/default.aspx
+  /id/publikasi/lelang/
+  /id/publikasi/lelang/operasi-moneter/
+  /id/publikasi/lelang/non-operasi-moneter/default.aspx
+  /id/layanan/lelang-jasa-barang/
+  /id/informasi-publik/penghargaan/default.aspx
+TEXT   kewenangan pengelolaan Bank Indonesia demi mencapai dan memelihara stabilitas nilai Rupiah. Moneter Stabilitas Sistem Keuangan Sistem Pembayaran dan Pengelolaan Uang Rupiah Inflasi Indikator Moneter BI-Rate Operasi Moneter INDONIA dan Harga Pasar Uang Lainnya JISDOR, Kurs Acuan Non-USD/IDR, dan Kurs Transaksi Pasar Keuangan Ekonomi dan Keuangan Syariah Ikhtisar Instrumen Kebijakan Makroprudensial Protokol Manajemen Krisis Koordinasi BI dengan Lembaga/Otoritas Lain Pengembangan UMKM Keuangan Inklusif Keuangan Berkelanjutan Sistem Pembayaran Nilai Besar Sistem Pembayaran Ritel Pengelolaan Uang Rupiah Perizinan Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme Standardisasi Kompetensi Blueprint Sistem Pembayaran Indonesia Rupiah Rupiah Informasi seputar Rupiah sebagai mata uang Republik Indonesia yang dikelola oleh Bank Indonesia sesuai dengan Undang Undang. Gambar Uang Uang Rupiah Yang Dicabut Pencegahan dan Pemberantasan Uang Rupiah Palsu Cinta, Bangga, Paham Rupiah Proyek Garuda: Digital Rupiah Publikasi Publikasi Produk publikasi Bank Indonesia meliputi peraturan, laporan, dan kajian, serta kalender kegiatan Bank Indonesia. Ruang Media Kalender Peraturan Transaksi Laporan Ka
+
+### BI JISDOR
+URL   https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx
+FINAL https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx
+HTTP  200  text/html; charset=utf-8  644439 bytes  1018ms
+TITLE JISDOR
+LINKS
+  /id/fungsi-utama/moneter/bi-rate
+  /id/fungsi-utama/moneter/indonia-jibor/default.aspx
+  /id/publikasi/lelang/
+  /id/publikasi/lelang/operasi-moneter/
+  /id/publikasi/lelang/non-operasi-moneter/default.aspx
+  /id/layanan/lelang-jasa-barang/
+  /id/informasi-publik/penghargaan/default.aspx
+TEXT   JISDOR You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page. Turn on more accessible mode Turn off more accessible mode Skip Ribbon Commands Skip to main content Turn off Animations Turn on Animations To navigate through the Ribbon, use standard browser navigation keys. To skip between groups, use Ctrl+LEFT or Ctrl+RIGHT. To jump to the first Ribbon tab use Ctrl+[. To jump to the last selected command use Ctrl+]. To activate a command, use Enter. Browse Tab 1 of 2. Page Tab 2 of 2. Not following Bank Indonesia Currently selected JISDOR &#160; Tentang BI Tentang BI Informasi seputar organisasi, transformasi dan sejarah Bank Indonesia sebagai bank sentral Republik Indonesia. Profil Sejarah Bank Indonesia Transformasi Bank Indonesia Organisasi Governance Undang-Undang BI Fungsi Utama Fungsi Utama Informasi terkait fungsi utama yang menjadi kewenangan pengelolaan Bank Indonesia demi mencapai dan memelihara stabilitas nilai Rupiah. Moneter Stabilitas Sistem Keuangan Sistem Pembayaran dan Pengelolaan Uang Rupiah Inflasi Indikator Moneter BI-Rate Operasi Moneter INDONIA dan Harga Pasar Uang Lainnya JISDOR, Kurs Acuan Non-U
+
+### BI SRBI
+URL   https://www.bi.go.id/id/fungsi-utama/moneter/srbi/default.aspx
+FINAL https://www.bi.go.id/id/e404.aspx
+HTTP  200  text/html; charset=utf-8  611762 bytes  5576ms
+TITLE 404
+LINKS
+  /id/fungsi-utama/moneter/bi-rate
+  /id/fungsi-utama/moneter/indonia-jibor/default.aspx
+  /id/publikasi/lelang/
+  /id/publikasi/lelang/operasi-moneter/
+  /id/publikasi/lelang/non-operasi-moneter/default.aspx
+  /id/layanan/lelang-jasa-barang/
+  /id/informasi-publik/penghargaan/default.aspx
+TEXT   kewenangan pengelolaan Bank Indonesia demi mencapai dan memelihara stabilitas nilai Rupiah. Moneter Stabilitas Sistem Keuangan Sistem Pembayaran dan Pengelolaan Uang Rupiah Inflasi Indikator Moneter BI-Rate Operasi Moneter INDONIA dan Harga Pasar Uang Lainnya JISDOR, Kurs Acuan Non-USD/IDR, dan Kurs Transaksi Pasar Keuangan Ekonomi dan Keuangan Syariah Ikhtisar Instrumen Kebijakan Makroprudensial Protokol Manajemen Krisis Koordinasi BI dengan Lembaga/Otoritas Lain Pengembangan UMKM Keuangan Inklusif Keuangan Berkelanjutan Sistem Pembayaran Nilai Besar Sistem Pembayaran Ritel Pengelolaan Uang Rupiah Perizinan Anti Pencucian Uang dan Pencegahan Pendanaan Terorisme Standardisasi Kompetensi Blueprint Sistem Pembayaran Indonesia Rupiah Rupiah Informasi seputar Rupiah sebagai mata uang Republik Indonesia yang dikelola oleh Bank Indonesia sesuai dengan Undang Undang. Gambar Uang Uang Rupiah Yang Dicabut Pencegahan dan Pemberantasan Uang Rupiah Palsu Cinta, Bangga, Paham Rupiah Proyek Garuda: Digital Rupiah Publikasi Publikasi Produk publikasi Bank Indonesia meliputi peraturan, laporan, dan kajian, serta kalender kegiatan Bank Indonesia. Ruang Media Kalender Peraturan Transaksi Laporan Ka
+
+### Yahoo JCI
+URL   https://query1.finance.yahoo.com/v8/finance/chart/%5EJKSE?range=5d&interval=1d
+FINAL https://query1.finance.yahoo.com/v8/finance/chart/%5EJKSE?range=5d&interval=1d
+HTTP  200  application/json;charset=utf-8  1679 bytes  61ms
+BODY  {"chart":{"result":[{"meta":{"currency":"IDR","symbol":"^JKSE","exchangeName":"JKT","fullExchangeName":"Jakarta","instrumentType":"INDEX","firstTradeDate":639367200,"regularMarketTime":1793350805,"hasPrePostMarketData":false,"gmtoffset":25200,"timezone":"WIB","exchangeTimezoneName":"Asia/Jakarta","regularMarketPrice":5057.05,"regularMarketChangePercent":-0.804,"fulldayPrice":5057.05,"fulldayChange":-41.007,"fulldayChangePercent":-0.804,"fiftyTwoWeekHigh":9174.474,"fiftyTwoWeekLow":4907.37,"regularMarketDayHigh":5116.008,"regularMarketDayLow":4979.342,"longName":"IDX COMPOSITE","shortName":"IDX COMPOSITE","chartPreviousClose":5373.094,"priceHint":2,"currentTradingPeriod":{"pre":{"timezone":"WIB","end":1793325600,"start":1793325600,"gmtoffset":25200},"regular":{"timezone":"WIB","end":1793351700,"start":1793325600,"gmtoffset":25200},"post":{"timezone":"WIB","end":1793351700,"start":1793351700,"gmtoffset":25200}},"dataGranularity":"1d","range":"5d","validRanges":["1d","5d","1mo","3mo","6mo","1y","2y","5y","10y","ytd","max"]},"timestamp":[1792980000,1793066400,1793152800,1793239200,1793325600],"indicators":{"quote":[{"low":[5349.75390625,5182.3681640625,5167.3349609375,5098.05712890625,4979.341796875],"volume":[280027100,331730400,301071800,214228100,347383100],"open":[5442.2998046875,5357.96484375,5249.06884765625,5305.1982421875,5066.93505859375],"close":[5373.09423828125,5266.1298828125,5282.31201171875,5098.05712890625,5057.0498046875],"high":[5453.64697265625,5418.13720703125
+
+### Yahoo USDIDR
+URL   https://query1.finance.yahoo.com/v8/finance/chart/IDR%3DX?range=5d&interval=1d
+FINAL https://query1.finance.yahoo.com/v8/finance/chart/IDR%3DX?range=5d&interval=1d
+HTTP  200  application/json;charset=utf-8  1553 bytes  55ms
+BODY  {"chart":{"result":[{"meta":{"currency":"IDR","symbol":"IDR=X","exchangeName":"CCY","fullExchangeName":"CCY","instrumentType":"CURRENCY","firstTradeDate":993682800,"regularMarketTime":1793417643,"hasPrePostMarketData":false,"gmtoffset":0,"timezone":"GMT","exchangeTimezoneName":"Europe/London","regularMarketPrice":18120.0,"regularMarketChangePercent":-0.0441,"fulldayPrice":18120.0,"fulldayChange":-8.0,"fulldayChangePercent":-0.0441,"fiftyTwoWeekHigh":18222.0,"fiftyTwoWeekLow":15636.2,"regularMarketDayHigh":18120.0,"regularMarketDayLow":18120.0,"regularMarketVolume":0,"longName":"USD/IDR","shortName":"USD/IDR","chartPreviousClose":18081.0,"priceHint":4,"currentTradingPeriod":{"pre":{"timezone":"GMT","start":1793318400,"end":1793318400,"gmtoffset":0},"regular":{"timezone":"GMT","start":1793318400,"end":1793404740,"gmtoffset":0},"post":{"timezone":"GMT","start":1793404740,"end":1793404740,"gmtoffset":0}},"dataGranularity":"1d","range":"5d","validRanges":["1d","5d","1mo","3mo","6mo","1y","2y","5y","10y","ytd","max"]},"timestamp":[1792972800,1793059200,1793145600,1793232000,1793318400,1793417643],"indicators":{"quote":[{"open":[18092.0,18142.0,18147.0,18102.099609375,18126.0,18120.0],"high":[18165.80078125,18169.80078125,18179.69921875,18180.0,18186.0,18120.0],"volume":[0,0,0,0,0,0],"close":[18081.0,18144.0,18139.5,18065.400390625,18070.400390625,18120.0],"low":[18072.0,18116.0,18146.0,18088.19921875,18037.69921875,18120.0]}],"adjclose":[{"adjclose":[18081.0,18144.0,18139.5,18065.4
+
+### Yahoo EIDO
+URL   https://query1.finance.yahoo.com/v8/finance/chart/EIDO?range=5d&interval=1d
+FINAL https://query1.finance.yahoo.com/v8/finance/chart/EIDO?range=5d&interval=1d
+HTTP  200  application/json;charset=utf-8  1753 bytes  58ms
+BODY  {"chart":{"result":[{"meta":{"currency":"USD","symbol":"EIDO","exchangeName":"PCX","fullExchangeName":"NYSEArca","instrumentType":"ETF","firstTradeDate":1273239000,"regularMarketTime":1793390400,"hasPrePostMarketData":true,"gmtoffset":-14400,"timezone":"EDT","exchangeTimezoneName":"America/New_York","regularMarketPrice":9.96,"regularMarketChangePercent":-1.19,"fulldayPrice":9.96,"fulldayChange":-0.04,"fulldayChangePercent":-0.397,"fiftyTwoWeekHigh":19.29,"fiftyTwoWeekLow":9.61,"regularMarketDayHigh":10.05,"regularMarketDayLow":9.94,"regularMarketVolume":2882637,"longName":"iShares MSCI Indonesia ETF","shortName":"iShares MSCI Indonesia ETF","chartPreviousClose":10.6,"priceHint":2,"currentTradingPeriod":{"pre":{"timezone":"EDT","start":1793347200,"end":1793367000,"gmtoffset":-14400},"regular":{"timezone":"EDT","start":1793367000,"end":1793390400,"gmtoffset":-14400},"post":{"timezone":"EDT","start":1793390400,"end":1793404800,"gmtoffset":-14400}},"dataGranularity":"1d","range":"5d","validRanges":["1d","5d","1mo","3mo","6mo","1y","2y","5y","10y","ytd","max"]},"timestamp":[1793021400,1793107800,1793194200,1793280600,1793367000],"indicators":{"quote":[{"high":[10.539999961853027,10.369999885559082,10.489999771118164,10.100000381469727,10.050000190734863],"volume":[1665200,3042900,1918900,2301000,2891500],"close":[10.520000457763672,10.34000015258789,10.449999809265137,10.079999923706055,9.960000038146973],"open":[10.5,10.319999694824219,10.479999542236328,10.050000190734863,10.020
+
+### CNBC quote ID tenors
+URL   https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ID1YT%3DRR%7CID2YT%3DRR%7CID3YT%3DRR%7CID5YT%3DRR%7CID10YT%3DRR%7CID15YT%3DRR%7CID20YT%3DRR%7CID30YT%3DRR&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json
+FINAL https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ID1YT%3DRR%7CID2YT%3DRR%7CID3YT%3DRR%7CID5YT%3DRR%7CID10YT%3DRR%7CID15YT%3DRR%7CID20YT%3DRR%7CID30YT%3DRR&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json
+HTTP  200  application/json  7293 bytes  3181ms
+BODY  {"FormattedQuoteResult":{"FormattedQuote":[{"symbol":"ID1YT=RR","symbolType":"symbol","code":0,"name":"1Y GOVT. BOND","shortName":"#1Y","onAirName":"1Y GOVT. BOND","altName":"","last":"6.838%","last_timedate":"9:27 PM EDT","last_time":"2026-10-29T21:27:47.000-0400","changetype":"DOWN","type":"BOND","subType":"Government Bond","exchange":"Exchange","source":"Exchange","open":"6.838%","high":"6.838%","low":"6.838%","change":"-0.006","change_pct":"0.00%","volume":"0","volume_alt":"0.0","provider":"CNBC Quote Cache","previous_day_closing":"6.838%","realTime":"true","curmktstatus":"REG_MKT","yrhiprice":"110.00","yrloprice":"6.84","yrlodate":"10/29/26","streamable":"1","bond_last_price":"103.80","bond_open_price":"103.80","bond_high_price":"103.80","bond_low_price":"103.80","bond_prev_day_closing_price":"103.80","maturity_date":"2028-02-15","coupon":"10.00%","issue_id":"6327918","countryCode":"EU","timeZone":"EDT","feedSymbol":"ID1YT=RR","portfolioindicator":"N"},{"symbol":"ID2YT=RR","symbolType":"symbol","code":0,"name":"2Y GOVT. BOND","shortName":"#2Y","onAirName":"2Y GOVT. BOND","altName":"","changetype":"UNCH","type":"BOND","subType":"Government Bond","exchange":"Exchange","source":"Exchange","open":"0.00%","high":"0.00%","low":"0.00%","provider":"CNBC Quote Cache","realTime":"true","curmktstatus":"REG_MKT","yrhidate":"12/31/69","yrlodate":"12/31/69","streamable":"1","issue_id":"8492509","countryCode":"EU","timeZone":"EDT","feedSymbol":"ID2YT=RR","portfolioindicator":"N"},{"sym
+
+### CNBC bars ID10Y
+URL   https://ts-api.cnbc.com/harmony/app/bars/ID10YT%3DRR/1D/20251001000000/20261031000000/adjusted/EST5EDT.json
+FINAL https://ts-api.cnbc.com/harmony/app/bars/ID10YT%3DRR/1D/20251001000000/20261031000000/adjusted/EST5EDT.json
+HTTP  200  application/json  34829 bytes  161ms
+BODY  {"barData":{"priceBars":[{"open":"6.3410","high":"6.3520","low":"6.3180","close":"6.3180","volume":0,"tradeTime":"20251001000000","tradeTimeinMills":1759291200000},{"open":"6.3180","high":"6.3330","low":"6.3180","close":"6.3330","volume":0,"tradeTime":"20251002000000","tradeTimeinMills":1759377600000},{"open":"6.3330","high":"6.3370","low":"6.3270","close":"6.3270","volume":0,"tradeTime":"20251003000000","tradeTimeinMills":1759464000000},{"open":"6.3270","high":"6.3280","low":"6.3150","close":"6.3150","volume":0,"tradeTime":"20251006000000","tradeTimeinMills":1759723200000},{"open":"6.3150","high":"6.3210","low":"6.2680","close":"6.2680","volume":0,"tradeTime":"20251007000000","tradeTimeinMills":1759809600000},{"open":"6.2680","high":"6.2680","low":"6.1290","close":"6.1290","volume":0,"tradeTime":"20251008000000","tradeTimeinMills":1759896000000},{"open":"6.1290","high":"6.2810","low":"6.1290","close":"6.2680","volume":0,"tradeTime":"20251009000000","tradeTimeinMills":1759982400000},{"open":"6.2680","high":"6.2680","low":"6.1390","close":"6.1390","volume":0,"tradeTime":"20251010000000","tradeTimeinMills":1760068800000},{"open":"6.1390","high":"6.1890","low":"6.1150","close":"6.1150","volume":0,"tradeTime":"20251013000000","tradeTimeinMills":1760328000000},{"open":"6.1150","high":"6.1150","low":"6.0510","close":"6.0560","volume":0,"tradeTime":"20251014000000","tradeTimeinMills":1760414400000},{"open":"6.0590","high":"6.0590","low":"6.0150","close":"6.0150","volume":0,"tradeTim
+
+### CNBC quote ID CDS
+URL   https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ID5YCDS%3DR&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json
+FINAL https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ID5YCDS%3DR&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json
+HTTP  200  application/json  77 bytes  129ms
+BODY  {"FormattedQuoteResult":{"FormattedQuote":[{"symbol":"ID5YCDS=R","code":1}]}}
+
+### Investing ID10Y hist
+URL   https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield-historical-data
+FINAL https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield-historical-data
+HTTP  403  text/plain  3 bytes  28ms
+BODY  403
+
+### WGB Indonesia
+URL   https://www.worldgovernmentbonds.com/country/indonesia/
+FINAL https://www.worldgovernmentbonds.com/country/indonesia/
+HTTP  200  text/html; charset=UTF-8  46913 bytes  524ms
+TITLE Indonesia Government Bonds - Yields Curve
+LINKS
+  https://fonts.googleapis.com
+  //fonts.googleapis.com
+  https://www.worldgovernmentbonds.com/wp-json/
+  https://www.worldgovernmentbonds.com/wp-json/wp/v2/pages/9
+  https://www.worldgovernmentbonds.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.worldgovernmentbonds.com%2Fcountry-detail%2F
+  https://www.worldgovernmentbonds.com/inverted-yield-curves/
+TEXT   Indonesia Government Bonds - Yields Curve Inverted Curves Spread Credit Ratings Central Bank Rates Sovereign CDS News Indonesia Government Bonds - Yields Curve COUNTRY • SUMMARY INDONESIA Last Update: -- --- ----, --:-- GMT+0 Main Indicators 10-Year Gov.Bond Yield : -.--- % Spread vs 2-Year Bond : ---.-- bp Central Bank Rate : ---- % ( ---- ) S&P Rating : ---- 5Y Credit Default Swap : ---- bp ( ---- % implied probability of default) Table of contents Your practical guide to Building Wealth . Master ETF Investing & maximize profits with Lazy Portfolios & Passive Strategies. English Book Italian Book Indonesia - Summary The Indonesia 10-Year Government Bond currently offers a yield of -.--- % . Indonesia Central Bank Rate stands at ---- % , following the most recent adjustment in ---- . According to Standard & Poor's agency, the Indonesia credit rating is ---- . The current quotation for Indonesia 5-Years Credit Default Swap is ---- basis points. Correspondingly, the implied probability of default is ---- %. Indonesia Yield Curve A Yield Curve is a graph that shows the relationship between interest rates (or yields) and different maturities of debt for a specific borrower, often gov
+
+### ADB ABO Indonesia
+URL   https://asianbondsonline.adb.org/indonesia/
+FINAL https://asianbondsonline.adb.org/indonesia/
+HTTP  200  text/html; charset=UTF-8  49315 bytes  1390ms
+TITLE AsianBondsOnline - Indonesia
+LINKS
+  https://www.google.com/jsapi
+  https://www.idnfinancials.com/news/70986/10-year-bond-yields-hit-their-highest-since-2022-as-cds-tops-100
+  https://www.idnfinancials.com/news/71021/indonesian-bond-yields-hit-7-54-as-interest-wanes-what-is-happening
+  https://djppr.kemenkeu.go.id/en/governmentdebtsecuritiesauctionresultontuesday,october27,2026
+  https://djppr.kemenkeu.go.id/en/sovereignshariasecuritiesauctionresultontuesdayoctober20,2026
+  https://djppr.kemenkeu.go.id/en/governmentdebtsecuritiesauctionresultontuesday,october13,2026
+  https://djppr.kemenkeu.go.id/en/sovereignshariasecuritiesauctionresultontuesdayoctober6,2026
+TEXT   AsianBondsOnline - Indonesia --> --> About Feedback Contact Site Map Search Welcome! AsianBondsOnline is a one-stop source of information on bond markets in emerging East Asia. Home Home Data Portal Economies &#9656 Brunei Darussalam &#9656 Cambodia &#9656 People's Republic of China &#9656 Hong Kong, China &#9656 Indonesia &#9656 Japan &#9656 Republic of Korea &#9656 Lao People's Democratic Republic &#9656 Malaysia &#9656 Myanmar &#9656 Philippines &#9656 Singapore &#9656 Thailand &#9656 Viet Nam &#9656 Brunei Darussalam &#9656 Cambodia &#9656 People's Republic of China &#9656 Hong Kong, China &#9656 Indonesia &#9656 Japan &#9656 Republic of Korea &#9656 Lao People's Democratic Republic &#9656 Malaysia &#9656 Myanmar &#9656 Philippines &#9656 Singapore &#9656 Thailand &#9656 Viet Nam --> Market Watch Publications Events Publications and Events Regulations What's New Sustainable Finance ABMF Macro Tracker &#9656 About &#9656 Economy Dashboard &#9656 Resources Fiscal Asia &#9656 Fiscal Indicators &#9656 ADB Fiscal Research and Publications &#9656 Events Legacy site ---> Thank you for visiting AsianBondsOnline. Help us improve our website by participating in a short survey &nbsp;&nbs
+
+### Pasardana bonds
+URL   https://pasardana.id/api/BondSearchResult/GetAll
+FINAL https://pasardana.id/api/BondSearchResult/GetAll
+HTTP  404  text/html; charset=utf-8  128 bytes  851ms
+TITLE 
+TEXT  { "Message": "No HTTP resource was found that matches the request URI 'https://pasardana.id/api/BondSearchResult/GetAll'." }
+
+### CNBC Indonesia bonds
+URL   https://www.cnbcindonesia.com/market-data/bonds
+FINAL https://www.cnbcindonesia.com/market-data/bonds
+HTTP  403  text/html; charset=UTF-8  7236 bytes  61ms
+TITLE Access denied | www.cnbcindonesia.com used Cloudflare to restrict access | www.cnbcindonesia.com | Cloudflare
+TEXT   Access denied | www.cnbcindonesia.com used Cloudflare to restrict access | www.cnbcindonesia.com | Cloudflare Please enable cookies. Error 1005 Ray ID: a532f2d4ceb10c9f &bull; 2026-10-31 13:18:56 UTC Access denied What happened? The owner of this website (www.cnbcindonesia.com) has banned the autonomous system number (ASN) your IP address is in (8075) from accessing this website. Please see https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1005/ for more details. Was this page helpful? Yes No Thank you for your feedback! Cloudflare Ray ID: a532f2d4ceb10c9f &bull; Your IP: Click to reveal 48.217.140.96 &bull; Performance &amp; security by Cloudflare 
+
+### US Treasury (control)
+URL   https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv
+FINAL https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv
+HTTP  200  text/csv; charset=UTF-8  17039 bytes  167ms
+BODY  Date,"1 Mo","1.5 Month","2 Mo","3 Mo","4 Mo","6 Mo","1 Yr","2 Yr","3 Yr","5 Yr","7 Yr","10 Yr","20 Yr","30 Yr"
+10/30/2026,4.06,4.09,4.16,4.16,4.18,4.25,4.36,4.56,4.65,4.71,4.80,4.94,5.34,5.31
+10/29/2026,4.06,4.08,4.17,4.18,4.21,4.28,4.42,4.61,4.73,4.78,4.87,4.98,5.35,5.32
+10/28/2026,4.07,4.10,4.16,4.18,4.22,4.32,4.47,4.67,4.80,4.85,4.95,5.05,5.41,5.37
+10/27/2026,4.10,4.11,4.18,4.22,4.31,4.34,4.50,4.70,4.80,4.82,4.91,4.99,5.34,5.30
+10/26/2026,4.11,4.13,4.18,4.22,4.32,4.35,4.47,4.68,4.79,4.84,4.91,5.00,5.35,5.31
+10/23/2026,4.11,4.11,4.16,4.22,4.30,4.30,4.44,4.69,4.75,4.82,4.89,5.00,5.37,5.33
+10/22/2026,4.11,4.10,4.16,4.22,4.29,4.29,4.41,4.65,4.72,4.78,4.86,4.96,5.32,5.29
+10/21/2026,4.09,4.12,4.16,4.25,4.34,4.35,4.52,4.81,4.89,4.95,5.03,5.13,5.47,5.42
+10/20/2026,4.10,4.13,4.17,4.26,4.34,4.36,4.51,4.79,4.86,4.94,5.02,5.12,5.47,5.42
+10/19/2026,4.11,4.14,4.17,4.27,4.34,4.37,4.50,4.77,4.85,4.94,5.04,5.15,5.53,5.48
+10/16/2026,4.12,4.14,4.17,4.26,4.32,4.34,4.46,4.74,4.82,4.89,4.98,5.09,5.47,5.43
+10/15/2026,4.17,4.15,4.19,4.28,4.35,4.35,4.49,4.77,4.85,4.91,5.00,5.10,5.48,5.43
+10/14/2026,4.11,4.15,4.15,4.28,4.36,4.37,4.53,4.82,4.92,5.00,5.09,5.19,5.57,5.52
+10/13/2026,4.10,4.15,4.15,4.26,4.32,4.34,4.48,4.79,4.90,5.00,5.11,5.21,5.60,5.56
+10/09/2026,4.13,4.13,4.13,4.25,4.29,4.32,4.47,4.80,4.89,5.02,5.13,5.24,5.65,5.60
+10/08/2026,4.14,4.14,4.13,4.23,4.29,4.30,4.44,4.75,4.85,4.99,5.11,5.22,5.64,5.60
+10/07/2026,4.07,4.13,4.14,4.22,4.28,4.28,4.42,4.77,4.87,5.03,5.15,5.28,5.71,5.67
+10/06/2026,4
