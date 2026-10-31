@@ -1,0 +1,57 @@
+name: Korea IRS curve
+
+# Daily after the Seoul money brokers post their KRW IRS closes (~16:30–17:00 KST): add the day's closes by tenor to
+# data/korea-irs.json (scripts/fetch-korea-irs.mjs), commit and redeploy. The Korea tab draws the IRS curve from it.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-korea-irs.mjs
+      - .github/workflows/korea-irs.yml
+  schedule:
+    - cron: "45 9 * * 1-5"    # 17:45 Singapore (18:45 Seoul)
+    - cron: "15 12 * * 1-5"   # 20:15 Singapore, late postings
+    - cron: "45 0 * * 2-6"    # 08:45 Singapore next morning, safety net
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: korea-irs
+  cancel-in-progress: false
+
+jobs:
+  irs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: KRW IRS closes by tenor (Korea / Seoul Money Brokerage)
+        run: node scripts/fetch-korea-irs.mjs --probe || echo "IRS fetch failed; keeping the committed file"
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          [ -f data/korea-irs.json ] && git add data/korea-irs.json
+          [ -d data/korea-irs-probe ] && git add data/korea-irs-probe
+          if git diff --cached --quiet; then
+            echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh Korea IRS curve"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push && break; sleep 10; done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
