@@ -146,7 +146,7 @@ jobs:
           if [ -f data/cgb-futures.json ]; then cp data/cgb-futures.json _site/data/; fi
           if [ -f data/china-flows.json ]; then cp data/china-flows.json _site/data/; fi
           mkdir -p _site/china && cp china/index.html _site/china/
-          for f in korea korea-recap korea-flows ktb-futures; do if [ -f data/$f.json ]; then cp data/$f.json _site/data/; fi; done
+          for f in korea korea-recap korea-flows ktb-futures korea-irs; do if [ -f data/$f.json ]; then cp data/$f.json _site/data/; fi; done
           mkdir -p _site/korea && cp korea/index.html _site/korea/
           if [ -f data/sofr.json ]; then cp data/sofr.json _site/data/; fi
           if [ -f data/us-recap.json ]; then cp data/us-recap.json _site/data/; fi
