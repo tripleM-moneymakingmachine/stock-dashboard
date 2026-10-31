@@ -1,81 +1,90 @@
-// Probe which Indonesian bond / market data sources GitHub Actions can reach.
-// For each URL: status, content type, size, final URL, a text sample, and (for HTML) links worth following.
+// Probe round 2: dig into the sources that answered in round 1.
+import { Agent } from 'undici';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
-const LINK_RE = /(xls|xlsx|csv|json|api|ashx|download|igsyc|yield|kurva|imbal|hpw|harga|lelang|auction|kepemilikan|ownership|srbi|indonia|jibor|bi-rate|birate|sbn|sukuk|pbs|portals)/i;
+const insecure = new Agent({ connect: { rejectUnauthorized: false } }); // DJPPR serves a cert with the wrong host name
 
-const T = [
-  // PHEI / IBPA (official valuation agency; IGSYC curve, fair prices per series)
-  ['PHEI home', 'https://www.phei.co.id/'],
-  ['PHEI en home', 'https://www.phei.co.id/en-us/'],
-  ['PHEI data', 'https://www.phei.co.id/Data'],
-  ['PHEI yield curve', 'https://www.phei.co.id/Data/Yield-Curve'],
-  ['PHEI HPW', 'https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil'],
-  ['PHEI IGSYC', 'https://www.phei.co.id/Data/IGSYC'],
-  // IDX (publishes IGSYC and bond data)
-  ['IDX IGSYC page', 'https://www.idx.co.id/id/data-pasar/obligasi-sukuk/indonesia-government-securities-yield-curve-igsyc/'],
-  ['IDX IGSYC api 1', 'https://www.idx.co.id/primary/BondSukuk/GetIgsyc'],
-  ['IDX IGSYC api 2', 'https://www.idx.co.id/primary/BondSukuk/GetIndonesiaGovernmentSecuritiesYieldCurve'],
-  ['IDX IGSYC api 3', 'https://www.idx.co.id/primary/IndonesiaGovernmentSecuritiesYieldCurve/GetData'],
-  ['IDX bond list api', 'https://www.idx.co.id/primary/ListedBond/GetBondSukuk?start=0&length=10'],
-  ['IDX JCI chart', 'https://www.idx.co.id/primary/Home/GetIndexList'],
-  // DJPPR (Ministry of Finance: auctions, foreign ownership of SBN, series list)
-  ['DJPPR home', 'https://www.djppr.kemenkeu.go.id/'],
-  ['DJPPR ownership', 'https://www.djppr.kemenkeu.go.id/kepemilikansbn'],
-  ['DJPPR auction SUN', 'https://www.djppr.kemenkeu.go.id/hasillelangsun'],
-  ['DJPPR data SBN', 'https://www.djppr.kemenkeu.go.id/datasbn'],
-  // Bank Indonesia (BI Rate, INDONIA, JIBOR, JISDOR, SRBI)
-  ['BI rate', 'https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx'],
-  ['BI INDONIA', 'https://www.bi.go.id/id/statistik/indikator/indonia.aspx'],
-  ['BI JISDOR', 'https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx'],
-  ['BI SRBI', 'https://www.bi.go.id/id/fungsi-utama/moneter/srbi/default.aspx'],
-  // Yahoo (already used by fetch-quote.mjs): JCI, USD/IDR, Indonesia ETF
-  ['Yahoo JCI', 'https://query1.finance.yahoo.com/v8/finance/chart/%5EJKSE?range=5d&interval=1d'],
-  ['Yahoo USDIDR', 'https://query1.finance.yahoo.com/v8/finance/chart/IDR%3DX?range=5d&interval=1d'],
-  ['Yahoo EIDO', 'https://query1.finance.yahoo.com/v8/finance/chart/EIDO?range=5d&interval=1d'],
-  // CNBC (sovereign yields by tenor)
-  ['CNBC quote ID tenors', 'https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ID1YT%3DRR%7CID2YT%3DRR%7CID3YT%3DRR%7CID5YT%3DRR%7CID10YT%3DRR%7CID15YT%3DRR%7CID20YT%3DRR%7CID30YT%3DRR&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json'],
-  ['CNBC bars ID10Y', 'https://ts-api.cnbc.com/harmony/app/bars/ID10YT%3DRR/1D/20251001000000/20261031000000/adjusted/EST5EDT.json'],
-  ['CNBC quote ID CDS', 'https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ID5YCDS%3DR&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json'],
-  // Others
-  ['Investing ID10Y hist', 'https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield-historical-data'],
-  ['WGB Indonesia', 'https://www.worldgovernmentbonds.com/country/indonesia/'],
-  ['ADB ABO Indonesia', 'https://asianbondsonline.adb.org/indonesia/'],
-  ['Pasardana bonds', 'https://pasardana.id/api/BondSearchResult/GetAll'],
-  ['CNBC Indonesia bonds', 'https://www.cnbcindonesia.com/market-data/bonds'],
-  ['US Treasury (control)', 'https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv'],
-];
+const strip = (h) => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;|&#160;/g, ' ').replace(/\s+/g, ' ');
 
-async function probe(name, url) {
+async function get(url, opt = {}) {
   const t0 = Date.now();
   try {
-    const r = await fetch(url, {
-      headers: { 'User-Agent': UA, 'Accept': 'text/html,application/json,*/*', 'Accept-Language': 'en-US,en;q=0.9,id;q=0.8' },
-      redirect: 'follow', signal: AbortSignal.timeout(30000),
-    });
+    const r = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'en-US,en;q=0.9,id;q=0.8', ...(opt.headers || {}) }, method: opt.method || 'GET', body: opt.body, redirect: 'follow', signal: AbortSignal.timeout(40000), dispatcher: opt.dispatcher });
     const buf = Buffer.from(await r.arrayBuffer());
-    const ct = r.headers.get('content-type') || '';
-    const txt = buf.toString('utf8');
-    console.log(`\n### ${name}\nURL   ${url}\nFINAL ${r.url}\nHTTP  ${r.status}  ${ct}  ${buf.length} bytes  ${Date.now() - t0}ms`);
-    const cf = /cf-chl|challenge-platform|Just a moment|Attention Required/i.test(txt);
-    if (cf) console.log('NOTE  Cloudflare challenge page');
-    if (/html/i.test(ct)) {
-      const title = (txt.match(/<title[^>]*>([^<]*)/i) || [])[1];
-      console.log('TITLE', (title || '').trim().slice(0, 120));
-      const links = new Set();
-      for (const m of txt.matchAll(/(?:href|src|data-url|action)\s*=\s*["']([^"'#]+)["']/gi)) if (LINK_RE.test(m[1])) links.add(m[1]);
-      for (const m of txt.matchAll(/["'](\/?(?:api|primary|Portals|DesktopModules|umbraco)[^"'\s]{3,160})["']/g)) links.add(m[1]);
-      const arr = [...links].slice(0, 60);
-      if (arr.length) console.log('LINKS\n  ' + arr.join('\n  '));
-      const body = txt.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
-      const i = body.search(/yield|imbal|tenor|FR0\d|BI.?Rate|INDONIA|JISDOR|kepemilikan/i);
-      console.log('TEXT  ' + body.slice(Math.max(0, i - 200), Math.max(0, i - 200) + 1200));
-    } else {
-      console.log('BODY  ' + txt.slice(0, 1500));
-    }
-  } catch (e) {
-    console.log(`\n### ${name}\nURL   ${url}\nERROR ${e.name}: ${e.message}${e.cause ? ' / ' + (e.cause.code || e.cause.message) : ''}  ${Date.now() - t0}ms`);
+    return { ok: true, status: r.status, ct: r.headers.get('content-type') || '', url: r.url, buf, txt: buf.toString('utf8'), ms: Date.now() - t0, setCookie: r.headers.getSetCookie?.() || [] };
+  } catch (e) { return { ok: false, err: `${e.name}: ${e.message} ${e.cause ? (e.cause.code || e.cause.message) : ''}`, ms: Date.now() - t0 }; }
+}
+const head = (n, r, url) => console.log(`\n### ${n}\nURL   ${url}\n` + (r.ok ? `HTTP  ${r.status}  ${r.ct}  ${r.buf.length} bytes  ${r.ms}ms  final=${r.url}` : `ERROR ${r.err}`));
+
+function tables(html, max = 6, rows = 25) {
+  const out = [];
+  for (const t of html.match(/<table[\s\S]*?<\/table>/gi) || []) {
+    const trs = (t.match(/<tr[\s\S]*?<\/tr>/gi) || []).map((tr) => (tr.match(/<t[hd][\s\S]*?<\/t[hd]>/gi) || []).map((c) => strip(c).trim()).join(' | '));
+    if (trs.length) out.push(`TABLE (${trs.length} rows) id=${(t.match(/id="([^"]+)"/) || [])[1] || ''}\n    ` + trs.slice(0, rows).join('\n    '));
+    if (out.length >= max) break;
+  }
+  return out.join('\n');
+}
+function forms(html) {
+  const ins = [...html.matchAll(/<(input|select)[^>]*name="([^"]+)"[^>]*>/gi)].map((m) => `${m[1]}:${m[2]}`).filter((s) => !/VIEWSTATE|EVENTVALIDATION|dnn\$dnnSEARCH/i.test(s));
+  const opts = [...html.matchAll(/<select[^>]*name="([^"]+)"[\s\S]*?<\/select>/gi)].map((m) => `${m[1]} → ` + [...m[0].matchAll(/<option[^>]*value="([^"]*)"[^>]*>([^<]*)/gi)].slice(0, 12).map((o) => `${o[1]}=${o[2].trim()}`).join(', '));
+  return `FORM FIELDS ${ins.slice(0, 50).join('  ')}\nSELECTS\n  ${opts.join('\n  ')}`;
+}
+
+console.log('probe-id round 2', new Date().toISOString());
+
+// 1. PHEI fair price & yield page: every table (IGSYC, benchmark/retail fair prices, sukuk?), form fields for a date picker
+for (const [n, u] of [['PHEI HPW (id)', 'https://www.phei.co.id/Data/HPW-dan-Imbal-Hasil'], ['PHEI HPW (en)', 'https://www.phei.co.id/en-us/Data/Fair-Prices-and-Yield']]) {
+  const r = await get(u); head(n, r, u);
+  if (r.ok) {
+    console.log(tables(r.txt, 10, 40)); console.log(forms(r.txt));
+    const links = [...new Set([...r.txt.matchAll(/(?:href|src)="([^"]*(?:\.xls|\.xlsx|\.csv|\.zip|\.pdf|Download|LinkClick|ashx|Handler)[^"]*)"/gi)].map((m) => m[1]))];
+    console.log('FILE LINKS\n  ' + links.slice(0, 40).join('\n  '));
+    const body = strip(r.txt); const i = body.search(/Benchmark|Sukuk|SBSN|PBS|FR0/i);
+    console.log('TEXT@series ' + body.slice(Math.max(0, i - 100), i + 2500));
+  }
+}
+// PHEI other data pages
+for (const [n, u] of [['PHEI Indeks', 'https://www.phei.co.id/Data/Indeks'], ['PHEI CSM', 'https://www.phei.co.id/Data/Credit-Spread-Matrix'], ['PHEI Informasi Efek', 'https://www.phei.co.id/Data/Informasi-Efek'], ['PHEI IGBF', 'https://www.phei.co.id/Data/IGBF']]) {
+  const r = await get(u); head(n, r, u);
+  if (r.ok && r.status === 200) { console.log(tables(r.txt, 4, 15)); console.log(forms(r.txt).slice(0, 1500)); }
+}
+
+// 2. CNBC: daily bars for each tenor symbol, and quotes for alternative symbol forms
+const syms = ['ID1YT=RR', 'ID2YT=RR', 'ID3YT=RR', 'ID5YT=RR', 'ID7YT=RR', 'ID10YT=RR', 'ID15YT=RR', 'ID20YT=RR', 'ID25YT=RR', 'ID30YT=RR'];
+for (const s of syms) {
+  const u = `https://ts-api.cnbc.com/harmony/app/bars/${encodeURIComponent(s)}/1D/20210101000000/20261031000000/adjusted/EST5EDT.json`;
+  const r = await get(u);
+  let info = r.ok ? `HTTP ${r.status}` : r.err;
+  try { const b = JSON.parse(r.txt).barData.priceBars || []; info += `  bars=${b.length}  first=${b[0]?.tradeTime} ${b[0]?.close}  last=${b.at(-1)?.tradeTime} ${b.at(-1)?.close}`; } catch { info += '  ' + (r.txt || '').slice(0, 150); }
+  console.log(`CNBC bars ${s}: ${info}`);
+}
+const q = await get('https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=' + encodeURIComponent(syms.join('|') + '|IDGV5YUSAC=R|ID5YUSAC=R|IDN5YCDS|IDRUSD=X|USDIDR=X|.JKSE|IDNF1M=|IDR1MNDF=') + '&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json');
+try { for (const x of JSON.parse(q.txt).FormattedQuoteResult.FormattedQuote) console.log(`CNBC quote ${x.symbol}: code=${x.code} last=${x.last} time=${x.last_time} mat=${x.maturity_date} cpn=${x.coupon} name=${x.name}`); } catch { console.log('CNBC quote parse failed ' + (q.txt || q.err || '').slice(0, 300)); }
+
+// 3. Bank Indonesia: tables on the indicator pages
+for (const [n, u] of [['BI rate', 'https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx'], ['BI INDONIA', 'https://www.bi.go.id/id/statistik/indikator/indonia.aspx'], ['BI INDONIA-JIBOR', 'https://www.bi.go.id/id/fungsi-utama/moneter/indonia-jibor/default.aspx'], ['BI JISDOR', 'https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx'], ['BI SRBI', 'https://www.bi.go.id/id/fungsi-utama/moneter/srbi/default.aspx']]) {
+  const r = await get(u); head(n, r, u);
+  if (r.ok) { console.log(tables(r.txt, 4, 12)); const f = forms(r.txt); console.log(f.slice(0, 1200)); const xl = [...new Set([...r.txt.matchAll(/(?:href)="([^"]*(?:\.xls|\.xlsx|\.csv|Download|\.pdf)[^"]*)"/gi)].map((m) => m[1]))]; console.log('FILE LINKS\n  ' + xl.slice(0, 15).join('\n  ')); }
+}
+
+// 4. DJPPR with the certificate check off (host-name mismatch only)
+for (const [n, u] of [['DJPPR home', 'https://www.djppr.kemenkeu.go.id/'], ['DJPPR no-www', 'https://djppr.kemenkeu.go.id/'], ['DJPPR ownership', 'https://www.djppr.kemenkeu.go.id/kepemilikansbn'], ['DJPPR auction', 'https://www.djppr.kemenkeu.go.id/hasillelangsun'], ['DJPPR sbsn auction', 'https://www.djppr.kemenkeu.go.id/hasillelangsbsn']]) {
+  const r = await get(u, { dispatcher: insecure }); head(n, r, u);
+  if (r.ok) {
+    const body = strip(r.txt);
+    console.log('TITLE ' + ((r.txt.match(/<title[^>]*>([^<]*)/i) || [])[1] || '').trim());
+    const links = [...new Set([...r.txt.matchAll(/href="([^"]+)"/gi)].map((m) => m[1]).filter((h) => /lelang|kepemilikan|ownership|xls|pdf|sbn|sun|sbsn|data|statistik|download|api/i.test(h)))];
+    console.log('LINKS\n  ' + links.slice(0, 50).join('\n  '));
+    console.log(tables(r.txt, 3, 12));
+    console.log('TEXT ' + body.slice(0, 800));
   }
 }
 
-console.log('probe-id run', new Date().toISOString());
-for (const [n, u] of T) await probe(n, u);
+// 5. WorldGovernmentBonds JSON API (Indonesia curve, CDS)
+for (const [n, u, body] of [
+  ['WGB wp-json root', 'https://www.worldgovernmentbonds.com/wp-json/'],
+  ['WGB country api', 'https://www.worldgovernmentbonds.com/wp-json/country/v1/main', JSON.stringify({ GLOBALVAR: { JS_VARIABLE: 'jsGlobalVars', FUNCTION: 'Country', DOMESTIC: true, ENDPOINT: 'https://www.worldgovernmentbonds.com/wp-json/country/v1/historical', DATE_RIF: '2099-12-31', OBJ: null, COUNTRY1: { SYMBOL: '17', PAESE: 'Indonesia', PAESE_UPPERCASE: 'INDONESIA', BANDIERA: 'id', URL_PAGE: 'indonesia' }, COUNTRY2: null, OBJ1: null, OBJ2: null } })],
+]) {
+  const r = await get(u, body ? { method: 'POST', body, headers: { 'Content-Type': 'application/json', Referer: 'https://www.worldgovernmentbonds.com/country/indonesia/', Origin: 'https://www.worldgovernmentbonds.com' } } : {});
+  head(n, r, u); if (r.ok) console.log('BODY ' + r.txt.slice(0, n.includes('root') ? 600 : 2500));
+}
