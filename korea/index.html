@@ -47,6 +47,7 @@ section{margin-top:40px}
 .cwrap{position:relative}
 #cv,#pbcv,#irscv{display:block;width:100%;height:320px;touch-action:pan-y}
 #cv text,#pbcv text,#irscv text{font:500 10.5px var(--f-mono);fill:var(--muted)}
+@media (max-width:520px){#irs .ctab th,#irs .ctab td{padding:6px 2px;font-size:11.5px}#irs .ctab th{font-size:9px;letter-spacing:.02em}}
 .tip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:6px 8px;font:500 11.5px var(--f-mono);font-variant-numeric:tabular-nums;box-shadow:0 4px 14px rgba(0,0,0,.12);white-space:nowrap;z-index:2}
 .tip[hidden]{display:none}
 .fcard{white-space:normal;width:min(560px,calc(100% - 16px));padding:8px 10px}
@@ -317,7 +318,7 @@ section.crecap{margin-top:0}
           <div class="cwrap"><svg id="irscv" role="img" aria-label="Korean won interest rate swap curve"></svg><div class="tip" id="irsTip" hidden></div></div>
           <div class="leg"><span><i style="background:var(--c1);height:2.5px"></i><b id="irsNow">Latest</b></span><span id="irsW1"><i style="background:var(--c2)"></i>1 week ago</span><span id="irsM1"><i style="background:var(--c3)"></i>1 month ago</span><span><i style="background:var(--c6)"></i><span id="irsKtb">KTB curve</span></span></div>
         </div>
-        <div style="overflow-x:auto"><table class="ctab" aria-label="KRW IRS rate by tenor"><thead><tr><th>Tenor</th><th>IRS %</th><th>1D bp</th><th>1W bp</th><th>1M bp</th><th>1Y bp</th><th title="IRS minus KTB yield at the same tenor">vs KTB bp</th></tr></thead><tbody id="irsTab"></tbody></table></div>
+        <div style="overflow-x:auto"><table class="ctab" aria-label="KRW IRS rate by tenor"><thead><tr><th>Tenor</th><th>IRS %</th><th>1D bp</th><th>1W bp</th><th>1M bp</th><th>1Y bp</th><th title="IRS minus KTB yield at the same tenor, bp">vs KTB</th></tr></thead><tbody id="irsTab"></tbody></table></div>
       </div>
       <p class="note" id="irsNote"></p>
     </div>
