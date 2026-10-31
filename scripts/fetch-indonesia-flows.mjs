@@ -34,7 +34,7 @@ async function yahoo(sym, tzHours) { // daily closes since BEG, dated in the mar
   const r = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?period1=${Math.floor(Date.parse(BEG) / 1000)}&period2=${Math.floor(Date.now() / 1000)}&interval=1d`, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(30000) });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   const q = (await r.json()).chart.result[0], c = q.indicators.quote[0].close, v = q.indicators.quote[0].volume || [];
-  const out = q.timestamp.map((t, i) => [new Date((t + tzHours * 3600) * 1000).toISOString().slice(0, 10), c[i], v[i] || 0]).filter(([, x]) => x > 0);
+  const out = q.timestamp.map((t, i) => [new Date((t + tzHours * 3600) * 1000).toISOString().slice(0, 10), c[i], v[i] || 0]).filter(([d, x]) => x > 0 && ![0, 6].includes(new Date(d + "T12:00:00Z").getUTCDay()));
   if (out.length < 200) throw new Error("short history for " + sym);
   return out;
 }

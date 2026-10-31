@@ -116,7 +116,8 @@ export function study(raw, W, opts = {}) {
   // sub-period check of the live signal, outright vs hedged
   const live = variants[0], split = W.findIndex((w) => w.date >= (opts.split || "2025-03-01"));
   const sub = (a, b, mode) => { const p = []; for (let i = Math.max(a, W.findIndex((w) => w.date >= live.from)); i < b - 1; i++) { const bb = mode === "hedged" ? W[i].beta : 0; if (live.reg[i] == null || bb == null) continue; p.push(-(live.reg[i] || 0) * ((W[i + 1].y10 - W[i].y10) - bb * (W[i + 1].ust - W[i].ust)) * 100); } return { weeks: p.length, cumBp: r(p.reduce((s, x) => s + x, 0), 1), sharpe: r(sd(p) ? (mean(p) / sd(p)) * Math.sqrt(52) : null) }; };
-  const periods = split > 0 ? [[`${live.from.slice(0, 7)} – 2025-02`, 0, split], [`2025-03 – ${W.at(-1).date.slice(0, 7)}`, split, W.length]].map(([l, a, b]) => ({ label: l, outright: sub(a, b, "outright"), hedged: sub(a, b, "hedged") })) : [];
+  const sp0 = opts.split || "2025-03-01", spPrev = (() => { const t = new Date(sp0.slice(0, 7) + "-15T12:00:00Z"); t.setUTCMonth(t.getUTCMonth() - 1); return t.toISOString().slice(0, 7); })();
+  const periods = split > 0 ? [[`${live.from.slice(0, 7)} – ${spPrev}`, 0, split], [`${sp0.slice(0, 7)} – ${W.at(-1).date.slice(0, 7)}`, split, W.length]].map(([l, a, b]) => ({ label: l, outright: sub(a, b, "outright"), hedged: sub(a, b, "hedged") })) : [];
   // hedged equity curve of the live signal (bp), for the back-test chart
   const hedgedCurve = []; { let c = 0, cl = 0; const f0 = W.findIndex((w) => w.date >= live.from); for (let i = f0; i < W.length - 1; i++) { const b = W[i].beta; if (b == null) continue; const mv = ((W[i + 1].y10 - W[i].y10) - b * (W[i + 1].ust - W[i].ust)) * 100, pos = live.reg[i] ?? 0; c += -pos * mv; cl += -(pos > 0 ? 1 : 0) * mv; hedgedCurve.push([W[i + 1].date, r(c, 1), r(cl, 1)]); } }
   variants.forEach((v) => delete v.reg);

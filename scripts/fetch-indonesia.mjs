@@ -164,8 +164,12 @@ for (const [t, sym] of [[10, "ID10YT=RR"], [15, "ID15YT=RR"]]) {
     const end = new Date().toISOString().slice(0, 10).replace(/-/g, "") + "000000";
     const start = new Date(Date.now() - KEEP_DAYS * 864e5).toISOString().slice(0, 10).replace(/-/g, "") + "000000";
     const j = JSON.parse(await http(`https://ts-api.cnbc.com/harmony/app/bars/${encodeURIComponent(sym)}/1D/${start}/${end}/adjusted/EST5EDT.json`));
-    cnbc[t] = (j.barData?.priceBars || []).map((b) => [`${b.tradeTime.slice(0, 4)}-${b.tradeTime.slice(4, 6)}-${b.tradeTime.slice(6, 8)}`, +b.close]).filter(([, y]) => isFinite(y) && y > 0);
-    log(`CNBC ${sym}: ${cnbc[t].length} days to ${cnbc[t].at(-1)?.[0]}`);
+    // CNBC's feed repeats the previous close when no new price came in (common since 2026), then jumps when one does.
+    // Repeats are dropped rather than read as "no change": changes are then measured between real prints, and the
+    // flows study takes the US move over the same window. Weekend bars are dropped too.
+    const raw = (j.barData?.priceBars || []).map((b) => [`${b.tradeTime.slice(0, 4)}-${b.tradeTime.slice(4, 6)}-${b.tradeTime.slice(6, 8)}`, +b.close]).filter(([d, y]) => isFinite(y) && y > 0 && ![0, 6].includes(new Date(d + "T12:00:00Z").getUTCDay()));
+    cnbc[t] = raw.filter(([, y], i) => i === 0 || y !== raw[i - 1][1]);
+    log(`CNBC ${sym}: ${cnbc[t].length} days to ${cnbc[t].at(-1)?.[0]} (${raw.length - cnbc[t].length} repeated prints dropped)`);
   } catch (e) { log(`CNBC ${sym} failed: ${e.message}`); }
 }
 let quotes = prev.cnbcQuotes || null;
@@ -179,7 +183,7 @@ try {
 // =====================================================================================================
 // 4. Bank Indonesia: BI-Rate decisions and JISDOR (USD/IDR reference rate)
 // =====================================================================================================
-const biRate = mapOf(prev.mm?.series?.birate), jisdor = mapOf(prev.mm?.series?.jisdor);
+const biRate = mapOf(prev.mm?.series?.birate), jisdor = new Map((prev.mm?.series?.jisdor || []).filter(([d]) => ![0, 6].includes(new Date(d + "T12:00:00Z").getUTCDay())));
 let biDecisions = prev.biDecisions || [];
 try {
   const h = await http("https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx");
@@ -201,7 +205,7 @@ if (jisdor.size < 60) {
   try {
     const j = JSON.parse(await http("https://query1.finance.yahoo.com/v8/finance/chart/IDR%3DX?range=5y&interval=1d"));
     const r = j.chart.result[0], ts = r.timestamp, c = r.indicators.quote[0].close;
-    let n = 0; for (let i = 0; i < ts.length; i++) { const d = new Date(ts[i] * 1000).toISOString().slice(0, 10); if (c[i] && !jisdor.has(d)) { jisdor.set(d, +c[i].toFixed(0)); n++; } }
+    let n = 0; for (let i = 0; i < ts.length; i++) { const dt = new Date(ts[i] * 1000), d = dt.toISOString().slice(0, 10); if ([0, 6].includes(dt.getUTCDay())) continue; if (c[i] && !jisdor.has(d)) { jisdor.set(d, +c[i].toFixed(0)); n++; } }
     jisdorBackfill = jisdor.size ? [...jisdor.keys()].sort()[0] : null; log(`USD/IDR back-fill from Yahoo: ${n} days`);
   } catch (e) { log(`USD/IDR back-fill failed: ${e.message}`); }
 }
@@ -232,9 +236,27 @@ if (phei) {
   curve = { date: phei.date, pts };
 }
 if (!fNow && curve?.pts?.length) fNow = mono(curve.pts);
-// before PHEI days: CNBC benchmark yields for 10Y and 15Y (PHEI days always win)
+// before PHEI days: CNBC benchmark-bond yields for 10Y and 15Y, spliced onto IGSYC. CNBC quotes a single benchmark
+// FR series, which sits a few bp off the IGSYC tenor, and may date a Jakarta close on the next day. The raw CNBC series
+// is kept, and every run re-estimates the day lag (0 or 1 business day, whichever makes IGSYC − CNBC most stable) and
+// the offset (median of IGSYC − CNBC) over the days both exist, then rebuilds the pre-PHEI history from it.
 const firstIgs = [...igsDays].sort()[0] || "9999";
-for (const t of [10, 15]) for (const [d, y] of cnbc[t] || []) if (d < firstIgs && !tenMaps[t].has(d)) tenMaps[t].set(d, r4(y));
+const nextWeekday = (d) => { let t = Date.parse(d); do t += 864e5; while ([0, 6].includes(new Date(t).getUTCDay())); return new Date(t).toISOString().slice(0, 10); };
+const cnbcHist = {}, splice = {};
+for (const t of [10, 15]) {
+  const h = cnbc[t]?.length > 200 ? new Map(cnbc[t]) : mapOf(prev.cnbcHist?.[t]);
+  cnbcHist[t] = toSer(h, cutoff);
+  const med = (a) => { const q = [...a].sort((x, y) => x - y); return q.length ? q[Math.floor(q.length / 2)] : 0; };
+  const sdv = (a) => { if (a.length < 2) return Infinity; const m = a.reduce((x, y) => x + y, 0) / a.length; return Math.sqrt(a.reduce((x, y) => x + (y - m) ** 2, 0) / (a.length - 1)); };
+  const pairs = (lag) => [...igsDays].sort().map((d) => { const ig = tenMaps[t].get(d), c = h.get(lag ? nextWeekday(d) : d); return ig != null && c != null ? (ig - c) * 100 : null; }).filter((x) => x != null);
+  const p0 = pairs(0), p1 = pairs(1);
+  const lag = p0.length >= 5 && p1.length >= 5 && sdv(p1) < sdv(p0) * 0.8 ? 1 : 0, used = lag ? p1 : p0;
+  const off = used.length ? med(used) : 0;
+  splice[t] = { lag, offsetBp: r1(off), overlapDays: used.length, sdBp: used.length > 1 ? r1(sdv(used)) : null };
+  for (const d of [...tenMaps[t].keys()]) if (d < firstIgs) tenMaps[t].delete(d);
+  for (const [c, y] of cnbcHist[t]) { const d = lag ? prevWeekday(c) : c; if (d < firstIgs) tenMaps[t].set(d, r4(y + off / 100)); }
+  log(`splice ${t}Y: lag ${lag}, offset ${r1(off)}bp over ${used.length} days (sd ${splice[t].sdBp})`);
+}
 const tenors = Object.fromEntries(TEN.map((t) => [t, toSer(tenMaps[t], cutoff)]).filter(([, s]) => s.length));
 
 // sukuk (PBS) and retail (ORI / SR) spreads over IGSYC; corporate curves straight from PHEI
@@ -242,7 +264,7 @@ const fitOf = (rows) => fNow ? fitSpread(rows.filter((b) => b.ttm > 0.05 && b.y 
 const pbPrev = prev.pb || {};
 const issuerCurve = (fit, top) => { const pts = []; if (fit && fNow) for (let t = 0.1; t <= top + 1e-9; t += t < 2 ? 0.05 : 0.1) pts.push([+t.toFixed(2), r4(fNow(t) + (fit.a + fit.b * nsF(t)) / 100)]); return pts; };
 const pbTen = (k, fn) => { const m = Object.fromEntries(TEN.map((t) => [t, mapOf(pbPrev[k]?.tenors?.[t])])); if (fn && curveDate) for (const t of TEN) { const v = fn(t); if (v != null) putSer(m[t], curveDate, v); } return Object.fromEntries(Object.entries(m).map(([t, s]) => [t, toSer(s, cutoff)]).filter(([, s]) => s.length)); };
-const bondRow = (b, cf) => { const c = cf ? cf(b.ttm) : null; return { code: b.code, name: b.code, isin: regBy.get(b.code)?.isin || null, type: b.kind, coupon: b.coupon, mat: regBy.get(b.code)?.mat || null, ttm: r4(b.ttm), last: r4(b.y), px: b.px, chg: b.y0 != null ? r1((b.y - b.y0) * 100) : null, curve: r4(c), vs: c != null ? r1((b.y - c) * 100) : null }; };
+const bondRow = (b, cf) => { const c = cf ? cf(b.ttm) : null, rg = regBy.get(b.code), d0 = phei?.date || new Date().toISOString().slice(0, 10); return { code: b.code, name: rg?.name || b.code, isin: rg?.isin || null, type: b.kind, coupon: b.coupon, mat: rg?.mat || new Date(Date.parse(d0) + b.ttm * 365.25 * 864e5).toISOString().slice(0, 10), est: !rg?.mat, ttm: r4(b.ttm), last: r4(b.y), px: b.px, chg: b.y0 != null ? r1((b.y - b.y0) * 100) : null, curve: r4(c), vs: c != null ? r1((b.y - c) * 100) : null }; };
 const regBy = new Map(register.map((b) => [b.code, b]));
 const pb = {};
 if (phei) {
@@ -261,16 +283,17 @@ if (phei) {
 
 // bonds by code and ISIN: the register, with PHEI fair yields where published
 const fair = new Map(phei ? [...phei.fr, ...phei.pbs, ...phei.retail].map((b) => [b.code, b]) : (prev.bonds || []).filter((b) => b.last != null).map((b) => [b.code, { y: b.last, y0: b.last - (b.chg || 0) / 100, px: b.px, kind: b.type }]));
-const typeOf = (code) => /^FR/.test(code) ? "FR (fixed rate)" : /^PBS/.test(code) ? "PBS (project sukuk)" : /^SPN(S)?/.test(code) ? (/^SPNS/.test(code) ? "SPNS (sukuk bill)" : "SPN (T-bill)") : /^VR/.test(code) ? "VR (variable rate)" : /^ORI/.test(code) ? "ORI (retail)" : /^SR/.test(code) ? "SR (retail sukuk)" : /^(ST|SBR|SWR)/.test(code) ? "Savings (non-tradable)" : /^IFR/.test(code) ? "IFR (ijarah sukuk)" : "Other";
-const iss = (code) => /^(PBS|SPNS|IFR|SR|ST|SWR|SDHI|SNI)/.test(code) ? "SBSN" : "SUN";
+const typeOf = (code) => /^FRS/.test(code) ? "FRS (fixed-rate sukuk)" : /^FR/.test(code) ? "FR (fixed rate)" : /^PBS/.test(code) ? "PBS (project sukuk)" : /^SPN(S)?/.test(code) ? (/^SPNS/.test(code) ? "SPNS (sukuk bill)" : "SPN (T-bill)") : /^VR/.test(code) ? "VR (variable rate)" : /^ORI/.test(code) ? "ORI (retail)" : /^SR/.test(code) ? "SR (retail sukuk)" : /^(ST|SBR|SWR)/.test(code) ? "Savings (non-tradable)" : /^IFR/.test(code) ? "IFR (ijarah sukuk)" : "Other";
+const iss = (code) => /^(PBS|SPNS|IFR|FRS|SR|ST|SWR|SDHI|SNI)/.test(code) ? "SBSN" : "SUN";
 const day = curveDate || new Date().toISOString().slice(0, 10);
-const curveFor = (code, ttm) => { if (!fNow) return null; const k = /^PBS|^SPNS|^IFR/.test(code) ? "sbsn" : /^(ORI|SR)/.test(code) ? "retail" : null; const p = k && pb[k]?.fit; return fNow(ttm) + (p ? (p.levelBp + p.slopeBp * nsF(ttm)) / 100 : 0); };
+const curveFor = (code, ttm) => { if (!fNow) return null; const k = /^PBS|^SPNS|^IFR|^FRS/.test(code) ? "sbsn" : /^(ORI|SR)/.test(code) ? "retail" : null; const p = k && pb[k]?.fit; return fNow(ttm) + (p ? (p.levelBp + p.slopeBp * nsF(ttm)) / 100 : 0); };
 const bonds = register.filter((b) => b.mat).map((b) => {
   const ttm = ttmOn(b.mat, day), f = fair.get(b.code), c = ttm > 0 ? curveFor(b.code, ttm) : null;
   return { code: b.code, isin: b.isin, name: b.name, type: typeOf(b.code), iss: iss(b.code), coupon: b.coupon, issue: b.first || null, mat: b.mat, ttm: r4(ttm), out: b.out, curve: r4(c), last: f ? r4(f.y) : null, px: f?.px ?? null, chg: f && f.y0 != null ? r1((f.y - f.y0) * 100) : null, vs: f && c != null ? r1((f.y - c) * 100) : null };
 }).filter((b) => b.ttm > 0).sort((a, b) => a.ttm - b.ttm);
 // PHEI-priced series missing from the register (e.g. new retail issues) still get a row
-for (const [code, f] of fair) if (!bonds.some((b) => b.code === code) && f.ttm > 0) { const c = curveFor(code, f.ttm); bonds.push({ code, isin: null, name: code, type: typeOf(code), iss: iss(code), coupon: f.coupon ?? null, issue: null, mat: null, ttm: r4(f.ttm), out: null, curve: r4(c), last: r4(f.y), px: f.px ?? null, chg: f.y0 != null ? r1((f.y - f.y0) * 100) : null, vs: c != null ? r1((f.y - c) * 100) : null }); }
+const estMat = (ttm) => new Date(Date.parse(day) + ttm * 365.25 * 864e5).toISOString().slice(0, 10);
+for (const [code, f] of fair) if (!bonds.some((b) => b.code === code) && f.ttm > 0) { const c = curveFor(code, f.ttm); bonds.push({ code, isin: null, name: code, type: typeOf(code), iss: iss(code), coupon: f.coupon ?? null, issue: null, mat: estMat(f.ttm), est: true, ttm: r4(f.ttm), out: null, curve: r4(c), last: r4(f.y), px: f.px ?? null, chg: f.y0 != null ? r1((f.y - f.y0) * 100) : null, vs: c != null ? r1((f.y - c) * 100) : null }); }
 bonds.sort((a, b) => a.ttm - b.ttm);
 
 // funding and credit: BI-Rate, JISDOR, IGSYC 3M (0.1Y) and corporate spreads over IGSYC at 1Y / 3Y / 5Y
@@ -282,14 +305,26 @@ if (phei) {
 }
 const mm = { series: { birate: toSer(biRate, cutoff), jisdor: toSer(jisdor, cutoff), ...Object.fromEntries(Object.entries(mmS).map(([k, m]) => [k, toSer(m, cutoff)])) } };
 
+// benchmark and retail series: PHEI fair yield and price, stored daily (PHEI shows only today and yesterday)
+const benchHist = Object.fromEntries(Object.entries(prev.benchHist || {}).map(([k, v]) => [k, new Map(v.map((r) => [r[0], r]))]));
+if (phei) {
+  const y0d = prevWeekday(phei.date);
+  for (const b of [...phei.fr, ...phei.pbs, ...phei.retail]) {
+    const m = (benchHist[b.code] ||= new Map());
+    if (b.y != null) m.set(phei.date, [phei.date, r4(b.y), b.px, r4(fNow ? (b.y - fNow(b.ttm)) * 100 : null)]);
+    if (b.y0 != null && !m.has(y0d)) m.set(y0d, [y0d, r4(b.y0), b.px0, null]);
+  }
+}
+const benchOut = Object.fromEntries(Object.entries(benchHist).map(([k, m]) => [k, [...m.values()].filter((r) => r[0] >= cutoff).sort((a, b) => a[0].localeCompare(b[0]))]).filter(([, v]) => v.length));
+
 const out = {
   updated: Math.floor(Date.now() / 1000),
   src: "PHEI / IBPA (PT Penilai Harga Efek Indonesia): Indonesia Government Securities Yield Curve (IGSYC), fair yields and prices, securities register; CNBC benchmark-bond yields (history before the first stored PHEI day); Bank Indonesia (BI-Rate, JISDOR)",
-  curve, tenors, igsDays: [...igsDays].filter((d) => d >= cutoff).sort(), cnbcFrom: firstIgs === "9999" ? null : firstIgs,
+  curve, tenors, igsDays: [...igsDays].filter((d) => d >= cutoff).sort(), cnbcFrom: firstIgs === "9999" ? null : firstIgs, splice, cnbcHist,
   bonds, register,
   tradeDay: curveDate, prevTradeDay: tenors[10]?.length > 1 ? tenors[10].at(-2)[0] : null, tradeTime: curveDate ? `${curveDate} PHEI close` : null,
   benchmarks: phei ? { fr: phei.fr.map((b) => bondRow(b, fNow)), pbs: (pb.sbsn?.bonds || []), date: curveDate } : prev.benchmarks || null,
-  cnbcQuotes: quotes,
+  cnbcQuotes: quotes, benchHist: benchOut,
   pb, mm, biDecisions, jisdorBackfill,
   pbTradeDay: curveDate, pbSrc: "PBS sukuk and retail ORI / SR: IGSYC plus a Nelson-Siegel spread fitted to PHEI's fair yields for the series it prices. Corporate AAA–BBB: PHEI's corporate bond yield curves by rating",
   counts: { register: register.length, sun: bonds.filter((b) => b.iss === "SUN").length, sbsn: bonds.filter((b) => b.iss === "SBSN").length, priced: bonds.filter((b) => b.last != null).length },
