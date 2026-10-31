@@ -64,8 +64,6 @@ jobs:
           node scripts/fetch-quote.mjs MRVL mrvl/data 2y
           node scripts/fetch-quote.mjs SKHY skhy/data 2y
           node scripts/fetch-quote.mjs 000660.KS skhy/data/krx 2y
-          node scripts/fetch-quote.mjs KRW=X skhy/data/fx 2y
-          node scripts/krw-to-usd.mjs || echo "krw-to-usd failed"
           node scripts/fetch-quote.mjs TSM tsm/data 2y
           node scripts/fetch-quote.mjs AVGO avgo/data 2y
           node scripts/fetch-quote.mjs ROK rok/data 2y

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Indicator snapshot for the daily technical read.
 
-Reads <stock>/data/history.json (and the series listed in <stock>/ta.json, e.g. skhy/data/krx-usd/history.json) and writes
+Reads <stock>/data/history.json (and skhy/data/krx/history.json) and writes
 data/ta-snapshot.json: for each stock and listing, the latest close and moves,
 SMA 5/10/30/100/200 with slopes, MACD (12, 26, 9), RSI (14), Parabolic SAR
 (0.02, 0.2), ATR (14), 52-week range, recent swing highs/lows and how price sits
