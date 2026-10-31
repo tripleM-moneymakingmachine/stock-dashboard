@@ -1,0 +1,64 @@
+name: Indonesia government bonds
+
+# Daily after PHEI publishes its end-of-day valuations (IGSYC curve, benchmark and retail fair yields, corporate curves;
+# usually early evening Jakarta): rebuild data/indonesia.json (IGSYC curve and history, sukuk / retail / corporate
+# curves, government bonds by code and ISIN, BI-Rate and JISDOR) and data/indonesia-flows.json (JCI <-> INDOGB foreign-flow
+# signal and US Treasury transmission study), commit them and redeploy. PHEI shows only today and yesterday, so every
+# run appends the day to the stored history; runs on days with nothing new change nothing.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-indonesia.mjs
+      - scripts/fetch-indonesia-flows.mjs
+      - scripts/ust-transmission.mjs
+      - .github/workflows/indonesia-bonds.yml
+  schedule:
+    - cron: "40 11 * * 1-5"   # 19:40 Singapore (18:40 Jakarta), after PHEI's evening release
+    - cron: "40 14 * * 1-5"   # 22:40 Singapore, late releases
+    - cron: "50 0 * * 2-6"    # 08:50 Singapore next morning, safety net (also picks up the overnight US Treasury close)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: indonesia-bonds
+  cancel-in-progress: false
+
+jobs:
+  indonesia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: IGSYC curve, sukuk / retail / corporate curves, bonds by ISIN (PHEI), BI-Rate and JISDOR (BI)
+        run: node scripts/fetch-indonesia.mjs || echo "indonesia fetch failed; keeping the committed file"
+
+      - name: JCI <-> INDOGB flows and US Treasury transmission
+        run: node scripts/fetch-indonesia-flows.mjs || echo "flows build failed; keeping the committed file"
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          for f in data/indonesia.json data/indonesia-flows.json; do [ -f "$f" ] && git add "$f"; done
+          if git diff --cached --quiet; then
+            echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh Indonesia government bond data"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push && break; sleep 10; done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
