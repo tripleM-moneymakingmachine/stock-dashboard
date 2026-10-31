@@ -46,10 +46,10 @@
   }
  },
  "earnings": {
-  "v": "Early Nov",
+  "v": "Nov 5",
   "s": {
-   "en": "Q1 FY27 · date not yet announced",
-   "zh": "FY27 第一季 · 日期未公布"
+   "en": "Q1 FY27 · expected, after close",
+   "zh": "FY27 第一季 · 预计，盘后"
   }
  },
  "sub_price": {
@@ -198,14 +198,14 @@
  ],
  "calendar": [
   {
-   "date": "Early Nov 2026",
+   "date": "Nov 5, 2026",
    "h": {
     "en": "Q1 FY27 earnings",
     "zh": "FY27 第一季财报"
    },
    "p": {
-    "en": "Guide: $1.225–1.275B revenue, 39.5–40.5% non-GAAP operating margin, EPS $4.05–4.35. Last year's Q1 was reported on Nov 4.",
-    "zh": "指引：营收 12.25–12.75 亿美元，非GAAP营业利润率 39.5–40.5%，每股 $4.05–4.35。去年第一季于11月4日发布。"
+    "en": "After the close. Guide: $1.225–1.275B revenue, 39.5–40.5% non-GAAP operating margin, EPS $4.05–4.35.",
+    "zh": "盘后发布。指引：营收 12.25–12.75 亿美元，非GAAP营业利润率 39.5–40.5%，每股 $4.05–4.35。"
    }
   },
   {

@@ -1,6 +1,6 @@
 {
  "ticker": "AMZN",
- "asof": "2026-10-30",
+ "asof": "2026-10-31",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 243.79,
  "react": {
-  "date": "2026-10-29",
-  "close": 226.97,
-  "pct": -6.9,
-  "ah": true
+  "date": "2026-10-30",
+  "close": 240.35,
+  "pct": -1.4
  },
  "since": {
-  "date": "2026-10-29",
-  "close": 243.79,
-  "pct": 0.0
+  "date": "2026-10-30",
+  "close": 240.35,
+  "pct": -1.4
  },
  "review": {
   "en": [
    "Revenue rose 12% to $201.9B, just short of the ~$202.2B consensus, and EPS of $1.89 missed $1.97; moving Prime Day into Q2 cost about 4 points of growth. AWS accelerated for a sixth quarter to 39.3% ($46.0B, 38.7% margin) with a $578B backlog, and operating margin hit a record 13.9%. CEO Andy Jassy projected AWS growth above 40% in 2027 and 2028 and said capex will rise meaningfully next year. The Q4 guide of $240–247B brackets the ~$244.5B consensus.",
-   "Shares fell 4.3% to $243.79 in the session before the report as Alphabet's slide hit AI spenders, then dropped nearly 7% after hours to about $227. Q3 capex of $77.3B, roughly $20B above estimates, pushed trailing free cash flow to −$42.4B and outweighed the AWS beat and the long-range targets; Jefferies called the results mostly weak. The first full session, on Oct 30, is still to come."
+   "Shares fell 4.3% to $243.79 in the session before the report as Alphabet's slide hit AI spenders, then dropped about 7% after hours. On Oct 30 they opened near $232 but clawed back to close down 1.4% at $240.35, ahead of a Nasdaq down 2.9%, as analysts focused on AWS's fastest growth in nearly five years and the 40%-plus outlook. Most kept Buy ratings; BofA, TD Cowen and Cantor trimmed targets on about $220B of 2026 capex and negative free cash flow."
   ],
   "zh": [
    "营收增长 12% 至 2,019 亿美元，略低于约 2,022 亿美元的一致预期；每股收益 1.89 美元，不及 1.97 美元。Prime Day 移至第二季拖累增速约 4 个百分点。AWS 连续第六个季度加速，增长 39.3%（460 亿美元，利润率 38.7%），积压订单 5,780 亿美元；营业利润率创纪录达 13.9%。CEO 安迪·贾西预计 AWS 在 2027 和 2028 年增速均超 40%，并称明年资本开支将明显增加。第四季营收指引 2,400–2,470 亿美元，涵盖约 2,445 亿的一致预期。",
-   "财报前一交易日，Alphabet 大跌拖累 AI 投资大户，股价下跌 4.3% 至 243.79 美元；财报后盘后再跌近 7% 至约 227 美元。第三季资本开支 773 亿美元，比预期高出约 200 亿，使近 12 个月自由现金流降至 −424 亿美元，盖过了 AWS 超预期和长期目标；Jefferies 称业绩整体偏弱。10 月 30 日首个完整交易日的表现尚待观察。"
+   "财报前一交易日，Alphabet 大跌拖累 AI 投资大户，股价下跌 4.3% 至 243.79 美元，盘后再跌约 7%。10 月 30 日开盘约 232 美元，随后收复大部分跌幅，收跌 1.4% 至 240.35 美元，好于下跌 2.9% 的纳指；分析师关注 AWS 近五年来最快的增速以及 2027–28 年逾 40% 的增长展望。多数机构维持买入评级，美银、TD Cowen 和 Cantor 因 2026 年约 2,200 亿美元资本开支和负自由现金流小幅下调目标价。"
   ]
  },
  "ceo": {
@@ -61,8 +60,8 @@
    "u": "https://investing.com/news/transcripts/earnings-call-transcript-amazon-q3-2026-misses-eps-as-shares-fall-after-hours-93CH-4985489"
   },
   {
-   "t": "Capex, cash burn and after-hours move (Reuters)",
-   "u": "https://wabx.net/2026/10/29/amazon-projects-fourth-quarter-sales-below-estimates"
+   "t": "First session: AWS outlook vs capex, analyst targets (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/technology/article/wall-street-analysts-like-amazons-aws-outlook-172030532.html"
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "ticker": "INTC",
- "asof": "2026-10-30",
+ "asof": "2026-10-31",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 92.07,
  "react": {
-  "date": "2026-10-29",
-  "close": 70.97,
-  "pct": -22.9,
-  "ah": true
+  "date": "2026-10-30",
+  "close": 65.76,
+  "pct": -28.6
  },
  "since": {
-  "date": "2026-10-29",
-  "close": 92.07,
-  "pct": 0.0
+  "date": "2026-10-30",
+  "close": 65.76,
+  "pct": -28.6
  },
  "review": {
   "en": [
    "Revenue rose 21% to $16.5B, in line with the ~$16.5B consensus, and non-GAAP EPS of $0.52 beat $0.40 as gross margin reached 44.1%, two points above guide. Data Center and AI grew 78% to $7.3B, its best in 15 years, while PC chips fell 5% on the memory shortage. The Q4 guide of $15.5B and $0.25 EPS fell well short of about $17.1B and $0.43. CEO Lip-Bu Tan said supply, not demand, limits servers; CFO David Zinsner expects PC softness through H1 2027 and no positive cash flow in 2026.",
-   "Shares closed at $92.07 before the report, already 35% below the June high, and fell as much as 23% after hours, ending the evening near $70.97. The weak guide drove the drop: a deadly explosion shut the Israel fab for two weeks, costing about $600M of revenue over two quarters and about 2 points of Q4 margin, on top of PC weakness. The selloff spread to other chip stocks. The first full session, on Oct 30, is still to come."
+   "Shares closed at $92.07 before the report, already 35% below the June high, and fell about 23% after hours. On Oct 30 they plunged 28.6% to $65.76, Intel's worst day since 1974, erasing roughly $140B of market value. The Q4 guide drove it: Intel now sees PC shipments down about 12% this year and 10% in 2027 as memory costs bite, plus the Israel fab outage. BofA and Roth cut to Neutral, Bernstein called the outlook terrible, and the SOX fell 7.2%."
   ],
   "zh": [
    "营收增长 21% 至 165 亿美元，与约 165 亿美元的预期持平；非 GAAP 每股收益 0.52 美元，高于 0.40 美元预期，毛利率 44.1%，比指引高 2 个百分点。数据中心与 AI 业务增长 78% 至 73 亿美元，为 15 年来最佳，PC 芯片则因内存短缺下滑 5%。第四季指引营收 155 亿美元、每股收益 0.25 美元，远低于约 171 亿美元和 0.43 美元的预期。CEO 陈立武称服务器受限于供应而非需求；CFO 津斯纳预计 PC 疲软持续至 2027 年上半年，2026 年现金流不会为正。",
-   "财报前收盘价为 92.07 美元，已较 6 月高点低 35%；盘后一度下跌 23%，夜盘收于约 70.97 美元。疲弱指引是主因：一场致命爆炸令以色列晶圆厂停产两周，两个季度内损失约 6 亿美元营收，并拖累第四季毛利率约 2 个百分点，叠加 PC 疲软。抛售蔓延至其他芯片股。10 月 30 日的首个完整交易日尚未开始。"
+   "财报前收盘价为 92.07 美元，已较 6 月高点低 35%，盘后下跌约 23%。10 月 30 日暴跌 28.6% 至 65.76 美元，为 1974 年以来最大单日跌幅，市值蒸发约 1,400 亿美元。第四季指引是主因：受内存成本推高影响，英特尔预计今年 PC 出货量下滑约 12%、2027 年再降约 10%，叠加以色列晶圆厂停产。美银和 Roth 将评级下调至中性，Bernstein 称展望“糟糕”，费城半导体指数下跌 7.2%。"
   ]
  },
  "ceo": {
@@ -61,8 +60,8 @@
    "u": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html"
   },
   {
-   "t": "Israel fab blast and after-hours drop (Reuters via Straits Times)",
-   "u": "https://www.straitstimes.com/business/intel-shares-drop-21-on-israel-factory-blast-pc-weakness"
+   "t": "Worst day since 1974: PC outlook and analyst cuts (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/article/intel-stock-plunges-nearly-29-its-worst-day-since-1974-205955309.html"
   }
  ]
 }

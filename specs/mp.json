@@ -46,10 +46,10 @@
   }
  },
  "earnings": {
-  "v": "Early Nov",
+  "v": "Nov 5",
   "s": {
-   "en": "Q3 2026 · date not yet announced",
-   "zh": "2026 第三季 · 日期未公布"
+   "en": "Q3 2026 · confirmed, after close",
+   "zh": "2026 第三季 · 已确认，盘后"
   }
  },
  "sub_price": {
@@ -154,7 +154,7 @@
  ],
  "calendar": [
   {
-   "date": "Early Nov 2026",
+   "date": "Nov 5, 2026",
    "h": {
     "en": "Q3 2026 earnings",
     "zh": "2026 第三季财报"

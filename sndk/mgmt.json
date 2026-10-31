@@ -1,6 +1,6 @@
 {
  "ticker": "SNDK",
- "asof": "2026-10-30",
+ "asof": "2026-10-31",
  "quarter": {
   "en": "Q1 FY2027 (September quarter, ended Oct 2)",
   "zh": "2027 财年第一季（9 月季度，截至 10 月 2 日）"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 1330.05,
  "react": {
-  "date": "2026-10-29",
-  "close": 1295.05,
-  "pct": -2.6,
-  "ah": true
+  "date": "2026-10-30",
+  "close": 1150.89,
+  "pct": -13.5
  },
  "since": {
-  "date": "2026-10-29",
-  "close": 1330.05,
-  "pct": 0.0
+  "date": "2026-10-30",
+  "close": 1150.89,
+  "pct": -13.5
  },
  "review": {
   "en": [
    "Revenue rose 378% to $11.0B against $10.7B expected, and non-GAAP EPS of $49.51 beat the ~$47.15 consensus, both above the company's own range. Data-center revenue jumped 61% in a quarter to $4.8B, and gross margin edged up to 85.1%. The Q2 guide of $12.2–12.6B and $55–57 EPS (pre-split) topped consensus of about $12.3B and $53.3. CEO David Goeckeler said demand keeps growing; CFO Luis Visoso said about half of FY27 bits are under long-term deals and the pipeline exceeds supply through the decade. The board approved an 8-for-1 split.",
-   "Shares fell 5.3% to $1,330.05 in the regular session before the report, after jumping 7.7% the day before. After hours they swung between about $1,295 (−2.6%) and $1,368 (+2.9%) as investors weighed the beat, the higher guide and the split against the valuation after a roughly 550% one-year run and a 29% drop in consumer sales. The first full session after the report, on Oct 30, is still to come."
+   "Shares fell 5.3% to $1,330.05 in the session before the report and swung between about −3% and +3% after hours. On Oct 30 they slid 13.5% to $1,150.89 despite the beat, the higher guide, a $5B quarterly buyback and the 8-for-1 split (split-adjusted trading from Nov 20). After a roughly 460% gain this year, investors questioned how long memory prices can stay this high, a worry sharpened by Intel's warning that memory costs are crushing PC demand; memory peers fell too."
   ],
   "zh": [
    "营收增长 378% 至 110 亿美元，高于 107 亿美元的预期；非 GAAP 每股收益 49.51 美元，高于约 47.15 美元的一致预期，两者均超出公司自身指引。数据中心营收单季环比增长 61% 至 48 亿美元，毛利率小幅升至 85.1%。第二季指引营收 122–126 亿美元、每股收益 55–57 美元（拆股前），高于约 123 亿美元和 53.3 美元的预期。CEO 大卫·格克勒称需求持续增长；CFO 路易斯·维索索表示 FY27 约一半出货位元已纳入长期协议，潜在需求在本十年内都超过供给。董事会批准 1 拆 8 股票分割。",
-   "股价在财报前的常规交易时段下跌 5.3% 至 1,330.05 美元，前一天曾大涨 7.7%。盘后股价在约 1,295 美元（−2.6%）与 1,368 美元（+2.9%）之间波动：投资者一方面看到业绩超预期、指引上调和拆股，另一方面权衡一年约 550% 涨幅后的估值以及消费者营收下滑 29%。财报后首个完整交易日（10 月 30 日）尚未开始。"
+   "股价在财报前的交易时段下跌 5.3% 至 1,330.05 美元，盘后在约 −3% 与 +3% 之间波动。10 月 30 日，尽管业绩超预期、指引上调、单季回购 50 亿美元并宣布 1 拆 8（11 月 20 日起按拆股后价格交易），股价仍下跌 13.5% 至 1,150.89 美元。在今年累计上涨约 460% 后，投资者质疑内存高价还能维持多久，英特尔关于内存成本重创 PC 需求的警告加剧了这一担忧，内存同业同步下跌。"
   ]
  },
  "ceo": {
@@ -61,8 +60,8 @@
    "u": "https://investing.com/news/transcripts/earnings-call-transcript-sandisk-beats-q1-2027-estimates-shares-fall-93CH-4985403"
   },
   {
-   "t": "After-hours rebound and split dates",
-   "u": "https://blockonomi.com/sandisk-corporation-sndk-stock-data-center-revenue-jumps-61-as-company-unveils-8-for-1-split"
+   "t": "First session: drop despite beat and split (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/stocks/articles/sandisk-sinks-9-despite-earnings-131724006.html"
   }
  ]
 }

@@ -46,10 +46,10 @@
   }
  },
  "earnings": {
-  "v": "Early Nov",
+  "v": "Nov 4",
   "s": {
-   "en": "Q1 FY27 · date not yet announced",
-   "zh": "FY27 第一季 · 日期未公布"
+   "en": "Q1 FY27 · confirmed, after close",
+   "zh": "FY27 第一季 · 已确认，盘后"
   }
  },
  "sub_price": {
@@ -198,7 +198,7 @@
  ],
  "calendar": [
   {
-   "date": "Early Nov 2026",
+   "date": "Nov 4, 2026",
    "h": {
     "en": "Q1 FY27 earnings",
     "zh": "FY27 第一季财报"
