@@ -34,13 +34,12 @@ jobs:
           node-version: 20
 
       - name: KRW IRS closes by tenor (Korea / Seoul Money Brokerage)
-        run: node scripts/fetch-korea-irs.mjs --probe || echo "IRS fetch failed; keeping the committed file"
+        run: node scripts/fetch-korea-irs.mjs || echo "IRS fetch failed; keeping the committed file"
 
       - name: Commit if changed
         id: commit
         run: |
           [ -f data/korea-irs.json ] && git add data/korea-irs.json
-          [ -d data/korea-irs-probe ] && git add data/korea-irs-probe
           if git diff --cached --quiet; then
             echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
