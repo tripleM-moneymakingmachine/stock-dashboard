@@ -59,6 +59,8 @@ jobs:
           node scripts/fetch-quote.mjs MRVL mrvl/data 2y
           node scripts/fetch-quote.mjs SKHY skhy/data 2y
           node scripts/fetch-quote.mjs 000660.KS skhy/data/krx 2y
+          node scripts/fetch-quote.mjs KRW=X skhy/data/fx 2y
+          node scripts/krw-to-usd.mjs || echo "krw-to-usd failed"
           node scripts/fetch-quote.mjs TSM tsm/data 2y
           node scripts/fetch-quote.mjs AVGO avgo/data 2y
           node scripts/fetch-quote.mjs ROK rok/data 2y
@@ -94,7 +96,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add */data/history.json skhy/data/krx/history.json data/ta-snapshot.json data/portfolios-perf.json data/momentum-portfolio.json data/bench/SPY/history.json
+          git add */data/history.json skhy/data/krx/history.json skhy/data/fx/history.json skhy/data/krx-usd/history.json data/ta-snapshot.json data/portfolios-perf.json data/momentum-portfolio.json data/bench/SPY/history.json
           if [ -f data/fx-fwd.json ]; then git add data/fx-fwd.json; fi
           if git diff --cached --quiet; then echo "No change."; exit 0; fi
           git config user.name "github-actions[bot]"

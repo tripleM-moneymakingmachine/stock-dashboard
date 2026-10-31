@@ -20,8 +20,8 @@
   "zh": "HBM 龙头，<em>如今在纽约交易</em>。"
  },
  "lede": {
-  "en": "SK hynix makes most of the high-bandwidth memory stacked next to NVIDIA's AI chips. Revenue rose 328% to a record ₩104.6 trillion (about $74B) last quarter at an 80% operating margin, beating consensus, and HBM4 should overtake HBM3E in Q4. The Nasdaq ADS listed in July in a record $26.5B offering and trades at a large premium to the Seoul shares, so the two prices are not interchangeable.",
-  "zh": "SK 海力士生产英伟达 AI 芯片旁所堆叠的大部分高带宽内存。上季营收增长 328% 至创纪录的 104.6 万亿韩元（约 740 亿美元），营业利润率 80%，超出一致预期；HBM4 预计在 Q4 超越 HBM3E。纳斯达克 ADS 于7月以创纪录的 265 亿美元发行上市，且相对首尔股票大幅溢价，两者价格不可直接互换。"
+  "en": "SK hynix makes most of the high-bandwidth memory stacked next to NVIDIA's AI chips. Revenue rose 318% in dollars to a record $73.7B last quarter at an 80% operating margin, beating consensus, and HBM4 should overtake HBM3E in Q4. The Nasdaq ADS listed in July in a record $26.5B offering and trades at a large premium to the Seoul shares, so the two prices are not interchangeable.",
+  "zh": "SK 海力士生产英伟达 AI 芯片旁所堆叠的大部分高带宽内存。上季营收按美元计增长 318% 至创纪录的 737 亿美元，营业利润率 80%，超出一致预期；HBM4 预计在 Q4 超越 HBM3E。纳斯达克 ADS 于7月以创纪录的 265 亿美元发行上市，且相对首尔股票大幅溢价，两者价格不可直接互换。"
  },
  "valuation": {
   "k": {
@@ -66,10 +66,10 @@
     "en": "Q3 2026",
     "zh": "2026 Q3"
    },
-   "v": "₩104.6T",
+   "v": "$73.7B",
    "s": {
-    "en": "≈ $73.7B · +328% YoY · consensus ₩98.2T",
-    "zh": "≈ 737 亿美元 · 同比 +328% · 一致预期 98.2 万亿"
+    "en": "+318% YoY in US$ · consensus $69.2B",
+    "zh": "按美元同比 +318% · 一致预期 692 亿美元"
    }
   },
   {
@@ -77,10 +77,10 @@
     "en": "Operating profit",
     "zh": "营业利润"
    },
-   "v": "₩83.3T",
+   "v": "$58.7B",
    "s": {
-    "en": "80% margin · consensus ₩77.0T",
-    "zh": "利润率 80% · 一致预期 77.0 万亿"
+    "en": "80% margin · consensus $54.3B",
+    "zh": "利润率 80% · 一致预期 543 亿美元"
    }
   },
   {
@@ -99,10 +99,10 @@
     "en": "Net profit",
     "zh": "净利润"
    },
-   "v": "₩39.8T",
+   "v": "$28.0B",
    "s": {
-    "en": "after ₩11.6T FX and ₩22.9T investment losses",
-    "zh": "计入 11.6 万亿汇兑损失与 22.9 万亿投资损失"
+    "en": "after $8.2B FX and $16.1B investment losses",
+    "zh": "计入 82 亿美元汇兑损失与 161 亿美元投资损失"
    }
   },
   {
@@ -121,10 +121,10 @@
     "en": "Net cash",
     "zh": "净现金"
    },
-   "v": "₩98.7T",
+   "v": "$74.5B",
    "s": {
-    "en": "cash ₩114.5T · debt ₩15.8T",
-    "zh": "现金 114.5 万亿 · 债务 15.8 万亿"
+    "en": "cash $86.4B · debt $11.9B",
+    "zh": "现金 864 亿美元 · 债务 119 亿美元"
    }
   }
  ],
@@ -158,8 +158,8 @@
     "zh": "股东回报"
    },
    "p": {
-    "en": "About ₩100T is planned for 2026: ₩30T+ of dividends and ₩60T+ of buybacks and cancellations. The Q3 dividend is ₩20,000 a share (₩2,000 per ADS), half of it a special payout from the Kioxia gains.",
-    "zh": "2026 年计划回报约 100 万亿韩元：30 万亿以上股息及 60 万亿以上回购注销。Q3 股息每股 20,000 韩元（每份 ADS 2,000 韩元），其中一半为铠侠收益特别股息。"
+    "en": "About $75B is planned for 2026: $23B+ of dividends and $45B+ of buybacks and cancellations. The Q3 dividend is about $15.09 a share ($1.51 per ADS), half of it a special payout from the Kioxia gains.",
+    "zh": "2026 年计划回报约 750 亿美元：230 亿美元以上股息及 450 亿美元以上回购注销。Q3 股息每股约 15.09 美元（每份 ADS 1.51 美元），其中一半为铠侠收益特别股息。"
    }
   },
   {
@@ -169,8 +169,8 @@
     "zh": "ADS 溢价"
    },
    "p": {
-    "en": "The ADS trades roughly 40% above the Seoul shares after currency conversion (about ₩1.37M ÷ 10 ≈ $103 vs $145 on Oct 27). The premium topped 50% in July and could narrow.",
-    "zh": "按汇率换算后，ADS 较首尔股价溢价约 40%（10月27日约 ₩1.37M ÷ 10 ≈ $103，对比 $145）。7月溢价曾超过 50%，未来可能收窄。"
+    "en": "The ADS trades roughly 40% above the Seoul shares after currency conversion (a Seoul share of about $1,034 ÷ 10 ≈ $103 vs $145 on Oct 27). The premium topped 50% in July and could narrow.",
+    "zh": "按汇率换算后，ADS 较首尔股价溢价约 40%（10月27日首尔每股约 1,034 美元 ÷ 10 ≈ 103 美元，对比 145 美元）。7月溢价曾超过 50%，未来可能收窄。"
    }
   },
   {
@@ -180,8 +180,8 @@
     "zh": "营业外损失"
    },
    "p": {
-    "en": "Net profit of ₩39.8T missed the ₩61.4T FactSet consensus: an ₩11.6T currency loss and a ₩22.9T investment-asset loss sat below the record operating line. Q2 had the reverse, a ₩63.3T Kioxia gain.",
-    "zh": "净利润 39.8 万亿韩元低于 FactSet 61.4 万亿的一致预期：创纪录的营业利润之下有 11.6 万亿汇兑损失与 22.9 万亿投资资产损失。Q2 则相反，录得 63.3 万亿铠侠收益。"
+    "en": "Net profit of $28.0B missed the $43.3B FactSet consensus: an $8.2B currency loss and a $16.1B investment-asset loss sat below the record operating line. Q2 had the reverse, a $42.1B Kioxia gain.",
+    "zh": "净利润 280 亿美元低于 FactSet 433 亿美元的一致预期：创纪录的营业利润之下有 82 亿美元汇兑损失与 161 亿美元投资资产损失。Q2 则相反，录得 421 亿美元铠侠收益。"
    }
   },
   {
@@ -204,8 +204,8 @@
     "zh": "Q3 股息登记日"
    },
    "p": {
-    "en": "₩20,000 a share (₩10,000 earnings-based plus ₩10,000 special), paid in December.",
-    "zh": "每股 20,000 韩元（10,000 业绩股息加 10,000 特别股息），12月派发。"
+    "en": "About $15.09 a share ($7.55 earnings-based plus $7.55 special; $1.51 per ADS), paid in December.",
+    "zh": "每股约 15.09 美元（7.55 美元业绩股息加 7.55 美元特别股息；每份 ADS 1.51 美元），12月派发。"
    }
   },
   {
@@ -281,8 +281,8 @@
   ]
  ],
  "foot": {
-  "en": "Fundamentals as of Oct 28, 2026 (Q3 2026 results). Won figures converted at quarterly average rates; estimates at ₩1,325 per US$. For information only, not investment advice. Not affiliated with SK hynix Inc.",
-  "zh": "基本面数据截至 2026年10月28日（2026 第三季业绩）。韩元数字按季度平均汇率换算；估算按 1 美元 = 1,325 韩元。仅供参考，不构成投资建议。与 SK hynix Inc. 无关联。"
+  "en": "Fundamentals as of Oct 28, 2026 (Q3 2026 results). All won figures are shown in US$: quarterly results at each quarter's average rate (Q3 2026 ₩1,418.6, Q2 2026 ₩1,501.9 per US$), balances, dividends and estimates at ₩1,325 per US$, and the Seoul price chart at each day's rate. For information only, not investment advice. Not affiliated with SK hynix Inc.",
+  "zh": "基本面数据截至 2026年10月28日（2026 第三季业绩）。所有韩元数字均以美元显示：季度业绩按各季平均汇率（2026 Q3 为 1 美元 = 1,418.6 韩元，Q2 为 1,501.9），资产负债、股息及估算按 1 美元 = 1,325 韩元，首尔股价图按每日汇率。仅供参考，不构成投资建议。与 SK hynix Inc. 无关联。"
  },
  "quarters": [
   [
@@ -566,20 +566,20 @@
     "en": "Cash",
     "zh": "现金"
    },
-   "v": "₩114.5T",
+   "v": "$86.4B",
    "s": {
-    "en": "≈ $86B · Sep 30, 2026 · debt ₩15.8T",
-    "zh": "≈ 860 亿美元 · 2026年9月30日 · 债务 15.8 万亿"
+    "en": "Sep 30, 2026 · debt $11.9B",
+    "zh": "2026年9月30日 · 债务 119 亿美元"
    }
   },
   "read": [
    {
-    "en": "SK hynix's cash flow exploded in 2026. Free cash flow went from about $2–6B a quarter through 2025 (and negative in Q3 2025) to $12.7B in Q1 2026, $36.4B in Q2 and about $29.7B in Q3, when operating cash of ₩54.8T came in well below the ₩83.3T operating profit and capex rose to ₩12.7T.",
-    "zh": "SK 海力士的现金流在 2026 年爆发。自由现金流由 2025 年每季约 20–60 亿美元（2025 Q3 为负）增至 2026 Q1 的 127 亿、Q2 的 364 亿及 Q3 的约 297 亿；Q3 经营现金流 54.8 万亿韩元，明显低于 83.3 万亿的营业利润，资本开支升至 12.7 万亿。"
+    "en": "SK hynix's cash flow exploded in 2026. Free cash flow went from about $2–6B a quarter through 2025 (and negative in Q3 2025) to $12.7B in Q1 2026, $36.4B in Q2 and about $29.7B in Q3, when operating cash of $38.6B came in well below the $58.7B operating profit and capex rose to $8.9B.",
+    "zh": "SK 海力士的现金流在 2026 年爆发。自由现金流由 2025 年每季约 20–60 亿美元（2025 Q3 为负）增至 2026 Q1 的 127 亿、Q2 的 364 亿及 Q3 的约 297 亿美元；Q3 经营现金流 386 亿美元，明显低于 587 亿美元的营业利润，资本开支升至 89 亿美元。"
    },
    {
-    "en": "My base case assumes operating cash of ₩62–70 trillion a quarter as HBM4 ramps and capex rising from ₩13T to ₩16–17T a quarter, since management says 2027 spending will increase significantly, converted at ₩1,325. That gives about $153B over four quarters. The biggest risks are memory prices, which fell hard in 2023, and the won, which moves these dollar figures several percent either way.",
-    "zh": "我的基准情景假设 HBM4 放量下每季经营现金流 62–70 万亿韩元，资本开支由每季 13 万亿升至 16–17 万亿（管理层表示 2027 年投资将大幅增加），按 1,325 换算，四季合计约 1,530 亿美元。最大风险是内存价格（2023 年曾大跌）以及韩元汇率，后者会令美元数字上下波动数个百分点。"
+    "en": "My base case assumes operating cash of $47–53B a quarter as HBM4 ramps and capex rising from about $9.8B to $12.1–12.8B a quarter, since management says 2027 spending will increase significantly (converted at ₩1,325 per US$). That gives about $153B over four quarters. The biggest risks are memory prices, which fell hard in 2023, and the won, which moves these dollar figures several percent either way.",
+    "zh": "我的基准情景假设 HBM4 放量下每季经营现金流 470–530 亿美元，资本开支由每季约 98 亿美元升至 121–128 亿美元（管理层表示 2027 年投资将大幅增加；按 1 美元 = 1,325 韩元换算），四季合计约 1,530 亿美元。最大风险是内存价格（2023 年曾大跌）以及韩元汇率，后者会令美元数字上下波动数个百分点。"
    }
   ],
   "out": [
@@ -589,8 +589,8 @@
      "zh": "产能"
     },
     "p": {
-     "en": "Q3 capex was ₩12.7T (₩10.7T in Q2); 2027 will rise significantly with Yongin Phase 1 and overseas sites.",
-     "zh": "Q3 资本开支 12.7 万亿韩元（Q2 为 10.7 万亿）；2027 年随龙仁一期及海外工厂将大幅增加。"
+     "en": "Q3 capex was $8.9B ($7.1B in Q2); 2027 will rise significantly with Yongin Phase 1 and overseas sites.",
+     "zh": "Q3 资本开支 89 亿美元（Q2 为 71 亿美元）；2027 年随龙仁一期及海外工厂将大幅增加。"
     }
    },
    {
@@ -599,8 +599,8 @@
      "zh": "股东回报"
     },
     "p": {
-     "en": "About ₩100T in 2026; the ₩40T August buyback is done, a ₩14T Q3 dividend and a ₩20T buyback (₩10T for staff pay) are next.",
-     "zh": "2026 年约 100 万亿韩元；8月 40 万亿回购已完成，接下来是 14 万亿 Q3 股息及 20 万亿回购（其中 10 万亿用于员工薪酬）。"
+     "en": "About $75B in 2026; the $28B August buyback is done, a $10.6B Q3 dividend and a $15.1B buyback ($7.5B for staff pay) are next.",
+     "zh": "2026 年约 750 亿美元；8月 280 亿美元回购已完成，接下来是 106 亿美元 Q3 股息及 151 亿美元回购（其中 75 亿美元用于员工薪酬）。"
     }
    },
    {
@@ -609,8 +609,8 @@
      "zh": "偿债"
     },
     "p": {
-     "en": "Borrowings fell ₩2.8T to ₩15.8T, leaving net cash of ₩98.7T at the end of September.",
-     "zh": "借款减少 2.8 万亿至 15.8 万亿韩元，9月底净现金 98.7 万亿。"
+     "en": "Borrowings fell $2.1B to $11.9B, leaving net cash of $74.5B at the end of September.",
+     "zh": "借款减少 21 亿美元至 119 亿美元，9月底净现金 745 亿美元。"
     }
    }
   ],
@@ -641,16 +641,16 @@
      "zh": "ADS 与铠侠"
     },
     "p": {
-     "en": "The $26.5B July ADS offering and the Kioxia stake sale lifted cash by ₩26.5T in Q3 despite the buyback.",
-     "zh": "7月 265 亿美元 ADS 发行与出售铠侠股份令 Q3 现金在回购之后仍增加 26.5 万亿韩元。"
+     "en": "The $26.5B July ADS offering and the Kioxia stake sale lifted cash by about $20B in Q3 despite the buyback.",
+     "zh": "7月 265 亿美元 ADS 发行与出售铠侠股份令 Q3 现金在回购之后仍增加约 200 亿美元。"
     }
    }
   ],
   "bridge": [
    [
     {
-     "en": "Cash, Sep 2026 (₩114.5T)",
-     "zh": "2026年9月现金（114.5 万亿韩元）"
+     "en": "Cash, Sep 2026",
+     "zh": "2026年9月现金"
     },
     86385
    ],
@@ -663,8 +663,8 @@
    ],
    [
     {
-     "en": "Q3 dividend and Q4 buyback (₩34T)",
-     "zh": "Q3 股息与 Q4 回购（34 万亿韩元）"
+     "en": "Q3 dividend and Q4 buyback",
+     "zh": "Q3 股息与 Q4 回购"
     },
     -25660
    ]
@@ -674,8 +674,8 @@
    "zh": "2027年9月现金，未计后续股息与回购（估）"
   },
   "bridgeNote": {
-   "en": "Cash is converted at ₩1,325 per US$, close to the current rate. The year-end special dividend and 2027 returns (at least half of free cash flow under the policy) are not yet sized.",
-   "zh": "现金按 1 美元 = 1,325 韩元换算，接近当前汇率。年末特别股息及 2027 年回报（按政策不低于自由现金流的一半）规模尚未公布。"
+   "en": "Cash and returns are converted at ₩1,325 per US$, close to the current rate. The year-end special dividend and 2027 returns (at least half of free cash flow under the policy) are not yet sized.",
+   "zh": "现金与回报按 1 美元 = 1,325 韩元换算，接近当前汇率。年末特别股息及 2027 年回报（按政策不低于自由现金流的一半）规模尚未公布。"
   },
   "extraNote": {
    "en": "Won figures are converted at each quarter's average rate, so US$ growth rates differ from won growth rates.",
