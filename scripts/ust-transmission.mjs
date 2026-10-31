@@ -20,6 +20,7 @@
 //   S4 the US 10Y trend on its own
 // each traded two ways: outright 10Y KTB duration, and UST-hedged (long/short KTB 10Y against β × US 10Y, β the
 // trailing 26-week weekly beta known at the time), which isolates the Korea-specific part of the move.
+// The Indonesia tab reuses this with its own signal recipe: study(raw, W, { specs, split, method }).
 const mean = (a) => a.reduce((s, x) => s + x, 0) / a.length;
 const sd = (a) => { const m = mean(a); return Math.sqrt(a.reduce((s, x) => s + (x - m) ** 2, 0) / Math.max(1, a.length - 1)); };
 const r = (x, n = 2) => (x == null || !isFinite(x) ? null : +x.toFixed(n));
@@ -32,7 +33,7 @@ function ols(x, y) {
 }
 const lastBefore = (sorted, d) => { let lo = 0, hi = sorted.length - 1, ans = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (sorted[m] < d) { ans = m; lo = m + 1; } else hi = m - 1; } return ans; };
 
-export function study(raw, W) {
+export function study(raw, W, opts = {}) {
   const k10 = new Map(raw.ktb10d || []), k3 = new Map(raw.ktb3d || []), u10 = new Map(raw.ust10d || []), u2 = new Map(raw.ust2d || []);
   const kd = [...k10.keys()].sort(), ud = [...u10.keys()].sort();
   if (kd.length < 200 || ud.length < 200) return null;
@@ -85,7 +86,7 @@ export function study(raw, W) {
     const h = W.slice(Math.max(0, i - 51), i + 1).map((x) => x[f]).filter((x) => x != null);
     if (h.length < 26 || W[i][f] == null) return null; const s = sd(h); return s ? (W[i][f] - mean(h)) / s : 0;
   };
-  const SPECS = [
+  const SPECS = opts.specs || [
     { k: "S0", name: "Live signal: KOSPI, margin credit, ETF share, KTB 10Y trend", c: [["eq4", -1], ["dm4", -1], ["bsDev", 1], ["dy4", -1]], live: true },
     { k: "S1", name: "Live signal + US 10Y 4-week trend", c: [["eq4", -1], ["dm4", -1], ["bsDev", 1], ["dy4", -1], ["du4", -1]] },
     { k: "S2", name: "US 10Y trend in place of the KTB trend", c: [["eq4", -1], ["dm4", -1], ["bsDev", 1], ["du4", -1]] },
@@ -113,7 +114,7 @@ export function study(raw, W) {
   };
   const variants = SPECS.map(run);
   // sub-period check of the live signal, outright vs hedged
-  const live = variants[0], split = W.findIndex((w) => w.date >= "2025-03-01");
+  const live = variants[0], split = W.findIndex((w) => w.date >= (opts.split || "2025-03-01"));
   const sub = (a, b, mode) => { const p = []; for (let i = Math.max(a, W.findIndex((w) => w.date >= live.from)); i < b - 1; i++) { const bb = mode === "hedged" ? W[i].beta : 0; if (live.reg[i] == null || bb == null) continue; p.push(-(live.reg[i] || 0) * ((W[i + 1].y10 - W[i].y10) - bb * (W[i + 1].ust - W[i].ust)) * 100); } return { weeks: p.length, cumBp: r(p.reduce((s, x) => s + x, 0), 1), sharpe: r(sd(p) ? (mean(p) / sd(p)) * Math.sqrt(52) : null) }; };
   const periods = split > 0 ? [[`${live.from.slice(0, 7)} – 2025-02`, 0, split], [`2025-03 – ${W.at(-1).date.slice(0, 7)}`, split, W.length]].map(([l, a, b]) => ({ label: l, outright: sub(a, b, "outright"), hedged: sub(a, b, "hedged") })) : [];
   // hedged equity curve of the live signal (bp), for the back-test chart
@@ -127,5 +128,5 @@ export function study(raw, W) {
     beta: r(w.beta), corr: r(w.corrU), ust: w.ust, ustDate: w.ustD, spreadBp: r(w.sp, 1), spreadPct: r(sps.filter((x) => x < w.sp).length / sps.length, 2), spreadLo52: r(Math.min(...sps), 1), spreadHi52: r(Math.max(...sps), 1),
     du4: r(w.du4, 1), attr,
   };
-  return { daily, weekly, variants, periods, hedgedCurve, method: "Overnight = New York closes strictly before each KOFIA close. Hedged = KTB 10Y minus β × US 10Y, β the trailing 26-week weekly beta known at the time. All variants walk-forward, z-scores vs trailing 52 weeks, thresholds ±0.5, hit rates over the next 4 weeks." };
+  return { daily, weekly, variants, periods, hedgedCurve, method: opts.method || "Overnight = New York closes strictly before each KOFIA close. Hedged = KTB 10Y minus β × US 10Y, β the trailing 26-week weekly beta known at the time. All variants walk-forward, z-scores vs trailing 52 weeks, thresholds ±0.5, hit rates over the next 4 weeks." };
 }

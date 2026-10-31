@@ -1,10 +1,9 @@
 name: probe-id
-# One-off check of which Indonesian data sources GitHub Actions can reach (Indonesia tab build).
-# Runs only on the probe-id branch; never on main.
+# Test run of the Indonesia tab fetchers on the probe-id branch; never on main.
 on:
   push:
     branches: [probe-id]
-    paths: [scripts/probe-id.mjs, .github/workflows/probe-id.yml]
+    paths: [scripts/probe-id.mjs, scripts/fetch-indonesia.mjs, scripts/fetch-indonesia-flows.mjs, scripts/ust-transmission.mjs, .github/workflows/probe-id.yml]
 permissions:
   contents: write
 jobs:
@@ -15,8 +14,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
-      - run: npm i --no-save --no-package-lock undici@6
-      - run: node scripts/probe-id.mjs > probe-out.txt 2>&1 || true
+      - run: |
+          { echo "== fetch-indonesia"; node scripts/fetch-indonesia.mjs; echo "exit $?"; echo "== fetch-indonesia-flows"; node scripts/fetch-indonesia-flows.mjs; echo "exit $?"; } > probe-out.txt 2>&1 || true
       - run: |
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f probe-out.txt; git commit -m "probe output" && git push
+          git add -f probe-out.txt; for f in data/indonesia.json data/indonesia-flows.json; do [ -f "$f" ] && git add -f "$f"; done
+          git commit -m "probe output" && git push
