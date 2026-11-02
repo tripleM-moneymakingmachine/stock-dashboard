@@ -1,30 +1,30 @@
 {
- "session": "2026-10-30",
- "asof": "Fri Oct 30, 2026",
+ "session": "2026-11-02",
+ "asof": "Mon Nov 2, 2026",
  "tone": "down",
- "headline": "Intel's 29% crash and Amazon's cash burn sink chips; SOX −7.2%, S&P 500 worst day since June",
- "summary": "A tech-led rout rather than a broad collapse. Stocks opened lower after the Amazon and Intel reports and slid to session lows in the afternoon, when the VIX touched 22.31, before trimming losses into the close; tech lost about 4.9% and chips 7.2%, yet six of 11 sectors rose and nearly as many S&P 500 members gained as fell, led by energy and consumer staples.",
+ "headline": "Oil's 7% plunge lifts the Dow, but Oracle and chip selling drag the Nasdaq down 1.1%",
+ "summary": "A rebound that faded into a split close. Stocks opened higher on US-Iran peace hopes, with the S&P 500 up as much as 1.1% in the morning, but selling in tech and chip stocks built through the afternoon and the index closed on its session low. Most stocks still rose: consumer discretionary, financials, industrials and staples gained as oil and yields fell, while tech lost close to 3% and energy about 4%.",
  "stats": [
-  ["S&P 500", "7,580.07", -1.82],
-  ["Nasdaq", "25,437.00", -2.86],
-  ["Dow", "51,770.31", -1.09],
-  ["Russell 2000", "2,811.84", -1.66],
-  ["SOX (chips)", "10,688.80", -7.2],
-  ["VIX", "19.42", 12.91, true],
-  ["US 10Y", "4.94%", "−4bp"],
-  ["WTI crude", "$104.12", 2.08]
+  ["S&P 500", "7,541.40", -0.51],
+  ["Nasdaq", "25,164.32", -1.07],
+  ["Dow", "51,983.98", 0.41],
+  ["Russell 2000", "2,805.88", -0.21],
+  ["SOX (chips)", "10,328.33", -3.37],
+  ["VIX", "21.15", 8.91, true],
+  ["US 10Y", "4.92%", "−2bp"],
+  ["WTI crude", "$96.46", -7.36]
  ],
  "drivers": [
-  ["Intel's worst day since 1974", "Intel sank 28.6% to $65.76 after guiding Q4 sales roughly 9% below estimates, blaming weaker PC demand as memory-driven price increases put off buyers. The SOX fell 7.2% with 29 of its 30 members lower, leaving it down more than 15% for October."],
-  ["AI-spending fears spread across hardware", "AMD dropped 10.9%, SanDisk 13.5%, TSMC 6.0%, Broadcom 5.5%, Micron 5.3% and Nvidia 4.2%, which slipped behind Apple in market value; server makers Dell (−10.8%) and HP (−9.6%) also slid. The Nasdaq is now 7.8% below its Oct 6 record after Alphabet's plunge the day before."],
-  ["Amazon misses and keeps burning cash", "Amazon missed on revenue ($201.9 billion) and EPS ($1.89), and its trailing free cash flow swung to an outflow of more than $42 billion on AI-related capex. The stock was down about 7% before the open but pared that to −1.4% as AWS grew 39%."],
-  ["Haven bid and defensive rotation", "Treasuries rallied, taking the 10-year down about 4bp to 4.94% and the 2-year about 5bp to 4.56%, while energy (+1.9%) and staples (+1.4%) gained as Exxon (+2.2%), Chevron (+1.8%) and Mondelez (+3.9%) beat forecasts. WTI rose 2.1% to a six-month high of $104.12 after tankers were hit in the Strait of Hormuz."]
+  ["Chip selling resumes after a brief bounce", "The SOX gave up an early gain of almost 2% to close 3.4% lower, extending Friday's 7.2% slide. Marvell fell about 13% and Lumentum about 19% after agreeing a $115 billion all-stock merger that analysts questioned on size, while Intel dropped another 8.8% after Friday's 29% plunge."],
+  ["AI funding worries hit Oracle and software", "Oracle sank about 8.7% after filings showed plans to raise $20 billion through stock and bond sales, feeding concern over how AI build-outs are being financed. Microsoft (−2.8%) and Apple (−1.8%, ahead of its report) were among the heaviest weights on the S&P 500."],
+  ["Oil tumbles on US-Iran diplomacy", "WTI fell 7.4% to $96.46, back below $100, and Brent 7.6% to $104.77 after Iran said its supreme leader had widened the mandate for peace talks and President Trump said a deal could happen. Airlines, cruise lines and retailers rallied while Exxon and other energy names fell about 4%."],
+  ["Lower yields support cyclicals and the Dow", "The 10-year Treasury yield slipped to about 4.92% as oil fell, helping home-improvement, financial and industrial stocks; Honeywell, 3M and Boeing led the Dow's 0.4% gain. October ISM manufacturing rose to 55.5, above forecasts, with the prices-paid gauge easing."]
  ],
- "week": "For the week the S&P 500 fell 0.6%, the Dow 0.9% and the Nasdaq 2.0% while the Russell 2000 rose 1.3%; the backdrop is a Fed on hold at 3.75–4% with a December hike largely priced, a 10-year yield back under 5% after topping 5.30% early in the month, and oil up about 15% in October.",
- "watch": "Next: Apple and Palantir report Monday after the close, AMD on Tuesday evening alongside the Nov 3 midterms, Arm and Qualcomm on Wednesday, and the October jobs report on Friday, Nov 6.",
+ "week": "The week opened with the Dow up 0.4% and the S&P 500 down 0.5% after the Nasdaq's 5.3% October drop, its worst month since March 2025; the backdrop is a Fed on hold at 3.75–4%, a 10-year yield back under 5% and oil swinging on Iran headlines.",
+ "watch": "Next: after Monday's close Apple reported revenue of $114.5 billion and EPS of $2.10, both above forecasts; Tuesday brings the midterm elections, JOLTS job openings and AMD's results, followed by Arm and Qualcomm on Wednesday and the October jobs report on Friday, Nov 6.",
  "sources": [
-  ["AP", "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2"],
-  ["Reuters", "https://straitstimes.com/business/companies-markets/wall-street-closes-sharply-lower-as-ai-cash-burn-fears-spark-tech-selloff"],
-  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html"]
+  ["AP", "https://apnews.com/article/wall-street-stocks-dow-nasdaq-475bb37b4d95dd99e26c94e708c99f8f"],
+  ["Reuters", "https://uk.marketscreener.com/news/s-p-500-ends-down-apple-dips-ahead-of-quarterly-report-ce785fd9da89ff2c"],
+  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"]
  ]
 }
