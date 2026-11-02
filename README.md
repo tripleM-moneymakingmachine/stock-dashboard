@@ -36,7 +36,7 @@ Investor dashboards, EN / 中文, light / dark:
 Each page covers price, revenue mix, financials, free cash flow, watch list, calendar and sources. The root `index.html` (https://triplem-moneymakingmachine.github.io/stock-dashboard/) lists every stock with its latest price.
 
 ## Ranking on the main page
-- The stock cards on `index.html` are ordered from most to least bullish (Claude's judgment), with a rank, a tier (Bullish / Constructive / Neutral / Cautious) and a one-line reason on each card. A Claude scheduled task re-ranks them after every US session (Tue–Sat 8:22am SGT) by reordering the cards, editing the `rk` and `why` lines and the "Ranked by Claude as of" date.
+- The stock cards on `index.html` are ordered from most to least bullish (Claude's judgment), with a rank, a tier (Bullish / Constructive / Neutral / Cautious) and a one-line reason on each card. A Claude scheduled task re-ranks them after every US session (Tue–Sat ~7:43am SGT, after the technical-read and earnings-refresh tasks) by reordering the cards, editing the `rk` and `why` lines and the "Ranked by Claude as of" date.
 
 ## Previous-session market recap (main page)
 The panel above "Most to least bullish" summarises the latest US session: headline, index/SOX/VIX/10Y/oil moves, the 3–4 drivers of the rally or sell-off, the week so far and what to watch. It renders `data/market-recap.json` with `assets/market-recap.js`. Claude rewrites the JSON after each US close (scheduled task "Stock dashboard: daily market recap", Tue–Sat ~7:28 SGT) from market wraps; only that file changes. The deploy workflow copies it into the site (`.github/workflows/deploy.yml`).
