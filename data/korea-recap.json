@@ -1,70 +1,75 @@
 {
-  "session": "2026-10-30",
-  "asof": "Fri Oct 30, 2026",
-  "commentary_asof": "Fri Oct 30, 2026",
+  "session": "2026-11-02",
+  "asof": "Mon Nov 2, 2026",
+  "commentary_asof": "Mon Nov 2, 2026",
   "horizon": "1–2 weeks",
-  "headline": "AI-earnings shock sends KOSPI down 3.5% and KTBs bull-flatten: 10Y −7.3bp to 4.008%, a 40bp October rally, while bank and credit spreads hit 1-year wides",
-  "summary": "KTBs rallied across the curve on Friday as Alphabet's miss and a 3.5% KOSPI slide (foreigners sold KRW 1.6tn of stocks, SK hynix −7%) pushed money into duration. The long end led: 3Y −5.1bp to 3.715%, 10Y −7.3bp to 4.008%, 30Y −8.8bp to 4.124%, 50Y −9.1bp. October closes with the 10Y about 40bp lower, its lowest since May, and 3s10s at 29bp, the flattest in a year. The front end barely moved: the 1Y fell 1.7bp to 3.588% and MSB 91-day held at 3.18% because the Bank of Korea is still guiding to another hike. Under the surface, funding and credit are cheapening, not rallying: CP–CD at 48bp, AAA bank debentures about 45bp over the 1Y KTB and KEPCO 3Y 44bp over the KTB are all at or near 1-year wides. This is a risk-off rally, not an easing rally.",
+  "headline": "KOSPI rebounds 2.2% and KTBs give back part of last week's rally: 10Y +2.6bp to 4.034% even though US 10Y fell 4bp, as the belly leads ahead of Tuesday's CPI",
+  "summary": "KTBs sold off modestly on the first trading day of November, a payback for last week's 9bp rally with no single local trigger. The belly led: 3Y +2.5bp to 3.740%, 5Y +2.7bp to 3.892% and 10Y +2.6bp to 4.034%, while the 1Y was flat at 3.589% and the 30Y rose only 0.7bp to 4.131%, so 10s30s flattened 2bp to 9.7bp. Money-market rates kept climbing: CD 91-day rose 2bp to 3.34% and CP to 3.81%, both new 1-year highs, and MSB 91-day edged up to 3.188%. Spreads were steady at wide levels: KDB about 28bp over KTB at 1–3Y, AAA bank debentures 45bp over the 1Y KTB and AA- 3Y 69bp over, all in the top tenth of their 1-year ranges except AA- (83rd percentile). The risk-off bid paused rather than reversed.",
   "drivers": [
     [
-      "Equity shock, bonds as the hedge",
-      "KOSPI fell 3.48% to 5,730.74 after Alphabet and Amazon disappointed on AI growth and free cash flow; a sell sidecar fired for the 28th time this year. KOSPI is down about 37% from its June 19 peak of 9,052, and margin credit has shrunk from KRW 38.5tn to 29.1tn, so leveraged equity money is still unwinding."
+      "Equity rebound, bond payback",
+      "KOSPI opened 1.6% lower after the Intel-led US chip rout, then closed up 2.24% at 5,859.08 as institutions bought KRW 1.23tn while foreigners sold KRW 0.37tn. Desks read the bond move as a retracement of last week's rally (3Y −8.8bp, 10Y −8.9bp on the week); the November KTB issuance plan gave little support."
     ],
     [
-      "Global duration bid",
-      "US 10Y fell about 8bp overnight and short-dated Treasuries about 10bp; Australian and Japanese 10Y yields fell about 6bp. The BOJ held at 1.25% with one dissent for a hike. KTBs moved with the global bid rather than on local news."
+      "US Treasuries pointed the other way",
+      "The US 10Y fell about 4bp on Friday (par 4.98% to 4.94%), which at the 1-year daily beta of 0.46 implied a 1.8bp KTB rally; the 10Y instead rose 2.6bp, so the whole move, about +4.4bp, was local. That narrowed the KTB–UST 10Y gap to −91bp from a 1-year extreme of −97bp (still the 4th percentile)."
     ],
     [
-      "Foreigners sold KTB futures into the rally",
-      "Foreign investors net sold 837 3Y and 1,215 10Y futures. Futures lagged cash: on our basket valuation the 3Y contract (103.50 close) traded about 19 ticks below fair value (103.69) and the 10Y (108.04) about 9 ticks below (108.13), so futures-implied yields sit above the cash basket."
+      "Record exports and CPI on deck",
+      "October exports rose 93.7% y/y to USD 115.3bn with chips up 259%, and Q3 GDP has already beaten. October CPI on Tuesday is expected around 3%; a print at or above that keeps a November BOK hike live, which is why the 2–5Y sector, not the long end, carried the sell-off."
     ],
     [
-      "BOK still hawkish",
-      "The Bank of Korea held at 3.00% on Oct 22 after hikes in July and August, but Governor Shin said a restrictive stance must continue and markets lean to a November hike. That pins the front end: MSB 91-day at 3.18% and CD 91-day at 3.32% are both 1-year highs."
+      "Foreigners bought futures into the dip",
+      "Foreign investors net bought 8,813 3Y and 1,998 10Y KTB futures, reversing Friday's selling. On the dashboard's basket valuation fair value fell 8 ticks to 103.61 (3Y) and 29 ticks to 107.84 (10Y); settle prices were not in the wraps we read, so we have no basis read today."
     ]
   ],
   "data": [
     [
+      "Exports, October (Nov 1)",
+      "+93.7% y/y, USD 115.3bn; chips +259% (p +83.7% revised); surplus USD 42.5bn",
+      "Second-highest month on record and on track for USD 1tn this year. It underpins the won, fiscal revenue and the BOK's hawkish lean, but the market is trading AI-capex doubts, not the trade data."
+    ],
+    [
       "Q3 GDP, advance (Oct 27)",
-      "+1.0% q/q, 3.4% y/y (BOK projection +0.3% q/q; Q2 +0.6%)",
-      "A large upside surprise led by chip capex (+4.1%) and government spending (+1.9%), while private consumption fell 0.2%. It supports the BOK's hawkish lean and makes front-end hike pricing hard to fade."
+      "+1.0% q/q (BOK projection +0.3%; p +0.6%)",
+      "Chip capex and government spending drove a large beat while private consumption fell 0.2%. It keeps front-end hike pricing hard to fade."
     ],
     [
       "BOK rate decision (Oct 22)",
       "Hold at 3.00%, unanimous (after +25bp in July and August)",
-      "The Governor guided to staying restrictive until inflation is stably at 2% and hinted at another hike. Market pricing leans to 3.25% in November and some see 3.50% in Q1 2027."
+      "The Governor guided to staying restrictive; markets lean to 3.25% in November. MSB 91-day at a 1-year high reflects that."
     ],
     [
       "CPI, September",
-      "2.9% y/y (August 3.1%); PPI 7.7% y/y",
-      "Headline is easing but producer prices point to pass-through. October CPI is due in the first days of November; a print at or above 3% would cement a November hike."
+      "2.9% y/y (p 3.1%)",
+      "Headline easing, but producer prices point to pass-through; the October print is the swing factor for November."
     ],
     [
-      "Exports, September",
-      "+83.7% y/y; trade surplus USD 50.0bn",
-      "The AI chip boom drives income (real GDI +18.8% y/y). Strong exports support the won and fiscal revenue, but a turn in AI capex sentiment, as on Friday, hits KOSPI first and bonds benefit."
+      "CPI, October (due Nov 3)",
+      "Pending; consensus around 3% (p 2.9%)",
+      "At or above 3% would cement a hike and lift 2–5Y yields further; below 2.8% would let the front end join the long-end rally."
     ],
     [
-      "Exports, October (due Nov 1)",
-      "Pending; September +83.7% y/y",
-      "A miss on chips would extend the risk-off rally in duration; a beat would keep the BOK on course and steepen the curve from the front."
+      "Current account, September (due Nov 5)",
+      "Pending; a new record surplus is expected",
+      "Mostly a won story; little direct impact on KTBs."
     ]
   ],
   "view": [
     "My view:",
-    "The October rally is a flight-to-quality trade riding an equity crash, not a change in the BOK path. The front end still prices about two more hikes, and that is reasonable given the Q3 GDP beat. About 15bp of the 10Y's 36bp four-week rally simply followed US Treasuries (weekly beta 0.59); the other 20bp is Korea's own equity-to-bond rotation, and KTBs already yield 97bp below Treasuries, a 1-year extreme. I would not chase 10Y below 4.00% outright. Instead I'd position for a 3s10s re-steepening, express any rotation view against US Treasuries (long KTB vs about 0.5–0.6 × US 10Y, where the signal's hit rate rises to 64–69%), and harvest the cheapness in KDB paper, while staying away from bank and corporate credit until the CP–CD spread stops widening."
+    "Today was a pause in a flight-to-quality rally, not a turn: the bond-rally signal is still +1.64, foreigners bought futures, and the move was local payback rather than global (Treasuries rallied). Over four weeks about −20bp of the 10Y's −36bp came from US Treasuries at a weekly beta of 0.58 and −16bp was Korea's own equity-to-bond rotation. With CPI and a possible November hike pinning 1–2Y, I expect the 10Y to hold 3.95–4.15% over the next two weeks, and I still prefer the 3s10s steepener and the 50Y over the 30Y to outright duration. The rotation view is best expressed against Treasuries: hedged with 0.58 × US 10Y, the live signal's rally calls hit 66% and sell-off calls 69% (48% and 57% outright), with a Sharpe of 1.21 against 0.91. KDB remains the place to pick up spread; bank paper and corporates wait until CP–CD stops widening."
   ],
   "buckets": [
     {
       "name": "KTB 1–2Y front end",
       "tag": "Fair",
-      "stance": "Neutral",
+      "stance": "Neutral into CPI",
       "m": {
         "type": "lvl",
         "a": "ktb:2"
       },
-      "why": "The 2Y closed at 3.705%, 27bp lower in October but still in the 77th percentile of its 1-year range, and the 1Y at 3.588% is at the 88th percentile. With the base rate at 3.00% and MSB 91-day at 3.18%, the curve prices roughly two more 25bp hikes into mid-2027, in line with the BOK's guidance and the Q3 GDP beat. 2s3s at +1bp (1-year low) shows the front end has stopped falling while the belly rallied.",
-      "call": "Neutral. Add 2Y only above 3.80% (three hikes priced) or if October CPI undershoots; fade rallies below 3.62%."
+      "why": "The 2Y rose 1.4bp to 3.719% (80th percentile of its 1-year range) and the 1Y was flat at 3.589% (88th). With the base rate at 3.00% and MSB 91-day at a 1-year high of 3.188%, the curve still prices about two more hikes, which is consistent with the Q3 GDP beat and record exports. 2s3s at 2bp is the flattest of the year (1st percentile), so the front end is no longer leading rallies.",
+      "call": "Unchanged, no trigger hit. Add 2Y above 3.80% or on a sub-2.8% October CPI; fade rallies below 3.62%."
     },
     {
       "name": "3s10s curve",
@@ -75,8 +80,8 @@
         "a": "ktb:3",
         "b": "ktb:10"
       },
-      "why": "3s10s is 29.3bp, the 2nd percentile of the year against a 40bp average, after flattening 10bp in October as the long end led a risk-off rally. With the BOK hawkish and the front end pinned, the curve has little room to flatten further unless the equity sell-off becomes a growth scare. In futures the trade is cheap to carry: one 10Y contract has about 3 times the DV01 of a 3Y (KRW 86k vs 29k per bp).",
-      "call": "3s10s steepener via futures (buy 3 × 3Y, sell 1 × 10Y per unit) from 29bp; target 36bp, stop 25bp."
+      "why": "3s10s is 29.4bp, the 3rd percentile of the year against a 40bp average; the 3Y and 10Y sold off in step today. Our steepener from 29.3bp is open and flat. The long end has room to underperform if KOSPI keeps stabilising, while hike risk caps the front end only so far. One 10Y future carries about 3.0 times the DV01 of a 3Y (KRW 85k vs 29k per bp).",
+      "call": "Keep the 3s10s steepener (buy 3 × 3Y, sell 1 × 10Y futures) from 29bp; target 36bp, stop 25bp. Open."
     },
     {
       "name": "KTB 10Y outright",
@@ -86,8 +91,8 @@
         "type": "lvl",
         "a": "ktb:10"
       },
-      "why": "The 10Y fell 7.3bp to 4.008%, 40bp lower in October and back to the 53rd percentile of a 3.23–4.54% range. The move matches the 4-week KOSPI fall (−18%) and the drop in US yields; the 26-week stock/yield correlation is only +0.10, so bonds are trading the equity tape. Foreign futures selling and the futures discount to the basket show offshore money is not chasing.",
-      "call": "Don't chase below 4.00%. Buy 10Y at 4.10–4.15% (stop 4.25%) if KOSPI rebounds and the curve re-steepens."
+      "why": "The 10Y at 4.034% sits at the 53rd percentile of a 3.08–4.60% range after a 36bp four-week rally. Today's 2.6bp back-up came against a falling US 10Y, so it was local positioning, not global. The KTB–UST gap of −91bp (4th percentile) says Korea has already outperformed a lot, which limits outright upside from here.",
+      "call": "Buy zone 4.10–4.15% not reached; keep it with a stop at 4.25%. Don't chase below 4.00%."
     },
     {
       "name": "Ultra-long 30–50Y",
@@ -98,8 +103,8 @@
         "a": "ktb:30",
         "b": "ktb:50"
       },
-      "why": "30s50s is +2.5bp, the 94th percentile of a −17 to +5bp range (average −10bp). The 50Y has underperformed the 30Y through the year as pension demand concentrated in 20–30Y, leaving the 50Y the cheapest point on the long end. 10s30s at 11.6bp (72nd percentile) is fair.",
-      "call": "Switch 30Y into 50Y (30s50s flattener) at +2.5bp; target −3bp, stop +6bp."
+      "why": "30s50s is +2.4bp, the 94th percentile of the year (average −10bp); the switch from +2.5bp is open. The long end barely moved today (30Y +0.7bp, 50Y +0.6bp) as 10s30s flattened to 9.7bp. Within the long end, off-the-run 2052–53 KTBs trade about 8bp cheap to the fitted curve, while the 2028 bond in the 3Y futures basket is about 7bp rich.",
+      "call": "Keep the 30Y into 50Y switch at +2.5bp; target −3bp, stop +6bp. Open."
     },
     {
       "name": "KDB 1–3Y vs KTB",
@@ -110,8 +115,8 @@
         "a": "ktb:3",
         "b": "kdb:3"
       },
-      "why": "On the dashboard's fit, KDB trades 26bp over the 3Y KTB (86th percentile, average 19bp) and 30bp over at 1Y; KOFIA's own 1Y KDB quote is 33.6bp over the KTB (94th percentile). KDB is state-guaranteed in substance, so most of the widening is bank-sector funding pressure spilling over, not credit risk.",
-      "call": "Overweight KDB 1–3Y against KTB for the ~26–30bp pickup; take profit at 20bp, cut above 35bp."
+      "why": "The KDB fit (17 trades) puts KDB 28bp over KTB across 1–3Y; at 3Y that is the 92nd percentile against a 19bp average, 2bp wider than our entry. KOFIA's own 1Y KDB quote is 34bp over the KTB (95th percentile, average 23bp). The widening tracks bank funding pressure, not KDB credit.",
+      "call": "Hold the overweight from ~26bp; take profit at 20bp, cut above 35bp. Open, 2bp against."
     },
     {
       "name": "AAA bank debentures and money market",
@@ -122,8 +127,8 @@
         "a": "ktb:1",
         "b": "bank:1"
       },
-      "why": "AAA bank paper is about 45bp over the 1Y KTB (99th percentile), CP–CD is 48bp (96th percentile, +31bp in October) and CD 91-day rose 3bp to a 1-year high of 3.32% on a day KTBs rallied. That is a funding squeeze, and spreads like this tend to widen further before they turn.",
-      "call": "Prefer KDB over bank debentures; revisit bank paper once CP–CD falls back below 35bp."
+      "why": "AAA bank paper (51-trade fit) is 45bp over the 1Y KTB, the widest of the year; CD 91-day rose another 2bp to 3.34% and CP to 3.81%, both 1-year highs, with CP–CD at 47bp (96th percentile). IBK 1Y is 38bp over KTB, also a 1-year wide. Funding pressure is still building into month-start.",
+      "call": "No change: prefer KDB over bank debentures; revisit bank paper once CP–CD falls back below 35bp."
     },
     {
       "name": "Corporate credit (AA- 3Y)",
@@ -134,98 +139,98 @@
         "a": "ktb:3",
         "b": "aa:3"
       },
-      "why": "AA- 3Y is 69bp over the KTB (84th percentile, average 60bp), and KEPCO 3Y at 44bp over is a 1-year wide. Spreads are widening in a falling-yield market: the classic risk-off signature. With equities still unwinding, credit can underperform for a few more weeks.",
-      "call": "No new credit risk this week; add AA- above 75bp, or once KOSPI stabilises."
+      "why": "AA- 3Y is 69bp over the KTB (83rd percentile, average 60bp) and KEPCO 3Y 44bp over, a 1-year wide (100th percentile). Spreads held as yields rose today, so there is no sign of a turn yet, and one day of equity recovery is not enough to add risk.",
+      "call": "Add AA- only above 75bp or once KOSPI holds its rebound for a week; no trigger hit."
     }
   ],
   "rows": {
     "ktb:1": {
-      "note": "Pinned by BOK hike guidance"
+      "note": "Flat; pinned by hike pricing"
     },
     "ktb:2": {
-      "note": "Two more hikes priced"
+      "note": "Two more hikes priced; CPI Tue"
     },
     "ktb:3": {
-      "note": "Futures basket rallied; 3Y fut below fair"
+      "note": "Payback; foreigners bought 3Y futures"
     },
     "ktb:5": {
-      "note": "Followed the belly"
+      "note": "Led the sell-off, +2.7bp"
     },
     "ktb:10": {
-      "note": "Lowest since May; −40bp in October"
+      "note": "Up despite US 10Y −4bp"
     },
     "ktb:20": {
-      "note": "Lagged 10Y and 30Y"
+      "note": "Held better than the belly"
     },
     "ktb:30": {
-      "note": "Led with 50Y"
+      "note": "Barely moved; 10s30s flatter"
     },
     "ktb:50": {
-      "note": "Cheapest point vs 30Y"
+      "note": "Still cheap vs 30Y"
     },
     "msb:0.25": {
-      "note": "1-year high; hike pricing"
+      "note": "New 1-year high"
     },
     "msb:1": {
-      "note": "Below KTB 1Y by ~10bp"
+      "note": "About 10bp below KTB 1Y"
     },
     "msb:2": {
       "note": "Flat to KTB 2Y"
     },
     "kdb:1": {
-      "note": "Fitted; KOFIA 1Y quote similar"
+      "note": "Fit 28bp over; KOFIA quote 34bp"
     },
     "kdb:3": {
-      "note": "Cheap vs KTB"
+      "note": "92nd pct spread; overweight"
     },
     "ibk:1": {
-      "note": "Fitted; wide with bank paper"
+      "note": "38bp over KTB, 1-year wide"
     },
     "bank:1": {
-      "note": "1-year wide; funding squeeze"
+      "note": "45bp over KTB; widest of year"
     },
     "cd:0.25": {
-      "note": "Up 3bp on a rally day"
+      "note": "+2bp to 1-year high"
     },
     "cp:0.25": {
-      "note": "CP–CD 48bp"
+      "note": "CP–CD 47bp"
     },
     "aa:3": {
-      "note": "Spread widening"
+      "note": "69bp over; no turn yet"
     },
     "kepco:3": {
       "note": "1-year wide over KTB"
     }
   },
-  "watch": "Next: October exports (Sun Nov 1), October CPI (first days of November), US data and Fed speakers, KOSPI and foreign futures flows, and the BOK's late-November meeting. A KOSPI rebound with a firm CPI print is the main risk to the long-end rally; a chip-led export miss would extend it.",
+  "watch": "Next: Korea October CPI and the US midterm elections (Tue Nov 3), FX reserves and the US quarterly refunding (Wed Nov 4), Korea September current account (Thu Nov 5), US October payrolls (Fri Nov 6), then the BOK's late-November meeting. A firm CPI with a holding KOSPI rebound is the main risk to the long-end rally; a soft print would let the front end catch up.",
   "sources": [
     [
-      "Supple / Yonhap Infomax (KTB close, Oct 30)",
-      "https://supple.kr/news/cmvut9lhltbp913palr4hdpf2"
+      "Yonhap via Maeil Business (KTB close, Nov 2)",
+      "https://stock.mk.co.kr/news/view/1186943"
     ],
     [
-      "Special Times (KTB October recap)",
-      "https://www.specialtimes.co.kr/news/articleView.html?idxno=480320"
+      "Yonhap (KOSPI close, Nov 2)",
+      "https://www.yna.co.kr/amp/view/AKR20261102131851008"
     ],
     [
-      "eToday (KOSPI close, Oct 30)",
-      "https://www.etoday.co.kr/news/view/2642400"
+      "Money Today (KOSPI flows, Nov 2)",
+      "https://www.mt.co.kr/stock/2026/11/02/2026110215393141110"
     ],
     [
-      "Kyunghyang (BOK Oct 22 decision)",
-      "https://www.khan.co.kr/en/article/202610221648047"
+      "Yonhap English (October exports)",
+      "https://en.yna.co.kr/view/AEN20261101000900320"
     ],
     [
-      "Trading Economics (BOK hold)",
-      "https://tradingeconomics.com/south-korea/interest-rate/news/593988"
+      "News1 (week ahead: CPI, current account)",
+      "https://www.news1.kr/economy/trend/6338900"
     ],
     [
-      "Hankook Ilbo (Q3 GDP advance)",
-      "https://www.hankookilbo.com/news/article/A2026102707580003481"
+      "CNBC (US Treasuries, Oct 30)",
+      "https://cnbc.com/2026/10/30/us-treasury-yields-fed-interest-rates.html"
     ],
     [
-      "AsianBondsOnline weekly (Oct 26)",
-      "https://asianbondsonline.adb.org/newsletters/abowdh20261026.pdf?src=spotlight"
+      "Dow Jones via Morningstar (US 10Y October)",
+      "https://kessler-prod.reta52d8.eas.morningstar.com/news/dow-jones/2026103010351/10-year-treasury-yield-falls-to-4928-this-month-data-talk"
     ],
     [
       "KOFIA bond information service",
