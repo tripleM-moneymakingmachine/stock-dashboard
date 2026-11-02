@@ -1,6 +1,6 @@
 {
  "ticker": "SNDK",
- "asof": "2026-10-31",
+ "asof": "2026-11-03",
  "quarter": {
   "en": "Q1 FY2027 (September quarter, ended Oct 2)",
   "zh": "2027 财年第一季（9 月季度，截至 10 月 2 日）"
@@ -14,9 +14,9 @@
   "pct": -13.5
  },
  "since": {
-  "date": "2026-10-30",
-  "close": 1150.89,
-  "pct": -13.5
+  "date": "2026-11-02",
+  "close": 1075.08,
+  "pct": -19.2
  },
  "review": {
   "en": [

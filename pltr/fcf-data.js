@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Palantir's fiscal year is the calendar year. This is GAAP free cash flow; Palantir's own 'adjusted' figure also adds back employer taxes on stock pay. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 第三季至 2026 第二季共 20 个季度。Palantir 财年与日历年一致。此处为 GAAP 自由现金流；公司自报的“调整后”数字另加回股权激励相关的雇主税费。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Palantir's fiscal year is the calendar year. This is GAAP free cash flow; Palantir's own 'adjusted' figure also adds back employer taxes on stock pay. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 第四季至 2026 第三季共 20 个季度。Palantir 财年与日历年一致。此处为 GAAP 自由现金流；公司自报的“调整后”数字另加回股权激励相关的雇主税费。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q3 2021",
-   "Sep 2021",
-   100.8,
-   5.4,
-   95.4
-  ],
   [
    "Q4 2021",
    "Dec 2021",
@@ -143,36 +136,43 @@ window.FCF = {
    1216.2,
    14.6,
    1201.6
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   1204.6,
+   8.0,
+   1196.6
   ]
  ],
  "est": [
   [
-   "Q3 2026",
-   "Sep 2026",
-   1190,
-   15,
-   1175
-  ],
-  [
    "Q4 2026",
    "Dec 2026",
-   1300,
+   1600,
    15,
-   1285
+   1585
   ],
   [
    "Q1 2027",
    "Mar 2027",
-   1250,
+   1550,
    15,
-   1235
+   1535
   ],
   [
    "Q2 2027",
    "Jun 2027",
-   1550,
+   1750,
    20,
-   1530
+   1730
+  ],
+  [
+   "Q3 2027",
+   "Sep 2027",
+   1800,
+   20,
+   1780
   ]
  ],
  "cash": {
@@ -180,31 +180,31 @@ window.FCF = {
    "en": "Cash",
    "zh": "现金"
   },
-  "v": "$9.2B",
+  "v": "$10.4B",
   "s": {
-   "en": "Jun 30, 2026 · incl. short-term Treasuries · no borrowings",
-   "zh": "2026年6月30日 · 含短期国债 · 无借款"
+   "en": "Sep 30, 2026 · cash, equivalents and US Treasuries",
+   "zh": "2026年9月30日 · 现金、等价物及美国国债"
   }
  },
  "read": [
   {
-   "en": "Palantir spends almost nothing on equipment (capex was $15M in Q2), so free cash flow tracks operating cash flow. It rose from under $100M a quarter in 2021–22 to $1.2B in Q2 2026, and the last four quarters add up to about $3.4B. One caveat: stock-based pay ($265M in Q2) is a real cost to shareholders that never shows up as cash out, so free cash flow flatters the picture; after subtracting it, Q2 was still about $940M.",
-   "zh": "Palantir 几乎不需设备投资（Q2 资本开支仅 1,500 万美元），自由现金流基本等于经营现金流。季度自由现金流由 2021–22 年不足 1 亿美元升至 2026 年 Q2 的 12 亿，近四季合计约 34 亿。需注意：股权激励（Q2 为 2.65 亿）是股东承担的真实成本，却不体现为现金流出，因此自由现金流显得更好看；扣除后 Q2 仍约 9.4 亿。"
+   "en": "Palantir spends almost nothing on equipment (capex was $8M in Q3), so free cash flow tracks operating cash flow. It rose from under $100M a quarter in 2021–22 to $1.2B in each of Q2 and Q3 2026, and the last four quarters add up to about $4.1B. One caveat: stock-based pay ($319M in Q3) is a real cost to shareholders that never shows up as cash out, so free cash flow flatters the picture; after subtracting it, Q3 was still about $880M.",
+   "zh": "Palantir 几乎不需设备投资（Q3 资本开支仅 800 万美元），自由现金流基本等于经营现金流。季度自由现金流由 2021–22 年不足 1 亿美元升至 2026 年 Q2、Q3 各约 12 亿，近四季合计约 41 亿。需注意：股权激励（Q3 为 3.19 亿）是股东承担的真实成本，却不体现为现金流出，因此自由现金流显得更好看；扣除后 Q3 仍约 8.8 亿。"
   },
   {
-   "en": "My base case uses the $4.5–4.7B full-year adjusted free cash flow guide. With about $2.1B already earned in the first half, the second half needs about $2.4–2.6B, which I split evenly, then let growth continue into 2027. That gives about $5.2B over four quarters. Collections are lumpy: Q1 2025 dropped to $304M from $457M the quarter before, so single quarters can miss.",
-   "zh": "我的基准情景采用 45–47 亿美元的全年调整后自由现金流指引。上半年已产生约 21 亿，下半年需约 24–26 亿，我平均分配，并让增长延续至 2027 年，四季合计约 52 亿。回款有波动：2025 年 Q1 由前一季的 4.57 亿降至 3.04 亿，单季可能不及预期。"
+   "en": "My base case uses the raised $4.8–5.0B full-year adjusted free cash flow guide. GAAP free cash flow was about $3.3B in the first nine months, which leaves roughly $1.5–1.7B for Q4; I use about $1.6B, then let growth continue into 2027. That gives about $6.6B over four quarters. Collections are lumpy and Q3 was flat on Q2 despite 20% revenue growth, so single quarters can miss.",
+   "zh": "我的基准情景采用上调后的 48–50 亿美元全年调整后自由现金流指引。前九个月 GAAP 自由现金流约 33 亿，Q4 约需 15–17 亿，我取约 16 亿，并让增长延续至 2027 年，四季合计约 66 亿。回款有波动：Q3 营收环比增长 20%，自由现金流却与 Q2 持平，单季可能不及预期。"
   }
  ],
  "out": [
   {
    "h": {
-    "en": "Hiring",
-    "zh": "招聘"
+    "en": "Hiring and marketing",
+    "zh": "招聘与营销"
    },
    "p": {
-    "en": "The CFO flagged a seasonal jump in Q3 expenses from new-hire starts and marketing.",
-    "zh": "CFO 提示 Q3 因新员工入职和营销支出会出现季节性增加。"
+    "en": "Operating expenses rose 46% to $845M in Q3 as headcount and marketing spending grew.",
+    "zh": "Q3 营业费用增长 46% 至 8.45 亿美元，主要来自人员和营销支出增加。"
    }
   },
   {
@@ -213,8 +213,8 @@ window.FCF = {
     "zh": "回购"
    },
    "p": {
-    "en": "Small: $19M in each of Q3 and Q4 2025 and none in the first half of 2026. They do not offset stock-pay dilution.",
-    "zh": "规模很小：2025 年 Q3、Q4 各 1,900 万美元，2026 上半年为零，不足以抵消股权激励稀释。"
+    "en": "Small: $19M in each of Q3 and Q4 2025 and none in the first half of 2026; the Q3 figure comes with the 10-Q. They do not offset stock-pay dilution.",
+    "zh": "规模很小：2025 年 Q3、Q4 各 1,900 万美元，2026 上半年为零；Q3 数字将随 10-Q 披露。不足以抵消股权激励稀释。"
    }
   },
   {
@@ -223,8 +223,8 @@ window.FCF = {
     "zh": "资本开支"
    },
    "p": {
-    "en": "Only $7–15M a quarter; customers mostly run Palantir on cloud capacity they pay for.",
-    "zh": "每季仅 700 万至 1,500 万美元；客户大多在自己付费的云上运行 Palantir。"
+    "en": "Only $7–15M a quarter ($8M in Q3); customers mostly run Palantir on cloud capacity they pay for.",
+    "zh": "每季仅 700 万至 1,500 万美元（Q3 为 800 万）；客户大多在自己付费的云上运行 Palantir。"
    }
   }
  ],
@@ -235,8 +235,8 @@ window.FCF = {
     "zh": "美国商业合同"
    },
    "p": {
-    "en": "$6.24B of contracted US commercial revenue not yet recognised, up 124%.",
-    "zh": "美国商业已签约未确认收入 62.4 亿美元，增长 124%。"
+    "en": "$6.52B of US commercial deal value still to run, up 79%, though only 4% above June.",
+    "zh": "美国商业剩余合同额 65.2 亿美元，增长 79%，但较 6 月仅增 4%。"
    }
   },
   {
@@ -255,25 +255,25 @@ window.FCF = {
     "zh": "利息收入"
    },
    "p": {
-    "en": "The $9.2B cash pile earned $78M of interest in Q2.",
-    "zh": "92 亿美元现金在 Q2 赚取 7,800 万利息。"
+    "en": "The $10.4B cash pile earned $89M of interest in Q3.",
+    "zh": "104 亿美元现金在 Q3 赚取 8,900 万利息。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash, Jun 2026",
-    "zh": "2026年6月现金"
+    "en": "Cash, Sep 2026",
+    "zh": "2026年9月现金"
    },
-   9200
+   10400
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   5225
+   6630
   ],
   [
    {
@@ -291,8 +291,8 @@ window.FCF = {
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash, Jun 2027 (est.)",
-  "zh": "2027年6月现金（估）"
+  "en": "Cash, Sep 2027 (est.)",
+  "zh": "2027年9月现金（估）"
  },
  "bridgeNote": {
   "en": "Palantir pays no dividend and buys back little stock, so cash keeps piling up. The real cost to owners is dilution from stock pay, not cash going out.",
@@ -308,8 +308,8 @@ window.FCF = {
    "https://stockanalysis.com/stocks/pltr/financials/balance-sheet/?p=quarterly"
   ],
   [
-   "Q2 2026 results and FY26 outlook (SEC exhibit 99.1)",
-   "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
+   "Q3 2026 results and FY26 outlook (Palantir IR)",
+   "https://investors.palantir.com/news-details/2026/Palantir-Reports-Q3-2026-U-S--Comm-Revenue-Growth-of-148-YY-and-Revenue-Growth-of-96-YY-Raises-FY-2026-Revenue-Guidance-to-91-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-143-YY-Crushing-Consensus-Expectations"
   ]
  ]
 };
