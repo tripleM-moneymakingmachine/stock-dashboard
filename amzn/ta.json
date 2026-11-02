@@ -1,45 +1,52 @@
 {
- "asof": "Oct 30, 2026",
- "close": 240.35,
+ "asof": "Nov 2, 2026",
+ "close": 245.63,
  "bias": {
-  "en": "Bearish · lost the 200-day, recovered from a dip to $229",
-  "zh": "偏空 · 跌破 200 日均线，自 $229 低点回升"
+  "en": "Recovering · back above the 200-day, under the 30-day",
+  "zh": "修复中 · 重回 200 日均线上方，仍在 30 日均线下方"
  },
  "read": [
   {
-   "en": "Amazon slipped 1.4% on Oct 30 to $240.35, trading between $229.36 and $241.55 on 2.8 times average volume. It is below the falling 5-day ($248.2), 10-day ($252.7) and 30-day ($253.0) averages and the rising 100-day ($251.8) and 200-day ($243.4). MACD has been below its signal since Oct 23 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 22 ($260.94), and RSI is 38.",
-   "zh": "亚马逊 10月30日小跌 1.4%，收于 $240.35，盘中区间 $229.36–241.55，成交量为均量的 2.8 倍。股价低于下行的 5 日（$248.2）、10 日（$252.7）和 30 日均线（$253.0）以及上行的 100 日（$251.8）和 200 日均线（$243.4）。MACD 自 10月23日起位于信号线及零轴下方，柱状图扩大；抛物线 SAR 自 10月22日起看空（$260.94），RSI 为 38。"
+   "en": "Amazon rose 2.2% on Nov 2 to $245.63, trading between $242.28 and $253.81 on 1.4 times average volume. It is above the rising 200-day ($243.4) and below the falling 5-day ($247.5), 10-day ($251.0) and 30-day ($252.6) and the rising 100-day ($251.9). MACD has been below its signal since Oct 23 and below zero, histogram narrowing slightly; Parabolic SAR has been bearish since Oct 22 ($258.42), and RSI is 44.",
+   "zh": "亚马逊 11月2日上涨 2.2%，收于 $245.63，盘中区间 $242.28–253.81，成交量为均量的 1.4 倍。股价位于上行的 200 日均线（$243.4）上方，低于下行的 5 日（$247.5）、10 日（$251.0）和 30 日均线（$252.6）以及上行的 100 日均线（$251.9）。MACD 自 10月23日起位于信号线下方且在零轴之下，柱状图略有收窄；抛物线 SAR 自 10月22日起看空（$258.42），RSI 为 44。"
   },
   {
-   "en": "The Oct 29 drop broke all three written supports, down to $243.4–244.7 (200-day, September lows), now resistance; Oct 30 dipped to $229.4 before recovering. Resistance is $243.4–244.7, then $248.2–249.1 (5-day, Oct 29 high) and $252.7–253.0 (10 and 30-day). Support is $229.4 (Oct 30 low), then $224.7–226.2 (Jun 25, Jul 29 and Jan 2 lows). A close above $244.7 would target $248–249; below $229.4, $225–226.",
-   "zh": "10月29日的下跌跌破此前全部三道支撑，直至 $243.4–244.7（200 日均线、9月低点），这些位置转为阻力；10月30日一度下探 $229.4 后回升。阻力为 $243.4–244.7，其次 $248.2–249.1（5 日均线、10月29日高点）和 $252.7–253.0（10 日和 30 日均线）。支撑为 $229.4（10月30日低点），其次 $224.7–226.2（6月25日、7月29日和1月2日低点）。若收盘站上 $244.7，下一目标看 $248–249；若跌破 $229.4，则看 $225–226。"
+   "en": "The close reclaimed the $243.4–244.7 zone (200-day, September lows), now support, but the push to $253.8 faded under the 10, 30 and 100-day. Resistance is $247.5–249.1 (5-day, Oct 29 high), then $251.0–253.8 (averages, Nov 2 high) and $258.4–259.5 (SAR, Sep 21 high). Support is $242.3–244.7, then $229.4 (Oct 30 low) and $225.6–226.2. A close above $253.8 would target $258–260; below $242.3, $229.",
+   "zh": "收盘收复 $243.4–244.7 区域（200 日均线、9 月低点），该区域转为支撑，但冲高至 $253.8 后在 10 日、30 日和 100 日均线下方回落。阻力为 $247.5–249.1（5 日均线、10月29日高点），其次 $251.0–253.8（均线、11月2日高点）和 $258.4–259.5（SAR、9月21日高点）。支撑为 $242.3–244.7，其次 $229.4（10月30日低点）和 $225.6–226.2。若收盘站上 $253.8，下一目标看 $258–260；若跌破 $242.3，则看 $229。"
   }
  ],
  "levels": {
   "r": [
    [
-    244,
+    248.3,
     {
-     "en": "200-day average $243.4; Sep 16 and Sep 28 lows ($244.3–244.7), lost",
-     "zh": "200日均线 $243.4；9月16日和9月28日低点（$244.3–244.7），已跌破"
+     "en": "5-day average $247.5; Oct 29 high $249.1",
+     "zh": "5日均线 $247.5；10月29日高点 $249.1"
     }
    ],
    [
-    248.7,
+    252.5,
     {
-     "en": "5-day average $248.2; Oct 29 high $249.1",
-     "zh": "5日均线 $248.2；10月29日高点 $249.1"
+     "en": "10, 100 and 30-day averages ($251.0–252.6); Nov 2 high $253.8",
+     "zh": "10日、100日和30日均线（$251.0–252.6）；11月2日高点 $253.8"
     }
    ],
    [
-    252.9,
+    259,
     {
-     "en": "10 and 30-day averages ($252.7–253.0)",
-     "zh": "10日和30日均线（$252.7–253.0）"
+     "en": "Parabolic SAR $258.4; Sep 21 high $259.5",
+     "zh": "抛物线 SAR $258.4；9月21日高点 $259.5"
     }
    ]
   ],
   "s": [
+   [
+    243.8,
+    {
+     "en": "200-day average $243.4; Sep 16 and Sep 28 lows ($244.3–244.7), reclaimed; Nov 2 low $242.3",
+     "zh": "200日均线 $243.4；9月16日和9月28日低点（$244.3–244.7），已收复；11月2日低点 $242.3"
+    }
+   ],
    [
     229.4,
     {

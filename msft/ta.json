@@ -1,34 +1,34 @@
 {
- "asof": "Oct 30, 2026",
- "close": 521.91,
+ "asof": "Nov 2, 2026",
+ "close": 507.12,
  "bias": {
-  "en": "Uptrend, pulling back · lost the 5, 10 and 30-day, SAR bearish",
-  "zh": "上升趋势、回调中 · 跌破 5、10 和 30 日均线，SAR 转空"
+  "en": "Uptrend, pulling back · broke $514, testing the $500 area",
+  "zh": "上升趋势、回调中 · 跌破 $514，测试 $500 一带"
  },
  "read": [
   {
-   "en": "Microsoft fell 1.6% on Oct 30 to $521.91 (range $514.35–526.00) on 1.7 times average volume. It is below the rising 5-day ($529.40), the falling 10-day ($529.09) and, just, the rising 30-day ($523.18), and well above the rising 100-day ($465.52) and 200-day ($437.93). MACD has been below its signal since Oct 19, still above zero, histogram widening slowly; Parabolic SAR turned bearish on Oct 30 ($541.29), and RSI is 49.",
-   "zh": "微软 10月30日下跌 1.6%，收于 $521.91（区间 $514.35–526.00），成交量为均量的 1.7 倍。股价低于上行的 5 日均线（$529.40）、下行的 10 日均线（$529.09），并略低于上行的 30 日均线（$523.18），远高于上行的 100 日（$465.52）和 200 日均线（$437.93）。MACD 自 10月19日起位于信号线下方，仍在零轴之上，柱状图缓慢扩大；抛物线 SAR 于 10月30日转为看空（$541.29），RSI 为 49。"
+   "en": "Microsoft fell 2.8% on Nov 2 to $507.12 (range $504.99–529.63) on 1.5 times average volume. It is below the falling 5-day ($524.30) and 10-day ($526.45) and the rising 30-day ($523.36), and above the rising 100-day ($466.62) and 200-day ($438.18). MACD has been below its signal since Oct 19, still above zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($541.29), and RSI is 40.",
+   "zh": "微软 11月2日下跌 2.8%，收于 $507.12（区间 $504.99–529.63），成交量为均量的 1.5 倍。股价位于下行的 5 日（$524.30）和 10 日均线（$526.45）以及上行的 30 日均线（$523.36）下方，位于上行的 100 日（$466.62）和 200 日均线（$438.18）上方。MACD 自 10月19日起位于信号线下方，仍在零轴之上，柱状图扩大；抛物线 SAR 自 10月30日起看空（$541.29），RSI 为 40。"
   },
   {
-   "en": "The Oct 29 spike to $541.29 failed above the $535.6 cap, and Oct 30 broke the $526–531 support (5 and 10-day), now resistance. Resistance is $523.2–526 (30-day, Oct 30 high), then $529–531 and $541.3 (Oct 29 high, SAR). Support is $514.4–515.7 (Oct 30 and Oct 23 lows), then $497–502 and $486 (Sep 10 low). A close above $531 would target $535.6–541; below $514, $497–502.",
-   "zh": "10月29日冲高至 $541.29 后未能站稳 $535.6 上限，10月30日跌破 $526–531 支撑（5 日和 10 日均线），该区域转为阻力。阻力为 $523.2–526（30 日均线、10月30日高点），其次 $529–531 和 $541.3（10月29日高点、SAR）。支撑为 $514.4–515.7（10月30日和10月23日低点），其次 $497–502 和 $486（9月10日低点）。若收盘站上 $531，下一目标看 $535.6–541；若跌破 $514，则看 $497–502。"
+   "en": "An early push to $529.6 faded and the close broke the $514.4–515.7 support (Oct 30 and Oct 23 lows), now resistance. Resistance is $514.4–515.7, then $523.4–529.6 (30, 5 and 10-day, Nov 2 high) and $541.3 (SAR, Oct 29 high). Support is $497.3–502.4 (Sep 25–29 lows), then $486 (Sep 10 low) and $477 (Aug 18 low). A close above $516 would target $523–530; below $497, $486.",
+   "zh": "盘初一度冲高至 $529.6 后回落，收盘跌破 $514.4–515.7 支撑（10月30日和10月23日低点），该区域转为阻力。阻力为 $514.4–515.7，其次 $523.4–529.6（30 日、5 日和 10 日均线，11月2日高点）和 $541.3（SAR、10月29日高点）。支撑为 $497.3–502.4（9月25–29日低点），其次 $486（9月10日低点）和 $477（8月18日低点）。若收盘站上 $516，下一目标看 $523–530；若跌破 $497，则看 $486。"
   }
  ],
  "levels": {
   "r": [
    [
-    524.6,
+    515,
     {
-     "en": "30-day average $523.18; Oct 30 high $526.0",
-     "zh": "30日均线 $523.18；10月30日高点 $526.0"
+     "en": "Oct 30 low $514.35 and Oct 23 low $515.7, lost",
+     "zh": "10月30日低点 $514.35 和10月23日低点 $515.7，已失守"
     }
    ],
    [
-    530,
+    526,
     {
-     "en": "5 and 10-day averages ($529.1–529.4), lost; Oct 29 close $530.14",
-     "zh": "5日和10日均线（$529.1–529.4），已跌破；10月29日收盘价 $530.14"
+     "en": "30, 5 and 10-day averages ($523.4–526.5); Nov 2 high $529.63",
+     "zh": "30日、5日和10日均线（$523.4–526.5）；11月2日高点 $529.63"
     }
    ],
    [
@@ -41,13 +41,6 @@
   ],
   "s": [
    [
-    515,
-    {
-     "en": "Oct 30 low $514.35; Oct 23 low $515.7",
-     "zh": "10月30日低点 $514.35；10月23日低点 $515.7"
-    }
-   ],
-   [
     500,
     {
      "en": "Sep 25–29 lows ($497.3–502.4)",
@@ -59,6 +52,13 @@
     {
      "en": "Sep 10 low",
      "zh": "9月10日低点"
+    }
+   ],
+   [
+    477,
+    {
+     "en": "Aug 18 low $477.15",
+     "zh": "8月18日低点 $477.15"
     }
    ]
   ]

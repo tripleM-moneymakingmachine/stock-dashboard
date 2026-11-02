@@ -1,41 +1,41 @@
 {
- "asof": "Oct 30, 2026",
- "close": 134.72,
+ "asof": "Nov 2, 2026",
+ "close": 136.37,
  "bias": {
-  "en": "Bearish · broke the $140.7 October low",
-  "zh": "偏空 · 跌破 10月低点 $140.7"
+  "en": "Bearish · small bounce, capped under $142",
+  "zh": "看空 · 小幅反弹，受制于 $142 下方"
  },
  "read": [
   {
-   "en": "SpaceX fell 6.4% on Oct 30 to $134.72, its lowest close since Aug 20, trading between $134.50 and $140.20, with no 100-day yet (98 sessions). It is below the falling 5-day ($143.9), 10-day ($146.7) and 30-day ($152.4) averages. MACD has been below its signal since Oct 14, below zero, histogram widening; Parabolic SAR has been bearish since Oct 14 ($163.16), and RSI is 37.",
-   "zh": "SpaceX 10月30日下跌 6.4%，收于 $134.72，为 8月20日以来最低收盘，盘中区间 $134.50–140.20；上市仅 98 个交易日，尚无 100 日均线。股价位于下行的 5 日（$143.9）、10 日（$146.7）和 30 日均线（$152.4）下方。MACD 自 10月14日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月14日起看空（$163.16），RSI 为 37。"
+   "en": "SpaceX rose 1.2% on Nov 2 to $136.37, trading between $135.72 and $142.05, with no 100-day yet (99 sessions). It is below the falling 5-day ($141.8), 10-day ($145.5) and 30-day ($151.9) averages. MACD has been below its signal since Oct 14, below zero, histogram still widening; Parabolic SAR has been bearish since Oct 14 ($161.44), and RSI is 39.",
+   "zh": "SpaceX 11月2日上涨 1.2%，收于 $136.37，盘中区间 $135.72–142.05；上市仅 99 个交易日，尚无 100 日均线。股价位于下行的 5 日（$141.8）、10 日（$145.5）和 30 日均线（$151.9）下方。MACD 自 10月14日起位于信号线下方且在零轴之下，柱状图仍在扩大；抛物线 SAR 自 10月14日起看空（$161.44），RSI 为 39。"
   },
   {
-   "en": "Two losses broke all three written supports, $144.1–144.6, $142.1 and $140.7 (Oct 15 low), now resistance, and the close sat near the day's low. Resistance is $140.2–140.7, then $142.1–143.9 (Oct 28 low, 5-day) and $146.7 (10-day). Support is $134–134.5 (Oct 30 and Aug 12 lows), then $130.2–130.4 (Aug 10 and 20 lows) and $120.4–122.1 (Jul 17 and 21 lows). A close above $140.7 would target $144; below $134, $130.",
-   "zh": "连续两日下跌跌破此前三道支撑 $144.1–144.6、$142.1 和 $140.7（10月15日低点），这些位置转为阻力，收盘接近当日低点。阻力为 $140.2–140.7，其次 $142.1–143.9（10月28日低点、5 日均线）和 $146.7（10 日均线）。支撑为 $134–134.5（10月30日和8月12日低点），其次 $130.2–130.4（8月10日和20日低点）和 $120.4–122.1（7月17日和21日低点）。若收盘站上 $140.7，下一目标看 $144；若跌破 $134，则看 $130。"
+   "en": "The bounce reached $142.05, above the $140.7 resistance (Oct 15 low), but closed back under it; the $134–134.5 support held. Resistance is $140.7–142.1 (Oct 15 low, 5-day, Nov 2 high), then $145.5 (10-day) and $151.9 (30-day). Support is $134–134.5 (Oct 30 and Aug 12 lows), then $130.2–130.4 (Aug 10 and 20 lows) and $120.4–122.1. A close above $142.1 would target $145.5; below $134, $130.",
+   "zh": "反弹一度触及 $142.05，高于 $140.7 阻力（10月15日低点），但收盘重回其下方；$134–134.5 支撑守住。阻力为 $140.7–142.1（10月15日低点、5 日均线、11月2日高点），其次 $145.5（10 日均线）和 $151.9（30 日均线）。支撑为 $134–134.5（10月30日和8月12日低点），其次 $130.2–130.4（8月10日和20日低点）和 $120.4–122.1。若收盘站上 $142.1，下一目标看 $145.5；若跌破 $134，则看 $130。"
   }
  ],
  "levels": {
   "r": [
    [
-    140.7,
+    141.4,
     {
-     "en": "Oct 15 low $140.66, lost; Oct 30 high $140.2",
-     "zh": "10月15日低点 $140.66，已失守；10月30日高点 $140.2"
+     "en": "Oct 15 low $140.66; 5-day average $141.8; Nov 2 high $142.05",
+     "zh": "10月15日低点 $140.66；5日均线 $141.8；11月2日高点 $142.05"
     }
    ],
    [
-    143.9,
-    {
-     "en": "5-day average $143.9; Oct 28 low $142.1",
-     "zh": "5日均线 $143.9；10月28日低点 $142.1"
-    }
-   ],
-   [
-    146.7,
+    145.5,
     {
      "en": "10-day average",
      "zh": "10日均线"
+    }
+   ],
+   [
+    151.9,
+    {
+     "en": "30-day average",
+     "zh": "30日均线"
     }
    ]
   ],

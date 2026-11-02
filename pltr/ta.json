@@ -1,52 +1,45 @@
 {
- "asof": "Oct 30, 2026",
- "close": 184.11,
+ "asof": "Nov 2, 2026",
+ "close": 178.34,
  "bias": {
-  "en": "Uptrend, weakening · lost the 30-day and the $184.5 Oct 16 low",
-  "zh": "上升趋势、走弱 · 跌破 30 日均线和 10月16日低点 $184.5"
+  "en": "Uptrend, weakening · lost $182, near the $176.8 Sep 21 low",
+  "zh": "上升趋势、走弱 · 失守 $182，接近 9月21日低点 $176.8"
  },
  "read": [
   {
-   "en": "Palantir fell 6.3% on Oct 30 to $184.11 (range $183.68–193.92). It is below the falling 5-day ($194.98) and 10-day ($195.63) and the rising 30-day ($194.24), and above the rising 100-day ($162.42) and 200-day ($153.57). MACD has been below its signal since Oct 16, still above zero, histogram widening; Parabolic SAR has been bearish since Oct 15 ($203.12), and RSI is 42.",
-   "zh": "Palantir 10月30日下跌 6.3%，收于 $184.11（区间 $183.68–193.92）。股价低于下行的 5 日（$194.98）和 10 日均线（$195.63）以及上行的 30 日均线（$194.24），高于上行的 100 日（$162.42）和 200 日均线（$153.57）。MACD 自 10月16日起位于信号线下方，仍在零轴之上，柱状图扩大；抛物线 SAR 自 10月15日起看空（$203.12），RSI 为 42。"
+   "en": "Palantir fell 3.1% on Nov 2 to $178.34 (range $178.13–187.55) on 1.5 times average volume. It is below the falling 5-day ($190.88) and 10-day ($194.05) and the rising 30-day ($194.09), and above the rising 100-day ($162.90) and 200-day ($153.57). MACD has been below its signal since Oct 16, still above zero, histogram widening; Parabolic SAR has been bearish since Oct 15 ($201.78), and RSI is 38.",
+   "zh": "Palantir 11月2日下跌 3.1%，收于 $178.34（区间 $178.13–187.55），成交量为均量的 1.5 倍。股价位于下行的 5 日（$190.88）和 10 日均线（$194.05）以及上行的 30 日均线（$194.09）下方，位于上行的 100 日（$162.90）和 200 日均线（$153.57）上方。MACD 自 10月16日起位于信号线下方，仍在零轴之上，柱状图扩大；抛物线 SAR 自 10月15日起看空（$201.78），RSI 为 38。"
   },
   {
-   "en": "The drop broke the $193.1–196.2 support (10 and 30-day), the $189.4–190.6 lows and, on the close, the $184.5 Oct 16 low, all now resistance. Resistance is $184.5–186, then $189.4–190.6 and $194.2–195.6 (5, 10 and 30-day). Support is $182–183.7 (Oct 30 and Sep 22 lows), then $176.8 (Sep 21 low) and $162.4–164.6 (100-day, Sep 10 low). A close above $186 would target $190; below $182, $177.",
-   "zh": "此次下跌跌破 $193.1–196.2 支撑（10 日和 30 日均线）、$189.4–190.6 低点区，收盘并跌破 10月16日低点 $184.5，这些位置均转为阻力。阻力为 $184.5–186，其次 $189.4–190.6 和 $194.2–195.6（5 日、10 日和 30 日均线）。支撑为 $182–183.7（10月30日和9月22日低点），其次 $176.8（9月21日低点）和 $162.4–164.6（100 日均线、9月10日低点）。若收盘站上 $186，下一目标看 $190；若跌破 $182，则看 $177。"
+   "en": "The close broke the $182 support (Sep 22 low) and the $180.8 Oct 30 low, now resistance, closing near the day's low. Resistance is $180.8–182, then $184.5–187.6 (Oct 16 low and close, Nov 2 high) and $189.4–190.9 (October lows, 5-day). Support is $176.8 (Sep 21 low), then $162.9–164.6 (100-day, Sep 10 low). A close above $184.5 would target $187.5–190; below $176.8, $163–165.",
+   "zh": "收盘跌破 $182 支撑（9月22日低点）和 10月30日低点 $180.8，这些位置转为阻力，且收于当日低点附近。阻力为 $180.8–182，其次 $184.5–187.6（10月16日低点和收盘、11月2日高点）和 $189.4–190.9（10 月低点、5 日均线）。支撑为 $176.8（9月21日低点），其次 $162.9–164.6（100 日均线、9月10日低点）。若收盘站上 $184.5，下一目标看 $187.5–190；若跌破 $176.8，则看 $163–165。"
   }
  ],
  "levels": {
   "r": [
    [
-    185.3,
+    181.4,
     {
-     "en": "Oct 16 low $184.45, lost; Sep 29 low $184.8; Oct 16 close $186.0",
-     "zh": "10月16日低点 $184.45，已跌破；9月29日低点 $184.8；10月16日收盘价 $186.0"
+     "en": "Oct 30 low $180.81 and Sep 22 low $182.0, lost",
+     "zh": "10月30日低点 $180.81 和9月22日低点 $182.0，已失守"
     }
    ],
    [
-    190,
+    186,
     {
-     "en": "Oct 20, 21 and 23 lows ($189.4–190.6)",
-     "zh": "10月20、21和23日低点（$189.4–190.6）"
+     "en": "Oct 16 low $184.45; Oct 16 close $186.0; Nov 2 high $187.55",
+     "zh": "10月16日低点 $184.45；10月16日收盘 $186.0；11月2日高点 $187.55"
     }
    ],
    [
-    194.8,
+    190.2,
     {
-     "en": "5, 10 and 30-day averages ($194.2–195.6)",
-     "zh": "5日、10日和30日均线（$194.2–195.6）"
+     "en": "Oct 20, 21 and 23 lows ($189.4–190.6); 5-day average $190.9",
+     "zh": "10月20、21和23日低点（$189.4–190.6）；5日均线 $190.9"
     }
    ]
   ],
   "s": [
-   [
-    183,
-    {
-     "en": "Oct 30 low $183.68; Sep 22 low $182.0",
-     "zh": "10月30日低点 $183.68；9月22日低点 $182.0"
-    }
-   ],
    [
     176.8,
     {
@@ -55,10 +48,10 @@
     }
    ],
    [
-    163.5,
+    163.7,
     {
-     "en": "Sep 10 low $164.55; 100-day average $162.4",
-     "zh": "9月10日低点 $164.55；100日均线 $162.4"
+     "en": "Sep 10 low $164.55; 100-day average $162.9",
+     "zh": "9月10日低点 $164.55；100日均线 $162.9"
     }
    ]
   ]

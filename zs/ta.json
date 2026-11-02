@@ -1,57 +1,57 @@
 {
- "asof": "Oct 30, 2026",
- "close": 237.83,
+ "asof": "Nov 2, 2026",
+ "close": 223.79,
  "bias": {
-  "en": "Uptrend, pulling back · lost $250, testing the $233 lows",
-  "zh": "上升趋势中回调 · 失守 $250，测试 $233 一带低点"
+  "en": "Pullback deepening · MACD and SAR turned bearish, at the 30-day",
+  "zh": "回调加深 · MACD 和 SAR 转空，回到 30 日均线"
  },
  "read": [
   {
-   "en": "Zscaler fell 4.0% on Oct 30 to $237.83, trading between $233.40 and $250.00. It is below the rising 5-day ($252.4) and 10-day ($241.3) averages and above the rising 30-day ($220.9), 100-day ($176.9) and 200-day ($166.9). MACD is still above its signal since Oct 22 and above zero, but the histogram has narrowed toward a cross; Parabolic SAR has been bullish since Oct 22 ($222.39), and RSI is 57.",
-   "zh": "Zscaler 10月30日下跌 4.0%，收于 $237.83，盘中区间 $233.40–250.00。股价位于上行的 5 日（$252.4）和 10 日均线（$241.3）下方，位于上行的 30 日（$220.9）、100 日（$176.9）和 200 日均线（$166.9）上方。MACD 自 10月22日起仍在信号线上方且在零轴之上，但柱状图收窄、趋向交叉；抛物线 SAR 自 10月22日起看多（$222.39），RSI 为 57。"
+   "en": "Zscaler fell 5.9% on Nov 2 to $223.79, trading between $223.42 and $238.02 on light volume (0.68 times average). It is below the rising 5-day ($245.1) and 10-day ($242.5) averages and just above the rising 30-day ($221.4), 100-day ($177.9) and 200-day ($166.9). MACD crossed below its signal on Nov 2, still above zero; Parabolic SAR turned bearish on Nov 2 ($267.87), and RSI is 49.",
+   "zh": "Zscaler 11月2日下跌 5.9%，收于 $223.79，盘中区间 $223.42–238.02，成交量偏低（均量的 0.68 倍）。股价位于上行的 5 日（$245.1）和 10 日均线（$242.5）下方，略高于上行的 30 日（$221.4）、100 日（$177.9）和 200 日均线（$166.9）。MACD 于 11月2日下穿信号线，仍在零轴之上；抛物线 SAR 于 11月2日转为看空（$267.87），RSI 为 49。"
   },
   {
-   "en": "Two down days broke all three written supports, $253.9–255.6, $250 and $241.2 (Oct 22 high), now resistance. Resistance is $241.2–241.3 (Oct 22 high, 10-day), then $250–252.4 (round number, 5-day) and $261.5 (Oct 26 high). Support is $231.6–234.2 (Oct 22, 23, 29 and 30 lows), then $220.9–222.4 (30-day, SAR) and $203.3 (Oct 16 low). A close above $241.3 would target $250–252; below $231.6, $221–222.",
-   "zh": "连续两日下跌跌破此前三道支撑 $253.9–255.6、$250 和 $241.2（10月22日高点），这些位置转为阻力。阻力为 $241.2–241.3（10月22日高点、10 日均线），其次 $250–252.4（整数关口、5 日均线）和 $261.5（10月26日高点）。支撑为 $231.6–234.2（10月22日、23日、29日和30日低点），其次 $220.9–222.4（30 日均线、SAR）和 $203.3（10月16日低点）。若收盘站上 $241.3，下一目标看 $250–252；若跌破 $231.6，则看 $221–222。"
+   "en": "The drop broke the $231.6–234.2 support (Oct 22–30 lows), now resistance, and flipped both MACD and the SAR bearish. Resistance is $231.6–234.2, then $237.8–238 (Oct 30 close, Nov 2 high) and $241.2–245.1 (Oct 22 high, 10 and 5-day). Support is $220.1–221.4 (30-day, Oct 14 low), then $214.5 (Oct 21 low) and $203.3 (Oct 16 low). A close above $234.2 would target $238–241; below $220, $214.5.",
+   "zh": "此次下跌跌破 $231.6–234.2 支撑（10月22–30日低点），该区域转为阻力，MACD 和 SAR 同时转空。阻力为 $231.6–234.2，其次 $237.8–238（10月30日收盘价、11月2日高点）和 $241.2–245.1（10月22日高点、10 日和 5 日均线）。支撑为 $220.1–221.4（30 日均线、10月14日低点），其次 $214.5（10月21日低点）和 $203.3（10月16日低点）。若收盘站上 $234.2，下一目标看 $238–241；若跌破 $220，则看 $214.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    241.3,
+    233,
     {
-     "en": "10-day average $241.3; Oct 22 high $241.2, lost",
-     "zh": "10日均线 $241.3；10月22日高点 $241.2，已失守"
+     "en": "Oct 22, 23, 29 and 30 lows ($231.6–234.2), lost",
+     "zh": "10月22、23、29和30日低点（$231.6–234.2），已失守"
     }
    ],
    [
-    251,
+    238,
     {
-     "en": "$250 round number and Oct 30 high; 5-day average $252.4",
-     "zh": "$250 整数关口及10月30日高点；5日均线 $252.4"
+     "en": "Nov 2 high $238.0; Oct 30 close $237.8",
+     "zh": "11月2日高点 $238.0；10月30日收盘价 $237.8"
     }
    ],
    [
-    261.5,
+    243,
     {
-     "en": "Oct 26 high",
-     "zh": "10月26日高点"
+     "en": "Oct 22 high $241.2; 10 and 5-day averages ($242.5–245.1)",
+     "zh": "10月22日高点 $241.2；10日和5日均线（$242.5–245.1）"
     }
    ]
   ],
   "s": [
    [
-    233,
+    220.8,
     {
-     "en": "Oct 22, 23, 29 and 30 lows ($231.6–234.2)",
-     "zh": "10月22日、23日、29日和30日低点（$231.6–234.2）"
+     "en": "30-day average $221.4; Oct 14 low $220.1",
+     "zh": "30日均线 $221.4；10月14日低点 $220.1"
     }
    ],
    [
-    221.6,
+    214.5,
     {
-     "en": "30-day average $220.9; Parabolic SAR $222.4",
-     "zh": "30日均线 $220.9；抛物线 SAR $222.4"
+     "en": "Oct 21 low",
+     "zh": "10月21日低点"
     }
    ],
    [

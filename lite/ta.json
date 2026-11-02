@@ -1,64 +1,64 @@
 {
- "asof": "Oct 30, 2026",
- "close": 840.7,
+ "asof": "Nov 2, 2026",
+ "close": 684.4,
  "bias": {
-  "en": "Bearish · rebound faded under the 100-day, SAR still bullish",
-  "zh": "看空 · 反弹在 100 日均线下方回落，SAR 仍看多"
+  "en": "Bearish · broke the October lows, SAR flipped bearish",
+  "zh": "看空 · 跌破 10月低点，SAR 翻空"
  },
  "read": [
   {
-   "en": "Lumentum fell 8.6% on Oct 30 to $840.70, trading between $805.29 and $887.60 on 1.5 times average volume. It is above the falling 10-day ($837.5) and rising 200-day ($801.2), and below the rising 5-day ($871.7) and falling 30-day ($938.1) and 100-day ($868.5). MACD has been below its signal since Oct 13, below zero, histogram near a cross; Parabolic SAR has been bullish since Oct 28 ($749.26), and RSI is 45.",
-   "zh": "Lumentum 10月30日下跌 8.6%，收于 $840.70，盘中区间 $805.29–887.60，成交量为均量的 1.5 倍。股价位于下行的 10 日（$837.5）和上行的 200 日均线（$801.2）上方，低于上行的 5 日（$871.7）以及下行的 30 日（$938.1）和 100 日均线（$868.5）。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图接近交叉；抛物线 SAR 自 10月28日起看多（$749.26），RSI 为 45。"
+   "en": "Lumentum fell 18.6% on Nov 2 to $684.40, trading between $679.00 and $800.12 on 2.9 times average volume. It is below the rising 5-day ($845.0) and 200-day ($802.9) and the falling 10-day ($822.5), 100-day ($866.8) and 30-day ($929.1) averages. MACD has been below its signal since Oct 13 and below zero, histogram widening; Parabolic SAR flipped bearish on Nov 2 ($978.4), and RSI is 35.",
+   "zh": "Lumentum 11月2日大跌 18.6%，收于 $684.40，盘中区间 $679.00–800.12，成交量为均量的 2.9 倍。股价位于上行的 5 日（$845.0）和 200 日均线（$802.9）以及下行的 10 日（$822.5）、100 日（$866.8）和 30 日均线（$929.1）下方。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图放大；抛物线 SAR 于 11月2日翻空（$978.4），RSI 为 35。"
   },
   {
-   "en": "The Oct 29 spike to $978.4 faded; Oct 30 lost the $893–897 and $868–873 (100-day) supports, now resistance. Resistance is $868.5–871.7 (100 and 5-day), then $887.6–897 (October and Jul 23 highs) and $938 (30-day). Support is $832–837.5 (Sep 15 low, 10-day), then $801–809 (200-day, Oct 30 low) and $736–756 (Oct 23 low, SAR). A close above $872 would target $893–897; below $832, $801–809.",
-   "zh": "10月29日冲高至 $978.4 后回落，10月30日又跌破 $893–897 和 $868–873（100 日均线）两道支撑，转为阻力。阻力为 $868.5–871.7（100 日和 5 日均线），其次 $887.6–897（10月和7月23日高点）和 $938（30 日均线）。支撑为 $832–837.5（9月15日低点、10 日均线），其次 $801–809（200 日均线、10月30日低点）和 $736–756（10月23日低点、SAR）。若收盘站上 $872，下一目标看 $893–897；若跌破 $832，则看 $801–809。"
+   "en": "The drop broke every written support — $832–838, the 200-day and $805, and the $736–746 October lows — which now act as resistance. Resistance is $736.0–746.2, then $800.1–805.3 (Nov 2 high, 200-day, Oct 30 low) and $822.5–845.0 (10 and 5-day). Support is $679–683 (Nov 2 low, Jul 7–8 lows), then $650–651 (July lows) and $594.8–602.3. A close above $746 would target $800–805; below $679, $650.",
+   "zh": "此次下跌跌破所有既有支撑——$832–838、200 日均线和 $805，以及 10月 $736–746 低点——这些位置转为阻力。阻力为 $736.0–746.2，其次 $800.1–805.3（11月2日高点、200 日均线、10月30日低点）和 $822.5–845.0（10 日和 5 日均线）。支撑为 $679–683（11月2日低点、7月7–8日低点），其次 $650–651（7月低点）和 $594.8–602.3。若收盘站上 $746，下一目标看 $800–805；若跌破 $679，则看 $650。"
   }
  ],
  "levels": {
   "r": [
    [
-    870,
+    741,
     {
-     "en": "100-day $868.5 and 5-day $871.7 averages, lost",
-     "zh": "100日均线 $868.5 和5日均线 $871.7，已跌破"
+     "en": "Oct 23 low $736.0 and Oct 22 low $746.2, lost",
+     "zh": "10月23日低点 $736.0 和 10月22日低点 $746.2，已失守"
     }
    ],
    [
-    893,
+    802.5,
     {
-     "en": "Oct 30 high $887.6; Oct 27 high $893.0; Jul 23 high $897",
-     "zh": "10月30日高点 $887.6；10月27日高点 $893.0；7月23日高点 $897"
+     "en": "Nov 2 high $800.1; 200-day average $802.9; Oct 30 low $805.3",
+     "zh": "11月2日高点 $800.1；200日均线 $802.9；10月30日低点 $805.3"
     }
    ],
    [
-    938,
+    834,
     {
-     "en": "30-day average $938.1; Oct 29 high $978.4 above",
-     "zh": "30日均线 $938.1；上方为10月29日高点 $978.4"
+     "en": "10 and 5-day averages ($822.5–845.0); Sep 15 low $832.1",
+     "zh": "10日和5日均线（$822.5–845.0）；9月15日低点 $832.1"
     }
    ]
   ],
   "s": [
    [
-    834.8,
+    681,
     {
-     "en": "Sep 15 low $832.1; 10-day average $837.5",
-     "zh": "9月15日低点 $832.1；10日均线 $837.5"
+     "en": "Nov 2 low $679; Jul 7 and Jul 8 lows ($680.4–683.4)",
+     "zh": "11月2日低点 $679；7月7日和8日低点（$680.4–683.4）"
     }
    ],
    [
-    805,
+    650.5,
     {
-     "en": "200-day average $801.2; Oct 30 low $805.3; Mar 25 high $808.8",
-     "zh": "200日均线 $801.2；10月30日低点 $805.3；3月25日高点 $808.8"
+     "en": "Jul 17 low $650.8; Jul 30 low $650",
+     "zh": "7月17日低点 $650.8；7月30日低点 $650"
     }
    ],
    [
-    746,
+    598.5,
     {
-     "en": "Oct 23 low $736.0; Parabolic SAR $749.26; Oct 22–23 closes ($752.5–756.2)",
-     "zh": "10月23日低点 $736.0；抛物线 SAR $749.26；10月22–23日收盘价（$752.5–756.2）"
+     "en": "Jul 29 low $594.8; Jul 28 low $602.3",
+     "zh": "7月29日低点 $594.8；7月28日低点 $602.3"
     }
    ]
   ]

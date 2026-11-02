@@ -1,57 +1,64 @@
 {
- "asof": "Oct 30, 2026",
- "close": 390.09,
+ "asof": "Nov 2, 2026",
+ "close": 374.53,
  "bias": {
-  "en": "Bearish · faded from $426, back under the 5 and 10-day",
-  "zh": "偏空 · 自 $426 回落，跌回 5 日和 10 日均线下方"
+  "en": "Bearish · SAR flipped, testing the $373 October low",
+  "zh": "看空 · SAR 翻空，测试 10 月 $373 低点"
  },
  "read": [
   {
-   "en": "Applied Materials fell 7.5% on Oct 30 to $390.09, trading between $382.62 and $405.20 on 1.5 times average volume. It is below the rising 5-day ($402.3) and 200-day ($444.5) and the falling 10-day ($399.1), 30-day ($460.0) and 100-day ($509.2). MACD has been below its signal since Oct 13 and below zero, histogram narrowing toward a cross; Parabolic SAR has been bullish since Oct 28 ($375.89), and RSI is 36.",
-   "zh": "应用材料 10月30日下跌 7.5%，收于 $390.09，盘中区间 $382.62–405.20，成交量为均量的 1.5 倍。股价低于上行的 5 日（$402.3）和 200 日均线（$444.5），以及下行的 10 日（$399.1）、30 日（$460.0）和 100 日均线（$509.2）。MACD 自 10月13日起位于信号线及零轴下方，柱状图收窄并接近交叉；抛物线 SAR 自 10月28日起看多（$375.89），RSI 为 36。"
+   "en": "Applied Materials fell 4.0% on Nov 2 to $374.53, trading between $373.25 and $399.19. It is below the rising 5-day ($399.6) and 200-day ($444.8) and the falling 10-day ($395.3), 30-day ($457.0) and 100-day ($508.0). MACD has been below its signal since Oct 13 and below zero, histogram widening again; Parabolic SAR turned bearish on Nov 2 ($426.52), and RSI is 33.",
+   "zh": "应用材料 11月2日下跌 4.0%，收于 $374.53，盘中区间 $373.25–399.19。股价位于上行的 5 日（$399.6）和 200 日均线（$444.8）以及下行的 10 日（$395.3）、30 日（$457.0）和 100 日均线（$508.0）下方。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图再度扩大；抛物线 SAR 于 11月2日转为看空（$426.52），RSI 为 33。"
   },
   {
-   "en": "The $426.5 Oct 29 high stopped under $427.7, and the drop broke all three written supports ($390.5–414), now resistance. Resistance is $399.1–405.2 (10 and 5-day, Oct 30 high), then $407.3–409.9 (Oct 16 and Oct 29 lows) and $426.5–427.7. Support is $382.6 (Oct 30 low), then $372.8–377.1 (Oct 23 and Apr 29 lows, SAR). A close above $405.2 would target $410–427; below $372.8, a bearish SAR flip.",
-   "zh": "10月29日高点 $426.5 未能突破 $427.7，随后的下跌跌破此前全部三道支撑（$390.5–414），这些位置转为阻力。阻力为 $399.1–405.2（10 日和 5 日均线、10月30日高点），其次 $407.3–409.9（10月16日和10月29日低点）和 $426.5–427.7。支撑为 $382.6（10月30日低点），其次 $372.8–377.1（10月23日和4月29日低点、SAR）。若收盘站上 $405.2，下一目标看 $410–427；若跌破 $372.8，SAR 将转空。"
+   "en": "The drop broke the $382.6 support and flipped the SAR bearish; the $372.8 Oct 23 low held. Resistance is $377.1–382.6 (Apr 29 and Oct 30 lows), then $395.3–399.6 (10-day, Nov 2 high, 5-day) and $405.2–409.9. Support is $372.8–373.3 (Oct 23 and Nov 2 lows), then $355.3–359 (Mar 10 and Apr 1 highs) and $338.1–344.6. A close above $382.6 would target $395–400; below $372.8, $355–359.",
+   "zh": "此次下跌跌破 $382.6 支撑，抛物线 SAR 翻空；10月23日低点 $372.8 守住。阻力为 $377.1–382.6（4月29日和10月30日低点），其次 $395.3–399.6（10 日均线、11月2日高点、5 日均线）和 $405.2–409.9。支撑为 $372.8–373.3（10月23日和11月2日低点），其次 $355.3–359（3月10日和4月1日高点）和 $338.1–344.6。若收盘站上 $382.6，下一目标看 $395–400；若跌破 $372.8，则看 $355–359。"
   }
  ],
  "levels": {
   "r": [
    [
-    402,
+    380,
     {
-     "en": "10 and 5-day averages ($399.1–402.3); Oct 30 high $405.2",
-     "zh": "10日和5日均线（$399.1–402.3）；10月30日高点 $405.2"
+     "en": "Apr 29 low $377.1; Oct 30 low $382.6, lost",
+     "zh": "4月29日低点 $377.1；10月30日低点 $382.6，已失守"
     }
    ],
    [
-    408.6,
+    397.5,
     {
-     "en": "Oct 29 low $409.9; Oct 16 low $407.3",
-     "zh": "10月29日低点 $409.9；10月16日低点 $407.3"
+     "en": "10-day average $395.3; Nov 2 high $399.2; 5-day average $399.6",
+     "zh": "10日均线 $395.3；11月2日高点 $399.2；5日均线 $399.6"
     }
    ],
    [
-    427,
+    407.5,
     {
-     "en": "Oct 29 high $426.5; Oct 19 high $427.7",
-     "zh": "10月29日高点 $426.5；10月19日高点 $427.7"
+     "en": "Oct 30 high $405.2; Oct 29 low $409.9",
+     "zh": "10月30日高点 $405.2；10月29日低点 $409.9"
     }
    ]
   ],
   "s": [
    [
-    382.6,
+    373,
     {
-     "en": "Oct 30 low",
-     "zh": "10月30日低点"
+     "en": "Oct 23 low $372.8; Nov 2 low $373.25",
+     "zh": "10月23日低点 $372.8；11月2日低点 $373.25"
     }
    ],
    [
-    375,
+    357,
     {
-     "en": "Parabolic SAR $375.9; Apr 29 low $377.1; Oct 23 low $372.8",
-     "zh": "抛物线 SAR $375.9；4月29日低点 $377.1；10月23日低点 $372.8"
+     "en": "Mar 10 and Apr 1 highs ($355.3–359)",
+     "zh": "3月10日和4月1日高点（$355.3–359）"
+    }
+   ],
+   [
+    341,
+    {
+     "en": "Mar 19 low $338.1; Jan 29 high $344.6",
+     "zh": "3月19日低点 $338.1；1月29日高点 $344.6"
     }
    ]
   ]

@@ -1,64 +1,64 @@
 {
- "asof": "Oct 30, 2026",
- "close": 196.4,
+ "asof": "Nov 2, 2026",
+ "close": 171.41,
  "bias": {
-  "en": "Bearish · two-day drop broke every support, SAR bearish",
-  "zh": "偏空 · 两日急跌跌破全部支撑，SAR 转空"
+  "en": "Bearish · three-day slide broke the 200-day, RSI under 30",
+  "zh": "偏空 · 三连跌跌破 200 日均线，RSI 低于 30"
  },
  "read": [
   {
-   "en": "Marvell fell 10.0% on Oct 30 to $196.40 (range $190.15–207.61) on twice average volume, after a 13.2% drop on Oct 29. It is below the falling 5-day ($228.75), 10-day ($231.80), 30-day ($252.70) and 100-day ($238.39), and above the rising 200-day ($183.19). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR turned bearish on Oct 29 ($253.66), and RSI is 34.",
-   "zh": "Marvell 10月30日下跌 10.0%，收于 $196.40（区间 $190.15–207.61），成交量为均量的 2 倍；此前 10月29日已下跌 13.2%。股价低于下行的 5 日（$228.75）、10 日（$231.80）、30 日（$252.70）和 100 日均线（$238.39），高于上行的 200 日均线（$183.19）。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 于 10月29日转为看空（$253.66），RSI 为 34。"
+   "en": "Marvell fell 12.7% on Nov 2 to $171.41 (range $168.52–192.30) on 2.7 times average volume, a third straight drop. It is below the falling 5-day ($216.27), 10-day ($225.23), 30-day ($249.84) and 100-day ($237.57), and now below the rising 200-day ($183.65). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 29 ($251.12), and RSI is 29.",
+   "zh": "Marvell 11月2日下跌 12.7%，收于 $171.41（区间 $168.52–192.30），成交量为均量的 2.7 倍，为连续第三天下跌。股价位于下行的 5 日（$216.27）、10 日（$225.23）、30 日（$249.84）和 100 日均线（$237.57）下方，并已跌破上行的 200 日均线（$183.65）。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月29日起看空（$251.12），RSI 为 29。"
   },
   {
-   "en": "The two-day drop broke all three written supports, $246–250, $236–240 and $220.2, and flipped the SAR bearish. Resistance is $200.6–207.6 (Sep 1 low, Oct 30 high), then $220.2–225.7 (Oct 22 low, Oct 29 high) and $228.8–231.8 (5 and 10-day). Support is $188.3–190.2 (Oct 30 low, Jul 16–17 closes), then $183.2 (200-day) and $178 (Jul 17 low). A close above $207.6 would target $220–226; below $188, $183.",
-   "zh": "两日急跌跌破此前三道支撑 $246–250、$236–240 和 $220.2，SAR 也随之转空。阻力为 $200.6–207.6（9月1日低点、10月30日高点），其次 $220.2–225.7（10月22日低点、10月29日高点）和 $228.8–231.8（5 日和 10 日均线）。支撑为 $188.3–190.2（10月30日低点、7月16–17日收盘价），其次 $183.2（200 日均线）和 $178（7月17日低点）。若收盘站上 $207.6，下一目标看 $220–226；若跌破 $188，则看 $183。"
+   "en": "The drop broke all three written supports, $188.3–190.2, the 200-day ($183.2) and the $178 Jul 17 low, now resistance. Resistance is $178–183.7 (Jul 17 low, 200-day), then $190.2–192.3 (Oct 30 low, Nov 2 high) and $200.6–207.6. Support is $168.5–170.8 (Nov 2 low, Apr 24 high), then $162.9 (Jul 29 low) and $158 (May 12 low). A close above $183.7 would target $190–192; below $168.5, $163.",
+   "zh": "此次下跌跌破既有三道支撑：$188.3–190.2、200 日均线（$183.2）和 7月17日低点 $178，这些位置转为阻力。阻力为 $178–183.7（7月17日低点、200 日均线），其次 $190.2–192.3（10月30日低点、11月2日高点）和 $200.6–207.6。支撑为 $168.5–170.8（11月2日低点、4月24日高点），其次 $162.9（7月29日低点）和 $158（5月12日低点）。若收盘站上 $183.7，下一目标看 $190–192；若跌破 $168.5，则看 $163。"
   }
  ],
  "levels": {
   "r": [
+   [
+    181,
+    {
+     "en": "Jul 17 low $177.95, lost; 200-day average $183.65",
+     "zh": "7月17日低点 $177.95，已失守；200日均线 $183.65"
+    }
+   ],
+   [
+    191,
+    {
+     "en": "Oct 30 low $190.15; Nov 2 high $192.30",
+     "zh": "10月30日低点 $190.15；11月2日高点 $192.30"
+    }
+   ],
    [
     204,
     {
      "en": "Sep 1 low $200.62; Oct 30 high $207.61",
      "zh": "9月1日低点 $200.62；10月30日高点 $207.61"
     }
-   ],
-   [
-    223,
-    {
-     "en": "Oct 22 low $220.21; Oct 29 high $225.68",
-     "zh": "10月22日低点 $220.21；10月29日高点 $225.68"
-    }
-   ],
-   [
-    230.3,
-    {
-     "en": "5 and 10-day averages ($228.75–231.80)",
-     "zh": "5日和10日均线（$228.75–231.80）"
-    }
    ]
   ],
   "s": [
    [
-    189.2,
+    169.5,
     {
-     "en": "Oct 30 low $190.15; Jul 16–17 closes ($188.3–188.7)",
-     "zh": "10月30日低点 $190.15；7月16–17日收盘价（$188.3–188.7）"
+     "en": "Nov 2 low $168.52; Apr 24 high $170.84",
+     "zh": "11月2日低点 $168.52；4月24日高点 $170.84"
     }
    ],
    [
-    183.2,
+    162.9,
     {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "Jul 29 low",
+     "zh": "7月29日低点"
     }
    ],
    [
-    178,
+    158,
     {
-     "en": "Jul 17 low $177.95",
-     "zh": "7月17日低点 $177.95"
+     "en": "May 12 low $157.96",
+     "zh": "5月12日低点 $157.96"
     }
    ]
   ]

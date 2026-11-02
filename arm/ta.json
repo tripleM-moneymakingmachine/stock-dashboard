@@ -1,57 +1,57 @@
 {
- "asof": "Oct 30, 2026",
- "close": 205.97,
+ "asof": "Nov 2, 2026",
+ "close": 196.79,
  "bias": {
-  "en": "Bearish · lost the 200-day and the October lows",
-  "zh": "偏空 · 跌破 200 日均线和 10 月低点"
+  "en": "Bearish · broke $199–201, testing the April lows",
+  "zh": "看空 · 跌破 $199–201，测试 4 月低点"
  },
  "read": [
   {
-   "en": "Arm fell 10.0% on Oct 30 to $205.97, trading between $198.77 and $209.00 on 2.3 times average volume. It is below the rising 5-day ($224.1) and falling 10-day ($221.7), the falling 30-day ($265.0) and 100-day ($281.2) and the rising 200-day ($228.9). MACD has been below its signal since Oct 7 and below zero, histogram widening again; Parabolic SAR turned bearish on Oct 30 ($237.88), and RSI is 35.",
-   "zh": "Arm 10月30日下跌 10.0%，收于 $205.97，盘中区间 $198.77–209.00，成交量为均量的 2.3 倍。股价低于上行的 5 日（$224.1）和下行的 10 日均线（$221.7），以及下行的 30 日（$265.0）、100 日均线（$281.2）和上行的 200 日均线（$228.9）。MACD 自 10月7日起位于信号线及零轴下方，柱状图再度扩大；抛物线 SAR 于 10月30日转为看空（$237.88），RSI 为 35。"
+   "en": "Arm fell 4.5% on Nov 2 to $196.79, trading between $196.12 and $207.00 and closing near the low. It is below the rising 5-day ($218.8) and falling 10-day ($218.6), the falling 30-day ($260.8) and 100-day ($280.1) and the rising 200-day ($229.4). MACD has been below its signal since Oct 7 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($237.10), and RSI is 33.",
+   "zh": "Arm 11月2日下跌 4.5%，收于 $196.79，盘中区间 $196.12–207.00，收在低点附近。股价位于上行的 5 日（$218.8）和下行的 10 日均线（$218.6）下方，也低于下行的 30 日（$260.8）和 100 日均线（$280.1）以及上行的 200 日均线（$229.4）。MACD 自 10月7日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月30日起看空（$237.10），RSI 为 33。"
   },
   {
-   "en": "The slide broke all three written supports ($221.3–229, incl. the 200-day) and the $208.3–208.5 Oct 22–23 lows, now resistance, and flipped the SAR bearish. Resistance is $208.3–209, then $221.7–224.1 (10 and 5-day) and $228.9 (200-day). Support is $198.8–200.9 (Oct 30 and May 12 lows), then $193.9–195 (Apr 28–29 lows) and $178.5–179.4. A close above $209 would target $222–224; below $198.8, $194.",
-   "zh": "下跌跌破此前全部三道支撑（$221.3–229，含 200 日均线）以及 10月22–23日低点 $208.3–208.5，这些位置转为阻力，SAR 也转为看空。阻力为 $208.3–209，其次 $221.7–224.1（10 日和 5 日均线）和 $228.9（200 日均线）。支撑为 $198.8–200.9（10月30日和5月12日低点），其次 $193.9–195（4月28–29日低点）和 $178.5–179.4。若收盘站上 $209，下一目标看 $222–224；若跌破 $198.8，则看 $194。"
+   "en": "The drop broke the $198.8–200.9 support (Oct 30 and May 12 lows), now resistance. Resistance is $198.8–200.9, then $207–209 (Nov 2 and Oct 30 highs, Oct 22–23 lows) and $218.6–218.8 (10 and 5-day). Support is $193.9–195 (Apr 28–29 lows), then $183.2 (Oct 2025 high) and $178.5–179.4. A close above $200.9 would target $207–209; below $193.9, $183.",
+   "zh": "此次下跌跌破 $198.8–200.9 支撑（10月30日和5月12日低点），该区域转为阻力。阻力为 $198.8–200.9，其次 $207–209（11月2日和10月30日高点、10月22–23日低点）和 $218.6–218.8（10 日和 5 日均线）。支撑为 $193.9–195（4月28–29日低点），其次 $183.2（2025年10月高点）和 $178.5–179.4。若收盘站上 $200.9，下一目标看 $207–209；若跌破 $193.9，则看 $183。"
   }
  ],
  "levels": {
   "r": [
    [
-    208.6,
+    199.8,
     {
-     "en": "Oct 22–23 lows ($208.3–208.5), lost; Oct 30 high $209.0",
-     "zh": "10月22–23日低点（$208.3–208.5），已跌破；10月30日高点 $209.0"
+     "en": "Oct 30 low $198.8; May 12 low $200.9, lost",
+     "zh": "10月30日低点 $198.8；5月12日低点 $200.9，已失守"
     }
    ],
    [
-    223,
+    208,
     {
-     "en": "10 and 5-day averages ($221.7–224.1)",
-     "zh": "10日和5日均线（$221.7–224.1）"
+     "en": "Nov 2 high $207.0; Oct 22–23 lows ($208.3–208.5); Oct 30 high $209.0",
+     "zh": "11月2日高点 $207.0；10月22–23日低点（$208.3–208.5）；10月30日高点 $209.0"
     }
    ],
    [
-    228.9,
+    218.7,
     {
-     "en": "200-day average; Oct 29 close $228.8",
-     "zh": "200日均线；10月29日收盘价 $228.8"
+     "en": "10 and 5-day averages ($218.6–218.8)",
+     "zh": "10日和5日均线（$218.6–218.8）"
     }
    ]
   ],
   "s": [
    [
-    199.8,
-    {
-     "en": "Oct 30 low $198.8; May 12 low $200.9",
-     "zh": "10月30日低点 $198.8；5月12日低点 $200.9"
-    }
-   ],
-   [
     194.5,
     {
      "en": "Apr 28–29 lows ($193.9–195.0)",
      "zh": "4月28–29日低点（$193.9–195.0）"
+    }
+   ],
+   [
+    183.2,
+    {
+     "en": "Oct 27, 2025 high",
+     "zh": "2025年10月27日高点"
     }
    ],
    [
