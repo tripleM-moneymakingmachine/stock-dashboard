@@ -1,68 +1,68 @@
 {
-  "session": "2026-10-30",
-  "asof": "Fri Oct 30, 2026",
-  "commentary_asof": "Fri Oct 30, 2026",
+  "session": "2026-11-02",
+  "asof": "Mon Nov 2, 2026",
+  "commentary_asof": "Mon Nov 2, 2026",
   "horizon": "1–2 weeks",
-  "headline": "MSCI shock, a soft auction and a record-low rupiah push the IGSYC 10Y to 7.63% (+4.5bp): up 52bp in October, near its highest since 2020",
-  "summary": "INDOGBs sold off again on Friday, led by the belly: on PHEI's IGSYC curve the 1Y rose 6.6bp to 6.862%, the 2Y 4.7bp to 7.010%, the 5Y 7.8bp to 7.522% and the 10Y 4.5bp to 7.628%, and the curve is flat at 7.629% from 13 years out. The 10Y ends October 52bp higher and sits at the top of its 1-year range (99th percentile), about 150bp above where 2026 began. This is an Indonesia-specific sell-off, not a global one: US Treasuries rallied over the same four weeks. Government sukuk held up better (the fitted PBS 10Y is about 10bp through IGSYC), while corporate credit is wide but orderly, with AAA 3Y 53bp over IGSYC.",
+  "headline": "Bets on a November BI hike and a soft rupiah push the 2Y up 9bp to 7.10% and the IGSYC 10Y to 7.69%, the top of its five-year history, despite softer CPI and lower Treasuries",
+  "summary": "INDOGBs sold off for a third straight session, led this time by the 2–3Y sector: on PHEI's IGSYC curve the 1Y rose 6.3bp to 6.925%, the 2Y 9.1bp to 7.101%, the 5Y 7.5bp to 7.596% and the 10Y 6.2bp to 7.689%, the highest in the dashboard's history since October 2021 (the press puts it at a six-year high). The curve is flat at about 7.69% from 13 years out, and 1s2s steepened to 18bp as the market priced a BI hike. The 10Y benchmark FR0108 underperformed, rising 16.7bp to 7.793%, so it now sits 10bp cheap to the fitted curve. Sukuk held up again (the fitted PBS 10Y is 10.5bp through IGSYC and PBS034 13bp rich), and corporate credit stayed orderly: AAA 3Y is unchanged at 53bp over IGSYC, while BBB tightened to 255bp over AA from 266bp.",
   "drivers": [
     [
-      "MSCI standalone threat and the foreign exit",
-      "MSCI opened a consultation on Oct 15 to move Indonesia from Emerging Markets to a Standalone market, harsher than the Frontier downgrade it had threatened in January; the JCI fell 11.6% on Oct 16 and closed the month at 5,057, 44% below its Jan 15 peak of 9,075. Banks estimate US$3–4.8bn of passive selling and up to US$15bn from active funds, with a final decision due by Jun 30, 2027. Foreigners kept selling stocks all week (about Rp1.1tn net on Thursday, mostly the big banks), and bonds followed once the rupiah gave way."
+      "Front end prices a BI hike",
+      "The 2Y and 3Y rose 9bp each, the biggest moves on the curve, after Bank Permata's research team called a 25bp hike to 6.00% at BI's November meeting, citing the rupiah and a likely Fed hike in December (the Fed held at 3.75–4.00% last week with two members voting to raise). The IGSYC 1Y now sits 118bp over the 5.75% BI-Rate and 193bp over the 5.00% deposit facility. October CPI did not help: headline 3.23% (Reuters poll 3.29%, prior 3.28%) and core 2.56% (poll 2.75%) were both softer, but the market is pricing policy through the currency, not inflation."
     ],
     [
-      "Rupiah at record lows, BI defending with the corridor",
-      "JISDOR fixed at 18,138 on Oct 30, near the weakest on record and about 8% down this year. On Oct 21 BI held the BI-Rate at 5.75% but lifted the deposit facility to 5.00% and widened DNDF and hedging incentives, a defensive move that pushed the short end up: the IGSYC 1Y is 111bp over the BI-Rate. Indonesia's 5Y CDS rose from about 92bp on Oct 14 to 106bp on Oct 26."
+      "Rupiah stuck near record lows, foreigners still selling stocks",
+      "JISDOR fixed at 18,161, up 0.13% on the day and within 0.2% of its 18,190 June record, while spot closed at 18,156 as most Asian currencies firmed. The JCI rebounded 0.8% to 5,097 on the first day of IDX's new rules dropping 81 concentrated stocks from the index, but foreigners still sold a net Rp376bn, taking 2026 equity outflows to about Rp126tn. Foreign SBN holdings were still about Rp917tn (13%) on Oct 27, so bonds have not seen a full exit yet, which is both the risk and the cushion."
     ],
     [
-      "Supply meets thin demand",
-      "The Oct 27 SUN auction drew only Rp31.1tn of bids for Rp20.65tn awarded, and the new 10Y FR0111 cleared at a 7.54% average, 30bp higher in two weeks. The 2026 deficit outlook was raised to 2.85% of GDP from 2.68%, with about Rp302tn of net SBN still to issue after Rp497.5tn (62%) by September, and the 10Y now trades about 70bp above the budget's 6.9% assumption. Retail demand is the bright spot: Rp17tn of SBR015 savings bonds sold."
+      "Supply: four auctions in November",
+      "The Ministry has seven SBN auctions left this year (four in November) and about Rp240tn targeted for Q4, after the Oct 27 SUN auction drew only Rp31.1tn of bids. Tuesday's sukuk auction offers PBS030, PBS034, PBS038 and PBS040 with a Rp10tn indicative target, which is the first test of demand at these yields. The 10Y FR0108 took the brunt today (+16.7bp, now 10bp cheap to IGSYC) while the 20Y FR0107 rose only 3.1bp."
     ],
     [
-      "US Treasuries are not the driver",
-      "The US 10Y fell 26bp over the last four weeks while the INDOGB 10Y rose 47bp; the 26-week weekly beta is −0.06, so essentially all of October's move is local. The daily beta to the overnight US move has dropped to 0.07 over 60 days from 0.29 over the year. Friday's New York session took the US 10Y down 4bp, worth only about −1bp for INDOGBs at the 1-year beta, so don't expect much help from Treasuries until local flows calm."
+      "US Treasuries: no help, and no blame",
+      "Friday's New York session took the US 10Y down 4bp to 4.94%, worth about −1bp for INDOGBs at the 1-year daily beta of 0.31; the INDOGB 10Y rose 6.2bp instead, so the whole move was local. Over four weeks the US 10Y is down 28bp while the INDOGB 10Y is up 45bp, and the weekly beta is −0.21. The INDOGB − UST spread has widened to 275bp, the 94th percentile of the year and near the top of its 190–299bp 52-week range."
     ]
   ],
   "data": [
     [
-      "SUN auction (Oct 27)",
-      "Bids Rp31.09tn, awarded Rp20.65tn; FR0111 10Y average 7.54%",
-      "Weak cover for a supply-heavy quarter. The Ministry took less than it could, but the 30bp jump in the 10Y award in two weeks sets a higher floor for secondary yields."
+      "October CPI (Nov 2)",
+      "3.23% y/y (f 3.29%, p 3.28%); core 2.56% (f 2.75%, p 2.84%); 0.22% m/m",
+      "Softer than expected and core is falling, so inflation alone does not force BI to hike; food and fuel keep the headline near the 3.5% ceiling."
     ],
     [
-      "SBR015 retail savings bond (Oct 27)",
-      "Rp17.0tn sold (T2 Rp13.6tn, T4 Rp3.4tn)",
-      "Strong household demand gives the Ministry a cushion outside the auctions and takes some pressure off the 2–4Y sector."
+      "October manufacturing PMI (Nov 2)",
+      "54.0 (p 52.4), strongest since March 2024",
+      "Growth is not the problem: record export orders and strong demand give BI room to tighten for the rupiah."
+    ],
+    [
+      "September trade balance (Nov 2)",
+      "Surplus US$3.36bn (f about US$1.5–2.3bn, p US$3.55bn); imports +18.4% y/y",
+      "A better surplus than forecast, but Jan–Sep surplus is down to US$10.6bn from US$33.5bn a year ago, so the rupiah leans more on portfolio money."
+    ],
+    [
+      "SUN auction (Oct 27)",
+      "Bids Rp31.09tn, awarded Rp20.65tn (target Rp30tn); FR0111 average 7.54%",
+      "Weak cover and a 30bp jump in the 10Y award in two weeks: the auction set a higher floor for secondary yields."
     ],
     [
       "2026 budget outlook (late Oct)",
       "Deficit 2.85% of GDP (budget 2.68%); net SBN Rp497.5tn (62.2%) issued by Sep",
-      "About Rp302tn still to raise in Q4 into a market with foreign demand fading: a supply overhang that weighs most on the long end."
+      "About Rp302tn of net SBN still to raise, while the 10Y trades about 80bp above the 6.9% budget assumption."
     ],
     [
       "BI board meeting (Oct 21)",
-      "BI-Rate 5.75% (hold, 100bp of hikes this year); deposit facility 5.00% (up); lending facility 6.50%",
-      "A rupiah-defence move: tighter liquidity at the very front without a headline hike. A BI-Rate hike in November is possible if JISDOR breaks higher."
+      "BI-Rate 5.75% (hold); deposit facility 5.00% (up); reserve requirement cut to 8% in Nov and 7% in Dec",
+      "Tighter at the very front, looser for bank lending. The market now expects the next step to be a BI-Rate hike."
     ],
     [
       "MSCI market classification (Oct 15)",
-      "Consultation to move Indonesia from EM to Standalone; feedback by Apr 30, 2027; decision by Jun 30, 2027",
-      "Long-dated overhang for foreign equity money; it hits the rupiah first and bonds through the currency and risk premium."
-    ],
-    [
-      "September CPI (Oct 1)",
-      "3.28% y/y (p 3.19%); core 2.84%",
-      "Inside BI's 1.5–3.5% target but rising on food; a weaker rupiah adds imported inflation risk. October CPI is forecast near 3.19%."
-    ],
-    [
-      "External position (Q2 / end-Sep)",
-      "Current account −US$12.5bn (−3.3% of GDP); reserves US$146.3bn",
-      "A wider current-account gap makes the rupiah more dependent on portfolio inflows, which is exactly what is reversing."
+      "Consultation to move Indonesia from EM to Standalone; decision by Jun 30, 2027",
+      "The root of the foreign exit; it hits the rupiah first and bonds through the currency and risk premium."
     ]
   ],
   "view": [
     "My view:",
-    "The market is pricing a foreign exit, not a BI easing or a global rates move, and that keeps duration risk one-sided for now: the Bond Flow Signal reads −0.69 (sell-off) for a fifth week, driven by the JCI slump and the 10Y's own momentum, and the call has been right so far (+47bp since Oct 2). The quant record argues for patience rather than conviction: the signal is only modestly positive since 2022 (Sharpe 0.18), but since September 2024, when foreign flows took over, it scores 0.79 outright and 1.04 against Treasuries, and its sell-off calls are right 54% of the time. Value is building: INDOGBs yield 265bp over Treasuries (85th percentile of the year) and the spread part of the signal is already bond-bullish. I expect the 10Y to range 7.45–7.90% over the next two weeks, with the upside tested if JISDOR breaks 18,300 or BI has to hike. I would stay underweight 10Y and longer until the rupiah stabilises and the signal climbs back above −0.5, express curve views through a 10s20s steepener given the long-end supply, and switch rich PBS sukuk into FR series where mandates allow; a Treasury hedge adds little while the beta is near zero."
+    "The market has moved from pricing a foreign exit to pricing BI's response to it, and that keeps the front end and the 10Y heavy into the November board meeting: a 25bp hike is now the base case for some local banks, and until it comes or the rupiah stabilises, the selling has no natural stop. The quant side agrees: the Bond Flow Signal reads −0.74 (sell-off) for a sixth week, with the JCI slump, the rupiah and the 10Y's own momentum all bearish and only the 275bp spread to Treasuries arguing the other way, and the call is 53bp right since Oct 2. Its record argues for respect, not blind faith: since May 2022 it scores a Sharpe of 0.22 outright and 0.29 against Treasuries, with rally calls right 49% and sell-off calls 53% of the time, but since September 2024, when foreign flows took over, it scores 0.68 outright and 0.77 hedged; the US-trend variants score up to 0.88 but were chosen after the fact and are not live. Treasuries explain none of this: the weekly beta is −0.21 and the overnight read was −1bp against a +6bp local move, so a US rally will not rescue INDOGBs. I expect the 10Y to trade 7.55–7.90% over the next two weeks, with the top tested if JISDOR breaks 18,200 before BI acts. I stay underweight duration, would buy the belly only after BI has moved and the rupiah holds, and see the cheap FR0108 as the better long-end vehicle than the 20Y once the selling stops."
   ],
   "buckets": [
     {
@@ -74,19 +74,19 @@
         "a": "bi:0",
         "b": "igs:1"
       },
-      "why": "The IGSYC 1Y at 6.862% is 111bp over the 5.75% BI-Rate and about 186bp over the new 5.00% deposit facility, so it already prices tighter liquidity and some chance of another hike. The 2Y at 7.010% is only 15bp above the 1Y. PHEI history for these tenors starts this week, so the meter rests on two days and the call relies on the policy spread.",
-      "call": "Neutral. Add 1–2Y only if the 1Y reaches 7.10% (a hike fully priced) or if the rupiah stabilises below 18,000; avoid chasing below 6.70%."
+      "why": "The IGSYC 1Y at 6.925% is 118bp over the 5.75% BI-Rate and 193bp over the 5.00% deposit facility; a 25bp November hike would leave it about 93bp over the new rate, which still prices some risk of more. The 2Y led today's sell-off (+9.1bp to 7.101%) and 1s2s steepened to 18bp from 15bp. PHEI history for this spread is only three days, so the meter is thin and the call rests on the policy gap. Previous call (add at 1Y 7.10%) still open: the 1Y is 17bp short of it.",
+      "call": "Neutral. Add 1–2Y if the 1Y reaches 7.10% (a hike and more fully priced) or once BI has hiked and JISDOR holds below 18,000; avoid chasing below 6.80%."
     },
     {
       "name": "Belly 5Y (FR0109)",
       "tag": "Cheap",
-      "stance": "Accumulate on stabilisation",
+      "stance": "Accumulate after BI",
       "m": {
         "type": "lvl",
         "a": "igs:5"
       },
-      "why": "The 5Y led Friday's sell-off (+7.8bp to 7.522%), and the FR0109 benchmark (4.4Y) is the cheapest of the four FR benchmarks against the curve at 7.537%, about 8bp above IGSYC at its term. The belly carries the best carry and roll on a curve that is steep to 5Y and flat beyond, and retail money (SBR, ORI) supports it.",
-      "call": "Start buying FR0109 near 7.55–7.60% once JISDOR holds below 18,200 for three sessions; target 7.30%, stop 7.80%."
+      "why": "The 5Y rose 7.5bp to 7.596% (+15bp in two sessions), and FR0109 (4.4Y) jumped 12.3bp to 7.659%, now 12bp cheap to IGSYC and the cheapest FR benchmark. The curve is steep to 5Y (2s5s 50bp) and flat beyond, so the belly has the best carry and roll. The level percentile rests on three stored PHEI days, so treat it as a guide only. Previous entry (7.55–7.60% once JISDOR held below 18,200 for three sessions) was not triggered: the rupiah condition is only two sessions old and yields gapped through the zone.",
+      "call": "Move the entry to 7.65–7.75% on FR0109, triggered by a BI hike or three sessions of JISDOR below 18,200; target 7.35%, stop 7.95%."
     },
     {
       "name": "10Y outright",
@@ -96,20 +96,20 @@
         "type": "lvl",
         "a": "igs:10"
       },
-      "why": "The 10Y at 7.628% is at the 99th percentile of its 1-year range (average 6.72%), 52bp higher in October and about 70bp above the budget assumption. It is cheap on history and on the 265bp spread to Treasuries, but the flow signal still reads sell-off, the auction cover was thin and Q4 supply is heavy.",
-      "call": "Stay underweight; turn neutral when the flow signal rises above −0.5 or the 10Y fails twice at 7.75–7.80%. A tactical long only above 7.85% with a stop at 8.05%."
+      "why": "The 10Y at 7.689% is at the 100th percentile of the past year (170 stored days, average 6.73%) and the highest since the series starts in October 2021, about 157bp above where 2026 began. The underweight is working (+6bp since Friday). It is cheap on history and on the 275bp spread to Treasuries (94th percentile), but the flow signal still reads sell-off, November brings four auctions and BI has not yet acted.",
+      "call": "Stay underweight; turn neutral when the flow signal rises above −0.5 or after a BI hike that steadies the rupiah. A tactical long only above 7.85% with a stop at 8.05%."
     },
     {
       "name": "10s20s curve (FR0108 vs FR0107)",
       "tag": "Rich",
-      "stance": "Steepener",
+      "stance": "Stopped; re-enter steepener",
       "m": {
         "type": "spr",
         "a": "igs:10",
         "b": "igs:20"
       },
-      "why": "IGSYC is flat past 13 years (10s20s near 0bp), which leaves no term premium for Rp302tn of remaining supply. The benchmarks already disagree with the flat curve: FR0107 (18.8Y) yields 7.705%, 7.8bp over FR0108 (9.5Y) at 7.627% and 7.6bp cheap to IGSYC. Long-end supply usually steepens the curve as the quarter goes on.",
-      "call": "Steepener: buy FR0108, sell FR0107 duration-weighted at a 7.8bp spread; target 18bp, stop 2bp."
+      "why": "IGSYC 10s20s is flat at 0.1bp, leaving no term premium past 10 years. The benchmark steepener (buy FR0108, sell FR0107, entered at +7.8bp) was stopped today: FR0108 rose 16.7bp against 3.1bp for FR0107, so the spread swung to −5.7bp, through the 2bp stop. The 10Y benchmark is now 10.4bp cheap to IGSYC and FR0107 only 4.5bp, so the same trade is better value than before, but the stop comes first.",
+      "call": "Closed at a stop (about −10bp of spread). Re-enter the FR0108/FR0107 steepener duration-weighted at −5bp or lower, target +5bp, stop −12bp."
     },
     {
       "name": "PBS sukuk vs FR",
@@ -120,8 +120,8 @@
         "a": "igs:10",
         "b": "sbsn:10"
       },
-      "why": "The fitted PBS curve sits about 10bp through IGSYC at 10Y: PBS034 (12.6Y) is 11.9bp rich and PBS038 (23.1Y) 12.5bp rich, because sharia funds and Islamic banks must hold them and they have not sold. PBS030 at the front is close to fair (−3bp). The fit rests on only four PBS series, so treat the level with care.",
-      "call": "Where mandates allow, switch PBS034/PBS038 into FR0106/FR0107 for about 15–20bp of pick-up; reverse when the rich-up narrows to 3bp."
+      "why": "The fitted PBS curve sits 10.5bp through IGSYC at 10Y (−9.8bp on Friday): PBS034 (12.6Y) is 13.3bp rich and PBS038 (23.1Y) 12.9bp rich, while PBS030 at the front is 3.7bp rich. The switch went against us today: FR0106 rose 10.4bp and PBS034 only 4.7bp, so the yield pick-up widened to 22bp from 17bp. The fit rests on four PBS series (low confidence), and both stored days show the same picture.",
+      "call": "Keep the switch from PBS034/PBS038 into FR0106/FR0107 (22bp pick-up); Tuesday's Rp10tn sukuk auction should test PBS pricing. Close if the pick-up narrows to 10bp (target) or widens past 28bp (stop)."
     },
     {
       "name": "Corporate credit (AAA 3Y)",
@@ -132,31 +132,31 @@
         "a": "igs:3",
         "b": "aaa:3"
       },
-      "why": "PHEI's AAA 3Y curve is 53bp over IGSYC and AA 82bp, normal for Indonesia; the stress is lower down, with BBB 266bp over AA. Corporate spreads have not blown out the way sovereign yields have, because local banks and insurers dominate the buyer base.",
+      "why": "PHEI's AAA 3Y is unchanged at 53bp over IGSYC while AA widened 2.6bp to 85bp; BBB tightened to 255bp over AA from 266bp. Corporate spreads have not followed sovereign yields higher, because local banks and insurers dominate the buyer base. Only two stored days, so the spread history is short.",
       "call": "Hold AAA/AA; add only if AAA 3Y widens past 70bp. Avoid BBB until the rupiah stabilises."
     }
   ],
   "rows": {
     "igs:0.1": {
-      "note": "Pinned near BI's deposit-facility corridor"
+      "note": "Above the 5.00% deposit facility"
     },
     "igs:1": {
-      "note": "111bp over BI-Rate; hike risk priced"
+      "note": "118bp over BI-Rate; November hike priced"
     },
     "igs:2": {
-      "note": "Only 15bp over 1Y"
+      "note": "Led the sell-off, +9bp"
     },
     "igs:3": {
-      "note": "Retail SBR demand supports"
+      "note": "+9bp; hike bets hit 2–3Y hardest"
     },
     "igs:5": {
-      "note": "Led the sell-off; FR0109 cheapest"
+      "note": "+15bp in two days; FR0109 12bp cheap"
     },
     "igs:7": {
       "note": "Followed the belly"
     },
     "igs:10": {
-      "note": "Near 2020 highs; +52bp in October"
+      "note": "Top of 5-year history; FR0108 +17bp"
     },
     "igs:15": {
       "note": "Curve flat from 13Y"
@@ -168,66 +168,66 @@
       "note": "Flat to 15Y on IGSYC"
     },
     "sbsn:5": {
-      "note": "Fitted; slightly rich"
+      "note": "Fitted; about 7bp rich"
     },
     "sbsn:10": {
-      "note": "About 10bp rich; sharia demand"
+      "note": "10bp rich; sukuk auction Tue"
     },
     "retail:2": {
-      "note": "Fitted to ORI/SR; noisy"
+      "note": "Fitted to ORI/SR; near IGSYC"
     },
     "retail:5": {
-      "note": "Rich; holding-period demand"
+      "note": "17bp rich; holding-period demand"
     },
     "bi:0": {
-      "note": "Held; deposit facility up to 5.00%"
+      "note": "5.75%; hike to 6.00% now expected"
     },
     "aaa:3": {
-      "note": "Orderly; normal range"
+      "note": "Unchanged at 53bp"
     },
     "aa:3": {
-      "note": "Steady"
+      "note": "Slightly wider"
     },
     "a:3": {
       "note": "Wide but stable"
     },
     "bbb:3": {
-      "note": "Stress sits here"
+      "note": "Tightened vs AA"
     }
   },
-  "watch": "Next: October CPI (Mon Nov 2, f 3.19%) and the IDX trading reforms taking effect the same day, Q3 GDP (around Nov 5), October FX reserves (around Nov 6), the next SUN auction in mid-November and BI's November board meeting; in the US, payrolls and Fed speakers. JISDOR 18,300 is the line that would force BI's hand.",
+  "watch": "Next: the sukuk auction and US midterm elections (Tue Nov 3), the US Treasury refunding (Wed Nov 4), Q3 GDP (Thu Nov 5, f 5.0%, p 5.29%), October FX reserves and US payrolls (Fri Nov 6), then the remaining November SUN auctions, MSCI's November index review and BI's November board meeting; JISDOR 18,200 is the line that would bring a hike forward.",
   "sources": [
     [
-      "IDN Financials (bond yields and auction, Oct 29)",
-      "https://www.idnfinancials.com/news/71021/indonesian-bond-yields-hit-7-54-as-interest-wanes-what-is-happening"
+      "CNBC Indonesia (October CPI, Nov 2)",
+      "https://cnbcindonesia.com/news/20261102093945-4-781412/breaking-news-inflasi-ri-022-pada-oktober-2026"
     ],
     [
-      "IDN Financials (BI decision, Oct 21)",
-      "https://www.idnfinancials.com/news/70614/bank-indonesia-holds-rate-at-5-75-raises-deposit-facility-rate-to-5"
+      "MarketScreener / Reuters (CPI vs poll, Nov 2)",
+      "https://marketscreener.com/news/indonesia-october-inflation-eases-slightly-to-3-23-y-y-ce785fd8dd80fe26"
     ],
     [
-      "CNBC Indonesia (SBN 10Y at a six-year high, Oct 29)",
-      "https://cnbcindonesia.com/research/20261029100509-128-780494/yield-sbn-tertinggi-dalam-6-tahun-awas-beban-utang-ri-bengkak"
+      "Investor.id (BI hike to 6% expected, Nov 2)",
+      "https://investor.id/macroeconomy/460342/rupiah-tertekan-bi-diprediksi-naikkan-birate-ke-6-pada-november"
     ],
     [
-      "Mirae Asset Indonesia Daily Focus (Oct 30)",
-      "https://cdn.miraeasset.co.id/prd-strapi-v2/Indonesia_Daily_Focus_2026_10_30_ddc227640d.pdf"
+      "Liputan6 (rupiah and JISDOR, Nov 2)",
+      "https://liputan6.com/bisnis/read/8326858/rupiah-kembali-melemah-konflik-iran-as-masih-jadi-beban"
     ],
     [
-      "Mirae Asset MSCI Update (Oct 16)",
-      "https://cdn.miraeasset.co.id/prd-strapi-v2/261016_MSCI_Update_Standalone_Risk_Rotate_to_Names_Outside_MSCI_7685238e01.pdf"
+      "Katadata (JCI close and foreign flows, Nov 2)",
+      "https://katadata.co.id/finansial/bursa/6ae8681385c2e/ihsg-ditutup-naik-0-79-asing-net-sell-rp-375-54-m-goto-dan-bumi-ramai-diburu"
     ],
     [
-      "Further Asia (MSCI outflow estimates)",
-      "https://furtherasia.com/indonesia-msci-exclusion-risks-us15b-outflow"
+      "Kontan (SBN supply and foreign holdings, Nov 1)",
+      "https://nasional.kontan.co.id/news/yield-sbn-naik-pemerintah-diminta-selektif-terbitkan-surat-utang-hingga-akhir-2026"
     ],
     [
-      "Kontan (foreign SBN holdings, Oct 28)",
-      "https://nasional.kontan.co.id/news/outflow-asing-dari-pasar-keuangan-pergerakan-rupiah-bisa-bertahan-di-rp-18000"
+      "CNBC Indonesia (sukuk auction Nov 3)",
+      "https://cnbcindonesia.com/market/20261101212232-17-781298/imbalan-hingga-685-pemerintah-ri-lelang-8-sukuk-cari-dana-rp10-t"
     ],
     [
-      "Archynewsy (2026 budget shift, Oct 30)",
-      "https://www.archynewsy.com/indonesia-shifts-rp200-trillion-in-state-budget-to-cover-rising-disaster-and-energy-costs/"
+      "Bisnis (PMI and trade, Nov 2)",
+      "https://ekonomi.bisnis.com/read/20261102/9/2017625/brief-insight-ekonomi-ri-awal-kuartal-iv2026-manufaktur-menguat-surplus-dagang-terjaga-tetapi-impor-melaju-kencang"
     ]
   ]
 }
