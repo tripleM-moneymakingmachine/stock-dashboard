@@ -1,30 +1,30 @@
 {
- "session": "2026-11-02",
- "asof": "Mon Nov 2, 2026",
- "tone": "down",
- "headline": "Oil's 7% plunge lifts the Dow, but Oracle and chip selling drag the Nasdaq down 1.1%",
- "summary": "A rebound that faded into a split close. Stocks opened higher on US-Iran peace hopes, with the S&P 500 up as much as 1.1% in the morning, but selling in tech and chip stocks built through the afternoon and the index closed on its session low. Most stocks still rose: consumer discretionary, financials, industrials and staples gained as oil and yields fell, while tech lost close to 3% and energy about 4%.",
+ "session": "2026-11-03",
+ "asof": "Tue Nov 3, 2026",
+ "tone": "mixed",
+ "headline": "Chip rebound lifts the Nasdaq 0.8% on Election Day as Apple's margin warning drags the Dow",
+ "summary": "A narrow, split session. The S&P 500 opened higher and held a gain of up to 0.7% before settling up 0.4%, snapping a three-day losing streak, but the move rested on a handful of tech heavyweights: decliners outnumbered advancers in the index by about 1.6 to 1. Money rotated from Apple and defensive sectors into beaten-down chipmakers, with tech up about 1.3% while consumer staples and materials each lost close to 1.8%.",
  "stats": [
-  ["S&P 500", "7,541.40", -0.51],
-  ["Nasdaq", "25,164.32", -1.07],
-  ["Dow", "51,983.98", 0.41],
-  ["Russell 2000", "2,805.88", -0.21],
-  ["SOX (chips)", "10,328.33", -3.37],
-  ["VIX", "21.15", 8.91, true],
-  ["US 10Y", "4.92%", "−2bp"],
-  ["WTI crude", "$96.46", -7.36]
+  ["S&P 500", "7,568.92", 0.36],
+  ["Nasdaq", "25,372.01", 0.83],
+  ["Dow", "51,786.72", -0.38],
+  ["Russell 2000", "2,812.45", 0.23],
+  ["SOX (chips)", "10,600.40", 2.63],
+  ["VIX", "20.83", -1.51, true],
+  ["US 10Y", "4.97%", "+7bp"],
+  ["WTI crude", "$96.09", -0.38]
  ],
  "drivers": [
-  ["Chip selling resumes after a brief bounce", "The SOX gave up an early gain of almost 2% to close 3.4% lower, extending Friday's 7.2% slide. Marvell fell about 13% and Lumentum about 19% after agreeing a $115 billion all-stock merger that analysts questioned on size, while Intel dropped another 8.8% after Friday's 29% plunge."],
-  ["AI funding worries hit Oracle and software", "Oracle sank about 8.7% after filings showed plans to raise $20 billion through stock and bond sales, feeding concern over how AI build-outs are being financed. Microsoft (−2.8%) and Apple (−1.8%, ahead of its report) were among the heaviest weights on the S&P 500."],
-  ["Oil tumbles on US-Iran diplomacy", "WTI fell 7.4% to $96.46, back below $100, and Brent 7.6% to $104.77 after Iran said its supreme leader had widened the mandate for peace talks and President Trump said a deal could happen. Airlines, cruise lines and retailers rallied while Exxon and other energy names fell about 4%."],
-  ["Lower yields support cyclicals and the Dow", "The 10-year Treasury yield slipped to about 4.92% as oil fell, helping home-improvement, financial and industrial stocks; Honeywell, 3M and Boeing led the Dow's 0.4% gain. October ISM manufacturing rose to 55.5, above forecasts, with the prices-paid gauge easing."]
+  ["Dip-buyers return to chips", "The SOX rose 2.6%, recovering most of Monday's 3.4% drop, as Nvidia gained about 2.3% after four straight declines and Micron about 2.6%; Microsoft and Amazon each added more than 2%. Strategists described it as a rotation out of 'safe' tech into riskier AI names after the Nasdaq-100 confirmed a correction on Monday."],
+  ["Apple's memory-cost warning weighs on the Dow", "Apple fell about 1.9% after guiding holiday-quarter gross margin to 45–46%, below forecasts, as memory chip prices rise, with Greater China and iPad sales also short of estimates despite a revenue and EPS beat. Palantir slipped on slower US commercial bookings, and Gartner (−13%), Thomson Reuters (−10%) and Shopify (−9%) fell after their reports."],
+  ["Strong JOLTS pushes yields higher", "September job openings jumped to 7.52 million against forecasts near 7.1 million, with quits rising, keeping a December Fed hike in play; the 10-year yield climbed about 7bp to roughly 4.97%. Meta's bond sale added to supply pressure on Treasuries."],
+  ["Midterms and Iran keep traders cautious", "Volume ran below average as Americans voted, with polls and prediction markets leaning toward Democrats taking the House. WTI swung between $93.59 and $98.82 on a reported US strike on Iran's Qeshm Island and talk of a draft peace memorandum, settling 0.4% lower at $96.09."]
  ],
- "week": "The week opened with the Dow up 0.4% and the S&P 500 down 0.5% after the Nasdaq's 5.3% October drop, its worst month since March 2025; the backdrop is a Fed on hold at 3.75–4%, a 10-year yield back under 5% and oil swinging on Iran headlines.",
- "watch": "Next: after Monday's close Apple reported revenue of $114.5 billion and EPS of $2.10, both above forecasts; Tuesday brings the midterm elections, JOLTS job openings and AMD's results, followed by Arm and Qualcomm on Wednesday and the October jobs report on Friday, Nov 6.",
+ "week": "Two sessions in, the S&P 500 is down 0.1%, the Nasdaq down 0.3% and the Dow roughly flat; the backdrop is a Fed on hold at 3.75–4% with hike risk back in focus, a 10-year yield near 5% and AI spending worries that have pushed the SOX about 20% below its October high.",
+ "watch": "Next: after Tuesday's close AMD beat with revenue of $13.4 billion and guided Q4 to about $17 billion, sending the stock up more than 4% after hours; midterm results arrive overnight, then Wednesday brings ADP payrolls, the Treasury refunding and results from Arm and Qualcomm, with the October jobs report on Friday, Nov 6.",
  "sources": [
-  ["AP", "https://apnews.com/article/wall-street-stocks-dow-nasdaq-475bb37b4d95dd99e26c94e708c99f8f"],
-  ["Reuters", "https://uk.marketscreener.com/news/s-p-500-ends-down-apple-dips-ahead-of-quarterly-report-ce785fd9da89ff2c"],
-  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"]
+  ["AP", "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211437939.html"],
+  ["Reuters", "https://ca.marketscreener.com/news/nasdaq-ends-higher-as-ai-heavyweights-rebound-ahead-of-midterm-results-ce785fdedd8ef520"],
+  ["Yahoo Finance", "https://finance.yahoo.com/news/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-earnings-141143244.html"]
  ]
 }
