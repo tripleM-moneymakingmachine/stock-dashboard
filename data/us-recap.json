@@ -1,16 +1,16 @@
 {
  "session": "2026-11-03",
  "asof": "Settles Tue 3 Nov 2026 · written Wed 4 Nov",
- "headline": "Hot JOLTS sells the strip 1–3bp, back end leads; U7 peak at 4.535% still prices two hikes vs a one-hike Fed median.",
- "summary": "The strip sold off across the board on Tuesday, giving back Monday's back-end rally: Z6 rose 1.5bp in implied rate to 4.16%, H7 to U7 rose 1bp, and H8 through Z9 led with 2–3bp, Z9 up 3bp to 4.41%. Month-to-date the move is close to parallel, with Z6 to Z7 1–1.5bp higher and 2028–29 contracts 1.5–2bp higher. The peak is still SR3U7 at 4.535%, 58.5bp over the latest 3.95% SOFR fixing, with 12.5bp of easing priced from there to Z9. That is still about one hike more than the Fed's median and the consensus call of a December hike followed by a long hold.",
+ "headline": "Hot JOLTS sells the strip 1.5–3.5bp, reds and greens lead; U7 peak at 4.545% still prices two hikes vs a one-hike Fed.",
+ "summary": "The strip sold off across the board on Tuesday: Z6 and H7 rose 1.5bp in implied rate to 4.16% and 4.37%, M7 and U7 2bp to 4.505% and 4.545%, and Z7 through Z9 led with 3–3.5bp, more than reversing Monday's back-end rally. Month-to-date Z6 to U7 are 1.5–2.5bp higher and the reds 2.5–3bp higher, while U6 is barely changed and 2029 contracts are up 2–3bp. The peak is still SR3U7 at 4.545%, 59.5bp over the latest 3.95% SOFR fixing, with 13bp of easing priced from there to Z9. That is still about one hike more than the Fed's median and the consensus call of a December hike followed by a long hold.",
  "drivers": [
   [
    "Strong JOLTS reprices the labour market",
-   "September job openings jumped 333,000 to 7.523 million against about 7.10 million expected, August was revised up to 7.19 million, quits rose to 3.365 million and layoffs fell to 1.641 million. Two-year yields rose about 4.5bp to 4.63% and 10-year about 6bp to 4.95%; in SR3 Z6 rose 1.5bp and H7 to U7 1bp."
+   "September job openings jumped 333,000 to 7.523 million against about 7.10 million expected, August was revised up to 7.19 million, quits rose to 3.365 million and layoffs fell to 1.641 million. Two-year yields rose about 4.5bp to 4.63% and 10-year about 6bp to 4.95%; in SR3 Z6 and H7 rose 1.5bp and M7 and U7 2bp."
   ],
   [
-   "Back end cheapens into refunding and the vote",
-   "The 2028–29 contracts sold off 2–3bp as the long end lost about 5.5bp ahead of Wednesday's refunding, where many dealers expect Treasury to loosen its steady-coupon guidance and lean more on bills and shorter notes, and as midterm results shape the fiscal outlook. U7/Z8 rose 1.5bp to −9.5bp and Z7/Z8 1bp to −7bp."
+   "Reds cheapen into refunding and the vote",
+   "Z7 through Z9 sold off 3–3.5bp as the long end lost about 5.5bp ahead of Wednesday's refunding, where many dealers expect Treasury to loosen its steady-coupon guidance and lean more on bills and shorter notes, and as midterm results shape the fiscal outlook. Z6/Z7 widened 1.5bp to +36.5bp, while Z7/Z8 held at −8bp."
   ],
   [
    "Oil slides again but no longer drives the strip",
@@ -21,8 +21,8 @@
    "SOFR fixed at 3.95% on 2 November, 7bp over the 3.88% EFFR and above the 3.90% interest on reserves, with reverse repo usage near $5bn. U6 at 3.925% implied, up only 0.2bp, still sits under the fixing."
   ]
  ],
- "spreads": "The whites were steady while the strip beyond the peak cheapened. U6/Z6 widened 1.3bp to +23.5bp, Z6/H7 narrowed 0.5bp to +20.5bp, H7/M7 held at +13bp and M7/U7 at +4bp, while U7/Z7 rose 0.5bp to −2.5bp, so the peak stays in U7. Z6/Z7 was unchanged at +35bp and Z6/M7 narrowed 0.5bp to +33.5bp, unchanged on the month. Past the peak the inversion eased: Z7/Z8 +1bp to −7bp, U7/Z8 +1.5bp to −9.5bp (0.5bp higher month-to-date) and Z8/Z9 +0.5bp to −3bp, which is still 0.5bp deeper than at end-October. Flies were quiet: H7/M7/U7 unchanged at +9bp (+0.5bp on the month) and M7/U7/Z7 down 0.5bp to +6.5bp. Week- and month-to-date changes are the same, as both run from the 30 October settle.",
- "fed": "The latest fed funds futures snapshot is Monday's: 19.7bp for the 9 December meeting (a 79% chance of a hike), 25.5bp by January, 39.9bp by March, 55.1bp by June and a 59.5bp peak by September 2027 (implied EFFR 4.475%). That is up from 17.6bp, 24bp, 37.3bp, 52.1bp and 57bp at the 30 October month-end, but below 23.4bp, 32bp, 48.6bp, 66.3bp and 72bp a week earlier and well below 30.6bp, 43.5bp, 63.4bp and a 94bp peak at end-September. SR3 agrees at the peak: 4.475% plus SOFR's 7bp premium over EFFR is about 4.545%, within 1bp of U7 at 4.535%, while Z6 at 4.16% sits about 4.5bp under the January ZQ level plus that premium. Tuesday's 2-year selloff points to slightly firmer December pricing than Monday's snapshot. The strip still prices about two more hikes; the Fed's median projects one more this year and none in 2027, Logan has called for at least two, and payrolls on Friday (about 63,000 expected) and CPI on 10 November are the last big tests before December.",
+ "spreads": "The curve bear-steepened from the whites into the reds and then moved in parallel. U6/Z6 widened 1.3bp to +23.5bp, Z6/H7 held at +21bp, H7/M7 rose 0.5bp to +13.5bp and M7/U7 held at +4bp, while U7/Z7 rose 1bp to −2bp, so the peak stays in U7. Z6/Z7 widened 1.5bp to +36.5bp and Z6/M7 0.5bp to +34.5bp, 1bp wider on the month. Past the peak the inversion was little changed: Z7/Z8 flat at −8bp (0.5bp deeper month-to-date), U7/Z8 +1bp to −10bp and Z8/Z9 +0.5bp to −3bp. The H7/M7/U7 fly rose 0.5bp to +9.5bp (+1bp on the month) and M7/U7/Z7 fell 1bp to +6bp. Week- and month-to-date changes are the same, as both run from the 30 October settle.",
+ "fed": "The latest fed funds futures snapshot is Monday's: 19.7bp for the 9 December meeting (a 79% chance of a hike), 25.5bp by January, 39.9bp by March, 55.1bp by June and a 59.5bp peak by September 2027 (implied EFFR 4.475%). That is up from 17.6bp, 24bp, 37.3bp, 52.1bp and 57bp at the 30 October month-end, but below 23.4bp, 32bp, 48.6bp, 66.3bp and 72bp a week earlier and well below 30.6bp, 43.5bp, 63.4bp and a 94bp peak at end-September. SR3 agrees at the peak: 4.475% plus SOFR's 7bp premium over EFFR is about 4.545%, level with U7 at 4.545%, while Z6 at 4.16% sits about 4.5bp under the January ZQ level plus that premium. Tuesday's 2-year selloff points to slightly firmer December pricing than Monday's snapshot. The strip still prices about two more hikes; the Fed's median projects one more this year and none in 2027, Logan has called for at least two, and payrolls on Friday (about 63,000 expected) and CPI on 10 November are the last big tests before December.",
  "ideas": [
   {
    "kind": "core",
@@ -44,7 +44,7 @@
     "Stop": "+40bp",
     "Horizon": "to the Dec 9 FOMC"
    },
-   "why": "Open and 4.5bp in favour at +33.5bp after narrowing 0.5bp on Tuesday, as Z6 rose 1.5bp in rate against 1bp for M7: the hot JOLTS print added to December, not to the 2027 hikes. With 13.5bp to target and 6.5bp to the stop, reward is about 2.1 times risk. Kept: the ZQ peak of 59.5bp is down from 94bp at end-September and the Fed median sees one hike, not the extra 2027 move M7 still carries.",
+   "why": "Open and 3.5bp in favour at +34.5bp, though it widened 0.5bp on Tuesday as M7 rose 2bp in rate against 1.5bp for Z6 after the hot JOLTS print. With 14.5bp to target and 5.5bp to the stop, reward is about 2.6 times risk. Kept: the ZQ peak of 59.5bp is down from 94bp at end-September and the Fed median sees one hike, not the extra 2027 move M7 still carries.",
    "risk": "A strong payrolls print on Friday or a hot CPI on 10 November could lift the 2027 hikes and push the spread back toward +40bp."
   },
   {
@@ -67,7 +67,7 @@
     "Stop": "+2bp",
     "Horizon": "3–6 months"
    },
-   "why": "Open at −7bp, 1bp against entry after rising 1bp on Tuesday as Z8's implied rate climbed 2.5bp against 1.5bp for Z7 in the back-end selloff. Only 10bp of easing is priced from Z7 to Z9; the target is 18bp away against 9bp to the stop, about 2 times. Kept at about half the core size: Tuesday was a supply-driven back-end move, not a change in the easing story, and a long-end-light refunding would help.",
+   "why": "Open and flat at the −8bp entry after an unchanged day, as Z7 and Z8 both rose 3bp in implied rate. Only 11bp of easing is priced from Z7 to Z9; the target is 17bp away against 10bp to the stop, about 1.7 times. Kept at about half the core size: Tuesday's selloff was parallel through the reds and greens, so the easing story is intact, and a long-end-light refunding would help.",
    "risk": "If the refunding or midterm results add to term premium, or 2027 hikes keep coming out, the reds can flatten toward zero and push the spread through the stop."
   },
   {
