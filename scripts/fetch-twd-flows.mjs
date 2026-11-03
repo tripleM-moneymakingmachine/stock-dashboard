@@ -107,7 +107,17 @@ async function finiDay(d) { // d = YYYY-MM-DD → TWD bn, or null when TWSE has 
 
 async function fetchRaw(maxCalls) {
   const out = { ...raw0 };
-  const tryY = async (name, sym, tz) => { try { const v = await yahoo(sym, tz); log(`${name}: ${v.length} days, last ${v.at(-1)?.[0]}`); out[name] = v; } catch (e) { log(`${name} failed (${e.message}); keeping previous`); } };
+  // Merge into the cached series rather than replacing it: Yahoo sometimes drops the latest Taipei session overnight
+  // (and relabels FX bars), which used to wipe a day we already had and stall the chart.
+  const tryY = async (name, sym, tz) => {
+    try {
+      const v = await yahoo(sym, tz);
+      const m = new Map(out[name] || []);
+      for (const [d, c] of v) m.set(d, c);
+      out[name] = [...m.entries()].sort((a, b) => (a[0] < b[0] ? -1 : 1));
+      log(`${name}: Yahoo ${v.length} days (last ${v.at(-1)?.[0]}), merged ${out[name].length}, last ${out[name].at(-1)?.[0]}`);
+    } catch (e) { log(`${name} failed (${e.message}); keeping previous`); }
+  };
   await tryY("usdtwd", "TWD=X");
   await tryY("taiex", "^TWII");
   await tryY("dxy", "DX-Y.NYB", "America/New_York");
