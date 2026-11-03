@@ -1,64 +1,64 @@
 {
- "asof": "Nov 2, 2026",
- "close": 833.59,
+ "asof": "Nov 3, 2026",
+ "close": 855.1,
  "bias": {
-  "en": "Bearish · SAR flipped, broke the October lows",
-  "zh": "偏空 · SAR 翻空，跌破 10 月低点"
+  "en": "Bearish · bounce back to the June low, under $862",
+  "zh": "看空 · 反弹至 6 月低点，仍在 $862 下方"
  },
  "read": [
   {
-   "en": "Micron fell 5.8% on Nov 2 to $833.59 (range $829.24–892.08), a third straight drop. It is below the rising 5-day ($912.92) and the falling 10-day ($901.21), 30-day ($984.44) and 100-day ($970.32), and above the rising 200-day ($749.31). MACD has been below its signal since Oct 30 and below zero, histogram widening; Parabolic SAR turned bearish on Nov 2 ($990.00), and RSI is 37.",
-   "zh": "美光 11月2日下跌 5.8%，收于 $833.59（区间 $829.24–892.08），为连续第三天下跌。股价位于上行的 5 日均线（$912.92）以及下行的 10 日（$901.21）、30 日（$984.44）和 100 日均线（$970.32）下方，位于上行的 200 日均线（$749.31）上方。MACD 自 10月30日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 于 11月2日翻空（$990.00），RSI 为 37。"
+   "en": "Micron rose 2.6% on Nov 3 to $855.10, trading between $845.27 and $871.49. It is below the rising 5-day ($898.2) and the falling 10-day ($897.1), 30-day ($976.4) and 100-day ($968.9), and above the rising 200-day ($751.8). MACD has been below its signal since Oct 30 and below zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($986.78), and RSI is 40.",
+   "zh": "美光 11月3日上涨 2.6%，收于 $855.10，盘中区间 $845.27–871.49。股价位于上行的 5 日均线（$898.2）以及下行的 10 日（$897.1）、30 日（$976.4）和 100 日均线（$968.9）下方，并位于上行的 200 日均线（$751.8）上方。MACD 自 10月30日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 11月2日起看空（$986.78），RSI 为 40。"
   },
   {
-   "en": "The drop broke the $861.6 and $849–855 supports (Oct 30, Oct 22 and Jun 9 lows), now resistance. Resistance is $849–862, then $884.7–892.1 (Oct 30 close, Nov 2 high) and $901–908 (10-day, Oct 30 high). Support is $818.7 (May 11 high), then $804 (Jul 17 low) and $738–749 (Jul 29 low, 200-day). A close above $862 would target $885–892; below $818.7, $804.",
-   "zh": "此次下跌跌破 $861.6 和 $849–855 支撑（10月30日、10月22日和6月9日低点），这些位置转为阻力。阻力为 $849–862，其次 $884.7–892.1（10月30日收盘、11月2日高点）和 $901–908（10 日均线、10月30日高点）。支撑为 $818.7（5月11日高点），其次 $804（7月17日低点）和 $738–749（7月29日低点、200 日均线）。若收盘站上 $862，下一目标看 $885–892；若跌破 $818.7，则看 $804。"
+   "en": "The close reclaimed the $854.4 Jun 9 low, but the push to $871.5 faded under the $861.6 Oct 30 low. Resistance is $861.6–871.5, then $884.7–892.1 (Oct 30 close, Nov 2 high) and $897–898 (5 and 10-day). Support is $845.3–849.3 (Nov 3 and Oct 22 lows), then $829.2 (Nov 2 low) and $818.7. A close above $872 would target $885–892; below $845, $829.",
+   "zh": "收盘收复 6月9日低点 $854.4，但冲高至 $871.5 后回落至 10月30日低点 $861.6 下方。阻力为 $861.6–871.5，其次 $884.7–892.1（10月30日收盘价、11月2日高点）和 $897–898（5 日和 10 日均线）。支撑为 $845.3–849.3（11月3日和10月22日低点），其次 $829.2（11月2日低点）和 $818.7。若收盘站上 $872，下一目标看 $885–892；若跌破 $845，则看 $829。"
   }
  ],
  "levels": {
   "r": [
    [
-    855,
+    866,
     {
-     "en": "Oct 22 low $849.25, Jun 9 low $854.35, Oct 30 low $861.6, lost",
-     "zh": "10月22日低点 $849.25、6月9日低点 $854.35、10月30日低点 $861.6，已失守"
+     "en": "Oct 30 low $861.59; Nov 3 high $871.49",
+     "zh": "10月30日低点 $861.59；11月3日高点 $871.49"
     }
    ],
    [
     888,
     {
      "en": "Oct 30 close $884.74; Nov 2 high $892.08",
-     "zh": "10月30日收盘 $884.74；11月2日高点 $892.08"
+     "zh": "10月30日收盘价 $884.74；11月2日高点 $892.08"
     }
    ],
    [
-    905,
+    897.7,
     {
-     "en": "10-day average $901.2; Oct 30 high $906.5",
-     "zh": "10日均线 $901.2；10月30日高点 $906.5"
+     "en": "5 and 10-day averages ($897.1–898.2)",
+     "zh": "5 日和 10 日均线（$897.1–898.2）"
     }
    ]
   ],
   "s": [
    [
+    847,
+    {
+     "en": "Nov 3 low $845.27; Oct 22 low $849.25",
+     "zh": "11月3日低点 $845.27；10月22日低点 $849.25"
+    }
+   ],
+   [
+    829.2,
+    {
+     "en": "Nov 2 low",
+     "zh": "11月2日低点"
+    }
+   ],
+   [
     818.7,
     {
      "en": "May 11 high",
      "zh": "5月11日高点"
-    }
-   ],
-   [
-    804,
-    {
-     "en": "Jul 17 low",
-     "zh": "7月17日低点"
-    }
-   ],
-   [
-    745,
-    {
-     "en": "200-day average $749.3; Jul 29 low $737.88",
-     "zh": "200日均线 $749.3；7月29日低点 $737.88"
     }
    ]
   ]

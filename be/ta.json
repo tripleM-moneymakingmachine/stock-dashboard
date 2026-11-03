@@ -1,45 +1,52 @@
 {
- "asof": "Nov 2, 2026",
- "close": 196.25,
+ "asof": "Nov 3, 2026",
+ "close": 214.01,
  "bias": {
-  "en": "Bearish · sliding toward the $191.5 SAR and $189 low",
-  "zh": "看空 · 下滑逼近 $191.5 SAR 与 $189 低点"
+  "en": "Rebound · reclaimed the 5 and 10-day, capped at the 200-day",
+  "zh": "反弹 · 收复 5 日和 10 日均线，受制于 200 日均线"
  },
  "read": [
   {
-   "en": "Bloom Energy fell 3.4% on Nov 2 to $196.25, trading between $194.87 and $210.09. It is below the falling 5-day ($213.7), 10-day ($214.5), 30-day ($250.8) and 100-day ($245.2) averages and the rising 200-day ($221.6). MACD has been below its signal since Oct 8 and below zero, histogram widening again; Parabolic SAR has been bullish since Oct 28 ($191.51), and RSI is 38.",
-   "zh": "Bloom Energy 11月2日下跌 3.4%，收于 $196.25，盘中区间 $194.87–210.09。股价位于下行的 5 日（$213.7）、10 日（$214.5）、30 日（$250.8）和 100 日均线（$245.2）以及上行的 200 日均线（$221.6）下方。MACD 自 10月8日起位于信号线下方且在零轴之下，柱状图再度放大；抛物线 SAR 自 10月28日起看多（$191.51），RSI 为 38。"
+   "en": "Bloom Energy jumped 9.0% on Nov 3 to $214.01, trading between $208.20 and $220.50. It is just above the falling 5-day ($212.8) and 10-day ($213.6), below the falling 30-day ($248.8) and 100-day ($244.8) and the rising 200-day ($221.9). MACD has been below its signal since Oct 8 and below zero, histogram narrowing; Parabolic SAR has been bullish since Oct 28 ($192.31), and RSI is 44.",
+   "zh": "Bloom Energy 11月3日大涨 9.0%，收于 $214.01，盘中区间 $208.20–220.50。股价略高于下行的 5 日（$212.8）和 10 日均线（$213.6），位于下行的 30 日（$248.8）、100 日均线（$244.8）和上行的 200 日均线（$221.9）下方。MACD 自 10月8日起位于信号线下方且在零轴之下，柱状图收窄；抛物线 SAR 自 10月28日起看多（$192.31），RSI 为 44。"
   },
   {
-   "en": "The session reached $210.1 but faded, closing under the Sep 1 low ($197.5); the Oct 30 low ($194.15) held. Resistance is $210.1–210.9 (Nov 2 and Oct 26 highs), then $213.7–214.5 (5 and 10-day) and $219.0–221.6 (Oct 29 low, 200-day). Support is $194.2–194.9, then $189–191.5 (Oct 23 low, SAR) and $185.9 (Aug 24 low). A close above $214.5 would target $221.6; below $189, $185.9.",
-   "zh": "盘中一度升至 $210.1 后回落，收盘跌破 9月1日低点（$197.5）；10月30日低点（$194.15）守住。阻力为 $210.1–210.9（11月2日和10月26日高点），其次 $213.7–214.5（5 日和 10 日均线）和 $219.0–221.6（10月29日低点、200 日均线）。支撑为 $194.2–194.9，其次 $189–191.5（10月23日低点、SAR）和 $185.9（8月24日低点）。若收盘站上 $214.5，下一目标看 $221.6；若跌破 $189，则看 $185.9。"
+   "en": "The close reclaimed the $210.1–210.9 highs and the 5 and 10-day; the $220.5 high reached the Oct 29 low ($219.0) and 200-day before fading. Resistance is $219.0–221.9, then $228.1–231.7 (Oct 28 close and high) and $244.8–248.8 (100 and 30-day). Support is $210.1–213.6, then $194.2–194.9 and $189–192.3 (Oct 23 low, SAR). A close above $221.9 would target $228–232; below $210, $194–195.",
+   "zh": "收盘重新站上 $210.1–210.9 高点区以及 5 日和 10 日均线；盘中高点 $220.5 触及 10月29日低点（$219.0）和 200 日均线后回落。阻力为 $219.0–221.9，其次 $228.1–231.7（10月28日收盘价和高点）和 $244.8–248.8（100 日和 30 日均线）。支撑为 $210.1–213.6，其次 $194.2–194.9 和 $189–192.3（10月23日低点、SAR）。若收盘站上 $221.9，下一目标看 $228–232；若跌破 $210，则看 $194–195。"
   }
  ],
  "levels": {
   "r": [
    [
-    210.5,
-    {
-     "en": "Nov 2 high $210.1; Oct 26 high $210.9",
-     "zh": "11月2日高点 $210.1；10月26日高点 $210.9"
-    }
-   ],
-   [
-    214,
-    {
-     "en": "5 and 10-day averages ($213.7–214.5)",
-     "zh": "5日和10日均线（$213.7–214.5）"
-    }
-   ],
-   [
     220.5,
     {
-     "en": "Oct 29 low $219.0; 200-day average $221.6",
-     "zh": "10月29日低点 $219.0；200日均线 $221.6"
+     "en": "Oct 29 low $219.0; Nov 3 high $220.5; 200-day average $221.9",
+     "zh": "10月29日低点 $219.0；11月3日高点 $220.5；200日均线 $221.9"
+    }
+   ],
+   [
+    230,
+    {
+     "en": "Oct 28 close $228.1 and high $231.7",
+     "zh": "10月28日收盘价 $228.1 和高点 $231.7"
+    }
+   ],
+   [
+    246.8,
+    {
+     "en": "100 and 30-day averages ($244.8–248.8)",
+     "zh": "100日和30日均线（$244.8–248.8）"
     }
    ]
   ],
   "s": [
+   [
+    211.8,
+    {
+     "en": "5 and 10-day averages ($212.8–213.6); Nov 2 and Oct 26 highs ($210.1–210.9), reclaimed",
+     "zh": "5日和10日均线（$212.8–213.6）；11月2日和10月26日高点（$210.1–210.9），已收复"
+    }
+   ],
    [
     194.5,
     {
@@ -48,17 +55,10 @@
     }
    ],
    [
-    190.3,
+    190.7,
     {
-     "en": "Oct 23 low $189; Parabolic SAR $191.51",
-     "zh": "10月23日低点 $189；抛物线 SAR $191.51"
-    }
-   ],
-   [
-    185.9,
-    {
-     "en": "Aug 24 low",
-     "zh": "8月24日低点"
+     "en": "Oct 23 low $189; Parabolic SAR $192.31",
+     "zh": "10月23日低点 $189；抛物线 SAR $192.31"
     }
    ]
   ]

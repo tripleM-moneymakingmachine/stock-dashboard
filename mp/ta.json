@@ -1,18 +1,18 @@
 {
- "asof": "Nov 2, 2026",
- "close": 38.35,
+ "asof": "Nov 3, 2026",
+ "close": 37.83,
  "bias": {
-  "en": "Bearish, improving · slipped under the 10-day, SAR $37.6 holds",
-  "zh": "偏空、有所改善 · 跌破 10 日均线，SAR $37.6 守住"
+  "en": "Bearish · SAR flipped, holding just above the $37.1 low",
+  "zh": "看空 · 抛物线 SAR 翻空，仍守在 $37.1 低点上方"
  },
  "read": [
   {
-   "en": "MP fell 3.1% on Nov 2 to $38.35 (range $38.13–40.87) after a 5.0% drop on Oct 30. It is below the rising 5-day ($40.30) and the falling 10-day ($39.44), 30-day ($43.50), 100-day ($49.64) and 200-day ($55.07). MACD has been above its signal since Oct 28, below zero, histogram shrinking; Parabolic SAR has been bullish since Oct 28 ($37.61), and RSI is 37.",
-   "zh": "MP 11月2日下跌 3.1%，收于 $38.35（区间 $38.13–40.87），此前 10月30日已下跌 5.0%。股价位于上行的 5 日均线（$40.30）以及下行的 10 日（$39.44）、30 日（$43.50）、100 日（$49.64）和 200 日均线（$55.07）下方。MACD 自 10月28日起位于信号线上方，仍在零轴下方，柱状图收窄；抛物线 SAR 自 10月28日起看多（$37.61），RSI 为 37。"
+   "en": "MP fell 1.4% on Nov 3 to $37.83, trading between $37.35 and $39.29. It is below the rising 5-day ($39.69) and the falling 10-day ($39.32), 30-day ($43.06), 100-day ($49.45) and 200-day ($54.91) averages. MACD has been above its signal since Oct 28 but below zero, histogram fading toward a cross; Parabolic SAR flipped bearish on Nov 3 ($42.54), and RSI is 35.",
+   "zh": "MP 11月3日下跌 1.4%，收于 $37.83，盘中区间 $37.35–39.29。股价位于上行的 5 日均线（$39.69）以及下行的 10 日（$39.32）、30 日（$43.06）、100 日（$49.45）和 200 日均线（$54.91）下方。MACD 自 10月28日起位于信号线上方但仍在零轴下方，柱状图收窄、逼近交叉；抛物线 SAR 于 11月3日翻空（$42.54），RSI 为 35。"
   },
   {
-   "en": "The close broke the $38.5–39.5 support (10-day, Oct 30 low), now resistance, though the SAR held. Resistance is $39.4–39.6 (10-day, Oct 30 close), then $40.3–40.9 (5-day, Nov 2 high) and $41.6–42.5 (Oct 29 close and highs). Support is $37.6–38.1 (SAR, Jul 29 and Nov 2 lows), then $37.1 (52-week low). A close above $40.9 would target $41.6–42.5; below $37.6, $37.1 and a SAR flip.",
-   "zh": "收盘跌破 $38.5–39.5 支撑（10 日均线、10月30日低点），该区域转为阻力，但 SAR 守住。阻力为 $39.4–39.6（10 日均线、10月30日收盘），其次 $40.3–40.9（5 日均线、11月2日高点）和 $41.6–42.5（10月29日收盘及高点）。支撑为 $37.6–38.1（SAR、7月29日和11月2日低点），其次 $37.1（52 周低点）。若收盘站上 $40.9，下一目标看 $41.6–42.5；若跌破 $37.6，则看 $37.1，SAR 将翻空。"
+   "en": "The dip to $37.35 flipped the SAR bearish, but the close held the $37.8 Jul 29 low. Resistance is $39.3–39.7 (Nov 3 high, 10 and 5-day), then $40.9–41.1 (Nov 2 and Oct 27 highs) and $42.5 (SAR, Oct 29 high). Support is $37.3–37.6 (Nov 3, Oct 26 and Oct 22 lows), then $37.1 (52-week low). A close above $39.7 would target $41; below $37.1, $35.",
+   "zh": "盘中下探 $37.35 使抛物线 SAR 翻空，但收盘守住 7月29日低点 $37.8。阻力为 $39.3–39.7（11月3日高点、10 日和 5 日均线），其次 $40.9–41.1（11月2日和10月27日高点）和 $42.5（SAR、10月29日高点）。支撑为 $37.3–37.6（11月3日、10月26日和10月22日低点），其次 $37.1（52 周低点）。若收盘站上 $39.7，下一目标看 $41；若跌破 $37.1，则看 $35。"
   }
  ],
  "levels": {
@@ -20,38 +20,45 @@
    [
     39.5,
     {
-     "en": "10-day average $39.44, lost; Oct 30 close $39.57",
-     "zh": "10日均线 $39.44，已失守；10月30日收盘 $39.57"
+     "en": "Nov 3 high $39.29; 10-day $39.32; 5-day $39.69",
+     "zh": "11月3日高点 $39.29；10日均线 $39.32；5日均线 $39.69"
     }
    ],
    [
-    40.6,
+    41,
     {
-     "en": "5-day average $40.30; Nov 2 high $40.87",
-     "zh": "5日均线 $40.30；11月2日高点 $40.87"
+     "en": "Nov 2 high $40.87; Oct 27 high $41.05",
+     "zh": "11月2日高点 $40.87；10月27日高点 $41.05"
     }
    ],
    [
-    42,
+    42.5,
     {
-     "en": "Oct 29 close $41.64; Oct 16 and Oct 29 highs ($42.51–42.54)",
-     "zh": "10月29日收盘 $41.64；10月16日和10月29日高点（$42.51–42.54）"
+     "en": "Parabolic SAR $42.54; Oct 29 high",
+     "zh": "抛物线 SAR $42.54；10月29日高点"
     }
    ]
   ],
   "s": [
    [
-    37.8,
+    37.4,
     {
-     "en": "Parabolic SAR $37.61; Jul 29 low $37.81; Nov 2 low $38.13",
-     "zh": "抛物线 SAR $37.61；7月29日低点 $37.81；11月2日低点 $38.13"
+     "en": "Nov 3 low $37.35; Oct 26 low $37.30; Oct 22 low $37.57",
+     "zh": "11月3日低点 $37.35；10月26日低点 $37.30；10月22日低点 $37.57"
     }
    ],
    [
     37.1,
     {
      "en": "52-week low (Oct 23, $37.11)",
-     "zh": "52周低点（10月23日，$37.11）"
+     "zh": "52 周低点（10月23日，$37.11）"
+    }
+   ],
+   [
+    35,
+    {
+     "en": "Round number",
+     "zh": "整数关口"
     }
    ]
   ]

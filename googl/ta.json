@@ -1,41 +1,41 @@
 {
- "asof": "Nov 2, 2026",
- "close": 278.99,
+ "asof": "Nov 3, 2026",
+ "close": 280.03,
  "bias": {
   "en": "Bearish · oversold, holding above the $270.7–276.9 lows",
   "zh": "看空 · 超卖，守在 $270.7–276.9 低点上方"
  },
  "read": [
   {
-   "en": "Alphabet slipped 0.3% on Nov 2 to $278.99, trading between $278.87 and $287.00 on 1.5 times average volume and closing near the low. It is below all its falling averages: 5-day ($297.6), 10-day ($312.4), 30-day ($334.7), 200-day ($340.4) and 100-day ($344.8). MACD has been below its signal since Oct 16 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 16 ($322.47), and RSI is 21, oversold.",
-   "zh": "Alphabet 11月2日小跌 0.3%，收于 $278.99，盘中区间 $278.87–287.00，成交量为均量的 1.5 倍，收于日内低点附近。股价位于所有下行均线下方：5 日（$297.6）、10 日（$312.4）、30 日（$334.7）、200 日（$340.4）和 100 日均线（$344.8）。MACD 自 10月16日起位于信号线下方且在零轴之下，柱状图放大；抛物线 SAR 自 10月16日起看空（$322.47），RSI 为 21，处于超卖。"
+   "en": "Alphabet edged up 0.4% on Nov 3 to $280.03, trading between $277.20 and $281.60. It is below all its averages, each falling: the 5-day ($289.5), 10-day ($306.4), 30-day ($332.4), 100-day ($344.0) and 200-day ($340.1). MACD has been below its signal since Oct 16 and below zero, histogram narrowing slightly; Parabolic SAR has been bearish since Oct 16 ($315.19), and RSI is 22, oversold.",
+   "zh": "Alphabet 11月3日微涨 0.4%，收于 $280.03，盘中区间 $277.20–281.60。股价位于全部均线下方，且均线均在下行：5 日（$289.5）、10 日（$306.4）、30 日（$332.4）、100 日（$344.0）和 200 日（$340.1）。MACD 自 10月16日起位于信号线下方且在零轴之下，柱状图略有收窄；抛物线 SAR 自 10月16日起看空（$315.19），RSI 为 22，处于超卖。"
   },
   {
-   "en": "A rebound to $287.0 stalled under the Oct 29 high ($288.3) and faded; no written level broke. Resistance is $283.1–288.3 (Oct 30, Nov 2 and Oct 29 highs), then $294.1–297.6 (Mar 9 and Feb 17 lows, 5-day) and $314.9–316.6 (bottom of the Oct 29 gap). Support is $275.2–276.9, then $270.7–272.1 (52-week low) and $257.3. A close above $288.3 would target $295–298; below $270.7, $257.",
-   "zh": "反弹至 $287.0 后在 10月29日高点（$288.3）下方受阻回落；既有关键位均未失守。阻力为 $283.1–288.3（10月30日、11月2日和10月29日高点），其次 $294.1–297.6（3月9日和2月17日低点、5 日均线）和 $314.9–316.6（10月29日跳空缺口下沿）。支撑为 $275.2–276.9，其次 $270.7–272.1（52 周低点）和 $257.3。若收盘站上 $288.3，下一目标看 $295–298；若跌破 $270.7，则看 $257。"
+   "en": "An inside day: the $276.9 support held at a $277.2 low and no written level broke. Resistance is $281.6–283.1 (Nov 3 and Oct 30 highs), then $287.0–289.5 (Nov 2 and Oct 29 highs, 5-day) and $294.1–296.3 (Mar 9 and Feb 17 lows). Support is $275.2–277.2, then $270.7–272.1 (52-week low) and $257.3. A close above $289.5 would target $294–296; below $270.7, $257.",
+   "zh": "内包日：$276.9 支撑守住，日内低点 $277.2，书面价位均未被突破。阻力为 $281.6–283.1（11月3日和10月30日高点），其次 $287.0–289.5（11月2日和10月29日高点、5 日均线）和 $294.1–296.3（3月9日和2月17日低点）。支撑为 $275.2–277.2，其次 $270.7–272.1（52 周低点）和 $257.3。若收盘站上 $289.5，下一目标看 $294–296；若跌破 $270.7，则看 $257。"
   }
  ],
  "levels": {
   "r": [
    [
-    285.7,
+    282.4,
     {
-     "en": "Oct 30 high $283.1; Nov 2 high $287.0; Oct 29 high $288.3",
-     "zh": "10月30日高点 $283.1；11月2日高点 $287.0；10月29日高点 $288.3"
+     "en": "Nov 3 high $281.6; Oct 30 high $283.1",
+     "zh": "11月3日高点 $281.6；10月30日高点 $283.1"
     }
    ],
    [
-    295.8,
+    288.3,
     {
-     "en": "Mar 9 low $294.1; Feb 17 low $296.3; 5-day average $297.6",
-     "zh": "3月9日低点 $294.1；2月17日低点 $296.3；5日均线 $297.6"
+     "en": "Nov 2 high $287.0; Oct 29 high $288.3; 5-day average $289.5",
+     "zh": "11月2日高点 $287.0；10月29日高点 $288.3；5日均线 $289.5"
     }
    ],
    [
-    315.8,
+    295.2,
     {
-     "en": "Bottom of the Oct 29 gap: Jul 23 low $314.9; Oct 26 low $316.6",
-     "zh": "10月29日跳空缺口下沿：7月23日低点 $314.9；10月26日低点 $316.6"
+     "en": "Mar 9 low $294.1; Feb 17 low $296.3",
+     "zh": "3月9日低点 $294.1；2月17日低点 $296.3"
     }
    ]
   ],
@@ -43,8 +43,8 @@
    [
     276,
     {
-     "en": "Oct 30 low $276.9; Nov 7, 2025 low $275.2",
-     "zh": "10月30日低点 $276.9；2025年11月7日低点 $275.2"
+     "en": "Oct 30 low $276.9; Nov 3 low $277.2; Nov 7, 2025 low $275.2",
+     "zh": "10月30日低点 $276.9；11月3日低点 $277.2；2025年11月7日低点 $275.2"
     }
    ],
    [

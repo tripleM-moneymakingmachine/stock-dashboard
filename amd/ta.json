@@ -1,18 +1,18 @@
 {
- "asof": "Nov 2, 2026",
- "close": 466.84,
+ "asof": "Nov 3, 2026",
+ "close": 483.9,
  "bias": {
-  "en": "Pullback · broke $492–503, testing the summer lows",
-  "zh": "回调 · 跌破 $492–503，测试夏季低点"
+  "en": "Bearish · heavy-volume bounce capped under $497",
+  "zh": "看空 · 放量反弹，受阻于 $497 下方"
  },
  "read": [
   {
-   "en": "AMD fell 7.5% on Nov 2 to $466.84, trading between $466.07 and $512.82 on 1.6 times average volume. It is below the 5-day ($535.4), 10-day ($532.0), 100-day ($529.2) and falling 30-day ($581.7), and above the rising 200-day ($411.7). MACD has been below its signal since Oct 9 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($577.44), and RSI is 35.",
-   "zh": "AMD 11月2日下跌 7.5%，收于 $466.84，盘中区间 $466.07–512.82，成交量为均量的 1.6 倍。股价位于上行的 5 日（$535.4）和 100 日均线（$529.2）以及下行的 10 日（$532.0）和 30 日均线（$581.7）下方，位于上行的 200 日均线（$411.7）上方。MACD 自 10月9日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月30日起看空（$577.44），RSI 为 35。"
+   "en": "AMD rose 3.7% on Nov 3 to $483.90, trading between $473.54 and $497.35 on volume 1.5 times the 20-day average. It is below the falling 5-day ($520.1), 10-day ($526.9) and 30-day ($577.0) and the rising 100-day ($529.2), and above the rising 200-day ($412.9). MACD has been below its signal since Oct 9 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($572.99), and RSI is 38.",
+   "zh": "AMD 11月3日上涨 3.7%，收于 $483.90，盘中区间 $473.54–497.35，成交量为 20 日均量的 1.5 倍。股价位于下行的 5 日（$520.1）、10 日（$526.9）和 30 日均线（$577.0）以及上行的 100 日均线（$529.2）下方，高于上行的 200 日均线（$412.9）。MACD 自 10月9日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月30日起看空（$572.99），RSI 为 38。"
   },
   {
-   "en": "The drop broke the $492.2–502.6 support (Oct 30, Jun 29 and Oct 22 lows), now resistance. Resistance is $492.2–502.6, then $512.8–520.4 (Nov 2 and Oct 30 highs) and $529.2–535.4 (100, 10 and 5-day). Support is $460.2–463.2 (Jul 17 and Aug 11 lows), then $440.5–451 and $424–437.2 (July–September lows). A close above $502.6 would target $513–520; below $460, $440–451.",
-   "zh": "此次下跌跌破 $492.2–502.6 支撑（10月30日、6月29日和10月22日低点），该区域转为阻力。阻力为 $492.2–502.6，其次 $512.8–520.4（11月2日和10月30日高点）和 $529.2–535.4（100 日、10 日和 5 日均线）。支撑为 $460.2–463.2（7月17日和8月11日低点），其次 $440.5–451 和 $424–437.2（7–9月低点）。若收盘站上 $502.6，下一目标看 $513–520；若跌破 $460，则看 $440–451。"
+   "en": "The high of $497.35 tested the $492.2–502.6 broken support and faded; the Nov 2 low of $466.07 held. Resistance is $492.2–502.6, then $512.8–520.4 (Nov 2 and Oct 30 highs, 5-day) and $526.9–529.2 (10 and 100-day). Support is $466.1–473.5 (Nov 2 and Nov 3 lows), then $460.2–463.2 and $440.5–451. A close above $502.6 would target $513–520; below $466, $460–463.",
+   "zh": "盘中高点 $497.35 测试已失守的 $492.2–502.6 支撑后回落；11月2日低点 $466.07 守住。阻力为 $492.2–502.6，其次 $512.8–520.4（11月2日和10月30日高点、5 日均线）和 $526.9–529.2（10 日和 100 日均线）。支撑为 $466.1–473.5（11月2日和11月3日低点），其次 $460.2–463.2 和 $440.5–451。若收盘站上 $502.6，下一目标看 $513–520；若跌破 $466，则看 $460–463。"
   }
  ],
  "levels": {
@@ -20,26 +20,33 @@
    [
     497,
     {
-     "en": "Oct 30 low $492.2; Jun 29 low $495.4; Oct 22 low $502.6, lost",
-     "zh": "10月30日低点 $492.2；6月29日低点 $495.4；10月22日低点 $502.6，已失守"
+     "en": "Oct 30 low $492.2; Nov 3 high $497.35; Oct 22 low $502.6",
+     "zh": "10月30日低点 $492.2；11月3日高点 $497.35；10月22日低点 $502.6"
     }
    ],
    [
     516.6,
     {
-     "en": "Nov 2 high $512.8; Oct 30 high $520.4",
-     "zh": "11月2日高点 $512.8；10月30日高点 $520.4"
+     "en": "Nov 2 high $512.8; 5-day average $520.1; Oct 30 high $520.4",
+     "zh": "11月2日高点 $512.8；5日均线 $520.1；10月30日高点 $520.4"
     }
    ],
    [
-    532,
+    528,
     {
-     "en": "100, 10 and 5-day averages ($529.2–535.4)",
-     "zh": "100日、10日和5日均线（$529.2–535.4）"
+     "en": "10 and 100-day averages ($526.9–529.2)",
+     "zh": "10日和100日均线（$526.9–529.2）"
     }
    ]
   ],
   "s": [
+   [
+    470,
+    {
+     "en": "Nov 2 low $466.07; Nov 3 low $473.5",
+     "zh": "11月2日低点 $466.07；11月3日低点 $473.5"
+    }
+   ],
    [
     461.7,
     {
@@ -52,13 +59,6 @@
     {
      "en": "Aug 24 low $451; Sep 3 low $440.5",
      "zh": "8月24日低点 $451；9月3日低点 $440.5"
-    }
-   ],
-   [
-    430,
-    {
-     "en": "Jul 29 low $424.0; Jun 9 low $437.2",
-     "zh": "7月29日低点 $424.0；6月9日低点 $437.2"
     }
    ]
   ]
