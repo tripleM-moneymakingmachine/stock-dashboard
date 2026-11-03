@@ -1,6 +1,6 @@
 {
  "ticker": "GLW",
- "asof": "2026-11-03",
+ "asof": "2026-11-04",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -14,18 +14,18 @@
   "pct": -1.1
  },
  "since": {
-  "date": "2026-11-02",
-  "close": 123.2,
-  "pct": -3.6
+  "date": "2026-11-03",
+  "close": 126.14,
+  "pct": -1.3
  },
  "review": {
   "en": [
    "Core sales rose 19% to $5.08B and core EPS of $0.91 beat the $0.88 consensus, both above Corning's own range. Optical Communications grew 44% to $2.38B, with Enterprise Networks up 84% and generative AI products more than doubling, and core operating margin rose 310 bp to 22.7%. The Q4 guide of $5.2–5.3B and $0.96–1.00 topped the $0.93 EPS consensus, a run rate near $21B. CEO Wendell Weeks said growth is accelerating; CFO Ed Schlesinger stressed long-term deals that share expansion costs.",
-   "Shares traded about 3% lower before the open, near $124, as investors weighed heavy capex, GAAP sales that trailed some estimates and a Solar ramp running slower than planned. They swung between $121.75 and $128.48 during the session and closed 1.1% lower at $126.30, after an 8% drop on Oct 22 in a broad chip selloff. Truist trimmed its target to $175 on valuation even as it raised its estimates."
+   "Shares traded about 3% lower before the open, near $124, as investors weighed heavy capex, GAAP sales that trailed some estimates and a slower Solar ramp, and closed 1.1% lower at $126.30. They rebounded 3.9% to $131.20 the next day as investors refocused on AI optical demand, slid to $123.31 by Oct 30 with other AI hardware names, and closed Nov 3 at $126.14, flat against the first-session close. Truist trimmed its target to $175 on valuation."
   ],
   "zh": [
    "核心销售增长 19% 至 50.8 亿美元，核心每股收益 0.91 美元高于 0.88 美元的市场预期，均超出公司自身指引。光通信增长 44% 至 23.8 亿美元，其中企业网络增长 84%，生成式 AI 产品增长逾一倍；核心营业利润率提升 310 基点至 22.7%。第四季指引为 52–53 亿美元、每股 0.96–1.00 美元，高于 0.93 美元的每股预期，年化约 210 亿美元。CEO 温德尔·威克斯表示增长正在加速；CFO 埃德·施莱辛格强调长期协议由客户分担扩产成本。",
-   "开盘前股价下跌约 3% 至约 124 美元，投资者顾虑高额资本开支、GAAP 销售低于部分预期，以及太阳能爬坡慢于计划。盘中在 121.75 至 128.48 美元之间震荡，收跌 1.1% 至 126.30 美元；此前 10 月 22 日已在芯片股普跌中下跌 8%。Truist 虽上调盈利预测，但因估值将目标价下调至 175 美元。"
+   "开盘前股价下跌约 3% 至约 124 美元，投资者顾虑高额资本开支、GAAP 销售低于部分预期以及太阳能爬坡放缓，最终收跌 1.1% 至 126.30 美元。次日投资者重新聚焦 AI 光通信需求，股价反弹 3.9% 至 131.20 美元；10 月 30 日随其他 AI 硬件股回落至 123.31 美元，11 月 3 日收于 126.14 美元，与首个交易日收盘基本持平。Truist 因估值将目标价下调至 175 美元。"
   ]
  },
  "ceo": {
@@ -63,5 +63,6 @@
    "t": "Truist cuts target to $175 (Investing.com)",
    "u": "https://investing.com/news/analyst-ratings/truist-cuts-corning-stock-price-target-on-valuation-to-175-93CH-4976686"
   }
- ]
+ ],
+ "followup_done": true
 }

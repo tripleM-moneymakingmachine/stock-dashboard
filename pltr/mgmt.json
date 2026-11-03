@@ -1,31 +1,31 @@
 {
  "ticker": "PLTR",
- "asof": "2026-11-03",
+ "asof": "2026-11-04",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-08-03",
+ "reported": "2026-11-02",
  "timing": "amc",
- "pre_close": 125.65,
+ "pre_close": 178.34,
  "react": {
-  "date": "2026-08-04",
-  "close": 162.66,
-  "pct": 29.5
+  "date": "2026-11-03",
+  "close": 175.4,
+  "pct": -1.6
  },
  "since": {
-  "date": "2026-11-02",
-  "close": 178.34,
-  "pct": 41.9
+  "date": "2026-11-03",
+  "close": 175.4,
+  "pct": -1.6
  },
  "review": {
   "en": [
-   "Revenue rose 93% to about $1.94B. US commercial revenue jumped 149% to $764M and US government 90% to $809M; GAAP operating profit was $912M and operating cash flow topped $1.2B. Palantir raised 2026 guidance for a second time, to about $8.15B of revenue (+82%), over $3.42B of US commercial revenue and $4.5–4.7B of free cash flow. CEO Alex Karp said no company at its scale has grown half as fast and tied demand to governments and firms wanting sovereign control of AI; CFO David Glazer noted US commercial deal value of $6.24B (+124%).",
-   "The stock jumped 29.5% the next day, its biggest one-day gain since February 2024, after falling 29% earlier in the year on AI-valuation worries. It extended the move to about $186 by late August, held up better than chip stocks during September's AI-spending scare, and hit new highs in October. It now trades about two-thirds above the pre-report close."
+   "Revenue rose 96% to $2.31B, beating the ~$2.18B consensus, and EPS of $0.44 topped $0.41. US commercial revenue jumped 148% to $984M, passing US government ($953M, +96%) for the first time, and the adjusted operating margin reached 62%. Palantir raised 2026 guidance again, to $8.53B (+91%) against about $8.2B expected, with Q4 near $2.65B and free cash flow of $4.8–5.0B. CEO Alex Karp said customers move from pilot to production faster; CFO David Glazer said several large deals were shorter than usual.",
+   "Shares had already slipped 3.1% to $178.34 on Nov 2 and fell about 3–4% after hours. They opened near $168 on Nov 3, about 6% lower, because US commercial deal value grew only 11% (total contract value +6%) and the Q4 guide implies slower sequential growth. Buyers stepped in during the day and the stock closed 1.6% lower at $175.40. Morgan Stanley lifted its target to $233 but kept a Hold rating."
   ],
   "zh": [
-   "营收增长 93% 至约 19.4 亿美元。美国商业营收大增 149% 至 7.64 亿美元，美国政府营收增长 90% 至 8.09 亿美元；GAAP 营业利润 9.12 亿美元，经营现金流超过 12 亿美元。Palantir 第二次上调 2026 年指引：营收约 81.5 亿美元（+82%），美国商业营收超过 34.2 亿美元，自由现金流 45–47 亿美元。CEO 亚历克斯·卡普表示同等规模的公司从未有过一半的增速，并将需求归因于政府和企业希望自主掌控 AI；CFO 大卫·格雷泽指出美国商业剩余合同价值达 62.4 亿美元（+124%）。",
-   "次日股价大涨 29.5%，为 2024 年 2 月以来最大单日涨幅；此前年内因 AI 估值担忧已下跌 29%。8 月底升至约 186 美元，9 月 AI 开支恐慌期间表现强于芯片股，10 月创新高，目前较财报前收盘高约三分之二。"
+   "营收增长 96% 至 23.1 亿美元，高于约 21.8 亿美元的市场预期；每股收益 0.44 美元，高于 0.41 美元的预期。美国商业营收大增 148% 至 9.84 亿美元，首次超过美国政府营收（9.53 亿美元，+96%），调整后营业利润率达 62%。Palantir 再次上调 2026 年指引至 85.3 亿美元（+91%），高于约 82 亿美元的预期；第四季营收约 26.5 亿美元，全年自由现金流 48–50 亿美元。CEO 亚历克斯·卡普表示客户从试点到投产的速度加快；CFO 大卫·格雷泽称数笔大单的合约期限短于往常。",
+   "股价在 11 月 2 日已下跌 3.1% 至 178.34 美元，盘后再跌约 3–4%。11 月 3 日开盘约 168 美元，下跌约 6%，原因是美国商业合同额仅增长 11%（总合同价值 +6%），且第四季指引意味着环比增速放缓。盘中买盘入场，最终收跌 1.6% 至 175.40 美元。摩根士丹利将目标价上调至 233 美元，但维持持有评级。"
   ]
  },
  "ceo": {
@@ -52,16 +52,16 @@
  },
  "sources": [
   {
-   "t": "Q2 2026 results (CNBC)",
-   "u": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html"
+   "t": "Q3 2026 results (CNBC)",
+   "u": "https://cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html"
   },
   {
-   "t": "Q2 2026 call highlights",
-   "u": "https://zacks.com/stock/news/2967561/pltr-q2-earnings-call-spotlights-sovereign-ai-demand"
+   "t": "Q3 2026 call transcript (Motley Fool)",
+   "u": "https://fool.com/earnings/call-transcripts/2026/11/02/palantir-pltr-q3-2026-earnings-call-transcript"
   },
   {
-   "t": "Next-day move (CNBC)",
-   "u": "https://www.cnbc.com/2026/08/04/palantir-2q-earnings-ai-sovereign-tools.html"
+   "t": "Shares fall on slower bookings (CNBC)",
+   "u": "https://cnbc.com/amp/2026/11/03/apple-palantir-stock-earnings.html"
   }
  ]
 }
