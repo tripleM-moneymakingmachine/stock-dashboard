@@ -11,6 +11,10 @@
   const bp = (v, n = 1) => v == null || !isFinite(v) ? "–" : `${v > 0 ? "+" : ""}${(+v).toFixed(n)}`;
   const cls = (v) => v == null || !isFinite(v) || Math.abs(v) < 0.05 ? "" : v > 0 ? "up" : "down"; // yields up = green, as on the Macro tab
   let D = null;
+  // CGB futures-implied yields (../data/cgb-futures.json yhist, main contract) offered as Lines A–D
+  const FUT = [["TS", 2], ["TF", 5], ["T", 10], ["TL", 30]], FSRC = "../data/cgb-futures.json";
+  let FU = null, FUupd = null;
+  const futLab = (p) => { const t = FUT.find(([q]) => q === p)?.[1]; return `${p} ${t}Y futures-implied`; };
   const st = { cvMax: 30, pbMax: 30, pbK: "cdb", hT: 10, hR: "6M", hA: "t:10", hB: "", hC: "", hD: "", hSec: "", q: "", iss: "All", type: "All", mat: "", grp: "bucket", traded: false, sort: "ttm", dir: 1 };
 
   // ---------- series helpers ----------
@@ -180,17 +184,18 @@
   const legSer = (k) => {
     if (!k) return [];
     const [x, a, c] = parts(k);
-    return x === "t" ? ser(+a) : x === "b" ? bondSer(a) : x === "q" ? pbTen(a, c) : x === "p" ? bondSer(c, a) : [];
+    return x === "t" ? ser(+a) : x === "b" ? bondSer(a) : x === "q" ? pbTen(a, c) : x === "p" ? bondSer(c, a) : x === "f" ? FU?.[a] || [] : [];
   };
   const legName = (k) => {
     if (!k) return "";
     const [x, a, c] = parts(k);
     if (x === "t") return `CGB ${lab(+a)}`;
+    if (x === "f") return futLab(a);
     if (x === "q") return `${bank(a)} ${lab(+c)}`;
     const b = x === "p" ? findB(a, c) : findB(null, a), code = x === "p" ? c : a;
     return b ? `${x === "p" ? bank(a) + " " : ""}${b.code} ${b.name || ""}`.trim() : code;
   };
-  const legShort = (k) => { const [x, a, c] = parts(k); return x === "t" ? `CGB ${lab(+a)}` : x === "b" ? a : x === "q" ? `${bank(a)} ${lab(+c)}` : `${bank(a)} ${c}`; };
+  const legShort = (k) => { const [x, a, c] = parts(k); return x === "t" ? `CGB ${lab(+a)}` : x === "f" ? `${a} fut.` : x === "b" ? a : x === "q" ? `${bank(a)} ${lab(+c)}` : `${bank(a)} ${c}`; };
   const isTraded = (k) => { const [x, a, c] = parts(k); return x === "b" ? findB(null, a)?.last != null : x === "p" ? findB(a, c)?.last != null : true; };
   // maturity sectors for the bond pickers (the "Maturity sector" menu narrows Lines A–D to one sector)
   const SECTORS = [[0, 2, "less than 2Y"], [2, 5, "2Y – 5Y"], [5, 10, "5Y – 10Y"], [10, 20, "10Y – 20Y"], [20, 30, "20Y – 30Y"], [30, 50.01, "30Y – 50Y"]];
@@ -205,6 +210,7 @@
     const banks = ["cdb", "adbc", "exim"].filter((k) => D?.pb?.[k]?.curve);
     return (none ? o("", "None") : "") +
       `<optgroup label="CGB · CCDC standard tenors">${TEN.map((t) => o(`t:${t}`, `CGB ${lab(t)} (CCDC curve)`)).join("")}</optgroup>` +
+      (FU ? `<optgroup label="CGB futures · CFFEX implied yield (main contract)">${FUT.filter(([p]) => FU[p]?.length).map(([p]) => o(`f:${p}`, futLab(p))).join("")}</optgroup>` : "") +
       banks.map((k) => { const ts = TEN.filter((t) => pbTen(k, t).length); return ts.length ? `<optgroup label="${esc(bank(k))} · CCDC ${esc(bank(k))} curve standard tenors">${ts.map((t) => o(`q:${k}:${t}`, `${bank(k)} ${lab(t)} (CCDC ${bank(k)} curve)`)).join("")}</optgroup>` : ""; }).join("") +
       grp.map(([lo, hi, l]) => { const g = bonds.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && keep(null, b.code) && lo === sec[0] && !inSec(b))); return g.length ? `<optgroup label="CGB ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`b:${b.code}`, row(b, ""))).join("")}</optgroup>` : ""; }).join("") +
       banks.map((k) => { const all = pbList(k).filter((b) => b.mat && b.ttm > 0 && (!tradedOnly || b.last != null)).sort((a, b) => a.ttm - b.ttm);
@@ -413,7 +419,18 @@
       D = j; for (const key in bondCache) delete bondCache[key]; render(first);
     } catch (e) { if (first) $("lede").textContent = "China bond data is not available yet. It is fetched with each dashboard refresh; check back in a few minutes."; }
   }
+  async function loadFut() {
+    try {
+      const r = await fetch(`${FSRC}?t=${Date.now()}`, { cache: "no-store" });
+      if (!r.ok) return;
+      const j = await r.json();
+      if (j.updated === FUupd) return;
+      FUupd = j.updated; FU = {};
+      for (const x of j.products || []) if (x.p && x.yhist?.length) FU[x.p] = x.yhist.filter((v) => v && v[1] != null);
+      if (D) hist(false);
+    } catch {}
+  }
   let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => D && (curveChart(), pbPanel()), 120); });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => D && (curveChart(), pbPanel(), hist(false)));
-  load(true); setInterval(() => load(false), 60000);
+  load(true); loadFut(); setInterval(() => { load(false); loadFut(); }, 60000);
 })();
