@@ -1,31 +1,31 @@
 {
  "ticker": "AMD",
- "asof": "2026-11-04",
+ "asof": "2026-11-05",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-08-04",
+ "reported": "2026-11-03",
  "timing": "amc",
- "pre_close": 518.58,
+ "pre_close": 483.9,
  "react": {
-  "date": "2026-08-05",
-  "close": 482.05,
-  "pct": -7.0
+  "date": "2026-11-04",
+  "close": 488.78,
+  "pct": 1.0
  },
  "since": {
-  "date": "2026-11-03",
-  "close": 483.9,
-  "pct": -6.7
+  "date": "2026-11-04",
+  "close": 488.78,
+  "pct": 1.0
  },
  "review": {
   "en": [
-   "Record revenue of $11.5B (+50%) beat the $11.3B estimate, and non-GAAP EPS of $1.66 topped $1.62. Data center more than doubled (+107%) to $6.7B, now 58% of sales, with a 31% operating margin as EPYC server CPUs and Instinct AI GPUs both grew. The Q3 guide of about $13.0B was above consensus. CEO Lisa Su called it an excellent quarter of record revenue and profitability; CFO Jean Hu highlighted data center's rising share of the business.",
-   "AMD had climbed 7% on report day, then fell almost 9% after hours and closed 7.0% lower the next day: after a huge AI run, a clean beat was not enough. It drifted to $457 by Aug 24, 12% below the pre-report close. September reversed that: as AI agents such as Meta's Muse lifted demand for server CPUs, the stock rose 10% on Sep 21 and passed $1 trillion in market value. It sits well above its pre-report level."
+   "Revenue rose 45% to a record $13.4B, above the $13.1B consensus, and non-GAAP EPS of $2.09 beat $1.95. Data center nearly doubled (+97%) to $8.5B, 64% of sales, as the first MI450-based Helios racks reached OpenAI, Meta, Anthropic, Microsoft and Oracle. The Q4 guide of about $17B (+66%) topped the ~$16.2B expected, though gross margin dips to about 55%. CEO Lisa Su said growth accelerates as Helios and Venice production scales, and told analysts 2027 revenue could grow more than 80%.",
+   "AMD rose 3.7% to $483.90 before the report, then jumped as much as 8% after hours to about $520. It touched $514.61 on Nov 4 but gave back most of the gain to close up 1.0% at $488.78. The Democratic midterm sweep raised fears of tighter data-center rules, and the Philadelphia chip index fell 3.1% while the broad market rallied. Goldman trimmed its target to $675 from $700 but kept a Buy, calling the October selloff overdone."
   ],
   "zh": [
-   "营收创纪录达 115 亿美元（+50%），高于 113 亿美元预期，非 GAAP 每股收益 1.66 美元高于 1.62 美元。数据中心营收翻倍以上（+107%）至 67 亿美元，占总营收 58%，营业利润率 31%，EPYC 服务器 CPU 与 Instinct AI GPU 均有增长。第三季营收指引约 130 亿美元，高于预期。CEO 苏姿丰称这是营收与盈利双双创纪录的出色季度；CFO Jean Hu强调数据中心占比持续提升。",
-   "财报当天股价上涨 7%，盘后下跌近 9%，次日收跌 7.0%：在 AI 大涨之后，单纯超预期已不够。8 月 24 日回落至 457 美元，较财报前收盘低 12%。9 月形势逆转：Meta 的 Muse 等 AI 智能体带动服务器 CPU 需求，9 月 21 日股价大涨 10%，市值突破 1 万亿美元，目前远高于财报前水平。"
+   "营收增长 45% 至创纪录的 134 亿美元，高于 131 亿美元的市场预期；非 GAAP 每股收益 2.09 美元，高于 1.95 美元。数据中心营收近乎翻倍（+97%）至 85 亿美元，占总营收 64%，首批搭载 MI450 的 Helios 机柜已交付 OpenAI、Meta、Anthropic、微软和甲骨文。第四季营收指引约 170 亿美元（+66%），高于约 162 亿美元的预期，但毛利率将降至约 55%。CEO 苏姿丰表示，随着 Helios 与 Venice 量产扩大，增长将进一步加速，并向分析师表示 2027 年营收增幅可能超过 80%。",
+   "财报前股价上涨 3.7% 至 483.90 美元，盘后一度大涨 8% 至约 520 美元。11 月 4 日盘中最高触及 514.61 美元，但涨幅大多回吐，收涨 1.0% 至 488.78 美元。民主党在中期选举中大胜，市场担心数据中心监管收紧，费城半导体指数下跌 3.1%，而大盘上涨。高盛将目标价由 700 美元下调至 675 美元，维持买入评级，认为 10 月的抛售过度。"
   ]
  },
  "ceo": {
@@ -52,12 +52,20 @@
  },
  "sources": [
   {
-   "t": "Q2 2026 results and reaction",
-   "u": "https://financefeeds.com/amd-earnings-bullish-544-bearish-425"
+   "t": "Q3 2026 results vs. estimates (CNBC)",
+   "u": "https://cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html"
   },
   {
-   "t": "Sep 21 move (INDmoney)",
-   "u": "https://indmoney.com/blog/us-stocks/why-amd-stock-is-rising-1-trillion-valuation"
+   "t": "Q3 2026 call transcript and after-hours move (Investing.com)",
+   "u": "https://investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
+  },
+  {
+   "t": "First-session trading (MarketBeat)",
+   "u": "https://marketbeat.com/instant-alerts/price-advanced-micro-devices-nasdaq-amd-shares-climb-1-after-strong-earnings-2026-11-04"
+  },
+  {
+   "t": "Chip stocks after the midterms (WSJ)",
+   "u": "https://wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-04-2026/card/chip-stocks-take-a-hit-YOCGYXdxhJ2NABQB2DC5"
   }
  ]
 }
