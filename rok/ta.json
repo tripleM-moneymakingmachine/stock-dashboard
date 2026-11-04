@@ -1,22 +1,29 @@
 {
- "asof": "Nov 3, 2026",
- "close": 446.38,
+ "asof": "Nov 4, 2026",
+ "close": 443.88,
  "bias": {
-  "en": "Turning bullish · back above all five averages, capped near $452–454",
-  "zh": "转强 · 重回五条均线上方，$452–454 附近受阻"
+  "en": "Uptrend, choppy · slipped under the 100-day, $433 held",
+  "zh": "震荡上行 · 跌回 100 日均线下方，守住 $433"
  },
  "read": [
   {
-   "en": "Rockwell rose 1.4% on Nov 3 to $446.38, trading between $443.89 and $454.13. It is above the rising 5-day ($443.6), 10-day ($437.6), 30-day ($435.8) and 200-day ($427.3) averages and just above the falling 100-day ($446.0). MACD has been above its signal since Oct 27 and above zero, histogram widening; Parabolic SAR has been bullish since Oct 27 ($420.97), and RSI is 57.",
-   "zh": "罗克韦尔 11月3日上涨 1.4%，收于 $446.38，盘中区间 $443.89–454.13。股价位于上行的 5 日（$443.6）、10 日（$437.6）、30 日（$435.8）和 200 日均线（$427.3）上方，并略高于下行的 100 日均线（$446.0）。MACD 自 10月27日起位于信号线上方且在零轴之上，柱状图扩大；抛物线 SAR 自 10月27日起看多（$420.97），RSI 为 57。"
+   "en": "Rockwell Automation slipped 0.6% on Nov 4 to $443.88, trading between $432.82 and $448.67 on heavy volume. It is just above the rising 5-day ($443.6), 10-day ($438.1), 30-day ($436.2) and 200-day ($427.5) averages and just below the falling 100-day ($445.8). MACD has been above its signal since Oct 27 and above zero, histogram steady; Parabolic SAR has been bullish since Oct 27 ($423.62), and RSI is 55.",
+   "zh": "罗克韦尔自动化 11月4日下跌 0.6%，收于 $443.88，盘中区间 $432.82–448.67，成交量放大。股价略高于上行的 5 日（$443.6）、10 日（$438.1）、30 日（$436.2）和 200 日均线（$427.5），并略低于下行的 100 日均线（$445.8）。MACD 自 10月27日起位于信号线上方且在零轴之上，柱状图平稳；抛物线 SAR 自 10月27日起看多（$423.62），RSI 为 55。"
   },
   {
-   "en": "The close cleared $441.4–442.2 and edged above the 100-day; the $454.13 high topped the Oct 29 high before fading. Resistance is $452.4–454.1 (Oct 29 and Nov 3 highs), then $460 (Oct 5–6 highs) and $468 (Jun 3 high). Support is $443.6–446 (5 and 100-day, Nov 3 low), then $435.8–437.6 (30 and 10-day) and $427.2. A close above $454 would target $460; below $443.6, $436.",
-   "zh": "收盘突破 $441.4–442.2 并略高于 100 日均线；盘中高点 $454.13 一度越过 10月29日高点后回落。阻力为 $452.4–454.1（10月29日和11月3日高点），其次 $460（10月5–6日高点）和 $468（6月3日高点）。支撑为 $443.6–446（5 日和 100 日均线、11月3日低点），其次 $435.8–437.6（30 日和 10 日均线）和 $427.2。若收盘站上 $454，下一目标看 $460；若跌破 $443.6，则看 $436。"
+   "en": "The close slipped back under the 100-day and the Nov 3 low ($443.9), now resistance, while the dip to $432.8 held the Oct 30 low. Resistance is $445.8–448.7 (100-day, Nov 4 high), then $452.4–454.1 and $460. Support is $436.2–438.1 (30 and 10-day), then $432.8 (Oct 30 and Nov 4 lows) and $423.6–427.5. A close above $448.7 would target $452–454; below $432.8, $427.",
+   "zh": "收盘跌回 100 日均线和11月3日低点（$443.9）下方，该位置转为阻力，盘中下探 $432.8 守住 10月30日低点。阻力为 $445.8–448.7（100 日均线、11月4日高点），其次 $452.4–454.1和 $460。支撑为 $436.2–438.1（30 日和 10 日均线），其次 $432.8（10月30日和11月4日低点）和 $423.6–427.5。若收盘站上 $448.7，下一目标看 $452–454；若跌破 $432.8，则看 $427。"
   }
  ],
  "levels": {
   "r": [
+   [
+    447,
+    {
+     "en": "100-day average $445.8; Nov 4 high $448.67",
+     "zh": "100日均线 $445.8；11月4日高点 $448.67"
+    }
+   ],
    [
     453,
     {
@@ -30,35 +37,28 @@
      "en": "Oct 5–6 highs ($460–460.2)",
      "zh": "10月5–6日高点（$460–460.2）"
     }
-   ],
-   [
-    468,
-    {
-     "en": "Jun 3 high $468.11",
-     "zh": "6月3日高点 $468.11"
-    }
    ]
   ],
   "s": [
    [
-    444.5,
+    437,
     {
-     "en": "100-day average $445.95; 5-day $443.6; Nov 3 low $443.89",
-     "zh": "100日均线 $445.95；5日均线 $443.6；11月3日低点 $443.89"
+     "en": "30 and 10-day averages ($436.2–438.1)",
+     "zh": "30日和10日均线（$436.2–438.1）"
     }
    ],
    [
-    436.7,
+    432.8,
     {
-     "en": "10 and 30-day averages ($435.8–437.6)",
-     "zh": "10 日和 30 日均线（$435.8–437.6）"
+     "en": "Oct 30 and Nov 4 lows ($432.8)",
+     "zh": "10月30日和11月4日低点（$432.8）"
     }
    ],
    [
-    427.2,
+    425.5,
     {
-     "en": "200-day average $427.32; Oct 26 low $427.15",
-     "zh": "200日均线 $427.32；10月26日低点 $427.15"
+     "en": "Parabolic SAR $423.6; 200-day average $427.5",
+     "zh": "抛物线 SAR $423.6；200日均线 $427.5"
     }
    ]
   ]

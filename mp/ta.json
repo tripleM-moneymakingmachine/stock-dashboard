@@ -1,27 +1,34 @@
 {
- "asof": "Nov 3, 2026",
- "close": 37.83,
+ "asof": "Nov 4, 2026",
+ "close": 35.91,
  "bias": {
-  "en": "Bearish · SAR flipped, holding just above the $37.1 low",
-  "zh": "看空 · 抛物线 SAR 翻空，仍守在 $37.1 低点上方"
+  "en": "Downtrend · new 52-week low, under the $37.1 floor",
+  "zh": "下降趋势 · 创 52 周新低，跌破 $37.1 底部"
  },
  "read": [
   {
-   "en": "MP fell 1.4% on Nov 3 to $37.83, trading between $37.35 and $39.29. It is below the rising 5-day ($39.69) and the falling 10-day ($39.32), 30-day ($43.06), 100-day ($49.45) and 200-day ($54.91) averages. MACD has been above its signal since Oct 28 but below zero, histogram fading toward a cross; Parabolic SAR flipped bearish on Nov 3 ($42.54), and RSI is 35.",
-   "zh": "MP 11月3日下跌 1.4%，收于 $37.83，盘中区间 $37.35–39.29。股价位于上行的 5 日均线（$39.69）以及下行的 10 日（$39.32）、30 日（$43.06）、100 日（$49.45）和 200 日均线（$54.91）下方。MACD 自 10月28日起位于信号线上方但仍在零轴下方，柱状图收窄、逼近交叉；抛物线 SAR 于 11月3日翻空（$42.54），RSI 为 35。"
+   "en": "MP Materials fell 5.1% on Nov 4 to $35.91, trading between $35.56 and $38.96 on heavy volume. It is below the falling 5-day ($38.66), 10-day ($38.96), 30-day ($42.63), 100-day ($49.23) and 200-day ($54.75) averages. MACD has been above its signal since Oct 28 but below zero, histogram nearly flat (0.03); Parabolic SAR has been bearish since Nov 3 ($42.44), and RSI is 31.",
+   "zh": "MP Materials 11月4日下跌 5.1%，收于 $35.91，盘中区间 $35.56–38.96，成交量放大。股价位于下行的 5 日（$38.66）、10 日（$38.96）、30 日（$42.63）、100 日（$49.23）和 200 日均线（$54.75）下方。MACD 自 10月28日起位于信号线上方，但仍在零轴下方，柱状图接近持平（0.03）；抛物线 SAR 自 11月3日起看空（$42.44），RSI 为 31。"
   },
   {
-   "en": "The dip to $37.35 flipped the SAR bearish, but the close held the $37.8 Jul 29 low. Resistance is $39.3–39.7 (Nov 3 high, 10 and 5-day), then $40.9–41.1 (Nov 2 and Oct 27 highs) and $42.5 (SAR, Oct 29 high). Support is $37.3–37.6 (Nov 3, Oct 26 and Oct 22 lows), then $37.1 (52-week low). A close above $39.7 would target $41; below $37.1, $35.",
-   "zh": "盘中下探 $37.35 使抛物线 SAR 翻空，但收盘守住 7月29日低点 $37.8。阻力为 $39.3–39.7（11月3日高点、10 日和 5 日均线），其次 $40.9–41.1（11月2日和10月27日高点）和 $42.5（SAR、10月29日高点）。支撑为 $37.3–37.6（11月3日、10月26日和10月22日低点），其次 $37.1（52 周低点）。若收盘站上 $39.7，下一目标看 $41；若跌破 $37.1，则看 $35。"
+   "en": "The close broke the $37.1–37.4 support (Oct 23 52-week low, Nov 3 low) and set a new 52-week low at $35.56. Resistance is now $37.1–37.8 (Oct 23 and Nov 3 lows, Jul 29 low), then $38.7–39.0 (5-day, 10-day, Nov 4 high) and $40.9–41.1. Support is $35.56 (Nov 4 low), then $35. A close above $37.8 would target $39; below $35.5, there is no support within the past year.",
+   "zh": "收盘跌破 $37.1–37.4 支撑（10月23日 52 周低点、11月3日低点），并以 $35.56 创下 52 周新低。阻力变为 $37.1–37.8（10月23日和11月3日低点、7月29日低点），其次 $38.7–39.0（5 日、10 日均线及11月4日高点）和 $40.9–41.1。支撑为 $35.56（11月4日低点），其次 $35。若收盘站上 $37.8，下一目标看 $39；若跌破 $35.5，过去一年内再无支撑。"
   }
  ],
  "levels": {
   "r": [
    [
-    39.5,
+    37.5,
     {
-     "en": "Nov 3 high $39.29; 10-day $39.32; 5-day $39.69",
-     "zh": "11月3日高点 $39.29；10日均线 $39.32；5日均线 $39.69"
+     "en": "Oct 23 low $37.11; Nov 3 low $37.35; Jul 29 low $37.81",
+     "zh": "10月23日低点 $37.11；11月3日低点 $37.35；7月29日低点 $37.81"
+    }
+   ],
+   [
+    38.8,
+    {
+     "en": "5-day average $38.66; 10-day $38.96; Nov 4 high $38.96",
+     "zh": "5日均线 $38.66；10日均线 $38.96；11月4日高点 $38.96"
     }
    ],
    [
@@ -30,28 +37,14 @@
      "en": "Nov 2 high $40.87; Oct 27 high $41.05",
      "zh": "11月2日高点 $40.87；10月27日高点 $41.05"
     }
-   ],
-   [
-    42.5,
-    {
-     "en": "Parabolic SAR $42.54; Oct 29 high",
-     "zh": "抛物线 SAR $42.54；10月29日高点"
-    }
    ]
   ],
   "s": [
    [
-    37.4,
+    35.56,
     {
-     "en": "Nov 3 low $37.35; Oct 26 low $37.30; Oct 22 low $37.57",
-     "zh": "11月3日低点 $37.35；10月26日低点 $37.30；10月22日低点 $37.57"
-    }
-   ],
-   [
-    37.1,
-    {
-     "en": "52-week low (Oct 23, $37.11)",
-     "zh": "52 周低点（10月23日，$37.11）"
+     "en": "52-week low (Nov 4)",
+     "zh": "52周低点（11月4日）"
     }
    ],
    [

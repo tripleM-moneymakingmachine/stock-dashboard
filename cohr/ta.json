@@ -1,64 +1,57 @@
 {
- "asof": "Nov 3, 2026",
- "close": 207.49,
+ "asof": "Nov 4, 2026",
+ "close": 195.09,
  "bias": {
-  "en": "Bearish · back above the $203.6 October lows",
-  "zh": "看空 · 重回 $203.6 十月低点上方"
+  "en": "Bearish · lost the $198.65–203.9 October lows",
+  "zh": "看空 · 失守 $198.65–203.9 十月低点"
  },
  "read": [
   {
-   "en": "Coherent rose 3.8% on Nov 3 to $207.49, trading between $201.26 and $213.87. It is below the falling 5-day ($218.9), 10-day ($220.7), 30-day ($267.4) and 100-day ($302.1) and the rising 200-day ($296.6). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($244.97), and RSI is 36.",
-   "zh": "Coherent 11月3日上涨 3.8%，收于 $207.49，盘中区间 $201.26–213.87。股价位于下行的 5 日（$218.9）、10 日（$220.7）、30 日（$267.4）和 100 日均线（$302.1）以及上行的 200 日均线（$296.6）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图收窄；抛物线 SAR 自 10月30日起看空（$244.97），RSI 为 36。"
+   "en": "Coherent fell 6.0% on Nov 4 to $195.09, trading between $187.16 and $205.49 on heavy volume. It is below the falling 5-day ($210.0), 10-day ($216.4), 30-day ($263.9) and 100-day ($300.2) averages and the rising 200-day ($296.6). MACD has been below its signal since Oct 12 and below zero, histogram widening slightly; Parabolic SAR has been bearish since Oct 30 ($243.12), and RSI is 33.",
+   "zh": "Coherent 11月4日下跌 6.0%，收于 $195.09，盘中区间 $187.16–205.49，成交量放大。股价位于下行的 5 日（$210.0）、10 日（$216.4）、30 日（$263.9）和 100 日均线（$300.2）以及上行的 200 日均线（$296.6）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图略有扩大；抛物线 SAR 自 10月30日起看空（$243.12），RSI 为 33。"
   },
   {
-   "en": "The close reclaimed the $203.6–203.9 October lows, and the $198.65 low was not retested (Nov 3 low $201.3). Resistance is $213.9 (Nov 3 high), then $218.9–222.6 (5 and 10-day, Oct 30 high) and $245.0–246.9 (SAR, Oct 29 high). Support is $203.6–203.9, then $198.65–201.3 and $187.3–189.6 (late-December lows). A close above $214 would target $219–223; below $198.65, $187–190.",
-   "zh": "收盘收复 $203.6–203.9 十月低点，$198.65 低点未被回测（11月3日低点 $201.3）。阻力为 $213.9（11月3日高点），其次 $218.9–222.6（5 日和 10 日均线、10月30日高点）和 $245.0–246.9（SAR、10月29日高点）。支撑为 $203.6–203.9，其次 $198.65–201.3 和 $187.3–189.6（12月下旬低点）。若收盘站上 $214，下一目标看 $219–223；若跌破 $198.65，则看 $187–190。"
+   "en": "The close broke the $198.65–203.9 support (Nov 2 low, Oct 23 and Oct 30 lows), now resistance; the $187.16 low tested the late-December lows ($187.3–189.6). Resistance is $198.65–203.9, then $205.5–210.0 (Nov 4 high, 5-day) and $214.0–216.4 (Nov 3 high, 10-day). Support is $187.2–189.6, then $180. A close above $204 would target $210–216; below $187, $180.",
+   "zh": "收盘跌破 $198.65–203.9 支撑（11月2日低点、10月23日和10月30日低点），该区域转为阻力；盘中低点 $187.16 测试去年12月下旬低点（$187.3–189.6）。阻力为 $198.65–203.9，其次 $205.5–210.0（11月4日高点、5 日均线）和 $214.0–216.4（11月3日高点、10 日均线）。支撑为 $187.2–189.6，其次 $180。若收盘站上 $204，下一目标看 $210–216；若跌破 $187，则看 $180。"
   }
  ],
  "levels": {
   "r": [
    [
-    213.9,
+    201.3,
     {
-     "en": "Nov 3 high",
-     "zh": "11月3日高点"
+     "en": "Nov 2 low $198.65; Oct 23 and Oct 30 lows ($203.55–203.9), lost",
+     "zh": "11月2日低点 $198.65；10月23日和10月30日低点（$203.55–203.9），已失守"
     }
    ],
    [
-    220.8,
+    208,
     {
-     "en": "5 and 10-day averages ($218.9–220.7); Nov 2 high $219.0; Oct 30 high $222.6",
-     "zh": "5日和10日均线（$218.9–220.7）；11月2日高点 $219.0；10月30日高点 $222.6"
+     "en": "Nov 4 high $205.5; 5-day average $210.0",
+     "zh": "11月4日高点 $205.5；5日均线 $210.0"
     }
    ],
    [
-    246,
+    215,
     {
-     "en": "Parabolic SAR $244.97; Oct 29 high $246.9",
-     "zh": "抛物线 SAR $244.97；10月29日高点 $246.9"
+     "en": "Nov 3 high $214.0; 10-day average $216.4",
+     "zh": "11月3日高点 $214.0；10日均线 $216.4"
     }
    ]
   ],
   "s": [
    [
-    203.7,
+    188.3,
     {
-     "en": "Oct 23 low $203.55; Oct 30 low $203.9, reclaimed",
-     "zh": "10月23日低点 $203.55；10月30日低点 $203.9，已收复"
+     "en": "Nov 4 low $187.16; late-December lows ($187.3–189.6)",
+     "zh": "11月4日低点 $187.16；去年12月下旬低点（$187.3–189.6）"
     }
    ],
    [
-    200,
+    180,
     {
-     "en": "Nov 2 low $198.65; Nov 3 low $201.3; $200 round number",
-     "zh": "11月2日低点 $198.65；11月3日低点 $201.3；$200 整数关口"
-    }
-   ],
-   [
-    188.5,
-    {
-     "en": "Late-December lows ($187.3–189.6)",
-     "zh": "12月下旬低点（$187.3–189.6）"
+     "en": "$180 round number",
+     "zh": "$180 整数关口"
     }
    ]
   ]

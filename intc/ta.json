@@ -1,50 +1,50 @@
 {
- "asof": "Nov 3, 2026",
- "close": 60.55,
+ "asof": "Nov 4, 2026",
+ "close": 58.27,
  "bias": {
-  "en": "Bearish · oversold, capped near $62 above the $58.4 April low",
-  "zh": "看空 · 超卖，$62 附近受阻，守在 $58.4 四月低点上方"
+  "en": "Bearish · oversold, closed under the $58.4 April low",
+  "zh": "看空 · 超卖，收盘跌破 4 月低点 $58.4"
  },
  "read": [
   {
-   "en": "Intel rose 1.0% on Nov 3 to $60.55, trading between $59.87 and $62.59. It is far below the falling 5-day ($74.8), 10-day ($82.4), 30-day ($100.4) and 100-day ($103.8) and the rising 200-day ($87.0). MACD has been below its signal since Oct 5 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($93.61), and RSI is 24, oversold.",
-   "zh": "英特尔 11月3日上涨 1.0%，收于 $60.55，盘中区间 $59.87–62.59。股价远低于下行的 5 日（$74.8）、10 日（$82.4）、30 日（$100.4）和 100 日均线（$103.8）以及上行的 200 日均线（$87.0）。MACD 自 10月5日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月30日起看空（$93.61），RSI 为 24，处于超卖。"
+   "en": "Intel fell 3.8% on Nov 4 to $58.27, trading between $56.77 and $60.20 on heavy volume. It is below the falling 5-day ($67.3), 10-day ($78.9), 30-day ($98.3) and 100-day ($103.1) averages and the rising 200-day ($87.0). MACD has been below its signal since Oct 5 and below zero, histogram still widening; Parabolic SAR has been bearish since Oct 30 ($92.24), and RSI is 22.8, the lowest in 20 sessions.",
+   "zh": "英特尔 11月4日下跌 3.8%，收于 $58.27，盘中区间 $56.77–60.20，成交量放大。股价位于下行的 5 日（$67.3）、10 日（$78.9）、30 日（$98.3）和 100 日均线（$103.1）以及上行的 200 日均线（$87.0）下方。MACD 自 10月5日起位于信号线下方且在零轴之下，柱状图仍在扩大；抛物线 SAR 自 10月30日起看空（$92.24），RSI 为 22.8，为 20 个交易日最低。"
   },
   {
-   "en": "The $62.59 high tested the $62.1–62.2 resistance and failed; the $58.4–59.4 support was not reached (Nov 3 low $59.87), so no written level changed. Resistance is $60.75–62.6 (April lows, Nov 3 high), then $63.2–65.7 and $68.3–68.8. Support is $58.4–59.9 (Apr 9 low, Nov 2–3 lows), then $54.8 (Apr 8 low) and $49.9–50. A close above $62.6 would target $65; below $58.4, $54.8.",
-   "zh": "盘中高点 $62.59 测试 $62.1–62.2 阻力未果；$58.4–59.4 支撑未被触及（11月3日低点 $59.87），书面价位无变化。阻力为 $60.75–62.6（4月低点、11月3日高点），其次 $63.2–65.7 和 $68.3–68.8。支撑为 $58.4–59.9（4月9日低点、11月2–3日低点），其次 $54.8（4月8日低点）和 $49.9–50。若收盘站上 $62.6，下一目标看 $65；若跌破 $58.4，则看 $54.8。"
+   "en": "The close broke the $58.4–59.9 support (Apr 9 low, Nov 2–3 lows), now resistance with the $60.2 high. Resistance is $58.4–60.2, then $60.75–62.6 (April lows, Nov 3 high) and $63.2–65.7. Support is $56.8 (Nov 4 low), then $54.8 (Apr 8 low) and $49.9–50. A close above $60.2 would target $62–62.6; below $56.8, $54.8.",
+   "zh": "收盘跌破 $58.4–59.9 支撑（4月9日低点、11月2–3日低点），该区域连同 $60.2 高点转为阻力。阻力为 $58.4–60.2，其次 $60.75–62.6（4月低点、11月3日高点）和 $63.2–65.7。支撑为 $56.8（11月4日低点），其次 $54.8（4月8日低点）和 $49.9–50。若收盘站上 $60.2，下一目标看 $62–62.6；若跌破 $56.8，则看 $54.8。"
   }
  ],
  "levels": {
   "r": [
    [
+    59.3,
+    {
+     "en": "Apr 9 low $58.4 and Nov 2–3 lows ($59.4–59.9), lost; Nov 4 high $60.2",
+     "zh": "4月9日低点 $58.4 和11月2–3日低点（$59.4–59.9），已失守；11月4日高点 $60.2"
+    }
+   ],
+   [
     61.7,
     {
      "en": "Apr 10 low $60.75; Apr 13 and Apr 14 lows ($62.1–62.2); Nov 3 high $62.6",
-     "zh": "4月10日低点 $60.75；4月13日和14日低点（$62.1–62.2）；11月3日高点 $62.6"
+     "zh": "4月10日低点 $60.75；4月13日和4月14日低点（$62.1–62.2）；11月3日高点 $62.6"
     }
    ],
    [
     64.5,
     {
-     "en": "Oct 30 low $63.2, lost; Apr 20 and Apr 22 lows ($64.5–65.0); Nov 2 high $65.7",
-     "zh": "10月30日低点 $63.2，已失守；4月20日和22日低点（$64.5–65.0）；11月2日高点 $65.7"
-    }
-   ],
-   [
-    68.5,
-    {
-     "en": "Apr 23 high $68.3; Oct 30 high $68.8",
-     "zh": "4月23日高点 $68.3；10月30日高点 $68.8"
+     "en": "Oct 30 low $63.2; Apr 20 and Apr 22 lows ($64.5–65.0); Nov 2 high $65.7",
+     "zh": "10月30日低点 $63.2；4月20日和4月22日低点（$64.5–65.0）；11月2日高点 $65.7"
     }
    ]
   ],
   "s": [
    [
-    58.9,
+    56.8,
     {
-     "en": "Apr 9 low $58.39; Nov 2 low $59.4; Nov 3 low $59.87",
-     "zh": "4月9日低点 $58.39；11月2日低点 $59.4；11月3日低点 $59.87"
+     "en": "Nov 4 low",
+     "zh": "11月4日低点"
     }
    ],
    [

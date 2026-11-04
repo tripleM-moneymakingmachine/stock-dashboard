@@ -1,64 +1,57 @@
 {
- "asof": "Nov 3, 2026",
- "close": 680.16,
+ "asof": "Nov 4, 2026",
+ "close": 626.75,
  "bias": {
-  "en": "Bearish · slipped under $680, testing the July lows",
-  "zh": "看空 · 跌破 $680，测试 7 月低点"
+  "en": "Bearish · lost the July lows, testing $595–602",
+  "zh": "看空 · 失守 7 月低点，测试 $595–602"
  },
  "read": [
   {
-   "en": "Lumentum slipped 0.6% on Nov 3 to $680.16, trading between $667.40 and $719.97. It is below the falling 5-day ($807.8), 10-day ($808.2), 30-day ($920.2) and 100-day ($864.7) and the rising 200-day ($804.7). MACD has been below its signal since Oct 13 and below zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($972.41), and RSI is 34.",
-   "zh": "Lumentum 11月3日下跌 0.6%，收于 $680.16，盘中区间 $667.40–719.97。股价位于下行的 5 日（$807.8）、10 日（$808.2）、30 日（$920.2）和 100 日均线（$864.7）以及上行的 200 日均线（$804.7）下方。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 11月2日起看空（$972.41），RSI 为 34。"
+   "en": "Lumentum fell 7.9% on Nov 4 to $626.75, trading between $598.78 and $650.62 on heavy volume. It is below the falling 5-day ($750.3), 10-day ($785.9), 30-day ($909.9) and 100-day ($861.8) averages and the rising 200-day ($806.0). MACD has been below its signal since Oct 13 and below zero, histogram widening sharply; Parabolic SAR has been bearish since Nov 2 ($960.21), and RSI is 31.6.",
+   "zh": "Lumentum 11月4日下跌 7.9%，收于 $626.75，盘中区间 $598.78–650.62，成交量放大。股价位于下行的 5 日（$750.3）、10 日（$785.9）、30 日（$909.9）和 100 日均线（$861.8）以及上行的 200 日均线（$806.0）下方。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图明显扩大；抛物线 SAR 自 11月2日起看空（$960.21），RSI 为 31.6。"
   },
   {
-   "en": "A bounce to $720 faded, and the close slipped under the $679–683 support (Nov 2 low, Jul 7–8 lows), now resistance; the low was $667.4. Resistance is $679–683, then $720 (Nov 3 high) and $736.0–746.2 (October lows). Support is $667.4, then $650–651 (July lows) and $594.8–602.3. A close back above $683 would target $720–741; below $650, $595–602.",
-   "zh": "反弹至 $720 后回落，收盘跌破 $679–683 支撑（11月2日低点、7月7–8日低点），该区域转为阻力；日内低点 $667.4。阻力为 $679–683，其次 $720（11月3日高点）和 $736.0–746.2（10月低点）。支撑为 $667.4，其次 $650–651（7月低点）和 $594.8–602.3。若收盘重新站上 $683，下一目标看 $720–741；若跌破 $650，则看 $595–602。"
+   "en": "The close broke the $667.4 and $650–651 supports (Nov 3 low, July lows), now resistance; the $650.6 high stopped right at them. The $598.8 low tested the $594.8–602.3 late-July lows and held. Resistance is $650–651, then $667.3 and $679–683. Support is $594.8–602.3, then $550. A close above $651 would target $667–683; below $594.8, $550.",
+   "zh": "收盘跌破 $667.4 和 $650–651 支撑（11月3日低点、7月低点），两者转为阻力；盘中高点 $650.6 恰好受阻于此。盘中低点 $598.8 测试 7月下旬低点 $594.8–602.3 并守住。阻力为 $650–651，其次 $667.3 和 $679–683。支撑为 $594.8–602.3，其次 $550。若收盘站上 $651，下一目标看 $667–683；若跌破 $594.8，则看 $550。"
   }
  ],
  "levels": {
   "r": [
    [
+    650.5,
+    {
+     "en": "Jul 17 low $650.8 and Jul 30 low $650, lost; Nov 4 high $650.6",
+     "zh": "7月17日低点 $650.8 和7月30日低点 $650，已失守；11月4日高点 $650.6"
+    }
+   ],
+   [
+    667.3,
+    {
+     "en": "Nov 3 low, lost",
+     "zh": "11月3日低点，已失守"
+    }
+   ],
+   [
     681,
     {
-     "en": "Nov 2 low $679; Jul 7 and Jul 8 lows ($680.4–683.4), lost",
-     "zh": "11月2日低点 $679；7月7日和8日低点（$680.4–683.4），已失守"
-    }
-   ],
-   [
-    720,
-    {
-     "en": "Nov 3 high $719.97",
-     "zh": "11月3日高点 $719.97"
-    }
-   ],
-   [
-    741,
-    {
-     "en": "Oct 23 low $736.0 and Oct 22 low $746.2",
-     "zh": "10月23日低点 $736.0 和 10月22日低点 $746.2"
+     "en": "Nov 2 low $679; Jul 7 and Jul 8 lows ($680.4–683.4)",
+     "zh": "11月2日低点 $679；7月7日和7月8日低点（$680.4–683.4）"
     }
    ]
   ],
   "s": [
    [
-    667.4,
-    {
-     "en": "Nov 3 low",
-     "zh": "11月3日低点"
-    }
-   ],
-   [
-    650.5,
-    {
-     "en": "Jul 17 low $650.8; Jul 30 low $650",
-     "zh": "7月17日低点 $650.8；7月30日低点 $650"
-    }
-   ],
-   [
     598.5,
     {
-     "en": "Jul 29 low $594.8; Jul 28 low $602.3",
-     "zh": "7月29日低点 $594.8；7月28日低点 $602.3"
+     "en": "Jul 29 low $594.8; Jul 28 low $602.3; Nov 4 low $598.8",
+     "zh": "7月29日低点 $594.8；7月28日低点 $602.3；11月4日低点 $598.8"
+    }
+   ],
+   [
+    550,
+    {
+     "en": "$550 round number",
+     "zh": "$550 整数关口"
     }
    ]
   ]
