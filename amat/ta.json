@@ -1,57 +1,64 @@
 {
- "asof": "Nov 4, 2026",
- "close": 369.4,
+ "asof": "Nov 5, 2026",
+ "close": 319.25,
  "bias": {
-  "en": "Bearish · broke $373, new low at $362.9",
-  "zh": "看空 · 跌破 $373，盘中新低 $362.9"
+  "en": "Bearish · oversold, down to the March lows",
+  "zh": "看空 · 超卖，跌至 3 月低点"
  },
  "read": [
   {
-   "en": "Applied Materials fell 3.3% on Nov 4 to $369.40, trading between $362.93 and $383.65. It is below the falling 5-day ($387.52), 10-day ($388.99), 30-day ($450.44) and 100-day ($504.32) averages and the rising 200-day ($445.31). MACD has been below its signal since Oct 13 and below zero, histogram roughly flat; Parabolic SAR has been bearish since Nov 2 ($424.41), and RSI is 33.5.",
-   "zh": "应用材料 11月4日下跌 3.3%，收于 $369.40，盘中区间 $362.93–383.65。股价位于下行的 5 日（$387.52）、10 日（$388.99）、30 日（$450.44）和 100 日均线（$504.32）以及上行的 200 日均线（$445.31）下方。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图大致持平；抛物线 SAR 自 11月2日起看空（$424.41），RSI 为 33.5。"
+   "en": "Applied Materials fell 13.6% on Nov 5 to $319.25, trading $316.95–349.99 on 2.2 times its 20-day average volume. It is below the falling 5-day ($367.04), 10-day ($383.36), 30-day ($445.27) and 100-day ($501.66) and the rising 200-day ($445.29). MACD has been below its signal since Oct 13, below zero, with the histogram widening; Parabolic SAR has been bearish since Nov 2 ($421.95), and RSI is 26, oversold.",
+   "zh": "应用材料 11月5日下跌 13.6%，收于 $319.25，盘中区间 $316.95–349.99，成交量为 20 日均量的 2.2 倍。股价位于下行的 5 日（$367.04）、10 日（$383.36）、30 日（$445.27）和 100 日均线（$501.66）以及上行的 200 日均线（$445.29）下方。MACD 自 10月13日起位于信号线下方，处于零轴下方，柱状图扩大；抛物线 SAR 自 11月2日起看空（$421.95），RSI 为 26，处于超卖区。"
   },
   {
-   "en": "The close broke both the $377.1–378.7 and $372.8–373.3 supports, which now act as resistance. Resistance is $372.8–378.7 (Oct 23, Nov 2–3 and Apr 29 lows), then $383.7–390 (Nov 4 high, 5 and 10-day, Nov 3 high) and $405.2–409.9. Support is $362.9 (Nov 4 low), then $355.3–359 (Mar 10 and Apr 1 highs). A close above $378.7 would target $384–390; below $362.9, $355–359.",
-   "zh": "收盘同时跌破 $377.1–378.7 和 $372.8–373.3 支撑，二者转为阻力。阻力为 $372.8–378.7（10月23日、11月2–3日和4月29日低点），其次 $383.7–390（11月4日高点、5 日和 10 日均线、11月3日高点）和 $405.2–409.9。支撑为 $362.9（11月4日低点），其次 $355.3–359（3月10日和4月1日高点）。若收盘站上 $378.7，下一目标看 $384–390；若跌破 $362.9，则看 $355–359。"
+   "en": "The gap lower broke the $362.9 Nov 4 low and the $355.3–359 March–April highs, and the close is the lowest since Feb 5. Resistance is $350 (Nov 5 high), then $355.3–363 (Mar 10 and Apr 1 highs, Nov 4 low) and $367 (5-day). Support is $315.7–317 (Nov 5, Mar 9 and Jan 20 lows), then $311.1 (Jan 23 low) and $297–298. A close above $350 would target $355–363; below $315.7, $311.",
+   "zh": "跳空下跌跌破 11月4日低点 $362.9 和 3–4月高点 $355.3–359，收盘为 2月5日以来最低。阻力为 $350（11月5日高点），其次 $355.3–363（3月10日和4月1日高点、11月4日低点）和 $367（5 日均线）。支撑为 $315.7–317（11月5日、3月9日和1月20日低点），其次 $311.1（1月23日低点）和 $297–298。若收盘站上 $350，下一目标看 $355–363；若跌破 $315.7，则看 $311。"
   }
  ],
  "levels": {
   "r": [
    [
-    375.5,
+    350,
     {
-     "en": "Oct 23 and Nov 2 lows ($372.8–373.3); Apr 29 and Nov 3 lows ($377.1–378.7)",
-     "zh": "10月23日和11月2日低点（$372.8–373.3）；4月29日和11月3日低点（$377.1–378.7）"
+     "en": "Nov 5 high $349.99",
+     "zh": "11月5日高点 $349.99"
     }
    ],
    [
-    387,
+    359,
     {
-     "en": "Nov 4 high $383.65; 5 and 10-day averages ($387.5–389.0); Nov 3 high $390",
-     "zh": "11月4日高点 $383.65；5日和10日均线（$387.5–389.0）；11月3日高点 $390"
+     "en": "Mar 10 and Apr 1 highs ($355.3–359); Nov 4 low $362.9, lost",
+     "zh": "3月10日和4月1日高点（$355.3–359）；11月4日低点 $362.9，已失守"
     }
    ],
    [
-    407.5,
+    367,
     {
-     "en": "Oct 30 high $405.2; Oct 29 low $409.9",
-     "zh": "10月30日高点 $405.2；10月29日低点 $409.9"
+     "en": "5-day average $367.04",
+     "zh": "5日均线 $367.04"
     }
    ]
   ],
   "s": [
    [
-    363,
+    316,
     {
-     "en": "Nov 4 low $362.93",
-     "zh": "11月4日低点 $362.93"
+     "en": "Nov 5 low $316.95; Mar 9 low $316.66; Jan 20 low $315.7",
+     "zh": "11月5日低点 $316.95；3月9日低点 $316.66；1月20日低点 $315.7"
     }
    ],
    [
-    357,
+    311.1,
     {
-     "en": "Mar 10 and Apr 1 highs ($355.3–359)",
-     "zh": "3月10日和4月1日高点（$355.3–359）"
+     "en": "Jan 23 low",
+     "zh": "1月23日低点"
+    }
+   ],
+   [
+    297.5,
+    {
+     "en": "Jan 14 low $297; Jan 6 high $298.2",
+     "zh": "1月14日低点 $297；1月6日高点 $298.2"
     }
    ]
   ]

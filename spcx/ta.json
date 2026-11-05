@@ -1,64 +1,64 @@
 {
- "asof": "Nov 4, 2026",
- "close": 135.92,
+ "asof": "Nov 5, 2026",
+ "close": 123.62,
  "bias": {
-  "en": "Bearish · back under the 5-day, nearing $133–134.5",
-  "zh": "看空 · 跌回 5 日均线下方，逼近 $133–134.5"
+  "en": "Bearish · broke $125–134, nearing $120",
+  "zh": "看空 · 跌破 $125–134，逼近 $120"
  },
  "read": [
   {
-   "en": "SpaceX fell 3.8% on Nov 4 to $135.92, trading between $133.14 and $140.50 on heavier volume; there is no 200-day yet (101 sessions). It is below the falling 5-day ($138.4), 10-day ($142.5) and 30-day ($151.0) averages and the 100-day ($145.3). MACD has been below its signal since Oct 14 and below zero, histogram roughly flat; Parabolic SAR has been bearish since Oct 14 ($158.30), and RSI is 40.",
-   "zh": "SpaceX 11月4日下跌 3.8%，收于 $135.92，盘中区间 $133.14–140.50，成交量放大；上市仅 101 个交易日，尚无 200 日均线。股价位于下行的 5 日（$138.4）、10 日（$142.5）和 30 日均线（$151.0）以及 100 日均线（$145.3）下方。MACD 自 10月14日起位于信号线下方且在零轴之下，柱状图大致持平；抛物线 SAR 自 10月14日起看空（$158.30），RSI 为 40。"
+   "en": "SpaceX fell 9.0% on Nov 5 to $123.62, trading between $120.42 and $131.87 on heavier volume; there is no 200-day yet (102 sessions). It is below the falling 5-day ($134.4), 10-day ($140.4) and 30-day ($150.2) averages and the 100-day ($144.7). MACD has been below its signal since Oct 14 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 14 ($156.29), and RSI is 33.",
+   "zh": "SpaceX 11月5日下跌 9.0%，收于 $123.62，盘中区间 $120.42–131.87，成交量放大；上市仅 102 个交易日，尚无 200 日均线。股价位于下行的 5 日（$134.4）、10 日（$140.4）和 30 日均线（$150.2）以及 100 日均线（$144.7）下方。MACD 自 10月14日起位于信号线下方，处于零轴下方，柱状图扩大；抛物线 SAR 自 10月14日起看空（$156.29），RSI 为 33。"
   },
   {
-   "en": "The close gave back the 5-day and the $140.3–140.7 support, now resistance, and the $133.1 low dipped under the $134–134.5 support before the close held above it. Resistance is $138.4 (5-day), then $140.5–140.7 and $142.1–142.7 (10-day, Oct 28 low, Nov 3 high). Support is $133.1–134.5, then $130.2–130.4 and $125.3–126.7. A close above $140.7 would target $142–143; below $133, $130.",
-   "zh": "收盘跌回 5 日均线和 $140.3–140.7 支撑下方，该区域转为阻力；盘中低点 $133.1 一度跌破 $134–134.5 支撑，但收盘守在其上方。阻力为 $138.4（5 日均线），其次 $140.5–140.7 和 $142.1–142.7（10 日均线、10月28日低点、11月3日高点）。支撑为 $133.1–134.5，其次 $130.2–130.4 和 $125.3–126.7。若收盘站上 $140.7，下一目标看 $142–143；若跌破 $133，则看 $130。"
+   "en": "The drop broke all three supports in the last read ($133.1–134.5, $130.2–130.4 and $125.3–126.7), now resistance. Resistance is $125.3–126.7, then $130.2–131.9 (August lows, Nov 5 high) and $133.1–134.5 (5-day). Support is $120–120.4 (Nov 5 low), then $114.5–115.3 (July–August lows and closes) and $104.8 (Aug 3 low, the 52-week low). A close above $126.7 would target $130–132; below $120, $115.",
+   "zh": "此次下跌跌破上次所列的三个支撑（$133.1–134.5、$130.2–130.4 和 $125.3–126.7），均转为阻力。阻力为 $125.3–126.7，其次 $130.2–131.9（8月低点、11月5日高点）和 $133.1–134.5（5 日均线）。支撑为 $120–120.4（11月5日低点），其次 $114.5–115.3（7–8月低点和收盘价）和 $104.8（8月3日低点，即 52 周低点）。若收盘站上 $126.7，下一目标看 $130–132；若跌破 $120，则看 $115。"
   }
  ],
  "levels": {
   "r": [
    [
-    138.4,
+    126,
     {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "Aug 4 close $125.3; Aug 4 high $126.7, lost",
+     "zh": "8月4日收盘 $125.3；8月4日高点 $126.7，已失守"
     }
    ],
    [
-    140.6,
+    131,
     {
-     "en": "Nov 4 high $140.5; Oct 15 low $140.66, lost",
-     "zh": "11月4日高点 $140.5；10月15日低点 $140.66，已失守"
+     "en": "Aug 10 and Aug 20 lows ($130.2–130.4); Nov 5 high $131.87",
+     "zh": "8月10日和8月20日低点（$130.2–130.4）；11月5日高点 $131.87"
     }
    ],
    [
-    142.4,
+    134,
     {
-     "en": "Oct 28 low $142.1; 10-day average $142.5; Nov 3 high $142.7",
-     "zh": "10月28日低点 $142.1；10日均线 $142.5；11月3日高点 $142.7"
+     "en": "Nov 4 low $133.1; 5-day average $134.4; Oct 30 low $134.5",
+     "zh": "11月4日低点 $133.1；5日均线 $134.4；10月30日低点 $134.5"
     }
    ]
   ],
   "s": [
    [
-    133.8,
+    120.2,
     {
-     "en": "Nov 4 low $133.1; Aug 12 low $134.0; Oct 30 low $134.5",
-     "zh": "11月4日低点 $133.1；8月12日低点 $134.0；10月30日低点 $134.5"
+     "en": "Nov 5 low $120.42; $120",
+     "zh": "11月5日低点 $120.42；$120"
     }
    ],
    [
-    130.3,
+    115,
     {
-     "en": "Aug 10 and Aug 20 lows ($130.2–130.4)",
-     "zh": "8月10日和8月20日低点（$130.2–130.4）"
+     "en": "Aug 7 low $114.53; Aug 6 close $114.92; Jul 22 close $115.26",
+     "zh": "8月7日低点 $114.53；8月6日收盘 $114.92；7月22日收盘 $115.26"
     }
    ],
    [
-    126,
+    104.8,
     {
-     "en": "Aug 4 close $125.3; Aug 4 high $126.7",
-     "zh": "8月4日收盘 $125.3；8月4日高点 $126.7"
+     "en": "Aug 3 low, 52-week low",
+     "zh": "8月3日低点，52周低点"
     }
    ]
   ]

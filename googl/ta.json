@@ -1,57 +1,57 @@
 {
- "asof": "Nov 4, 2026",
- "close": 288.93,
+ "asof": "Nov 5, 2026",
+ "close": 282.57,
  "bias": {
-  "en": "Bearish · rebound back above the 5-day, capped near $296",
-  "zh": "看空 · 反弹重回 5 日均线上方，受阻于 $296 附近"
+  "en": "Bearish · rejected at $295.6 again, holding the 5-day",
+  "zh": "看空 · 再度在 $295.6 受阻，守住 5 日均线"
  },
  "read": [
   {
-   "en": "Alphabet rose 3.2% on Nov 4 to $288.93, trading between $283.51 and $296.49 on heavy volume. It is above the falling 5-day ($282.3) and below the falling 10-day ($301.8), 30-day ($330.7), 100-day ($343.3) and 200-day ($340.0) averages. MACD has been below its signal since Oct 16 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 16 ($309.06), and RSI is 30.",
-   "zh": "Alphabet 11月4日上涨 3.2%，收于 $288.93，盘中区间 $283.51–296.49，成交量放大。股价位于下行的 5 日均线（$282.3）上方，并低于下行的 10 日（$301.8）、30 日（$330.7）、100 日（$343.3）和 200 日均线（$340.0）。MACD 自 10月16日起位于信号线下方且在零轴之下，柱状图收窄；抛物线 SAR 自 10月16日起看空（$309.06），RSI 为 30。"
+   "en": "Alphabet fell 2.2% on Nov 5 to $282.57, trading between $277.07 and $295.60 on heavy volume. It is just above the falling 5-day ($282.1) and below the falling 10-day ($297.7), 30-day ($328.7), 100-day ($342.4) and 200-day ($339.7) averages. MACD has been below its signal since Oct 16 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 16 ($303.92), and RSI is 28.",
+   "zh": "Alphabet 11月5日下跌 2.2%，收于 $282.57，盘中区间 $277.07–295.60，成交量放大。股价略高于下行的 5 日均线（$282.1），并低于下行的 10 日（$297.7）、30 日（$328.7）、100 日（$342.4）和 200 日均线（$339.7）。MACD 自 10月16日起位于信号线下方且在零轴之下，柱状图收窄；抛物线 SAR 自 10月16日起看空（$303.92），RSI 为 28。"
   },
   {
-   "en": "The close reclaimed the $281.6–288.3 resistance (Oct 29–Nov 3 highs), now support; the $296.49 high reached the $294.1–296.3 zone and faded. Resistance is $294.1–296.5 (Mar 9 and Feb 17 lows, Nov 4 high), then $301.8 (10-day) and $309.1 (SAR). Support is $281.6–283.5, then $276.9–277.2 and $270.7–272.1. A close above $296.5 would target $302–309; below $281.6, $277.",
-   "zh": "收盘收复 $281.6–288.3 阻力（10月29日至11月3日高点），该区域转为支撑；盘中高点 $296.49 触及 $294.1–296.3 区域后回落。阻力为 $294.1–296.5（3月9日和2月17日低点、11月4日高点），其次 $301.8（10 日均线）和 $309.1（SAR）。支撑为 $281.6–283.5，其次 $276.9–277.2 和 $270.7–272.1。若收盘站上 $296.5，下一目标看 $302–309；若跌破 $281.6，则看 $277。"
+   "en": "The $295.60 high failed again at the $294.1–296.5 resistance, and the close gave back the $283.4–283.8 area (Nov 4 low, Oct 29 close), now resistance; the 5-day held on the close. Resistance is $283.4–283.8, then $294.1–297.7 (Mar 9 low, Nov 4–5 highs, 10-day) and $303.9 (SAR). Support is $282.1 (5-day), then $276.9–277.2 (Oct 30, Nov 3 and Nov 5 lows) and $270.7–272.1. A close above $283.8 would target $294–298; below $276.9, $271.",
+   "zh": "盘中高点 $295.60 再度在 $294.1–296.5 阻力处受阻，收盘失守 $283.4–283.8 区域（11月4日低点、10月29日收盘），该区域转为阻力；5 日均线收盘守住。阻力为 $283.4–283.8，其次 $294.1–297.7（3月9日低点、11月4–5日高点、10 日均线）和 $303.9（SAR）。支撑为 $282.1（5 日均线），其次 $276.9–277.2（10月30日、11月3日和11月5日低点）和 $270.7–272.1。若收盘站上 $283.8，下一目标看 $294–298；若跌破 $276.9，则看 $271。"
   }
  ],
  "levels": {
   "r": [
    [
-    295.3,
+    284,
     {
-     "en": "Mar 9 low $294.1; Feb 17 low $296.3; Nov 4 high $296.5",
-     "zh": "3月9日低点 $294.1；2月17日低点 $296.3；11月4日高点 $296.5"
+     "en": "Nov 4 low $283.4; Oct 29 close $283.8",
+     "zh": "11月4日低点 $283.4；10月29日收盘 $283.8"
     }
    ],
    [
-    302,
+    296,
     {
-     "en": "10-day average $301.8",
-     "zh": "10日均线 $301.8"
+     "en": "Mar 9 low $294.1; Nov 5 high $295.6; Nov 4 high $296.5; 10-day average $297.7",
+     "zh": "3月9日低点 $294.1；11月5日高点 $295.6；11月4日高点 $296.5；10日均线 $297.7"
     }
    ],
    [
-    309,
+    304,
     {
-     "en": "Parabolic SAR $309.06",
-     "zh": "抛物线 SAR $309.06"
+     "en": "Parabolic SAR $303.9",
+     "zh": "抛物线 SAR $303.9"
     }
    ]
   ],
   "s": [
    [
-    283,
+    282.1,
     {
-     "en": "5-day average $282.3; Nov 3 high $281.6 and Oct 30 high $283.1, reclaimed; Nov 4 low $283.5",
-     "zh": "5日均线 $282.3；11月3日高点 $281.6 和10月30日高点 $283.1，已收复；11月4日低点 $283.5"
+     "en": "5-day average",
+     "zh": "5日均线"
     }
    ],
    [
     277,
     {
-     "en": "Oct 30 low $276.9; Nov 3 low $277.2",
-     "zh": "10月30日低点 $276.9；11月3日低点 $277.2"
+     "en": "Oct 30 low $276.9; Nov 5 low $277.07; Nov 3 low $277.2",
+     "zh": "10月30日低点 $276.9；11月5日低点 $277.07；11月3日低点 $277.2"
     }
    ],
    [

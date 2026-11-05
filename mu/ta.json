@@ -1,64 +1,64 @@
 {
- "asof": "Nov 4, 2026",
- "close": 795.23,
+ "asof": "Nov 5, 2026",
+ "close": 656.39,
  "bias": {
-  "en": "Downtrend · broke $818, below the Jul 17 low",
-  "zh": "下降趋势 · 跌破 $818，失守 7月17日低点"
+  "en": "Downtrend · lost the 200-day and the Jul 29 low",
+  "zh": "下降趋势 · 跌破 200 日均线和 7月29日低点"
  },
  "read": [
   {
-   "en": "Micron fell 7.0% on Nov 4 to $795.23, trading between $791.03 and $853.34 on heavy volume, down 19.1% in five sessions. It is below the falling 5-day ($860.6), 10-day ($885.3), 30-day ($967.2) and 100-day ($967.1) averages and above the rising 200-day ($753.9). MACD has been below its signal since Oct 30 and below zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($983.63), and RSI is 35.",
-   "zh": "美光 11月4日下跌 7.0%，收于 $795.23，盘中区间 $791.03–853.34，成交量放大，五个交易日累计下跌 19.1%。股价位于下行的 5 日（$860.6）、10 日（$885.3）、30 日（$967.2）和 100 日均线（$967.1）下方，并高于上行的 200 日均线（$753.9）。MACD 自 10月30日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 11月2日起看空（$983.63），RSI 为 35。"
+   "en": "Micron fell 17.5% on Nov 5 to $656.39, trading between $650.00 and $761.81 on volume nearly three times its 20-day average. It closed below the rising 200-day ($755.3) and is under the falling 5-day ($805.0), 10-day ($865.3), 30-day ($953.0) and 100-day ($962.7) averages. MACD has been below its signal since Oct 30 and below zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($975.57), and RSI is 27.",
+   "zh": "美光 11月5日下跌 17.5%，收于 $656.39，盘中区间 $650.00–761.81，成交量接近 20 日均量的三倍。收盘跌破上行的 200 日均线（$755.3），并位于下行的 5 日（$805.0）、10 日（$865.3）、30 日（$953.0）和 100 日均线（$962.7）下方。MACD 自 10月30日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 11月2日起看空（$975.57），RSI 为 27。"
   },
   {
-   "en": "The close broke the $845–849, $829.2 and $818.7 supports and the $804 Jul 17 low. Resistance is now $804–818.7, then $845.3–853.3 (Nov 3 and Oct 22 lows, Nov 4 high) and $860.6–861.6 (5-day, Oct 30 low). Support is $791 (Nov 4 low), then $753.9 (200-day) and $737.9 (Jul 29 low). A close above $818.7 would target $845–853; below $791, $754.",
-   "zh": "收盘跌破 $845–849、$829.2 和 $818.7 支撑以及 7月17日低点 $804。阻力变为 $804–818.7，其次 $845.3–853.3（11月3日和10月22日低点、11月4日高点）和 $860.6–861.6（5 日均线、10月30日低点）。支撑为 $791（11月4日低点），其次 $753.9（200 日均线）和 $737.9（7月29日低点）。若收盘站上 $818.7，下一目标看 $845–853；若跌破 $791，则看 $754。"
+   "en": "The close broke the $782 Nov 4 low, the 200-day and the $737.9 Jul 29 low; the $761.81 high stalled just above the 200-day. Resistance is $737.9–761.8 (Jul 29 low, 200-day, Nov 5 high), then $782–795 (Nov 4 low and close) and $804–818.7. Support is $650–652.2 (Nov 5 low, May 19 low), then $600–605.5 (round number, May 5 low) and $557.8 (May 4 low). A close above $761.8 would target $782–795; below $650, $605.",
+   "zh": "收盘跌破 11月4日低点 $782、200 日均线和 7月29日低点 $737.9；盘中高点 $761.81 在 200 日均线略上方受阻。阻力为 $737.9–761.8（7月29日低点、200 日均线、11月5日高点），其次 $782–795（11月4日低点与收盘）和 $804–818.7。支撑为 $650–652.2（11月5日低点、5月19日低点），其次 $600–605.5（整数关口、5月5日低点）和 $557.8（5月4日低点）。若收盘站上 $761.8，下一目标看 $782–795；若跌破 $650，则看 $605。"
   }
  ],
  "levels": {
   "r": [
+   [
+    750,
+    {
+     "en": "Jul 29 low $737.88; 200-day average $755.3; Nov 5 high $761.8",
+     "zh": "7月29日低点 $737.88；200日均线 $755.3；11月5日高点 $761.8"
+    }
+   ],
+   [
+    790,
+    {
+     "en": "Nov 4 low $782; Nov 4 close $795.2",
+     "zh": "11月4日低点 $782；11月4日收盘 $795.2"
+    }
+   ],
    [
     811,
     {
      "en": "Jul 17 low $804; May 11 high $818.67",
      "zh": "7月17日低点 $804；5月11日高点 $818.67"
     }
-   ],
-   [
-    849,
-    {
-     "en": "Nov 3 low $845.27; Oct 22 low $849.25; Nov 4 high $853.34",
-     "zh": "11月3日低点 $845.27；10月22日低点 $849.25；11月4日高点 $853.34"
-    }
-   ],
-   [
-    861,
-    {
-     "en": "5-day average $860.6; Oct 30 low $861.59",
-     "zh": "5日均线 $860.6；10月30日低点 $861.59"
-    }
    ]
   ],
   "s": [
    [
-    791,
+    651,
     {
-     "en": "Nov 4 low $791.03",
-     "zh": "11月4日低点 $791.03"
+     "en": "Nov 5 low $650; May 19 low $652.21",
+     "zh": "11月5日低点 $650；5月19日低点 $652.21"
     }
    ],
    [
-    754,
+    603,
     {
-     "en": "200-day average $753.9",
-     "zh": "200日均线 $753.9"
+     "en": "$600 round number; May 5 low $605.47",
+     "zh": "$600 整数关口；5月5日低点 $605.47"
     }
    ],
    [
-    738,
+    557.8,
     {
-     "en": "Jul 29 low $737.88",
-     "zh": "7月29日低点 $737.88"
+     "en": "May 4 low",
+     "zh": "5月4日低点"
     }
    ]
   ]

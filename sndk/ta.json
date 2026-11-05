@@ -1,64 +1,64 @@
 {
- "asof": "Nov 4, 2026",
- "close": 1037.4,
+ "asof": "Nov 5, 2026",
+ "close": 806.43,
  "bias": {
-  "en": "Bearish · lost $1,048–1,067, nearing $1,000",
-  "zh": "看空 · 失守 $1,048–1,067，逼近 $1,000"
+  "en": "Downtrend · oversold, under $1,000, at the Apr 9 low",
+  "zh": "下降趋势 · 超卖，跌破 $1,000，位于 4月9日低点"
  },
  "read": [
   {
-   "en": "SanDisk fell 7.9% on Nov 4 to $1,037.40, trading between $1,014.51 and $1,120.22. It is below the falling 5-day ($1,144.0), 10-day ($1,218.4), 30-day ($1,461.2) and 100-day ($1,583.9) averages and the rising 200-day ($1,269.0). MACD has been below its signal since Oct 2 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($1,376.31), and RSI is 31.",
-   "zh": "闪迪 11月4日下跌 7.9%，收于 $1,037.40，盘中区间 $1,014.51–1,120.22。股价位于下行的 5 日（$1,144.0）、10 日（$1,218.4）、30 日（$1,461.2）和 100 日均线（$1,583.9）以及上行的 200 日均线（$1,269.0）下方。MACD 自 10月2日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月30日起看空（$1,376.31），RSI 为 31。"
+   "en": "SanDisk fell 22.3% on Nov 5 to $806.43, trading between $803.97 and $967.99 on heavy volume. It is below the falling 5-day ($1,039.3), 10-day ($1,173.0), 30-day ($1,429.6) and 100-day ($1,570.8) averages and the rising 200-day ($1,270.5). MACD has been below its signal since Oct 2 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 30 ($1,354.57), and RSI is 24, oversold.",
+   "zh": "闪迪 11月5日下跌 22.3%，收于 $806.43，盘中区间 $803.97–967.99，成交量明显放大。股价位于下行的 5 日（$1,039.3）、10 日（$1,173.0）、30 日（$1,429.6）和 100 日均线（$1,570.8）以及上行的 200 日均线（$1,270.5）下方。MACD 自 10月2日起位于信号线下方，处于零轴下方，柱状图扩大；抛物线 SAR 自 10月30日起看空（$1,354.57），RSI 为 24，处于超卖区。"
   },
   {
-   "en": "The drop gave back the $1,100.5–1,121 support and broke the $1,048–1,067.4 support (May, July and Nov 2 lows), both now resistance. Resistance is $1,048–1,067.4, then $1,100.5–1,121 and $1,144–1,150.9 (5-day, Oct 30 close). Support is $998.2–1,014.5 (Nov 4 and Jul 29 lows, $1,000), then $980.3 and $926–947. A close above $1,067.4 would target $1,100–1,121; below $998, $980.",
-   "zh": "此次下跌回吐 $1,100.5–1,121 支撑，并跌破 $1,048–1,067.4 支撑（5月、7月和11月2日低点），两者均转为阻力。阻力为 $1,048–1,067.4，其次 $1,100.5–1,121 和 $1,144–1,150.9（5 日均线、10月30日收盘）。支撑为 $998.2–1,014.5（11月4日和7月29日低点、$1,000），其次 $980.3 和 $926–947。若收盘站上 $1,067.4，下一目标看 $1,100–1,121；若跌破 $998，则看 $980。"
+   "en": "The drop broke the $998–1,014.5, $980.3 and $926–947 supports, all now resistance, and left a gap from $968 to $1,014. The close sits on the Apr 9 low ($805). Resistance is $851.6–855 (Apr 9 close and high), then $926–947 and $980–1,014. Support is $804–805, then $758.2 (Apr 8 low) and $680–692 (March lows). A close above $855 would target $926–947; below $804, $758.",
+   "zh": "此次下跌跌破 $998–1,014.5、$980.3 和 $926–947 支撑，均转为阻力，并在 $968 至 $1,014 之间留下缺口。收盘位于 4月9日低点（$805）附近。阻力为 $851.6–855（4月9日收盘价和高点），其次 $926–947 和 $980–1,014。支撑为 $804–805，其次 $758.2（4月8日低点）和 $680–692（3月低点）。若收盘站上 $855，下一目标看 $926–947；若跌破 $804，则看 $758。"
   }
  ],
  "levels": {
   "r": [
    [
-    1058,
+    853,
     {
-     "en": "Nov 2 low $1,067.4; Jul 28 low $1,050.7; May 1 low $1,048, lost",
-     "zh": "11月2日低点 $1,067.4；7月28日低点 $1,050.7；5月1日低点 $1,048，已失守"
+     "en": "Apr 9 close $851.6; Apr 9 high $855",
+     "zh": "4月9日收盘 $851.6；4月9日高点 $855"
     }
    ],
    [
-    1112,
+    937,
     {
-     "en": "Nov 3 low $1,100.5; Oct 30 low $1,115.2; Aug 3 low $1,121.3",
-     "zh": "11月3日低点 $1,100.5；10月30日低点 $1,115.2；8月3日低点 $1,121.3"
+     "en": "Apr 23–24 lows ($926.1–947), lost",
+     "zh": "4月23–24日低点（$926.1–947），已失守"
     }
    ],
    [
-    1147,
+    1000,
     {
-     "en": "5-day average $1,144.0; Oct 30 close $1,150.9",
-     "zh": "5日均线 $1,144.0；10月30日收盘 $1,150.9"
+     "en": "Apr 28 low $980.3; $1,000; Nov 4 low $1,014, lost",
+     "zh": "4月28日低点 $980.3；$1,000；11月4日低点 $1,014，已失守"
     }
    ]
   ],
   "s": [
    [
-    1000,
+    804.5,
     {
-     "en": "Nov 4 low $1,014.5; Jul 29 low $998.2; $1,000",
-     "zh": "11月4日低点 $1,014.5；7月29日低点 $998.2；$1,000 整数关口"
+     "en": "Nov 5 low $803.97; Apr 9 low $805",
+     "zh": "11月5日低点 $803.97；4月9日低点 $805"
     }
    ],
    [
-    980.3,
+    758.2,
     {
-     "en": "Apr 28 low",
-     "zh": "4月28日低点"
+     "en": "Apr 8 low",
+     "zh": "4月8日低点"
     }
    ],
    [
-    936,
+    690,
     {
-     "en": "Apr 23–24 lows ($926.1–947)",
-     "zh": "4月23–24日低点（$926.1–947）"
+     "en": "March lows ($680.2–692)",
+     "zh": "3月低点（$680.2–692）"
     }
    ]
   ]

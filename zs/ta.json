@@ -1,64 +1,64 @@
 {
- "asof": "Nov 4, 2026",
- "close": 224.44,
+ "asof": "Nov 5, 2026",
+ "close": 203.88,
  "bias": {
-  "en": "Pullback · holding the 30-day for a second day",
-  "zh": "回调 · 连续第二天守住 30 日均线"
+  "en": "Pullback deepening · lost the 30-day, testing $203",
+  "zh": "回调加深 · 跌破 30 日均线，测试 $203"
  },
  "read": [
   {
-   "en": "Zscaler slipped 0.3% on Nov 4 to $224.44, trading between $220.08 and $229.85 on light volume. It is below the falling 5-day ($231.8) and rising 10-day ($242.8) and above the rising 30-day ($222.3), 100-day ($179.8) and 200-day ($167.1) averages. MACD crossed below its signal on Nov 2, still above zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($265.10), and RSI is 50.",
-   "zh": "Zscaler 11月4日下跌 0.3%，收于 $224.44，盘中区间 $220.08–229.85，成交量偏低。股价位于下行的 5 日（$231.8）和上行的 10 日均线（$242.8）下方，并高于上行的 30 日（$222.3）、100 日（$179.8）和 200 日均线（$167.1）。MACD 于 11月2日下穿信号线，仍在零轴上方，柱状图扩大；抛物线 SAR 自 11月2日起看空（$265.10），RSI 为 50。"
+   "en": "Zscaler fell 9.2% on Nov 5 to $203.88, trading between $203.02 and $216.43. It is below the falling 5-day ($223.0) and the rising 10-day ($239.4) and 30-day ($221.9) averages, and above the rising 100-day ($180.6) and 200-day ($167.1). MACD has been below its signal since Nov 2, still above zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($263.30), and RSI is 40.",
+   "zh": "Zscaler 11月5日下跌 9.2%，收于 $203.88，盘中区间 $203.02–216.43。股价位于下行的 5 日均线（$223.0）以及上行的 10 日（$239.4）和 30 日均线（$221.9）下方，仍高于上行的 100 日（$180.6）和 200 日均线（$167.1）。MACD 自 11月2日起位于信号线下方，仍在零轴上方，柱状图扩大；抛物线 SAR 自 11月2日起看空（$263.30），RSI 为 40。"
   },
   {
-   "en": "No level changed: the $220.08 low held the $220.1–222.3 support (30-day, Oct 14 and Nov 3 lows) again, and the $229.85 high stayed under $231.6–231.8. Resistance is $229.2–231.8 (Nov 3–4 highs, 5-day, Oct 22 low), then $233.2–234.3 and $239–242.8 (10-day). Support is $220.1–222.3, then $214.5 and $203.3. A close above $231.8 would target $234; below $220, $214.5.",
-   "zh": "关键位未变：盘中低点 $220.08 再度守住 $220.1–222.3 支撑（30 日均线、10月14日和11月3日低点），盘中高点 $229.85 仍低于 $231.6–231.8。阻力为 $229.2–231.8（11月3–4日高点、5 日均线、10月22日低点），其次 $233.2–234.3 和 $239–242.8（10 日均线）。支撑为 $220.1–222.3，其次 $214.5 和 $203.3。若收盘站上 $231.8，下一目标看 $234；若跌破 $220，则看 $214.5。"
+   "en": "The drop broke the $220.1–222.3 support (30-day, Oct 14 and Nov 3–4 lows) and $214.5, both now resistance, and the $203.02 low dipped under the Oct 16 low ($203.33) before the close held just above it. Resistance is $214.5–216.4, then $220.1–223 (30 and 5-day) and $229.2–231.6. Support is $203–203.3, then $195.1 (Sep 29 and Oct 2 lows) and $187.7. A close above $216.4 would target $220–223; below $203, $195.",
+   "zh": "此次下跌跌破 $220.1–222.3 支撑（30 日均线、10月14日和11月3–4日低点）以及 $214.5，两者均转为阻力；盘中低点 $203.02 一度跌破 10月16日低点（$203.33），但收盘守在其上方。阻力为 $214.5–216.4，其次 $220.1–223（30 日和 5 日均线）和 $229.2–231.6。支撑为 $203–203.3，其次 $195.1（9月29日和10月2日低点）和 $187.7。若收盘站上 $216.4，下一目标看 $220–223；若跌破 $203，则看 $195。"
   }
  ],
  "levels": {
   "r": [
    [
+    215.5,
+    {
+     "en": "Oct 21 low $214.5; Nov 5 high $216.43",
+     "zh": "10月21日低点 $214.5；11月5日高点 $216.43"
+    }
+   ],
+   [
+    222,
+    {
+     "en": "Nov 3–4 lows ($220.07–220.08); 30-day average $221.9; 5-day average $223.0",
+     "zh": "11月3–4日低点（$220.07–220.08）；30日均线 $221.9；5日均线 $223.0"
+    }
+   ],
+   [
     230.5,
     {
-     "en": "Nov 3–4 highs ($229.2–229.9); 5-day average $231.8; Oct 22 low $231.6",
-     "zh": "11月3–4日高点（$229.2–229.9）；5日均线 $231.8；10月22日低点 $231.6"
-    }
-   ],
-   [
-    234,
-    {
-     "en": "Oct 23, 29 and 30 lows ($233.2–234.2); Oct 9 high $234.3",
-     "zh": "10月23、29和30日低点（$233.2–234.2）；10月9日高点 $234.3"
-    }
-   ],
-   [
-    241,
-    {
-     "en": "Nov 2 high $239.0; Oct 22 high $241.2; 10-day average $242.8",
-     "zh": "11月2日高点 $239.0；10月22日高点 $241.2；10日均线 $242.8"
+     "en": "Nov 3–4 highs ($229.2–229.9); Oct 22 low $231.6",
+     "zh": "11月3–4日高点（$229.2–229.9）；10月22日低点 $231.6"
     }
    ]
   ],
   "s": [
    [
-    221,
+    203.2,
     {
-     "en": "30-day average $222.3; Oct 14 low $220.1; Nov 3–4 lows ($220.07–220.08)",
-     "zh": "30日均线 $222.3；10月14日低点 $220.1；11月3–4日低点（$220.07–220.08）"
+     "en": "Oct 16 low $203.33; Nov 5 low $203.02",
+     "zh": "10月16日低点 $203.33；11月5日低点 $203.02"
     }
    ],
    [
-    214.5,
+    195.1,
     {
-     "en": "Oct 21 low",
-     "zh": "10月21日低点"
+     "en": "Sep 29 and Oct 2 lows",
+     "zh": "9月29日和10月2日低点"
     }
    ],
    [
-    203.3,
+    187.7,
     {
-     "en": "Oct 16 low",
-     "zh": "10月16日低点"
+     "en": "Sep 28 low",
+     "zh": "9月28日低点"
     }
    ]
   ]

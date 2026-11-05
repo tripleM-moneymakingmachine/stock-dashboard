@@ -1,57 +1,57 @@
 {
- "asof": "Nov 4, 2026",
- "close": 59.27,
+ "asof": "Nov 5, 2026",
+ "close": 46.89,
  "bias": {
-  "en": "Bearish · broke the $62 and $59.3 supports",
-  "zh": "看空 · 跌破 $62 和 $59.3 支撑"
+  "en": "Bearish · oversold after a 21% drop under $50.8",
+  "zh": "看空 · 下跌 21% 跌破 $50.8 后超卖"
  },
  "read": [
   {
-   "en": "Applied Optoelectronics fell 7.3% on Nov 4 to $59.27, trading between $57.29 and $64.13. It is below the falling 5-day ($66.80), 10-day ($70.07), 30-day ($89.63) and 100-day ($111.02) averages and the rising 200-day ($114.54). MACD has been below its signal since Oct 13 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 12 ($76.29), and RSI is 32.",
-   "zh": "Applied Optoelectronics 11月4日下跌 7.3%，收于 $59.27，盘中区间 $57.29–64.13。股价位于下行的 5 日（$66.80）、10 日（$70.07）、30 日（$89.63）和 100 日均线（$111.02）以及上行的 200 日均线（$114.54）下方。MACD 自 10月13日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月12日起看空（$76.29），RSI 为 32。"
+   "en": "AAOI fell 20.9% on Nov 5 to $46.89, trading $45.88–56.89 on 2.2 times its 20-day average volume. It is below the falling 5-day ($60.34), 10-day ($67.95), 30-day ($87.82) and 100-day ($109.57) and the rising 200-day ($114.59) averages. MACD has been below its signal since Oct 13, below zero, with the histogram widening; Parabolic SAR has been bearish since Oct 12 ($72.48), and RSI is 27, oversold.",
+   "zh": "AAOI 11月5日下跌 20.9%，收于 $46.89，盘中区间 $45.88–56.89，成交量为 20 日均量的 2.2 倍。股价位于下行的 5 日（$60.34）、10 日（$67.95）、30 日（$87.82）和 100 日均线（$109.57）以及上行的 200 日均线（$114.59）下方。MACD 自 10月13日起位于信号线下方，处于零轴下方，柱状图扩大；抛物线 SAR 自 10月12日起看空（$72.48），RSI 为 27，处于超卖区。"
   },
   {
-   "en": "The close broke the $61.9–62.3 support and the $59.3 Feb 25 high, after a high of $64.13 under the broken $66 area. Resistance is $61.9–64.1 (Nov 2–3 lows, Nov 4 high), then $66.3–66.8 (Oct 22 low, 5-day) and $70.1–71.6 (10-day, Nov 2 high). Support is $57.3 (Nov 4 low), then $50.8 (Feb 11 high). A close above $64.1 would target $66–67; below $57.3, $51.",
-   "zh": "收盘跌破 $61.9–62.3 支撑和 2月25日高点 $59.3，盘中高点 $64.13 仍在已失守的 $66 区域下方。阻力为 $61.9–64.1（11月2–3日低点、11月4日高点），其次 $66.3–66.8（10月22日低点、5 日均线）和 $70.1–71.6（10 日均线、11月2日高点）。支撑为 $57.3（11月4日低点），其次 $50.8（2月11日高点）。若收盘站上 $64.1，下一目标看 $66–67；若跌破 $57.3，则看 $51。"
+   "en": "The gap lower broke the $57.3 Nov 4 low and the $50.8 Feb 11 high, the last two written supports, and the close is the lowest since Feb 18. Resistance is $50.8, then $56.9–57.3 (Nov 5 high, Nov 4 low) and $60.3–62.3 (5-day, Nov 2–3 lows). Support is $45.9 (Nov 5 low), then $41.1–42.0 (Feb 17 low, Dec 23 high). A close above $50.8 would target $57; below $45.9, $41–42.",
+   "zh": "跳空下跌跌破 11月4日低点 $57.3 和 2月11日高点 $50.8 这两个原有支撑，收盘为 2月18日以来最低。阻力为 $50.8，其次 $56.9–57.3（11月5日高点、11月4日低点）和 $60.3–62.3（5 日均线、11月2–3日低点）。支撑为 $45.9（11月5日低点），其次 $41.1–42.0（2月17日低点、12月23日高点）。若收盘站上 $50.8，下一目标看 $57；若跌破 $45.9，则看 $41–42。"
   }
  ],
  "levels": {
   "r": [
    [
-    63,
+    50.8,
     {
-     "en": "Nov 2–3 lows ($61.9–62.3); Nov 4 high $64.13",
-     "zh": "11月2–3日低点（$61.9–62.3）；11月4日高点 $64.13"
+     "en": "Feb 11 high, lost",
+     "zh": "2月11日高点，已失守"
     }
    ],
    [
-    66.5,
+    57,
     {
-     "en": "Oct 22 low $66.28; 5-day average $66.8",
-     "zh": "10月22日低点 $66.28；5日均线 $66.8"
+     "en": "Nov 5 high $56.89; Nov 4 low $57.24",
+     "zh": "11月5日高点 $56.89；11月4日低点 $57.24"
     }
    ],
    [
-    70.8,
+    61.3,
     {
-     "en": "10-day average $70.07; Nov 2 high $71.57",
-     "zh": "10日均线 $70.07；11月2日高点 $71.57"
+     "en": "5-day average $60.34; Nov 2–3 lows ($61.9–62.3)",
+     "zh": "5日均线 $60.34；11月2–3日低点（$61.9–62.3）"
     }
    ]
   ],
   "s": [
    [
-    57.3,
+    45.9,
     {
-     "en": "Nov 4 low $57.29",
-     "zh": "11月4日低点 $57.29"
+     "en": "Nov 5 low $45.88",
+     "zh": "11月5日低点 $45.88"
     }
    ],
    [
-    50.8,
+    41.5,
     {
-     "en": "Feb 11 high",
-     "zh": "2月11日高点"
+     "en": "Feb 17 low $41.12; Dec 23 high $41.96",
+     "zh": "2月17日低点 $41.12；12月23日高点 $41.96"
     }
    ]
   ]

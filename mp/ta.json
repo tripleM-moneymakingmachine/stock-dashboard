@@ -1,57 +1,57 @@
 {
- "asof": "Nov 4, 2026",
- "close": 35.91,
+ "asof": "Nov 5, 2026",
+ "close": 33.74,
  "bias": {
-  "en": "Downtrend · new 52-week low, under the $37.1 floor",
-  "zh": "下降趋势 · 创 52 周新低，跌破 $37.1 底部"
+  "en": "Downtrend · new 52-week low, MACD crossed down",
+  "zh": "下降趋势 · 创 52 周新低，MACD 下穿"
  },
  "read": [
   {
-   "en": "MP Materials fell 5.1% on Nov 4 to $35.91, trading between $35.56 and $38.96 on heavy volume. It is below the falling 5-day ($38.66), 10-day ($38.96), 30-day ($42.63), 100-day ($49.23) and 200-day ($54.75) averages. MACD has been above its signal since Oct 28 but below zero, histogram nearly flat (0.03); Parabolic SAR has been bearish since Nov 3 ($42.44), and RSI is 31.",
-   "zh": "MP Materials 11月4日下跌 5.1%，收于 $35.91，盘中区间 $35.56–38.96，成交量放大。股价位于下行的 5 日（$38.66）、10 日（$38.96）、30 日（$42.63）、100 日（$49.23）和 200 日均线（$54.75）下方。MACD 自 10月28日起位于信号线上方，但仍在零轴下方，柱状图接近持平（0.03）；抛物线 SAR 自 11月3日起看空（$42.44），RSI 为 31。"
+   "en": "MP Materials fell 6.0% on Nov 5 to $33.74, trading between $31.90, a new 52-week low, and $36.54 on volume nearly three times its 20-day average. It is below the falling 5-day ($37.1), 10-day ($38.5), 30-day ($42.1), 100-day ($49.0) and 200-day ($54.6) averages. MACD crossed below its signal on Nov 5, below zero; Parabolic SAR has been bearish since Nov 3 ($42.16), and RSI is 28.",
+   "zh": "MP Materials 11月5日下跌 6.0%，收于 $33.74，盘中区间 $31.90–36.54，其中 $31.90 为 52 周新低，成交量接近 20 日均量的三倍。股价位于下行的 5 日（$37.1）、10 日（$38.5）、30 日（$42.1）、100 日（$49.0）和 200 日均线（$54.6）下方。MACD 于 11月5日下穿信号线，位于零轴之下；抛物线 SAR 自 11月3日起看空（$42.16），RSI 为 28。"
   },
   {
-   "en": "The close broke the $37.1–37.4 support (Oct 23 52-week low, Nov 3 low) and set a new 52-week low at $35.56. Resistance is now $37.1–37.8 (Oct 23 and Nov 3 lows, Jul 29 low), then $38.7–39.0 (5-day, 10-day, Nov 4 high) and $40.9–41.1. Support is $35.56 (Nov 4 low), then $35. A close above $37.8 would target $39; below $35.5, there is no support within the past year.",
-   "zh": "收盘跌破 $37.1–37.4 支撑（10月23日 52 周低点、11月3日低点），并以 $35.56 创下 52 周新低。阻力变为 $37.1–37.8（10月23日和11月3日低点、7月29日低点），其次 $38.7–39.0（5 日、10 日均线及11月4日高点）和 $40.9–41.1。支撑为 $35.56（11月4日低点），其次 $35。若收盘站上 $37.8，下一目标看 $39；若跌破 $35.5，过去一年内再无支撑。"
+   "en": "The close broke the $35–35.56 supports (round number, Nov 4 low), now resistance with the $36.54 high, and the MACD rebound attempt failed. Resistance is $35.6–36.5, then $37.1–37.8 (5-day, Oct 23 and Jul 29 lows) and $38.5–39.0 (10-day, Nov 4 high). Support is $31.9 (Nov 5 low), then $29.6–29.7 (Jul 9, 2025 low; Apr 15, 2025 high). A close above $36.5 would target $37–37.8; below $31.9, $29.6.",
+   "zh": "收盘跌破 $35–35.56 支撑（整数关口、11月4日低点），该区域与盘中高点 $36.54 一起转为阻力，MACD 的反弹尝试失败。阻力为 $35.6–36.5，其次 $37.1–37.8（5 日均线、10月23日和7月29日低点）和 $38.5–39.0（10 日均线、11月4日高点）。支撑为 $31.9（11月5日低点），其次 $29.6–29.7（2025年7月9日低点、2025年4月15日高点）。若收盘站上 $36.5，下一目标看 $37–37.8；若跌破 $31.9，则看 $29.6。"
   }
  ],
  "levels": {
   "r": [
    [
+    36,
+    {
+     "en": "Nov 4 low $35.56, lost; Nov 5 high $36.54",
+     "zh": "11月4日低点 $35.56，已失守；11月5日高点 $36.54"
+    }
+   ],
+   [
     37.5,
     {
-     "en": "Oct 23 low $37.11; Nov 3 low $37.35; Jul 29 low $37.81",
-     "zh": "10月23日低点 $37.11；11月3日低点 $37.35；7月29日低点 $37.81"
+     "en": "5-day average $37.08; Oct 23 low $37.11; Jul 29 low $37.81",
+     "zh": "5日均线 $37.08；10月23日低点 $37.11；7月29日低点 $37.81"
     }
    ],
    [
     38.8,
     {
-     "en": "5-day average $38.66; 10-day $38.96; Nov 4 high $38.96",
-     "zh": "5日均线 $38.66；10日均线 $38.96；11月4日高点 $38.96"
-    }
-   ],
-   [
-    41,
-    {
-     "en": "Nov 2 high $40.87; Oct 27 high $41.05",
-     "zh": "11月2日高点 $40.87；10月27日高点 $41.05"
+     "en": "10-day average $38.47; Nov 4 high $38.96",
+     "zh": "10日均线 $38.47；11月4日高点 $38.96"
     }
    ]
   ],
   "s": [
    [
-    35.56,
+    31.9,
     {
-     "en": "52-week low (Nov 4)",
-     "zh": "52周低点（11月4日）"
+     "en": "52-week low (Nov 5)",
+     "zh": "52周低点（11月5日）"
     }
    ],
    [
-    35,
+    29.65,
     {
-     "en": "Round number",
-     "zh": "整数关口"
+     "en": "Jul 9, 2025 low $29.58; Apr 15, 2025 high $29.72",
+     "zh": "2025年7月9日低点 $29.58；2025年4月15日高点 $29.72"
     }
    ]
   ]

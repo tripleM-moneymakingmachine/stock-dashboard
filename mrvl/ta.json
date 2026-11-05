@@ -1,57 +1,64 @@
 {
- "asof": "Nov 4, 2026",
- "close": 159.8,
+ "asof": "Nov 5, 2026",
+ "close": 133.55,
  "bias": {
-  "en": "Downtrend · oversold, broke the $162.9 Jul 29 low",
-  "zh": "下降趋势 · 超卖，跌破 7月29日低点 $162.9"
+  "en": "Downtrend · oversold, broke the $146.9 April low",
+  "zh": "下降趋势 · 超卖，跌破 4月低点 $146.9"
  },
  "read": [
   {
-   "en": "Marvell fell 7.1% on Nov 4 to $159.80, trading between $154.78 and $166.29 on heavy volume, down 36.5% in five sessions. It is below the falling 5-day ($183.6), 10-day ($209.9), 30-day ($243.5) and 100-day ($235.3) and the rising 200-day ($184.5). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 29 ($239.86), and RSI is 27, oversold.",
-   "zh": "迈威尔 11月4日下跌 7.1%，收于 $159.80，盘中区间 $154.78–166.29，成交量放大，五个交易日累计下跌 36.5%。股价位于下行的 5 日（$183.6）、10 日（$209.9）、30 日（$243.5）和 100 日均线（$235.3）以及上行的 200 日均线（$184.5）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月29日起看空（$239.86），RSI 为 27，处于超卖。"
+   "en": "Marvell fell 16.4% on Nov 5 to $133.55, trading between $132.63 and $152.15 on volume about 2.5 times its 20-day average. It is below the falling 5-day ($166.6), 10-day ($200.9), 30-day ($239.3) and 100-day ($233.5) averages and the rising 200-day ($184.8). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 29 ($231.35), and RSI is 23.",
+   "zh": "Marvell 11月5日下跌 16.4%，收于 $133.55，盘中区间 $132.63–152.15，成交量约为 20 日均量的 2.5 倍。股价位于下行的 5 日（$166.6）、10 日（$200.9）、30 日（$239.3）和 100 日均线（$233.5）以及上行的 200 日均线（$184.8）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月29日起看空（$231.35），RSI 为 23。"
   },
   {
-   "en": "The close broke the $167.4–168.5 support (Nov 2–3 lows) and the $162.9 Jul 29 low; the intraday low of $154.78 undercut the $158 May 12 low before the close recovered above it. Resistance is $162.9–168.5, then $177.3–178 and $183.6–184.5 (5-day, 200-day). Support is $154.8–158, then $146.9 (Apr 28 low). A close above $168.5 would target $178; below $154.8, $147.",
-   "zh": "收盘跌破 $167.4–168.5 支撑（11月2–3日低点）和 7月29日低点 $162.9；盘中低点 $154.78 一度跌破 5月12日低点 $158，收盘重回其上方。阻力为 $162.9–168.5，其次 $177.3–178 和 $183.6–184.5（5 日、200 日均线）。支撑为 $154.8–158，其次 $146.9（4月28日低点）。若收盘站上 $168.5，下一目标看 $178；若跌破 $154.8，则看 $147。"
+   "en": "The close broke the $154.8–158 support (Nov 4 low, May 12 low) and the $146.9 Apr 28 low, both now resistance; the $152.15 high stayed under them. Resistance is $146.9–152.2, then $154.8–158 and $162.9–166.6 (Jul 29 low, 5-day). Support is $132.6 (Nov 5 low), then $128.4 (Apr 16 low) and $121.8–123.4 (Jan–Feb 2025 highs). A close above $152.2 would target $155–158; below $128.4, $122–123.",
+   "zh": "收盘跌破 $154.8–158 支撑（11月4日低点、5月12日低点）和 4月28日低点 $146.9，两者转为阻力；盘中高点 $152.15 未能收复。阻力为 $146.9–152.2，其次 $154.8–158 和 $162.9–166.6（7月29日低点、5 日均线）。支撑为 $132.6（11月5日低点），其次 $128.4（4月16日低点）和 $121.8–123.4（2025年1–2月高点）。若收盘站上 $152.2，下一目标看 $155–158；若跌破 $128.4，则看 $122–123。"
   }
  ],
  "levels": {
   "r": [
    [
+    149.5,
+    {
+     "en": "Apr 28 low $146.85, lost; Nov 5 high $152.15",
+     "zh": "4月28日低点 $146.85，已失守；11月5日高点 $152.15"
+    }
+   ],
+   [
+    156.4,
+    {
+     "en": "Nov 4 low $154.78; May 12 low $157.96",
+     "zh": "11月4日低点 $154.78；5月12日低点 $157.96"
+    }
+   ],
+   [
     165,
     {
-     "en": "Jul 29 low $162.9; Nov 4 high $166.29; Nov 2–3 lows ($167.4–168.5)",
-     "zh": "7月29日低点 $162.9；11月4日高点 $166.29；11月2–3日低点（$167.4–168.5）"
-    }
-   ],
-   [
-    177.6,
-    {
-     "en": "Nov 3 high $177.31; Jul 17 low $177.95",
-     "zh": "11月3日高点 $177.31；7月17日低点 $177.95"
-    }
-   ],
-   [
-    184,
-    {
-     "en": "5-day average $183.6; 200-day average $184.5",
-     "zh": "5日均线 $183.6；200日均线 $184.5"
+     "en": "Jul 29 low $162.9; 5-day average $166.6",
+     "zh": "7月29日低点 $162.9；5日均线 $166.6"
     }
    ]
   ],
   "s": [
    [
-    156.4,
+    132.6,
     {
-     "en": "May 12 low $157.96; Nov 4 low $154.78",
-     "zh": "5月12日低点 $157.96；11月4日低点 $154.78"
+     "en": "Nov 5 low",
+     "zh": "11月5日低点"
     }
    ],
    [
-    146.9,
+    128.4,
     {
-     "en": "Apr 28 low $146.85",
-     "zh": "4月28日低点 $146.85"
+     "en": "Apr 16 low",
+     "zh": "4月16日低点"
+    }
+   ],
+   [
+    122.6,
+    {
+     "en": "Jan–Feb 2025 highs ($121.8–123.4)",
+     "zh": "2025年1–2月高点（$121.8–123.4）"
     }
    ]
   ]
