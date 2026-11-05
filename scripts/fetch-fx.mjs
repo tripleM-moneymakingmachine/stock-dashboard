@@ -1,4 +1,4 @@
-// FX page data: majors, Asian pairs (CNH HKD SGD KRW TWD MYR PHP IDR INR) and two crosses.
+// FX page data: majors, Asian pairs (CNH HKD SGD KRW TWD MYR PHP IDR INR) and three crosses (EUR/JPY, CNH/JPY, EUR/CNH).
 // Writes data/fx.json (live quote + ~1.5 years of daily OHLC per pair).
 // Sources
 //   Live quotes: CNBC quote service, then Yahoo Finance.
@@ -38,6 +38,7 @@ const PAIRS = [
   // crosses: if no source quotes them directly, they are calculated from the two dollar pairs
   { k: "eurjpy", g: "Crosses", name: "Euro / Japanese yen", short: "EUR/JPY", dp: 2, cnbc: "EURJPY=", yahoo: "EURJPY=X", calc: ["eurusd", "*", "usdjpy"] },
   { k: "cnhjpy", g: "Crosses", name: "Offshore yuan / Japanese yen", short: "CNH/JPY", dp: 3, cnbc: "CNHJPY=", yahoo: "CNHJPY=X", calc: ["usdjpy", "/", "usdcnh"] },
+  { k: "eurcnh", g: "Crosses", name: "Euro / offshore yuan", short: "EUR/CNH", dp: 4, cnbc: "EURCNH=", yahoo: "EURCNH=X", calc: ["eurusd", "*", "usdcnh"] },
 ];
 const r6 = (v) => +(+v).toPrecision(7);
 

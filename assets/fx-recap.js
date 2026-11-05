@@ -9,10 +9,10 @@
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const get = (u) => fetch(u + "?t=" + Date.now(), { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
   const GROUPS = [["Majors", "Majors"], ["Asia", "Asia"], ["Crosses", "Crosses"]];
-  const ORDER = ["eurusd", "gbpusd", "audusd", "usdjpy", "usdchf", "usdcad", "usdcnh", "usdhkd", "usdsgd", "usdkrw", "usdtwd", "usdmyr", "usdphp", "usdidr", "usdinr", "eurjpy", "cnhjpy"];
+  const ORDER = ["eurusd", "gbpusd", "audusd", "usdjpy", "usdchf", "usdcad", "usdcnh", "usdhkd", "usdsgd", "usdkrw", "usdtwd", "usdmyr", "usdphp", "usdidr", "usdinr", "eurjpy", "cnhjpy", "eurcnh"];
   const NAMES = { eurusd: "EUR/USD", gbpusd: "GBP/USD", audusd: "AUD/USD", usdjpy: "USD/JPY", usdchf: "USD/CHF", usdcad: "USD/CAD", usdcnh: "USD/CNH", usdhkd: "USD/HKD",
-    usdsgd: "USD/SGD", usdkrw: "USD/KRW", usdtwd: "USD/TWD", usdmyr: "USD/MYR", usdphp: "USD/PHP", usdidr: "USD/IDR", usdinr: "USD/INR", eurjpy: "EUR/JPY", cnhjpy: "CNH/JPY" };
-  const GRP = { eurusd: "Majors", gbpusd: "Majors", audusd: "Majors", usdjpy: "Majors", usdchf: "Majors", usdcad: "Majors", eurjpy: "Crosses", cnhjpy: "Crosses" };
+    usdsgd: "USD/SGD", usdkrw: "USD/KRW", usdtwd: "USD/TWD", usdmyr: "USD/MYR", usdphp: "USD/PHP", usdidr: "USD/IDR", usdinr: "USD/INR", eurjpy: "EUR/JPY", cnhjpy: "CNH/JPY", eurcnh: "EUR/CNH" };
+  const GRP = { eurusd: "Majors", gbpusd: "Majors", audusd: "Majors", usdjpy: "Majors", usdchf: "Majors", usdcad: "Majors", eurjpy: "Crosses", cnhjpy: "Crosses", eurcnh: "Crosses" };
   const DIR = { up: ["▲", "Higher"], down: ["▼", "Lower"], range: ["◆", "Range"] };
   const shift = (iso, days) => { const t = new Date(iso + "T12:00:00Z"); t.setUTCDate(t.getUTCDate() + days); return t.toISOString().slice(0, 10); };
   const lastLE = (d, x) => { for (let i = d.length - 1; i >= 0; i--) if (d[i] <= x) return i; return -1; };
