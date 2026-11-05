@@ -1,30 +1,30 @@
 {
- "session": "2026-11-04",
- "asof": "Wed Nov 4, 2026",
- "tone": "up",
- "headline": "Democrats' sweep of Congress sends the Dow up 3% and oil down 8%, but chips sink 3%",
- "summary": "Futures fell as much as 1–2.5% overnight as early results showed Democrats taking both chambers, then reversed once Trump accepted the outcome; the S&P 500 was up about 1.8% by early afternoon and closed 1.6% higher, with the Dow posting its best day since April 2025. Advancers led on both exchanges and volume ran above average, but the AI trade split hard: cash-rich Big Tech platforms rallied while chipmakers and data-center builders sold off. Consumer discretionary gained about 4.3% while energy dropped about 4.7% with crude.",
+ "session": "2026-11-05",
+ "asof": "Thu Nov 5, 2026",
+ "tone": "down",
+ "headline": "Data-center crackdown fears and Qualcomm/Arm misses sink chips 12%; S&P 500 −4.4%",
+ "summary": "The post-election rally unravelled within the first hour: the Dow briefly held gains at the open, but selling in chip and data-center stocks accelerated through the morning and the S&P 500 posted its worst day since April 2025, more than erasing Wednesday's jump. Losses were broad, with all 11 S&P sectors lower, technology down about 7.3% and consumer staples holding up best at about −0.7%, on heavy volume of about 26.9 billion shares versus a 17.7 billion average. The Nasdaq Composite and Nasdaq-100 closed in correction, and Treasuries caught a haven bid.",
  "stats": [
-  ["S&P 500", "7,688.62", 1.58],
-  ["Nasdaq", "25,736.51", 1.44],
-  ["Dow", "53,356.12", 3.03],
-  ["Russell 2000", "2,856.95", 1.58],
-  ["SOX (chips)", "10,268.65", -3.13],
-  ["VIX", "16.61", -20.26, true],
-  ["US 10Y", "4.90%", "−5bp"],
-  ["WTI crude", "$88.12", -8.29]
+  ["S&P 500", "7,353.73", -4.36],
+  ["Nasdaq", "24,315.00", -5.52],
+  ["Dow", "51,523.06", -3.44],
+  ["Russell 2000", "2,729.89", -4.45],
+  ["SOX (chips)", "9,011.14", -12.25],
+  ["VIX", "28.18", 69.66, true],
+  ["US 10Y", "4.84%", "−5bp"],
+  ["WTI crude", "$90.52", 2.72]
  ],
  "drivers": [
-  ["Divided government removes election risk", "Democrats won majorities in the House and Senate, and Trump said he would work with them, taking a contested-count tail risk off the table; strategists cited gridlock as historically friendly to stocks. The VIX fell about 20% to 16.61, its lowest close in weeks, and the Dow added 1,569 points."],
-  ["Big Tech rallies on a slower data-center buildout", "Microsoft rose about 6.7%, Amazon 6.1%, Apple about 5.3% and Alphabet 3.2% as investors bet that state-level limits on data centers would ease capex and cash demands on the hyperscalers; Goldman flagged moratorium risk for roughly 45% of planned US capacity after Democratic wins in Texas and Georgia."],
-  ["AI infrastructure and chips sell off", "The SOX fell 3.1% to a six-month low, with Micron down about 7% and Nvidia about 3%; Hut 8 (−23%), Vertiv (about −13%), IREN (−11%) and CoreWeave (about −10%) led data-center losers. AMD gave back most of an early 6% jump on its upbeat 2027 outlook to finish about 1% higher; Tesla and SpaceX fell more than 3% on scrutiny worries."],
-  ["Oil plunges on hopes of an Iran war exit", "WTI sank 8.3% to $88.12, its lowest since Aug 31 and biggest drop since April, after Vance blamed the Iran war for Republican losses and Democratic leaders pledged to end it; energy and defense stocks fell while solar jumped. Lower oil pulled the 10-year yield down about 5bp to 4.90% and the dollar weakened, while ADP payrolls (+86K) beat and ISM services (54.5) was steady."]
+  ["AI buildout fears turn into a chip rout", "Investors priced the risk that a Democratic Congress and new state officials in data-center states could pause or regulate new construction, which would cut demand for AI chips and power gear. The SOX fell 12.25%, its worst day since March 2020; Nvidia (about −9%) was the heaviest drag on the S&P 500, AMD sank about 17%, Micron about 17%, and Broadcom and TSMC fell 9% or more."],
+  ["Qualcomm and Arm results add fuel", "Qualcomm fell about 9.5% after handset chip sales dropped 26% and its next-quarter profit outlook came in light, with a warning on rising supply-chain costs; Arm slid about 11% as guidance failed to impress. Memory and storage names (SanDisk, Western Digital, Seagate) posted steep double-digit losses."],
+  ["Selling spreads to Big Tech and the wider AI trade", "Meta lost 4% and Amazon and Alphabet about 2.2% each after Wednesday's rally; data-center and power names fell hard, with IREN and Applied Digital down more than 14%, CoreWeave nearly 10% and GE Vernova 7.5%, while Tesla and SpaceX dropped 9% or more. The S&P 500 shed about $3 trillion in value; AppLovin (+31%) and Tapestry (+7%) rose on strong results."],
+  ["Haven bid in bonds; oil rebounds", "The VIX jumped about 70% to 28.18, its highest close since late March, and the 10-year yield slipped about 5bp to 4.84% while the 2-year fell more on safety buying; Fed's Hammack and Barkin still hinted at possible hikes. WTI bounced 2.7% to $90.52 after Wednesday's 8% plunge as Middle East supply risk lingered; jobless claims (189K) and Q3 productivity (+3.6%) were firm."]
  ],
- "week": "Three sessions in, the S&P 500 is up 1.4%, the Nasdaq 1.2%, the Dow 3.1% and the Russell 2000 1.6%, though the Nasdaq-100 remains in a correction and the SOX at a six-month low; the backdrop is a Fed on hold at 3.75–4% with December hike risk still priced and crude down sharply this week.",
- "watch": "Next: Qualcomm slid about 4–5% after hours on a light earnings outlook as handset chip sales fell 26%, and Arm also reported after the close; the October jobs report on Friday, Nov 6 is the main data test for the Fed.",
+ "week": "Four sessions in, the S&P 500 is down about 3% and the Nasdaq about 4.4% for the week, the Dow nearly flat and the Russell 2000 down about 3%, with the Nasdaq and SOX now in correction (SOX about 38% below its June record); the backdrop is a hawkish-leaning Fed with a December hike still in play and crude far below last week's highs.",
+ "watch": "Next: the October jobs report on Friday, Nov 6 is the key test for December Fed pricing; Cloudflare jumped about 18% after hours on its results, and any further statements on state data-center moratoriums will steer the chip names.",
  "sources": [
-  ["Reuters", "https://www.marketscreener.com/news/wall-street-rises-after-democrats-win-congress-data-center-stocks-tumble-ce785fdfde8df324"],
-  ["AP", "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c0be7ca45b5875abe758e0570cb9a265"],
-  ["Investopedia", "https://www.investopedia.com/big-tech-rallies-defense-prison-stocks-sink-here-what-s-moving-after-the-democrats-sweep-12236110"]
+  ["AP", "https://www.dallasnews.com/business/article/asian-shares-mostly-advance-following-us-22513257.php"],
+  ["Reuters", "https://centraloregondaily.com/news/nation-world/nasdaq-correction-chip-stocks-ai-regulation-fears-democrats-congress/article_36c67699-30f9-5cf5-8fa3-8e7a99850922.html"],
+  ["Yahoo Finance", "https://finance.yahoo.com/markets/article/chip-stocks-slaughtered-as-wall-street-suffers-worst-post-midterm-day-since-1896-213204256.html"]
  ]
 }
