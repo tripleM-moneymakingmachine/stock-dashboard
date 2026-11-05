@@ -1,31 +1,31 @@
 {
  "ticker": "AAOI",
- "asof": "2026-11-05",
+ "asof": "2026-11-06",
  "quarter": {
-  "en": "Q2 2026",
-  "zh": "2026年第二季"
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
  },
- "reported": "2026-08-06",
+ "reported": "2026-11-05",
  "timing": "amc",
- "pre_close": 124.22,
+ "pre_close": 46.89,
  "react": {
-  "date": "2026-08-07",
-  "close": 135.63,
-  "pct": 9.2
+  "date": "2026-11-05",
+  "pct": null,
+  "ah": true
  },
  "since": {
-  "date": "2026-11-04",
-  "close": 59.27,
-  "pct": -52.3
+  "date": "2026-11-05",
+  "close": 46.89,
+  "pct": 0.0
  },
  "review": {
   "en": [
-   "A fifth straight record: revenue rose 86% to $191.9M and non-GAAP EPS of $0.06 beat, though the GAAP loss was $22.8M. 800G revenue more than doubled from Q1, and cable TV hit a record $80.6M. The Q3 guide of $255–290M was roughly in line, with one customer's 100G switch shortage costing $20–25M. CEO Thompson Lin and CFO Stefan Murry said growth is limited by capacity and parts, not demand: 800G/1.6T output should rise from about 200,000 units a month to over 650,000 by year-end, and 2026 revenue is still seen near $1.1B.",
-   "Shares fell 7.5% after hours on the light guide but reversed, rising 9.2% the next day and reaching $155 by Aug 17, 25% above the pre-report close. On Aug 24 the stock dropped 13.8% when AOI filed a $600M at-the-market share sale, its latest of several 2026 raises, and it slid to about $95 in mid-September with the AI selloff before an October rebound. It remains below the pre-report price."
+   "A sixth straight record: revenue rose 128% to $269.9M, just above the ~$268M consensus, and non-GAAP EPS of $0.17 beat $0.14 as AOI posted a $6.3M GAAP profit. Data center sales jumped 254% to $155.6M and CATV rose 57% to $110.9M. The Q4 guide of $385–420M trails the ~$427M consensus, with EPS of $0.48–0.63 in line. CFO Stefan Murry cut the end-2026 capacity target to over 500,000 800G/1.6T units a month as US plants wait for power, while CEO Thompson Lin pointed to a new multi-year Tier 1 hyperscaler deal.",
+   "The report came after a rout: AI optical stocks fell for a second day on post-midterm data center worries and Coherent's results, and AOI dropped 20.9% to $46.89, about 80% below its 52-week high. Shares then slid about 10% more after hours as the light revenue guide and slower US build-out outweighed the beat. The first regular session after the report, on Nov 6, has not traded yet."
   ],
   "zh": [
-   "连续第五个季度创纪录：营收增长 86% 至 1.919 亿美元，非 GAAP 每股收益 0.06 美元超预期，但 GAAP 亏损 2,280 万美元。800G 营收较上季翻倍以上，有线电视业务创纪录达 8,060 万美元。第三季营收指引 2.55–2.9 亿美元，基本符合预期，其中一家客户 100G 交换机短缺将减少 2,000–2,500 万美元。CEO Thompson Lin与 CFO 斯特凡·默里表示增长受产能和零部件而非需求限制：800G/1.6T 月产能将由约 20 万只增至年底的 65 万只以上，2026 年营收仍预计约 11 亿美元。",
-   "盘后因指引偏弱下跌 7.5%，但随即反转，次日上涨 9.2%，8 月 17 日升至 155 美元，较财报前收盘高 25%。8 月 24 日公司提交 6 亿美元按市价增发计划（为 2026 年多次融资之一），股价下跌 13.8%；9 月中旬随 AI 抛售跌至约 95 美元，10 月反弹，目前仍低于财报前价位。"
+   "连续第六个季度创纪录：营收增长 128% 至 2.699 亿美元，略高于约 2.68 亿美元的市场预期；非 GAAP 每股收益 0.17 美元，超过 0.14 美元的预期，GAAP 净利润 630 万美元。数据中心收入大增 254% 至 1.556 亿美元，有线电视业务增长 57% 至 1.109 亿美元。第四季营收指引 3.85–4.2 亿美元，低于约 4.27 亿美元的预期，每股收益指引 0.48–0.63 美元符合预期。CFO 斯特凡·默里因美国工厂等待电力接入，将 2026 年底 800G/1.6T 月产能目标下调至逾 50 万件；CEO Thompson Lin 则强调新签的一级云厂商多年协议。",
+   "财报发布前股价已遭重挫：受中期选举后数据中心担忧及 Coherent 业绩影响，AI 光通信股连续第二天下跌，AOI 当日跌 20.9% 至 46.89 美元，较 52 周高点低约 80%。财报公布后，营收指引偏弱及美国扩产放缓盖过业绩超预期，股价盘后再跌约 10%。财报后首个常规交易日（11 月 6 日）尚未开盘。"
   ]
  },
  "ceo": {
@@ -52,16 +52,16 @@
  },
  "sources": [
   {
-   "t": "Q2 2026 call highlights",
-   "u": "https://zacks.com/stock/news/2970813/aaoi-q2-earnings-call-focuses-on-capacity-led-800g-ramp"
+   "t": "Q3 2026 results (AOI / PR Newswire)",
+   "u": "https://prnewswire.com/news-releases/applied-optoelectronics-reports-third-quarter-2026-results-302931179.html"
   },
   {
-   "t": "Q2 2026 results",
-   "u": "https://marketbeat.com/earnings/reports/2026-8-6-applied-optoelectronics-inc-stock"
+   "t": "After-hours drop and Q4 guide vs consensus (Investing.com)",
+   "u": "https://nl.investing.com/news/earnings/applied-optoelectronics-daalt-door-zwakke-outlook-vierde-kwartaal-965958"
   },
   {
-   "t": "Aug 24 share sale",
-   "u": "https://fool.com/investing/2026/08/24/why-applied-optoelectronics-stock-dived-by-almost"
+   "t": "AI optical selloff on Nov 5 (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-sinks-16-coherent-165746528.html"
   }
  ]
 }

@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q1 FY22 to Q4 FY26. Lumentum's fiscal year ends around July 1. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第一季至 FY26 第四季共 20 个季度。Lumentum 财年约在7月1日结束。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q2 FY22 to Q1 FY27. Lumentum's fiscal year ends around July 1. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第二季至 FY27 第一季共 20 个季度。Lumentum 财年约在7月1日结束。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q1 FY22",
-   "Sep 2021",
-   61.9,
-   17.9,
-   44
-  ],
   [
    "Q2 FY22",
    "Dec 2021",
@@ -143,36 +136,43 @@ window.FCF = {
    363,
    166.8,
    196.2
+  ],
+  [
+   "Q1 FY27",
+   "Sep 2026",
+   267.7,
+   229.8,
+   37.9
   ]
  ],
  "est": [
   [
-   "Q1 FY27",
-   "Sep 2026",
-   420,
-   180,
-   240
-  ],
-  [
    "Q2 FY27",
    "Dec 2026",
-   470,
-   190,
-   280
+   450,
+   240,
+   210
   ],
   [
    "Q3 FY27",
    "Mar 2027",
-   520,
-   200,
-   320
+   550,
+   250,
+   300
   ],
   [
    "Q4 FY27",
    "Jun 2027",
-   560,
-   210,
-   350
+   620,
+   260,
+   360
+  ],
+  [
+   "Q1 FY28",
+   "Sep 2027",
+   680,
+   270,
+   410
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash & ST investments",
    "zh": "现金及短期投资"
   },
-  "v": "$2.74B",
+  "v": "$1.98B",
   "s": {
-   "en": "Jun 2026 · ~$2B convertible debt left",
-   "zh": "2026年6月 · 剩余可转债约 20 亿"
+   "en": "Sep 2026 · ~$1.3B convertible debt left",
+   "zh": "2026年9月 · 剩余可转债约 13 亿"
   }
  },
  "read": [
   {
-   "en": "Lumentum spent most of 2023 to 2025 near break-even on cash as telecom demand slumped and it invested in cloud products. AI optics turned it around: free cash flow went from −$18M in Q1 FY26 to +$196M in Q4 FY26, even as capex more than doubled.",
-   "zh": "2023 至 2025 年电信需求低迷、公司投入云产品，Lumentum 现金流大多在盈亏平衡附近。AI 光通信扭转局面：自由现金流由 FY26 第一季的 −1800 万美元升至第四季的 +1.96 亿，同期资本开支翻倍有余。"
+   "en": "Lumentum spent most of 2023 to 2025 near break-even on cash as telecom demand slumped. AI optics turned it around, lifting free cash flow to $196M in Q4 FY26. It slipped to $38M in Q1 FY27: operating cash flow of $268M lagged $534M of non-GAAP operating income, and capex rose to $230M.",
+   "zh": "2023 至 2025 年电信需求低迷，Lumentum 现金流大多在盈亏平衡附近。AI 光通信扭转局面，FY26 第四季自由现金流升至 1.96 亿美元。FY27 第一季回落至 3800 万：经营现金流 2.68 亿美元，远低于 5.34 亿的非GAAP营业利润，资本开支升至 2.3 亿。"
   },
   {
-   "en": "Using Q1 FY27 guidance ($1.25B revenue at about 40% operating margin) and capex of about $180–210M a quarter, I estimate $240–350M of free cash flow a quarter, roughly $1.2B over four quarters. Cash fell $430M in Q4 because of the note conversion, not because of operations.",
-   "zh": "按 FY27 第一季指引（营收 12.5 亿美元、营业利润率约 40%）及每季约 1.8–2.1 亿美元资本开支，我估计每季自由现金流 2.4–3.5 亿美元，四季合计约 12 亿。第四季现金减少 4.3 亿是因可转债转换，而非经营所致。"
+   "en": "Using Q2 FY27 guidance ($1.6B revenue at about 45% operating margin) and capex of about $240–270M a quarter, I estimate $210–410M of free cash flow a quarter, roughly $1.3B over four quarters. Cash fell $759M in Q1 mainly because of $493M of note-conversion payments and $307M of RSU tax withholding, not operations.",
+   "zh": "按 FY27 第二季指引（营收 16 亿美元、营业利润率约 45%）及每季约 2.4–2.7 亿美元资本开支，我估计每季自由现金流 2.1–4.1 亿美元，四季合计约 13 亿。第一季现金减少 7.59 亿，主要因可转债转换支付 4.93 亿及限制性股票代扣税 3.07 亿，而非经营所致。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "扩产"
    },
    "p": {
-    "en": "Capex was $167M in Q4 and rising, for laser and transceiver lines serving cloud and AI customers.",
-    "zh": "第四季资本开支 1.67 亿美元且在上升，用于服务云和 AI 客户的激光器与光模块产线。"
+    "en": "Capex was $230M in Q1, up from $167M, for laser, transceiver and OCS lines serving AI customers.",
+    "zh": "第一季资本开支 2.3 亿美元（上季 1.67 亿），用于服务 AI 客户的激光器、光模块与 OCS 产线。"
    }
   },
   {
@@ -213,30 +213,30 @@ window.FCF = {
     "zh": "可转债"
    },
    "p": {
-    "en": "About $2B of convertible debt remains; $524M of debt was repaid in Q4 as part of the conversion.",
-    "zh": "仍有约 20 亿美元可转债；第四季因转换偿还债务 5.24 亿美元。"
+    "en": "$493M was paid to settle note conversions in Q1; about $1.3B, mostly 2032 notes, remains.",
+    "zh": "第一季支付 4.93 亿美元结算可转债转换；仍余约 13 亿，主要为 2032 年到期债券。"
    }
   },
   {
    "h": {
-    "en": "Share repurchases",
-    "zh": "股票回购"
+    "en": "RSU tax withholding",
+    "zh": "限制性股票代扣税"
    },
    "p": {
-    "en": "$117M of stock repurchases in Q4, up from $5M a year earlier.",
-    "zh": "第四季回购 1.17 亿美元股票，一年前为 500 万。"
+    "en": "$307M of taxes paid on net-settled stock awards in Q1; there were no buybacks.",
+    "zh": "第一季为净额结算的股票奖励代缴税款 3.07 亿美元；本季未回购股票。"
    }
   }
  ],
  "in": [
   {
    "h": {
-    "en": "AI transceivers and lasers",
-    "zh": "AI 光模块与激光器"
+    "en": "AI lasers, OCS and transceivers",
+    "zh": "AI 激光器、OCS 与光模块"
    },
    "p": {
-    "en": "Q1 FY27 is guided to about $1.25B of revenue, more than 130% above a year ago.",
-    "zh": "FY27 第一季营收指引约 12.5 亿美元，同比增逾 130%。"
+    "en": "Q2 FY27 is guided to about $1.6B of revenue, roughly $350M more than Q1.",
+    "zh": "FY27 第二季营收指引约 16 亿美元，较第一季增加约 3.5 亿。"
    }
   },
   {
@@ -245,34 +245,34 @@ window.FCF = {
     "zh": "利润率提升"
    },
    "p": {
-    "en": "Non-GAAP operating margin is guided to 39.5–40.5%, up from 36.6%, as factories run fuller.",
-    "zh": "随产能利用率提高，非GAAP营业利润率指引 39.5–40.5%，高于 36.6%。"
+    "en": "Non-GAAP operating margin is guided to 45–46%, up from 42.3%.",
+    "zh": "非GAAP营业利润率指引 45–46%，高于 42.3%。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash & ST investments, Jun 2026",
-    "zh": "2026年6月现金及短期投资"
+    "en": "Cash & ST investments, Sep 2026",
+    "zh": "2026年9月现金及短期投资"
    },
-   2740
+   1980
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   1190
+   1280
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash & ST investments, Jun 2027 (est.)",
-  "zh": "2027年6月现金及短期投资（估）"
+  "en": "Cash & ST investments, Sep 2027 (est.)",
+  "zh": "2027年9月现金及短期投资（估）"
  },
  "bridgeNote": {
-  "en": "Excludes further note conversions, debt repayment and buybacks.",
-  "zh": "未计入后续可转债转换、偿债及回购。"
+  "en": "Excludes further note conversions, debt repayment, RSU tax payments and Marvell deal effects.",
+  "zh": "未计入后续可转债转换、偿债、限制性股票代扣税及 Marvell 交易影响。"
  },
  "extraNote": {
   "en": "",
@@ -280,16 +280,16 @@ window.FCF = {
  },
  "src": [
   [
+   "Q1 FY27 Form 10-Q cash flow statement (SEC)",
+   "https://www.sec.gov/Archives/edgar/data/1633978/000162828026069615/lite-20260926.htm"
+  ],
+  [
+   "Q1 FY27 results (Lumentum IR)",
+   "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results"
+  ],
+  [
    "Quarterly cash flow statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/?p=quarterly"
-  ],
-  [
-   "Q4 FY26 cash and capex",
-   "https://rocketnews.com/2026/08/lumentum-q4-earnings-call-highlights"
-  ],
-  [
-   "Q4 FY26 results",
-   "https://wpnews.pro/news/lumentum-reports-1b-revenue-beats-earnings-estimates-as-ai-demand-fuels-109"
   ]
  ]
 };

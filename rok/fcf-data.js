@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 FY21 to Q3 FY26. Rockwell's fiscal year ends September 30. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY21 第四季至 FY26 第三季共 20 个季度。罗克韦尔财年于9月30日结束。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q1 FY22 to Q4 FY26. Rockwell's fiscal year ends September 30. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第一季至 FY26 第四季共 20 个季度。罗克韦尔财年于9月30日结束。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q4 FY21",
-   "Sep 2021",
-   204.1,
-   43.7,
-   160.4
-  ],
   [
    "Q1 FY22",
    "Dec 2021",
@@ -143,36 +136,43 @@ window.FCF = {
    724,
    70,
    654
+  ],
+  [
+   "Q4 FY26",
+   "Sep 2026",
+   680,
+   78,
+   602
   ]
  ],
  "est": [
   [
-   "Q4 FY26",
-   "Sep 2026",
-   560,
-   70,
-   490
-  ],
-  [
    "Q1 FY27",
    "Dec 2026",
-   300,
-   60,
-   240
+   285,
+   85,
+   200
   ],
   [
    "Q2 FY27",
    "Mar 2027",
-   380,
-   55,
-   325
+   410,
+   90,
+   320
   ],
   [
    "Q3 FY27",
    "Jun 2027",
-   650,
-   70,
-   580
+   660,
+   100,
+   560
+  ],
+  [
+   "Q4 FY27",
+   "Sep 2027",
+   675,
+   105,
+   570
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash",
    "zh": "现金"
   },
-  "v": "$479M",
+  "v": "$433M",
   "s": {
-   "en": "Jun 30, 2026 · debt $3.6B",
-   "zh": "2026年6月30日 · 债务 36 亿"
+   "en": "Sep 30, 2026 · debt $3.3B",
+   "zh": "2026年9月30日 · 债务 33 亿"
   }
  },
  "read": [
   {
-   "en": "Rockwell's free cash flow is seasonal: the December quarter is usually the weakest (it was negative in Q1 FY22 and Q1 FY24) and the second half is strongest. Q3 FY26 produced a record $654M, and the last four quarters add up to about $1.5B.",
-   "zh": "罗克韦尔自由现金流有季节性：12月季度通常最弱（FY22 和 FY24 第一季为负），下半财年最强。FY26 第三季创下 6.54 亿美元纪录，近四季合计约 15 亿。"
+   "en": "Rockwell's free cash flow is seasonal: the December quarter is usually the weakest and the second half the strongest. FY26 brought a record $1.70B, 113% of adjusted net income, including $602M in Q4, helped by $108M of US tariff refunds and interest.",
+   "zh": "罗克韦尔自由现金流有季节性：12月季度通常最弱，下半财年最强。FY26 创下 17.0 亿美元纪录，相当于调整后净利润的 113%，其中 Q4 为 6.02 亿，受益于 1.08 亿美元的美国关税退款及利息。"
   },
   {
-   "en": "My base case uses the ~$9.0B FY26 sales guide (about $2.34B in Q4) and keeps the recent seasonal pattern, with modest growth into FY27. That gives about $1.6B over four quarters. The main risk is the industrial cycle: in FY24, when customers cut inventory, quarterly free cash flow fell as low as −$35M.",
-   "zh": "我的基准情景采用约 90 亿美元的 FY26 销售指引（Q4 约 23.4 亿），沿用近期的季节性模式，FY27 小幅增长，四季合计约 16 亿美元。主要风险是工业周期：FY24 客户去库存时，季度自由现金流一度低至 −3,500 万美元。"
+   "en": "My base case follows the FY27 guide: about 100% conversion of roughly $1.65B of adjusted net income ($15.00 EPS on ~110M shares), with capex rising to about 4% of sales for a new US plant. That gives about $1.65B over four quarters, slightly above FY26 once the one-off refunds are removed. The main risk is the industrial cycle: in FY24, when customers cut inventory, quarterly free cash flow fell as low as −$35M.",
+   "zh": "我的基准情景沿用 FY27 指引：约 16.5 亿美元调整后净利润（每股 $15.00、约 1.1 亿股）约 100% 转化为现金，资本开支因新建美国工厂升至销售的约 4%。四季合计约 16.5 亿美元，剔除一次性退款后略高于 FY26。主要风险是工业周期：FY24 客户去库存时，季度自由现金流一度低至 −3,500 万美元。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "股息"
    },
    "p": {
-    "en": "About $155M a quarter at $1.38 per share, usually raised each November.",
-    "zh": "每股 $1.38，每季约 1.55 亿美元，通常每年11月上调。"
+    "en": "About $160M a quarter after the October raise to $1.45 per share.",
+    "zh": "10月上调至每股 $1.45 后，每季约 1.6 亿美元。"
    }
   },
   {
@@ -213,30 +213,30 @@ window.FCF = {
     "zh": "回购"
    },
    "p": {
-    "en": "$754M of repurchases over the first three quarters of FY26, including $446M in Q2.",
-    "zh": "FY26 前三季回购 7.54 亿美元，其中 Q2 4.46 亿。"
+    "en": "$1.26B of repurchases in FY26, including $500M in Q4; about $600M planned for FY27.",
+    "zh": "FY26 回购 12.6 亿美元，其中 Q4 5 亿；FY27 计划约 6 亿。"
    }
   },
   {
    "h": {
-    "en": "Debt",
-    "zh": "债务"
+    "en": "Capex",
+    "zh": "资本开支"
    },
    "p": {
-    "en": "About $3.6B of debt against $479M of cash, so buybacks partly depend on borrowing.",
-    "zh": "债务约 36 亿美元，现金 4.79 亿，因此回购部分依赖借款。"
+    "en": "Rising from $257M in FY26 to about 4% of sales, roughly $380M, in FY27.",
+    "zh": "由 FY26 的 2.57 亿美元升至 FY27 销售的约 4%，约 3.8 亿。"
    }
   }
  ],
  "in": [
   {
    "h": {
-    "en": "Volume recovery",
-    "zh": "销量复苏"
+    "en": "Volume growth",
+    "zh": "销量增长"
    },
    "p": {
-    "en": "Organic sales grew 10% in Q3 after the 2024 destocking.",
-    "zh": "继 2024 年去库存后，Q3 有机销售增长 10%。"
+    "en": "Core sales grew 7% in Q4, and FY27 guides 6–9% organic growth.",
+    "zh": "Q4 核心销售增长 7%，FY27 指引有机增长 6–9%。"
    }
   },
   {
@@ -245,35 +245,35 @@ window.FCF = {
     "zh": "利润率提升"
    },
    "p": {
-    "en": "Segment margin of 22.3% means more of each sales dollar becomes cash.",
-    "zh": "分部利润率 22.3%，意味着每一美元销售转化为更多现金。"
+    "en": "Enterprise operating margin is guided to about 23% in FY27, up about 1 point.",
+    "zh": "FY27 企业营业利润率指引约 23%，提升约 1 个百分点。"
    }
   },
   {
    "h": {
-    "en": "Sensia exit",
-    "zh": "退出 Sensia"
+    "en": "Tariff refunds",
+    "zh": "关税退款"
    },
    "p": {
-    "en": "Dissolving the Sensia joint venture removed a lower-margin business in the second half of FY26.",
-    "zh": "解散 Sensia 合资企业，于 FY26 下半年剥离了一项较低利润率的业务。"
+    "en": "$103M of refunds plus $5M of interest arrived in Q4, a one-off boost to FY26 cash.",
+    "zh": "Q4 收到 1.03 亿美元退款及 500 万利息，一次性提振 FY26 现金。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash, Jun 2026",
-    "zh": "2026年6月现金"
+    "en": "Cash, Sep 2026",
+    "zh": "2026年9月现金"
    },
-   479
+   433
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   1635
+   1650
   ],
   [
    {
@@ -287,16 +287,16 @@ window.FCF = {
     "en": "Buybacks (est.)",
     "zh": "回购（估）"
    },
-   -800
+   -600
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash, Jun 2027 (est.)",
-  "zh": "2027年6月现金（估）"
+  "en": "Cash, Sep 2027 (est.)",
+  "zh": "2027年9月现金（估）"
  },
  "bridgeNote": {
-  "en": "Rockwell runs with little cash and funds part of its buybacks with debt, so cash on hand rarely builds up.",
-  "zh": "罗克韦尔现金较少，部分回购以债务融资，因此账面现金很少累积。"
+  "en": "Rockwell runs with little cash and has funded part of its buybacks with debt. With FY27 buybacks planned at about half of FY26's, cash could build modestly.",
+  "zh": "罗克韦尔现金较少，部分回购以债务融资。FY27 计划回购约为 FY26 的一半，现金可能小幅累积。"
  },
  "src": [
   [
@@ -304,12 +304,12 @@ window.FCF = {
    "https://stockanalysis.com/stocks/rok/financials/cash-flow-statement/?p=quarterly"
   ],
   [
-   "Balance sheet (Stock Analysis)",
-   "https://stockanalysis.com/stocks/rok/financials/balance-sheet/?p=quarterly"
+   "Q4 FY26 release: cash flow and balance sheet (SEC)",
+   "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000045/fy2026ex99.htm"
   ],
   [
-   "Q3 FY26 results",
-   "https://stocktitan.net/news/ROK/rockwell-automation-reports-third-quarter-2026-4qmdttz2nb00.html"
+   "FY27 capex, buyback and cash conversion guide (call transcript)",
+   "https://benzinga.com/news/26/11/62922849/rockwell-automation-q4-2026-earnings-call-transcript"
   ]
  ]
 };

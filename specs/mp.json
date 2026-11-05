@@ -3,13 +3,13 @@
  "ticker": "MP",
  "exchange": "NYSE",
  "name": "MP Materials",
- "shares": 178020000.0,
+ "shares": 178234989.0,
  "beta": "1.99",
  "snapshot": {
-  "price": "$46.14",
-  "date": "Oct 9, 2026",
-  "mcap": "$8.21B",
-  "range": "$38–100"
+  "price": "$33.74",
+  "date": "Nov 5, 2026",
+  "mcap": "$6.01B",
+  "range": "$34–73"
  },
  "eyebrow": {
   "en": "MP Materials Corp. · Class A · Las Vegas, Nevada",
@@ -20,56 +20,56 @@
   "zh": "美国的稀土矿，<em>华盛顿撑腰</em>。"
  },
  "lede": {
-  "en": "MP owns Mountain Pass, the only scaled US rare earth mine, and is building magnet factories. A Department of War deal sets a $110/kg price floor for its NdPr and fully contracts its new 10X magnet plant. NdPr output rose 41% last quarter, but the company is still losing money while it spends $500–600M on capex this year.",
-  "zh": "MP 拥有美国唯一规模化稀土矿 Mountain Pass，并在兴建磁材工厂。与战争部的协议为其 NdPr 设定每公斤 110 美元价格下限，并包销新建的 10X 磁材工厂。上季 NdPr 产量增 41%，但今年资本开支 5–6 亿美元，公司仍在亏损。"
+  "en": "MP owns Mountain Pass, the only scaled US rare earth mine, and is building magnet factories. A Department of War deal sets a $110/kg price floor for its NdPr and fully contracts its new 10X magnet plant. Q3 revenue of $148M beat estimates, helped by a one-off defense sale, and GM magnet sales start in Q4, but GAAP losses and heavy capex continue.",
+  "zh": "MP 拥有美国唯一规模化稀土矿 Mountain Pass，并在兴建磁材工厂。与战争部的协议为其 NdPr 设定每公斤 110 美元价格下限，并包销新建的 10X 磁材工厂。第三季营收 1.48 亿美元超预期，部分得益于一笔一次性国防销售；通用汽车磁材销售将于第四季开始，但 GAAP 亏损与高额资本开支仍在持续。"
  },
  "valuation": {
   "k": {
-   "en": "Price / sales",
-   "zh": "市销率"
+   "en": "P/E (forward)",
+   "zh": "市盈率（预期）"
   },
-  "v": "~20×",
+  "v": "~46×",
   "s": {
-   "en": "on $416M trailing revenue",
-   "zh": "按近12月 4.16 亿营收"
+   "en": "2027 consensus adj. EPS $0.74 · trailing GAAP n/m (loss) · P/S ~12×",
+   "zh": "2027 年一致预期调整后每股 $0.74 · GAAP 历史为亏损，不适用 · 市销率约 12 倍"
   }
  },
  "analysts": {
   "k": {
-   "en": "NdPr floor",
-   "zh": "NdPr 价格下限"
+   "en": "Q4 2026 consensus",
+   "zh": "2026 Q4 一致预期"
   },
-  "v": "$110/kg",
+  "v": "~$134M",
   "s": {
-   "en": "price protection from the Department of War",
-   "zh": "战争部价格保障"
+   "en": "no company guidance · adj. EPS est. $0.02",
+   "zh": "公司不提供指引 · 调整后每股预期 $0.02"
   }
  },
  "earnings": {
-  "v": "Nov 5",
+  "v": "Late Feb",
   "s": {
-   "en": "Q3 2026 · confirmed, after close",
-   "zh": "2026 第三季 · 已确认，盘后"
+   "en": "Q4 2026 · date not yet announced",
+   "zh": "2026 第四季 · 日期未公布"
   }
  },
  "sub_price": {
-  "en": "Daily closes with the 50-day average. The stock fell by more than half from its high near $100.",
-  "zh": "每日收盘价与50日均线。股价较近 $100 的高点下跌逾一半。"
+  "en": "Daily closes with the 50-day average. The stock has fallen by more than half from its 52-week high near $73.",
+  "zh": "每日收盘价与50日均线。股价较 52 周高点近 $73 下跌逾一半。"
  },
  "sub_rev": {
-  "en": "Revenue in US$ millions, with GAAP gross margin on the right axis. Since mid-2025 revenue includes price-protection income from the Department of War ($17.6M in Q2 2026); reported product revenue was $108.5M. MP gives no revenue guidance, so there is no guidance bar.",
-  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率。自 2025 年中起营收含战争部价格保障收入（2026 年第二季 1760 万美元）；产品收入为 1.085 亿。MP 不提供营收指引，故无指引柱。"
+  "en": "Revenue in US$ millions, with GAAP gross margin on the right axis. Since Q4 2025 revenue includes price-protection income from the Department of War ($8.1M in Q3 2026); Q3 product revenue was $147.7M, including a one-off $31.6M SEG+ sale. MP gives no revenue guidance, so the Q4 bar is analyst consensus for product revenue.",
+  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率。自 2025 年第四季起营收含战争部价格保障收入（2026 年第三季 810 万美元）；第三季产品收入 1.477 亿，含一笔 3160 万美元的一次性 SEG+ 销售。MP 不提供营收指引，故第四季柱为分析师对产品收入的一致预期。"
  },
  "rev_cells": [
   {
    "k": {
-    "en": "Q2 2026",
-    "zh": "2026 Q2"
+    "en": "Q3 2026",
+    "zh": "2026 Q3"
    },
-   "v": "$126M",
+   "v": "$156M",
    "s": {
-    "en": "incl. $17.6M price protection",
-    "zh": "含 1760 万价格保障收入"
+    "en": "+191% YoY · incl. $8.1M floor income, $31.6M one-off",
+    "zh": "同比 +191% · 含 810 万价格保障收入及 3160 万一次性销售"
    }
   },
   {
@@ -77,32 +77,32 @@
     "en": "NdPr produced",
     "zh": "NdPr 产量"
    },
-   "v": "840 t",
+   "v": "1,018 t",
    "s": {
-    "en": "+41% YoY · Q3 to exceed 1,000 t",
-    "zh": "同比 +41% · Q3 将超 1000 吨"
+    "en": "+41% YoY · sold 1,020 t (+94%)",
+    "zh": "同比 +41% · 销量 1020 吨（+94%）"
    }
   },
   {
    "k": {
-    "en": "NdPr sold",
-    "zh": "NdPr 销量"
+    "en": "Materials adj. EBITDA",
+    "zh": "材料板块调整后 EBITDA"
    },
-   "v": "1,006 t",
+   "v": "$47.8M",
    "s": {
-    "en": "+127% YoY",
-    "zh": "同比 +127%"
+    "en": "on $133.5M revenue · magnetics $5.3M",
+    "zh": "营收 1.335 亿 · 磁材板块 530 万"
    }
   },
   {
    "k": {
-    "en": "Q3 NdPr price",
-    "zh": "Q3 NdPr 价格"
+    "en": "Q3 EPS",
+    "zh": "Q3 每股收益"
    },
-   "v": "high $90s/kg",
+   "v": "$0.04",
    "s": {
-    "en": "market ~$110; floor tops up the gap",
-    "zh": "市价约 $110；下限补足差额"
+    "en": "adjusted vs −$0.01 est. · GAAP −$0.12",
+    "zh": "调整后，预期 −$0.01 · GAAP −$0.12"
    }
   }
  ],
@@ -114,19 +114,19 @@
     "zh": "政府支持"
    },
    "p": {
-    "en": "The Department of War price floor of $110/kg and a fully contracted 10X magnet plant reduce commodity-price risk.",
-    "zh": "战争部每公斤 110 美元价格下限及包销的 10X 磁材工厂降低了商品价格风险。"
+    "en": "The Department of War price floor of $110/kg (worth $8.1M in Q3) and a fully contracted 10X magnet plant reduce commodity-price risk.",
+    "zh": "战争部每公斤 110 美元价格下限（第三季带来 810 万美元）及包销的 10X 磁材工厂降低了商品价格风险。"
    }
   },
   {
    "kind": "plus",
    "h": {
-    "en": "Volume ramp",
-    "zh": "产量爬升"
+    "en": "Magnet sales begin",
+    "zh": "磁材开始销售"
    },
    "p": {
-    "en": "NdPr sales topped 1,000 t for the second straight quarter and production should exceed 1,000 t in Q3.",
-    "zh": "NdPr 销量连续两季超 1000 吨，Q3 产量预计超 1000 吨。"
+    "en": "GM qualification is complete, with saleable magnet deliveries and revenue starting in Q4. NdPr output topped 1,000 t for the first time.",
+    "zh": "通用汽车认证已完成，可销售磁材交付及收入将于第四季开始。NdPr 产量首次突破 1000 吨。"
    }
   },
   {
@@ -136,43 +136,54 @@
     "zh": "资本开支高"
    },
    "p": {
-    "en": "2026 capex is guided at $500–600M, including the $80M 10X site. Free cash flow was −$223M in Q2.",
-    "zh": "2026 年资本开支指引 5–6 亿美元，含 8000 万美元 10X 厂址。第二季自由现金流 −2.23 亿。"
+    "en": "Capex was $420M in the first nine months against $500–600M guided for 2026. Free cash flow was −$125M in Q3 and cash fell to $1.34B.",
+    "zh": "前九个月资本开支 4.2 亿美元，2026 年指引为 5–6 亿。第三季自由现金流 −1.25 亿，现金降至 13.4 亿。"
    }
   },
   {
    "kind": "risk",
    "h": {
-    "en": "Still unprofitable",
-    "zh": "仍未盈利"
+    "en": "One-off boost, still losing money",
+    "zh": "一次性提振，仍在亏损"
    },
    "p": {
-    "en": "Operating losses continue while magnet plants are built; the magnetics segment's revenue fell 17% during the transition.",
-    "zh": "磁材工厂建设期间仍有营业亏损；转型期间磁材板块收入下降 17%。"
+    "en": "A $31.6M one-off SEG+ sale flattered Q3 revenue; the GAAP net loss was $20.7M and magnetics revenue fell 15% during the switch to magnets.",
+    "zh": "3160 万美元一次性 SEG+ 销售推高了第三季营收；GAAP 净亏损 2070 万美元，转产磁材期间磁材板块收入下降 15%。"
    }
   }
  ],
  "calendar": [
   {
-   "date": "Nov 5, 2026",
+   "date": "Nov 10, 2026",
    "h": {
-    "en": "Q3 2026 earnings",
-    "zh": "2026 第三季财报"
+    "en": "China export-curb pause ends",
+    "zh": "中国出口管制暂停到期"
    },
    "p": {
-    "en": "Management expects NdPr production above 1,000 t and realized prices in the high $90s/kg.",
-    "zh": "管理层预计 NdPr 产量超 1000 吨，实现价格每公斤 90 多美元。"
+    "en": "China's one-year pause on its rare earth export curbs is due to expire.",
+    "zh": "中国为期一年的稀土出口管制暂停措施将到期。"
    }
   },
   {
-   "date": "Late 2026",
+   "date": "Q4 2026",
    "h": {
-    "en": "NdPr run-rate target",
-    "zh": "NdPr 产能目标"
+    "en": "First GM magnet revenue",
+    "zh": "首笔通用汽车磁材收入"
    },
    "p": {
-    "en": "Targeted year-end production run rate.",
-    "zh": "年底目标产量水平。"
+    "en": "Saleable magnet deliveries to GM begin at the Independence plant in Texas.",
+    "zh": "德州 Independence 工厂开始向通用汽车交付可销售磁材。"
+   }
+  },
+  {
+   "date": "Late Feb 2027",
+   "h": {
+    "en": "Q4 2026 earnings",
+    "zh": "2026 第四季财报"
+   },
+   "p": {
+    "en": "First quarter with magnet revenue; watch 2027 capex plans.",
+    "zh": "首个含磁材收入的季度；关注 2027 年资本开支计划。"
    }
   },
   {
@@ -189,29 +200,29 @@
  ],
  "sources": [
   [
-   "Q2 2026 call transcript",
-   "https://fool.com/earnings/call-transcripts/2026/08/13/mp-materials-mp-q2-2026-earnings-call-transcript"
+   "Q3 2026 results press release (Business Wire via Stock Titan)",
+   "https://www.stocktitan.net/news/MP/mp-materials-reports-third-quarter-2026-2cg29ay7vd06.html"
   ],
   [
-   "Q2 2026 call: capex and cash",
-   "https://themarketsdaily.com/2026/08/10/mp-materials-q2-earnings-call-highlights.html"
+   "Q3 2026 results vs estimates (24/7 Wall St.)",
+   "https://247wallst.com/cards/mp-materials-q3-2026-earnings-mp-01m6pw5rybxy1nbkfz55feqnyy"
   ],
   [
-   "Q2 2026 results and price floor",
-   "https://panabee.com/news/mp-materials-earnings-q2-2026-report"
+   "Q3 2026 beat on sales and price support (Reuters via MarketScreener)",
+   "https://www.marketscreener.com/news/mp-materials-q3-results-beat-expectations-on-rising-sales-us-price-support-ce785fddda8ffe20"
   ],
   [
    "Quarterly income statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/mp/financials/?p=quarterly"
   ],
   [
-   "Price, market cap and beta: Financial Modeling Prep, as of Oct 9, 2026",
-   "https://finance.yahoo.com/quote/MP"
+   "Price, after-hours quote and consensus: Stock Analysis and Stocklake, as of Nov 5, 2026",
+   "https://stockanalysis.com/stocks/mp/forecast/"
   ]
  ],
  "foot": {
-  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with MP Materials Corp..",
-  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 MP Materials Corp. 无关联。"
+  "en": "Fundamentals as of Nov 5, 2026 (Q3 2026 results). For information only, not investment advice. Not affiliated with MP Materials Corp.",
+  "zh": "基本面数据截至 2026年11月5日（2026 第三季业绩）。仅供参考，不构成投资建议。与 MP Materials Corp. 无关联。"
  },
  "quarters": [
   [
@@ -373,22 +384,28 @@
    42.66,
    -14.72,
    -0.11
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   155.76,
+   45.03,
+   -14.16,
+   -0.12
   ]
  ],
- "guide": null,
+ "guide": [
+  "Q4 2026e",
+  134,
+  "Dec 2026 · analyst consensus (product revenue, implied by ~$451M FY)",
+  "2026年12月 · 分析师一致预期（产品收入，由约 4.51 亿全年预期推算）"
+ ],
  "fcf": {
   "sub": {
-   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Shaded bars and italic rows are estimates.",
-   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度。浅色柱与斜体行为估算。"
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第四季至 2026 年第三季共 20 个季度。浅色柱与斜体行为估算。"
   },
   "hist": [
-   [
-    "Q3 2021",
-    "Sep 2021",
-    22.5,
-    41.73,
-    -19.23
-   ],
    [
     "Q4 2021",
     "Dec 2021",
@@ -521,33 +538,40 @@
     6.85,
     230.34,
     -223.49
+   ],
+   [
+    "Q3 2026",
+    "Sep 2026",
+    -12.7,
+    112.54,
+    -125.24
    ]
   ],
   "est": [
    [
-    "Q3 2026",
-    "Sep 2026",
-    30,
-    120,
-    -90
-   ],
-   [
     "Q4 2026",
     "Dec 2026",
-    50,
-    125,
-    -75
+    30,
+    130,
+    -100
    ],
    [
     "Q1 2027",
     "Mar 2027",
+    40,
+    150,
+    -110
+   ],
+   [
+    "Q2 2027",
+    "Jun 2027",
     50,
     150,
     -100
    ],
    [
-    "Q2 2027",
-    "Jun 2027",
+    "Q3 2027",
+    "Sep 2027",
     60,
     150,
     -90
@@ -558,20 +582,20 @@
     "en": "Cash & ST investments",
     "zh": "现金及短期投资"
    },
-   "v": "$1.45B",
+   "v": "$1.34B",
    "s": {
-    "en": "Jun 30, 2026",
-    "zh": "2026年6月30日"
+    "en": "Sep 30, 2026",
+    "zh": "2026年9月30日"
    }
   },
   "read": [
    {
-    "en": "MP made good money in 2021–2022 when rare earth prices peaked, then burned cash every quarter since early 2023 as prices fell and it built downstream separation and magnet plants. Q2 2026 was the heaviest at −$223M, including the $80M purchase of the 10X site.",
-    "zh": "2021–2022 年稀土价格高企时 MP 盈利丰厚，此后价格下跌、公司兴建下游分离与磁材工厂，自 2023 年初起每季烧钱。2026 年第二季最重，为 −2.23 亿美元，含 8000 万美元购买 10X 厂址。"
+    "en": "MP made good money in 2021–2022 when rare earth prices peaked, then burned cash every quarter since early 2023 as prices fell and it built separation and magnet plants. Q3 2026 free cash flow was −$125M: operating cash flow was −$13M despite $41M of adjusted EBITDA, as receivables rose, and capex was $113M.",
+    "zh": "2021–2022 年稀土价格高企时 MP 盈利丰厚，此后价格下跌、公司兴建分离与磁材工厂，自 2023 年初起每季烧钱。2026 年第三季自由现金流 −1.25 亿美元：尽管调整后 EBITDA 达 4100 万，应收账款增加使经营现金流为 −1300 万，资本开支 1.13 亿。"
    },
    {
-    "en": "Capex is guided at $500–600M for 2026, with $308M spent in the first half. I assume about $120M a quarter in the second half and $150M a quarter in 2027, with operating cash flow slowly improving as NdPr volumes rise, for about −$355M over four quarters. Management says its $1.45B of cash fully funds the plan.",
-    "zh": "2026 年资本开支指引 5–6 亿美元，上半年已花 3.08 亿。我假设下半年每季约 1.2 亿、2027 年每季 1.5 亿，经营现金流随 NdPr 销量上升缓慢改善，四季合计约 −3.55 亿美元。管理层称 14.5 亿现金足以覆盖全部计划。"
+    "en": "Capex reached $420M in the first nine months against $500–600M guided for 2026, implying roughly $130M in Q4. I assume about $150M a quarter in 2027 for 10X and heavy rare earth work, with operating cash flow improving as GM magnet sales start, for about −$400M over four quarters. That leaves close to $940M of cash and investments by Sep 2027, against $936M of debt.",
+    "zh": "前九个月资本开支 4.2 亿美元，2026 年指引 5–6 亿，意味着第四季约 1.3 亿。我假设 2027 年每季约 1.5 亿用于 10X 及重稀土项目，经营现金流随通用汽车磁材销售启动而改善，四季合计约 −4 亿美元。至 2027 年 9 月现金及投资约剩 9.4 亿，债务为 9.36 亿。"
    }
   ],
   "out": [
@@ -581,18 +605,18 @@
      "zh": "磁材工厂"
     },
     "p": {
-     "en": "Over 60% of Q2 capex went to magnetics, including the 10X site.",
-     "zh": "第二季逾 60% 资本开支投向磁材，含 10X 厂址。"
+     "en": "$420M of capex in the first nine months of 2026, mostly for magnetics and the 10X site.",
+     "zh": "2026 年前九个月资本开支 4.2 亿美元，主要用于磁材及 10X 厂址。"
     }
    },
    {
     "h": {
-     "en": "Debt repayment",
-     "zh": "偿债"
+     "en": "Working capital",
+     "zh": "营运资金"
     },
     "p": {
-     "en": "$69M of debt repaid in Q2 2026.",
-     "zh": "2026 年第二季偿债 6900 万美元。"
+     "en": "Trade receivables rose to $64M from $15M at the end of 2025 as sales grew.",
+     "zh": "随销售增长，应收账款由 2025 年底的 1500 万增至 6400 万美元。"
     }
    }
   ],
@@ -603,40 +627,40 @@
      "zh": "价格保障款"
     },
     "p": {
-     "en": "The Department of War tops up NdPr sales to $110/kg; $17.6M in Q2.",
-     "zh": "战争部将 NdPr 售价补足至每公斤 110 美元；第二季 1760 万。"
+     "en": "The Department of War tops up NdPr sales to $110/kg; $8.1M in Q3.",
+     "zh": "战争部将 NdPr 售价补足至每公斤 110 美元；第三季 810 万。"
     }
    },
    {
     "h": {
-     "en": "Rising NdPr volumes",
-     "zh": "NdPr 销量上升"
+     "en": "Magnet revenue from Q4",
+     "zh": "第四季起磁材收入"
     },
     "p": {
-     "en": "Sales above 1,000 t a quarter and Q3 production expected above 1,000 t.",
-     "zh": "季度销量逾 1000 吨，Q3 产量预计超 1000 吨。"
+     "en": "GM deliveries start in Q4 on top of NdPr sales above 1,000 t a quarter.",
+     "zh": "第四季开始向通用汽车交付，叠加每季逾 1000 吨的 NdPr 销量。"
     }
    }
   ],
   "bridge": [
    [
     {
-     "en": "Cash & ST investments, Jun 2026",
-     "zh": "2026年6月现金及短期投资"
+     "en": "Cash & ST investments, Sep 2026",
+     "zh": "2026年9月现金及短期投资"
     },
-    1450
+    1338
    ],
    [
     {
      "en": "Free cash flow, 4 quarters (est.)",
      "zh": "4季自由现金流（估）"
     },
-    -355
+    -400
    ]
   ],
   "bridgeEnd": {
-   "en": "Cash & ST investments, Jun 2027 (est.)",
-   "zh": "2027年6月现金及短期投资（估）"
+   "en": "Cash & ST investments, Sep 2027 (est.)",
+   "zh": "2027年9月现金及短期投资（估）"
   },
   "bridgeNote": {
    "en": "Excludes any new government funding, customer prepayments or debt.",
@@ -652,8 +676,8 @@
     "https://stockanalysis.com/stocks/mp/financials/cash-flow-statement/?p=quarterly"
    ],
    [
-    "Q2 2026 call: capex and cash",
-    "https://themarketsdaily.com/2026/08/10/mp-materials-q2-earnings-call-highlights.html"
+    "Q3 2026 results: balance sheet and cash flow (Business Wire via Stock Titan)",
+    "https://www.stocktitan.net/news/MP/mp-materials-reports-third-quarter-2026-2cg29ay7vd06.html"
    ]
   ]
  }

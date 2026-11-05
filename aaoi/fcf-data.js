@@ -1,7 +1,7 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q3 2021 to Q2 2026; Q3 2026 cash flow comes with the 10-Q and is shown as an estimate. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第三季至 2026 年第二季共 20 个季度；2026 年第三季现金流待 10-Q 公布，暂列为估算。浅色柱与斜体行为估算。"
  },
  "hist": [
   [
@@ -149,51 +149,58 @@ window.FCF = {
   [
    "Q3 2026",
    "Sep 2026",
-   -20,
+   -30,
    300,
-   -320
+   -330
   ],
   [
    "Q4 2026",
    "Dec 2026",
-   30,
+   20,
    300,
-   -270
+   -280
   ],
   [
    "Q1 2027",
    "Mar 2027",
    60,
-   200,
-   -140
+   250,
+   -190
   ],
   [
    "Q2 2027",
    "Jun 2027",
-   80,
-   150,
-   -70
+   90,
+   200,
+   -110
+  ],
+  [
+   "Q3 2027",
+   "Sep 2027",
+   110,
+   200,
+   -90
   ]
  ],
  "cash": {
   "k": {
-   "en": "Cash & investments",
-   "zh": "现金及投资"
+   "en": "Cash",
+   "zh": "现金"
   },
-  "v": "$509M",
+  "v": "$621M",
   "s": {
-   "en": "Jun 30, 2026 · after $539M share sales",
-   "zh": "2026年6月30日 · 已计 5.39 亿增发"
+   "en": "Sep 30, 2026 · incl. $16M restricted",
+   "zh": "2026年9月30日 · 含 1600 万受限现金"
   }
  },
  "read": [
   {
-   "en": "AOI has burned cash in 18 of the last 20 quarters. The burn turned into a flood in Q2 2026: $575M of capex (including $280M of equipment prepayments) against barely positive operating cash flow, for free cash flow of −$564M.",
-   "zh": "过去 20 个季度中 AOI 有 18 个季度烧钱。2026 年第二季烧钱规模剧增：资本开支 5.75 亿美元（含 2.8 亿设备预付款），经营现金流仅略为正，自由现金流 −5.64 亿。"
+   "en": "AOI has burned cash in 18 of the last 20 reported quarters, and Q2 2026 was the extreme: $575M of capex for free cash flow of −$564M. The Q3 cash flow statement comes with the 10-Q, but net property and equipment rose $347M in the quarter to $1.04B, so the build-out kept a similar pace.",
+   "zh": "过去 20 个已公布季度中 AOI 有 18 个季度烧钱，2026 年第二季最为极端：资本开支 5.75 亿美元，自由现金流 −5.64 亿。第三季现金流量表将随 10-Q 公布，但当季固定资产净额增加 3.47 亿美元至 10.4 亿，扩建步伐相近。"
   },
   {
-   "en": "Management says second-half capital intensity will be even higher. I assume about $300M of capex in each of Q3 and Q4, easing in 2027 as plants open, and operating cash flow turning positive with revenue. That is about −$800M over four quarters, more than the $509M in the bank, so expect more share sales or borrowing.",
-   "zh": "管理层称下半年资本强度将更高。我假设 Q3、Q4 各约 3 亿美元资本开支，2027 年随工厂投产回落，经营现金流随营收转正。四季合计约 −8 亿美元，超过账上 5.09 亿现金，因此预计将继续增发或借款。"
+   "en": "Cash rose to $621M from $509M in June only because AOI kept selling shares: paid-in capital is up $1.53B this year. I assume capex near $300M in Q4, easing to about $200M a quarter in 2027 as the US plants slip, and operating cash flow turning positive as revenue nears $400M a quarter. That is about −$670M over the next four quarters, more than the cash on hand.",
+   "zh": "现金由 6 月的 5.09 亿美元增至 6.21 亿，完全依靠持续增发：今年实收资本增加 15.3 亿美元。我假设第四季资本开支约 3 亿美元，2027 年随美国工厂延后降至每季约 2 亿，经营现金流随季度营收接近 4 亿而转正。未来四季合计约 −6.7 亿美元，超过账上现金。"
   }
  ],
  "out": [
@@ -203,18 +210,18 @@ window.FCF = {
     "zh": "德州工厂"
    },
    "p": {
-    "en": "Over 1.6M sq ft of space; a 210,000 sq ft plant starts production late in Q3, with more sites in early 2027.",
-    "zh": "逾 160 万平方英尺厂房；21 万平方英尺工厂于 Q3 末投产，更多厂区 2027 年初启用。"
+    "en": "Power hookups have delayed the 2027 US expansion; net property and equipment reached $1.04B at Sep 30, up from $376M in December.",
+    "zh": "电力接入延误 2027 年美国扩产；9 月 30 日固定资产净额达 10.4 亿美元，去年 12 月为 3.76 亿。"
    }
   },
   {
    "h": {
-    "en": "Equipment prepayments",
-    "zh": "设备预付款"
+    "en": "Production equipment",
+    "zh": "生产设备"
    },
    "p": {
-    "en": "$280M of Q2's capex was prepayments to lock in equipment.",
-    "zh": "第二季资本开支中 2.8 亿美元为锁定设备的预付款。"
+    "en": "Enough equipment for over 500,000 800G/1.6T units a month by end-2026 and over 1M by end-2027.",
+    "zh": "2026 年底设备足以月产逾 50 万件 800G/1.6T，2027 年底逾 100 万件。"
    }
   }
  ],
@@ -225,8 +232,8 @@ window.FCF = {
     "zh": "市价增发"
    },
    "p": {
-    "en": "$646M of stock sold in Q2 and $382M in Q1 2026.",
-    "zh": "2026 年第二季发行股票 6.46 亿美元，第一季 3.82 亿。"
+    "en": "Paid-in capital rose $1.53B in the first nine months of 2026; a $600M sale plan was filed in August.",
+    "zh": "2026 年前九个月实收资本增加 15.3 亿美元；8 月再提交 6 亿美元增发计划。"
    }
   },
   {
@@ -235,30 +242,30 @@ window.FCF = {
     "zh": "数据中心订单"
    },
    "p": {
-    "en": "Revenue guided to $255–290M in Q3, with 800G up about five-fold.",
-    "zh": "Q3 营收指引 2.55–2.9 亿美元，800G 约增五倍。"
+    "en": "Q4 revenue guided to $385–420M, backed by a new multi-year Tier 1 hyperscaler agreement.",
+    "zh": "第四季营收指引 3.85–4.2 亿美元，并有新签的一级云厂商多年协议支撑。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash & investments, Jun 2026",
-    "zh": "2026年6月现金及投资"
+    "en": "Cash, Sep 2026",
+    "zh": "2026年9月现金"
    },
-   509
+   621
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   -800
+   -670
   ]
  ],
  "bridgeEnd": {
-  "en": "Funding gap, Jun 2027 (est.)",
-  "zh": "2027年6月资金缺口（估）"
+  "en": "Funding gap, Sep 2027 (est.)",
+  "zh": "2027年9月资金缺口（估）"
  },
  "bridgeNote": {
   "en": "A negative result means AOI would need more equity or debt; it has been selling shares every quarter.",
@@ -272,6 +279,10 @@ window.FCF = {
   [
    "Quarterly cash flow statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/aaoi/financials/cash-flow-statement/?p=quarterly"
+  ],
+  [
+   "Q3 2026 balance sheet (AOI release)",
+   "https://prnewswire.com/news-releases/applied-optoelectronics-reports-third-quarter-2026-results-302931179.html"
   ],
   [
    "Q2 2026 call: capex and ATM",

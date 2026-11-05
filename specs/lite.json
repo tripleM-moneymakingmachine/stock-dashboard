@@ -3,13 +3,13 @@
  "ticker": "LITE",
  "exchange": "NASDAQ",
  "name": "Lumentum Holdings",
- "shares": 77800000.0,
+ "shares": 90700000.0,
  "beta": "1.54",
  "snapshot": {
-  "price": "$1,103.36",
-  "date": "Oct 9, 2026",
-  "mcap": "$85.8B",
-  "range": "$148–1,143"
+  "price": "$509.70",
+  "date": "Nov 5, 2026",
+  "mcap": "$46.2B",
+  "range": "$227–1,133"
  },
  "eyebrow": {
   "en": "Lumentum Holdings Inc. · Common stock · San Jose, California",
@@ -20,56 +20,56 @@
   "zh": "AI 光互连里的<em>激光器</em>。"
  },
  "lede": {
-  "en": "Lumentum makes the lasers, transceivers and optical circuit switches that link GPUs inside AI data centers. Revenue doubled to $1.0B last quarter and is guided to $1.25B, with non-GAAP operating margin heading to 40%. The stock is up about seven-fold in a year.",
-  "zh": "Lumentum 生产连接 AI 数据中心内 GPU 的激光器、光模块和光路交换机。上季营收翻倍至 10 亿美元，本季指引 12.5 亿，非GAAP营业利润率迈向 40%。股价一年上涨约七倍。"
+  "en": "Lumentum makes the lasers, transceivers and optical circuit switches that link GPUs inside AI data centers. Revenue rose 137% to $1.26B last quarter and is guided to $1.6B. On Nov 2 it agreed to sell itself to Marvell for 4.5 Marvell shares each, and both stocks have slumped since.",
+  "zh": "Lumentum 生产连接 AI 数据中心内 GPU 的激光器、光模块和光路交换机。上季营收增长 137% 至 12.6 亿美元，本季指引 16 亿。11 月 2 日公司同意以每股换 4.5 股 Marvell 股票的方式被 Marvell 收购，此后两只股票双双大跌。"
  },
  "valuation": {
   "k": {
    "en": "P/E",
    "zh": "市盈率"
   },
-  "v": "~66×",
+  "v": "~21×",
   "s": {
-   "en": "Q1 guide EPS $4.20 × 4 (non-GAAP)",
-   "zh": "Q1 指引每股 $4.20 × 4（非GAAP）"
+   "en": "Q2 guide EPS $6.05 × 4 (non-GAAP)",
+   "zh": "Q2 指引每股 $6.05 × 4（非GAAP）"
   }
  },
  "analysts": {
   "k": {
-   "en": "Q1 FY27 guide",
-   "zh": "FY27 Q1 指引"
+   "en": "Q2 FY27 guide",
+   "zh": "FY27 Q2 指引"
   },
-  "v": "$1.25B",
+  "v": "$1.60B",
   "s": {
-   "en": "±$25M · EPS $4.05–4.35",
-   "zh": "±2500 万 · 每股 $4.05–4.35"
+   "en": "±$25M · EPS $5.90–6.20",
+   "zh": "±2500 万 · 每股 $5.90–6.20"
   }
  },
  "earnings": {
-  "v": "Nov 5",
+  "v": "Early Feb",
   "s": {
-   "en": "Q1 FY27 · expected, after close",
-   "zh": "FY27 第一季 · 预计，盘后"
+   "en": "Q2 FY27 · expected, date TBC",
+   "zh": "FY27 第二季 · 预计，日期待定"
   }
  },
  "sub_price": {
-  "en": "Daily closes with the 50-day average. Lumentum rose about seven-fold over the year on AI optical demand.",
-  "zh": "每日收盘价与50日均线。受 AI 光通信需求带动，股价一年上涨约七倍。"
+  "en": "Daily closes with the 50-day average. Lumentum is still up about twofold over the year, but has more than halved from its October peak since Marvell's all-stock bid.",
+  "zh": "每日收盘价与50日均线。Lumentum 股价一年仍上涨约一倍，但自 Marvell 提出全股票收购以来，已较 10 月高点跌去一半以上。"
  },
  "sub_rev": {
-  "en": "Revenue in US$ millions, with GAAP gross margin on the right axis. Lumentum's fiscal year ends around July 1. Q4 FY26 GAAP EPS of −$84.65 comes from a one-time $7.8B non-cash charge for converting notes into stock. The last bar is guidance at the midpoint.",
-  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率。Lumentum 财年约在7月1日结束。FY26 第四季 GAAP 每股 −$84.65 源于可转债转股的一次性 78 亿美元非现金费用。最后一根柱为指引中值。"
+  "en": "Revenue in US$ millions, with GAAP gross margin (before acquired-intangible amortization) on the right axis. Lumentum's fiscal year ends around July 1. Q4 FY26 GAAP EPS of −$84.65 comes from a one-time $7.8B non-cash charge for converting notes into stock. The last bar is guidance at the midpoint.",
+  "zh": "营收单位为百万美元，右轴为 GAAP 毛利率（未计收购无形资产摊销）。Lumentum 财年约在7月1日结束。FY26 第四季 GAAP 每股 −$84.65 源于可转债转股的一次性 78 亿美元非现金费用。最后一根柱为指引中值。"
  },
  "rev_cells": [
   {
    "k": {
-    "en": "Q4 FY26",
-    "zh": "FY26 Q4"
+    "en": "Q1 FY27",
+    "zh": "FY27 Q1"
    },
-   "v": "$1.01B",
+   "v": "$1.26B",
    "s": {
-    "en": "+109% YoY · 8th straight rise",
-    "zh": "同比 +109% · 连续第8季增长"
+    "en": "+137% YoY · 9th straight rise",
+    "zh": "同比 +137% · 连续第9季增长"
    }
   },
   {
@@ -77,10 +77,10 @@
     "en": "Components",
     "zh": "器件"
    },
-   "v": "$649M",
+   "v": "$754M",
    "s": {
-    "en": "+103% · record EML lasers",
-    "zh": "+103% · EML 激光器创纪录"
+    "en": "+99% · pump lasers lead",
+    "zh": "+99% · 泵浦激光器领涨"
    }
   },
   {
@@ -88,10 +88,10 @@
     "en": "Systems",
     "zh": "系统"
    },
-   "v": "$357M",
+   "v": "$508M",
    "s": {
-    "en": "+123% · 800G and first 1.6T",
-    "zh": "+123% · 800G 与首批 1.6T"
+    "en": "+229% · optical circuit switches",
+    "zh": "+229% · 光路交换机"
    }
   },
   {
@@ -99,10 +99,21 @@
     "en": "Gross margin",
     "zh": "毛利率"
    },
-   "v": "50.4%",
+   "v": "53.2%",
    "s": {
-    "en": "non-GAAP · 37.8% a year ago",
-    "zh": "非GAAP · 一年前 37.8%"
+    "en": "non-GAAP · 39.4% a year ago",
+    "zh": "非GAAP · 一年前 39.4%"
+   }
+  },
+  {
+   "k": {
+    "en": "EPS",
+    "zh": "每股收益"
+   },
+   "v": "$4.57",
+   "s": {
+    "en": "non-GAAP · vs ~$4.22 expected",
+    "zh": "非GAAP · 预期约 $4.22"
    }
   },
   {
@@ -110,21 +121,10 @@
     "en": "Op. margin",
     "zh": "营业利润率"
    },
-   "v": "36.6%",
+   "v": "42.3%",
    "s": {
-    "en": "non-GAAP · Q1 guide 39.5–40.5%",
-    "zh": "非GAAP · Q1 指引 39.5–40.5%"
-   }
-  },
-  {
-   "k": {
-    "en": "FY26 revenue",
-    "zh": "FY26 营收"
-   },
-   "v": "$3.01B",
-   "s": {
-    "en": "+83% vs FY25",
-    "zh": "较 FY25 +83%"
+    "en": "non-GAAP · Q2 guide 45–46%",
+    "zh": "非GAAP · Q2 指引 45–46%"
    }
   }
  ],
@@ -132,12 +132,12 @@
   {
    "kind": "plus",
    "h": {
-    "en": "1.6T ramp",
-    "zh": "1.6T 放量"
+    "en": "Co-packaged optics",
+    "zh": "共封装光学"
    },
    "p": {
-    "en": "Record 800G transceiver shipments and the first 1.6T production shipments in Q4. Management expects 1.6T adoption to intensify through calendar 2027.",
-    "zh": "第四季 800G 光模块出货创纪录，1.6T 开始量产出货。管理层预计 1.6T 在 2027 年加速普及。"
+    "en": "A second major NPO/CPO win in Q1 is backed by more than $5B of purchase commitments, on top of the 1.6T transceiver ramp expected through 2027.",
+    "zh": "第一季拿下第二个重大 NPO/CPO 项目，背后有逾 50 亿美元采购承诺，此外 1.6T 光模块预计在 2027 年持续放量。"
    }
   },
   {
@@ -147,41 +147,41 @@
     "zh": "光路交换机"
    },
    "p": {
-    "en": "OCS shipments are expanding at hyperscalers, and near-packaged optics and ultra-high-power lasers come next, with a $100M+ laser quarter targeted for Q3 FY27.",
-    "zh": "OCS 在云厂商的出货持续扩大，近封装光学与超高功率激光器紧随其后，目标在 FY27 第三季实现单季逾 1 亿美元激光器收入。"
-   }
-  },
-  {
-   "kind": "watch",
-   "h": {
-    "en": "Supply is the limit",
-    "zh": "供给是瓶颈"
-   },
-   "p": {
-    "en": "Management says supply, not demand, is the binding constraint. Capex rose to $167M in Q4 to add capacity.",
-    "zh": "管理层表示制约因素是供给而非需求。第四季资本开支升至 1.67 亿美元以扩产。"
-   }
-  },
-  {
-   "kind": "watch",
-   "h": {
-    "en": "Dilution from note conversions",
-    "zh": "可转债转股稀释"
-   },
-   "p": {
-    "en": "Converting $1.1B of notes cut debt by 35% but issued new shares and created the $7.8B GAAP charge. About $2B of convertible debt remains.",
-    "zh": "转换 11 亿美元可转债使债务减少 35%，但增发新股并产生 78 亿美元 GAAP 费用。仍有约 20 亿美元可转债。"
+    "en": "Systems revenue more than tripled to $508M on OCS shipments. Management says OCS visibility has widened and it could become a multi-billion-dollar annual business.",
+    "zh": "受 OCS 出货带动，系统业务营收增长逾两倍至 5.08 亿美元。管理层称 OCS 需求能见度扩大，有望成为年营收数十亿美元的业务。"
    }
   },
   {
    "kind": "risk",
    "h": {
-    "en": "Customer concentration",
-    "zh": "客户集中"
+    "en": "Marvell deal",
+    "zh": "Marvell 收购"
    },
    "p": {
-    "en": "Growth depends on a handful of hyperscalers' AI build-outs. A pause in their orders would show up quickly.",
-    "zh": "增长依赖少数云厂商的 AI 建设，一旦订单暂停会很快反映。"
+    "en": "Holders get a fixed 4.5 Marvell shares each with no collar, so the stock now tracks Marvell. Shareholder votes and antitrust reviews remain; closing is expected in the first half of 2028.",
+    "zh": "股东每股固定换取 4.5 股 Marvell 股票且无价格保护，股价因此跟随 Marvell。仍需双方股东投票及反垄断审查，预计 2028 年上半年完成。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "Supply and cash",
+    "zh": "供给与现金"
+   },
+   "p": {
+    "en": "Supply, not demand, still limits growth. Capex rose to $230M in Q1 and free cash flow slipped to $38M; note conversions and RSU tax payments cut cash to $2.0B.",
+    "zh": "制约增长的仍是供给而非需求。第一季资本开支升至 2.3 亿美元，自由现金流降至 3800 万；可转债转换及限制性股票代扣税使现金降至 20 亿美元。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "Dilution",
+    "zh": "稀释"
+   },
+   "p": {
+    "en": "About $1.3B of convertible notes remain, and shares outstanding rose to 90.7M plus 2.9M preferred. GAAP EPS of $3.54 absorbed an $89M stock-award charge.",
+    "zh": "仍有约 13 亿美元可转债，流通股增至 9070 万股，另有 290 万股优先股。GAAP 每股 $3.54 已计入 8900 万美元股权激励费用。"
    }
   },
   {
@@ -191,32 +191,32 @@
     "zh": "估值与波动"
    },
    "p": {
-    "en": "About 66× annualized guided earnings after a seven-fold rise. Optical stocks swing hard on AI capex headlines, so position sizing matters.",
-    "zh": "股价上涨七倍后，约为年化指引盈利的 66 倍。光通信股随 AI 资本开支新闻剧烈波动，仓位控制很重要。"
+    "en": "About 21× annualized Q2 guided earnings after the stock more than halved from its October high. Optical stocks swing hard on AI capex headlines, so position sizing matters.",
+    "zh": "股价较 10 月高点跌去一半以上后，约为 Q2 年化指引盈利的 21 倍。光通信股随 AI 资本开支新闻剧烈波动，仓位控制很重要。"
    }
   }
  ],
  "calendar": [
   {
-   "date": "Nov 5, 2026",
+   "date": "Nov 18, 2026",
    "h": {
-    "en": "Q1 FY27 earnings",
-    "zh": "FY27 第一季财报"
+    "en": "Annual meeting",
+    "zh": "年度股东大会"
    },
    "p": {
-    "en": "After the close. Guide: $1.225–1.275B revenue, 39.5–40.5% non-GAAP operating margin, EPS $4.05–4.35.",
-    "zh": "盘后发布。指引：营收 12.25–12.75 亿美元，非GAAP营业利润率 39.5–40.5%，每股 $4.05–4.35。"
+    "en": "Virtual meeting to elect directors and vote on executive pay.",
+    "zh": "线上会议，选举董事并就高管薪酬投票。"
    }
   },
   {
-   "date": "Calendar 2027",
+   "date": "Early Feb 2027",
    "h": {
-    "en": "1.6T volume ramp",
-    "zh": "1.6T 规模放量"
+    "en": "Q2 FY27 earnings",
+    "zh": "FY27 第二季财报"
    },
    "p": {
-    "en": "1.6T transceiver uptake is expected to build through the year.",
-    "zh": "预计 1.6T 光模块需求全年持续增长。"
+    "en": "Expected; date not yet set. Guide: $1.575–1.625B revenue, 45–46% non-GAAP operating margin, EPS $5.90–6.20.",
+    "zh": "预计，日期未定。指引：营收 15.75–16.25 亿美元，非GAAP营业利润率 45–46%，每股 $5.90–6.20。"
    }
   },
   {
@@ -229,45 +229,56 @@
     "en": "Target: first $100M+ quarter for ultra-high-power lasers.",
     "zh": "目标：超高功率激光器首个单季逾 1 亿美元收入。"
    }
+  },
+  {
+   "date": "H1 2028",
+   "h": {
+    "en": "Marvell deal close",
+    "zh": "Marvell 收购完成"
+   },
+   "p": {
+    "en": "Expected after shareholder votes and regulatory approvals.",
+    "zh": "预计在双方股东投票及监管批准后完成。"
+   }
   }
  ],
  "sources": [
   [
-   "Q4 FY26 call highlights (MarketBeat)",
-   "https://marketbeat.com/instant-alerts/lumentum-q4-earnings-call-highlights-2026-08-11"
+   "Q1 FY27 results and Q2 guide (Lumentum IR)",
+   "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results"
   ],
   [
-   "Q4 FY26 results and guidance",
-   "https://wpnews.pro/news/lumentum-reports-1b-revenue-beats-earnings-estimates-as-ai-demand-fuels-109"
+   "Q1 FY27 Form 10-Q (SEC)",
+   "https://www.sec.gov/Archives/edgar/data/1633978/000162828026069615/lite-20260926.htm"
   ],
   [
-   "Q4 FY26 segment detail (TIKR)",
-   "https://tikr.com/blog/what-lumentum-q4-earnings-reveal-about-the-next-leg-of-the-ai-optics-trade"
+   "Marvell merger agreement, Form 8-K (SEC)",
+   "https://www.sec.gov/Archives/edgar/data/1633978/000119312526442758/d163169d8k.htm"
   ],
   [
-   "Q4 FY26 cash, capex and note conversion",
-   "https://rocketnews.com/2026/08/lumentum-q4-earnings-call-highlights"
+   "Q1 beat vs consensus and Q2 guide vs estimates (Motley Fool)",
+   "https://fool.com/investing/2026/11/02/why-lumentum-stock-fell-14-9-today"
   ],
   [
-   "Q4 FY26 call summary and targets",
-   "https://inve.money/us/earnings-calls/lite/c2-2026"
+   "Marvell deal terms and reaction (CNBC)",
+   "https://cnbc.com/2026/11/02/marvell-to-buy-lumentum-in-115-billion-deal-in-ai-data-center-bet-.html"
+  ],
+  [
+   "Downgrades and Nov 5 selloff (Investing.com)",
+   "https://investing.com/news/stock-market-news/why-is-lumentum-stock-tumbling-today-93CH-5005054"
   ],
   [
    "Quarterly income statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/lite/financials/?p=quarterly"
   ],
   [
-   "SEC EDGAR filings (CIK 1633978)",
-   "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001633978"
-  ],
-  [
-   "Price, market cap and beta: Yahoo Finance and Financial Modeling Prep, as of Oct 9, 2026",
-   "https://finance.yahoo.com/quote/LITE"
+   "Price and consensus: daily closes (Stocklake) and MarketBeat estimates, as of Nov 5, 2026",
+   "https://marketbeat.com/stocks/NASDAQ/LITE/earnings"
   ]
  ],
  "foot": {
-  "en": "Fundamentals as of Oct 9, 2026. For information only, not investment advice. Not affiliated with Lumentum Holdings Inc..",
-  "zh": "基本面数据截至 2026年10月9日。仅供参考，不构成投资建议。与 Lumentum Holdings Inc. 无关联。"
+  "en": "Fundamentals as of Nov 5, 2026 (Q1 FY27 results). For information only, not investment advice. Not affiliated with Lumentum Holdings Inc..",
+  "zh": "基本面数据截至 2026年11月5日（FY27 第一季业绩）。仅供参考，不构成投资建议。与 Lumentum Holdings Inc. 无关联。"
  },
  "quarters": [
   [
@@ -429,27 +440,28 @@
    49.34,
    27.95,
    -84.65
+  ],
+  [
+   "Q1 FY27",
+   "Sep 2026",
+   1262.6,
+   52.52,
+   28.5,
+   3.54
   ]
  ],
  "guide": [
-  "Q1 FY27e",
-  1250,
-  "Sep 2026 · guidance midpoint",
-  "2026年9月 · 指引中值"
+  "Q2 FY27e",
+  1600,
+  "Dec 2026 · guidance midpoint",
+  "2026年12月 · 指引中值"
  ],
  "fcf": {
   "sub": {
-   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q1 FY22 to Q4 FY26. Lumentum's fiscal year ends around July 1. Shaded bars and italic rows are estimates.",
-   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第一季至 FY26 第四季共 20 个季度。Lumentum 财年约在7月1日结束。浅色柱与斜体行为估算。"
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q2 FY22 to Q1 FY27. Lumentum's fiscal year ends around July 1. Shaded bars and italic rows are estimates.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第二季至 FY27 第一季共 20 个季度。Lumentum 财年约在7月1日结束。浅色柱与斜体行为估算。"
   },
   "hist": [
-   [
-    "Q1 FY22",
-    "Sep 2021",
-    61.9,
-    17.9,
-    44
-   ],
    [
     "Q2 FY22",
     "Dec 2021",
@@ -582,36 +594,43 @@
     363,
     166.8,
     196.2
+   ],
+   [
+    "Q1 FY27",
+    "Sep 2026",
+    267.7,
+    229.8,
+    37.9
    ]
   ],
   "est": [
    [
-    "Q1 FY27",
-    "Sep 2026",
-    420,
-    180,
-    240
-   ],
-   [
     "Q2 FY27",
     "Dec 2026",
-    470,
-    190,
-    280
+    450,
+    240,
+    210
    ],
    [
     "Q3 FY27",
     "Mar 2027",
-    520,
-    200,
-    320
+    550,
+    250,
+    300
    ],
    [
     "Q4 FY27",
     "Jun 2027",
-    560,
-    210,
-    350
+    620,
+    260,
+    360
+   ],
+   [
+    "Q1 FY28",
+    "Sep 2027",
+    680,
+    270,
+    410
    ]
   ],
   "cash": {
@@ -619,20 +638,20 @@
     "en": "Cash & ST investments",
     "zh": "现金及短期投资"
    },
-   "v": "$2.74B",
+   "v": "$1.98B",
    "s": {
-    "en": "Jun 2026 · ~$2B convertible debt left",
-    "zh": "2026年6月 · 剩余可转债约 20 亿"
+    "en": "Sep 2026 · ~$1.3B convertible debt left",
+    "zh": "2026年9月 · 剩余可转债约 13 亿"
    }
   },
   "read": [
    {
-    "en": "Lumentum spent most of 2023 to 2025 near break-even on cash as telecom demand slumped and it invested in cloud products. AI optics turned it around: free cash flow went from −$18M in Q1 FY26 to +$196M in Q4 FY26, even as capex more than doubled.",
-    "zh": "2023 至 2025 年电信需求低迷、公司投入云产品，Lumentum 现金流大多在盈亏平衡附近。AI 光通信扭转局面：自由现金流由 FY26 第一季的 −1800 万美元升至第四季的 +1.96 亿，同期资本开支翻倍有余。"
+    "en": "Lumentum spent most of 2023 to 2025 near break-even on cash as telecom demand slumped. AI optics turned it around, lifting free cash flow to $196M in Q4 FY26. It slipped to $38M in Q1 FY27: operating cash flow of $268M lagged $534M of non-GAAP operating income, and capex rose to $230M.",
+    "zh": "2023 至 2025 年电信需求低迷，Lumentum 现金流大多在盈亏平衡附近。AI 光通信扭转局面，FY26 第四季自由现金流升至 1.96 亿美元。FY27 第一季回落至 3800 万：经营现金流 2.68 亿美元，远低于 5.34 亿的非GAAP营业利润，资本开支升至 2.3 亿。"
    },
    {
-    "en": "Using Q1 FY27 guidance ($1.25B revenue at about 40% operating margin) and capex of about $180–210M a quarter, I estimate $240–350M of free cash flow a quarter, roughly $1.2B over four quarters. Cash fell $430M in Q4 because of the note conversion, not because of operations.",
-    "zh": "按 FY27 第一季指引（营收 12.5 亿美元、营业利润率约 40%）及每季约 1.8–2.1 亿美元资本开支，我估计每季自由现金流 2.4–3.5 亿美元，四季合计约 12 亿。第四季现金减少 4.3 亿是因可转债转换，而非经营所致。"
+    "en": "Using Q2 FY27 guidance ($1.6B revenue at about 45% operating margin) and capex of about $240–270M a quarter, I estimate $210–410M of free cash flow a quarter, roughly $1.3B over four quarters. Cash fell $759M in Q1 mainly because of $493M of note-conversion payments and $307M of RSU tax withholding, not operations.",
+    "zh": "按 FY27 第二季指引（营收 16 亿美元、营业利润率约 45%）及每季约 2.4–2.7 亿美元资本开支，我估计每季自由现金流 2.1–4.1 亿美元，四季合计约 13 亿。第一季现金减少 7.59 亿，主要因可转债转换支付 4.93 亿及限制性股票代扣税 3.07 亿，而非经营所致。"
    }
   ],
   "out": [
@@ -642,8 +661,8 @@
      "zh": "扩产"
     },
     "p": {
-     "en": "Capex was $167M in Q4 and rising, for laser and transceiver lines serving cloud and AI customers.",
-     "zh": "第四季资本开支 1.67 亿美元且在上升，用于服务云和 AI 客户的激光器与光模块产线。"
+     "en": "Capex was $230M in Q1, up from $167M, for laser, transceiver and OCS lines serving AI customers.",
+     "zh": "第一季资本开支 2.3 亿美元（上季 1.67 亿），用于服务 AI 客户的激光器、光模块与 OCS 产线。"
     }
    },
    {
@@ -652,30 +671,30 @@
      "zh": "可转债"
     },
     "p": {
-     "en": "About $2B of convertible debt remains; $524M of debt was repaid in Q4 as part of the conversion.",
-     "zh": "仍有约 20 亿美元可转债；第四季因转换偿还债务 5.24 亿美元。"
+     "en": "$493M was paid to settle note conversions in Q1; about $1.3B, mostly 2032 notes, remains.",
+     "zh": "第一季支付 4.93 亿美元结算可转债转换；仍余约 13 亿，主要为 2032 年到期债券。"
     }
    },
    {
     "h": {
-     "en": "Share repurchases",
-     "zh": "股票回购"
+     "en": "RSU tax withholding",
+     "zh": "限制性股票代扣税"
     },
     "p": {
-     "en": "$117M of stock repurchases in Q4, up from $5M a year earlier.",
-     "zh": "第四季回购 1.17 亿美元股票，一年前为 500 万。"
+     "en": "$307M of taxes paid on net-settled stock awards in Q1; there were no buybacks.",
+     "zh": "第一季为净额结算的股票奖励代缴税款 3.07 亿美元；本季未回购股票。"
     }
    }
   ],
   "in": [
    {
     "h": {
-     "en": "AI transceivers and lasers",
-     "zh": "AI 光模块与激光器"
+     "en": "AI lasers, OCS and transceivers",
+     "zh": "AI 激光器、OCS 与光模块"
     },
     "p": {
-     "en": "Q1 FY27 is guided to about $1.25B of revenue, more than 130% above a year ago.",
-     "zh": "FY27 第一季营收指引约 12.5 亿美元，同比增逾 130%。"
+     "en": "Q2 FY27 is guided to about $1.6B of revenue, roughly $350M more than Q1.",
+     "zh": "FY27 第二季营收指引约 16 亿美元，较第一季增加约 3.5 亿。"
     }
    },
    {
@@ -684,34 +703,34 @@
      "zh": "利润率提升"
     },
     "p": {
-     "en": "Non-GAAP operating margin is guided to 39.5–40.5%, up from 36.6%, as factories run fuller.",
-     "zh": "随产能利用率提高，非GAAP营业利润率指引 39.5–40.5%，高于 36.6%。"
+     "en": "Non-GAAP operating margin is guided to 45–46%, up from 42.3%.",
+     "zh": "非GAAP营业利润率指引 45–46%，高于 42.3%。"
     }
    }
   ],
   "bridge": [
    [
     {
-     "en": "Cash & ST investments, Jun 2026",
-     "zh": "2026年6月现金及短期投资"
+     "en": "Cash & ST investments, Sep 2026",
+     "zh": "2026年9月现金及短期投资"
     },
-    2740
+    1980
    ],
    [
     {
      "en": "Free cash flow, 4 quarters (est.)",
      "zh": "4季自由现金流（估）"
     },
-    1190
+    1280
    ]
   ],
   "bridgeEnd": {
-   "en": "Cash & ST investments, Jun 2027 (est.)",
-   "zh": "2027年6月现金及短期投资（估）"
+   "en": "Cash & ST investments, Sep 2027 (est.)",
+   "zh": "2027年9月现金及短期投资（估）"
   },
   "bridgeNote": {
-   "en": "Excludes further note conversions, debt repayment and buybacks.",
-   "zh": "未计入后续可转债转换、偿债及回购。"
+   "en": "Excludes further note conversions, debt repayment, RSU tax payments and Marvell deal effects.",
+   "zh": "未计入后续可转债转换、偿债、限制性股票代扣税及 Marvell 交易影响。"
   },
   "extraNote": {
    "en": "",
@@ -719,16 +738,16 @@
   },
   "src": [
    [
+    "Q1 FY27 Form 10-Q cash flow statement (SEC)",
+    "https://www.sec.gov/Archives/edgar/data/1633978/000162828026069615/lite-20260926.htm"
+   ],
+   [
+    "Q1 FY27 results (Lumentum IR)",
+    "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results"
+   ],
+   [
     "Quarterly cash flow statement (Stock Analysis)",
     "https://stockanalysis.com/stocks/lite/financials/cash-flow-statement/?p=quarterly"
-   ],
-   [
-    "Q4 FY26 cash and capex",
-    "https://rocketnews.com/2026/08/lumentum-q4-earnings-call-highlights"
-   ],
-   [
-    "Q4 FY26 results",
-    "https://wpnews.pro/news/lumentum-reports-1b-revenue-beats-earnings-estimates-as-ai-demand-fuels-109"
    ]
   ]
  }
