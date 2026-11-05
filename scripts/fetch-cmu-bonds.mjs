@@ -35,20 +35,27 @@ async function getJson(url) {
   }
 }
 
-// Every CMU instrument, page by page (the API caps the page size, so step by what each page returns)
+// Every CMU instrument, page by page (the API caps the page size, so step by what each page returns).
+// Tries a large page size first, then the API's default page size if that is rejected.
 async function allInstruments() {
-  const rows = [];
-  let total = null;
-  for (let page = 0; page < 400; page++) {
-    const j = await getJson(`${API}?pagesize=1000&offset=${rows.length}`);
-    if (j?.header?.success === false) throw new Error(j.header.err_msg || "HKMA API error");
-    const recs = j?.result?.records || [];
-    total = j?.result?.datasize ?? total;
-    if (!recs.length) break;
-    rows.push(...recs);
-    if (total != null && rows.length >= total && recs.length < 1000) break;
+  let lastErr = null;
+  for (const size of [1000, 100, null]) {
+    try {
+      const rows = [];
+      let total = null;
+      for (let page = 0; page < 2000; page++) {
+        const j = await getJson(`${API}?offset=${rows.length}${size ? `&pagesize=${size}` : ""}`);
+        if (j?.header?.success === false) throw new Error(j.header.err_msg || j.header.err_code || "HKMA API error");
+        const recs = j?.result?.records || [];
+        total = j?.result?.datasize ?? total;
+        if (!recs.length) break;
+        rows.push(...recs);
+      }
+      if (rows.length) return rows;
+      lastErr = new Error(`no records (pagesize ${size ?? "default"})`);
+    } catch (e) { lastErr = e; console.log(`pagesize ${size ?? "default"} failed:`, e.message); }
   }
-  return rows;
+  throw lastErr || new Error("no records");
 }
 
 // Latest US Treasury daily par yield curve: [[years, yield %], ...]
@@ -72,7 +79,12 @@ async function ustCurve() {
 
 let raw;
 try { raw = await allInstruments(); }
-catch (e) { console.log("HKMA fetch failed:", e.message, "— keeping the committed file"); summary(`CMU bonds: HKMA fetch failed (${e.message}), kept previous file`); process.exit(0); }
+catch (e) {
+  console.log("HKMA fetch failed:", e.message, "— keeping the committed bonds");
+  summary(`CMU bonds: HKMA fetch failed (${e.message}), kept previous bonds`);
+  writeFileSync(OUT, JSON.stringify({ ...(prev || { bonds: [] }), lastError: `${new Date().toISOString()} ${e.message} ${e.cause?.code || e.cause?.message || ""}`.trim() }));
+  process.exit(0);
+}
 console.log(`HKMA: ${raw.length} CMU instruments`);
 
 let ust = null;
