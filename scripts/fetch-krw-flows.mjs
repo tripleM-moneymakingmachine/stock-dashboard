@@ -59,8 +59,17 @@ async function yahoo(sym, tz = "Asia/Seoul") {
 const KRX = "https://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd";
 const KRXH = { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", Accept: "application/json, text/javascript, */*; q=0.01", Referer: "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020302", Origin: "https://data.krx.co.kr", "X-Requested-With": "XMLHttpRequest" };
 const n0 = (s) => { const v = +String(s ?? "").replace(/[,\s]/g, ""); return isFinite(v) ? v : null; };
+let krxCookie = null;
 async function krxCall(form) {
-  const r = await fetch(KRX, { method: "POST", headers: { "User-Agent": UA, ...KRXH }, body: new URLSearchParams(form).toString(), signal: AbortSignal.timeout(45000) });
+  if (krxCookie == null) {
+    krxCookie = "";
+    try {
+      const w = await fetch(KRXH.Referer, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) });
+      krxCookie = (w.headers.getSetCookie?.() || []).map((c) => c.split(";")[0]).join("; ");
+      log(`KRX session: HTTP ${w.status}, cookies ${krxCookie ? krxCookie.split(";").map((c) => c.split("=")[0].trim()).join(",") : "none"}`);
+    } catch (e) { log("KRX warm-up:", e.message); }
+  }
+  const r = await fetch(KRX, { method: "POST", headers: { "User-Agent": UA, ...KRXH, ...(krxCookie ? { Cookie: krxCookie } : {}) }, body: new URLSearchParams(form).toString(), signal: AbortSignal.timeout(45000) });
   const t = await r.text();
   if (!r.ok) throw new Error(`HTTP ${r.status}: ${t.slice(0, 200)}`);
   let j; try { j = JSON.parse(t); } catch { throw new Error(`not JSON: ${t.slice(0, 200)}`); }
@@ -97,6 +106,57 @@ async function krxFlows(from, to) {
   return { flows: flows.filter((r) => r[0] >= BEG), turnover };
 }
 
+// ---------- Daum Finance fallback (finance.daum.net JSON API used by its 투자자별 매매동향 page) ----------
+// Units are not documented, so each series is scaled by magnitude: daily KOSPI foreign net buying is typically
+// KRW 0.05–3 tn and KOSPI turnover KRW 5–40 tn; the scale that lands the median there is used and logged.
+const DAUMH = { Accept: "application/json, text/plain, */*", Referer: "https://finance.daum.net/domestic/investors" };
+async function daumPaged(path, maxPages = 15) {
+  const out = []; let first = true;
+  for (let p = 1; p <= maxPages; p++) {
+    const r = await fetch(`https://finance.daum.net/api/${path}${path.includes("?") ? "&" : "?"}page=${p}&perPage=100&pagination=true`, { headers: { "User-Agent": UA, ...DAUMH }, signal: AbortSignal.timeout(30000) });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`HTTP ${r.status}: ${t.slice(0, 200)}`);
+    let j; try { j = JSON.parse(t); } catch { throw new Error(`not JSON: ${t.slice(0, 200)}`); }
+    const rows = j.data || j.rows || [];
+    if (first) { log(`Daum ${path} sample:`, JSON.stringify(rows[0] || j).slice(0, 500)); first = false; }
+    if (!rows.length) break;
+    out.push(...rows);
+    const d = String(rows.at(-1).date || rows.at(-1).tradeDate || "").slice(0, 10);
+    if (d && d < BEG) break;
+    if (j.totalPages && p >= j.totalPages) break;
+    await sleep(500);
+  }
+  return out;
+}
+const pickKey = (row, ...res) => Object.keys(row).find((k) => res.every((re) => re.test(k)));
+const scaleTo = (vals, lo, hi) => {
+  const a = vals.filter((v) => v).map(Math.abs).sort((x, y) => x - y), med = a[a.length >> 1] || 0;
+  for (const f of [1, 1e4, 1e6, 1e8, 1e9, 1e12]) if (med / f >= lo && med / f <= hi) return f;
+  return null;
+};
+async function daumFlows() {
+  const rows = await daumPaged("investor/days?market=KOSPI");
+  if (!rows.length) throw new Error("no rows");
+  const r0 = rows[0], kd = pickKey(r0, /date/i) || "date";
+  const kf = pickKey(r0, /foreign/i, /straight|net|purchase/i), ki = pickKey(r0, /individual|personal|retail/i, /straight|net|purchase/i),
+    kn = pickKey(r0, /institution/i, /straight|net|purchase/i), kp = pickKey(r0, /pension/i);
+  log(`Daum investor keys: date=${kd} foreign=${kf} retail=${ki} inst=${kn} pension=${kp}`);
+  if (!kf) throw new Error("no foreign net field in " + Object.keys(r0).join(","));
+  const f = scaleTo(rows.map((r) => +r[kf]), 0.02, 5); if (!f) throw new Error("cannot scale foreign values, e.g. " + r0[kf]);
+  log(`Daum scale: ÷${f} → KRW tn`);
+  const tn = (x) => (x == null || x === "" || !isFinite(+x) ? null : +(+x / f / 1e0).toFixed(4));
+  return rows.map((r) => [String(r[kd]).slice(0, 10), tn(r[kf]), ki ? tn(r[ki]) : null, kn ? tn(r[kn]) : null, kp ? tn(r[kp]) : null])
+    .filter((r) => /^\d{4}-\d{2}-\d{2}$/.test(r[0]) && r[1] != null && r[0] >= BEG).sort(byDate);
+}
+async function daumTurnover() {
+  const rows = await daumPaged("market_index/days?market=KOSPI");
+  const r0 = rows[0] || {}, kd = pickKey(r0, /date/i) || "date", kv = pickKey(r0, /acc.*trade.*price|trade.*value|tradePrice/i);
+  log(`Daum KOSPI keys: date=${kd} turnover=${kv}`);
+  if (!kv) return [];
+  const f = scaleTo(rows.map((r) => +r[kv]), 3, 60); if (!f) { log("cannot scale turnover, e.g. " + r0[kv]); return []; }
+  return rows.map((r) => [String(r[kd]).slice(0, 10), +(+r[kv] / f).toFixed(3)]).filter((r) => /^\d{4}-/.test(r[0]) && r[1] > 0);
+}
+
 async function fetchRaw(maxPages) {
   const out = { ...raw0 };
   const tryY = async (name, sym, tz) => {
@@ -131,6 +191,16 @@ async function fetchRaw(maxPages) {
       out.flowSrc = "krx";
     }
   } catch (e) { log("KRX investor flows failed:", e.message); }
+  if (out.flowSrc !== "krx") {
+    try {
+      const f = await daumFlows();
+      log(`Daum investor flows: ${f.length} days, ${f[0]?.[0]} to ${f.at(-1)?.[0]}, last ${JSON.stringify(f.at(-1))}`);
+      if (f.length) { out.flows = merge(out.flows, f); out.flowSrc = "daum"; }
+      const tv = new Map(await daumTurnover()); const m = new Map((out.kospi || []).map((r) => [r[0], r]));
+      let n = 0; for (const [d, v] of tv) { const r = m.get(d); if (r) { r[2] = v; n++; } }
+      log(`Daum KOSPI turnover: ${n} days merged`);
+    } catch (e) { log("Daum investor flows failed:", e.message); }
+  }
   log(`kospi ${out.kospi?.length || 0} days (last ${out.kospi?.at(-1)?.[0]}), flows ${out.flows?.length || 0} days (last ${out.flows?.at(-1)?.[0]})`);
   return out;
 }
@@ -142,6 +212,7 @@ if (!raw.usdkrw?.length || !raw.kospi?.length || !raw.flows?.length) { log(`miss
 let built = {};
 try { built = buildSignal(raw) || {}; } catch (e) { log("signal build failed:", e.stack || e.message); built = prev ? Object.fromEntries(Object.entries(prev).filter(([k]) => !["raw", "updated", "notes", "src"].includes(k))) : {}; }
 const out = {
+  flowSrc: raw.flowSrc || null,
   updated: Math.floor(Date.now() / 1000),
   src: "USD/KRW (KRW=X), dollar index (DX-Y.NYB) and USD/CNH (CNH=X): Yahoo Finance daily closes. KOSPI close: Yahoo ^KS11. KOSPI trading value and net buying by investor type (foreigners, retail, institutions, pension funds): KRX data marketplace (투자자별 거래실적 일별추이), KRW tn.",
   ...built,
