@@ -65,7 +65,8 @@
 
   fetch("../data/krw-flows.json?t=" + Date.now(), { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
     if (!d || !d.series?.length || !d.backtest) return;
-    D = d; N = { ...(d.auto || {}), ...(d.notes || {}) }; box.hidden = false; shell(); top(); story(); bt(); draw();
+    D = d; N = { ...(d.auto || {}), ...(d.notes || {}) }; box.hidden = false;
+    if (d.noFlows) { macro(); draw(); } else { shell(); top(); story(); bt(); draw(); }
     new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
     matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", draw);
   });
@@ -118,6 +119,60 @@
     $("krRng").onclick = (e) => { const k = e.target.dataset?.k; if (!k) return; S.rng = k; try { localStorage.setItem("krw-rng", k); } catch (x) {} $("krRng").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.k === k)); draw(); };
   }
 
+  // Macro-only mode (no KOSPI investor-flow history yet): USD/KRW vs KOSPI and the dollar/yuan/Korea split
+  function macro() {
+    const L = D.latest, b = D.backtest, m = b.model;
+    box.innerHTML = `
+    <div class="eyebrow">USD/KRW · Korea equity flows · daily</div>
+    <h2 id="krH">USD/KRW: Korea equity flow signal</h2>
+    <p class="sub">What is driving the won: the global dollar, the yuan, or something Korea-specific such as foreign equity flows? The dollar and yuan split below is live. The foreign-flow signals and their back-test switch on once KOSPI investor-flow history is connected.</p>
+    <div class="tw-chip warn" style="margin:0 0 12px"><b>Flow signals · pending data</b><span>Foreign-flow history not connected yet</span><small>KRX has required a member login for its investor statistics since Dec 2025. Once the KRX_ID / KRX_PW repository secrets are set, the next run back-fills about three years and this panel switches to the full flow signal and back-test.</small></div>
+    <div class="tw-comp" id="krComp"></div>
+    <div class="tw-grid">
+      <div class="panel">
+        <div class="chead"><h3>Dollar, yuan or Korea? What moved USD/KRW</h3></div>
+        <div class="kr-att" id="krAtt"></div>
+        <div id="krAttC" style="height:220px"></div>
+        <div class="leg" id="krAttLeg"></div>
+        <p class="note" id="krAttNote"></p>
+      </div>
+      <div class="panel">
+        <div class="chead"><h3>USD/KRW vs KOSPI</h3><div class="btns" id="krRng" role="group" aria-label="Range"></div></div>
+        <div id="krMain" style="height:300px"></div>
+        <div class="leg" id="krMainLeg"></div>
+        <div class="stats" id="krStats" style="margin-top:12px"></div>
+        <p class="note">${esc(fmtD(b.from))} – ${esc(fmtD(b.to))}, non-overlapping 5-day windows. "Korea-specific" is the USD/KRW move left after the dollar index and USD/CNH parts at the rolling betas. A negative KOSPI link means a rising KOSPI goes with a stronger won.</p>
+      </div>
+    </div>`;
+    $("krRng").innerHTML = Object.keys(RNG).map((k) => `<button type="button" data-k="${k}" aria-pressed="${k === S.rng}">${k}</button>`).join("");
+    $("krRng").onclick = (e) => { const k = e.target.dataset?.k; if (!k) return; S.rng = k; try { localStorage.setItem("krw-rng", k); } catch (x) {} $("krRng").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x.dataset.k === k)); draw(); };
+    const tone = (v) => (v == null ? "" : v > 0 ? "up" : v < 0 ? "down" : "");
+    $("krComp").innerHTML = [
+      ["USD/KRW", "20-day change", sgn(L.fx20, 1, "%"), `${L.fx.toFixed(1)} · + = won weaker`, -L.fx20],
+      ["KOSPI", "20-day change", sgn(L.eq20, 1, "%"), Math.round(L.kospi).toLocaleString("en-US"), L.eq20],
+      ["Dollar index", "20-day change", sgn(L.dx20, 1, "%"), L.dx?.toFixed(2), -L.dx20],
+      ["USD/CNH", "20-day change", sgn(L.cn20, 1, "%"), L.cnh?.toFixed(4), -L.cn20],
+    ].map(([t, s, v, x, c]) => `<div><b>${esc(t)}</b><small>${esc(s)}</small><span class="v ${tone(c)}">${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
+    attTiles();
+    $("krStats").innerHTML = [
+      ["Dollar link", sgn(b.dxy5dCorr, 2), "corr, 5-day DXY vs USD/KRW"],
+      ["Yuan link", sgn(b.cnh5dCorr, 2), "corr, 5-day USD/CNH vs USD/KRW"],
+      ["KOSPI link", sgn(b.kospi5dCorr, 2), "corr, 5-day KOSPI vs USD/KRW"],
+      ["KOSPI → Korea-specific", sgn(b.kospi5dCorrKorea, 2), "corr, 5-day KOSPI vs the Korea part"],
+      ["Model fit", m.r2 == null ? "—" : Math.round(m.r2 * 100) + "%", `of daily moves · β DXY ${sgn(m.betaDxy, 2)} · β CNH ${sgn(m.betaCnh, 2)}`],
+    ].map(([t, v, x]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
+  }
+  function attTiles() {
+    const L = D.latest, m = D.backtest.model, a = L.att;
+    if (a) {
+      const parts = [["dx", "Dollar index", css("--accent", "#0b6fb8")], ["cn", "Yuan (USD/CNH)", "#d97706"], ["kr", "Korea-specific", "#7c3aed"]];
+      const tot = Math.abs(a.dx) + Math.abs(a.cn) + Math.abs(a.kr) || 1;
+      $("krAtt").innerHTML = `<div><b>USD/KRW, 20 sessions</b><span class="v ${a.tot > 0 ? "up" : a.tot < 0 ? "down" : ""}">${sgn(a.tot, 2, "%")}</span><small>= the three parts →</small><div class="kr-bar">${parts.map(([k, , c]) => `<i style="width:${(Math.abs(a[k]) / tot) * 100}%;background:${c}"></i>`).join("")}</div></div>` +
+        parts.map(([k, t, c]) => `<div style="border-left:3px solid ${c}"><b>${t}</b><span class="v">${sgn(a[k], 2, "%")}</span><small>${k === "dx" ? `β ${sgn(m.betaDxy, 2)} × DXY ${sgn(L.dx20, 1, "%")}` : k === "cn" ? `β ${sgn(m.betaCnh, 2)} × CNH ${sgn(L.cn20, 1, "%")}` : "what's left: flows, BoK, NPS, exporters"}</small></div>`).join("");
+    }
+    $("krAttNote").textContent = `Rolling ${m.window}-session regression of daily USD/KRW % changes on the dollar index and USD/CNH, estimated only on data before each day. Latest betas: ${sgn(m.betaDxy, 2)} to the dollar index and ${sgn(m.betaCnh, 2)} to USD/CNH, explaining ${m.r2 == null ? "—" : Math.round(m.r2 * 100) + "%"} of daily moves. Chart: the 20-session USD/KRW move split into those parts. A Korea-specific part that tracks foreign equity flows is the signal at work; a move that is mostly dollar or yuan is not about Korean stocks.`;
+  }
+
   function top() {
     const L = D.latest, b = D.backtest, E = b.exhaustion.episodes;
     $("krHead").textContent = N.headline || "";
@@ -139,15 +194,7 @@
       ["KOSPI", "20-day change", sgn(L.eq20, 1, "%"), `${Math.round(L.kospi).toLocaleString("en-US")} · z ${sgn(L.z.eq20, 2)}`, L.eq20],
       ["USD/KRW", "20-day change", sgn(L.fx20, 1, "%"), `${L.fx.toFixed(1)} · + = won weaker`, -L.fx20],
     ].map(([t, s, v, x, c]) => `<div><b>${esc(t)}</b><small>${esc(s)}</small><span class="v ${tone(c)}">${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
-    // attribution tiles
-    const a = L.att, m = b.model;
-    if (a) {
-      const parts = [["dx", "Dollar index", css("--accent", "#0b6fb8")], ["cn", "Yuan (USD/CNH)", "#d97706"], ["kr", "Korea-specific", "#7c3aed"]];
-      const tot = Math.abs(a.dx) + Math.abs(a.cn) + Math.abs(a.kr) || 1;
-      $("krAtt").innerHTML = `<div><b>USD/KRW, 20 sessions</b><span class="v ${a.tot > 0 ? "up" : a.tot < 0 ? "down" : ""}">${sgn(a.tot, 2, "%")}</span><small>= the three parts →</small><div class="kr-bar">${parts.map(([k, , c]) => `<i style="width:${(Math.abs(a[k]) / tot) * 100}%;background:${c}"></i>`).join("")}</div></div>` +
-        parts.map(([k, t, c]) => `<div style="border-left:3px solid ${c}"><b>${t}</b><span class="v">${sgn(a[k], 2, "%")}</span><small>${k === "dx" ? `β ${sgn(m.betaDxy, 2)} × DXY ${sgn(L.dx20, 1, "%")}` : k === "cn" ? `β ${sgn(m.betaCnh, 2)} × CNH ${sgn(L.cn20, 1, "%")}` : "what's left: flows, BoK, NPS, exporters"}</small></div>`).join("");
-    }
-    $("krAttNote").textContent = `Rolling ${m.window}-session regression of daily USD/KRW % changes on the dollar index and USD/CNH, estimated only on data before each day. Latest betas: ${sgn(m.betaDxy, 2)} to the dollar index and ${sgn(m.betaCnh, 2)} to USD/CNH, explaining ${m.r2 == null ? "—" : Math.round(m.r2 * 100) + "%"} of daily moves. Chart: the 20-session USD/KRW move split into those parts. A Korea-specific part that tracks foreign equity flows is the signal at work; a move that is mostly dollar or yuan is not about Korean stocks.`;
+    attTiles();
   }
 
   function story() {
@@ -182,6 +229,16 @@
   const opts = () => ({ autoSize: true, localization: { locale: "en-US" }, layout: { background: { color: "transparent" }, textColor: css("--muted", "#5a6573"), fontFamily: css("--f-mono", "monospace") }, grid: { vertLines: { color: alpha(css("--line", "#d9dee5"), 0.6) }, horzLines: { color: alpha(css("--line", "#d9dee5"), 0.6) } }, rightPriceScale: { borderColor: css("--line") }, leftPriceScale: { borderColor: css("--line") }, timeScale: { borderColor: css("--line") }, crosshair: { mode: 0 }, handleScroll: false, handleScale: false });
   const leg = (el, items) => { el.innerHTML = items.map(([c, t]) => `<span><i style="background:${c}"></i>${t}</span>`).join(""); };
   const pctFmt = { type: "custom", formatter: (v) => sgn(v, 1, "%") };
+  function attChart(R) {
+    const acc = css("--accent", "#0b6fb8"), org = "#d97706", pur = "#7c3aed", mut = css("--muted", "#5a6573");
+    const t = LightweightCharts.createChart($("krAttC"), opts());
+    const parts = [[16, pur, "Korea-specific", 2], [14, acc, "Dollar index", 1], [15, org, "Yuan", 1]];
+    const tot = t.addLineSeries({ color: alpha(mut, 0.8), lineWidth: 1, lineStyle: 2, priceLineVisible: false, lastValueVisible: false, priceFormat: pctFmt });
+    tot.setData(R.filter((r) => r[14] != null).map((r) => ({ time: r[0], value: r[14] + r[15] + r[16] })));
+    for (const [i, c, , w] of parts) { const l = t.addLineSeries({ color: c, lineWidth: w, priceLineVisible: false, lastValueVisible: false, priceFormat: pctFmt }); l.setData(R.filter((r) => r[i] != null).map((r) => ({ time: r[0], value: r[i] }))); }
+    t.timeScale().fitContent(); charts.push(t);
+    leg($("krAttLeg"), [[alpha(mut, 0.8), "USD/KRW 20-session move"], ...parts.map(([, c, n]) => [c, n])]);
+  }
   function draw() {
     if (!D || !$("krMain")) return;
     charts.forEach((c) => c.remove()); charts = [];
@@ -197,6 +254,7 @@
     const fx = a.addLineSeries({ color: acc, lineWidth: 2, priceScaleId: "right", priceLineVisible: false, priceFormat: { type: "price", precision: 1, minMove: 0.1 } });
     fx.setData(R.map((r) => ({ time: r[0], value: r[1] })));
     a.timeScale().fitContent(); charts.push(a);
+    if (D.noFlows) { leg($("krMainLeg"), [[acc, "USD/KRW (right)"], [alpha(mut, 0.7), "KOSPI (left)"]]); attChart(R); return; }
     // 2. foreign daily net buy, 20d totals
     const f = LightweightCharts.createChart($("krFlow"), opts());
     const bars = f.addHistogramSeries({ priceLineVisible: false, lastValueVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } });
@@ -207,14 +265,7 @@
     p20.setData(R.filter((r) => r[12] != null).map((r) => ({ time: r[0], value: r[12] / 10 })));
     f.timeScale().fitContent(); charts.push(f);
     leg($("krMainLeg"), [[acc, "USD/KRW (right)"], [alpha(mut, 0.7), "KOSPI (left)"], [alpha(up, 0.5), "Inflows stretched"], [alpha(dn, 0.4), "Outflows stretched"], [up, "Foreign net buy"], [dn, "Foreign net sell"], [org, "Foreign 20-day ÷ 10"], [pur, "Pension 20-day ÷ 10"]]);
-    // 3. attribution of the 20-session move
-    const t = LightweightCharts.createChart($("krAttC"), opts());
-    const parts = [[16, pur, "Korea-specific", 2], [14, acc, "Dollar index", 1], [15, org, "Yuan", 1]];
-    const tot = t.addLineSeries({ color: alpha(mut, 0.8), lineWidth: 1, lineStyle: 2, priceLineVisible: false, lastValueVisible: false, priceFormat: pctFmt });
-    tot.setData(R.filter((r) => r[14] != null).map((r) => ({ time: r[0], value: r[14] + r[15] + r[16] })));
-    for (const [i, c, , w] of parts) { const l = t.addLineSeries({ color: c, lineWidth: w, priceLineVisible: false, lastValueVisible: false, priceFormat: pctFmt }); l.setData(R.filter((r) => r[i] != null).map((r) => ({ time: r[0], value: r[i] }))); }
-    t.timeScale().fitContent(); charts.push(t);
-    leg($("krAttLeg"), [[alpha(mut, 0.8), "USD/KRW 20-session move"], ...parts.map(([, c, n]) => [c, n])]);
+    attChart(R);
     // 4. signals
     const s = LightweightCharts.createChart($("krSig"), opts());
     const pA = s.addLineSeries({ color: acc, lineWidth: 1, priceLineVisible: false });

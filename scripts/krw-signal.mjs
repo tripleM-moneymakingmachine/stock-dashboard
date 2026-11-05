@@ -38,7 +38,7 @@ function ols2(y, x1, x2) {
 const lookup = (rows) => { const m = new Map(rows || []), ks = (rows || []).map((x) => x[0]); return (d) => { if (m.has(d)) return m.get(d); let v = null; for (const k of ks) { if (k > d) break; v = m.get(k); } return v; }; };
 
 export function buildSignal(raw) {
-  if (!raw?.flows?.length || raw.flows.length < ZMIN + 40) return {};
+  if (!raw?.flows?.length || raw.flows.length < ZMIN + 40) return buildMacro(raw);
   const fxOn = lookup(raw.usdkrw), dxOn = lookup(raw.dxy), cnOn = lookup(raw.usdcnh);
   const ks = new Map((raw.kospi || []).map((x) => [x[0], x])), fl = new Map(raw.flows.map((x) => [x[0], x]));
   const days = raw.kospi.map((x) => x[0]).filter((d) => fl.has(d) && fl.get(d)[1] != null && fxOn(d) != null);
@@ -197,5 +197,47 @@ function autoNotes(b, L) {
     headline: `Foreigners net ${L.net20 >= 0 ? "bought" : "sold"} KRW ${Math.abs(L.net20 ?? 0).toFixed(1)} tn of KOSPI shares over 20 sessions while USD/KRW moved ${s(L.fx20, 1, "%")} to ${L.fx?.toFixed(1)}. Flow pressure is ${s(L.A)} and exhaustion ${s(L.C)}.`,
     findings: f,
     caveats: `Two years is a short sample, and the one-month results rest on about two dozen independent 20-day windows. Flows are KOSPI only (no KOSDAQ, bonds, NPS currency hedging or retail purchases of US stocks, which are large won outflows that this panel cannot see daily). USD/KRW is Yahoo's daily close, which can differ from the 15:30 Seoul onshore close and the 02:00 extended session. Results ignore costs and carry (forward points). A research signal, not financial advice.`,
+  };
+}
+
+// Macro-only build, used until KOSPI investor flows are available: USD/KRW vs KOSPI and the dollar & yuan model
+// (same rolling regression and 20-session attribution as above), no flow signals or back-test.
+function buildMacro(raw) {
+  if (!raw?.usdkrw?.length || !raw?.kospi?.length) return {};
+  const fxOn = lookup(raw.usdkrw), dxOn = lookup(raw.dxy), cnOn = lookup(raw.usdcnh);
+  const W = raw.kospi.filter((k) => fxOn(k[0]) != null).map((k) => ({ d: k[0], ks: k[1], fx: fxOn(k[0]), dx: dxOn(k[0]), cn: cnOn(k[0]) }));
+  const pct = (a, b) => (a != null && b ? (a / b - 1) * 100 : null);
+  for (let i = 1; i < W.length; i++) { const w = W[i], p = W[i - 1]; w.rFx = pct(w.fx, p.fx); w.rDx = pct(w.dx, p.dx); w.rCn = pct(w.cn, p.cn); w.rKs = pct(w.ks, p.ks); }
+  for (let i = 0; i < W.length; i++) {
+    const y = [], a = [], b = [];
+    for (let j = Math.max(1, i - BW); j < i; j++) { const v = W[j]; if (v.rFx != null && v.rDx != null && v.rCn != null) { y.push(v.rFx); a.push(v.rDx); b.push(v.rCn); } }
+    const f = y.length >= BMIN ? ols2(y, a, b) : null; W[i].bDx = f?.b1 ?? null; W[i].bCn = f?.b2 ?? null; W[i].r2 = f?.r2 ?? null;
+    W[i].res = f && W[i].rFx != null && W[i].rDx != null && W[i].rCn != null ? W[i].rFx - f.b1 * W[i].rDx - f.b2 * W[i].rCn : null;
+    if (i >= 20 && f) {
+      let d = 0, c = 0, t = 0, ok = true;
+      for (let j = i - 19; j <= i; j++) { const v = W[j]; if (v.rDx == null || v.rCn == null || v.rFx == null) { ok = false; break; } d += f.b1 * v.rDx; c += f.b2 * v.rCn; t += v.rFx; }
+      if (ok) W[i].att = { tot: t, dx: d, cn: c, kr: t - d - c };
+    }
+    W[i].fx20 = i >= 20 ? pct(W[i].fx, W[i - 20].fx) : null; W[i].eq20 = i >= 20 ? pct(W[i].ks, W[i - 20].ks) : null;
+    W[i].dx20 = i >= 20 ? pct(W[i].dx, W[i - 20].dx) : null; W[i].cn20 = i >= 20 ? pct(W[i].cn, W[i - 20].cn) : null;
+  }
+  // last two years: 5-day links, and how the Korea-specific part relates to KOSPI (equity risk appetite)
+  const last = W.at(-1).d, t0 = new Date(last + "T00:00:00Z"); t0.setUTCFullYear(t0.getUTCFullYear() - 2);
+  const i0 = Math.max(6, W.findIndex((w) => w.d >= t0.toISOString().slice(0, 10)));
+  const c = { dx: [[], []], cn: [[], []], ks: [[], []], ksRes: [[], []] };
+  for (let i = i0; i < W.length; i += 5) {
+    const fx5 = pct(W[i].fx, W[i - 5].fx), ks5 = pct(W[i].ks, W[i - 5].ks); let rs = 0, ok = true;
+    for (let j = i - 4; j <= i; j++) { if (W[j].res == null) ok = false; else rs += W[j].res; }
+    if (W[i].dx && W[i - 5].dx) { c.dx[0].push(pct(W[i].dx, W[i - 5].dx)); c.dx[1].push(fx5); }
+    if (W[i].cn && W[i - 5].cn) { c.cn[0].push(pct(W[i].cn, W[i - 5].cn)); c.cn[1].push(fx5); }
+    c.ks[0].push(ks5); c.ks[1].push(fx5); if (ok) { c.ksRes[0].push(ks5); c.ksRes[1].push(rs); }
+  }
+  const L = W.at(-1);
+  return {
+    noFlows: true,
+    cols: ["date", "usdkrw", "kospi", "foreignNetTn", "flow5Pct", "flow20Pct", "kospi20Pct", "pressure", "exhaustion", "regPressure", "regExhaustion", "foreignNet20Tn", "pensionNet20Tn", "retailNet20Tn", "att20Dxy", "att20Cnh", "att20Korea", "betaDxy", "betaCnh"],
+    series: W.map((w) => [w.d, w.fx, w.ks, null, null, null, r(w.eq20), null, null, null, null, null, null, null, r(w.att?.dx), r(w.att?.cn), r(w.att?.kr), r(w.bDx), r(w.bCn)]),
+    backtest: { from: W[i0].d, to: last, dxy5dCorr: r(pear(...c.dx)), cnh5dCorr: r(pear(...c.cn)), kospi5dCorr: r(pear(...c.ks)), kospi5dCorrKorea: r(pear(...c.ksRes)), model: { window: BW, betaDxy: r(L.bDx), betaCnh: r(L.bCn), r2: r(L.r2) } },
+    latest: { date: L.d, fx: L.fx, kospi: L.ks, eq20: r(L.eq20), fx20: r(L.fx20), dx: L.dx, dx20: r(L.dx20), cnh: L.cn, cn20: r(L.cn20), att: L.att ? { tot: r(L.att.tot), dx: r(L.att.dx), cn: r(L.att.cn), kr: r(L.att.kr) } : null },
   };
 }

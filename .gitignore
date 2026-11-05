@@ -1,3 +1,4 @@
 .cache/
 holders.log
 pf-data/
+data/.krx-flows.tmp.json

@@ -38,6 +38,25 @@ jobs:
         with:
           node-version: 20
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: KOSPI investor flows from KRX (needs the KRX_ID / KRX_PW secrets)
+        continue-on-error: true
+        env:
+          KRX_ID: ${{ secrets.KRX_ID }}
+          KRX_PW: ${{ secrets.KRX_PW }}
+        run: |
+          if [ -z "$KRX_ID" ]; then echo "KRX_ID / KRX_PW secrets not set: macro-only build"; exit 0; fi
+          pip install -q pykrx
+          if [ -f data/krw-flows.json ] && python3 -c "import json,sys;d=json.load(open('data/krw-flows.json'));sys.exit(0 if len(d.get('raw',{}).get('flows',[]))>200 else 1)"; then
+            FROM=$(date -u -d '20 days ago' +%F)
+          else
+            FROM=2023-07-01
+          fi
+          python3 scripts/krx-flows.py "$FROM" "$(TZ=Asia/Seoul date +%F)"
+
       - name: USD/KRW, KOSPI and investor flows, then the signal
         run: node scripts/fetch-krw-flows.mjs --pages ${{ inputs.pages || '200' }}
 
