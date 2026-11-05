@@ -61,6 +61,7 @@ const KRX_TMP = "data/.krx-flows.tmp.json";
 
 async function fetchRaw(maxPages) {
   const out = { ...raw0 };
+  if (!raw0.dxyTz) { delete out.dxy; out.dxyTz = "America/New_York"; } // drop the cache dated in Seoul time
   const tryY = async (name, sym, tz) => {
     try {
       const v = await yahoo(sym, tz);
@@ -70,9 +71,8 @@ async function fetchRaw(maxPages) {
     } catch (e) { log(`${name} failed (${e.message}); keeping previous`); }
   };
   await tryY("usdkrw", "KRW=X");
-  // Yahoo stamps ICE dollar-index bars at the session start (~20:00 New York the evening before), so dating them in
-  // Seoul time lines each bar up with the same day's USD/KRW bar (dating in New York time shifts them a day early).
-  await tryY("dxy", "DX-Y.NYB", "Asia/Seoul");
+  // dated in New York time; krw-signal.mjs tests and applies the one-session offset against USD/KRW
+  await tryY("dxy", "DX-Y.NYB", "America/New_York");
   // USD/CNH: Yahoo's CNH=X daily range has returned a single bar; fall back to USDCNH=X, then onshore CNY=X
   for (const sym of ["CNH=X", "USDCNH=X", "CNY=X"]) { await tryY("usdcnh", sym); if ((out.usdcnh?.length || 0) > 200) { out.cnhSym = sym; break; } log(`usdcnh: only ${out.usdcnh?.length || 0} days from ${sym}`); out.usdcnh = []; }
   // KOSPI close: Yahoo ^KS11 (KRX turnover is merged in below)

@@ -37,8 +37,25 @@ function ols2(y, x1, x2) {
 }
 const lookup = (rows) => { const m = new Map(rows || []), ks = (rows || []).map((x) => x[0]); return (d) => { if (m.has(d)) return m.get(d); let v = null; for (const k of ks) { if (k > d) break; v = m.get(k); } return v; }; };
 
-export function buildSignal(raw) {
-  if (!raw?.flows?.length || raw.flows.length < ZMIN + 40) return buildMacro(raw);
+// Yahoo's FX, ICE dollar-index and KRX bars are stamped on different clocks, so a control series can sit one session
+// off USD/KRW. For each control, pick the shift (0 or 1 session) whose daily returns correlate best with USD/KRW over
+// the first 250 overlapping sessions only (before the back-test window, so the test period never informs the choice).
+function alignControl(fx, x) {
+  if (!fx?.length || !x?.length) return { rows: x || [], lag: 0, corr: null };
+  const f = new Map(fx), rets = (rows) => { const m = new Map(); for (let i = 1; i < rows.length; i++) m.set(rows[i][0], rows[i][1] / rows[i - 1][1] - 1); return m; };
+  const rf = rets(fx), cand = [0, 1].map((lag) => { const rows = lag ? x.slice(0, -1).map((r, i) => [x[i + 1][0], r[1]]) : x; const rx = rets(rows); const a = [], b = [];
+    for (const [d, v] of rx) if (rf.has(d) && f.has(d)) { a.push(rf.get(d)); b.push(v); if (a.length >= 250) break; }
+    return { rows, lag, corr: pear(a, b) }; });
+  return cand.reduce((p, q) => ((q.corr ?? -9) > (p.corr ?? -9) ? q : p));
+}
+function alignRaw(raw) {
+  const d = alignControl(raw.usdkrw, raw.dxy), c = alignControl(raw.usdkrw, raw.usdcnh);
+  return { raw: { ...raw, dxy: d.rows, usdcnh: c.rows }, align: { dxyLag: d.lag, dxyCorr: r(d.corr), cnhLag: c.lag, cnhCorr: r(c.corr) } };
+}
+
+export function buildSignal(raw0) {
+  const { raw, align } = alignRaw(raw0 || {});
+  if (!raw?.flows?.length || raw.flows.length < ZMIN + 40) return buildMacro(raw, align);
   const fxOn = lookup(raw.usdkrw), dxOn = lookup(raw.dxy), cnOn = lookup(raw.usdcnh);
   const ks = new Map((raw.kospi || []).map((x) => [x[0], x])), fl = new Map(raw.flows.map((x) => [x[0], x]));
   const days = raw.kospi.map((x) => x[0]).filter((d) => fl.has(d) && fl.get(d)[1] != null && fxOn(d) != null);
@@ -153,7 +170,7 @@ export function buildSignal(raw) {
     pressure: { threshold: TH_A, sameDay: summ(sA0), oneDayLate: summ(sA1), hedged: summ(sAH), next2d: side("rA", 2, 0), next2dLate: side("rA", 2, 1), next2dHedged: side("rA", 2, 0, resN), ic1: ic("A", 1, 0), ic1Late: ic("A", 1, 1), ic1Hedged: ic("A", 1, 0, 1, resN), inMarket: r(W.slice(i0).filter((w) => w.rA).length / (W.length - i0), 3) },
     exhaustion: { threshold: TH_C, oneDayLate: summ(sC1), hedged: summ(sCH), longOnly: summ(sCL), shortOnly: summ(sCS), episodes: epSum(), next20d: side("rC", 20, 1), ic20: ic("C", 20, 1), ic20NonOverlap: ic("C", 20, 1, 20), ic20Hedged: ic("C", 20, 1, 1, resN), inMarket: r(W.slice(i0).filter((w) => w.rC).length / (W.length - i0), 3) },
     hold: summ(hold),
-    model: { window: BW, betaDxy: r(L.bDx), betaCnh: r(L.bCn), r2: r(L.r2) },
+    model: { window: BW, betaDxy: r(L.bDx), betaCnh: r(L.bCn), r2: r(L.r2), ...align },
   };
   const curve = []; { let a = 0, b = 0, h = 0, c = 0, l = 0, s = 0, o = 0; for (let k = 0, i = i0; i < W.length - 1; i++, k++) { a += sA0.p[k]; b += sA1.p[k]; h += sAH.p[k]; c += sC1.p[k]; l += sCL.p[k]; s += sCS.p[k]; o += hold.p[k]; curve.push([W[i + 1].d, r(a), r(b), r(h), r(c), r(l), r(s), r(o)]); } }
 
@@ -202,7 +219,7 @@ function autoNotes(b, L) {
 
 // Macro-only build, used until KOSPI investor flows are available: USD/KRW vs KOSPI and the dollar & yuan model
 // (same rolling regression and 20-session attribution as above), no flow signals or back-test.
-function buildMacro(raw) {
+function buildMacro(raw, align = {}) {
   if (!raw?.usdkrw?.length || !raw?.kospi?.length) return {};
   const fxOn = lookup(raw.usdkrw), dxOn = lookup(raw.dxy), cnOn = lookup(raw.usdcnh);
   const W = raw.kospi.filter((k) => fxOn(k[0]) != null).map((k) => ({ d: k[0], ks: k[1], fx: fxOn(k[0]), dx: dxOn(k[0]), cn: cnOn(k[0]) }));
@@ -237,7 +254,7 @@ function buildMacro(raw) {
     noFlows: true,
     cols: ["date", "usdkrw", "kospi", "foreignNetTn", "flow5Pct", "flow20Pct", "kospi20Pct", "pressure", "exhaustion", "regPressure", "regExhaustion", "foreignNet20Tn", "pensionNet20Tn", "retailNet20Tn", "att20Dxy", "att20Cnh", "att20Korea", "betaDxy", "betaCnh"],
     series: W.map((w) => [w.d, w.fx, w.ks, null, null, null, r(w.eq20), null, null, null, null, null, null, null, r(w.att?.dx), r(w.att?.cn), r(w.att?.kr), r(w.bDx), r(w.bCn)]),
-    backtest: { from: W[i0].d, to: last, dxy5dCorr: r(pear(...c.dx)), cnh5dCorr: r(pear(...c.cn)), kospi5dCorr: r(pear(...c.ks)), kospi5dCorrKorea: r(pear(...c.ksRes)), model: { window: BW, betaDxy: r(L.bDx), betaCnh: r(L.bCn), r2: r(L.r2) } },
+    backtest: { from: W[i0].d, to: last, dxy5dCorr: r(pear(...c.dx)), cnh5dCorr: r(pear(...c.cn)), kospi5dCorr: r(pear(...c.ks)), kospi5dCorrKorea: r(pear(...c.ksRes)), model: { window: BW, betaDxy: r(L.bDx), betaCnh: r(L.bCn), r2: r(L.r2), ...align } },
     latest: { date: L.d, fx: L.fx, kospi: L.ks, eq20: r(L.eq20), fx20: r(L.fx20), dx: L.dx, dx20: r(L.dx20), cnh: L.cn, cn20: r(L.cn20), att: L.att ? { tot: r(L.att.tot), dx: r(L.att.dx), cn: r(L.att.cn), kr: r(L.att.kr) } : null },
   };
 }
