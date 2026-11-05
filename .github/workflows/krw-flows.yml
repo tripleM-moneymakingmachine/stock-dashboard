@@ -1,0 +1,52 @@
+name: USD/KRW equity flows
+
+# Daily after the Seoul close (KRX investor flows are final ~16:00 KST): fetch USD/KRW, the dollar index, USD/CNH, the
+# KOSPI and its turnover, and KOSPI net buying by investor type, rebuild data/krw-flows.json (the FX tab's USD/KRW
+# equity flow signal) and commit it. The hand-written `notes` key is kept.
+on:
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: "Most Naver pages per series this run (first run back-fills ~3 years)"
+        type: string
+        default: "200"
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-krw-flows.mjs
+      - scripts/krw-signal.mjs
+      - .github/workflows/krw-flows.yml
+  schedule:
+    - cron: "30 8 * * 1-5"    # 16:30 SGT / 17:30 KST
+    - cron: "45 13 * * 1-5"   # 21:45 SGT, catches late revisions and the latest USD/KRW
+
+permissions:
+  contents: write
+
+concurrency:
+  group: krw-flows
+  cancel-in-progress: false
+
+jobs:
+  krw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: USD/KRW, KOSPI and investor flows, then the signal
+        run: node scripts/fetch-krw-flows.mjs --pages ${{ inputs.pages || '200' }}
+
+      - name: Commit if changed
+        run: |
+          git add data/krw-flows.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh USD/KRW equity flows"
+          git pull -q --rebase origin main
+          git push
