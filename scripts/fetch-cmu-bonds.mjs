@@ -25,12 +25,25 @@ const interp = (pts, x) => {
 let prev = null;
 try { prev = JSON.parse(readFileSync(OUT, "utf8")); } catch {}
 
+// HKMA's API front end rejects some clients (HTTP 405 from cloud runners), so try a few header sets and keep the one that works
+const HDRS = [
+  { "User-Agent": UA, Accept: "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9", Referer: "https://apidocs.hkma.gov.hk/", Origin: "https://apidocs.hkma.gov.hk" },
+  {},
+  { "User-Agent": "curl/8.5.0", Accept: "*/*" },
+  { "User-Agent": UA, Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language": "en-US,en;q=0.9" },
+];
+let hi = 0;
+const tried = [];
 async function getJson(url) {
   for (let a = 1; a <= 3; a++) {
     try {
-      const r = await fetch(url, { headers: { "User-Agent": UA, Accept: "application/json" }, signal: AbortSignal.timeout(60000) });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return await r.json();
+      for (let h = hi; h < HDRS.length; h++) {
+        const r = await fetch(url, { headers: HDRS[h], signal: AbortSignal.timeout(60000) });
+        if (r.ok) { hi = h; return await r.json(); }
+        tried.push(`h${h}:${r.status}`);
+        if (r.status !== 403 && r.status !== 405 && r.status !== 406) throw new Error(`HTTP ${r.status}`);
+      }
+      throw new Error(`HTTP refused (${tried.slice(-HDRS.length).join(" ")})`);
     } catch (e) { if (a === 3) throw e; await new Promise((s) => setTimeout(s, 3000 * a)); }
   }
 }
