@@ -45,6 +45,10 @@ export function buildSignal(raw) {
   const W = days.map((d) => { const f = fl.get(d), k = ks.get(d); return { d, fx: fxOn(d), dx: dxOn(d), cn: cnOn(d), ks: k[1], tv: k[2], net: f[1], ret: f[2], inst: f[3], pen: f[4] }; });
   // turnover gaps (Yahoo fallback rows): use the trailing 20-session median
   for (let i = 0; i < W.length; i++) if (!(W[i].tv > 0)) { const h = W.slice(Math.max(0, i - 20), i).map((w) => w.tv).filter((x) => x > 0).sort((a, b) => a - b); W[i].tv = h.length ? h[h.length >> 1] : null; }
+  // no turnover at all (KRX unavailable): scale by 20 × the trailing 60-session mean |foreign net| instead; z-scores
+  // are scale-free, but the "% of turnover" figures are then not percentages, so the build flags it
+  const proxy = W.every((w) => !(w.tv > 0));
+  if (proxy) for (let i = 0; i < W.length; i++) { const h = W.slice(Math.max(0, i - 59), i + 1).map((w) => Math.abs(w.net)); W[i].tv = 20 * mean(h) || 1; }
 
   const sum = (i, n, k) => { let s = 0; for (let j = i - n + 1; j <= i; j++) s += W[j][k] ?? 0; return s; };
   const pct = (a, b) => (a != null && b ? (a / b - 1) * 100 : null);
@@ -168,7 +172,7 @@ export function buildSignal(raw) {
   return {
     auto,
     cols: ["date", "usdkrw", "kospi", "foreignNetTn", "flow5Pct", "flow20Pct", "kospi20Pct", "pressure", "exhaustion", "regPressure", "regExhaustion", "foreignNet20Tn", "pensionNet20Tn", "retailNet20Tn", "att20Dxy", "att20Cnh", "att20Korea", "betaDxy", "betaCnh"],
-    method: { zWindow: ZW, zMin: ZMIN, pressureTh: TH_A, exhaustionTh: TH_C, betaWindow: BW },
+    method: { turnoverProxy: proxy, zWindow: ZW, zMin: ZMIN, pressureTh: TH_A, exhaustionTh: TH_C, betaWindow: BW },
     series, backtest, curveCols: ["date", "pressureSameDay", "pressureLate", "pressureHedged", "exhaustion", "exhaustionLongOnly", "exhaustionShortOnly", "holdLong"], curve, episodes, latest,
   };
 }

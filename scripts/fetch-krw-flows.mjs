@@ -3,9 +3,10 @@
 //
 // Raw inputs (daily, Seoul trading days):
 //  - USD/KRW close (Yahoo Finance KRW=X), dollar index (DX-Y.NYB) and USD/CNH (CNH=X): the dollar/yuan controls
-//  - KOSPI close and trading value (Naver Finance sise_index_day, 거래대금 KRW mn → tn), Yahoo ^KS11 as a close fallback
-//  - KOSPI net buying by investor (Naver Finance investorDealTrendDay, sosok=01, 억원 → KRW tn): foreigners (외국인),
-//    retail (개인), institutions (기관계) and pension funds (연기금등, mostly the NPS)
+//  - KOSPI close (Yahoo ^KS11) and KOSPI trading value (KRX, total of the buy side)
+//  - KOSPI net buying by investor (KRX data marketplace, 투자자별 거래실적 일별추이 MDCSTAT02202, KRW → tn):
+//    foreigners (외국인 + 기타외국인), retail (개인), institutions (기관 합계) and pension funds (연기금, mostly the NPS).
+//    (Naver's desktop investorDealTrendDay / sise_index_day pages were retired in Nov 2026: HTTP 410.)
 //
 // History is cached in data/krw-flows.json; later runs only re-read the newest pages (the last few days are always
 // re-read in case of revisions). Usage: node scripts/fetch-krw-flows.mjs [--pages N]  (most Naver pages per series)
@@ -52,49 +53,49 @@ async function yahoo(sym, tz = "Asia/Seoul") {
   return [...m.entries()].sort(byDate);
 }
 
-// ---------- Naver Finance pages (EUC-KR HTML tables) ----------
-const cells = (tr) => [...tr.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((m) => m[1].replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").trim());
-const num = (s) => { const v = +String(s).replace(/[,+\s]/g, ""); return s !== "" && isFinite(v) ? v : null; };
-const isoDate = (s) => { // "2026.11.05" or "26.11.05"
-  const m = String(s).match(/^(\d{2}|\d{4})\.(\d{2})\.(\d{2})$/); if (!m) return null;
-  return `${m[1].length === 2 ? "20" + m[1] : m[1]}-${m[2]}-${m[3]}`;
-};
-async function naverPage(url) {
-  const r = await get(url, { Referer: "https://finance.naver.com/sise/" });
-  const t = new TextDecoder("euc-kr").decode(await r.arrayBuffer());
-  return [...t.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map((m) => cells(m[1])).filter((c) => c.length && isoDate(c[0]));
+// ---------- KRX data marketplace (data.krx.co.kr) ----------
+// MDCSTAT02202 = 투자자별 거래실적 일별추이 for the KOSPI market (mktId STK), trading value (trdVolVal 2), detailed view.
+// askBid 3 = net buy, 2 = buy (its 전체 column is total market turnover). Values in KRW; returned as strings with commas.
+const KRX = "https://data.krx.co.kr/comm/bldAttendant/getJsonData.cmd";
+const KRXH = { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", Accept: "application/json, text/javascript, */*; q=0.01", Referer: "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201020302", Origin: "https://data.krx.co.kr", "X-Requested-With": "XMLHttpRequest" };
+const n0 = (s) => { const v = +String(s ?? "").replace(/[,\s]/g, ""); return isFinite(v) ? v : null; };
+async function krxCall(form) {
+  const r = await fetch(KRX, { method: "POST", headers: { "User-Agent": UA, ...KRXH }, body: new URLSearchParams(form).toString(), signal: AbortSignal.timeout(45000) });
+  const t = await r.text();
+  if (!r.ok) throw new Error(`HTTP ${r.status}: ${t.slice(0, 200)}`);
+  let j; try { j = JSON.parse(t); } catch { throw new Error(`not JSON: ${t.slice(0, 200)}`); }
+  return j;
 }
-// Page through a Naver daily table, newest first, until rows reach `stop` (already cached and older than the
-// re-read window) or BEG, or `maxPages` pages.
-async function naverPaged(name, urlFor, parse, stop, maxPages) {
-  const out = []; let last = null;
-  for (let p = 1; p <= maxPages; p++) {
-    let rows;
-    try { rows = await naverPage(urlFor(p)); }
-    catch (e) { log(`${name} page ${p}: ${e.message}`); await sleep(4000); try { rows = await naverPage(urlFor(p)); } catch (e2) { log(`${name}: giving up at page ${p}`); break; } }
-    if (!rows.length) break;
-    const key = rows.map((c) => c[0]).join();
-    if (key === last) break; // Naver repeats the last page past the end
-    last = key;
-    for (const c of rows) { const v = parse(c); if (v) out.push(v); }
-    const oldest = isoDate(rows.at(-1)[0]);
-    if (p === 1) log(`${name}: page 1 sample ${JSON.stringify(rows[0])}`);
-    if (oldest < BEG || (stop && oldest < stop)) break;
-    await sleep(350);
+async function krxInvestor(from, to, askBid) {
+  const j = await krxCall({ bld: "dbms/MDC/STAT/standard/MDCSTAT02202", locale: "ko_KR", inqTpCd: "2", trdVolVal: "2", askBid: String(askBid), mktId: "STK", etf: "EF", etn: "EN", elw: "EW", strtDd: from.replace(/-/g, ""), endDd: to.replace(/-/g, ""), detailView: "1", money: "1", csvxls_isNo: "false" });
+  const rows = j.output || j.OutBlock_1 || j.block1 || [];
+  if (!rows.length) throw new Error(`no rows: ${JSON.stringify(j).slice(0, 300)}`);
+  return rows;
+}
+async function krxFlows(from, to) {
+  const flows = [], turnover = []; let first = true;
+  for (let y = +from.slice(0, 4); y <= +to.slice(0, 4); y++) {
+    const a = y === +from.slice(0, 4) ? from : `${y}-01-01`, b = y === +to.slice(0, 4) ? to : `${y}-12-31`;
+    const net = await krxInvestor(a, b, 3); await sleep(1500);
+    const buy = await krxInvestor(a, b, 2); await sleep(1500);
+    if (first) { log("KRX sample row:", JSON.stringify(net[0])); first = false; }
+    // detailed columns: TRDVAL1 금융투자, 2 보험, 3 투신, 4 사모, 5 은행, 6 기타금융, 7 연기금, 8 기타법인, 9 개인,
+    // 10 외국인, 11 기타외국인, TRDVAL_TOT 전체 (pykrx's layout). Institutions = 1–7.
+    const tn = (x) => (x == null ? null : +(x / 1e12).toFixed(4));
+    for (const r of net) {
+      const d = String(r.TRD_DD || "").replace(/\//g, "-"); if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) continue;
+      const v = (k) => n0(r[k]);
+      const inst = [1, 2, 3, 4, 5, 6, 7].reduce((s, k) => s + (v("TRDVAL" + k) ?? 0), 0);
+      flows.push([d, tn((v("TRDVAL10") ?? 0) + (v("TRDVAL11") ?? 0)), tn(v("TRDVAL9")), tn(inst), tn(v("TRDVAL7"))]);
+    }
+    for (const r of buy) { const d = String(r.TRD_DD || "").replace(/\//g, "-"); const t = n0(r.TRDVAL_TOT); if (t > 0) turnover.push([d, +(t / 1e12).toFixed(3)]); }
+    log(`KRX ${a}..${b}: ${net.length} net rows, ${buy.length} buy rows`);
   }
-  log(`${name}: ${out.length} rows read, ${out.at(-1)?.[0]} to ${out[0]?.[0]}`);
-  return out;
+  flows.sort(byDate); turnover.sort(byDate);
+  const big = flows.filter((f) => Math.abs(f[1] ?? 0) > 20).length; // foreign net > KRW 20 tn a day = wrong units
+  if (big > flows.length / 4) throw new Error("KRX values look mis-scaled: " + JSON.stringify(flows.at(-1)));
+  return { flows: flows.filter((r) => r[0] >= BEG), turnover };
 }
-// KOSPI daily: 날짜 | 체결가 | 전일비 | 등락률 | 거래량(천주) | 거래대금(백만) → [date, close, turnover KRW tn]
-const kospiRow = (c) => { const d = isoDate(c[0]), cl = num(c[1]), tv = num(c[5]); return d && cl > 0 ? [d, cl, tv > 0 ? +(tv / 1e6).toFixed(3) : null] : null; };
-// Investor net buy, 억원: 날짜 | 개인 | 외국인 | 기관계 | 금융투자 | 보험 | 투신(사모) | 은행 | 기타금융기관 | 연기금등 | 기타법인
-//   → [date, foreign, retail, institutions, pension] in KRW tn
-const flowRow = (c) => {
-  const d = isoDate(c[0]), v = c.slice(1).map(num);
-  if (!d || v.length < 9 || v[1] == null) return null;
-  const tn = (x) => (x == null ? null : +(x / 1e4).toFixed(4));
-  return [d, tn(v[1]), tn(v[0]), tn(v[2]), tn(v[8])];
-};
 
 async function fetchRaw(maxPages) {
   const out = { ...raw0 };
@@ -110,21 +111,26 @@ async function fetchRaw(maxPages) {
   // Yahoo stamps ICE dollar-index bars at the session start (~20:00 New York the evening before), so dating them in
   // Seoul time lines each bar up with the same day's USD/KRW bar (dating in New York time shifts them a day early).
   await tryY("dxy", "DX-Y.NYB", "Asia/Seoul");
-  await tryY("usdcnh", "CNH=X");
-  // re-read anything newer than 7 sessions before the last cached day
-  const reread = (rows) => (rows?.length > 10 ? rows.at(-8)[0] : null);
+  // USD/CNH: Yahoo's CNH=X daily range has returned a single bar; fall back to USDCNH=X, then onshore CNY=X
+  for (const sym of ["CNH=X", "USDCNH=X", "CNY=X"]) { await tryY("usdcnh", sym); if ((out.usdcnh?.length || 0) > 200) { out.cnhSym = sym; break; } log(`usdcnh: only ${out.usdcnh?.length || 0} days from ${sym}`); out.usdcnh = []; }
+  // KOSPI close: Yahoo ^KS11 (KRX turnover is merged in below)
   try {
-    const k = await naverPaged("KOSPI", (p) => `https://finance.naver.com/sise/sise_index_day.naver?code=KOSPI&page=${p}`, kospiRow, reread(out.kospi), maxPages);
-    if (k.length) out.kospi = merge(out.kospi, k.filter((r) => r[0] >= BEG));
-  } catch (e) { log("KOSPI failed:", e.message); }
-  if (!out.kospi?.length) { // fallback: Yahoo close only
-    try { out.kospi = (await yahoo("^KS11")).map(([d, c]) => [d, c, null]); log("KOSPI from Yahoo ^KS11 (no turnover)"); } catch (e) { log("^KS11 failed:", e.message); }
-  }
+    const k = await yahoo("^KS11"); const old = new Map((out.kospi || []).map((r) => [r[0], r]));
+    out.kospi = k.map(([d, c]) => [d, c, old.get(d)?.[2] ?? null]);
+    log(`KOSPI: Yahoo ${k.length} days, last ${k.at(-1)?.[0]}`);
+  } catch (e) { log("^KS11 failed:", e.message); }
+  // investor net buying and market turnover: KRX 투자자별 거래실적 일별추이 (MDCSTAT02202), in yearly chunks;
+  // only the newest chunk is re-read once history is cached
   try {
-    const biz = kst().replace(/-/g, "");
-    const f = await naverPaged("investor flows", (p) => `https://finance.naver.com/sise/investorDealTrendDay.naver?bizdate=${biz}&sosok=01&page=${p}`, flowRow, reread(out.flows), maxPages);
-    if (f.length) out.flows = merge(out.flows, f.filter((r) => r[0] >= BEG));
-  } catch (e) { log("investor flows failed:", e.message); }
+    const have = out.flows?.length > 200 ? out.flows.at(-10)[0] : BEG;
+    const f = await krxFlows(have, kst());
+    if (f.flows.length) {
+      out.flows = merge(out.flows, f.flows);
+      const tv = new Map(f.turnover); const m = new Map((out.kospi || []).map((r) => [r[0], r]));
+      for (const [d, v] of tv) { const r = m.get(d); if (r) r[2] = v; }
+      out.flowSrc = "krx";
+    }
+  } catch (e) { log("KRX investor flows failed:", e.message); }
   log(`kospi ${out.kospi?.length || 0} days (last ${out.kospi?.at(-1)?.[0]}), flows ${out.flows?.length || 0} days (last ${out.flows?.at(-1)?.[0]})`);
   return out;
 }
@@ -137,7 +143,7 @@ let built = {};
 try { built = buildSignal(raw) || {}; } catch (e) { log("signal build failed:", e.stack || e.message); built = prev ? Object.fromEntries(Object.entries(prev).filter(([k]) => !["raw", "updated", "notes", "src"].includes(k))) : {}; }
 const out = {
   updated: Math.floor(Date.now() / 1000),
-  src: "USD/KRW (KRW=X), dollar index (DX-Y.NYB) and USD/CNH (CNH=X): Yahoo Finance daily closes. KOSPI close and trading value: Naver Finance (KRX). KOSPI net buying by investor type (foreigners, retail, institutions, pension funds): Naver Finance 투자자별 매매동향 (KRX data), KRW tn.",
+  src: "USD/KRW (KRW=X), dollar index (DX-Y.NYB) and USD/CNH (CNH=X): Yahoo Finance daily closes. KOSPI close: Yahoo ^KS11. KOSPI trading value and net buying by investor type (foreigners, retail, institutions, pension funds): KRX data marketplace (투자자별 거래실적 일별추이), KRW tn.",
   ...built,
   notes: prev?.notes || null,
   raw,
