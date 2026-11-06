@@ -1,30 +1,30 @@
 {
- "session": "2026-11-05",
- "asof": "Thu Nov 5, 2026",
- "tone": "down",
- "headline": "Data-center crackdown fears and Qualcomm/Arm misses sink chips 12%; S&P 500 −4.4%",
- "summary": "The post-election rally unravelled within the first hour: the Dow briefly held gains at the open, but selling in chip and data-center stocks accelerated through the morning and the S&P 500 posted its worst day since April 2025, more than erasing Wednesday's jump. Losses were broad, with all 11 S&P sectors lower, technology down about 7.3% and consumer staples holding up best at about −0.7%, on heavy volume of about 26.9 billion shares versus a 17.7 billion average. The Nasdaq Composite and Nasdaq-100 closed in correction, and Treasuries caught a haven bid.",
+ "session": "2026-11-06",
+ "asof": "Fri Nov 6, 2026",
+ "tone": "mixed",
+ "headline": "Chips claw back part of Thursday's rout (SOX +4.2%) as a hot jobs report lifts hike bets",
+ "summary": "Nasdaq futures bounced before the open and the index was up nearly 2% at its high, but the gains faded through the afternoon as yields firmed after the strong payrolls data, leaving the S&P 500 up 0.3%. The rebound was concentrated in semiconductors and tech, with technology and communication services leading the sector table, while the Dow slipped as Apple and Microsoft lagged. Small caps joined in, the Russell 2000 rising 0.9%, and the VIX eased back from Thursday's spike.",
  "stats": [
-  ["S&P 500", "7,353.73", -4.36],
-  ["Nasdaq", "24,315.00", -5.52],
-  ["Dow", "51,523.06", -3.44],
-  ["Russell 2000", "2,729.89", -4.45],
-  ["SOX (chips)", "9,011.14", -12.25],
-  ["VIX", "28.18", 69.66, true],
-  ["US 10Y", "4.84%", "−5bp"],
-  ["WTI crude", "$90.52", 2.72]
+  ["S&P 500", "7,376.86", 0.31],
+  ["Nasdaq", "24,579.42", 1.09],
+  ["Dow", "51,285.73", -0.46],
+  ["Russell 2000", "2,754.11", 0.89],
+  ["SOX (chips)", "9,390.25", 4.21],
+  ["VIX", "25.64", -9.01, true],
+  ["US 10Y", "4.86%", "+2bp"],
+  ["WTI crude", "$90.83", 0.34]
  ],
  "drivers": [
-  ["AI buildout fears turn into a chip rout", "Investors priced the risk that a Democratic Congress and new state officials in data-center states could pause or regulate new construction, which would cut demand for AI chips and power gear. The SOX fell 12.25%, its worst day since March 2020; Nvidia (about −9%) was the heaviest drag on the S&P 500, AMD sank about 17%, Micron about 17%, and Broadcom and TSMC fell 9% or more."],
-  ["Qualcomm and Arm results add fuel", "Qualcomm fell about 9.5% after handset chip sales dropped 26% and its next-quarter profit outlook came in light, with a warning on rising supply-chain costs; Arm slid about 11% as guidance failed to impress. Memory and storage names (SanDisk, Western Digital, Seagate) posted steep double-digit losses."],
-  ["Selling spreads to Big Tech and the wider AI trade", "Meta lost 4% and Amazon and Alphabet about 2.2% each after Wednesday's rally; data-center and power names fell hard, with IREN and Applied Digital down more than 14%, CoreWeave nearly 10% and GE Vernova 7.5%, while Tesla and SpaceX dropped 9% or more. The S&P 500 shed about $3 trillion in value; AppLovin (+31%) and Tapestry (+7%) rose on strong results."],
-  ["Haven bid in bonds; oil rebounds", "The VIX jumped about 70% to 28.18, its highest close since late March, and the 10-year yield slipped about 5bp to 4.84% while the 2-year fell more on safety buying; Fed's Hammack and Barkin still hinted at possible hikes. WTI bounced 2.7% to $90.52 after Wednesday's 8% plunge as Middle East supply risk lingered; jobless claims (189K) and Q3 productivity (+3.6%) were firm."]
+  ["Dip buyers return to chips", "After the SOX's 12% plunge on fears of curbs on new US data centers, buyers stepped back into the hardest-hit names: AMD jumped 11%, Lam Research about 8%, Intel nearly 8%, Qualcomm and Marvell over 5%, Micron about 5% and Nvidia 2.8%. Chip stocks alone added roughly half a point to the S&P 500, but the SOX recovered only about a third of Thursday's loss."],
+  ["Blowout payrolls revive December hike bets", "The US added 165,000 jobs in October against about 65,000 expected, unemployment dipped to 4.1% and wages rose 0.4% on the month, with prior months revised up by 84,000. Futures priced about a 77% chance of a December Fed hike, the 2-year yield rose about 5bp to roughly 4.52% and the curve flattened, which capped the rally in the afternoon."],
+  ["Dow lags as megacaps and rate-sensitive names slip", "Apple and Microsoft slipped, keeping the Dow down 237 points, while higher yields weighed on rate-sensitive sectors and energy and banks were flat to lower."],
+  ["Earnings make big single-stock moves", "JFrog soared about 35% and IonQ about 23% on raised guidance, while DraftKings sank about 21% on a wider-than-expected loss, Axon fell 18% after cutting its 2026 revenue outlook and Atlassian dropped about 16% on a weak data-center revenue guide."]
  ],
- "week": "Four sessions in, the S&P 500 is down about 3% and the Nasdaq about 4.4% for the week, the Dow nearly flat and the Russell 2000 down about 3%, with the Nasdaq and SOX now in correction (SOX about 38% below its June record); the backdrop is a hawkish-leaning Fed with a December hike still in play and crude far below last week's highs.",
- "watch": "Next: the October jobs report on Friday, Nov 6 is the key test for December Fed pricing; Cloudflare jumped about 18% after hours on its results, and any further statements on state data-center moratoriums will steer the chip names.",
+ "week": "For the week the S&P 500 fell 2.7%, the Nasdaq 3.4% (its fourth straight weekly loss), the Russell 2000 2.1% and the Dow 0.9%, the S&P's worst week since spring 2025; WTI crude lost about 12.8% on hopes of de-escalation in the Iran war, and the Fed is now seen as likely to hike again in December.",
+ "watch": "Next: October CPI next week is the main test for December Fed pricing, and any further word on state or federal limits to data-center construction will steer the chip and AI names.",
  "sources": [
-  ["AP", "https://www.dallasnews.com/business/article/asian-shares-mostly-advance-following-us-22513257.php"],
-  ["Reuters", "https://centraloregondaily.com/news/nation-world/nasdaq-correction-chip-stocks-ai-regulation-fears-democrats-congress/article_36c67699-30f9-5cf5-8fa3-8e7a99850922.html"],
-  ["Yahoo Finance", "https://finance.yahoo.com/markets/article/chip-stocks-slaughtered-as-wall-street-suffers-worst-post-midterm-day-since-1896-213204256.html"]
+  ["AP", "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-friday-11-6-2026"],
+  ["Reuters", "https://straitstimes.com/business/companies-markets/nasdaq-rebounds-but-posts-fourth-straight-weekly-decline"],
+  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"]
  ]
 }
