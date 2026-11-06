@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-06",
- "asofText": "Nov 6, 2026",
+ "asof": "2026-11-07",
+ "asofText": "Nov 7, 2026",
  "note": "Sites, owners, status and power are from company announcements, filings and press reports; GW marked ~ are Claude estimates. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -620,7 +620,7 @@
    "status": "uc",
    "capexB": null,
    "est": false,
-   "note": "Project Jupiter; full build Q4 2028"
+   "note": "Project Jupiter; Oracle sent a force majeure notice, on-site power air permit hearing Dec 7; full build Q4 2028"
   },
   {
    "id": "sg-wi",
@@ -788,7 +788,7 @@
    "status": "uc",
    "capexB": null,
    "est": true,
-   "note": "Up to 300 MW with DataOne"
+   "note": "Up to 300 MW with DataOne; fined $1M for unpermitted generators, ~140 MW may slip to 2027"
   },
   {
    "id": "iren-chi",
@@ -802,7 +802,7 @@
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "750 MW converting to AI cloud"
+   "note": "750 MW; Horizon 1 handed to Microsoft in Aug, Horizons 2–4 slipped to Jan–Feb 2027 after a Microsoft network redesign"
   },
   {
    "id": "iren-swt",
@@ -1381,10 +1381,10 @@
  "views": {
   "msft": {
    "grade": "Low",
-   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built, and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Microsoft can absorb a 12-month Abilene slip and redirect capacity to Wisconsin, Iowa and Wyoming; slower industry supply also supports Azure pricing. Rallied 6.6% on Nov 4, a sign the market sees it as a relative winner.",
+   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built, and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Microsoft is now pulling back from rented capacity (Oracle deal wound down, Nscale Texas option declined, tighter oversight of IREN and Nebius) and favouring its own builds, which shifts delivery risk onto its suppliers. The catch is that third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity.",
    "moves": [
     "Shift Abilene phase to Wisconsin/Wyoming",
-    "Lean on leased neocloud capacity already contracted",
+    "Consolidate to a few neocloud partners and own builds",
     "Fund grid upgrades to keep Atlanta expansions moving"
    ]
   },
@@ -1417,11 +1417,11 @@
   },
   "orcl": {
    "grade": "High",
-   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) plus Michigan opposition. Most are under construction and should be grandfathered from new approvals, but state permits and ERCOT large-load service are still exposed. Oracle is debt-funded with negative free cash flow, so a 12-month slip on ~2 GW is expensive. New Mexico and Wisconsin Stargate sites are the hedge.",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) plus Michigan opposition. Most are under construction and should be grandfathered from new approvals, but state permits and ERCOT large-load service are still exposed. The hedge sites are wobbling too: Oracle sent a force majeure notice at New Mexico's Jupiter and lenders are testing its debt, while Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing, not politics, is the binding risk.",
    "moves": [
     "Rush Shackelford buildings to energise before Jan 19",
-    "Shift incremental OpenAI capacity to New Mexico/Wisconsin",
-    "Self-fund generation at Shackelford"
+    "Secure Jupiter's air permit (Dec 7 hearing)",
+    "Re-sell freed Microsoft capacity to OpenAI"
    ]
   },
   "sbank": {
@@ -1441,7 +1441,7 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton). The bigger issue is financing: as a debt-funded builder, every month of delay adds interest and covenant risk. Fell 12% Thursday.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton). Microsoft shrinking its neocloud roster is a headline risk, though CoreWeave's backlog now leans on OpenAI and Meta as well. The binding issue is financing: interest costs exceed operating income and every month of delay adds covenant risk.",
    "moves": [
     "Lean on North Dakota (Applied Digital) and Pennsylvania",
     "Prioritise energised capacity in contracts"
@@ -1449,7 +1449,7 @@
   },
   "nbis": {
    "grade": "Low",
-   "view": "US footprint is Missouri and New Jersey, neither directly hit. The 17% drop looks like sentiment and financing contagion rather than site risk, a possible mispricing.",
+   "view": "US footprint is Missouri and New Jersey, neither directly hit by the new governors. The risk is execution, not policy: Microsoft has stepped up oversight after a $1M generator fine at Vineland, and part of that site may slip to 2027. With near-zero net debt and prepayments, Nebius can wait out a Microsoft pause better than peers; the Nov 5 drop looked like sentiment.",
    "moves": [
     "Keep expanding in Missouri/New Jersey",
     "Use Finland/Israel capacity as a hedge"
@@ -1457,10 +1457,11 @@
   },
   "iren": {
    "grade": "High",
-   "view": "Childress (750 MW, operating) and the 2 GW Sweetwater site are both in Texas. Sweetwater's energisation is ERCOT-gated, which is exactly where a moratorium bites. Highest share of pipeline at risk among listed names.",
+   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip to January–February is a customer-requested network redesign, not a regulatory block, and backlog rose to $20.3B, so the 20% rebound on Nov 6 was earned. Sweetwater's energisation is still ERCOT-gated and Microsoft is now auditing its suppliers, so concentration on one customer and one state keeps this High.",
    "moves": [
+    "Deliver Horizons 2–4 inside Microsoft grace periods",
     "Energise Sweetwater before new rules",
-    "Seek grandfathering via existing interconnection agreements"
+    "Diversify beyond Microsoft (frontier-lab contract signed)"
    ]
   },
   "apld": {
@@ -1505,6 +1506,60 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-06",
+   "co": [
+    "msft",
+    "orcl"
+   ],
+   "t": "Microsoft is winding down its 2023 deal to rent AI capacity from Oracle, saying the older Nvidia hardware no longer meets its needs.",
+   "src": "https://startupfortune.com/microsoft-winds-down-oracle-deal-to-rent-ai-cloud-capacity"
+  },
+  {
+   "d": "2026-11-06",
+   "co": [
+    "*"
+   ],
+   "t": "Vistra raised 2026 guidance and set 2027 targets; it blamed softer ERCOT prices partly on the Texas data center permit pause, which it does not see as lasting.",
+   "src": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
+  },
+  {
+   "d": "2026-11-05",
+   "co": [
+    "iren",
+    "msft"
+   ],
+   "t": "IREN pushed its $4B+ run-rate target to January (possibly late February) after Microsoft asked for network changes at Childress; AI cloud revenue nearly tripled and the stock rose 20% the next day.",
+   "src": "https://tipranks.com/news/iren-stock-rallies-after-earnings-as-ai-cloud-revenue-nearly-triples-despite-data-center-delays"
+  },
+  {
+   "d": "2026-11-05",
+   "co": [
+    "msft",
+    "nbis",
+    "iren",
+    "crwv"
+   ],
+   "t": "Bloomberg: Microsoft is tightening oversight of neocloud projects (Nebius, IREN, Nscale), walking away from sites it sees as risky and favouring its own data centers over new leases.",
+   "src": "https://finance.yahoo.com/news/microsoft-sours-neoclouds-amid-data-160016061.html"
+  },
+  {
+   "d": "2026-11-05",
+   "co": [
+    "orcl",
+    "sbank"
+   ],
+   "t": "ING is auctioning about $500M of data center loans, including a slice of Project Jupiter debt in New Mexico, where Oracle has issued a force majeure notice and an air-permit hearing is set for Dec 7.",
+   "src": "https://bisnow.com/news/national/data-center-capital-markets/ing-unloads-500m-in-data-center-loans-in-wake-of-midterms"
+  },
+  {
+   "d": "2026-11-05",
+   "co": [
+    "*"
+   ],
+   "t": "Hinojosa told CNN she is not ruling data centers out but wants a pause until laws protect Texans and give communities a say; markets read it as softer than feared.",
+   "src": "https://thehill.com/homenews/state-watch/6203045-texas-hinojosa-data-centers"
+  },
   {
    "d": "2026-11-05",
    "co": [
@@ -1563,6 +1618,14 @@
   }
  ],
  "sources": [
+  [
+   "Bloomberg via Yahoo: Microsoft sours on neoclouds",
+   "https://finance.yahoo.com/news/microsoft-sours-neoclouds-amid-data-160016061.html"
+  ],
+  [
+   "Bisnow: ING data center loan sale",
+   "https://bisnow.com/news/national/data-center-capital-markets/ing-unloads-500m-in-data-center-loans-in-wake-of-midterms"
+  ],
   [
    "Epoch AI: Stargate US sites",
    "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"

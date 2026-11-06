@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-06",
- "asofText": "Nov 6, 2026",
+ "asof": "2026-11-07",
+ "asofText": "Nov 7, 2026",
  "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company's data center revenue; revenue run-rates are the latest quarter ×4 from each stock page (~ = estimate). Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
@@ -178,9 +178,8 @@
   {
    "t": "COHR",
    "n": "Coherent",
-   "rev": 8.4,
+   "rev": 9.5,
    "page": "cohr",
-   "est": true,
    "s": {
     "opt": 0.18
    }
@@ -310,9 +309,9 @@
   "ARM": "Royalty per CPU is small, so direct impact is negligible; the bigger issue is SoftBank's Stargate financing, which hits sentiment.",
   "INTC": "Server CPU recovery is tied to general cloud builds more than giant AI campuses, so the hit is modest; foundry ambitions do not depend on US data center siting.",
   "SKHY": "HBM is sold out; any US slip is re-allocated within weeks. Risk is to the 2027 pricing negotiation, not volume.",
-  "MU": "Same as SK hynix on HBM, with more US-centric enterprise SSD and DRAM module exposure. The 14% drop looks like sentiment unless hyperscalers cut 2027 capex.",
+  "MU": "Same as SK hynix on HBM, with more US-centric enterprise SSD and DRAM module exposure. Pausing the Taoyuan HBM/DRAM fab over a labour dispute trims 2028 supply industry-wide, which supports pricing; Samsung and SK hynix gain qualification time. The Nov 5 drop and partial rebound look like sentiment, not lost orders.",
   "SNDK": "Datacenter is now 44% of sales and enterprise SSDs ship with each campus, so it carries more timing risk than the HBM makers.",
-  "COHR": "Transceivers and lasers ship close to cluster go-live, so a 12-month Texas pause shifts revenue right. Indium phosphide tightness cushions it.",
+  "COHR": "Transceivers and lasers ship close to cluster go-live, so a Texas pause shifts revenue right. But the Nov 4 quarter showed data center revenue up 85% and guidance for 60%+ growth, and the 15% Nov 6 rebound says the market sees the order book outrunning any US delay.",
   "LITE": "High exposure per dollar of revenue: EML and CW lasers for 800G/1.6T are tied to new clusters. The tight laser market cushions price, not timing.",
   "AAOI": "Most exposed optics name relative to size; depends on a few hyperscaler programs, some in Texas.",
   "GLW": "Fiber is installed on site with no absorption, so Corning sees delays almost one for one, but its multi-year hyperscaler contracts (Meta, others) set minimum volumes.",
@@ -324,7 +323,7 @@
   "ROK": "Small AI data center exposure; mostly an industrial cycle story.",
   "GEV": "Mixed: grid gear for Texas sites slips, but the ratepayer-first rules push hyperscalers to self-supply with gas turbines, which is GE Vernova's sold-out product. Likely net winner.",
   "BE": "Clear second-order winner: if states make data centers pay for grid upgrades or ban grid hook-ups, behind-the-meter fuel cells that deploy in months become the fastest workaround.",
-  "VST": "Most exposed power name: its growth thesis is new Texas data center load; a moratorium delays the contracts that justified its multiple. Fell 13.8% on Nov 4.",
+  "VST": "Most exposed power name: its growth thesis is new Texas data center load, and management admits the permit pause is already softening ERCOT prices. Still, Q3 beat, 2027 guidance was set above 2026, and it signed a 207 MW Odessa data center PPA, so the 10.6% Nov 6 bounce reflects earnings resilience rather than reduced Texas risk.",
   "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
  }
 }
