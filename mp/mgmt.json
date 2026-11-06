@@ -1,6 +1,6 @@
 {
  "ticker": "MP",
- "asof": "2026-11-06",
+ "asof": "2026-11-07",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,24 +9,23 @@
  "timing": "amc",
  "pre_close": 33.74,
  "react": {
-  "date": "2026-11-05",
-  "close": 33.9,
-  "pct": 0.5,
-  "ah": true
+  "date": "2026-11-06",
+  "close": 35.41,
+  "pct": 4.9
  },
  "since": {
-  "date": "2026-11-05",
-  "close": 33.74,
-  "pct": 0.0
+  "date": "2026-11-06",
+  "close": 35.41,
+  "pct": 4.9
  },
  "review": {
   "en": [
    "Revenue rose 176% to $147.7M, well above the ~$117M consensus, helped by a one-off $31.6M SEG+ sale to a US defense customer, plus $8.1M of price-floor income from the Department of War. NdPr output rose 41% to 1,018 tonnes and sales 94% to 1,020 tonnes, giving the materials segment $47.8M of adjusted EBITDA. Adjusted EPS of $0.04 beat a −$0.01 estimate, though the GAAP loss was $0.12. MP gives no guidance; CEO James Litinsky called finishing GM magnet qualification an inflection point, with saleable deliveries and revenue starting in Q4.",
-   "The stock fell 6.0% to $33.74 on Nov 5 ahead of the report, a fourth straight loss and a 52-week low, as rare earth names sold off; it is down more than half from its May high. After hours it edged up about 0.5% to $33.90, as investors weighed the beat against a one-off sale that flattered revenue and Q3 free cash flow of −$125M. The first regular-session reaction comes on Nov 6."
+   "The stock fell 6.0% to $33.74 on Nov 5 ahead of the report, a fourth straight loss and a 52-week low, as rare earth names sold off; it is down more than half from its May high. After hours it edged up about 0.5%, and on Nov 6 it closed up 4.9% at $35.41, as the surprise adjusted profit and the GM magnet go-ahead outweighed a one-off sale that flattered revenue and Q3 free cash flow of −$125M."
   ],
   "zh": [
    "营收增长 176% 至 1.477 亿美元，远高于约 1.17 亿的市场预期，其中包括向一家美国国防客户一次性出售 SEG+ 所得 3,160 万美元，另有「战争部」价格保底收入 810 万美元。氧化镨钕产量增长 41% 至 1,018 吨，销量增长 94% 至 1,020 吨，材料业务经调整 EBITDA 达 4,780 万美元。经调整每股收益 0.04 美元，高于 −0.01 美元的预期，但 GAAP 每股亏损 0.12 美元。MP 不提供指引；CEO 詹姆斯·利廷斯基称完成通用汽车磁体认证是一个转折点，可销售磁体的交付及收入将于第四季开始。",
-   "财报发布前，股价 11 月 5 日下跌 6.0% 至 33.74 美元，为连续第四天下跌并创 52 周新低，稀土板块整体遭抛售；股价较 5 月高点已跌逾一半。盘后小幅上涨约 0.5% 至 33.90 美元，投资者在业绩超预期与一次性销售推高营收、第三季自由现金流 −1.25 亿美元之间权衡。常规交易时段的首个反应将在 11 月 6 日出现。"
+   "财报发布前，股价 11 月 5 日下跌 6.0% 至 33.74 美元，为连续第四天下跌并创 52 周新低，稀土板块整体遭抛售；股价较 5 月高点已跌逾一半。盘后小幅上涨约 0.5%，11 月 6 日收涨 4.9% 至 35.41 美元：意外实现经调整盈利、通用汽车磁体获准供货，盖过了一次性销售推高营收以及第三季自由现金流 −1.25 亿美元的影响。"
   ]
  },
  "ceo": {
@@ -57,12 +56,12 @@
    "u": "https://www.stocktitan.net/news/MP/mp-materials-reports-third-quarter-2026-2cg29ay7vd06.html"
   },
   {
-   "t": "Q3 2026 results vs estimates (24/7 Wall St.)",
-   "u": "https://247wallst.com/cards/mp-materials-q3-2026-earnings-mp-01m6pw5rybxy1nbkfz55feqnyy"
+   "t": "Q3 2026 call transcript (Motley Fool)",
+   "u": "https://fool.com/earnings/call-transcripts/2026/11/06/mp-materials-mp-q3-2026-earnings-call-transcript"
   },
   {
-   "t": "Close and after-hours price (Stock Analysis)",
-   "u": "https://stockanalysis.com/stocks/mp/forecast/"
+   "t": "Surprise adjusted profit and first-session move (Northern Miner)",
+   "u": "https://northernminer.com/news/mp-materials-posts-surprise-adjusted-profit/1003897520"
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "ticker": "AAOI",
- "asof": "2026-11-06",
+ "asof": "2026-11-07",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -9,23 +9,23 @@
  "timing": "amc",
  "pre_close": 46.89,
  "react": {
-  "date": "2026-11-05",
-  "pct": null,
-  "ah": true
+  "date": "2026-11-06",
+  "close": 50.13,
+  "pct": 6.9
  },
  "since": {
-  "date": "2026-11-05",
-  "close": 46.89,
-  "pct": 0.0
+  "date": "2026-11-06",
+  "close": 50.13,
+  "pct": 6.9
  },
  "review": {
   "en": [
    "A sixth straight record: revenue rose 128% to $269.9M, just above the ~$268M consensus, and non-GAAP EPS of $0.17 beat $0.14 as AOI posted a $6.3M GAAP profit. Data center sales jumped 254% to $155.6M and CATV rose 57% to $110.9M. The Q4 guide of $385–420M trails the ~$427M consensus, with EPS of $0.48–0.63 in line. CFO Stefan Murry cut the end-2026 capacity target to over 500,000 800G/1.6T units a month as US plants wait for power, while CEO Thompson Lin pointed to a new multi-year Tier 1 hyperscaler deal.",
-   "The report came after a rout: AI optical stocks fell for a second day on post-midterm data center worries and Coherent's results, and AOI dropped 20.9% to $46.89, about 80% below its 52-week high. Shares then slid about 10% more after hours as the light revenue guide and slower US build-out outweighed the beat. The first regular session after the report, on Nov 6, has not traded yet."
+   "The report came after a rout: AI optical stocks fell for a second day on post-midterm data center worries, and AOI dropped 20.9% to $46.89, about 80% below its 52-week high. Shares slid about 8–10% after hours on the light guide, then reversed on Nov 6, closing up 6.9% at $50.13 as chips rebounded and investors focused on the beat and a hyperscaler deal worth $1–1.5B over three years. Needham cut its target to $100 from $170."
   ],
   "zh": [
    "连续第六个季度创纪录：营收增长 128% 至 2.699 亿美元，略高于约 2.68 亿美元的市场预期；非 GAAP 每股收益 0.17 美元，超过 0.14 美元的预期，GAAP 净利润 630 万美元。数据中心收入大增 254% 至 1.556 亿美元，有线电视业务增长 57% 至 1.109 亿美元。第四季营收指引 3.85–4.2 亿美元，低于约 4.27 亿美元的预期，每股收益指引 0.48–0.63 美元符合预期。CFO 斯特凡·默里因美国工厂等待电力接入，将 2026 年底 800G/1.6T 月产能目标下调至逾 50 万件；CEO Thompson Lin 则强调新签的一级云厂商多年协议。",
-   "财报发布前股价已遭重挫：受中期选举后数据中心担忧及 Coherent 业绩影响，AI 光通信股连续第二天下跌，AOI 当日跌 20.9% 至 46.89 美元，较 52 周高点低约 80%。财报公布后，营收指引偏弱及美国扩产放缓盖过业绩超预期，股价盘后再跌约 10%。财报后首个常规交易日（11 月 6 日）尚未开盘。"
+   "财报发布前股价已遭重挫：受中期选举后数据中心担忧影响，AI 光通信股连续第二天下跌，AOI 当日跌 20.9% 至 46.89 美元，较 52 周高点低约 80%。因营收指引偏弱，盘后一度下跌约 8–10%；11 月 6 日随芯片股反弹而回升，收涨 6.9% 至 50.13 美元，投资者转而关注业绩超预期以及一份三年价值 10–15 亿美元的云厂商协议。Needham 将目标价从 170 美元下调至 100 美元。"
   ]
  },
  "ceo": {
@@ -56,12 +56,12 @@
    "u": "https://prnewswire.com/news-releases/applied-optoelectronics-reports-third-quarter-2026-results-302931179.html"
   },
   {
-   "t": "After-hours drop and Q4 guide vs consensus (Investing.com)",
-   "u": "https://nl.investing.com/news/earnings/applied-optoelectronics-daalt-door-zwakke-outlook-vierde-kwartaal-965958"
+   "t": "First session: up 6.9% after the beat (MarketBeat)",
+   "u": "https://marketbeat.com/instant-alerts/price-applied-optoelectronics-nasdaq-aaoi-stock-jumps-69-on-better-than-expected-earnings-2026-11-06"
   },
   {
-   "t": "AI optical selloff on Nov 5 (Yahoo Finance)",
-   "u": "https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-sinks-16-coherent-165746528.html"
+   "t": "Hyperscaler deal, Q4 guide and Needham target cut (Investing.com)",
+   "u": "https://ca.investing.com/news/stock-market-news/needham-cuts-applied-optoelectronics-stock-price-target-on-facility-delays-93CH-4938187"
   }
  ]
 }
