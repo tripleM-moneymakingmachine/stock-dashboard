@@ -1,158 +1,158 @@
 {
- "session": "2026-11-05",
- "asof": "Thu Nov 5, 2026",
- "headline": "Tech rout fuels haven bid: 2-year yield drops 11bp, gold tops $4,100, oil rebounds on tanker attacks",
- "summary": "An AI-led stock selloff sent investors into Treasuries, pulling the 2-year down about 11bp to 4.47% and the 10-year 5bp to 4.84%, and helped Comex gold settle above $4,100. Oil reversed part of Wednesday's 8% collapse, with WTI up 2.7% to $90.52 as new tanker attacks revived supply worries. Bunds touched a two-month low, while OATs lagged during a French national strike.",
+ "session": "2026-11-06",
+ "asof": "Fri Nov 6, 2026",
+ "headline": "Blowout payrolls lift 2-year yield 5bp and knock gold 0.9%; oil steadies after a 13% weekly slide",
+ "summary": "A 165,000 October payrolls beat pushed December Fed hike odds to about 70–77% and lifted the 2-year about 5bp to near 4.52%, flattening the curve, while gold fell back to $4,064.50 as yields and the dollar firmed. Oil was flat on the day, WTI +0.3% at $90.83, but posted its biggest weekly loss since 2022 on US–Iran de-escalation hopes. European bonds hit multi-month lows in the morning tech rout, then gave the gains back after the US data.",
  "drivers": [
   [
-   "AI selloff drives a haven bid into the front end",
-   "The Nasdaq 100 fell about 6% and roughly $2 trillion of tech value was wiped out as traders feared the Democratic Congress will slow data-centre building. The 2-year fell about 11bp to 4.47% and the curve bull-steepened, even though jobless claims dropped to 189,000 vs 197,000 expected."
+   "Jobs beat revives December hike pricing",
+   "Payrolls rose 165,000 vs about 65,000 expected, with 84,000 of upward revisions, unemployment at 4.1% and wages +0.4% m/m. The 2-year rose about 5bp to 4.52%, the 10-year about 2bp to 4.86%, and 2s10s flattened to about 33bp."
   ],
   [
-   "Tanker attacks put a floor under oil",
-   "UKMTO logged at least five vessel incidents since Sunday and the IRGC said two tankers caught fire near Hormuz, while drones hit Russia's Ryazan refinery. WTI settled +$2.40 at $90.52 and Brent +$3.67 at $98.29, with ULSD up 3.5%."
+   "Oil stalls as US–Iran talk offsets tanker attacks",
+   "Reports that Washington and Tehran are closer to a deal capped prices even as attacks on ships near Hormuz continued. WTI settled +$0.31 at $90.83 and Brent +$0.03 at $98.32, leaving WTI down 12.8% on the week."
   ],
   [
-   "Gold extends its rebound; silver lags on tech",
-   "Comex gold settled +1.0% at $4,102.50, the highest since Oct 21, on lower yields and haven demand, but gave back a $4,146 peak late. Silver rose only 0.2% to $52.23 as the chip rout hit its industrial story."
+   "Firmer yields and dollar trim gold's best week since August",
+   "Comex gold settled -$38 at $4,064.50 and silver -43¢ at $51.80 as hike odds rose and the dollar index hit a one-week high near 102. Both still gained about 5% on the week; Goldman cut its end-2026 gold target to $4,150."
   ],
   [
-   "Fed stays hawkish; Europe split",
-   "Hammack and Barkin both backed gradual further hikes and the BoE raised rates to 4% with one vote for 50bp. Bunds fell to near 3.24%, a two-month low, but OATs stalled near 4.77% during a nationwide strike after the budget's defeat."
+   "Europe's haven rally reverses",
+   "Bunds touched 3.21% and Schatz 2.92%, the lowest since late August, as the tech rout spread, but the US data pushed yields back to near 3.25% and 3.00%. OATs held near 4.77%, about 152bp over Bunds."
   ]
  ],
  "rows": {
   "oil": {
-   "note": "Dec WTI settled +$2.40 (+2.7%) at $90.52, snapping a three-day slide; Jan Brent +$3.67 (+3.9%) at $98.29.",
-   "why": "After Wednesday's 8% collapse took WTI to its lowest since Aug 31, fresh tanker attacks put supply risk back in the price: UKMTO logged at least five incidents since Sunday, and the IRGC said two tankers and a tug caught fire using unauthorised Hormuz routes. Ukrainian drones hit Russia's Ryazan refinery, Iran's negotiating stance was unchanged, and Eurasia Group cut its deal odds to 10% from 20%, so traders bought back part of the lost premium.",
-   "outlook": "Expect choppy two-way trade in an $86–95 range: the midterm result keeps a lid on escalation risk, but shipping attacks stop the premium from draining fully. A close above $94 would point to renewed escalation; a break under $86 needs a concrete US–Iran deal.",
-   "watch": "Hormuz shipping incidents, US–Iran talk headlines, Russia–Ukraine–US talks Nov 10–11 and EIA stocks Nov 12."
+   "note": "Dec WTI settled +$0.31 (+0.3%) at $90.83, down 12.8% on the week; Jan Brent +$0.03 at $98.32.",
+   "why": "Two forces cancelled out. Fresh attacks on ships near Hormuz and Ukrainian strikes on Russian refineries lifted Brent briefly above $100 overnight, but a report that the US and Iran are nearing a breakthrough, with Tehran more flexible on its nuclear programme, pulled prices back. Tech-led de-risking also hit commodity positions, so WTI ended barely higher after a $19 weekly range and its biggest weekly drop since 2022.",
+   "outlook": "Expect a choppy $86–95 range with headline risk both ways: deal hopes cap rallies, while Iran's demands (lifting the blockade and sanctions) and ongoing ship attacks keep a premium in. A close above $94 points to renewed escalation; a confirmed deal could break $86.",
+   "watch": "US–Iran headlines, EIA STEO Tue Nov 10, OPEC report Wed Nov 11, EIA stocks Thu Nov 12 and the IEA report Fri Nov 13."
   },
   "gas": {
-   "note": "Dec RBOB rose 3.48¢ (+1.3%) to $2.7634, bouncing off a near-eight-month low; AAA pump average $4.10, down 12¢ in a week.",
-   "why": "Gasoline followed crude's rebound but lagged it, so the crack narrowed: diesel led the barrel, with ULSD up 3.5% to $4.35 as Ukraine's drone strikes on Russian refineries threaten diesel exports. Gasoline's own picture is softer, with winter-grade blends, finished refinery maintenance and post-summer demand easing, and the AAA average falling to $4.10 from $4.22 a week ago, though still more than $1 above last year.",
-   "outlook": "Bias sideways to lower between $2.65 and $2.90 as pump prices keep catching down to futures and winter blends cut costs. Only a renewed crude spike above $94 WTI would lift RBOB back toward $3.",
-   "watch": "Crude and Hormuz headlines, EIA gasoline stocks and refinery runs Nov 12, and the AAA average approaching $4."
+   "note": "Dec RBOB rose 1.33¢ (+0.5%) to $2.7767, still down 12% on the week, the biggest weekly drop since 2020.",
+   "why": "Gasoline edged up with crude on Friday but the week's story is the collapse of the war premium: RBOB lost about 38¢ as US–Iran deal hopes and the midterm result knocked crude down 13%. Winter-grade blends and softer post-season demand add to the weakness, and diesel underperformed on the day, with ULSD down 0.5% to $4.33. The AAA pump average started Friday near $4.07, about 14¢ lower than a week earlier.",
+   "outlook": "Bias sideways to lower in a $2.65–2.90 range as pump prices catch down to futures and could fall below $4 next week for the first time since mid-July. Only a crude spike back above $94 WTI would lift RBOB toward $3.",
+   "watch": "Crude and Iran headlines, EIA gasoline stocks and refinery runs Thu Nov 12, and the AAA average breaking $4."
   },
   "gold": {
-   "note": "Comex Nov settled +$41.40 (+1.0%) at $4,102.50, the highest since Oct 21; spot hit $4,146 before easing to near $4,090.",
-   "why": "Gold extended its post-election rebound as a tech and AI stock rout, with the Nasdaq 100 down about 6%, sent money into havens and pulled the 2-year Treasury yield down 11bp. Some rate-futures measures pushed the next Fed hike toward March, and falling unit labour costs eased inflation fears. Gains faded late in London as the dollar steadied on hawkish Fed comments and jobless claims of just 189,000.",
-   "outlook": "Bias modestly higher in a $4,050–4,200 range while real yields fall and equities stay fragile; resistance sits at $4,146 and the $4,190–4,230 moving-average band. A strong payrolls print that firms December hike odds above 80% would risk a slip back toward $4,000.",
-   "watch": "US payrolls Fri Nov 6, US CPI Tue Nov 10 and the dollar's reaction to Fed speakers."
+   "note": "Comex Nov settled -$38.00 (-0.9%) at $4,064.50, still +4.6% on the week; spot near $4,066.",
+   "why": "Gold gave back Thursday's gain as the 165,000 payrolls beat, 4.1% unemployment and 0.4% wage growth lifted December Fed hike odds to roughly 70–77% and pushed the 2-year yield up about 5bp. The dollar index hit a one-week high near 102 and the tech rebound cut haven demand. Goldman Sachs also cut its end-2026 target to $4,150 from $4,650, citing the Fed's hawkish turn.",
+   "outlook": "Range of $4,000–4,150 with a slight downside tilt while hike odds stay high; support sits at $4,035 and $4,000, resistance at $4,100–4,146. A soft CPI on Tuesday that pulls hike odds below 60% would reopen $4,150–4,200.",
+   "watch": "US CPI Tue Nov 10, PPI Fri Nov 13, Fed speakers including Bowman and Goolsbee Mon Nov 9, and the dollar."
   },
   "silver": {
-   "note": "Comex Nov settled +11.3¢ (+0.2%) at $52.23; spot faded late to near $51.75 as equities slumped.",
-   "why": "Silver lagged gold because it is half an industrial metal: the AI and chip selloff, with chip stocks posting their second-worst day on record, hits the data-centre and electronics demand story that had backed silver. It still held most of Wednesday's 5% jump, helped by lower yields and haven demand, but the gold/silver ratio widened back toward 79 as gold outperformed.",
-   "outlook": "Range trade between about $50 and $54.50 with a slight downside tilt while tech stocks look for a floor; it needs a recovery in risk appetite to break higher. A close below $49 would retest the late-October low.",
-   "watch": "Payrolls Nov 6, the tech-stock rebound or lack of it, and China demand signals."
+   "note": "Comex Nov settled -43¢ (-0.8%) at $51.80, still +5.5% on the week, the best week since August.",
+   "why": "Silver followed gold lower as stronger US jobs data lifted Fed hike odds, real yields and the dollar. The rebound in chip stocks helped its industrial story at the margin, so it fell slightly less than gold in percentage terms, and the gold/silver ratio held near 78–79. Profit-taking after a 5% jump on Wednesday added to the dip.",
+   "outlook": "Range of about $50–54 with a mild downside tilt while the Fed looks set to hike; a close below $49 would retest the October low. A tech recovery plus a soft CPI is what it needs to break above $54.",
+   "watch": "US CPI Nov 10, chip-stock sentiment and China trade and inflation data."
   },
   "us2y": {
-   "note": "Down about 11bp to near 4.47%, the biggest drop on the curve, as the tech rout pushed back Fed hike pricing.",
-   "why": "An AI-led selloff, with chip stocks posting their second-worst day on record and about $2 trillion wiped off the Nasdaq, sparked a haven bid and made traders doubt the Fed can keep tightening into falling equities; some rate futures pushed the next full hike toward March. The rally came despite strong data, as jobless claims fell to 189,000 vs 197,000 expected, and Hammack and Barkin both backed further gradual hikes.",
-   "outlook": "Bias lower toward 4.35–4.40% if equities keep falling, but the Fed's hawkish tone limits the rally; 4.60% is the level that would signal hike pricing is back. Payrolls and CPI decide the next 10bp.",
-   "watch": "October payrolls Fri Nov 6 (consensus about 59,000), CPI Tue Nov 10 and more Fed speakers."
+   "note": "Up about 5bp to near 4.52% after the payrolls beat, though still a sixth straight weekly fall.",
+   "why": "The 2-year is the most Fed-sensitive point, and the October jobs report was strong on every line: 165,000 jobs vs about 65,000 expected, 84,000 of upward revisions, 4.1% unemployment and 0.4% wage growth. Futures moved December hike odds to about 70–77% from near 67%, and Michigan sentiment beat at 51. It touched 4.54% before the tech rebound and haven unwind steadied it.",
+   "outlook": "Bias modestly higher in a 4.45–4.62% range while a December hike looks likely; the front end now hinges on CPI. A soft core print would send it back toward 4.45%, while a hot one opens 4.60%.",
+   "watch": "3-year auction Mon Nov 9, CPI Tue Nov 10, PPI Fri Nov 13 and Fed speakers before the Dec 9 meeting."
   },
   "us5y": {
-   "note": "Down about 8bp to near 4.61%, the lowest in roughly two months, as the belly followed the front end.",
-   "why": "The 5-year tracks the expected path of Fed hikes over the next few years, so it rallied hard as the equity rout and a softer oil premium led traders to scale back 2027 tightening. Strong claims and hawkish Fed speakers cut the move from its intraday best, but the haven bid dominated as the S&P 500 fell about 3%.",
-   "outlook": "Bias lower in a 4.50–4.70% range while risk assets wobble; a hot CPI or strong payrolls would push it back toward 4.70%. Next week's 3-year and 10-year refunding auctions add supply.",
-   "watch": "Payrolls Nov 6, CPI Nov 10 and the refunding auctions next week."
+   "note": "Up about 4bp to near 4.65%, giving back part of the week's haven rally.",
+   "why": "The belly rose almost as much as the 2-year because the jobs beat put more 2027 tightening back into the price: futures again show at least 40bp of hikes by September 2027. Lower oil earlier in the week had pushed 5-year breakevens down to about 2.27% from 2.5%, which limited the selloff, as did investors who had said they would buy a post-payrolls dip.",
+   "outlook": "Range of 4.55–4.72% with a slight upward bias into CPI and refunding supply; 4.72% is the level that would show the week's rally has fully unwound. A soft CPI points back to 4.55%.",
+   "watch": "3-year auction Nov 9, CPI Nov 10 and the 10-year auction Nov 10."
   },
   "us10y": {
-   "note": "Down about 5bp to near 4.84%, the lowest close in almost two months; 2s10s steepened to near 37bp.",
-   "why": "The 10-year extended Wednesday's 6bp rally as the AI-led stock selloff sent investors into Treasuries, and lower oil since the weekend has eased inflation fears. It lagged the 2-year because the curve bull-steepened: traders cut near-term Fed hike pricing faster than long-run inflation and deficit premiums. Claims at 189,000 and gradual-hike comments from Hammack and Barkin capped the rally.",
-   "outlook": "Bias lower in a 4.75–4.95% range while equities stay under pressure and oil stays below $95; 4.75% is the next support. A strong jobs report or hot CPI would send it back above 4.90%.",
-   "watch": "Payrolls Fri Nov 6, CPI Tue Nov 10 and the 10-year auction next week."
+   "note": "Up about 2bp to near 4.86% after touching 4.90%; 2s10s flattened to about 33bp from 37bp.",
+   "why": "The jobs beat pushed the 10-year up as much as 6bp to about 4.90%, but buyers returned as it faded: investors positioned to add duration on a dip, oil stayed below $91, and the overseas haven bid from the tech rout was still around. Because the move was about Fed hikes, the curve bear-flattened, with the 2-year rising twice as much as the 10-year.",
+   "outlook": "Range of 4.78–4.95% with a flat bias; refunding supply ($42bn of 10s on Tuesday) and hike pricing cap rallies, while lower oil limits selloffs. A hot CPI would test 4.95%; a soft one with weak demand for risk would bring 4.78% back.",
+   "watch": "CPI and the 10-year auction Tue Nov 10, bond market closed Wed Nov 11 for Veterans Day."
   },
   "us30y": {
-   "note": "Down about 2bp to near 5.26%, lagging the front end as the curve steepened.",
-   "why": "Long bonds rallied least because the move was about the Fed path, not long-run inflation. The haven bid helped, but a falling front end steepens the curve, and investors still demand a premium for heavy issuance and sticky inflation. The Democratic sweep points to gridlock and less new spending, which helps at the margin.",
-   "outlook": "Range of 5.15–5.35% with a steepening bias; the long end is likely to lag any further rally. A move above 5.35% would need a hot CPI or a weak 30-year auction.",
-   "watch": "Payrolls Nov 6, CPI Nov 10 and the 30-year refunding auction next week."
+   "note": "Up about 1–2bp to near 5.27%, the smallest rise on the curve as it flattened.",
+   "why": "Long bonds rose least because a Fed that hikes into strong data is seen as protecting long-run inflation control, which flattens the curve. Breakevens near multi-week lows after the oil slump also helped. Still, investors are holding back ahead of next week's $25bn 30-year auction, which kept the long end from rallying with the morning haven bid.",
+   "outlook": "Range of 5.18–5.35% with a flattening bias while hike pricing builds; a weak 30-year auction or an oil rebound would test 5.35%.",
+   "watch": "CPI Nov 10 and the 30-year auction Thu Nov 12."
   },
   "de2y": {
-   "note": "Little changed to about 1bp lower near 2.96%, as December ECB hike bets held despite global bond gains.",
-   "why": "Schatz yields barely moved because ECB pricing is anchored by October's 4.0% euro-area inflation, the highest since 2023, and recent hawkish ECB comments. Lower oil and the US rally helped the long end more, while the BoE's hawkish 8-1 hike, with one vote for 50bp, reminded markets that European central banks are still tightening.",
-   "outlook": "Range of 2.90–3.05% with a December ECB hike largely priced; a sustained oil drop below $85 Brent would be the trigger to unwind some of it. Bias flat.",
-   "watch": "ECB speakers, euro-area wage data and the ECB meeting Dec 17."
+   "note": "Reversed up to near 3.00% after touching 2.92%, the lowest since late August.",
+   "why": "Schatz yields fell early as the global tech rout drove money into safe bonds, then turned higher once US payrolls lifted Fed hike odds and Treasury yields. ECB pricing stays firm: euro-area inflation is at 4.0%, the deposit rate is 2.5%, and Lagarde said on Thursday that incoming data will decide whether a December hike is needed, with several governors already leaning toward one.",
+   "outlook": "Range of 2.90–3.05% with a December ECB hike largely priced; a sustained Brent drop below $90 would be needed to unwind it. Bias flat.",
+   "watch": "Eurogroup Mon Nov 9, German final CPI Wed Nov 11, euro-area Q3 GDP Fri Nov 13 and the ECB Dec 17."
   },
   "de5y": {
-   "note": "Down about 2bp to near 3.03%, a two-month low, following Treasuries and lower oil.",
-   "why": "The belly gained as the Treasury rally and the global tech selloff spilled into Europe, where tech stocks fell over 4% and ASML lost about 7%. A softer oil premium eased some inflation worry, but hawkish ECB pricing after the 4.0% October inflation print limited the move, unlike in the US.",
-   "outlook": "Bias slightly lower in a 2.95–3.10% range while risk assets are weak; a hot US CPI or an oil rebound above $100 Brent would push it back above 3.10%.",
-   "watch": "US payrolls Nov 6, US CPI Nov 10 and ECB commentary."
+   "note": "Little changed near 3.05% after dipping in the morning haven rush.",
+   "why": "The 5-year swung with Treasuries: the tech rout and lower oil drove an early rally, and the US jobs beat erased it. ECB hike expectations, built on 4.0% euro-area inflation, kept a floor under yields even at the low, so the belly ended the week only modestly lower than it started.",
+   "outlook": "Range of 2.95–3.12% with no strong bias; a hot US CPI or Brent back above $100 would push it toward 3.12%.",
+   "watch": "US CPI Nov 10, German CPI Nov 11 and euro-area GDP Nov 13."
   },
   "de10y": {
-   "note": "Down about 1–3bp to near 3.24%, the lowest since late August, as the global bond rally continued.",
-   "why": "Bunds tracked Treasuries and lower energy prices to a two-month low as the AI-led equity selloff boosted demand for safe assets. The rally was smaller than in the US because the ECB is still seen hiking in December, with euro-area inflation at 4.0%. The BoE's hawkish hike and a midday oil rebound also slowed gains.",
-   "outlook": "Bias lower toward 3.15–3.20% if equities stay weak, in a 3.15–3.35% range. A Brent move back above $100 or hawkish ECB comments would send it back to 3.30%.",
-   "watch": "US payrolls Nov 6, US CPI Nov 10 and the ECB Dec 17."
+   "note": "Little changed near 3.25% after touching 3.21%, the lowest since late August; a fourth straight weekly fall.",
+   "why": "Bunds hit a two-and-a-half-month low in the morning as the tech selloff spread to Europe and Japan, shrugging off Brent near $99. The rally reversed after the US payrolls beat sent Treasury yields higher, leaving the 10-year roughly where it started. Over the week, lower oil and haven demand pulled it down about 9bp from 3.34%.",
+   "outlook": "Range of 3.18–3.32% with a slight downward bias while equities stay fragile; a Brent move back above $100 or hawkish ECB talk would send it toward 3.32%. Fitch's review of Germany on Nov 13 is unlikely to move it.",
+   "watch": "US CPI Nov 10, German CPI Nov 11, euro-area GDP Nov 13 and the ECB Dec 17."
   },
   "de30y": {
-   "note": "Little changed near 3.63%, holding near a three-month low as the long end lagged the belly.",
-   "why": "The 30-year held Wednesday's gains near its lowest since mid-August. Lower oil and the haven bid helped, but long-end supply, German fiscal expansion and a steepening global curve kept buyers cautious. Equity weakness supported duration, but the long end gained less than the 5- and 10-year.",
-   "outlook": "Range of 3.55–3.72% with a steepening bias; heavy issuance limits the rally. A break above 3.72% would need an oil spike or a hawkish ECB shift.",
-   "watch": "German auctions, US data Nov 6 and Nov 10 and global long-end supply."
+   "note": "Little changed near 3.64% after touching 3.61%, the lowest since end-July.",
+   "why": "The long end joined the morning haven rally, reaching its lowest since July, then gave it back as the US jobs data lifted global yields. Heavy German issuance to fund fiscal expansion keeps investors demanding a premium, so the 30-year has lagged the 10-year in the rally and the curve stays steep.",
+   "outlook": "Range of 3.58–3.72% with a steepening bias; a break above 3.72% would need an oil spike or a hawkish ECB shift.",
+   "watch": "German auctions, US CPI Nov 10 and global long-end supply including the US 30-year Nov 12."
   },
   "fr2y": {
-   "note": "Little changed near 3.48%, as a national strike offset the global bond rally.",
-   "why": "Short OATs held steady as ECB hike pricing anchored the front end and French politics stayed tense: the Assembly unanimously rejected the first part of the 2027 budget late Wednesday, and Thursday's nationwide strike over pay and the cost of living drew large crowds. The global rally gave support but did not push yields lower.",
-   "outlook": "Range of 3.40–3.55%; the front end mostly follows the ECB, so a dovish turn after a sustained oil drop is the main downside trigger. Bias flat.",
-   "watch": "French protest follow-up, the Senate budget debate and the ECB Dec 17."
+   "note": "Edged up to near 3.55% as US data lifted short rates after the morning rally faded.",
+   "why": "Short OATs follow ECB pricing, and the strong US jobs report nudged global front-end yields higher after the morning haven bid. December ECB hike expectations, with euro-area inflation at 4.0%, stay the anchor. French politics weighs less on the 2-year than on longer maturities, though the budget rejection and Thursday's strike keep investors cautious.",
+   "outlook": "Range of 3.45–3.60%; the front end mostly follows the ECB, so a dovish turn after a lasting oil drop is the main downside trigger. Bias flat.",
+   "watch": "French Q3 unemployment Tue Nov 10, French final CPI Fri Nov 13 and the ECB Dec 17."
   },
   "fr5y": {
-   "note": "Little changed to about 1bp lower near 4.16%, lagging Bunds as French politics weighed.",
-   "why": "The 5-year OAT gained less than Bunds as the budget defeat and the national strike kept French risk in focus. The government's original bill now goes to the Senate, with a vote set for Dec 9, and the risk of more cuts or rule by decree keeps investors wary. Global bond strength stopped yields from rising.",
-   "outlook": "Range of 4.05–4.25% with spread risk skewed wider into the Senate process; a clear path to a 2027 budget would bring 4.05% into play.",
-   "watch": "French protests, Senate budget timetable and rating reviews."
+   "note": "Little changed near 4.14%, holding the week's gains as the morning rally and US data offset.",
+   "why": "The 5-year OAT moved with Bunds and ended flat. Lower oil helped French debt more than German this week because energy feeds directly into France's fiscal and growth outlook, but the Assembly's rejection of the 2027 budget's first part keeps a risk premium in. The government's bill now goes to the Senate, with a vote set for Dec 9.",
+   "outlook": "Range of 4.05–4.22% with spread risk skewed wider into the Senate process; a clear path to a 2027 budget would bring 4.05% into play.",
+   "watch": "Senate budget debate, French CPI Nov 13 and S&P's Italy and Fitch's Germany reviews Nov 13 for read-across."
   },
   "fr10y": {
-   "note": "Little changed near 4.77%; the spread to Bunds held near 153bp as the strike offset the global rally.",
-   "why": "After tightening about 10bp on Wednesday on lower oil and the Treasury rally, the OAT–Bund spread stopped narrowing as France faced a nationwide strike a day after the Assembly unanimously rejected the 2027 budget's first part. With growth near zero and the 5% deficit target at risk, investors were reluctant to chase OATs even as Bunds hit a two-month low.",
-   "outlook": "Range of 4.65–4.90%, with the spread likely held in a 145–160bp band; a budget passed even by decree could tighten it toward 140bp, while wider unrest or a government crisis would send it back above 160bp.",
-   "watch": "Strike follow-up, the Senate budget debate and the Dec 9 Senate vote."
+   "note": "Little changed near 4.77%; the spread to Bunds held near 152bp, well below the late-October peak near 175bp.",
+   "why": "OATs gained about 1bp in the morning with Bunds and then gave it back after US payrolls, so the spread was steady. The spread has tightened sharply over two weeks as lower oil eased deficit fears, but investors stopped chasing it after Wednesday's unanimous rejection of the budget's first part and Thursday's strike. ING sees about 150bp as a floor while political risk lasts.",
+   "outlook": "Range of 4.68–4.88%, with the spread likely held at 145–160bp; a budget passed even by decree could tighten it toward 140bp, while a government crisis would send it back above 160bp.",
+   "watch": "Senate budget debate, the Dec 9 Senate vote and rating reviews."
   },
   "fr30y": {
-   "note": "Little changed near 5.33%, still close to its highs as fiscal risk kept the long end heavy.",
-   "why": "The 30-year OAT barely joined the global rally because long-dated French debt carries the most fiscal and political risk. Thursday's strike and the failed budget vote keep investors demanding extra yield for deficits near 5% of GDP and debt above 115% of GDP, and a steepening global curve did not help.",
-   "outlook": "Range of 5.20–5.45% with a bias to underperform shorter OATs; a credible budget deal could pull it toward 5.20%, while political escalation risks a retest of the highs.",
+   "note": "Little changed near 5.32%, still close to its highs as fiscal risk kept the long end heavy.",
+   "why": "The 30-year OAT barely moved as the morning haven rally and the post-payrolls rise in global yields cancelled out. Long-dated French debt carries the most fiscal and political risk, with deficits near 5% of GDP and debt heading toward 122% of GDP in 2027, so it has lagged the rally in shorter OATs.",
+   "outlook": "Range of 5.22–5.42% with a bias to underperform shorter OATs; a credible budget deal could pull it toward 5.20%, while political escalation risks a retest of the highs.",
    "watch": "French politics, Senate budget debate and OAT auctions."
   }
  },
- "watch": "Next: US October payrolls Fri Nov 6, US CPI Tue Nov 10, Russia–Ukraine–US talks Nov 10–11, the Treasury refunding auctions and EIA stocks next week, the French Senate budget vote Dec 9 and the ECB Dec 17.",
+ "watch": "Next: 3-year auction and Fed speakers Mon Nov 9, US CPI and the 10-year auction Tue Nov 10, US bond market closed Wed Nov 11, 30-year auction and EIA stocks Thu Nov 12, US PPI, euro-area GDP and the IEA report Fri Nov 13, then the Fed Dec 9 and ECB Dec 17.",
  "sources": [
   [
-   "Reuters via Business Times (oil settles, tanker attacks)",
-   "https://businesstimes.com.sg/companies-markets/energy-commodities/brent-crude-jumps-settles-over-us3-after-tanker-attacks"
+   "Reuters via Yahoo Finance (payrolls, Treasury yields)",
+   "https://finance.yahoo.com/economy/policy/articles/strong-october-jobs-report-sends-134858909.html"
+  ],
+  [
+   "Reuters via LSE (Treasury closes, curve)",
+   "https://lse.co.uk/news/treasuries-us-bonds-fall-after-thursdays-rally-strong-jobs-report-backs-raises-rate-hike-odds-lj2o47erd8j7z0r.html"
+  ],
+  [
+   "Bloomberg via Rigzone (oil settles, Iran talks)",
+   "https://rigzone.com/news/wire/oil_posts_biggest_weekly_drop_since_2022-06-nov-2026-185035-article"
   ],
   [
    "Dow Jones via Morningstar (RBOB settle)",
-   "https://morningstar.com/news/dow-jones/2026110517821/front-month-nymex-rbob-gasoline-rose-128-to-settle-at-27634-data-talk"
+   "https://morningstar.com/news/dow-jones/2026110610913/front-month-nymex-rbob-gasoline-fell-1203-this-week-to-settle-at-27767-data-talk"
+  ],
+  [
+   "OPIS via Morningstar (pump prices)",
+   "https://morningstar.com/news/dow-jones/202611069794/nymex-overview-light-losses-for-petroleum-futures-add-to-weeks-declines-opis"
   ],
   [
    "Dow Jones via Morningstar (gold settle)",
-   "https://morningstar.com/news/dow-jones/2026110517195/comex-gold-settles-102-higher-at-410250-data-talk"
+   "https://kessler-prod.reta52d8.eas.morningstar.com/news/dow-jones/2026110610536/comex-gold-ends-the-week-460-higher-at-406450-data-talk"
   ],
   [
-   "Kitco (gold, claims, productivity)",
-   "https://kitco.com/news/article/2026-11-05/gold-climbs-above-4100-falling-yields-softer-labor-costs-support-bullion"
+   "Dow Jones via MarketScreener (Bund lows)",
+   "https://sa.marketscreener.com/news/german-bond-yields-fall-to-multimonth-lows-amid-tech-stock-rout-ce785fddd18afe27"
   ],
   [
-   "investingLive (Treasury closes)",
-   "https://investinglive.com/news/investinglive-americas-fx-news-wrap-5-nov-nasdaq-100-plunges-6-36-as-ai-selloff-spreads"
-  ],
-  [
-   "Reuters via MarketScreener (Trading Day, Fed pricing)",
-   "https://ca.marketscreener.com/news/trading-day-a-november-5-market-bonfire-ce785fddda8ff126"
-  ],
-  [
-   "Reuters (Hammack, Barkin)",
-   "https://finance.yahoo.com/news/feds-hammack-favors-gradual-rate-135118384.html"
-  ],
-  [
-   "CNBC (France budget and strike)",
-   "https://cnbc.com/2026/11/05/france-budget-debt-strikes.html"
+   "Reuters (Lagarde on December hike)",
+   "https://finance.yahoo.com/economy/policy/articles/ecb-looking-indicators-see-december-170613489.html"
   ]
  ],
- "commentary_asof": "Thu Nov 5, 2026"
+ "commentary_asof": "Fri Nov 6, 2026"
 }
