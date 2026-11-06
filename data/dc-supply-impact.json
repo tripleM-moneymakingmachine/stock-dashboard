@@ -1,0 +1,330 @@
+{
+ "asof": "2026-11-06",
+ "asofText": "Nov 6, 2026",
+ "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company's data center revenue; revenue run-rates are the latest quarter ×4 from each stock page (~ = estimate). Updated with the daily US data center risk task.",
+ "defaults": {
+  "delayGW": 8,
+  "recapture": 40,
+  "overseas": 15,
+  "selfPower": 3
+ },
+ "cats": [
+  {
+   "id": "gpu",
+   "n": "GPUs & AI accelerators",
+   "perGW": 28,
+   "absorb": 0.55,
+   "why": "Supply is capped by CoWoS packaging and HBM, so a delayed US campus mostly frees allocation for other buyers (sovereign AI, Middle East, Asia) rather than cutting shipments."
+  },
+  {
+   "id": "cpu",
+   "n": "Server CPUs",
+   "perGW": 1.6,
+   "absorb": 0.35,
+   "why": "Head-node and general compute CPUs are less supply-constrained, so lost US racks are only partly re-sold."
+  },
+  {
+   "id": "mem",
+   "n": "HBM & DRAM",
+   "perGW": 10,
+   "absorb": 0.75,
+   "why": "Memory is sold out into 2027 at record margins; delayed demand is instantly re-allocated, so the hit shows up as slightly less pricing power, not lower volume."
+  },
+  {
+   "id": "nand",
+   "n": "Enterprise SSD (NAND)",
+   "perGW": 2.2,
+   "absorb": 0.6,
+   "why": "NAND is tight too, but more exposed to the timing of US storage build-outs."
+  },
+  {
+   "id": "net",
+   "n": "Switch & NIC silicon",
+   "perGW": 2.6,
+   "absorb": 0.4,
+   "why": "Ethernet and NVLink switching is bought with each cluster; less absorbed than GPUs because it is designed per site."
+  },
+  {
+   "id": "opt",
+   "n": "Optics & lasers",
+   "perGW": 2.1,
+   "absorb": 0.45,
+   "why": "EML/CW laser supply is tight (indium phosphide capacity), so part of the demand is absorbed, but transceiver orders follow cluster go-lives closely."
+  },
+  {
+   "id": "fib",
+   "n": "Fiber & connectivity",
+   "perGW": 0.5,
+   "absorb": 0.2,
+   "why": "Fiber and cabling are installed on site, so a delayed campus delays the order almost one for one."
+  },
+  {
+   "id": "fab",
+   "n": "Foundry & packaging",
+   "perGW": 3.6,
+   "absorb": 0.7,
+   "why": "Wafers and CoWoS slots are booked a year ahead and re-assigned to other chip customers."
+  },
+  {
+   "id": "eqp",
+   "n": "Chip equipment & test",
+   "perGW": 1.2,
+   "absorb": 0.8,
+   "why": "Second derivative: tool orders depend on fab expansion plans, which a 12-month US slip barely moves; test (Teradyne) is closer to unit volumes."
+  },
+  {
+   "id": "pwr",
+   "n": "Power & cooling gear",
+   "perGW": 4.0,
+   "absorb": 0.45,
+   "why": "Switchgear, UPS, chillers and liquid cooling are site-specific and ship with construction, so they are the most directly exposed to US delays; 12–18 month backlogs and global customers absorb part of it."
+  },
+  {
+   "id": "grid",
+   "n": "Grid power (Texas / ERCOT)",
+   "perGW": 0.9,
+   "absorb": 0.0,
+   "why": "Annual energy sales per GW of load (~8 TWh at ~$110/MWh); a delayed Texas campus is load a Texas generator does not get."
+  }
+ ],
+ "cos": [
+  {
+   "t": "NVDA",
+   "n": "Nvidia",
+   "rev": 385,
+   "page": "nvda",
+   "s": {
+    "gpu": 0.72,
+    "net": 0.3
+   }
+  },
+  {
+   "t": "AMD",
+   "n": "AMD",
+   "rev": 54,
+   "page": "amd",
+   "s": {
+    "gpu": 0.06,
+    "cpu": 0.35
+   }
+  },
+  {
+   "t": "AVGO",
+   "n": "Broadcom",
+   "rev": 67,
+   "page": "avgo",
+   "s": {
+    "gpu": 0.09,
+    "net": 0.4
+   }
+  },
+  {
+   "t": "MRVL",
+   "n": "Marvell",
+   "rev": 12.6,
+   "page": "mrvl",
+   "s": {
+    "gpu": 0.012,
+    "net": 0.05,
+    "opt": 0.03
+   }
+  },
+  {
+   "t": "ARM",
+   "n": "Arm",
+   "rev": 5.6,
+   "page": "arm",
+   "s": {
+    "cpu": 0.04
+   }
+  },
+  {
+   "t": "INTC",
+   "n": "Intel",
+   "rev": 66,
+   "page": "intc",
+   "s": {
+    "cpu": 0.4
+   }
+  },
+  {
+   "t": "SKHY",
+   "n": "SK hynix",
+   "rev": 295,
+   "page": "skhy",
+   "s": {
+    "mem": 0.5
+   }
+  },
+  {
+   "t": "MU",
+   "n": "Micron",
+   "rev": 217,
+   "page": "mu",
+   "s": {
+    "mem": 0.25,
+    "nand": 0.12
+   }
+  },
+  {
+   "t": "SNDK",
+   "n": "Sandisk",
+   "rev": 44,
+   "page": "sndk",
+   "s": {
+    "nand": 0.3
+   }
+  },
+  {
+   "t": "COHR",
+   "n": "Coherent",
+   "rev": 8.4,
+   "page": "cohr",
+   "est": true,
+   "s": {
+    "opt": 0.18
+   }
+  },
+  {
+   "t": "LITE",
+   "n": "Lumentum",
+   "rev": 5.0,
+   "page": "lite",
+   "s": {
+    "opt": 0.14
+   }
+  },
+  {
+   "t": "AAOI",
+   "n": "Applied Optoelectronics",
+   "rev": 1.1,
+   "page": "aaoi",
+   "s": {
+    "opt": 0.03
+   }
+  },
+  {
+   "t": "GLW",
+   "n": "Corning",
+   "rev": 9.5,
+   "page": "glw",
+   "s": {
+    "fib": 0.45
+   }
+  },
+  {
+   "t": "TSM",
+   "n": "TSMC",
+   "rev": 187,
+   "page": "tsm",
+   "s": {
+    "fab": 0.9
+   }
+  },
+  {
+   "t": "AMAT",
+   "n": "Applied Materials",
+   "rev": 36.5,
+   "page": "amat",
+   "s": {
+    "eqp": 0.25
+   }
+  },
+  {
+   "t": "ASML",
+   "n": "ASML",
+   "rev": 53.6,
+   "page": "asml",
+   "s": {
+    "eqp": 0.2
+   }
+  },
+  {
+   "t": "TER",
+   "n": "Teradyne",
+   "rev": 5.2,
+   "page": "ter",
+   "s": {
+    "eqp": 0.12
+   }
+  },
+  {
+   "t": "VRT",
+   "n": "Vertiv",
+   "rev": 12,
+   "est": true,
+   "s": {
+    "pwr": 0.18
+   }
+  },
+  {
+   "t": "ROK",
+   "n": "Rockwell Automation",
+   "rev": 9.3,
+   "page": "rok",
+   "s": {
+    "pwr": 0.02
+   }
+  },
+  {
+   "t": "GEV",
+   "n": "GE Vernova",
+   "rev": 42,
+   "est": true,
+   "s": {
+    "pwr": 0.08
+   },
+   "onsite": 0.3
+  },
+  {
+   "t": "BE",
+   "n": "Bloom Energy",
+   "rev": 5.0,
+   "page": "be",
+   "onsite": 0.2
+  },
+  {
+   "t": "VST",
+   "n": "Vistra",
+   "rev": 20,
+   "est": true,
+   "s": {
+    "grid": 0.35
+   },
+   "tx": true
+  },
+  {
+   "t": "CEG",
+   "n": "Constellation",
+   "rev": 26,
+   "est": true,
+   "scarcity": true
+  }
+ ],
+ "onsitePerGW": 2.4,
+ "views": {
+  "NVDA": "Largest dollars deferred, smallest real damage: Nvidia is supply-capped, so a delayed Texas campus mostly hands its allocation to Microsoft, sovereign and Asian buyers. The 9% drop on Nov 5 prices a demand cut the supply chain does not show; watch hyperscaler capex guides, not state politics.",
+  "AMD": "Exposed through both MI-series GPUs and EPYC CPUs. Its OpenAI (Stargate) ties put more of its 2027 ramp in Texas than peers, so timing risk is above Nvidia's.",
+  "AVGO": "Custom ASIC (Google TPU, Meta, OpenAI) plus Tomahawk switching. Google's $40B Texas plan and Meta's El Paso/Piqua issues touch two of its biggest XPU customers; expect deferrals of quarters, not cancellations.",
+  "MRVL": "Small absolute exposure but high operating leverage; AWS Trainium and optical DSP volumes follow US cluster go-lives closely.",
+  "ARM": "Royalty per CPU is small, so direct impact is negligible; the bigger issue is SoftBank's Stargate financing, which hits sentiment.",
+  "INTC": "Server CPU recovery is tied to general cloud builds more than giant AI campuses, so the hit is modest; foundry ambitions do not depend on US data center siting.",
+  "SKHY": "HBM is sold out; any US slip is re-allocated within weeks. Risk is to the 2027 pricing negotiation, not volume.",
+  "MU": "Same as SK hynix on HBM, with more US-centric enterprise SSD and DRAM module exposure. The 14% drop looks like sentiment unless hyperscalers cut 2027 capex.",
+  "SNDK": "Datacenter is now 44% of sales and enterprise SSDs ship with each campus, so it carries more timing risk than the HBM makers.",
+  "COHR": "Transceivers and lasers ship close to cluster go-live, so a 12-month Texas pause shifts revenue right. Indium phosphide tightness cushions it.",
+  "LITE": "High exposure per dollar of revenue: EML and CW lasers for 800G/1.6T are tied to new clusters. The tight laser market cushions price, not timing.",
+  "AAOI": "Most exposed optics name relative to size; depends on a few hyperscaler programs, some in Texas.",
+  "GLW": "Fiber is installed on site with no absorption, so Corning sees delays almost one for one, but its multi-year hyperscaler contracts (Meta, others) set minimum volumes.",
+  "TSM": "Wafers and CoWoS are booked a year ahead and re-assigned; effectively immune in 2027 unless global capex falls.",
+  "AMAT": "Second-order only: fab plans for 2027–28 do not change because one US state pauses data centers.",
+  "ASML": "Least exposed; EUV demand is set by memory and logic capacity plans that are still rising.",
+  "TER": "Test volumes follow GPU/HBM unit output, which stays supply-capped, so little impact.",
+  "VRT": "Most directly exposed equipment name: UPS, thermal and liquid cooling ship with construction schedules. Backlog and the shift to friendly states and overseas (Vertiv sells globally) limit lost revenue.",
+  "ROK": "Small AI data center exposure; mostly an industrial cycle story.",
+  "GEV": "Mixed: grid gear for Texas sites slips, but the ratepayer-first rules push hyperscalers to self-supply with gas turbines, which is GE Vernova's sold-out product. Likely net winner.",
+  "BE": "Clear second-order winner: if states make data centers pay for grid upgrades or ban grid hook-ups, behind-the-meter fuel cells that deploy in months become the fastest workaround.",
+  "VST": "Most exposed power name: its growth thesis is new Texas data center load; a moratorium delays the contracts that justified its multiple. Fell 13.8% on Nov 4.",
+  "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
+ }
+}
