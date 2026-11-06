@@ -16,6 +16,8 @@
 // Signal (positive = bond-bullish), walk-forward, z-scores against the trailing 52 weeks (min 26):
 //   S = mean( +z(JCI 4-week return), −z(USD/IDR 4-week % change), −z(10Y 4-week change),
 //             +z(INDOGB − UST 10Y spread minus its 26-week average) )
+// The page's charts and back-test read the daily build (`daily`, see buildDaily); the weekly build feeds the US
+// Treasury transmission study.
 // Usage: node scripts/fetch-indonesia-flows.mjs [--raw]. Anything that fails keeps the previous series.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { study } from "./ust-transmission.mjs";
@@ -184,6 +186,126 @@ function build(raw) {
   return { series, backtest: bt, curve, episodes, latest, W };
 }
 
+// ---------- daily build: same signal and back-test, every Jakarta session ----------
+// Windows are the weekly ones converted to trading days (4 weeks = 20, 26 weeks = 130, 52 weeks = 260), so the signal
+// means the same thing; it is simply re-read every session instead of every Friday. Each day's signal uses data up to
+// that Jakarta close only and positions the next session. USD/IDR is the last Yahoo close on or before the day; the US
+// Treasury level is the last New York close strictly before it (no look-ahead). UST hedge: β is the trailing 130-day
+// OLS beta of the daily 10Y INDOGB change on the daily US 10Y change, known at the time.
+function buildDaily(raw) {
+  const jci = new Map(raw.jciD.map((r) => [r[0], r[1]]));
+  const idr = raw.idrD.slice().sort((a, b) => a[0].localeCompare(b[0])), idrDates = idr.map((r) => r[0]);
+  const u10 = new Map(raw.ust10d), ud = [...u10.keys()].sort();
+  const D = [];
+  for (const [d, y] of raw.id10d) {
+    if (!jci.has(d) || !(y > 0)) continue;
+    const ix = lastBefore(idrDates, d + "~"), iu = lastBefore(ud, d);
+    const fx = ix >= 0 ? idr[ix][1] : null, ust = iu >= 0 ? u10.get(ud[iu]) : null;
+    D.push({ date: d, csi: jci.get(d), y10: y, fx, ust, sp: ust != null ? (y - ust) * 100 : null });
+  }
+  const L = 20, ZWIN = 260, ZMIN = 130, SPW = 130, SPMIN = 65, CW = 130, CMIN = 100, BW = 130, BMIN = 100, TH = 0.5, H = 20, AN = Math.sqrt(252);
+  let tr = 100;
+  for (let i = 0; i < D.length; i++) {
+    const w = D[i], p = D[i - L], q = D[i - 1];
+    w.eq4 = p ? (w.csi / p.csi - 1) * 100 : null;
+    w.fx4 = p && p.fx && w.fx ? (w.fx / p.fx - 1) * 100 : null;
+    w.fx1 = q && q.fx && w.fx ? (w.fx / q.fx - 1) * 100 : null;
+    w.dy4 = p ? (w.y10 - p.y10) * 100 : null;
+    w.dy1 = q ? (w.y10 - q.y10) * 100 : null;
+    w.du1 = q && q.ust != null && w.ust != null ? (w.ust - q.ust) * 100 : null;
+    w.ret1 = q ? (w.csi / q.csi - 1) * 100 : null;
+    const spW = D.slice(Math.max(0, i - SPW + 1), i + 1).map((x) => x.sp).filter((x) => x != null);
+    w.spDev = spW.length >= SPMIN && w.sp != null ? w.sp - mean(spW) : null;
+    if (q) { const dur = 7.0; tr *= 1 + q.y10 / 100 / 252 - dur * (w.y10 - q.y10) / 100; }
+    w.bpx = r2(tr, 3);
+    const z = (field) => {
+      const hist = D.slice(Math.max(0, i - ZWIN + 1), i + 1).map((x) => x[field]).filter((x) => x != null);
+      if (hist.length < ZMIN || w[field] == null) return null;
+      const s = sd(hist); return s ? (w[field] - mean(hist)) / s : 0;
+    };
+    const zs = [z("eq4"), z("fx4"), z("dy4"), z("spDev")];
+    w.z = zs.map((x) => r2(x));
+    const parts = [zs[0], zs[1] == null ? null : -zs[1], zs[2] == null ? null : -zs[2], zs[3]].filter((x) => x != null);
+    w.S = parts.length >= 3 ? mean(parts) : null;
+    w.reg = w.S == null ? null : w.S >= TH ? 1 : w.S <= -TH ? -1 : 0;
+    const win = D.slice(Math.max(1, i - CW + 1), i + 1).filter((x) => x.ret1 != null && x.dy1 != null);
+    w.corr = win.length >= CMIN ? corr(win.map((x) => x.ret1), win.map((x) => x.dy1)) : null;
+    const bw = D.slice(Math.max(1, i - BW + 1), i + 1).filter((x) => x.dy1 != null && x.du1 != null);
+    if (bw.length >= BMIN) { const xs = bw.map((x) => x.du1), ys = bw.map((x) => x.dy1), mx = mean(xs), my = mean(ys); let sxy = 0, sxx = 0; for (let k = 0; k < xs.length; k++) { sxy += (xs[k] - mx) * (ys[k] - my); sxx += (xs[k] - mx) ** 2; } w.beta = sxx ? sxy / sxx : null; } else w.beta = null;
+  }
+
+  // outright back-test
+  let cumBp = 0, cumHold = 0, cumLong = 0, eq = 1, eqHold = 1, eqLong = 1, peak = 0, mdd = 0, peakEq = 1, mddEq = 0, pkH = 0, mddH = 0, pkL = 0, mddL = 0;
+  const pnlLong = [], pnl = [], holdD = [], curve = [], stO = { 1: [], 0: [], [-1]: [] };
+  const first = D.findIndex((w) => w.reg != null);
+  for (let i = first; i >= 0 && i < D.length; i++) {
+    const w = D[i], nx = D[i + 1];
+    if (w.reg != null && D[i + H]) stO[w.reg].push((D[i + H].y10 - w.y10) * 100);
+    if (!nx) continue;
+    const pos = w.reg ?? 0, dyb = -(nx.y10 - w.y10) * 100, bp = pos * dyb, lpos = pos > 0 ? 1 : 0;
+    cumBp += bp; cumHold += dyb; cumLong += lpos * dyb; pnl.push(bp); pnlLong.push(lpos * dyb); holdD.push(dyb);
+    pkH = Math.max(pkH, cumHold); mddH = Math.min(mddH, cumHold - pkH); pkL = Math.max(pkL, cumLong); mddL = Math.min(mddL, cumLong - pkL);
+    const er = w.bpx && nx.bpx ? nx.bpx / w.bpx - 1 : 0;
+    eq *= 1 + pos * er; eqHold *= 1 + er; eqLong *= 1 + lpos * er;
+    peak = Math.max(peak, cumBp); mdd = Math.min(mdd, cumBp - peak);
+    peakEq = Math.max(peakEq, eq); mddEq = Math.min(mddEq, eq / peakEq - 1);
+    curve.push([nx.date, r2(cumBp, 1), r2(cumHold, 1), r2(cumLong, 1), r2((eq - 1) * 100, 2), r2((eqHold - 1) * 100, 2), r2((eqLong - 1) * 100, 2), pos]);
+  }
+  const hit = (arr, wantNeg) => arr.length ? arr.filter((x) => (wantNeg ? x < 0 : x > 0)).length / arr.length : null;
+  const shp = (a) => r2(a.length > 10 && sd(a) ? (mean(a) / sd(a)) * AN : null, 2);
+  const bt = {
+    horizonDays: H, threshold: TH, days: pnl.length, from: D[first]?.date, to: D.at(-1).date,
+    rally: { n: stO[1].length, hit: r2(hit(stO[1], true), 3), avgFwdBp: r2(stO[1].length ? mean(stO[1]) : null, 1) },
+    selloff: { n: stO[-1].length, hit: r2(hit(stO[-1], false), 3), avgFwdBp: r2(stO[-1].length ? mean(stO[-1]) : null, 1) },
+    neutral: { n: stO[0].length, avgFwdBp: r2(stO[0].length ? mean(stO[0]) : null, 1) },
+    allAvgFwdBp: r2(mean([...stO[1], ...stO[0], ...stO[-1]]), 1),
+    cumBp: r2(cumBp, 1), holdBp: r2(cumHold, 1), longBp: r2(cumLong, 1), maxDdBp: r2(mdd, 1), holdMaxDdBp: r2(mddH, 1), longMaxDdBp: r2(mddL, 1),
+    sharpe: shp(pnl), longSharpe: shp(pnlLong), holdSharpe: shp(holdD), volBp: r2(sd(pnl) * AN, 0),
+    etfLongPct: r2((eqLong - 1) * 100, 2), etfStratPct: r2((eq - 1) * 100, 2), etfHoldPct: r2((eqHold - 1) * 100, 2), etfMaxDdPct: r2(mddEq * 100, 2),
+    timeInMarket: r2(curve.filter((r) => r[7]).length / Math.max(1, curve.length), 3),
+    curveCols: ["date", "strategyBp", "holdBp", "longFlatBp", "tr10yStrategyPct", "tr10yHoldPct", "tr10yLongFlatPct", "position"],
+  };
+
+  // UST-hedged back-test: long/short the 10Y INDOGB against β × US 10Y
+  const hFirst = D.findIndex((w, i) => i >= first && w.reg != null && w.beta != null && w.ust != null);
+  const hedgedCurve = [], hp = [], hDates = [], stH = { 1: [], [-1]: [] };
+  let hc = 0, hl = 0, hpk = 0, hmdd = 0;
+  for (let i = hFirst; i >= 0 && i < D.length - 1; i++) {
+    const w = D[i], nx = D[i + 1], b = w.beta; if (b == null || nx.ust == null || w.ust == null) continue;
+    const mv = ((nx.y10 - w.y10) - b * (nx.ust - w.ust)) * 100, pos = w.reg ?? 0;
+    hc += -pos * mv; hl += -(pos > 0 ? 1 : 0) * mv; hp.push(-pos * mv); hDates.push(nx.date);
+    hpk = Math.max(hpk, hc); hmdd = Math.min(hmdd, hc - hpk);
+    hedgedCurve.push([nx.date, r2(hc, 1), r2(hl, 1)]);
+    const f = D[i + H]; if (pos && f && f.ust != null) stH[pos].push(((f.y10 - w.y10) - b * (f.ust - w.ust)) * 100);
+  }
+  const split = "2024-09-01", sub = (pred) => { const p = hp.filter((_, k) => pred(hDates[k])), o = pnl.filter((_, k) => pred(curve[k][0])); return { days: p.length, hedged: { cumBp: r2(p.reduce((s, x) => s + x, 0), 1), sharpe: shp(p) }, outright: { cumBp: r2(o.reduce((s, x) => s + x, 0), 1), sharpe: shp(o) } }; };
+  const hedged = {
+    from: D[hFirst]?.date, cumBp: r2(hc, 1), longBp: r2(hl, 1), sharpe: shp(hp), maxDdBp: r2(hmdd, 1), volBp: r2(sd(hp) * AN, 0), beta: r2(D.at(-1).beta, 2),
+    rally: { n: stH[1].length, hit: r2(hit(stH[1], true), 3) }, selloff: { n: stH[-1].length, hit: r2(hit(stH[-1], false), 3) },
+    periods: [{ label: `${(D[hFirst]?.date || "").slice(0, 7)} – 2024-08`, ...sub((d) => d < split) }, { label: `2024-09 – ${D.at(-1).date.slice(0, 7)}`, ...sub((d) => d >= split) }],
+  };
+
+  const episodes = [];
+  for (let i = 0; i < D.length; i++) {
+    const r = D[i].reg; if (!r || (i && D[i - 1].reg === r)) continue;
+    let j = i; while (D[j + 1]?.reg === r) j++;
+    const end = D[Math.min(j + H, D.length - 1)];
+    episodes.push({ from: D[i].date, to: D[j].date, type: r > 0 ? "rally" : "selloff", days: j - i + 1, y0: D[i].y10, y1: end.y10, bp: r2((end.y10 - D[i].y10) * 100, 1), open: !D[j + 1] || j + H >= D.length });
+  }
+  const series = D.map((w) => [w.date, w.csi, w.y10, w.fx, r2(w.fx1, 2), r2(w.sp, 1), r2(w.S, 2), w.reg, r2(w.corr, 2), w.bpx, r2(w.eq4, 2), r2(w.fx4, 2), r2(w.spDev, 1), r2(w.dy4, 1), w.z, w.ust, r2(w.beta, 2)]);
+  const last = D.at(-1), ago = (n) => D[D.length - 1 - n], yr = D.slice(-252);
+  const latest = {
+    date: last.date, csi: last.csi, y10: last.y10, fx: last.fx, S: r2(last.S, 2), reg: last.reg, corr: r2(last.corr, 2),
+    z: last.z, eq4: r2(last.eq4, 2), fx4: r2(last.fx4, 2), dy4: r2(last.dy4, 1), sp: r2(last.sp, 1), spDev: r2(last.spDev, 1), S20ago: r2(ago(L)?.S, 2), S1ago: r2(ago(1)?.S, 2),
+    csiPeak1y: Math.max(...yr.map((w) => w.csi)), y10Low1y: Math.min(...yr.map((w) => w.y10)), y10High1y: Math.max(...yr.map((w) => w.y10)),
+  };
+  return {
+    cols: ["date", "jci", "id10y", "usdidr", "usdidrDayChgPct", "indogbUstSpreadBp", "signal", "regime", "corr130d", "tr10yIndex", "eq20dPct", "usdidr20dPct", "spreadDev130dBp", "dy20dBp", "z", "ust10y", "betaUst130d"],
+    method: { window: "20-day changes; z-scores vs trailing 260 sessions (min 130); spread vs its 130-day average; thresholds ±0.5; hit rates over the next 20 sessions; UST hedge β = trailing 130-day daily beta", components: ["JCI 20-day return", "USD/IDR 20-day % change (inverted)", "10Y INDOGB 20-day change (inverted)", "INDOGB − UST 10Y spread vs its 130-day average (wide = cheap)"] },
+    series, backtest: bt, curve, hedged, hedgedCurve, episodes, latest,
+  };
+}
+
 // ---------- run ----------
 const raw = process.argv.includes("--raw") ? prev.raw : await fetchRaw();
 for (const k of ["jci", "id10", "idr"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
@@ -203,6 +325,9 @@ try {
 } catch (e) { log(`UST study failed: ${e.message}`); }
 if (ust) b.series.forEach((row, i) => row.push(b.W[i].ust ?? null, r2(b.W[i].beta, 2), r2(b.W[i].sp, 1)));
 delete b.W;
+let daily = null;
+try { daily = buildDaily(raw); log(`daily: ${daily.series.length} sessions to ${daily.latest.date}; signal ${daily.latest.S} (${daily.latest.reg}); outright ${daily.backtest.cumBp}bp Sharpe ${daily.backtest.sharpe} · hedged ${daily.hedged.cumBp}bp Sharpe ${daily.hedged.sharpe}; ${daily.episodes.length} episodes`); }
+catch (e) { log(`daily build failed (${e.message}); keeping previous`); daily = prev?.daily || null; }
 const out = {
   ust,
   updated: Math.floor(Date.now() / 1000),
@@ -213,6 +338,7 @@ const out = {
     components: ["JCI 4-week return", "USD/IDR 4-week % change (inverted: a weaker rupiah is bond-bearish)", "10Y INDOGB yield 4-week change (inverted)", "INDOGB − UST 10Y spread vs its 26-week average (wide = cheap)"],
   },
   ...b,
+  daily,
   notes: prev?.notes || null,
   events: prev?.events || null,
   raw,

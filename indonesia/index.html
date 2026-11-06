@@ -220,9 +220,9 @@ section.crecap{margin-top:0}
   <section id="crecap" class="crecap" data-src="../data/indonesia-recap.json" data-china="../data/indonesia.json" aria-label="Indonesia bond market recap and views" hidden></section>
 
   <section id="flows" class="flows" aria-labelledby="flH" hidden>
-    <div class="eyebrow">Foreign flows · Indonesian equities, rupiah and INDOGBs · weekly</div>
+    <div class="eyebrow">Foreign flows · Indonesian equities, rupiah and INDOGBs · daily</div>
     <h2 id="flH">JCI ↔ INDOGB flows</h2>
-    <p class="sub">Indonesia is a foreign-money market: overseas investors hold a large slice of both the stock market's free float and tradable government bonds, and the rupiah is the channel they move through. So unlike Korea's retail rotation, Indonesian stocks, the rupiah and bonds have tended to sell off and recover together. This panel follows that with weekly proxies (JCI, USD/IDR, the 10Y INDOGB trend and the INDOGB − UST spread) combined into a Bond Flow Signal, back-tested walk-forward with the same rules as the China and Korea tabs. The Korea-style rotation is tested alongside it as a variant.</p>
+    <p class="sub">Indonesia is a foreign-money market: overseas investors hold a large slice of both the stock market's free float and tradable government bonds, and the rupiah is the channel they move through. So unlike Korea's retail rotation, Indonesian stocks, the rupiah and bonds have tended to sell off and recover together. This panel follows that with daily proxies (JCI, USD/IDR, the 10Y INDOGB trend and the INDOGB − UST spread) combined into a Bond Flow Signal, re-read after every Jakarta close and back-tested walk-forward with the same rules as the China and Korea tabs. The Korea-style rotation is tested alongside it as a variant.</p>
     <p class="fl-head" id="flHead"></p>
     <div class="fl-top" id="flSig"></div>
     <p class="fl-ust" id="flUst"></p>
@@ -231,19 +231,19 @@ section.crecap{margin-top:0}
         <div class="chead"><h3>JCI vs 10Y INDOGB yield, with signal regimes</h3><div class="ctl" style="margin:0;gap:8px"><div class="btns" id="flInv" role="group" aria-label="Yield axis"></div><div class="btns" id="flRng" role="group" aria-label="Range"></div></div></div>
         <div id="flMain" style="height:380px"></div>
         <div class="leg" id="flMainLeg" aria-live="polite"></div>
-        <p class="note">Shading shows the signal's regime each week. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
+        <p class="note">Shading shows the signal's regime each day. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Flows: rupiah vs the INDOGB − UST spread</h3></div>
         <div id="flFlow" style="height:240px"></div>
         <div class="leg" id="flFlowLeg" aria-live="polite"></div>
-        <p class="note">Bars: weekly change in USD/IDR (red = rupiah weaker, the usual sign of foreign selling; green = stronger). Line: the 10Y INDOGB yield minus the 10Y US Treasury, in bp (right axis), the pick-up a dollar investor earns before currency risk. A falling rupiah with a widening spread is foreign money leaving; a firming rupiah with a narrowing spread is money coming back.</p>
+        <p class="note">Bars: daily change in USD/IDR (red = rupiah weaker, the usual sign of foreign selling; green = stronger). Line: the 10Y INDOGB yield minus the 10Y US Treasury, in bp (right axis), the pick-up a dollar investor earns before currency risk. A falling rupiah with a widening spread is foreign money leaving; a firming rupiah with a narrowing spread is money coming back.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Bond Flow Signal</h3><div class="btns" id="flCorr" role="group" aria-label="Overlay"></div></div>
         <div id="flSigC" style="height:220px"></div>
         <div class="leg" id="flSigLeg" aria-live="polite"></div>
-        <p class="note">Signal = average of four z-scores, each against its own trailing 52 weeks: +JCI 4-week return, −USD/IDR 4-week % change, −10Y INDOGB 4-week change, and +INDOGB − UST spread versus its 26-week average (wide = cheap). Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 26-week correlation of weekly JCI returns with weekly 10Y yield changes; it runs negative when stocks and bonds rally together (stocks up, yields down), as foreign flows imply.</p>
+        <p class="note">Signal = average of four z-scores, each against its own trailing 260 sessions (about a year): +JCI 20-day return, −USD/IDR 20-day % change, −10Y INDOGB 20-day change, and +INDOGB − UST spread versus its 130-day average (wide = cheap). Recomputed every session. Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 130-day correlation of daily JCI returns with daily 10Y yield changes; it runs negative when stocks and bonds rally together (stocks up, yields down), as foreign flows imply.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Back-test</h3><div class="btns" id="flBtMode" role="group" aria-label="Back-test units"></div></div>
@@ -251,8 +251,8 @@ section.crecap{margin-top:0}
         <div id="flBt" style="height:240px;margin-top:12px"></div>
         <div class="leg" id="flBtLeg" aria-live="polite"></div>
         <p class="note" id="flBtNote"></p>
-        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Weeks</th><th>10Y at start</th><th>10Y 4w after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
-        <p class="note">* still running, measured to the latest week.</p>
+        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Days</th><th>10Y at start</th><th>10Y 20d after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
+        <p class="note">* still running, measured to the latest session.</p>
       </div>
       <div class="panel" id="ust" hidden>
         <div class="chead"><h3 id="utH">US Treasury → INDOGB transmission</h3><div class="btns" id="utRng" role="group" aria-label="Range"></div></div>
@@ -426,7 +426,7 @@ section.crecap{margin-top:0}
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="../assets/indonesia.js?v=1"></script>
 <script src="../assets/indonesia-recap.js?v=1"></script>
-<script src="../assets/indonesia-flows.js?v=1"></script>
+<script src="../assets/indonesia-flows.js?v=2"></script>
 <script src="../assets/indonesia-mm.js?v=1"></script>
 <script src="../assets/indonesia-bench.js?v=1"></script>
 <script src="../assets/searchselect.js?v=2"></script>

@@ -1,6 +1,7 @@
 /* Indonesia tab: "JCI ↔ INDOGB flows", below the Indonesia bond market recap (port of assets/korea-flows.js).
-   Weekly foreign-flow proxies between Indonesian equities, the rupiah and INDOGBs (JCI, USD/IDR, 10Y IGSYC yield,
-   INDOGB − UST spread) and the back-tested Bond Flow Signal. Data: data/indonesia-flows.json, built by
+   Daily foreign-flow proxies between Indonesian equities, the rupiah and INDOGBs (JCI, USD/IDR, 10Y IGSYC yield,
+   INDOGB − UST spread) and the back-tested Bond Flow Signal, from the file's `daily` block (the weekly build still
+   feeds the US Treasury transmission section). Data: data/indonesia-flows.json, built by
    scripts/fetch-indonesia-flows.mjs (indonesia-bonds workflow, after the PHEI close). The research narrative lives in
    that file's `notes` / `events` and is preserved across rebuilds. */
 (function () {
@@ -13,33 +14,34 @@
   const sgn = (v, d = 1, u = "") => v == null || !isFinite(v) ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d) + u;
   const fmtD = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
   const REG = { 1: ["Bond rally", "up"], 0: ["Neutral", "mut"], [-1]: ["Bond sell-off", "down"] };
-  const RNG = { "1Y": 52, "2Y": 104, All: 9999 };
+  const RNG = { "1Y": 252, "2Y": 504, All: 99999 }; // trading days (flows charts)
   const st = { rng: "2Y", inv: true, corr: false, bt: "hedged", ur: "2Y" };
-  let D, U, charts = [], utCharts = [], syncing = false;
+  let D, F, U, charts = [], utCharts = [], syncing = false;
 
   fetch("../data/indonesia-flows.json?t=" + Date.now(), { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
-    if (!d || !d.series?.length) return;
+    if (!d || !d.series?.length || !d.daily?.series?.length) return;
     D = d; U = d.ust || null; box.hidden = false;
-    if (!U && st.bt === "hedged") st.bt = "bp";
+    F = d.daily; // daily signal, charts and back-test
+    if (!F.hedgedCurve?.length && st.bt === "hedged") st.bt = "bp";
     head(); story(); stats(); draw(); utDraw();
     const redraw = () => { draw(); utDraw(); };
     new MutationObserver(redraw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
     matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", redraw);
   });
 
-  const rows = () => { const n = RNG[st.rng]; return D.series.slice(-n); };
+  const rows = () => { const n = RNG[st.rng]; return F.series.slice(-n); };
   const C = { date: 0, csi: 1, y: 2, m: 3, dm: 4, sh: 5, S: 6, reg: 7, corr: 8 };
 
   function head() {
-    const L = D.latest, [lab, tone] = REG[L.reg ?? 0];
+    const L = F.latest, [lab, tone] = REG[L.reg ?? 0];
     const comp = [
-      ["Equity momentum", "JCI, 4 weeks", sgn(L.eq4, 1, "%"), L.z?.[0], 1],
-      ["Rupiah flow", "USD/IDR, 4 weeks", sgn(L.fx4, 2, "%"), L.z?.[1], -1],
-      ["10Y trend", "4-week change", sgn(L.dy4, 1, "bp"), L.z?.[2], -1],
-      ["Spread value", "INDOGB − UST vs 26w avg", sgn(L.spDev, 0, "bp"), L.z?.[3], 1],
+      ["Equity momentum", "JCI, 20 days", sgn(L.eq4, 1, "%"), L.z?.[0], 1],
+      ["Rupiah flow", "USD/IDR, 20 days", sgn(L.fx4, 2, "%"), L.z?.[1], -1],
+      ["10Y trend", "20-day change", sgn(L.dy4, 1, "bp"), L.z?.[2], -1],
+      ["Spread value", "INDOGB − UST vs 130d avg", sgn(L.spDev, 0, "bp"), L.z?.[3], 1],
     ];
     $("flSig").innerHTML = `
-      <div class="fl-chip ${tone}"><b>Signal · week of ${esc(fmtD(L.date))}</b><span>${esc(lab)}</span><em>${sgn(L.S, 2)}</em><small>4 weeks ago ${sgn(L.S4ago, 2)} · threshold ±${D.backtest.threshold}</small></div>
+      <div class="fl-chip ${tone}"><b>Signal · ${esc(fmtD(L.date))}</b><span>${esc(lab)}</span><em>${sgn(L.S, 2)}</em><small>prior day ${sgn(L.S1ago, 2)} · 20 days ago ${sgn(L.S20ago, 2)} · threshold ±${F.backtest.threshold}</small></div>
       <div class="fl-comp">${comp.map(([t, s, v, z, w]) => {
         const c = z == null ? 0 : w * z, pct = Math.min(50, Math.abs(c) * 20);
         return `<div><b>${esc(t)}</b><small>${esc(s)}</small><span class="v">${esc(v)}</span>
@@ -60,32 +62,31 @@
   }
 
   function stats() {
-    const b = D.backtest;
+    const b = F.backtest, h = F.hedged;
     const pc = (x) => x == null ? "—" : Math.round(x * 100) + "%";
-    if (st.bt === "hedged" && U) {
-      const h = U.variants[0].hedged, o = U.variants[0].outright;
+    if (st.bt === "hedged" && h) {
       $("flStats").innerHTML = [
-        ["\"Bond rally\" calls", `${pc(h.rally.hit)} right`, `${h.rally.n} weeks, hedged next-4w (outright ${pc(o.rally.hit)})`],
-        ["\"Bond sell-off\" calls", `${pc(h.selloff.hit)} right`, `${h.selloff.n} weeks, hedged next-4w (outright ${pc(o.selloff.hit)})`],
+        ["\"Bond rally\" calls", `${pc(h.rally.hit)} right`, `${h.rally.n} days, hedged next-20d (outright ${pc(b.rally.hit)})`],
+        ["\"Bond sell-off\" calls", `${pc(h.selloff.hit)} right`, `${h.selloff.n} days, hedged next-20d (outright ${pc(b.selloff.hit)})`],
         ["Long/short, UST-hedged", `${sgn(h.cumBp)}bp`, `Sharpe ${h.sharpe} · max DD ${h.maxDdBp}bp · vol ${h.volBp}bp/yr`],
-        ["Long/short, outright", `${sgn(o.cumBp)}bp`, `Sharpe ${o.sharpe} · max DD ${o.maxDdBp}bp · vol ${o.volBp}bp/yr`],
-        ...U.periods.map((p) => [`${p.label}`, `${sgn(p.hedged.cumBp)}bp hedged`, `Sharpe ${p.hedged.sharpe} hedged vs ${p.outright.sharpe} outright`]),
+        ["Long/short, outright", `${sgn(b.cumBp)}bp`, `Sharpe ${b.sharpe} · max DD ${b.maxDdBp}bp · vol ${b.volBp}bp/yr`],
+        ...h.periods.map((p) => [`${p.label}`, `${sgn(p.hedged.cumBp)}bp hedged`, `Sharpe ${p.hedged.sharpe} hedged vs ${p.outright.sharpe} outright`]),
       ].map(([t, v, x]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
-      $("flBtNote").textContent = `UST-hedged back-test, ${fmtD(U.variants[0].from)} – ${fmtD(b.to)}: each week the position is long (rally call) or short (sell-off call) the 10Y INDOGB against β × the 10Y US Treasury, with β the trailing 26-week weekly beta known at the time (now ${U.weekly.beta}). That removes the part of the INDOGB move that simply followed Treasuries, and isolates the Indonesia-specific move. Treasury levels are the last New York close before each Jakarta close, so there is no look-ahead. "Right" is judged on the hedged move over the next ${b.horizonWeeks} weeks. Switch to "Outright 10Y" for the unhedged version.`;
+      $("flBtNote").textContent = `UST-hedged back-test, ${fmtD(h.from)} – ${fmtD(b.to)}, daily: after each Jakarta close the position for the next session is long (rally call) or short (sell-off call) the 10Y INDOGB against β × the 10Y US Treasury, with β the trailing 130-day daily beta known at the time (now ${h.beta}). That removes the part of the INDOGB move that simply followed Treasuries, and isolates the Indonesia-specific move. Treasury levels are the last New York close before each Jakarta close, so there is no look-ahead. "Right" is judged on the hedged move over the next ${b.horizonDays} sessions. No trading costs are taken off; the daily signal changes position more often than a weekly one would. Switch to "Outright 10Y" for the unhedged version.`;
     } else {
     $("flStats").innerHTML = [
-      ["\"Bond rally\" calls", `${pc(b.rally.hit)} right`, `${b.rally.n} weeks · avg next-4w ${sgn(b.rally.avgFwdBp)}bp`],
-      ["\"Bond sell-off\" calls", `${pc(b.selloff.hit)} right`, `${b.selloff.n} weeks · avg next-4w ${sgn(b.selloff.avgFwdBp)}bp`],
-      ["All weeks (base rate)", `${sgn(b.allAvgFwdBp)}bp`, "avg next-4w 10Y change"],
+      ["\"Bond rally\" calls", `${pc(b.rally.hit)} right`, `${b.rally.n} days · avg next-20d ${sgn(b.rally.avgFwdBp)}bp`],
+      ["\"Bond sell-off\" calls", `${pc(b.selloff.hit)} right`, `${b.selloff.n} days · avg next-20d ${sgn(b.selloff.avgFwdBp)}bp`],
+      ["All days (base rate)", `${sgn(b.allAvgFwdBp)}bp`, "avg next-20d 10Y change"],
       ["Long/flat on signal", `${sgn(b.longBp)}bp`, `Sharpe ${b.longSharpe} · max DD ${b.longMaxDdBp}bp`],
       ["Long/short on signal", `${sgn(b.cumBp)}bp`, `Sharpe ${b.sharpe} · max DD ${b.maxDdBp}bp`],
       ["Always long 10Y", `${sgn(b.holdBp)}bp`, `Sharpe ${b.holdSharpe} · max DD ${b.holdMaxDdBp}bp`],
     ].map(([t, v, s]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(s)}</small></div>`).join("");
-    $("flBtNote").textContent = `Back-test ${fmtD(b.from)} – ${fmtD(b.to)}, ${b.weeks} weeks. Each week's signal is computed only from data up to that week and positions the following week. "Right" means the 10Y moved the called way over the next ${b.horizonWeeks} weeks. P&L is the 10Y yield change captured, in bp (a 1bp fall is +1bp for a long). The long/flat strategy holds duration only in "bond rally" weeks (about ${Math.round((D.curve.filter((r) => r[7] > 0).length / D.curve.length) * 100)}% of the time). In total-return terms (a synthetic 10Y INDOGB with coupon carry and a duration of 7, in rupiah): long/flat ${sgn(b.etfLongPct, 1, "%")}, long/short ${sgn(b.etfStratPct, 1, "%")}, buy-and-hold ${sgn(b.etfHoldPct, 1, "%")}.`;
+    $("flBtNote").textContent = `Back-test ${fmtD(b.from)} – ${fmtD(b.to)}, ${b.days} sessions. Each day's signal is computed only from data up to that Jakarta close and positions the next session. "Right" means the 10Y moved the called way over the next ${b.horizonDays} sessions. P&L is the 10Y yield change captured, in bp (a 1bp fall is +1bp for a long), before trading costs. The long/flat strategy holds duration only on "bond rally" days (about ${Math.round((F.curve.filter((r) => r[7] > 0).length / F.curve.length) * 100)}% of the time). In total-return terms (a synthetic 10Y INDOGB with coupon carry and a duration of 7, in rupiah): long/flat ${sgn(b.etfLongPct, 1, "%")}, long/short ${sgn(b.etfStratPct, 1, "%")}, buy-and-hold ${sgn(b.etfHoldPct, 1, "%")}.`;
     }
-    $("flEp").innerHTML = D.episodes.slice().reverse().map((e) => {
+    $("flEp").innerHTML = F.episodes.slice().reverse().map((e) => {
       const ok = e.type === "rally" ? e.bp < 0 : e.bp > 0;
-      return `<tr><td>${esc(fmtD(e.from))}</td><td><span class="fl-tag ${e.type === "rally" ? "up" : "down"}">${e.type === "rally" ? "Bond rally" : "Bond sell-off"}</span></td><td>${e.weeks}</td><td>${e.y0.toFixed(3)}%</td><td>${e.y1.toFixed(3)}%</td><td class="${ok ? "up" : "down"}">${sgn(e.bp)}bp${e.open ? " *" : ""}</td><td>${e.open ? "running" : ok ? "✓" : "✗"}</td></tr>`;
+      return `<tr><td>${esc(fmtD(e.from))}</td><td><span class="fl-tag ${e.type === "rally" ? "up" : "down"}">${e.type === "rally" ? "Bond rally" : "Bond sell-off"}</span></td><td>${e.days}</td><td>${e.y0.toFixed(3)}%</td><td>${e.y1.toFixed(3)}%</td><td class="${ok ? "up" : "down"}">${sgn(e.bp)}bp${e.open ? " *" : ""}</td><td>${e.open ? "running" : ok ? "✓" : "✗"}</td></tr>`;
     }).join("");
   }
 
@@ -120,9 +121,9 @@
     a.subscribeCrosshairMove((p) => {
       const r = p?.time ? R.find((x) => x[0] === p.time) : R.at(-1);
       if (!r) return;
-      $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>JCI <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y INDOGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally weeks</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off weeks</span><span class="mut">week of ${esc(fmtD(r[0]))} · signal ${sgn(r[6], 2)}</span>`;
+      $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>JCI <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y INDOGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally days</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off days</span><span class="mut">${esc(fmtD(r[0]))} · signal ${sgn(r[6], 2)}</span>`;
     });
-    // 2. Flows: weekly USD/IDR change (bars) + INDOGB − UST 10Y spread (line)
+    // 2. Flows: daily USD/IDR change (bars) + INDOGB − UST 10Y spread (line)
     const b = LightweightCharts.createChart($("flFlow"), { ...opts(), leftPriceScale: { visible: true, borderColor: css("--line") } });
     const mh = b.addHistogramSeries({ priceScaleId: "left", priceLineVisible: false, lastValueVisible: false, priceFormat: { type: "custom", formatter: (v) => v.toFixed(1) + "%" } });
     mh.setData(R.filter((r) => r[4] != null).map((r) => ({ time: r[0], value: r[4], color: r[4] >= 0 ? alpha(dn, 0.85) : alpha(up, 0.85) })));
@@ -131,14 +132,14 @@
     b.subscribeCrosshairMove((p) => {
       const r = p?.time ? R.find((x) => x[0] === p.time) : R.at(-1);
       if (!r) return;
-      $("flFlowLeg").innerHTML = `<span><i style="background:${css("--down")};height:8px"></i>Rupiah weaker / <i style="background:${css("--up")};height:8px"></i>stronger <b>${sgn(r[4], 2, "%")}</b> on the week</span><span class="mut">USD/IDR ${r[3] ? Math.round(r[3]).toLocaleString("en-US") : "—"}</span><span><i style="background:${c3}"></i>INDOGB − UST 10Y <b>${r[5] == null ? "—" : sgn(r[5], 0, "bp")}</b></span>`;
+      $("flFlowLeg").innerHTML = `<span><i style="background:${css("--down")};height:8px"></i>Rupiah weaker / <i style="background:${css("--up")};height:8px"></i>stronger <b>${sgn(r[4], 2, "%")}</b> on the day</span><span class="mut">USD/IDR ${r[3] ? Math.round(r[3]).toLocaleString("en-US") : "—"} · ${esc(fmtD(r[0]))}</span><span><i style="background:${c3}"></i>INDOGB − UST 10Y <b>${r[5] == null ? "—" : sgn(r[5], 0, "bp")}</b></span>`;
     });
     // 3. Signal
     const c = LightweightCharts.createChart($("flSigC"), opts());
     regBand(c, R);
     const s = c.addBaselineSeries({ baseValue: { type: "price", price: 0 }, topLineColor: up, bottomLineColor: dn, topFillColor1: alpha(up, 0.25), topFillColor2: alpha(up, 0.02), bottomFillColor1: alpha(dn, 0.02), bottomFillColor2: alpha(dn, 0.25), lineWidth: 2, priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } });
     s.setData(R.filter((r) => r[6] != null).map((r) => ({ time: r[0], value: r[6] })));
-    [D.backtest.threshold, -D.backtest.threshold].forEach((v) => s.createPriceLine({ price: v, color: css("--muted"), lineStyle: 2, lineWidth: 1, axisLabelVisible: true, title: v > 0 ? "rally" : "sell-off" }));
+    [F.backtest.threshold, -F.backtest.threshold].forEach((v) => s.createPriceLine({ price: v, color: css("--muted"), lineStyle: 2, lineWidth: 1, axisLabelVisible: true, title: v > 0 ? "rally" : "sell-off" }));
     let cs = null;
     if (st.corr) {
       cs = c.addLineSeries({ color: c5, lineWidth: 1.5, lineStyle: 0, priceScaleId: "corr", priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } });
@@ -149,18 +150,18 @@
       const r = p?.time ? R.find((x) => x[0] === p.time) : R.at(-1);
       if (!r) return;
       const [lab] = REG[r[7] ?? 0];
-      $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Flow Signal <b>${sgn(r[6], 2)}</b> → ${esc(lab)}</span>${st.corr ? `<span><i style="background:${c5}"></i>26-week stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">week of ${esc(fmtD(r[0]))}</span>`;
+      $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Flow Signal <b>${sgn(r[6], 2)}</b> → ${esc(lab)}</span>${st.corr ? `<span><i style="background:${c5}"></i>130-day stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">${esc(fmtD(r[0]))}</span>`;
     });
     // 4. Back-test curve
-    const bd = D.curve.filter((r) => r[0] >= R[0][0]); let base0 = D.curve.filter((r) => r[0] < R[0][0]).at(-1);
+    const bd = F.curve.filter((r) => r[0] >= R[0][0]); let base0 = F.curve.filter((r) => r[0] < R[0][0]).at(-1);
     const off = (i) => (base0 ? base0[i] ?? 0 : 0);
     const e = LightweightCharts.createChart($("flBt"), opts());
-    const H = st.bt === "hedged" && U;
+    const HC = F.hedgedCurve, H = st.bt === "hedged" && HC?.length;
     const ix = H ? [2, 1, 11] : st.bt === "bp" ? [3, 1, 2] : [6, 4, 5], unit = st.bt === "etf" ? "%" : "bp";
     if (H) { // merge the hedged curve (cols 1, 2) with the outright long/short (col 11) on the same dates
-      const hm = new Map(U.hedgedCurve.map((x) => [x[0], x])), om = new Map(D.curve.map((x) => [x[0], x[1]]));
-      bd.length = 0; U.hedgedCurve.filter((x) => x[0] >= R[0][0]).forEach((x) => { const row = [x[0], x[1], x[2]]; row[11] = om.get(x[0]) ?? null; bd.push(row); });
-      const b0 = U.hedgedCurve.filter((x) => x[0] < R[0][0]).at(-1), o0 = D.curve.filter((x) => x[0] < R[0][0]).at(-1);
+      const om = new Map(F.curve.map((x) => [x[0], x[1]]));
+      bd.length = 0; HC.filter((x) => x[0] >= R[0][0]).forEach((x) => { const row = [x[0], x[1], x[2]]; row[11] = om.get(x[0]) ?? null; bd.push(row); });
+      const b0 = HC.filter((x) => x[0] < R[0][0]).at(-1), o0 = F.curve.filter((x) => x[0] < R[0][0]).at(-1);
       base0 = b0 ? [b0[0], b0[1], b0[2]] : null; if (base0) base0[11] = o0 ? o0[1] : 0;
     }
     const names = H ? ["Long/flat, UST-hedged", "Long/short, UST-hedged", "Long/short, outright"] : ["Long/flat on signal", "Long/short on signal", "Always long"];
@@ -178,14 +179,14 @@
     charts = [a, b, c, e];
     const grp = [a, b, c, e];
     grp.forEach((ch) => { ch.timeScale().fitContent(); ch.timeScale().subscribeVisibleTimeRangeChange((tr) => { if (syncing || !tr) return; syncing = true; grp.forEach((o) => o !== ch && o.timeScale().setVisibleRange(tr)); syncing = false; }); });
-    seedLegends(R, bd, lines, off, unit); // legends show the latest week until the pointer moves
+    seedLegends(R, bd, lines, off, unit); // legends show the latest day until the pointer moves
   }
 
   function seedLegends(R, bd, lines, off, unit) {
     const r = R.at(-1), up = css("--up"), dn = css("--down"), c1 = css("--c1"), c2 = css("--c2"), c3 = css("--c3"), c5 = css("--c5");
-    $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>JCI <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y INDOGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally weeks</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off weeks</span><span class="mut">week of ${esc(fmtD(r[0]))}</span>`;
-    $("flFlowLeg").innerHTML = `<span><i style="background:${css("--down")};height:8px"></i>Rupiah weaker / <i style="background:${css("--up")};height:8px"></i>stronger <b>${sgn(r[4], 2, "%")}</b> on the week</span><span class="mut">USD/IDR ${r[3] ? Math.round(r[3]).toLocaleString("en-US") : "—"}</span><span><i style="background:${c3}"></i>INDOGB − UST 10Y <b>${r[5] == null ? "—" : sgn(r[5], 0, "bp")}</b></span>`;
-    $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Flow Signal <b>${sgn(r[6], 2)}</b> → ${esc(REG[r[7] ?? 0][0])}</span>${st.corr ? `<span><i style="background:${c5}"></i>26-week stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}`;
+    $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>JCI <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y INDOGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally days</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off days</span><span class="mut">${esc(fmtD(r[0]))}</span>`;
+    $("flFlowLeg").innerHTML = `<span><i style="background:${css("--down")};height:8px"></i>Rupiah weaker / <i style="background:${css("--up")};height:8px"></i>stronger <b>${sgn(r[4], 2, "%")}</b> on the day</span><span class="mut">USD/IDR ${r[3] ? Math.round(r[3]).toLocaleString("en-US") : "—"} · ${esc(fmtD(r[0]))}</span><span><i style="background:${c3}"></i>INDOGB − UST 10Y <b>${r[5] == null ? "—" : sgn(r[5], 0, "bp")}</b></span>`;
+    $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Flow Signal <b>${sgn(r[6], 2)}</b> → ${esc(REG[r[7] ?? 0][0])}</span>${st.corr ? `<span><i style="background:${c5}"></i>130-day stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">${esc(fmtD(r[0]))}</span>`;
     const b = bd.at(-1);
     if (b) $("flBtLeg").innerHTML = lines.map(([, i, col, name]) => `<span><i style="background:${col}"></i>${name} <b>${sgn(b[i] - off(i), 1, unit)}</b></span>`).join("") + `<span class="mut">${st.bt === "etf" ? "synthetic 10Y total return" : st.bt === "hedged" ? "bp captured" : "10Y bp captured"} since ${esc(fmtD(bd[0][0]))}</span>`;
   }
@@ -208,7 +209,7 @@
       ["Weekly beta (26w)", `${wk.beta.toFixed(2)}`, `corr ${wk.corr} · weekly moves pass through more than daily`],
       ["INDOGB − UST 10Y", `${sgn(wk.spreadBp, 0)}bp`, `${Math.round(wk.spreadPct * 100)}th pct of 52w (${wk.spreadLo52} to ${wk.spreadHi52})`],
     ].map(([t, v, x]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(x)}</small></div>`).join("");
-    const RW = { "1Y": 52, "2Y": 104, All: 9999 }[st.ur];
+    const RW = { "1Y": 52, "2Y": 104, All: 9999 }[st.ur]; // weekly (transmission section)
     const S = D.series.filter((r) => r[15] != null).slice(-RW);
     // levels
     const a = LightweightCharts.createChart($("utLvl"), { ...opts(), leftPriceScale: { visible: true, borderColor: css("--line") } });
