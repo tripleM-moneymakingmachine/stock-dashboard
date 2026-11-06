@@ -1,0 +1,1615 @@
+{
+ "asof": "2026-11-06",
+ "asofText": "Nov 6, 2026",
+ "note": "Sites, owners, status and power are from company announcements, filings and press reports; GW marked ~ are Claude estimates. Risk tiers, costs and views are Claude's assessment, updated daily.",
+ "owners": {
+  "msft": {
+   "n": "Microsoft",
+   "t": "MSFT",
+   "c": "#2b7bd8"
+  },
+  "amzn": {
+   "n": "Amazon (AWS)",
+   "t": "AMZN",
+   "c": "#e68a00"
+  },
+  "googl": {
+   "n": "Alphabet",
+   "t": "GOOGL",
+   "c": "#1e9e5a"
+  },
+  "meta": {
+   "n": "Meta",
+   "t": "META",
+   "c": "#7a4fd6"
+  },
+  "orcl": {
+   "n": "Oracle / OpenAI",
+   "t": "ORCL",
+   "c": "#c2362b"
+  },
+  "sbank": {
+   "n": "SoftBank / OpenAI",
+   "t": "9984",
+   "c": "#d6456f"
+  },
+  "spcx": {
+   "n": "SpaceX AI (xAI)",
+   "t": "SPCX",
+   "c": "#4b5563"
+  },
+  "crwv": {
+   "n": "CoreWeave",
+   "t": "CRWV",
+   "c": "#0aa5b5"
+  },
+  "nbis": {
+   "n": "Nebius",
+   "t": "NBIS",
+   "c": "#9c6b2f"
+  },
+  "iren": {
+   "n": "IREN",
+   "t": "IREN",
+   "c": "#b8901a"
+  },
+  "apld": {
+   "n": "Applied Digital",
+   "t": "APLD",
+   "c": "#5f8f1e"
+  },
+  "glxy": {
+   "n": "Galaxy Digital",
+   "t": "GLXY",
+   "c": "#8a5a9e"
+  },
+  "cifr": {
+   "n": "Cipher Mining",
+   "t": "CIFR",
+   "c": "#5c7c99"
+  },
+  "frmi": {
+   "n": "Fermi America",
+   "t": "FRMI",
+   "c": "#a04020"
+  },
+  "crusoe": {
+   "n": "Crusoe",
+   "t": "Private",
+   "c": "#6e7a2a"
+  },
+  "qts": {
+   "n": "QTS (Blackstone)",
+   "t": "BX",
+   "c": "#3d5a80"
+  },
+  "other": {
+   "n": "Other developers",
+   "t": "—",
+   "c": "#8795a6"
+  }
+ },
+ "sites": [
+  {
+   "id": "msft-mtp",
+   "name": "Fairwater (Mount Pleasant)",
+   "owner": "msft",
+   "partner": null,
+   "state": "WI",
+   "lat": 42.72,
+   "lon": -87.9,
+   "gw": 2.0,
+   "status": "op",
+   "capexB": 7.3,
+   "est": false,
+   "note": "First Fairwater AI campus live; second phase under construction"
+  },
+  {
+   "id": "msft-atl",
+   "name": "Fairwater Atlanta",
+   "owner": "msft",
+   "partner": null,
+   "state": "GA",
+   "lat": 33.62,
+   "lon": -84.5,
+   "gw": 1.0,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Second Fairwater site, linked to Wisconsin by AI WAN"
+  },
+  {
+   "id": "msft-sat",
+   "name": "San Antonio campuses",
+   "owner": "msft",
+   "partner": null,
+   "state": "TX",
+   "lat": 29.38,
+   "lon": -98.62,
+   "gw": 0.6,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Operating cloud region; expansions need ERCOT large-load approval"
+  },
+  {
+   "id": "msft-abi",
+   "name": "Abilene (with Crusoe)",
+   "owner": "msft",
+   "partner": "Crusoe",
+   "state": "TX",
+   "lat": 32.4,
+   "lon": -99.66,
+   "gw": 0.9,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "900 MW campus next to Stargate Abilene; not yet energised"
+  },
+  {
+   "id": "msft-boy",
+   "name": "Boydton / Southern Virginia",
+   "owner": "msft",
+   "partner": null,
+   "state": "VA",
+   "lat": 36.67,
+   "lon": -78.39,
+   "gw": 1.0,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Mature campus; Virginia reviewing data center tax break"
+  },
+  {
+   "id": "msft-dsm",
+   "name": "West Des Moines",
+   "owner": "msft",
+   "partner": null,
+   "state": "IA",
+   "lat": 41.56,
+   "lon": -93.8,
+   "gw": 0.8,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Iowa campus, friendly regime"
+  },
+  {
+   "id": "msft-qcy",
+   "name": "Quincy",
+   "owner": "msft",
+   "partner": null,
+   "state": "WA",
+   "lat": 47.23,
+   "lon": -119.85,
+   "gw": 0.6,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Hydro-powered Washington cluster"
+  },
+  {
+   "id": "msft-chy",
+   "name": "Cheyenne",
+   "owner": "msft",
+   "partner": null,
+   "state": "WY",
+   "lat": 41.1,
+   "lon": -104.75,
+   "gw": 0.5,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Wyoming expansion, friendly state"
+  },
+  {
+   "id": "amzn-nova",
+   "name": "Northern Virginia (Loudoun/PW)",
+   "owner": "amzn",
+   "partner": null,
+   "state": "VA",
+   "lat": 39.03,
+   "lon": -77.5,
+   "gw": 4.0,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Largest AWS cluster; Dominion grid queue is the constraint"
+  },
+  {
+   "id": "amzn-rai",
+   "name": "Project Rainier, New Carlisle",
+   "owner": "amzn",
+   "partner": "Anthropic",
+   "state": "IN",
+   "lat": 41.7,
+   "lon": -86.51,
+   "gw": 2.2,
+   "status": "op",
+   "capexB": 11.0,
+   "est": false,
+   "note": "Trainium2 cluster for Anthropic; expanding"
+  },
+  {
+   "id": "amzn-ms",
+   "name": "Madison County",
+   "owner": "amzn",
+   "partner": null,
+   "state": "MS",
+   "lat": 32.47,
+   "lon": -90.11,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": 10.0,
+   "est": true,
+   "note": "$10B Mississippi campus"
+  },
+  {
+   "id": "amzn-nc",
+   "name": "Richmond County",
+   "owner": "amzn",
+   "partner": null,
+   "state": "NC",
+   "lat": 34.94,
+   "lon": -79.77,
+   "gw": 0.9,
+   "status": "uc",
+   "capexB": 10.0,
+   "est": true,
+   "note": "$10B North Carolina campus"
+  },
+  {
+   "id": "amzn-pa",
+   "name": "Salem Twp (Susquehanna)",
+   "owner": "amzn",
+   "partner": "Talen",
+   "state": "PA",
+   "lat": 41.09,
+   "lon": -76.15,
+   "gw": 1.9,
+   "status": "uc",
+   "capexB": 20.0,
+   "est": false,
+   "note": "Nuclear-adjacent campus; PJM and state ratepayer scrutiny"
+  },
+  {
+   "id": "amzn-ga",
+   "name": "Butts / Douglas counties",
+   "owner": "amzn",
+   "partner": null,
+   "state": "GA",
+   "lat": 33.29,
+   "lon": -83.98,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": 11.0,
+   "est": true,
+   "note": "$11B Georgia build; new governor promised a statewide pause"
+  },
+  {
+   "id": "amzn-oh",
+   "name": "Central Ohio campuses",
+   "owner": "amzn",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.06,
+   "lon": -83.12,
+   "gw": 2.0,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Existing ops; tax-credit halt applies to new projects"
+  },
+  {
+   "id": "amzn-tre",
+   "name": "Trenton campus",
+   "owner": "amzn",
+   "partner": null,
+   "state": "OH",
+   "lat": 39.48,
+   "lon": -84.46,
+   "gw": 1.0,
+   "status": "bl",
+   "capexB": null,
+   "est": false,
+   "note": "Annexation route closed by voters Nov 3"
+  },
+  {
+   "id": "amzn-sun",
+   "name": "Sunbury",
+   "owner": "amzn",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.24,
+   "lon": -82.86,
+   "gw": 0.03,
+   "status": "bl",
+   "capexB": null,
+   "est": true,
+   "note": "Voters banned data centers of 25 MW+"
+  },
+  {
+   "id": "goog-cb",
+   "name": "Council Bluffs",
+   "owner": "googl",
+   "partner": null,
+   "state": "IA",
+   "lat": 41.26,
+   "lon": -95.86,
+   "gw": 1.2,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Core US region"
+  },
+  {
+   "id": "goog-td",
+   "name": "The Dalles",
+   "owner": "googl",
+   "partner": null,
+   "state": "OR",
+   "lat": 45.6,
+   "lon": -121.18,
+   "gw": 0.8,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Hydro-powered Oregon campus"
+  },
+  {
+   "id": "goog-na",
+   "name": "New Albany / Columbus",
+   "owner": "googl",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.1,
+   "lon": -82.84,
+   "gw": 1.0,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Operating; expansions face new Ohio regime"
+  },
+  {
+   "id": "goog-ok",
+   "name": "Mayes County (Pryor)",
+   "owner": "googl",
+   "partner": null,
+   "state": "OK",
+   "lat": 36.24,
+   "lon": -95.33,
+   "gw": 1.2,
+   "status": "op",
+   "capexB": 9.0,
+   "est": true,
+   "note": "$9B expansion in a friendly state"
+  },
+  {
+   "id": "goog-ar",
+   "name": "West Memphis",
+   "owner": "googl",
+   "partner": null,
+   "state": "AR",
+   "lat": 35.15,
+   "lon": -90.18,
+   "gw": 0.6,
+   "status": "uc",
+   "capexB": 4.0,
+   "est": true,
+   "note": "$4B Arkansas build"
+  },
+  {
+   "id": "goog-tx1",
+   "name": "Armstrong County",
+   "owner": "googl",
+   "partner": null,
+   "state": "TX",
+   "lat": 34.96,
+   "lon": -101.36,
+   "gw": 1.5,
+   "status": "pl",
+   "capexB": null,
+   "est": true,
+   "note": "Part of $40B Texas plan through 2027"
+  },
+  {
+   "id": "goog-tx2",
+   "name": "Haskell County",
+   "owner": "googl",
+   "partner": null,
+   "state": "TX",
+   "lat": 33.16,
+   "lon": -99.73,
+   "gw": 1.5,
+   "status": "pl",
+   "capexB": null,
+   "est": true,
+   "note": "Part of $40B Texas plan; co-located power"
+  },
+  {
+   "id": "goog-ga",
+   "name": "Douglas County",
+   "owner": "googl",
+   "partner": null,
+   "state": "GA",
+   "lat": 33.7,
+   "lon": -84.78,
+   "gw": 0.5,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Operating Atlanta-area campus"
+  },
+  {
+   "id": "goog-sc",
+   "name": "Berkeley County",
+   "owner": "googl",
+   "partner": null,
+   "state": "SC",
+   "lat": 33.06,
+   "lon": -80.0,
+   "gw": 0.6,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "South Carolina campus"
+  },
+  {
+   "id": "meta-hyp",
+   "name": "Hyperion, Richland Parish",
+   "owner": "meta",
+   "partner": null,
+   "state": "LA",
+   "lat": 32.48,
+   "lon": -91.63,
+   "gw": 5.0,
+   "status": "uc",
+   "capexB": 27.0,
+   "est": false,
+   "note": "2 GW by 2030, scaling to 5 GW; Entergy gas plants"
+  },
+  {
+   "id": "meta-pro",
+   "name": "Prometheus, New Albany",
+   "owner": "meta",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.07,
+   "lon": -82.76,
+   "gw": 1.0,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "1 GW cluster coming online 2026"
+  },
+  {
+   "id": "meta-elp",
+   "name": "El Paso (with BlackRock)",
+   "owner": "meta",
+   "partner": "BlackRock JV",
+   "state": "TX",
+   "lat": 31.8,
+   "lon": -106.25,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": 10.0,
+   "est": false,
+   "note": "1 GW JV; state permits and power at risk"
+  },
+  {
+   "id": "meta-leb",
+   "name": "Lebanon",
+   "owner": "meta",
+   "partner": null,
+   "state": "IN",
+   "lat": 40.05,
+   "lon": -86.47,
+   "gw": 1.0,
+   "status": "pl",
+   "capexB": 10.0,
+   "est": true,
+   "note": "Announced 1 GW Indiana campus"
+  },
+  {
+   "id": "meta-piq",
+   "name": "Piqua",
+   "owner": "meta",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.14,
+   "lon": -84.24,
+   "gw": 1.4,
+   "status": "bl",
+   "capexB": null,
+   "est": false,
+   "note": "Voters targeted the 1.4 GW campus and recalled backers"
+  },
+  {
+   "id": "meta-ga",
+   "name": "Stanton Springs",
+   "owner": "meta",
+   "partner": null,
+   "state": "GA",
+   "lat": 33.6,
+   "lon": -83.79,
+   "gw": 0.4,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Operating Georgia campus"
+  },
+  {
+   "id": "meta-ia",
+   "name": "Altoona",
+   "owner": "meta",
+   "partner": null,
+   "state": "IA",
+   "lat": 41.64,
+   "lon": -93.46,
+   "gw": 0.5,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Operating Iowa campus"
+  },
+  {
+   "id": "meta-ftw",
+   "name": "Fort Worth",
+   "owner": "meta",
+   "partner": null,
+   "state": "TX",
+   "lat": 32.92,
+   "lon": -97.42,
+   "gw": 0.3,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Operating Texas campus"
+  },
+  {
+   "id": "sg-abi",
+   "name": "Stargate Abilene",
+   "owner": "orcl",
+   "partner": "OpenAI · Crusoe",
+   "state": "TX",
+   "lat": 32.45,
+   "lon": -99.73,
+   "gw": 1.2,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "~4 of 8 buildings running; 2 GW expansion dropped Mar 2026"
+  },
+  {
+   "id": "sg-sha",
+   "name": "Stargate Shackelford (Frontier)",
+   "owner": "orcl",
+   "partner": "OpenAI · Vantage",
+   "state": "TX",
+   "lat": 32.72,
+   "lon": -99.3,
+   "gw": 2.0,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "First building late 2026, full build Q4 2028"
+  },
+  {
+   "id": "sg-mil",
+   "name": "Stargate Milam County",
+   "owner": "sbank",
+   "partner": "OpenAI · SB Energy",
+   "state": "TX",
+   "lat": 30.65,
+   "lon": -97.0,
+   "gw": 1.2,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "SoftBank site; first building ~Oct 2026"
+  },
+  {
+   "id": "sg-nm",
+   "name": "Stargate Doña Ana (Jupiter)",
+   "owner": "orcl",
+   "partner": "OpenAI · STACK",
+   "state": "NM",
+   "lat": 31.86,
+   "lon": -106.67,
+   "gw": 2.2,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Project Jupiter; full build Q4 2028"
+  },
+  {
+   "id": "sg-wi",
+   "name": "Stargate Port Washington",
+   "owner": "orcl",
+   "partner": "OpenAI · Vantage",
+   "state": "WI",
+   "lat": 43.39,
+   "lon": -87.88,
+   "gw": 1.3,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Lighthouse campus, foundations visible"
+  },
+  {
+   "id": "sg-mi",
+   "name": "Stargate Saline Twp",
+   "owner": "orcl",
+   "partner": "OpenAI · Related Digital",
+   "state": "MI",
+   "lat": 42.17,
+   "lon": -83.78,
+   "gw": 1.4,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Faces local opposition"
+  },
+  {
+   "id": "sg-ord",
+   "name": "Stargate Lordstown",
+   "owner": "sbank",
+   "partner": "OpenAI · SoftBank/Foxconn",
+   "state": "OH",
+   "lat": 41.17,
+   "lon": -80.86,
+   "gw": 0.3,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "Land cleared; town banned future data centers"
+  },
+  {
+   "id": "xai-c1",
+   "name": "Colossus 1, Memphis",
+   "owner": "spcx",
+   "partner": null,
+   "state": "TN",
+   "lat": 35.07,
+   "lon": -90.12,
+   "gw": 0.3,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Gas-turbine permits contested locally"
+  },
+  {
+   "id": "xai-c2",
+   "name": "Colossus 2, Memphis/Southaven",
+   "owner": "spcx",
+   "partner": null,
+   "state": "MS",
+   "lat": 34.98,
+   "lon": -90.0,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "Power plant across the state line in Mississippi"
+  },
+  {
+   "id": "crwv-lan",
+   "name": "Lancaster",
+   "owner": "crwv",
+   "partner": null,
+   "state": "PA",
+   "lat": 40.04,
+   "lon": -76.31,
+   "gw": 0.3,
+   "status": "pl",
+   "capexB": 6.0,
+   "est": false,
+   "note": "$6B campus, up to 300 MW"
+  },
+  {
+   "id": "crwv-den",
+   "name": "Denton (Core Scientific)",
+   "owner": "crwv",
+   "partner": "Core Scientific",
+   "state": "TX",
+   "lat": 33.21,
+   "lon": -97.13,
+   "gw": 0.26,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "Converted miner site"
+  },
+  {
+   "id": "crwv-nj",
+   "name": "Kenilworth",
+   "owner": "crwv",
+   "partner": null,
+   "state": "NJ",
+   "lat": 40.68,
+   "lon": -74.29,
+   "gw": 0.25,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "New Jersey campus"
+  },
+  {
+   "id": "apld-pf1",
+   "name": "Polaris Forge 1, Ellendale",
+   "owner": "apld",
+   "partner": "CoreWeave",
+   "state": "ND",
+   "lat": 46.0,
+   "lon": -98.52,
+   "gw": 0.4,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "CoreWeave-leased; friendly state"
+  },
+  {
+   "id": "apld-pf2",
+   "name": "Polaris Forge 2, Harwood",
+   "owner": "apld",
+   "partner": null,
+   "state": "ND",
+   "lat": 46.98,
+   "lon": -96.87,
+   "gw": 0.3,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "Harwood voters backed the project 3-to-1 on Nov 3"
+  },
+  {
+   "id": "nbis-kc",
+   "name": "Kansas City",
+   "owner": "nbis",
+   "partner": null,
+   "state": "MO",
+   "lat": 39.1,
+   "lon": -94.58,
+   "gw": 0.1,
+   "status": "op",
+   "capexB": null,
+   "est": true,
+   "note": "First US build-to-suit"
+  },
+  {
+   "id": "nbis-nj",
+   "name": "Vineland",
+   "owner": "nbis",
+   "partner": null,
+   "state": "NJ",
+   "lat": 39.49,
+   "lon": -75.03,
+   "gw": 0.3,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "Up to 300 MW with DataOne"
+  },
+  {
+   "id": "iren-chi",
+   "name": "Childress",
+   "owner": "iren",
+   "partner": null,
+   "state": "TX",
+   "lat": 34.43,
+   "lon": -100.2,
+   "gw": 0.75,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "750 MW converting to AI cloud"
+  },
+  {
+   "id": "iren-swt",
+   "name": "Sweetwater",
+   "owner": "iren",
+   "partner": null,
+   "state": "TX",
+   "lat": 32.47,
+   "lon": -100.4,
+   "gw": 2.0,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "2 GW site; energisation gated by ERCOT"
+  },
+  {
+   "id": "glxy-hel",
+   "name": "Helios, Dickens County",
+   "owner": "glxy",
+   "partner": "CoreWeave",
+   "state": "TX",
+   "lat": 33.62,
+   "lon": -100.84,
+   "gw": 0.8,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "CoreWeave-leased; ERCOT approvals for further phases"
+  },
+  {
+   "id": "cifr-bl",
+   "name": "Barber Lake",
+   "owner": "cifr",
+   "partner": "Fluidstack · Google backstop",
+   "state": "TX",
+   "lat": 32.39,
+   "lon": -100.86,
+   "gw": 0.3,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "Google-backstopped lease"
+  },
+  {
+   "id": "frmi-ama",
+   "name": "HyperGrid, Amarillo",
+   "owner": "frmi",
+   "partner": null,
+   "state": "TX",
+   "lat": 35.3,
+   "lon": -101.6,
+   "gw": 11.0,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "11 GW nuclear+gas plan; no anchor tenant disclosed"
+  },
+  {
+   "id": "crusoe-wy",
+   "name": "Cheyenne (with Tallgrass)",
+   "owner": "crusoe",
+   "partner": null,
+   "state": "WY",
+   "lat": 41.14,
+   "lon": -104.82,
+   "gw": 1.8,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "1.8 GW, own gas power; friendly state"
+  },
+  {
+   "id": "qts-fay",
+   "name": "Fayetteville",
+   "owner": "qts",
+   "partner": "Blackstone",
+   "state": "GA",
+   "lat": 33.45,
+   "lon": -84.45,
+   "gw": 0.6,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "Large QTS Atlanta campus"
+  },
+  {
+   "id": "cb-gua",
+   "name": "Guadalupe County",
+   "owner": "other",
+   "partner": "Cloudburst",
+   "state": "TX",
+   "lat": 29.57,
+   "lon": -97.96,
+   "gw": 1.2,
+   "status": "pl",
+   "capexB": 14.5,
+   "est": true,
+   "note": "$14.5B campus; $500M county abatement"
+  },
+  {
+   "id": "dio-ro",
+   "name": "Red Oak",
+   "owner": "other",
+   "partner": "Diode Ventures",
+   "state": "TX",
+   "lat": 32.52,
+   "lon": -96.8,
+   "gw": 0.9,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "Hinojosa held a press conference against it"
+  }
+ ],
+ "risk": {
+  "TX": {
+   "tier": 5,
+   "why": "Governor-elect Hinojosa pledged a moratorium on all approvals until the Legislature (meets Jan 12) passes protections; Abbott's permit/ERCOT freeze already in place. Jefferies: ~13 GW of announced projects at risk.",
+   "to": [
+    "LA",
+    "OK",
+    "NM"
+   ]
+  },
+  "GA": {
+   "tier": 5,
+   "why": "Governor-elect Lance Bottoms promised a temporary statewide pause on large data centers; PSC races also turned on Georgia Power's data center expansion.",
+   "to": [
+    "AL",
+    "MS",
+    "SC"
+   ]
+  },
+  "OH": {
+   "tier": 5,
+   "why": "Governor-elect Acton ran on regulation; 14+ municipalities passed bans or limits on Nov 3; state already halted data center tax credits for new projects.",
+   "to": [
+    "IN",
+    "WV",
+    "KY"
+   ]
+  },
+  "MI": {
+   "tier": 4,
+   "why": "Local opposition at Saline Twp (Stargate) and a recall in Mason tied to a data center vote.",
+   "to": [
+    "IN",
+    "WI"
+   ]
+  },
+  "PA": {
+   "tier": 4,
+   "why": "State Sen. Muth's three-year hyperscale moratorium bill and ratepayer act; PJM cost-allocation fights.",
+   "to": [
+    "WV",
+    "OH*"
+   ]
+  },
+  "VA": {
+   "tier": 3,
+   "why": "No ban, but tax-break review and Dominion grid queue; Loudoun limits.",
+   "to": [
+    "NC",
+    "WV"
+   ]
+  },
+  "IL": {
+   "tier": 4,
+   "why": "Ohio and Illinois led local ballot restrictions; Bloomington moratorium advisory.",
+   "to": [
+    "IN",
+    "IA"
+   ]
+  },
+  "KS": {
+   "tier": 4,
+   "why": "Emporia banned high-impact data centers after a 1 GW proposal.",
+   "to": [
+    "MO",
+    "NE"
+   ]
+  },
+  "ME": {
+   "tier": 4,
+   "why": "Eight towns passed temporary moratoriums.",
+   "to": [
+    "—"
+   ]
+  },
+  "NH": {
+   "tier": 4,
+   "why": "Local 12-month permit moratoriums.",
+   "to": [
+    "—"
+   ]
+  },
+  "NV": {
+   "tier": 3,
+   "why": "Democrats gained the governorship; water limits.",
+   "to": [
+    "UT",
+    "AZ"
+   ]
+  },
+  "WI": {
+   "tier": 3,
+   "why": "Mostly supportive state, local zoning fights.",
+   "to": [
+    "IA",
+    "MN"
+   ]
+  },
+  "IN": {
+   "tier": 3,
+   "why": "State friendly, but local bans and Lebanon pushback.",
+   "to": [
+    "KY",
+    "IA"
+   ]
+  },
+  "MN": {
+   "tier": 3,
+   "why": "Moratorium bills introduced; water and clean-energy rules.",
+   "to": [
+    "ND",
+    "IA"
+   ]
+  },
+  "AZ": {
+   "tier": 3,
+   "why": "Water is the binding limit; Phoenix-area restrictions.",
+   "to": [
+    "NM",
+    "UT"
+   ]
+  },
+  "LA": {
+   "tier": 2,
+   "why": "State actively courts projects (Act 730 rebates); prediction markets price ~18.5% chance of a moratorium by end-2027.",
+   "to": [
+    "MS",
+    "AR"
+   ]
+  },
+  "OK": {
+   "tier": 2,
+   "why": "State friendly; one mayor recalled in Yukon over a hyperscale deal.",
+   "to": [
+    "AR",
+    "KS*"
+   ]
+  },
+  "NM": {
+   "tier": 3,
+   "why": "Project Jupiter approved but water and tribal concerns.",
+   "to": [
+    "AZ",
+    "TX*"
+   ]
+  },
+  "NC": {
+   "tier": 3,
+   "why": "Duke rate cases; mixed local reception.",
+   "to": [
+    "SC",
+    "VA"
+   ]
+  },
+  "SC": {
+   "tier": 3,
+   "why": "Congressional flips on data center records; Santee Cooper capacity.",
+   "to": [
+    "GA*",
+    "NC"
+   ]
+  },
+  "KY": {
+   "tier": 3,
+   "why": "Burgin mayor who approved a hyperscale project lost to a write-in.",
+   "to": [
+    "TN",
+    "WV"
+   ]
+  },
+  "MO": {
+   "tier": 2,
+   "why": "Supportive; Kansas City hub.",
+   "to": [
+    "KS",
+    "AR"
+   ]
+  },
+  "IA": {
+   "tier": 2,
+   "why": "Long-standing host state with incentives.",
+   "to": [
+    "NE",
+    "SD"
+   ]
+  },
+  "OR": {
+   "tier": 3,
+   "why": "Water and clean-energy constraints.",
+   "to": [
+    "WA",
+    "ID"
+   ]
+  },
+  "WA": {
+   "tier": 3,
+   "why": "Hydro capacity tight; tax break debates.",
+   "to": [
+    "OR",
+    "ID"
+   ]
+  },
+  "NJ": {
+   "tier": 3,
+   "why": "New rate class for data centers advancing.",
+   "to": [
+    "PA*",
+    "NY"
+   ]
+  },
+  "NY": {
+   "tier": 3,
+   "why": "Grid and climate law constraints.",
+   "to": [
+    "PA*",
+    "NJ"
+   ]
+  },
+  "TN": {
+   "tier": 3,
+   "why": "Memphis gas-turbine fights at xAI.",
+   "to": [
+    "MS",
+    "AR"
+   ]
+  },
+  "MS": {
+   "tier": 1,
+   "why": "Courts hyperscalers (Amazon $10B, xAI power plant); little organised opposition.",
+   "to": [
+    "AL",
+    "AR"
+   ]
+  },
+  "AL": {
+   "tier": 1,
+   "why": "Pro-development; TVA and Alabama Power capacity.",
+   "to": [
+    "MS"
+   ]
+  },
+  "AR": {
+   "tier": 1,
+   "why": "Friendly regime; Entergy Arkansas and SWEPCO.",
+   "to": [
+    "MS",
+    "OK"
+   ]
+  },
+  "ND": {
+   "tier": 1,
+   "why": "Harwood voters rejected extra review 3-to-1; abundant land and power.",
+   "to": [
+    "SD",
+    "MT"
+   ]
+  },
+  "SD": {
+   "tier": 1,
+   "why": "Friendly, cheap land.",
+   "to": [
+    "ND"
+   ]
+  },
+  "WY": {
+   "tier": 1,
+   "why": "Gas and wind, pro-development (Crusoe/Tallgrass 1.8 GW).",
+   "to": [
+    "MT",
+    "UT"
+   ]
+  },
+  "MT": {
+   "tier": 2,
+   "why": "Friendly but thin grid.",
+   "to": [
+    "WY",
+    "ND"
+   ]
+  },
+  "WV": {
+   "tier": 1,
+   "why": "Power Generation and Data Center Act lets projects build their own power.",
+   "to": [
+    "KY",
+    "VA"
+   ]
+  },
+  "UT": {
+   "tier": 2,
+   "why": "Friendly, water-limited.",
+   "to": [
+    "WY",
+    "ID"
+   ]
+  },
+  "ID": {
+   "tier": 2,
+   "why": "Friendly; Meta Kuna.",
+   "to": [
+    "UT",
+    "WY"
+   ]
+  },
+  "NE": {
+   "tier": 2,
+   "why": "Friendly public-power state.",
+   "to": [
+    "IA",
+    "SD"
+   ]
+  },
+  "CO": {
+   "tier": 3,
+   "why": "Clean-energy rules and grid limits.",
+   "to": [
+    "WY"
+   ]
+  },
+  "CA": {
+   "tier": 4,
+   "why": "High power cost, CEQA.",
+   "to": [
+    "NV*",
+    "OR"
+   ]
+  },
+  "MD": {
+   "tier": 3,
+   "why": "PJM cost fights.",
+   "to": [
+    "VA",
+    "PA*"
+   ]
+  },
+  "DE": {
+   "tier": 3,
+   "why": "Delaware proposals drew pushback.",
+   "to": [
+    "—"
+   ]
+  },
+  "CT": {
+   "tier": 3,
+   "why": "Moratorium bills.",
+   "to": [
+    "—"
+   ]
+  },
+  "RI": {
+   "tier": 3,
+   "why": "Moratorium bills.",
+   "to": [
+    "—"
+   ]
+  },
+  "MA": {
+   "tier": 3,
+   "why": "High power cost.",
+   "to": [
+    "—"
+   ]
+  },
+  "VT": {
+   "tier": 3,
+   "why": "Small market.",
+   "to": [
+    "—"
+   ]
+  },
+  "FL": {
+   "tier": 2,
+   "why": "Friendly, hurricane risk.",
+   "to": [
+    "AL",
+    "GA*"
+   ]
+  },
+  "HI": {
+   "tier": 3,
+   "why": "Not a market.",
+   "to": [
+    "—"
+   ]
+  },
+  "AK": {
+   "tier": 3,
+   "why": "Not a market.",
+   "to": [
+    "—"
+   ]
+  }
+ },
+ "assump": {
+  "capexPerGW": {
+   "v": 45,
+   "u": "$B",
+   "rng": "40–55",
+   "why": "All-in AI campus cost incl. GPUs/racks (~$30–35B) and shell, power and cooling (~$10–12B)"
+  },
+  "equipShare": {
+   "v": 0.72,
+   "u": "",
+   "rng": "0.65–0.75",
+   "why": "Share of capex that is taxable IT equipment"
+  },
+  "salesTax": {
+   "v": 0.0825,
+   "u": "",
+   "rng": "0.06–0.09",
+   "why": "Texas state 6.25% + local up to 2%; similar exemptions in GA/OH"
+  },
+  "selfPower": {
+   "v": 1.4,
+   "u": "$B/GW",
+   "rng": "1.0–2.5",
+   "why": "Paying for grid upgrades or behind-the-meter gas (~$2,000/kW for half the load)"
+  },
+  "community": {
+   "v": 0.15,
+   "u": "$B/GW",
+   "rng": "0.1–0.3",
+   "why": "Water recycling, community benefit agreements, union labour premium"
+  },
+  "sunk": {
+   "v": 1.2,
+   "u": "$B/GW",
+   "rng": "0.8–2.0",
+   "why": "Site-specific spend written off on relocation: land, interconnection deposits, design, long-lead electrical gear re-routing"
+  },
+  "revPerGW": {
+   "v": 11,
+   "u": "$B/yr",
+   "rng": "9–13",
+   "why": "GPU cloud revenue per GW-year at current rental rates"
+  },
+  "margin": {
+   "v": 0.5,
+   "u": "",
+   "rng": "0.4–0.6",
+   "why": "Cash margin on that revenue (EBITDA)"
+  },
+  "wacc": {
+   "v": 0.09,
+   "u": "",
+   "rng": "0.08–0.12",
+   "why": "Hyperscaler ~8%, neocloud 11–12%"
+  },
+  "relocDelay": {
+   "v": 15,
+   "u": "months",
+   "rng": "12–24",
+   "why": "Re-siting, new interconnection and permits"
+  },
+  "pauseDelay": {
+   "v": 12,
+   "u": "months",
+   "rng": "6–18",
+   "why": "Texas: GLJ sees 12–18 months for projects with power but no state permit"
+  }
+ },
+ "views": {
+  "msft": {
+   "grade": "Low",
+   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built, and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Microsoft can absorb a 12-month Abilene slip and redirect capacity to Wisconsin, Iowa and Wyoming; slower industry supply also supports Azure pricing. Rallied 6.6% on Nov 4, a sign the market sees it as a relative winner.",
+   "moves": [
+    "Shift Abilene phase to Wisconsin/Wyoming",
+    "Lean on leased neocloud capacity already contracted",
+    "Fund grid upgrades to keep Atlanta expansions moving"
+   ]
+  },
+  "amzn": {
+   "grade": "Medium",
+   "view": "Exposure is Georgia ($11B under construction) and Ohio, where Trenton (~1 GW) and Sunbury were blocked by voters. Under-construction Georgia work should be grandfathered, but new phases face the pause. AWS has the deepest bench of friendly-state sites (Mississippi, North Carolina, Indiana, Pennsylvania nuclear) and over 2 GW of committed capacity elsewhere, so the cost is timing, not lost demand.",
+   "moves": [
+    "Redirect Ohio phases to Indiana/Mississippi",
+    "Accelerate Susquehanna nuclear campus",
+    "Offer ratepayer-protection tariffs in Georgia"
+   ]
+  },
+  "googl": {
+   "grade": "Medium-High",
+   "view": "The $40B Texas plan (Armstrong and Haskell counties) is still mostly planned, so it sits in the zone Jefferies flags as most exposed. Google pairs sites with its own power (Intersect), which is the template for winning approval under a ratepayer-first regime, but sales-tax exemption loss alone could add ~$2B per GW. Oklahoma and Arkansas are ready alternatives.",
+   "moves": [
+    "Move Texas phases to Oklahoma (Mayes) and Arkansas",
+    "Co-locate generation to sidestep grid-cost fights",
+    "Phase Texas builds to fit grandfathered permits"
+   ]
+  },
+  "meta": {
+   "grade": "High",
+   "view": "Most exposed hyperscaler: El Paso (1 GW JV) in Texas, Piqua (1.4 GW) blocked in Ohio, and the 5 GW Hyperion bet in Louisiana that now draws moratorium speculation. Meta has negative quarterly free cash flow and a negative S&P outlook, so delay costs bite harder, and management has openly said it is weighing overseas sites. Louisiana staying friendly is the key swing factor.",
+   "moves": [
+    "Concentrate on Hyperion and Lebanon, Indiana",
+    "Push El Paso work ahead of the Texas pause",
+    "Build overseas capacity (management flagged)"
+   ]
+  },
+  "orcl": {
+   "grade": "High",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) plus Michigan opposition. Most are under construction and should be grandfathered from new approvals, but state permits and ERCOT large-load service are still exposed. Oracle is debt-funded with negative free cash flow, so a 12-month slip on ~2 GW is expensive. New Mexico and Wisconsin Stargate sites are the hedge.",
+   "moves": [
+    "Rush Shackelford buildings to energise before Jan 19",
+    "Shift incremental OpenAI capacity to New Mexico/Wisconsin",
+    "Self-fund generation at Shackelford"
+   ]
+  },
+  "sbank": {
+   "grade": "High",
+   "view": "Milam County (1.2 GW, Texas) and Lordstown (Ohio, town ban) are both in hostile states. SoftBank/SB Energy owns the power at Milam, which helps, but OpenAI's funding chain is leveraged and sensitive to delay.",
+   "moves": [
+    "Use SB Energy generation to avoid grid-cost fights",
+    "Re-site Lordstown capacity"
+   ]
+  },
+  "spcx": {
+   "grade": "Low-Medium",
+   "view": "Memphis/Southaven sits in Tennessee and Mississippi, outside the three new Democratic governorships. Local turbine permits remain the risk, but the build is largely done.",
+   "moves": [
+    "Keep power plant on the Mississippi side"
+   ]
+  },
+  "crwv": {
+   "grade": "Medium",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton). The bigger issue is financing: as a debt-funded builder, every month of delay adds interest and covenant risk. Fell 12% Thursday.",
+   "moves": [
+    "Lean on North Dakota (Applied Digital) and Pennsylvania",
+    "Prioritise energised capacity in contracts"
+   ]
+  },
+  "nbis": {
+   "grade": "Low",
+   "view": "US footprint is Missouri and New Jersey, neither directly hit. The 17% drop looks like sentiment and financing contagion rather than site risk, a possible mispricing.",
+   "moves": [
+    "Keep expanding in Missouri/New Jersey",
+    "Use Finland/Israel capacity as a hedge"
+   ]
+  },
+  "iren": {
+   "grade": "High",
+   "view": "Childress (750 MW, operating) and the 2 GW Sweetwater site are both in Texas. Sweetwater's energisation is ERCOT-gated, which is exactly where a moratorium bites. Highest share of pipeline at risk among listed names.",
+   "moves": [
+    "Energise Sweetwater before new rules",
+    "Seek grandfathering via existing interconnection agreements"
+   ]
+  },
+  "apld": {
+   "grade": "Low",
+   "view": "North Dakota sites; Harwood voters backed the project 3-to-1, the one industry win on Nov 3. The 14% fall was sentiment; fundamentally a beneficiary as capacity migrates north.",
+   "moves": [
+    "Market as the friendly-state alternative"
+   ]
+  },
+  "glxy": {
+   "grade": "High",
+   "view": "Helios in Dickens County, Texas, is the whole AI story; further phases need ERCOT approvals.",
+   "moves": [
+    "Phase within existing interconnection"
+   ]
+  },
+  "cifr": {
+   "grade": "Medium-High",
+   "view": "Barber Lake is in Texas but backstopped by Google, which lowers financing risk.",
+   "moves": [
+    "Lean on the Google backstop"
+   ]
+  },
+  "frmi": {
+   "grade": "Very High",
+   "view": "11 GW Amarillo plan with no anchor tenant: the purest play on Texas approvals and the most likely to be delayed indefinitely.",
+   "moves": [
+    "Seek federal (DOE) land or nuclear route"
+   ]
+  },
+  "crusoe": {
+   "grade": "Low",
+   "view": "Cheyenne, Wyoming with its own gas power is the template for friendly-state builds.",
+   "moves": []
+  },
+  "qts": {
+   "grade": "Medium",
+   "view": "Large Georgia exposure via Fayetteville.",
+   "moves": [
+    "Shift to Alabama/Mississippi"
+   ]
+  }
+ },
+ "dev": [
+  {
+   "d": "2026-11-05",
+   "co": [
+    "meta"
+   ],
+   "t": "Meta president says data center construction will be very challenging; every hyperscaler weighing building outside the US.",
+   "src": "https://www.aol.com/articles/smart-people-saying-midterms-impact-155405000.html"
+  },
+  {
+   "d": "2026-11-05",
+   "co": [
+    "*"
+   ],
+   "t": "Jefferies trims US incremental capacity to 112.8 GW by 2030 from 122.4 GW; expects new starts to migrate to friendlier states.",
+   "src": "https://www.aol.com/articles/smart-people-saying-midterms-impact-155405000.html"
+  },
+  {
+   "d": "2026-11-05",
+   "co": [
+    "*"
+   ],
+   "t": "UBS: ~30% of expected 2028 additions at risk, Texas alone 18 GW; data centers more likely to pay for grid upgrades.",
+   "src": "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains"
+  },
+  {
+   "d": "2026-11-04",
+   "co": [
+    "orcl",
+    "sbank",
+    "googl",
+    "meta",
+    "iren",
+    "glxy",
+    "cifr",
+    "frmi"
+   ],
+   "t": "Texas governor-elect Hinojosa promises to extend the data center moratorium until the Legislature passes protections; local communities would get a vote.",
+   "src": "https://www.datacenterdynamics.com/en/news/texas-governor-elect-gina-hinojosa-promises-continued-data-center-moratorium-further-legislation/"
+  },
+  {
+   "d": "2026-11-04",
+   "co": [
+    "amzn",
+    "meta"
+   ],
+   "t": "Ohio: at least 14 municipalities pass bans or limits; Trenton closes annexation route for ~1 GW Amazon campus, Piqua targets 1.4 GW Meta campus.",
+   "src": "https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/"
+  },
+  {
+   "d": "2026-11-04",
+   "co": [
+    "*"
+   ],
+   "t": "GLJ: Texas projects with power but no state permit face 12–18 month delays; projects lacking both could move to Louisiana and Oklahoma.",
+   "src": "https://www.1012industryreport.com/politics/election-results-could-shift-more-data-center-projects-to-louisiana/"
+  }
+ ],
+ "sources": [
+  [
+   "Epoch AI: Stargate US sites",
+   "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+  ],
+  [
+   "Jefferies via Bisnow/Yahoo: 13 GW at risk in Texas",
+   "https://finance.yahoo.com/real-estate/articles/13-gw-immediate-risk-texas-003600507.html"
+  ],
+  [
+   "Texas Tribune: what happens to Texas data centers",
+   "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+  ],
+  [
+   "Fast Company: limits of governor power",
+   "https://www.fastcompany.com/91634444/texas-wanted-to-power-americas-ai-boom-its-new-governor-could-change-everything"
+  ],
+  [
+   "Scientific American: 41 ballot measures",
+   "https://www.scientificamerican.com/article/2026-election-results-show-widespread-opposition-to-ai-data-centers/"
+  ],
+  [
+   "Fortune: Ohio ballot measures",
+   "https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/"
+  ],
+  [
+   "1012 Industry Report: shift to Louisiana",
+   "https://www.1012industryreport.com/politics/election-results-could-shift-more-data-center-projects-to-louisiana/"
+  ],
+  [
+   "Fox Business: UBS on 2028 additions",
+   "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains"
+  ],
+  [
+   "AOL/BI: Meta, Jefferies quotes",
+   "https://www.aol.com/articles/smart-people-saying-midterms-impact-155405000.html"
+  ],
+  [
+   "CryptoBriefing: Meta, Louisiana moratorium odds",
+   "https://cryptobriefing.com/meta-faces-political-hurdles-for-us-data-centers-post-midterms-eyes-overseas/"
+  ],
+  [
+   "Luminix: moratorium wave",
+   "https://www.useluminix.com/reports/industry-analysis/data-center-moratoriums-after-the-midterms"
+  ],
+  [
+   "TechRadar: Abilene expansion dropped",
+   "https://www.techradar.com/pro/oracle-and-openai-drop-plans-for-mega-stargate-ai-us-data-center"
+  ]
+ ]
+}
