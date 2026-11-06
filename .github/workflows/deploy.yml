@@ -154,7 +154,7 @@ jobs:
           if [ -f data/sofr.json ]; then cp data/sofr.json _site/data/; fi
           if [ -f data/us-recap.json ]; then cp data/us-recap.json _site/data/; fi
           mkdir -p _site/us && cp us/index.html _site/us/
-          cp data/datacenter.json data/ai-debt.json _site/data/
+          cp data/datacenter.json data/ai-debt.json data/us-datacenters.json _site/data/
           if [ -f data/curves.json ]; then cp data/curves.json _site/data/; fi
           mkdir -p _site/datacenter && cp datacenter/index.html _site/datacenter/
           mkdir -p _site/robotics && cp robotics/index.html _site/robotics/
