@@ -93,7 +93,7 @@ section{margin-top:40px}
 .bt tr.g td span{color:var(--muted);letter-spacing:.04em;text-transform:none;font-weight:500;margin-left:8px}
 .bt tr:not(.g):hover td{background:var(--accent-soft)}
 .ty{display:inline-block;font:600 9.5px var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
-.ty.Special,.ty.Ultra-long{border-color:var(--c3);color:var(--c3)}.is{font-size:11px;font-weight:600;letter-spacing:.02em}.is.CDB{color:var(--c3)}.is.ADBC{color:var(--c5)}.is.EXIM{color:var(--c4,var(--c1))}.is.NCD{color:var(--c6)}.ty.NCD{border-color:var(--c6);color:var(--c6)}.new{display:inline-block;font-size:10px;font-weight:600;padding:0 5px;border-radius:8px;background:var(--up,#2a7);color:#fff;vertical-align:1px}.ty.Discount{border-color:var(--c2);color:var(--c2)}
+.ty.Special,.ty.Ultra-long{border-color:var(--c3);color:var(--c3)}.is{font-size:11px;font-weight:600;letter-spacing:.02em}.is.CDB{color:var(--c3)}.is.ADBC{color:var(--c5)}.is.EXIM{color:var(--c4,var(--c1))}.is.NCD{color:var(--c6)}.is.SOE{color:var(--c2)}.is.Financial{color:var(--c5)}.ty.MTN,.ty.SCP,.ty.CP,.ty.PPN{border-color:var(--c2);color:var(--c2)}.ty.Tier-2,.ty.Perpetual,.ty.TLAC{border-color:var(--c5);color:var(--c5)}.ty.NCD{border-color:var(--c6);color:var(--c6)}.new{display:inline-block;font-size:10px;font-weight:600;padding:0 5px;border-radius:8px;background:var(--up,#2a7);color:#fff;vertical-align:1px}.ty.Discount{border-color:var(--c2);color:var(--c2)}
 .fstamp{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;margin:0 0 14px;font:500 12.5px var(--f-mono)}
 .fstamp b{font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-size:10.5px;margin-right:4px}
 .fstamp i.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin:0 6px 0 2px;vertical-align:middle}
@@ -368,7 +368,7 @@ section.crecap{margin-top:0}
 
   <section aria-labelledby="bH">
     <h2 id="bH">Bonds by code and ISIN</h2>
-    <p class="sub" id="bSub">Every outstanding China government bond and policy bank bond (China Development Bank, Agricultural Development Bank, Export-Import Bank), plus bank negotiable certificates of deposit (NCDs) traded on CFETS, one row per bond code with its ISIN. Curve yield is the issuer's CCDC curve read at the bond's remaining term; traded yield is the latest CFETS interbank deal today, and "vs curve" is the difference in basis points.</p>
+    <p class="sub" id="bSub">Every outstanding China government bond and policy bank bond (China Development Bank, Agricultural Development Bank, Export-Import Bank), plus bank negotiable certificates of deposit (NCDs), central SOE bonds and financial bonds (bank senior, Tier-2, perpetual and TLAC, securities, insurance) traded on CFETS, with the depository each is held at (CCDC 中债登 or SHCH 上清所), one row per bond code with its ISIN. Curve yield is the issuer's CCDC curve read at the bond's remaining term; traded yield is the latest CFETS interbank deal today, and "vs curve" is the difference in basis points.</p>
     <div class="ctl">
       <input type="search" id="bQ" placeholder="Code, ISIN or name" aria-label="Search bonds by code, ISIN or name">
       <div class="btns" id="bIss" role="group" aria-label="Issuer"></div>
@@ -417,7 +417,7 @@ section.crecap{margin-top:0}
   <footer id="foot">Curve and tenor history: ChinaBond (CCDC) 中债国债收益率曲线, yield to maturity, published for each business day after the Beijing close. Policy bank curve: ChinaBond (CCDC) 中债政策性金融债收益率曲线 for China Development Bank (国开), Agricultural Development Bank of China (农发) and Export-Import Bank of China (进出口), yield to maturity; dots are each issuer's bonds traded on CFETS today. Bond list, ISINs, coupons and maturities: CFETS bond information (chinamoney.com.cn). Traded yields: CFETS interbank cash-bond deals, intraday. Bond lending: CFETS 债券借贷日报 (daily, by tenor, published ~22:00 Beijing) and 债券借贷月报 (monthly, by tenor and bond type). Coupon shown is the bond's fixed coupon; discount bills have none. Yields in percent; changes in basis points. CGB futures (TS, TF, T, TL): delayed quotes, daily and 5-minute history from Sina Finance; official settlement prices from CFFEX daily statistics; implied yields computed by the dashboard from the cheapest-to-deliver bond and CFFEX conversion factors. Bond ↔ equity rotation: weekly CSI 300, China 10Y government bond yield, Shanghai + Shenzhen margin financing balance, and 511090 / 510300 ETF turnover from Eastmoney; signal and back-test computed by the dashboard. CMU bonds: HKMA Open API, List of CMU Instruments (instrument details, no prices); reference curves from the US Treasury daily par yield curve and ChinaBond (CCDC). Indicative, not an offer to trade.</footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-<script src="../assets/china.js?v=9"></script>
+<script src="../assets/china.js?v=10"></script>
 <script src="../assets/china-recap.js?v=2"></script>
 <script src="../assets/china-flows.js?v=1"></script>
 <script src="../assets/china-lending.js?v=1"></script>

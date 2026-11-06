@@ -308,7 +308,10 @@
   const bucket = (t) => BUCKETS.findIndex(([, b]) => t <= b + 1e-9);
   // Table rows: outstanding CGBs plus every outstanding policy bank bond (each issuer's register, with today's
   // CFETS trade where there is one). Built once per data load.
-  const ISS = ["All", "CGB", "CDB", "ADBC", "EXIM", "NCD"];
+  const ISS = ["All", "CGB", "CDB", "ADBC", "EXIM", "NCD", "SOE", "Financial"];
+  // type filters per issuer group (government bonds use Coupon / Special / Discount)
+  const TYPES = { SOE: ["All", "MTN", "SCP", "CP", "PPN", "Agency", "Enterprise"], Financial: ["All", "Senior", "Tier-2", "Perpetual", "TLAC", "Securities", "Insurance", "Other fin."], NCD: ["All"] };
+  const typesFor = (iss) => TYPES[iss] || ["All", "Coupon", "Special", "Discount"];
   const typeOf = (n = "") => /贴现/.test(n) ? "Discount" : /超长期?特别/.test(n) ? "Ultra-long special" : /特别/.test(n) ? "Special" : /储蓄/.test(n) ? "Savings" : "Coupon";
   const ageDays = (d) => d ? (Date.now() - Date.parse(d)) / 864e5 : 1e9;
   let allRows = null, allFor = null;
@@ -327,17 +330,21 @@
       }
     }
     // NCDs: those traded on CFETS (today, or the last session before today's first trades), vs the AAA NCD curve
-    for (const b of D.ncd?.bonds || []) if (b.ttm > 0) out.push({ ...b, type: "NCD", coupon: null, issue: null, iss: "NCD" });
+    for (const b of D.ncd?.bonds || []) if (b.ttm > 0) out.push({ ...b, type: "NCD", coupon: null, issue: null, iss: "NCD", dep: "SHCH" });
+    // SOE and financial bonds traded on CFETS, each vs its CCDC credit curve (AAA CP & note, AAA corporate, bank curves)
+    for (const [g, lab] of [["soe", "SOE"], ["fin", "Financial"]]) for (const b of D.credit?.[g]?.bonds || []) if (b.ttm > 0) out.push({ ...b, coupon: null, issue: null, iss: lab });
+    out.forEach((b) => { if (!b.dep) b.dep = "CCDC"; });
     out.forEach((b) => { b.isNew = ageDays(b.issue) <= 30; });
     allFor = D; return (allRows = out);
   }
   const COLS = [
     ["code", "Code", (b) => `<td class="code">${esc(b.code)}${b.isNew ? ` <span class="new" title="Issued ${esc(b.issue)}">New</span>` : ""}</td>`],
     ["isin", "ISIN", (b) => `<td>${esc(b.isin || "–")}</td>`],
-    ["name", "Name", (b) => `<td class="nm" title="${esc(b.name)}">${esc(b.name || "–")}</td>`],
+    ["name", "Name", (b) => `<td class="nm" title="${esc(b.name)}${b.who ? " · " + esc(b.who) : ""}">${esc(b.name || "–")}</td>`],
     ["iss", "Issuer", (b) => `<td><span class="is ${esc(b.iss)}">${esc(b.iss)}</span></td>`],
-    ["type", "Type", (b) => `<td><span class="ty ${esc(b.type.split(" ")[0])}">${esc(b.type)}</span></td>`],
-    ["coupon", "Coupon %", (b) => `<td>${b.type === "Discount" || b.type === "NCD" ? "–" : f2(b.coupon, 2)}</td>`],
+    ["type", "Type", (b) => `<td><span class="ty ${esc(b.type.split(" ")[0].replace(/[^A-Za-z-]/g, ""))}">${esc(b.type)}</span></td>`],
+    ["dep", "Depository", (b) => `<td title="${b.dep === "SHCH" ? "Shanghai Clearing House (上清所)" : "China Central Depository & Clearing (中债登)"}">${esc(b.dep || "–")}</td>`],
+    ["coupon", "Coupon %", (b) => `<td>${b.type === "Discount" || b.type === "NCD" || b.coupon == null ? "–" : f2(b.coupon, 2)}</td>`],
     ["mat", "Maturity", (b) => `<td${b.est ? ' title="Estimated from CFETS remaining term"' : ""}>${esc(b.mat || "–")}${b.est ? "*" : ""}</td>`],
     ["ttm", "Left (Y)", (b) => `<td>${f2(b.ttm, 2)}</td>`],
     ["curve", "CCDC curve %", (b) => `<td>${f2(b.curve, 4)}</td>`],
@@ -364,8 +371,10 @@
   function table() {
     const nNew = allBonds().filter((b) => b.isNew).length;
     $("bIss").innerHTML = [...ISS, ...(nNew ? ["New"] : [])].map((t) => `<button type="button" data-k="${t}" aria-pressed="${t === st.iss}">${t === "New" ? `New issues (${nNew})` : t}</button>`).join("");
-    $("bIss").querySelectorAll("button").forEach((b) => b.onclick = () => { st.iss = b.dataset.k; table(); });
-    $("bType").innerHTML = ["All", "Coupon", "Special", "Discount"].map((t) => `<button type="button" aria-pressed="${t === st.type}">${t}</button>`).join("");
+    $("bIss").querySelectorAll("button").forEach((b) => b.onclick = () => { st.iss = b.dataset.k; if (!typesFor(st.iss).includes(st.type)) st.type = "All"; table(); });
+    const tys = st.iss === "All" || st.iss === "New" ? ["All", "Coupon", "Special", "Discount"] : typesFor(st.iss);
+    if (!tys.includes(st.type)) st.type = "All";
+    $("bType").innerHTML = tys.map((t) => `<button type="button" aria-pressed="${t === st.type}">${t}</button>`).join("");
     $("bType").querySelectorAll("button").forEach((b) => b.onclick = () => { st.type = b.textContent; table(); });
     $("bGrp").innerHTML = [["bucket", "By tenor"], ["none", "Ungrouped"]].map(([k, l]) => `<button type="button" data-k="${k}" aria-pressed="${k === st.grp}">${l}</button>`).join("");
     $("bGrp").querySelectorAll("button").forEach((b) => b.onclick = () => { st.grp = b.dataset.k; table(); });
@@ -385,15 +394,15 @@
     } else html = R.map(line).join("");
     $("bBody").innerHTML = html;
     const all = allBonds(), n = (k) => all.filter((b) => b.iss === k).length;
-    $("bNote").textContent = `${R.length} of ${all.length} outstanding bonds shown (CGB ${n("CGB")}, CDB ${n("CDB")}, ADBC ${n("ADBC")}, EXIM ${n("EXIM")}, NCD ${n("NCD")}) · ${all.filter((b) => b.isin).length} with an ISIN on file · ${all.filter((b) => b.last != null).length} traded on CFETS today · ${nNew} issued in the last 30 days, tagged New. Policy bank bonds are compared with their own issuer's CCDC curve. NCDs: tens of thousands are outstanding, so only those traded on CFETS ${D.ncd?.tradeDay || "today"} are listed, compared with CCDC's AAA commercial bank NCD curve${D.ncd?.curve?.date ? ` (${D.ncd.curve.date})` : ""}, so lower-rated banks show a positive spread; * marks a maturity estimated from CFETS's remaining term. New issues can show no ISIN or coupon for a few days until CFETS publishes them. Click a column header to sort.`;
+    $("bNote").textContent = `${R.length} of ${all.length} outstanding bonds shown (CGB ${n("CGB")}, CDB ${n("CDB")}, ADBC ${n("ADBC")}, EXIM ${n("EXIM")}, NCD ${n("NCD")}, SOE ${n("SOE")}, Financial ${n("Financial")}) · ${all.filter((b) => b.isin).length} with an ISIN on file · ${all.filter((b) => b.last != null).length} traded on CFETS today · ${nNew} issued in the last 30 days, tagged New. Policy bank bonds are compared with their own issuer's CCDC curve. NCDs: tens of thousands are outstanding, so only those traded on CFETS ${D.ncd?.tradeDay || "today"} are listed, compared with CCDC's AAA commercial bank NCD curve${D.ncd?.curve?.date ? ` (${D.ncd.curve.date})` : ""}, so lower-rated banks show a positive spread. SOE (central state-owned enterprise) and Financial bonds: only those traded on CFETS ${D.credit?.tradeDay || "today"} are listed; SOE paper is compared with CCDC's AAA CP & note curve (MTN, SCP, CP, PPN) or AAA corporate curve (agency and enterprise bonds), bank bonds with CCDC's AAA commercial bank senior, AAA− Tier-2 or AA+ perpetual curves and securities firms with CCDC's securities company curve. Depository: CCDC (中债登) or SHCH (上清所), by bond type; * marks a maturity estimated from CFETS's remaining term. New issues can show no ISIN or coupon for a few days until CFETS publishes them. Click a column header to sort.`;
   }
   $("bQ").oninput = (e) => { st.q = e.target.value; table(); };
   $("bTr").onchange = (e) => { st.traded = e.target.checked; table(); };
   $("bMat").onchange = (e) => { st.mat = e.target.value; table(); };
   $("bDl").onclick = () => {
-    const head = ["code", "isin", "name", "issuer", "type", "coupon_pct", "issue", "maturity", "years_left", "ccdc_curve_pct", "cfets_last_pct", "cfets_wavg_pct", "chg_bp", "vs_curve_bp"];
+    const head = ["code", "isin", "name", "issuer", "type", "depository", "coupon_pct", "issue", "maturity", "years_left", "ccdc_curve_pct", "cfets_last_pct", "cfets_wavg_pct", "chg_bp", "vs_curve_bp"];
     const q = (v) => v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v;
-    const body = rows().map((b) => [b.code, b.isin, b.name, b.iss, b.type, b.coupon, b.issue, b.mat, b.ttm, b.curve, b.last, b.wavg, b.chg, b.vs].map(q).join(","));
+    const body = rows().map((b) => [b.code, b.isin, b.name, b.iss, b.type, b.dep, b.coupon, b.issue, b.mat, b.ttm, b.curve, b.last, b.wavg, b.chg, b.vs].map(q).join(","));
     const blob = new Blob(["﻿" + [head.join(","), ...body].join("\n")], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `china-bonds-by-code-isin-${D.curve?.date || "latest"}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
   };
