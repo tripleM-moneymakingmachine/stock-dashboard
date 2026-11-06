@@ -162,13 +162,20 @@
   // policy bank bonds: the register (every bond seen trading on CFETS) with today's CFETS last yield where traded
   const pbList = (k) => { const p = D?.pb?.[k]; if (!p) return []; const last = new Map((p.bonds || []).map((b) => [b.code, b.last])); return (p.reg?.length ? p.reg : p.bonds || []).map((b) => ({ ...b, last: last.get(b.code) ?? null })); };
   const findB = (k, code) => k ? pbList(k).find((x) => x.code === code) : (D.bonds || []).find((x) => x.code === code);
-  function bondSer(code, k = null) {
-    const key = `${k || "cgb"}:${code}`;
+  // SOE and financial: CCDC credit curves (standard tenors) and the bonds traded on CFETS today
+  const CRV = { note: ["SOE", "AAA CP & note"], corp: ["SOE", "AAA corporate"], bank: ["Fin.", "bank AAA senior"], t2: ["Fin.", "bank AAA− Tier-2"], perp: ["Fin.", "bank AA+ perpetual"], sec: ["Fin.", "securities co."] };
+  const crTen = (k, t) => D?.credit?.curves?.[k]?.tenors?.[t] || [];
+  const crName = (k) => CRV[k] ? `${CRV[k][0]} ${CRV[k][1]}` : k;
+  const crList = (g) => (D?.credit?.[g]?.bonds || []).filter((b) => b.ck && b.mat && b.ttm > 0);
+  const findC = (g, code) => crList(g).find((x) => x.code === code);
+  function bondSer(code, k = null, g = null) {
+    const key = `${g || k || "cgb"}:${code}`;
     if (bondCache[key]) return bondCache[key];
-    const b = findB(k, code); if (!b || !b.mat) return [];
-    const get = (t) => k ? pbTen(k, t) : ser(t);
+    const b = g ? findC(g, code) : findB(k, code); if (!b || !b.mat) return [];
+    const get = (t) => g ? crTen(b.ck, t) : k ? pbTen(k, t) : ser(t);
     const ts = TEN.filter((t) => get(t).length), maps = ts.map((t) => new Map(get(t))), mat = Date.parse(b.mat), out = [];
-    for (const [d] of get(10)) {
+    const base = get(10).length ? get(10) : get(TEN.find((t) => get(t).length));
+    for (const [d] of base || []) {
       if (b.issue && d < b.issue) continue;
       const ttm = (mat - Date.parse(d)) / (365.25 * 864e5);
       const pts = ts.map((t, i) => [t, maps[i].get(d)]).filter(([, y]) => y != null);
@@ -184,7 +191,7 @@
   const legSer = (k) => {
     if (!k) return [];
     const [x, a, c] = parts(k);
-    return x === "t" ? ser(+a) : x === "b" ? bondSer(a) : x === "q" ? pbTen(a, c) : x === "p" ? bondSer(c, a) : x === "f" ? FU?.[a] || [] : [];
+    return x === "t" ? ser(+a) : x === "b" ? bondSer(a) : x === "q" ? pbTen(a, c) : x === "p" ? bondSer(c, a) : x === "f" ? FU?.[a] || [] : x === "c" ? crTen(a, c) : x === "r" ? bondSer(c, null, a) : [];
   };
   const legName = (k) => {
     if (!k) return "";
@@ -192,11 +199,13 @@
     if (x === "t") return `CGB ${lab(+a)}`;
     if (x === "f") return futLab(a);
     if (x === "q") return `${bank(a)} ${lab(+c)}`;
+    if (x === "c") return `${crName(a)} ${lab(+c)}`;
+    if (x === "r") { const b = findC(a, c); return b ? `${a === "soe" ? "SOE" : "Fin."} ${b.code} ${b.name || ""}`.trim() : c; }
     const b = x === "p" ? findB(a, c) : findB(null, a), code = x === "p" ? c : a;
     return b ? `${x === "p" ? bank(a) + " " : ""}${b.code} ${b.name || ""}`.trim() : code;
   };
-  const legShort = (k) => { const [x, a, c] = parts(k); return x === "t" ? `CGB ${lab(+a)}` : x === "f" ? `${a} fut.` : x === "b" ? a : x === "q" ? `${bank(a)} ${lab(+c)}` : `${bank(a)} ${c}`; };
-  const isTraded = (k) => { const [x, a, c] = parts(k); return x === "b" ? findB(null, a)?.last != null : x === "p" ? findB(a, c)?.last != null : true; };
+  const legShort = (k) => { const [x, a, c] = parts(k); return x === "t" ? `CGB ${lab(+a)}` : x === "f" ? `${a} fut.` : x === "b" ? a : x === "q" ? `${bank(a)} ${lab(+c)}` : x === "c" ? `${crName(a)} ${lab(+c)}` : x === "r" ? `${a === "soe" ? "SOE" : "Fin."} ${findC(a, c)?.name || c}` : `${bank(a)} ${c}`; };
+  const isTraded = (k) => { const [x, a, c] = parts(k); return x === "b" ? findB(null, a)?.last != null : x === "p" ? findB(a, c)?.last != null : x === "r" ? !!findC(a, c) : true; };
   // maturity sectors for the bond pickers (the "Maturity sector" menu narrows Lines A–D to one sector)
   const SECTORS = [[0, 2, "less than 2Y"], [2, 5, "2Y – 5Y"], [5, 10, "5Y – 10Y"], [10, 20, "10Y – 20Y"], [20, 30, "20Y – 30Y"], [30, 50.01, "30Y – 50Y"]];
   function legOptions(sel, none, tradedOnly) {
@@ -214,7 +223,10 @@
       banks.map((k) => { const ts = TEN.filter((t) => pbTen(k, t).length); return ts.length ? `<optgroup label="${esc(bank(k))} · CCDC ${esc(bank(k))} curve standard tenors">${ts.map((t) => o(`q:${k}:${t}`, `${bank(k)} ${lab(t)} (CCDC ${bank(k)} curve)`)).join("")}</optgroup>` : ""; }).join("") +
       grp.map(([lo, hi, l]) => { const g = bonds.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && keep(null, b.code) && lo === sec[0] && !inSec(b))); return g.length ? `<optgroup label="CGB ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`b:${b.code}`, row(b, ""))).join("")}</optgroup>` : ""; }).join("") +
       banks.map((k) => { const all = pbList(k).filter((b) => b.mat && b.ttm > 0 && (!tradedOnly || b.last != null)).sort((a, b) => a.ttm - b.ttm);
-        return grp.map(([lo, hi, l]) => { const g = all.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && lo === sec[0] && keep(k, b.code) && !inSec(b))); return g.length ? `<optgroup label="${esc(bank(k))} ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`p:${k}:${b.code}`, row(b, bank(k) + " "))).join("")}</optgroup>` : ""; }).join(""); }).join("");
+        return grp.map(([lo, hi, l]) => { const g = all.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && lo === sec[0] && keep(k, b.code) && !inSec(b))); return g.length ? `<optgroup label="${esc(bank(k))} ${tradedOnly ? "traded on CFETS" : "bonds"}: ${l}">${g.map((b) => o(`p:${k}:${b.code}`, row(b, bank(k) + " "))).join("")}</optgroup>` : ""; }).join(""); }).join("") +
+      Object.keys(CRV).filter((k) => D?.credit?.curves?.[k]).map((k) => { const ts = TEN.filter((t) => crTen(k, t).length); return ts.length ? `<optgroup label="${esc(crName(k))} · CCDC curve standard tenors">${ts.map((t) => o(`c:${k}:${t}`, `${crName(k)} ${lab(t)} (CCDC curve)`)).join("")}</optgroup>` : ""; }).join("") +
+      [["soe", "SOE"], ["fin", "Financial"]].map(([g, gl]) => { const all = crList(g).filter((b) => D?.credit?.curves?.[b.ck]?.tenors && Object.keys(D.credit.curves[b.ck].tenors).length).sort((a, b) => a.ttm - b.ttm);
+        return grp.map(([lo, hi, l]) => { const sel2 = all.filter((b) => (b.ttm >= lo && b.ttm < hi) || (sec && lo === sec[0] && sel === `r:${g}:${b.code}` && !inSec(b))); return sel2.length ? `<optgroup label="${gl} traded on CFETS: ${l}">${sel2.map((b) => o(`r:${g}:${b.code}`, row({ ...b, coupon: null }, ""))).join("")}</optgroup>` : ""; }).join(""); }).join("");
   }
   const tkey = (p) => { if (p?.time == null) return null; const t = p.time; return typeof t === "object" ? `${t.year}-${String(t.month).padStart(2, "0")}-${String(t.day).padStart(2, "0")}` : t; };
   // Lines: A (set by tenor buttons/tiles), B, C, D. C and D list tenors plus only the bonds with a CFETS last yield today.

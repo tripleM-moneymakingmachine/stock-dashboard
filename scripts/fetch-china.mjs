@@ -260,7 +260,7 @@ const crStart = Date.now();
 for (const c of CR) {
   const was = crWas.curves?.[c.k];
   // CCDC publishes once a day (evening); re-read at most every 3 hours so the hourly site build stays fast
-  if (was?.pts?.length && (was.date === today || Date.now() - (was.at || 0) < 3 * 3600e3)) { crCurves[c.k] = was; continue; }
+  if (was?.pts?.length && (was.date === today || Date.now() - (was.at || 0) < 3 * 3600e3) && Object.keys(was.tenors || {}).length) { crCurves[c.k] = was; continue; }
   const id = findId(c);
   let got = null;
   for (let i = 0; i < 5 && id && !got && Date.now() - crStart < 90000; i++) {
@@ -268,6 +268,11 @@ for (const c of CR) {
     try { got = await curveOn(id, d, 20000, 5); } catch (e) { log(`${c.cn} ${d} failed: ${e.message}`); }
   }
   crCurves[c.k] = got ? { cn: c.cn, id, date: got.date, pts: got.pts, at: Date.now() } : was || null;
+  // one year of CCDC standard tenors for the yield history chart (Lines A–D)
+  if (crCurves[c.k] && id && Date.now() - crStart < 240000) {
+    const cv = crCurves[c.k], tens = TENORS.filter((t) => t <= cv.pts.at(-1)[0] + 1e-9 && t <= 30);
+    try { cv.tenors = await history(id, cv, was?.tenors, tens, c.k, 20000); } catch (e) { log(`${c.k} history failed: ${e.message}`); cv.tenors = was?.tenors || {}; }
+  } else if (crCurves[c.k]) crCurves[c.k].tenors = crCurves[c.k].tenors || was?.tenors || {};
   log(`${c.cn}: ${got ? `${got.date}, ${got.pts.length} points` : crCurves[c.k] ? "kept previous" : "none"}${id ? "" : " (no id found)"}`);
 }
 const crFresh = Object.keys(crTrades).length > 0;
@@ -279,7 +284,7 @@ const crBonds = (grp) => crFresh ? Object.entries(crTrades).filter(([, b]) => b.
   return { code, isin: b.isin, name: b.short, who: issuerOf(b.short), type, dep: depOf(type, b.nm), ck, mat: shDate(Date.parse(base + "T12:00:00+08:00") + ttm * 365.25 * 864e5), est: true, ttm: +ttm.toFixed(3), last: b.last, wavg: b.wavg, chg: b.chg, curve: cy == null ? null : +cy.toFixed(4), vs: cy == null || ttm < 0.05 ? null : +((b.last - cy) * 100).toFixed(1) }; // within ~18 days of maturity or call, yields are too noisy for a spread
 }).filter(Boolean).sort((a, b) => a.ttm - b.ttm) : (crWas[grp]?.bonds || []);
 const credit = {
-  curves: Object.fromEntries(Object.entries(crCurves).filter(([, v]) => v).map(([k, v]) => [k, { cn: v.cn, date: v.date, pts: v.pts, at: v.at || Date.now() }])),
+  curves: Object.fromEntries(Object.entries(crCurves).filter(([, v]) => v).map(([k, v]) => [k, { cn: v.cn, date: v.date, pts: v.pts, at: v.at || Date.now(), tenors: v.tenors || {} }])),
   soe: { name: "Central SOE bonds", bonds: crBonds("soe") }, fin: { name: "Financial bonds", bonds: crBonds("fin") },
   tradeDay: crFresh ? dayOf(crTradeTime) : crWas.tradeDay || null, tradeTime: crFresh ? crTradeTime : crWas.tradeTime || null,
 };
