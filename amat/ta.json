@@ -1,18 +1,18 @@
 {
- "asof": "Nov 5, 2026",
- "close": 319.25,
+ "asof": "Nov 6, 2026",
+ "close": 332.71,
  "bias": {
-  "en": "Bearish · oversold, down to the March lows",
-  "zh": "看空 · 超卖，跌至 3 月低点"
+  "en": "Bearish · oversold bounce faded under $350",
+  "zh": "看空 · 超卖反弹在 $350 下方回落"
  },
  "read": [
   {
-   "en": "Applied Materials fell 13.6% on Nov 5 to $319.25, trading $316.95–349.99 on 2.2 times its 20-day average volume. It is below the falling 5-day ($367.04), 10-day ($383.36), 30-day ($445.27) and 100-day ($501.66) and the rising 200-day ($445.29). MACD has been below its signal since Oct 13, below zero, with the histogram widening; Parabolic SAR has been bearish since Nov 2 ($421.95), and RSI is 26, oversold.",
-   "zh": "应用材料 11月5日下跌 13.6%，收于 $319.25，盘中区间 $316.95–349.99，成交量为 20 日均量的 2.2 倍。股价位于下行的 5 日（$367.04）、10 日（$383.36）、30 日（$445.27）和 100 日均线（$501.66）以及上行的 200 日均线（$445.29）下方。MACD 自 10月13日起位于信号线下方，处于零轴下方，柱状图扩大；抛物线 SAR 自 11月2日起看空（$421.95），RSI 为 26，处于超卖区。"
+   "en": "Applied Materials rose 4.2% on Nov 6 to $332.71, trading $329.29–348.71 after opening at $346.15. It remains below the falling 5-day ($355.6), 10-day ($378.9), 30-day ($440.2) and 100-day ($499.3) and the rising 200-day ($445.4) averages. MACD has been below its signal since Oct 13, below zero, with the histogram still widening; Parabolic SAR has been bearish since Nov 2 ($415.65), and RSI is 30.5.",
+   "zh": "应用材料 11月6日上涨 4.2%，收于 $332.71，开盘 $346.15，盘中区间 $329.29–348.71。股价仍位于下行的 5 日（$355.6）、10 日（$378.9）、30 日（$440.2）和 100 日均线（$499.3）以及上行的 200 日均线（$445.4）下方。MACD 自 10月13日起位于信号线下方，处于零轴下方，柱状图仍在扩大；抛物线 SAR 自 11月2日起看空（$415.65），RSI 为 30.5。"
   },
   {
-   "en": "The gap lower broke the $362.9 Nov 4 low and the $355.3–359 March–April highs, and the close is the lowest since Feb 5. Resistance is $350 (Nov 5 high), then $355.3–363 (Mar 10 and Apr 1 highs, Nov 4 low) and $367 (5-day). Support is $315.7–317 (Nov 5, Mar 9 and Jan 20 lows), then $311.1 (Jan 23 low) and $297–298. A close above $350 would target $355–363; below $315.7, $311.",
-   "zh": "跳空下跌跌破 11月4日低点 $362.9 和 3–4月高点 $355.3–359，收盘为 2月5日以来最低。阻力为 $350（11月5日高点），其次 $355.3–363（3月10日和4月1日高点、11月4日低点）和 $367（5 日均线）。支撑为 $315.7–317（11月5日、3月9日和1月20日低点），其次 $311.1（1月23日低点）和 $297–298。若收盘站上 $350，下一目标看 $355–363；若跌破 $315.7，则看 $311。"
+   "en": "The bounce held the $315.7–317 support but faded from $348.7, short of the $350 resistance. Resistance is $348.7–350 (Nov 5–6 highs), then $355.3–359 (Mar 10 and Apr 1 highs, 5-day) and $362.9 (Nov 4 low). Support is $329.3 (Nov 6 low), then $315.7–317 and $311.1. A close above $350 would target $355–363; below $315.7, $311.",
+   "zh": "反弹守住 $315.7–317 支撑，但从 $348.7 回落，未能触及 $350 阻力。阻力为 $348.7–350（11月5–6日高点），其次 $355.3–359（3月10日和4月1日高点、5 日均线）和 $362.9（11月4日低点）。支撑为 $329.3（11月6日低点），其次 $315.7–317 和 $311.1。若收盘站上 $350，下一目标看 $355–363；若跌破 $315.7，则看 $311。"
   }
  ],
  "levels": {
@@ -20,26 +20,33 @@
    [
     350,
     {
-     "en": "Nov 5 high $349.99",
-     "zh": "11月5日高点 $349.99"
+     "en": "Nov 5 high $349.99; Nov 6 high $348.71",
+     "zh": "11月5日高点 $349.99；11月6日高点 $348.71"
     }
    ],
    [
-    359,
+    357,
     {
-     "en": "Mar 10 and Apr 1 highs ($355.3–359); Nov 4 low $362.9, lost",
-     "zh": "3月10日和4月1日高点（$355.3–359）；11月4日低点 $362.9，已失守"
+     "en": "Mar 10 and Apr 1 highs ($355.3–359); 5-day average $355.6",
+     "zh": "3月10日和4月1日高点（$355.3–359）；5日均线 $355.6"
     }
    ],
    [
-    367,
+    363,
     {
-     "en": "5-day average $367.04",
-     "zh": "5日均线 $367.04"
+     "en": "Nov 4 low $362.9",
+     "zh": "11月4日低点 $362.9"
     }
    ]
   ],
   "s": [
+   [
+    329.3,
+    {
+     "en": "Nov 6 low $329.29",
+     "zh": "11月6日低点 $329.29"
+    }
+   ],
    [
     316,
     {
@@ -52,13 +59,6 @@
     {
      "en": "Jan 23 low",
      "zh": "1月23日低点"
-    }
-   ],
-   [
-    297.5,
-    {
-     "en": "Jan 14 low $297; Jan 6 high $298.2",
-     "zh": "1月14日低点 $297；1月6日高点 $298.2"
     }
    ]
   ]

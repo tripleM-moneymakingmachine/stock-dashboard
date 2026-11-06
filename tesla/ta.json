@@ -1,45 +1,52 @@
 {
- "asof": "Nov 5, 2026",
- "close": 343.69,
+ "asof": "Nov 6, 2026",
+ "close": 358.22,
  "bias": {
-  "en": "Breakdown · lost every average, under the September lows",
-  "zh": "破位下行 · 跌破所有均线，跌至 9 月低点下方"
+  "en": "Rebound · reclaimed the September lows, under every average",
+  "zh": "反弹 · 收复 9 月低点，仍在所有均线下方"
  },
  "read": [
   {
-   "en": "Tesla fell 10.8% on Nov 5 to $343.69, trading $338.15–374.23 on heavy volume. It is now below every average: the falling 5-day ($386.2), 200-day ($384.3) and 100-day ($367.3) and the rising 10-day ($391.0) and 30-day ($376.9). MACD crossed below its signal on Nov 5, still above zero; Parabolic SAR has been bearish since Nov 4 ($413.46), and RSI is 36.",
-   "zh": "特斯拉 11月5日下跌 10.8%，收于 $343.69，盘中区间 $338.15–374.23，成交量明显放大。股价现已位于所有均线下方：下行的 5 日（$386.2）、200 日（$384.3）和 100 日均线（$367.3），以及上行的 10 日（$391.0）和 30 日均线（$376.9）。MACD 于 11月5日下穿信号线，仍在零轴上方；抛物线 SAR 自 11月4日起看空（$413.46），RSI 为 36。"
+   "en": "Tesla rose 4.2% on Nov 6 to $358.22, trading $347.60–363.84. It remains below every average: the falling 5-day ($377.9), 100-day ($366.8) and 200-day ($383.9) and the rising 10-day ($389.6) and 30-day ($376.4). MACD has been below its signal since Nov 5, still above zero, histogram widening; Parabolic SAR has been bearish since Nov 4 ($410.44), and RSI is 42.",
+   "zh": "特斯拉 11月6日上涨 4.2%，收于 $358.22，盘中区间 $347.60–363.84。股价仍位于所有均线下方：下行的 5 日（$377.9）、100 日（$366.8）和 200 日均线（$383.9），以及上行的 10 日（$389.6）和 30 日均线（$376.4）。MACD 自 11月5日起位于信号线下方，仍在零轴上方，柱状图扩大；抛物线 SAR 自 11月4日起看空（$410.44），RSI 为 42。"
   },
   {
-   "en": "The drop broke the 200-day, the $375.5–378 and $368 supports and closed under the $345.9–349.3 September–October lows, all now resistance. Resistance is $345.9–349.3, then $367.3–368.1 (100-day, Oct 19 close) and $384.3–388 (200-day, $388 cap). Support is $337.2–338.2 (Apr 7 and Nov 5 lows), then $325.2–331.1 (August lows) and $315.5. A close above $349.3 would target $367–368; below $337.2, $325–331.",
-   "zh": "此次下跌跌破 200 日均线、$375.5–378 和 $368 支撑，并收于 9–10月低点 $345.9–349.3 下方，这些位置均转为阻力。阻力为 $345.9–349.3，其次 $367.3–368.1（100 日均线、10月19日收盘）和 $384.3–388（200 日均线、$388 上限）。支撑为 $337.2–338.2（4月7日和11月5日低点），其次 $325.2–331.1（8月低点）和 $315.5。若收盘站上 $349.3，下一目标看 $367–368；若跌破 $337.2，则看 $325–331。"
+   "en": "The bounce reclaimed the $345.9–349.3 September–October lows, support again; the Nov 6 low ($347.60) held inside that zone. Resistance is $366.8–368.1 (100-day, Oct 19 close), then $376.4–377.9 (30 and 5-day) and $383.9–388 (200-day, $388 cap). Support is $345.9–349.3, then $337.2–338.2 (Apr 7 and Nov 5 lows) and $325.2–331.1. A close above $368.1 would target $376–378; below $345.9, $337–338.",
+   "zh": "此次反弹收复 9–10月低点 $345.9–349.3，重新转为支撑；11月6日低点（$347.60）守在该区间内。阻力为 $366.8–368.1（100 日均线、10月19日收盘），其次 $376.4–377.9（30 日和 5 日均线）和 $383.9–388（200 日均线、$388 上限）。支撑为 $345.9–349.3，其次 $337.2–338.2（4月7日和11月5日低点）和 $325.2–331.1。若收盘站上 $368.1，下一目标看 $376–378；若跌破 $345.9，则看 $337–338。"
   }
  ],
  "levels": {
   "r": [
    [
-    347.5,
+    368,
     {
-     "en": "Sep 30 low $345.88; Oct 16 low $349.33, lost",
-     "zh": "9月30日低点 $345.88；10月16日低点 $349.33，已失守"
+     "en": "100-day average $366.8; Oct 19 close $368.1",
+     "zh": "100日均线 $366.8；10月19日收盘 $368.1"
     }
    ],
    [
-    368,
+    377,
     {
-     "en": "100-day average $367.3; Oct 19 close $368.1",
-     "zh": "100日均线 $367.3；10月19日收盘 $368.1"
+     "en": "30-day average $376.4; 5-day average $377.9",
+     "zh": "30日均线 $376.4；5日均线 $377.9"
     }
    ],
    [
     388,
     {
-     "en": "$388 cap since March; 200-day average $384.3",
-     "zh": "3月以来 $388 上限；200日均线 $384.3"
+     "en": "$388 cap since March; 200-day average $383.9",
+     "zh": "3月以来 $388 上限；200日均线 $383.9"
     }
    ]
   ],
   "s": [
+   [
+    347.5,
+    {
+     "en": "Sep 30 low $345.88; Oct 16 low $349.33, reclaimed; Nov 6 low $347.60",
+     "zh": "9月30日低点 $345.88；10月16日低点 $349.33，已收复；11月6日低点 $347.60"
+    }
+   ],
    [
     337.7,
     {
@@ -52,13 +59,6 @@
     {
      "en": "Aug 18 low $331.12; Aug 13 low $325.24",
      "zh": "8月18日低点 $331.12；8月13日低点 $325.24"
-    }
-   ],
-   [
-    315.5,
-    {
-     "en": "Aug 6 low",
-     "zh": "8月6日低点"
     }
    ]
   ]

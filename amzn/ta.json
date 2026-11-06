@@ -1,18 +1,18 @@
 {
- "asof": "Nov 5, 2026",
- "close": 260.21,
+ "asof": "Nov 6, 2026",
+ "close": 259.3,
  "bias": {
-  "en": "Rebound pausing · gap partly filled, back under $263.9",
-  "zh": "反弹暂停 · 缺口部分回补，跌回 $263.9 下方"
+  "en": "Uptrend pausing · holding $258, capped at $264–265",
+  "zh": "上升趋势暂歇 · 守住 $258，受制于 $264–265"
  },
  "read": [
   {
-   "en": "Amazon fell 2.2% on Nov 5 to $260.21, trading $252.32–273.23 on 1.8 times its 20-day average volume. It holds above the rising 5-day ($252.58), the falling 10-day ($251.15) and 30-day ($253.39), and the rising 100-day ($252.38) and 200-day ($243.82). MACD crossed above its signal on Nov 4 and is just above zero; Parabolic SAR turned bullish on Nov 4 ($230.20), and RSI is 55.",
-   "zh": "亚马逊 11月5日下跌 2.2%，收于 $260.21，盘中区间 $252.32–273.23，成交量为 20 日均量的 1.8 倍。股价仍位于上行的 5 日均线（$252.58）、下行的 10 日（$251.15）和 30 日均线（$253.39）以及上行的 100 日（$252.38）和 200 日均线（$243.82）上方。MACD 于 11月4日上穿信号线，略高于零轴；抛物线 SAR 于 11月4日转为看多（$230.20），RSI 为 55。"
+   "en": "Amazon slipped 0.3% on Nov 6 to $259.30, trading $258.53–264.18. It holds above all its averages: the rising 5-day ($256.4), 30-day ($253.7), 100-day ($252.5) and 200-day ($243.9) and the falling 10-day ($252.3). MACD crossed above its signal on Nov 4, above zero, with the histogram still rising; Parabolic SAR has been bullish since Nov 4 ($231.92), and RSI is 54.",
+   "zh": "亚马逊 11月6日微跌 0.3%，收于 $259.30，盘中区间 $258.53–264.18。股价位于所有均线上方：上行的 5 日（$256.4）、30 日（$253.7）、100 日（$252.5）和 200 日均线（$243.9），以及下行的 10 日均线（$252.3）。MACD 于 11月4日上穿信号线，位于零轴上方，柱状图仍在上升；抛物线 SAR 自 11月4日起看多（$231.92），RSI 为 54。"
   },
   {
-   "en": "The $273.23 high cleared the Aug 28 high but faded, and the close lost the $263.9–265.3 support (Nov 4 low, Oct 20 high), now resistance; the low filled most of the Nov 4 gap but held the averages. Resistance is $263.9–265.3, then $271.5–273.2 (Nov 4–5 highs) and $287.2 (Aug 3 high). Support is $257–259.5, then $251.2–253.4 (5, 10, 30 and 100-day) and $243.8 (200-day). A close above $265.3 would target $271.5–273; below $251, $244.",
-   "zh": "盘中高点 $273.23 越过 8月28日高点后回落，收盘失守 $263.9–265.3 支撑（11月4日低点、10月20日高点），该区域转为阻力；低点回补了 11月4日大部分缺口，但守住各条均线。阻力为 $263.9–265.3，其次 $271.5–273.2（11月4–5日高点）和 $287.2（8月3日高点）。支撑为 $257–259.5，其次 $251.2–253.4（5、10、30 和 100 日均线）和 $243.8（200 日均线）。若收盘站上 $265.3，下一目标看 $271.5–273；若跌破 $251，则看 $244。"
+   "en": "No level changed: the $257–259.5 support held at the $258.53 low, and the $264.18 high stopped under the $263.9–265.3 resistance. Resistance is $263.9–265.3 (Nov 4 low, Oct 20 high), then $271.5–273.2 (Nov 4–5 highs) and $287.2. Support is $257–259.5, then $252.3–253.7 (10, 30 and 100-day) and $243.9 (200-day). A close above $265.3 would target $271.5–273; below $257, $252–254.",
+   "zh": "关键位置未变：$257–259.5 支撑在 $258.53 低点守住，盘中高点 $264.18 未能突破 $263.9–265.3 阻力。阻力为 $263.9–265.3（11月4日低点、10月20日高点），其次 $271.5–273.2（11月4–5日高点）和 $287.2。支撑为 $257–259.5，其次 $252.3–253.7（10、30 和 100 日均线）和 $243.9（200 日均线）。若收盘站上 $265.3，下一目标看 $271.5–273；若跌破 $257，则看 $252–254。"
   }
  ],
  "levels": {
@@ -20,8 +20,8 @@
    [
     264.6,
     {
-     "en": "Nov 4 low $263.85; Oct 20 high $265.34, lost",
-     "zh": "11月4日低点 $263.85；10月20日高点 $265.34，已失守"
+     "en": "Nov 4 low $263.85; Oct 20 high $265.34; Nov 6 high $264.18",
+     "zh": "11月4日低点 $263.85；10月20日高点 $265.34；11月6日高点 $264.18"
     }
    ],
    [
@@ -43,19 +43,19 @@
    [
     258.3,
     {
-     "en": "Aug 21 low $257.0; Jul 16 high $258.1; Sep 21 high $259.5",
-     "zh": "8月21日低点 $257.0；7月16日高点 $258.1；9月21日高点 $259.5"
+     "en": "Nov 6 low $258.53; Aug 21 low $257.0; Sep 21 high $259.5",
+     "zh": "11月6日低点 $258.53；8月21日低点 $257.0；9月21日高点 $259.5"
     }
    ],
    [
-    252.3,
+    253,
     {
-     "en": "5, 10, 30 and 100-day averages ($251.2–253.4); Nov 5 low $252.32",
-     "zh": "5、10、30 和 100 日均线（$251.2–253.4）；11月5日低点 $252.32"
+     "en": "10, 30 and 100-day averages ($252.3–253.7); Nov 5 low $252.32",
+     "zh": "10、30 和 100 日均线（$252.3–253.7）；11月5日低点 $252.32"
     }
    ],
    [
-    243.8,
+    243.9,
     {
      "en": "200-day average",
      "zh": "200日均线"

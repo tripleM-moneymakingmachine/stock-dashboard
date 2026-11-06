@@ -1,22 +1,29 @@
 {
- "asof": "Nov 5, 2026",
- "close": 381.05,
+ "asof": "Nov 6, 2026",
+ "close": 375.86,
  "bias": {
-  "en": "Breakdown · gapped under every average, SAR flipped bearish",
-  "zh": "破位 · 跳空跌破所有均线，SAR 转空"
+  "en": "Breakdown · testing the $375.7 February low",
+  "zh": "破位 · 测试 2月低点 $375.7"
  },
  "read": [
   {
-   "en": "Rockwell Automation fell 14.2% on Nov 5 to $381.05, trading between $378.86 and $412.63 on heavy volume. It is below the falling 5-day ($429.5) and 100-day ($445.0) and the rising 10-day ($433.8), 30-day ($434.5) and 200-day ($427.3) averages. MACD crossed below its signal on Nov 5 and is below zero; Parabolic SAR flipped bearish on Nov 5 ($454.13), and RSI is 30.",
-   "zh": "罗克韦尔自动化 11月5日下跌 14.2%，收于 $381.05，盘中区间 $378.86–412.63，成交量明显放大。股价位于下行的 5 日（$429.5）和 100 日均线（$445.0）以及上行的 10 日（$433.8）、30 日（$434.5）和 200 日均线（$427.3）下方。MACD 于 11月5日下穿信号线，位于零轴下方；抛物线 SAR 于 11月5日转为看空（$454.13），RSI 为 30。"
+   "en": "Rockwell Automation fell 1.4% on Nov 6 to $375.86, trading $370.65–392.54 on volume about 2.2 times its 20-day average. It is below the falling 5-day ($417.5), 10-day ($428.8), 30-day ($432.5) and 100-day ($444.1) averages and the rising 200-day ($427.1). MACD crossed below its signal on Nov 5, below zero, histogram widening; Parabolic SAR flipped bearish on Nov 5 ($452.61), and RSI is 29.",
+   "zh": "罗克韦尔自动化 11月6日下跌 1.4%，收于 $375.86，盘中区间 $370.65–392.54，成交量约为 20 日均量的 2.2 倍。股价位于下行的 5 日（$417.5）、10 日（$428.8）、30 日（$432.5）和 100 日均线（$444.1）以及上行的 200 日均线（$427.1）下方。MACD 于 11月5日下穿信号线，位于零轴之下，柱状图扩大；抛物线 SAR 于 11月5日转为看空（$452.61），RSI 为 29。"
   },
   {
-   "en": "The gap lower broke the whole $423.6–437 support band (200, 10 and 30-day averages, Oct 30 low), now resistance, leaving a gap from $412.6 to $432.8. Resistance is $406.9–412.7 (Sep 17 and Oct 15 lows, Nov 5 high), then $427.3–434.5 and $445. Support is $375.7 (Feb 17 low), then $365–369.4 (early-April closes) and $347.5 (March lows). A close above $412.7 would target $427–434; below $375.7, $365–369.",
-   "zh": "跳空下跌跌破整个 $423.6–437 支撑带（200 日、10 日和 30 日均线、10月30日低点），该区域转为阻力，并在 $412.6 至 $432.8 之间留下缺口。阻力为 $406.9–412.7（9月17日和10月15日低点、11月5日高点），其次 $427.3–434.5 和 $445。支撑为 $375.7（2月17日低点），其次 $365–369.4（4月初收盘价）和 $347.5（3月低点）。若收盘站上 $412.7，下一目标看 $427–434；若跌破 $375.7，则看 $365–369。"
+   "en": "An early bounce to $392.54 faded; the $370.65 low dipped under the $375.7 Feb 17 low, but the close held just above it. Resistance is $392.5 (Nov 6 high), then $406.9–412.7 (Sep–Oct lows, Nov 5 high) and $427.1–432.8 (200, 10 and 30-day). Support is $375.7, then $365–370.7 and $347.5. A close above $392.5 would target $407–413; below $370.7, $365.",
+   "zh": "早盘反弹至 $392.54 后回落；盘中低点 $370.65 一度跌破 2月17日低点 $375.7，但收盘守在其上方。阻力为 $392.5（11月6日高点），其次 $406.9–412.7（9–10月低点、11月5日高点）和 $427.1–432.8（200 日、10 日和 30 日均线）。支撑为 $375.7，其次 $365–370.7 和 $347.5。若收盘站上 $392.5，下一目标看 $407–413；若跌破 $370.7，则看 $365。"
   }
  ],
  "levels": {
   "r": [
+   [
+    392.5,
+    {
+     "en": "Nov 6 high",
+     "zh": "11月6日高点"
+    }
+   ],
    [
     409.5,
     {
@@ -25,17 +32,10 @@
     }
    ],
    [
-    431,
+    430,
     {
-     "en": "200, 5, 10 and 30-day averages ($427.3–434.5); Nov 4 low $432.8",
-     "zh": "200日、5日、10日和30日均线（$427.3–434.5）；11月4日低点 $432.8"
-    }
-   ],
-   [
-    445,
-    {
-     "en": "100-day average $445.0",
-     "zh": "100日均线 $445.0"
+     "en": "200, 10 and 30-day averages ($427.1–432.5); Nov 4 low $432.8",
+     "zh": "200日、10日和30日均线（$427.1–432.5）；11月4日低点 $432.8"
     }
    ]
   ],
@@ -50,8 +50,8 @@
    [
     367,
     {
-     "en": "Early-April closes ($365.0–369.4)",
-     "zh": "4月初收盘价（$365.0–369.4）"
+     "en": "Early-April closes ($365.0–369.4); Nov 6 low $370.65",
+     "zh": "4月初收盘价（$365.0–369.4）；11月6日低点 $370.65"
     }
    ],
    [

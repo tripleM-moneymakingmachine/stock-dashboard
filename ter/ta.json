@@ -1,18 +1,18 @@
 {
- "asof": "Nov 5, 2026",
- "close": 212.74,
+ "asof": "Nov 6, 2026",
+ "close": 218.22,
  "bias": {
-  "en": "Bearish · oversold, broke $227, at the January lows",
-  "zh": "看空 · 超卖，跌破 $227，位于 1 月低点"
+  "en": "Bearish · oversold, holding the January lows",
+  "zh": "看空 · 超卖，守住 1 月低点"
  },
  "read": [
   {
-   "en": "Teradyne fell 15.2% on Nov 5 to $212.74, trading between $211.63 and $242.05 on heavy volume. It is below the falling 5-day ($253.7), 10-day ($282.0), 30-day ($349.8) and 100-day ($369.1) averages and the rising 200-day ($349.9). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 8 ($282.85), and RSI is 22, oversold.",
-   "zh": "泰瑞达 11月5日下跌 15.2%，收于 $212.74，盘中区间 $211.63–242.05，成交量明显放大。股价位于下行的 5 日（$253.7）、10 日（$282.0）、30 日（$349.8）和 100 日均线（$369.1）以及上行的 200 日均线（$349.9）下方。MACD 自 10月12日起位于信号线下方，处于零轴下方，柱状图扩大；抛物线 SAR 自 10月8日起看空（$282.85），RSI 为 22，处于超卖区。"
+   "en": "Teradyne rose 2.6% on Nov 6 to $218.22, fading from a $234.48 high (low $211.91). It is below the falling 5-day ($242.5), 10-day ($272.9), 30-day ($343.8) and 100-day ($367.2) averages and the rising 200-day ($349.9). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 8 ($268.61), and RSI is 24, oversold.",
+   "zh": "泰瑞达 11月6日上涨 2.6%，收于 $218.22，自盘中高点 $234.48 回落（低点 $211.91）。股价位于下行的 5 日（$242.5）、10 日（$272.9）、30 日（$343.8）和 100 日均线（$367.2）以及上行的 200 日均线（$349.9）下方。MACD 自 10月12日起位于信号线下方且在零轴下方，柱状图扩大；抛物线 SAR 自 10月8日起看空（$268.61），RSI 为 24，处于超卖区。"
   },
   {
-   "en": "The gap lower broke the $245.9–246.8, $238.8–240.7 and $227 supports, all now resistance; the close sits on the January lows. Resistance is $227, then $238.8–242.1 (Jan 29–Feb 2 lows, Nov 5 high) and $245.9–246.8. Support is $211.6–212.6 (Nov 5, Jan 5 and Jan 8 lows), then $199.3–200 and $193.4 (Dec 31 low). A close above $227 would target $239–242; below $211.6, $200.",
-   "zh": "跳空下跌跌破 $245.9–246.8、$238.8–240.7 和 $227 支撑，均转为阻力；收盘位于 1 月低点附近。阻力为 $227，其次 $238.8–242.1（1月29日至2月2日低点、11月5日高点）和 $245.9–246.8。支撑为 $211.6–212.6（11月5日、1月5日和1月8日低点），其次 $199.3–200 和 $193.4（12月31日低点）。若收盘站上 $227，下一目标看 $239–242；若跌破 $211.6，则看 $200。"
+   "en": "No level changed: the bounce failed under $227, and the Nov 6 low ($211.91) held the January-low support again. Resistance is $227 (Jan 26 low), then $234.5–242.1 (Nov 6 high, Jan 29–Feb 2 lows, Nov 5 high) and $245.9–246.8. Support is $211.6–212.6 (Nov 5–6, Jan 5 and Jan 8 lows), then $199.3–200 and $193.4 (Dec 31 low). A close above $227 would target $234–242; below $211.6, $200.",
+   "zh": "关键位未变：反弹在 $227 下方受阻，11月6日低点（$211.91）再次守住 1 月低点支撑。阻力为 $227（1月26日低点），其次 $234.5–242.1（11月6日高点、1月29日–2月2日低点、11月5日高点）和 $245.9–246.8。支撑为 $211.6–212.6（11月5–6日、1月5日和1月8日低点），其次 $199.3–200 和 $193.4（12月31日低点）。若收盘站上 $227，下一目标看 $234–242；若跌破 $211.6，则看 $200。"
   }
  ],
  "levels": {
@@ -27,8 +27,8 @@
    [
     240,
     {
-     "en": "Jan 29–Feb 2 lows ($238.8–240.7); Nov 5 high $242.05",
-     "zh": "1月29日至2月2日低点（$238.8–240.7）；11月5日高点 $242.05"
+     "en": "Nov 6 high $234.48; Jan 29–Feb 2 lows ($238.8–240.7); Nov 5 high $242.05",
+     "zh": "11月6日高点 $234.48；1月29日–2月2日低点（$238.8–240.7）；11月5日高点 $242.05"
     }
    ],
    [
@@ -43,8 +43,8 @@
    [
     212,
     {
-     "en": "Nov 5 low $211.63; Jan 5 and Jan 8 lows ($211.8–212.6)",
-     "zh": "11月5日低点 $211.63；1月5日和1月8日低点（$211.8–212.6）"
+     "en": "Nov 5–6 lows ($211.63–211.91); Jan 5 and Jan 8 lows ($211.8–212.6)",
+     "zh": "11月5–6日低点（$211.63–211.91）；1月5日和1月8日低点（$211.8–212.6）"
     }
    ],
    [

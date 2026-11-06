@@ -1,18 +1,18 @@
 {
- "asof": "Nov 5, 2026",
- "close": 535.93,
+ "asof": "Nov 6, 2026",
+ "close": 530.61,
  "bias": {
-  "en": "Uptrend · breakout faded, back under $541",
-  "zh": "上升趋势 · 突破回落，跌回 $541 下方"
+  "en": "Uptrend · sitting on the short-term averages",
+  "zh": "上升趋势 · 守在短期均线上"
  },
  "read": [
   {
-   "en": "Microsoft fell 3.6% on Nov 5 to $535.93, trading between $532.67 and $557.62 on heavy volume. It is above the falling 5-day ($528.4) and 10-day ($529.1) and the rising 30-day ($527.2), 100-day ($470.9) and 200-day ($439.5) averages. MACD has been below its signal since Oct 19 but above zero, with the histogram narrowing toward a cross; Parabolic SAR has been bullish since Nov 4 ($506.04), and RSI is 54.",
-   "zh": "微软 11月5日下跌 3.6%，收于 $535.93，盘中区间 $532.67–557.62，成交量放大。股价位于下行的 5 日（$528.4）和 10 日均线（$529.1）以及上行的 30 日（$527.2）、100 日（$470.9）和 200 日均线（$439.5）上方。MACD 自 10月19日起位于信号线下方但在零轴之上，柱状图收窄、趋向交叉；抛物线 SAR 自 11月4日起看多（$506.04），RSI 为 54。"
+   "en": "Microsoft slipped 1.0% on Nov 6 to $530.61, trading $524.61–538.30. It is just above the rising 5-day ($530.1), 10-day ($529.7) and 30-day ($527.7) averages and well above the rising 100-day ($472.3) and 200-day ($439.9). MACD has been below its signal since Oct 19 but above zero, the histogram near flat at -0.59; Parabolic SAR has been bullish since Nov 4 ($507.11), and RSI is 52.",
+   "zh": "微软 11月6日下跌 1.0%，收于 $530.61，盘中区间 $524.61–538.30。股价略高于上行的 5 日（$530.1）、10 日（$529.7）和 30 日均线（$527.7），并远高于上行的 100 日（$472.3）和 200 日均线（$439.9）。MACD 自 10月19日起位于信号线下方，但仍在零轴上方，柱状图接近持平（-0.59）；抛物线 SAR 自 11月4日起看多（$507.11），RSI 为 52。"
   },
   {
-   "en": "The breakout did not hold: the $557.62 high stalled under the $559.15 52-week high, and the close fell back below the $541.3–551.2 zone (Oct 29 high, Nov 4 low, Oct 13 high), now resistance. Resistance is $541.3–551.2, then $557.6–559.2. Support is $527.2–529.1 (5, 10 and 30-day), then $524.4 (Oct 16 low) and $505–506 (SAR, Nov 2 low). A close above $551.2 would target $559; below $527.2, $524 then $506.",
-   "zh": "突破未能守住：盘中高点 $557.62 在 52 周高点 $559.15 下方受阻，收盘跌回 $541.3–551.2 区域（10月29日高点、11月4日低点、10月13日高点）下方，该区域转为阻力。阻力为 $541.3–551.2，其次 $557.6–559.2。支撑为 $527.2–529.1（5 日、10 日和 30 日均线），其次 $524.4（10月16日低点）和 $505–506（SAR、11月2日低点）。若收盘站上 $551.2，下一目标看 $559；若跌破 $527.2，则先看 $524，再看 $506。"
+   "en": "No level changed: the dip found buyers at $524.6, just above the $524.4 Oct 16 low, and the close held the $527.7–530.1 averages. Resistance is $538.3 (Nov 6 high), then $541.3–551.2 (Oct 29 high, Nov 4 low, Oct 13 high) and $559.2 (52-week high). Support is $527.7–530.1, then $524.4–524.6 and $505–507 (SAR, Nov 2 low). A close above $551.2 would target $559; below $524.4, $505–507.",
+   "zh": "关键位未变：盘中回落在 $524.6 获得承接，略高于 10月16日低点 $524.4，收盘守住 $527.7–530.1 均线区。阻力为 $538.3（11月6日高点），其次 $541.3–551.2（10月29日高点、11月4日低点、10月13日高点）和 $559.2（52 周高点）。支撑为 $527.7–530.1，其次 $524.4–524.6 和 $505–507（SAR、11月2日低点）。若收盘站上 $551.2，下一目标看 $559；若跌破 $524.4，则看 $505–507。"
   }
  ],
  "levels": {
@@ -43,22 +43,22 @@
    [
     528,
     {
-     "en": "5, 10 and 30-day averages ($527.2–529.1)",
-     "zh": "5日、10日和30日均线（$527.2–529.1）"
+     "en": "5, 10 and 30-day averages ($527.7–530.1)",
+     "zh": "5日、10日和30日均线（$527.7–530.1）"
     }
    ],
    [
     524.4,
     {
-     "en": "Oct 16 low",
-     "zh": "10月16日低点"
+     "en": "Oct 16 low; Nov 6 low $524.61",
+     "zh": "10月16日低点；11月6日低点 $524.61"
     }
    ],
    [
     505,
     {
-     "en": "Parabolic SAR $506.0; Nov 2 low $504.96",
-     "zh": "抛物线 SAR $506.0；11月2日低点 $504.96"
+     "en": "Parabolic SAR $507.1; Nov 2 low $504.96",
+     "zh": "抛物线 SAR $507.1；11月2日低点 $504.96"
     }
    ]
   ]

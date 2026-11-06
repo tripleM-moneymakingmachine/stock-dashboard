@@ -1,50 +1,57 @@
 {
- "asof": "Nov 5, 2026",
- "close": 154.99,
+ "asof": "Nov 6, 2026",
+ "close": 160.38,
  "bias": {
-  "en": "Pullback deepens · lost the 100-day, at the 200-day",
-  "zh": "回调加深 · 跌破 100 日均线，位于 200 日均线"
+  "en": "Pullback · back above $158, 100-day overhead",
+  "zh": "回调 · 重回 $158 上方，100 日均线在上"
  },
  "read": [
   {
-   "en": "Palantir fell 9.7% on Nov 5 to $154.99, trading between $152.60 and $167.25 on heavy volume. It closed below the rising 100-day ($164.0), just above the rising 200-day ($153.6), and under the falling 5-day ($172.9), 10-day ($185.2) and 30-day ($191.8) averages. MACD has been below its signal since Oct 16 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 15 ($192.61), and RSI is 25.",
-   "zh": "Palantir 11月5日下跌 9.7%，收于 $154.99，盘中区间 $152.60–167.25，成交量放大。收盘跌破上行的 100 日均线（$164.0），略高于上行的 200 日均线（$153.6），并位于下行的 5 日（$172.9）、10 日（$185.2）和 30 日均线（$191.8）下方。MACD 自 10月16日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月15日起看空（$192.61），RSI 为 25。"
+   "en": "Palantir rose 3.5% on Nov 6 to $160.38, trading $157.24–163.97. It is below the falling 5-day ($168.2), 10-day ($181.6) and 30-day ($190.9) averages and the rising 100-day ($164.3), and above the 200-day ($153.5), which has turned down. MACD has been below its signal since Oct 16 and below zero, histogram still widening; Parabolic SAR has been bearish since Oct 15 ($187.01), and RSI is 31.",
+   "zh": "Palantir 11月6日上涨 3.5%，收于 $160.38，盘中区间 $157.24–163.97。股价位于下行的 5 日（$168.2）、10 日（$181.6）和 30 日均线（$190.9）以及上行的 100 日均线（$164.3）下方，并位于已转为下行的 200 日均线（$153.5）上方。MACD 自 10月16日起位于信号线下方且在零轴之下，柱状图仍在扩大；抛物线 SAR 自 10月15日起看空（$187.01），RSI 为 31。"
   },
   {
-   "en": "The close broke the $163.8–165.3 support (100-day, Sep 10 and Nov 4 lows), which had held for two days, and the $158.3 Aug 5 low; the $152.6 low tested the $152.7–153.6 zone (Aug 6 low, 200-day) and held on the close. Resistance is $156.3–158.3 (April and March highs, Aug 5 low), then $164–165.3 and $172.9 (5-day). Support is $152.6–153.6, then $148.6–149.1 (March lows). A close above $158.3 would target $164–165; below $152.6, $149.",
-   "zh": "收盘跌破此前连续两天守住的 $163.8–165.3 支撑（100 日均线、9月10日和11月4日低点）以及 8月5日低点 $158.3；盘中低点 $152.6 测试 $152.7–153.6 区域（8月6日低点、200 日均线），收盘守住。阻力为 $156.3–158.3（4月和3月高点、8月5日低点），其次 $164–165.3 和 $172.9（5 日均线）。支撑为 $152.6–153.6，其次 $148.6–149.1（3月低点）。若收盘站上 $158.3，下一目标看 $164–165；若跌破 $152.6，则看 $149。"
+   "en": "The close reclaimed the $156.3–158.3 zone (March–April highs, Aug 5 low), now support, after the 200-day held on Nov 5. The $163.97 high stopped under $164.3–164.6 (100-day, Sep 10 and Nov 4 lows). Resistance is $164.3–164.6, then $168.2 (5-day) and $171.7 (Nov 4 close). Support is $156.3–158.3, then $152.6–153.5 (Nov 5 low, 200-day) and $148.6–149.1. A close above $164.6 would target $168–172; below $156.3, $153.",
+   "zh": "收盘收复 $156.3–158.3 区域（3–4月高点、8月5日低点），该区域转为支撑；此前 11月5日 200 日均线守住。盘中高点 $163.97 止步于 $164.3–164.6（100 日均线、9月10日和11月4日低点）下方。阻力为 $164.3–164.6，其次 $168.2（5 日均线）和 $171.7（11月4日收盘）。支撑为 $156.3–158.3，其次 $152.6–153.5（11月5日低点、200 日均线）和 $148.6–149.1。若收盘站上 $164.6，下一目标看 $168–172；若跌破 $156.3，则看 $153。"
   }
  ],
  "levels": {
   "r": [
    [
-    157.5,
-    {
-     "en": "Apr 8 high $156.28; Mar 17 high $156.75; Aug 5 low $158.25, lost",
-     "zh": "4月8日高点 $156.28；3月17日高点 $156.75；8月5日低点 $158.25，已失守"
-    }
-   ],
-   [
     164.5,
     {
-     "en": "100-day average $164.0; Sep 10 low $164.55; Nov 4 low $164.60, lost",
-     "zh": "100日均线 $164.0；9月10日低点 $164.55；11月4日低点 $164.60，已失守"
+     "en": "100-day average $164.3; Sep 10 low $164.55; Nov 4 low $164.60",
+     "zh": "100日均线 $164.3；9月10日低点 $164.55；11月4日低点 $164.60"
     }
    ],
    [
-    172.9,
+    168.2,
     {
      "en": "5-day average",
      "zh": "5日均线"
+    }
+   ],
+   [
+    171.7,
+    {
+     "en": "Nov 4 close",
+     "zh": "11月4日收盘"
     }
    ]
   ],
   "s": [
    [
+    157.5,
+    {
+     "en": "Apr 8 high $156.28; Mar 17 high $156.75; Aug 5 low $158.25, reclaimed",
+     "zh": "4月8日高点 $156.28；3月17日高点 $156.75；8月5日低点 $158.25，已收复"
+    }
+   ],
+   [
     153,
     {
-     "en": "200-day average $153.6; Nov 5 low $152.6; Aug 6 low $152.70",
-     "zh": "200日均线 $153.6；11月5日低点 $152.6；8月6日低点 $152.70"
+     "en": "200-day average $153.5; Nov 5 low $152.6; Aug 6 low $152.70",
+     "zh": "200日均线 $153.5；11月5日低点 $152.6；8月6日低点 $152.70"
     }
    ],
    [

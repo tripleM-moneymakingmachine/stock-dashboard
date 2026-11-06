@@ -1,18 +1,18 @@
 {
- "asof": "Nov 5, 2026",
- "close": 181.6,
+ "asof": "Nov 6, 2026",
+ "close": 186.64,
  "bias": {
-  "en": "Downtrend · oversold, broke $190, closed at the low",
-  "zh": "下降趋势 · 超卖，跌破 $190，收于日内低点"
+  "en": "Downtrend · bounce rejected under $190",
+  "zh": "下行趋势 · 反弹受阻于 $190 下方"
  },
  "read": [
   {
-   "en": "Nvidia fell 9.3% on Nov 5 to $181.60, trading between $181.46 and $196.25 and closing near the low on volume nearly three times its 20-day average. It is below the falling 5-day ($199.0), 10-day ($206.9), 30-day ($219.8) and 100-day ($214.2) averages and the rising 200-day ($204.7). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 13 ($211.58), and RSI is 25.",
-   "zh": "英伟达 11月5日下跌 9.3%，收于 $181.60，盘中区间 $181.46–196.25，收盘接近日内低点，成交量接近 20 日均量的三倍。股价位于下行的 5 日（$199.0）、10 日（$206.9）、30 日（$219.8）和 100 日均线（$214.2）以及上行的 200 日均线（$204.7）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图扩大；抛物线 SAR 自 10月13日起看空（$211.58），RSI 为 25。"
+   "en": "Nvidia rose 2.8% on Nov 6 to $186.64, trading $185.22–194.90 on volume about 1.6 times its 20-day average. It is below the falling 5-day ($195.4), 10-day ($204.5), 30-day ($218.5) and 100-day ($214.0) averages and the rising 200-day ($204.7). MACD has been below its signal since Oct 12 and below zero, histogram still widening; Parabolic SAR has been bearish since Oct 13 ($206.79), and RSI is 31.",
+   "zh": "英伟达 11月6日上涨 2.8%，收于 $186.64，盘中区间 $185.22–194.90，成交量约为 20 日均量的 1.6 倍。股价位于下行的 5 日（$195.4）、10 日（$204.5）、30 日（$218.5）和 100 日均线（$214.0）以及上行的 200 日均线（$204.7）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图仍在扩大；抛物线 SAR 自 10月13日起看空（$206.79），RSI 为 31。"
   },
   {
-   "en": "The gap lower broke the $198–199.7, $194.7 and $189.8–191.1 supports in one session; the $196.25 high stayed under the Nov 4 low. Resistance is $189.8–191.1 (Jun 29, Jul 29 and Jul 7 lows), then $194.7–196.3 (May 4 low, Nov 5 high) and $198–200.1. Support is $179.2–179.9 (Feb 17 and Mar 13 lows), then $176.8–177.6 and $164.3 (52-week low, Mar 30). A close above $191.1 would target $195–196; below $179.2, $177.",
-   "zh": "跳空下跌在一个交易日内跌破 $198–199.7、$194.7 和 $189.8–191.1 支撑；盘中高点 $196.25 未能回到 11月4日低点上方。阻力为 $189.8–191.1（6月29日、7月29日和7月7日低点），其次 $194.7–196.3（5月4日低点、11月5日高点）和 $198–200.1。支撑为 $179.2–179.9（2月17日和3月13日低点），其次 $176.8–177.6 和 $164.3（52 周低点，3月30日）。若收盘站上 $191.1，下一目标看 $195–196；若跌破 $179.2，则看 $177。"
+   "en": "The open above $190 reached $194.90 at the May 4 low and 5-day, then faded to close back under $189.8–191.1; nothing was reclaimed. Resistance is $189.8–191.1 (June–July lows), then $194.7–196.3 (May 4 low, 5-day, Nov 5 high) and $198–200.1. Support is $181.5 (Nov 5 low), then $179.2–179.9 (Feb–Mar lows) and $176.8–177.6. A close above $191.1 would target $195–196; below $179.2, $177.",
+   "zh": "高开站上 $190 后一度触及 5月4日低点和 5 日均线附近的 $194.90，随后回落，收盘重回 $189.8–191.1 下方，未收复任何关键位。阻力为 $189.8–191.1（6–7月低点），其次 $194.7–196.3（5月4日低点、5 日均线、11月5日高点）和 $198–200.1。支撑为 $181.5（11月5日低点），其次 $179.2–179.9（2–3月低点）和 $176.8–177.6。若收盘站上 $191.1，下一目标看 $195–196；若跌破 $179.2，则看 $177。"
   }
  ],
  "levels": {
@@ -27,8 +27,8 @@
    [
     195.5,
     {
-     "en": "May 4 low $194.74; Nov 5 high $196.25",
-     "zh": "5月4日低点 $194.74；11月5日高点 $196.25"
+     "en": "May 4 low $194.74; 5-day average $195.4; Nov 6 high $194.9; Nov 5 high $196.25",
+     "zh": "5月4日低点 $194.74；5日均线 $195.4；11月6日高点 $194.9；11月5日高点 $196.25"
     }
    ],
    [
@@ -41,6 +41,13 @@
   ],
   "s": [
    [
+    181.5,
+    {
+     "en": "Nov 5 low",
+     "zh": "11月5日低点"
+    }
+   ],
+   [
     179.5,
     {
      "en": "Feb 17 low $179.18; Mar 13 low $179.94",
@@ -52,13 +59,6 @@
     {
      "en": "Jan 20 low $177.61; Oct 22, 2025 low $176.76",
      "zh": "1月20日低点 $177.61；2025年10月22日低点 $176.76"
-    }
-   ],
-   [
-    164.3,
-    {
-     "en": "52-week low (Mar 30)",
-     "zh": "52周低点（3月30日）"
     }
    ]
   ]
