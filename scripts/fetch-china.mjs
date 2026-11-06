@@ -48,7 +48,7 @@ const CR = [
   { k: "sec", id: "8c2f642dc17d4e20997d572cbef24e07", cn: "中债证券公司债收益率曲线" },
 ];
 const FIN_RE = /二级|银行|农商|农信|村镇|金融债|证券|保险|人寿|财险|租赁|消费金融|汽车金融|资产管理|信达|华融|长城资产|东方资产|二级资本|永续|TLAC|资本补充/;
-const SOE_RE = /国家电网|国网|南方电网|南网|中国石油|中石油|中国石化|中石化|中海油|中国海油|海洋石油|国家管网|中国移动|中国电信|中国联通|中国铁塔|国家能源|国能|国家电投|国电投|电投|华能|大唐|华电|三峡|长江电力|中广核|中核|核工业|中国铁路|国铁|铁道|中国中铁|中铁|中国铁建|铁建|中国建筑|中建|中交|中国交建|交通建设|电建|能建|中国化工|中化|中粮|中储粮|招商局|招商蛇口|保利|华润|宝武|宝钢|鞍钢|首钢|中铝|中国铝业|五矿|中冶|诚通|国新|中信集团|中国中信|航空工业|中航|航天|兵器|兵装|中国船舶|中船|中远|中国远洋|东风|一汽|中国建材|中国电子|中国通用|国投|中国节能|中国旅游|中国医药|国药|中国黄金|中国盐业|中国林业|中煤|中国煤炭|中国中车|中车|中国电科|中国电力|中国能源建设|中国安能|中国稀土|中国物流|中国国新|中国诚通/;
+const SOE_RE = /国家电网|国网|南方电网|南网|中国石油|中石油|中国石化|中石化|中海油|中国海油|海洋石油|国家管网|中国移动|中国电信|中国联通|中国铁塔|国家能源|国能|国家电投|国电投|电投|华能|大唐|华电|三峡|长江电力|中广核|中核|核工业|中国铁路|国铁|铁道|中国中铁|中铁|中国铁建|中铁建|中国建筑|中建|中交|中国交建|交通建设|电建|能建|中国化工|中化|中粮|中储粮|招商局|招商蛇口|保利|华润|宝武|宝钢|鞍钢|首钢|中铝|中国铝业|五矿|中冶|诚通|国新|中信集团|中国中信|航空工业|中航|航天|兵器|兵装|中国船舶|中船|中远|中国远洋|东风|一汽|中国建材|中国电子|中国通用|国投集团|国投电力|国投资本|国投泰康|国投租赁|国家开发投资|中国节能|中国旅游|中国医药|国药|中国黄金|中国盐业|中国林业|中煤|中国煤炭|中国中车|中车|中国电科|中国电力|中国能源建设|中国安能|中国稀土|中国物流|中国国新|中国诚通/;
 const soeType = (n) => /超短期|SCP/.test(n) ? "SCP" : /定向|PPN/.test(n) ? "PPN" : /短期融资|\dCP\d/.test(n) ? "CP" : /中期票据|MTN/.test(n) ? "MTN" : /铁道|政府支持/.test(n) ? "Agency" : /企业债|企债/.test(n) ? "Enterprise" : /公司债/.test(n) ? "Corporate" : "MTN";
 const finType = (n) => /TLAC/.test(n) ? "TLAC" : /保险|人寿|财险/.test(n) ? "Insurance" : /二级|资本补充/.test(n) ? "Tier-2" : /永续|无固定/.test(n) ? "Perpetual" : /证券|券商/.test(n) ? "Securities" : /保险|人寿|财险/.test(n) ? "Insurance" : /租赁|消费金融|汽车金融|资产管理|信达|华融|长城资产|东方资产/.test(n) ? "Other fin." : "Senior";
 const SHCH_T = new Set(["MTN", "SCP", "CP", "PPN"]);
@@ -252,6 +252,7 @@ const findId = (c) => {
   if (!tree.length) return c.id;
   let n = tree.find((x) => norm(x.name) === norm(c.cn));
   if (!n) { const base = norm(c.cn).replace(/\(.*\)$/, ""); n = tree.find((x) => norm(x.name).startsWith(base) && norm(x.name).includes((c.cn.match(/\((.*)\)/) || [])[1] || "AAA")) || tree.find((x) => norm(x.name) === base); }
+  if (!n && c.k === "perp") n = tree.find((x) => /商业银行/.test(x.name) && /无固定期限|永续/.test(x.name) && /AA\+/.test(x.name)) || tree.find((x) => /商业银行/.test(x.name) && /无固定期限|永续/.test(x.name));
   if (n && String(n.isParent) === "true") { const ch = tree.filter((x) => x.pId === n.id); n = ch.find((x) => /AAA/.test(x.name)) || ch[0] || n; }
   return n?.id || c.id;
 };
@@ -274,7 +275,7 @@ const crBonds = (grp) => crFresh ? Object.entries(crTrades).filter(([, b]) => b.
   if (!(ttm > 0)) return null;
   const type = grp === "soe" ? soeType(b.nm) : finType(b.nm), ck = curveKey(grp, type), cv = ck && crCurves[ck]?.pts;
   const cy = cv ? interp(cv, ttm) : null, base = String(b.t || today).slice(0, 10);
-  return { code, isin: b.isin, name: b.short, who: issuerOf(b.short), type, dep: depOf(type, b.nm), ck, mat: shDate(Date.parse(base + "T12:00:00+08:00") + ttm * 365.25 * 864e5), est: true, ttm: +ttm.toFixed(3), last: b.last, wavg: b.wavg, chg: b.chg, curve: cy == null ? null : +cy.toFixed(4), vs: cy == null ? null : +((b.last - cy) * 100).toFixed(1) };
+  return { code, isin: b.isin, name: b.short, who: issuerOf(b.short), type, dep: depOf(type, b.nm), ck, mat: shDate(Date.parse(base + "T12:00:00+08:00") + ttm * 365.25 * 864e5), est: true, ttm: +ttm.toFixed(3), last: b.last, wavg: b.wavg, chg: b.chg, curve: cy == null ? null : +cy.toFixed(4), vs: cy == null || ttm < 0.05 ? null : +((b.last - cy) * 100).toFixed(1) }; // within ~18 days of maturity or call, yields are too noisy for a spread
 }).filter(Boolean).sort((a, b) => a.ttm - b.ttm) : (crWas[grp]?.bonds || []);
 const credit = {
   curves: Object.fromEntries(Object.entries(crCurves).filter(([, v]) => v).map(([k, v]) => [k, { cn: v.cn, date: v.date, pts: v.pts }])),
