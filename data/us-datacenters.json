@@ -479,7 +479,7 @@
    "status": "uc",
    "capexB": 27,
    "est": false,
-   "note": "Under construction, 0 MW live; ~1.6 GW IT by Q1 2028 on a 1.8 GW Entergy load (Epoch). Meta's 5 GW figure is a long-run cluster goal, not this site"
+   "note": "Under construction, 0 MW live; ~1.6 GW IT by Q1 2028 on a 1.8 GW Entergy load (Epoch). Meta raised Hyperion to 5 GW in Jul 2026 (2 GW by 2030, 5 GW ~2032, pending PSC approval of new gas plants); only the approved 1.8 GW is counted here"
   },
   {
    "id": "meta-pro",
@@ -2432,23 +2432,23 @@
    "y26": "2.5–3 GW",
    "y27": "≥13 GW",
    "y28": "No target",
-   "basis": "Company-wide nameplate compute. Year-end targets from Musk on the Q3 call; the ~11 GW 2027 jump has no named sites beyond Colossus 2 Building 3 and planned Texas sites.",
+   "basis": "Company-wide nameplate compute. Year-end targets from Musk on the Q3 call; the ~11 GW 2027 jump has no named sites beyond Colossus 2 Building 3 and planned Texas sites. The 13 GW is Musk’s stated ambition, not committed sites.",
    "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
    "src2": "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/",
    "d": "2026-10-20",
    "targetBy": "by end-2027"
   },
   "orcl": {
-   "now": "850 MW brought online in Q1 FY27 (Jun–Aug 2026)",
+   "now": "850 MW added in Q1 FY27 (quarterly addition, not fleet size)",
    "y26": "—",
    "y27": "—",
    "y28": "~10 GW by end-FY28 (May 2028)",
-   "basis": "AI data center capacity, company-wide (investor day, Oct 2026); ~7 GW of it is still to be added. CEO in Mar 2026: 10 GW+ secured, coming online over three years.",
+   "basis": "AI data center capacity, company-wide (investor day, Oct 28, 2026); ~7 GW of it is still to be added. CEO in Mar 2026: 10 GW+ secured, coming online over three years.",
    "src": "https://pro.edgex.exchange/en-US/news/article/oracle-10gw-ai-compute-capacity-fy28",
-   "d": "2026-10-29"
+   "d": "2026-10-28"
   },
   "amzn": {
-   "now": "Added 3.9 GW in the 12 months to end-2025",
+   "now": "Added 3.9 GW in 2025 (addition, not total capacity)",
    "y26": "—",
    "y27": "Double end-2025 capacity",
    "y28": "—",
@@ -2469,17 +2469,18 @@
    "now": "Not disclosed",
    "y26": "—",
    "y27": "—",
-   "y28": "“Tens of GW” this decade",
-   "basis": "Zuckerberg, Meta Compute launch (Jan 2026); Prometheus ~1 GW and Hyperion are the named multi-GW clusters.",
+   "y28": "—",
+   "basis": "No company GW total. Zuckerberg: “tens of GW” over this decade, with no year attached (Jan 2026). Hyperion raised to 5 GW in Jul 2026: first 2 GW by 2030, full 5 GW around 2032, pending Louisiana PSC approval of Entergy’s gas plants.",
    "src": "https://siliconangle.com/?p=727498",
-   "d": "2026-01-12"
+   "d": "2026-01-12",
+   "src2": "https://www.globaldatacenterhub.com/p/meta-scales-hyperion-to-5gw-and-over"
   },
   "googl": {
    "now": "Not disclosed",
    "y26": "—",
    "y27": "—",
    "y28": "—",
-   "basis": "Alphabet gives capex, not GW: 2026 capex raised to $195–205B and 2027 signalled above $300B (Q3 2026). Google infrastructure leadership has said AI serving capacity must double every six months (internal goal, not a GW target).",
+   "basis": "Alphabet gives capex, not GW. 2026 capex $195–205B was reaffirmed in Q3 (raised from $190B in Q2). For 2027 the CFO said only that capex will “increase significantly”; the >$300B figure circulating is a press estimate, not company guidance. The “double every six months” goal is AI serving capability (including software efficiency), not physical GW.",
    "src": "https://aiweekly.co/alerts/alphabet-posts-1276b-q3-with-google-cloud-up-103-to-307b-as-2027-capex-set-to",
    "d": "2026-10-28"
   },
@@ -2494,57 +2495,58 @@
   },
   "nbis": {
    "now": "Not disclosed",
-   "y26": "5 GW contracted",
+   "y26": "5 GW contracted; 0.8–1 GW connected",
    "y27": ">1 GW/yr deployed",
    "y28": ">1 GW/yr deployed",
-   "basis": "Contracted power (secured, not live); deployment pace of more than 1 GW a year from 2027 (Q2 2026 letter).",
+   "basis": "Contracted = secured power, not live. Management expects 800 MW–1 GW connected by end-2026, active through H1 2027 (Q2 2026 call); deployment of more than 1 GW a year from 2027 (Q2 2026 letter).",
    "src": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm",
    "d": "2026-08-12"
   },
   "iren": {
-   "now": "Horizon 1 delivered; ~$1B operating ARR",
-   "y26": "~0.3 GW IT delivered",
-   "y27": "~0.8 GW IT delivered",
+   "now": "Horizon 1 delivered; Horizons 2–4 in late-stage construction",
+   "y26": "~0.3 GW IT program (>$4B ARR) moved to Jan 31, 2027, possibly end-Feb",
+   "y27": "0.8 GW by end-2027",
    "y28": "—",
-   "basis": "Cumulative IT capacity delivered (FY26 results, Aug 2026); pipeline of 5 GW+ projects.",
-   "src": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000051/irenreportsfy26results.htm",
-   "d": "2026-08-27"
+   "basis": "Q1 FY27 results (Nov 5, 2026): the >$4B ARR target tied to the 0.3 GW IT program slipped from end-2026 after a Microsoft design change; the 0.8 GW end-2027 target stands.",
+   "src": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000065/irenreportsq1-fy27result.htm",
+   "d": "2026-11-05"
   },
   "apld": {
-   "now": ">1 GW contracted",
-   "y26": "—",
+   "now": "~1.41 GW IT leased; 250 MW IT live at Polaris Forge 1",
+   "y26": "~300 MW IT online across North Dakota (Polaris Forge 2 starts)",
    "y27": "Delta Forge 1 (mid-2027) and Polaris Forge 3 (Aug 2027), 300 MW IT each",
    "y28": "—",
-   "basis": "Leases signed: Delta Forge 1 (300 MW, Apr 2026) and Polaris Forge 3 (300 MW IT, ~430 MW grid, May 2026), on top of Polaris Forge 1–2.",
-   "src": "https://capacityglobal.com/news/applied-digital-surpasses-1gw-agrees-lease-on-polaris-forge-3/",
-   "d": "2026-05-21"
+   "basis": "FQ1 2027 results (Oct 7, 2026): 1.41 GW of critical IT load leased across five campuses. Delta Forge 1 and Polaris Forge 3 (300 MW IT each) are under construction; company targets mid-2027 and Aug 2027.",
+   "src": "https://www.sec.gov/Archives/edgar/data/0001144879/000114487926000057/apldq127earningsrelease.htm",
+   "d": "2026-10-07"
   },
   "glxy": {
-   "now": "133 MW IT delivered at Helios",
+   "now": "133 MW IT (~200 MW gross) delivered at Helios",
    "y26": "—",
    "y27": "Phase II halls from Q2 2027",
    "y28": "—",
-   "basis": "CoreWeave holds 800 MW of contracted IT at Helios; ERCOT approved 1.6 GW (Q3 2026 results).",
+   "basis": "CoreWeave has 526 MW of IT load contracted across Phases I–III, on the 800 MW of gross power approved and contracted at Helios; ERCOT approved ~1.63 GW (Q3 2026 results).",
    "src": "https://247wallst.com/cards/galaxy-digital-q3-2026-earnings-glxy-01m5ygtstptb75e50mbgbfmz11",
    "d": "2026-10-27"
   },
   "cifr": {
    "now": "First capacity live at Black Pearl (AWS)",
    "y26": "More halls at Black Pearl, Barber Lake by year-end",
-   "y27": "270 MW available in pipeline",
+   "y27": "270 MW offered to tenants (available, not contracted)",
    "y28": "—",
    "basis": "No numeric MW guidance; ~5.9 GW pipeline incl. 1 GW conditional ERCOT base load at Colchis (Q3 2026 update).",
    "src": "https://greenstocknews.com/news/nasdaq/cifr/cipher-digital-provides-third-quarter-2026-business-update",
    "d": "2026-11-02"
   },
   "frmi": {
-   "now": "0 MW online; 1.5 GW of turbines landed",
+   "now": "0 MW online; 1.5 GW of generation turbines on site (power equipment, not data-centre capacity)",
    "y26": "—",
    "y27": "~200 MW initial power (early 2027)",
-   "y28": "~1.5 GW (18–24 months)",
-   "basis": "Q2 2026 results; only named tenant is TensorWave (222 MW phase one). Long-term ramp to ~17 GW is subject to binding tenants.",
+   "y28": "~1.5 GW power (18–24 months)",
+   "basis": "Q2 2026 results. TensorWave (222 MW phase one) signed a lease in Aug 2026, but it is not in effect: the Oct 31 closing passed with conditions unmet and neither side has terminated (Fermi, Nov 3). The ~17 GW figure is a private power grid target, subject to binding tenants.",
    "src": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000046/fermiq22026erex_991.htm",
-   "d": "2026-08-13"
+   "d": "2026-08-13",
+   "src2": "https://www.stocktitan.net/news/FRMI/fermi-provides-update-on-lease-agreement-as-parties-work-toward-s55mo4hurwnb.html"
   }
  }
 }
