@@ -105,7 +105,7 @@
 
     <section aria-labelledby="usRH" style="margin-top:28px">
       <h2 id="usRH">Who is at risk, and where they can go</h2>
-      <p class="sub">Capacity not yet operating in states rated hostile (tiers 4–5), by stage. Click a row to show that company on the map.</p>
+      <p class="sub">Current and Pipeline (all) cover every tracked campus in any state; Building, Planned and Blocked cover only capacity not yet operating in states rated hostile (tiers 4–5). Click a row to show that company on the map.</p>
       <div class="panel tw" id="usRisk"></div>
       <h3 style="margin:22px 0 4px">What each company says it will have</h3>
       <p class="sub">Company-wide capacity guidance from filings and earnings calls, including capacity not yet tied to a site. Units differ by company, so read the basis column before comparing.</p>
