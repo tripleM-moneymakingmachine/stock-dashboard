@@ -148,6 +148,9 @@
   }
   const riskFill = (t) => ({ 1: "color-mix(in srgb,var(--up) 34%,var(--panel))", 2: "color-mix(in srgb,var(--up) 16%,var(--panel))", 3: "color-mix(in srgb,var(--line) 70%,var(--panel))", 4: "color-mix(in srgb,var(--down) 22%,var(--panel))", 5: "color-mix(in srgb,var(--down) 44%,var(--panel))" }[t] || "color-mix(in srgb,var(--line) 70%,var(--panel))");
   const tierCol = (t) => ({ 1: "var(--up)", 2: "color-mix(in srgb,var(--up) 70%,var(--muted))", 3: "var(--muted)", 4: "color-mix(in srgb,var(--down) 75%,var(--muted))", 5: "var(--down)" }[t]);
+  const nowGW = (s) => (s.now != null ? s.now : s.status === "op" ? s.gw : 0);
+  const pipeGW = (s) => Math.max(0, s.gw - nowGW(s));
+  const pipeSt = (s) => (s.status === "op" ? "uc" : s.status);
   const dotCol = (s) => (S.col === "owner" ? (D.owners[s.owner] || {}).c : STC[s.status]);
   const vis = (s) => S.stages.has(s.status) && (!S.owners || S.owners.has(s.owner));
   const tierOf = (code) => (D.risk[code] || {}).tier || 3;
@@ -181,7 +184,8 @@
   function siteTip(s) {
     const o = D.owners[s.owner] || {}, r = D.risk[s.state] || {};
     return `<b>${esc(s.name)}</b><small>${esc(SNAME[s.state] || s.state)} · ${esc(o.n)}${s.partner ? " · " + esc(s.partner) : ""}</small>
-      <div class="tr"><i class="sw" style="background:${STC[s.status]}"></i>${ST[s.status]}<span>${s.est ? "~" : ""}${fmt(s.gw, s.gw < 1 ? 2 : 1)} GW</span></div>
+      <div class="tr"><i class="sw" style="background:${STC[s.status]}"></i>${ST[s.status]}<span>${s.est ? "~" : ""}${fmt(s.gw, s.gw < 1 ? 2 : 1)} GW planned</span></div>
+      ${s.now != null ? `<div class="tr">Operating now (IT)<span>${fmt(s.now, 2)} GW</span></div>` : ""}
       ${s.capexB ? `<div class="tr">Announced cost<span>$${fmt(s.capexB, 1)}B</span></div>` : ""}
       <div class="tr"><i class="rk" style="background:${tierCol(r.tier)}"></i>State risk<span>${TIER[r.tier] || "—"}</span></div>
       <small style="margin-top:6px">${esc(s.note)}</small>`;
@@ -220,7 +224,7 @@
     const el = document.getElementById("usSide");
     if (!S.state) {
       const top = Object.entries(D.risk).filter(([, r]) => r.tier >= 4).map(([c]) => c)
-        .map((c) => ({ c, gw: D.sites.filter((s) => s.state === c && s.status !== "op").reduce((a, s) => a + s.gw, 0) }))
+        .map((c) => ({ c, gw: D.sites.filter((s) => s.state === c).reduce((a, s) => a + pipeGW(s), 0) }))
         .filter((x) => x.gw > 0).sort((a, b) => b.gw - a.gw);
       el.innerHTML = `<h3>Hostile states, by capacity at risk</h3><p class="note" style="margin:0">Not-yet-operating GW on the map. Tap a state to drill in.</p>
         <ul class="sl">${top.map((x) => `<li data-s="${x.c}"><i style="background:${tierCol(tierOf(x.c))};border-radius:2px"></i><span>${esc(SNAME[x.c])}<small>${TIER[tierOf(x.c)]} · moves to ${esc(D.risk[x.c].to.join(", "))}</small></span><span class="g">${fmt(x.gw)} GW</span></li>`).join("")}</ul>`;
@@ -278,10 +282,10 @@
   // ---------- exposure & cost ----------
   const COS = ["msft", "amzn", "googl", "meta", "orcl", "sbank", "spcx", "crwv", "nbis", "iren", "apld", "glxy", "cifr", "frmi"];
   function exposure(o) {
-    const at = D.sites.filter((s) => s.owner === o && s.status !== "op" && tierOf(s.state) >= 4);
-    const g = (k) => at.filter((s) => s.status === k).reduce((a, s) => a + s.gw, 0);
+    const at = D.sites.filter((s) => s.owner === o && pipeGW(s) > 0 && tierOf(s.state) >= 4);
+    const g = (k) => at.filter((s) => pipeSt(s) === k).reduce((a, s) => a + pipeGW(s), 0);
     const all = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + s.gw, 0);
-    const pipe = D.sites.filter((s) => s.owner === o && s.status !== "op").reduce((a, s) => a + s.gw, 0);
+    const pipe = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + pipeGW(s), 0);
     const states = [...new Set(at.map((s) => s.state))];
     const home = [...new Set(D.sites.filter((s) => s.owner === o && tierOf(s.state) <= 2).map((s) => s.state))];
     const to = [...new Set([...home, ...states.flatMap((c) => (D.risk[c].to || []).map((x) => x.replace("*", "")).filter((x) => x !== "—" && tierOf(x) <= 3))])].slice(0, 5);
@@ -351,7 +355,7 @@
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
         <td>${fmt(r.uc)}</td><td>${fmt(r.pl)}</td><td>${fmt(r.bl)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">GW is nameplate on the tracked campuses, ~ estimates included. Footprint = all tracked GW, operating included. Tiers 4–5 = TX, GA, OH, MI, PA, IL, KS, ME, NH, CA.</p>`;
+    }).join("")}</tbody></table><p class="note">GW is planned build-out not yet operating on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
@@ -372,10 +376,11 @@
   }
   function kpis() {
     const tot = (f) => D.sites.filter(f).reduce((a, s) => a + s.gw, 0);
-    const atRisk = tot((s) => s.status !== "op" && tierOf(s.state) >= 4), pipe = tot((s) => s.status !== "op");
-    const tx = tot((s) => s.state === "TX" && s.status !== "op");
+    const sum = (f, v) => D.sites.filter(f).reduce((a, s) => a + v(s), 0);
+    const atRisk = sum((s) => tierOf(s.state) >= 4, pipeGW), pipe = sum(() => true, pipeGW);
+    const tx = sum((s) => s.state === "TX", pipeGW);
     document.getElementById("usK").innerHTML = [
-      ["Campuses tracked", D.sites.length, `${fmt(tot((s) => s.status === "op"), 0)} GW operating`],
+      ["Campuses tracked", D.sites.length, `${fmt(sum(() => true, nowGW), 0)} GW operating now (IT power where Epoch tracks it)`],
       ["Pipeline in hostile states", fmt(atRisk) + " GW", `${fmt((atRisk / pipe) * 100, 0)}% of the ${fmt(pipe, 0)} GW pipeline tracked`],
       ["Texas pipeline", fmt(tx) + " GW", "Jefferies: ~13 GW at immediate risk; Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain"],
       ["Blocked on Nov 3", fmt(tot((s) => s.status === "bl")) + " GW", "Ohio votes at Trenton, Piqua, Sunbury"],

@@ -1,7 +1,7 @@
 {
  "asof": "2026-11-07",
  "asofText": "Nov 7, 2026",
- "note": "Sites, owners, status and power are from company announcements, filings and press reports; GW marked ~ are Claude estimates. Risk tiers, costs and views are Claude's assessment, updated daily.",
+ "note": "Each campus shows its planned build-out power and, where Epoch AI tracks it, the IT power operating today. Sites, owners and status are from company announcements, filings, Epoch AI and press reports; GW marked ~ are Claude estimates. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
    "n": "Microsoft",
@@ -98,25 +98,27 @@
    "state": "WI",
    "lat": 42.72,
    "lon": -87.9,
-   "gw": 2.0,
+   "gw": 2.26,
    "status": "op",
    "capexB": 7.3,
    "est": false,
-   "note": "First Fairwater AI campus live; second phase under construction"
+   "note": "First building live (~369 MW IT, Epoch May 2026); campus scaling to ~2.3 GW IT by mid-2028, now under Wisconsin's conditional pause",
+   "now": 0.37
   },
   {
    "id": "msft-atl",
-   "name": "Fairwater Atlanta",
+   "name": "Fairwater Atlanta (Fayetteville)",
    "owner": "msft",
    "partner": null,
    "state": "GA",
-   "lat": 33.62,
-   "lon": -84.5,
-   "gw": 1.0,
+   "lat": 33.45,
+   "lon": -84.47,
+   "gw": 0.64,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Second Fairwater site, linked to Wisconsin by AI WAN"
+   "est": false,
+   "note": "Built by QTS (Blackstone) for Microsoft; buildings 3–4 live Jun 2026, ~636 MW IT (Epoch)",
+   "now": 0.64
   },
   {
    "id": "msft-sat",
@@ -228,7 +230,8 @@
    "status": "op",
    "capexB": 11.0,
    "est": false,
-   "note": "Trainium2 cluster for Anthropic; expanding"
+   "note": "Trainium cluster for Anthropic; ~1.04 GW IT live (Epoch Oct 2026), heading to ~1.9 GW IT by 2028",
+   "now": 1.04
   },
   {
    "id": "amzn-ms",
@@ -238,11 +241,12 @@
    "state": "MS",
    "lat": 32.47,
    "lon": -90.11,
-   "gw": 1.0,
-   "status": "uc",
+   "gw": 0.68,
+   "status": "op",
    "capexB": 10.0,
-   "est": true,
-   "note": "$10B Mississippi campus"
+   "est": false,
+   "note": "Canton, Madison County: 5 buildings live (~284 MW IT); 12 buildings, ~683 MW IT by 2028 (Epoch)",
+   "now": 0.28
   },
   {
    "id": "amzn-nc",
@@ -336,11 +340,12 @@
    "state": "IA",
    "lat": 41.26,
    "lon": -95.86,
-   "gw": 1.2,
+   "gw": 0.24,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Core US region"
+   "est": false,
+   "note": "Council Bluffs East AI campus, ~237 MW IT (Epoch); older Council Bluffs buildings not counted",
+   "now": 0.24
   },
   {
    "id": "goog-td",
@@ -350,39 +355,42 @@
    "state": "OR",
    "lat": 45.6,
    "lon": -121.18,
-   "gw": 0.8,
+   "gw": 0.15,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Hydro-powered Oregon campus"
+   "est": false,
+   "note": "Hydro-powered Oregon campus, ~154 MW IT (Epoch)",
+   "now": 0.15
   },
   {
    "id": "goog-na",
-   "name": "New Albany / Columbus",
+   "name": "New Albany + Columbus",
    "owner": "googl",
    "partner": null,
    "state": "OH",
    "lat": 40.1,
    "lon": -82.84,
-   "gw": 1.0,
+   "gw": 0.72,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Operating; expansions face new Ohio regime"
+   "est": false,
+   "note": "Two Ohio campuses, ~636 MW IT live, ~720 MW by mid-2027 (Epoch); expansions face new Ohio regime",
+   "now": 0.64
   },
   {
    "id": "goog-ok",
-   "name": "Mayes County (Pryor)",
+   "name": "Pryor (North), Mayes County",
    "owner": "googl",
    "partner": null,
    "state": "OK",
    "lat": 36.24,
    "lon": -95.33,
-   "gw": 1.2,
+   "gw": 0.37,
    "status": "op",
    "capexB": 9.0,
-   "est": true,
-   "note": "$9B expansion in a friendly state"
+   "est": false,
+   "note": "~368 MW IT live (Epoch Sep 2026); $9B expansion announced in a friendly state",
+   "now": 0.37
   },
   {
    "id": "goog-ar",
@@ -462,11 +470,11 @@
    "state": "LA",
    "lat": 32.48,
    "lon": -91.63,
-   "gw": 5.0,
+   "gw": 1.8,
    "status": "uc",
    "capexB": 27.0,
    "est": false,
-   "note": "2 GW by 2030, scaling to 5 GW; Entergy gas plants"
+   "note": "Under construction, 0 MW live; ~1.6 GW IT by Q1 2028 on a 1.8 GW Entergy load (Epoch). Meta's 5 GW figure is a long-run cluster goal, not this site"
   },
   {
    "id": "meta-pro",
@@ -476,11 +484,12 @@
    "state": "OH",
    "lat": 40.07,
    "lon": -82.76,
-   "gw": 1.0,
+   "gw": 1.02,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "1 GW cluster coming online 2026"
+   "note": "~471 MW IT live (Epoch Aug 2026), ~1 GW IT by mid-2028",
+   "now": 0.47
   },
   {
    "id": "meta-elp",
@@ -575,10 +584,11 @@
    "lat": 32.45,
    "lon": -99.73,
    "gw": 1.2,
-   "status": "uc",
+   "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~4 of 8 buildings running; 2 GW expansion dropped Mar 2026"
+   "note": "Near complete: ~824 MW IT live (Epoch, Nov 1) on a 1.2 GW facility; 2 GW expansion dropped Mar 2026",
+   "now": 0.82
   },
   {
    "id": "sg-sha",
@@ -672,25 +682,27 @@
    "state": "TN",
    "lat": 35.07,
    "lon": -90.12,
-   "gw": 0.3,
+   "gw": 0.34,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Gas-turbine permits contested locally"
+   "est": false,
+   "note": "~340 MW IT (Epoch); gas-turbine permits contested locally",
+   "now": 0.34
   },
   {
    "id": "xai-c2",
-   "name": "Colossus 2, Memphis/Southaven",
+   "name": "Colossus 2, Whitehaven (Memphis)",
    "owner": "spcx",
    "partner": null,
-   "state": "MS",
-   "lat": 34.98,
-   "lon": -90.0,
-   "gw": 1.0,
-   "status": "uc",
+   "state": "TN",
+   "lat": 35.0,
+   "lon": -89.99,
+   "gw": 1.53,
+   "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Power plant across the state line in Mississippi"
+   "est": false,
+   "note": "~946 MW IT live (Epoch, Jun 2026); Building 3 takes it to ~1.5 GW IT by Q1 2027. Gas turbines sit across the state line in Southaven, MS",
+   "now": 0.95
   },
   {
    "id": "crwv-lan",
@@ -714,11 +726,12 @@
    "state": "TX",
    "lat": 33.21,
    "lon": -97.13,
-   "gw": 0.26,
+   "gw": 0.28,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Converted miner site"
+   "est": false,
+   "note": "Core Scientific site; ~262 MW IT live, ~282 MW by mid-2027 (Epoch)",
+   "now": 0.26
   },
   {
    "id": "crwv-nj",
@@ -756,11 +769,11 @@
    "state": "ND",
    "lat": 46.98,
    "lon": -96.87,
-   "gw": 0.3,
+   "gw": 0.28,
    "status": "uc",
    "capexB": null,
-   "est": true,
-   "note": "Harwood voters backed the project 3-to-1 on Nov 3"
+   "est": false,
+   "note": "280 MW campus; Harwood voters backed the project 3-to-1 on Nov 3"
   },
   {
    "id": "nbis-kc",
@@ -813,10 +826,10 @@
    "lat": 32.47,
    "lon": -100.4,
    "gw": 2.0,
-   "status": "pl",
+   "status": "uc",
    "capexB": null,
    "est": false,
-   "note": "2 GW site; energisation gated by ERCOT"
+   "note": "Sweetwater 1 (1.4 GW) substation energised May 1, 2026; data halls ramp in phases; 2 GW campus"
   },
   {
    "id": "glxy-hel",
@@ -827,10 +840,11 @@
    "lat": 33.62,
    "lon": -100.84,
    "gw": 0.8,
-   "status": "uc",
+   "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "CoreWeave-leased; ERCOT approvals for further phases"
+   "est": false,
+   "note": "Phase I (133 MW IT) delivered to CoreWeave Jul 2026; CoreWeave has 800 MW contracted; ERCOT approved 1.6 GW, further phases need approval",
+   "now": 0.13
   },
   {
    "id": "cifr-bl",
@@ -872,21 +886,22 @@
    "status": "pl",
    "capexB": null,
    "est": false,
-   "note": "1.8 GW, own gas power; friendly state"
+   "note": "1.8 GW with own gas power; development paused Jun 9, 2026 at the customer's request"
   },
   {
-   "id": "qts-fay",
-   "name": "Fayetteville",
+   "id": "qts-ric",
+   "name": "QTS Richmond (Henrico)",
    "owner": "qts",
-   "partner": "Blackstone",
-   "state": "GA",
-   "lat": 33.45,
-   "lon": -84.45,
-   "gw": 0.6,
-   "status": "uc",
+   "partner": null,
+   "state": "VA",
+   "lat": 37.52,
+   "lon": -77.32,
+   "gw": 0.66,
+   "now": 0.56,
+   "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Large QTS Atlanta campus"
+   "est": false,
+   "note": "Three buildings, ~562 MW IT live, ~660 MW by Q1 2027 (Epoch)"
   },
   {
    "id": "cb-gua",
@@ -915,6 +930,141 @@
    "capexB": null,
    "est": false,
    "note": "Hinojosa held a press conference against it"
+  },
+  {
+   "id": "goog-oma",
+   "name": "Omaha (Papillion)",
+   "owner": "googl",
+   "partner": null,
+   "state": "NE",
+   "lat": 41.15,
+   "lon": -96.04,
+   "gw": 0.4,
+   "now": 0.24,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~237 MW IT live, ~395 MW by mid-2028 (Epoch)"
+  },
+  {
+   "id": "goog-lin",
+   "name": "Lincoln",
+   "owner": "googl",
+   "partner": null,
+   "state": "NE",
+   "lat": 40.85,
+   "lon": -96.7,
+   "gw": 0.28,
+   "now": 0.14,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~141 MW IT live, ~283 MW by late 2027 (Epoch)"
+  },
+  {
+   "id": "goog-bri",
+   "name": "Bristow (Prince William)",
+   "owner": "googl",
+   "partner": null,
+   "state": "VA",
+   "lat": 38.72,
+   "lon": -77.55,
+   "gw": 0.24,
+   "now": 0.24,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~238 MW IT (Epoch)"
+  },
+  {
+   "id": "goog-mes",
+   "name": "Mesa",
+   "owner": "googl",
+   "partner": null,
+   "state": "AZ",
+   "lat": 33.4,
+   "lon": -111.65,
+   "gw": 0.18,
+   "now": 0.18,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~183 MW IT (Epoch); water is the binding limit"
+  },
+  {
+   "id": "meta-tem",
+   "name": "Temple",
+   "owner": "meta",
+   "partner": null,
+   "state": "TX",
+   "lat": 31.1,
+   "lon": -97.35,
+   "gw": 0.18,
+   "now": 0.18,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~178 MW IT live (Epoch); expansions need ERCOT and state permits"
+  },
+  {
+   "id": "meta-ros",
+   "name": "Rosemount",
+   "owner": "meta",
+   "partner": null,
+   "state": "MN",
+   "lat": 44.74,
+   "lon": -93.12,
+   "gw": 0.18,
+   "now": 0.18,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~178 MW IT (Epoch)"
+  },
+  {
+   "id": "meta-jef",
+   "name": "Jeffersonville",
+   "owner": "meta",
+   "partner": null,
+   "state": "IN",
+   "lat": 38.33,
+   "lon": -85.72,
+   "gw": 0.18,
+   "now": 0.18,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~178 MW IT (Epoch)"
+  },
+  {
+   "id": "meta-mgy",
+   "name": "Montgomery",
+   "owner": "meta",
+   "partner": null,
+   "state": "AL",
+   "lat": 32.36,
+   "lon": -86.3,
+   "gw": 0.36,
+   "now": 0.15,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~153 MW IT live, ~358 MW by Feb 2027 (Epoch)"
+  },
+  {
+   "id": "ant-lm",
+   "name": "Lake Mariner (TeraWulf/Fluidstack)",
+   "owner": "other",
+   "partner": null,
+   "state": "NY",
+   "lat": 43.35,
+   "lon": -78.62,
+   "gw": 0.38,
+   "now": 0.21,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "Anthropic capacity at TeraWulf; ~210 MW IT live, ~378 MW by Mar 2027 (Epoch); NY EO 62 permit pause applies to new 50 MW+ phases"
   }
  ],
  "risk": {
@@ -1434,7 +1584,7 @@
   },
   "spcx": {
    "grade": "Low-Medium",
-   "view": "Memphis/Southaven sits in Tennessee and Mississippi, outside every state whose new governor backs a pause. Local turbine permits remain the risk, but the build is largely done.",
+   "view": "Colossus 1 and 2 are both in Memphis, Tennessee (~1.3 GW IT live combined per Epoch), with gas turbines across the state line in Southaven, Mississippi; Building 3 should lift Colossus 2 to ~1.5 GW IT by Q1 2027. Neither state's governor backs a pause; local turbine permits remain the risk.",
    "moves": [
     "Keep power plant on the Mississippi side"
    ]
@@ -1494,18 +1644,32 @@
   },
   "crusoe": {
    "grade": "Low",
-   "view": "Cheyenne, Wyoming with its own gas power is the template for friendly-state builds.",
+   "view": "Cheyenne, Wyoming with its own gas power was the friendly-state template, but development was paused on Jun 9, 2026 at the customer's request, so the risk here is demand, not politics. Crusoe still reports ~4.9 GW contracted, including building Stargate Abilene.",
    "moves": []
   },
   "qts": {
    "grade": "Medium",
-   "view": "Large Georgia exposure via Fayetteville.",
+   "view": "QTS built Microsoft's Fairwater Atlanta (previously double-counted here as a separate Fayetteville campus). Its own large AI footprint is Richmond, Virginia (~560 MW IT live), a mixed-risk state, so direct exposure is the Georgia pause hitting future Atlanta phases.",
    "moves": [
-    "Shift to Alabama/Mississippi"
+    "Shift new Atlanta phases to Alabama/Mississippi",
+    "Keep expanding Richmond"
    ]
   }
  },
  "dev": [
+  {
+   "d": "2026-11-07",
+   "co": [
+    "spcx",
+    "msft",
+    "amzn",
+    "orcl",
+    "meta",
+    "googl"
+   ],
+   "t": "Data check against Epoch AI: Colossus 2 corrected to ~946 MW IT operating in Memphis (was shown as 1 GW under construction in Mississippi); campuses now show operating vs planned GW, Fairwater Atlanta/QTS double count removed, nine Epoch-tracked campuses added.",
+   "src": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity"
+  },
   {
    "d": "2026-11-04",
    "co": [
@@ -1634,6 +1798,26 @@
   }
  ],
  "sources": [
+  [
+   "Bloomberg Law: Crusoe pauses Wyoming site",
+   "https://news.bloomberglaw.com/artificial-intelligence/crusoe-touts-5-gigawatts-of-data-centers-pauses-wyoming-site"
+  ],
+  [
+   "IREN: Sweetwater 1 energised",
+   "https://iren.gcs-web.com/news-releases/news-release-details/iren-announces-successful-energization-sweetwater-1"
+  ],
+  [
+   "Galaxy: Helios Phase I delivered",
+   "https://www.fox34.com/2026/07/10/galaxy-completes-phase-i-its-helios-data-center-campus-delivering-133-megawatts-critical-it-load-coreweave/"
+  ],
+  [
+   "Epoch AI: Colossus 2",
+   "https://epoch.ai/data/ai-data-centers/directory/colossus-2"
+  ],
+  [
+   "Epoch AI: largest AI data centers by power",
+   "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity"
+  ],
   [
    "Modo Energy: midterms could disrupt 40% of announced data centers",
    "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"

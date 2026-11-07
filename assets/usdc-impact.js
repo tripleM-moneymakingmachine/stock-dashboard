@@ -83,7 +83,8 @@
   function stateShares() {
     const tier = (c) => ((U.risk[c] || {}).tier || 3);
     const g = {};
-    U.sites.filter((s) => s.status !== "op" && tier(s.state) >= 4).forEach((s) => { g[s.state] = (g[s.state] || 0) + s.gw; });
+    const rem = (s) => Math.max(0, s.gw - (s.now != null ? s.now : s.status === "op" ? s.gw : 0));
+    U.sites.filter((s) => rem(s) > 0 && tier(s.state) >= 4).forEach((s) => { g[s.state] = (g[s.state] || 0) + rem(s); });
     const tot = Object.values(g).reduce((a, b) => a + b, 0) || 1;
     return Object.entries(g).map(([c, v]) => ({ c, share: v / tot, gw: v })).sort((a, b) => b.gw - a.gw);
   }
