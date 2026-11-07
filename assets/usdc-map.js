@@ -362,15 +362,45 @@
     el.innerHTML = `<table class="rt"><thead><tr><th>Company</th><th style="text-align:left">Latest disclosed</th><th style="text-align:left">End-2026</th><th style="text-align:left">End-2027</th><th style="text-align:left">2028</th><th style="text-align:left">Basis and source</th></tr></thead><tbody>${COS.filter((o) => G[o]).map((o) => { const g = G[o];
       return `<tr><td>${esc(D.owners[o].n)}<small>${esc(D.owners[o].t)} · ${dfmt(g.d)}</small></td>${[g.now, g.y26, g.y27, g.y28].map((v) => `<td style="text-align:left;font-family:var(--f-body)">${esc(v)}</td>`).join("")}<td style="text-align:left;font-family:var(--f-body);min-width:260px"><small style="display:block">${esc(g.basis)} <a href="${esc(g.src)}" target="_blank" rel="noopener">source</a>${g.src2 ? ` · <a href="${esc(g.src2)}" target="_blank" rel="noopener">call</a>` : ""}</small></td></tr>`; }).join("")}</tbody></table>`;
   }
+  const GRADE_RANK = { "very high": 6, "high": 5, "medium-high": 4, "medium": 3, "low-medium": 2, "low": 1 };
+  const RISK_COLS = [
+    { k: "name", l: "Company", t: "", v: (r) => D.owners[r.o].n.toLowerCase(), asc: true },
+    { k: "risk", l: "Risk", t: "Sorts Very High → High → Medium-High → Medium → Low-Medium → Low", v: (r) => GRADE_RANK[(r.v.grade || "").toLowerCase()] || 0 },
+    { k: "cur", l: "Current", t: "Operating today, all tracked campuses in any state", v: (r) => r.cur },
+    { k: "aUc", l: "Building", t: "Not yet operating, all states", v: (r) => r.aUc },
+    { k: "aPl", l: "Planned", t: "Not yet operating, all states", v: (r) => r.aPl },
+    { k: "aBl", l: "Blocked", t: "Not yet operating, all states", v: (r) => r.aBl },
+    { k: "hostile", l: "In hostile states", t: "Building + Planned + Blocked in tier 4–5 states", v: (r) => r.hostile },
+    { k: "pct", l: "% of footprint at risk", t: "", v: (r) => r.pct },
+    { k: "to", l: "Can move to", t: "Sorts by number of friendlier states", v: (r) => r.to.length, left: true },
+  ];
+  const RS = { k: null, dir: -1 }; // null = default order (largest exposure first)
   function riskTable() {
-    const rows = COS.map((o) => ({ o, ...exposure(o), v: D.views[o] || {} })).sort((a, b) => b.uc + b.pl + b.bl - (a.uc + a.pl + a.bl));
-    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th title="Operating today, all tracked campuses in any state">Current</th><th title="Not yet operating, all states">Building</th><th title="Not yet operating, all states">Planned</th><th title="Not yet operating, all states">Blocked</th><th title="Building + Planned + Blocked in tier 4–5 states">In hostile states</th><th>% of footprint at risk</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
-      const at = r.uc + r.pl + r.bl, pct = r.all ? (at / r.all) * 100 : 0;
+    let rows = COS.map((o) => ({ o, ...exposure(o), v: D.views[o] || {} })).map((r) => {
+      const at = r.uc + r.pl + r.bl; return { ...r, at, pct: r.all ? (at / r.all) * 100 : 0 };
+    }).sort((a, b) => b.at - a.at);
+    const col = RISK_COLS.find((c) => c.k === RS.k);
+    if (col) rows = rows.map((r, i) => ({ r, i })).sort((a, b) => {
+      const x = col.v(a.r), y = col.v(b.r);
+      const c = typeof x === "string" ? x.localeCompare(y) : x - y;
+      return c * RS.dir || b.r.hostile - a.r.hostile || a.i - b.i;
+    }).map((x) => x.r);
+    const head = RISK_COLS.map((c) => {
+      const on = RS.k === c.k, arrow = on ? (RS.dir > 0 ? " ▲" : " ▼") : "";
+      return `<th data-k="${c.k}" title="${esc(c.t ? c.t + " · click to sort" : "Click to sort")}" aria-sort="${on ? (RS.dir > 0 ? "ascending" : "descending") : "none"}" style="cursor:pointer;user-select:none;white-space:nowrap${c.left ? ";text-align:left" : ""}${on ? ";color:var(--ink,inherit);font-weight:700" : ""}">${c.l}<span style="opacity:${on ? 1 : 0.35}">${on ? arrow : " ↕"}</span></th>`;
+    }).join("");
+    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr>${head}</tr></thead><tbody>${rows.map((r) => {
+      const pct = r.pct;
       return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small></td>
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
         <td>${fmt(r.cur)}</td><td>${fmt(r.aUc)}</td><td>${fmt(r.aPl)}</td><td>${fmt(r.aBl)}</td><td class="${r.hostile > 0 ? "down" : ""}">${fmt(r.hostile)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company GW targets not yet tied to a disclosed site (SpaceX, reported in Texas; Oracle and Nebius, location undisclosed and not counted as hostile), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    }).join("")}</tbody></table><p class="note">Click any column heading to sort; click again to reverse. All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company GW targets not yet tied to a disclosed site (SpaceX, reported in Texas; Oracle and Nebius, location undisclosed and not counted as hostile), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    document.querySelectorAll("#usRisk th[data-k]").forEach((th) => (th.onclick = () => {
+      const c = RISK_COLS.find((x) => x.k === th.dataset.k);
+      if (RS.k === c.k) RS.dir = -RS.dir; else { RS.k = c.k; RS.dir = c.asc ? 1 : -1; }
+      riskTable();
+    }));
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
