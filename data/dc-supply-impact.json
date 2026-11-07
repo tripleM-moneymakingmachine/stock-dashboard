@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-07",
- "asofText": "Nov 7, 2026",
+ "asof": "2026-11-08",
+ "asofText": "Nov 8, 2026",
  "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company's data center revenue; revenue run-rates are the latest quarter ×4 from each stock page (~ = estimate). Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
@@ -322,7 +322,7 @@
   "VRT": "Most directly exposed equipment name: UPS, thermal and liquid cooling ship with construction schedules. Backlog and the shift to friendly states and overseas (Vertiv sells globally) limit lost revenue.",
   "ROK": "Small AI data center exposure; mostly an industrial cycle story.",
   "GEV": "Mixed: grid gear for Texas sites slips, but the ratepayer-first rules push hyperscalers to self-supply with gas turbines, which is GE Vernova's sold-out product. Likely net winner.",
-  "BE": "Clear second-order winner: if states make data centers pay for grid upgrades or ban grid hook-ups, behind-the-meter fuel cells that deploy in months become the fastest workaround.",
+  "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, the first big post-election proof that pay-your-own-power rules push hyperscalers to behind-the-meter fuel cells that deploy in months.",
   "VST": "Most exposed power name: its growth thesis is new Texas data center load, and management admits the permit pause is already softening ERCOT prices. Still, Q3 beat, 2027 guidance was set above 2026, and it signed a 207 MW Odessa data center PPA, so the 10.6% Nov 6 bounce reflects earnings resilience rather than reduced Texas risk.",
   "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
  }

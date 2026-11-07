@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-07",
- "asofText": "Nov 7, 2026",
+ "asof": "2026-11-08",
+ "asofText": "Nov 8, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -880,18 +880,18 @@
    "note": "11 GW nuclear+gas plan; no anchor tenant disclosed"
   },
   {
-   "id": "crusoe-wy",
-   "name": "Cheyenne (with Tallgrass)",
-   "owner": "crusoe",
-   "partner": null,
+   "id": "goog-wy",
+   "name": "Cheyenne (Laramie County)",
+   "owner": "googl",
+   "partner": "Tallgrass, AEP, Black Hills, Related Digital",
    "state": "WY",
    "lat": 41.14,
    "lon": -104.82,
-   "gw": 1.8,
+   "gw": 0.7,
    "status": "pl",
-   "capexB": null,
-   "est": false,
-   "note": "1.8 GW with own gas power; development paused Jun 9, 2026 at the customer's request"
+   "capexB": 17.0,
+   "est": true,
+   "note": "Google bought Crusoe's pre-developed site (Nov 6) and plans a $17B campus; Google pays for 100% of its power, mostly from a 702 MW AEP fuel-cell plant using Bloom cells, air-cooled. Data center GW not disclosed (shown at the fuel-cell size)"
   },
   {
    "id": "qts-ric",
@@ -1704,7 +1704,7 @@
   },
   "WY": {
    "tier": 1,
-   "why": "Gas and wind, pro-development (Crusoe/Tallgrass 1.8 GW).",
+   "why": "Gas and wind, pro-development; Google's $17B Cheyenne campus (ex-Crusoe/Tallgrass site) pays for all its own power. Watch: a University of Wyoming poll shows only ~30% support and Congressman-elect Chuck Gray opposes new AI data centers.",
    "to": [
     "MT",
     "UT"
@@ -1920,10 +1920,10 @@
   },
   "googl": {
    "grade": "Medium-High",
-   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google pairs sites with its own power (Intersect), which is the template for winning approval under a ratepayer-first regime, but losing the sales-tax exemption alone is material at this scale.",
+   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google is already showing the workaround: two days after the election it took over Crusoe's Wyoming site for $17B and pledged to pay for 100% of the power, mostly from on-site fuel cells. That template (own power, no ratepayer cost, air cooling) is the one most likely to win approvals under the new regimes, but it raises cost per GW, and losing Texas's sales-tax exemption alone is material at this scale. The stock's weakness is mostly sector sentiment; its site risk is real but the most manageable among the big builders.",
    "moves": [
-    "Move Texas phases to Oklahoma (Mayes) and Arkansas",
-    "Co-locate generation to sidestep grid-cost fights",
+    "Move Texas phases to Wyoming, Oklahoma (Mayes) and Arkansas",
+    "Self-supply power (Bloom/AEP, Intersect) to sidestep grid-cost fights",
     "Phase Texas builds to fit grandfathered permits"
    ]
   },
@@ -2017,8 +2017,8 @@
    ]
   },
   "crusoe": {
-   "grade": "Low",
-   "view": "Cheyenne, Wyoming was paused on Jun 9, 2026 at the customer's request, so that risk is demand, not politics. The bigger exposure is now Texas: Crusoe built Stargate Abilene and Google's Goodnight campus, and its ~1 GW Project Hyper in Childress is under construction under the Texas pause. Crusoe reports ~4.9 GW contracted.",
+   "grade": "Medium",
+   "view": "Crusoe sold its Cheyenne, Wyoming site to Google on Nov 6 after failing to sign a customer there, so it loses a 1.8 GW development but recovers its pre-development spend. The bigger exposure is Texas: Crusoe built Stargate Abilene and Google's Goodnight campus, and its ~1 GW Project Hyper in Childress is under construction under the Texas pause. Crusoe now cites more than 6 GW contracted and 40 GW+ in its pipeline, but losing Wyoming to the end customer shows hyperscalers taking projects in-house.",
    "moves": []
   },
   "qts": {
@@ -2031,6 +2031,52 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-06",
+   "co": [
+    "googl",
+    "crusoe"
+   ],
+   "t": "Google bought Crusoe's Cheyenne, Wyoming site and will spend $17B building it itself, paying for all of its power from a 702 MW AEP fuel-cell plant built with Bloom cells; Crusoe exits after failing to land a customer.",
+   "src": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google"
+  },
+  {
+   "d": "2026-11-06",
+   "co": [
+    "orcl",
+    "sbank"
+   ],
+   "t": "OpenAI CFO Sarah Friar said the company will keep building US capacity despite the midterm sweep, is raising fresh capital, and will stop using NDAs with public officials on new sites.",
+   "src": "https://indianexpress.com/article/technology/artificial-intelligence/openai-us-data-centre-expansion-10954367"
+  },
+  {
+   "d": "2026-11-07",
+   "co": [
+    "*"
+   ],
+   "t": "The Senate permitting bill's final text, up for a vote Monday, keeps the rule that new data centers of 20 MW or more pay the full cost of their grid service and lets states charge more or require own generation.",
+   "src": "https://mlq.ai/news/senates-final-permitting-text-makes-transmission-developers-wait-a-year-for-states-keeps-data-center-cost-rule-ahead-of-monday-vote"
+  },
+  {
+   "d": "2026-11-06",
+   "co": [
+    "crwv",
+    "nbis",
+    "iren",
+    "apld",
+    "cifr"
+   ],
+   "t": "Neoclouds bounced Friday (IREN +16% on doubled AI revenue, CoreWeave +6.6%, Applied Digital +9%) but remain roughly half their October levels; Bernstein cut IREN's target to $55 and named IREN and Cipher the most Texas-exposed. CoreWeave reports Nov 10, Nebius Nov 12.",
+   "src": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
+  },
+  {
+   "d": "2026-11-06",
+   "co": [
+    "*"
+   ],
+   "t": "Bloomberg Intelligence expects the election to cut 2027 AI infrastructure spending by 5–7% of ~$1.4T and up to 10 GW of capacity to miss next year's online dates.",
+   "src": "https://insurancejournal.com/news/southcentral/2026/11/06/891870.htm"
+  },
   {
    "d": "2026-11-07",
    "co": [
@@ -2208,6 +2254,14 @@
  ],
  "sources": [
   [
+   "Bloomberg: Google takes over Crusoe's Wyoming site",
+   "https://bloomberg.com/news/articles/2026-11-06/google-takes-over-wyoming-data-center-that-crusoe-had-pitched"
+  ],
+  [
+   "Heatmap/MLQ: Senate permitting bill data center cost rule",
+   "https://mlq.ai/news/senates-final-permitting-text-makes-transmission-developers-wait-a-year-for-states-keeps-data-center-cost-rule-ahead-of-monday-vote"
+  ],
+  [
    "The Next Web: Cipher Black Pearl and Stingray",
    "https://thenextweb.com/news/cipher-digital-810m-junk-bond-amazon-data-center-texas"
   ],
@@ -2334,14 +2388,6 @@
   [
    "CryptoBriefing: Meta, Louisiana moratorium odds",
    "https://cryptobriefing.com/meta-faces-political-hurdles-for-us-data-centers-post-midterms-eyes-overseas/"
-  ],
-  [
-   "Luminix: moratorium wave",
-   "https://www.useluminix.com/reports/industry-analysis/data-center-moratoriums-after-the-midterms"
-  ],
-  [
-   "TechRadar: Abilene expansion dropped",
-   "https://www.techradar.com/pro/oracle-and-openai-drop-plans-for-mega-stargate-ai-us-data-center"
   ]
  ],
  "modo": {
