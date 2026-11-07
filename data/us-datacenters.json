@@ -1278,11 +1278,11 @@
    "state": "MO",
    "lat": 39.03,
    "lon": -94.33,
-   "gw": 0.8,
+   "gw": 1.2,
    "status": "pl",
    "capexB": null,
    "est": false,
-   "note": "Planned 800 MW, up to 10 buildings on 400 acres; Nebius still evaluating (Jan 2026)"
+   "note": "Independence campus, 1.2 GW on ~400 acres; Chapter 100 incentive approved Mar 2026, cleared to build"
   },
   {
    "id": "xai-unsited",
@@ -1299,6 +1299,143 @@
    "est": true,
    "unsited": true,
    "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). No locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map."
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": false,
+   "id": "nbis-pa",
+   "name": "Highridge (Pennsylvania)",
+   "owner": "nbis",
+   "state": "PA",
+   "lat": 41.0,
+   "lon": -76.2,
+   "gw": 1.2,
+   "now": 0,
+   "status": "pl",
+   "note": "Second US GW-scale campus, 1.2 GW; 250–350 MW by end-2027, then ~300 MW a year. County not disclosed, map position approximate; sits in a tier-4 state"
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": false,
+   "id": "nbis-bhm",
+   "name": "BHM01 Birmingham (Oxmoor)",
+   "owner": "nbis",
+   "state": "AL",
+   "lat": 33.45,
+   "lon": -86.86,
+   "gw": 0.3,
+   "now": 0,
+   "status": "pl",
+   "note": "Up to ~300 MW IT reported; application filed Feb 2026 while the city weighs a temporary data center moratorium"
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": false,
+   "id": "apld-df1",
+   "name": "Delta Forge 1, Alexandria",
+   "owner": "apld",
+   "state": "LA",
+   "lat": 31.31,
+   "lon": -92.45,
+   "gw": 0.43,
+   "now": 0,
+   "status": "uc",
+   "note": "430 MW campus; 300 MW IT leased to a hyperscaler; ground broken Jan 2026, initial operations mid-2027"
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": false,
+   "id": "apld-pf3",
+   "name": "Polaris Forge 3, Oliver County",
+   "owner": "apld",
+   "state": "ND",
+   "lat": 47.1,
+   "lon": -101.3,
+   "gw": 0.43,
+   "now": 0,
+   "status": "pl",
+   "note": "~430 MW grid / 300 MW IT, 15-year hyperscaler lease (May 2026); initial operations Aug 2027"
+  },
+  {
+   "partner": "AWS",
+   "capexB": null,
+   "est": true,
+   "id": "cifr-bp",
+   "name": "Black Pearl, Winkler County",
+   "owner": "cifr",
+   "state": "TX",
+   "lat": 31.86,
+   "lon": -103.09,
+   "gw": 0.3,
+   "now": 0.15,
+   "status": "op",
+   "note": "300 MW leased to AWS for 15 years; first phase delivered early, rest due Q4 2026. ~ live share is Claude's estimate (one of two phases)"
+  },
+  {
+   "partner": "AWS",
+   "capexB": null,
+   "est": false,
+   "id": "cifr-sr",
+   "name": "Stingray, Andrews County",
+   "owner": "cifr",
+   "state": "TX",
+   "lat": 32.32,
+   "lon": -102.7,
+   "gw": 0.1,
+   "now": 0,
+   "status": "uc",
+   "note": "100 MW leased to Amazon for 15 years; $810M notes fund remaining construction; shell due Q4 2026"
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": false,
+   "id": "cifr-col",
+   "name": "Colchis, Tom Green County",
+   "owner": "cifr",
+   "state": "TX",
+   "lat": 31.55,
+   "lon": -100.35,
+   "gw": 1.0,
+   "now": 0,
+   "status": "pl",
+   "note": "Conditional 1 GW ERCOT base-load classification (Batch Zero); energisation targeted 2028"
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": true,
+   "id": "orcl-unsited",
+   "name": "Further capacity to reach ~10 GW (sites not disclosed)",
+   "owner": "orcl",
+   "state": "—",
+   "lat": 0,
+   "lon": 0,
+   "gw": 2.0,
+   "now": 0,
+   "status": "pl",
+   "unsited": true,
+   "note": "Oracle targets ~10 GW of AI data center capacity by May 2028; ~8 GW is on tracked US campuses, leaving ~2 GW not tied to a disclosed site. Company-wide, so part may be outside the US. Not drawn on the map"
+  },
+  {
+   "partner": null,
+   "capexB": null,
+   "est": true,
+   "id": "nbis-unsited",
+   "name": "Further contracted power to reach 5 GW (sites not disclosed)",
+   "owner": "nbis",
+   "state": "—",
+   "lat": 0,
+   "lon": 0,
+   "gw": 1.9,
+   "now": 0,
+   "status": "pl",
+   "unsited": true,
+   "note": "Nebius targets 5 GW of contracted power by end-2026; ~3.1 GW is on tracked US campuses. The rest is undisclosed and likely includes Europe and Israel. Contracted, not live. Not drawn on the map"
   }
  ],
  "risk": {
@@ -1834,11 +1971,11 @@
    ]
   },
   "nbis": {
-   "grade": "Low",
-   "view": "US footprint is Missouri and New Jersey, neither directly hit by the new governors. The risk is execution, not policy: Microsoft has stepped up oversight after a $1M generator fine at Vineland, and part of that site may slip to 2027. With near-zero net debt and prepayments, Nebius can wait out a Microsoft pause better than peers; the Nov 5 drop looked like sentiment.",
+   "grade": "Low-Medium",
+   "view": "Live US footprint is small (Kansas City, Vineland), but the pipeline is now large: Independence, Missouri (1.2 GW, approved), Highridge in Pennsylvania (1.2 GW, a tier-4 state) and Birmingham, Alabama (~0.3 GW, where the city is weighing a moratorium). Its 5 GW contracted-power target for end-2026 is company-wide, so ~1.9 GW is not tied to a disclosed site and likely includes Europe. Near-zero net debt and prepayments mean Nebius can wait out delays better than most neoclouds.",
    "moves": [
-    "Keep expanding in Missouri/New Jersey",
-    "Use Finland/Israel capacity as a hedge"
+    "Lead with Missouri (approved) while Pennsylvania clears",
+    "Keep Finland/Israel capacity as a hedge"
    ]
   },
   "iren": {
@@ -1866,9 +2003,10 @@
   },
   "cifr": {
    "grade": "Medium-High",
-   "view": "Barber Lake is in Texas but backstopped by Google, which lowers financing risk.",
+   "view": "All Texas: Barber Lake (Fluidstack, Google backstop), Black Pearl (300 MW for AWS, first phase live) and Stingray (100 MW for Amazon) are under the Texas pause, and Colchis (1 GW conditional ERCOT base load, 2028) is further out. Long AWS and Google-backed leases lower financing risk, but every site needs Texas permits and ERCOT service.",
    "moves": [
-    "Lean on the Google backstop"
+    "Lean on AWS and Google-backed leases",
+    "Energise Black Pearl and Stingray before new rules"
    ]
   },
   "frmi": {
@@ -1893,6 +2031,17 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-07",
+   "co": [
+    "nbis",
+    "apld",
+    "cifr",
+    "orcl"
+   ],
+   "t": "Added named campuses from filings: Nebius Independence (1.2 GW, approved), Pennsylvania Highridge (1.2 GW) and Birmingham; Applied Digital Delta Forge 1 (LA) and Polaris Forge 3 (ND); Cipher Black Pearl and Stingray (AWS) and Colchis. Company targets beyond named sites (SpaceX, Oracle, Nebius) now show as Planned, not yet sited.",
+   "src": "https://parameter.io/nebius-group-nbis-stock-jumps-as-missouri-greenlights-major-ai-data-center-project"
+  },
   {
    "d": "2026-11-07",
    "co": [
@@ -2058,6 +2207,26 @@
   }
  ],
  "sources": [
+  [
+   "The Next Web: Cipher Black Pearl and Stingray",
+   "https://thenextweb.com/news/cipher-digital-810m-junk-bond-amazon-data-center-texas"
+  ],
+  [
+   "DCD: Cipher Stingray notes",
+   "https://www.datacenterdynamics.com/en/news/cipher-seeks-810m-in-senior-secured-notes-for-stingray-data-center-in-west-texas/"
+  ],
+  [
+   "DCD: Applied Digital Louisiana lease",
+   "https://www.datacenterdynamics.com/en/news/applied-digital-secures-300mw-lease-with-hyperscaler-at-louisiana-data-center-campus/"
+  ],
+  [
+   "DCD: Nebius Pennsylvania campus",
+   "https://datacenterdynamics.com/en/news/nebius-plans-second-us-gigawatt-scale-data-center-campus-in-pennsylvania/"
+  ],
+  [
+   "Parameter: Nebius Independence 1.2 GW",
+   "https://parameter.io/nebius-group-nbis-stock-jumps-as-missouri-greenlights-major-ai-data-center-project"
+  ],
   [
    "Zacks/TradingView: SpaceX Q3 call targets",
    "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/"
@@ -2294,7 +2463,7 @@
   "apld": {
    "now": ">1 GW contracted",
    "y26": "—",
-   "y27": "Polaris Forge 3 (300 MW IT) starts Aug 2027",
+   "y27": "Delta Forge 1 (mid-2027) and Polaris Forge 3 (Aug 2027), 300 MW IT each",
    "y28": "—",
    "basis": "Leases signed: Delta Forge 1 (300 MW, Apr 2026) and Polaris Forge 3 (300 MW IT, ~430 MW grid, May 2026), on top of Polaris Forge 1–2.",
    "src": "https://capacityglobal.com/news/applied-digital-surpasses-1gw-agrees-lease-on-polaris-forge-3/",
@@ -2310,7 +2479,7 @@
    "d": "2026-10-27"
   },
   "cifr": {
-   "now": "First capacity live at Black Pearl",
+   "now": "First capacity live at Black Pearl (AWS)",
    "y26": "More halls at Black Pearl, Barber Lake by year-end",
    "y27": "270 MW available in pipeline",
    "y28": "—",
