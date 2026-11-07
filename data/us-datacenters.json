@@ -41,7 +41,8 @@
   "crwv": {
    "n": "CoreWeave",
    "t": "CRWV",
-   "c": "#0aa5b5"
+   "c": "#0aa5b5",
+   "cov": "Tracks 3 named campuses only; company has ~1.5 GW active, ~4.2 GW contracted"
   },
   "nbis": {
    "n": "Nebius",
@@ -214,7 +215,7 @@
    "state": "VA",
    "lat": 39.03,
    "lon": -77.5,
-   "gw": 4.0,
+   "gw": 4,
    "status": "op",
    "capexB": null,
    "est": true,
@@ -230,7 +231,7 @@
    "lon": -86.51,
    "gw": 2.31,
    "status": "op",
-   "capexB": 11.0,
+   "capexB": 11,
    "est": false,
    "note": "Trainium cluster for Anthropic; ~1.24 GW live (Epoch Oct 2026), 32 buildings, ~2.3 GW by 2028",
    "now": 1.24
@@ -245,7 +246,7 @@
    "lon": -90.11,
    "gw": 0.82,
    "status": "op",
-   "capexB": 10.0,
+   "capexB": 10,
    "est": false,
    "note": "Canton, Madison County: 5 buildings live (~341 MW); 12 buildings, ~819 MW by 2028 (Epoch)",
    "now": 0.34
@@ -260,7 +261,7 @@
    "lon": -79.77,
    "gw": 0.9,
    "status": "uc",
-   "capexB": 10.0,
+   "capexB": 10,
    "est": true,
    "note": "$10B North Carolina campus"
   },
@@ -274,7 +275,7 @@
    "lon": -76.15,
    "gw": 1.9,
    "status": "uc",
-   "capexB": 20.0,
+   "capexB": 20,
    "est": false,
    "note": "Nuclear-adjacent campus; PJM and state ratepayer scrutiny"
   },
@@ -286,9 +287,9 @@
    "state": "GA",
    "lat": 33.29,
    "lon": -83.98,
-   "gw": 1.0,
+   "gw": 1,
    "status": "uc",
-   "capexB": 11.0,
+   "capexB": 11,
    "est": true,
    "note": "$11B Georgia build; new governor promised a statewide pause"
   },
@@ -315,7 +316,7 @@
    "state": "OH",
    "lat": 39.48,
    "lon": -84.46,
-   "gw": 1.0,
+   "gw": 1,
    "status": "bl",
    "capexB": null,
    "est": true,
@@ -390,7 +391,7 @@
    "lon": -95.33,
    "gw": 0.44,
    "status": "op",
-   "capexB": 9.0,
+   "capexB": 9,
    "est": false,
    "note": "~442 MW live (Epoch Sep 2026); $9B expansion announced in a friendly state",
    "now": 0.44
@@ -405,7 +406,7 @@
    "lon": -90.18,
    "gw": 0.6,
    "status": "uc",
-   "capexB": 4.0,
+   "capexB": 4,
    "est": true,
    "note": "$4B Arkansas build"
   },
@@ -459,7 +460,7 @@
    "partner": null,
    "state": "SC",
    "lat": 33.06,
-   "lon": -80.0,
+   "lon": -80,
    "gw": 0.6,
    "status": "op",
    "capexB": null,
@@ -476,7 +477,7 @@
    "lon": -91.63,
    "gw": 1.8,
    "status": "uc",
-   "capexB": 27.0,
+   "capexB": 27,
    "est": false,
    "note": "Under construction, 0 MW live; ~1.6 GW IT by Q1 2028 on a 1.8 GW Entergy load (Epoch). Meta's 5 GW figure is a long-run cluster goal, not this site"
   },
@@ -505,7 +506,7 @@
    "lon": -106.25,
    "gw": 0.99,
    "status": "uc",
-   "capexB": 10.0,
+   "capexB": 10,
    "est": false,
    "note": "~988 MW under construction (Cleanview); $10B JV; state permits and power at risk"
   },
@@ -517,9 +518,9 @@
    "state": "IN",
    "lat": 40.05,
    "lon": -86.47,
-   "gw": 1.0,
+   "gw": 1,
    "status": "uc",
-   "capexB": 10.0,
+   "capexB": 10,
    "est": false,
    "note": "Ground broken Feb 2026; $10B+, 1 GW campus"
   },
@@ -616,7 +617,7 @@
    "partner": "OpenAI · SB Energy",
    "state": "TX",
    "lat": 30.65,
-   "lon": -97.0,
+   "lon": -97,
    "gw": 0.94,
    "status": "uc",
    "capexB": null,
@@ -700,7 +701,7 @@
    "owner": "spcx",
    "partner": null,
    "state": "TN",
-   "lat": 35.0,
+   "lat": 35,
    "lon": -89.99,
    "gw": 2.07,
    "status": "op",
@@ -719,7 +720,7 @@
    "lon": -76.31,
    "gw": 0.3,
    "status": "pl",
-   "capexB": 6.0,
+   "capexB": 6,
    "est": false,
    "note": "$6B campus, up to 300 MW"
   },
@@ -758,13 +759,14 @@
    "owner": "apld",
    "partner": "CoreWeave",
    "state": "ND",
-   "lat": 46.0,
+   "lat": 46,
    "lon": -98.52,
    "gw": 0.4,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "CoreWeave-leased; friendly state"
+   "note": "250 MW of critical IT load live of 400 MW IT at full build (company, Oct 5 2026); CoreWeave-leased; friendly state. IT-load basis (company gives no facility figure)",
+   "now": 0.25
   },
   {
    "id": "apld-pf2",
@@ -819,8 +821,9 @@
    "gw": 0.75,
    "status": "op",
    "capexB": null,
-   "est": false,
-   "note": "750 MW; Horizon 1 handed to Microsoft in Aug, Horizons 2–4 slipped to Jan–Feb 2027 after a Microsoft network redesign"
+   "est": true,
+   "note": "750 MW grid connection. Only Horizon 1 (~50 MW AI cloud) delivered to Microsoft, Aug 2026; Horizons 2–4 slipped to Jan–Feb 2027 after a Microsoft network redesign. The rest of the site counts as Building; it already has its grid connection, so new-interconnection curbs bite less here",
+   "now": 0.05
   },
   {
    "id": "iren-swt",
@@ -830,7 +833,7 @@
    "state": "TX",
    "lat": 32.47,
    "lon": -100.4,
-   "gw": 2.0,
+   "gw": 2,
    "status": "uc",
    "capexB": null,
    "est": false,
@@ -848,8 +851,8 @@
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Phase I (133 MW IT, ~0.17 GW facility) delivered to CoreWeave Jul 2026; CoreWeave has 800 MW contracted; ERCOT approved 1.6 GW, further phases need approval",
-   "now": 0.17
+   "note": "Phase I delivered to CoreWeave Jul 2026: 133 MW IT on ~200 MW gross power (company). CoreWeave has 526 MW IT contracted across Phases I–III on 800 MW gross; ERCOT approved ~1.63 GW, further phases need approval",
+   "now": 0.2
   },
   {
    "id": "cifr-bl",
@@ -873,11 +876,11 @@
    "state": "TX",
    "lat": 35.3,
    "lon": -101.6,
-   "gw": 11.0,
+   "gw": 11,
    "status": "pl",
    "capexB": null,
-   "est": false,
-   "note": "11 GW nuclear+gas plan; no anchor tenant disclosed"
+   "est": true,
+   "note": "Shown at the 11 GW data-centre plan. Fermi now markets a 17 GW private power grid (generation target, not data-centre load; ~6 GW permitted). TensorWave lease (222 MW Phase 1, up to 650 MW) signed Aug 2026 but not yet effective: the Oct 31 closing date passed with conditions unmet (Fermi, Nov 3), no termination by either side"
   },
   {
    "id": "goog-wy",
@@ -889,7 +892,7 @@
    "lon": -104.82,
    "gw": 0.7,
    "status": "pl",
-   "capexB": 17.0,
+   "capexB": 17,
    "est": true,
    "note": "Google bought Crusoe's pre-developed site (Nov 6) and plans a $17B campus; Google pays for 100% of its power, mostly from a 702 MW AEP fuel-cell plant using Bloom cells, air-cooled. Data center GW not disclosed (shown at the fuel-cell size)"
   },
@@ -1166,7 +1169,7 @@
    "state": "OH",
    "lat": 39.65,
    "lon": -83.56,
-   "gw": 1.0,
+   "gw": 1,
    "status": "uc",
    "capexB": null,
    "est": false,
@@ -1180,7 +1183,7 @@
    "state": "OH",
    "lat": 40.08,
    "lon": -82.74,
-   "gw": 1.0,
+   "gw": 1,
    "status": "uc",
    "capexB": null,
    "est": false,
@@ -1250,7 +1253,7 @@
    "state": "TX",
    "lat": 34.4,
    "lon": -100.25,
-   "gw": 1.0,
+   "gw": 1,
    "status": "uc",
    "capexB": null,
    "est": false,
@@ -1290,8 +1293,8 @@
    "owner": "spcx",
    "partner": null,
    "state": "TX",
-   "lat": 31.0,
-   "lon": -99.0,
+   "lat": 31,
+   "lon": -99,
    "gw": 10.5,
    "now": 0,
    "status": "pl",
@@ -1308,7 +1311,7 @@
    "name": "Highridge (Pennsylvania)",
    "owner": "nbis",
    "state": "PA",
-   "lat": 41.0,
+   "lat": 41,
    "lon": -76.2,
    "gw": 1.2,
    "now": 0,
@@ -1400,7 +1403,7 @@
    "state": "TX",
    "lat": 31.55,
    "lon": -100.35,
-   "gw": 1.0,
+   "gw": 1,
    "now": 0,
    "status": "pl",
    "note": "Conditional 1 GW ERCOT base-load classification (Batch Zero); energisation targeted 2028"
@@ -1415,7 +1418,7 @@
    "state": "—",
    "lat": 0,
    "lon": 0,
-   "gw": 2.0,
+   "gw": 2,
    "now": 0,
    "status": "pl",
    "unsited": true,
@@ -1435,7 +1438,8 @@
    "now": 0,
    "status": "pl",
    "unsited": true,
-   "note": "Nebius targets 5 GW of contracted power by end-2026; ~3.1 GW is on tracked US campuses. The rest is undisclosed and likely includes Europe and Israel. Contracted, not live. Not drawn on the map"
+   "note": "Nebius targets 5 GW of contracted power by end-2026; ~3.1 GW is on tracked US campuses. The rest is undisclosed and likely includes Europe and Israel. Contracted, not live. Not drawn on the map",
+   "nonUS": true
   }
  ],
  "risk": {
@@ -2480,11 +2484,11 @@
    "d": "2026-10-28"
   },
   "crwv": {
-   "now": "Not given on the latest call",
+   "now": "~1.5 GW active, ~4.2 GW contracted (Aug 11, 2026)",
    "y26": ">1.85 GW active",
    "y27": "—",
    "y28": "—",
-   "basis": "Active power target set with Q2 2026 results (Aug 2026); Q3 results not yet out.",
+   "basis": "Company-wide. This page tracks only CoreWeave’s three named owned/leased campuses (~0.95 GW); most active power sits in colocation sites not listed here, so the % at risk covers the tracked campuses only. Active power target set with Q2 2026 results (Aug 2026); Q3 results not yet out.",
    "src": "https://aiweekly.co/fr/alerts/coreweave-publie-258-md-au-t2-112-backlog-104-md-et-vise-185-gw-actif-fin-2026",
    "d": "2026-08-11"
   },

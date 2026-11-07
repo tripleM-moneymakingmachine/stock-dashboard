@@ -285,19 +285,23 @@
   // ---------- exposure & cost ----------
   const COS = ["msft", "amzn", "googl", "meta", "orcl", "sbank", "spcx", "crwv", "nbis", "iren", "apld", "glxy", "cifr", "frmi"];
   function exposure(o) {
-    const at = D.sites.filter((s) => s.owner === o && pipeGW(s) > 0 && tierOf(s.state) >= 4);
+    // Non-US targets (nonUS) stay out of every column and the footprint: the table is US-only.
+    const mine = D.sites.filter((s) => s.owner === o && !s.nonUS);
+    const at = mine.filter((s) => pipeGW(s) > 0 && tierOf(s.state) >= 4);
     const g = (k) => at.filter((s) => pipeSt(s) === k).reduce((a, s) => a + pipeGW(s), 0);
-    const all = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + s.gw, 0);
-    const pipe = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + pipeGW(s), 0);
+    const all = mine.reduce((a, s) => a + s.gw, 0);
+    const pipe = mine.reduce((a, s) => a + pipeGW(s), 0);
     const states = [...new Set(at.map((s) => s.state))];
-    const home = [...new Set(D.sites.filter((s) => s.owner === o && tierOf(s.state) <= 2).map((s) => s.state))];
+    const home = [...new Set(mine.filter((s) => tierOf(s.state) <= 2).map((s) => s.state))];
     const to = [...new Set([...home, ...states.flatMap((c) => (D.risk[c].to || []).map((x) => x.replace("*", "")).filter((x) => x !== "—" && tierOf(x) <= 3))])].slice(0, 5);
-    const cur = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + nowGW(s), 0);
+    const cur = mine.reduce((a, s) => a + nowGW(s), 0);
     const allPipe = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + pipeGW(s), 0);
-    const ga = (k) => D.sites.filter((s) => s.owner === o && pipeSt(s) === k).reduce((a, s) => a + pipeGW(s), 0);
+    const ga = (k) => mine.filter((s) => pipeSt(s) === k).reduce((a, s) => a + pipeGW(s), 0);
     const hostile = at.reduce((a, s) => a + pipeGW(s), 0);
+    const hostileUnsited = at.filter((s) => s.unsited).reduce((a, s) => a + pipeGW(s), 0);
+    const nonUS = D.sites.filter((s) => s.owner === o && s.nonUS).reduce((a, s) => a + s.gw, 0);
     const tg = (D.guide || {})[o] || {}, unsited = tg.gwTarget ? Math.max(0, tg.gwTarget - cur - allPipe) : 0;
-    return { uc: g("uc"), pl: g("pl"), bl: g("bl"), aUc: ga("uc"), aPl: ga("pl"), aBl: ga("bl"), hostile, unsited, tgBy: tg.targetBy, all, pipe, cur, allPipe, states, to, at };
+    return { uc: g("uc"), pl: g("pl"), bl: g("bl"), aUc: ga("uc"), aPl: ga("pl"), aBl: ga("bl"), hostile, hostileUnsited, nonUS, unsited, tgBy: tg.targetBy, all, pipe, cur, allPipe, states, to, at };
   }
   const P = {};
   function sliders() {
@@ -391,11 +395,11 @@
     }).join("");
     document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr>${head}</tr></thead><tbody>${rows.map((r) => {
       const pct = r.pct;
-      return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small></td>
+      return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small>${D.owners[r.o].cov ? `<small style="font-style:italic">${esc(D.owners[r.o].cov)}</small>` : ""}</td>
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
-        <td>${fmt(r.cur)}</td><td>${fmt(r.aUc)}</td><td>${fmt(r.aPl)}</td><td>${fmt(r.aBl)}</td><td class="${r.hostile > 0 ? "down" : ""}">${fmt(r.hostile)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
+        <td>${fmt(r.cur, 2)}</td><td>${fmt(r.aUc, 2)}</td><td>${fmt(r.aPl, 2)}${r.nonUS ? `<small>+${fmt(r.nonUS, 2)} non-US, excluded</small>` : ""}</td><td>${fmt(r.aBl, 2)}</td><td class="${r.hostile > 0 ? "down" : ""}">${fmt(r.hostile, 2)}${r.hostileUnsited ? `<small>${fmt(r.hostileUnsited, 2)} unsited, reported TX</small>` : ""}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%${r.hostileUnsited ? `<small>${fmt(r.all ? ((r.hostile - r.hostileUnsited) / r.all) * 100 : 0, 0)}% at disclosed sites</small>` : ""}</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">Click any column heading to sort; click again to reverse. All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company GW targets not yet tied to a disclosed site (SpaceX, reported in Texas; Oracle and Nebius, location undisclosed and not counted as hostile), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    }).join("")}</tbody></table><p class="note">Click any column heading to sort; click again to reverse. All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company GW targets not yet tied to a disclosed site: SpaceX's 10.5 GW is placed in Texas only because it is reported to be scouting Texas sites (no sizes or locations disclosed), so its % is shown both ways; Oracle's undisclosed 2 GW is not counted as hostile; Nebius's undisclosed balance is likely outside the US and is left out. ~ estimates included. Footprint = current + building + planned + blocked for US campuses. GW mixes facility power with IT load where a company gives only IT load (e.g. Applied Digital), and the risk grades are Claude's judgement, not a calculation. Read the % as share of tracked US capacity in hostile states, not odds of cancellation. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk th[data-k]").forEach((th) => (th.onclick = () => {
       const c = RISK_COLS.find((x) => x.k === th.dataset.k);
       if (RS.k === c.k) RS.dir = -RS.dir; else { RS.k = c.k; RS.dir = c.asc ? 1 : -1; }
