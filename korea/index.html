@@ -220,9 +220,9 @@ section.crecap{margin-top:0}
   <section id="crecap" class="crecap" data-src="../data/korea-recap.json" data-china="../data/korea.json" aria-label="Korea bond market recap and views" hidden></section>
 
   <section id="flows" class="flows" aria-labelledby="flH" hidden>
-    <div class="eyebrow">Fund flows · Korean equities vs KTBs · weekly</div>
+    <div class="eyebrow">Fund flows · Korean equities vs KTBs · daily</div>
     <h2 id="flH">KOSPI ↔ KTB rotation</h2>
-    <p class="sub">Korean retail money swings between stocks and bonds: when KOSPI runs, leveraged margin credit and broker deposits pile in and KTB demand fades; when stocks crack, deleveraging money parks in duration. This panel follows that switch with weekly flow proxies (KOFIA margin credit balance for leveraged equity money, and the 30Y KTB ETF\'s share of ETF turnover for bond demand) and combines them with equity and yield momentum into a Bond Rotation Signal, back-tested walk-forward. Same method as the China tab, so the two signals can be compared.</p>
+    <p class="sub">Korean retail money swings between stocks and bonds: when KOSPI runs, leveraged margin credit and broker deposits pile in and KTB demand fades; when stocks crack, deleveraging money parks in duration. This panel follows that switch with daily flow proxies (KOFIA margin credit balance for leveraged equity money, and the 30Y KTB ETF\'s share of ETF turnover for bond demand) and combines them with equity and yield momentum into a Bond Rotation Signal, re-read after every KOFIA close and back-tested walk-forward. Same method as the China tab, so the two signals can be compared.</p>
     <p class="fl-head" id="flHead"></p>
     <div class="fl-top" id="flSig"></div>
     <p class="fl-ust" id="flUst"></p>
@@ -231,19 +231,19 @@ section.crecap{margin-top:0}
         <div class="chead"><h3>KOSPI vs 10Y KTB yield, with signal regimes</h3><div class="ctl" style="margin:0;gap:8px"><div class="btns" id="flInv" role="group" aria-label="Yield axis"></div><div class="btns" id="flRng" role="group" aria-label="Range"></div></div></div>
         <div id="flMain" style="height:380px"></div>
         <div class="leg" id="flMainLeg" aria-live="polite"></div>
-        <p class="note">Shading shows the signal's regime each week. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
+        <p class="note">Shading shows the signal's regime each day. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Flows: margin credit vs bond ETF demand</h3></div>
         <div id="flFlow" style="height:240px"></div>
         <div class="leg" id="flFlowLeg" aria-live="polite"></div>
-        <p class="note">Bars: weekly change in KOFIA's margin credit balance (신용공여 잔고, KRW tn, left axis). Line: 30Y KTB ETF (KODEX 국고채30년액티브, 439870) turnover as a share of 439870 + KOSPI 200 ETF (KODEX 200, 069500) turnover (right axis). Rising bars with a falling line means money is moving into equities; falling bars with a rising line means it is moving back into bonds.</p>
+        <p class="note">Bars: daily change in KOFIA's margin credit balance (as last published; KOFIA reports it with a lag) (신용공여 잔고, KRW tn, left axis). Line: 30Y KTB ETF (KODEX 국고채30년액티브, 439870) turnover as a share of 439870 + KOSPI 200 ETF (KODEX 200, 069500) turnover (right axis). Rising bars with a falling line means money is moving into equities; falling bars with a rising line means it is moving back into bonds.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Bond Rotation Signal</h3><div class="btns" id="flCorr" role="group" aria-label="Overlay"></div></div>
         <div id="flSigC" style="height:220px"></div>
         <div class="leg" id="flSigLeg" aria-live="polite"></div>
-        <p class="note">Signal = average of four z-scores, each against its own trailing 52 weeks: −KOSPI 4-week return, −margin credit 4-week % change, +bond ETF turnover share vs its 26-week average, and −10Y KTB 4-week change. Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 26-week correlation of weekly KOSPI returns with weekly 10Y yield changes; it runs positive when the rotation is driving prices (stocks up, yields up).</p>
+        <p class="note">Signal = average of four z-scores, each against its own trailing 260 sessions (about a year): −KOSPI 20-day return, −margin credit 20-day % change, +bond ETF turnover share (20-day average vs its 130-day average), and −10Y KTB 20-day change. Recomputed every session. Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 130-day correlation of daily KOSPI returns with daily 10Y yield changes; it runs positive when the rotation is driving prices (stocks up, yields up).</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Back-test</h3><div class="btns" id="flBtMode" role="group" aria-label="Back-test units"></div></div>
@@ -251,8 +251,8 @@ section.crecap{margin-top:0}
         <div id="flBt" style="height:240px;margin-top:12px"></div>
         <div class="leg" id="flBtLeg" aria-live="polite"></div>
         <p class="note" id="flBtNote"></p>
-        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Weeks</th><th>10Y at start</th><th>10Y 4w after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
-        <p class="note">* still running, measured to the latest week.</p>
+        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Days</th><th>10Y at start</th><th>10Y 20d after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
+        <p class="note">* still running, measured to the latest session.</p>
       </div>
       <div class="panel" id="ust" hidden>
         <div class="chead"><h3 id="utH">US Treasury → KTB transmission</h3><div class="btns" id="utRng" role="group" aria-label="Range"></div></div>
@@ -443,7 +443,7 @@ section.crecap{margin-top:0}
 <script src="../assets/korea.js?v=2"></script>
 <script src="../assets/korea-irs.js?v=2"></script>
 <script src="../assets/korea-recap.js?v=1"></script>
-<script src="../assets/korea-flows.js?v=2"></script>
+<script src="../assets/korea-flows.js?v=3"></script>
 <script src="../assets/korea-mm.js?v=1"></script>
 <script src="../assets/korea-futures.js?v=1"></script>
 <script src="../assets/searchselect.js?v=2"></script>
