@@ -289,7 +289,8 @@
     const states = [...new Set(at.map((s) => s.state))];
     const home = [...new Set(D.sites.filter((s) => s.owner === o && tierOf(s.state) <= 2).map((s) => s.state))];
     const to = [...new Set([...home, ...states.flatMap((c) => (D.risk[c].to || []).map((x) => x.replace("*", "")).filter((x) => x !== "—" && tierOf(x) <= 3))])].slice(0, 5);
-    return { uc: g("uc"), pl: g("pl"), bl: g("bl"), all, pipe, states, to, at };
+    const cur = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + nowGW(s), 0);
+    return { uc: g("uc"), pl: g("pl"), bl: g("bl"), all, pipe, cur, states, to, at };
   }
   const P = {};
   function sliders() {
@@ -349,13 +350,13 @@
   }
   function riskTable() {
     const rows = COS.map((o) => ({ o, ...exposure(o), v: D.views[o] || {} })).sort((a, b) => b.uc + b.pl + b.bl - (a.uc + a.pl + a.bl));
-    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th>Building</th><th>Planned</th><th>Blocked</th><th>% of footprint</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
+    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th title="Operating today across all tracked campuses, any state">Current</th><th>Building</th><th>Planned</th><th>Blocked</th><th>% of footprint</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
       const at = r.uc + r.pl + r.bl, pct = r.all ? (at / r.all) * 100 : 0;
       return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small></td>
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
-        <td>${fmt(r.uc)}</td><td>${fmt(r.pl)}</td><td>${fmt(r.bl)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
+        <td>${fmt(r.cur)}</td><td>${fmt(r.uc)}</td><td>${fmt(r.pl)}</td><td>${fmt(r.bl)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">GW is planned build-out not yet operating on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    }).join("")}</tbody></table><p class="note">Current = GW operating today across all of the company's tracked campuses in any state (IT power where Epoch tracks it). Building, Planned and Blocked = planned build-out not yet operating in tiers 4–5 states on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
