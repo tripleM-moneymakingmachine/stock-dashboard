@@ -185,7 +185,7 @@
     const o = D.owners[s.owner] || {}, r = D.risk[s.state] || {};
     return `<b>${esc(s.name)}</b><small>${esc(SNAME[s.state] || s.state)} · ${esc(o.n)}${s.partner ? " · " + esc(s.partner) : ""}</small>
       <div class="tr"><i class="sw" style="background:${STC[s.status]}"></i>${ST[s.status]}<span>${s.est ? "~" : ""}${fmt(s.gw, s.gw < 1 ? 2 : 1)} GW planned</span></div>
-      ${s.now != null ? `<div class="tr">Operating now (IT)<span>${fmt(s.now, 2)} GW</span></div>` : ""}
+      ${s.now != null ? `<div class="tr">Operating now<span>${fmt(s.now, 2)} GW</span></div>` : ""}
       ${s.capexB ? `<div class="tr">Announced cost<span>$${fmt(s.capexB, 1)}B</span></div>` : ""}
       <div class="tr"><i class="rk" style="background:${tierCol(r.tier)}"></i>State risk<span>${TIER[r.tier] || "—"}</span></div>
       <small style="margin-top:6px">${esc(s.note)}</small>`;
@@ -356,7 +356,7 @@
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
         <td>${fmt(r.cur)}</td><td>${fmt(r.uc)}</td><td>${fmt(r.pl)}</td><td>${fmt(r.bl)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">Current = GW operating today across all of the company's tracked campuses in any state (IT power where Epoch tracks it). Building, Planned and Blocked = planned build-out not yet operating in tiers 4–5 states on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    }).join("")}</tbody></table><p class="note">Current = GW operating today across all of the company's tracked campuses in any state (facility power). Building, Planned and Blocked = planned build-out not yet operating in tiers 4–5 states on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
@@ -381,7 +381,7 @@
     const atRisk = sum((s) => tierOf(s.state) >= 4, pipeGW), pipe = sum(() => true, pipeGW);
     const tx = sum((s) => s.state === "TX", pipeGW);
     document.getElementById("usK").innerHTML = [
-      ["Campuses tracked", D.sites.length, `${fmt(sum(() => true, nowGW), 0)} GW operating now (IT power where Epoch tracks it)`],
+      ["Campuses tracked", D.sites.length, `${fmt(sum(() => true, nowGW), 0)} GW operating now (facility power)`],
       ["Pipeline in hostile states", fmt(atRisk) + " GW", `${fmt((atRisk / pipe) * 100, 0)}% of the ${fmt(pipe, 0)} GW pipeline tracked`],
       ["Texas pipeline", fmt(tx) + " GW", "Jefferies: ~13 GW at immediate risk; Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain"],
       ["Blocked on Nov 3", fmt(tot((s) => s.status === "bl")) + " GW", "Ohio votes at Trenton, Piqua, Sunbury"],

@@ -1,7 +1,7 @@
 {
  "asof": "2026-11-07",
  "asofText": "Nov 7, 2026",
- "note": "Each campus shows its planned build-out power and, where Epoch AI tracks it, the IT power operating today. Sites, owners and status are from company announcements, filings, Epoch AI and press reports; GW marked ~ are Claude estimates. Risk tiers, costs and views are Claude's assessment, updated daily.",
+ "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
    "n": "Microsoft",
@@ -98,12 +98,12 @@
    "state": "WI",
    "lat": 42.72,
    "lon": -87.9,
-   "gw": 2.26,
+   "gw": 2.72,
    "status": "op",
    "capexB": 7.3,
    "est": false,
-   "note": "First building live (~369 MW IT, Epoch May 2026); campus scaling to ~2.3 GW IT by mid-2028, now under Wisconsin's conditional pause",
-   "now": 0.37
+   "note": "Building 1 live (~442 MW facility, ~369 MW IT; Epoch May 2026); 11 buildings, ~2.7 GW by mid-2028; under Wisconsin's conditional pause",
+   "now": 0.44
   },
   {
    "id": "msft-atl",
@@ -113,26 +113,27 @@
    "state": "GA",
    "lat": 33.45,
    "lon": -84.47,
-   "gw": 0.64,
+   "gw": 0.86,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Built by QTS (Blackstone) for Microsoft; buildings 3–4 live Jun 2026, ~636 MW IT (Epoch)",
-   "now": 0.64
+   "note": "Built by QTS (Blackstone) for Microsoft; buildings 3–4 live Jun 2026, ~859 MW facility (Epoch, Cleanview)",
+   "now": 0.86
   },
   {
    "id": "msft-sat",
-   "name": "San Antonio campuses",
+   "name": "San Antonio (Texas Research Park)",
    "owner": "msft",
    "partner": null,
    "state": "TX",
    "lat": 29.38,
    "lon": -98.62,
-   "gw": 0.6,
+   "gw": 0.41,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Operating cloud region; expansions need ERCOT large-load approval"
+   "est": false,
+   "note": "~409 MW operating, 7 buildings (Cleanview); expansions need ERCOT large-load approval",
+   "now": 0.41
   },
   {
    "id": "msft-abi",
@@ -156,11 +157,12 @@
    "state": "VA",
    "lat": 36.67,
    "lon": -78.39,
-   "gw": 1.0,
+   "gw": 0.81,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Mature campus; Virginia reviewing data center tax break"
+   "est": false,
+   "note": "Two Boydton campuses, ~408 + ~399 MW operating (Cleanview); Virginia reviewing data center tax break",
+   "now": 0.81
   },
   {
    "id": "msft-dsm",
@@ -226,12 +228,12 @@
    "state": "IN",
    "lat": 41.7,
    "lon": -86.51,
-   "gw": 2.2,
+   "gw": 2.31,
    "status": "op",
    "capexB": 11.0,
    "est": false,
-   "note": "Trainium cluster for Anthropic; ~1.04 GW IT live (Epoch Oct 2026), heading to ~1.9 GW IT by 2028",
-   "now": 1.04
+   "note": "Trainium cluster for Anthropic; ~1.24 GW live (Epoch Oct 2026), 32 buildings, ~2.3 GW by 2028",
+   "now": 1.24
   },
   {
    "id": "amzn-ms",
@@ -241,12 +243,12 @@
    "state": "MS",
    "lat": 32.47,
    "lon": -90.11,
-   "gw": 0.68,
+   "gw": 0.82,
    "status": "op",
    "capexB": 10.0,
    "est": false,
-   "note": "Canton, Madison County: 5 buildings live (~284 MW IT); 12 buildings, ~683 MW IT by 2028 (Epoch)",
-   "now": 0.28
+   "note": "Canton, Madison County: 5 buildings live (~341 MW); 12 buildings, ~819 MW by 2028 (Epoch)",
+   "now": 0.34
   },
   {
    "id": "amzn-nc",
@@ -292,21 +294,22 @@
   },
   {
    "id": "amzn-oh",
-   "name": "Central Ohio campuses",
+   "name": "Central Ohio (New Albany, Dublin, Marysville)",
    "owner": "amzn",
    "partner": null,
    "state": "OH",
    "lat": 40.06,
    "lon": -83.12,
-   "gw": 2.0,
+   "gw": 1.63,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Existing ops; tax-credit halt applies to new projects"
+   "est": false,
+   "note": "Six operating AWS campuses, ~1.63 GW (Cleanview: Smith's Mill 386, Harrison 308, Warner 293, Cosgray 263, Houchard 208, Industrial Pkwy 167 MW)",
+   "now": 1.63
   },
   {
    "id": "amzn-tre",
-   "name": "Trenton campus",
+   "name": "Trenton township expansion (600 acres)",
    "owner": "amzn",
    "partner": null,
    "state": "OH",
@@ -315,8 +318,8 @@
    "gw": 1.0,
    "status": "bl",
    "capexB": null,
-   "est": false,
-   "note": "Annexation route closed by voters Nov 3"
+   "est": true,
+   "note": "Proposed 18-building, ~$5B AWS campus; annexation petition withdrawn Sep, Trenton's 25 MW+ ban passed with ~80% on Nov 3 and St. Clair Twp is moving to ban too. GW not disclosed"
   },
   {
    "id": "amzn-sun",
@@ -330,7 +333,7 @@
    "status": "bl",
    "capexB": null,
    "est": true,
-   "note": "Voters banned data centers of 25 MW+"
+   "note": "Sunbury's 25 MW+ ban passed 79% on Nov 3"
   },
   {
    "id": "goog-cb",
@@ -340,12 +343,12 @@
    "state": "IA",
    "lat": 41.26,
    "lon": -95.86,
-   "gw": 0.24,
+   "gw": 0.28,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Council Bluffs East AI campus, ~237 MW IT (Epoch); older Council Bluffs buildings not counted",
-   "now": 0.24
+   "note": "Council Bluffs East/Southlands AI campus, ~284 MW (Epoch); older Council Bluffs buildings not counted",
+   "now": 0.28
   },
   {
    "id": "goog-td",
@@ -355,12 +358,12 @@
    "state": "OR",
    "lat": 45.6,
    "lon": -121.18,
-   "gw": 0.15,
+   "gw": 0.19,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Hydro-powered Oregon campus, ~154 MW IT (Epoch)",
-   "now": 0.15
+   "note": "Hydro-powered Oregon campus, ~185 MW (Epoch)",
+   "now": 0.19
   },
   {
    "id": "goog-na",
@@ -370,12 +373,12 @@
    "state": "OH",
    "lat": 40.1,
    "lon": -82.84,
-   "gw": 0.72,
+   "gw": 0.86,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Two Ohio campuses, ~636 MW IT live, ~720 MW by mid-2027 (Epoch); expansions face new Ohio regime",
-   "now": 0.64
+   "note": "Two Ohio campuses (Columbus ~364 MW, New Albany ~400 MW live; Epoch, Cleanview), ~864 MW by mid-2027; expansions face new Ohio regime",
+   "now": 0.76
   },
   {
    "id": "goog-ok",
@@ -385,12 +388,12 @@
    "state": "OK",
    "lat": 36.24,
    "lon": -95.33,
-   "gw": 0.37,
+   "gw": 0.44,
    "status": "op",
    "capexB": 9.0,
    "est": false,
-   "note": "~368 MW IT live (Epoch Sep 2026); $9B expansion announced in a friendly state",
-   "now": 0.37
+   "note": "~442 MW live (Epoch Sep 2026); $9B expansion announced in a friendly state",
+   "now": 0.44
   },
   {
    "id": "goog-ar",
@@ -408,17 +411,17 @@
   },
   {
    "id": "goog-tx1",
-   "name": "Armstrong County",
+   "name": "Armstrong County (Goodnight)",
    "owner": "googl",
    "partner": null,
    "state": "TX",
    "lat": 34.96,
    "lon": -101.36,
-   "gw": 1.5,
-   "status": "pl",
+   "gw": 1.07,
+   "status": "uc",
    "capexB": null,
-   "est": true,
-   "note": "Part of $40B Texas plan through 2027"
+   "est": false,
+   "note": "Crusoe-built Goodnight campus (Project Llano), ~1.07 GW under construction (Cleanview); part of the $40B Texas plan"
   },
   {
    "id": "goog-tx2",
@@ -432,7 +435,7 @@
    "status": "pl",
    "capexB": null,
    "est": true,
-   "note": "Part of $40B Texas plan; co-located power"
+   "note": "Two Haskell campuses, one co-located with solar and storage; first substation (250 MVA) due 2026, buildings 2027–29 (Baxtel). GW not disclosed"
   },
   {
    "id": "goog-ga",
@@ -442,11 +445,12 @@
    "state": "GA",
    "lat": 33.7,
    "lon": -84.78,
-   "gw": 0.5,
+   "gw": 0.33,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Operating Atlanta-area campus"
+   "est": false,
+   "note": "~326 MW operating (Cleanview)",
+   "now": 0.33
   },
   {
    "id": "goog-sc",
@@ -484,12 +488,12 @@
    "state": "OH",
    "lat": 40.07,
    "lon": -82.76,
-   "gw": 1.02,
+   "gw": 1.33,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~471 MW IT live (Epoch Aug 2026), ~1 GW IT by mid-2028",
-   "now": 0.47
+   "note": "~612 MW live (Epoch Aug 2026; Cleanview 637 MW), ~1.3 GW by mid-2028",
+   "now": 0.61
   },
   {
    "id": "meta-elp",
@@ -499,11 +503,11 @@
    "state": "TX",
    "lat": 31.8,
    "lon": -106.25,
-   "gw": 1.0,
+   "gw": 0.99,
    "status": "uc",
    "capexB": 10.0,
    "est": false,
-   "note": "1 GW JV; state permits and power at risk"
+   "note": "~988 MW under construction (Cleanview); $10B JV; state permits and power at risk"
   },
   {
    "id": "meta-leb",
@@ -514,10 +518,10 @@
    "lat": 40.05,
    "lon": -86.47,
    "gw": 1.0,
-   "status": "pl",
+   "status": "uc",
    "capexB": 10.0,
-   "est": true,
-   "note": "Announced 1 GW Indiana campus"
+   "est": false,
+   "note": "Ground broken Feb 2026; $10B+, 1 GW campus"
   },
   {
    "id": "meta-piq",
@@ -531,7 +535,7 @@
    "status": "bl",
    "capexB": null,
    "est": false,
-   "note": "Voters targeted the 1.4 GW campus and recalled backers"
+   "note": "Ban passed and three commissioners recalled (>70%) on Nov 3; buildings had been planned for 2029–33"
   },
   {
    "id": "meta-ga",
@@ -541,11 +545,12 @@
    "state": "GA",
    "lat": 33.6,
    "lon": -83.79,
-   "gw": 0.4,
+   "gw": 0.38,
    "status": "op",
    "capexB": null,
-   "est": true,
-   "note": "Operating Georgia campus"
+   "est": false,
+   "note": "~384 MW operating (Cleanview); expansion under construction",
+   "now": 0.38
   },
   {
    "id": "meta-ia",
@@ -587,8 +592,8 @@
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Near complete: ~824 MW IT live (Epoch, Nov 1) on a 1.2 GW facility; 2 GW expansion dropped Mar 2026",
-   "now": 0.82
+   "note": "All 8 buildings estimated live: ~1.15 GW facility, ~824 MW IT (Epoch, Nov 1); 2 GW expansion dropped Mar 2026",
+   "now": 1.15
   },
   {
    "id": "sg-sha",
@@ -598,11 +603,11 @@
    "state": "TX",
    "lat": 32.72,
    "lon": -99.3,
-   "gw": 2.0,
+   "gw": 1.82,
    "status": "uc",
    "capexB": null,
    "est": false,
-   "note": "First building late 2026, full build Q4 2028"
+   "note": "Vantage Frontier: ~1.82 GW (Cleanview; Vantage cites 1.4 GW IT); first building late 2026, full build Q4 2028"
   },
   {
    "id": "sg-mil",
@@ -612,11 +617,11 @@
    "state": "TX",
    "lat": 30.65,
    "lon": -97.0,
-   "gw": 1.2,
+   "gw": 0.94,
    "status": "uc",
    "capexB": null,
    "est": false,
-   "note": "SoftBank site; first building ~Oct 2026"
+   "note": "SB Energy site, ~939 MW (Cleanview); first building ~Oct 2026, full build Q4 2028"
   },
   {
    "id": "sg-nm",
@@ -682,12 +687,12 @@
    "state": "TN",
    "lat": 35.07,
    "lon": -90.12,
-   "gw": 0.34,
+   "gw": 0.43,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~340 MW IT (Epoch); gas-turbine permits contested locally",
-   "now": 0.34
+   "note": "~425 MW facility, ~340 MW IT (Epoch); now leased to Anthropic; gas-turbine permits contested locally",
+   "now": 0.43
   },
   {
    "id": "xai-c2",
@@ -697,12 +702,12 @@
    "state": "TN",
    "lat": 35.0,
    "lon": -89.99,
-   "gw": 1.53,
+   "gw": 2.07,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~946 MW IT live (Epoch, Jun 2026); Building 3 takes it to ~1.5 GW IT by Q1 2027. Gas turbines sit across the state line in Southaven, MS",
-   "now": 0.95
+   "note": "~1.28 GW facility (~946 MW IT) live (Epoch, Jun 2026); Building 3 takes it to ~2.1 GW (~1.5 GW IT) by Q1 2027. Gas turbines across the state line in Southaven, MS",
+   "now": 1.28
   },
   {
    "id": "crwv-lan",
@@ -726,12 +731,12 @@
    "state": "TX",
    "lat": 33.21,
    "lon": -97.13,
-   "gw": 0.28,
+   "gw": 0.4,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Core Scientific site; ~262 MW IT live, ~282 MW by mid-2027 (Epoch)",
-   "now": 0.26
+   "note": "Core Scientific site; ~367 MW live, ~395 MW by mid-2027 (Epoch; Cleanview 361 MW)",
+   "now": 0.37
   },
   {
    "id": "crwv-nj",
@@ -744,8 +749,8 @@
    "gw": 0.25,
    "status": "uc",
    "capexB": null,
-   "est": true,
-   "note": "New Jersey campus"
+   "est": false,
+   "note": "250 MW, $1.8B conversion of the former Merck NEST building; construction began Sep 2025, completion 2027"
   },
   {
    "id": "apld-pf1",
@@ -800,7 +805,7 @@
    "gw": 0.3,
    "status": "uc",
    "capexB": null,
-   "est": true,
+   "est": false,
    "note": "Up to 300 MW with DataOne; fined $1M for unpermitted generators, ~140 MW may slip to 2027"
   },
   {
@@ -843,8 +848,8 @@
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Phase I (133 MW IT) delivered to CoreWeave Jul 2026; CoreWeave has 800 MW contracted; ERCOT approved 1.6 GW, further phases need approval",
-   "now": 0.13
+   "note": "Phase I (133 MW IT, ~0.17 GW facility) delivered to CoreWeave Jul 2026; CoreWeave has 800 MW contracted; ERCOT approved 1.6 GW, further phases need approval",
+   "now": 0.17
   },
   {
    "id": "cifr-bl",
@@ -896,12 +901,12 @@
    "state": "VA",
    "lat": 37.52,
    "lon": -77.32,
-   "gw": 0.66,
-   "now": 0.56,
+   "gw": 2.05,
+   "now": 0.92,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Three buildings, ~562 MW IT live, ~660 MW by Q1 2027 (Epoch)"
+   "note": "~921 MW live, 2.05 GW at full build-out (Cleanview); Epoch tracks ~790 MW across three buildings groups"
   },
   {
    "id": "cb-gua",
@@ -939,12 +944,12 @@
    "state": "NE",
    "lat": 41.15,
    "lon": -96.04,
-   "gw": 0.4,
-   "now": 0.24,
+   "gw": 0.47,
+   "now": 0.28,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~237 MW IT live, ~395 MW by mid-2028 (Epoch)"
+   "note": "~284 MW live, ~474 MW by mid-2028 (Epoch)"
   },
   {
    "id": "goog-lin",
@@ -954,12 +959,12 @@
    "state": "NE",
    "lat": 40.85,
    "lon": -96.7,
-   "gw": 0.28,
-   "now": 0.14,
+   "gw": 0.34,
+   "now": 0.17,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~141 MW IT live, ~283 MW by late 2027 (Epoch)"
+   "note": "~170 MW live, ~339 MW by late 2027 (Epoch)"
   },
   {
    "id": "goog-bri",
@@ -969,12 +974,12 @@
    "state": "VA",
    "lat": 38.72,
    "lon": -77.55,
-   "gw": 0.24,
-   "now": 0.24,
+   "gw": 0.29,
+   "now": 0.29,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~238 MW IT (Epoch)"
+   "note": "~286 MW (Epoch)"
   },
   {
    "id": "goog-mes",
@@ -984,12 +989,12 @@
    "state": "AZ",
    "lat": 33.4,
    "lon": -111.65,
-   "gw": 0.18,
-   "now": 0.18,
+   "gw": 0.24,
+   "now": 0.24,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~183 MW IT (Epoch); water is the binding limit"
+   "note": "~237 MW (Epoch); water is the binding limit"
   },
   {
    "id": "meta-tem",
@@ -999,12 +1004,12 @@
    "state": "TX",
    "lat": 31.1,
    "lon": -97.35,
-   "gw": 0.18,
-   "now": 0.18,
+   "gw": 0.23,
+   "now": 0.23,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~178 MW IT live (Epoch); expansions need ERCOT and state permits"
+   "note": "~231 MW live (Epoch); expansions need ERCOT and state permits"
   },
   {
    "id": "meta-ros",
@@ -1014,12 +1019,12 @@
    "state": "MN",
    "lat": 44.74,
    "lon": -93.12,
-   "gw": 0.18,
-   "now": 0.18,
+   "gw": 0.24,
+   "now": 0.24,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~178 MW IT (Epoch)"
+   "note": "~241 MW (Epoch)"
   },
   {
    "id": "meta-jef",
@@ -1029,12 +1034,12 @@
    "state": "IN",
    "lat": 38.33,
    "lon": -85.72,
-   "gw": 0.18,
-   "now": 0.18,
+   "gw": 0.24,
+   "now": 0.24,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~178 MW IT (Epoch)"
+   "note": "~241 MW (Epoch)"
   },
   {
    "id": "meta-mgy",
@@ -1044,12 +1049,12 @@
    "state": "AL",
    "lat": 32.36,
    "lon": -86.3,
-   "gw": 0.36,
-   "now": 0.15,
+   "gw": 0.47,
+   "now": 0.2,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~153 MW IT live, ~358 MW by Feb 2027 (Epoch)"
+   "note": "~199 MW live, ~465 MW by Feb 2027 (Epoch)"
   },
   {
    "id": "ant-lm",
@@ -1059,12 +1064,225 @@
    "state": "NY",
    "lat": 43.35,
    "lon": -78.62,
-   "gw": 0.38,
-   "now": 0.21,
+   "gw": 0.44,
+   "now": 0.25,
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "Anthropic capacity at TeraWulf; ~210 MW IT live, ~378 MW by Mar 2027 (Epoch); NY EO 62 permit pause applies to new 50 MW+ phases"
+   "note": "Anthropic capacity at TeraWulf; ~245 MW live, ~441 MW by Mar 2027 (Epoch); NY EO 62 permit pause applies to new 50 MW+ phases"
+  },
+  {
+   "id": "msft-gdy",
+   "name": "Goodyear",
+   "owner": "msft",
+   "partner": null,
+   "state": "AZ",
+   "lat": 33.43,
+   "lon": -112.4,
+   "gw": 0.26,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~263 MW, 4 buildings live, 2 more started (Epoch)",
+   "now": 0.26
+  },
+  {
+   "id": "goog-kc",
+   "name": "Kansas City East",
+   "owner": "googl",
+   "partner": null,
+   "state": "MO",
+   "lat": 39.1,
+   "lon": -94.42,
+   "gw": 0.13,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~126 MW live, more buildings in progress (Epoch)",
+   "now": 0.13
+  },
+  {
+   "id": "goog-lee",
+   "name": "Leesburg (Loudoun)",
+   "owner": "googl",
+   "partner": null,
+   "state": "VA",
+   "lat": 39.1,
+   "lon": -77.55,
+   "gw": 0.39,
+   "status": "op",
+   "capexB": null,
+   "est": false,
+   "note": "~386 MW operating (Cleanview)",
+   "now": 0.39
+  },
+  {
+   "id": "goog-wil",
+   "name": "Wilbarger County",
+   "owner": "googl",
+   "partner": null,
+   "state": "TX",
+   "lat": 34.1,
+   "lon": -99.25,
+   "gw": 0.85,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "~850 MW under construction (Cleanview)"
+  },
+  {
+   "id": "goog-gray",
+   "name": "Meitner (Gray County)",
+   "owner": "googl",
+   "partner": null,
+   "state": "TX",
+   "lat": 35.5,
+   "lon": -100.95,
+   "gw": 0.84,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "~840 MW data center (Cleanview) with 1 GW+ of Intersect wind, solar and storage; broke ground Jun 2026"
+  },
+  {
+   "id": "amzn-trc",
+   "name": "Trenton in-city campus",
+   "owner": "amzn",
+   "partner": null,
+   "state": "OH",
+   "lat": 39.48,
+   "lon": -84.46,
+   "gw": 0.2,
+   "status": "uc",
+   "capexB": null,
+   "est": true,
+   "note": "Four buildings on 141 acres already under construction; not affected by the Nov 3 ban. ~ GW is Claude's estimate"
+  },
+  {
+   "id": "amzn-jef",
+   "name": "Jeffersonville (Fayette Co.)",
+   "owner": "amzn",
+   "partner": null,
+   "state": "OH",
+   "lat": 39.65,
+   "lon": -83.56,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Under construction, 1 GW or more at build-out (Cleanview band; shown at the floor)"
+  },
+  {
+   "id": "amzn-bee",
+   "name": "Beech Road (Licking Co.)",
+   "owner": "amzn",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.08,
+   "lon": -82.74,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Under construction, 1 GW or more at build-out (Cleanview band; shown at the floor)"
+  },
+  {
+   "id": "amzn-cva",
+   "name": "Central Virginia campuses",
+   "owner": "amzn",
+   "partner": null,
+   "state": "VA",
+   "lat": 38.1,
+   "lon": -77.6,
+   "gw": 1.99,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Mattameade (Caroline) 770, Northeast Creek (Louisa) 700, Cosner (Spotsylvania) 524 MW under construction (Cleanview)"
+  },
+  {
+   "id": "amzn-cov",
+   "name": "Covington (Newton Co.)",
+   "owner": "amzn",
+   "partner": null,
+   "state": "GA",
+   "lat": 33.6,
+   "lon": -83.85,
+   "gw": 0.2,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Under construction, 200–999 MW (Cleanview band; shown at the floor); faces Georgia's pause"
+  },
+  {
+   "id": "goog-lag",
+   "name": "LaGrange (Project Pegasus)",
+   "owner": "googl",
+   "partner": null,
+   "state": "GA",
+   "lat": 33.04,
+   "lon": -85.03,
+   "gw": 0.2,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Under construction, 200–999 MW (Cleanview band; shown at the floor); faces Georgia's pause"
+  },
+  {
+   "id": "meta-nan",
+   "name": "New Albany North",
+   "owner": "meta",
+   "partner": null,
+   "state": "OH",
+   "lat": 40.1,
+   "lon": -82.78,
+   "gw": 0.2,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Under construction, 200–999 MW (Cleanview band; shown at the floor)"
+  },
+  {
+   "id": "crusoe-chi",
+   "name": "Project Hyper, Childress",
+   "owner": "crusoe",
+   "partner": null,
+   "state": "TX",
+   "lat": 34.4,
+   "lon": -100.25,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Crusoe/Lancium campus, ~1 GW under construction (Cleanview); tenant not disclosed"
+  },
+  {
+   "id": "nex-hub",
+   "name": "Nexus Hubbard (Hill Co.)",
+   "owner": "other",
+   "partner": null,
+   "state": "TX",
+   "lat": 31.85,
+   "lon": -96.8,
+   "gw": 6.4,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "note": "Nexus Data Centers, 6.4 GW listed as under construction by Cleanview; tenant not disclosed"
+  },
+  {
+   "id": "nbis-ind",
+   "name": "Independence campus",
+   "owner": "nbis",
+   "partner": null,
+   "state": "MO",
+   "lat": 39.03,
+   "lon": -94.33,
+   "gw": 0.8,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "Planned 800 MW, up to 10 buildings on 400 acres; Nebius still evaluating (Jan 2026)"
   }
  ],
  "risk": {
@@ -1540,7 +1758,7 @@
   },
   "amzn": {
    "grade": "Medium",
-   "view": "Exposure is Georgia ($11B under construction) and Ohio, where Trenton (~1 GW) and Sunbury were blocked by voters. Under-construction Georgia work should be grandfathered, but new phases face the pause. AWS has the deepest bench of friendly-state sites (Mississippi, North Carolina, Indiana, Pennsylvania nuclear) and over 2 GW of committed capacity elsewhere, so the cost is timing, not lost demand.",
+   "view": "Exposure is now larger than it looked: two 1 GW+ Ohio campuses (Jeffersonville, Beech Road) are under construction in a tier-5 state, on top of Georgia's Butts and Covington builds. Trenton's ban hits only the 600-acre township expansion, not the four buildings already rising in the city. AWS has the deepest bench of friendly-state sites (Mississippi, Indiana, Pennsylvania nuclear, ~2 GW in central Virginia), so the cost is timing, not lost demand.",
    "moves": [
     "Redirect Ohio phases to Indiana/Mississippi",
     "Accelerate Susquehanna nuclear campus",
@@ -1549,7 +1767,7 @@
   },
   "googl": {
    "grade": "Medium-High",
-   "view": "The $40B Texas plan (Armstrong and Haskell counties) is still mostly planned, so it sits in the zone Jefferies flags as most exposed. Google pairs sites with its own power (Intersect), which is the template for winning approval under a ratepayer-first regime, but sales-tax exemption loss alone could add ~$2B per GW. Oklahoma and Arkansas are ready alternatives.",
+   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google pairs sites with its own power (Intersect), which is the template for winning approval under a ratepayer-first regime, but losing the sales-tax exemption alone is material at this scale.",
    "moves": [
     "Move Texas phases to Oklahoma (Mayes) and Arkansas",
     "Co-locate generation to sidestep grid-cost fights",
@@ -1584,7 +1802,7 @@
   },
   "spcx": {
    "grade": "Low-Medium",
-   "view": "Colossus 1 and 2 are both in Memphis, Tennessee (~1.3 GW IT live combined per Epoch), with gas turbines across the state line in Southaven, Mississippi; Building 3 should lift Colossus 2 to ~1.5 GW IT by Q1 2027. Neither state's governor backs a pause; local turbine permits remain the risk.",
+   "view": "Colossus 1 and 2 are both in Memphis, Tennessee: ~1.7 GW of facility power live (~1.3 GW IT, Epoch), with gas turbines across the state line in Southaven, Mississippi. Building 3 should lift Colossus 2 to ~2.1 GW by Q1 2027. Neither state's governor backs a pause; local turbine permits remain the risk, and Colossus 1 is now leased to Anthropic.",
    "moves": [
     "Keep power plant on the Mississippi side"
    ]
@@ -1644,7 +1862,7 @@
   },
   "crusoe": {
    "grade": "Low",
-   "view": "Cheyenne, Wyoming with its own gas power was the friendly-state template, but development was paused on Jun 9, 2026 at the customer's request, so the risk here is demand, not politics. Crusoe still reports ~4.9 GW contracted, including building Stargate Abilene.",
+   "view": "Cheyenne, Wyoming was paused on Jun 9, 2026 at the customer's request, so that risk is demand, not politics. The bigger exposure is now Texas: Crusoe built Stargate Abilene and Google's Goodnight campus, and its ~1 GW Project Hyper in Childress is under construction under the Texas pause. Crusoe reports ~4.9 GW contracted.",
    "moves": []
   },
   "qts": {
@@ -1657,6 +1875,22 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-07",
+   "co": [
+    "*"
+   ],
+   "t": "Campus figures moved to total facility power (Epoch AI, Cleanview) and re-verified; added AWS Ohio and central Virginia builds, Google's Wilbarger and Meitner campuses, Crusoe Childress, Nexus Hubbard and Nebius Independence.",
+   "src": "https://cleanview.co/data-centers/us"
+  },
+  {
+   "d": "2026-11-07",
+   "co": [
+    "amzn"
+   ],
+   "t": "Trenton's 25 MW+ ban passed with ~80% on Nov 3, but AWS's four-building in-city campus is unaffected; only the proposed 600-acre township expansion is blocked.",
+   "src": "https://www.explainx.ai/blog/ohio-voters-pass-data-center-bans-14-municipalities-trenton-80-percent-grove-city-results-2026"
+  },
   {
    "d": "2026-11-07",
    "co": [
@@ -1798,6 +2032,34 @@
   }
  ],
  "sources": [
+  [
+   "Unite.AI: Ohio ballot results",
+   "https://www.unite.ai/ohio-voters-back-local-data-center-limits-in-unofficial-results/"
+  ],
+  [
+   "Epoch AI: data center timelines",
+   "https://epoch.ai/data/data_centers/data_center_timelines.csv"
+  ],
+  [
+   "Cleanview: Georgia campuses",
+   "https://cleanview.co/data-centers/georgia"
+  ],
+  [
+   "Cleanview: Virginia campuses",
+   "https://cleanview.co/data-centers/virginia"
+  ],
+  [
+   "Cleanview: Ohio campuses",
+   "https://cleanview.co/data-centers/ohio"
+  ],
+  [
+   "Cleanview: Texas campuses",
+   "https://cleanview.co/data-centers/texas"
+  ],
+  [
+   "Cleanview: US data center tracker",
+   "https://cleanview.co/data-centers/us"
+  ],
   [
    "Bloomberg Law: Crusoe pauses Wyoming site",
    "https://news.bloomberglaw.com/artificial-intelligence/crusoe-touts-5-gigawatts-of-data-centers-pauses-wyoming-site"
