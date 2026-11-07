@@ -920,16 +920,16 @@
  "risk": {
   "TX": {
    "tier": 5,
-   "why": "Governor-elect Hinojosa pledged a moratorium on all approvals until the Legislature (meets Jan 12) passes protections; Abbott's permit/ERCOT freeze already in place. Jefferies: ~13 GW of announced projects at risk.",
+   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk.",
    "to": [
     "LA",
     "OK",
-    "NM"
+    "AR"
    ]
   },
   "GA": {
    "tier": 5,
-   "why": "Governor-elect Lance Bottoms promised a temporary statewide pause on large data centers; PSC races also turned on Georgia Power's data center expansion.",
+   "why": "Governor-elect Lance Bottoms backs an immediate statewide pause on large data centers; PSC races also turned on Georgia Power's data center expansion.",
    "to": [
     "AL",
     "MS",
@@ -938,7 +938,7 @@
   },
   "OH": {
    "tier": 5,
-   "why": "Governor-elect Acton ran on regulation; 14+ municipalities passed bans or limits on Nov 3; state already halted data center tax credits for new projects.",
+   "why": "Governor-elect Acton backs a conditional moratorium: new campuses paused unless they pay 100% of their utility costs, use union labour and meet state environmental rules (Modo counts this as new terms, not a stop). Kept at tier 5 because 14+ municipalities passed bans or limits on Nov 3 and the state already halted tax credits for new projects.",
    "to": [
     "IN",
     "WV",
@@ -947,10 +947,10 @@
   },
   "MI": {
    "tier": 4,
-   "why": "Local opposition at Saline Twp (Stargate) and a recall in Mason tied to a data center vote.",
+   "why": "Governor-elect Benson backs a conditional statewide moratorium (cost, labour and environmental terms); local opposition at Saline Twp (Stargate) and a recall in Mason.",
    "to": [
     "IN",
-    "WI"
+    "IA"
    ]
   },
   "PA": {
@@ -971,7 +971,7 @@
   },
   "IL": {
    "tier": 4,
-   "why": "Ohio and Illinois led local ballot restrictions; Bloomington moratorium advisory.",
+   "why": "Pritzker stopped signing new data center incentive agreements; local ballot restrictions and Bloomington moratorium advisory. Exposed capacity sits mostly in ComEd territory (PJM).",
    "to": [
     "IN",
     "IA"
@@ -979,22 +979,22 @@
   },
   "KS": {
    "tier": 4,
-   "why": "Emporia banned high-impact data centers after a 1 GW proposal.",
+   "why": "Governor's race too close to call: Holscher (D) would block approvals until guardrails exist, Masterson (R) leaves it to localities. Emporia already banned high-impact data centers after a 1 GW proposal.",
    "to": [
     "MO",
     "NE"
    ]
   },
   "ME": {
-   "tier": 4,
-   "why": "Eight towns passed temporary moratoriums.",
+   "tier": 5,
+   "why": "Governor-elect Pingree backs an immediate statewide moratorium; eight towns had already passed temporary moratoriums.",
    "to": [
     "—"
    ]
   },
   "NH": {
-   "tier": 4,
-   "why": "Local 12-month permit moratoriums.",
+   "tier": 5,
+   "why": "Governor Ayotte, re-elected, plans to propose a statewide moratorium (opposed the Bow plan); local 12-month permit moratoriums.",
    "to": [
     "—"
    ]
@@ -1008,8 +1008,8 @@
    ]
   },
   "WI": {
-   "tier": 3,
-   "why": "Mostly supportive state, local zoning fights.",
+   "tier": 4,
+   "why": "Governor-elect Crowley backs a conditional moratorium on new construction (similar terms to Ohio and Michigan); local zoning fights. Modo groups Wisconsin's pause with the time-limited delays.",
    "to": [
     "IA",
     "MN"
@@ -1035,8 +1035,8 @@
    "tier": 3,
    "why": "Water is the binding limit; Phoenix-area restrictions.",
    "to": [
-    "NM",
-    "UT"
+    "UT",
+    "NV"
    ]
   },
   "LA": {
@@ -1056,11 +1056,11 @@
    ]
   },
   "NM": {
-   "tier": 3,
-   "why": "Project Jupiter approved but water and tribal concerns.",
+   "tier": 5,
+   "why": "Governor-elect Haaland vowed an immediate moratorium by executive order. Project Jupiter is under construction, but its on-site power air permit (Dec 7 hearing) is the kind of non-construction permit a pause can hold up.",
    "to": [
     "AZ",
-    "TX*"
+    "OK"
    ]
   },
   "NC": {
@@ -1091,7 +1091,7 @@
    "tier": 2,
    "why": "Supportive; Kansas City hub.",
    "to": [
-    "KS",
+    "KS*",
     "AR"
    ]
   },
@@ -1104,8 +1104,8 @@
    ]
   },
   "OR": {
-   "tier": 3,
-   "why": "Water and clean-energy constraints.",
+   "tier": 4,
+   "why": "Governor Kotek is holding state land and environmental permits for new data centers until July 2027; water and clean-energy constraints.",
    "to": [
     "WA",
     "ID"
@@ -1115,8 +1115,8 @@
    "tier": 3,
    "why": "Hydro capacity tight; tax break debates.",
    "to": [
-    "OR",
-    "ID"
+    "ID",
+    "MT"
    ]
   },
   "NJ": {
@@ -1124,12 +1124,12 @@
    "why": "New rate class for data centers advancing.",
    "to": [
     "PA*",
-    "NY"
+    "DE"
    ]
   },
   "NY": {
-   "tier": 3,
-   "why": "Grid and climate law constraints.",
+   "tier": 4,
+   "why": "Executive Order 62 pauses state environmental permits for projects of 50 MW or more (time-limited); grid and climate-law constraints.",
    "to": [
     "PA*",
     "NJ"
@@ -1241,7 +1241,7 @@
    "why": "High power cost, CEQA.",
    "to": [
     "NV*",
-    "OR"
+    "AZ"
    ]
   },
   "MD": {
@@ -1375,15 +1375,15 @@
    "v": 12,
    "u": "months",
    "rng": "6–18",
-   "why": "Texas: GLJ sees 12–18 months for projects with power but no state permit"
+   "why": "Texas: GLJ sees 12–18 months for projects with power but no state permit; Modo sees 6–9 months if the pause lifts when the session ends (May 2027), but warns short pauses tend to run long"
   }
  },
  "views": {
   "msft": {
    "grade": "Low",
-   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built, and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Microsoft is now pulling back from rented capacity (Oracle deal wound down, Nscale Texas option declined, tighter oversight of IREN and Nebius) and favouring its own builds, which shifts delivery risk onto its suppliers. The catch is that third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity.",
+   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built (Wisconsin's second phase now sits under Crowley's conditional pause, and Georgia's new phases under Bottoms'), and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Microsoft is now pulling back from rented capacity (Oracle deal wound down, Nscale Texas option declined, tighter oversight of IREN and Nebius) and favouring its own builds, which shifts delivery risk onto its suppliers. The catch is that third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity.",
    "moves": [
-    "Shift Abilene phase to Wisconsin/Wyoming",
+    "Shift Abilene phase to Wyoming/Iowa",
     "Consolidate to a few neocloud partners and own builds",
     "Fund grid upgrades to keep Atlanta expansions moving"
    ]
@@ -1417,7 +1417,7 @@
   },
   "orcl": {
    "grade": "High",
-   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) plus Michigan opposition. Most are under construction and should be grandfathered from new approvals, but state permits and ERCOT large-load service are still exposed. The hedge sites are wobbling too: Oracle sent a force majeure notice at New Mexico's Jupiter and lenders are testing its debt, while Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing, not politics, is the binding risk.",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound.",
    "moves": [
     "Rush Shackelford buildings to energise before Jan 19",
     "Secure Jupiter's air permit (Dec 7 hearing)",
@@ -1434,7 +1434,7 @@
   },
   "spcx": {
    "grade": "Low-Medium",
-   "view": "Memphis/Southaven sits in Tennessee and Mississippi, outside the three new Democratic governorships. Local turbine permits remain the risk, but the build is largely done.",
+   "view": "Memphis/Southaven sits in Tennessee and Mississippi, outside every state whose new governor backs a pause. Local turbine permits remain the risk, but the build is largely done.",
    "moves": [
     "Keep power plant on the Mississippi side"
    ]
@@ -1506,6 +1506,22 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-04",
+   "co": [
+    "orcl"
+   ],
+   "t": "New Mexico's governor-elect Haaland has vowed an executive-order moratorium; Modo flags that on-site power permits like Project Jupiter's air permit could stall under-construction builds.",
+   "src": "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
+  },
+  {
+   "d": "2026-11-04",
+   "co": [
+    "*"
+   ],
+   "t": "Modo Energy: 256 GW (40%) of tracked US data center capacity sits in states whose governors back pauses; at face value 11 GW of expected build stops (10 GW in Texas), and 2030 national capacity falls only ~3 GW once projects reallocate to MISO, SPP and the West.",
+   "src": "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
+  },
   {
    "d": "2026-11-06",
    "co": [
@@ -1619,6 +1635,10 @@
  ],
  "sources": [
   [
+   "Modo Energy: midterms could disrupt 40% of announced data centers",
+   "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
+  ],
+  [
    "Bloomberg via Yahoo: Microsoft sours on neoclouds",
    "https://finance.yahoo.com/news/microsoft-sours-neoclouds-amid-data-160016061.html"
   ],
@@ -1674,5 +1694,37 @@
    "TechRadar: Abilene expansion dropped",
    "https://www.techradar.com/pro/oracle-and-openai-drop-plans-for-mega-stargate-ai-us-data-center"
   ]
- ]
+ ],
+ "modo": {
+  "src": "https://modoenergy.com/research/en/us-data-center-moratorium-midterms",
+  "date": "2026-11-04",
+  "tiles": [
+   [
+    "Tracked pipeline exposed",
+    "256 GW",
+    "40% of 633 GW Modo tracks (165 GW under an immediate-moratorium governor)"
+   ],
+   [
+    "Stopped / delayed / new terms",
+    "131 / 14 / 54",
+    "GW at each pause's face value, of the pipeline not yet operating"
+   ],
+   [
+    "Expected build stopped",
+    "11 GW",
+    "10 GW of it in Texas; 1 GW delayed, 4 GW on new terms; 39 GW under construction uncertain"
+   ],
+   [
+    "2030 US capacity, no backfill",
+    "136 GW",
+    "Down from 147 GW; only −3 GW once projects reallocate, −4 GW (~2%) by 2035"
+   ]
+  ],
+  "pts": [
+   "Five winners back an immediate moratorium (TX, GA, NM, ME, NH); three back conditional ones (OH, MI, WI); NY, OR and IL already have governor pauses; KS is too close to call.",
+   "ERCOT has all 119 GW of its tracked capacity under a pause-backing governor; PJM has 60 GW (26%) exposed, mostly Ohio and ComEd Illinois.",
+   "A one-year ERCOT pause leaves Texas ~9 GW behind by 2035; two years or more ~13 GW. MISO, SPP and the West pick up most of it.",
+   "Most exposure is paper: of 242 GW not yet operating, 41 GW is under construction; in every pause state at least 61% is only announced or waiting on a grid connection."
+  ]
+ }
 }

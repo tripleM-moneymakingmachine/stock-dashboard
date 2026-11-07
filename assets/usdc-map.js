@@ -14,7 +14,7 @@
   const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; };
   const ST = { op: "Operating", uc: "Under construction", pl: "Planned", bl: "Blocked / dropped" };
   const STC = { op: "var(--up)", uc: "var(--accent)", pl: "#d08a1c", bl: "var(--down)" };
-  const TIER = { 1: "Friendly", 2: "Mostly friendly", 3: "Mixed", 4: "Hostile locally", 5: "Hostile statewide" };
+  const TIER = { 1: "Friendly", 2: "Mostly friendly", 3: "Mixed", 4: "Hostile locally / conditional", 5: "Hostile statewide" };
   const NAME2 = { Alabama: "AL", Alaska: "AK", Arizona: "AZ", Arkansas: "AR", California: "CA", Colorado: "CO", Connecticut: "CT", Delaware: "DE", "District of Columbia": "DC", Florida: "FL", Georgia: "GA", Hawaii: "HI", Idaho: "ID", Illinois: "IL", Indiana: "IN", Iowa: "IA", Kansas: "KS", Kentucky: "KY", Louisiana: "LA", Maine: "ME", Maryland: "MD", Massachusetts: "MA", Michigan: "MI", Minnesota: "MN", Mississippi: "MS", Missouri: "MO", Montana: "MT", Nebraska: "NE", Nevada: "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", Ohio: "OH", Oklahoma: "OK", Oregon: "OR", Pennsylvania: "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", Tennessee: "TN", Texas: "TX", Utah: "UT", Vermont: "VT", Virginia: "VA", Washington: "WA", "West Virginia": "WV", Wisconsin: "WI", Wyoming: "WY" };
   const SNAME = Object.fromEntries(Object.entries(NAME2).map(([a, b]) => [b, a]));
   const fmt = (v, d = 1) => (v == null || isNaN(v) ? "—" : v.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d }));
@@ -87,6 +87,7 @@
     <h2 id="usH">US data centers: who owns what, and who is at risk</h2>
     <p class="sub">Major AI campuses by owner and stage, shaded by how hostile each state has become after the Nov 3 elections. Tap a state for its risk read and where projects could move; tap a dot for the campus.</p>
     <div class="kpi" id="usK"></div>
+    <details class="panel" id="usModo" style="margin:0 0 14px" hidden><summary></summary><div class="kpi" id="usMK" style="margin-top:10px"></div><ul class="bul" id="usMP"></ul></details>
     <div class="panel">
       <div class="ctl">
         <div class="cg"><span class="cgl">Colour</span><div class="seg" id="usCol"><button data-v="owner">Owner</button><button data-v="status">Status</button></div></div>
@@ -376,9 +377,16 @@
     document.getElementById("usK").innerHTML = [
       ["Campuses tracked", D.sites.length, `${fmt(tot((s) => s.status === "op"), 0)} GW operating`],
       ["Pipeline in hostile states", fmt(atRisk) + " GW", `${fmt((atRisk / pipe) * 100, 0)}% of the ${fmt(pipe, 0)} GW pipeline tracked`],
-      ["Texas pipeline", fmt(tx) + " GW", "Jefferies: ~13 GW of announced projects at immediate risk"],
+      ["Texas pipeline", fmt(tx) + " GW", "Jefferies: ~13 GW at immediate risk; Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain"],
       ["Blocked on Nov 3", fmt(tot((s) => s.status === "bl")) + " GW", "Ohio votes at Trenton, Piqua, Sunbury"],
     ].map(([b, v, s]) => `<div class="tile"><b>${b}</b><span class="v">${v}</span><small>${esc(s)}</small></div>`).join("");
+    if (D.modo) {
+      const m = D.modo, box = document.getElementById("usModo");
+      box.hidden = false;
+      box.querySelector("summary").innerHTML = `<b>Cross-check: Modo Energy national view</b> <small>(${esc(m.date)}, <a href="${esc(m.src)}" target="_blank" rel="noopener">source</a>)</small>`;
+      document.getElementById("usMK").innerHTML = m.tiles.map(([b, v, t]) => `<div class="tile"><b>${esc(b)}</b><span class="v">${esc(v)}</span><small>${esc(t)}</small></div>`).join("");
+      document.getElementById("usMP").innerHTML = m.pts.map((x) => `<li>${esc(x)}</li>`).join("");
+    }
     document.getElementById("usNote").textContent = D.note + " As of " + D.asofText + ".";
     const A = D.assump;
     document.getElementById("usHow").innerHTML = `<ul class="bul" style="margin-top:6px">${Object.values(A).map((a) => `<li>${esc(a.why)}: default ${a.v}${a.u ? " " + a.u : ""} (range ${a.rng})</li>`).join("")}
