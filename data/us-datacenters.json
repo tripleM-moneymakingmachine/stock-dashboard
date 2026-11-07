@@ -1785,7 +1785,7 @@
   },
   "orcl": {
    "grade": "High",
-   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound.",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states.",
    "moves": [
     "Rush Shackelford buildings to energise before Jan 19",
     "Secure Jupiter's air permit (Dec 7 hearing)",
@@ -1802,9 +1802,11 @@
   },
   "spcx": {
    "grade": "Low-Medium",
-   "view": "Colossus 1 and 2 are both in Memphis, Tennessee: ~1.7 GW of facility power live (~1.3 GW IT, Epoch), with gas turbines across the state line in Southaven, Mississippi. Building 3 should lift Colossus 2 to ~2.1 GW by Q1 2027. Neither state's governor backs a pause; local turbine permits remain the risk, and Colossus 1 is now leased to Anthropic.",
+   "view": "Live today: ~1.7 GW (SpaceX's Sep 30 nameplate matches the ~1.7 GW of facility power at Colossus 1 and 2 in Memphis). Musk is guiding to 2.5–3 GW by end-2026 and at least 13 GW by end-2027, but only Colossus 2's Building 3 (~0.8 GW more) is sited; the rest depends on new Texas sites still being chosen, which now sit under Hinojosa's pause. Neither Tennessee nor Mississippi backs a pause, so the near-term build is safe; the 2027 target is the exposed part.",
    "moves": [
-    "Keep power plant on the Mississippi side"
+    "Keep near-term growth in Memphis/Southaven",
+    "Site 2027 builds outside Texas or energise before new rules",
+    "Behind-the-meter gas and batteries to avoid grid fights"
    ]
   },
   "crwv": {
@@ -1875,6 +1877,14 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-07",
+   "co": [
+    "spcx"
+   ],
+   "t": "SpaceX reported 1.7 GW of nameplate compute at Sep 30 (1.4 GW in June); on the Q3 call Musk targeted 2.5–3 GW by end-2026 and at least 13 GW by end-2027.",
+   "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+  },
   {
    "d": "2026-11-07",
    "co": [
@@ -2033,6 +2043,14 @@
  ],
  "sources": [
   [
+   "Zacks/TradingView: SpaceX Q3 call targets",
+   "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/"
+  ],
+  [
+   "SpaceX Q3 2026 results (SEC)",
+   "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+  ],
+  [
    "Unite.AI: Ohio ballot results",
    "https://www.unite.ai/ohio-voters-back-local-data-center-limits-in-unofficial-results/"
   ],
@@ -2172,5 +2190,125 @@
    "A one-year ERCOT pause leaves Texas ~9 GW behind by 2035; two years or more ~13 GW. MISO, SPP and the West pick up most of it.",
    "Most exposure is paper: of 242 GW not yet operating, 41 GW is under construction; in every pause state at least 61% is only announced or waiting on a grid connection."
   ]
+ },
+ "guide": {
+  "spcx": {
+   "now": "1.7 GW nameplate compute (Sep 30, 2026; 1.4 GW Jun 30)",
+   "y26": "2.5–3 GW",
+   "y27": "≥13 GW",
+   "y28": "No target",
+   "basis": "Company-wide nameplate compute. Year-end targets from Musk on the Q3 call; the ~11 GW 2027 jump has no named sites beyond Colossus 2 Building 3 and planned Texas sites.",
+   "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+   "src2": "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/",
+   "d": "2026-10-20"
+  },
+  "orcl": {
+   "now": "850 MW brought online in Q1 FY27 (Jun–Aug 2026)",
+   "y26": "—",
+   "y27": "—",
+   "y28": "~10 GW by end-FY28 (May 2028)",
+   "basis": "AI data center capacity, company-wide (investor day, Oct 2026); ~7 GW of it is still to be added. CEO in Mar 2026: 10 GW+ secured, coming online over three years.",
+   "src": "https://pro.edgex.exchange/en-US/news/article/oracle-10gw-ai-compute-capacity-fy28",
+   "d": "2026-10-29"
+  },
+  "amzn": {
+   "now": "Added 3.9 GW in the 12 months to end-2025",
+   "y26": "—",
+   "y27": "Double end-2025 capacity",
+   "y28": "—",
+   "basis": "Jassy, Feb 2026: “double it again by the end of 2027.” AWS does not disclose its total GW; the Q3 2026 call gave capex only ($220B in 2026, “meaningfully more” in 2027).",
+   "src": "https://www.theregister.com/2026/02/06/amazon_earnings_q4_2025/",
+   "d": "2026-02-05"
+  },
+  "msft": {
+   "now": "24 new data centers added in the Sep quarter",
+   "y26": "—",
+   "y27": "~2× footprint vs Oct 2025",
+   "y28": "—",
+   "basis": "Nadella, Oct 2025: roughly double the total datacenter footprint over two years. No GW figures given; calendar 2026 capex ~$170B.",
+   "src": "https://www.globaldatacenterhub.com/p/can-microsoft-double-its-global-data",
+   "d": "2026-10-28"
+  },
+  "meta": {
+   "now": "Not disclosed",
+   "y26": "—",
+   "y27": "—",
+   "y28": "“Tens of GW” this decade",
+   "basis": "Zuckerberg, Meta Compute launch (Jan 2026); Prometheus ~1 GW and Hyperion are the named multi-GW clusters.",
+   "src": "https://siliconangle.com/?p=727498",
+   "d": "2026-01-12"
+  },
+  "googl": {
+   "now": "Not disclosed",
+   "y26": "—",
+   "y27": "—",
+   "y28": "—",
+   "basis": "Alphabet gives capex, not GW: 2026 capex raised to $195–205B and 2027 signalled above $300B (Q3 2026). Google infrastructure leadership has said AI serving capacity must double every six months (internal goal, not a GW target).",
+   "src": "https://aiweekly.co/alerts/alphabet-posts-1276b-q3-with-google-cloud-up-103-to-307b-as-2027-capex-set-to",
+   "d": "2026-10-28"
+  },
+  "crwv": {
+   "now": "Not given on the latest call",
+   "y26": ">1.85 GW active",
+   "y27": "—",
+   "y28": "—",
+   "basis": "Active power target set with Q2 2026 results (Aug 2026); Q3 results not yet out.",
+   "src": "https://aiweekly.co/fr/alerts/coreweave-publie-258-md-au-t2-112-backlog-104-md-et-vise-185-gw-actif-fin-2026",
+   "d": "2026-08-11"
+  },
+  "nbis": {
+   "now": "Not disclosed",
+   "y26": "5 GW contracted",
+   "y27": ">1 GW/yr deployed",
+   "y28": ">1 GW/yr deployed",
+   "basis": "Contracted power (secured, not live); deployment pace of more than 1 GW a year from 2027 (Q2 2026 letter).",
+   "src": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm",
+   "d": "2026-08-12"
+  },
+  "iren": {
+   "now": "Horizon 1 delivered; ~$1B operating ARR",
+   "y26": "~0.3 GW IT delivered",
+   "y27": "~0.8 GW IT delivered",
+   "y28": "—",
+   "basis": "Cumulative IT capacity delivered (FY26 results, Aug 2026); pipeline of 5 GW+ projects.",
+   "src": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000051/irenreportsfy26results.htm",
+   "d": "2026-08-27"
+  },
+  "apld": {
+   "now": ">1 GW contracted",
+   "y26": "—",
+   "y27": "Polaris Forge 3 (300 MW IT) starts Aug 2027",
+   "y28": "—",
+   "basis": "Leases signed: Delta Forge 1 (300 MW, Apr 2026) and Polaris Forge 3 (300 MW IT, ~430 MW grid, May 2026), on top of Polaris Forge 1–2.",
+   "src": "https://capacityglobal.com/news/applied-digital-surpasses-1gw-agrees-lease-on-polaris-forge-3/",
+   "d": "2026-05-21"
+  },
+  "glxy": {
+   "now": "133 MW IT delivered at Helios",
+   "y26": "—",
+   "y27": "Phase II halls from Q2 2027",
+   "y28": "—",
+   "basis": "CoreWeave holds 800 MW of contracted IT at Helios; ERCOT approved 1.6 GW (Q3 2026 results).",
+   "src": "https://247wallst.com/cards/galaxy-digital-q3-2026-earnings-glxy-01m5ygtstptb75e50mbgbfmz11",
+   "d": "2026-10-27"
+  },
+  "cifr": {
+   "now": "First capacity live at Black Pearl",
+   "y26": "More halls at Black Pearl, Barber Lake by year-end",
+   "y27": "270 MW available in pipeline",
+   "y28": "—",
+   "basis": "No numeric MW guidance; ~5.9 GW pipeline incl. 1 GW conditional ERCOT base load at Colchis (Q3 2026 update).",
+   "src": "https://greenstocknews.com/news/nasdaq/cifr/cipher-digital-provides-third-quarter-2026-business-update",
+   "d": "2026-11-02"
+  },
+  "frmi": {
+   "now": "0 MW online; 1.5 GW of turbines landed",
+   "y26": "—",
+   "y27": "~200 MW initial power (early 2027)",
+   "y28": "~1.5 GW (18–24 months)",
+   "basis": "Q2 2026 results; only named tenant is TensorWave (222 MW phase one). Long-term ramp to ~17 GW is subject to binding tenants.",
+   "src": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000046/fermiq22026erex_991.htm",
+   "d": "2026-08-13"
+  }
  }
 }

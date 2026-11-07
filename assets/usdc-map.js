@@ -107,6 +107,9 @@
       <h2 id="usRH">Who is at risk, and where they can go</h2>
       <p class="sub">Capacity not yet operating in states rated hostile (tiers 4–5), by stage. Click a row to show that company on the map.</p>
       <div class="panel tw" id="usRisk"></div>
+      <h3 style="margin:22px 0 4px">What each company says it will have</h3>
+      <p class="sub">Company-wide capacity guidance from filings and earnings calls, including capacity not yet tied to a site. Units differ by company, so read the basis column before comparing.</p>
+      <div class="panel tw" id="usGuide"></div>
     </section>
 
     <section aria-labelledby="usCH" style="margin-top:28px">
@@ -290,7 +293,8 @@
     const home = [...new Set(D.sites.filter((s) => s.owner === o && tierOf(s.state) <= 2).map((s) => s.state))];
     const to = [...new Set([...home, ...states.flatMap((c) => (D.risk[c].to || []).map((x) => x.replace("*", "")).filter((x) => x !== "—" && tierOf(x) <= 3))])].slice(0, 5);
     const cur = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + nowGW(s), 0);
-    return { uc: g("uc"), pl: g("pl"), bl: g("bl"), all, pipe, cur, states, to, at };
+    const allPipe = D.sites.filter((s) => s.owner === o).reduce((a, s) => a + pipeGW(s), 0);
+    return { uc: g("uc"), pl: g("pl"), bl: g("bl"), all, pipe, cur, allPipe, states, to, at };
   }
   const P = {};
   function sliders() {
@@ -348,15 +352,22 @@
     }).join("")}</tbody></table><p class="note">Capex from the "Capex this year" panel; private and non-covered names show —. Estimates, not company guidance.</p>`;
     document.querySelectorAll("#usCost tr[data-o]").forEach((tr) => (tr.onclick = () => { setOwner("*"); setOwner(tr.dataset.o); document.getElementById("usMap").scrollIntoView({ behavior: "smooth", block: "center" }); }));
   }
+  function guideTable() {
+    const G = D.guide || {}, el = document.getElementById("usGuide");
+    if (!el || !Object.keys(G).length) return;
+    const dfmt = (x) => new Date(x + "T00:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
+    el.innerHTML = `<table class="rt"><thead><tr><th>Company</th><th style="text-align:left">Latest disclosed</th><th style="text-align:left">End-2026</th><th style="text-align:left">End-2027</th><th style="text-align:left">2028</th><th style="text-align:left">Basis and source</th></tr></thead><tbody>${COS.filter((o) => G[o]).map((o) => { const g = G[o];
+      return `<tr><td>${esc(D.owners[o].n)}<small>${esc(D.owners[o].t)} · ${dfmt(g.d)}</small></td>${[g.now, g.y26, g.y27, g.y28].map((v) => `<td style="text-align:left;font-family:var(--f-body)">${esc(v)}</td>`).join("")}<td style="text-align:left;font-family:var(--f-body);min-width:260px"><small style="display:block">${esc(g.basis)} <a href="${esc(g.src)}" target="_blank" rel="noopener">source</a>${g.src2 ? ` · <a href="${esc(g.src2)}" target="_blank" rel="noopener">call</a>` : ""}</small></td></tr>`; }).join("")}</tbody></table>`;
+  }
   function riskTable() {
     const rows = COS.map((o) => ({ o, ...exposure(o), v: D.views[o] || {} })).sort((a, b) => b.uc + b.pl + b.bl - (a.uc + a.pl + a.bl));
-    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th title="Operating today across all tracked campuses, any state">Current</th><th>Building</th><th>Planned</th><th>Blocked</th><th>% of footprint</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
+    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th title="Operating today across all tracked campuses, any state">Current</th><th title="Planned build-out not yet operating, all tracked campuses in any state">Pipeline (all)</th><th>Building</th><th>Planned</th><th>Blocked</th><th>% of footprint</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
       const at = r.uc + r.pl + r.bl, pct = r.all ? (at / r.all) * 100 : 0;
       return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small></td>
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
-        <td>${fmt(r.cur)}</td><td>${fmt(r.uc)}</td><td>${fmt(r.pl)}</td><td>${fmt(r.bl)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
+        <td>${fmt(r.cur)}</td><td>${fmt(r.allPipe)}</td><td>${fmt(r.uc)}</td><td>${fmt(r.pl)}</td><td>${fmt(r.bl)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">Current = GW operating today across all of the company's tracked campuses in any state (facility power). Building, Planned and Blocked = planned build-out not yet operating in tiers 4–5 states on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    }).join("")}</tbody></table><p class="note">Current and Pipeline (all) = GW operating today and still to build across all of the company's tracked campuses in any state (facility power). Company-wide targets, including capacity not yet tied to a site, are in the guidance table below. Building, Planned and Blocked = planned build-out not yet operating in tiers 4–5 states on the tracked campuses (unbuilt phases of live campuses count as Building), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
@@ -409,7 +420,7 @@
   ]).then(([d, dc]) => {
     D = d;
     if (dc && dc.companies) dc.companies.forEach((c) => { if (c.capexV) CAPEX[c.id] = c.capexV; });
-    controls(); sliders(); kpis(); riskTable(); costTable(); views(); devs(); renderSide(); renderLegend();
+    controls(); sliders(); kpis(); riskTable(); guideTable(); costTable(); views(); devs(); renderSide(); renderLegend();
     return loadScript("https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js")
       .then(() => loadScript("https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"))
       .then(() => fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then((r) => r.json()))
