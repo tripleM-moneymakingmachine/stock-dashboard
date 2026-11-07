@@ -10,6 +10,8 @@
 // Signal (positive = bond-bullish), recomputed every week using only data up to that week:
 //   S = mean( −z(KOSPI 4-week return), −z(4-week % change in margin credit),
 //             +z(bond ETF turnover share, 4-week avg minus 26-week avg), −z(4-week change in 10Y yield) )
+// The page's flows charts and back-test read the daily build (`daily`, see buildDaily); the weekly build feeds the
+// US Treasury transmission study.
 // Usage: node scripts/fetch-korea-flows.mjs. Anything that fails keeps the previous series.
 import { readFileSync, writeFileSync } from "node:fs";
 import { finalQuoteHistory, kst, addDays } from "./kofia.mjs";
@@ -83,10 +85,17 @@ async function fetchRaw() {
         try { const u = await yahooTnx(BEG); return { ust2d: p.ust2d || [], ust10d: u }; } catch (e2) { log(`Yahoo failed (${e2.message}); keeping previous`); return { ust2d: p.ust2d || [], ust10d: p.ust10d || [] }; }
       }
     })()),
-    margin: await tryGet("margin", async () => lastOfWeek((await freesis("STATSCU0100000070BO", BEG)).map((x) => [x.d, +(x.TMPV2 / 1e6).toFixed(2)]))),
-    deposits: await tryGet("deposits", async () => lastOfWeek((await freesis("STATSCU0100000060BO", BEG)).map((x) => [x.d, +(x.TMPV2 / 1e6).toFixed(2)]))),
+    ...(await (async () => { // KOFIA freesis daily margin credit / deposits; the weekly series are their last day of each week
+      const one = async (name, obj) => { try { const v = (await freesis(obj, BEG)).map((x) => [x.d, +(x.TMPV2 / 1e6).toFixed(2)]); if (v.length < 20) throw new Error("short"); log(`${name}D: ${v.length} days, last ${v.at(-1)[0]}`); return v; } catch (e) { log(`${name} failed (${e.message}); keeping previous`); return null; } };
+      const m = await one("margin", "STATSCU0100000070BO"), d = await one("deposits", "STATSCU0100000060BO");
+      return { margin: m ? lastOfWeek(m) : p.margin || [], marginD: m || p.marginD || [], deposits: d ? lastOfWeek(d) : p.deposits || [], depositsD: d || p.depositsD || [] };
+    })()),
     bondEtf: await tryGet("bondEtf", async () => (await naver("439870", "week", 260)).map(([d, c, v]) => [d, c, +(c * v / 1e9).toFixed(2)])),
     eqEtfAmt: await tryGet("eqEtfAmt", async () => (await naver("069500", "week", 260)).map(([d, c, v]) => [d, +(c * v / 1e9).toFixed(2)])),
+    // daily closes and turnover for the daily build (Naver day chart)
+    kospiD: await tryGet("kospiD", async () => (await naver("KOSPI", "day", 1300)).map(([d, c]) => [d, c])),
+    bondEtfD: await tryGet("bondEtfD", async () => (await naver("439870", "day", 1300)).map(([d, c, v]) => [d, c, +(c * v / 1e9).toFixed(2)])),
+    eqEtfAmtD: await tryGet("eqEtfAmtD", async () => (await naver("069500", "day", 1300)).map(([d, c, v]) => [d, +(c * v / 1e9).toFixed(2)])),
   };
 }
 
@@ -206,6 +215,125 @@ function build(raw) {
   return { series, backtest: bt, curve, episodes, latest, W };
 }
 
+// ---------- daily build: same signal and back-test, every Seoul session ----------
+// Windows are the weekly ones in trading days (4 weeks = 20, 26 weeks = 130, 52 weeks = 260), so the signal means the
+// same thing, re-read after every KOFIA close. Margin credit is KOFIA's latest published balance on or before the day
+// (it is reported with a lag, so nothing from the future leaks in). The US Treasury level is the last New York close
+// strictly before the Seoul close. UST hedge: β = trailing 130-day OLS beta of the daily 10Y KTB change on the daily
+// US 10Y change, known at the time.
+const lastIdx = (sorted, d) => { let lo = 0, hi = sorted.length - 1, ans = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (sorted[m] <= d) { ans = m; lo = m + 1; } else hi = m - 1; } return ans; };
+function buildDaily(raw) {
+  if (!raw.kospiD?.length || !raw.ktb10d?.length || !raw.marginD?.length) throw new Error("no daily inputs yet");
+  const csi = new Map(raw.kospiD.map((r) => [r[0], r[1]])), bE = new Map(raw.bondEtfD.map((r) => [r[0], r])), eE = new Map(raw.eqEtfAmtD.map((r) => [r[0], r[1]]));
+  const mg = raw.marginD.slice().sort((a, b) => a[0].localeCompare(b[0])), mgD = mg.map((r) => r[0]);
+  const u10 = raw.ust10d.slice().sort((a, b) => a[0].localeCompare(b[0])), uD = u10.map((r) => r[0]);
+  const D = [];
+  for (const [d, y] of raw.ktb10d) {
+    if (d < BEG || !csi.has(d) || !(y > 0)) continue;
+    const im = lastIdx(mgD, d), iu = lastIdx(uD, d) - (uD[lastIdx(uD, d)] === d ? 1 : 0);
+    const b = bE.get(d), e = eE.get(d), ust = iu >= 0 ? u10[iu][1] : null;
+    D.push({ date: d, csi: csi.get(d), y10: y, margin: im >= 0 ? mg[im][1] : null, bpx: b ? b[1] : null, share: b && e != null && b[2] + e > 0 ? b[2] / (b[2] + e) : null, ust, sp: ust != null ? (y - ust) * 100 : null });
+  }
+  const L = 20, ZWIN = 260, ZMIN = 130, SHW = 130, SHMIN = 65, SH4 = 20, SH4MIN = 15, CW = 130, CMIN = 100, BW = 130, BMIN = 100, TH = 0.5, H = 20, AN = Math.sqrt(252);
+  for (let i = 0; i < D.length; i++) {
+    const w = D[i], p = D[i - L], q = D[i - 1];
+    w.eq4 = p ? (w.csi / p.csi - 1) * 100 : null;
+    w.dm4 = p?.margin && w.margin ? (w.margin / p.margin - 1) * 100 : null;
+    w.dmAbs = q?.margin && w.margin ? w.margin - q.margin : null;
+    w.dmAbs4 = p?.margin && w.margin ? w.margin - p.margin : null;
+    const sh = D.slice(Math.max(0, i - SHW + 1), i + 1).map((x) => x.share).filter((x) => x != null);
+    const sh4 = D.slice(Math.max(0, i - SH4 + 1), i + 1).map((x) => x.share).filter((x) => x != null);
+    w.bsDev = sh.length >= SHMIN && sh4.length >= SH4MIN ? (mean(sh4) - mean(sh)) * 100 : null;
+    w.dy4 = p ? (w.y10 - p.y10) * 100 : null;
+    w.dy1 = q ? (w.y10 - q.y10) * 100 : null;
+    w.du1 = q && q.ust != null && w.ust != null ? (w.ust - q.ust) * 100 : null;
+    w.ret1 = q ? (w.csi / q.csi - 1) * 100 : null;
+    const z = (field) => {
+      const hist = D.slice(Math.max(0, i - ZWIN + 1), i + 1).map((x) => x[field]).filter((x) => x != null);
+      if (hist.length < ZMIN || w[field] == null) return null;
+      const s = sd(hist); return s ? (w[field] - mean(hist)) / s : 0;
+    };
+    const zs = [z("eq4"), z("dm4"), z("bsDev"), z("dy4")];
+    w.z = zs.map((x) => r2(x));
+    const parts = [zs[0] == null ? null : -zs[0], zs[1] == null ? null : -zs[1], zs[2], zs[3] == null ? null : -zs[3]].filter((x) => x != null);
+    w.S = parts.length >= 3 ? mean(parts) : null;
+    w.reg = w.S == null ? null : w.S >= TH ? 1 : w.S <= -TH ? -1 : 0;
+    const win = D.slice(Math.max(1, i - CW + 1), i + 1).filter((x) => x.ret1 != null && x.dy1 != null);
+    w.corr = win.length >= CMIN ? corr(win.map((x) => x.ret1), win.map((x) => x.dy1)) : null;
+    const bw = D.slice(Math.max(1, i - BW + 1), i + 1).filter((x) => x.dy1 != null && x.du1 != null);
+    if (bw.length >= BMIN) { const xs = bw.map((x) => x.du1), ys = bw.map((x) => x.dy1), mx = mean(xs), my = mean(ys); let sxy = 0, sxx = 0; for (let k = 0; k < xs.length; k++) { sxy += (xs[k] - mx) * (ys[k] - my); sxx += (xs[k] - mx) ** 2; } w.beta = sxx ? sxy / sxx : null; } else w.beta = null;
+  }
+  let cumBp = 0, cumHold = 0, cumLong = 0, eq = 1, eqHold = 1, eqLong = 1, peak = 0, mdd = 0, peakEq = 1, mddEq = 0, pkH = 0, mddH = 0, pkL = 0, mddL = 0;
+  const pnlLong = [], pnl = [], holdD = [], curve = [], stO = { 1: [], 0: [], [-1]: [] };
+  const first = D.findIndex((w) => w.reg != null);
+  for (let i = first; i >= 0 && i < D.length; i++) {
+    const w = D[i], nx = D[i + 1];
+    if (w.reg != null && D[i + H]) stO[w.reg].push((D[i + H].y10 - w.y10) * 100);
+    if (!nx) continue;
+    const pos = w.reg ?? 0, dyb = -(nx.y10 - w.y10) * 100, bp = pos * dyb, lpos = pos > 0 ? 1 : 0;
+    cumBp += bp; cumHold += dyb; cumLong += lpos * dyb; pnl.push(bp); pnlLong.push(lpos * dyb); holdD.push(dyb);
+    pkH = Math.max(pkH, cumHold); mddH = Math.min(mddH, cumHold - pkH); pkL = Math.max(pkL, cumLong); mddL = Math.min(mddL, cumLong - pkL);
+    const er = w.bpx && nx.bpx ? nx.bpx / w.bpx - 1 : 0;
+    eq *= 1 + pos * er; eqHold *= 1 + er; eqLong *= 1 + lpos * er;
+    peak = Math.max(peak, cumBp); mdd = Math.min(mdd, cumBp - peak);
+    peakEq = Math.max(peakEq, eq); mddEq = Math.min(mddEq, eq / peakEq - 1);
+    curve.push([nx.date, r2(cumBp, 1), r2(cumHold, 1), r2(cumLong, 1), r2((eq - 1) * 100, 2), r2((eqHold - 1) * 100, 2), r2((eqLong - 1) * 100, 2), pos]);
+  }
+  const hit = (arr, wantNeg) => arr.length ? arr.filter((x) => (wantNeg ? x < 0 : x > 0)).length / arr.length : null;
+  const shp = (a) => r2(a.length > 10 && sd(a) ? (mean(a) / sd(a)) * AN : null, 2);
+  const bt = {
+    horizonDays: H, threshold: TH, days: pnl.length, from: D[first]?.date, to: D.at(-1).date,
+    rally: { n: stO[1].length, hit: r2(hit(stO[1], true), 3), avgFwdBp: r2(stO[1].length ? mean(stO[1]) : null, 1) },
+    selloff: { n: stO[-1].length, hit: r2(hit(stO[-1], false), 3), avgFwdBp: r2(stO[-1].length ? mean(stO[-1]) : null, 1) },
+    neutral: { n: stO[0].length, avgFwdBp: r2(stO[0].length ? mean(stO[0]) : null, 1) },
+    allAvgFwdBp: r2(mean([...stO[1], ...stO[0], ...stO[-1]]), 1),
+    cumBp: r2(cumBp, 1), holdBp: r2(cumHold, 1), longBp: r2(cumLong, 1), maxDdBp: r2(mdd, 1), holdMaxDdBp: r2(mddH, 1), longMaxDdBp: r2(mddL, 1),
+    sharpe: shp(pnl), longSharpe: shp(pnlLong), holdSharpe: shp(holdD), volBp: r2(sd(pnl) * AN, 0),
+    etfLongPct: r2((eqLong - 1) * 100, 2), etfStratPct: r2((eq - 1) * 100, 2), etfHoldPct: r2((eqHold - 1) * 100, 2), etfMaxDdPct: r2(mddEq * 100, 2),
+    timeInMarket: r2(curve.filter((r) => r[7]).length / Math.max(1, curve.length), 3),
+    curveCols: ["date", "strategyBp", "holdBp", "longFlatBp", "etfStrategyPct", "etfHoldPct", "etfLongFlatPct", "position"],
+  };
+  const hFirst = D.findIndex((w, i) => i >= first && w.reg != null && w.beta != null && w.ust != null);
+  const hedgedCurve = [], hp = [], hDates = [], stH = { 1: [], [-1]: [] };
+  let hc = 0, hl = 0, hpk = 0, hmdd = 0;
+  for (let i = hFirst; i >= 0 && i < D.length - 1; i++) {
+    const w = D[i], nx = D[i + 1], b = w.beta; if (b == null || nx.ust == null || w.ust == null) continue;
+    const mv = ((nx.y10 - w.y10) - b * (nx.ust - w.ust)) * 100, pos = w.reg ?? 0;
+    hc += -pos * mv; hl += -(pos > 0 ? 1 : 0) * mv; hp.push(-pos * mv); hDates.push(nx.date);
+    hpk = Math.max(hpk, hc); hmdd = Math.min(hmdd, hc - hpk);
+    hedgedCurve.push([nx.date, r2(hc, 1), r2(hl, 1)]);
+    const f = D[i + H]; if (pos && f && f.ust != null) stH[pos].push(((f.y10 - w.y10) - b * (f.ust - w.ust)) * 100);
+  }
+  const split = "2024-09-01", sub = (pred) => { const p = hp.filter((_, k) => pred(hDates[k])), o = pnl.filter((_, k) => pred(curve[k][0])); return { days: p.length, hedged: { cumBp: r2(p.reduce((s, x) => s + x, 0), 1), sharpe: shp(p) }, outright: { cumBp: r2(o.reduce((s, x) => s + x, 0), 1), sharpe: shp(o) } }; };
+  const hedged = {
+    from: D[hFirst]?.date, cumBp: r2(hc, 1), longBp: r2(hl, 1), sharpe: shp(hp), maxDdBp: r2(hmdd, 1), volBp: r2(sd(hp) * AN, 0), beta: r2(D.at(-1).beta, 2),
+    rally: { n: stH[1].length, hit: r2(hit(stH[1], true), 3) }, selloff: { n: stH[-1].length, hit: r2(hit(stH[-1], false), 3) },
+    periods: [{ label: `${(D[hFirst]?.date || "").slice(0, 7)} – 2024-08`, ...sub((d) => d < split) }, { label: `2024-09 – ${D.at(-1).date.slice(0, 7)}`, ...sub((d) => d >= split) }],
+  };
+  const episodes = [];
+  for (let i = 0; i < D.length; i++) {
+    const r = D[i].reg; if (!r || (i && D[i - 1].reg === r)) continue;
+    let j = i; while (D[j + 1]?.reg === r) j++;
+    const end = D[Math.min(j + H, D.length - 1)];
+    episodes.push({ from: D[i].date, to: D[j].date, type: r > 0 ? "rally" : "selloff", days: j - i + 1, y0: D[i].y10, y1: end.y10, bp: r2((end.y10 - D[i].y10) * 100, 1), open: !D[j + 1] || j + H >= D.length });
+  }
+  const series = D.map((w) => [w.date, w.csi, w.y10, w.margin, r2(w.dmAbs, 2), r2(w.share != null ? w.share * 100 : null, 1), r2(w.S, 2), w.reg, r2(w.corr, 2), w.bpx, r2(w.eq4, 2), r2(w.dm4, 2), r2(w.bsDev, 2), r2(w.dy4, 1), w.z, w.ust, r2(w.beta, 2)]);
+  const last = D.at(-1), ago = (n) => D[D.length - 1 - n], yr = D.slice(-252);
+  const dep = raw.depositsD?.length ? raw.depositsD : raw.deposits, idp = lastIdx(dep.map((r) => r[0]), last.date), dp20 = idp >= 20 ? dep[idp - 20] : null;
+  const latest = {
+    date: last.date, csi: last.csi, y10: last.y10, margin: last.margin, S: r2(last.S, 2), reg: last.reg, corr: r2(last.corr, 2),
+    z: last.z, eq4: r2(last.eq4, 2), dmAbs4: r2(last.dmAbs4, 1), dm4: r2(last.dm4, 2), bsDev: r2(last.bsDev, 2), dy4: r2(last.dy4, 1),
+    share: r2(last.share != null ? last.share * 100 : null, 1), S20ago: r2(ago(L)?.S, 2), S1ago: r2(ago(1)?.S, 2),
+    deposits: idp >= 0 ? dep[idp][1] : null, deposits20: idp >= 0 && dp20 ? r2(dep[idp][1] - dp20[1], 2) : null,
+    marginPeak: Math.max(...D.map((w) => w.margin || 0)), csiPeak1y: Math.max(...yr.map((w) => w.csi)), y10Low1y: Math.min(...yr.map((w) => w.y10)), y10High1y: Math.max(...yr.map((w) => w.y10)),
+  };
+  return {
+    cols: ["date", "kospi", "kr10y", "marginTn", "marginDayChgTn", "bondEtfSharePct", "signal", "regime", "corr130d", "etf439870", "eq20dPct", "margin20dPct", "bondShareDevPp", "dy20dBp", "z", "ust10y", "betaUst130d"],
+    method: { window: "20-day changes; z-scores vs trailing 260 sessions (min 130); bond ETF share 20-day avg minus 130-day avg; thresholds ±0.5; hit rates over the next 20 sessions; UST hedge β = trailing 130-day daily beta", components: ["KOSPI 20-day return (inverted)", "Margin credit 20-day % change (inverted)", "30Y KTB ETF turnover share: 20-day avg minus 130-day avg", "10Y KTB yield 20-day change (inverted)"] },
+    series, backtest: bt, curve, hedged, hedgedCurve, episodes, latest,
+  };
+}
+
 // ---------- run ----------
 const raw = process.argv.includes("--raw") ? prev.raw : await fetchRaw(); // --raw: rebuild from the committed raw series, no network
 for (const k of ["kospi", "kr10y", "margin"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
@@ -219,6 +347,9 @@ let ust = null;
 try { ust = study(raw, b.W); } catch (e) { log(`UST study failed: ${e.message}`); }
 if (ust) b.series.forEach((row, i) => row.push(b.W[i].ust ?? null, r2(b.W[i].beta, 2), r2(b.W[i].sp, 1)));
 delete b.W;
+let daily = null;
+try { daily = buildDaily(raw); log(`daily: ${daily.series.length} sessions to ${daily.latest.date}; signal ${daily.latest.S} (${daily.latest.reg}); outright ${daily.backtest.cumBp}bp Sharpe ${daily.backtest.sharpe} · hedged ${daily.hedged.cumBp}bp Sharpe ${daily.hedged.sharpe}; ${daily.episodes.length} episodes`); }
+catch (e) { log(`daily build failed (${e.message}); keeping previous`); daily = prev?.daily || null; }
 const out = {
   ust,
   updated: Math.floor(Date.now() / 1000),
@@ -229,6 +360,7 @@ const out = {
     components: ["KOSPI 4-week return (inverted)", "Margin credit 4-week % change (inverted)", "30Y KTB ETF turnover share: 4-week avg minus 26-week avg", "10Y KTB yield 4-week change (inverted)"],
   },
   ...b,
+  daily,
   notes: prev?.notes || null,
   events: prev?.events || null,
   raw,
