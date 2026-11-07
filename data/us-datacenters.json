@@ -2200,7 +2200,9 @@
    "basis": "Company-wide nameplate compute. Year-end targets from Musk on the Q3 call; the ~11 GW 2027 jump has no named sites beyond Colossus 2 Building 3 and planned Texas sites.",
    "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
    "src2": "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/",
-   "d": "2026-10-20"
+   "d": "2026-10-20",
+   "gwTarget": 13,
+   "targetBy": "by end-2027"
   },
   "orcl": {
    "now": "850 MW brought online in Q1 FY27 (Jun–Aug 2026)",
