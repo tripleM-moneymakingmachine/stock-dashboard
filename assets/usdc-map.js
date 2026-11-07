@@ -172,7 +172,7 @@
       .on("mousemove", (e, f) => { const c = NAME2[f.properties.name], r = D.risk[c]; if (!r) return; showTip(e, `<b>${esc(f.properties.name)}</b><div class="tr"><i class="rk" style="background:${tierCol(r.tier)}"></i>${TIER[r.tier]}<span>tier ${r.tier}/5</span></div><small>${esc(r.why)}</small><div class="hint">Tap for sites and where to move</div>`); })
       .on("mouseleave", hideTip);
     svg.append("g").attr("class", "gA");
-    const sites = D.sites.filter((s) => proj([s.lon, s.lat])).sort((a, b) => b.gw - a.gw);
+    const sites = D.sites.filter((s) => !s.unsited && proj([s.lon, s.lat])).sort((a, b) => b.gw - a.gw);
     const rS = d3.scaleSqrt().domain([0, 11]).range([3.5, 30]);
     svg.append("g").attr("class", "gD").selectAll("circle").data(sites, (s) => s.id).join("circle")
       .attr("class", (s) => "dot" + (s.status === "bl" ? " bl" : ""))
@@ -364,13 +364,13 @@
   }
   function riskTable() {
     const rows = COS.map((o) => ({ o, ...exposure(o), v: D.views[o] || {} })).sort((a, b) => b.uc + b.pl + b.bl - (a.uc + a.pl + a.bl));
-    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th title="Operating today, all tracked campuses in any state">Current</th><th title="Not yet operating, all states">Building</th><th title="Not yet operating, all states">Planned</th><th title="Not yet operating, all states">Blocked</th><th title="Building + Planned + Blocked in tier 4–5 states">In hostile states</th><th title="Company capacity target not yet tied to a tracked site">Target, not yet sited</th><th>% of footprint at risk</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
+    document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>Risk</th><th title="Operating today, all tracked campuses in any state">Current</th><th title="Not yet operating, all states">Building</th><th title="Not yet operating, all states">Planned</th><th title="Not yet operating, all states">Blocked</th><th title="Building + Planned + Blocked in tier 4–5 states">In hostile states</th><th>% of footprint at risk</th><th style="text-align:left">Can move to</th></tr></thead><tbody>${rows.map((r) => {
       const at = r.uc + r.pl + r.bl, pct = r.all ? (at / r.all) * 100 : 0;
       return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small></td>
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
-        <td>${fmt(r.cur)}</td><td>${fmt(r.aUc)}</td><td>${fmt(r.aPl)}</td><td>${fmt(r.aBl)}</td><td class="${r.hostile > 0 ? "down" : ""}">${fmt(r.hostile)}</td><td title="${r.unsited ? esc("Guided to " + r.tgBy) : ""}">${r.unsited ? fmt(r.unsited) + `<small>${esc(r.tgBy || "")}</small>` : "—"}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
+        <td>${fmt(r.cur)}</td><td>${fmt(r.aUc)}</td><td>${fmt(r.aPl)}</td><td>${fmt(r.aBl)}</td><td class="${r.hostile > 0 ? "down" : ""}">${fmt(r.hostile)}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%</td>
         <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Target, not yet sited = company capacity guidance minus what is live or tracked on named sites (only where a company gives a GW target for US-heavy capacity), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+    }).join("")}</tbody></table><p class="note">All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company targets not yet tied to a site where the company gives a GW figure and reported location (SpaceX, Texas), ~ estimates included. Footprint = all tracked planned GW. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
@@ -395,7 +395,7 @@
     const atRisk = sum((s) => tierOf(s.state) >= 4, pipeGW), pipe = sum(() => true, pipeGW);
     const tx = sum((s) => s.state === "TX", pipeGW);
     document.getElementById("usK").innerHTML = [
-      ["Campuses tracked", D.sites.length, `${fmt(sum(() => true, nowGW), 0)} GW operating now (facility power)`],
+      ["Campuses tracked", D.sites.filter((s) => !s.unsited).length, `${fmt(sum(() => true, nowGW), 0)} GW operating now (facility power)`],
       ["Pipeline in hostile states", fmt(atRisk) + " GW", `${fmt((atRisk / pipe) * 100, 0)}% of the ${fmt(pipe, 0)} GW pipeline tracked`],
       ["Texas pipeline", fmt(tx) + " GW", "Jefferies: ~13 GW at immediate risk; Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain"],
       ["Blocked on Nov 3", fmt(tot((s) => s.status === "bl")) + " GW", "Ohio votes at Trenton, Piqua, Sunbury"],

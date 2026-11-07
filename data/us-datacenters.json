@@ -1283,6 +1283,22 @@
    "capexB": null,
    "est": false,
    "note": "Planned 800 MW, up to 10 buildings on 400 acres; Nebius still evaluating (Jan 2026)"
+  },
+  {
+   "id": "xai-unsited",
+   "name": "Planned sites, not yet disclosed (Texas, reported)",
+   "owner": "spcx",
+   "partner": null,
+   "state": "TX",
+   "lat": 31.0,
+   "lon": -99.0,
+   "gw": 10.5,
+   "now": 0,
+   "status": "pl",
+   "capexB": null,
+   "est": true,
+   "unsited": true,
+   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). No locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map."
   }
  ],
  "risk": {
@@ -1801,8 +1817,8 @@
    ]
   },
   "spcx": {
-   "grade": "Low-Medium",
-   "view": "Live today: ~1.7 GW (SpaceX's Sep 30 nameplate matches the ~1.7 GW of facility power at Colossus 1 and 2 in Memphis). Musk is guiding to 2.5–3 GW by end-2026 and at least 13 GW by end-2027, but only Colossus 2's Building 3 (~0.8 GW more) is sited; the rest depends on new Texas sites still being chosen, which now sit under Hinojosa's pause. Neither Tennessee nor Mississippi backs a pause, so the near-term build is safe; the 2027 target is the exposed part.",
+   "grade": "Medium",
+   "view": "Live today: ~1.7 GW in Memphis (SpaceX's Sep 30 nameplate). The near-term build (Colossus 2 Building 3, ~0.8 GW) is in Tennessee/Mississippi, where neither governor backs a pause. The exposure is the 2027 plan: Musk targets at least 13 GW by end-2027, and the ~10.5 GW not yet sited is reportedly headed to new Texas sites, which now fall under Hinojosa's pause. Risk raised from Low-Medium to Medium on that basis.",
    "moves": [
     "Keep near-term growth in Memphis/Southaven",
     "Site 2027 builds outside Texas or energise before new rules",
@@ -2201,7 +2217,6 @@
    "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
    "src2": "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/",
    "d": "2026-10-20",
-   "gwTarget": 13,
    "targetBy": "by end-2027"
   },
   "orcl": {
