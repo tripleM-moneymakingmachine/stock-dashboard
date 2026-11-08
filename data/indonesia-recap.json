@@ -20,7 +20,7 @@
     ],
     [
       "US Treasuries: a 5bp rally the 10Y ignored",
-      "Thursday's New York session cut the US 10Y 5.5bp to 4.84% on the tech sell-off, worth about −1.9bp for INDOGBs at the 1-year daily beta of 0.34; the 10Y moved −0.1bp, so Treasuries explain none of today's belly rally and the long end lagged. Over four weeks the US 10Y is down 38bp while the INDOGB 10Y is up 47bp (26-week weekly beta −0.21: about +8bp is the Treasury-linked part and +39bp is residual; the residual is what the US move does not explain, not proof of domestic selling or political risk), and the INDOGB − UST spread widened to 286bp, a new 52-week high."
+      "Thursday's New York session cut the US 10Y 5.5bp to 4.84% on the tech sell-off, worth about −1.6bp for INDOGBs at the 1-year daily beta of 0.29; the 10Y moved −0.1bp, so Treasuries explain none of today's belly rally and the long end lagged. Over four weeks the US 10Y is down 38bp while the INDOGB 10Y is up 47bp (26-week weekly beta −0.11: about +4bp is the Treasury-linked part and +43bp is residual; the residual is what the US move does not explain, not proof of domestic selling or political risk), and the INDOGB − UST spread widened to 286bp, a new 52-week high."
     ]
   ],
   "data": [
@@ -62,7 +62,7 @@
   ],
   "view": [
     "My view:",
-    "This week's rally is a belly story, not a duration turn: the 2–5Y sector fell 6–8bp on domestic buying through a regional equity rout, but the 10Y is flat on the week's high (98th percentile of the past year) and ignored a 5bp Treasury rally, with US CPI (Nov 10), MSCI's review (Nov 11) and BI (Nov 17–18) ahead. The daily Bond Flow Signal is −0.94 (−0.86 Thursday; below −0.5 since Oct 7) and reads sell-off: the JCI (z −2.32) and the 10Y trend (z +2.60) dominate, the rupiah part is z +0.55 on a 1.6% weaker JISDOR over 20 sessions, and the 286bp Treasury spread, 46bp above its 130-day average (z +1.70), is the one bond-bullish part; the call is 54bp right since Oct 7. The weekly build reads −0.66, also sell-off. Its record argues for respect, not faith: on the daily build since June 2022 it scores a Sharpe of 0.77 outright and 0.90 hedged against Treasuries, with rally calls right 58% and sell-off calls 51% of the time over the next 20 sessions (weekly build: 0.33 and 0.45). These are in-sample back-tests, not live results; the US-trend variants reach 0.78 on the weekly build but were chosen after the fact and are not live. the Treasury-linked part explains only about 8bp of the 47bp four-week rise, so the turn has to come from what the US move does not explain, the rupiah and BI; a week of foreign equity buying with JISDOR below 18,100 would likely lift the signal toward −0.5. I expect the 10Y at 7.55–7.85% over the next two weeks and stay underweight, covering half below 7.60%. On the curve, the belly has done the work: 5s10s at 23bp is the steepest of the stored days, so I would not add 5Y outright here, and I keep the FR0109 → PBS040 switch, 3.7bp against with PBS040 now 16bp cheap."
+    "This week's rally is a belly story, not a duration turn: the 2–5Y sector fell 6–8bp on domestic buying through a regional equity rout, but the 10Y is flat on the week's high (98th percentile of the past year) and ignored a 5bp Treasury rally, with US CPI (Nov 10), MSCI's review (Nov 11) and BI (Nov 17–18) ahead. The daily Bond Flow Signal is −1.09 (−1.22 Thursday; sell-off since Sep 30) and reads sell-off: the 10Y trend (z +2.32) and the JCI (z −2.09) dominate, the rupiah part is z +1.62 on a 3.3% weaker rupiah over 20 sessions, and the 286bp Treasury spread, 46bp above its 130-day average (z +1.69), is the one bond-bullish part; the call is 60bp right since Sep 30. The weekly build reads −0.68, also sell-off. Its record argues for respect, not faith: on the daily build since June 2022 it scores a Sharpe of 0.65 outright and 0.76 hedged against Treasuries, with rally calls right 58% and sell-off calls 51% of the time over the next 20 sessions (weekly build: 0.27 and 0.40). These are in-sample back-tests, not live results; the US-trend variants reach 0.81 on the weekly build but were chosen after the fact and are not live. the Treasury-linked part explains only about 4bp of the 47bp four-week rise, so the turn has to come from what the US move does not explain, the rupiah and BI; a week of foreign equity buying with JISDOR below 18,100 would likely lift the signal toward −0.5. I expect the 10Y at 7.55–7.85% over the next two weeks and stay underweight, covering half below 7.60%. On the curve, the belly has done the work: 5s10s at 23bp is the steepest of the stored days, so I would not add 5Y outright here, and I keep the FR0109 → PBS040 switch, 3.7bp against with PBS040 now 16bp cheap."
   ],
   "buckets": [
     {
@@ -96,7 +96,7 @@
         "type": "lvl",
         "a": "igs:10"
       },
-      "why": "The IGSYC 10Y was flat (−0.1bp) at 7.703%, the 98th percentile of the past year (178 days, average 6.79%), +8bp on the week and +54bp since the sell-off signal started on Oct 2, so the underweight keeps working. FR0108 rose 2bp to 7.631%, 7bp rich to the curve. Cheap on history and on the 286bp spread to Treasuries (a 52-week high), but the daily flow signal still reads sell-off (−0.94) and the 10Y ignored a 5bp US rally.",
+      "why": "The IGSYC 10Y was flat (−0.1bp) at 7.703%, the 98th percentile of the past year (178 days, average 6.79%), +8bp on the week and +60bp since the daily sell-off signal started on Sep 30, so the underweight keeps working. FR0108 rose 2bp to 7.631%, 7bp rich to the curve. Cheap on history and on the 286bp spread to Treasuries (a 52-week high), but the daily flow signal still reads sell-off (−1.09) and the 10Y ignored a 5bp US rally.",
       "call": "Stay underweight; cover half if the 10Y closes below 7.60%, turn neutral when the signal rises above −0.5 or after a BI hike that steadies the rupiah. A tactical long only above 7.85% with a stop at 8.05%."
     },
     {
@@ -242,5 +242,5 @@
       "https://kessler-prod.reta52d8.eas.morningstar.com/news/dow-jones/2026110518227/10-year-treasury-yield-falls-to-4836-data-talk"
     ]
   ],
-  "corrections": "Nov 8: USD/IDR input corrected (Yahoo printed ~17,480 from Nov 3; replaced by JISDOR ~18,100); signal and back-test figures restated from the daily build the page shows; Treasury split and 3M tenor corrected; flow and buyer attributions labelled as hypotheses."
+  "corrections": "Nov 8: USD/IDR input corrected (Yahoo printed ~17,480 from Nov 3; replaced by JISDOR ~18,130) and the flows rebuilt; signal and back-test figures restated from the daily build the page shows; 3M tenor corrected; flow and buyer attributions labelled as hypotheses; BI levels marked as our read."
 }
