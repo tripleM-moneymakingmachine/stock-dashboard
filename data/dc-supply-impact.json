@@ -75,7 +75,7 @@
   {
    "id": "pwr",
    "n": "Power & cooling gear",
-   "perGW": 4.0,
+   "perGW": 4,
    "absorb": 0.45,
    "why": "Switchgear, UPS, chillers and liquid cooling are site-specific and ship with construction, so they are the most directly exposed to US delays; 12–18 month backlogs and global customers absorb part of it."
   },
@@ -83,7 +83,7 @@
    "id": "grid",
    "n": "Grid power (Texas / ERCOT)",
    "perGW": 0.9,
-   "absorb": 0.0,
+   "absorb": 0,
    "why": "Annual energy sales per GW of load (~8 TWh at ~$110/MWh); a delayed Texas campus is load a Texas generator does not get."
   }
  ],
@@ -187,7 +187,7 @@
   {
    "t": "LITE",
    "n": "Lumentum",
-   "rev": 5.0,
+   "rev": 5,
    "page": "lite",
    "s": {
     "opt": 0.14
@@ -278,7 +278,7 @@
   {
    "t": "BE",
    "n": "Bloom Energy",
-   "rev": 5.0,
+   "rev": 5,
    "page": "be",
    "onsite": 0.2
   },
@@ -325,5 +325,797 @@
   "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, the first big post-election proof that pay-your-own-power rules push hyperscalers to behind-the-meter fuel cells that deploy in months.",
   "VST": "Most exposed power name: its growth thesis is new Texas data center load, and management admits the permit pause is already softening ERCOT prices. Still, Q3 beat, 2027 guidance was set above 2026, and it signed a 207 MW Odessa data center PPA, so the 10.6% Nov 6 bounce reflects earnings resilience rather than reduced Texas risk.",
   "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
+ },
+ "ownerStack": {
+  "note": "Indicative. Supplier mix per company is Claude’s estimate from public chip, networking and power deals; categories not listed use the industry default mix. Impact = the share of a company’s Building + Blocked GW in hostile states that slips in the next 12 months on the impact map’s base case (delayed GW pro rata, less recapture) × content per GW × supplier share × (1 − absorption), i.e. the revenue that would slip if those projects were delayed a year after the supply chain re-sells what it can. Planned GW is shown separately as later-dated. Arm is shown at its royalty (~5% of the CPU value); Grace CPUs count as Nvidia.",
+  "defaults": {
+   "mem": [
+    [
+     "SKHY",
+     0.55
+    ],
+    [
+     "MU",
+     0.25
+    ],
+    [
+     "Samsung",
+     0.2
+    ]
+   ],
+   "opt": [
+    [
+     "Innolight",
+     0.25
+    ],
+    [
+     "COHR",
+     0.18
+    ],
+    [
+     "Eoptolink",
+     0.15
+    ],
+    [
+     "LITE",
+     0.14
+    ],
+    [
+     "AVGO",
+     0.05,
+     "DSP"
+    ],
+    [
+     "MRVL",
+     0.03,
+     "DSP"
+    ],
+    [
+     "AAOI",
+     0.03
+    ]
+   ],
+   "fib": [
+    [
+     "GLW",
+     0.45
+    ]
+   ],
+   "fab": [
+    [
+     "TSM",
+     0.9
+    ]
+   ],
+   "pwr": [
+    [
+     "Schneider",
+     0.2
+    ],
+    [
+     "VRT",
+     0.18
+    ],
+    [
+     "Eaton",
+     0.12
+    ],
+    [
+     "GEV",
+     0.08
+    ]
+   ]
+  },
+  "cos": {
+   "msft": {
+    "chips": "Mostly Nvidia GB300/Vera Rubin; some AMD MI and in-house Maia",
+    "gpu": [
+     [
+      "NVDA",
+      0.88
+     ],
+     [
+      "AMD",
+      0.06
+     ],
+     [
+      "Maia (in-house)",
+      0.06
+     ]
+    ],
+    "cpu": [
+     [
+      "AMD",
+      0.35
+     ],
+     [
+      "INTC",
+      0.35
+     ],
+     [
+      "Cobalt (in-house)",
+      0.3
+     ],
+     [
+      "ARM",
+      0.015,
+      "royalty"
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.6
+     ],
+     [
+      "AVGO",
+      0.3
+     ],
+     [
+      "MRVL",
+      0.1
+     ]
+    ]
+   },
+   "amzn": {
+    "chips": "Nvidia plus in-house Trainium; Graviton (Arm) CPUs",
+    "gpu": [
+     [
+      "NVDA",
+      0.5
+     ],
+     [
+      "Trainium (in-house)",
+      0.45
+     ],
+     [
+      "MRVL",
+      0.05,
+      "Trainium partner"
+     ]
+    ],
+    "cpu": [
+     [
+      "ARM",
+      0.03,
+      "Graviton royalty"
+     ],
+     [
+      "AMD",
+      0.2
+     ],
+     [
+      "INTC",
+      0.2
+     ]
+    ],
+    "net": [
+     [
+      "AVGO",
+      0.5
+     ],
+     [
+      "NVDA",
+      0.3
+     ],
+     [
+      "MRVL",
+      0.2
+     ]
+    ],
+    "opt": [
+     [
+      "Innolight",
+      0.2
+     ],
+     [
+      "COHR",
+      0.18
+     ],
+     [
+      "LITE",
+      0.12
+     ],
+     [
+      "AAOI",
+      0.1
+     ],
+     [
+      "MRVL",
+      0.06,
+      "DSP"
+     ],
+     [
+      "AVGO",
+      0.04,
+      "DSP"
+     ]
+    ]
+   },
+   "googl": {
+    "chips": "Mostly TPUs (designed with Broadcom); some Nvidia; Axion (Arm) CPUs",
+    "gpu": [
+     [
+      "AVGO",
+      0.7,
+      "TPU"
+     ],
+     [
+      "NVDA",
+      0.3
+     ]
+    ],
+    "cpu": [
+     [
+      "ARM",
+      0.025,
+      "Axion royalty"
+     ],
+     [
+      "AMD",
+      0.3
+     ],
+     [
+      "INTC",
+      0.2
+     ]
+    ],
+    "net": [
+     [
+      "AVGO",
+      0.75
+     ],
+     [
+      "NVDA",
+      0.15
+     ],
+     [
+      "MRVL",
+      0.1
+     ]
+    ],
+    "opt": [
+     [
+      "LITE",
+      0.3,
+      "OCS + lasers"
+     ],
+     [
+      "Innolight",
+      0.22
+     ],
+     [
+      "COHR",
+      0.18
+     ],
+     [
+      "AVGO",
+      0.06,
+      "DSP"
+     ],
+     [
+      "MRVL",
+      0.04,
+      "DSP"
+     ]
+    ]
+   },
+   "meta": {
+    "chips": "Nvidia, AMD MI-series and MTIA (with Broadcom)",
+    "gpu": [
+     [
+      "NVDA",
+      0.7
+     ],
+     [
+      "AMD",
+      0.15
+     ],
+     [
+      "AVGO",
+      0.15,
+      "MTIA"
+     ]
+    ],
+    "cpu": [
+     [
+      "AMD",
+      0.5
+     ],
+     [
+      "INTC",
+      0.3
+     ],
+     [
+      "ARM",
+      0.01,
+      "royalty"
+     ]
+    ],
+    "net": [
+     [
+      "AVGO",
+      0.55
+     ],
+     [
+      "NVDA",
+      0.35
+     ],
+     [
+      "MRVL",
+      0.1
+     ]
+    ]
+   },
+   "orcl": {
+    "chips": "Nvidia GB200/GB300 for OpenAI Stargate; AMD MI450 cluster",
+    "gpu": [
+     [
+      "NVDA",
+      0.8
+     ],
+     [
+      "AMD",
+      0.2
+     ]
+    ],
+    "cpu": [
+     [
+      "AMD",
+      0.55
+     ],
+     [
+      "NVDA",
+      0.25,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.013,
+      "royalty"
+     ],
+     [
+      "INTC",
+      0.2
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "sbank": {
+    "chips": "Nvidia for OpenAI Stargate; OpenAI–Broadcom custom chip later",
+    "gpu": [
+     [
+      "NVDA",
+      0.8
+     ],
+     [
+      "AMD",
+      0.1
+     ],
+     [
+      "AVGO",
+      0.1,
+      "OpenAI ASIC"
+     ]
+    ],
+    "cpu": [
+     [
+      "NVDA",
+      0.6,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.03,
+      "royalty"
+     ],
+     [
+      "AMD",
+      0.25
+     ],
+     [
+      "INTC",
+      0.15
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "spcx": {
+    "chips": "All Nvidia (Colossus); Spectrum-X networking",
+    "gpu": [
+     [
+      "NVDA",
+      0.97,
+      "Blackwell / Vera Rubin"
+     ]
+    ],
+    "cpu": [
+     [
+      "NVDA",
+      0.6,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.03,
+      "royalty"
+     ],
+     [
+      "AMD",
+      0.25
+     ],
+     [
+      "INTC",
+      0.15
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.9
+     ],
+     [
+      "AVGO",
+      0.1
+     ]
+    ],
+    "pwr": [
+     [
+      "Tesla Megapack",
+      0.25
+     ],
+     [
+      "Schneider",
+      0.15
+     ],
+     [
+      "VRT",
+      0.15
+     ],
+     [
+      "GEV",
+      0.1
+     ]
+    ]
+   },
+   "crwv": {
+    "chips": "Nvidia GB200/GB300 NVL72",
+    "gpu": [
+     [
+      "NVDA",
+      0.95,
+      "Blackwell / Vera Rubin"
+     ]
+    ],
+    "cpu": [
+     [
+      "NVDA",
+      0.55,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.028,
+      "royalty"
+     ],
+     [
+      "INTC",
+      0.25
+     ],
+     [
+      "AMD",
+      0.2
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "nbis": {
+    "chips": "Nvidia GB200/GB300",
+    "gpu": [
+     [
+      "NVDA",
+      0.95,
+      "Blackwell / Vera Rubin"
+     ]
+    ],
+    "cpu": [
+     [
+      "INTC",
+      0.35
+     ],
+     [
+      "AMD",
+      0.35
+     ],
+     [
+      "NVDA",
+      0.3,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.015,
+      "royalty"
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "iren": {
+    "chips": "Nvidia GB300 for Microsoft (Dell servers)",
+    "gpu": [
+     [
+      "NVDA",
+      0.97,
+      "Blackwell / Vera Rubin"
+     ]
+    ],
+    "cpu": [
+     [
+      "NVDA",
+      0.7,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.035,
+      "royalty"
+     ],
+     [
+      "AMD",
+      0.15
+     ],
+     [
+      "INTC",
+      0.15
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "apld": {
+    "chips": "Nvidia via CoreWeave and hyperscaler tenants",
+    "gpu": [
+     [
+      "NVDA",
+      0.9,
+      "Blackwell / Vera Rubin"
+     ]
+    ],
+    "cpu": [
+     [
+      "NVDA",
+      0.5,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.025,
+      "royalty"
+     ],
+     [
+      "INTC",
+      0.25
+     ],
+     [
+      "AMD",
+      0.25
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "glxy": {
+    "chips": "Nvidia via CoreWeave",
+    "gpu": [
+     [
+      "NVDA",
+      0.95,
+      "Blackwell / Vera Rubin"
+     ]
+    ],
+    "cpu": [
+     [
+      "NVDA",
+      0.55,
+      "Grace"
+     ],
+     [
+      "ARM",
+      0.028,
+      "royalty"
+     ],
+     [
+      "INTC",
+      0.25
+     ],
+     [
+      "AMD",
+      0.2
+     ]
+    ],
+    "net": [
+     [
+      "NVDA",
+      0.85,
+      "InfiniBand / Spectrum-X"
+     ],
+     [
+      "AVGO",
+      0.15
+     ]
+    ]
+   },
+   "cifr": {
+    "chips": "AWS (Black Pearl) and Fluidstack/Google TPU (Barber Lake)",
+    "gpu": [
+     [
+      "AVGO",
+      0.4,
+      "TPU"
+     ],
+     [
+      "NVDA",
+      0.35
+     ],
+     [
+      "Trainium (in-house)",
+      0.25
+     ]
+    ],
+    "cpu": [
+     [
+      "ARM",
+      0.028,
+      "royalty"
+     ],
+     [
+      "AMD",
+      0.25
+     ],
+     [
+      "INTC",
+      0.2
+     ]
+    ],
+    "net": [
+     [
+      "AVGO",
+      0.6
+     ],
+     [
+      "NVDA",
+      0.3
+     ],
+     [
+      "MRVL",
+      0.1
+     ]
+    ]
+   },
+   "frmi": {
+    "chips": "All AMD Instinct via TensorWave (lease not yet in effect)",
+    "gpu": [
+     [
+      "AMD",
+      1,
+      "Instinct"
+     ]
+    ],
+    "cpu": [
+     [
+      "AMD",
+      0.9,
+      "EPYC"
+     ],
+     [
+      "INTC",
+      0.1
+     ]
+    ],
+    "net": [
+     [
+      "AMD",
+      0.4,
+      "Pensando NICs"
+     ],
+     [
+      "AVGO",
+      0.6
+     ]
+    ],
+    "mem": [
+     [
+      "Samsung",
+      0.45
+     ],
+     [
+      "MU",
+      0.35
+     ],
+     [
+      "SKHY",
+      0.2
+     ]
+    ],
+    "pwr": [
+     [
+      "Siemens Energy",
+      0.4,
+      "turbines"
+     ],
+     [
+      "GEV",
+      0.15,
+      "6B / TM2500"
+     ],
+     [
+      "VRT",
+      0.15
+     ],
+     [
+      "Schneider",
+      0.15
+     ]
+    ]
+   }
+  }
  }
 }

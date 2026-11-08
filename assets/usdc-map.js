@@ -352,7 +352,8 @@
     document.getElementById("usCost").innerHTML = `<table class="rt"><thead><tr><th>Company</th><th>GW exposed</th><th style="min-width:160px">Cost mix</th><th>Total $B</th><th>% of '26 capex</th></tr></thead><tbody>${rows.map((r) => {
       const gw = r.e.uc + r.e.pl + r.e.bl;
       const pct = r.capex ? (r.tot / r.capex) * 100 : null;
-      return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${r.e.states.length ? "In " + r.e.states.join(", ") : "No hostile-state pipeline"}</small></td>
+      const open = OPEN.has(r.o);
+      return `<tr data-o="${r.o}" class="${open ? "open" : ""}"><td class="rco" title="Click for suppliers and indicative impact"><span class="car">▸</span>${esc(D.owners[r.o].n)}<small>${r.e.states.length ? "In " + r.e.states.join(", ") : "No hostile-state pipeline"}</small></td>
         <td>${fmt(gw)}</td>
         <td><div class="stk" style="width:${Math.max(2, (r.tot / mx) * 100)}%" title="${r.parts.map((p, i) => CL[i] + ": $" + fmt(p) + "B").join("\n")}">${r.parts.map((p, i) => (p > 0 ? `<i class="c${i}" style="flex:${p}"></i>` : "")).join("")}</div></td>
         <td>${fmt(r.tot)}</td><td class="${pct > 10 ? "down" : ""}">${pct == null ? "—" : fmt(pct) + "%"}</td></tr>`;
@@ -365,6 +366,56 @@
     const dfmt = (x) => new Date(x + "T00:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
     el.innerHTML = `<table class="rt"><thead><tr><th>Company</th><th style="text-align:left">Latest disclosed</th><th style="text-align:left">End-2026</th><th style="text-align:left">End-2027</th><th style="text-align:left">2028</th><th style="text-align:left">Basis and source</th></tr></thead><tbody>${COS.filter((o) => G[o]).map((o) => { const g = G[o];
       return `<tr><td>${esc(D.owners[o].n)}<small>${esc(D.owners[o].t)} · ${dfmt(g.d)}</small></td>${[g.now, g.y26, g.y27, g.y28].map((v) => `<td style="text-align:left;font-family:var(--f-body)">${esc(v)}</td>`).join("")}<td style="text-align:left;font-family:var(--f-body);min-width:260px"><small style="display:block">${esc(g.basis)} <a href="${esc(g.src)}" target="_blank" rel="noopener">source</a>${g.src2 ? ` · <a href="${esc(g.src2)}" target="_blank" rel="noopener">call</a>` : ""}</small></td></tr>`; }).join("")}</tbody></table><p class="note">Companies report different measures, so rows aren't directly comparable: IT load (Applied Digital, Galaxy, IREN), gross or grid power, nameplate compute (SpaceX), contracted vs connected power (Nebius, CoreWeave), power-generation equipment (Fermi), quarterly additions (Oracle, Amazon) and long-run ambitions (Meta, SpaceX 2027). Each cell says which.</p>`;
+  }
+  let IM = null;
+  const OPEN = new Set();
+  const STK_CATS = [["gpu", "GPU / accelerator"], ["cpu", "CPU"], ["mem", "HBM & memory"], ["net", "Networking"], ["opt", "Optics, lasers & DSP"], ["fib", "Fiber"], ["fab", "Foundry"], ["pwr", "Power & cooling"]];
+  function stackRow(r, ncol) {
+    const os = IM && IM.ownerStack, st = os && os.cos[r.o];
+    if (!st) return `<tr class="skr"><td colspan="${ncol}"><p class="note" style="margin:0">No supplier mix on file for this company yet.</p></td></tr>`;
+    const cat = Object.fromEntries((IM.cats || []).map((c) => [c.id, c]));
+    const rev = Object.fromEntries((IM.cos || []).map((c) => [c.t, c]));
+    const near = r.uc + r.bl, later = r.pl;
+    // Same base case as the impact map below: delayGW of the hostile-state near-term pipeline slips in 12 months, recapture% rebuilt elsewhere.
+    const dfl = IM.defaults || { delayGW: 8, recapture: 40 };
+    const natNear = COS.reduce((a, o) => { const e = exposure(o); return a + e.uc + e.bl; }, 0) || 1;
+    const slip = near * Math.min(1, dfl.delayGW / natNear) * (1 - dfl.recapture / 100);
+    const cells = STK_CATS.map(([id, label]) => {
+      const mix = st[id] || os.defaults[id] || [], c = cat[id] || { perGW: 0, absorb: 0 };
+      const items = mix.map(([t, sh, tag]) => {
+        const co = rev[t], net = slip * c.perGW * sh * (1 - c.absorb), pct = co && co.rev ? (net / co.rev) * 100 : null;
+        const lvl = pct == null ? (net >= 1 ? "m" : "l") : pct >= 3 ? "hi" : pct >= 1 ? "m" : "l";
+        return { name: co ? co.n : t, t: co ? t : "", tag, sh, net, pct, lvl };
+      }).sort((a, b) => b.net - a.net);
+      return `<div class="sk-c"><div class="sk-h">${label}</div>${items.map((x) => `<div class="sk-i"><span class="sk-d sk-${x.lvl}" title="${x.lvl === "hi" ? "High" : x.lvl === "m" ? "Medium" : "Low"} impact"></span><span class="nm"><b>${esc(x.name)}</b>${x.tag ? ` <em>${esc(x.tag)}</em>` : ""}</span><span class="sk-v">${near > 0 ? `~$${fmt(x.net, x.net < 1 ? 2 : 1)}B${x.pct != null ? ` · ${fmt(x.pct, x.pct < 1 ? 1 : 0)}% rev` : ""}` : `${fmt(x.sh * 100, 0)}% share`}</span></div>`).join("")}</div>`;
+    }).join("");
+    const head = near > 0
+      ? `<b>${fmt(near, 2)} GW</b> building or blocked in hostile states. On the impact map's base case (${fmt(dfl.delayGW, 0)} GW of the US hostile-state pipeline slips in the next 12 months, ${dfl.recapture}% rebuilt elsewhere) that is <b>~${fmt(slip, 2)} GW</b> lost this year; figures are supplier revenue deferred, net of re-selling.${later > 0 ? ` A further ${fmt(later, 2)} GW is planned (later-dated, not in the $ figures).` : ""}`
+      : later > 0 ? `No near-term hostile-state capacity; <b>${fmt(later, 2)} GW</b> planned in hostile states is later-dated, so near-term supplier impact is low. Shares shown instead.` : `No capacity in hostile states, so supplier impact is minimal. Shares shown instead.`;
+    return `<tr class="skr"><td colspan="${ncol}"><div class="sk-top"><span><b>${esc(D.owners[r.o].n)}</b> · ${esc(st.chips)}</span><span class="sk-key"><span class="sk-d sk-hi"></span>High ≥3% of supplier revenue <span class="sk-d sk-m"></span>1–3% <span class="sk-d sk-l"></span>&lt;1%</span></div><p class="sk-n">${head}</p><div class="sk-g">${cells}</div><p class="sk-n" style="margin:10px 0 0">${esc(os.note)}</p></td></tr>`;
+  }
+  if (!document.getElementById("skCss")) {
+    const st = document.createElement("style"); st.id = "skCss";
+    st.textContent = `#usRisk td.rco{cursor:pointer}
+#usRisk td.rco .car{display:inline-block;width:12px;color:var(--muted);transition:transform .15s}
+#usRisk tr.open td.co .car{transform:rotate(90deg)}
+#usRisk tr.open>td{background:var(--hl,rgba(43,123,216,.06))}
+#usRisk tr.skr>td{text-align:left;font:400 13px var(--f-body);cursor:default;background:var(--card2,rgba(127,127,127,.05));padding:12px 14px}
+#usRisk .sk-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
+#usRisk .sk-key{font-size:11px;color:var(--muted);white-space:nowrap}
+#usRisk .sk-n{font-size:12px;color:var(--muted);margin:6px 0 10px}
+#usRisk .sk-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:10px 16px}
+#usRisk .sk-h{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+#usRisk .sk-i{font-size:12px;line-height:1.45;display:grid;grid-template-columns:8px minmax(0,1fr) auto;align-items:baseline;gap:6px;padding:1px 0}
+#usRisk .sk-i .nm{min-width:0}
+#usRisk .sk-i em{font-style:normal;color:var(--muted);font-size:11px}
+#usRisk .sk-v{font-family:var(--f-mono);font-size:11px;color:var(--muted);white-space:nowrap;text-align:right}
+#usRisk .sk-d{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none;margin:0 3px 0 6px;vertical-align:middle}
+#usRisk .sk-i .sk-d{margin:0}
+#usRisk .sk-d.sk-hi{background:var(--down,#d64545)}
+#usRisk .sk-d.sk-m{background:#d4a017}
+#usRisk .sk-d.sk-l{background:var(--up,#2e9e5b)}`;
+    document.head.appendChild(st);
   }
   const GRADE_RANK = { "very high": 6, "high": 5, "medium-high": 4, "medium": 3, "low-medium": 2, "low": 1 };
   const RISK_COLS = [
@@ -395,11 +446,12 @@
     }).join("");
     document.getElementById("usRisk").innerHTML = `<table class="rt"><thead><tr>${head}</tr></thead><tbody>${rows.map((r) => {
       const pct = r.pct;
-      return `<tr data-o="${r.o}"><td>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small>${D.owners[r.o].cov ? `<small style="font-style:italic">${esc(D.owners[r.o].cov)}</small>` : ""}</td>
+      const open = OPEN.has(r.o);
+      return `<tr data-o="${r.o}" class="${open ? "open" : ""}"><td class="rco" title="Click for suppliers and indicative impact"><span class="car">▸</span>${esc(D.owners[r.o].n)}<small>${esc(D.owners[r.o].t)}${r.states.length ? " · " + r.states.join(", ") : ""}</small>${D.owners[r.o].cov ? `<small style="font-style:italic">${esc(D.owners[r.o].cov)}</small>` : ""}</td>
         <td><span class="gr g-${esc((r.v.grade || "").split(" ")[0])}">${esc(r.v.grade || "—")}</span></td>
         <td>${fmt(r.cur, 2)}</td><td>${fmt(r.aUc, 2)}</td><td>${fmt(r.aPl, 2)}${r.nonUS ? `<small>+${fmt(r.nonUS, 2)} non-US, excluded</small>` : ""}</td><td>${fmt(r.aBl, 2)}</td><td class="${r.hostile > 0 ? "down" : ""}">${fmt(r.hostile, 2)}${r.hostileUnsited ? `<small>${fmt(r.hostileUnsited, 2)} unsited, reported TX</small>` : ""}</td><td class="${pct >= 50 ? "down" : ""}">${fmt(pct, 0)}%${r.hostileUnsited ? `<small>${fmt(r.all ? ((r.hostile - r.hostileUnsited) / r.all) * 100 : 0, 0)}% at disclosed sites</small>` : ""}</td>
-        <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>`;
-    }).join("")}</tbody></table><p class="note">Click any column heading to sort; click again to reverse. All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company GW targets not yet tied to a disclosed site: SpaceX's 10.5 GW is placed in Texas only because it is reported to be scouting Texas sites (no sizes or locations disclosed), so its % is shown both ways; Oracle's undisclosed 2 GW is not counted as hostile; Nebius's undisclosed balance is likely outside the US and is left out. ~ estimates included. Footprint = current + building + planned + blocked for US campuses. GW mixes facility power with IT load where a company gives only IT load (e.g. Applied Digital), and the risk grades are Claude's judgement, not a calculation. Read the % as share of tracked US capacity in hostile states, not odds of cancellation. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
+        <td style="text-align:left;font-family:var(--f-body)">${r.to.length ? r.to.map((c) => `<span class="pill" data-s="${c}" style="margin:0 4px 4px 0">${c}</span>`).join("") : "—"}</td></tr>${open ? stackRow(r, RISK_COLS.length) : ""}`;
+    }).join("")}</tbody></table><p class="note">Click a company name to see its chip, memory, optics and power suppliers with an indicative impact on each. Click any column heading to sort; click again to reverse. All GW columns cover every tracked campus in any state (facility power); unbuilt phases of live campuses count as Building. In hostile states = the part of Building, Planned and Blocked in tier 4–5 states. Planned includes company GW targets not yet tied to a disclosed site: SpaceX's 10.5 GW is placed in Texas only because it is reported to be scouting Texas sites (no sizes or locations disclosed), so its % is shown both ways; Oracle's undisclosed 2 GW is not counted as hostile; Nebius's undisclosed balance is likely outside the US and is left out. ~ estimates included. Footprint = current + building + planned + blocked for US campuses. GW mixes facility power with IT load where a company gives only IT load (e.g. Applied Digital), and the risk grades are Claude's judgement, not a calculation. Read the % as share of tracked US capacity in hostile states, not odds of cancellation. Tiers 4–5 = ${Object.keys(D.risk).filter((c) => D.risk[c].tier >= 4).sort().join(", ")}.</p>`;
     document.querySelectorAll("#usRisk th[data-k]").forEach((th) => (th.onclick = () => {
       const c = RISK_COLS.find((x) => x.k === th.dataset.k);
       if (RS.k === c.k) RS.dir = -RS.dir; else { RS.k = c.k; RS.dir = c.asc ? 1 : -1; }
@@ -407,6 +459,7 @@
     }));
     document.querySelectorAll("#usRisk tr[data-o]").forEach((tr) => (tr.onclick = (e) => {
       const pill = e.target.closest(".pill");
+      if (e.target.closest("td.rco")) { OPEN.has(tr.dataset.o) ? OPEN.delete(tr.dataset.o) : OPEN.add(tr.dataset.o); riskTable(); return; }
       if (pill) { S.state = pill.dataset.s; renderSide(); paint(); }
       else { setOwner("*"); setOwner(tr.dataset.o); }
       document.getElementById("usMap").scrollIntoView({ behavior: "smooth", block: "center" });
@@ -454,8 +507,9 @@
   Promise.all([
     fetch("../data/us-datacenters.json", { cache: "no-cache" }).then((r) => r.json()),
     fetch("../data/datacenter.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null),
-  ]).then(([d, dc]) => {
-    D = d;
+    fetch("../data/dc-supply-impact.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null),
+  ]).then(([d, dc, im]) => {
+    D = d; IM = im;
     if (dc && dc.companies) dc.companies.forEach((c) => { if (c.capexV) CAPEX[c.id] = c.capexV; });
     controls(); sliders(); kpis(); riskTable(); guideTable(); costTable(); views(); devs(); renderSide(); renderLegend();
     return loadScript("https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js")
