@@ -308,6 +308,17 @@ function buildDaily(raw) {
 
 // ---------- run ----------
 const raw = process.argv.includes("--raw") ? prev.raw : await fetchRaw();
+// Guard the USD/IDR feed against Bank Indonesia's JISDOR fix: Yahoo's IDR=X has printed bad closes (e.g. ~17,480 from
+// Nov 3, 2026 while spot and JISDOR traded ~18,100). Any day more than 1.5% away from JISDOR is replaced by JISDOR.
+(function guardFx() {
+  let id = null; try { id = JSON.parse(readFileSync("data/indonesia.json", "utf8")); } catch {}
+  const J = new Map(id?.mm?.series?.jisdor || []);
+  if (!J.size || !raw.idrD?.length) return;
+  let n = 0;
+  raw.idrD = raw.idrD.map(([d, v]) => { const j = J.get(d); if (j && Math.abs(v / j - 1) > 0.015) { n++; return [d, j]; } return [d, v]; });
+  raw.idr = lastOfWeek(raw.idrD);
+  log(`USD/IDR guard: ${n} day(s) replaced by JISDOR`);
+})();
 for (const k of ["jci", "id10", "idr"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
 const b = build(raw);
 // US Treasury transmission study with the Indonesian recipe (study() reads ktb10d / ktb3d: here INDOGB 10Y / 15Y)
@@ -331,7 +342,7 @@ catch (e) { log(`daily build failed (${e.message}); keeping previous`); daily = 
 const out = {
   ust,
   updated: Math.floor(Date.now() / 1000),
-  src: "Yahoo Finance: IDX Composite (^JKSE) and USD/IDR (IDR=X) daily closes. INDOGB 10Y: PHEI IGSYC (CNBC benchmark 10Y before the first stored PHEI day). US Treasury daily par yields (2Y, 10Y; home.treasury.gov). Weekly, last trading day of each week.",
+  src: "Yahoo Finance: IDX Composite (^JKSE) and USD/IDR (IDR=X) daily closes; any USD/IDR close more than 1.5% from Bank Indonesia\u2019s JISDOR fix is replaced by JISDOR. INDOGB 10Y: PHEI IGSYC (CNBC benchmark 10Y before the first stored PHEI day). US Treasury daily par yields (2Y, 10Y; home.treasury.gov). Weekly, last trading day of each week.",
   cols: ["date", "jci", "id10y", "usdidr", "usdidrWkChgPct", "indogbUstSpreadBp", "signal", "regime", "corr26w", "tr10yIndex", "eq4Pct", "usdidr4Pct", "spreadDev26wBp", "dy4Bp", "z", "ust10y", "betaUst26w", "indogbUstSpreadBp2"],
   method: {
     window: "4-week changes; z-scores vs trailing 52 weeks (min 26); thresholds ±0.5",
