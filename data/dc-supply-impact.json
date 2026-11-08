@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-08",
- "asofText": "Nov 8, 2026",
+ "asof": "2026-11-09",
+ "asofText": "Nov 9, 2026",
  "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
@@ -300,7 +300,7 @@
  ],
  "onsitePerGW": 2.4,
  "views": {
-  "NVDA": "Largest dollars deferred, smallest real damage: Nvidia is supply-capped, so a delayed Texas campus mostly hands its allocation to Microsoft, sovereign and Asian buyers. The 9% drop on Nov 5 prices a demand cut the supply chain does not show; watch hyperscaler capex guides, not state politics.",
+  "NVDA": "Largest dollars deferred, smallest real damage: Nvidia is supply-capped, and it is now reportedly financing billions of extra CoWoS capacity at SPIL, which a company expecting a demand cut would not do. A delayed Texas campus mostly hands allocation to Microsoft, sovereign and Asian buyers; Susquehanna puts nearly all permit risk in 2028–2030, so watch hyperscaler capex guides, not state politics.",
   "AMD": "Exposed through both MI-series GPUs and EPYC CPUs. Its OpenAI (Stargate) ties put more of its 2027 ramp in Texas than peers, so timing risk is above Nvidia's.",
   "AVGO": "Custom ASIC (Google TPU, Meta, OpenAI) plus Tomahawk switching. Google's $40B Texas plan and Meta's El Paso/Piqua issues touch two of its biggest XPU customers; expect deferrals of quarters, not cancellations.",
   "MRVL": "Small absolute exposure but high operating leverage; AWS Trainium and optical DSP volumes follow US cluster go-lives closely.",
@@ -313,14 +313,14 @@
   "LITE": "High exposure per dollar of revenue: EML and CW lasers for 800G/1.6T are tied to new clusters. The tight laser market cushions price, not timing.",
   "AAOI": "Most exposed optics name relative to size; depends on a few hyperscaler programs, some in Texas.",
   "GLW": "Fiber is installed on site with no absorption, so Corning sees delays almost one for one, but its multi-year hyperscaler contracts (Meta, others) set minimum volumes.",
-  "TSM": "Wafers and CoWoS are booked a year ahead and re-assigned; effectively immune in 2027 unless global capex falls.",
+  "TSM": "Wafers and CoWoS are booked a year ahead and re-assigned; Nvidia funding outside CoWoS capacity at SPIL shows packaging is still the bottleneck. Effectively immune in 2027 unless global capex falls.",
   "AMAT": "Second-order only: fab plans for 2027–28 do not change because one US state pauses data centers.",
   "ASML": "Least exposed; EUV demand is set by memory and logic capacity plans that are still rising.",
   "TER": "Test volumes follow GPU/HBM unit output, which stays supply-capped, so little impact.",
   "VRT": "Most directly exposed equipment name: UPS, thermal and liquid cooling ship with construction schedules. Backlog and the shift to friendly states and overseas (Vertiv sells globally) limit lost revenue.",
   "ROK": "Small AI data center exposure; mostly an industrial cycle story.",
   "GEV": "Mixed: grid gear for Texas sites slips, but the ratepayer-first rules push hyperscalers to self-supply with gas turbines, which is GE Vernova's sold-out product. Likely net winner.",
-  "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, the first big post-election proof that pay-your-own-power rules push hyperscalers to behind-the-meter fuel cells that deploy in months.",
+  "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, and NTT DATA signed for 900 MW more (deliveries from 2027). Pay-your-own-power rules in the Senate bill and state platforms push hyperscalers to behind-the-meter power that deploys in months, while gas turbines are sold out into the 2030s.",
   "VST": "Most exposed power name: its growth thesis is new Texas data center load, and management admits the permit pause is already softening ERCOT prices. Still, Q3 beat, 2027 guidance was set above 2026, and it signed a 207 MW Odessa data center PPA, so the 10.6% Nov 6 bounce reflects earnings resilience rather than reduced Texas risk.",
   "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
  },

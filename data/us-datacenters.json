@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-08",
- "asofText": "Nov 8, 2026",
+ "asof": "2026-11-09",
+ "asofText": "Nov 9, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1504,7 +1504,7 @@
   },
   "KS": {
    "tier": 4,
-   "why": "Governor's race too close to call: Holscher (D) would block approvals until guardrails exist, Masterson (R) leaves it to localities. Emporia already banned high-impact data centers after a 1 GW proposal.",
+   "why": "Holscher (D) leads by ~7,600 votes after the mail deadline and has been called the winner by several outlets (audit pending, no concession); she would block approvals until guardrails exist. Emporia already banned high-impact data centers after a 1 GW proposal.",
    "to": [
     "MO",
     "NE"
@@ -1968,8 +1968,9 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton). Microsoft shrinking its neocloud roster is a headline risk, though CoreWeave's backlog now leans on OpenAI and Meta as well. The binding issue is financing: interest costs exceed operating income and every month of delay adds covenant risk.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and runs six Texas locations. Its Nov 7 letter to Hinojosa asks that permitted projects be allowed to finish, which matches what experts say a governor can actually do (stop new approvals, not mid-construction builds), so the real Texas risk is to future expansion rather than contracted capacity. Microsoft shrinking its neocloud roster is a headline risk, though the backlog now leans on OpenAI and Meta. The binding issue remains financing: the 2032 bond yields over 16%, interest exceeds operating income, and every month of delay adds covenant risk; Nov 10 earnings are the next test.",
    "moves": [
+    "Lock in grandfathering for permitted Texas builds with the transition team",
     "Lean on North Dakota (Applied Digital) and Pennsylvania",
     "Prioritise energised capacity in contracts"
    ]
@@ -2035,6 +2036,46 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-07",
+   "co": [
+    "crwv"
+   ],
+   "t": "CoreWeave's CEO wrote to Texas governor-elect Hinojosa asking that already-permitted projects be allowed to finish and offering to help write standards for new ones; the letter names its Austin, Denton, Dickens County, Plano, Richardson and Round Rock sites.",
+   "src": "https://convergedigest.com/coreweave-texas-data-centers-governor-elect-hinojosa"
+  },
+  {
+   "d": "2026-11-07",
+   "co": [
+    "*"
+   ],
+   "t": "Kansas: Democrat Cindy Holscher's lead held at about 7,600 votes after the mail-ballot deadline and several outlets have called the race for her, though a close-race audit is still running and Masterson has not conceded.",
+   "src": "https://poliwave.com/us/live/midterms-2026/governors/kansas"
+  },
+  {
+   "d": "2026-11-07",
+   "co": [
+    "spcx"
+   ],
+   "t": "Hinojosa asked Texas Parks and Wildlife to take no action during the transition on selling 1,300 acres of Boca Chica state park land next to SpaceX's Starbase, an early sign she will use agency appointees to slow Musk-linked projects.",
+   "src": "https://houstonchronicle.com/business/article/hinojosa-spacex-state-park-land-sale-22516892.php"
+  },
+  {
+   "d": "2026-11-06",
+   "co": [
+    "*"
+   ],
+   "t": "Susquehanna: of ~148 GW of AI training capacity planned for 2025–2030, about 60 GW (40%) still awaits approvals and up to 12 GW (8%) could be cancelled in a worst case, almost all in 2028–2030; most 2027 projects are already permitted.",
+   "src": "https://finance.yahoo.com/technology/ai/articles/susquehanna-warns-8-planned-ai-160200860.html"
+  },
+  {
+   "d": "2026-11-06",
+   "co": [
+    "*"
+   ],
+   "t": "Reuters: Nvidia is financing billions of dollars of new CoWoS packaging capacity at ASE's SPIL unit, a sign the chip supply chain is still capacity-bound despite the US permitting scare.",
+   "src": "https://igorslab.de/en/nvidia-billions-additional-cowos-capacity-spil-key-partner-ai-accelerators"
+  },
   {
    "d": "2026-11-06",
    "co": [
@@ -2258,6 +2299,14 @@
  ],
  "sources": [
   [
+   "Converge Digest: CoreWeave letter to Hinojosa",
+   "https://convergedigest.com/coreweave-texas-data-centers-governor-elect-hinojosa"
+  ],
+  [
+   "Yahoo: Susquehanna sees 8% of AI capacity at risk",
+   "https://finance.yahoo.com/technology/ai/articles/susquehanna-warns-8-planned-ai-160200860.html"
+  ],
+  [
    "Bloomberg: Google takes over Crusoe's Wyoming site",
    "https://bloomberg.com/news/articles/2026-11-06/google-takes-over-wyoming-data-center-that-crusoe-had-pitched"
   ],
@@ -2348,50 +2397,6 @@
   [
    "Bloomberg via Yahoo: Microsoft sours on neoclouds",
    "https://finance.yahoo.com/news/microsoft-sours-neoclouds-amid-data-160016061.html"
-  ],
-  [
-   "Bisnow: ING data center loan sale",
-   "https://bisnow.com/news/national/data-center-capital-markets/ing-unloads-500m-in-data-center-loans-in-wake-of-midterms"
-  ],
-  [
-   "Epoch AI: Stargate US sites",
-   "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
-  ],
-  [
-   "Jefferies via Bisnow/Yahoo: 13 GW at risk in Texas",
-   "https://finance.yahoo.com/real-estate/articles/13-gw-immediate-risk-texas-003600507.html"
-  ],
-  [
-   "Texas Tribune: what happens to Texas data centers",
-   "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
-  ],
-  [
-   "Fast Company: limits of governor power",
-   "https://www.fastcompany.com/91634444/texas-wanted-to-power-americas-ai-boom-its-new-governor-could-change-everything"
-  ],
-  [
-   "Scientific American: 41 ballot measures",
-   "https://www.scientificamerican.com/article/2026-election-results-show-widespread-opposition-to-ai-data-centers/"
-  ],
-  [
-   "Fortune: Ohio ballot measures",
-   "https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/"
-  ],
-  [
-   "1012 Industry Report: shift to Louisiana",
-   "https://www.1012industryreport.com/politics/election-results-could-shift-more-data-center-projects-to-louisiana/"
-  ],
-  [
-   "Fox Business: UBS on 2028 additions",
-   "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains"
-  ],
-  [
-   "AOL/BI: Meta, Jefferies quotes",
-   "https://www.aol.com/articles/smart-people-saying-midterms-impact-155405000.html"
-  ],
-  [
-   "CryptoBriefing: Meta, Louisiana moratorium odds",
-   "https://cryptobriefing.com/meta-faces-political-hurdles-for-us-data-centers-post-midterms-eyes-overseas/"
   ]
  ],
  "modo": {
