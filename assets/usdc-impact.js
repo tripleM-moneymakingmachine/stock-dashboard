@@ -84,28 +84,44 @@
     const tier = (c) => ((U.risk[c] || {}).tier || 3);
     const g = {};
     const rem = (s) => Math.max(0, s.gw - (s.now != null ? s.now : s.status === "op" ? s.gw : 0));
-    U.sites.filter((s) => rem(s) > 0 && tier(s.state) >= 4).forEach((s) => { g[s.state] = (g[s.state] || 0) + rem(s); });
+    const near = (s) => s.status === "op" || s.status === "uc" || s.status === "bl";
+    U.sites.filter((s) => rem(s) > 0 && tier(s.state) >= 4 && near(s) && !s.unsited && !s.nonUS).forEach((s) => { g[s.state] = (g[s.state] || 0) + rem(s); });
     const tot = Object.values(g).reduce((a, b) => a + b, 0) || 1;
-    return Object.entries(g).map(([c, v]) => ({ c, share: v / tot, gw: v })).sort((a, b) => b.gw - a.gw);
+    return Object.entries(g).map(([c, v]) => ({ c, share: v / tot, gw: v, tot })).sort((a, b) => b.gw - a.gw);
   }
   function model() {
     const sh = stateShares();
-    const lostGW = P.delayGW * (1 - P.recapture / 100);
+    // Delayed capacity goes one of four ways: rebuilt in a friendly US state, built abroad, switched to on-site power, or lost.
+    const usRecap = P.delayGW * Math.min(1, P.recapture / 100);
+    const abroad = Math.min(P.delayGW - usRecap, P.delayGW * (P.overseas / 100));
+    const onsiteGW = Math.min(P.selfPower, P.delayGW - usRecap - abroad); // the workaround only applies to delayed capacity
+    const lostGW = Math.max(0, P.delayGW - usRecap - abroad - onsiteGW); // suppliers lose sales on this
+    const usLostGW = Math.max(0, P.delayGW - usRecap - onsiteGW); // the US loses this, including what moves abroad
     const states = sh.map((x) => ({ ...x, lost: lostGW * x.share }));
-    const txLost = (states.find((s) => s.c === "TX") || { lost: 0 }).lost;
+    const txShare = (sh.find((s) => s.c === "TX") || { share: 0 }).share;
+    const txLost = P.delayGW * txShare; // Texas generators lose all delayed Texas load: re-sited, abroad and on-site power all bypass ERCOT
     const cats = D.cats.map((c) => {
-      const gw = c.id === "grid" ? txLost : lostGW; // grid power: only Texas load counts for ERCOT generators
+      const gw = c.id === "grid" ? txLost : lostGW;
       return { ...c, gw, gross: gw * c.perGW };
     });
     const cmap = Object.fromEntries(cats.map((c) => [c.id, c]));
-    const cos = D.cos.map((co) => {
+    const mk = (co) => {
       const parts = Object.entries(co.s || {}).map(([k, s]) => { const c = cmap[k]; const g = c.gross * s; return { k, gross: g, net: g * (1 - c.absorb) }; });
       const gross = parts.reduce((a, p) => a + p.gross, 0), net = parts.reduce((a, p) => a + p.net, 0);
-      const gain = co.onsite ? P.selfPower * D.onsitePerGW * co.onsite : 0;
-      const dir = gain > net ? "pos" : co.scarcity ? "mix" : gain > 0 ? "mix" : net / co.rev > 0.004 ? "neg" : "flat";
+      const gain = co.onsite ? onsiteGW * D.onsitePerGW * co.onsite : 0;
+      const dir = gain > net ? "pos" : co.scarcity ? "mix" : gain > 0 ? "mix" : co.rev && net / co.rev > 0.004 ? "neg" : "flat";
       return { ...co, parts, gross, net, gain, total: net - gain, pct: co.rev ? ((net - gain) / co.rev) * 100 : null, dir };
-    });
-    return { states, cats, cos, lostGW };
+    };
+    const cos = D.cos.map(mk);
+    // Residual: share of each category not assigned to a listed company
+    const used = {}; D.cos.forEach((co) => Object.entries(co.s || {}).forEach(([k, v]) => (used[k] = (used[k] || 0) + v)));
+    const otherS = {}; D.cats.forEach((c) => { const r = 1 - (used[c.id] || 0); if (r > 0.001) otherS[c.id] = r; });
+    const other = mk({ t: "Other", n: "Other suppliers (not listed)", rev: null, s: otherS, other: true });
+    other.dir = "flat";
+    const onsiteOther = onsiteGW * D.onsitePerGW * Math.max(0, 1 - D.cos.reduce((a, c) => a + (c.onsite || 0), 0));
+    other.gain = onsiteOther; other.total = other.net - onsiteOther;
+    cos.push(other);
+    return { states, cats, cos, lostGW, usLostGW, usRecap, abroad, onsiteGW, pipe: sh.length ? sh[0].tot : 0 };
   }
 
   function sankey(M) {
@@ -223,15 +239,16 @@
     if (scroll && sel) { const tr = document.querySelector(`#u2Tab tr[data-t="${t}"]`); if (tr) tr.scrollIntoView({ behavior: "smooth", block: "center" }); }
   }
   function kpis(M) {
+    const named = M.cos.filter((c) => !c.other);
     const net = M.cos.reduce((a, c) => a + c.net, 0), gross = M.cos.reduce((a, c) => a + c.gross, 0), gain = M.cos.reduce((a, c) => a + c.gain, 0);
-    const worst = [...M.cos].filter((c) => c.pct != null).sort((a, b) => b.pct - a.pct)[0];
-    const best = [...M.cos].sort((a, b) => a.total - b.total)[0];
+    const worst = [...named].filter((c) => c.pct != null && c.pct > 0.05).sort((a, b) => b.pct - a.pct)[0];
+    const best = [...named].sort((a, b) => a.total - b.total)[0];
     document.getElementById("u2K").innerHTML = [
-      ["US capacity lost in-year", fmt(M.lostGW) + " GW", `${fmt(P.delayGW)} GW delayed, ${P.recapture}% recaptured elsewhere`],
-      ["Supplier revenue deferred", "$" + fmt(gross, 0) + "B", "Gross, before the supply chain re-sells it"],
-      ["Net revenue at risk", "$" + fmt(net, 0) + "B", `${fmt((net / gross) * 100, 0)}% of gross; the rest is absorbed by other buyers`],
-      ["Hardest hit vs size", worst ? worst.t : "—", worst ? `−${fmt(worst.pct)}% of annual revenue` : ""],
-      ["Biggest winner", best && best.total < 0 ? best.t : "—", best && best.total < 0 ? `+$${fmt(best.gain)}B from on-site power` : "Raise on-site power to see winners"],
+      ["US capacity lost in-year", fmt(M.usLostGW) + " GW", `${fmt(P.delayGW)} GW delayed: ${fmt(M.usRecap)} rebuilt in friendly states, ${fmt(M.onsiteGW)} on-site power, ${fmt(M.abroad)} moved abroad (still a US loss)`],
+      ["Supplier revenue deferred", "$" + fmt(gross, 0) + "B", `Gross on ${fmt(M.lostGW)} GW not built anywhere, before re-selling`],
+      net - gain >= 0 ? ["Net revenue at risk", "$" + fmt(net - gain, 0) + "B", `$${fmt(net, 0)}B net of re-selling, less $${fmt(gain, 1)}B on-site power gains`] : ["Net supplier gain", "+$" + fmt(gain - net, 0) + "B", `On-site power gains ($${fmt(gain, 1)}B) exceed the $${fmt(net, 1)}B deferred`],
+      ["Hardest hit vs size", worst ? worst.t : "—", worst ? `−${fmt(worst.pct)}% of annual revenue` : "No meaningful hit at this setting"],
+      ["Biggest winner", best && best.total < 0 ? best.t : "—", best && best.total < 0 ? `+$${fmt(-best.total)}B net (+$${fmt(best.gain)}B on-site power, −$${fmt(best.net)}B deferred)` : "Raise on-site power to see winners"],
     ].map(([b, v, s]) => `<div class="tile"><b>${b}</b><span class="v">${v}</span><small>${esc(s)}</small></div>`).join("");
   }
   function cats() {
@@ -240,12 +257,15 @@
   }
   function sliders() {
     const defs = [
-      ["delayGW", "US GW delayed, next 12 months", 0, 25, 0.5, (v) => fmt(v) + " GW", "Default ≈ a quarter of the hostile-state pipeline on the map; UBS sees ~30% of 2028 additions at risk"],
-      ["recapture", "Recaptured in friendly states or abroad", 0, 90, 5, (v) => v + "%", "Capacity re-sited within the year (Louisiana, Oklahoma, North Dakota, overseas)"],
-      ["selfPower", "GW switched to on-site power", 0, 15, 0.5, (v) => fmt(v) + " GW", "New US capacity that self-supplies to clear ratepayer rules"],
+      ["delayGW", "US GW delayed, next 12 months", 0, 25, 0.5, (v) => fmt(v) + " GW", "PIPE"],
+      ["recapture", "Rebuilt in friendly US states", 0, 90, 5, (v) => v + "%", "Share of delayed GW re-sited within the year (Louisiana, Oklahoma, North Dakota)"],
+      ["overseas", "Moved abroad", 0, 50, 5, (v) => v + "%", "Share built overseas instead: suppliers keep the sale, the US loses the capacity"],
+      ["selfPower", "GW switched to on-site power", 0, 15, 0.5, (v) => fmt(v) + " GW", "Delayed GW that goes ahead on behind-the-meter power; capped at what is still delayed"],
     ];
     const el = document.getElementById("u2Sl");
-    el.innerHTML = defs.map(([k, n, a, b, s, f, w]) => `<div><label for="u2S-${k}">${n}<output id="u2O-${k}"></output></label><input id="u2S-${k}" type="range" min="${a}" max="${b}" step="${s}" value="${D.defaults[k]}"><small>${esc(w)}</small></div>`).join("");
+    const sh = stateShares(), pipe = sh.length ? sh[0].tot : 0;
+    defs[0][6] = `Default 8 GW ≈ ${fmt((8 / (pipe || 1)) * 100, 0)}% of the ${fmt(pipe, 0)} GW building or blocked in hostile states (planned and unsited GW excluded); UBS sees ~30% of 2028 additions at risk`;
+    el.innerHTML = defs.map(([k, n, a, b, s, f, w]) => `<div><label for="u2S-${k}">${n}<output id="u2O-${k}"></output></label><input id="u2S-${k}" type="range" min="${a}" max="${b}" step="${s}" value="${D.defaults[k] != null ? D.defaults[k] : 0}"><small>${esc(w)}</small></div>`).join("");
     defs.forEach(([k, , , , , f]) => {
       const i = document.getElementById("u2S-" + k), o = document.getElementById("u2O-" + k);
       P[k] = +i.value; o.textContent = f(P[k]);

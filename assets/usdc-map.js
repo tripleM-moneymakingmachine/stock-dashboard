@@ -377,9 +377,13 @@
     const rev = Object.fromEntries((IM.cos || []).map((c) => [c.t, c]));
     const near = r.uc + r.bl, later = r.pl;
     // Same base case as the impact map below: delayGW of the hostile-state near-term pipeline slips in 12 months, recapture% rebuilt elsewhere.
-    const dfl = IM.defaults || { delayGW: 8, recapture: 40 };
-    const natNear = COS.reduce((a, o) => { const e = exposure(o); return a + e.uc + e.bl; }, 0) || 1;
-    const slip = near * Math.min(1, dfl.delayGW / natNear) * (1 - dfl.recapture / 100);
+    const dfl = IM.defaults || { delayGW: 8, recapture: 30, overseas: 10, selfPower: 1.5 };
+    // Same denominator as the impact map: every tracked US campus building or blocked in a hostile state
+    const natNear = D.sites.filter((x) => !x.unsited && !x.nonUS && tierOf(x.state) >= 4 && (pipeSt(x) === "uc" || pipeSt(x) === "bl")).reduce((a, x) => a + pipeGW(x), 0) || 1;
+    // Same flow as the impact map: delayed GW is rebuilt in friendly US states, moved abroad, switched to on-site power, or lost.
+    const dG = dfl.delayGW, usR = dG * dfl.recapture / 100, abr = Math.min(dG - usR, dG * (dfl.overseas || 0) / 100), ons = Math.min(dfl.selfPower || 0, dG - usR - abr);
+    const lostFrac = dG ? Math.max(0, dG - usR - abr - ons) / dG : 0;
+    const slip = near * Math.min(1, dG / natNear) * lostFrac;
     const cells = STK_CATS.map(([id, label]) => {
       const mix = st[id] || os.defaults[id] || [], c = cat[id] || { perGW: 0, absorb: 0 };
       const items = mix.map(([t, sh, tag]) => {
@@ -390,7 +394,7 @@
       return `<div class="sk-c"><div class="sk-h">${label}</div>${items.map((x) => `<div class="sk-i"><span class="sk-d sk-${x.lvl}" title="${x.lvl === "hi" ? "High" : x.lvl === "m" ? "Medium" : "Low"} impact"></span><span class="nm"><b>${esc(x.name)}</b>${x.tag ? ` <em>${esc(x.tag)}</em>` : ""}</span><span class="sk-v">${near > 0 ? `~$${fmt(x.net, x.net < 1 ? 2 : 1)}B${x.pct != null ? ` · ${fmt(x.pct, x.pct < 1 ? 1 : 0)}% rev` : ""}` : `${fmt(x.sh * 100, 0)}% share`}</span></div>`).join("")}</div>`;
     }).join("");
     const head = near > 0
-      ? `<b>${fmt(near, 2)} GW</b> building or blocked in hostile states. On the impact map's base case (${fmt(dfl.delayGW, 0)} GW of the US hostile-state pipeline slips in the next 12 months, ${dfl.recapture}% rebuilt elsewhere) that is <b>~${fmt(slip, 2)} GW</b> lost this year; figures are supplier revenue deferred, net of re-selling.${later > 0 ? ` A further ${fmt(later, 2)} GW is planned (later-dated, not in the $ figures).` : ""}`
+      ? `<b>${fmt(near, 2)} GW</b> building or blocked in hostile states. On the impact map's base case (${fmt(dG, 0)} of ${fmt(natNear, 0)} GW slips in the next 12 months; ${dfl.recapture}% rebuilt in friendly states, ${dfl.overseas || 0}% abroad, ${fmt(ons, 1)} GW on on-site power) that is <b>~${fmt(slip, 2)} GW</b> of its capacity not built anywhere this year; figures are supplier revenue deferred, net of re-selling.${later > 0 ? ` A further ${fmt(later, 2)} GW is planned (later-dated, not in the $ figures).` : ""}`
       : later > 0 ? `No near-term hostile-state capacity; <b>${fmt(later, 2)} GW</b> planned in hostile states is later-dated, so near-term supplier impact is low. Shares shown instead.` : `No capacity in hostile states, so supplier impact is minimal. Shares shown instead.`;
     return `<tr class="skr"><td colspan="${ncol}"><div class="sk-top"><span><b>${esc(D.owners[r.o].n)}</b> · ${esc(st.chips)}</span><span class="sk-key"><span class="sk-d sk-hi"></span>High ≥3% of supplier revenue <span class="sk-d sk-m"></span>1–3% <span class="sk-d sk-l"></span>&lt;1%</span></div><p class="sk-n">${head}</p><div class="sk-g">${cells}</div><p class="sk-n" style="margin:10px 0 0">${esc(os.note)}</p></td></tr>`;
   }

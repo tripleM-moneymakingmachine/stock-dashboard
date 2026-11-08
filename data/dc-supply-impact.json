@@ -1,12 +1,12 @@
 {
  "asof": "2026-11-08",
  "asofText": "Nov 8, 2026",
- "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company's data center revenue; revenue run-rates are the latest quarter ×4 from each stock page (~ = estimate). Updated with the daily US data center risk task.",
+ "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
-  "recapture": 40,
-  "overseas": 15,
-  "selfPower": 3
+  "recapture": 30,
+  "overseas": 10,
+  "selfPower": 1.5
  },
  "cats": [
   {
@@ -82,9 +82,9 @@
   {
    "id": "grid",
    "n": "Grid power (Texas / ERCOT)",
-   "perGW": 0.9,
+   "perGW": 0.52,
    "absorb": 0,
-   "why": "Annual energy sales per GW of load (~8 TWh at ~$110/MWh); a delayed Texas campus is load a Texas generator does not get."
+   "why": "Annual energy sales per GW of load (~8 TWh at ~$65/MWh, the middle of EIA’s $47–85/MWh range for ERCOT North in 2027); a delayed Texas campus is load a Texas generator does not get."
   }
  ],
  "cos": [
@@ -187,7 +187,7 @@
   {
    "t": "LITE",
    "n": "Lumentum",
-   "rev": 5,
+   "rev": 5.1,
    "page": "lite",
    "s": {
     "opt": 0.14
@@ -250,8 +250,7 @@
   {
    "t": "VRT",
    "n": "Vertiv",
-   "rev": 12,
-   "est": true,
+   "rev": 17.3,
    "s": {
     "pwr": 0.18
    }
@@ -268,8 +267,7 @@
   {
    "t": "GEV",
    "n": "GE Vernova",
-   "rev": 42,
-   "est": true,
+   "rev": 50.4,
    "s": {
     "pwr": 0.08
    },
@@ -278,7 +276,7 @@
   {
    "t": "BE",
    "n": "Bloom Energy",
-   "rev": 5,
+   "rev": 4.9,
    "page": "be",
    "onsite": 0.2
   },
@@ -327,7 +325,7 @@
   "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
  },
  "ownerStack": {
-  "note": "Indicative. Supplier mix per company is Claude’s estimate from public chip, networking and power deals; categories not listed use the industry default mix. Impact = the share of a company’s Building + Blocked GW in hostile states that slips in the next 12 months on the impact map’s base case (delayed GW pro rata, less recapture) × content per GW × supplier share × (1 − absorption), i.e. the revenue that would slip if those projects were delayed a year after the supply chain re-sells what it can. Planned GW is shown separately as later-dated. Arm is shown at its royalty (~5% of the CPU value); Grace CPUs count as Nvidia.",
+  "note": "Indicative. Supplier mix per company is Claude’s estimate from public chip, networking and power deals; categories not listed use the industry default mix. Impact = the share of a company’s Building + Blocked GW in hostile states that slips in the next 12 months on the impact map’s base case (delayed GW pro rata, less what is rebuilt in friendly states, moved abroad or switched to on-site power) × content per GW × supplier share × (1 − absorption), i.e. the revenue that would slip if those projects were delayed a year after the supply chain re-sells what it can. Planned GW is shown separately as later-dated. Arm is shown at its royalty (~5% of the CPU value); Grace CPUs count as Nvidia.",
   "defaults": {
    "mem": [
     [
