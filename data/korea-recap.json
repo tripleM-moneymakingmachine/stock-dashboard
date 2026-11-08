@@ -20,7 +20,7 @@
     ],
     [
       "BOK hike pricing holds",
-      "Citi still expects a November 26 hike despite the equity crash and sees 3.50% by February, and the market agrees: MSB 91-day, CD and CP were unchanged, although CP's 30-session climb finally paused. With the 3Y now only 61bp over the 3.00% base rate, dealers see little room below 3.55–3.60% until hike pricing fades. Governor Lee is at the BIS meetings in Basel through Nov 11."
+      "Citi still expects a November 26 hike despite the equity crash and sees 3.50% by February, and the market agrees: MSB 91-day, CD and CP were unchanged, although CP's 30-session climb finally paused. With the 3Y now only 61bp over the 3.00% base rate, dealers see little room below 3.55–3.60% until hike pricing fades. Governor Shin Hyun-song is at the BIS meetings in Basel through Nov 11."
     ]
   ],
   "data": [
@@ -207,7 +207,7 @@
       "note": "46bp over, new 1-year wide"
     }
   },
-  "watch": "Next: US October payrolls (Fri Nov 6, 22:30 KST), US 3Y/10Y/30Y auctions (Nov 9, 10, 12), Korea November 1–10 exports around Nov 11, BOK Governor at the BIS in Basel to Nov 11, then the BOK meeting on Nov 26; a KOSPI rebound with foreigners turning buyers, or a Treasury sell-off on payrolls or weak auctions, is the main risk to the rally.",
+  "watch": "After the KTB close, US October payrolls beat: +165k vs 65k expected, unemployment 4.1%, hourly earnings +0.4% m/m, and Aug–Sep revised up 84k; the UST 2Y rose 6bp to 4.52% and the 10Y 3bp to 4.87%, and December Fed hike odds rose to about 78% from 70%. At the 0.46 beta that points to roughly +1–2bp on the KTB 10Y at Monday's open, a partial give-back of Friday's rally. Next: US 3Y/10Y/30Y auctions (Nov 9, 10, 12), Korea November 1–10 exports around Nov 11, BOK Governor at the BIS in Basel to Nov 11, then the BOK meeting on Nov 26; a KOSPI rebound with foreigners turning buyers, or a further Treasury sell-off after payrolls or on weak auctions, is the main risk to the rally.",
   "sources": [
     [
       "Yonhap (KTB closing yields and futures, Nov 6)",
@@ -240,6 +240,18 @@
     [
       "The Core Quant (Wall Street wrap, Fed speakers)",
       "https://thecorequant.com/the-wall-street-wrap-november-5-2026"
+    ],
+    [
+      "BLS (October employment report)",
+      "https://www.bls.gov/news.release/empsit.nr0.htm"
+    ],
+    [
+      "SRN News (Treasury reaction to payrolls)",
+      "https://srnnews.com/strong-october-jobs-report-sends-yields-higher/"
+    ],
+    [
+      "InvestingLive (jobless claims 189k vs 196k)",
+      "https://investinglive.com/news/us-initial-jobless-claims-189k-vs-196k-estimate/"
     ]
   ]
 }
