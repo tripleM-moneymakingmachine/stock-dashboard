@@ -1,28 +1,28 @@
 {
- "session": "2026-11-06",
- "asof": "Settles Fri 6 Nov 2026 · written Sat 7 Nov",
- "headline": "Payrolls beat retraces a third of Thursday's rally: H7–Z8 up 5–6bp, and the U7 peak at 4.39% prices just under two hikes.",
- "summary": "The strip sold off almost in parallel on Friday after a 165,000 payrolls print: Z7 and H8–M8 rose 6bp, H7, M7 and U7 5.5bp to 4.27%, 4.36% and 4.39%, and Z8 5bp to 4.35%, while Z6 lagged at +3.5bp to 4.145% and U6 barely moved at 3.92%. That reverses only about a third of Thursday's 14–16.5bp rally, so from the 30 October settle M7 and U7 are still 12–13bp lower, Z7 11bp, H7 8.5bp and the greens 6.5–7bp, with Z6 flat on the month. The peak stays in SR3U7 at 4.39%, 47bp over the 3.92% SOFR fixing, with 6bp of easing priced from there to Z9. Just under two hikes is a little more than the consensus of a December move plus one more in early 2027.",
+ "session": "2026-11-09",
+ "asof": "Settles Mon 9 Nov 2026 · written Tue 10 Nov",
+ "headline": "Risk-on rebound sells the reds 5–5.5bp before CPI; the U7 peak at 4.445% now prices just over two hikes.",
+ "summary": "The strip sold off again on Monday, led by the reds: M7 rose 5.5bp to 4.42%, H7 and U7 5bp to 4.32% and 4.445%, and Z7 4.5bp, while Z6 rose only 2bp to 4.165%, U6 held at 3.92% and the 2029 contracts H9–Z9 rose just 1bp to 4.335–4.35%. Two sessions have now retraced about 60–70% of last Thursday's rally in the reds, but from the 30 October settle M7 is still 6bp lower, U7 7.5bp and Z7 6.5bp, H7 3.5bp, the greens 5.5–6bp, and Z6 is 2bp higher. The peak stays in SR3U7 at 4.445%, 55.5bp over the 3.89% SOFR fixing, with 11bp of easing priced from there to Z9. Just over two hikes is a bit more than the consensus of a December move plus one more in early 2027.",
  "drivers": [
   [
-   "Payrolls blow past forecasts",
-   "October payrolls rose 165,000 against 59,000–65,000 expected, September was revised up to 60,000 from 29,000, unemployment fell to 4.1% and hourly earnings rose 0.4% (3.1% on the year). The 2-year yield rose about 5bp to 4.52% and FedWatch odds for a December hike climbed back to roughly 76–85%. In SR3 the reds and greens led: H7 to Z8 rose 5–6bp in rate, Z6 3.5bp."
+   "Haven bid unwinds as stocks rebound",
+   "The S&P 500 rose 2.4% and the Nasdaq 2.7%, with chip stocks up more than 6% even as Nvidia fell about 6% on the probe into its CEO, after the S&P's worst week since April 2025. Selling of Treasuries as a hedge was led by short tenors, with the 2-year up as much as 5bp intraday to 4.57%. In SR3 that hit the reds hardest: H7–U7 rose 5–5.5bp in rate against 2bp in Z6."
   ],
   [
-   "Tech rebound unwinds part of the haven bid",
-   "The Nasdaq rose about 1.5% and chip stocks about 4–6% after Thursday's AI-regulation rout, though the index stayed on course for a fourth weekly fall. Thursday's 16.5bp rally in M7 and U7 was only a third retraced, so most of the post-election repricing of 2027 hikes survives."
+   "Weak 3-year auction tests front-end demand",
+   "The $58bn 3-year sale stopped at 4.627%, tailing the when-issued yield by 0.5bp, the biggest tail since May. Bid-to-cover fell to 2.53 from 2.62, the lowest since August 2025, and indirects took 55.5% against 57.6% last month, so dealers and directs had to absorb supply with $42bn of 10-years due Tuesday."
   ],
   [
-   "Fed speakers keep hikes on the table",
-   "San Francisco's Daly said more tightening is likely, at a deliberate, gradual pace, and New York's Williams called inflation too high for too long. With Hammack and Barkin also backing gradual hikes on Thursday, Reuters reported traders pulling the next-and-final hike forward to April from June; H7/M7 held at +9bp as both legs rose 5.5bp."
+   "Fed hike bets rebuilt; Barkin keeps December open",
+   "FedWatch odds of a 9 December hike were about 79–81% on Monday, up from 71% a week earlier. Richmond's Barkin said the direction of policy is clear with inflation still the main risk, but that hikes should come with care and he has no base case for December. The reds took that as a nod to a gradual path: H7/M7 widened just 0.5bp to +10bp."
   ],
   [
-   "Oil and inflation expectations cap the selloff",
-   "Brent rebounded toward $100 on tanker attacks but was still heading for a weekly drop of 12–16%. Michigan sentiment rose to 51.0 against 48.0 expected, while one-year inflation expectations fell to 4.3% from 4.7% and the 5–10-year gauge to 3.4%, which kept the greens from following the reds fully: Z8–Z9 rose 4.5–5bp."
+   "Oil slump keeps the greens anchored",
+   "Brent settled down nearly 6% at $92.57 after Trump called new strikes on Iran highly unlikely if talks progress, extending last week's 16% drop from above $112 at the start of the month. Lower energy prices capped inflation risk further out: Z8–Z9 rose just 1bp, so Z7/Z8 fell 3.5bp to −7bp. Tuesday's CPI is seen at 0.3% headline and 0.2% core month-on-month."
   ]
  ],
- "spreads": "The whites steepened and the reds sold off in parallel. U6/Z6 widened 3.3bp to +22.5bp and Z6/H7 2bp to +12.5bp (−8.5bp on the month), while H7/M7 held at +9bp (−3.5bp) and M7/U7 at +3bp (−1bp); U7/Z7 rose 0.5bp to −0.5bp, so U7 stays the peak by half a basis point. Z6/Z7 widened 2.5bp to +24bp but is still 11bp tighter month-to-date, and Z6/M7 rose 2bp to +21.5bp (−12bp). Past the peak the inversion edged back: Z7/Z8 fell 1bp to −3.5bp (+4bp on the month), U7/Z8 0.5bp to −4bp (+6bp) and Z8/Z9 0.5bp to −2bp, with the green consecutive spreads between −1bp and 0. The H7/M7/U7 fly was unchanged at +6bp and M7/U7/Z7 slipped 0.5bp to +3.5bp (−2.5bp and −3bp on the month). Week- and month-to-date changes are the same, as both run from the 30 October settle.",
- "fed": "The latest fed funds futures snapshot is Thursday's, after the tech rout and before payrolls: 16.2bp for the 9 December meeting (a 65% chance of a hike), 21bp by January, 29.9bp by March, 39.9bp by June and a 44bp peak by September 2027 (implied EFFR 4.32%). That is down from 20.4bp, 27bp, 41.4bp, 54.9bp and a 58bp peak on Wednesday, from 19.7bp, 28bp, 42.4bp, 59.1bp and 65bp a week earlier, and from the 30 October month-end (17.6bp, 24bp, 37.3bp, 52.1bp, 57bp peak). Friday's SR3 settles already price the rebound: the 4.32% ZQ peak plus SOFR's 4bp premium over EFFR is 4.36%, 3bp under U7 at 4.39%, and Z6 at 4.145% is about 1.5bp over January ZQ plus that premium. After payrolls FedWatch put December back at roughly 76–85%. With Daly and Williams stressing too-high inflation, SR3's just-under-two-hike peak is a touch above the consensus of a December hike and one more in early 2027; Tuesday's CPI decides whether December is fully priced.",
+ "spreads": "The reds sold off relative to both ends of the strip. U6/Z6 widened 2bp to +24.5bp and Z6/H7 3bp to +15.5bp (−5.5bp on the month), while H7/M7 rose 0.5bp to +10bp (−2.5bp) and M7/U7 slipped 0.5bp to +2.5bp (−1.5bp); U7/Z7 fell 0.5bp to −1.5bp, so U7 remains the peak by 1.5bp. Z6/Z7 widened 2.5bp to +26.5bp but is still 8.5bp tighter month-to-date, and Z6/M7 rose 3.5bp to +25.5bp (−8bp). Past the peak the inversion deepened: Z7/Z8 fell 3.5bp to −7bp and U7/Z8 4bp to −8.5bp (+0.5bp and +1.5bp on the month), with Z7/H8 at −2bp and the green consecutive spreads between −2bp and 0; Z8/Z9 held at −2.5bp. The H7/M7/U7 fly rose 1bp to +7.5bp and M7/U7/Z7 was unchanged at +4bp (−1bp and −2.5bp on the month). Week-to-date changes equal Monday's, as the week runs from Friday's settle.",
+ "fed": "The latest weekday fed funds futures snapshot is Friday's, after payrolls: 19bp for the 9 December meeting (a 76% chance of a hike), 24bp by January, 34bp by March, 43.9bp by June and a 47bp peak by September 2027 (implied EFFR 4.35%). That is up from 16.2bp, 20.5bp, 30.5bp, 40.4bp and a 43.5bp peak on Thursday, but against the 30 October month-end, which is also a week earlier (17.6bp, 24bp, 37.3bp, 52.1bp, 57bp peak), only December is higher and the 2027 path is still 3–10bp lower. Monday's SR3 settles go further than that snapshot: the 4.35% ZQ peak plus SOFR's 1bp premium over the 3.88% EFFR is 4.36%, 8.5bp under U7 at 4.445%, and Z6 at 4.165% is 3.5bp over January ZQ plus that premium, which fits the 79–81% December odds FedWatch showed on Monday. With most bank economists calling for a December hike and September's projections showing one more move this year, SR3's just-over-two-hike peak is a touch rich; Tuesday's CPI decides whether December is fully priced.",
  "ideas": [
   {
    "kind": "core",
@@ -44,12 +44,12 @@
     "Stop": "+13bp",
     "Horizon": "to the Jan 27 FOMC"
    },
-   "why": "Open and flat at +9bp: both legs rose 5.5bp in rate on payrolls, so the beat lifted the whole 2027 path rather than steepening it. Reuters reports traders pulling the last hike forward to April, which narrows the gap between the March and June periods; 6bp to target against 4bp to the stop keeps reward at 1.5 times risk.",
-   "risk": "A hot October CPI on Tuesday could add hikes beyond April and push the spread through +13bp."
+   "why": "Open at +10bp, 1bp against entry: H7 rose 5bp and M7 5.5bp in rate on Monday, a second parallel selloff after Friday's, so the rebound lifted the whole 2027 path rather than front-loading it. Barkin's call for a careful pace and the market moving the last hike to April keep the case for a narrower March–June gap; 7bp to target against 3bp to the stop.",
+   "risk": "A hot core CPI on Tuesday could add hikes beyond April and push the spread through +13bp."
   },
   {
    "kind": "hedge",
-   "title": "Keep 2028 easing as the hedge: sell Z7, buy Z8",
+   "title": "Keep 2028 easing as the hedge: sell Z7, buy Z8 (stop tightened)",
    "trade": "Sell SR3Z7, buy SR3Z8, 1:1",
    "legs": [
     [
@@ -63,12 +63,12 @@
    ],
    "levels": {
     "Entry": "−8bp",
-    "Target": "−12bp",
-    "Stop": "+1bp",
+    "Target": "−13bp",
+    "Stop": "−3bp",
     "Horizon": "to the Dec 9 FOMC"
    },
-   "why": "Open, 4.5bp against entry at −3.5bp but 1bp in favour on Friday, as Z7 rose 6bp in rate and Z8 5bp. It did its job as a hedge to the core: a firmer data path sells the reds more than the greens. With 8.5bp to target and 4.5bp to the stop, reward is about 1.9 times risk.",
-   "risk": "Another risk-off rally led by the reds would push the spread above +1bp and stop the hedge out."
+   "why": "Open at −7bp, now just 1bp from entry after falling 3.5bp on Monday as Z7 rose 4.5bp in rate and Z8 only 1bp: the risk-on selloff hit the reds and left the greens anchored by cheaper oil, which is what the hedge is for. We lower the stop to −3bp from +1bp to lock in that move and extend the target to −13bp, so reward is 1.5 times risk from here.",
+   "risk": "A soft CPI that revives the haven bid in the reds would push the spread back above −3bp."
   },
   {
    "kind": "avoid",
@@ -79,25 +79,25 @@
     "Level": "96.080 (3.92%)",
     "Why neutral": "fixings, not the Fed, drive it now"
    },
-   "why": "U6 rose just 0.2bp to 3.92% implied on Friday, exactly the 3.92% SOFR fixing for 5 November, which is 2bp over the 3.90% interest on reserves, 4bp over the 3.88% EFFR and 8bp under the 4.00% standing repo rate. About $28bn of new refunding cash settles on 16 November and only U6's last week sees the December decision, so there is little to gain from an outright view.",
-   "risk": "If funding stays soft, SOFR could slip toward 3.88–3.90% and leave a couple of bp on the table."
+   "why": "U6 held at 96.080 (3.92% implied) for a third session, against the 3.89% SOFR fixing for 6 November, 1bp under the 3.90% interest on reserves, 1bp over the 3.88% EFFR and 11bp under the 4.00% standing repo rate. Refunding notes, including Monday's 3-year sale, settle on 16 November and only U6's last week sees the December decision, so there is little to gain from an outright view.",
+   "risk": "If refunding settlement tightens funding, SOFR could print back near 3.95% and cost a couple of bp."
   }
  ],
  "watch": [
   [
-   "Mon 9 Nov",
-   "3-year note auction",
-   "$58bn, the first refunding sale, tests front-end demand after Friday's 5bp rise in 2-year yields."
-  ],
-  [
    "Tue 10 Nov",
    "October CPI; 10-year auction",
-   "The last CPI before the December meeting after 3.7% headline in September; it sets Z6, the December odds and the H7/M7 core."
+   "Consensus 0.3% headline and 0.2% core month-on-month after 0.6% and 0.3% in September, with no annual rate published; it sets Z6, the December odds and the H7/M7 core. $42bn of 10-years follows."
+  ],
+  [
+   "Wed 11 Nov",
+   "Veterans Day",
+   "Cash bond market closed and no SOFR fixing; SR3 liquidity thin."
   ],
   [
    "Thu 12 Nov",
-   "30-year bond auction",
-   "$25bn after Wednesday's Veterans Day bond-market holiday; term premium and the greens."
+   "30-year bond auction; jobless claims",
+   "$25bn after Monday's weak 3-year sale; term premium and the greens."
   ],
   [
    "Fri 13 Nov",
@@ -107,43 +107,43 @@
   [
    "Mon 16 Nov",
    "Refunding settlement",
-   "About $28bn of new cash settles; a funding test for SOFR and U6."
+   "The 3-, 10- and 30-year sales settle; a funding test for SOFR and U6."
   ],
   [
    "Daily",
-   "Tech stocks, oil and Iran",
-   "A renewed AI-stock selloff would revive the haven bid in the reds; tanker attacks that keep Brent near $100 would add to 2027 inflation risk."
+   "Tech stocks, Nvidia and Iran talks",
+   "Another AI-stock slide would revive the haven bid in the reds; a breakdown in Iran talks that lifts Brent back toward $100 would add to 2027 inflation risk."
   ]
  ],
  "sources": [
   [
-   "CNBC: October jobs report",
-   "https://cnbc.com/2026/11/06/jobs-report-october-2026.html"
+   "Reuters via News & Observer: Wall St jumps as oil slide eases inflation worries",
+   "https://newsobserver.com/news/nation-world/national/article317991603.html"
   ],
   [
-   "Reuters via LSE: Treasuries fall after strong jobs report",
-   "https://lse.co.uk/news/treasuries-us-bonds-fall-after-thursdays-rally-strong-jobs-report-backs-raises-rate-hike-odds-lj2o47erd8j7z0r.html"
+   "Bloomberg via CNBC-TV18: Treasuries fall before auction as risk appetite returns",
+   "https://cnbctv18.com/market/treasuries-fall-before-auction-as-investors-regain-risk-appetite-20030741.htm"
   ],
   [
-   "Reuters via Yahoo Finance: Fed seen sticking to December rate hike",
-   "https://finance.yahoo.com/economy/policy/articles/traders-raise-bets-fed-rate-134402668.html"
+   "US Treasury: 3-year note auction results, 9 Nov",
+   "https://treasurydirect.gov/instit/annceresult/press/preanre/2026/R_20261109_3.pdf"
   ],
   [
-   "Reuters via MarketScreener: Daly says rate hike likely",
-   "https://marketscreener.com/news/daly-says-fed-rate-hike-likely-despite-painful-tech-stock-dive-ce785fd2dd8ff72d"
+   "ZeroHedge: 3-year auction tails, foreign demand slides",
+   "https://zerohedge.com/markets/record-directs-save-ugly-3y-auction-slide-foreign-demand-leads-biggest-tail-may"
   ],
   [
-   "Advisor Perspectives: Michigan sentiment, November preliminary",
-   "https://advisorperspectives.com/dshort/updates/2026/11/06/consumer-sentiment-recovers-significantly"
+   "Reuters via Yahoo Finance: Barkin says move policy with care",
+   "https://finance.yahoo.com/economy/policy/articles/fed-move-policy-care-responds-170534763.html"
   ],
   [
-   "Reuters via Yahoo Finance: Brent set for biggest weekly drop since 2020",
-   "https://finance.yahoo.com/news/oil-set-sharp-weekly-drop-052924519.html"
+   "Reuters via MarketScreener: Dollar slips as Iran talks lift risk appetite",
+   "https://marketscreener.com/news/dollar-slips-against-major-currencies-as-iran-talks-lift-risk-appetite-ce785fd3d189f424"
   ],
   [
-   "US Treasury: November quarterly refunding statement",
-   "https://home.treasury.gov/news/press-releases/sb0678"
+   "FinancialJuice: US CPI prep, bank forecasts",
+   "https://features.financialjuice.com/2026/11/09/us-cpi-prep-november-10th"
   ]
  ],
- "disclaimer": "Research view written from the 6 Nov settles and the sources above, for information only and not investment advice. Futures are leveraged; size spread trades by DV01 (each SR3 contract is $25 per bp)."
+ "disclaimer": "Research view written from the 9 Nov settles and the sources above, for information only and not investment advice. Futures are leveraged; size spread trades by DV01 (each SR3 contract is $25 per bp)."
 }
