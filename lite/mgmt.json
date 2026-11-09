@@ -1,6 +1,6 @@
 {
  "ticker": "LITE",
- "asof": "2026-11-07",
+ "asof": "2026-11-10",
  "quarter": {
   "en": "Q1 FY2027 (September quarter)",
   "zh": "2027 财年第一季（9 月季度）"
@@ -14,18 +14,18 @@
   "pct": -18.6
  },
  "since": {
-  "date": "2026-11-06",
-  "close": 538.59,
-  "pct": -35.9
+  "date": "2026-11-09",
+  "close": 596.16,
+  "pct": -29.1
  },
  "review": {
   "en": [
    "Revenue rose 137% to $1.26B, just above the ~$1.25B consensus, and non-GAAP EPS of $4.57 beat ~$4.22 and the top of guidance. Systems revenue more than tripled to $508M on optical circuit switches; components rose 99% on pump lasers. The Q2 guide of $1.575–1.625B and $5.90–6.20 EPS was well above the ~$1.49B and ~$5.0 expected. CEO Michael Hurlston cited a second NPO/CPO win backed by over $5B of commitments and said OCS could become a multi-billion-dollar business.",
-   "Results came out before the open on Nov 2, with Marvell's agreement to buy Lumentum for 4.5 Marvell shares each, worth $1,132 a share at Oct 28 prices. Shares rose about 3% premarket but closed down 18.6% as Marvell fell 12.7%, shrinking the offer. The slide deepened with Stifel and B. Riley downgrades, a post-election AI-chip selloff and further Marvell losses; by Nov 5 the stock was 39% below its pre-report close."
+   "Results came out before the open on Nov 2 alongside Marvell's all-stock bid of 4.5 Marvell shares each, worth $1,132 at Oct 28 prices. Shares rose about 3% premarket but closed down 18.6% as Marvell fell 12.7%. Stifel and B. Riley downgrades and a post-election AI-chip selloff took the stock to $509.70 on Nov 5, 39% below its pre-report close. It then rebounded with Marvell and optical peers, closing Nov 9 at $596.16, still 12.9% below the first-session close."
   ],
   "zh": [
    "营收增长 137% 至 12.6 亿美元，略高于约 12.5 亿美元的预期；非 GAAP 每股收益 4.57 美元，高于约 4.22 美元的预期及指引上限。系统业务受光路交换机带动增长逾两倍至 5.08 亿美元，器件业务受泵浦激光器带动增长 99%。第二季指引营收 15.75–16.25 亿美元、每股 5.90–6.20 美元，远高于约 14.9 亿美元和约 5.0 美元的预期。CEO 迈克尔·赫尔斯顿称公司拿下第二个 NPO/CPO 大单，采购承诺逾 50 亿美元，并表示 OCS 有望成为数十亿美元级业务。",
-   "业绩于 11 月 2 日盘前发布，同时宣布 Marvell 以每股换 4.5 股 Marvell 股票收购 Lumentum，按 10 月 28 日股价计每股值 1,132 美元。股价盘前涨约 3%，但因 Marvell 当日跌 12.7%、收购对价缩水，收盘跌 18.6%。随后 Stifel 和 B. Riley 下调评级，大选后 AI 芯片股遭抛售，Marvell 继续下跌，至 11 月 5 日股价较财报前收盘低 39%。"
+   "业绩于 11 月 2 日盘前发布，同时宣布 Marvell 以每股换 4.5 股 Marvell 股票的全股票方式收购，按 10 月 28 日股价计每股值 1,132 美元。股价盘前涨约 3%，但因 Marvell 当日跌 12.7%，收盘跌 18.6%。随后 Stifel 和 B. Riley 下调评级，叠加大选后 AI 芯片股抛售，11 月 5 日股价跌至 509.70 美元，较财报前收盘低 39%。此后随 Marvell 及光通信同业反弹，11 月 9 日收于 596.16 美元，仍较财报后首日收盘低 12.9%。"
   ]
  },
  "ceo": {
@@ -56,12 +56,13 @@
    "u": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results"
   },
   {
-   "t": "Nov 2 move and Marvell deal (Yahoo Finance)",
-   "u": "https://finance.yahoo.com/markets/stocks/articles/just-happened-lumentum-shares-220950438.html"
+   "t": "Nov 9 rebound with Marvell and optical peers (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/stocks/articles/coherent-soars-18-lumentum-12-173751356.html"
   },
   {
    "t": "Downgrades and Nov 5 selloff (Investing.com)",
    "u": "https://investing.com/news/stock-market-news/why-is-lumentum-stock-tumbling-today-93CH-5005054"
   }
- ]
+ ],
+ "followup_done": true
 }
