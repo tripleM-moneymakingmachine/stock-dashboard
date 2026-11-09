@@ -1,30 +1,30 @@
 {
- "session": "2026-11-06",
- "asof": "Fri Nov 6, 2026",
- "tone": "mixed",
- "headline": "Chips claw back part of Thursday's rout (SOX +4.2%) as a hot jobs report lifts hike bets",
- "summary": "Nasdaq futures bounced before the open and the index was up nearly 2% at its high, but the gains faded through the afternoon as yields firmed after the strong payrolls data, leaving the S&P 500 up 0.3%. The rebound was concentrated in semiconductors and tech, with technology and communication services leading the sector table, while the Dow slipped as Apple and Microsoft lagged. Small caps joined in, the Russell 2000 rising 0.9%, and the VIX eased back from Thursday's spike.",
+ "session": "2026-11-09",
+ "asof": "Mon Nov 9, 2026",
+ "tone": "up",
+ "headline": "Chips rip (SOX +6.9%) and oil sinks on Iran restraint; S&P 500 has its best day since April",
+ "summary": "Stocks opened higher, with the S&P 500 printing its low at the open, and climbed most of the day as oil slid, closing just below the session high with a 2.3% gain. The rally was broad: all 11 S&P sectors rose, led by industrials and consumer discretionary at more than 3%, advancers beat decliners by more than three to one and the Russell 2000 outran the large caps with a 3.1% jump. The VIX dropped more than 22% to back below 20.",
  "stats": [
-  ["S&P 500", "7,376.86", 0.31],
-  ["Nasdaq", "24,579.42", 1.09],
-  ["Dow", "51,285.73", -0.46],
-  ["Russell 2000", "2,754.11", 0.89],
-  ["SOX (chips)", "9,390.25", 4.21],
-  ["VIX", "25.64", -9.01, true],
-  ["US 10Y", "4.86%", "+2bp"],
-  ["WTI crude", "$90.83", 0.34]
+  ["S&P 500", "7,549.94", 2.35],
+  ["Nasdaq", "25,253.14", 2.74],
+  ["Dow", "52,389.75", 2.15],
+  ["Russell 2000", "2,840.81", 3.15],
+  ["SOX (chips)", "10,033.88", 6.85],
+  ["VIX", "19.92", -22.31, true],
+  ["US 10Y", "4.86%", "+1bp"],
+  ["WTI crude", "$86.85", -4.38]
  ],
  "drivers": [
-  ["Dip buyers return to chips", "After the SOX's 12% plunge on fears of curbs on new US data centers, buyers stepped back into the hardest-hit names: AMD jumped 11%, Lam Research about 8%, Intel nearly 8%, Qualcomm and Marvell over 5%, Micron about 5% and Nvidia 2.8%. Chip stocks alone added roughly half a point to the S&P 500, but the SOX recovered only about a third of Thursday's loss."],
-  ["Blowout payrolls revive December hike bets", "The US added 165,000 jobs in October against about 65,000 expected, unemployment dipped to 4.1% and wages rose 0.4% on the month, with prior months revised up by 84,000. Futures priced about a 77% chance of a December Fed hike, the 2-year yield rose about 5bp to roughly 4.52% and the curve flattened, which capped the rally in the afternoon."],
-  ["Dow lags as megacaps and rate-sensitive names slip", "Apple and Microsoft slipped, keeping the Dow down 237 points, while higher yields weighed on rate-sensitive sectors and energy and banks were flat to lower."],
-  ["Earnings make big single-stock moves", "JFrog soared about 35% and IonQ about 23% on raised guidance, while DraftKings sank about 21% on a wider-than-expected loss, Axon fell 18% after cutting its 2026 revenue outlook and Atlassian dropped about 16% on a weak data-center revenue guide."]
+  ["Chip rebound broadens, minus Nvidia", "After last week's 12% plunge on data-center regulation fears, the SOX jumped 6.9% back above 10,000: AMD soared 13.3% on an Oppenheimer upgrade to outperform ($600 target) and a role in Google's new TPU 8tx systems, Broadcom rose 8.8%, Applied Materials 11%, Lam 10%, KLA 9%, Marvell 9% and Micron 6%. Chips outside Nvidia added roughly 0.7 point to the S&P 500 on their own."],
+  ["Oil slides as Trump plays down new Iran strikes", "Trump said renewed attacks on Iran were highly unlikely while talks progress, and WTI fell 4.4% to settle at $86.85 (Brent −5.9% to $92.57), the lowest since August. Cheaper oil eased inflation worries a day before CPI and lifted airlines, cruise lines and other fuel-sensitive cyclicals."],
+  ["Nvidia sinks on probe into CEO Huang", "Nvidia fell 4.3% to $178.67, after dropping nearly 9% early to its lowest since March 31, as its board opened an independent investigation into Jensen Huang following reports that a business executive he had a relationship with was gathering information for China. It was the only SOX member to fall, and money rotated into its rivals."],
+  ["Megacaps and cyclicals join in", "Tesla rose about 5%, Meta and Amazon about 5% after JPMorgan named them top internet picks, and Apple, Microsoft and Alphabet gained more than 2%. Treasury yields were little changed, the 10-year near 4.86%, so rates did not hold back the bounce."]
  ],
- "week": "For the week the S&P 500 fell 2.7%, the Nasdaq 3.4% (its fourth straight weekly loss), the Russell 2000 2.1% and the Dow 0.9%, the S&P's worst week since spring 2025; WTI crude lost about 12.8% on hopes of de-escalation in the Iran war, and the Fed is now seen as likely to hike again in December.",
- "watch": "Next: October CPI next week is the main test for December Fed pricing, and any further word on state or federal limits to data-center construction will steer the chip and AI names.",
+ "week": "The S&P 500 and Nasdaq have now risen two days in a row and the S&P sits about 3.4% below its October 6 record, after a week in which it fell 2.7% (its worst since April 2025) and the Nasdaq slid into a correction; futures still price roughly a 77–81% chance of a December Fed hike after Friday's strong payrolls.",
+ "watch": "Next: October CPI on Tuesday (headline expected around 3.9% from 3.7%, core 2.8%) plus a 10-year note auction, then PPI on Friday, with Nvidia's board probe and any news on data-center limits still steering the AI and chip names.",
  "sources": [
-  ["AP", "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-friday-11-6-2026"],
-  ["Reuters", "https://straitstimes.com/business/companies-markets/nasdaq-rebounds-but-posts-fourth-straight-weekly-decline"],
-  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"]
+  ["AP", "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-monday-11-9-2026"],
+  ["Reuters", "https://channelnewsasia.com/world/wall-st-jumps-oil-slide-cools-inflation-worries-nvidia-slumps-6537066"],
+  ["Rigzone/Bloomberg", "https://rigzone.com/news/oil_prices_sink_on_iran_peace_hopes-09-nov-2026-185046-article"]
  ]
 }
