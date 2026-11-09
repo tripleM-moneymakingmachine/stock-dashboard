@@ -1,7 +1,7 @@
 {
- "asof": "2026-11-09",
- "asofText": "Nov 9, 2026",
- "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
+ "asof": "2026-11-10",
+ "asofText": "Nov 10, 2026",
+ "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B, Constellation Q3 $9.55B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
   "recapture": 30,
@@ -293,20 +293,20 @@
   {
    "t": "CEG",
    "n": "Constellation",
-   "rev": 26,
+   "rev": 38,
    "est": true,
    "scarcity": true
   }
  ],
  "onsitePerGW": 2.4,
  "views": {
-  "NVDA": "Largest dollars deferred, smallest real damage: Nvidia is supply-capped, and it is now reportedly financing billions of extra CoWoS capacity at SPIL, which a company expecting a demand cut would not do. A delayed Texas campus mostly hands allocation to Microsoft, sovereign and Asian buyers; Susquehanna puts nearly all permit risk in 2028–2030, so watch hyperscaler capex guides, not state politics.",
-  "AMD": "Exposed through both MI-series GPUs and EPYC CPUs. Its OpenAI (Stargate) ties put more of its 2027 ramp in Texas than peers, so timing risk is above Nvidia's.",
+  "NVDA": "Largest dollars deferred, smallest real damage: Nvidia is supply-capped and is financing extra CoWoS capacity at SPIL. Monday's 4.3% drop is about the board probe into Jensen Huang, not data center sites; the real risk from it is tighter export scrutiny and political ammunition against the build-out, so Nov 17 earnings and hyperscaler capex guides matter more than state politics.",
+  "AMD": "Exposed through both MI-series GPUs and EPYC CPUs, with OpenAI (Stargate) ties putting more of its 2027 ramp in Texas than peers. Google picking EPYC to host its new TPU 8tx widens the CPU attach to non-Nvidia clusters, which partly offsets that timing risk.",
   "AVGO": "Custom ASIC (Google TPU, Meta, OpenAI) plus Tomahawk switching. Google's $40B Texas plan and Meta's El Paso/Piqua issues touch two of its biggest XPU customers; expect deferrals of quarters, not cancellations.",
   "MRVL": "Small absolute exposure but high operating leverage; AWS Trainium and optical DSP volumes follow US cluster go-lives closely.",
   "ARM": "Royalty per CPU is small, so direct impact is negligible; the bigger issue is SoftBank's Stargate financing, which hits sentiment.",
   "INTC": "Server CPU recovery is tied to general cloud builds more than giant AI campuses, so the hit is modest; foundry ambitions do not depend on US data center siting.",
-  "SKHY": "HBM is sold out; any US slip is re-allocated within weeks. Risk is to the 2027 pricing negotiation, not volume.",
+  "SKHY": "HBM is sold out: long-term deals with 14 customers cover over half of 2027–28 capacity, and UBS expects politics to delay or relocate projects rather than cut demand. Risk is to the 2027 pricing negotiation, not volume.",
   "MU": "Same as SK hynix on HBM, with more US-centric enterprise SSD and DRAM module exposure. Pausing the Taoyuan HBM/DRAM fab over a labour dispute trims 2028 supply industry-wide, which supports pricing; Samsung and SK hynix gain qualification time. The Nov 5 drop and partial rebound look like sentiment, not lost orders.",
   "SNDK": "Datacenter is now 44% of sales and enterprise SSDs ship with each campus, so it carries more timing risk than the HBM makers.",
   "COHR": "Transceivers and lasers ship close to cluster go-live, so a Texas pause shifts revenue right. But the Nov 4 quarter showed data center revenue up 85% and guidance for 60%+ growth, and the 15% Nov 6 rebound says the market sees the order book outrunning any US delay.",
@@ -322,7 +322,7 @@
   "GEV": "Mixed: grid gear for Texas sites slips, but the ratepayer-first rules push hyperscalers to self-supply with gas turbines, which is GE Vernova's sold-out product. Likely net winner.",
   "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, and NTT DATA signed for 900 MW more (deliveries from 2027). Pay-your-own-power rules in the Senate bill and state platforms push hyperscalers to behind-the-meter power that deploys in months, while gas turbines are sold out into the 2030s.",
   "VST": "Most exposed power name: its growth thesis is new Texas data center load, and management admits the permit pause is already softening ERCOT prices. Still, Q3 beat, 2027 guidance was set above 2026, and it signed a 207 MW Odessa data center PPA, so the 10.6% Nov 6 bounce reflects earnings resilience rather than reduced Texas risk.",
-  "CEG": "Scarcity winner: if new capacity is harder to build, existing nuclear plants with grid hook-ups (PJM, Illinois) become more valuable for hyperscaler deals, though PJM ratepayer politics cap upside."
+  "CEG": "Scarcity winner, now confirmed by results: Q3 beat, guidance raised, and about 8.5 GW of long-term deals signed this year (Amazon, Google) with no cost to existing customers. If new capacity is harder to build, plants already on the grid become more valuable, though PJM ratepayer politics cap upside."
  },
  "ownerStack": {
   "note": "Indicative. Supplier mix per company is Claude’s estimate from public chip, networking and power deals; categories not listed use the industry default mix. Impact = the share of a company’s Building + Blocked GW in hostile states that slips in the next 12 months on the impact map’s base case (delayed GW pro rata, less what is rebuilt in friendly states, moved abroad or switched to on-site power) × content per GW × supplier share × (1 − absorption), i.e. the revenue that would slip if those projects were delayed a year after the supply chain re-sells what it can. Planned GW is shown separately as later-dated. Arm is shown at its royalty (~5% of the CPU value); Grace CPUs count as Nvidia.",

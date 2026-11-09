@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-09",
- "asofText": "Nov 9, 2026",
+ "asof": "2026-11-10",
+ "asofText": "Nov 10, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1440,6 +1440,20 @@
    "unsited": true,
    "note": "Nebius targets 5 GW of contracted power by end-2026; ~3.1 GW is on tracked US campuses. The rest is undisclosed and likely includes Europe and Israel. Contracted, not live. Not drawn on the map",
    "nonUS": true
+  },
+  {
+   "id": "van-ore",
+   "name": "Vantage Oregon (Toledo area)",
+   "owner": "other",
+   "partner": "Vantage Data Centers",
+   "state": "OH",
+   "lat": 41.66,
+   "lon": -83.42,
+   "gw": 0.5,
+   "status": "bl",
+   "capexB": null,
+   "est": true,
+   "note": "~500 MW campus proposed near Corduroy and Wynn roads; Vantage told the city it will not pursue it after voters passed Issue 25 (60%) capping data centers at 25 MW on Nov 3"
   }
  ],
  "risk": {
@@ -1933,11 +1947,11 @@
   },
   "meta": {
    "grade": "High",
-   "view": "Most exposed hyperscaler: El Paso (1 GW JV) in Texas, Piqua (1.4 GW) blocked in Ohio, and the 5 GW Hyperion bet in Louisiana that now draws moratorium speculation. Meta has negative quarterly free cash flow and a negative S&P outlook, so delay costs bite harder, and management has openly said it is weighing overseas sites. Louisiana staying friendly is the key swing factor.",
+   "view": "Most exposed hyperscaler: El Paso (1 GW JV) in Texas, Piqua (1.4 GW) blocked in Ohio, and the 5 GW Hyperion bet in Louisiana. Two new pressure points landed Monday: a Texas bill package targets the El Paso abatement and the sales-tax exemption, and a Louisiana lawsuit challenges the fast-track the utility needs on Dec 10 to approve Hyperion's seven gas plants, so even the friendly state now carries legal timing risk. Meta pays for that power itself, which is its best defence, and its president says at least one newly elected governor wants to meet after inauguration. Negative quarterly free cash flow makes delay costs bite harder than at peers; the stock's weakness reflects real site risk, not just sentiment.",
    "moves": [
     "Concentrate on Hyperion and Lebanon, Indiana",
-    "Push El Paso work ahead of the Texas pause",
-    "Build overseas capacity (management flagged)"
+    "Lock in the Dec 10 Louisiana approval before the lawsuit is heard",
+    "Lease surplus compute and build overseas (management flagged)"
    ]
   },
   "orcl": {
@@ -1968,7 +1982,7 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and runs six Texas locations. Its Nov 7 letter to Hinojosa asks that permitted projects be allowed to finish, which matches what experts say a governor can actually do (stop new approvals, not mid-construction builds), so the real Texas risk is to future expansion rather than contracted capacity. Microsoft shrinking its neocloud roster is a headline risk, though the backlog now leans on OpenAI and Meta. The binding issue remains financing: the 2032 bond yields over 16%, interest exceeds operating income, and every month of delay adds covenant risk; Nov 10 earnings are the next test.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and runs six Texas locations. Its letter asked Hinojosa to let permitted projects finish, but she has now said she will use the permits that even started projects still need, so contracted Texas capacity is not fully safe. Monday's 5.6% bounce on a Wayve training deal is sentiment; credit is the real signal, with five-year CDS above 1,240 bp and 2031 bonds yielding over 16%. Tuesday's results need to show the backlog converting and funding for 2027 lined up; Microsoft trimming its neocloud roster is the other overhang.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Lean on North Dakota (Applied Digital) and Pennsylvania",
@@ -2036,6 +2050,56 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-09",
+   "co": [
+    "*"
+   ],
+   "t": "Hinojosa told the New York Times she cannot halt every permitted project but will use the remaining permits that even started data centers still need to hold them until protections pass, a wider reach than the 'new approvals only' reading of her pause.",
+   "src": "https://nytimes.com/video/us/politics/100000011266333/gina-hinojosa-data-centers-immigration-texas.html"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "meta"
+   ],
+   "t": "On the first day of Texas bill pre-filing, State Rep. Vince Perez filed bills to repeal the state's data center sales-tax exemption, cap abatements at 10 years with a public vote on every new phase (aimed at Meta's El Paso deal), and bar shifting the El Paso gas plant's cost onto other customers.",
+   "src": "https://kvia.com/news/el-paso/2026/11/09/state-rep-perez-challenges-metas-el-paso-tax-deal-tax-exemption-for-data-centers"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "meta",
+    "apld"
+   ],
+   "t": "Louisiana landowner and citizen groups sued the state utility commission over the 'Lightning Directive' fast track that Entergy plans to use on Dec 10 to approve seven gas plants and transmission for Meta's Hyperion; the same pathway is used for Applied Digital's Rapides Parish site.",
+   "src": "https://theadvocate.com/baton_rouge/news/politics/lawsuit-targets-louisiana-data-center-power-plans/article_94f8f899-e516-532b-a87f-7ca7cc1b151b.html"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "*"
+   ],
+   "t": "The Senate held its first 60-vote test Monday evening on the permitting bill that makes 20 MW+ data centers pay their full grid costs; TD Cowen cut its odds of the bill passing to 25% from 40% after the election.",
+   "src": "https://yahoo.com/news/politics/articles/bill-data-centers-pay-grid-184834747.html"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "amzn",
+    "googl"
+   ],
+   "t": "Constellation beat estimates and raised 2026 guidance, with about 8.5 GW of long-term power deals signed this year including Amazon and Google; power names rebounded (Constellation +10%, Bloom +14%, Vertiv +10%, GE Vernova +7%) as buyers are clearly still signing.",
+   "src": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-soars-7-constellation-154818525.html"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "googl"
+   ],
+   "t": "Nvidia fell 4.3% after its board opened an investigation into CEO Jensen Huang over an alleged Chinese intelligence contact, while AMD jumped 13% on an Oppenheimer upgrade and Google choosing EPYC CPUs to host its new TPU 8tx; the S&P 500 rose 2.3% and CoreWeave 5.6% (Wayve deal) before Tuesday's earnings.",
+   "src": "https://nvdaily.com/associated_press_national/us-futures-climb-nvidia-slides-amid-burgeoning-investigation-involving-ceo-jensen-huang/article_32f4403f-890d-5b72-a3ce-9d9f0f2dd843.html"
+  },
   {
    "d": "2026-11-07",
    "co": [
@@ -2299,6 +2363,14 @@
  ],
  "sources": [
   [
+   "The Advocate: lawsuit targets Louisiana data center power plans",
+   "https://theadvocate.com/baton_rouge/news/politics/lawsuit-targets-louisiana-data-center-power-plans/article_94f8f899-e516-532b-a87f-7ca7cc1b151b.html"
+  ],
+  [
+   "KVIA: Rep. Perez bills on Meta El Paso deal and sales-tax exemption",
+   "https://kvia.com/news/el-paso/2026/11/09/state-rep-perez-challenges-metas-el-paso-tax-deal-tax-exemption-for-data-centers"
+  ],
+  [
    "Converge Digest: CoreWeave letter to Hinojosa",
    "https://convergedigest.com/coreweave-texas-data-centers-governor-elect-hinojosa"
   ],
@@ -2369,34 +2441,6 @@
   [
    "Cleanview: US data center tracker",
    "https://cleanview.co/data-centers/us"
-  ],
-  [
-   "Bloomberg Law: Crusoe pauses Wyoming site",
-   "https://news.bloomberglaw.com/artificial-intelligence/crusoe-touts-5-gigawatts-of-data-centers-pauses-wyoming-site"
-  ],
-  [
-   "IREN: Sweetwater 1 energised",
-   "https://iren.gcs-web.com/news-releases/news-release-details/iren-announces-successful-energization-sweetwater-1"
-  ],
-  [
-   "Galaxy: Helios Phase I delivered",
-   "https://www.fox34.com/2026/07/10/galaxy-completes-phase-i-its-helios-data-center-campus-delivering-133-megawatts-critical-it-load-coreweave/"
-  ],
-  [
-   "Epoch AI: Colossus 2",
-   "https://epoch.ai/data/ai-data-centers/directory/colossus-2"
-  ],
-  [
-   "Epoch AI: largest AI data centers by power",
-   "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity"
-  ],
-  [
-   "Modo Energy: midterms could disrupt 40% of announced data centers",
-   "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
-  ],
-  [
-   "Bloomberg via Yahoo: Microsoft sours on neoclouds",
-   "https://finance.yahoo.com/news/microsoft-sours-neoclouds-amid-data-160016061.html"
   ]
  ],
  "modo": {
