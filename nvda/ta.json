@@ -1,64 +1,64 @@
 {
- "asof": "Nov 6, 2026",
- "close": 186.64,
+ "asof": "Nov 9, 2026",
+ "close": 178.67,
  "bias": {
-  "en": "Downtrend · bounce rejected under $190",
-  "zh": "下行趋势 · 反弹受阻于 $190 下方"
+  "en": "Breakdown · lost $179–181 on heavy volume, oversold",
+  "zh": "破位 · 放量跌破 $179–181，超卖"
  },
  "read": [
   {
-   "en": "Nvidia rose 2.8% on Nov 6 to $186.64, trading $185.22–194.90 on volume about 1.6 times its 20-day average. It is below the falling 5-day ($195.4), 10-day ($204.5), 30-day ($218.5) and 100-day ($214.0) averages and the rising 200-day ($204.7). MACD has been below its signal since Oct 12 and below zero, histogram still widening; Parabolic SAR has been bearish since Oct 13 ($206.79), and RSI is 31.",
-   "zh": "英伟达 11月6日上涨 2.8%，收于 $186.64，盘中区间 $185.22–194.90，成交量约为 20 日均量的 1.6 倍。股价位于下行的 5 日（$195.4）、10 日（$204.5）、30 日（$218.5）和 100 日均线（$214.0）以及上行的 200 日均线（$204.7）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图仍在扩大；抛物线 SAR 自 10月13日起看空（$206.79），RSI 为 31。"
+   "en": "Nvidia fell 4.3% on Nov 9 to $178.67, trading $170.24–179.92 on volume 3.9 times its 20-day average. It is below the falling 5-day ($190.75), 10-day ($200.74), 30-day ($216.85) and 100-day ($213.73) averages and the rising 200-day ($204.63). MACD has been below its signal since Oct 12 and below zero, histogram widening; Parabolic SAR has been bearish since Oct 13 ($202.23), and RSI is 27, oversold.",
+   "zh": "英伟达 11月9日下跌 4.3%，收于 $178.67，盘中区间 $170.24–179.92，成交量为 20 日均量的 3.9 倍。股价位于下行的 5 日（$190.75）、10 日（$200.74）、30 日（$216.85）和 100 日均线（$213.73）以及上行的 200 日均线（$204.63）下方。MACD 自 10月12日起位于信号线下方且在零轴下方，柱状图扩大；抛物线 SAR 自 10月13日起看空（$202.23），RSI 为 27，处于超卖。"
   },
   {
-   "en": "The open above $190 reached $194.90 at the May 4 low and 5-day, then faded to close back under $189.8–191.1; nothing was reclaimed. Resistance is $189.8–191.1 (June–July lows), then $194.7–196.3 (May 4 low, 5-day, Nov 5 high) and $198–200.1. Support is $181.5 (Nov 5 low), then $179.2–179.9 (Feb–Mar lows) and $176.8–177.6. A close above $191.1 would target $195–196; below $179.2, $177.",
-   "zh": "高开站上 $190 后一度触及 5月4日低点和 5 日均线附近的 $194.90，随后回落，收盘重回 $189.8–191.1 下方，未收复任何关键位。阻力为 $189.8–191.1（6–7月低点），其次 $194.7–196.3（5月4日低点、5 日均线、11月5日高点）和 $198–200.1。支撑为 $181.5（11月5日低点），其次 $179.2–179.9（2–3月低点）和 $176.8–177.6。若收盘站上 $191.1，下一目标看 $195–196；若跌破 $179.2，则看 $177。"
+   "en": "The close broke the $181.5 Nov 5 low and the $179.2–179.9 February–March lows, now resistance; the close held above $176.8–177.6. Resistance is $179.2–181.5, then $186.6 (Nov 6 close) and $189.8–190.8 (June–July lows, 5-day). Support is $176.8–177.6 (Jan 20 and Oct 2025 lows), then $170.2 (Nov 9 low) and $164.3 (52-week low). A close above $181.5 would target $186.6–190.8; below $176.8, $170.",
+   "zh": "收盘跌破 11月5日低点 $181.5 及 2–3月低点 $179.2–179.9，该区间转为阻力；收盘守在 $176.8–177.6 上方。阻力为 $179.2–181.5，其次 $186.6（11月6日收盘）和 $189.8–190.8（6–7月低点、5 日均线）。支撑为 $176.8–177.6（1月20日和 2025年10月低点），其次 $170.2（11月9日低点）和 $164.3（52周低点）。若收盘站上 $181.5，下一目标看 $186.6–190.8；若跌破 $176.8，则看 $170。"
   }
  ],
  "levels": {
   "r": [
    [
+    180.5,
+    {
+     "en": "Feb 17 low $179.18; Mar 13 low $179.94; Nov 5 low $181.46, all lost",
+     "zh": "2月17日低点 $179.18；3月13日低点 $179.94；11月5日低点 $181.46，均已失守"
+    }
+   ],
+   [
+    186.6,
+    {
+     "en": "Nov 6 close",
+     "zh": "11月6日收盘"
+    }
+   ],
+   [
     190.4,
     {
-     "en": "Jun 29 low $189.8; Jul 29 low $190.0; Jul 7 low $191.1, lost",
-     "zh": "6月29日低点 $189.8；7月29日低点 $190.0；7月7日低点 $191.1，已失守"
-    }
-   ],
-   [
-    195.5,
-    {
-     "en": "May 4 low $194.74; 5-day average $195.4; Nov 6 high $194.9; Nov 5 high $196.25",
-     "zh": "5月4日低点 $194.74；5日均线 $195.4；11月6日高点 $194.9；11月5日高点 $196.25"
-    }
-   ],
-   [
-    199,
-    {
-     "en": "Jul 17 low $197.97; Nov 4 low $199.68; Nov 4 close $200.13",
-     "zh": "7月17日低点 $197.97；11月4日低点 $199.68；11月4日收盘 $200.13"
+     "en": "Jun 29 low $189.8; Jul 29 low $190.0; 5-day average $190.75",
+     "zh": "6月29日低点 $189.8；7月29日低点 $190.0；5日均线 $190.75"
     }
    ]
   ],
   "s": [
    [
-    181.5,
-    {
-     "en": "Nov 5 low",
-     "zh": "11月5日低点"
-    }
-   ],
-   [
-    179.5,
-    {
-     "en": "Feb 17 low $179.18; Mar 13 low $179.94",
-     "zh": "2月17日低点 $179.18；3月13日低点 $179.94"
-    }
-   ],
-   [
     177.2,
     {
      "en": "Jan 20 low $177.61; Oct 22, 2025 low $176.76",
      "zh": "1月20日低点 $177.61；2025年10月22日低点 $176.76"
+    }
+   ],
+   [
+    170.2,
+    {
+     "en": "Nov 9 low",
+     "zh": "11月9日低点"
+    }
+   ],
+   [
+    164.3,
+    {
+     "en": "52-week low (Mar 30)",
+     "zh": "52周低点（3月30日）"
     }
    ]
   ]

@@ -1,50 +1,57 @@
 {
- "asof": "Nov 6, 2026",
- "close": 375.44,
+ "asof": "Nov 9, 2026",
+ "close": 388.62,
  "bias": {
-  "en": "Rebound · back above the Jul 29 low, under every average",
-  "zh": "反弹 · 重回 7月29日低点上方，仍在所有均线下方"
+  "en": "Rebound · above the 5-day and July lows, under the 200-day",
+  "zh": "反弹 · 站上 5 日均线和 7 月低点，仍低于 200 日均线"
  },
  "read": [
   {
-   "en": "TSMC rose 6.3% on Nov 6 to $375.44, trading between $367.95 and $380.72 on heavy volume. It is below the falling 5-day ($385.5), 10-day ($406.6), 30-day ($432.6) and 100-day ($427.7) averages and the rising 200-day ($401.5). MACD has been below its signal since Oct 9 and below zero, histogram steady; Parabolic SAR has been bearish since Oct 30 ($427.45), and RSI is 36.",
-   "zh": "台积电 11月6日上涨 6.3%，收于 $375.44，盘中区间 $367.95–380.72，成交量明显放大。股价位于下行的 5 日（$385.5）、10 日（$406.6）、30 日（$432.6）和 100 日均线（$427.7）以及上行的 200 日均线（$401.5）下方。MACD 自 10月9日起位于信号线下方且在零轴下方，柱状图持平；抛物线 SAR 自 10月30日起看空（$427.45），RSI 为 36。"
+   "en": "TSMC rose 3.5% on Nov 9 to $388.62, trading between $380.33 and $394.39. It is above the falling 5-day ($383.5) and below the falling 10-day ($403.1), 30-day ($430.5) and 100-day ($427.3) averages and the rising 200-day ($401.8). MACD has been below its signal since Oct 9 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($421.35), and RSI is 41.",
+   "zh": "台积电 11月9日上涨 3.5%，收于 $388.62，盘中区间 $380.33–394.39。股价位于下行的 5 日均线（$383.5）上方，下行的 10 日（$403.1）、30 日（$430.5）和 100 日均线（$427.3）以及上行的 200 日均线（$401.8）下方。MACD 自 10月9日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$421.35），RSI 为 41。"
   },
   {
-   "en": "The bounce reclaimed the $372.7 Jul 29 low, support again, but stopped at the $380.7–382.2 zone (Nov 5–6 highs, Jul 28 low, Apr 14 high). Resistance is $380.7–382.2, then $385.5–388.8 (5-day, July lows) and $401.5 (200-day). Support is $372.7, then $359.2–368 (Nov 6 low, April lows) and $350.5–351.2 (Nov 5 low, Mar 25 high). A close above $382.2 would target $386–389; below $372.7, $360–368.",
-   "zh": "此次反弹收复 7月29日低点 $372.7，重新转为支撑，但在 $380.7–382.2 区域受阻（11月5–6日高点、7月28日低点、4月14日高点）。阻力为 $380.7–382.2，其次 $385.5–388.8（5 日均线、7 月低点）和 $401.5（200 日均线）。支撑为 $372.7，其次 $359.2–368（11月6日低点、4 月低点）和 $350.5–351.2（11月5日低点、3月25日高点）。若收盘站上 $382.2，下一目标看 $386–389；若跌破 $372.7，则看 $360–368。"
+   "en": "The close cleared the $380.7–382.2 and $385.5–388.8 resistances (Nov 6 high, Jul 28 low, 5-day, July lows), now support. Resistance is $394.4 (Nov 9 high), then $398.3–403.1 (Nov 2 low, 200 and 10-day) and $421.4 (SAR). Support is $380.3–383.5 (Nov 9 low, Jul 28 low, 5-day), then $372.7 (Jul 29 low) and $359.2–368. A close above $394.4 would target $398–403; below $380.3, $372.7.",
+   "zh": "收盘突破 $380.7–382.2 和 $385.5–388.8 阻力（11月6日高点、7月28日低点、5 日均线、7 月低点），转为支撑。阻力为 $394.4（11月9日高点），其次 $398.3–403.1（11月2日低点、200 日和 10 日均线）和 $421.4（SAR）。支撑为 $380.3–383.5（11月9日低点、7月28日低点、5 日均线），其次 $372.7（7月29日低点）和 $359.2–368。若收盘站上 $394.4，下一目标看 $398–403；若跌破 $380.3，则看 $372.7。"
   }
  ],
  "levels": {
   "r": [
    [
-    381.3,
+    394.4,
     {
-     "en": "Nov 6 high $380.72; Jul 28 low $381.3; Apr 14 high $382.2",
-     "zh": "11月6日高点 $380.72；7月28日低点 $381.3；4月14日高点 $382.2"
+     "en": "Nov 9 high",
+     "zh": "11月9日高点"
     }
    ],
    [
-    387,
+    401.8,
     {
-     "en": "5-day average $385.5; Jul 17, Jul 27 and Jul 30 lows ($386.0–388.8)",
-     "zh": "5日均线 $385.5；7月17日、7月27日和7月30日低点（$386.0–388.8）"
+     "en": "200-day average $401.8; 10-day average $403.1; Nov 2 low $398.29",
+     "zh": "200日均线 $401.8；10日均线 $403.1；11月2日低点 $398.29"
     }
    ],
    [
-    401.5,
+    421.4,
     {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "Parabolic SAR",
+     "zh": "抛物线 SAR"
     }
    ]
   ],
   "s": [
    [
+    382,
+    {
+     "en": "5-day average $383.5; Jul 28 low $381.3; Nov 9 low $380.33",
+     "zh": "5日均线 $383.5；7月28日低点 $381.3；11月9日低点 $380.33"
+    }
+   ],
+   [
     372.7,
     {
-     "en": "Jul 29 low, reclaimed",
-     "zh": "7月29日低点，已收复"
+     "en": "Jul 29 low",
+     "zh": "7月29日低点"
     }
    ],
    [
@@ -52,13 +59,6 @@
     {
      "en": "Nov 6 low $367.95; Apr 8–21 lows ($359.2–366.1)",
      "zh": "11月6日低点 $367.95；4月8–21日低点（$359.2–366.1）"
-    }
-   ],
-   [
-    351,
-    {
-     "en": "Nov 5 low $351.19; Mar 25 high $350.5",
-     "zh": "11月5日低点 $351.19；3月25日高点 $350.5"
     }
    ]
   ]

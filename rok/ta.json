@@ -1,45 +1,52 @@
 {
- "asof": "Nov 6, 2026",
- "close": 375.86,
+ "asof": "Nov 9, 2026",
+ "close": 389.36,
  "bias": {
-  "en": "Breakdown · testing the $375.7 February low",
-  "zh": "破位 · 测试 2月低点 $375.7"
+  "en": "Downtrend · holding the Feb low, capped at $394",
+  "zh": "下降趋势 · 守住 2 月低点，受阻于 $394"
  },
  "read": [
   {
-   "en": "Rockwell Automation fell 1.4% on Nov 6 to $375.86, trading $370.65–392.54 on volume about 2.2 times its 20-day average. It is below the falling 5-day ($417.5), 10-day ($428.8), 30-day ($432.5) and 100-day ($444.1) averages and the rising 200-day ($427.1). MACD crossed below its signal on Nov 5, below zero, histogram widening; Parabolic SAR flipped bearish on Nov 5 ($452.61), and RSI is 29.",
-   "zh": "罗克韦尔自动化 11月6日下跌 1.4%，收于 $375.86，盘中区间 $370.65–392.54，成交量约为 20 日均量的 2.2 倍。股价位于下行的 5 日（$417.5）、10 日（$428.8）、30 日（$432.5）和 100 日均线（$444.1）以及上行的 200 日均线（$427.1）下方。MACD 于 11月5日下穿信号线，位于零轴之下，柱状图扩大；抛物线 SAR 于 11月5日转为看空（$452.61），RSI 为 29。"
+   "en": "Rockwell Automation rose 3.6% on Nov 9 to $389.36, trading $383.13–394.07. It is below all its falling averages: the 5-day ($407.31), 10-day ($424.73), 30-day ($431.14), 100-day ($443.37) and 200-day ($426.93). MACD has been below its signal since Nov 5 and below zero, histogram widening; Parabolic SAR has been bearish since Nov 5 ($449.34), and RSI is 36.",
+   "zh": "罗克韦尔自动化 11月9日上涨 3.6%，收于 $389.36，盘中区间 $383.13–394.07。股价位于所有下行均线下方：5 日（$407.31）、10 日（$424.73）、30 日（$431.14）、100 日（$443.37）和 200 日均线（$426.93）。MACD 自 11月5日起位于信号线下方且在零轴下方，柱状图扩大；抛物线 SAR 自 11月5日起看空（$449.34），RSI 为 36。"
   },
   {
-   "en": "An early bounce to $392.54 faded; the $370.65 low dipped under the $375.7 Feb 17 low, but the close held just above it. Resistance is $392.5 (Nov 6 high), then $406.9–412.7 (Sep–Oct lows, Nov 5 high) and $427.1–432.8 (200, 10 and 30-day). Support is $375.7, then $365–370.7 and $347.5. A close above $392.5 would target $407–413; below $370.7, $365.",
-   "zh": "早盘反弹至 $392.54 后回落；盘中低点 $370.65 一度跌破 2月17日低点 $375.7，但收盘守在其上方。阻力为 $392.5（11月6日高点），其次 $406.9–412.7（9–10月低点、11月5日高点）和 $427.1–432.8（200 日、10 日和 30 日均线）。支撑为 $375.7，其次 $365–370.7 和 $347.5。若收盘站上 $392.5，下一目标看 $407–413；若跌破 $370.7，则看 $365。"
+   "en": "No level changed: the $375.7 Feb 17 low held, and the close stayed under the $392.54 Nov 6 high. Resistance is $392.5–396.3 (Nov 6 and Nov 9 highs, Apr 29 low), then $406.9–412.7 (Sep–Oct lows, 5-day) and $424.7–432.8 (10, 200 and 30-day). Support is $383.1 (Nov 9 low), then $375.7 and $365–370.7. A close above $396.3 would target $407–413; below $375.7, $365–371.",
+   "zh": "关键价位未变：2月17日低点 $375.7 守住，收盘仍在 11月6日高点 $392.54 下方。阻力为 $392.5–396.3（11月6日和11月9日高点、4月29日低点），其次 $406.9–412.7（9–10月低点、5 日均线）和 $424.7–432.8（10 日、200 日和 30 日均线）。支撑为 $383.1（11月9日低点），其次 $375.7 和 $365–370.7。若收盘站上 $396.3，下一目标看 $407–413；若跌破 $375.7，则看 $365–371。"
   }
  ],
  "levels": {
   "r": [
    [
-    392.5,
+    394,
     {
-     "en": "Nov 6 high",
-     "zh": "11月6日高点"
+     "en": "Nov 6 high $392.54; Nov 9 high $394.07; Apr 29 low $396.3",
+     "zh": "11月6日高点 $392.54；11月9日高点 $394.07；4月29日低点 $396.3"
     }
    ],
    [
     409.5,
     {
-     "en": "Sep 17 low $406.92; Nov 5 high $412.63; Oct 15 low $412.65",
-     "zh": "9月17日低点 $406.92；11月5日高点 $412.63；10月15日低点 $412.65"
+     "en": "Sep 17 low $406.92; 5-day average $407.3; Nov 5 high $412.63; Oct 15 low $412.65",
+     "zh": "9月17日低点 $406.92；5日均线 $407.3；11月5日高点 $412.63；10月15日低点 $412.65"
     }
    ],
    [
     430,
     {
-     "en": "200, 10 and 30-day averages ($427.1–432.5); Nov 4 low $432.8",
-     "zh": "200日、10日和30日均线（$427.1–432.5）；11月4日低点 $432.8"
+     "en": "10, 200 and 30-day averages ($424.7–431.1); Nov 4 low $432.8",
+     "zh": "10日、200日和30日均线（$424.7–431.1）；11月4日低点 $432.8"
     }
    ]
   ],
   "s": [
+   [
+    383.1,
+    {
+     "en": "Nov 9 low",
+     "zh": "11月9日低点"
+    }
+   ],
    [
     375.7,
     {
@@ -52,13 +59,6 @@
     {
      "en": "Early-April closes ($365.0–369.4); Nov 6 low $370.65",
      "zh": "4月初收盘价（$365.0–369.4）；11月6日低点 $370.65"
-    }
-   ],
-   [
-    347.5,
-    {
-     "en": "Mar 19 and Mar 30 lows, 52-week low",
-     "zh": "3月19日和3月30日低点，52周低点"
     }
    ]
   ]

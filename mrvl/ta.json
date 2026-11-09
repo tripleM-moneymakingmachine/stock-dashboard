@@ -1,64 +1,64 @@
 {
- "asof": "Nov 6, 2026",
- "close": 141.2,
+ "asof": "Nov 9, 2026",
+ "close": 154.6,
  "bias": {
-  "en": "Downtrend · oversold bounce, still under the April low",
-  "zh": "下行趋势 · 超卖反弹，仍在 4 月低点下方"
+  "en": "Downtrend · 9.5% rebound, back above the April low",
+  "zh": "下降趋势 · 反弹 9.5%，重回 4 月低点上方"
  },
  "read": [
   {
-   "en": "Marvell rose 5.7% on Nov 6 to $141.20, trading between $135.34 and $146.32. It remains below the falling 5-day ($155.6), 10-day ($192.2), 30-day ($235.3) and 100-day ($232.2) averages and the rising 200-day ($185.1). MACD has been below its signal since Oct 12 and below zero, the histogram no longer widening; Parabolic SAR has been bearish since Oct 29 ($219.50), and RSI is 26.",
-   "zh": "Marvell 11月6日上涨 5.7%，收于 $141.20，盘中区间 $135.34–146.32。股价仍位于下行的 5 日（$155.6）、10 日（$192.2）、30 日（$235.3）和 100 日均线（$232.2）以及上行的 200 日均线（$185.1）下方。MACD 自 10月12日起位于信号线下方且在零轴之下，柱状图不再扩大；抛物线 SAR 自 10月29日起看空（$219.50），RSI 为 26。"
+   "en": "Marvell rose 9.5% on Nov 9 to $154.60, trading $142.28–157.68. It is above the falling 5-day average ($152.22) but below the falling 10-day ($184.25), 30-day ($232.01) and 100-day ($230.81) and the rising 200-day ($185.42). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 29 ($209.06), and RSI is 32.",
+   "zh": "Marvell 11月9日上涨 9.5%，收于 $154.60，盘中区间 $142.28–157.68。股价位于下行的 5 日均线（$152.22）上方，但仍在下行的 10 日（$184.25）、30 日（$232.01）和 100 日均线（$230.81）以及上行的 200 日均线（$185.42）下方。MACD 自 10月12日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 10月29日起看空（$209.06），RSI 为 32。"
   },
   {
-   "en": "The bounce held above the $132.54 Nov 5 low, but the $146.32 high stopped just under the $146.85 April 28 low, which stays resistance. Resistance is $146.3–146.9, then $154.8–158 (Nov 4 low, 5-day, May 12 low) and $162.9–166. Support is $135.3 (Nov 6 low), then $132.5 and $128.4 (Apr 16 low). A close above $146.9 would target $155–158; below $132.5, $128.4.",
-   "zh": "反弹守住 11月5日低点 $132.54，但盘中高点 $146.32 止步于 4月28日低点 $146.85 下方，该位置仍为阻力。阻力为 $146.3–146.9，其次 $154.8–158（11月4日低点、5 日均线、5月12日低点）和 $162.9–166。支撑为 $135.3（11月6日低点），其次 $132.5 和 $128.4（4月16日低点）。若收盘站上 $146.9，下一目标看 $155–158；若跌破 $132.5，则看 $128.4。"
+   "en": "The rebound reclaimed the $146.3–146.9 zone (Apr 28 low, Nov 6 high), now support, but the close sat just below the $154.78 Nov 4 low. Resistance is $154.8–158 (Nov 4 and May 12 lows), then $162.9 (Jul 29 low) and $171.4–172 (Nov 2–3 closes). Support is $152.2 (5-day), then $146.3–146.9 and $135.3. A close above $158 would target $163–172; below $146.3, $135–142.",
+   "zh": "此次反弹收复 $146.3–146.9 区间（4月28日低点、11月6日高点），该区间转为支撑，但收盘略低于 11月4日低点 $154.78。阻力为 $154.8–158（11月4日和5月12日低点），其次 $162.9（7月29日低点）和 $171.4–172（11月2–3日收盘）。支撑为 $152.2（5 日均线），其次 $146.3–146.9 和 $135.3。若收盘站上 $158，下一目标看 $163–172；若跌破 $146.3，则看 $135–142。"
   }
  ],
  "levels": {
   "r": [
    [
-    146.6,
-    {
-     "en": "Apr 28 low $146.85; Nov 6 high $146.32",
-     "zh": "4月28日低点 $146.85；11月6日高点 $146.32"
-    }
-   ],
-   [
     156.4,
     {
-     "en": "Nov 4 low $154.78; 5-day average $155.6; May 12 low $157.96",
-     "zh": "11月4日低点 $154.78；5日均线 $155.6；5月12日低点 $157.96"
+     "en": "Nov 4 low $154.78; Nov 9 high $157.68; May 12 low $157.96",
+     "zh": "11月4日低点 $154.78；11月9日高点 $157.68；5月12日低点 $157.96"
     }
    ],
    [
-    165,
+    162.9,
     {
-     "en": "Jul 29 low $162.9",
-     "zh": "7月29日低点 $162.9"
+     "en": "Jul 29 low",
+     "zh": "7月29日低点"
+    }
+   ],
+   [
+    171.7,
+    {
+     "en": "Nov 2 and Nov 3 closes ($171.41–171.97)",
+     "zh": "11月2日和11月3日收盘（$171.41–171.97）"
     }
    ]
   ],
   "s": [
    [
+    152.2,
+    {
+     "en": "5-day average",
+     "zh": "5日均线"
+    }
+   ],
+   [
+    146.6,
+    {
+     "en": "Apr 28 low $146.85, reclaimed; Nov 6 high $146.32",
+     "zh": "4月28日低点 $146.85，已收复；11月6日高点 $146.32"
+    }
+   ],
+   [
     135.3,
     {
      "en": "Nov 6 low",
      "zh": "11月6日低点"
-    }
-   ],
-   [
-    132.5,
-    {
-     "en": "Nov 5 low",
-     "zh": "11月5日低点"
-    }
-   ],
-   [
-    128.4,
-    {
-     "en": "Apr 16 low",
-     "zh": "4月16日低点"
     }
    ]
   ]

@@ -1,34 +1,34 @@
 {
- "asof": "Nov 6, 2026",
- "close": 259.3,
+ "asof": "Nov 9, 2026",
+ "close": 266.93,
  "bias": {
-  "en": "Uptrend pausing · holding $258, capped at $264–265",
-  "zh": "上升趋势暂歇 · 守住 $258，受制于 $264–265"
+  "en": "Uptrend · cleared $265, closed at the day's low",
+  "zh": "上升趋势 · 突破 $265，收于全日低点"
  },
  "read": [
   {
-   "en": "Amazon slipped 0.3% on Nov 6 to $259.30, trading $258.53–264.18. It holds above all its averages: the rising 5-day ($256.4), 30-day ($253.7), 100-day ($252.5) and 200-day ($243.9) and the falling 10-day ($252.3). MACD crossed above its signal on Nov 4, above zero, with the histogram still rising; Parabolic SAR has been bullish since Nov 4 ($231.92), and RSI is 54.",
-   "zh": "亚马逊 11月6日微跌 0.3%，收于 $259.30，盘中区间 $258.53–264.18。股价位于所有均线上方：上行的 5 日（$256.4）、30 日（$253.7）、100 日（$252.5）和 200 日均线（$243.9），以及下行的 10 日均线（$252.3）。MACD 于 11月4日上穿信号线，位于零轴上方，柱状图仍在上升；抛物线 SAR 自 11月4日起看多（$231.92），RSI 为 54。"
+   "en": "Amazon rose 2.9% on Nov 9 to $266.93, trading $266.92–275.31 and closing at the low. It is above every rising average: the 5-day ($260.63), 10-day ($254.06), 30-day ($254.41), 100-day ($252.81) and 200-day ($244.08). MACD has been above its signal since Nov 4 and above zero, histogram widening; Parabolic SAR has been bullish since Nov 4 ($233.58), and RSI is 59.",
+   "zh": "亚马逊 11月9日上涨 2.9%，收于 $266.93，盘中区间 $266.92–275.31，收于全日低点。股价位于所有上行均线上方：5 日（$260.63）、10 日（$254.06）、30 日（$254.41）、100 日（$252.81）和 200 日均线（$244.08）。MACD 自 11月4日起位于信号线上方且在零轴上方，柱状图扩大；抛物线 SAR 自 11月4日起看多（$233.58），RSI 为 59。"
   },
   {
-   "en": "No level changed: the $257–259.5 support held at the $258.53 low, and the $264.18 high stopped under the $263.9–265.3 resistance. Resistance is $263.9–265.3 (Nov 4 low, Oct 20 high), then $271.5–273.2 (Nov 4–5 highs) and $287.2. Support is $257–259.5, then $252.3–253.7 (10, 30 and 100-day) and $243.9 (200-day). A close above $265.3 would target $271.5–273; below $257, $252–254.",
-   "zh": "关键位置未变：$257–259.5 支撑在 $258.53 低点守住，盘中高点 $264.18 未能突破 $263.9–265.3 阻力。阻力为 $263.9–265.3（11月4日低点、10月20日高点），其次 $271.5–273.2（11月4–5日高点）和 $287.2。支撑为 $257–259.5，其次 $252.3–253.7（10、30 和 100 日均线）和 $243.9（200 日均线）。若收盘站上 $265.3，下一目标看 $271.5–273；若跌破 $257，则看 $252–254。"
+   "en": "The close cleared the $263.9–265.3 resistance (Nov 4 low, Oct 20 high), now support, though the day faded from $275.31. Resistance is $271.5–275.3 (Nov 4, 5 and 9 highs), then $278.6 (May 5 high) and $287.2 (52-week high). Support is $263.9–265.3, then $258.5–260.6 (Nov 6 low, 5-day) and $252.8–254.4 (10, 30 and 100-day). A close above $275.3 would target $278.6; below $263.9, $258.5–260.6.",
+   "zh": "收盘突破 $263.9–265.3 阻力（11月4日低点、10月20日高点），该区间转为支撑，但盘中自 $275.31 回落。阻力为 $271.5–275.3（11月4日、5日和9日高点），其次 $278.6（5月5日高点）和 $287.2（52 周高点）。支撑为 $263.9–265.3，其次 $258.5–260.6（11月6日低点、5 日均线）和 $252.8–254.4（10 日、30 日和 100 日均线）。若收盘站上 $275.3，下一目标看 $278.6；若跌破 $263.9，则看 $258.5–260.6。"
   }
  ],
  "levels": {
   "r": [
    [
-    264.6,
+    274,
     {
-     "en": "Nov 4 low $263.85; Oct 20 high $265.34; Nov 6 high $264.18",
-     "zh": "11月4日低点 $263.85；10月20日高点 $265.34；11月6日高点 $264.18"
+     "en": "Nov 4 high $271.49; Nov 5 high $273.23; Nov 9 high $275.31",
+     "zh": "11月4日高点 $271.49；11月5日高点 $273.23；11月9日高点 $275.31"
     }
    ],
    [
-    272.4,
+    278.6,
     {
-     "en": "Nov 4 high $271.49; Nov 5 high $273.23",
-     "zh": "11月4日高点 $271.49；11月5日高点 $273.23"
+     "en": "May 5 high",
+     "zh": "5月5日高点"
     }
    ],
    [
@@ -41,24 +41,24 @@
   ],
   "s": [
    [
-    258.3,
+    264.6,
     {
-     "en": "Nov 6 low $258.53; Aug 21 low $257.0; Sep 21 high $259.5",
-     "zh": "11月6日低点 $258.53；8月21日低点 $257.0；9月21日高点 $259.5"
+     "en": "Nov 4 low $263.85; Oct 20 high $265.34, cleared",
+     "zh": "11月4日低点 $263.85；10月20日高点 $265.34，已突破"
     }
    ],
    [
-    253,
+    259.5,
     {
-     "en": "10, 30 and 100-day averages ($252.3–253.7); Nov 5 low $252.32",
-     "zh": "10、30 和 100 日均线（$252.3–253.7）；11月5日低点 $252.32"
+     "en": "Nov 6 low $258.53; 5-day average $260.6",
+     "zh": "11月6日低点 $258.53；5日均线 $260.6"
     }
    ],
    [
-    243.9,
+    253.5,
     {
-     "en": "200-day average",
-     "zh": "200日均线"
+     "en": "10, 30 and 100-day averages ($252.8–254.4)",
+     "zh": "10日、30日和100日均线（$252.8–254.4）"
     }
    ]
   ]

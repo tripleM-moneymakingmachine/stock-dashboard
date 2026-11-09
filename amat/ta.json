@@ -1,64 +1,64 @@
 {
- "asof": "Nov 6, 2026",
- "close": 332.71,
+ "asof": "Nov 9, 2026",
+ "close": 370.55,
  "bias": {
-  "en": "Bearish · oversold bounce faded under $350",
-  "zh": "看空 · 超卖反弹在 $350 下方回落"
+  "en": "Bearish · 11% rally, testing the 10-day average",
+  "zh": "看空 · 大涨 11%，测试 10 日均线"
  },
  "read": [
   {
-   "en": "Applied Materials rose 4.2% on Nov 6 to $332.71, trading $329.29–348.71 after opening at $346.15. It remains below the falling 5-day ($355.6), 10-day ($378.9), 30-day ($440.2) and 100-day ($499.3) and the rising 200-day ($445.4) averages. MACD has been below its signal since Oct 13, below zero, with the histogram still widening; Parabolic SAR has been bearish since Nov 2 ($415.65), and RSI is 30.5.",
-   "zh": "应用材料 11月6日上涨 4.2%，收于 $332.71，开盘 $346.15，盘中区间 $329.29–348.71。股价仍位于下行的 5 日（$355.6）、10 日（$378.9）、30 日（$440.2）和 100 日均线（$499.3）以及上行的 200 日均线（$445.4）下方。MACD 自 10月13日起位于信号线下方，处于零轴下方，柱状图仍在扩大；抛物线 SAR 自 11月2日起看空（$415.65），RSI 为 30.5。"
+   "en": "Applied Materials jumped 11.4% on Nov 9 to $370.55, trading $342.98–375.52. It closed above the falling 5-day ($354.77) but below the falling 10-day ($377.20), 30-day ($436.32) and 100-day ($497.08) and the rising 200-day ($445.60). MACD has been below its signal since Oct 13 and below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 2 ($409.73), and RSI is 41.",
+   "zh": "应用材料 11月9日大涨 11.4%，收于 $370.55，盘中区间 $342.98–375.52。收盘站上下行的 5 日均线（$354.77），但仍位于下行的 10 日（$377.20）、30 日（$436.32）和 100 日均线（$497.08）以及上行的 200 日均线（$445.60）下方。MACD 自 10月13日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 11月2日起看空（$409.73），RSI 为 41。"
   },
   {
-   "en": "The bounce held the $315.7–317 support but faded from $348.7, short of the $350 resistance. Resistance is $348.7–350 (Nov 5–6 highs), then $355.3–359 (Mar 10 and Apr 1 highs, 5-day) and $362.9 (Nov 4 low). Support is $329.3 (Nov 6 low), then $315.7–317 and $311.1. A close above $350 would target $355–363; below $315.7, $311.",
-   "zh": "反弹守住 $315.7–317 支撑，但从 $348.7 回落，未能触及 $350 阻力。阻力为 $348.7–350（11月5–6日高点），其次 $355.3–359（3月10日和4月1日高点、5 日均线）和 $362.9（11月4日低点）。支撑为 $329.3（11月6日低点），其次 $315.7–317 和 $311.1。若收盘站上 $350，下一目标看 $355–363；若跌破 $315.7，则看 $311。"
+   "en": "The rally broke the $350, $357 and $363 resistances (Nov 5–6 highs, 5-day, Nov 4 low), now support, and stalled under the 10-day. Resistance is $372.8–377.2 (Oct 23 low, Nov 9 high, 10-day), then $390–399 (Oct 30 close, Nov 2 high) and $409.7 (SAR). Support is $362.9, then $343–350 and $329.3. A close above $377.2 would target $390–399; below $362.9, $343–350.",
+   "zh": "此轮上涨突破 $350、$357 和 $363 阻力（11月5–6日高点、5 日均线、11月4日低点），均转为支撑，并在 10 日均线下方受阻。阻力为 $372.8–377.2（10月23日低点、11月9日高点、10 日均线），其次 $390–399（10月30日收盘、11月2日高点）和 $409.7（SAR）。支撑为 $362.9，其次 $343–350 和 $329.3。若收盘站上 $377.2，下一目标看 $390–399；若跌破 $362.9，则看 $343–350。"
   }
  ],
  "levels": {
   "r": [
    [
-    350,
+    375,
     {
-     "en": "Nov 5 high $349.99; Nov 6 high $348.71",
-     "zh": "11月5日高点 $349.99；11月6日高点 $348.71"
+     "en": "Oct 23 low $372.8; Nov 9 high $375.52; 10-day average $377.2",
+     "zh": "10月23日低点 $372.8；11月9日高点 $375.52；10日均线 $377.2"
     }
    ],
    [
-    357,
+    395,
     {
-     "en": "Mar 10 and Apr 1 highs ($355.3–359); 5-day average $355.6",
-     "zh": "3月10日和4月1日高点（$355.3–359）；5日均线 $355.6"
+     "en": "Oct 30 close $390.09; Nov 2 high $399.19",
+     "zh": "10月30日收盘 $390.09；11月2日高点 $399.19"
     }
    ],
    [
-    363,
+    409.7,
     {
-     "en": "Nov 4 low $362.9",
-     "zh": "11月4日低点 $362.9"
+     "en": "Parabolic SAR",
+     "zh": "抛物线 SAR"
     }
    ]
   ],
   "s": [
    [
+    362.9,
+    {
+     "en": "Nov 4 low, reclaimed",
+     "zh": "11月4日低点，已收复"
+    }
+   ],
+   [
+    346.5,
+    {
+     "en": "Nov 9 low $342.98; Nov 5 high $349.99",
+     "zh": "11月9日低点 $342.98；11月5日高点 $349.99"
+    }
+   ],
+   [
     329.3,
     {
      "en": "Nov 6 low $329.29",
      "zh": "11月6日低点 $329.29"
-    }
-   ],
-   [
-    316,
-    {
-     "en": "Nov 5 low $316.95; Mar 9 low $316.66; Jan 20 low $315.7",
-     "zh": "11月5日低点 $316.95；3月9日低点 $316.66；1月20日低点 $315.7"
-    }
-   ],
-   [
-    311.1,
-    {
-     "en": "Jan 23 low",
-     "zh": "1月23日低点"
     }
    ]
   ]

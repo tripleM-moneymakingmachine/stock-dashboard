@@ -2,7 +2,7 @@
  "pelosi": {
   "title": "Nancy Pelosi household",
   "basis": "Estimated weights, STOCK Act filings",
-  "last_stock_filing": "2026-08-21",
+  "last_stock_filing": "2026-11-06",
   "weights_source": {
    "name": "Pelosi Tracker",
    "url": "https://pelositracker.app/portfolios/nancy-pelosi",
@@ -82,6 +82,14 @@
    ]
   ],
   "trades": [
+   [
+    "2026-10-07",
+    "WBD",
+    "Sell",
+    "Cash proceeds from the Paramount Skydance merger",
+    "$50K–100K",
+    "20035780"
+   ],
    [
     "2026-07-28",
     "BE",
@@ -271,9 +279,10 @@
    "20033725",
    "20034836",
    "20035143",
-   "20035553"
+   "20035553",
+   "20035780"
   ],
-  "latest_filing": "Latest filing (Oct 2, 2026, #20035553): a $500K–1M real-estate LLC investment, no stock trades.",
+  "latest_filing": "Latest filing (Nov 6, 2026, #20035780): Warner Bros. Discovery shares ($50K–100K) cashed out in the Paramount Skydance merger on Oct 7; WBD was not in the estimated weights, so holdings are unchanged.",
   "filing_year": "2026",
   "filing_url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/{year}/{id}.pdf"
  },

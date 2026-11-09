@@ -1,22 +1,52 @@
 {
- "asof": "Nov 6, 2026",
- "close": 1424.75,
+ "asof": "Nov 9, 2026",
+ "close": 1513.25,
  "bias": {
-  "en": "Bearish · reclaimed $1,365, capped at $1,441–1,447",
-  "zh": "看空 · 收复 $1,365，受制于 $1,441–1,447"
+  "en": "Bearish · rally stalled at the Jul 29 low and SAR",
+  "zh": "看空 · 反弹受阻于 7 月 29 日低点和 SAR"
  },
  "read": [
   {
-   "en": "ASML rose 5.0% on Nov 6 to $1,424.75, trading $1,409.21–1,447.45 after opening at $1,446.08. It remains below the falling 5-day ($1,471.2), 10-day ($1,548.7), 30-day ($1,671.1) and 100-day ($1,724.5) and the rising 200-day ($1,600.2) averages. MACD has been below its signal since Oct 12, below zero, with the histogram still widening; Parabolic SAR has been bearish since Oct 13 ($1,571.22), and RSI is 35.",
-   "zh": "阿斯麦 11月6日上涨 5.0%，收于 $1,424.75，开盘 $1,446.08，盘中区间 $1,409.21–1,447.45。股价仍位于下行的 5 日（$1,471.2）、10 日（$1,548.7）、30 日（$1,671.1）和 100 日均线（$1,724.5）以及上行的 200 日均线（$1,600.2）下方。MACD 自 10月12日起位于信号线下方，处于零轴下方，柱状图仍在扩大；抛物线 SAR 自 10月13日起看空（$1,571.22），RSI 为 35。"
+   "en": "ASML rose 6.2% on Nov 9 to $1,513.25, trading $1,468.02–1,525.83. It closed above the falling 5-day ($1,468.62) but below the falling 10-day ($1,540.92), 30-day ($1,662.50) and 100-day ($1,720.90) and the rising 200-day ($1,600.77). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 13 ($1,532.31), and RSI is 43.",
+   "zh": "阿斯麦 11月9日上涨 6.2%，收于 $1,513.25，盘中区间 $1,468.02–1,525.83。收盘站上下行的 5 日均线（$1,468.62），但仍位于下行的 10 日（$1,540.92）、30 日（$1,662.50）和 100 日均线（$1,720.90）以及上行的 200 日均线（$1,600.77）下方。MACD 自 10月12日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 10月13日起看空（$1,532.31），RSI 为 43。"
   },
   {
-   "en": "The gap higher reclaimed the $1,364.8 Apr 28 low, now support, but stalled at $1,441–1,447. Resistance is $1,441.3–1,447.5 (May 19 low, Nov 5–6 highs), then $1,471–1,493.5 (5-day, Nov 4 low, Jan 28 high) and $1,530.6 (Jul 29 low). Support is $1,409.2 (Nov 6 low), then $1,364.8 and $1,329–1,333.6. A close above $1,447.5 would target $1,471–1,494; below $1,409, $1,365.",
-   "zh": "此次跳空上涨收复 4月28日低点 $1,364.8，该位置转为支撑，但在 $1,441–1,447 受阻。阻力为 $1,441.3–1,447.5（5月19日低点、11月5–6日高点），其次 $1,471–1,493.5（5 日均线、11月4日低点、1月28日高点）和 $1,530.6（7月29日低点）。支撑为 $1,409.2（11月6日低点），其次 $1,364.8 和 $1,329–1,333.6。若收盘站上 $1,447.5，下一目标看 $1,471–1,494；若跌破 $1,409，则看 $1,365。"
+   "en": "The rally cleared the $1,441–1,447.5 and $1,471–1,493.5 resistances (Nov 5–6 highs, 5-day, Nov 4 low, Jan 28 high), now support, and stopped under the $1,530.6 Jul 29 low. Resistance is $1,525.8–1,532.3 (Nov 9 high, Jul 29 low, SAR), then $1,540.9–1,547 (10-day, Nov 3 low) and $1,575.6. Support is $1,468–1,479, then $1,441–1,447.5 and $1,409.2. A close above $1,532.3 would target $1,541–1,576; below $1,468, $1,441–1,447.",
+   "zh": "此轮上涨突破 $1,441–1,447.5 和 $1,471–1,493.5 阻力（11月5–6日高点、5 日均线、11月4日低点、1月28日高点），均转为支撑，并止步于 7月29日低点 $1,530.6 下方。阻力为 $1,525.8–1,532.3（11月9日高点、7月29日低点、SAR），其次 $1,540.9–1,547（10 日均线、11月3日低点）和 $1,575.6。支撑为 $1,468–1,479，其次 $1,441–1,447.5 和 $1,409.2。若收盘站上 $1,532.3，下一目标看 $1,541–1,576；若跌破 $1,468，则看 $1,441–1,447。"
   }
  ],
  "levels": {
   "r": [
+   [
+    1530.6,
+    {
+     "en": "Jul 29 low; Nov 9 high $1,525.83; Parabolic SAR $1,532.3",
+     "zh": "7月29日低点；11月9日高点 $1,525.83；抛物线 SAR $1,532.3"
+    }
+   ],
+   [
+    1544,
+    {
+     "en": "10-day average $1,540.9; Nov 3 low $1,547.0",
+     "zh": "10日均线 $1,540.9；11月3日低点 $1,547.0"
+    }
+   ],
+   [
+    1575.6,
+    {
+     "en": "Nov 3 high",
+     "zh": "11月3日高点"
+    }
+   ]
+  ],
+  "s": [
+   [
+    1473,
+    {
+     "en": "Nov 9 low $1,468.0; 5-day average $1,468.6; Nov 4 low $1,479.0",
+     "zh": "11月9日低点 $1,468.0；5日均线 $1,468.6；11月4日低点 $1,479.0"
+    }
+   ],
    [
     1444,
     {
@@ -25,40 +55,10 @@
     }
    ],
    [
-    1482,
-    {
-     "en": "5-day average $1,471.2; Nov 4 low $1,479.0; Jan 28 high $1,493.5",
-     "zh": "5日均线 $1,471.2；11月4日低点 $1,479.0；1月28日高点 $1,493.5"
-    }
-   ],
-   [
-    1530.6,
-    {
-     "en": "Jul 29 low",
-     "zh": "7月29日低点"
-    }
-   ]
-  ],
-  "s": [
-   [
     1409.2,
     {
      "en": "Nov 6 low $1,409.21",
      "zh": "11月6日低点 $1,409.21"
-    }
-   ],
-   [
-    1364.8,
-    {
-     "en": "Apr 28 low, reclaimed",
-     "zh": "4月28日低点，已收复"
-    }
-   ],
-   [
-    1331,
-    {
-     "en": "Mar 3 low $1,329.0; Mar 12 low $1,333.6",
-     "zh": "3月3日低点 $1,329.0；3月12日低点 $1,333.6"
     }
    ]
   ]

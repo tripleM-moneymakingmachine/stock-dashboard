@@ -1,57 +1,64 @@
 {
- "asof": "Nov 6, 2026",
- "close": 50.13,
+ "asof": "Nov 9, 2026",
+ "close": 52.1,
  "bias": {
-  "en": "Bearish · bounce stalled at the $50.8 February high",
-  "zh": "看空 · 反弹受阻于 2 月高点 $50.8"
+  "en": "Bearish · back above $51.9, under the 5-day",
+  "zh": "看空 · 重回 $51.9 上方，仍在 5 日均线下方"
  },
  "read": [
   {
-   "en": "AAOI rose 6.9% on Nov 6 to $50.13, trading $45.15–51.90 on heavy volume. It remains below the falling 5-day ($56.55), 10-day ($66.21), 30-day ($86.11) and 100-day ($108.37) and the rising 200-day ($114.65) averages. MACD has been below its signal since Oct 13, below zero, with the histogram still widening; Parabolic SAR has been bearish since Oct 12 ($67.16), and RSI is 30.",
-   "zh": "AAOI 11月6日上涨 6.9%，收于 $50.13，盘中区间 $45.15–51.90，成交量明显放大。股价仍位于下行的 5 日（$56.55）、10 日（$66.21）、30 日（$86.11）和 100 日均线（$108.37）以及上行的 200 日均线（$114.65）下方。MACD 自 10月13日起位于信号线下方，处于零轴下方，柱状图仍在扩大；抛物线 SAR 自 10月12日起看空（$67.16），RSI 为 30。"
+   "en": "Applied Optoelectronics rose 3.9% on Nov 9 to $52.10, trading $48.32–54.03. It remains below the falling 5-day ($54.47), 10-day ($64.23), 30-day ($84.62) and 100-day ($107.21) averages and the rising 200-day ($114.73). MACD has been below its signal since Oct 13 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($62.76), and RSI is 32.",
+   "zh": "Applied Optoelectronics 11月9日上涨 3.9%，收于 $52.10，盘中区间 $48.32–54.03。股价仍位于下行的 5 日（$54.47）、10 日（$64.23）、30 日（$84.62）和 100 日均线（$107.21）以及上行的 200 日均线（$114.73）下方。MACD 自 10月13日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$62.76），RSI 为 32。"
   },
   {
-   "en": "The rebound reached $51.90 but closed just under the $50.8 Feb 11 high, and the $45.15 low dipped under the Nov 5 low before recovering. Resistance is $50.8–51.9, then $56.6–57.3 (5-day, Nov 5 high, Nov 4 low) and $61.9–62.3 (Nov 2–3 lows). Support is $45.2–45.9 (Nov 5–6 lows), then $41.1–42.0. A close above $51.9 would target $56.6–57.3; below $45.2, $41–42.",
-   "zh": "反弹最高触及 $51.90，但收盘仍略低于 2月11日高点 $50.8；盘中低点 $45.15 一度跌破 11月5日低点后收复。阻力为 $50.8–51.9，其次 $56.6–57.3（5 日均线、11月5日高点、11月4日低点）和 $61.9–62.3（11月2–3日低点）。支撑为 $45.2–45.9（11月5–6日低点），其次 $41.1–42.0。若收盘站上 $51.9，下一目标看 $56.6–57.3；若跌破 $45.2，则看 $41–42。"
+   "en": "The close cleared the $50.8–51.9 resistance (Feb 11 high, Nov 6 high), now support; the $54.03 high stopped just under the 5-day. Resistance is $54.0–54.5, then $56.9–57.2 (Nov 5 high, Nov 4 low) and $61.9–62.8 (Nov 2–3 lows, SAR). Support is $50.8–51.9, then $48.3 (Nov 9 low) and $45.2–45.9. A close above $54.5 would target $57; below $50.8, $48.3.",
+   "zh": "收盘突破 $50.8–51.9 阻力（2月11日高点、11月6日高点），该区间转为支撑；$54.03 的高点止步于 5 日均线下方。阻力为 $54.0–54.5，其次 $56.9–57.2（11月5日高点、11月4日低点）和 $61.9–62.8（11月2–3日低点、SAR）。支撑为 $50.8–51.9，其次 $48.3（11月9日低点）和 $45.2–45.9。若收盘站上 $54.5，下一目标看 $57；若跌破 $50.8，则看 $48.3。"
   }
  ],
  "levels": {
   "r": [
    [
-    51.3,
+    54.3,
     {
-     "en": "Feb 11 high $50.8; Nov 6 high $51.90",
-     "zh": "2月11日高点 $50.8；11月6日高点 $51.90"
+     "en": "Nov 9 high $54.03; 5-day average $54.47",
+     "zh": "11月9日高点 $54.03；5日均线 $54.47"
     }
    ],
    [
     57,
     {
-     "en": "5-day average $56.55; Nov 5 high $56.89; Nov 4 low $57.24",
-     "zh": "5日均线 $56.55；11月5日高点 $56.89；11月4日低点 $57.24"
+     "en": "Nov 5 high $56.89; Nov 4 low $57.24",
+     "zh": "11月5日高点 $56.89；11月4日低点 $57.24"
     }
    ],
    [
-    62,
+    62.3,
     {
-     "en": "Nov 2–3 lows ($61.9–62.3)",
-     "zh": "11月2–3日低点（$61.9–62.3）"
+     "en": "Nov 2–3 lows ($61.9–62.3); Parabolic SAR $62.76",
+     "zh": "11月2–3日低点（$61.9–62.3）；抛物线 SAR $62.76"
     }
    ]
   ],
   "s": [
    [
+    51.3,
+    {
+     "en": "Feb 11 high $50.8; Nov 6 high $51.90, reclaimed",
+     "zh": "2月11日高点 $50.8；11月6日高点 $51.90，已收复"
+    }
+   ],
+   [
+    48.3,
+    {
+     "en": "Nov 9 low $48.32",
+     "zh": "11月9日低点 $48.32"
+    }
+   ],
+   [
     45.5,
     {
      "en": "Nov 6 low $45.15; Nov 5 low $45.88",
      "zh": "11月6日低点 $45.15；11月5日低点 $45.88"
-    }
-   ],
-   [
-    41.5,
-    {
-     "en": "Feb 17 low $41.12; Dec 23 high $41.96",
-     "zh": "2月17日低点 $41.12；12月23日高点 $41.96"
     }
    ]
   ]
