@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-10",
- "asofText": "Nov 10, 2026",
+ "asof": "2026-11-11",
+ "asofText": "Nov 11, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1295,13 +1295,13 @@
    "state": "TX",
    "lat": 31,
    "lon": -99,
-   "gw": 10.5,
+   "gw": 10.0,
    "now": 0,
    "status": "pl",
    "capexB": null,
    "est": true,
    "unsited": true,
-   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). No locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map."
+   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). Apart from Starbase, no locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map. Reduced by ~0.5 GW now shown at the disclosed Starbase site."
   },
   {
    "partner": null,
@@ -1454,6 +1454,20 @@
    "capexB": null,
    "est": true,
    "note": "~500 MW campus proposed near Corduroy and Wynn roads; Vantage told the city it will not pursue it after voters passed Issue 25 (60%) capping data centers at 25 MW on Nov 3"
+  },
+  {
+   "id": "xai-sb",
+   "name": "Starbase power plant + supercompute (Brownsville port)",
+   "owner": "spcx",
+   "partner": null,
+   "state": "TX",
+   "lat": 25.95,
+   "lon": -97.35,
+   "gw": 0.5,
+   "status": "pl",
+   "capexB": 24,
+   "est": true,
+   "note": "$24B initial phases of a gas-fired plant and 'super-compute facility' on 444 acres de-annexed from Brownsville and annexed into Starbase; tax-break hearing in December. GW not disclosed (~ is Claude's estimate)"
   }
  ],
  "risk": {
@@ -1973,20 +1987,20 @@
   },
   "spcx": {
    "grade": "Medium",
-   "view": "Live today: ~1.7 GW in Memphis (SpaceX's Sep 30 nameplate). The near-term build (Colossus 2 Building 3, ~0.8 GW) is in Tennessee/Mississippi, where neither governor backs a pause. The exposure is the 2027 plan: Musk targets at least 13 GW by end-2027, and the ~10.5 GW not yet sited is reportedly headed to new Texas sites, which now fall under Hinojosa's pause. Risk raised from Low-Medium to Medium on that basis.",
+   "view": "Live today: ~1.7 GW in Memphis (SpaceX's Sep 30 nameplate). The near-term build (Colossus 2 Building 3, ~0.8 GW) is in Tennessee/Mississippi, where neither governor backs a pause. The exposure is the 2027 plan: Musk targets at least 13 GW by end-2027, and the first disclosed piece, a $24B gas plant plus supercompute site at Starbase, shows the playbook: SpaceX-controlled city, own power, no ERCOT queue, routed around Brownsville's moratorium. That limits local and grid risk, but the gas plant still needs TCEQ air permits that Hinojosa has signalled she will hold, so Texas timing risk stays; Medium.",
    "moves": [
     "Keep near-term growth in Memphis/Southaven",
-    "Site 2027 builds outside Texas or energise before new rules",
-    "Behind-the-meter gas and batteries to avoid grid fights"
+    "Self-powered Starbase build under its own city's zoning; seek the air permit before Jan 19",
+    "Site the rest of the 2027 plan outside Texas or behind the meter"
    ]
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and runs six Texas locations. Its letter asked Hinojosa to let permitted projects finish, but she has now said she will use the permits that even started projects still need, so contracted Texas capacity is not fully safe. Monday's 5.6% bounce on a Wayve training deal is sentiment; credit is the real signal, with five-year CDS above 1,240 bp and 2031 bonds yielding over 16%. Tuesday's results need to show the backlog converting and funding for 2027 lined up; Microsoft trimming its neocloud roster is the other overhang.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits that even started projects still need, so contracted Texas capacity is not fully safe. Q3 answered the demand question: backlog up to $132.5B, 2026 revenue guidance raised to $13.0–13.3B and 1.7 GW active. The open question is funding, not demand: $709M net loss, $846M quarterly interest and ~$39B of 2026 capex, eased by ~$9B of customer prepayments due in the next three months. The after-hours pop is fundamentals; the earlier 50%+ drawdown was mostly credit and politics sentiment, but CDS and bond yields are the gauge to watch.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
-    "Lean on North Dakota (Applied Digital) and Pennsylvania",
-    "Prioritise energised capacity in contracts"
+    "Push more customer prepayment structures to fund 2027",
+    "Lean on North Dakota (Applied Digital) and Pennsylvania"
    ]
   },
   "nbis": {
@@ -2050,6 +2064,50 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-10",
+   "co": [
+    "spcx"
+   ],
+   "t": "Starbase's city notice shows SpaceX plans a $24B gas-fired power plant and 'super-compute facility' on 444 acres near the Port of Brownsville, land Brownsville de-annexed at SpaceX's request before its own 90-day data center moratorium took effect; Starbase will hear a tax-break request in December. Self-powered, so it sidesteps ERCOT, but the gas plant still needs state air permits that Hinojosa has said she will use as leverage.",
+   "src": "https://texastribune.org/2026/11/10/texas-spacex-data-center-power-plant"
+  },
+  {
+   "d": "2026-11-10",
+   "co": [
+    "crwv"
+   ],
+   "t": "CoreWeave beat on Q3 (revenue $3.66B, +168%), lifted backlog to $132.5B from $104B in June, raised 2026 revenue guidance to $13.0–13.3B, reported over 1.7 GW of active power and expects about $9B of customer prepayments in the next three months; shares rose 6–7% after hours.",
+   "src": "https://cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
+  },
+  {
+   "d": "2026-11-10",
+   "co": [
+    "*"
+   ],
+   "t": "Nvidia fell another 5.5% to about $169 on three times normal volume as the board probe into Jensen Huang continued, a week before its Nov 17 results, while Broadcom rose 3.9%, AMD 1.3% (it will put $2.5B into Anthropic's private placement) and TSMC 2.2% after record October sales up 60% from a year earlier; power and optics names (GE Vernova, Bloom, Coherent) gave back 4–5%.",
+   "src": "https://fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-nvidia-stock-plunges-5-5-as-ceo-scandal-overshadows-its-upcoming-earnings-report"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "*"
+   ],
+   "t": "The Senate voted 73–25 to take up the bipartisan permitting bill that speeds power-plant and transmission approvals and makes large data centers pay their own grid-upgrade costs, a wider margin than TD Cowen's 25% passage odds implied; The Hill says Senate passage is likely in the weeks ahead, though some Democrats who voted yes want changes first.",
+   "src": "https://thehill.com/policy/energy-environment/6208626-bipartisan-permitting-reform-bill-energy-infrastructure"
+  },
+  {
+   "d": "2026-11-09",
+   "co": [
+    "msft",
+    "amzn",
+    "googl",
+    "meta",
+    "qts"
+   ],
+   "t": "Georgia: governor-elect Bottoms now describes her executive-order pause on new state data center approvals as one to six months while incentives and siting rules are reviewed, and the new 3–2 Democratic PSC plans an affordability docket on who pays for data center grid costs; Southern Co. says it does not expect a pause to hit its pipeline.",
+   "src": "https://georgiaconstructioninsider.com/news/bottoms-data-center-pause-pledge"
+  },
   {
    "d": "2026-11-09",
    "co": [
@@ -2363,6 +2421,18 @@
  ],
  "sources": [
   [
+   "Texas Tribune: SpaceX $24B Starbase data center and power plant",
+   "https://texastribune.org/2026/11/10/texas-spacex-data-center-power-plant"
+  ],
+  [
+   "CNBC: CoreWeave Q3 2026 results",
+   "https://cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
+  ],
+  [
+   "The Hill: Senate advances permitting bill 73–25",
+   "https://thehill.com/policy/energy-environment/6208626-bipartisan-permitting-reform-bill-energy-infrastructure"
+  ],
+  [
    "The Advocate: lawsuit targets Louisiana data center power plans",
    "https://theadvocate.com/baton_rouge/news/politics/lawsuit-targets-louisiana-data-center-power-plans/article_94f8f899-e516-532b-a87f-7ca7cc1b151b.html"
   ],
@@ -2429,18 +2499,6 @@
   [
    "Cleanview: Virginia campuses",
    "https://cleanview.co/data-centers/virginia"
-  ],
-  [
-   "Cleanview: Ohio campuses",
-   "https://cleanview.co/data-centers/ohio"
-  ],
-  [
-   "Cleanview: Texas campuses",
-   "https://cleanview.co/data-centers/texas"
-  ],
-  [
-   "Cleanview: US data center tracker",
-   "https://cleanview.co/data-centers/us"
   ]
  ],
  "modo": {
