@@ -37,6 +37,7 @@ Each page covers price, revenue mix, financials, free cash flow, watch list, cal
 
 ## Ranking on the main page
 - The stock cards on `index.html` are ordered from most to least bullish (Claude's judgment), with a rank, a tier (Bullish / Constructive / Neutral / Cautious) and a one-line reason on each card. A Claude scheduled task re-ranks them after every US session (Tue–Sat ~7:43am SGT, after the technical-read and earnings-refresh tasks) by reordering the cards, editing the `rk` and `why` lines and the "Ranked by Claude as of" date.
+- Next to each name, a small trail shows the stock's rank in the last three rankings, oldest first (e.g. `3→3→7`; green if it moved up last time, red if down). After reordering, the task runs `python3 scripts/rank-trail.py`, which reads earlier ranks from the git history of `index.html` (commits titled "Re-rank main page as of …"; a shallow clone needs `git fetch --deepen=200 origin main` first) and rewrites the `<span class="trail">` in each card.
 
 ## Previous-session market recap (main page)
 The panel above "Most to least bullish" summarises the latest US session: headline, index/SOX/VIX/10Y/oil moves, the 3–4 drivers of the rally or sell-off, the week so far and what to watch. It renders `data/market-recap.json` with `assets/market-recap.js`. Claude rewrites the JSON after each US close (scheduled task "Stock dashboard: daily market recap", Tue–Sat ~7:28 SGT) from market wraps; only that file changes. The deploy workflow copies it into the site (`.github/workflows/deploy.yml`).
