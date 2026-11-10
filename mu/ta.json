@@ -1,18 +1,18 @@
 {
- "asof": "Nov 9, 2026",
- "close": 733.15,
+ "asof": "Nov 10, 2026",
+ "close": 725.11,
  "bias": {
-  "en": "Downtrend · rebound stalled under the Jul 29 low",
-  "zh": "下降趋势 · 反弹受阻于 7 月 29 日低点下方"
+  "en": "Downtrend · holding $725, capped under $738–746",
+  "zh": "下降趋势 · 守住 $725，受制于 $738–746"
  },
  "read": [
   {
-   "en": "Micron rose 6.3% on Nov 9 to $733.15, trading $689.65–744.46. It is below the falling 5-day ($745.97), 10-day ($829.45), 30-day ($929.27) and 100-day ($956.32) averages and the rising 200-day ($758.39). MACD has been below its signal since Oct 30 and below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 2 ($937.67), and RSI is 36.",
-   "zh": "美光 11月9日上涨 6.3%，收于 $733.15，盘中区间 $689.65–744.46。股价位于下行的 5 日（$745.97）、10 日（$829.45）、30 日（$929.27）和 100 日均线（$956.32）以及上行的 200 日均线（$758.39）下方。MACD 自 10月30日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 11月2日起看空（$937.67），RSI 为 36。"
+   "en": "Micron fell 1.1% on Nov 10 to $725.11, trading $699.63–745.64. It is above the 5-day ($720.0) and below the 10-day ($809.1), 30-day ($917.9), 100-day ($952.2) and 200-day ($760.1); only the 200-day is rising. MACD has been below its signal since Oct 30, below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 2 ($920.41), and RSI is 36.",
+   "zh": "美光 11月10日下跌 1.1%，收于 $725.11，盘中区间 $699.63–745.64。股价位于 5 日（$720.0）均线上方，10 日（$809.1）、30 日（$917.9）、100 日（$952.2）和 200 日（$760.1）均线下方；仅 200 日均线在上行。MACD 自 10月30日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月2日起看空（$920.41），RSI 为 36。"
   },
   {
-   "en": "The close cleared the $724.8 Nov 6 high, now support, but closed below the $737.88 Jul 29 low. Resistance is $737.9–746 (Jul 29 low, Nov 9 high, 5-day), then $758.4–761.8 (200-day, Nov 5 high) and $782–795. Support is $724.8, then $676–689.7 (Nov 6 and Nov 9 lows) and $650–652. A close above $746 would target $758–762; below $724.8, $676–690.",
-   "zh": "收盘突破 11月6日高点 $724.8，该位转为支撑，但收盘仍低于 7月29日低点 $737.88。阻力为 $737.9–746（7月29日低点、11月9日高点、5 日均线），其次 $758.4–761.8（200 日均线、11月5日高点）和 $782–795。支撑为 $724.8，其次 $676–689.7（11月6日和11月9日低点）和 $650–652。若收盘站上 $746，下一目标看 $758–762；若跌破 $724.8，则看 $676–690。"
+   "en": "No level changed: the $745.64 high again stalled at the $737.9–746 zone, and the close held the $724.8 Nov 6 high, with the 5-day ($720) just below. Resistance is $737.9–745.6 (Jul 29 low, Nov 9–10 highs), then $760.1–761.8 (200-day, Nov 5 high) and $782–795. Support is $720–724.8, then $689.7–699.6 (Nov 9 and Nov 10 lows) and $650–676. A close above $745.6 would target $760–762; below $720, $690–700.",
+   "zh": "关键价位未变：盘中高点 $745.64 再次受阻于 $737.9–746 区间，收盘守住 11月6日高点 $724.8，5 日均线（$720）就在下方。阻力为 $737.9–745.6（7月29日低点、11月9–10日高点），其次 $760.1–761.8（200 日均线、11月5日高点）和 $782–795。支撑为 $720–724.8，其次 $689.7–699.6（11月9日和11月10日低点）和 $650–676。若收盘站上 $745.6，下一目标看 $760–762；若跌破 $720，则看 $690–700。"
   }
  ],
  "levels": {
@@ -20,15 +20,15 @@
    [
     742,
     {
-     "en": "Jul 29 low $737.88; Nov 9 high $744.46; 5-day average $746.0",
-     "zh": "7月29日低点 $737.88；11月9日高点 $744.46；5日均线 $746.0"
+     "en": "Jul 29 low $737.88; Nov 9 high $744.74; Nov 10 high $745.64",
+     "zh": "7月29日低点 $737.88；11月9日高点 $744.74；11月10日高点 $745.64"
     }
    ],
    [
-    759,
+    761,
     {
-     "en": "200-day average $758.4; Nov 5 high $761.8",
-     "zh": "200日均线 $758.4；11月5日高点 $761.8"
+     "en": "200-day average $760.1; Nov 5 high $761.8",
+     "zh": "200日均线 $760.1；11月5日高点 $761.8"
     }
    ],
    [
@@ -41,24 +41,24 @@
   ],
   "s": [
    [
-    725,
+    722,
     {
-     "en": "Nov 6 high $724.8, cleared",
-     "zh": "11月6日高点 $724.8，已突破"
+     "en": "Nov 6 high $724.8; 5-day average $720.0",
+     "zh": "11月6日高点 $724.8；5日均线 $720.0"
     }
    ],
    [
-    683,
+    695,
     {
-     "en": "Nov 9 low $689.65; Nov 6 low $676",
-     "zh": "11月9日低点 $689.65；11月6日低点 $676"
+     "en": "Nov 9 low $689.65; Nov 10 low $699.63",
+     "zh": "11月9日低点 $689.65；11月10日低点 $699.63"
     }
    ],
    [
-    651,
+    663,
     {
-     "en": "Nov 5 low $650; May 19 low $652.21",
-     "zh": "11月5日低点 $650；5月19日低点 $652.21"
+     "en": "Nov 5 low $650; Nov 6 low $676",
+     "zh": "11月5日低点 $650；11月6日低点 $676"
     }
    ]
   ]

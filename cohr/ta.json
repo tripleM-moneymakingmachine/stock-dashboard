@@ -1,27 +1,34 @@
 {
- "asof": "Nov 9, 2026",
- "close": 225.19,
+ "asof": "Nov 10, 2026",
+ "close": 214.66,
  "bias": {
-  "en": "Rebound · SAR flipped bullish, above the 10-day",
-  "zh": "反弹 · SAR 翻多，站上 10 日均线"
+  "en": "Rebound · MACD crossed up, lost $220.7",
+  "zh": "反弹 · MACD 上穿，失守 $220.7"
  },
  "read": [
   {
-   "en": "Coherent jumped 16.8% on Nov 9 to $225.19, trading $197.21–229.39 on heavy volume. It is above the falling 5-day ($198.1) and 10-day ($211.3) averages but below the falling 30-day ($254.5) and 100-day ($294.3) and the rising 200-day ($296.6). MACD has been below its signal since Oct 12, below zero, with the histogram nearly closed toward a cross; Parabolic SAR turned bullish on Nov 9 ($160.23), and RSI is 47.",
-   "zh": "Coherent 11月9日大涨 16.8%，收于 $225.19，盘中区间 $197.21–229.39，成交量放大。股价位于下行的 5 日（$198.1）和 10 日均线（$211.3）上方，但仍低于下行的 30 日（$254.5）和 100 日均线（$294.3），以及上行的 200 日均线（$296.6）。MACD 自 10月12日起位于信号线下方且在零轴下方，柱状图几乎收拢、接近金叉；抛物线 SAR 于 11月9日翻为看多（$160.23），RSI 为 47。"
+   "en": "Coherent fell 4.7% on Nov 10 to $214.66, trading $207.15–227.77. It is above the 5-day ($199.5) and 10-day ($209.2) and below the 30-day ($251.9), 100-day ($292.6) and 200-day ($296.6); only the 200-day is rising. MACD crossed above its signal on Nov 10, below zero; Parabolic SAR has been bullish since Nov 9 ($161.61), and RSI is 44.",
+   "zh": "Coherent 11月10日下跌 4.7%，收于 $214.66，盘中区间 $207.15–227.77。股价位于 5 日（$199.5）和 10 日（$209.2）均线上方，30 日（$251.9）、100 日（$292.6）和 200 日（$296.6）均线下方；仅 200 日均线在上行。MACD 于 11月10日上穿信号线，仍在零轴下方；抛物线 SAR 自 11月9日起看多（$161.61），RSI 为 44。"
   },
   {
-   "en": "The surge cleared every prior resistance: the 5-day and Nov 2 low ($198.6), Oct 23 and Oct 30 lows ($203.6–203.9), the 10-day ($211.3) and the $220.7 Jul 29 low. Resistance is $229.4 (Nov 9 high), then $235.8–239.6 (Oct 27–29 closes) and $246.9 (Oct 29 high). Support is $220.7, then $211.3 and $203.6–203.9. A close above $229.4 would target $236–240; below $220.7, $211.",
-   "zh": "此轮大涨突破此前全部阻力：5 日均线与 11月2日低点（$198.6）、10月23日和10月30日低点（$203.6–203.9）10 日均线（$211.3）以及 7月29日低点 $220.7。阻力为 $229.4（11月9日高点），其次 $235.8–239.6（10月27–29日收盘）和 $246.9（10月29日高点）。支撑为 $220.7，其次 $211.3 和 $203.6–203.9。若收盘站上 $229.4，下一目标看 $236–240；若跌破 $220.7，则看 $211。"
+   "en": "The pullback lost the $220.7 Jul 29 low, now resistance, after the $227.77 high stalled under the $229.48 Nov 9 high; the 10-day ($209.2) held. Resistance is $220.7, then $227.8–229.5 (Nov 9 and Nov 10 highs) and $235.8–239.6 (Oct 27–29 closes). Support is $207.2–209.2 (Nov 10 low, 10-day), then $203.6–203.9 and $197.2–199.5 (Nov 9 low, 5-day). A close above $220.7 would target $228–229.5; below $207.2, $203.6.",
+   "zh": "盘中高点 $227.77 受阻于 11月9日高点 $229.48 下方后回落，失守 7月29日低点 $220.7，转为阻力；10 日均线（$209.2）守住。阻力为 $220.7，其次 $227.8–229.5（11月9日和11月10日高点）和 $235.8–239.6（10月27–29日收盘）。支撑为 $207.2–209.2（11月10日低点、10 日均线），其次 $203.6–203.9 和 $197.2–199.5（11月9日低点、5 日均线）。若收盘站上 $220.7，下一目标看 $228–229.5；若跌破 $207.2，则看 $203.6。"
   }
  ],
  "levels": {
   "r": [
    [
-    229.4,
+    220.7,
     {
-     "en": "Nov 9 high",
-     "zh": "11月9日高点"
+     "en": "Jul 29 low $220.68, lost",
+     "zh": "7月29日低点 $220.68，已失守"
+    }
+   ],
+   [
+    228.6,
+    {
+     "en": "Nov 10 high $227.77; Nov 9 high $229.48",
+     "zh": "11月10日高点 $227.77；11月9日高点 $229.48"
     }
    ],
    [
@@ -30,35 +37,28 @@
      "en": "Oct 27–29 closes ($235.8–239.6)",
      "zh": "10月27–29日收盘（$235.8–239.6）"
     }
-   ],
-   [
-    246.9,
-    {
-     "en": "Oct 29 high",
-     "zh": "10月29日高点"
-    }
    ]
   ],
   "s": [
    [
-    220.7,
+    208.2,
     {
-     "en": "Jul 29 low $220.68, reclaimed",
-     "zh": "7月29日低点 $220.68，已收复"
-    }
-   ],
-   [
-    211.3,
-    {
-     "en": "10-day average, reclaimed",
-     "zh": "10日均线，已收复"
+     "en": "10-day average $209.2; Nov 10 low $207.15",
+     "zh": "10日均线 $209.2；11月10日低点 $207.15"
     }
    ],
    [
     203.7,
     {
-     "en": "Oct 23 low $203.55; Oct 30 low $203.87, reclaimed",
-     "zh": "10月23日低点 $203.55；10月30日低点 $203.87，已收复"
+     "en": "Oct 23 low $203.55; Oct 30 low $203.87",
+     "zh": "10月23日低点 $203.55；10月30日低点 $203.87"
+    }
+   ],
+   [
+    198.4,
+    {
+     "en": "5-day average $199.5; Nov 9 low $197.19",
+     "zh": "5日均线 $199.5；11月9日低点 $197.19"
     }
    ]
   ]

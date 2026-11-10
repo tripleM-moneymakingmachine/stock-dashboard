@@ -1,18 +1,18 @@
 {
- "asof": "Nov 9, 2026",
- "close": 246,
+ "asof": "Nov 10, 2026",
+ "close": 245.4,
  "bias": {
-  "en": "Bearish · 13% rebound above the 5-day, at the Nov 4 low",
-  "zh": "偏空 · 反弹 13% 站上 5 日均线，触及 11 月 4 日低点"
+  "en": "Rebound · SAR flipped bullish, capped at $246–247.5",
+  "zh": "反弹 · 抛物线 SAR 转多，受制于 $246–247.5"
  },
  "read": [
   {
-   "en": "Teradyne rose 12.7% on Nov 9 to $246.00, trading between $222.47 and $247.48. It is above the falling 5-day ($239.5) and below the falling 10-day ($266.6), 30-day ($338.6) and 100-day ($365.6) averages and the rising 200-day ($350.0). MACD has been below its signal since Oct 12 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 8 ($257.21), and RSI is 34.",
-   "zh": "泰瑞达 11月9日上涨 12.7%，收于 $246.00，盘中区间 $222.47–247.48。股价位于下行的 5 日均线（$239.5）上方，下行的 10 日（$266.6）、30 日（$338.6）和 100 日均线（$365.6）以及上行的 200 日均线（$350.0）下方。MACD 自 10月12日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 10月8日起看空（$257.21），RSI 为 34。"
+   "en": "Teradyne fell 0.2% on Nov 10 to $245.40, trading $237.57–254.23. It is above the 5-day ($234.7) and below the 10-day ($258.8), 30-day ($333.4), 100-day ($363.7) and 200-day ($350.0); only the 200-day is rising. MACD has been below its signal since Oct 12, below zero, histogram narrowing; Parabolic SAR flipped bullish on Nov 10 ($211.63), and RSI is 34.",
+   "zh": "泰瑞达 11月10日下跌 0.2%，收于 $245.40，盘中区间 $237.57–254.23。股价位于 5 日（$234.7）均线上方，10 日（$258.8）、30 日（$333.4）、100 日（$363.7）和 200 日（$350.0）均线下方；仅 200 日均线在上行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 于 11月10日转为看多（$211.63），RSI 为 34。"
   },
   {
-   "en": "The jump broke the $227 and $234.5–242.1 resistances (Jan 26 low; Jan 29–Feb 2 lows, Nov 5 high), now support, and closed at the $245.9–247.5 zone. Resistance is $245.9–247.5, then $257.2–257.8 (SAR, Nov 2 low) and $266.4–266.6 (Nov 3 low, 10-day). Support is $238.8–242.1, then $227 and $211.6–212.6. A close above $247.5 would target $257–258; below $238.8, $227.",
-   "zh": "此次大涨突破 $227 和 $234.5–242.1 阻力（1月26日低点；1月29日–2月2日低点、11月5日高点），转为支撑，并收于 $245.9–247.5 区间。阻力为 $245.9–247.5，其次 $257.2–257.8（SAR、11月2日低点）和 $266.4–266.6（11月3日低点、10 日均线）。支撑为 $238.8–242.1，其次 $227 和 $211.6–212.6。若收盘站上 $247.5，下一目标看 $257–258；若跌破 $238.8，则看 $227。"
+   "en": "No level changed: the $254.23 high pierced the $245.9–247.5 resistance but the close slipped back under it, and the $237.57 low held above the 5-day ($234.7). Resistance is $245.9–247.5, then $254.2–258.8 (Nov 10 high, Nov 2 low, 10-day) and $266.4. Support is $234.7–242.1, then $227 and $211.6–212.6 (SAR, Nov 5–6 lows). A close above $247.5 would target $254–259; below $234.7, $227.",
+   "zh": "关键价位未变：盘中高点 $254.23 刺穿 $245.9–247.5 阻力，但收盘回落至其下方，低点 $237.57 守在 5 日均线（$234.7）上方。阻力为 $245.9–247.5，其次 $254.2–258.8（11月10日高点、11月2日低点、10 日均线）和 $266.4。支撑为 $234.7–242.1，其次 $227 和 $211.6–212.6（SAR、11月5–6日低点）。若收盘站上 $247.5，下一目标看 $254–259；若跌破 $234.7，则看 $227。"
   }
  ],
  "levels": {
@@ -20,45 +20,45 @@
    [
     247,
     {
-     "en": "Nov 4 low $245.9; Feb 3 low $246.8; Nov 9 high $247.48",
-     "zh": "11月4日低点 $245.9；2月3日低点 $246.8；11月9日高点 $247.48"
+     "en": "Nov 4 low $245.94; Feb 3 low $246.8; Nov 9 high $247.48",
+     "zh": "11月4日低点 $245.94；2月3日低点 $246.8；11月9日高点 $247.48"
     }
    ],
    [
-    257.5,
+    256.5,
     {
-     "en": "Parabolic SAR $257.21; Nov 2 low $257.84",
-     "zh": "抛物线 SAR $257.21；11月2日低点 $257.84"
+     "en": "Nov 10 high $254.23; Nov 2 low $257.84; 10-day average $258.8",
+     "zh": "11月10日高点 $254.23；11月2日低点 $257.84；10日均线 $258.8"
     }
    ],
    [
     266.5,
     {
-     "en": "10-day average $266.6; Nov 3 low $266.43",
-     "zh": "10日均线 $266.6；11月3日低点 $266.43"
+     "en": "Nov 3 low $266.43",
+     "zh": "11月3日低点 $266.43"
     }
    ]
   ],
   "s": [
    [
-    240,
+    239,
     {
-     "en": "5-day average $239.5; Jan 29–Feb 2 lows ($238.8–240.7); Nov 5 high $242.05, reclaimed",
-     "zh": "5日均线 $239.5；1月29日–2月2日低点（$238.8–240.7）；11月5日高点 $242.05，已收复"
+     "en": "5-day average $234.7; Jan 29–Feb 2 lows ($238.8–240.7); Nov 10 low $237.57; Nov 5 high $242.05",
+     "zh": "5日均线 $234.7；1月29日至2月2日低点（$238.8–240.7）；11月10日低点 $237.57；11月5日高点 $242.05"
     }
    ],
    [
     227,
     {
-     "en": "Jan 26 low, reclaimed",
-     "zh": "1月26日低点，已收复"
+     "en": "Jan 26 low",
+     "zh": "1月26日低点"
     }
    ],
    [
     212,
     {
-     "en": "Nov 5–6 lows ($211.63–211.91); Jan 5 and Jan 8 lows ($211.8–212.6)",
-     "zh": "11月5–6日低点（$211.63–211.91）；1月5日和1月8日低点（$211.8–212.6）"
+     "en": "Parabolic SAR $211.63; Nov 5–6 lows ($211.63–211.91); Jan 5 and Jan 8 lows ($211.8–212.6)",
+     "zh": "抛物线 SAR $211.63；11月5–6日低点（$211.63–211.91）；1月5日和1月8日低点（$211.8–212.6）"
     }
    ]
   ]

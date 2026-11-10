@@ -1,27 +1,27 @@
 {
- "asof": "Nov 9, 2026",
- "close": 288.15,
+ "asof": "Nov 10, 2026",
+ "close": 287.38,
  "bias": {
-  "en": "Bearish · SAR flipped bullish, capped under $296",
-  "zh": "看空 · SAR 翻多，受制于 $296 下方"
+  "en": "Bearish · SAR bullish, boxed in at $284–292",
+  "zh": "看空 · 抛物线 SAR 看多，困于 $284–292"
  },
  "read": [
   {
-   "en": "Alphabet rose 1.2% on Nov 9 to $288.15, trading $288.09–296.33 and closing at the low. It is above the falling 5-day average ($284.9) but below the falling 10-day ($291.3), 30-day ($324.9), 100-day ($340.8) and 200-day ($339.3). MACD has been below its signal since Oct 16 and below zero, histogram narrowing for three sessions; Parabolic SAR turned bullish on Nov 9 ($276.92), and RSI is 33.",
-   "zh": "Alphabet 11月9日上涨 1.2%，收于 $288.15，盘中区间 $288.09–296.33，收于最低点附近。股价位于下行的 5 日均线（$284.9）上方，但仍低于下行的 10 日（$291.3）、30 日（$324.9）、100 日（$340.8）和 200 日均线（$339.3）。MACD 自 10月16日起位于信号线下方且在零轴下方，柱状图连续三个交易日收窄；抛物线 SAR 于 11月9日翻为看多（$276.92），RSI 为 33。"
+   "en": "Alphabet fell 0.3% on Nov 10 to $287.38, trading $285.68–292.02. It is above the 5-day ($286.4) and below the 10-day ($287.9), 30-day ($323.2), 100-day ($340.0) and 200-day ($339.1); all five averages are falling. MACD has been below its signal since Oct 16, below zero, histogram narrowing; Parabolic SAR has been bullish since Nov 9 ($277.31), and RSI is 32.",
+   "zh": "Alphabet 11月10日下跌 0.3%，收于 $287.38，盘中区间 $285.68–292.02。股价位于 5 日（$286.4）均线上方，10 日（$287.9）、30 日（$323.2）、100 日（$340.0）和 200 日（$339.1）均线下方；五条均线均在下行。MACD 自 10月16日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月9日起看多（$277.31），RSI 为 32。"
   },
   {
-   "en": "No level changed: the $296.33 high reached the $294.1–296.5 band, but the close slipped back under $290.5 and the 10-day. Resistance is $290.5–291.3 (Nov 6 high, 10-day), then $294.1–296.5 (Mar 9 low, Nov 4, 5 and 9 highs) and $300. Support is $283.4–284.9 (5-day, Nov 4 low, Oct 29 close), then $276.9–277.2 (SAR) and $270.7–272.1. A close above $296.5 would target $300; below $283.4, $277.",
-   "zh": "关键位未变：$296.33 高点触及 $294.1–296.5 区间，但收盘回落至 $290.5 和 10 日均线下方。阻力为 $290.5–291.3（11月6日高点、10 日均线），其次 $294.1–296.5（3月9日低点、11月4日、5日和9日高点）和 $300。支撑为 $283.4–284.9（5 日均线、11月4日低点、10月29日收盘），其次 $276.9–277.2（SAR）和 $270.7–272.1。若收盘站上 $296.5，下一目标看 $300；若跌破 $283.4，则看 $277。"
+   "en": "No level changed: the $292.02 high stalled at the $290.5–292 resistance, and the $285.68 low stayed above the $283.4–284.9 support; the close is pinned between the 5-day ($286.4) and 10-day ($287.9). Resistance is $287.9–292, then $294.1–296.5 and $300. Support is $283.4–286.4, then $276.9–277.3 (SAR, late-October lows) and $270.7–272.1. A close above $296.5 would target $300; below $283.4, $277.",
+   "zh": "关键价位未变：盘中高点 $292.02 受阻于 $290.5–292 阻力，低点 $285.68 守在 $283.4–284.9 支撑上方；收盘夹在 5 日（$286.4）与 10 日均线（$287.9）之间。阻力为 $287.9–292，其次 $294.1–296.5 和 $300。支撑为 $283.4–286.4，其次 $276.9–277.3（SAR、10 月下旬低点）和 $270.7–272.1。若收盘站上 $296.5，下一目标看 $300；若跌破 $283.4，则看 $277。"
   }
  ],
  "levels": {
   "r": [
    [
-    290.9,
+    290.5,
     {
-     "en": "Nov 6 high $290.49; 10-day average $291.3",
-     "zh": "11月6日高点 $290.49；10日均线 $291.3"
+     "en": "10-day average $287.9; Nov 6 high $290.49; Nov 10 high $292.02",
+     "zh": "10日均线 $287.9；11月6日高点 $290.49；11月10日高点 $292.02"
     }
    ],
    [
@@ -41,24 +41,24 @@
   ],
   "s": [
    [
-    284,
+    284.5,
     {
-     "en": "5-day average $284.9; Nov 4 low $283.4; Oct 29 close $283.8",
-     "zh": "5日均线 $284.9；11月4日低点 $283.4；10月29日收盘 $283.8"
+     "en": "5-day average $286.4; Nov 10 low $285.68; Nov 4 low $283.4",
+     "zh": "5日均线 $286.4；11月10日低点 $285.68；11月4日低点 $283.4"
     }
    ],
    [
     277,
     {
-     "en": "Parabolic SAR and Oct 30 low $276.92; Nov 5 low $277.07; Nov 3 low $277.2",
-     "zh": "抛物线 SAR 与10月30日低点 $276.92；11月5日低点 $277.07；11月3日低点 $277.2"
+     "en": "Parabolic SAR $277.31; Oct 30 low $276.92; Nov 5 low $277.07",
+     "zh": "抛物线 SAR $277.31；10月30日低点 $276.92；11月5日低点 $277.07"
     }
    ],
    [
     271.4,
     {
      "en": "52-week low $270.7 (Nov 14, 2025); Mar 30 low $272.1",
-     "zh": "52周低点 $270.7（2025年11月14日）；3月30日低点 $272.1"
+     "zh": "52 周低点 $270.7（2025年11月14日）；3月30日低点 $272.1"
     }
    ]
   ]

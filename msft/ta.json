@@ -1,22 +1,29 @@
 {
- "asof": "Nov 9, 2026",
- "close": 545.18,
+ "asof": "Nov 10, 2026",
+ "close": 533.16,
  "bias": {
-  "en": "Uptrend · MACD crossed up, back above $541",
-  "zh": "上升趋势 · MACD 上穿，重回 $541 上方"
+  "en": "Uptrend · MACD crossed down, back at the 10 and 30-day",
+  "zh": "上升趋势 · MACD 下穿，回到 10 和 30 日均线"
  },
  "read": [
   {
-   "en": "Microsoft rose 2.7% on Nov 9 to $545.18, trading $538.70–548.28. It is above all five of its rising averages: the 5-day ($537.70), 10-day ($531.00), 30-day ($528.91), 100-day ($473.97) and 200-day ($440.24). MACD crossed above its signal on Nov 9 and is above zero; Parabolic SAR has been bullish since Nov 4 ($508.15), and RSI is 57.5.",
-   "zh": "微软 11月9日上涨 2.7%，收于 $545.18，盘中区间 $538.70–548.28。股价位于所有上行均线上方：5 日（$537.70）、10 日（$531.00）、30 日（$528.91）、100 日（$473.97）和 200 日均线（$440.24）。MACD 于 11月9日上穿信号线，位于零轴上方；抛物线 SAR 自 11月4日起看多（$508.15），RSI 为 57.5。"
+   "en": "Microsoft fell 2.2% on Nov 10 to $533.16, trading $526.36–544.15. It is above the 10-day ($531.2), 30-day ($529.7), 100-day ($475.5) and 200-day ($440.6) and below the 5-day ($540.1); all five averages are rising. MACD crossed below its signal on Nov 10, above zero; Parabolic SAR has been bullish since Nov 4 ($509.17), and RSI is 52.",
+   "zh": "微软 11月10日下跌 2.2%，收于 $533.16，盘中区间 $526.36–544.15。股价位于 10 日（$531.2）、30 日（$529.7）、100 日（$475.5）和 200 日（$440.6）均线上方，5 日（$540.1）均线下方；五条均线均在上行。MACD 于 11月10日下穿信号线，位于零轴上方；抛物线 SAR 自 11月4日起看多（$509.17），RSI 为 52。"
   },
   {
-   "en": "The close reclaimed $538.3–542.3 (Nov 6 high, Oct 29 high, Nov 4 low), now support, though the $548.28 high stopped short of the $551.15 Oct 13 high. Resistance is $548.3–551.2, then $557.6–559.2 (Nov 5 high, 52-week high) and $575. Support is $537.7–542.3, then $528.9–531.0 (30 and 10-day) and $505–508 (Nov 2 low, SAR). A close above $551.2 would target $559; below $537.7, $529–531.",
-   "zh": "收盘收复 $538.3–542.3（11月6日高点、10月29日高点、11月4日低点），该区间转为支撑，但 $548.28 的高点未及 10月13日高点 $551.15。阻力为 $548.3–551.2，其次 $557.6–559.2（11月5日高点、52周高点）和 $575。支撑为 $537.7–542.3，其次 $528.9–531.0（30 日和 10 日均线）和 $505–508（11月2日低点、SAR）。若收盘站上 $551.2，下一目标看 $559；若跌破 $537.7，则看 $529–531。"
+   "en": "The drop lost the $537.7–542.3 support (Oct 29 high, Nov 4 low, 5-day), now resistance, and the close sits on the 10 and 30-day ($529.7–531.2). Resistance is $540.1–544.2 (5-day, Nov 10 high), then $548.3–551.2 and $557.6–559.2 (52-week high). Support is $524.5–531.2 (10 and 30-day, Nov 6 and Nov 10 lows), then $505–509.2 (Nov 2 low, SAR). A close above $544.2 would target $548–551; below $524.5, $505–509.",
+   "zh": "此次下跌失守 $537.7–542.3 支撑（10月29日高点、11月4日低点、5 日均线），转为阻力，收盘落在 10 日和 30 日均线（$529.7–531.2）上。阻力为 $540.1–544.2（5 日均线、11月10日高点），其次 $548.3–551.2 和 $557.6–559.2（52 周高点）。支撑为 $524.5–531.2（10 日和 30 日均线、11月6日和11月10日低点），其次 $505–509.2（11月2日低点、SAR）。若收盘站上 $544.2，下一目标看 $548–551；若跌破 $524.5，则看 $505–509。"
   }
  ],
  "levels": {
   "r": [
+   [
+    541,
+    {
+     "en": "5-day average $540.1; Oct 29 high $541.29; Nov 4 low $542.30, lost; Nov 10 high $544.15",
+     "zh": "5日均线 $540.1；10月29日高点 $541.29；11月4日低点 $542.30，已失守；11月10日高点 $544.15"
+    }
+   ],
    [
     551,
     {
@@ -28,37 +35,30 @@
     559.2,
     {
      "en": "52-week high (Nov 4); Nov 5 high $557.6",
-     "zh": "52周高点（11月4日）；11月5日高点 $557.6"
-    }
-   ],
-   [
-    575,
-    {
-     "en": "Round number",
-     "zh": "整数关口"
+     "zh": "52 周高点（11月4日）；11月5日高点 $557.6"
     }
    ]
   ],
   "s": [
    [
-    540,
+    529,
     {
-     "en": "Oct 29 high $541.29; Nov 4 low $542.30, reclaimed; 5-day average $537.7",
-     "zh": "10月29日高点 $541.29；11月4日低点 $542.30，已收复；5日均线 $537.7"
-    }
-   ],
-   [
-    530,
-    {
-     "en": "10 and 30-day averages ($528.9–531.0)",
-     "zh": "10日和30日均线（$528.9–531.0）"
+     "en": "10 and 30-day averages ($529.7–531.2); Nov 10 low $526.36; Nov 6 low $524.47",
+     "zh": "10 和 30 日均线（$529.7–531.2）；11月10日低点 $526.36；11月6日低点 $524.47"
     }
    ],
    [
     507,
     {
-     "en": "Parabolic SAR $508.2; Nov 2 low $504.96",
-     "zh": "抛物线 SAR $508.2；11月2日低点 $504.96"
+     "en": "Parabolic SAR $509.17; Nov 2 low $504.96",
+     "zh": "抛物线 SAR $509.17；11月2日低点 $504.96"
+    }
+   ],
+   [
+    486,
+    {
+     "en": "Sep 10 low",
+     "zh": "9月10日低点"
     }
    ]
   ]

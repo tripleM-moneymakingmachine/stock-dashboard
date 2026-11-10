@@ -1,50 +1,57 @@
 {
- "asof": "Nov 9, 2026",
- "close": 319.48,
+ "asof": "Nov 10, 2026",
+ "close": 331.98,
  "bias": {
-  "en": "Bearish · reclaimed $316, testing the October lows",
-  "zh": "看空 · 收复 $316，测试 10 月低点"
+  "en": "Rebound · reclaimed the 10-day, testing $334",
+  "zh": "反弹 · 收复 10 日均线，测试 $334"
  },
  "read": [
   {
-   "en": "Broadcom rose 8.8% on Nov 9 to $319.48, trading $304.29–323.05 on volume 1.5 times its 20-day average. It closed above the falling 5-day ($312.46) but below the falling 10-day ($324.98), 30-day ($340.12), 100-day ($366.50) and 200-day ($367.09). MACD has been below its signal since Nov 2 and below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($343.98), and RSI is 45.",
-   "zh": "博通 11月9日上涨 8.8%，收于 $319.48，盘中区间 $304.29–323.05，成交量为 20 日均量的 1.5 倍。收盘站上下行的 5 日均线（$312.46），但仍位于下行的 10 日（$324.98）、30 日（$340.12）、100 日（$366.50）和 200 日均线（$367.09）下方。MACD 自 11月2日起位于信号线下方且在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$343.98），RSI 为 45。"
+   "en": "Broadcom rose 3.9% on Nov 10 to $331.98, trading $316.69–334.67. It is above the 5-day ($312.4) and 10-day ($323.9) and below the 30-day ($339.4), 100-day ($365.7) and 200-day ($367.1); all five averages are falling. MACD has been below its signal since Nov 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($340.73), and RSI is 49.",
+   "zh": "博通 11月10日上涨 3.9%，收于 $331.98，盘中区间 $316.69–334.67。股价位于 5 日（$312.4）和 10 日（$323.9）均线上方，30 日（$339.4）、100 日（$365.7）和 200 日（$367.1）均线下方；五条均线均在下行。MACD 自 11月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$340.73），RSI 为 49。"
   },
   {
-   "en": "The rally cleared the $300 and $311.5–316.3 resistances (Nov 5–6 highs, 5-day, Feb 17 low), now support, and reached the $319.3–321.9 October lows. Resistance is $319.3–323.1 (Oct 22–23 and Oct 30 lows, Nov 9 high), then $325–326.6 (10-day, Nov 3 low) and $340.1–344 (30-day, SAR). Support is $311.5–316.3, then $304.3 and $300. A close above $323.1 would target $325–327; below $311.5, $304.",
-   "zh": "此轮上涨突破 $300 和 $311.5–316.3 阻力（11月5–6日高点、5 日均线、2月17日低点），均转为支撑，并触及 10月低点 $319.3–321.9。阻力为 $319.3–323.1（10月22–23日及10月30日低点、11月9日高点），其次 $325–326.6（10 日均线、11月3日低点）和 $340.1–344（30 日均线、SAR）。支撑为 $311.5–316.3，其次 $304.3 和 $300。若收盘站上 $323.1，下一目标看 $325–327；若跌破 $311.5，则看 $304。"
+   "en": "The rally broke the $319.3–323.1 October lows and the $323.9–326.6 zone (10-day, Nov 3 low), now support. Resistance is $334.1–334.7 (Nov 4 and Nov 10 highs), then $339.4–340.7 (30-day, SAR) and $342.3–343.3 (Sep 3 and Oct 1 lows). Support is $319.3–326.6, then $312.4–316.7 (5-day, Nov 10 low) and $304.3. A close above $334.7 would target $339–343; below $319.3, $312–317.",
+   "zh": "此次上涨突破 10 月低点 $319.3–323.1 和 $323.9–326.6 区间（10 日均线、11月3日低点），均转为支撑。阻力为 $334.1–334.7（11月4日和11月10日高点），其次 $339.4–340.7（30 日均线、SAR）和 $342.3–343.3（9月3日和10月1日低点）。支撑为 $319.3–326.6，其次 $312.4–316.7（5 日均线、11月10日低点）和 $304.3。若收盘站上 $334.7，下一目标看 $339–343；若跌破 $319.3，则看 $312–317。"
   }
  ],
  "levels": {
   "r": [
    [
-    321.2,
+    334.5,
     {
-     "en": "Oct 30 low $319.3; Oct 22–23 lows ($320.2–321.0); Nov 9 high $323.05",
-     "zh": "10月30日低点 $319.3；10月22–23日低点（$320.2–321.0）；11月9日高点 $323.05"
+     "en": "Nov 4 high $334.12; Nov 10 high $334.67",
+     "zh": "11月4日高点 $334.12；11月10日高点 $334.67"
     }
    ],
    [
-    326,
+    340,
     {
-     "en": "10-day average $325.0; Nov 3 low $326.6",
-     "zh": "10日均线 $325.0；11月3日低点 $326.6"
+     "en": "30-day average $339.35; Parabolic SAR $340.73",
+     "zh": "30日均线 $339.35；抛物线 SAR $340.73"
     }
    ],
    [
-    342,
+    343,
     {
-     "en": "30-day average $340.1; Parabolic SAR $344.0",
-     "zh": "30日均线 $340.1；抛物线 SAR $344.0"
+     "en": "Sep 3 low $342.33; Oct 1 low $343.29",
+     "zh": "9月3日低点 $342.33；10月1日低点 $343.29"
     }
    ]
   ],
   "s": [
    [
-    313.5,
+    323,
     {
-     "en": "Nov 6 high $311.5; 5-day average $312.5; Nov 5 high $314.0; Feb 17 low $316.3",
-     "zh": "11月6日高点 $311.5；5日均线 $312.5；11月5日高点 $314.0；2月17日低点 $316.3"
+     "en": "October lows ($319.3–321.0); 10-day average $323.9; Nov 3 low $326.6, reclaimed",
+     "zh": "10 月低点（$319.3–321.0）；10日均线 $323.9；11月3日低点 $326.6，已收复"
+    }
+   ],
+   [
+    314,
+    {
+     "en": "5-day average $312.4; Nov 10 low $316.69",
+     "zh": "5日均线 $312.4；11月10日低点 $316.69"
     }
    ],
    [
@@ -52,13 +59,6 @@
     {
      "en": "Nov 9 low",
      "zh": "11月9日低点"
-    }
-   ],
-   [
-    300,
-    {
-     "en": "$300 round number",
-     "zh": "$300 整数关口"
     }
    ]
   ]
