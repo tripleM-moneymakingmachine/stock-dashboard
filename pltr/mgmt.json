@@ -1,6 +1,6 @@
 {
  "ticker": "PLTR",
- "asof": "2026-11-10",
+ "asof": "2026-11-11",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -14,18 +14,18 @@
   "pct": -1.6
  },
  "since": {
-  "date": "2026-11-09",
-  "close": 169.2,
-  "pct": -5.1
+  "date": "2026-11-10",
+  "close": 168.82,
+  "pct": -5.3
  },
  "review": {
   "en": [
    "Revenue rose 96% to $2.31B, beating the ~$2.18B consensus, and EPS of $0.44 topped $0.41. US commercial revenue jumped 148% to $984M, passing US government ($953M, +96%) for the first time, and the adjusted operating margin reached 62%. Palantir raised 2026 guidance again, to $8.53B (+91%) against about $8.2B expected, with Q4 near $2.65B and free cash flow of $4.8–5.0B. CEO Alex Karp said customers move from pilot to production faster; CFO David Glazer said several large deals were shorter than usual.",
-   "Shares had already slipped 3.1% to $178.34 on Nov 2 and fell about 3–4% after hours. They opened near $168 on Nov 3, about 6% lower, because US commercial deal value grew only 11% (total contract value +6%) and the Q4 guide implies slower sequential growth. Buyers stepped in during the day and the stock closed 1.6% lower at $175.40. Morgan Stanley lifted its target to $233 but kept a Hold rating."
+   "Shares had slipped to $178.34 before the report and opened about 6% lower on Nov 3, because US commercial deal value grew only 11% (total contract value +6%), but closed just 1.6% lower at $175.40. The Democratic midterm sweep then hit AI and defense names: a 9.7% drop on Nov 5 left the stock at $154.99, its eighth straight loss. It rebounded 3.5% and 5.5% on Nov 6 and 9 as AI stocks recovered, closing at $168.82 on Nov 10, 3.8% below its first-session close."
   ],
   "zh": [
    "营收增长 96% 至 23.1 亿美元，高于约 21.8 亿美元的市场预期；每股收益 0.44 美元，高于 0.41 美元的预期。美国商业营收大增 148% 至 9.84 亿美元，首次超过美国政府营收（9.53 亿美元，+96%），调整后营业利润率达 62%。Palantir 再次上调 2026 年指引至 85.3 亿美元（+91%），高于约 82 亿美元的预期；第四季营收约 26.5 亿美元，全年自由现金流 48–50 亿美元。CEO 亚历克斯·卡普表示客户从试点到投产的速度加快；CFO 大卫·格雷泽称数笔大单的合约期限短于往常。",
-   "股价在 11 月 2 日已下跌 3.1% 至 178.34 美元，盘后再跌约 3–4%。11 月 3 日开盘约 168 美元，下跌约 6%，原因是美国商业合同额仅增长 11%（总合同价值 +6%），且第四季指引意味着环比增速放缓。盘中买盘入场，最终收跌 1.6% 至 175.40 美元。摩根士丹利将目标价上调至 233 美元，但维持持有评级。"
+   "股价在财报前已跌至 178.34 美元；由于美国商业合同额仅增长 11%（总合同价值 +6%），11 月 3 日开盘下跌约 6%，但最终仅收跌 1.6% 至 175.40 美元。随后民主党在中期选举中大胜，冲击 AI 与国防股：11 月 5 日股价下跌 9.7% 至 154.99 美元，为连续第八个交易日下跌。随着 AI 股回暖，11 月 6 日和 9 日分别反弹 3.5% 和 5.5%，11 月 10 日收于 168.82 美元，较首个交易日收盘价低 3.8%。"
   ]
  },
  "ceo": {
@@ -56,12 +56,13 @@
    "u": "https://cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html"
   },
   {
-   "t": "Q3 2026 call transcript (Motley Fool)",
-   "u": "https://fool.com/earnings/call-transcripts/2026/11/02/palantir-pltr-q3-2026-earnings-call-transcript"
-  },
-  {
    "t": "Shares fall on slower bookings (CNBC)",
    "u": "https://cnbc.com/amp/2026/11/03/apple-palantir-stock-earnings.html"
+  },
+  {
+   "t": "Nov 5 software sell-off after the midterms (Yahoo Finance)",
+   "u": "https://finance.yahoo.com/markets/stocks/articles/palantir-tumbles-10-crowdstrike-sinks-181136741.html"
   }
- ]
+ ],
+ "followup_done": true
 }
