@@ -124,6 +124,13 @@ jobs:
       - name: Fetch SOFR futures (CME SR3 strip; delayed quotes for the US tab)
         run: node scripts/fetch-sofr.mjs || echo "SOFR futures fetch failed; using the committed file"
 
+      # Rank trail next to each stock name on the main page (rank in the last 3 rankings),
+      # rebuilt from the git history of index.html so it is right even if the re-rank task skips it.
+      - name: Rank trails on the main page
+        run: |
+          git fetch -q --deepen=200 origin main || echo "deepen failed"
+          python3 scripts/rank-trail.py || echo "rank trail failed; using the committed index.html"
+
       - name: Assemble site
         run: |
           mkdir -p _site/data _site/assets
