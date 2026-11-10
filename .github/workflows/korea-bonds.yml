@@ -58,8 +58,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -q -m "Refresh Korea government bond data"
-          git pull -q --rebase origin main
-          git push
+          # Other workflows and the daily tasks push too; retry if one lands between the pull and the push.
+          ok=0
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push && { ok=1; break; }
+            echo "push rejected (attempt $i); retrying"; sleep $((i * 5))
+          done
+          [ "$ok" = 1 ]
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Redeploy the site
