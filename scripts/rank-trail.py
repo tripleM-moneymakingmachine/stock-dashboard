@@ -51,7 +51,7 @@ dates = [d.rsplit(",", 1)[0] for d, _ in snaps]
 
 def trail(t):
     rs = [r.get(t) for _, r in snaps]
-    txt = "→".join(str(x) if x else "–" for x in rs)
+    txt = '<i class="ar">→</i>'.join(str(x) if x else "–" for x in rs)
     prev, now = (rs[-2], rs[-1]) if len(rs) > 1 else (None, rs[-1])
     cls = "same" if not prev or prev == now else ("up" if now < prev else "down")
     title = "Rank on " + ", ".join(f"{d}: {x if x else 'not ranked'}" for d, x in zip(dates, rs))
@@ -61,7 +61,7 @@ def trail(t):
 def fix(mo):
     line = mo.group(0)
     t = re.search(r'href="(\w+)/"', line).group(1)
-    line = re.sub(r' ?<span class="trail[^"]*"[^>]*>[^<]*</span>', "", line)
+    line = re.sub(r' ?<span class="trail[^"]*"[^>]*>.*?</span>', "", line)
     return re.sub(r'(<div class="name">[^<]*)(</div>)', lambda n: n.group(1) + " " + trail(t) + n.group(2), line, count=1)
 
 
