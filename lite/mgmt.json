@@ -1,6 +1,6 @@
 {
  "ticker": "LITE",
- "asof": "2026-11-11",
+ "asof": "2026-11-12",
  "quarter": {
   "en": "Q1 FY2027 (September quarter)",
   "zh": "2027 财年第一季（9 月季度）"
@@ -14,9 +14,9 @@
   "pct": -18.6
  },
  "since": {
-  "date": "2026-11-10",
-  "close": 585.57,
-  "pct": -30.3
+  "date": "2026-11-11",
+  "close": 648.06,
+  "pct": -22.9
  },
  "review": {
   "en": [

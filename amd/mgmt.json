@@ -1,6 +1,6 @@
 {
  "ticker": "AMD",
- "asof": "2026-11-11",
+ "asof": "2026-11-12",
  "quarter": {
   "en": "Q3 2026",
   "zh": "2026年第三季"
@@ -14,18 +14,18 @@
   "pct": 1.0
  },
  "since": {
-  "date": "2026-11-10",
-  "close": 515.21,
-  "pct": 6.5
+  "date": "2026-11-11",
+  "close": 552.9,
+  "pct": 14.3
  },
  "review": {
   "en": [
    "Revenue rose 45% to a record $13.4B, above the $13.1B consensus, and non-GAAP EPS of $2.09 beat $1.95. Data center nearly doubled (+97%) to $8.5B, 64% of sales, as the first MI450-based Helios racks reached OpenAI, Meta, Anthropic, Microsoft and Oracle. The Q4 guide of about $17B (+66%) topped the ~$16.2B expected, though gross margin dips to about 55%. CEO Lisa Su said growth accelerates as Helios and Venice production scales, and told analysts 2027 revenue could grow more than 80%.",
-   "AMD rose 3.7% to $483.90 before the report, then jumped as much as 8% after hours to about $520. It touched $514.61 on Nov 4 but gave back most of the gain to close up 1.0% at $488.78. The Democratic midterm sweep raised fears of tighter data-center rules, and the Philadelphia chip index fell 3.1% while the broad market rallied. Goldman trimmed its target to $675 from $700 but kept a Buy, calling the October selloff overdone."
+   "AMD rose 3.7% to $483.90 into the report and jumped up to 8% after hours, but the first session closed up just 1.0% at $488.78 as midterm worries hit chips. On Nov 5 it sank 17.3% to $404.40 as the chip index fell 12% on AI-regulation fears. It then rebounded: an Oppenheimer upgrade and Google's choice of EPYC as TPU host CPU lifted it 13.3% on Nov 9, and CoreWeave's results, a Goldman top-pick call and a $2.5B Anthropic IPO stake added 7.3% on Nov 11 to $552.90, 14.3% above the pre-report close."
   ],
   "zh": [
    "营收增长 45% 至创纪录的 134 亿美元，高于 131 亿美元的市场预期；非 GAAP 每股收益 2.09 美元，高于 1.95 美元。数据中心营收近乎翻倍（+97%）至 85 亿美元，占总营收 64%，首批搭载 MI450 的 Helios 机柜已交付 OpenAI、Meta、Anthropic、微软和甲骨文。第四季营收指引约 170 亿美元（+66%），高于约 162 亿美元的预期，但毛利率将降至约 55%。CEO 苏姿丰表示，随着 Helios 与 Venice 量产扩大，增长将进一步加速，并向分析师表示 2027 年营收增幅可能超过 80%。",
-   "财报前股价上涨 3.7% 至 483.90 美元，盘后一度大涨 8% 至约 520 美元。11 月 4 日盘中最高触及 514.61 美元，但涨幅大多回吐，收涨 1.0% 至 488.78 美元。民主党在中期选举中大胜，市场担心数据中心监管收紧，费城半导体指数下跌 3.1%，而大盘上涨。高盛将目标价由 700 美元下调至 675 美元，维持买入评级，认为 10 月的抛售过度。"
+   "财报前股价上涨 3.7% 至 483.90 美元，盘后一度大涨 8%，但首个交易日因中期选举担忧拖累芯片股，仅收涨 1.0% 至 488.78 美元。11 月 5 日，费城半导体指数因 AI 监管担忧大跌 12%，AMD 重挫 17.3% 至 404.40 美元。随后股价反弹：奥本海默上调评级、谷歌选用 EPYC 作为 TPU 主机处理器，推动 11 月 9 日大涨 13.3%；CoreWeave 业绩亮眼、高盛将其列为首选芯片股、以及 Anthropic IPO 中 25 亿美元的认购，使 11 月 11 日再涨 7.3% 至 552.90 美元，较财报前收盘高 14.3%。"
   ]
  },
  "ceo": {
@@ -60,12 +60,17 @@
    "u": "https://investing.com/news/transcripts/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4996894"
   },
   {
-   "t": "First-session trading (MarketBeat)",
-   "u": "https://marketbeat.com/instant-alerts/price-advanced-micro-devices-nasdaq-amd-shares-climb-1-after-strong-earnings-2026-11-04"
+   "t": "Nov 5 chip selloff after the midterms (Motley Fool)",
+   "u": "https://fool.com/investing/2026/11/07/amd-stock-just-fell-below-the-price-i-said-i-d-pay-for-it"
   },
   {
-   "t": "Chip stocks after the midterms (WSJ)",
-   "u": "https://wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-04-2026/card/chip-stocks-take-a-hit-YOCGYXdxhJ2NABQB2DC5"
+   "t": "Nov 9 rebound: Oppenheimer upgrade, Google TPU host CPU (Motley Fool)",
+   "u": "https://fool.com/coverage/stock-market-today/2026/11/09/stock-market-today-nov-9-amd-jumps-on-oppenheimer-upgrade-and-google-cloud-chip-selection"
+  },
+  {
+   "t": "Nov 11 gain on CoreWeave, Goldman and Anthropic (Motley Fool)",
+   "u": "https://fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-advanced-micro-devices-jumps-and-not-only-because-of-coreweave-s-results"
   }
- ]
+ ],
+ "followup_done": true
 }

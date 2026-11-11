@@ -1,6 +1,6 @@
 {
  "ticker": "SPCX",
- "asof": "2026-11-11",
+ "asof": "2026-11-12",
  "quarter": {
   "en": "Q3 2026 (first profitable quarter as a public company)",
   "zh": "2026年第三季（上市后首个盈利季度）"
@@ -14,9 +14,9 @@
   "pct": 7.8
  },
  "since": {
-  "date": "2026-11-10",
-  "close": 143.09,
-  "pct": -3.2
+  "date": "2026-11-11",
+  "close": 139.75,
+  "pct": -5.4
  },
  "review": {
   "en": [
