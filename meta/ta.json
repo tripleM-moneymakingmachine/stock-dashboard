@@ -1,57 +1,64 @@
 {
- "asof": "Nov 10, 2026",
- "close": 641.39,
+ "asof": "Nov 11, 2026",
+ "close": 628.77,
  "bias": {
-  "en": "Rebound · holding the 100 and 200-day, under $648",
-  "zh": "反弹 · 守住 100 和 200 日均线，仍低于 $648"
+  "en": "Pullback · slipped under the 100 and 200-day",
+  "zh": "回调 · 跌破 100 日和 200 日均线"
  },
  "read": [
   {
-   "en": "Meta was flat on Nov 10 at $641.39, trading $635.50–647.28 on light volume (0.52x the 20-day average). It is above the 5-day ($625.6), 10-day ($620.8), 100-day ($634.8) and 200-day ($631.7) and below the 30-day ($678.6); only the 5 and 100-day are rising. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bullish since Nov 9 ($585.07), and RSI is 46.",
-   "zh": "Meta 11月10日持平，收于 $641.39，盘中区间 $635.50–647.28，成交量偏低（20 日均量的 0.52 倍）。股价位于 5 日（$625.6）、10 日（$620.8）、100 日（$634.8）和 200 日（$631.7）均线上方，30 日（$678.6）均线下方；仅 5、100 日均线在上行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月9日起看多（$585.07），RSI 为 46。"
+   "en": "Meta fell 2.0% on Nov 11 to $628.77, trading $628.02–648.45 on light volume (0.63x the 20-day average). It is above the rising 5-day ($625.4) and the 10-day ($622.4) and below the 200-day ($631.5), rising 100-day ($635.5) and 30-day ($675.4). MACD crossed above its signal on Nov 11, below zero; Parabolic SAR has been bullish since Nov 9 ($587.56), and RSI is 43.4.",
+   "zh": "Meta 11月11日下跌 2.0%，收于 $628.77，盘中区间 $628.02–648.45，成交量偏低（20 日均量的 0.63 倍）。股价位于上行的 5 日均线（$625.4）和 10 日均线（$622.4）上方，200 日（$631.5）、上行的 100 日（$635.5）和 30 日均线（$675.4）下方。MACD 于 11月11日上穿信号线，在零轴下方；抛物线 SAR 自 11月9日起看多（$587.56），RSI 为 43.4。"
   },
   {
-   "en": "No level changed: the $647.28 high again stopped in the $643.1–648 band, and the $635.50 low held above the 100 and 200-day ($631.7–634.8). Resistance is $643.1–648 (Nov 4, 9 and 10 highs, Oct 23 high), then $678.6–681.1 (30-day, Oct 22 high). Support is $630–635.5, then $620.8–625.6 (10 and 5-day) and $606.4–610.1. A close above $648 would target $679–681; below $630, $621–626.",
-   "zh": "关键价位未变：盘中高点 $647.28 再次止步于 $643.1–648 区间，低点 $635.50 守在 100 和 200 日均线（$631.7–634.8）上方。阻力为 $643.1–648（11月4日、9日和10日高点、10月23日高点），其次 $678.6–681.1（30 日均线、10月22日高点）。支撑为 $630–635.5，其次 $620.8–625.6（10 日和 5 日均线）和 $606.4–610.1。若收盘站上 $648，下一目标看 $679–681；若跌破 $630，则看 $621–626。"
+   "en": "The $648.45 high stopped again in the $643–648.5 band, and the close lost the 100 and 200-day and the $630 Nov 9 low, now resistance. Resistance is $630–635.5, then $643.1–648.5 (Nov 4, 9, 10 and 11 highs) and $675.4–681.1 (30-day, Oct 22 high). Support is $621–625.4 (5 and 10-day, Nov 3 close and high), then $606.4–610.1 and $583.8–587.6 (SAR). A close above $635.5 would target $643–648; below $621, $606–610.",
+   "zh": "盘中高点 $648.45 再次止步于 $643–648.5 区间，收盘跌破 100 日、200 日均线和 11月9日低点 $630，转为阻力。阻力为 $630–635.5，其次 $643.1–648.5（11月4、9、10、11日高点）和 $675.4–681.1（30 日均线、10月22日高点）。支撑为 $621–625.4（5 日和 10 日均线、11月3日收盘和高点），其次 $606.4–610.1 和 $583.8–587.6（抛物线 SAR）。若收盘站上 $635.5，下一目标看 $643–648；若跌破 $621，则看 $606–610。"
   }
  ],
  "levels": {
   "r": [
    [
-    645,
+    633,
     {
-     "en": "Nov 4 high $643.09; Nov 9–10 highs ($647.25–647.28); Oct 23 high $648.04",
-     "zh": "11月4日高点 $643.09；11月9–10日高点（$647.25–647.28）；10月23日高点 $648.04"
+     "en": "200-day average $631.5; 100-day $635.5; Nov 9 low $630, lost",
+     "zh": "200日均线 $631.5；100日均线 $635.5；11月9日低点 $630，已失守"
     }
    ],
    [
-    680,
+    646,
     {
-     "en": "30-day average $678.6; Oct 22 high $681.07",
-     "zh": "30日均线 $678.6；10月22日高点 $681.07"
+     "en": "Nov 4 high $643.09; Nov 9–10 highs ($647.25–647.28); Nov 11 high $648.45",
+     "zh": "11月4日高点 $643.09；11月9–10日高点（$647.25–647.28）；11月11日高点 $648.45"
+    }
+   ],
+   [
+    678,
+    {
+     "en": "30-day average $675.4; Oct 22 high $681.07",
+     "zh": "30日均线 $675.4；10月22日高点 $681.07"
     }
    ]
   ],
   "s": [
    [
-    632,
-    {
-     "en": "100 and 200-day averages ($631.7–634.8); Nov 9 low $630; Nov 10 low $635.50",
-     "zh": "100 和 200 日均线（$631.7–634.8）；11月9日低点 $630；11月10日低点 $635.50"
-    }
-   ],
-   [
     623,
     {
-     "en": "10-day average $620.8; 5-day $625.6; Nov 3 high $624.8",
-     "zh": "10日均线 $620.8；5日均线 $625.6；11月3日高点 $624.8"
+     "en": "5-day average $625.4; 10-day $622.4; Nov 3 close $621.03; Nov 3 high $624.84",
+     "zh": "5日均线 $625.4；10日均线 $622.4；11月3日收盘 $621.03；11月3日高点 $624.84"
     }
    ],
    [
     608,
     {
-     "en": "Nov 2 low $606.4; Nov 6 low $606.66; Oct 30 and Nov 3 lows $610.1",
-     "zh": "11月2日低点 $606.4；11月6日低点 $606.66；10月30日和11月3日低点 $610.1"
+     "en": "Nov 2 low $606.4; Nov 6 low $606.66; Nov 3 low $610.1",
+     "zh": "11月2日低点 $606.4；11月6日低点 $606.66；11月3日低点 $610.1"
+    }
+   ],
+   [
+    586,
+    {
+     "en": "Parabolic SAR $587.56; Nov 5 low $583.8",
+     "zh": "抛物线 SAR $587.56；11月5日低点 $583.8"
     }
    ]
   ]

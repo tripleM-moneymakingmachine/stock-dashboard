@@ -1,27 +1,50 @@
 {
- "asof": "Nov 10, 2026",
- "close": 859.99,
+ "asof": "Nov 11, 2026",
+ "close": 977.69,
  "bias": {
-  "en": "Downtrend · rejected at $904–915, holding $852–855",
-  "zh": "下降趋势 · 受阻于 $904–915，守住 $852–855"
+  "en": "Rebound · cleared $904–947, at the 10-day",
+  "zh": "反弹 · 突破 $904–947，触及 10 日均线"
  },
  "read": [
   {
-   "en": "SanDisk fell 3.0% on Nov 10 to $859.99, trading $826.67–914.82. It is below the 5-day ($885.1), 10-day ($1,051.3), 30-day ($1,341.7), 100-day ($1,535.3) and 200-day ($1,276.2); only the 200-day is rising. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($1,232.71), and RSI is 29.",
-   "zh": "闪迪 11月10日下跌 3.0%，收于 $859.99，盘中区间 $826.67–914.82。股价位于 5 日（$885.1）、10 日（$1,051.3）、30 日（$1,341.7）、100 日（$1,535.3）和 200 日（$1,276.2）均线下方；仅 200 日均线在上行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$1,232.71），RSI 为 29。"
+   "en": "SanDisk jumped 13.7% on Nov 11 to $977.69, trading $920.18–1,011.05 on heavy volume (1.41x the 20-day average). It is above the 5-day ($873.1) and below the 10-day ($1,008.6), 30-day ($1,316.3), 100-day ($1,522.4) and 200-day ($1,278.7); only the 200-day is rising. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($1,198.41), and RSI is 37.4.",
+   "zh": "闪迪 11月11日大涨 13.7%，收于 $977.69，盘中区间 $920.18–1,011.05，成交量放大（20 日均量的 1.41 倍）。股价位于 5 日均线（$873.1）上方，10 日（$1,008.6）、30 日（$1,316.3）、100 日（$1,522.4）和 200 日均线（$1,278.7）下方；仅 200 日均线在上行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$1,198.41），RSI 为 37.4。"
   },
   {
-   "en": "No level changed: the $914.82 high pierced the $904–912 resistance but faded, and the close held above the $851.6–855 support (Apr 9 close and high). Resistance is $885.1 (5-day), then $904–914.8 (Nov 6, 9 and 10 highs) and $926–947. Support is $851.6–855, then $804–831 (Nov 5, 6, 9 and 10 lows) and $758.2. A close above $914.8 would target $926–947; below $851.6, $804–831.",
-   "zh": "关键价位未变：盘中高点 $914.82 刺穿 $904–912 阻力后回落，收盘守在 $851.6–855 支撑（4月9日收盘和高点）上方。阻力为 $885.1（5 日均线），其次 $904–914.8（11月6日、9日和10日高点）和 $926–947。支撑为 $851.6–855，其次 $804–831（11月5日、6日、9日和10日低点）和 $758.2。若收盘站上 $914.8，下一目标看 $926–947；若跌破 $851.6，则看 $804–831。"
+   "en": "The rally cleared the $904–914.8 highs and the $926–947 Apr 23–24 lows, now support; the $1,011.05 high stalled at the 10-day and the $1,014 Nov 4 low. Resistance is $1,008.6–1,014, then $1,037.4 (Nov 4 close) and $1,067–1,075 (Nov 2 low and close). Support is $920–947, then $904–914.8 and $873–887 (5-day, Nov 9 close). A close above $1,014 would target $1,037–1,075; below $920, $904–915.",
+   "zh": "此次上涨突破 $904–914.8 高点和 4月23–24日低点 $926–947，均转为支撑；盘中高点 $1,011.05 受阻于 10 日均线和 11月4日低点 $1,014。阻力为 $1,008.6–1,014，其次 $1,037.4（11月4日收盘）和 $1,067–1,075（11月2日低点和收盘）。支撑为 $920–947，其次 $904–914.8 和 $873–887（5 日均线、11月9日收盘）。若收盘站上 $1,014，下一目标看 $1,037–1,075；若跌破 $920，则看 $904–915。"
   }
  ],
  "levels": {
   "r": [
    [
-    885,
+    1011,
     {
-     "en": "5-day average $885.1",
-     "zh": "5日均线 $885.1"
+     "en": "10-day average $1,008.6; Nov 11 high $1,011.05; Nov 4 low $1,014",
+     "zh": "10日均线 $1,008.6；11月11日高点 $1,011.05；11月4日低点 $1,014"
+    }
+   ],
+   [
+    1037.4,
+    {
+     "en": "Nov 4 close $1,037.40",
+     "zh": "11月4日收盘 $1,037.40"
+    }
+   ],
+   [
+    1071,
+    {
+     "en": "Nov 2 low $1,067.4; Nov 2 close $1,075.08",
+     "zh": "11月2日低点 $1,067.4；11月2日收盘 $1,075.08"
+    }
+   ]
+  ],
+  "s": [
+   [
+    935,
+    {
+     "en": "Nov 11 low $920.18; Apr 23–24 lows ($926.1–947), reclaimed",
+     "zh": "11月11日低点 $920.18；4月23–24日低点（$926.1–947），已收复"
     }
    ],
    [
@@ -32,33 +55,10 @@
     }
    ],
    [
-    938,
+    880,
     {
-     "en": "Apr 23–24 lows ($926.1–947)",
-     "zh": "4月23–24日低点（$926.1–947）"
-    }
-   ]
-  ],
-  "s": [
-   [
-    853,
-    {
-     "en": "Apr 9 close $851.6 and high $855",
-     "zh": "4月9日收盘 $851.6 和高点 $855"
-    }
-   ],
-   [
-    817,
-    {
-     "en": "Nov 10 low $826.67; Nov 9 low $830.64; Nov 6 low $816.42; Nov 5 low $803.97",
-     "zh": "11月10日低点 $826.67；11月9日低点 $830.64；11月6日低点 $816.42；11月5日低点 $803.97"
-    }
-   ],
-   [
-    758.2,
-    {
-     "en": "Apr 8 low",
-     "zh": "4月8日低点"
+     "en": "5-day average $873.1; Nov 9 close $886.51",
+     "zh": "5日均线 $873.1；11月9日收盘 $886.51"
     }
    ]
   ]

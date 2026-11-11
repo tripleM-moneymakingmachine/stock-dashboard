@@ -1,64 +1,64 @@
 {
- "asof": "Nov 10, 2026",
- "close": 397.16,
+ "asof": "Nov 11, 2026",
+ "close": 406.19,
  "bias": {
-  "en": "Downtrend · cleared $394–396, at the 5-day",
-  "zh": "下降趋势 · 突破 $394–396，触及 5 日均线"
+  "en": "Rebound · above the 5-day, testing $407–415",
+  "zh": "反弹 · 站上 5 日均线，测试 $407–415"
  },
  "read": [
   {
-   "en": "Rockwell Automation rose 2.0% on Nov 10 to $397.16, trading $388.40–397.53. It is below the 5-day ($397.5), 10-day ($420.5), 30-day ($430.0), 100-day ($442.6) and 200-day ($426.8); all five averages are falling. MACD has been below its signal since Nov 5, below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 5 ($446.19), and RSI is 40.",
-   "zh": "罗克韦尔自动化 11月10日上涨 2.0%，收于 $397.16，盘中区间 $388.40–397.53。股价位于 5 日（$397.5）、10 日（$420.5）、30 日（$430.0）、100 日（$442.6）和 200 日（$426.8）均线下方；五条均线均在下行。MACD 自 11月5日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月5日起看空（$446.19），RSI 为 40。"
+   "en": "Rockwell Automation rose 2.3% on Nov 11 to $406.19, trading $401.71–414.98. It is above the 5-day ($389.9) and below the 10-day ($416.8), 30-day ($429.0), 100-day ($441.9) and 200-day ($426.8), all falling. MACD has been below its signal since Nov 5, below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 5 ($443.17), and RSI is 43.6.",
+   "zh": "罗克韦尔自动化 11月11日上涨 2.3%，收于 $406.19，盘中区间 $401.71–414.98。股价位于 5 日均线（$389.9）上方，10 日（$416.8）、30 日（$429.0）、100 日（$441.9）和 200 日均线（$426.8）下方，均在下行。MACD 自 11月5日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月5日起看空（$443.17），RSI 为 43.6。"
   },
   {
-   "en": "The close cleared the $392.5–396.3 resistance (Nov 6 and Nov 9 highs, Apr 29 low), now support, and finished at the day's high, just under the 5-day ($397.5). Resistance is $397.5, then $406.9–412.7 (Sep–Oct lows, Nov 5 high) and $420.5–430 (10, 200 and 30-day). Support is $388.4–396.3, then $383.1 and $375.7 (Feb 17 low). A close above $397.5 would target $407–413; below $388.4, $383.",
-   "zh": "收盘突破 $392.5–396.3 阻力（11月6日和11月9日高点、4月29日低点），转为支撑，并收在全日最高处，略低于 5 日均线（$397.5）。阻力为 $397.5，其次 $406.9–412.7（9–10 月低点、11月5日高点）和 $420.5–430（10、200 和 30 日均线）。支撑为 $388.4–396.3，其次 $383.1 和 $375.7（2月17日低点）。若收盘站上 $397.5，下一目标看 $407–413；若跌破 $388.4，则看 $383。"
+   "en": "The close cleared the 5-day and the $397.53 Nov 10 high, now support; the $414.98 high stalled in the $406.9–415 band (Sep 17 and Oct 15 lows, Nov 5 high), and the close sits just under it. Resistance is $406.9–415, then $416.8–429.0 (10, 200 and 30-day) and $443.2 (SAR). Support is $397.5–401.7, then $389.9–394.1 (5-day, Nov 6 and Nov 9 highs) and $383.1–388.4. A close above $415 would target $417–429; below $397.5, $390–394.",
+   "zh": "收盘突破 5 日均线和 11月10日高点 $397.53，均转为支撑；盘中高点 $414.98 受阻于 $406.9–415 区间（9月17日和10月15日低点、11月5日高点），收盘略低于该区间。阻力为 $406.9–415，其次 $416.8–429.0（10 日、200 日和 30 日均线）和 $443.2（抛物线 SAR）。支撑为 $397.5–401.7，其次 $389.9–394.1（5 日均线、11月6日和11月9日高点）和 $383.1–388.4。若收盘站上 $415，下一目标看 $417–429；若跌破 $397.5，则看 $390–394。"
   }
  ],
  "levels": {
   "r": [
    [
-    397.5,
+    410,
     {
-     "en": "5-day average $397.46; Nov 10 high $397.53",
-     "zh": "5日均线 $397.46；11月10日高点 $397.53"
+     "en": "Sep 17 low $406.92; Nov 5 high $412.63; Oct 15 low $412.65; Nov 11 high $414.98",
+     "zh": "9月17日低点 $406.92；11月5日高点 $412.63；10月15日低点 $412.65；11月11日高点 $414.98"
     }
    ],
    [
-    409.5,
+    423,
     {
-     "en": "Sep 17 low $406.92; Nov 5 high $412.63; Oct 15 low $412.65",
-     "zh": "9月17日低点 $406.92；11月5日高点 $412.63；10月15日低点 $412.65"
+     "en": "10, 200 and 30-day averages ($416.8–429.0)",
+     "zh": "10日、200日和30日均线（$416.8–429.0）"
     }
    ],
    [
-    426,
+    443.2,
     {
-     "en": "10, 200 and 30-day averages ($420.5–430.0)",
-     "zh": "10、200 和 30 日均线（$420.5–430.0）"
+     "en": "Parabolic SAR $443.17; Nov 4 close $443.88",
+     "zh": "抛物线 SAR $443.17；11月4日收盘 $443.88"
     }
    ]
   ],
   "s": [
    [
-    393,
+    399.5,
     {
-     "en": "Nov 6 high $392.54; Nov 9 high $394.07; Apr 29 low $396.3, cleared",
-     "zh": "11月6日高点 $392.54；11月9日高点 $394.07；4月29日低点 $396.3，已突破"
+     "en": "Nov 11 low $401.71; Nov 10 high $397.53",
+     "zh": "11月11日低点 $401.71；11月10日高点 $397.53"
     }
    ],
    [
-    386,
+    392,
     {
-     "en": "Nov 9 low $383.13; Nov 10 low $388.40",
-     "zh": "11月9日低点 $383.13；11月10日低点 $388.40"
+     "en": "5-day average $389.9; Nov 6 high $392.54; Nov 9 high $394.07",
+     "zh": "5日均线 $389.9；11月6日高点 $392.54；11月9日高点 $394.07"
     }
    ],
    [
-    375.7,
+    385.5,
     {
-     "en": "Feb 17 low",
-     "zh": "2月17日低点"
+     "en": "Nov 9 low $383.13; Nov 10 low $388.41",
+     "zh": "11月9日低点 $383.13；11月10日低点 $388.41"
     }
    ]
   ]

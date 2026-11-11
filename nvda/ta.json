@@ -1,45 +1,52 @@
 {
- "asof": "Nov 10, 2026",
- "close": 168.89,
+ "asof": "Nov 11, 2026",
+ "close": 173.73,
  "bias": {
-  "en": "Breakdown · lost $170–177.6, near the 52-week low",
-  "zh": "破位 · 失守 $170–177.6，逼近 52 周低点"
+  "en": "Downtrend · oversold bounce, under the 5-day",
+  "zh": "下降趋势 · 超卖反弹，仍低于 5 日均线"
  },
  "read": [
   {
-   "en": "Nvidia fell 5.5% on Nov 10 to $168.89, trading $165.89–174.65 on heavy volume (3.10x the 20-day average). It is below the 5-day ($183.2), 10-day ($195.8), 30-day ($214.9), 100-day ($213.3) and 200-day ($204.5); all five averages are falling. MACD has been below its signal since Oct 12, below zero, histogram widening; Parabolic SAR has been bearish since Oct 13 ($195.83), and RSI is 24.",
-   "zh": "英伟达 11月10日下跌 5.5%，收于 $168.89，盘中区间 $165.89–174.65，成交量放大（20 日均量的 3.10 倍）。股价位于 5 日（$183.2）、10 日（$195.8）、30 日（$214.9）、100 日（$213.3）和 200 日（$204.5）均线下方；五条均线均在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图扩大；抛物线 SAR 自 10月13日起看空（$195.83），RSI 为 24。"
+   "en": "Nvidia rose 2.9% on Nov 11 to $173.73, trading $170.77–177.54 on heavy volume (1.82x the 20-day average). It is below the 5-day ($177.9), 10-day ($191.7), 30-day ($213.1), 100-day ($213.0) and 200-day ($204.5), all falling. MACD has been below its signal since Oct 12, below zero, histogram widening; Parabolic SAR has been bearish since Oct 13 ($189.84), and RSI is 28.7, oversold.",
+   "zh": "英伟达 11月11日上涨 2.9%，收于 $173.73，盘中区间 $170.77–177.54，成交量放大（20 日均量的 1.82 倍）。股价位于 5 日（$177.9）、10 日（$191.7）、30 日（$213.1）、100 日（$213.0）和 200 日均线（$204.5）下方，均在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图扩大；抛物线 SAR 自 10月13日起看空（$189.84），RSI 为 28.7，处于超卖区。"
   },
   {
-   "en": "The close broke both supports, $176.8–177.6 (Jan 20 and Oct 2025 lows) and $170.2 (Nov 9 low), now resistance; the $165.89 low came within 1% of the $164.27 52-week low (Mar 30). Resistance is $170.2–174.7 (Nov 9 low, Nov 10 high), then $176.8–179.9 and $183.2 (5-day). Support is $164.3–165.9, then $160. A close above $174.7 would target $177–180; below $164.3, $160.",
-   "zh": "收盘跌破两道支撑：$176.8–177.6（1月20日和2025年10月低点）和 $170.2（11月9日低点），均转为阻力；盘中低点 $165.89 距 52 周低点 $164.27（3月30日）不足 1%。阻力为 $170.2–174.7（11月9日低点、11月10日高点），其次 $176.8–179.9 和 $183.2（5 日均线）。支撑为 $164.3–165.9，其次 $160。若收盘站上 $174.7，下一目标看 $177–180；若跌破 $164.3，则看 $160。"
+   "en": "The bounce reclaimed the $170.2 Nov 9 low and the $174.65 Nov 10 high is now just above the close; the $177.54 high stalled under the 5-day and the $176.8–177.6 old lows. Resistance is $176.8–177.9, then $179.9–181.6 (Nov 9 high, Nov 5 low and close) and $189.8 (SAR). Support is $170.2–170.8 (Nov 9 and Nov 11 lows), then $164.3–165.9 (52-week low, Nov 10 low) and $160. A close above $177.9 would target $180–182; below $170.2, $164–166.",
+   "zh": "此次反弹收复 11月9日低点 $170.2，11月10日高点 $174.65 略高于收盘价；盘中高点 $177.54 受阻于 5 日均线和 $176.8–177.6 旧低点下方。阻力为 $176.8–177.9，其次 $179.9–181.6（11月9日高点、11月5日低点和收盘）和 $189.8（抛物线 SAR）。支撑为 $170.2–170.8（11月9日和11月11日低点），其次 $164.3–165.9（52 周低点、11月10日低点）和 $160。若收盘站上 $177.9，下一目标看 $180–182；若跌破 $170.2，则看 $164–166。"
   }
  ],
  "levels": {
   "r": [
    [
-    172.4,
+    177.5,
     {
-     "en": "Nov 9 low $170.24, lost; Nov 10 high $174.65",
-     "zh": "11月9日低点 $170.24，已失守；11月10日高点 $174.65"
+     "en": "5-day average $177.9; Oct 22, 2025 and Jan 20 lows ($176.76–177.61); Nov 11 high $177.54; Nov 10 high $174.65",
+     "zh": "5日均线 $177.9；2025年10月22日和1月20日低点（$176.76–177.61）；11月11日高点 $177.54；11月10日高点 $174.65"
     }
    ],
    [
-    178.5,
+    181,
     {
-     "en": "Oct 22, 2025 and Jan 20 lows ($176.76–177.61), lost; Nov 9 high $179.92",
-     "zh": "2025年10月22日和1月20日低点（$176.76–177.61），已失守；11月9日高点 $179.92"
+     "en": "Nov 9 high $179.92; Nov 5 low $181.46; Nov 5 close $181.60",
+     "zh": "11月9日高点 $179.92；11月5日低点 $181.46；11月5日收盘 $181.60"
     }
    ],
    [
-    183.2,
+    189.8,
     {
-     "en": "5-day average",
-     "zh": "5日均线"
+     "en": "Parabolic SAR $189.84",
+     "zh": "抛物线 SAR $189.84"
     }
    ]
   ],
   "s": [
+   [
+    170.5,
+    {
+     "en": "Nov 9 low $170.24, reclaimed; Nov 11 low $170.77",
+     "zh": "11月9日低点 $170.24，已收复；11月11日低点 $170.77"
+    }
+   ],
    [
     165,
     {

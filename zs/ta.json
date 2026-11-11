@@ -1,41 +1,41 @@
 {
- "asof": "Nov 10, 2026",
- "close": 194.92,
+ "asof": "Nov 11, 2026",
+ "close": 193.79,
  "bias": {
-  "en": "Pullback · lost $195, September lows next",
-  "zh": "回调 · 失守 $195，下看 9 月低点"
+  "en": "Pullback · under $195–198, September lows below",
+  "zh": "回调 · 低于 $195–198，下方为 9 月低点"
  },
  "read": [
   {
-   "en": "Zscaler fell 2.1% on Nov 10 to $194.92, trading $188.91–201.56. It is above the 100-day ($182.7) and 200-day ($166.8) and below the 5-day ($204.0), 10-day ($221.0) and 30-day ($221.9); only the 30 and 100-day are rising. MACD has been below its signal since Nov 2, below zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($248.79), and RSI is 37.",
-   "zh": "Zscaler 11月10日下跌 2.1%，收于 $194.92，盘中区间 $188.91–201.56。股价位于 100 日（$182.7）和 200 日（$166.8）均线上方，5 日（$204.0）、10 日（$221.0）和 30 日（$221.9）均线下方；仅 30、100 日均线在上行。MACD 自 11月2日起位于信号线下方，在零轴下方，柱状图扩大；抛物线 SAR 自 11月2日起看空（$248.79），RSI 为 37。"
+   "en": "Zscaler fell 0.6% on Nov 11 to $193.79, trading $193.09–203.00. It is below the 5-day ($197.9), 10-day ($214.8) and 30-day ($221.8) and above the rising 100-day ($183.4) and the 200-day ($166.7). MACD has been below its signal since Nov 2, below zero, histogram widening; Parabolic SAR has been bearish since Nov 2 ($241.6), and RSI is 36.2.",
+   "zh": "Zscaler 11月11日下跌 0.6%，收于 $193.79，盘中区间 $193.09–203.00。股价位于 5 日（$197.9）、10 日（$214.8）和 30 日均线（$221.8）下方，上行的 100 日均线（$183.4）和 200 日均线（$166.7）上方。MACD 自 11月2日起位于信号线下方，在零轴下方，柱状图扩大；抛物线 SAR 自 11月2日起看空（$241.6），RSI 为 36.2。"
   },
   {
-   "en": "The close lost the $195.1–195.8 support (Sep 29 and Oct 2 lows, Nov 9 low), now resistance; the $188.91 low stopped above the $187.5–187.7 September lows. Resistance is $195.1–195.8, then $201.6–204 (Nov 9–10 highs, Nov 5 low, 5-day) and $210.5–214.5. Support is $187.5–188.9 (September lows, Nov 10 low), then $182.7 (100-day) and $166.8 (200-day). A close above $195.8 would target $202–204; below $187.5, $182.7.",
-   "zh": "收盘失守 $195.1–195.8 支撑（9月29日和10月2日低点、11月9日低点），转为阻力；盘中低点 $188.91 止步于 9 月低点 $187.5–187.7 上方。阻力为 $195.1–195.8，其次 $201.6–204（11月9–10日高点、11月5日低点、5 日均线）和 $210.5–214.5。支撑为 $187.5–188.9（9 月低点、11月10日低点），其次 $182.7（100 日均线）和 $166.8（200 日均线）。若收盘站上 $195.8，下一目标看 $202–204；若跌破 $187.5，则看 $182.7。"
+   "en": "No level changed: the $203 high stopped at the $201.6–203 resistance, the close stayed under $195.1–195.8, and the $193.09 low held above the $187.5–188.9 September lows. Resistance is $195.1–197.9 (Sep 29 and Oct 2 lows, Nov 9 low, 5-day), then $201.6–203 and $210.5–214.8 (Nov 6 high, 10-day). Support is $187.5–188.9, then $183.4 (100-day) and $166.7 (200-day). A close above $197.9 would target $202–203; below $187.5, $183.4.",
+   "zh": "关键价位未变：盘中高点 $203 受阻于 $201.6–203 阻力，收盘仍低于 $195.1–195.8，低点 $193.09 守在 9 月低点 $187.5–188.9 上方。阻力为 $195.1–197.9（9月29日和10月2日低点、11月9日低点、5 日均线），其次 $201.6–203 和 $210.5–214.8（11月6日高点、10 日均线）。支撑为 $187.5–188.9，其次 $183.4（100 日均线）和 $166.7（200 日均线）。若收盘站上 $197.9，下一目标看 $202–203；若跌破 $187.5，则看 $183.4。"
   }
  ],
  "levels": {
   "r": [
    [
-    195.5,
+    196.5,
     {
-     "en": "Sep 29 and Oct 2 lows ($195.1); Nov 9 low $195.80, lost",
-     "zh": "9月29日和10月2日低点（$195.1）；11月9日低点 $195.80，已失守"
+     "en": "Sep 29 and Oct 2 lows ($195.1); Nov 9 low $195.80; 5-day average $197.9",
+     "zh": "9月29日和10月2日低点（$195.1）；11月9日低点 $195.80；5日均线 $197.9"
     }
    ],
    [
-    203,
+    202.5,
     {
-     "en": "Nov 10 high $201.56; Nov 9 high $202.49; Nov 5 low $203.02; 5-day average $204.0",
-     "zh": "11月10日高点 $201.56；11月9日高点 $202.49；11月5日低点 $203.02；5日均线 $204.0"
+     "en": "Nov 10 high $201.56; Nov 9 high $202.49; Nov 11 high $203.0; Nov 5 low $203.02",
+     "zh": "11月10日高点 $201.56；11月9日高点 $202.49；11月11日高点 $203.0；11月5日低点 $203.02"
     }
    ],
    [
-    212,
+    212.5,
     {
-     "en": "Nov 6 high $210.52; Oct 21 low $214.5",
-     "zh": "11月6日高点 $210.52；10月21日低点 $214.5"
+     "en": "Nov 6 high $210.52; 10-day average $214.8",
+     "zh": "11月6日高点 $210.52；10日均线 $214.8"
     }
    ]
   ],
@@ -48,14 +48,14 @@
     }
    ],
    [
-    182.7,
+    183.4,
     {
      "en": "100-day average",
      "zh": "100日均线"
     }
    ],
    [
-    166.8,
+    166.7,
     {
      "en": "200-day average",
      "zh": "200日均线"

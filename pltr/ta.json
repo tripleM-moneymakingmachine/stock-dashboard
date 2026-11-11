@@ -1,34 +1,34 @@
 {
- "asof": "Nov 10, 2026",
- "close": 168.82,
+ "asof": "Nov 11, 2026",
+ "close": 172.4,
  "bias": {
-  "en": "Rebound · holding the 100-day, under $171.7",
-  "zh": "反弹 · 守住 100 日均线，仍低于 $171.7"
+  "en": "Rebound · SAR flipped bullish, at the 10-day",
+  "zh": "反弹 · 抛物线 SAR 转为看多，位于 10 日均线"
  },
  "read": [
   {
-   "en": "Palantir fell 0.2% on Nov 10 to $168.82, trading $164.00–169.34. It is above the 5-day ($165.0), 100-day ($165.1) and 200-day ($153.5) and below the 10-day ($175.6) and 30-day ($189.7); only the 100-day is rising. MACD has been below its signal since Oct 16, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 15 ($178.05), and RSI is 39.",
-   "zh": "Palantir 11月10日下跌 0.2%，收于 $168.82，盘中区间 $164.00–169.34。股价位于 5 日（$165.0）、100 日（$165.1）和 200 日（$153.5）均线上方，10 日（$175.6）和 30 日（$189.7）均线下方；仅 100 日均线在上行。MACD 自 10月16日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月15日起看空（$178.05），RSI 为 39。"
+   "en": "Palantir rose 2.1% on Nov 11 to $172.40, trading $170.80–175.41 on light volume (0.60x the 20-day average). It is above the 5-day ($165.2), rising 100-day ($165.6) and 200-day ($153.6) and just below the 10-day ($173.2) and 30-day ($189.2). MACD has been below its signal since Oct 16, below zero, histogram narrowing; Parabolic SAR flipped bullish on Nov 11 ($152.6), and RSI is 42.4.",
+   "zh": "Palantir 11月11日上涨 2.1%，收于 $172.40，盘中区间 $170.80–175.41，成交量偏低（20 日均量的 0.60 倍）。股价位于 5 日（$165.2）、上行的 100 日（$165.6）和 200 日均线（$153.6）上方，略低于 10 日均线（$173.2），并低于 30 日均线（$189.2）。MACD 自 10月16日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 于 11月11日转为看多（$152.6），RSI 为 42.4。"
   },
   {
-   "en": "No level changed: the $164 low dipped just under the $164.6–165.1 support (5 and 100-day, Sep 10 low) but the close held above it, and the $169.34 high stayed under $170.8–171.7. Resistance is $170.8–171.7, then $175.6–178.3 (10-day, SAR, Nov 2 close) and $184.5 (Oct 16 low). Support is $164–165.1, then $156.3–158.3 and $152.6–153.5. A close above $171.7 would target $175.6–178; below $164, $157–158.",
-   "zh": "关键价位未变：低点 $164 略微跌破 $164.6–165.1 支撑（5 日和 100 日均线、9月10日低点），但收盘守在其上方，高点 $169.34 仍低于 $170.8–171.7。阻力为 $170.8–171.7，其次 $175.6–178.3（10 日均线、SAR、11月2日收盘）和 $184.5（10月16日低点）。支撑为 $164–165.1，其次 $156.3–158.3 和 $152.6–153.5。若收盘站上 $171.7，下一目标看 $175.6–178；若跌破 $164，则看 $157–158。"
+   "en": "The close cleared the $170.8–171.7 resistance (Nov 9 high, Nov 4 close), now support, but the $175.41 high faded under the 10-day. Resistance is $173.2–175.4 (10-day, Nov 11 high), then $176.5–178.3 (Nov 3 and Nov 4 highs, Nov 2 close) and $184.5 (Oct 16 low). Support is $170–171.7, then $164–165.6 (5 and 100-day) and $152.6–153.6 (SAR, 200-day). A close above $175.4 would target $177–178; below $170, $164–166.",
+   "zh": "收盘突破 $170.8–171.7 阻力（11月9日高点、11月4日收盘），转为支撑，但盘中高点 $175.41 回落至 10 日均线下方。阻力为 $173.2–175.4（10 日均线、11月11日高点），其次 $176.5–178.3（11月3日和11月4日高点、11月2日收盘）和 $184.5（10月16日低点）。支撑为 $170–171.7，其次 $164–165.6（5 日和 100 日均线）和 $152.6–153.6（抛物线 SAR、200 日均线）。若收盘站上 $175.4，下一目标看 $177–178；若跌破 $170，则看 $164–166。"
   }
  ],
  "levels": {
   "r": [
    [
-    171.7,
+    174.3,
     {
-     "en": "Nov 4 close; Nov 9 high $170.83",
-     "zh": "11月4日收盘；11月9日高点 $170.83"
+     "en": "10-day average $173.2; Nov 11 high $175.41",
+     "zh": "10日均线 $173.2；11月11日高点 $175.41"
     }
    ],
    [
-    177,
+    177.5,
     {
-     "en": "10-day average $175.6; Parabolic SAR $178.05; Nov 2 close $178.34",
-     "zh": "10日均线 $175.6；抛物线 SAR $178.05；11月2日收盘 $178.34"
+     "en": "Nov 3 high $176.54; Nov 4 high $177.43; Nov 2 close $178.34",
+     "zh": "11月3日高点 $176.54；11月4日高点 $177.43；11月2日收盘 $178.34"
     }
    ],
    [
@@ -41,24 +41,24 @@
   ],
   "s": [
    [
-    165,
+    171,
     {
-     "en": "5-day average $165.0; 100-day $165.05; Sep 10 low $164.55; Nov 10 low $164",
-     "zh": "5日均线 $165.0；100日均线 $165.05；9月10日低点 $164.55；11月10日低点 $164"
+     "en": "Nov 10 high $170; Nov 11 low $170.80; Nov 9 high $170.83; Nov 4 close $171.70, cleared",
+     "zh": "11月10日高点 $170；11月11日低点 $170.80；11月9日高点 $170.83；11月4日收盘 $171.70，已突破"
     }
    ],
    [
-    157.5,
+    165,
     {
-     "en": "Apr 8 high $156.28; Mar 17 high $156.75; Aug 5 low $158.25",
-     "zh": "4月8日高点 $156.28；3月17日高点 $156.75；8月5日低点 $158.25"
+     "en": "5-day average $165.2; 100-day $165.6; Sep 10 low $164.55; Nov 10 low $164",
+     "zh": "5日均线 $165.2；100日均线 $165.6；9月10日低点 $164.55；11月10日低点 $164"
     }
    ],
    [
     153,
     {
-     "en": "200-day average $153.5; Nov 5 low $152.6; Aug 6 low $152.70",
-     "zh": "200日均线 $153.5；11月5日低点 $152.6；8月6日低点 $152.70"
+     "en": "Parabolic SAR and Nov 5 low $152.6; 200-day average $153.6",
+     "zh": "抛物线 SAR 及11月5日低点 $152.6；200日均线 $153.6"
     }
    ]
   ]

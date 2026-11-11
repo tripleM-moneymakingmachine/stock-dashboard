@@ -1,64 +1,64 @@
 {
- "asof": "Nov 10, 2026",
- "close": 379.78,
+ "asof": "Nov 11, 2026",
+ "close": 390.84,
  "bias": {
-  "en": "Rebound · holding the 30-day, under the 200-day and $388",
-  "zh": "反弹 · 守住 30 日均线，仍低于 200 日均线和 $388"
+  "en": "Rebound · cleared the 200-day and $388, under the SAR",
+  "zh": "反弹 · 突破 200 日均线和 $388，仍低于抛物线 SAR"
  },
  "read": [
   {
-   "en": "Tesla rose 0.5% on Nov 10 to $379.78, trading $370.43–380.00 on light volume (0.59x the 20-day average). It is above the 5-day ($369.0), 30-day ($378.0) and 100-day ($366.4) and below the 10-day ($385.5) and 200-day ($383.2); only the 30-day is rising. MACD has been below its signal since Nov 5, above zero, histogram narrowing; Parabolic SAR has been bearish since Nov 4 ($404.78), and RSI is 50.",
-   "zh": "特斯拉 11月10日上涨 0.5%，收于 $379.78，盘中区间 $370.43–380.00，成交量偏低（20 日均量的 0.59 倍）。股价位于 5 日（$369.0）、30 日（$378.0）和 100 日（$366.4）均线上方，10 日（$385.5）和 200 日（$383.2）均线下方；仅 30 日均线在上行。MACD 自 11月5日起位于信号线下方，在零轴上方，柱状图收窄；抛物线 SAR 自 11月4日起看空（$404.78），RSI 为 50。"
+   "en": "Tesla rose 2.9% on Nov 11 to $390.84, trading $386.35–395.43 on light volume (0.67x the 20-day average). It is above the 5-day ($370.1), 10-day ($384.1), 30-day ($379.2), 100-day ($366.3) and 200-day ($383.0); only the 30-day is rising. MACD has been below its signal since Nov 5, above zero, histogram narrowing; Parabolic SAR has been bearish since Nov 4 ($402.11), and RSI is 54.4.",
+   "zh": "特斯拉 11月11日上涨 2.9%，收于 $390.84，盘中区间 $386.35–395.43，成交量偏低（20 日均量的 0.67 倍）。股价位于 5 日（$370.1）、10 日（$384.1）、30 日（$379.2）、100 日（$366.3）和 200 日均线（$383.0）上方；仅 30 日均线在上行。MACD 自 11月5日起位于信号线下方，在零轴上方，柱状图收窄；抛物线 SAR 自 11月4日起看空（$402.11），RSI 为 54.4。"
   },
   {
-   "en": "No level changed: the close held above the 30-day ($378.0), and the $380 high stayed under the $382.2–383.2 resistance. Resistance is $382.2–383.2 (Nov 9 high, 200-day), then $385.5–388.6 (10-day, $388 cap, Oct 9 high) and $404.8–414.2 (SAR, Nov 2 high). Support is $369–378 (5 and 30-day, Nov 10 low), then $366.4–368.1 (100-day, Oct 19 close) and $345.9–349.3. A close above $383.2 would target $388; below $369, $366–368.",
-   "zh": "关键价位未变：收盘守在 30 日均线（$378.0）上方，高点 $380 仍低于 $382.2–383.2 阻力。阻力为 $382.2–383.2（11月9日高点、200 日均线），其次 $385.5–388.6（10 日均线、$388 上限、10月9日高点）和 $404.8–414.2（SAR、11月2日高点）。支撑为 $369–378（5 日和 30 日均线、11月10日低点），其次 $366.4–368.1（100 日均线、10月19日收盘）和 $345.9–349.3。若收盘站上 $383.2，下一目标看 $388；若跌破 $369，则看 $366–368。"
+   "en": "The gap higher cleared the 200-day, the 10-day and the $388 cap (Oct 9 high $388.56), now support; the $395.43 high stopped under the $396.5–398.5 Nov 3 low and close. Resistance is $395.4–398.5, then $402.1–406.5 (SAR, Nov 3 high) and $414.2 (Nov 2 high). Support is $386.4–388.6, then $383–384 (200 and 10-day) and $379.2–379.8 (30-day, Nov 10 close). A close above $398.5 would target $402–406.5; below $386.4, $383–384.",
+   "zh": "跳空上涨突破 200 日均线、10 日均线和 $388 上限（10月9日高点 $388.56），均转为支撑；盘中高点 $395.43 止步于 11月3日低点和收盘 $396.5–398.5 下方。阻力为 $395.4–398.5，其次 $402.1–406.5（抛物线 SAR、11月3日高点）和 $414.2（11月2日高点）。支撑为 $386.4–388.6，其次 $383–384（200 日和 10 日均线）和 $379.2–379.8（30 日均线、11月10日收盘）。若收盘站上 $398.5，下一目标看 $402–406.5；若跌破 $386.4，则看 $383–384。"
   }
  ],
  "levels": {
   "r": [
    [
-    383,
+    397,
     {
-     "en": "200-day average $383.2; Nov 9 high $382.20",
-     "zh": "200日均线 $383.2；11月9日高点 $382.20"
+     "en": "Nov 11 high $395.43; Nov 3 low $396.53; Nov 3 close $398.50",
+     "zh": "11月11日高点 $395.43；11月3日低点 $396.53；11月3日收盘 $398.50"
     }
    ],
    [
-    388,
+    404,
     {
-     "en": "$388 cap since March; 10-day average $385.5; Oct 9 high $388.56",
-     "zh": "3月以来 $388 上限；10日均线 $385.5；10月9日高点 $388.56"
+     "en": "Parabolic SAR $402.11; Nov 3 high $406.5",
+     "zh": "抛物线 SAR $402.11；11月3日高点 $406.5"
     }
    ],
    [
-    410,
+    414.2,
     {
-     "en": "Parabolic SAR $404.78; Nov 2 high $414.23",
-     "zh": "抛物线 SAR $404.78；11月2日高点 $414.23"
+     "en": "Nov 2 high $414.23",
+     "zh": "11月2日高点 $414.23"
     }
    ]
   ],
   "s": [
    [
-    374,
+    387.5,
     {
-     "en": "30-day average $378.0; Nov 10 low $370.43; 5-day average $369.0",
-     "zh": "30日均线 $378.0；11月10日低点 $370.43；5日均线 $369.0"
+     "en": "$388 cap since March, cleared; Oct 9 high $388.56; Nov 11 low $386.35",
+     "zh": "3月以来 $388 上限，已突破；10月9日高点 $388.56；11月11日低点 $386.35"
     }
    ],
    [
-    367.5,
+    383.5,
     {
-     "en": "100-day average $366.4; Oct 19 close $368.1",
-     "zh": "100日均线 $366.4；10月19日收盘 $368.1"
+     "en": "200-day average $383.0; 10-day $384.1",
+     "zh": "200日均线 $383.0；10日均线 $384.1"
     }
    ],
    [
-    347.5,
+    379.5,
     {
-     "en": "Sep 30 low $345.88; Oct 16 low $349.33; Nov 6 low $347.60",
-     "zh": "9月30日低点 $345.88；10月16日低点 $349.33；11月6日低点 $347.60"
+     "en": "30-day average $379.2; Nov 10 close $379.78",
+     "zh": "30日均线 $379.2；11月10日收盘 $379.78"
     }
    ]
   ]

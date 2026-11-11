@@ -1,57 +1,64 @@
 {
- "asof": "Nov 10, 2026",
- "close": 48.32,
+ "asof": "Nov 11, 2026",
+ "close": 55.86,
  "bias": {
-  "en": "Bearish · lost $50.8–51.9, back at the Nov 9 low",
-  "zh": "看空 · 失守 $50.8–51.9，回到 11月9日低点"
+  "en": "Rebound · SAR flipped bullish, under the 10-day",
+  "zh": "反弹 · 抛物线 SAR 转为看多，仍低于 10 日均线"
  },
  "read": [
   {
-   "en": "Applied Optoelectronics fell 7.3% on Nov 10 to $48.32, trading $46.41–51.99. It is below the 5-day ($51.34), 10-day ($61.36), 30-day ($82.88), 100-day ($106.08) and 200-day ($114.79); only the 200-day is rising. MACD has been below its signal since Oct 13, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 12 ($59.24), and RSI is 30.",
-   "zh": "Applied Optoelectronics 11月10日下跌 7.3%，收于 $48.32，盘中区间 $46.41–51.99。股价位于 5 日（$51.34）、10 日（$61.36）、30 日（$82.88）、100 日（$106.08）和 200 日（$114.79）均线下方；仅 200 日均线在上行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月12日起看空（$59.24），RSI 为 30。"
+   "en": "AAOI jumped 15.6% on Nov 11 to $55.86, trading $51.53–57.92. It is above the 5-day ($50.66) and below the 10-day ($58.73), 30-day ($81.43), 100-day ($104.93) and 200-day ($114.89); only the 200-day is rising. MACD has been below its signal since Oct 13, below zero, histogram narrowing; Parabolic SAR flipped bullish on Nov 11 ($45.15), and RSI is 37.5.",
+   "zh": "AAOI 11月11日大涨 15.6%，收于 $55.86，盘中区间 $51.53–57.92。股价位于 5 日均线（$50.66）上方，10 日（$58.73）、30 日（$81.43）、100 日（$104.93）和 200 日均线（$114.89）下方；仅 200 日均线在上行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 于 11月11日转为看多（$45.15），RSI 为 37.5。"
   },
   {
-   "en": "The drop lost the $50.8–51.9 support (Feb 11 and Nov 6 highs), now resistance with the 5-day ($51.3); the close sat on the $48.3 Nov 9 low after a $46.41 intraday low. Resistance is $50.8–52.0 (5-day, Nov 10 high), then $54.0 (Nov 9 high) and $56.9–57.2. Support is $46.4 (Nov 10 low), then $45.2–45.9 (Nov 5–6 lows). A close above $52 would target $54; below $46.4, $45.2.",
-   "zh": "此次下跌失守 $50.8–51.9 支撑（2月11日和11月6日高点），与 5 日均线（$51.3）一同转为阻力；盘中低见 $46.41 后，收盘落在 11月9日低点 $48.3。阻力为 $50.8–52.0（5 日均线、11月10日高点），其次 $54.0（11月9日高点）和 $56.9–57.2。支撑为 $46.4（11月10日低点），其次 $45.2–45.9（11月5–6日低点）。若收盘站上 $52，下一目标看 $54；若跌破 $46.4，则看 $45.2。"
+   "en": "The rally reclaimed the $50.8–52 zone (Feb 11 high, 5-day, Nov 10 high) and the $54.03 Nov 9 high, now support; the $57.92 high stalled under the 10-day. Resistance is $56.9–58.7 (Nov 5 high, Nov 4 low, 10-day), then $62.5–64.1 (Nov 2–3 closes, Nov 4 high) and $66.3. Support is $54, then $50.7–52 and $45.2. A close above $58.7 would target $62.5–64; below $50.7, $45–46.",
+   "zh": "此次上涨收复 $50.8–52 区间（2月11日高点、5 日均线、11月10日高点）和 11月9日高点 $54.03，均转为支撑；盘中高点 $57.92 受阻于 10 日均线下方。阻力为 $56.9–58.7（11月5日高点、11月4日低点、10 日均线），其次 $62.5–64.1（11月2–3日收盘、11月4日高点）和 $66.3。支撑为 $54，其次 $50.7–52 和 $45.2。若收盘站上 $58.7，下一目标看 $62.5–64；若跌破 $50.7，则看 $45–46。"
   }
  ],
  "levels": {
   "r": [
    [
-    51.4,
+    57.8,
     {
-     "en": "Feb 11 high $50.8; 5-day average $51.34; Nov 10 high $51.99, lost",
-     "zh": "2月11日高点 $50.8；5日均线 $51.34；11月10日高点 $51.99，已失守"
+     "en": "Nov 5 high $56.89; Nov 4 low $57.24; 10-day average $58.73",
+     "zh": "11月5日高点 $56.89；11月4日低点 $57.24；10日均线 $58.73"
     }
    ],
    [
-    54,
+    63.3,
     {
-     "en": "Nov 9 high $54.03",
-     "zh": "11月9日高点 $54.03"
+     "en": "Nov 2–3 closes ($62.5–64.0); Nov 4 high $64.13",
+     "zh": "11月2–3日收盘（$62.5–64.0）；11月4日高点 $64.13"
     }
    ],
    [
-    57,
+    66.3,
     {
-     "en": "Nov 5 high $56.89; Nov 4 low $57.24",
-     "zh": "11月5日高点 $56.89；11月4日低点 $57.24"
+     "en": "Oct 22 low $66.28",
+     "zh": "10月22日低点 $66.28"
     }
    ]
   ],
   "s": [
    [
-    46.4,
+    54,
     {
-     "en": "Nov 10 low $46.41",
-     "zh": "11月10日低点 $46.41"
+     "en": "Nov 9 high $54.03, reclaimed",
+     "zh": "11月9日高点 $54.03，已收复"
+    }
+   ],
+   [
+    51.3,
+    {
+     "en": "5-day average $50.66; Feb 11 high $50.8; Nov 11 low $51.53; Nov 10 high $51.99",
+     "zh": "5日均线 $50.66；2月11日高点 $50.8；11月11日低点 $51.53；11月10日高点 $51.99"
     }
    ],
    [
     45.5,
     {
-     "en": "Nov 6 low $45.15; Nov 5 low $45.88",
-     "zh": "11月6日低点 $45.15；11月5日低点 $45.88"
+     "en": "Parabolic SAR and Nov 6 low $45.15; Nov 5 low $45.88",
+     "zh": "抛物线 SAR 及11月6日低点 $45.15；11月5日低点 $45.88"
     }
    ]
   ]
