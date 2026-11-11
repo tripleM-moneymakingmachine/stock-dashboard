@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-11",
- "asofText": "Nov 11, 2026",
+ "asof": "2026-11-12",
+ "asofText": "Nov 12, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1468,6 +1468,20 @@
    "capexB": 24,
    "est": true,
    "note": "$24B initial phases of a gas-fired plant and 'super-compute facility' on 444 acres de-annexed from Brownsville and annexed into Starbase; tax-break hearing in December. GW not disclosed (~ is Claude's estimate)"
+  },
+  {
+   "id": "sb-pike",
+   "name": "PORTS-Pike Technology Campus (Piketon)",
+   "owner": "sbank",
+   "partner": "OpenAI",
+   "state": "OH",
+   "lat": 39.01,
+   "lon": -83.0,
+   "gw": 8.0,
+   "status": "pl",
+   "capexB": null,
+   "est": false,
+   "note": "8 GW IT on the former Portsmouth DOE site, leased to OpenAI for 20 years; SB Energy building a 9.2 GW gas plant, operations from 2028. $3.7B power-equipment charge (Nov 10) and a 'thorough reassessment' of procurement; Ohio is tier 5"
   }
  ],
  "risk": {
@@ -1934,7 +1948,7 @@
  "views": {
   "msft": {
    "grade": "Low",
-   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built (Wisconsin's second phase now sits under Crowley's conditional pause, and Georgia's new phases under Bottoms'), and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Microsoft is now pulling back from rented capacity (Oracle deal wound down, Nscale Texas option declined, tighter oversight of IREN and Nebius) and favouring its own builds, which shifts delivery risk onto its suppliers. The catch is that third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity.",
+   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built (Wisconsin's second phase now sits under Crowley's conditional pause, and Georgia's new phases under Bottoms'), and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Its renewed no-subsidy pledge lines it up with the pay-your-own-way rules in the Senate bill and new governors' platforms, which should ease approvals. Microsoft is pulling back from rented capacity and favouring own builds, and is lobbying against a Chinese transceiver ban that would slow its own rollout. Third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity.",
    "moves": [
     "Shift Abilene phase to Wyoming/Iowa",
     "Consolidate to a few neocloud partners and own builds",
@@ -1979,8 +1993,9 @@
   },
   "sbank": {
    "grade": "High",
-   "view": "Milam County (1.2 GW, Texas) and Lordstown (Ohio, town ban) are both in hostile states. SoftBank/SB Energy owns the power at Milam, which helps, but OpenAI's funding chain is leveraged and sensitive to delay.",
+   "view": "SoftBank now carries the largest single at-risk campus on the map: PORTS-Pike in Ohio (8 GW IT, tier-5 state, Acton's conditional moratorium), plus Milam County (Texas) and Lordstown (Ohio, town ban). The $3.7B write-off on power equipment it rushed to reserve is the first hard cost of the policy shift showing up in a P&L, and the 'reassessment' language plus SB Energy's IPO slipping to 2027 say the Ohio schedule is soft. Owning the generation is its best defence under Acton's pay-your-own-way terms, but OpenAI's funding chain is leveraged and every month of delay compounds. The stock's fall is mostly real exposure, not just sentiment.",
    "moves": [
+    "Re-scope PORTS-Pike phases to fit Acton's cost and labour terms",
     "Use SB Energy generation to avoid grid-cost fights",
     "Re-site Lordstown capacity"
    ]
@@ -1996,7 +2011,7 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits that even started projects still need, so contracted Texas capacity is not fully safe. Q3 answered the demand question: backlog up to $132.5B, 2026 revenue guidance raised to $13.0–13.3B and 1.7 GW active. The open question is funding, not demand: $709M net loss, $846M quarterly interest and ~$39B of 2026 capex, eased by ~$9B of customer prepayments due in the next three months. The after-hours pop is fundamentals; the earlier 50%+ drawdown was mostly credit and politics sentiment, but CDS and bond yields are the gauge to watch.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits that even started projects still need, so contracted Texas capacity is not fully safe. Q3 answered the demand question (backlog $132.5B, 2026 guidance raised to $13.0–13.3B, 1.7 GW active) and the ~25% jump on Nov 11 came with a pledge to fund from contract cash flow and secured debt, not unsecured bonds. The CEO says scrutiny may slow the industry but not its next-year capacity adds. The earlier 50%+ drawdown was mostly credit and politics sentiment; bond yields, not state politics, remain the gauge.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Push more customer prepayment structures to fund 2027",
@@ -2005,7 +2020,7 @@
   },
   "nbis": {
    "grade": "Low-Medium",
-   "view": "Live US footprint is small (Kansas City, Vineland), but the pipeline is now large: Independence, Missouri (1.2 GW, approved), Highridge in Pennsylvania (1.2 GW, a tier-4 state) and Birmingham, Alabama (~0.3 GW, where the city is weighing a moratorium). Its 5 GW contracted-power target for end-2026 is company-wide, so ~1.9 GW is not tied to a disclosed site and likely includes Europe. Near-zero net debt and prepayments mean Nebius can wait out delays better than most neoclouds.",
+   "view": "Live US footprint is small (Kansas City, Vineland), but the pipeline is large: Independence, Missouri (1.2 GW, approved), Highridge in Pennsylvania (1.2 GW, a tier-4 state) and Birmingham, Alabama (~0.3 GW, where the city is weighing a moratorium). No Texas exposure, so the post-election slide and the Nov 11 rebound were sentiment around neocloud funding and Microsoft's tighter oversight, not site risk. Near-zero net debt, a $3.5B secured Citi facility and prepayments mean Nebius can wait out delays better than most; Nov 12 results are the next test.",
    "moves": [
     "Lead with Missouri (approved) while Pennsylvania clears",
     "Keep Finland/Israel capacity as a hedge"
@@ -2064,6 +2079,58 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-11",
+   "co": [
+    "*"
+   ],
+   "t": "Nvidia closed up 2.9% at $173.73 on the chip rally, then fell about 8–9% after hours to near $159 after the New York Times reported Jensen Huang had a relationship with an Nvidia executive and the Wall Street Journal reported the board is preparing to oust him; Baird had already cut the stock to Neutral that morning. Results are still due Nov 17.",
+   "src": "https://cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang"
+  },
+  {
+   "d": "2026-11-11",
+   "co": [
+    "crwv",
+    "nbis",
+    "iren",
+    "apld",
+    "cifr"
+   ],
+   "t": "CoreWeave closed up about 25% after its Q3 beat and a pledge not to tap unsecured debt, pulling the neoclouds and chip names up with it: Nebius rose roughly 10–14% ahead of its Nov 12 results, Cipher 9%, Applied Digital about 8%, IREN 5.6%, Micron about 14%, Sandisk 17% and Marvell 12%. CoreWeave's CEO said tighter state scrutiny may slow industry construction but will not change its next-year capacity adds.",
+   "src": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-futures-131247889.html"
+  },
+  {
+   "d": "2026-11-11",
+   "co": [
+    "*"
+   ],
+   "t": "The Senate permitting bill's substitute text drops the 20 MW floor, so every data center would pay its share of the existing grid plus the new upgrades it triggers, with FERC to issue a pricing policy within 90 days; a final Senate vote could come the week of Nov 16, and the House must still act before Jan 3.",
+   "src": "https://whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote"
+  },
+  {
+   "d": "2026-11-10",
+   "co": [
+    "msft"
+   ],
+   "t": "Microsoft said it will power its data centers without subsidies or higher bills for other customers, and Reuters reports it is lobbying the White House against a planned ban on new Chinese optical transceivers, arguing the ban would slow the US build-out further.",
+   "src": "https://finance.yahoo.com/news/exclusive-microsoft-presses-trump-scuttle-110917005.html"
+  },
+  {
+   "d": "2026-11-10",
+   "co": [
+    "sbank"
+   ],
+   "t": "SoftBank swung to a $7B quarterly loss after a $3.7B charge on non-refundable advance payments for power equipment for its 8 GW PORTS-Pike campus in Ohio (leased to OpenAI for 20 years) and other US sites; the CFO said Ohio is not being scaled back but is under a 'thorough reassessment', and SB Energy's IPO has slipped to 2027. GE Vernova, one of the reserved turbine makers, says there is no financial impact on it.",
+   "src": "https://qz.com/softbank-quarterly-loss-us-data-center-write-down-111026"
+  },
+  {
+   "d": "2026-11-10",
+   "co": [
+    "orcl"
+   ],
+   "t": "Michigan: governor-elect Benson set out her plan for a moratorium on new data centers until rules require developers to cover their energy costs, hold public hearings, use union labour and forgo tax breaks; Romulus passed a 180-day moratorium the same night and a $10B Lansing-area proposal was withdrawn. Oracle's Saline Township Stargate is the large tracked site in the state.",
+   "src": "https://clickondetroit.com/news/local/2026/11/10/michigan-data-centers-governor-elect-jocelyn-benson-proposes-new-regulations-on-water-energy-tax-breaks"
+  },
   {
    "d": "2026-11-10",
    "co": [
@@ -2421,6 +2488,18 @@
  ],
  "sources": [
   [
+   "CNN: Nvidia drops after hours on Huang reports",
+   "https://cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang"
+  ],
+  [
+   "Quartz: SoftBank $3.7B US data center equipment write-down",
+   "https://qz.com/softbank-quarterly-loss-us-data-center-write-down-111026"
+  ],
+  [
+   "White & Case: Senate permitting bill data center provisions",
+   "https://whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote"
+  ],
+  [
    "Texas Tribune: SpaceX $24B Starbase data center and power plant",
    "https://texastribune.org/2026/11/10/texas-spacex-data-center-power-plant"
   ],
@@ -2487,18 +2566,6 @@
   [
    "Unite.AI: Ohio ballot results",
    "https://www.unite.ai/ohio-voters-back-local-data-center-limits-in-unofficial-results/"
-  ],
-  [
-   "Epoch AI: data center timelines",
-   "https://epoch.ai/data/data_centers/data_center_timelines.csv"
-  ],
-  [
-   "Cleanview: Georgia campuses",
-   "https://cleanview.co/data-centers/georgia"
-  ],
-  [
-   "Cleanview: Virginia campuses",
-   "https://cleanview.co/data-centers/virginia"
   ]
  ],
  "modo": {
