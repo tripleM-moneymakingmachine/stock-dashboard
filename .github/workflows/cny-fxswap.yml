@@ -33,10 +33,13 @@ jobs:
           node-version: 20
 
       - name: USD.CNY FX swap curve, implied CNY rates
+        timeout-minutes: 15
+        continue-on-error: true
         run: node scripts/fetch-cny-fxswap.mjs || echo "fx swap fetch failed; keeping the committed file"
 
       - name: Commit if changed
         id: commit
+        if: always()
         run: |
           git add -A -- data/cny-fxswap.json data/_probe-fxswap.txt data/_fxswap-log.txt
           if git diff --cached --quiet; then

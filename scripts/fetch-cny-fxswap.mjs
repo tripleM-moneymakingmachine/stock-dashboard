@@ -55,13 +55,14 @@ const days = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
 async function cfPost(url, body, ref) {
   for (let i = 0; i < 3; i++) {
     try {
-      const r = await fetch(url, { method: "POST", headers: CF(ref), body, signal: AbortSignal.timeout(40000) });
+      const r = await fetch(url, { method: "POST", headers: CF(ref), body, signal: AbortSignal.timeout(25000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return await r.json();
     } catch (e) { if (i === 2) throw e; await sleep(1500 * (i + 1)); }
   }
 }
 let dumped = false, sample = null;
+log(`start ${new Date().toISOString()} today=${today}`);
 async function iuirWindow(start, end) {
   const ref = `${B}/chinese/bkcurvuiruuh/`;
   const body = (page, size) => `startDate=${start}&endDate=${end}&ccyPair=USD.CNY&rmdRate=23&bp=26&spotRate=28&lang=CN&pageNum=${page}&pageSize=${size}`;
