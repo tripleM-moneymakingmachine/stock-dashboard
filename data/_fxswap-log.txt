@@ -1,0 +1,19 @@
+start 2026-11-11T21:14:33.524Z today=2026-11-12
+IuirCurvHis record sample: {"rmbRateDesCn":"Shibor","spotrateDesCn":"即期询价报价均值","bpSrcDesCn":"掉期点","rmbRateDesEn":"Shibor","spotrateDesEn":"Mean Quote Rate of OTC FX Spot Market","bpSrcDesEn":"Swap Pips","ccyPairSrcCn":"USD.CNY","ccyPairSrcEn":"USD.CNY","dollarRateDes":"4.1607","rmbRateStr":"1.4189","spotrateStr":"6.6703","bpSrcStr":"-15.03","showDateCn":"2026-11-11","showDateEn":"11 Nov 2026","tl":"1D"}
+  window 2026-10-14..2026-11-12: total 1638, pageSize 1000, pages 2, 2000 recs in 1.8s
+IuirCurvHis 2026-10-14..2026-11-12: 2000 records, 312 USD.CNY/Shibor
+  window 2026-09-26..2026-10-25: total 1170, pageSize 1000, pages 2, 2000 recs in 0.7s
+IuirCurvHis 2026-09-26..2026-10-25: 2000 records, 312 USD.CNY/Shibor
+  window 2026-08-31..2026-09-29: total 1638, pageSize 1000, pages 2, 2000 recs in 0.6s
+IuirCurvHis 2026-08-31..2026-09-29: 2000 records, 312 USD.CNY/Shibor
+  window 2026-08-11..2026-09-09: total 1716, pageSize 1000, pages 2, 2000 recs in 0.6s
+IuirCurvHis 2026-08-11..2026-09-09: 2000 records, 312 USD.CNY/Shibor
+  window 2026-07-25..2026-08-23: total 1170, pageSize 1000, pages 2, 2000 recs in 0.6s
+IuirCurvHis 2026-07-25..2026-08-23: 2000 records, 312 USD.CNY/Shibor
+  window 2026-07-06..2026-08-04: total 156, pageSize 1000, pages 1, 156 recs in 0.2s
+IuirCurvHis 2026-07-06..2026-08-04: 156 records, 24 USD.CNY/Shibor
+  window 2026-07-04..2026-08-02: total 0, pageSize 1000, pages 1, 0 recs in 0.2s
+IuirCurvHis 2026-07-04..2026-08-02: 0 records, 0 USD.CNY/Shibor
+no older data; back-fill complete
+swap curve now: 19 tenors, 2026-11-11
+wrote data/cny-fxswap.json: 67 days (2026-08-03 .. 2026-11-11), 3M implied 1.3426% (Shibor 1.417%, UST 4.2394%)
