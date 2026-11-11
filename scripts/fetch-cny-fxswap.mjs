@@ -18,7 +18,7 @@ const CF = (ref) => ({ "User-Agent": UA, Accept: "application/json, text/javascr
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };
 const LOGF = "data/_fxswap-log.txt", logs = [];
 const log = (...a) => { console.log(...a); logs.push(a.map((x) => (typeof x === "string" ? x : JSON.stringify(x))).join(" ")); try { writeFileSync(LOGF, logs.join("\n")); } catch {} };
-const T0 = Date.now(), BUDGET = 11 * 60e3;
+const T0 = Date.now(), BUDGET = 9 * 60e3;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const shDate = (ms) => new Date(ms).toLocaleDateString("en-CA", { timeZone: "Asia/Shanghai" });
 const today = shDate(Date.now());

@@ -41,7 +41,7 @@ jobs:
         id: commit
         if: always()
         run: |
-          git add -A -- data/cny-fxswap.json data/_probe-fxswap.txt data/_fxswap-log.txt
+          for f in data/cny-fxswap.json data/_fxswap-log.txt; do if [ -f "$f" ]; then git add "$f"; fi; done
           if git diff --cached --quiet; then
             echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
