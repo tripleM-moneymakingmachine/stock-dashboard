@@ -32,6 +32,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Mark start (temporary debug)
+        continue-on-error: true
+        run: |
+          date -u > data/_fxswap-start.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/_fxswap-start.txt && git commit -q -m "CNY fxswap: run started" && git push -q || true
+
       - name: USD.CNY FX swap curve, implied CNY rates
         timeout-minutes: 15
         continue-on-error: true
