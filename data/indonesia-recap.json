@@ -1,43 +1,48 @@
 {
-  "session": "2026-11-10",
-  "asof": "Tue Nov 10, 2026",
-  "commentary_asof": "Tue Nov 10, 2026",
+  "session": "2026-11-11",
+  "asof": "Wed Nov 11, 2026",
+  "commentary_asof": "Wed Nov 11, 2026",
   "horizon": "1–2 weeks",
-  "headline": "A firmer rupiah and cheaper oil pull the front end down 5–7bp on auction day while the 10Y holds at 7.68%, and the flow signal slips back into sell-off (−0.64) as the Vice President signals he may resign",
-  "summary": "The rally moved to the front end: PHEI's IGSYC 1Y fell 6.8bp to 6.793%, the 2Y 5.1bp to 7.007% and the 5Y 3.0bp to 7.416%, while the 10Y slipped only 0.4bp to 7.684% and 15–30Y were unchanged, so the curve bull-steepened (2s5s 41bp, 5s10s 27bp and 10s20s 2.9bp, the latter two the steepest of nine stored PHEI days). The 1M point fell 14bp to 6.22%, and the 1Y–5Y sector is now at the low end of the nine days stored. Benchmark FR0109 fell 12.3bp to 7.251% and is 8.8bp rich to the curve, while FR0108 barely moved (7.574%). Sukuk followed the curve (fitted PBS 5Y 1.9bp through IGSYC; PBS040 −6bp but still 15.6bp cheap), the retail fit held 11bp rich at 5Y, and corporate curves fell in step with IGSYC, leaving AAA 3Y at 49bp over.",
+  "headline": "A Rp79.7tn SUN auction book keeps the front-end rally going (1Y −6.6bp to 6.73%) and the 10Y edges down to 7.67% despite a 10bp US sell-off on hot CPI, but a weaker rupiah pushes the flow signal deeper into sell-off (−0.77)",
+  "summary": "PHEI's IGSYC kept rallying from the front: the 1Y fell 6.6bp to 6.728% (13.8bp lower this week), the 2Y 5.4bp to 6.953% and the 3Y 3.1bp to 7.123%, while the 5Y slipped only 0.7bp to 7.409% and the 10Y 1.1bp to 7.673%, with 15–30Y down about 1.5bp. That bull-steepened the 2s5s to 45.6bp from 40.9bp and lifted the 2s5s10s fly to 19bp, and the 1Y–5Y are again the lowest of the ten PHEI days stored. Benchmark FR0109 gave back 7.6bp to 7.327% and is now on the curve, while FR0108 (7.584%) and FR0107 (7.613%) stay about 8–9bp rich. The fitted PBS curve cheapened at 2Y (4.1bp over IGSYC, cheapest stored) and sits on IGSYC at 5Y; the retail fit stayed 10.7bp rich at 5Y, and AAA 3Y held at 49.6bp over as corporate curves again moved with IGSYC.",
   "drivers": [
     [
-      "Rupiah and oil fed a front-end rally",
-      "JISDOR fixed at 18,059 (−0.24%) and spot closed near 18,062 as the dollar eased and Brent fell to about $90 on a pause in US–Iran escalation; the 1Y–5Y fell 3–7bp and the 1M 14bp. Benchmark FR0109 led the bonds (−12.3bp), and SRBI-style short paper was already in demand last week, but who bought today is not disclosed, so domestic bank buying is a hypothesis."
+      "Auction demand anchored the front end",
+      "Tuesday's SUN auction drew Rp79.71tn of bids for a Rp30tn target, more than double MNC's forecast; the government took Rp35tn (bid-to-cover 2.28x), with FR0110 (2032) at 7.44% and FR0111 (2037) at 7.68%, the two 2026–27 SPN bills covered 9.4x and 6.7x, and no award in the new 20-year FR0113. DJPPR data show foreigners bid Rp18.01tn and won Rp10.6tn, 30% of the total, so foreign demand at the auction is published; who bought in the secondary market on Wednesday is not, and domestic bank buying of short paper is a hypothesis."
     ],
     [
-      "Supply and politics capped the long end",
-      "DJPPR auctioned nine SUN series for an indicative Rp30tn, including a new 2047 bond (FR0113); results were not yet published when this was written (MNC expected Rp33–38tn of bids). 15–30Y IGSYC ended unchanged, consistent with a supply concession ahead of new 20Y paper. In the afternoon the palace confirmed Vice President Gibran told President Prabowo he intends to resign over court rulings on his school certificate; the JCI still closed 1.02% higher at 5,125.73 and the rupiah kept its gain, so the first market read was calm."
+      "Hot US CPI pushed Treasuries to 5%; INDOGBs ignored it",
+      "US October CPI rose 0.4% m/m (f 0.3%) and core 0.3% (f 0.2%), and a soft 10-year auction followed; the US 10Y closed 10bp higher at 4.98% and the 2Y about 18bp higher. At the 1-year daily beta of 0.33 that implied +3.3bp for the INDOGB 10Y, yet it fell 1.1bp, so Treasuries explain none of today's move; INDOGBs have followed large US moves in the same direction 73% of the time, so this is an outlier rather than a broken link. The INDOGB − UST spread narrowed to 269bp (92nd percentile of 52 weeks), a nominal pick-up before currency risk."
     ],
     [
-      "Flow signal back in sell-off",
-      "The daily Bond Flow Signal fell to −0.64 from −0.50 (Nov 9 restated from −0.49), so the sell-off episode that began Oct 7 is still open, 17 sessions and +51.6bp on the 10Y. The rupiah part turned bearish (z +0.61) mainly because its 20-session window now starts from a low Sep 29 print (USD/IDR +1.74%), not because the rupiah weakened; the JCI part (z −1.75) and 10Y trend (z +1.64) eased, and the 280bp spread part (z +1.43) is the bullish one."
+      "Rupiah and equities softened on the Fed and politics",
+      "JISDOR rose 0.53% to 18,154 and spot closed at 18,149 as the dollar firmed; the JCI fell 0.21% to 5,115.04 ahead of MSCI's November review (results 05:00 WIB Nov 12; not the Standalone decision, which is due by end-June 2027), with foreigners net selling Rp287bn in the morning session. PDIP said all 110 of its MPs back a parliamentary motion (HMP) that could lead to impeachment of Vice President Gibran, a day after he signalled he may resign; bonds did not react, but it keeps political risk live."
     ],
     [
-      "US Treasuries: a small sell-off, ignored again",
-      "Monday's New York session lifted the US 10Y 2bp to 4.88% and the 2Y 5bp to 4.56% after a soft 3-year auction, with markets pricing about an 80% chance of a December Fed hike; at the 1-year daily beta of 0.34 that implied +0.7bp for INDOGBs, yet the 10Y fell 0.4bp, so Treasuries explain none of today's move. Over four weeks the INDOGB 10Y is up 51.5bp while the US 10Y is down 22bp (26-week weekly beta −0.21): about +4.7bp is the Treasury-linked part and +46.8bp residual, which is what the US move does not explain, not proof of domestic selling or political risk. The INDOGB − UST spread is 280bp, 96th percentile of 52 weeks, a nominal pick-up before currency risk."
+      "Flow signal deeper in sell-off",
+      "The daily Bond Flow Signal fell to −0.77 from −0.66 (Nov 10 restated from −0.64), so the sell-off episode that began Oct 7 is open for an 18th session at +52.0bp on the 10Y. The 10Y trend part (z +2.08, +58.2bp over 20 sessions) and the JCI part (z −1.67, −15.75%) drove it, the rupiah part stayed mildly bearish (z +0.40), and the spread part, the one bond-bullish input, weakened to z +1.05 as Treasuries sold off."
     ]
   ],
   "data": [
     [
-      "September retail sales (Nov 10)",
-      "+0.6% y/y (f n/a, p +1.3%); −3.1% m/m (p +0.8%)",
-      "Soft consumption and BI's own October estimate (+1.0% y/y) argue against hikes for growth reasons; BI's price-expectation index rose, though."
+      "US October CPI (Nov 10)",
+      "+0.4% m/m (f +0.3%, p +0.6%); core +0.3% (f +0.2%, p +0.3%)",
+      "US 10Y to 4.98% and the 2Y up ~18bp; December Fed-hike odds rose, which narrows BI's room to stay on hold."
     ],
     [
-      "October consumer confidence (Nov 9)",
-      "119.9 (f n/a, p 118.1)",
-      "Better but below a year ago; no change to BI's rupiah-first reaction function."
+      "SUN auction (Nov 10)",
+      "Bids Rp79.71tn (p Rp31.09tn); awarded Rp35tn vs Rp30tn target; FR0110 7.44%, FR0111 7.68%",
+      "Strong demand, though awarded yields were 5–26bp above the previous auction (MNC); FR0113 not awarded."
+    ],
+    [
+      "September retail sales (Nov 10)",
+      "+0.6% y/y (f n/a, p +1.3%); −3.1% m/m (p +0.8%)",
+      "Soft consumption argues against hikes for growth reasons; BI's price-expectation index rose, though."
     ],
     [
       "US October payrolls (Nov 6)",
       "165k (f 65k, p 60k revised); unemployment 4.1% (f 4.2%)",
-      "Kept December Fed-hike odds near 80%; a hike would narrow BI's room."
+      "Kept a December Fed hike in play; a hike would narrow BI's room."
     ],
     [
       "October FX reserves (Nov 6)",
@@ -50,11 +55,6 @@
       "A beat led by government spending: no growth case for an early cut."
     ],
     [
-      "OJK October market data (Nov 5)",
-      "Non-resident SBN net buy Rp9.55tn; equity net sell Rp16.88tn",
-      "October's sell-off was a price move more than a foreign exit in bonds; a month's inflows do not rule out November outflows (Rp2.29tn sold in the first week)."
-    ],
-    [
       "October CPI (Nov 2)",
       "3.23% y/y (f 3.29%, p 3.28%); core 2.56% (f 2.75%, p 2.84%)",
       "Softer than expected: inflation does not force BI's hand; the rupiah does."
@@ -62,7 +62,7 @@
   ],
   "view": [
     "My view:",
-    "The rally keeps leaning on a steadier rupiah and cheaper oil, and today it showed up at the front end, which now looks rich with the 1Y down 7bp this week, while the long end is pinned by supply and, from here, by the political story around the Vice President; the tests are the auction result, US CPI (Nov 10), MSCI's review (read in Jakarta early Nov 12) and BI (Nov 17–18). The daily Bond Flow Signal is −0.64, back in sell-off, with the JCI (z −1.75), the 10Y trend (z +1.64) and, on a base effect, the rupiah (z +0.61) bearish and the 280bp Treasury spread, 39bp above its 130-day average (z +1.43), bullish; the Oct 7 episode is still open at +51.6bp. That record needs weighing: on the daily build since June 2022 the signal scores a Sharpe of 0.75 outright and 0.89 hedged against Treasuries, but sell-off calls were right only 51% of the time over the next 20 sessions (rally calls 58%; hedged 62% and 51%), and the average 10Y move after a sell-off call was −1.8bp; the weekly build scores 0.42 and 0.56, and the US-trend variants reach 0.73 and 0.78 on the weekly build but were chosen after the fact and are not live; all are in-sample back-tests. Treasuries explain only about 5bp of the 52bp four-week rise, so the trend rests on the residual, the rupiah, BI and MSCI. I stay neutral on the 10Y: my underweight rule needs both the signal below −0.5 and the 10Y above 7.75%, and only the first holds; I expect 7.55–7.80% over two weeks. On the curve, the FR0109 → PBS040 switch hit its stop and is closed; I would not chase the front end or 5Y here and prefer to wait for the auction concession to fade before adding duration."
+    "The auction showed there is cash for SBN at these yields, and it is going to the front end, where the 1Y now sits under my 6.75% no-chase line and under 100bp over the BI-Rate, while the 10Y is stuck in a 7.6–7.7% range by supply, the rupiah and the political noise; MSCI (Nov 12), US PPI (Nov 13) and BI (Nov 17–18) are the tests. The daily Bond Flow Signal is −0.77, in sell-off, with the 10Y trend (z +2.08), the JCI (z −1.67) and the rupiah (z +0.40) bearish and only the 269bp Treasury spread, 28.6bp above its 130-day average (z +1.05), bullish; the Oct 7 episode is open at +52.0bp. On the daily build since June 2022 the signal scores a Sharpe of 0.75 outright and 0.87 hedged against Treasuries, but sell-off calls were right only 51% of the time over the next 20 sessions (rally calls 58%; hedged 62% and 51%), and the average 10Y move after a sell-off call was −1.8bp; the weekly build scores 0.42 and 0.57, and the US-trend variants reach 0.73 and 0.78 on the weekly build but were chosen after the fact and are not live; all are in-sample back-tests. Treasuries explain only about 3bp of the 52bp four-week rise (weekly beta −0.23), so the trend rests on the residual — the rupiah, BI, MSCI and politics — not on the Fed. I stay neutral on the 10Y with a 7.55–7.80% two-week range: my underweight rule needs the signal below −0.5 and the 10Y above 7.75%, and only the first holds. On the curve, the front-end rally looks stretched; I would rather wait to buy FR0109 back near 7.60% or add 10s20s steepeners on FR0113 supply than chase 1–2Y."
   ],
   "buckets": [
     {
@@ -74,19 +74,19 @@
         "a": "bi:0",
         "b": "igs:1"
       },
-      "why": "The IGSYC 1Y fell 6.8bp to 6.793%, 104bp over the 5.75% BI-Rate, the lowest of nine stored days (11th percentile, average 112bp), and the 2Y 5.1bp to 7.007%. The 1M point dropped 14bp to 6.22% and the 3M (0.25Y) is 6.32%, below last Friday's 12-month SRBI at 6.67%. Previous call (add at 1Y 7.10%) still unfilled, now 31bp away; the 1Y is 4bp from the 6.75% no-chase line.",
-      "call": "Neutral. Add 1–2Y only at 1Y 7.10% or after a BI hike with JISDOR below 18,000; below 6.75% the front end prices an easing BI has not signalled."
+      "why": "The IGSYC 1Y fell 6.6bp to 6.728%, 98bp over the 5.75% BI-Rate, the lowest of ten stored days (10th percentile, average 110bp), and the 2Y 5.4bp to 6.953%; the 3M (0.25Y) is 6.30% and the 1M 6.21%, 121bp over the 5.00% deposit facility. Auction SPN bills drew 9.4x and 6.7x cover. Previous call: the 1Y broke through the 6.75% no-chase line; the 7.10% add level was not reached (37bp away).",
+      "call": "Neutral. Add 1–2Y only at 1Y 7.10% or after a BI hike with JISDOR below 18,000; at 6.73% the 1Y prices an easing BI has not signalled."
     },
     {
       "name": "Belly 5Y (FR0109 / PBS040)",
       "tag": "Rich",
-      "stance": "Switch stopped; wait",
+      "stance": "Wait for FR0109 7.60%",
       "m": {
         "type": "lvl",
         "a": "igs:5"
       },
-      "why": "The IGSYC 5Y fell 3.0bp to 7.416%, the lowest of nine stored days (11th percentile, average 7.508%), 10.6bp lower this month; the 2s5s10s fly is 14bp, also the lowest stored (average 27bp). FR0109 fell 12.3bp to 7.251% (8.8bp rich) while PBS040 fell 6bp to 7.429% (15.6bp cheap), so the FR0109 → PBS040 switch, entered at 10bp, widened to 17.9bp and hit its 16bp stop: closed, about −8bp. The outright entry (FR0109 7.60–7.70%) was not filled.",
-      "call": "No position. Outright: buy FR0109 at 7.60–7.70% after a BI hike or with JISDOR below 18,000; target 7.35%, stop 7.95%. No re-entry of the PBS040 switch until the gap stops widening."
+      "why": "The IGSYC 5Y slipped 0.7bp to 7.409%, the lowest of ten stored days (10th percentile, average 7.499%), 11.2bp lower this month; the 2s5s10s fly rose to 19bp from 14bp (30th percentile, average 27bp). FR0109 reversed 7.6bp of yesterday's 12.3bp rally to 7.327% and is now on the curve; PBS040 at 7.419% is 13.9bp cheap. The outright entry (FR0109 7.60–7.70%) was not filled; the PBS040 switch stays closed after yesterday's stop.",
+      "call": "No position. Buy FR0109 at 7.60–7.70% after a BI hike or with JISDOR below 18,000; target 7.35%, stop 7.95%."
     },
     {
       "name": "10Y outright",
@@ -96,7 +96,7 @@
         "type": "lvl",
         "a": "igs:10"
       },
-      "why": "The IGSYC 10Y slipped 0.4bp to 7.684%, 96th percentile of the past year (172 days, average 6.79%) and 4bp off the 7.724% high of Nov 4. The signal fell back to −0.64, but the underweight rule also needs the 10Y above 7.75%, so it is not triggered. FR0108 at 7.574% stays 10bp rich to the curve.",
+      "why": "The IGSYC 10Y fell 1.1bp to 7.673%, 95th percentile of the past year (172 days, average 6.78%) and 5bp under the 7.724% high of Nov 4, while the US 10Y rose 10bp. The signal is −0.77, but the underweight rule also needs the 10Y above 7.75%, so it is still not triggered. FR0108 at 7.584% is 8bp rich to the curve; FR0111 cleared at 7.68% in the auction.",
       "call": "Neutral. Underweight if the signal stays below −0.5 and the 10Y closes above 7.75%; tactical long only above 7.85% (stop 8.05%) or once the signal is above 0 with JISDOR below 18,000."
     },
     {
@@ -108,8 +108,8 @@
         "a": "igs:10",
         "b": "igs:20"
       },
-      "why": "IGSYC 10s20s steepened to 2.9bp, the steepest of nine stored days (average 1.1bp), as the front end led and the 20Y held. The benchmark spread FR0107 − FR0108 narrowed back to 4.5bp from 10.2bp as FR0107 rallied 6.4bp, so the steepener re-entry at −5bp is still 9.5bp away.",
-      "call": "Wait. Re-enter the FR0108/FR0107 steepener duration-weighted at −5bp or lower, target +5bp, stop −12bp; new FR0113 supply could cheapen the 20Y first."
+      "why": "IGSYC 10s20s is 2.6bp (90th percentile of ten stored days, average 1.3bp, range 0.1–2.9bp), so the curve is near its steepest stored but the range is tiny. The benchmark spread FR0107 − FR0108 narrowed to 2.9bp from 4.5bp, 7.9bp short of the −5bp re-entry. FR0113 (2047) drew only Rp1.13tn and was not awarded, so 20Y supply is deferred, not cancelled.",
+      "call": "Wait. Re-enter the FR0108/FR0107 steepener duration-weighted at −5bp or lower, target +5bp, stop −12bp; an FR0113 reopening could cheapen the 20Y first."
     },
     {
       "name": "PBS sukuk vs FR",
@@ -120,20 +120,20 @@
         "a": "igs:5",
         "b": "sbsn:5"
       },
-      "why": "The fitted PBS 5Y is 1.9bp through IGSYC (38th percentile of eight stored days, average −2.3bp) and the 10Y 1.0bp through; the fit rests on four series (level 0.1bp, slope −5.6bp), so confidence is limited. PBS034 was flat at 7.602% and stays 9.7bp rich, PBS038 rose 1.5bp to 7.730% (2bp cheap), PBS030 fell 5.3bp to 6.842%. The switch-back condition (PBS034 5bp cheap) is not met.",
-      "call": "Hold FR over PBS034; switch back once PBS034 is 5bp cheap to the curve. PBS040 at 15.6bp cheap is value for buy-and-hold accounts, not a trade while the gap is widening."
+      "why": "The fitted PBS 5Y is on IGSYC (0.0bp; 78th percentile of nine stored days, average −2.0bp), the 2Y 4.1bp over (cheapest stored) and the 10Y 2.6bp through; the fit rests on four series (level −5.7bp, slope 15.6bp), so confidence is limited. PBS034 fell 1.0bp to 7.592% and stays about 10bp rich, PBS038 rallied 6.8bp to 7.662%, PBS030 rose 3.6bp. The switch-back condition (PBS034 5bp cheap) is not met; the position stays open.",
+      "call": "Hold FR over PBS034; switch back once PBS034 is 5bp cheap to IGSYC. PBS040 at about 14bp cheap is value for buy-and-hold accounts, not a trade."
     },
     {
       "name": "Corporate credit (AAA 3Y)",
-      "tag": "Rich",
+      "tag": "Fair",
       "stance": "Hold quality, don't add",
       "m": {
         "type": "spr",
         "a": "igs:3",
         "b": "aaa:3"
       },
-      "why": "PHEI's AAA 3Y fell 4.4bp to 7.648%, 49.3bp over IGSYC, unchanged and near the tightest of eight stored days (25th percentile, average 51.0bp). AA (86bp), A (156bp) and BBB (235bp over AA, average 245bp) also moved one-for-one with IGSYC, which suggests the corporate curves were repriced off the government curve rather than traded. With eight days stored the meter is thin; the add level (AAA 3Y past 70bp) was not reached.",
-      "call": "Hold AAA/AA; add only if AAA 3Y widens past 70bp. Avoid BBB until the rupiah and politics settle; tight spreads are not a reason to chase."
+      "why": "PHEI's AAA 3Y fell 2.8bp to 7.619%, 49.6bp over IGSYC (44th percentile of nine stored days, average 50.8bp). AA (85.9bp), A (155.6bp) and BBB (235.5bp over AA, average 244.1bp) were again unchanged versus the government curve, which suggests repricing off IGSYC rather than trading. Nine days is a thin base; the add level (AAA 3Y past 70bp) was not reached.",
+      "call": "Hold AAA/AA; add only if AAA 3Y widens past 70bp. Avoid BBB until the rupiah and politics settle."
     },
     {
       "name": "Retail SBN 5Y (ORI/SR)",
@@ -144,46 +144,46 @@
         "a": "igs:5",
         "b": "retail:5"
       },
-      "why": "The fitted retail curve is 10.8bp through IGSYC at 5Y (88th percentile of eight stored days, average −14.7bp) and 10.4bp over at 2Y; the fit uses 21 series with a steep 80bp slope, so it is partly a fit artefact. Secondary spreads run from 62bp rich (SR022T3) to 43bp cheap (ORI027T3); ORI026T6 is 7.534%, 30bp over IGSYC. ST017 (open to Dec 2) floors at 6.95% (2Y) and 7.05% (4Y), now near the IGSYC 2Y at 7.01% and below the 4Y at 7.29%.",
-      "call": "For new money, FR0109 or PBS040 give daily liquidity; ST017 suits hold-to-maturity buyers who want BI-hike upside. Buy secondary retail only at the cheap end (ORI026T6, ~30bp over IGSYC)."
+      "why": "The fitted retail curve is 10.7bp through IGSYC at 5Y (89th percentile of nine stored days, average −14.2bp) and 10.4bp over at 2Y; the 21-series fit has a steep 80bp slope, so part of this is fit artefact. Secondary spreads run from 56bp rich (ORI026T3) to 43bp cheap (ORI027T3); ORI026T6 is 7.526%, 31bp over. ST017 (open to Dec 2) floors at 6.95% (2Y) and 7.05% (4Y), now on the IGSYC 2Y (6.95%) and below the 4Y (7.28%).",
+      "call": "For new money, FR0109 or PBS040 give daily liquidity; ST017 suits hold-to-maturity buyers who want BI-hike upside. Buy secondary retail only at the cheap end (ORI026T6, ~31bp over IGSYC)."
     }
   ],
   "rows": {
     "igs:0.1": {
-      "note": "1M −14bp to 6.22%; 122bp over deposit facility"
+      "note": "1M 6.21%; 121bp over deposit facility"
     },
     "igs:1": {
-      "note": "−6.8bp; 104bp over BI-Rate, lowest stored"
+      "note": "−6.6bp to 6.73%; 98bp over BI-Rate, lowest stored"
     },
     "igs:2": {
-      "note": "−5.1bp to 7.01%; front end led"
+      "note": "−5.4bp to 6.95%; −9bp this week"
     },
     "igs:3": {
-      "note": "−4.5bp to 7.15%; −7bp this month"
+      "note": "−3.1bp to 7.12%; AAA 3Y 50bp over"
     },
     "igs:5": {
-      "note": "−3.0bp; lowest of 9 stored days"
+      "note": "−0.7bp; lowest of 10 stored days"
     },
     "igs:7": {
-      "note": "−1.6bp; 5s10s 27bp, steepest stored"
+      "note": "−0.5bp to 7.58%; 5s10s 26bp"
     },
     "igs:10": {
-      "note": "−0.4bp to 7.68%; ignored a 2bp UST sell-off"
+      "note": "−1.1bp to 7.67% vs +10bp UST overnight"
     },
     "igs:15": {
-      "note": "Unchanged; +8bp this month"
+      "note": "−1.4bp; +7bp this month"
     },
     "igs:20": {
-      "note": "Flat before new FR0113 (2047) supply"
+      "note": "−1.5bp; FR0113 not awarded"
     },
     "igs:30": {
       "note": "Flat to 20Y on IGSYC"
     },
     "sbsn:5": {
-      "note": "Fitted, 1.9bp through; PBS040 15.6bp cheap"
+      "note": "Fitted, on IGSYC; PBS040 ~14bp cheap"
     },
     "sbsn:10": {
-      "note": "1.0bp through; PBS034 still 10bp rich"
+      "note": "2.6bp through; PBS034 ~10bp rich"
     },
     "retail:2": {
       "note": "10bp over IGSYC; ST017 floor 6.95%"
@@ -192,10 +192,10 @@
       "note": "11bp rich on a 21-bond fit"
     },
     "bi:0": {
-      "note": "5.75%; Nov 17–18 still a close call"
+      "note": "5.75%; Nov 17–18 meeting, hot US CPI"
     },
     "aaa:3": {
-      "note": "49bp, moved with IGSYC"
+      "note": "50bp, moved with IGSYC"
     },
     "aa:3": {
       "note": "86bp; unchanged"
@@ -204,43 +204,43 @@
       "note": "156bp; unchanged"
     },
     "bbb:3": {
-      "note": "235bp over AA, steady"
+      "note": "236bp over AA, steady"
     }
   },
-  "watch": "Next: SUN auction results incl. new FR0113 (Tue Nov 10, evening), US October CPI and the US 10Y auction (Tue Nov 10), MSCI's November review (Nov 11 CET, read in Jakarta 05:00 WIB Nov 12), US PPI (Fri Nov 13), then BI's board meeting (Nov 17–18); a formal VP resignation, a weak auction or JISDOR above 18,200 would keep the signal in sell-off, while a rupiah below 18,000 would push a BI hike out.",
+  "watch": "Next: MSCI's November index review (05:00 WIB Thu Nov 12; changes effective Dec 1), US PPI (Fri Nov 13), Indonesia's October trade balance (mid-November), the DPR's handling of the HMP motion on the Vice President, then BI's board meeting (Nov 17–18); JISDOR above 18,200 or a 10Y close above 7.75% would trigger the underweight, while a rupiah back below 18,000 would push a BI hike out.",
   "sources": [
     [
-      "Bisnis (JCI close and foreign flows, Nov 10)",
-      "https://market.bisnis.com/read/20261110/7/2020102/ihsg-ditutup-menguat-102-ke-5125-saham-ammn-asii-dan-byan-melaju"
+      "Kontan (SUN auction results, Nov 11)",
+      "https://investasi.kontan.co.id/news/lelang-sun-10-november-2026-pemerintah-menangkan-rp-35-triliun"
     ],
     [
-      "Koran Manado via Kontan (rupiah and JISDOR, Nov 10)",
-      "https://koranmanado.co.id/rupiah-menguat-isu-gibran-mundur"
+      "CNBC Indonesia (foreign bids at the SUN auction, Nov 10)",
+      "https://cnbcindonesia.com/market/20261110210251-17-784061/ihsg-hijau-investor-asing-borong-surat-utang-ri-rp106-triliun"
     ],
     [
-      "Koran Manado via MNC Sekuritas (SUN wrap and auction preview, Nov 10)",
-      "https://koranmanado.co.id/pemerintah-lelang-sun-rp30-triliun"
+      "Koran Manado via MNC Sekuritas (auction yields and SUN wrap, Nov 11)",
+      "https://koranmanado.co.id/permintaan-sun-melonjak-lelang-pemerintah"
     ],
     [
-      "CNBC Indonesia (SUN auction terms, Nov 9)",
-      "https://cnbcindonesia.com/market/20261109105236-17-783461/pemerintah-incar-rp30-t-dari-lelang-sun-besok-tawarkan-9-seri"
+      "CNBC Indonesia (JCI close ahead of MSCI, Nov 11)",
+      "https://cnbcindonesia.com/market/20261111153604-17-784340/ihsg-ditutup-melemah-021-ke-511504-jelang-pengumuman-msci"
     ],
     [
-      "Kompas (Vice President Gibran's intention to resign, Nov 10)",
-      "https://nasional.kompas.com/read/2026/11/10/15313531/gibran-sampaikan-niat-mundur-dari-wapres-kepada-prabowo"
+      "Kontan (rupiah and JISDOR, Nov 11)",
+      "https://investasi.kontan.co.id/news/rupiah-kembali-melemah-ke-rp-18149-investor-cermati-hasil-review-msci"
     ],
     [
-      "Bisnis (September retail sales, Nov 10)",
-      "https://ekonomi.bisnis.com/read/20261110/9/2020073/pertumbuhan-penjualan-riil-september-2026-melambat-baru-diproyeksikan-menguat-pada-oktober"
+      "CNBC (US CPI and Treasuries, Nov 10)",
+      "https://cnbc.com/2026/11/10/us-bonds-treasurys-yields.html?lctg=67a0e1027a4566d988029ef4"
     ],
     [
-      "Dow Jones via Morningstar (US Treasuries, Nov 9)",
-      "https://morningstar.com/news/dow-jones/202611091180/us-treasury-yields-edge-lower-as-oil-prices-decline"
+      "Kompas.id (PDIP backs HMP motion, Nov 11)",
+      "https://kompas.id/artikel/fraksi-pdi-p-all-out-ajukan-hak-menyatakan-pendapat-pemakzulan-gibran?open_from=Section_Tematik"
     ],
     [
-      "Bloomberg Technoz (Panda bond offer, MSCI risk, Nov 10)",
-      "https://bloombergtechnoz.com/detail-news/127317/pemerintah-tawarkan-panda-bonds-targetkan-raup-rp32-5-triliun"
+      "Kompas (MSCI review timing, Nov 11)",
+      "https://money.kompas.com/read/2026/11/11/101000126/pengumuman-msci-12-november-intai-bursa-ri-investor-perlu-antisipasi-dua"
     ]
   ],
-  "corrections": "Nov 10: the Nov 9 daily signal is restated at −0.50 (not −0.49) after the USD/IDR input was rebuilt, so the Oct 7 sell-off episode did not close; it remains open. Nov 8: USD/IDR input corrected (Yahoo printed ~17,480 from Nov 3; replaced by JISDOR ~18,130) and the flows rebuilt; signal and back-test figures restated from the daily build the page shows; 3M tenor corrected; flow and buyer attributions labelled as hypotheses; BI levels marked as our read."
+  "corrections": "Nov 11: the Nov 10 daily signal is restated at −0.66 (not −0.64) after the daily rebuild; the Oct 7 sell-off episode is unaffected. Nov 10: the Nov 9 daily signal is restated at −0.50 (not −0.49) after the USD/IDR input was rebuilt, so the Oct 7 sell-off episode did not close; it remains open. Nov 8: USD/IDR input corrected (Yahoo printed ~17,480 from Nov 3; replaced by JISDOR ~18,130) and the flows rebuilt; signal and back-test figures restated from the daily build the page shows; 3M tenor corrected; flow and buyer attributions labelled as hypotheses; BI levels marked as our read."
 }
