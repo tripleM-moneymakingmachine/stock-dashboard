@@ -9,15 +9,14 @@
 // from spot to the forward value date. "Basis to Shibor" = implied CNY − Shibor at the same tenor.
 // History accumulates in the file; anything that fails keeps the previous file. Writes data/cny-fxswap.json.
 // Usage: node scripts/fetch-cny-fxswap.mjs [--months=N]   (N months of back-fill on the first run, default 24)
-import { readFileSync, writeFileSync, appendFileSync, existsSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, appendFileSync } from "node:fs";
 
 const OUT = "data/cny-fxswap.json";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 const B = "https://www.chinamoney.com.cn";
 const CF = (ref) => ({ "User-Agent": UA, Accept: "application/json, text/javascript, */*; q=0.01", Referer: ref, Origin: B, "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest" });
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };
-const LOGF = "data/_fxswap-log.txt", logs = [];
-const log = (...a) => { console.log(...a); logs.push(a.map((x) => (typeof x === "string" ? x : JSON.stringify(x))).join(" ")); try { writeFileSync(LOGF, logs.join("\n")); } catch {} };
+const log = (...a) => console.log(...a);
 const T0 = Date.now(), BUDGET = 9 * 60e3;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const shDate = (ms) => new Date(ms).toLocaleDateString("en-CA", { timeZone: "Asia/Shanghai" });
@@ -28,13 +27,12 @@ const r4 = (x) => (x == null || !isFinite(x) ? null : Math.round(x * 1e4) / 1e4)
 const MONTHS = +(process.argv.find((a) => a.startsWith("--months="))?.split("=")[1] || 24);
 
 // Tenors kept in history and drawn on the curve.
-const TEN = ["1W", "2W", "1M", "2M", "3M", "4M", "5M", "6M", "9M", "1Y"];
+const TEN = ["1W", "2W", "1M", "2M", "3M", "6M", "9M", "1Y"]; // CFETS history has no 4M / 5M
 const KEY = ["1M", "2M", "3M", "6M", "9M", "1Y"];
 const isTen = (s) => /^(ON|TN|SN|\d+[WMY])$/.test(s);
 
 let prev = null;
 try { prev = JSON.parse(readFileSync(OUT, "utf8")); } catch {}
-if (existsSync("data/_probe-fxswap.txt")) rmSync("data/_probe-fxswap.txt");
 
 // ---------- calendar: spot date (T+2 weekdays) and forward value date ----------
 const wd = (d) => new Date(d + "T00:00:00Z").getUTCDay();
@@ -199,7 +197,6 @@ const outObj = {
   updated: Date.now(), backDone, asOf: last || prev?.asOf, tenors: TEN, key: KEY, curve, series,
   src: "CFETS (chinamoney.com.cn): USD.CNY FX swap curve and 外币隐含利率曲线 history (swap points, mean OTC spot quote, Shibor, CFETS-implied USD rate). USD leg: US Treasury daily par yield curve (home.treasury.gov), bills read at each tenor, converted to ACT/360.",
   lastError: errs.length ? `${new Date().toISOString()} ${errs.join("; ")}` : undefined,
-  sample,
   raw,
 };
 if (!dates.length && prev) { log("nothing fetched; keeping previous file"); process.exit(0); }

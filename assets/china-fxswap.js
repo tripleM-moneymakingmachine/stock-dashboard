@@ -25,7 +25,7 @@
     $("fsTab").innerHTML = rows.map((r) => {
       const s = D.series[r.t];
       const td = (v) => `<td class="${cls(v)}">${sg(v)}</td>`;
-      return `<tr><td>${r.t}</td><td><b>${f(r.impl, 3)}</b></td>${td(chg(s, 1))}${td(chg(s, 7))}${td(chg(s, 30))}<td>${f(r.shibor, 3)}</td><td class="${cls(r.basis)}">${sg(r.basis)}</td><td>${f(r.usd, 3)}</td><td>${f(r.pips, 1)}</td></tr>`;
+      return `<tr><td>${r.t}</td><td><b>${f(r.impl, 3)}</b></td>${td(chg(s, 1))}${td(chg(s, 7))}${td(chg(s, 30))}<td>${f(r.shibor, 3)}</td><td class="${cls(r.basis)}">${sg(r.basis)}</td><td>${f(r.usd, 3)}</td></tr>`;
     }).join("");
   }
 
