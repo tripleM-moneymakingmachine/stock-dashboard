@@ -1,0 +1,60 @@
+name: CNY FX swap implied rates
+
+# Daily after CFETS publishes the USD.CNY FX swap curve (~16:30 Beijing): rebuild data/cny-fxswap.json
+# (scripts/fetch-cny-fxswap.mjs), commit and redeploy. The China tab draws the implied CNY curve from it.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch-cny-fxswap.mjs
+      - .github/workflows/cny-fxswap.yml
+  schedule:
+    - cron: "45 10 * * *"     # 18:45 Singapore / Beijing
+    - cron: "15 1 * * 1-5"    # 09:15 Singapore, safety net (also picks up the US Treasury close)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: cny-fxswap
+  cancel-in-progress: false
+
+jobs:
+  fxswap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: USD.CNY FX swap curve, implied CNY rates
+        run: node scripts/fetch-cny-fxswap.mjs || echo "fx swap fetch failed; keeping the committed file"
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          for f in data/cny-fxswap.json data/_probe-fxswap.txt; do [ -f $f ] && git add $f; done
+          if git diff --cached --quiet; then
+            echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh CNY FX swap implied rates"
+          ok=0
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push && { ok=1; break; }
+            echo "push rejected (attempt $i); retrying"; sleep $((i * 5))
+          done
+          [ "$ok" = 1 ]
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
