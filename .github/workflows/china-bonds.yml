@@ -17,7 +17,6 @@ on:
       - scripts/fetch-pb-master.mjs
       - scripts/fetch-cgb-master.mjs
       - scripts/fetch-china.mjs
-      - scripts/fetch-cmu-bonds.mjs
       - .github/workflows/china-bonds.yml
   schedule:
     - cron: "45 10 * * *"     # 18:45 Singapore / Beijing, every day (catches weekend make-up workdays; heartbeat.yml also dispatches it at 18:45)
@@ -52,9 +51,6 @@ jobs:
       - name: CCDC curve, history and CFETS bond yields
         run: node scripts/fetch-china.mjs
 
-      - name: CMU bonds (HKMA list of USD and CNH instruments, with reference curve yields)
-        run: node scripts/fetch-cmu-bonds.mjs || echo "CMU bonds fetch failed; keeping the committed file"
-
       - name: CFETS bond lending fees (daily and monthly, by tenor)
         run: node scripts/fetch-bond-lending.mjs || echo "bond lending fetch failed; keeping the committed file"
 
@@ -66,7 +62,6 @@ jobs:
         run: |
           git add data/cgb-master.json data/china.json data/bond-lending.json data/china-flows.json
           if [ -f data/pb-master.json ]; then git add data/pb-master.json; fi
-          if [ -f data/cmu-bonds.json ]; then git add data/cmu-bonds.json; fi
           if git diff --cached --quiet; then
             echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
