@@ -16,7 +16,9 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const B = "https://www.chinamoney.com.cn";
 const CF = (ref) => ({ "User-Agent": UA, Accept: "application/json, text/javascript, */*; q=0.01", Referer: ref, Origin: B, "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest" });
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };
-const log = (...a) => console.log(...a);
+const LOGF = "data/_fxswap-log.txt", logs = [];
+const log = (...a) => { console.log(...a); logs.push(a.map((x) => (typeof x === "string" ? x : JSON.stringify(x))).join(" ")); try { writeFileSync(LOGF, logs.join("\n")); } catch {} };
+const T0 = Date.now(), BUDGET = 11 * 60e3;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const shDate = (ms) => new Date(ms).toLocaleDateString("en-CA", { timeZone: "Asia/Shanghai" });
 const today = shDate(Date.now());
@@ -62,18 +64,17 @@ async function cfPost(url, body, ref) {
 let dumped = false, sample = null;
 async function iuirWindow(start, end) {
   const ref = `${B}/chinese/bkcurvuiruuh/`;
-  const recs = [];
-  let size = 1000;
-  for (let page = 1; page <= 80; page++) {
-    const body = `startDate=${start}&endDate=${end}&ccyPair=USD.CNY&rmdRate=23&bp=26&spotRate=28&lang=CN&pageNum=${page}&pageSize=${size}`;
-    const j = await cfPost(`${B}/ags/ms/cm-u-bk-fx/IuirCurvHis`, body, ref);
-    const rs = j?.records || [];
-    if (!dumped && rs.length) { sample = rs.slice(0, 2); log("IuirCurvHis record sample:", JSON.stringify(rs[0])); dumped = true; }
-    recs.push(...rs);
-    const tot = j?.data?.pageTotal || 1;
-    if (page >= tot || !rs.length) break;
-    await sleep(250);
+  const body = (page, size) => `startDate=${start}&endDate=${end}&ccyPair=USD.CNY&rmdRate=23&bp=26&spotRate=28&lang=CN&pageNum=${page}&pageSize=${size}`;
+  const t0 = Date.now();
+  const j = await cfPost(`${B}/ags/ms/cm-u-bk-fx/IuirCurvHis`, body(1, 1000), ref);
+  const recs = [...(j?.records || [])];
+  const tot = j?.data?.pageTotal || 1, size = j?.data?.pageSize || 1000;
+  if (!dumped && recs.length) { sample = recs.slice(0, 2); log("IuirCurvHis record sample:", JSON.stringify(recs[0])); dumped = true; }
+  for (let p = 2; p <= tot; p += 5) {
+    const batch = await Promise.all([p, p + 1, p + 2, p + 3, p + 4].filter((x) => x <= tot).map((x) => cfPost(`${B}/ags/ms/cm-u-bk-fx/IuirCurvHis`, body(x, size), ref).then((r) => r?.records || []).catch(() => [])));
+    for (const b of batch) recs.push(...b);
   }
+  log(`  window ${start}..${end}: total ${j?.data?.total}, pageSize ${size}, pages ${tot}, ${recs.length} recs in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
   return recs;
 }
 // Pull the fields out of one record without depending on exact key names beyond the ones seen.
@@ -132,20 +133,28 @@ const hist = {}; // date -> tenor -> {pips, spot, shibor, usdImpl}
 for (const [d, o] of Object.entries(prev?.raw || {})) hist[d] = { ...o };
 const put = (x) => { (hist[x.d] ||= {})[x.t] = { pips: x.pips, spot: x.spot, shibor: x.shibor, usdImpl: x.usdImpl }; };
 
-// Windows to (re)read: the last month always; on the first run (or a thin file) back-fill MONTHS months.
-const have = Object.keys(hist).sort();
-const need = have.length < 200 ? MONTHS : 1;
+// Windows to read: always the latest month, then keep back-filling older months (until CFETS has no more) within a time budget,
+// so the history grows over the first few runs instead of one run timing out.
+const held = Object.keys(hist).sort();
+let backDone = !!prev?.backDone, oldest = held[0] || today;
 let fetched = 0, errs = [];
-for (let k = 0; k < need; k++) {
-  const end = addDays(today, -30 * k), start = addDays(end, -29);
+const win = async (end) => {
+  const start = addDays(end, -29);
+  const recs = await iuirWindow(start, end);
+  let n = 0; for (const r of recs) { const x = parseRec(r); if (x) { put(x); n++; } }
+  fetched += n; log(`IuirCurvHis ${start}..${end}: ${recs.length} records, ${n} USD.CNY/Shibor`);
+  return { start, recs: recs.length };
+};
+try { await win(today); } catch (e) { errs.push(`latest: ${e.message}`); log("IuirCurvHis latest failed", e.message); }
+let windows = 0;
+while (!backDone && Date.now() - T0 < BUDGET && windows < MONTHS) {
+  const end = addDays(Object.keys(hist).sort()[0] || oldest, -1);
   try {
-    const recs = await iuirWindow(start, end);
-    let n = 0; for (const r of recs) { const x = parseRec(r); if (x) { put(x); n++; } }
-    fetched += n;
-    log(`IuirCurvHis ${start}..${end}: ${recs.length} records, ${n} USD.CNY/Shibor`);
-    if (k > 0 && !recs.length) { log("no older data; stopping back-fill"); break; }
-  } catch (e) { errs.push(`${start}: ${e.message}`); log("IuirCurvHis failed", start, e.message); if (k === 0) break; }
-  await sleep(400);
+    const r = await win(end); windows++;
+    if (!r.recs) { backDone = true; log("no older data; back-fill complete"); }
+    else if (!Object.keys(hist).some((d) => d < end)) { backDone = true; log("window added nothing older; stopping"); }
+  } catch (e) { errs.push(`${end}: ${e.message}`); log("back-fill failed", end, e.message); break; }
+  await sleep(300);
 }
 
 // Today's curve, if the history feed doesn't have it yet.
@@ -186,7 +195,7 @@ const curve = last ? { date: last, spotDate: addBiz(last, 2), ustDate: ustOn(las
 const raw = {}; for (const d of dates) raw[d] = hist[d];
 
 const outObj = {
-  updated: Date.now(), asOf: last || prev?.asOf, tenors: TEN, key: KEY, curve, series,
+  updated: Date.now(), backDone, asOf: last || prev?.asOf, tenors: TEN, key: KEY, curve, series,
   src: "CFETS (chinamoney.com.cn): USD.CNY FX swap curve and 外币隐含利率曲线 history (swap points, mean OTC spot quote, Shibor, CFETS-implied USD rate). USD leg: US Treasury daily par yield curve (home.treasury.gov), bills read at each tenor, converted to ACT/360.",
   lastError: errs.length ? `${new Date().toISOString()} ${errs.join("; ")}` : undefined,
   sample,
