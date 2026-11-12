@@ -1,7 +1,7 @@
 {
- "asof": "2026-11-12",
- "asofText": "Nov 12, 2026",
- "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B, Constellation Q3 $9.55B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
+ "asof": "2026-11-13",
+ "asofText": "Nov 13, 2026",
+ "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Applied Materials FQ4 $10.41B, Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B, Constellation Q3 $9.55B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
   "recapture": 30,
@@ -223,7 +223,7 @@
   {
    "t": "AMAT",
    "n": "Applied Materials",
-   "rev": 36.5,
+   "rev": 41.6,
    "page": "amat",
    "s": {
     "eqp": 0.25
@@ -300,9 +300,9 @@
  ],
  "onsitePerGW": 2.4,
  "views": {
-  "NVDA": "Largest dollars deferred, smallest real damage: Nvidia is supply-capped and is financing extra CoWoS capacity at SPIL. Wednesday's 2.9% rebound was erased after hours (about −8%) on reports of a second relationship and a board move to oust Huang, on top of a Baird downgrade; that is governance and export-scrutiny risk, not data center demand, as CoreWeave's beat the same day showed. Nov 17 earnings and any CEO change matter far more than state politics.",
-  "AMD": "Exposed through both MI-series GPUs and EPYC CPUs, with OpenAI (Stargate) ties putting more of its 2027 ramp in Texas than peers. Google picking EPYC for its TPU hosts widens the CPU attach, and the $2.5B stake in Anthropic's private placement (tied to chip deliveries) adds a second big AI-lab customer outside Texas.",
-  "AVGO": "Custom ASIC (Google TPU, Meta, OpenAI) plus Tomahawk switching. Google's Texas plans and Meta's El Paso/Piqua issues touch two of its biggest XPU customers, but expect deferrals of quarters, not cancellations; Tuesday's 3.9% gain while Nvidia fell shows money rotating into custom-silicon suppliers rather than leaving AI.",
+  "NVDA": "Largest dollars deferred, smallest real damage from state policy: Nvidia is supply-capped and financing extra CoWoS capacity. Huang resigned on Nov 12 (CFO Kress interim, Harvey Jones chair); the stock closed −4.3% at $166 after a −13% open, so the market is pricing a leadership and China-scrutiny discount, not lost data center demand. Nov 17 results and the CEO search now matter far more than any governor.",
+  "AMD": "Exposed through MI-series GPUs and EPYC CPUs, with OpenAI (Stargate) ties putting more of its 2027 ramp in Texas than peers. It rose 5.9% on Nov 12 as buyers bet Nvidia's leadership vacuum helps the closest GPU rival (William Blair upgraded it). Fermi's termination of the TensorWave lease also ends the AMD credit support for that Amarillo build, removing a small contingent liability but also a planned MI cluster site.",
+  "AVGO": "Custom ASIC (Google TPU, Meta, OpenAI) plus Tomahawk switching. Google's and Meta's Texas plans touch two of its biggest XPU customers, but expect deferrals of quarters, not cancellations. It rose 5.5% on Nov 12 as Nvidia's CEO exit pushed money toward custom silicon; that rotation is sentiment, while the per-GW content assumption is unchanged.",
   "MRVL": "Small absolute exposure but high operating leverage; AWS Trainium and optical DSP volumes follow US cluster go-lives closely.",
   "ARM": "Royalty per CPU is small, so direct impact is negligible; the bigger issue is SoftBank's Stargate financing, which hits sentiment.",
   "INTC": "Server CPU recovery is tied to general cloud builds more than giant AI campuses, so the hit is modest; foundry ambitions do not depend on US data center siting.",
@@ -314,13 +314,13 @@
   "AAOI": "Most exposed optics name relative to size; depends on a few hyperscaler programs, some in Texas. It is also the clearest beneficiary if the planned ban on new Chinese transceivers goes ahead, though Microsoft's lobbying makes that less certain.",
   "GLW": "Fiber is installed on site with no absorption, so Corning sees delays almost one for one, but its multi-year hyperscaler contracts (Meta, others) set minimum volumes.",
   "TSM": "Wafers and CoWoS are booked a year ahead and re-assigned; record October sales (NT$587B, +60% from a year earlier, above the run-rate for the top of Q4 guidance) show no sign of US permitting delays reaching the foundry. Effectively immune in 2027 unless global capex falls.",
-  "AMAT": "Second-order only: fab plans for 2027–28 do not change because one US state pauses data centers.",
+  "AMAT": "Second-order only: fab plans for 2027–28 do not change because one US state pauses data centers. FQ4 revenue was a record $10.41B (+53%), DRAM was 33% of equipment sales, and it guided $11.1B for FQ1 and more than 30% wafer-fab equipment growth in 2027, confirming memory and packaging capex is still accelerating.",
   "ASML": "Least exposed: Samsung and SK hynix are reportedly racing to lock in EUV tools (up to KRW 10–20T each) as lead times stretch, so orders are set by memory and logic capacity plans that are still rising, not by US campus timing.",
   "TER": "Test volumes follow GPU/HBM unit output, which stays supply-capped, so little impact.",
   "VRT": "Most directly exposed equipment name: UPS, thermal and liquid cooling ship with construction schedules. Backlog and the shift to friendly states and overseas (Vertiv sells globally) limit lost revenue.",
   "ROK": "Small AI data center exposure; mostly an industrial cycle story.",
   "GEV": "Mixed but net winner: grid gear for Texas sites slips, while pay-your-own-power rules push hyperscalers to self-supply with gas turbines, its sold-out product. SoftBank's $3.7B write-off on reserved power equipment for Ohio is a warning that slot reservations can be re-scoped, but GE Vernova says deposits are non-refundable and there is no financial impact, and data centers are only ~20% of its gas customers.",
-  "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, and NTT DATA signed for 900 MW more (deliveries from 2027). Pay-your-own-power rules in the Senate bill and state platforms push hyperscalers to behind-the-meter power that deploys in months, while gas turbines are sold out into the 2030s.",
+  "BE": "Clear second-order winner: Google's $17B Wyoming campus will run mostly on a 702 MW AEP fuel-cell plant built with Bloom cells, and NTT DATA signed for 900 MW more (deliveries from 2027). Pay-your-own-power rules in the Senate bill and state platforms push hyperscalers to behind-the-meter power that deploys in months, while gas turbines are sold out into the 2030s. Nebius said Nov 12 that its Microsoft site in Vineland, New Jersey is switching its main power to Bloom fuel cells after the operator retired temporary generation, another case of fuel cells bridging a stalled grid hook-up.",
   "VST": "Most exposed power name: its growth thesis is new Texas data center load, and management admits the permit pause is already softening ERCOT prices. Still, Q3 beat, 2027 guidance was set above 2026, and it signed a 207 MW Odessa data center PPA, so the 10.6% Nov 6 bounce reflects earnings resilience rather than reduced Texas risk.",
   "CEG": "Scarcity winner, now confirmed by results: Q3 beat, guidance raised, and about 8.5 GW of long-term deals signed this year (Amazon, Google) with no cost to existing customers. If new capacity is harder to build, plants already on the grid become more valuable, though PJM ratepayer politics cap upside."
  },

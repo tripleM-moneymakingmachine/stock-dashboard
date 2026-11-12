@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-12",
- "asofText": "Nov 12, 2026",
+ "asof": "2026-11-13",
+ "asofText": "Nov 13, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -808,7 +808,7 @@
    "status": "uc",
    "capexB": null,
    "est": false,
-   "note": "Up to 300 MW with DataOne; fined $1M for unpermitted generators, ~140 MW may slip to 2027"
+   "note": "Up to 300 MW with DataOne for Microsoft; fined $1M for unpermitted generators. Nebius (Nov 12): just over half of the contracted capacity by end-2026, the rest in Q2 2027, with main power moving to Bloom fuel cells"
   },
   {
    "id": "iren-chi",
@@ -880,7 +880,7 @@
    "status": "pl",
    "capexB": null,
    "est": true,
-   "note": "Shown at the 11 GW data-centre plan. Fermi now markets a 17 GW private power grid (generation target, not data-centre load; ~6 GW permitted). TensorWave lease (222 MW Phase 1, up to 650 MW) signed Aug 2026 but not yet effective: the Oct 31 closing date passed with conditions unmet (Fermi, Nov 3), no termination by either side"
+   "note": "Shown at the 11 GW data-centre plan. Fermi markets a 17 GW private grid (generation target; 2.2 GW current capacity). TensorWave lease and AMD credit support terminated Nov 12; an unnamed investment-grade hyperscaler signed for an initial 600 MW with a $200M prepayment, first power targeted late Q2/early Q3 2027, lease not yet final"
   },
   {
    "id": "goog-wy",
@@ -1295,13 +1295,13 @@
    "state": "TX",
    "lat": 31,
    "lon": -99,
-   "gw": 10.0,
+   "gw": 8.9,
    "now": 0,
    "status": "pl",
    "capexB": null,
    "est": true,
    "unsited": true,
-   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). Apart from Starbase, no locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map. Reduced by ~0.5 GW now shown at the disclosed Starbase site."
+   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). Apart from Starbase, no locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map. Reduced by ~0.5 GW for Starbase and ~1.1 GW for Cochise County, Arizona, now shown as disclosed sites."
   },
   {
    "partner": null,
@@ -1464,10 +1464,10 @@
    "lat": 25.95,
    "lon": -97.35,
    "gw": 0.5,
-   "status": "pl",
+   "status": "uc",
    "capexB": 24,
    "est": true,
-   "note": "$24B initial phases of a gas-fired plant and 'super-compute facility' on 444 acres de-annexed from Brownsville and annexed into Starbase; tax-break hearing in December. GW not disclosed (~ is Claude's estimate)"
+   "note": "SpaceX confirmed (Nov 12) ~$24B for a self-powered supercompute campus with its own gas-fired plant on 444 acres de-annexed from Brownsville into Starbase; 3,000+ construction jobs already, tax-break hearing Dec 9. GW not disclosed (~ is Claude's estimate)"
   },
   {
    "id": "sb-pike",
@@ -1482,6 +1482,21 @@
    "capexB": null,
    "est": false,
    "note": "8 GW IT on the former Portsmouth DOE site, leased to OpenAI for 20 years; SB Energy building a 9.2 GW gas plant, operations from 2028. $3.7B power-equipment charge (Nov 10) and a 'thorough reassessment' of procurement; Ohio is tier 5"
+  },
+  {
+   "id": "xai-az",
+   "name": "Cochise County supercompute campus",
+   "owner": "spcx",
+   "partner": null,
+   "state": "AZ",
+   "lat": 31.9,
+   "lon": -109.9,
+   "gw": 1.1,
+   "now": 0,
+   "status": "pl",
+   "capexB": 50,
+   "est": true,
+   "note": "SpaceX plans ~$50B (5,500 construction, 1,000 permanent jobs); needs Cochise County approval and faces strong local opposition over water and power bills. GW not disclosed (~1.1 GW is Claude's estimate at ~$45B/GW); exact site not disclosed, map position approximate"
   }
  ],
  "risk": {
@@ -1948,7 +1963,7 @@
  "views": {
   "msft": {
    "grade": "Low",
-   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built (Wisconsin's second phase now sits under Crowley's conditional pause, and Georgia's new phases under Bottoms'), and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Its renewed no-subsidy pledge lines it up with the pay-your-own-way rules in the Senate bill and new governors' platforms, which should ease approvals. Microsoft is pulling back from rented capacity and favouring own builds, and is lobbying against a Chinese transceiver ban that would slow its own rollout. Third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity.",
+   "view": "Least exposed hyperscaler: Fairwater Wisconsin and Atlanta are built (Wisconsin's second phase now sits under Crowley's conditional pause, and Georgia's new phases under Bottoms'), and the only big at-risk Texas item is the 900 MW Abilene campus that is not yet energised. Its renewed no-subsidy pledge lines it up with the pay-your-own-way rules in the Senate bill and new governors' platforms, which should ease approvals. Microsoft is pulling back from rented capacity and favouring own builds, and is lobbying against a Chinese transceiver ban that would slow its own rollout. Third-party delays already cut September-quarter capex by about $5B, so own-build slippage now shows up directly in Azure capacity. Nebius's Vineland slip moves part of Microsoft's contracted New Jersey capacity to Q2 2027, another third-party delay rather than a policy one.",
    "moves": [
     "Shift Abilene phase to Wyoming/Iowa",
     "Consolidate to a few neocloud partners and own builds",
@@ -2002,11 +2017,11 @@
   },
   "spcx": {
    "grade": "Medium",
-   "view": "Live today: ~1.7 GW in Memphis (SpaceX's Sep 30 nameplate). The near-term build (Colossus 2 Building 3, ~0.8 GW) is in Tennessee/Mississippi, where neither governor backs a pause. The exposure is the 2027 plan: Musk targets at least 13 GW by end-2027, and the first disclosed piece, a $24B gas plant plus supercompute site at Starbase, shows the playbook: SpaceX-controlled city, own power, no ERCOT queue, routed around Brownsville's moratorium. That limits local and grid risk, but the gas plant still needs TCEQ air permits that Hinojosa has signalled she will hold, so Texas timing risk stays; Medium.",
+   "view": "Live today: ~1.7 GW in Memphis, with Colossus 2 Building 3 (~0.8 GW) in Tennessee/Mississippi where neither governor backs a pause. The $74B plan confirmed Nov 12 splits the next leg: Starbase ($24B) is already under construction on SpaceX-controlled land with its own gas plant, outside ERCOT and Brownsville's moratorium, but still needs TCEQ air permits Hinojosa has signalled she will hold; Cochise County, Arizona ($50B) diversifies out of Texas but needs county approval against loud opposition and water limits. Medium: more sites, more permit fronts, but less single-state risk.",
    "moves": [
     "Keep near-term growth in Memphis/Southaven",
-    "Self-powered Starbase build under its own city's zoning; seek the air permit before Jan 19",
-    "Site the rest of the 2027 plan outside Texas or behind the meter"
+    "Seek the Starbase air permit before Jan 19",
+    "Win Cochise County approval with water and bill commitments"
    ]
   },
   "crwv": {
@@ -2019,11 +2034,12 @@
    ]
   },
   "nbis": {
-   "grade": "Low-Medium",
-   "view": "Live US footprint is small (Kansas City, Vineland), but the pipeline is large: Independence, Missouri (1.2 GW, approved), Highridge in Pennsylvania (1.2 GW, a tier-4 state) and Birmingham, Alabama (~0.3 GW, where the city is weighing a moratorium). No Texas exposure, so the post-election slide and the Nov 11 rebound were sentiment around neocloud funding and Microsoft's tighter oversight, not site risk. Near-zero net debt, a $3.5B secured Citi facility and prepayments mean Nebius can wait out delays better than most; Nov 12 results are the next test.",
+   "grade": "Medium",
+   "view": "Q3 turned the site question from theory into numbers: third-party colocation, not state politics, is what slipped, with Vineland's Microsoft capacity split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Independence, Missouri; Birmingham; Finland) are on schedule and none are in Texas, but Highridge sits in tier-4 Pennsylvania and Birmingham is weighing a moratorium. The ~16% drop combined a real two-month revenue slip and a bigger capex bill ($27B in 2026, $40–45B in 2027) with sentiment from Nvidia's CEO exit; prepayments now cover more than 100% of new-deal capex, so funding risk is lower than the stock implies. Raised to Medium for execution, not policy, risk.",
    "moves": [
-    "Lead with Missouri (approved) while Pennsylvania clears",
-    "Keep Finland/Israel capacity as a hedge"
+    "Shift new capacity to owned Missouri/Alabama sites",
+    "Bloom fuel cells to bridge Vineland power",
+    "Fund 2027 with customer prepayments and asset-backed debt"
    ]
   },
   "iren": {
@@ -2059,9 +2075,11 @@
   },
   "frmi": {
    "grade": "Very High",
-   "view": "11 GW Amarillo plan with no anchor tenant: the purest play on Texas approvals and the most likely to be delayed indefinitely.",
+   "view": "Still the purest Texas-approval play, but Nov 12 made it a better one: a simpler, investment-grade hyperscaler deal for 600 MW with $200M up front replaces the TensorWave lease that needed AMD credit support, and the customer builds its own halls. Behind-the-meter power on a private grid avoids the ERCOT queue, yet the gas plant and buildings still need state permits Hinojosa has said she will hold. The ~20% jump is real de-risking of the tenant question, not of the policy question; a signed lease and an air permit are the next tests.",
    "moves": [
-    "Seek federal (DOE) land or nuclear route"
+    "Convert the prepayment into a signed lease before Jan 19",
+    "Keep power behind the meter, out of ERCOT",
+    "Seek federal (DOE) or nuclear routes for later phases"
    ]
   },
   "crusoe": {
@@ -2079,6 +2097,47 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-12",
+   "co": [
+    "*"
+   ],
+   "t": "Jensen Huang resigned as Nvidia CEO and director with immediate effect; CFO Colette Kress is interim CEO and former Synopsys CEO Harvey Jones becomes the first board chair. Nvidia fell as much as 13% before closing down 4.3% at $166.19, its lowest close since March, while AMD rose 5.9% and Broadcom 5.5% as money rotated to rival chip suppliers; results are still due Nov 17.",
+   "src": "https://latimes.com/business/story/2026-11-12/nvidia-shares-tumble-after-jensen-huang-resigns-as-ceo"
+  },
+  {
+   "d": "2026-11-12",
+   "co": [
+    "nbis",
+    "msft"
+   ],
+   "t": "Nebius beat on Q3 revenue ($981M, +571%) but cut 2026 guidance to $3.0–3.2B because third-party colocation slipped into H1 2027: at Vineland, New Jersey, just over half of the Microsoft capacity arrives by year-end and the rest in Q2 2027 as the main power source switches to Bloom fuel cells. It raised 2026 capex to ~$27B, guided 2027 revenue of $12–13B on $40–45B capex, said its own sites (Missouri, Alabama, Finland) are on time, and the stock fell about 16%.",
+   "src": "https://mlq.ai/news/nebius-revenue-jumps-571-to-981-million-but-colocation-delays-push-its-2026-sales-to-the-low-end-of-guidance"
+  },
+  {
+   "d": "2026-11-12",
+   "co": [
+    "frmi"
+   ],
+   "t": "Fermi ended its TensorWave lease and the AMD credit support behind it, and instead signed an unnamed investment-grade hyperscaler for an initial 600 MW at Project Matador in Amarillo with a $200M prepayment and a $15M early-works deal (first power targeted mid-2027, lease not yet final); the stock rose about 20%.",
+   "src": "https://wallstreetobserver.com/articles/fermi-stock-hyperscaler-prepayment"
+  },
+  {
+   "d": "2026-11-12",
+   "co": [
+    "spcx"
+   ],
+   "t": "SpaceX confirmed $74B of new AI campuses: about $24B at Starbase, Texas, with its own gas-fired plant (already employing 3,000+ construction workers) and about $50B in Cochise County, Arizona, which still needs county approval amid strong local opposition over water and power bills.",
+   "src": "https://thenextweb.com/news/spacex-74b-ai-computing-centers-arizona-texas"
+  },
+  {
+   "d": "2026-11-11",
+   "co": [
+    "*"
+   ],
+   "t": "Texas: 23 of 31 senators back Sen. Huffman's SB 293 to repeal the state sales-tax exemption for data centers (House HB 167 is similar), and Fort Worth's 90-day moratorium can start no earlier than February, exempting projects already in the pipeline; nothing is law until the session that opens Jan 12.",
+   "src": "https://usatoday.com/story/news/state/texas/2026/11/11/texas-republican-democrats-look-at-cutting-data-center-tax-breaks/92724455007"
+  },
   {
    "d": "2026-11-11",
    "co": [
@@ -2488,6 +2547,26 @@
  ],
  "sources": [
   [
+   "Nvidia CEO transition (LA Times)",
+   "https://latimes.com/business/story/2026-11-12/nvidia-shares-tumble-after-jensen-huang-resigns-as-ceo"
+  ],
+  [
+   "Nebius Q3 2026 shareholder letter",
+   "https://assets.nebius.com/assets/65994da2-e220-40cd-bb5d-72e9654a237d/Q3%202026%20SHL.pdf"
+  ],
+  [
+   "Fermi Q3 2026 results and hyperscaler agreements",
+   "https://irp.cdn-website.com/4ee5afac/files/uploaded/Fermi+Q326+ER+11-12-26+vF.pdf"
+  ],
+  [
+   "WSJ: SpaceX $74B Texas and Arizona campuses",
+   "https://wsj.com/business/spacex-plans-more-than-74-billion-in-texas-arizona-data-center-investments-b9ff4ba3"
+  ],
+  [
+   "USA Today: Texas bills to end data center tax breaks",
+   "https://usatoday.com/story/news/state/texas/2026/11/11/texas-republican-democrats-look-at-cutting-data-center-tax-breaks/92724455007"
+  ],
+  [
    "CNN: Nvidia drops after hours on Huang reports",
    "https://cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang"
   ],
@@ -2546,26 +2625,6 @@
   [
    "DCD: Applied Digital Louisiana lease",
    "https://www.datacenterdynamics.com/en/news/applied-digital-secures-300mw-lease-with-hyperscaler-at-louisiana-data-center-campus/"
-  ],
-  [
-   "DCD: Nebius Pennsylvania campus",
-   "https://datacenterdynamics.com/en/news/nebius-plans-second-us-gigawatt-scale-data-center-campus-in-pennsylvania/"
-  ],
-  [
-   "Parameter: Nebius Independence 1.2 GW",
-   "https://parameter.io/nebius-group-nbis-stock-jumps-as-missouri-greenlights-major-ai-data-center-project"
-  ],
-  [
-   "Zacks/TradingView: SpaceX Q3 call targets",
-   "https://www.tradingview.com/news/zacks:26c22f86e094b:0-spacex-q3-earnings-call-highlights-aggressive-ai-compute-expansion/"
-  ],
-  [
-   "SpaceX Q3 2026 results (SEC)",
-   "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
-  ],
-  [
-   "Unite.AI: Ohio ballot results",
-   "https://www.unite.ai/ohio-voters-back-local-data-center-limits-in-unofficial-results/"
   ]
  ],
  "modo": {
