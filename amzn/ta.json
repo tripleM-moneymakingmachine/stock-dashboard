@@ -1,18 +1,18 @@
 {
- "asof": "Nov 11, 2026",
- "close": 266.17,
+ "asof": "Nov 12, 2026",
+ "close": 267.44,
  "bias": {
   "en": "Uptrend · above all averages, under $271.5–275.3",
   "zh": "上升趋势 · 位于所有均线上方，仍低于 $271.5–275.3"
  },
  "read": [
   {
-   "en": "Amazon fell 1.7% on Nov 11 to $266.17, trading $265.62–274.87. It is above the 5-day ($264.7), 10-day ($257.0), 30-day ($255.8), 100-day ($253.4) and 200-day ($244.4), all rising. MACD has been above its signal since Nov 4, above zero, histogram flat; Parabolic SAR has been bullish since Nov 4 ($238.44), and RSI is 57.3.",
-   "zh": "亚马逊 11月11日下跌 1.7%，收于 $266.17，盘中区间 $265.62–274.87。股价位于 5 日（$264.7）、10 日（$257.0）、30 日（$255.8）、100 日（$253.4）和 200 日均线（$244.4）上方，各均线均在上行。MACD 自 11月4日起位于信号线上方，在零轴上方，柱状图持平；抛物线 SAR 自 11月4日起看多（$238.44），RSI 为 57.3。"
+   "en": "Amazon rose 0.5% on Nov 12 to $267.44, trading $267.21–273.60 on light volume (0.67x the 20-day average). It is above the 5-day ($266.1), 10-day ($259.4), 30-day ($256.4), 100-day ($253.7) and 200-day ($244.5), all rising. MACD has been above its signal since Nov 4, above zero, histogram flat; Parabolic SAR has been bullish since Nov 4 ($240.65), and RSI is 58.2.",
+   "zh": "亚马逊 11月12日上涨 0.5%，收于 $267.44，盘中区间 $267.21–273.60，成交量偏低（20 日均量的 0.67 倍）。股价位于 5 日（$266.1）、10 日（$259.4）、30 日（$256.4）、100 日（$253.7）和 200 日均线（$244.5）上方，均在上行。MACD 自 11月4日起位于信号线上方，在零轴上方，柱状图持平；抛物线 SAR 自 11月4日起看多（$240.65），RSI 为 58.2。"
   },
   {
-   "en": "No level changed: the $274.87 high stalled again under $275.3, and the $265.62 low held the $263.9–265.3 support. Resistance is $271.5–275.3 (Nov 4, 5 and 9 highs), then $278.6 (May 5 high) and $287.2 (52-week high). Support is $263.9–265.6 (5-day, Nov 4 low, Nov 11 low), then $258.5–259.3 and $253.4–257.0 (10, 30 and 100-day). A close above $275.3 would target $278.6; below $263.9, $258.5.",
-   "zh": "关键价位未变：盘中高点 $274.87 再次受阻于 $275.3 下方，低点 $265.62 守住 $263.9–265.3 支撑。阻力为 $271.5–275.3（11月4日、5日和9日高点），其次 $278.6（5月5日高点）和 $287.2（52 周高点）。支撑为 $263.9–265.6（5 日均线、11月4日低点、11月11日低点），其次 $258.5–259.3 和 $253.4–257.0（10 日、30 日和 100 日均线）。若收盘站上 $275.3，下一目标看 $278.6；若跌破 $263.9，则看 $258.5。"
+   "en": "No level changed: the $273.60 high stalled again under $275.3, and the $267.21 low stayed above support. Resistance is $271.5–275.3 (recent highs), then $278.6 (May 5 high) and $287.2 (52-week high). Support is $263.9–266.1 (5-day, Nov 4 and 11 lows), then $258.5–259.4 (Nov 6 low, 10-day) and $253.7–256.4 (30 and 100-day). A close above $275.3 would target $278.6; below $263.9, $258.5–259.4.",
+   "zh": "关键位未变：盘中高点 $273.60 再度受阻于 $275.3 下方，盘中低点 $267.21 守在支撑上方。阻力为 $271.5–275.3（近期高点），其次 $278.6（5月5日高点）和 $287.2（52 周高点）。支撑为 $263.9–266.1（5 日均线、11月4日和11日低点），其次 $258.5–259.4（11月6日低点、10 日均线）和 $253.7–256.4（30 日和 100 日均线）。若收盘站上 $275.3，下一目标看 $278.6；若跌破 $263.9，则看 $258.5–259.4。"
   }
  ],
  "levels": {
@@ -20,8 +20,8 @@
    [
     274,
     {
-     "en": "Nov 4 high $271.49; Nov 5 high $273.23; Nov 11 high $274.87; Nov 9 high $275.34",
-     "zh": "11月4日高点 $271.49；11月5日高点 $273.23；11月11日高点 $274.87；11月9日高点 $275.34"
+     "en": "Nov 4 high $271.49; Nov 12 high $273.60; Nov 11 high $274.87; Nov 9 high $275.34",
+     "zh": "11月4日高点 $271.49；11月12日高点 $273.60；11月11日高点 $274.87；11月9日高点 $275.34"
     }
    ],
    [
@@ -43,22 +43,22 @@
    [
     265,
     {
-     "en": "5-day average $264.7; Nov 4 low $263.85; Oct 20 high $265.34; Nov 11 low $265.62",
-     "zh": "5日均线 $264.7；11月4日低点 $263.85；10月20日高点 $265.34；11月11日低点 $265.62"
+     "en": "5-day average $266.1; Nov 11 low $265.62; Oct 20 high $265.34; Nov 4 low $263.85",
+     "zh": "5日均线 $266.1；11月11日低点 $265.62；10月20日高点 $265.34；11月4日低点 $263.85"
     }
    ],
    [
     259,
     {
-     "en": "Nov 6 low $258.53; Nov 6 close $259.30",
-     "zh": "11月6日低点 $258.53；11月6日收盘 $259.30"
+     "en": "Nov 6 low $258.53; 10-day average $259.4",
+     "zh": "11月6日低点 $258.53；10日均线 $259.4"
     }
    ],
    [
     255,
     {
-     "en": "10, 30 and 100-day averages ($253.4–257.0)",
-     "zh": "10日、30日和100日均线（$253.4–257.0）"
+     "en": "30 and 100-day averages ($253.7–256.4)",
+     "zh": "30日和100日均线（$253.7–256.4）"
     }
    ]
   ]

@@ -1,22 +1,29 @@
 {
- "asof": "Nov 11, 2026",
- "close": 413.35,
+ "asof": "Nov 12, 2026",
+ "close": 405.49,
  "bias": {
-  "en": "Rebound · SAR flipped bullish, above the 200-day",
-  "zh": "反弹 · 抛物线 SAR 转为看多，站上 200 日均线"
+  "en": "Rebound · MACD crossed up, slipped under $407",
+  "zh": "反弹 · MACD 上穿，跌回 $407 下方"
  },
  "read": [
   {
-   "en": "TSMC rose 4.3% on Nov 11 to $413.35, trading $407.03–416.80. It is above the 5-day ($385.4), 10-day ($396.4) and rising 200-day ($402.4) and below the 100-day ($426.1) and 30-day ($427.0). MACD has been below its signal since Oct 9, below zero, histogram narrowing toward a cross; Parabolic SAR flipped bullish on Nov 11 ($351.19), and RSI is 49.6.",
-   "zh": "台积电 11月11日上涨 4.3%，收于 $413.35，盘中区间 $407.03–416.80。股价位于 5 日（$385.4）、10 日（$396.4）和上行的 200 日均线（$402.4）上方，100 日（$426.1）和 30 日均线（$427.0）下方。MACD 自 10月9日起位于信号线下方，在零轴下方，柱状图收窄、接近上穿；抛物线 SAR 于 11月11日转为看多（$351.19），RSI 为 49.6。"
+   "en": "TSMC fell 1.9% on Nov 12 to $405.49, trading $393.91–411.77. It is above the rising 5-day ($395.9), the 10-day ($393.8) and the rising 200-day ($402.8) and below the 30-day ($425.2) and 100-day ($425.7). MACD crossed above its signal on Nov 12, below zero; Parabolic SAR has been bullish since Nov 11 ($352.50), and RSI is 47.3.",
+   "zh": "台积电 11月12日下跌 1.9%，收于 $405.49，盘中区间 $393.91–411.77。股价位于上行的 5 日均线（$395.9）、10 日均线（$393.8）和上行的 200 日均线（$402.8）上方，30 日（$425.2）和 100 日均线（$425.7）下方。MACD 于 11月12日上穿信号线，在零轴下方；抛物线 SAR 自 11月11日起看多（$352.50），RSI 为 47.3。"
   },
   {
-   "en": "The gap higher cleared the 10 and 200-day and the $410.6 Nov 4 high, now support; the $416.80 high stopped just above the $414.8 Nov 2 high. Resistance is $414.8–416.8, then $419.2 (Jun 26 low) and $426–427 (100 and 30-day). Support is $407–410.6 (Oct 15 and Nov 11 lows, Nov 4 high), then $396.4–402.4 (10 and 200-day) and $385.4–387.2. A close above $416.8 would target $419–427; below $407, $396–402.",
-   "zh": "跳空上涨突破 10 日、200 日均线和 11月4日高点 $410.6，均转为支撑；盘中高点 $416.80 略高于 11月2日高点 $414.8。阻力为 $414.8–416.8，其次 $419.2（6月26日低点）和 $426–427（100 日和 30 日均线）。支撑为 $407–410.6（10月15日和11月11日低点、11月4日高点），其次 $396.4–402.4（10 日和 200 日均线）和 $385.4–387.2。若收盘站上 $416.8，下一目标看 $419–427；若跌破 $407，则看 $396–402。"
+   "en": "The close slipped under the $407–410.6 support (Oct 15 and Nov 11 lows, Nov 4 high), now resistance, while the $393.91 low held the 10-day. Resistance is $407–411.8, then $414.8–416.8 and $425–426 (30 and 100-day). Support is $400.2–402.8 (200-day, Nov 10 high), then $393.8–395.9 (10 and 5-day) and $387.2 (Nov 10 low). A close above $411.8 would target $415–417; below $400, $394–396.",
+   "zh": "收盘跌破 $407–410.6 支撑（10月15日和11月11日低点、11月4日高点），该区间转为阻力；盘中低点 $393.91 守住 10 日均线。阻力为 $407–411.8，其次 $414.8–416.8和 $425–426（30 日和 100 日均线）。支撑为 $400.2–402.8（200 日均线、11月10日高点），其次 $393.8–395.9（10 日和 5 日均线）和 $387.2（11月10日低点）。若收盘站上 $411.8，下一目标看 $415–417；若跌破 $400，则看 $394–396。"
   }
  ],
  "levels": {
   "r": [
+   [
+    409,
+    {
+     "en": "Nov 11 low $407.03; Oct 15 low $407.13; Nov 4 high $410.59, lost; Nov 12 high $411.77",
+     "zh": "11月11日低点 $407.03；10月15日低点 $407.13；11月4日高点 $410.59，已失守；11月12日高点 $411.77"
+    }
+   ],
    [
     416,
     {
@@ -25,40 +32,33 @@
     }
    ],
    [
-    419.2,
+    425.5,
     {
-     "en": "Jun 26 low $419.19",
-     "zh": "6月26日低点 $419.19"
-    }
-   ],
-   [
-    426.5,
-    {
-     "en": "100-day average $426.1; 30-day $427.0",
-     "zh": "100日均线 $426.1；30日均线 $427.0"
+     "en": "30-day average $425.2; 100-day $425.7",
+     "zh": "30日均线 $425.2；100日均线 $425.7"
     }
    ]
   ],
   "s": [
    [
-    409,
+    401.5,
     {
-     "en": "Nov 11 low $407.03; Oct 15 low $407.13; Nov 4 high $410.59, cleared",
-     "zh": "11月11日低点 $407.03；10月15日低点 $407.13；11月4日高点 $410.59，已突破"
+     "en": "200-day average $402.8; Nov 10 high $400.21",
+     "zh": "200日均线 $402.8；11月10日高点 $400.21"
     }
    ],
    [
-    399,
+    394.5,
     {
-     "en": "200-day average $402.4; Nov 10 high $400.21; 10-day $396.4",
-     "zh": "200日均线 $402.4；11月10日高点 $400.21；10日均线 $396.4"
+     "en": "5-day average $395.9; 10-day $393.8; Nov 12 low $393.91",
+     "zh": "5日均线 $395.9；10日均线 $393.8；11月12日低点 $393.91"
     }
    ],
    [
-    386,
+    387.2,
     {
-     "en": "5-day average $385.4; Nov 10 low $387.20",
-     "zh": "5日均线 $385.4；11月10日低点 $387.20"
+     "en": "Nov 10 low $387.20",
+     "zh": "11月10日低点 $387.20"
     }
    ]
   ]

@@ -1,22 +1,29 @@
 {
- "asof": "Nov 11, 2026",
- "close": 811.3,
+ "asof": "Nov 12, 2026",
+ "close": 798.44,
  "bias": {
-  "en": "Rebound · reclaimed the 10 and 200-day, under $828–834",
-  "zh": "反弹 · 收复 10 日和 200 日均线，仍低于 $828–834"
+  "en": "Rebound · holding the 10 and 200-day, under $811–834",
+  "zh": "反弹 · 守住 10 日和 200 日均线，仍低于 $811–834"
  },
  "read": [
   {
-   "en": "Micron jumped 11.9% on Nov 11 to $811.30, trading $763.05–827.58. It is above the 5-day ($723.2), 10-day ($791.9) and rising 200-day ($762.1) and below the 30-day ($909.5) and 100-day ($948.2). MACD has been below its signal since Oct 30, below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 2 ($904.19), and RSI is 45.1.",
-   "zh": "美光 11月11日大涨 11.9%，收于 $811.30，盘中区间 $763.05–827.58。股价位于 5 日（$723.2）、10 日（$791.9）和上行的 200 日均线（$762.1）上方，30 日（$909.5）和 100 日均线（$948.2）下方。MACD 自 10月30日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月2日起看空（$904.19），RSI 为 45.1。"
+   "en": "Micron fell 1.6% on Nov 12 to $798.44, trading $764.57–799.70. It is above the 5-day ($751.6), 10-day ($778.3) and rising 200-day ($763.9) and below the 30-day ($899.5) and 100-day ($945.7). MACD has been below its signal since Oct 30, below zero, histogram narrowing toward a cross; Parabolic SAR has been bearish since Nov 2 ($888.94), and RSI is 44.1.",
+   "zh": "美光 11月12日下跌 1.6%，收于 $798.44，盘中区间 $764.57–799.70。股价位于 5 日（$751.6）、10 日（$778.3）和上行的 200 日均线（$763.9）上方，30 日（$899.5）和 100 日均线（$945.7）下方。MACD 自 10月30日起位于信号线下方，在零轴下方，柱状图收窄、趋近上穿；抛物线 SAR 自 11月2日起看空（$888.94），RSI 为 44.1。"
   },
   {
-   "en": "The rally cleared $737.9–745.6, the $760–762 zone (200-day, Nov 5 high) and the $782–795 Nov 4 low and close, now support; the $827.58 high stopped under the $829–834 Nov 2 low and close. Resistance is $827.6–833.6, then $845–855 (Nov 3 and Oct 22 lows, Nov 3 close) and $892–904 (Nov 2 high, SAR). Support is $782–795 (10-day), then $762 and $738–746. A close above $833.6 would target $845–855; below $782, $762.",
-   "zh": "此次上涨突破 $737.9–745.6、$760–762 区间（200 日均线、11月5日高点）以及 11月4日低点和收盘 $782–795，均转为支撑；盘中高点 $827.58 止步于 11月2日低点和收盘 $829–834 下方。阻力为 $827.6–833.6，其次 $845–855（11月3日和10月22日低点、11月3日收盘）和 $892–904（11月2日高点、抛物线 SAR）。支撑为 $782–795（10 日均线），其次 $762 和 $738–746。若收盘站上 $833.6，下一目标看 $845–855；若跌破 $782，则看 $762。"
+   "en": "No level changed: the dip to $764.57 held the 200-day and the close recovered to the day's high. Resistance is $811.3–827.6 (Nov 11 close and high), then $829–834 (Nov 2 low and close) and $845–855. Support is $778–795 (10-day, Nov 4 low and close), then $763–765 (200-day, Nov 11–12 lows) and $738–746. A close above $834 would target $845–855; below $778, $763.",
+   "zh": "关键价位未变：盘中下探至 $764.57，守住 200 日均线，收盘回升至当日高位。阻力为 $811.3–827.6（11月11日收盘和高点），其次 $829–834（11月2日低点和收盘）和 $845–855。支撑为 $778–795（10 日均线、11月4日低点和收盘），其次 $763–765（200 日均线、11月11–12日低点）和 $738–746。若收盘站上 $834，下一目标看 $845–855；若跌破 $778，则看 $763。"
   }
  ],
  "levels": {
   "r": [
+   [
+    811.3,
+    {
+     "en": "Nov 11 close $811.30",
+     "zh": "11月11日收盘 $811.30"
+    }
+   ],
    [
     831,
     {
@@ -30,28 +37,21 @@
      "en": "Nov 3 low $845.25; Oct 22 low $849.25; Nov 3 close $855.10",
      "zh": "11月3日低点 $845.25；10月22日低点 $849.25；11月3日收盘 $855.10"
     }
-   ],
-   [
-    898,
-    {
-     "en": "Nov 2 high $892.08; Parabolic SAR $904.19",
-     "zh": "11月2日高点 $892.08；抛物线 SAR $904.19"
-    }
    ]
   ],
   "s": [
    [
-    790,
+    788,
     {
-     "en": "10-day average $791.9; Nov 4 low $782; Nov 4 close $795.23",
-     "zh": "10日均线 $791.9；11月4日低点 $782；11月4日收盘 $795.23"
+     "en": "10-day average $778.3; Nov 4 low $782; Nov 4 close $795.23",
+     "zh": "10日均线 $778.3；11月4日低点 $782；11月4日收盘 $795.23"
     }
    ],
    [
-    762,
+    764,
     {
-     "en": "200-day average $762.1; Nov 5 high $761.81; Nov 11 low $763.05",
-     "zh": "200日均线 $762.1；11月5日高点 $761.81；11月11日低点 $763.05"
+     "en": "200-day average $763.9; Nov 11 low $763.05; Nov 12 low $764.57",
+     "zh": "200日均线 $763.9；11月11日低点 $763.05；11月12日低点 $764.57"
     }
    ],
    [

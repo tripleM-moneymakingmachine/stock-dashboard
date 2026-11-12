@@ -1,27 +1,27 @@
 {
- "asof": "Nov 11, 2026",
- "close": 120.46,
+ "asof": "Nov 12, 2026",
+ "close": 119.5,
  "bias": {
-  "en": "Rebound · SAR flipped bullish, above the 10-day",
-  "zh": "反弹 · 抛物线 SAR 转为看多，站上 10 日均线"
+  "en": "Rebound · MACD crossed up, holding the 10-day",
+  "zh": "反弹 · MACD 上穿，守住 10 日均线"
  },
  "read": [
   {
-   "en": "Corning rose 7.4% on Nov 11 to $120.46, trading $116.50–123.87. It is above the 5-day ($111.6) and 10-day ($117.8) and below the 30-day ($134.8), 100-day ($155.8) and 200-day ($156.5); only the 200-day is rising. MACD has been below its signal since Oct 12, below zero, histogram nearly closed (a cross up is close); Parabolic SAR flipped bullish on Nov 11 ($101.83), and RSI is 44.1.",
-   "zh": "康宁 11月11日上涨 7.4%，收于 $120.46，盘中区间 $116.50–123.87。股价位于 5 日（$111.6）和 10 日均线（$117.8）上方，30 日（$134.8）、100 日（$155.8）和 200 日均线（$156.5）下方；仅 200 日均线在上行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图接近收拢（临近上穿）；抛物线 SAR 于 11月11日转为看多（$101.83），RSI 为 44.1。"
+   "en": "Corning slipped 0.8% on Nov 12 to $119.50, trading $112.68–120.92 on light volume (0.67x the 20-day average). It is above the 5-day ($114.8) and 10-day ($116.9) and below the 30-day ($133.4), 100-day ($155.0) and 200-day ($156.5); only the 200-day is rising. MACD crossed above its signal on Nov 12, below zero; Parabolic SAR has been bullish since Nov 11 ($102.27), and RSI is 43.5.",
+   "zh": "康宁 11月12日下跌 0.8%，收于 $119.50，盘中区间 $112.68–120.92，成交量偏低（20 日均量的 0.67 倍）。股价位于 5 日（$114.8）和 10 日均线（$116.9）上方，30 日（$133.4）、100 日（$155.0）和 200 日均线（$156.5）下方；仅 200 日均线在上行。MACD 于 11月12日上穿信号线，在零轴下方；抛物线 SAR 自 11月11日起看涨（$102.27），RSI 为 43.5。"
   },
   {
-   "en": "The rally reclaimed $114.2–115.6 and cleared the $116.5 Nov 9 high and the 10-day, now support; the $123.87 high stopped at $123.2–123.8 (Nov 2 close, Nov 4 high). Resistance is $123.2–123.9, then $126.1–129.9 (Nov 3 close, Nov 2–3 highs) and $134.8 (30-day). Support is $116.5–117.8, then $114.2–115.6 and $110–111.6. A close above $123.9 would target $126–130; below $116.5, $114–115.6.",
-   "zh": "此次上涨收复 $114.2–115.6，并突破 11月9日高点 $116.5 和 10 日均线，均转为支撑；盘中高点 $123.87 止步于 $123.2–123.8（11月2日收盘、11月4日高点）。阻力为 $123.2–123.9，其次 $126.1–129.9（11月3日收盘、11月2–3日高点）和 $134.8（30 日均线）。支撑为 $116.5–117.8，其次 $114.2–115.6 和 $110–111.6。若收盘站上 $123.9，下一目标看 $126–130；若跌破 $116.5，则看 $114–115.6。"
+   "en": "The early dip to $112.68 undercut the $114.2–116.5 support, but the close recovered above the 10-day; the $120.92 high stayed under $123.2–123.9. Resistance is $120.9–123.9 (Nov 12 high, Nov 2 close, Nov 11 high), then $126.1–129.9 and $133.4 (30-day). Support is $116.5–116.9 (Nov 11 low, 10-day), then $114.2–115.6 and $110.1–112.7. A close above $123.9 would target $126–130; below $116.5, $114–115.6.",
+   "zh": "早盘下探至 $112.68，跌破 $114.2–116.5 支撑，但收盘重新站上 10 日均线；盘中高点 $120.92 仍低于 $123.2–123.9。阻力为 $120.9–123.9（11月12日高点、11月2日收盘、11月11日高点），其次 $126.1–129.9 和 $133.4（30 日均线）。支撑为 $116.5–116.9（11月11日低点、10 日均线），其次 $114.2–115.6 和 $110.1–112.7。若收盘站上 $123.9，下一目标看 $126–130；若跌破 $116.5，则看 $114–115.6。"
   }
  ],
  "levels": {
   "r": [
    [
-    123.5,
+    122.4,
     {
-     "en": "Nov 2 close $123.2; Nov 4 high $123.8; Nov 11 high $123.87",
-     "zh": "11月2日收盘 $123.2；11月4日高点 $123.8；11月11日高点 $123.87"
+     "en": "Nov 12 high $120.92; Nov 2 close $123.2; Nov 11 high $123.87",
+     "zh": "11月12日高点 $120.92；11月2日收盘 $123.2；11月11日高点 $123.87"
     }
    ],
    [
@@ -32,33 +32,33 @@
     }
    ],
    [
-    134.8,
+    133.4,
     {
-     "en": "30-day average $134.8",
-     "zh": "30日均线 $134.8"
+     "en": "30-day average $133.44",
+     "zh": "30日均线 $133.44"
     }
    ]
   ],
   "s": [
    [
-    117,
+    116.7,
     {
-     "en": "10-day average $117.8; Nov 11 low $116.50; Nov 9 high $116.45",
-     "zh": "10日均线 $117.8；11月11日低点 $116.50；11月9日高点 $116.45"
+     "en": "10-day average $116.9; Nov 11 low $116.50",
+     "zh": "10日均线 $116.9；11月11日低点 $116.50"
     }
    ],
    [
     115,
     {
-     "en": "Nov 5 high $114.21; Jul 28 low $114.5; Nov 4 low $115.4; Nov 10 high $115.63, reclaimed",
-     "zh": "11月5日高点 $114.21；7月28日低点 $114.5；11月4日低点 $115.4；11月10日高点 $115.63，已收复"
+     "en": "5-day average $114.8; Jul 28 low $114.5; Nov 4 low $115.4; Nov 10 high $115.63",
+     "zh": "5日均线 $114.8；7月28日低点 $114.5；11月4日低点 $115.4；11月10日高点 $115.63"
     }
    ],
    [
-    110.8,
+    111.4,
     {
-     "en": "$110 round number; Nov 10 low $110.12; 5-day average $111.6",
-     "zh": "$110 整数关口；11月10日低点 $110.12；5日均线 $111.6"
+     "en": "Nov 12 low $112.68; Nov 10 low $110.12; $110 round number",
+     "zh": "11月12日低点 $112.68；11月10日低点 $110.12；$110 整数关口"
     }
    ]
   ]
