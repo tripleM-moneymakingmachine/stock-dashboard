@@ -1,6 +1,6 @@
 {
  "ticker": "COHR",
- "asof": "2026-11-12",
+ "asof": "2026-11-13",
  "quarter": {
   "en": "Q1 FY2027 (September quarter)",
   "zh": "2027 财年第一季（9 月季度）"
@@ -14,18 +14,18 @@
   "pct": -13.0
  },
  "since": {
-  "date": "2026-11-11",
-  "close": 234.51,
-  "pct": 20.2
+  "date": "2026-11-12",
+  "close": 232.08,
+  "pct": 19.0
  },
  "review": {
   "en": [
    "Revenue of $2.37B grew 50% (56% pro forma) and beat the ~$2.31B estimate, led by Datacenter & Communications at $1.95B (+79%), while Industrial fell 15% to $419M. Non-GAAP EPS of $2.09 beat ~$1.98 and gross margin rose to 40.6%. The Q2 guide of $2.55–2.75B and EPS of $2.28–2.48 sits about 4% and 8% above consensus. Management expects FY27 growth above 60% and a $3B quarter by June 2027, and the CFO lifted the long-term margin goal above 45%. Capex of $776M left free cash flow near −$868M.",
-   "Shares rose about 5% after hours to near $205, then reversed and fell 13.0% on Nov 5 to $169.76, after trading as low as $160. The beat was swamped by a broad AI-hardware selloff that coverage tied to Democrats' midterm gains and worries about AI funding, hitting peers such as Ciena and Credo too. Investors also focused on cash burn: operating cash flow was −$93M and inventory rose to $3.3B. Stifel still raised its target to $450."
+   "Shares rose about 5% after hours, then reversed to fall 13.0% on Nov 5 to $169.76 as a broad AI-hardware selloff tied to the midterms and AI-funding worries swamped the beat; negative operating cash flow also weighed. The following week it led the rebound, jumping 16.8% on Nov 9 as the S&P 500's top gainer and rising again after CoreWeave's results on Nov 11, to close Nov 12 at $232.08, 19% above the pre-report close."
   ],
   "zh": [
    "营收 23.7 亿美元，同比增长 50%（备考口径 56%），高于约 23.1 亿美元的预期；数据中心与通信业务 19.5 亿美元（+79%）领先，工业业务下降 15% 至 4.19 亿美元。非 GAAP 每股收益 2.09 美元，高于约 1.98 美元的预期，毛利率升至 40.6%。第二季指引营收 25.5–27.5 亿美元、每股收益 2.28–2.48 美元，分别比市场预期高约 4% 和 8%。管理层预计 FY27 增长超过 60%，2027 年 6 月前单季营收达 30 亿美元；CFO 将长期毛利率目标上调至 45% 以上。资本开支 7.76 亿美元，自由现金流约 −8.68 亿美元。",
-   "股价盘后上涨约 5% 至 205 美元附近，但 11 月 5 日反转收跌 13.0% 至 169.76 美元，盘中一度低至 160 美元。业绩超预期被 AI 硬件板块全面抛售所淹没，媒体将其归因于民主党在中期选举中的收获及对 AI 融资的担忧，Ciena、Credo 等同行也受波及。投资者还关注现金消耗：经营现金流为 −9300 万美元，存货升至 33 亿美元。Stifel 仍将目标价上调至 450 美元。"
+   "股价盘后上涨约 5%，但 11 月 5 日反转收跌 13.0% 至 169.76 美元：与中期选举及 AI 融资担忧相关的 AI 硬件板块全面抛售淹没了业绩超预期，经营现金流为负也拖累股价。随后一周 Coherent 领涨反弹，11 月 9 日大涨 16.8%，为标普 500 涨幅最大成分股；11 月 11 日 CoreWeave 公布业绩后再度上涨，11 月 12 日收于 232.08 美元，较财报前收盘高 19%。"
   ]
  },
  "ceo": {
@@ -56,12 +56,13 @@
    "u": "https://www.globenewswire.com/news-release/2026/11/04/3395801/11543/en/coherent-corp-reports-first-quarter-fiscal-2027-results.html"
   },
   {
-   "t": "Why the stock fell on Nov 5 (TIKR)",
-   "u": "https://tikr.com/blog/coherent-sinks-16-despite-20-billion-hyperscaler-deal-as-democrats-midterm-wins-hit-ai-stocks"
-  },
-  {
    "t": "Guide vs. consensus; Stifel target (Investing.com)",
    "u": "https://investing.com/news/analyst-ratings/stifel-raises-coherent-stock-price-target-on-photonlink-deal-93CH-5002702"
+  },
+  {
+   "t": "Coherent leads the S&P 500 with a 16.8% gain (Kalkine)",
+   "u": "https://kalkine.com/news/technology/why-did-coherent-nysecohr-lead-the-sp-500-with-a-1679-gain"
   }
- ]
+ ],
+ "followup_done": true
 }

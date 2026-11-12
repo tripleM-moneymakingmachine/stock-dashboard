@@ -1,6 +1,6 @@
 {
  "ticker": "ARM",
- "asof": "2026-11-12",
+ "asof": "2026-11-13",
  "quarter": {
   "en": "Q2 FY2027 (September quarter)",
   "zh": "2027 财年第二季（9 月季度）"
@@ -14,18 +14,18 @@
   "pct": -13.1
  },
  "since": {
-  "date": "2026-11-11",
-  "close": 203.36,
-  "pct": 6.0
+  "date": "2026-11-12",
+  "close": 199.78,
+  "pct": 4.2
  },
  "review": {
   "en": [
    "Record revenue of $1,443M (+27%) beat the ~$1.38B estimate, driven by licensing, up 50% to $773M. Royalties rose only 8% to $670M, about $50M short, as costly memory hurt smartphone volumes, though data-center royalties more than doubled. Non-GAAP EPS was $0.52 against $0.48 expected. The Q3 guide of $1.54B ±$50M and EPS of $0.56 was only in line with consensus near $1.53B. Management said it is more confident of up to $2B of AGI CPU revenue through FY28, with first deliveries in the March quarter.",
-   "Shares slipped about 3% after hours, then fell 13.1% on Nov 5 to $166.72 after opening near $172. Selling deepened as investors focused on the royalty shortfall, a sign that record partner chip shipments are not lifting royalties as hoped, and on a guide with no upside, while AI chip stocks sold off broadly. Barclays cut its target to $325 and HSBC to $215; Goldman kept a Sell at $160. The stock is about 29% below its Oct 28 close."
+   "Shares slipped about 3% after hours, then fell 13.1% on Nov 5 to $166.72 as investors focused on the royalty shortfall and a guide with no upside amid a broad AI-chip selloff; nine firms cut their targets. The following week brought a rebound: chips bounced from Nov 9 and Arm jumped 12.1% on Nov 11 as the chip index rallied about 6%, closing Nov 12 at $199.78, 20% above the low and 4% above the pre-report close."
   ],
   "zh": [
    "营收创纪录达 14.43 亿美元（+27%），高于约 13.8 亿美元的预期，主要靠授权收入增长 50% 至 7.73 亿美元。版税收入仅增 8% 至 6.7 亿美元，比预期低约 5000 万美元，原因是内存涨价拖累智能手机出货，但数据中心版税翻倍以上。非 GAAP 每股收益 0.52 美元，预期为 0.48 美元。第三季指引营收 15.4 亿美元 ±5000 万、每股收益 0.56 美元，仅与约 15.3 亿美元的市场预期持平。管理层表示对 FY28 前实现最高 20 亿美元 AGI CPU 收入更有信心，首批交付在 3 月季度。",
-   "股价盘后小跌约 3%，11 月 5 日以约 172 美元开盘后收跌 13.1% 至 166.72 美元。投资者聚焦版税不及预期——合作伙伴芯片出货创纪录却未带动版税同步增长——以及没有惊喜的指引，叠加 AI 芯片股普遍招售，卖压加剧。巴克莱将目标价下调至 325 美元，汇丰下调至 215 美元；高盛维持卖出评级，目标价 160 美元。股价较 10 月 28 日收盘低约 29%。"
+   "股价盘后小跌约 3%，11 月 5 日收跌 13.1% 至 166.72 美元。投资者聚焦版税不及预期和没有惊喜的指引，叠加 AI 芯片股普遍遭抛售；九家机构下调目标价。随后一周股价反弹：芯片股自 11 月 9 日回升，11 月 11 日费城半导体指数上涨约 6%，Arm 大涨 12.1%；11 月 12 日收于 199.78 美元，较低点高 20%，较财报前收盘高 4%。"
   ]
  },
  "ceo": {
@@ -56,12 +56,13 @@
    "u": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit992fye27q230-sepx26.htm"
   },
   {
-   "t": "Results, guide vs. estimates and Nov 5 drop (Proactive)",
-   "u": "https://proactiveinvestors.com/companies/news/1101307/arm-falls-10-as-modest-revenue-outlook-fails-to-impress-investors-1101307.html"
-  },
-  {
    "t": "Why the stock fell; analyst targets (Investing.com)",
    "u": "https://ph.investing.com/news/stock-market-news/arm-holdings-earnings-analysis-questions-answered-and-next-catalysts-93CH-2680177"
+  },
+  {
+   "t": "Arm jumps as AI chip stocks rebound (Quiver Quant)",
+   "u": "https://quiverquant.com/news/Arm+Jumps+as+AI+Chip+Stocks+Rebound+and+Investors+Reassess+Recent+Results"
   }
- ]
+ ],
+ "followup_done": true
 }

@@ -1,16 +1,9 @@
 window.FCF = {
  "sub": {
-  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 FY21 to Q3 FY26. Applied's fiscal year ends on the last Sunday of October. Shaded bars and italic rows are estimates.",
-  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY21 第四季至 FY26 第三季共 20 个季度。应用材料财年于10月最后一个星期日结束。浅色柱与斜体行为估算。"
+  "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q1 FY22 to Q4 FY26. Applied's fiscal year ends on the last Sunday of October. Shaded bars and italic rows are estimates.",
+  "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 FY22 第一季至 FY26 第四季共 20 个季度。应用材料财年于10月最后一个星期日结束。浅色柱与斜体行为估算。"
  },
  "hist": [
-  [
-   "Q4 FY21",
-   "Oct 2021",
-   1148,
-   206,
-   942
-  ],
   [
    "Q1 FY22",
    "Jan 2022",
@@ -143,36 +136,43 @@ window.FCF = {
    3037,
    707,
    2330
+  ],
+  [
+   "Q4 FY26",
+   "Oct 2026",
+   3300,
+   684,
+   2616
   ]
  ],
  "est": [
   [
-   "Q4 FY26",
-   "Oct 2026",
-   3100,
-   750,
-   2350
-  ],
-  [
    "Q1 FY27",
    "Jan 2027",
-   2200,
-   750,
-   1450
+   2400,
+   800,
+   1600
   ],
   [
    "Q2 FY27",
    "Apr 2027",
-   1800,
-   750,
-   1050
+   2000,
+   850,
+   1150
   ],
   [
    "Q3 FY27",
    "Jul 2027",
-   3200,
-   800,
-   2400
+   3600,
+   900,
+   2700
+  ],
+  [
+   "Q4 FY27",
+   "Oct 2027",
+   3900,
+   900,
+   3000
   ]
  ],
  "cash": {
@@ -180,20 +180,20 @@ window.FCF = {
    "en": "Cash",
    "zh": "现金"
   },
-  "v": "$9.2B",
+  "v": "$9.3B",
   "s": {
-   "en": "Jul 26, 2026 · incl. short-term inv. · debt $6.5B",
-   "zh": "2026年7月26日 · 含短期投资 · 债务 65 亿"
+   "en": "Oct 25, 2026 · incl. short-term inv. · debt $6.5B",
+   "zh": "2026年10月25日 · 含短期投资 · 债务 65 亿"
   }
  },
  "read": [
   {
-   "en": "Applied's free cash flow swings a lot from quarter to quarter: the April quarter is usually weakest (only $210M in Q2 FY26) and the July and October quarters strongest. Q3 FY26 brought $2.33B. The last four quarters add up to about $5.6B, roughly flat on a year earlier, because capex has more than doubled, from about $1.1B in FY23 to $2.8B over the last four quarters.",
-   "zh": "应用材料自由现金流季度波动大：4月季度通常最弱（FY26 第二季仅 2.1 亿美元），7月与10月季度最强。FY26 第三季为 23.3 亿美元。近四季合计约 56 亿，与一年前大致持平，原因是资本开支由 FY23 的约 11 亿增至近四季的 28 亿，增加逾一倍。"
+   "en": "Applied's free cash flow swings a lot from quarter to quarter: the April quarter is usually weakest (only $210M in Q2 FY26) and the July and October quarters strongest. Q4 FY26 brought a record $3.30B of operating cash and $2.62B of free cash flow. FY26 free cash flow was $6.2B, up 9%, while non-GAAP EPS rose 37%, because capex more than doubled from about $1.1B in FY23 to $2.7B.",
+   "zh": "应用材料自由现金流季度波动大：4月季度通常最弱（FY26 第二季仅 2.1 亿美元），7月与10月季度最强。FY26 第四季经营现金流创纪录达 33.0 亿美元，自由现金流 26.2 亿。FY26 全年自由现金流 62 亿，增长 9%，而非GAAP每股收益增长 37%，原因是资本开支由 FY23 的约 11 亿增至 27 亿，增加逾一倍。"
   },
   {
-   "en": "My base case uses the $10.25B Q4 guide and assumes revenue stays near that level into FY27, with capex of about $750–800M a quarter for the capacity build-out. That gives about $7.3B over four quarters. The main risks are working capital tied up by fast growth, and a sharper China cut if the Affiliates Rule returns in January.",
-   "zh": "我的基准情景采用 102.5 亿美元的 Q4 指引，并假设 FY27 营收维持在该水平附近，扩产期间每季资本开支约 7.5–8 亿美元，四季合计约 73 亿。主要风险是快速增长占用营运资金，以及若“关联方规则”于1月恢复，中国业务受更大削减。"
+   "en": "My base case uses the $11.1B Q1 FY27 guide and assumes revenue keeps rising through FY27, with capex of about $800–900M a quarter for the plan to double output by 2028. That gives about $8.5B over four quarters. The main risks are working capital tied up by fast growth, and a sharper China cut if the Affiliates Rule returns in January.",
+   "zh": "我的基准情景采用 111 亿美元的 FY27 Q1 指引，并假设 FY27 营收持续上升，为实现 2028 年产能翻倍，每季资本开支约 8–9 亿美元，四季合计约 85 亿。主要风险是快速增长占用营运资金，以及若“关联方规则”于1月恢复，中国业务受更大削减。"
   }
  ],
  "out": [
@@ -203,8 +203,8 @@ window.FCF = {
     "zh": "股息"
    },
    "p": {
-    "en": "$0.53 a share, about $420M a quarter, raised 15% this year.",
-    "zh": "每股 $0.53，每季约 4.2 亿美元，今年上调 15%。"
+    "en": "$0.53 a share, $421M in Q4 and $1.57B in FY26; raised for nine straight years.",
+    "zh": "每股 $0.53，Q4 派发 4.21 亿美元，FY26 共 15.7 亿；已连续九年上调。"
    }
   },
   {
@@ -213,8 +213,8 @@ window.FCF = {
     "zh": "回购"
    },
    "p": {
-    "en": "$440M in Q3, down from over $1B a quarter in early FY25 as capex rose.",
-    "zh": "Q3 回购 4.4 亿美元，随资本开支上升，低于 FY25 初每季逾 10 亿的水平。"
+    "en": "$2.0B in Q4, up from $440M in Q3; $3.18B in FY26, with $10.8B of authorization left.",
+    "zh": "Q4 回购 20 亿美元，Q3 为 4.4 亿；FY26 共 31.8 亿，剩余授权 108 亿。"
    }
   },
   {
@@ -223,8 +223,8 @@ window.FCF = {
     "zh": "资本开支"
    },
    "p": {
-    "en": "$707M in Q3 for new manufacturing capacity and the EPIC R&D center.",
-    "zh": "Q3 投入 7.07 亿美元，用于新增产能与 EPIC 研发中心。"
+    "en": "$684M in Q4 and $2.7B in FY26 for new manufacturing capacity and the EPIC R&D center.",
+    "zh": "Q4 投入 6.84 亿美元，FY26 共 27 亿，用于新增产能与 EPIC 研发中心。"
    }
   }
  ],
@@ -235,8 +235,8 @@ window.FCF = {
     "zh": "销量增长"
    },
    "p": {
-    "en": "Q4 revenue is guided up 51% year on year.",
-    "zh": "Q4 营收指引同比增长 51%。"
+    "en": "Q1 FY27 revenue is guided up 58% year on year.",
+    "zh": "FY27 Q1 营收指引同比增长 58%。"
    }
   },
   {
@@ -245,8 +245,8 @@ window.FCF = {
     "zh": "利润率提升"
    },
    "p": {
-    "en": "A record 34% non-GAAP operating margin turns more of each sales dollar into cash.",
-    "zh": "创纪录的 34% 非GAAP营业利润率，使每一美元销售转化为更多现金。"
+    "en": "A record 35.3% non-GAAP operating margin turns more of each sales dollar into cash.",
+    "zh": "创纪录的 35.3% 非GAAP营业利润率，使每一美元销售转化为更多现金。"
    }
   },
   {
@@ -255,61 +255,61 @@ window.FCF = {
     "zh": "服务业务"
    },
    "p": {
-    "en": "AGS sells parts, upgrades and service contracts on the installed base and is expected to grow over 20% in 2026.",
-    "zh": "AGS 为已装机设备提供零件、升级与服务合约，预计 2026 年增长逾 20%。"
+    "en": "AGS grew 26% in Q4; management targets mid-teens growth over several years.",
+    "zh": "AGS 第四季增长 26%；管理层目标为未来数年保持约 15% 的增长。"
    }
   }
  ],
  "bridge": [
   [
    {
-    "en": "Cash & short-term inv., Jul 2026",
-    "zh": "2026年7月现金及短期投资"
+    "en": "Cash & short-term inv., Oct 2026",
+    "zh": "2026年10月现金及短期投资"
    },
-   9233
+   9339
   ],
   [
    {
     "en": "Free cash flow, 4 quarters (est.)",
     "zh": "4季自由现金流（估）"
    },
-   7250
+   8450
   ],
   [
    {
     "en": "Dividends (est.)",
     "zh": "股息（估）"
    },
-   -1700
+   -1750
   ],
   [
    {
     "en": "Buybacks (est.)",
     "zh": "回购（估）"
    },
-   -2000
+   -4000
   ]
  ],
  "bridgeEnd": {
-  "en": "Cash, Jul 2027 (est.)",
-  "zh": "2027年7月现金（估）"
+  "en": "Cash, Oct 2027 (est.)",
+  "zh": "2027年10月现金（估）"
  },
  "bridgeNote": {
-  "en": "Applied also holds $5.3B of long-term investments not counted here, and $1.3B of its $6.5B debt is due within a year.",
-  "zh": "应用材料另持有 53 亿美元长期投资未计入此处；65 亿美元债务中有 13 亿一年内到期。"
+  "en": "Applied also holds $4.8B of long-term investments not counted here, and $1.3B of its $6.5B debt is due within a year.",
+  "zh": "应用材料另持有 48 亿美元长期投资未计入此处；65 亿美元债务中有 13 亿一年内到期。"
  },
  "src": [
+  [
+   "Q4 FY26 results release, cash flow and balance sheet (SEC 8-K)",
+   "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm"
+  ],
   [
    "Quarterly cash flow statement (Stock Analysis)",
    "https://stockanalysis.com/stocks/amat/financials/cash-flow-statement/?p=quarterly"
   ],
   [
-   "Balance sheet (Stock Analysis)",
-   "https://stockanalysis.com/stocks/amat/financials/balance-sheet/?p=quarterly"
-  ],
-  [
-   "Q3 FY26 results",
-   "https://investors.appliedmaterials.com/node/29551/pdf"
+   "Q4 FY26 earnings call transcript (Investing.com)",
+   "https://investing.com/news/transcripts/earnings-call-transcript-applied-materials-tops-q4-2026-forecasts-as-ai-demand-lifts-outlook-93CH-5023634"
   ]
  ]
 };
