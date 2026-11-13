@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-13",
- "asofText": "Nov 13, 2026",
+ "asof": "2026-11-14",
+ "asofText": "Nov 14, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1502,7 +1502,7 @@
  "risk": {
   "TX": {
    "tier": 5,
-   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk.",
+   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk. Abbott has told ERCOT to resume interconnections quickly after the audit pause ends Dec 10, so already-queued projects get a short window before Jan 19; SB 296 (two-year ban plus local votes) is the strictest bill filed.",
    "to": [
     "LA",
     "OK",
@@ -2001,7 +2001,7 @@
    "grade": "High",
    "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states.",
    "moves": [
-    "Rush Shackelford buildings to energise before Jan 19",
+    "Use the Dec 10–Jan 19 ERCOT window for Shackelford",
     "Secure Jupiter's air permit (Dec 7 hearing)",
     "Re-sell freed Microsoft capacity to OpenAI"
    ]
@@ -2026,7 +2026,7 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits that even started projects still need, so contracted Texas capacity is not fully safe. Q3 answered the demand question (backlog $132.5B, 2026 guidance raised to $13.0–13.3B, 1.7 GW active) and the ~25% jump on Nov 11 came with a pledge to fund from contract cash flow and secured debt, not unsecured bonds. The CEO says scrutiny may slow the industry but not its next-year capacity adds. The earlier 50%+ drawdown was mostly credit and politics sentiment; bond yields, not state politics, remain the gauge.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits even started projects still need. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B), but the stock has given back much of the Nov 11 jump: −6.1% on Nov 13 on reports of a $4B+ equipment-backed loan, Microsoft reviewing its neocloud deals (about two-thirds of 2025 revenue) and Nvidia expected to slow new credit support. This is a cost-of-capital problem, not a site problem; bond yields (some above 16%) remain the gauge.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Push more customer prepayment structures to fund 2027",
@@ -2035,7 +2035,7 @@
   },
   "nbis": {
    "grade": "Medium",
-   "view": "Q3 turned the site question from theory into numbers: third-party colocation, not state politics, is what slipped, with Vineland's Microsoft capacity split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Independence, Missouri; Birmingham; Finland) are on schedule and none are in Texas, but Highridge sits in tier-4 Pennsylvania and Birmingham is weighing a moratorium. The ~16% drop combined a real two-month revenue slip and a bigger capex bill ($27B in 2026, $40–45B in 2027) with sentiment from Nvidia's CEO exit; prepayments now cover more than 100% of new-deal capex, so funding risk is lower than the stock implies. Raised to Medium for execution, not policy, risk.",
+   "view": "Q3 turned the site question into numbers: third-party colocation, not state politics, is what slipped, with Vineland's Microsoft capacity split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Missouri, Birmingham, Finland) are on schedule and none are in Texas, but Highridge sits in tier-4 Pennsylvania. Two more sessions of selling (−17%, then −9.9% on Baird and BofA target cuts) leave it down about 46% in a month; that is now pricing Microsoft-concentration and financing risk (Microsoft's neocloud review, Nvidia slowing backstops) far more than any campus being stopped. Prepayments cover more than 100% of new-deal capex, so the test is delivery dates, not demand.",
    "moves": [
     "Shift new capacity to owned Missouri/Alabama sites",
     "Bloom fuel cells to bridge Vineland power",
@@ -2044,11 +2044,11 @@
   },
   "iren": {
    "grade": "High",
-   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip to January–February is a customer-requested network redesign, not a regulatory block, and backlog rose to $20.3B, so the 20% rebound on Nov 6 was earned. Sweetwater's energisation is still ERCOT-gated and Microsoft is now auditing its suppliers, so concentration on one customer and one state keeps this High.",
+   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip is a Microsoft-requested network redesign, not a regulatory block, and Horizon 1 came in 22% faster than benchmark. The new worries are counterparties: Microsoft is reviewing its neocloud deals and Nvidia, a $3.4B contracted customer, is expected to slow new investments (binding contracts should hold); the stock fell 6.7% to $18.17. Abbott's push to restart ERCOT hookups after Dec 10 is the window to energise Sweetwater before Hinojosa takes office.",
    "moves": [
     "Deliver Horizons 2–4 inside Microsoft grace periods",
-    "Energise Sweetwater before new rules",
-    "Diversify beyond Microsoft (frontier-lab contract signed)"
+    "Use the Dec 10–Jan 19 ERCOT window for Sweetwater",
+    "Diversify beyond Microsoft and Nvidia"
    ]
   },
   "apld": {
@@ -2097,6 +2097,60 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-13",
+   "co": [
+    "nbis",
+    "crwv",
+    "iren",
+    "msft"
+   ],
+   "t": "The neocloud selloff resumed: Nebius fell 9.9% to $115.88 after Baird (target $340 to $200) and BofA ($310 to $265) cut targets over third-party site delays, CoreWeave lost 6.1% to $53.13 on reports it is seeking at least $4B of equipment-backed loans, and IREN dropped 6.7%, as reports said Microsoft is reviewing its more than $80B of neocloud commitments and favouring its own builds.",
+   "src": "https://fool.com/coverage/stock-market-today/2026/11/13/stock-market-today-nov-13-coreweave-falls-over-6-on-ai-cloud-selling-and-reported-usd4-billion-loan-talks"
+  },
+  {
+   "d": "2026-11-13",
+   "co": [
+    "crwv",
+    "iren",
+    "nbis",
+    "orcl"
+   ],
+   "t": "The Information reported Nvidia is expected to slow new AI investments and credit guarantees under interim CEO Colette Kress, though legally binding deals should go ahead; Goldman said new multi-party financings will be harder to strike at the same scale, a direct funding-cost risk for the neoclouds that lean on Nvidia backstops.",
+   "src": "https://cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html"
+  },
+  {
+   "d": "2026-11-13",
+   "co": [
+    "*"
+   ],
+   "t": "Chip stocks gave back the week's rotation: the SOX fell 3.4%, with AMD down 8.8%, Broadcom 4.8% (Redburn downgrade), Marvell 4.7%, Coherent 6%, Sandisk 5.6% and Arm 4.6% (FT: Nvidia's board approached Arm CEO Rene Haas), while Nvidia slipped 2% to $162.85 for a sixth weekly loss after HSBC cut it to Hold. Applied Materials fell 2.7% despite record results and a call for 2027 wafer-fab spending to rise more than 30%.",
+   "src": "https://morningstar.com/news/marketwatch/20261113206/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang"
+  },
+  {
+   "d": "2026-11-12",
+   "co": [
+    "*"
+   ],
+   "t": "Texas: Abbott told ERCOT to move ahead 'as quickly as we can' with data center interconnections once the audit pause ends Dec 10 (PUCT review Dec 17), opening a roughly six-week window before Hinojosa takes office Jan 19; separately Sen. Gutierrez's SB 296 would ban approvals and power hookups for 20 MW+ data centers for two years and then require local voter approval. Nothing is law until the session that opens Jan 12.",
+   "src": "https://energyintel.com/000001a1-d186-d912-a7ab-d98e6c730000"
+  },
+  {
+   "d": "2026-11-13",
+   "co": [
+    "*"
+   ],
+   "t": "Sen. Josh Hawley became the first Republican senator to call for a federal data center moratorium until Congress guarantees no rate increases, and Kansas City's council unanimously rejected a 20-story downtown data center; Goldman expects new governors' moratoria to hit mainly unpermitted projects, leaving most planned 2027 construction intact.",
+   "src": "https://kshb.com/news/local-news/missouri/kansas-city/kansas-city-denies-downtown-data-center-as-sen-hawley-calls-for-nationwide-moratorium"
+  },
+  {
+   "d": "2026-11-13",
+   "co": [
+    "*"
+   ],
+   "t": "The Federal Reserve's financial stability report said it is watching data center leverage, putting future leases and backstop guarantees at about $3 trillion and warning that AI firms' exposure in a downturn could exceed what their balance sheets show.",
+   "src": "https://aol.com/articles/fed-says-monitoring-data-center-224116000.html"
+  },
   {
    "d": "2026-11-12",
    "co": [
@@ -2547,6 +2601,18 @@
  ],
  "sources": [
   [
+   "Texas interconnection window (Energy Intelligence)",
+   "https://energyintel.com/000001a1-d186-d912-a7ab-d98e6c730000"
+  ],
+  [
+   "Nvidia AI financing after Huang (CNBC)",
+   "https://cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html"
+  ],
+  [
+   "Fed financial stability report on data center leverage",
+   "https://aol.com/articles/fed-says-monitoring-data-center-224116000.html"
+  ],
+  [
    "Nvidia CEO transition (LA Times)",
    "https://latimes.com/business/story/2026-11-12/nvidia-shares-tumble-after-jensen-huang-resigns-as-ceo"
   ],
@@ -2613,18 +2679,6 @@
   [
    "Heatmap/MLQ: Senate permitting bill data center cost rule",
    "https://mlq.ai/news/senates-final-permitting-text-makes-transmission-developers-wait-a-year-for-states-keeps-data-center-cost-rule-ahead-of-monday-vote"
-  ],
-  [
-   "The Next Web: Cipher Black Pearl and Stingray",
-   "https://thenextweb.com/news/cipher-digital-810m-junk-bond-amazon-data-center-texas"
-  ],
-  [
-   "DCD: Cipher Stingray notes",
-   "https://www.datacenterdynamics.com/en/news/cipher-seeks-810m-in-senior-secured-notes-for-stingray-data-center-in-west-texas/"
-  ],
-  [
-   "DCD: Applied Digital Louisiana lease",
-   "https://www.datacenterdynamics.com/en/news/applied-digital-secures-300mw-lease-with-hyperscaler-at-louisiana-data-center-campus/"
   ]
  ],
  "modo": {
