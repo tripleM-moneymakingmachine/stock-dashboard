@@ -1,64 +1,64 @@
 {
- "asof": "Nov 12, 2026",
- "close": 164.45,
+ "asof": "Nov 13, 2026",
+ "close": 156.76,
  "bias": {
-  "en": "Rebound · held the 10-day, capped under $169.6–177",
-  "zh": "反弹 · 守住 10 日均线，受制于 $169.6–177 下方"
+  "en": "Rebound · slipped under the 5 and 10-day",
+  "zh": "反弹 · 跌破 5 日和 10 日均线"
  },
  "read": [
   {
-   "en": "Marvell fell 2.6% on Nov 12 to $164.45, trading $155.97–169.58. It is above the 5-day ($156.69) and 10-day ($161.66) and below the 30-day ($221.74), 100-day ($226.71) and 200-day ($186.62); only the 200-day is rising. MACD has been below its signal since Oct 12, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 29 ($184.69), and RSI is 37.2.",
-   "zh": "Marvell 11月12日下跌 2.6%，收于 $164.45，盘中区间 $155.97–169.58。股价位于 5 日（$156.69）和 10 日均线（$161.66）上方，30 日（$221.74）、100 日（$226.71）和 200 日均线（$186.62）下方；仅 200 日均线在上行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月29日起看空（$184.69），RSI 为 37.2。"
+   "en": "Marvell fell 4.7% on Nov 13 to $156.76, trading $149.17–163.89. It is below the 5-day ($159.8, rising), 10-day ($157.7), 30-day ($217.9), 100-day ($225.5) and 200-day ($187.0, rising); the 10, 30 and 100-day are falling. MACD has been below its signal since Oct 12, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 29 ($178.43), and RSI is 35.2.",
+   "zh": "Marvell 11月13日下跌 4.7%，收于 $156.76，盘中区间 $149.17–163.89。股价位于 5 日（$159.8，上行）、10 日（$157.7）、30 日（$217.9）、100 日（$225.5）和 200 日均线（$187.0，上行）下方；10 日、30 日和 100 日均线在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月29日起看空（$178.43），RSI 为 35.2。"
   },
   {
-   "en": "The close slipped back under $165 after a $169.58 high; the 10-day and $162.9 Jul 29 low held. Resistance is $168.8–172 (Nov 11 close, Nov 2–3 closes), then $174.5–177.3 (Nov 11 and Nov 3 highs) and $184.7–186.6 (SAR, 200-day). Support is $161.7–162.9, then $156–157.7 and $146.9–147.8. A close above $172 would target $177; below $161.7, $156–157.7.",
-   "zh": "盘中高点 $169.58 后收盘回落至 $165 下方；10 日均线和 7月29日低点 $162.9 守住。阻力为 $168.8–172（11月11日收盘、11月2–3日收盘），其次 $174.5–177.3（11月11日和11月3日高点）和 $184.7–186.6（抛物线 SAR、200 日均线）。支撑为 $161.7–162.9，其次 $156–157.7和 $146.9–147.8。若收盘站上 $172，下一目标看 $177；若跌破 $161.7，则看 $156–157.7。"
+   "en": "The drop broke the $162.9 Jul 29 low and the 5 and 10-day, now resistance; the $149.17 low held. Resistance is $157.7–159.8 (Nov 9 high, 10 and 5-day), then $162.9–164.5 (Jul 29 low, Nov 12 close) and $168.8–169.6. Support is $154.4–156 (Nov 9–10 closes, Nov 12 low), then $146.9–149.2 and $141.2 (Nov 6 close). A close above $159.8 would target $163–164.5; below $154.4, $147–149.",
+   "zh": "此次下跌跌破 7月29日低点 $162.9 以及 5 日和 10 日均线，均转为阻力；盘中低点 $149.17 守住。阻力为 $157.7–159.8（11月9日高点、10 日和 5 日均线），其次 $162.9–164.5（7月29日低点、11月12日收盘）和 $168.8–169.6。支撑为 $154.4–156（11月9–10日收盘、11月12日低点），其次 $146.9–149.2 和 $141.2（11月6日收盘）。若收盘站上 $159.8，下一目标看 $163–164.5；若跌破 $154.4，则看 $147–149。"
   }
  ],
  "levels": {
   "r": [
    [
-    170.4,
+    158.8,
     {
-     "en": "Nov 11 close $168.80; Nov 12 high $169.58; Nov 2–3 closes ($171.41–171.97)",
-     "zh": "11月11日收盘 $168.80；11月12日高点 $169.58；11月2–3日收盘（$171.41–171.97）"
+     "en": "10-day average $157.7; 5-day $159.8; Nov 9 high $157.68",
+     "zh": "10日均线 $157.7；5日均线 $159.8；11月9日高点 $157.68"
     }
    ],
    [
-    176,
+    163.7,
     {
-     "en": "Nov 11 high $174.53; Nov 3 high $177.31",
-     "zh": "11月11日高点 $174.53；11月3日高点 $177.31"
+     "en": "Jul 29 low $162.9, lost; Nov 12 close $164.45",
+     "zh": "7月29日低点 $162.9，已失守；11月12日收盘 $164.45"
     }
    ],
    [
-    185.7,
+    169.2,
     {
-     "en": "Parabolic SAR $184.69; 200-day average $186.62",
-     "zh": "抛物线 SAR $184.69；200日均线 $186.62"
+     "en": "Nov 11 close $168.80; Nov 12 high $169.58",
+     "zh": "11月11日收盘 $168.80；11月12日高点 $169.58"
     }
    ]
   ],
   "s": [
    [
-    162.3,
+    155,
     {
-     "en": "10-day average $161.66; Jul 29 low $162.9",
-     "zh": "10日均线 $161.66；7月29日低点 $162.9"
+     "en": "Nov 9–10 closes ($154.39–154.60); Nov 12 low $155.97",
+     "zh": "11月9–10日收盘（$154.39–154.60）；11月12日低点 $155.97"
     }
    ],
    [
-    156.8,
+    148,
     {
-     "en": "5-day average $156.69; Nov 12 low $155.97; Nov 9 high $157.68",
-     "zh": "5日均线 $156.69；11月12日低点 $155.97；11月9日高点 $157.68"
+     "en": "Nov 13 low $149.17; Nov 10 low $147.79; Apr 28 low $146.85",
+     "zh": "11月13日低点 $149.17；11月10日低点 $147.79；4月28日低点 $146.85"
     }
    ],
    [
-    147.3,
+    141.2,
     {
-     "en": "Apr 28 low $146.85; Nov 10 low $147.79",
-     "zh": "4月28日低点 $146.85；11月10日低点 $147.79"
+     "en": "Nov 6 close $141.20",
+     "zh": "11月6日收盘 $141.20"
     }
    ]
   ]

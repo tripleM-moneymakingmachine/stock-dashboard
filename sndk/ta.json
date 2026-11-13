@@ -1,64 +1,64 @@
 {
- "asof": "Nov 12, 2026",
- "close": 937.46,
+ "asof": "Nov 13, 2026",
+ "close": 885.01,
  "bias": {
-  "en": "Rebound · holding $920–947, under the 10-day",
-  "zh": "反弹 · 守住 $920–947，仍低于 10 日均线"
+  "en": "Downtrend · lost $905–930, under the 5 and 10-day",
+  "zh": "下跌趋势 · 失守 $905–930，位于 5 日和 10 日均线下方"
  },
  "read": [
   {
-   "en": "SanDisk fell 4.1% on Nov 12 to $937.46, trading $869.49–952.93. It is above the 5-day ($899.3) and below the 10-day ($969.3), 30-day ($1,287.9), 100-day ($1,512.1) and 200-day ($1,280.7); only the 200-day is rising. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($1,166.86), and RSI is 35.9.",
-   "zh": "闪迪 11月12日下跌 4.1%，收于 $937.46，盘中区间 $869.49–952.93。股价位于 5 日均线（$899.3）上方，10 日（$969.3）、30 日（$1,287.9）、100 日（$1,512.1）和 200 日均线（$1,280.7）下方；仅 200 日均线在上行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$1,166.86），RSI 为 35.9。"
+   "en": "SanDisk fell 5.6% on Nov 13 to $885.01, trading $848.50–939.53. It is below the 5-day ($909.3), 10-day ($942.7), 30-day ($1,260.1) and 100-day ($1,501.8), all falling, and the rising 200-day ($1,282.4). MACD has been below its signal since Oct 2, below zero, histogram narrowing toward a cross; Parabolic SAR has been bearish since Oct 30 ($1,137.83), and RSI is 33.9.",
+   "zh": "闪迪 11月13日下跌 5.6%，收于 $885.01，盘中区间 $848.50–939.53。股价位于 5 日（$909.3）、10 日（$942.7）、30 日（$1,260.1）和 100 日均线（$1,501.8）下方，四者均在下行，同时位于上行的 200 日均线（$1,282.4）下方。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄、接近交叉；抛物线 SAR 自 10月30日起看空（$1,137.83），RSI 为 33.9。"
   },
   {
-   "en": "The dip to $869.49 undercut the $920–947 support intraday, but the close recovered into it; the $952.93 high stayed under the 10-day. Resistance is $952.9–977.7, then $1,011–1,014 (Nov 11 high, Nov 4 low) and $1,037.4 (Nov 4 close). Support is $920–947, then $899–915 (5-day, Nov 6–10 highs) and $860–870. A close above $977.7 would target $1,011–1,037; below $920, $899–904.",
-   "zh": "盘中下探 $869.49 一度跌破 $920–947 支撑，但收盘重回该区间；盘中高点 $952.93 仍低于 10 日均线。阻力为 $952.9–977.7，其次 $1,011–1,014（11月11日高点、11月4日低点）和 $1,037.4（11月4日收盘）。支撑为 $920–947，其次 $899–915（5 日均线、11月6–10日高点）和 $860–870。若收盘站上 $977.7，下一目标看 $1,011–1,037；若跌破 $920，则看 $899–904。"
+   "en": "The close lost the $920–947 band and the $899–915 zone (5-day, Nov 6–10 highs), now resistance; the $848.50 low undercut $860–870 before the close recovered. Resistance is $899–915, then $920–947 and $953–978. Support is $860–870, then $835–848.5 (Nov 6 close, Nov 13 low) and $804–806 (Nov 5). A close above $915 would target $940–947; below $860, $835–848.",
+   "zh": "收盘失守 $920–947 区间和 $899–915 区域（5 日均线、11月6–10日高点），二者转为阻力；盘中低点 $848.50 一度跌破 $860–870，随后收盘回升。阻力为 $899–915，其次 $920–947 和 $953–978。支撑为 $860–870，其次 $835–848.5（11月6日收盘、11月13日低点）和 $804–806（11月5日）。若收盘站上 $915，下一目标看 $940–947；若跌破 $860，则看 $835–848。"
   }
  ],
  "levels": {
   "r": [
    [
+    908,
+    {
+     "en": "5-day average $909.3; Nov 9 high $904; Nov 6 high $912.09; Nov 10 high $914.82",
+     "zh": "5日均线 $909.3；11月9日高点 $904；11月6日高点 $912.09；11月10日高点 $914.82"
+    }
+   ],
+   [
+    935,
+    {
+     "en": "Nov 11 low $920.11; Nov 12 close $937.46; Nov 13 high $939.53; 10-day average $942.7",
+     "zh": "11月11日低点 $920.11；11月12日收盘 $937.46；11月13日高点 $939.53；10日均线 $942.7"
+    }
+   ],
+   [
     965,
     {
-     "en": "Nov 12 high $952.93; 10-day average $969.3; Nov 11 close $977.69",
-     "zh": "11月12日高点 $952.93；10日均线 $969.3；11月11日收盘 $977.69"
-    }
-   ],
-   [
-    1012,
-    {
-     "en": "Nov 11 high $1,011.05; Nov 4 low $1,014",
-     "zh": "11月11日高点 $1,011.05；11月4日低点 $1,014"
-    }
-   ],
-   [
-    1037.4,
-    {
-     "en": "Nov 4 close $1,037.40",
-     "zh": "11月4日收盘 $1,037.40"
+     "en": "Nov 12 high $953.20; Nov 11 close $977.69",
+     "zh": "11月12日高点 $953.20；11月11日收盘 $977.69"
     }
    ]
   ],
   "s": [
    [
-    930,
-    {
-     "en": "Nov 11 low $920.11; Apr 23–24 lows ($926.1–947)",
-     "zh": "11月11日低点 $920.11；4月23–24日低点（$926.1–947）"
-    }
-   ],
-   [
-    905,
-    {
-     "en": "5-day average $899.3; Nov 9 high $904; Nov 6 high $912.09; Nov 10 high $914.82",
-     "zh": "5日均线 $899.3；11月9日高点 $904；11月6日高点 $912.09；11月10日高点 $914.82"
-    }
-   ],
-   [
     865,
     {
-     "en": "Nov 12 low $869.49; Nov 10 close $859.99",
-     "zh": "11月12日低点 $869.49；11月10日收盘 $859.99"
+     "en": "Nov 12 low $869.46; Nov 10 close $859.99",
+     "zh": "11月12日低点 $869.46；11月10日收盘 $859.99"
+    }
+   ],
+   [
+    842,
+    {
+     "en": "Nov 13 low $848.50; Nov 6 close $835.06",
+     "zh": "11月13日低点 $848.50；11月6日收盘 $835.06"
+    }
+   ],
+   [
+    805,
+    {
+     "en": "Nov 5 low $803.97 and close $806.43",
+     "zh": "11月5日低点 $803.97 和收盘 $806.43"
     }
    ]
   ]

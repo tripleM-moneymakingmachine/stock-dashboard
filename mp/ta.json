@@ -1,64 +1,64 @@
 {
- "asof": "Nov 12, 2026",
- "close": 37.45,
+ "asof": "Nov 13, 2026",
+ "close": 38.76,
  "bias": {
-  "en": "Rebound · back above the 10-day, under $37.8–38.6",
-  "zh": "反弹 · 重回 10 日均线上方，仍低于 $37.8–38.6"
+  "en": "Rebound · SAR flipped bullish, above $37.8–38.6",
+  "zh": "反弹 · 抛物线 SAR 翻多，站上 $37.8–38.6"
  },
  "read": [
   {
-   "en": "MP Materials rose 2.0% on Nov 12 to $37.45, trading $35.93–38.63 on heavy volume (1.47x the 20-day average). It is above the 5-day ($36.76) and 10-day ($36.92) and below the 30-day ($40.44), 100-day ($47.85) and 200-day ($53.84), all falling. MACD has been above its signal since Nov 9, below zero, histogram widening; Parabolic SAR has been bearish since Nov 3 ($39.43), and RSI is 42.6.",
-   "zh": "MP Materials 11月12日上涨 2.0%，收于 $37.45，盘中区间 $35.93–38.63，成交量放大（20 日均量的 1.47 倍）。股价位于 5 日（$36.76）和 10 日均线（$36.92）上方，30 日（$40.44）、100 日（$47.85）和 200 日均线（$53.84）下方，均在下行。MACD 自 11月9日起位于信号线上方，在零轴下方，柱状图扩大；抛物线 SAR 自 11月3日起看空（$39.43），RSI 为 42.6。"
+   "en": "MP Materials rose 3.5% on Nov 13 to $38.76, trading $37.21–39.75 on heavy volume (1.32x the 20-day average). It is above the 5-day ($37.43, rising) and 10-day ($36.84) and below the 30-day ($40.16), 100-day ($47.67) and 200-day ($53.72), all falling. MACD has been above its signal since Nov 9, below zero, histogram widening; Parabolic SAR flipped bullish on Nov 13 ($31.90), and RSI is 46.8.",
+   "zh": "MP Materials 11月13日上涨 3.5%，收于 $38.76，盘中区间 $37.21–39.75，成交量放大（20 日均量的 1.32 倍）。股价位于 5 日（$37.43，上行）和 10 日均线（$36.84）上方，30 日（$40.16）、100 日（$47.67）和 200 日均线（$53.72）下方，均在下行。MACD 自 11月9日起位于信号线上方，在零轴下方，柱状图扩大；抛物线 SAR 于 11月13日翻为看多（$31.90），RSI 为 46.8。"
   },
   {
-   "en": "The close reclaimed the 10-day, now support with the 5-day; the $38.63 high faded and the close stayed under the $37.81 Jul 29 low. Resistance is $37.8–38.6, then $39.0–39.4 (Nov 4 high, SAR) and $40.4 (30-day). Support is $36.7–36.9 (5 and 10-day, Nov 11 low), then $35.6–35.9 and $33.8. A close above $38.6 would target $39.4–40.4; below $35.6, $33.8.",
-   "zh": "收盘收复 10 日均线，与 5 日均线一同转为支撑；盘中高点 $38.63 回落，收盘仍低于 7月29日低点 $37.81。阻力为 $37.8–38.6，其次 $39.0–39.4（11月4日高点、抛物线 SAR）和 $40.4（30 日均线）。支撑为 $36.7–36.9（5 日和 10 日均线、11月11日低点），其次 $35.6–35.9 和 $33.8。若收盘站上 $38.6，下一目标看 $39.4–40.4；若跌破 $35.6，则看 $33.8。"
+   "en": "The close cleared the $37.8–38.6 band (Jul 29 low, Nov 12 high), now support; the $39.75 high stopped short of the 30-day. Resistance is $39.8–40.2 (Nov 13 high, 30-day), then $40.9 (Nov 2 high) and $42.5 (Oct 29 high). Support is $37.8–38.6, then $36.7–37.4 (5 and 10-day, Nov 11 low) and $35.6. A close above $40.2 would target $40.9–42.5; below $37.8, $36.7–37.4.",
+   "zh": "收盘突破 $37.8–38.6 区间（7月29日低点、11月12日高点），该区间转为支撑；盘中高点 $39.75 未触及 30 日均线。阻力为 $39.8–40.2（11月13日高点、30 日均线），其次 $40.9（11月2日高点）和 $42.5（10月29日高点）。支撑为 $37.8–38.6，其次 $36.7–37.4（5 日和 10 日均线、11月11日低点）和 $35.6。若收盘站上 $40.2，下一目标看 $40.9–42.5；若跌破 $37.8，则看 $36.7–37.4。"
   }
  ],
  "levels": {
   "r": [
    [
-    38.2,
+    40,
     {
-     "en": "Jul 29 low $37.81; Nov 12 high $38.63",
-     "zh": "7月29日低点 $37.81；11月12日高点 $38.63"
+     "en": "Nov 13 high $39.75; 30-day average $40.16",
+     "zh": "11月13日高点 $39.75；30日均线 $40.16"
     }
    ],
    [
-    39.2,
+    40.9,
     {
-     "en": "Nov 4 high $38.96; Parabolic SAR $39.43",
-     "zh": "11月4日高点 $38.96；抛物线 SAR $39.43"
+     "en": "Nov 2 high $40.87",
+     "zh": "11月2日高点 $40.87"
     }
    ],
    [
-    40.4,
+    42.5,
     {
-     "en": "30-day average $40.44",
-     "zh": "30日均线 $40.44"
+     "en": "Oct 29 high $42.54",
+     "zh": "10月29日高点 $42.54"
     }
    ]
   ],
   "s": [
    [
-    36.8,
+    38.2,
     {
-     "en": "5-day average $36.76; 10-day $36.92, reclaimed; Nov 11 low $36.71",
-     "zh": "5日均线 $36.76；10日均线 $36.92，已收复；11月11日低点 $36.71"
+     "en": "Jul 29 low $37.81; Nov 12 high $38.63, cleared",
+     "zh": "7月29日低点 $37.81；11月12日高点 $38.63，已突破"
     }
    ],
    [
-    35.7,
+    37.1,
     {
-     "en": "Nov 4 low $35.56; Nov 10 low $35.60; Nov 12 low $35.93",
-     "zh": "11月4日低点 $35.56；11月10日低点 $35.60；11月12日低点 $35.93"
+     "en": "5-day average $37.43; 10-day $36.84; Nov 11 low $36.71",
+     "zh": "5日均线 $37.43；10日均线 $36.84；11月11日低点 $36.71"
     }
    ],
    [
-    33.8,
+    35.6,
     {
-     "en": "Nov 6 low",
-     "zh": "11月6日低点"
+     "en": "Nov 4 low $35.56; Nov 10 low $35.60",
+     "zh": "11月4日低点 $35.56；11月10日低点 $35.60"
     }
    ]
   ]
