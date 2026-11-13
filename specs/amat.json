@@ -6,9 +6,9 @@
  "shares": 793600000.0,
  "beta": "1.59",
  "snapshot": {
-  "price": "$380.95",
-  "date": "Nov 12, 2026",
-  "mcap": "$302B",
+  "price": "$370.50",
+  "date": "Nov 13, 2026",
+  "mcap": "$294B",
   "range": "$220–723"
  },
  "eyebrow": {
@@ -28,7 +28,7 @@
    "en": "P/E (trailing GAAP)",
    "zh": "市盈率（GAAP 历史）"
   },
-  "v": "~30×",
+  "v": "~29×",
   "s": {
    "en": "last 4 quarters EPS $12.62 · FY27 consensus ~$18.7 ≈ 20×",
    "zh": "近四季每股 $12.62 · FY27 一致预期约 $18.7，约 20 倍"

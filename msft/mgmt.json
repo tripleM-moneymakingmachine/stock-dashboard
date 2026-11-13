@@ -1,6 +1,6 @@
 {
  "ticker": "MSFT",
- "asof": "2026-11-13",
+ "asof": "2026-11-14",
  "quarter": {
   "en": "Q1 FY2027 (September quarter)",
   "zh": "2027 财年第一季（9 月季度）"
@@ -14,9 +14,9 @@
   "pct": -0.2
  },
  "since": {
-  "date": "2026-11-12",
-  "close": 523,
-  "pct": -1.5
+  "date": "2026-11-13",
+  "close": 523.88,
+  "pct": -1.3
  },
  "review": {
   "en": [

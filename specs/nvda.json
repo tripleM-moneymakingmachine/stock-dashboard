@@ -46,10 +46,10 @@
   }
  },
  "earnings": {
-  "v": "Nov 18",
+  "v": "Nov 17",
   "s": {
-   "en": "Q3 FY27 · expected, after close",
-   "zh": "FY27 第三季 · 预计，盘后"
+   "en": "Q3 FY27 · Tue, after close (1:20pm PT)",
+   "zh": "FY27 第三季 · 周二盘后（太平洋时间下午 1:20）"
   }
  },
  "sub_price": {
@@ -108,6 +108,17 @@
  ],
  "watch": [
   {
+   "kind": "risk",
+   "h": {
+    "en": "CEO change",
+    "zh": "CEO 更替"
+   },
+   "p": {
+    "en": "Co-founder Jensen Huang resigned as CEO and left the board on Nov 12 after reports of personal misconduct. CFO Colette Kress is interim CEO while the board searches; Harvey Jones is the first independent chair.",
+    "zh": "联合创始人黄仁勋因个人不当行为报道，于 11 月 12 日辞去 CEO 并退出董事会。CFO 科莱特·克雷斯出任临时 CEO，董事会正在物色继任者；哈维·琼斯出任首位独立董事长。"
+   }
+  },
+  {
    "kind": "plus",
    "h": {
     "en": "Demand outruns supply",
@@ -154,14 +165,14 @@
  ],
  "calendar": [
   {
-   "date": "Nov 18, 2026",
+   "date": "Nov 17, 2026",
    "h": {
-    "en": "Q3 FY27 earnings (expected)",
-    "zh": "FY27 第三季财报（预计）"
+    "en": "Q3 FY27 earnings",
+    "zh": "FY27 第三季财报"
    },
    "p": {
-    "en": "Guide: $108B ±2% revenue, 74% gross margin.",
-    "zh": "指引：营收 1080 亿美元 ±2%，毛利率 74%。"
+    "en": "Confirmed for Nov 17. Guide: $108B ±2% revenue, 74% gross margin. First call under interim CEO Colette Kress.",
+    "zh": "确定于 11 月 17 日发布。指引：营收 1080 亿美元 ±2%，毛利率 74%。为临时 CEO 科莱特·克雷斯首次主持的业绩电话会。"
    }
   },
   {
@@ -188,6 +199,10 @@
   }
  ],
  "sources": [
+  [
+   "NVIDIA announces CEO transition (Nov 12, 2026)",
+   "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/"
+  ],
   [
    "Q2 FY27 results and Q3 guidance",
    "https://krolmarc.com/nvidia-q2-fy27-record-revenue"

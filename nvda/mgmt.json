@@ -1,6 +1,6 @@
 {
  "ticker": "NVDA",
- "asof": "2026-11-13",
+ "asof": "2026-11-14",
  "quarter": {
   "en": "Q2 FY2027 (July quarter)",
   "zh": "2027 财年第二季（7 月季度）"
@@ -14,9 +14,9 @@
   "pct": 8.7
  },
  "since": {
-  "date": "2026-11-12",
-  "close": 166.19,
-  "pct": -20.7
+  "date": "2026-11-13",
+  "close": 162.85,
+  "pct": -22.3
  },
  "review": {
   "en": [
@@ -30,13 +30,13 @@
  },
  "ceo": {
   "name": {
-   "en": "Jensen Huang",
-   "zh": "黄仁勋"
+   "en": "Colette Kress (interim)",
+   "zh": "科莱特·克雷斯（临时）"
   },
-  "since": "1993",
+  "since": "2026",
   "bio": {
-   "en": "Co-founded NVIDIA in 1993 and has been CEO ever since, after designing chips at LSI Logic and AMD. Turned a graphics-card maker into the dominant supplier of AI accelerators and the world's most valuable chip company.",
-   "zh": "1993 年联合创办英伟达并一直担任 CEO，此前在 LSI Logic 和 AMD 从事芯片设计。将一家显卡公司打造成 AI 加速器的主导供应商和全球市值最高的芯片公司。"
+   "en": "Named interim CEO on Nov 12, 2026, after co-founder Jensen Huang resigned as CEO and left the board; she stays CFO while the board searches inside and outside for a permanent chief. Former Synopsys CEO Harvey Jones became Nvidia's first independent chair.",
+   "zh": "2026 年 11 月 12 日联合创始人黄仁勋辞去 CEO 并退出董事会后，被任命为临时 CEO；在董事会从内外部物色正式人选期间，她继续兼任 CFO。前新思科技 CEO 哈维·琼斯出任英伟达首位独立董事长。"
   }
  },
  "cfo": {
@@ -46,8 +46,8 @@
   },
   "since": "2013",
   "bio": {
-   "en": "CFO since 2013. Previously senior VP and CFO of Cisco's business technology and operations finance organization, with earlier finance roles at Microsoft and Texas Instruments.",
-   "zh": "2013 年起任 CFO。此前任思科业务技术与运营财务部门高级副总裁兼 CFO，更早在微软和德州仪器担任财务职务。"
+   "en": "CFO since 2013 and, from Nov 2026, also interim CEO. Spent nearly 25 years in finance at Cisco, Microsoft and Texas Instruments before joining Nvidia.",
+   "zh": "2013 年起任 CFO，2026 年 11 月起兼任临时 CEO。加入英伟达前在思科、微软和德州仪器从事财务工作近 25 年。"
   }
  },
  "sources": [
@@ -58,6 +58,10 @@
   {
    "t": "Why the stock rose (INDmoney)",
    "u": "https://www.indmoney.com/blog/us-stocks/nvda-stock-rises-nvidia-q2-earnings-analysis"
+  },
+  {
+   "t": "CEO transition (NVIDIA)",
+   "u": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/"
   }
  ]
 }
