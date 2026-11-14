@@ -61,6 +61,10 @@ def build(spec_path):
         "pl_plus": ("Tailwind", "利好"), "pl_watch": ("Watch", "留意"), "pl_risk": ("Risk", "风险"),
         "h_cal": ("Calendar", "日程"), "h_src": ("Sources", "来源"),
     }
+    # optional per-stock label overrides, e.g. "ui": {"t_gm": ["Op. earnings margin", "经营利润率"]}
+    for k, v in (S.get("ui") or {}).items():
+        UI[k] = tuple(v)
+
     def ui(key, tag="span", attrs=""):
         return tx(key, {"en": UI[key][0], "zh": UI[key][1]}, tag, attrs)
 
@@ -78,6 +82,8 @@ def build(spec_path):
     src = "".join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a></li>' for n, u in S["sources"])
 
     ui_keys = {k: v[1] for k, v in UI.items()}
+    # chart line label follows the l_gm override (legend text minus the axis note)
+    gm_js = ("\nconst GM_LABEL = " + json.dumps([S["ui"]["l_gm"][0].split(" (")[0], S["ui"]["l_gm"][1].split("（")[0]], ensure_ascii=False) + ";") if (S.get("ui") or {}).get("l_gm") else ""
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -219,11 +225,11 @@ const Q = {json.dumps(S['quarters'])};
 // guidance or consensus for the next quarter: [label, revenue US$M, note en, note zh] or null
 const G = {json.dumps(S.get('guide'))};
 // optional fixed TTM revenue cell when quarters are not consecutive
-const TTM = {json.dumps(S.get('ttm'), ensure_ascii=False)};
+const TTM = {json.dumps(S.get('ttm'), ensure_ascii=False)};{gm_js}
 let P = {{d:[],c:[]}};
 const T = {{zh:{json.dumps({**ui_keys, **zh}, ensure_ascii=False)}}};
 </script>
-<script src="../assets/stock-page.js?v=1"></script>
+<script src="../assets/stock-page.js?v=2"></script>
 <script src="fcf-data.js?v={fcf_ver}"></script>
 <script src="../assets/fcf.js?v=4"></script>
 <script src="../assets/news.js?v=2"></script>
@@ -231,9 +237,9 @@ const T = {{zh:{json.dumps({**ui_keys, **zh}, ensure_ascii=False)}}};
 <script src="../assets/holders.js?v=3"></script>
 <script src="../assets/options.js?v=1"></script>
 <script src="../assets/analysts.js?v=1"></script>
-<script src="../assets/mgmt.js?v=1"></script>{extra_js}
+<script src="../assets/mgmt.js?v=2"></script>{extra_js}
 <script src="../assets/ext-hours.js?v=1"></script>
-<script src="../assets/stock-picker.js?v=1"></script>
+<script src="../assets/stock-picker.js?v=2"></script>
 </body>
 </html>
 """

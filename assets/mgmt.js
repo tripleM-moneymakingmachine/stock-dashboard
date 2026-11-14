@@ -116,6 +116,11 @@
       return;
     }
     const s = since();
+    // fill a missing first-session move from the price history (e.g. a Saturday report whose Monday close wasn't written yet)
+    if (D.react && D.react.pct == null && D.pre_close && H && H.d) {
+      const i = H.d.indexOf(D.react.date);
+      if (i >= 0) { D.react.close = H.c[i]; D.react.pct = (H.c[i] / D.pre_close - 1) * 100; }
+    }
     const paras = (D.review[lang()] || D.review.en);
     const lbl = lang() === "zh" ? ["业绩与管理层看法：", "股价反应与驱动因素："] : ["The quarter.", "Price action."];
     const srcs = (D.sources || []).map((x) => `<a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(tx(x.t))}</a>`).join(" · ");

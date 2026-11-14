@@ -42,7 +42,7 @@
   // [id, layer, lane, name, tagline, detail, ticker, dashboard page]
   const N = [
     // ---- United States
-    ["mp", 0, "us", "MP Materials", "US rare earths & magnets", "Mines and refines rare earths at Mountain Pass and is building US magnet plants, the main domestic alternative to Chinese magnets. No robot maker has named it as a supplier yet.", "MP", "mp/"],
+    ["mp", 0, "us", "MP Materials", "US rare earths & magnets", "Mines and refines rare earths at Mountain Pass and is building US magnet plants, the main domestic alternative to Chinese magnets. No robot maker has named it as a supplier yet.", "MP", ""],
     ["thor", 3, "us", "NVIDIA Jetson Thor", "Onboard robot computer", "Blackwell-based robot computer (2,070 FP4 TFLOPS, 128 GB; modules from $2,999 in volume) that runs perception and AI models inside the robot. Early adopters include Agility, Boston Dynamics, Figure and Amazon; it is also the brain of the GR00T reference humanoid built on Unitree's H2 Plus.", "NVDA", "nvda/"],
     ["teslachip", 3, "us", "Tesla AI5 / AI6", "In-house inference chips", "Tesla's own chips for cars and Optimus, made by TSMC and Samsung. In October 2026 Musk cut their memory (AI5 144→72 GB) to lower cost at robot volumes.", "TSLA", "tesla/"],
     ["groot", 4, "us", "NVIDIA Isaac GR00T", "Open robot models & sim", "Open vision-language-action models (GR00T N1.7), Cosmos world models and Isaac Sim for training robots in simulation. Given away to sell Jetson chips; early users include Agility, Boston Dynamics and 1X.", "NVDA", "nvda/"],

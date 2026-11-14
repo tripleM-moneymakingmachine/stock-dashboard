@@ -29,7 +29,7 @@
     ["amat", 0, "Applied Materials", "Deposition, etch, packaging", "Builds the machines that lay down and carve the layers on a wafer, plus tools for advanced packaging and HBM memory stacks.", "amat/"],
     ["ter", 0, "Teradyne", "Chip & system test", "Tests GPUs, HBM and custom accelerators before they ship; more complex chips and stacked memory mean more test time per part.", "ter/"],
     ["arm", 0, "Arm", "CPU cores & instruction set", "Licenses the CPU designs inside NVIDIA's Grace and Vera, AWS Graviton, Google Axion and Microsoft Cobalt, the host processors next to the accelerators.", "arm/"],
-    ["mp", 0, "MP Materials", "Rare earths & magnets", "US rare-earth mining and magnet making. Magnets go into the motors, fans, pumps and generators that cool and power data centers.", "mp/"],
+    ["mp", 0, "MP Materials", "Rare earths & magnets", "US rare-earth mining and magnet making. Magnets go into the motors, fans, pumps and generators that cool and power data centers.", ""],
     ["nvda", 1, "NVIDIA", "GPUs, NVLink, networking", "Designs the dominant AI accelerators (Blackwell, Rubin) and sells them as full racks with NVLink, InfiniBand and Spectrum-X Ethernet. Made at TSMC with HBM from SK hynix and Micron.", "nvda/"],
     ["amd", 1, "AMD", "Instinct GPUs, EPYC CPUs", "The second GPU supplier (MI355, MI450 Helios racks) and a leading server CPU maker. OpenAI, Microsoft, Meta and Oracle are named Instinct customers.", "amd/"],
     ["avgo", 1, "Broadcom", "Custom AI chips, Ethernet", "Co-designs custom accelerators such as Google's TPU and chips for Meta and OpenAI, and makes the Tomahawk and Jericho switch chips that wire AI clusters together.", "avgo/"],

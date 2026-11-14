@@ -58,7 +58,7 @@ jobs:
           node scripts/fetch-quote.mjs BE be/data 2y
           node scripts/fetch-quote.mjs AAOI aaoi/data 2y
           node scripts/fetch-quote.mjs AMD amd/data 2y
-          node scripts/fetch-quote.mjs MP mp/data 2y
+          node scripts/fetch-quote.mjs BRK-A brka/data 2y
           node scripts/fetch-quote.mjs AMZN amzn/data 2y
           node scripts/fetch-quote.mjs MSFT msft/data 2y
           node scripts/fetch-quote.mjs MRVL mrvl/data 2y
@@ -174,7 +174,7 @@ jobs:
           mkdir -p _site/options && cp options/index.html _site/options/
           if [ -f data/options-book.json ]; then cp data/options-book.json _site/data/; fi
           cp assets/*.js assets/*.css _site/assets/
-          for d in arm tesla sndk intc spcx mu lite cohr googl meta nvda zs be aaoi amd mp amzn msft mrvl skhy tsm avgo rok amat asml pltr glw ter; do
+          for d in arm tesla sndk intc spcx mu lite cohr googl meta nvda zs be aaoi amd brka amzn msft mrvl skhy tsm avgo rok amat asml pltr glw ter; do
             mkdir -p _site/$d
             cp $d/index.html $d/fcf-data.js $d/ta.json _site/$d/
             cp -r $d/data _site/$d/

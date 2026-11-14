@@ -15,7 +15,7 @@ import { writeFileSync, appendFileSync } from "node:fs";
 const STOCKS = [
   ["arm", "ARM"], ["tesla", "TSLA"], ["sndk", "SNDK"], ["intc", "INTC"], ["spcx", "SPCX"], ["mu", "MU"],
   ["lite", "LITE"], ["cohr", "COHR"], ["googl", "GOOGL"], ["meta", "META"], ["nvda", "NVDA"], ["zs", "ZS"],
-  ["be", "BE"], ["aaoi", "AAOI"], ["amd", "AMD"], ["mp", "MP"], ["amzn", "AMZN"], ["msft", "MSFT"],
+  ["be", "BE"], ["aaoi", "AAOI"], ["amd", "AMD"], ["brka", "BRK-A"], ["amzn", "AMZN"], ["msft", "MSFT"],
   ["mrvl", "MRVL"], ["skhy", "SKHY"], ["tsm", "TSM"], ["avgo", "AVGO"], ["rok", "ROK"],
   ["amat", "AMAT"], ["asml", "ASML"], ["pltr", "PLTR"], ["glw", "GLW"], ["ter", "TER"],
 ];

@@ -1,0 +1,59 @@
+{
+ "asof": "Nov 13, 2026",
+ "close": 889410,
+ "bias": {
+  "en": "Strong uptrend · overbought near the $895K high",
+  "zh": "强势上行 · 接近 89.5 万美元高点，超买"
+ },
+ "read": [
+  {
+   "en": "Berkshire Class A ended Nov 13 at about $889,400 (Class B $592.94 × 1,500), up 0.5% and within 1% of its 52-week closing high near $895,400. It is well above the 20-day (~$838,500), 50-day (~$794,500) and 200-day (~$750,600) averages, all rising. MACD is above its signal line and zero with the histogram positive, and RSI is about 81, overbought, with the price riding the upper Bollinger band (~$897,300).",
+   "zh": "伯克希尔 A 类股 11月13日收于约 889,400 美元（B 类股 592.94 美元 × 1,500），上涨 0.5%，距 52 周收盘高点约 895,400 美元不足 1%。股价远高于 20 日（约 838,500）、50 日（约 794,500）和 200 日均线（约 750,600），三者均在上行。MACD 位于信号线和零轴上方，柱状图为正；RSI 约 81，处于超买，股价沿布林带上轨（约 897,300）运行。"
+  },
+  {
+   "en": "Resistance is the $895K–897K zone (52-week high, upper band), then the round $900K. Support is $861K–869K (Nov 6 close, Nov 4 record close), then the 20-day near $838K and the 50-day near $795K. With RSI above 80 after a ~16% run since early October, a pause or pullback toward $861K–869K would be normal; a close below the 20-day would end the short-term uptrend. Levels are derived from Class B prices × 1,500 until the Class A history loads.",
+   "zh": "阻力位于 89.5–89.7 万美元区间（52 周高点、布林带上轨），其次为整数关口 90 万。支撑位于 86.1–86.9 万（11月6日收盘、11月4日创纪录收盘），其次为 20 日均线约 83.8 万和 50 日均线约 79.5 万。自 10 月初上涨约 16% 且 RSI 超过 80，回调至 86.1–86.9 万属正常；若收盘跌破 20 日均线，短期上升趋势将结束。在 A 类股历史数据载入前，价位按 B 类股价格 × 1,500 推算。"
+  }
+ ],
+ "levels": {
+  "r": [
+   [
+    896000,
+    {
+     "en": "52-week closing high ~$895,400; upper Bollinger band ~$897,300",
+     "zh": "52 周收盘高点约 895,400；布林带上轨约 897,300"
+    }
+   ],
+   [
+    900000,
+    {
+     "en": "Round number $900,000",
+     "zh": "整数关口 900,000"
+    }
+   ]
+  ],
+  "s": [
+   [
+    865000,
+    {
+     "en": "Nov 4 record close ~$868,600; Nov 6 close ~$861,600",
+     "zh": "11月4日创纪录收盘约 868,600；11月6日收盘约 861,600"
+    }
+   ],
+   [
+    838500,
+    {
+     "en": "20-day average ~$838,500",
+     "zh": "20 日均线约 838,500"
+    }
+   ],
+   [
+    794500,
+    {
+     "en": "50-day average ~$794,500",
+     "zh": "50 日均线约 794,500"
+    }
+   ]
+  ]
+ }
+}

@@ -37,7 +37,7 @@ WEIGHTS = {  # sum = 1.0
     "risk":     0.10,   # low 60-day vol, small 3m drawdown, low implied vol (higher = safer)
 }
 TIERS = [(62, "bull", "Bullish"), (52, "con", "Constructive"), (42, "neu", "Neutral"), (-1, "cau", "Cautious")]
-DIRS = {"TSLA": "tesla"}
+DIRS = {"TSLA": "tesla", "BRK.A": "brka"}
 
 
 def pct_rank(vals):
@@ -68,7 +68,14 @@ def load(p):
 
 def tickers():
     src = (ROOT / "index.html").read_text()
-    return [d for d in re.findall(r'<a class="card t-\w+" href="(\w+)/"', src)]
+    out = []
+    for d in re.findall(r'<a class="card t-\w+" href="(\w+)/"', src):
+        h = load(ROOT / d / "data/history.json")
+        if h and len(h.get("d") or []) >= 30:
+            out.append(d)
+        else:  # a newly added stock has no committed price history until the after-close workflow runs
+            print(f"skipping {d}: no price history yet", file=sys.stderr)
+    return out
 
 
 def sym(d):
@@ -284,6 +291,8 @@ def apply(rows):
         c = re.sub(r'<p class="qs".*?</p>', "", c, flags=re.S)
         c = c.replace('<p class="why">', chip + '<p class="why">', 1)
         out.append(c)
+    ranked = {r["t"] for r in rows}
+    out += [c for t, c in cards.items() if t not in ranked]  # stocks without history yet stay, last, until they can be scored
     src = src[:first] + sep.join(out) + src[last:]
     d = date.fromisoformat(rows[0]["date"])
     asof = d.strftime("%b ") + str(d.day) + d.strftime(", %Y")

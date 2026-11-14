@@ -1,0 +1,724 @@
+{
+ "dir": "brka",
+ "ticker": "BRK.A",
+ "exchange": "NYSE",
+ "name": "Berkshire Hathaway",
+ "shares": 1416346.0,
+ "beta": "0.57",
+ "snapshot": {
+  "price": "$889,410",
+  "date": "Nov 13, 2026",
+  "mcap": "$1.26T",
+  "range": "$696K–895K"
+ },
+ "eyebrow": {
+  "en": "Berkshire Hathaway Inc. · Class A · Omaha, Nebraska",
+  "zh": "伯克希尔·哈撒韦 · A类股 · 内布拉斯加州奥马哈"
+ },
+ "title": {
+  "en": "Buffett's conglomerate, <em>now Abel's to run</em>.",
+  "zh": "巴菲特的综合企业，<em>如今由阿贝尔掌舵</em>。"
+ },
+ "lede": {
+  "en": "Berkshire owns GEICO and other insurers, the BNSF railroad, Berkshire Hathaway Energy and dozens of manufacturing and retail businesses, plus a stock portfolio led by Apple, American Express and Alphabet. Greg Abel became CEO in January 2026. Q3 revenue rose 11% to $105.6B, but operating earnings fell 6% to $12.7B as insurance underwriting dropped 43%. Berkshire bought back a record $9.6B of stock in Q3 and holds $377B of cash and Treasury bills.",
+  "zh": "伯克希尔旗下拥有 GEICO 等保险公司、BNSF 铁路、伯克希尔·哈撒韦能源及数十家制造与零售企业，另持有以苹果、美国运通和 Alphabet 为首的股票组合。格雷格·阿贝尔于 2026 年 1 月出任 CEO。第三季营收增长 11% 至 1,056 亿美元，但保险承保利润下降 43%，经营利润下降 6% 至 127 亿美元。第三季回购股票创纪录的 96 亿美元，持有现金及美国国库券 3,770 亿美元。"
+ },
+ "valuation": {
+  "k": {
+   "en": "Price / book",
+   "zh": "市净率"
+  },
+  "v": "~1.66×",
+  "s": {
+   "en": "book ~$537K per A share (Sep 30) · ~26.7× TTM operating EPS · GAAP P/E ~16.5×",
+   "zh": "每股 A 股账面值约 53.7 万美元（9月30日）· 近12月经营每股收益约 26.7 倍 · GAAP 市盈率约 16.5 倍"
+  }
+ },
+ "analysts": {
+  "k": {
+   "en": "Q4 2026 consensus",
+   "zh": "2026 Q4 一致预期"
+  },
+  "v": "~$7,934",
+  "s": {
+   "en": "operating EPS per A share · avg target ~$823K, Hold",
+   "zh": "每股 A 股经营利润 · 平均目标价约 82.3 万美元，持有"
+  }
+ },
+ "earnings": {
+  "v": "Late Feb",
+  "s": {
+   "en": "Q4 2026 · with Abel's annual letter, on a Saturday",
+   "zh": "2026 第四季 · 与阿贝尔致股东信同日发布，周六"
+  }
+ },
+ "sub_price": {
+  "en": "Daily closes with the 50-day average. Class A shares hit record highs in November as investors rotated out of AI stocks; one A share equals 1,500 B shares.",
+  "zh": "每日收盘价与50日均线。11月资金撤出 AI 股，A 类股创历史新高；1 股 A 类股相当于 1,500 股 B 类股。"
+ },
+ "sub_rev": {
+  "en": "Revenue in US$ millions. The line is operating earnings (Berkshire's after-tax profit excluding investment gains and losses) as a % of revenue, on the right axis; Berkshire reports no gross margin. Net margin includes gains and losses on its stock portfolio, which Berkshire calls usually meaningless for a single quarter. EPS is GAAP net earnings per Class A share (B share = 1/1,500). Berkshire gives no guidance.",
+  "zh": "营收单位为百万美元。折线为经营利润（伯克希尔剔除投资损益后的税后利润）占营收的百分比，见右轴；伯克希尔不披露毛利率。净利率包含股票组合的损益，伯克希尔称单季投资损益通常没有意义。每股收益为每股 A 类股的 GAAP 净利润（B 类股 = 1/1,500）。伯克希尔不提供业绩指引。"
+ },
+ "ui": {
+  "t_gm": [
+   "Op. earnings margin",
+   "经营利润率"
+  ],
+  "t_om": [
+   "Net margin",
+   "净利率"
+  ],
+  "t_eps": [
+   "EPS per A share (GAAP)",
+   "每股A股收益（GAAP）"
+  ],
+  "l_gm": [
+   "Operating earnings margin (right axis)",
+   "经营利润率（右轴）"
+  ],
+  "l_g": [
+   "Guidance (none given)",
+   "指引（不提供）"
+  ]
+ },
+ "rev_cells": [
+  {
+   "k": {
+    "en": "Q3 2026 revenue",
+    "zh": "2026 Q3 营收"
+   },
+   "v": "$105.6B",
+   "s": {
+    "en": "+11% YoY · second straight double-digit quarter",
+    "zh": "同比 +11% · 连续第二季双位数增长"
+   }
+  },
+  {
+   "k": {
+    "en": "Operating earnings",
+    "zh": "经营利润"
+   },
+   "v": "$12.7B",
+   "s": {
+    "en": "−6% YoY · $8,907 per A share vs ~$8,822 est.",
+    "zh": "同比 −6% · 每股 A 股 8,907 美元，预期约 8,822"
+   }
+  },
+  {
+   "k": {
+    "en": "Insurance underwriting",
+    "zh": "保险承保利润"
+   },
+   "v": "$1.35B",
+   "s": {
+    "en": "−43% YoY · GEICO pre-tax $982M vs $1.77B",
+    "zh": "同比 −43% · GEICO 税前 9.82 亿，去年同期 17.7 亿"
+   }
+  },
+  {
+   "k": {
+    "en": "Buybacks",
+    "zh": "股票回购"
+   },
+   "v": "$9.6B",
+   "s": {
+    "en": "Q3, a record · $14.4B in 9M, ~$2B more in Oct",
+    "zh": "第三季，创纪录 · 前九个月 144 亿，10月再回购约 20 亿"
+   }
+  }
+ ],
+ "watch": [
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Abel is putting cash to work",
+    "zh": "阿贝尔开始动用现金"
+   },
+   "p": {
+    "en": "Buybacks rose every quarter of 2026 ($235M, $4.5B, $9.6B), and Berkshire bought OxyChem ($9.4B), Taylor Morrison ($6.8B) and a large Alphabet stake.",
+    "zh": "2026 年回购逐季增加（2.35 亿、45 亿、96 亿美元），并收购 OxyChem（94 亿）、Taylor Morrison（68 亿）及大笔 Alphabet 股份。"
+   }
+  },
+  {
+   "kind": "plus",
+   "h": {
+    "en": "Railroad, energy and industry growing",
+    "zh": "铁路、能源与工业增长"
+   },
+   "p": {
+    "en": "In Q3 BNSF earnings rose 19% to $1.73B, BHE 8% to $1.61B, and manufacturing, service and retailing 12% to $4.04B. Nine-month operating earnings are up 8% to $37.0B.",
+    "zh": "第三季 BNSF 利润增长 19% 至 17.3 亿美元，BHE 增长 8% 至 16.1 亿，制造、服务及零售增长 12% 至 40.4 亿。前九个月经营利润增长 8% 至 370 亿。"
+   }
+  },
+  {
+   "kind": "watch",
+   "h": {
+    "en": "$377B cash pile, falling yields",
+    "zh": "3,770 亿现金，收益率下降"
+   },
+   "p": {
+    "en": "Cash and T-bills rose to $377.4B ($357B net of unsettled T-bill buys). Insurance investment income fell 14% to $2.73B in Q3 as short-term rates fell.",
+    "zh": "现金及国库券增至 3,774 亿美元（扣除未结算国库券购买后约 3,570 亿）。短期利率下降，第三季保险投资收益下降 14% 至 27.3 亿。"
+   }
+  },
+  {
+   "kind": "risk",
+   "h": {
+    "en": "GEICO and wildfire exposure",
+    "zh": "GEICO 与山火风险"
+   },
+   "p": {
+    "en": "GEICO's loss ratio rose to 76.6% from 71.5% as it spent more on ads and claims grew. PacifiCorp has booked $2.85B of cumulative probable wildfire losses, with the James appeal still before Oregon's Supreme Court.",
+    "zh": "GEICO 增加广告投放、理赔上升，赔付率由 71.5% 升至 76.6%。PacifiCorp 已累计计提 28.5 亿美元可能的山火损失，James 案上诉仍在俄勒冈州最高法院审理。"
+   }
+  }
+ ],
+ "calendar": [
+  {
+   "date": "Nov 16, 2026",
+   "h": {
+    "en": "Q3 13F filing",
+    "zh": "第三季 13F 持仓报告"
+   },
+   "p": {
+    "en": "Shows which stocks Berkshire bought and sold in Q3, including any change to its Alphabet stake.",
+    "zh": "披露伯克希尔第三季买卖的股票，包括 Alphabet 持股的变化。"
+   }
+  },
+  {
+   "date": "Late Feb 2027",
+   "h": {
+    "en": "Q4 2026 results and annual letter",
+    "zh": "2026 第四季业绩及年度致股东信"
+   },
+   "p": {
+    "en": "Abel's second annual letter; watch Q4 buybacks, GEICO margins and how much cash is deployed.",
+    "zh": "阿贝尔的第二封年度信；关注第四季回购、GEICO 利润率及现金动用规模。"
+   }
+  },
+  {
+   "date": "Early May 2027",
+   "h": {
+    "en": "Annual meeting, Omaha",
+    "zh": "奥马哈股东大会"
+   },
+   "p": {
+    "en": "Second meeting with Abel as CEO; questions on capital allocation and succession.",
+    "zh": "阿贝尔任 CEO 后的第二次股东大会；关注资本配置与接班问题。"
+   }
+  },
+  {
+   "date": "Pending",
+   "h": {
+    "en": "PacifiCorp wildfire appeal",
+    "zh": "PacifiCorp 山火上诉"
+   },
+   "p": {
+    "en": "Oregon's Supreme Court heard the James class action appeal on Nov 3, 2026; a ruling could change the wildfire loss estimate.",
+    "zh": "俄勒冈州最高法院于 2026年11月3日审理 James 集体诉讼上诉；裁决可能改变山火损失估计。"
+   }
+  }
+ ],
+ "sources": [
+  [
+   "Q3 2026 earnings release (Business Wire via Morningstar)",
+   "https://www.morningstar.com/news/business-wire/20261107409212/berkshire-hathaway-inc-news-release"
+  ],
+  [
+   "Q3 2026 Form 10-Q (Berkshire Hathaway)",
+   "https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf"
+  ],
+  [
+   "Q3 buybacks, GEICO and cash (AP)",
+   "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/11/07/berkshire-hathaway-buys-back-96-billion-of-its-own-stock-but-its-profits-declined"
+  ],
+  [
+   "Q3 segment table and stock move (AskTraders)",
+   "https://www.asktraders.com/?p=258289"
+  ],
+  [
+   "Q4 2025 earnings release (Business Wire)",
+   "https://www.businesswire.com/news/home/20260228505745/en/"
+  ],
+  [
+   "Q2 2026 results (interactive investor)",
+   "https://www.ii.co.uk/analysis-commentary/ii-view-berkshire-head-greg-abel-flexes-spending-muscle-ii539944"
+  ],
+  [
+   "Quarterly revenue history (YCharts)",
+   "https://ycharts.com/companies/BRK.B/revenues"
+  ],
+  [
+   "BRK.A quote, consensus and targets (Fox Business)",
+   "https://www.foxbusiness.com/quote?stockTicker=BRK.A"
+  ]
+ ],
+ "foot": {
+  "en": "Fundamentals as of Nov 13, 2026 (Q3 2026 results). For information only, not investment advice. Not affiliated with Berkshire Hathaway Inc.",
+  "zh": "基本面数据截至 2026年11月13日（2026 第三季业绩）。仅供参考，不构成投资建议。与 Berkshire Hathaway Inc. 无关联。"
+ },
+ "quarters": [
+  [
+   "Q3 2021",
+   "Sep 2021",
+   70580,
+   9.2,
+   14.7,
+   6882
+  ],
+  [
+   "Q4 2021",
+   "Dec 2021",
+   71800,
+   10.1,
+   55.2,
+   26690
+  ],
+  [
+   "Q1 2022",
+   "Mar 2022",
+   70840,
+   9.9,
+   7.9,
+   3784
+  ],
+  [
+   "Q2 2022",
+   "Jun 2022",
+   76200,
+   12.2,
+   -57.4,
+   -29754
+  ],
+  [
+   "Q3 2022",
+   "Sep 2022",
+   76900,
+   10.1,
+   -3.5,
+   -1832
+  ],
+  [
+   "Q4 2022",
+   "Dec 2022",
+   78070,
+   8.6,
+   23.3,
+   12412
+  ],
+  [
+   "Q1 2023",
+   "Mar 2023",
+   85390,
+   9.4,
+   41.6,
+   24377
+  ],
+  [
+   "Q2 2023",
+   "Jun 2023",
+   92500,
+   10.9,
+   38.8,
+   24775
+  ],
+  [
+   "Q3 2023",
+   "Sep 2023",
+   93210,
+   11.5,
+   -13.7,
+   -8824
+  ],
+  [
+   "Q4 2023",
+   "Dec 2023",
+   93380,
+   9.1,
+   40.2,
+   26043
+  ],
+  [
+   "Q1 2024",
+   "Mar 2024",
+   89870,
+   12.5,
+   14.1,
+   8825
+  ],
+  [
+   "Q2 2024",
+   "Jun 2024",
+   93650,
+   12.4,
+   32.4,
+   21122
+  ],
+  [
+   "Q3 2024",
+   "Sep 2024",
+   93000,
+   10.9,
+   28.2,
+   18272
+  ],
+  [
+   "Q4 2024",
+   "Dec 2024",
+   94920,
+   15.3,
+   20.7,
+   13695
+  ],
+  [
+   "Q1 2025",
+   "Mar 2025",
+   89720,
+   10.7,
+   5.1,
+   3200
+  ],
+  [
+   "Q2 2025",
+   "Jun 2025",
+   92520,
+   12.1,
+   13.4,
+   8601
+  ],
+  [
+   "Q3 2025",
+   "Sep 2025",
+   94970,
+   14.2,
+   32.4,
+   21413
+  ],
+  [
+   "Q4 2025",
+   "Dec 2025",
+   94230,
+   10.8,
+   20.4,
+   13349
+  ],
+  [
+   "Q1 2026",
+   "Mar 2026",
+   93680,
+   12.1,
+   10.8,
+   7028
+  ],
+  [
+   "Q2 2026",
+   "Jun 2026",
+   101810,
+   12.8,
+   25.2,
+   17868
+  ],
+  [
+   "Q3 2026",
+   "Sep 2026",
+   105650,
+   12.0,
+   20.9,
+   15502
+  ]
+ ],
+ "guide": null,
+ "fcf": {
+  "sub": {
+   "en": "Free cash flow is operating cash flow minus capital spending, in US$ millions, for the 20 quarters from Q4 2021 to Q3 2026. Shaded bars and italic rows are estimates. Purchases and sales of stocks and Treasury bills are investing flows and are not in these figures.",
+   "zh": "自由现金流 = 经营现金流 − 资本开支，单位百万美元，涵盖 2021 年第四季至 2026 年第三季共 20 个季度。浅色柱与斜体行为估算。股票及国库券的买卖属投资现金流，不计入。"
+  },
+  "hist": [
+   [
+    "Q4 2021",
+    "Dec 2021",
+    7790,
+    4030,
+    3760
+   ],
+   [
+    "Q1 2022",
+    "Mar 2022",
+    6830,
+    3090,
+    3740
+   ],
+   [
+    "Q2 2022",
+    "Jun 2022",
+    8530,
+    3740,
+    4790
+   ],
+   [
+    "Q3 2022",
+    "Sep 2022",
+    11660,
+    4070,
+    7590
+   ],
+   [
+    "Q4 2022",
+    "Dec 2022",
+    10200,
+    4560,
+    5640
+   ],
+   [
+    "Q1 2023",
+    "Mar 2023",
+    8690,
+    3710,
+    4980
+   ],
+   [
+    "Q2 2023",
+    "Jun 2023",
+    12430,
+    4680,
+    7750
+   ],
+   [
+    "Q3 2023",
+    "Sep 2023",
+    13670,
+    5300,
+    8370
+   ],
+   [
+    "Q4 2023",
+    "Dec 2023",
+    14400,
+    5710,
+    8690
+   ],
+   [
+    "Q1 2024",
+    "Mar 2024",
+    10570,
+    4390,
+    6180
+   ],
+   [
+    "Q2 2024",
+    "Jun 2024",
+    13600,
+    4540,
+    9060
+   ],
+   [
+    "Q3 2024",
+    "Sep 2024",
+    1800,
+    4700,
+    -2900
+   ],
+   [
+    "Q4 2024",
+    "Dec 2024",
+    4620,
+    5350,
+    -730
+   ],
+   [
+    "Q1 2025",
+    "Mar 2025",
+    10900,
+    4280,
+    6620
+   ],
+   [
+    "Q2 2025",
+    "Jun 2025",
+    10090,
+    4860,
+    5230
+   ],
+   [
+    "Q3 2025",
+    "Sep 2025",
+    13790,
+    5590,
+    8200
+   ],
+   [
+    "Q4 2025",
+    "Dec 2025",
+    11190,
+    6200,
+    4990
+   ],
+   [
+    "Q1 2026",
+    "Mar 2026",
+    10440,
+    4990,
+    5450
+   ],
+   [
+    "Q2 2026",
+    "Jun 2026",
+    11220,
+    5650,
+    5570
+   ],
+   [
+    "Q3 2026",
+    "Sep 2026",
+    12254,
+    5497,
+    6757
+   ]
+  ],
+  "est": [
+   [
+    "Q4 2026",
+    "Dec 2026",
+    11500,
+    6300,
+    5200
+   ],
+   [
+    "Q1 2027",
+    "Mar 2027",
+    11000,
+    5400,
+    5600
+   ],
+   [
+    "Q2 2027",
+    "Jun 2027",
+    12000,
+    5800,
+    6200
+   ],
+   [
+    "Q3 2027",
+    "Sep 2027",
+    12800,
+    5800,
+    7000
+   ]
+  ],
+  "cash": {
+   "k": {
+    "en": "Cash & Treasury bills",
+    "zh": "现金及国库券"
+   },
+   "v": "$377.4B",
+   "s": {
+    "en": "Sep 30, 2026 · ~$357B net of unsettled T-bill buys",
+    "zh": "2026年9月30日 · 扣除未结算国库券购买约 3,570 亿"
+   }
+  },
+  "read": [
+   {
+    "en": "Berkshire generates $10–14B of operating cash a quarter and spends $4–6B, mostly at BNSF and BHE, so free cash flow runs at about $5–8B. Q3 2026 free cash flow was about $6.8B: operating cash flow of $12.3B less $5.5B of capex. The dips in Q3–Q4 2024 came from tax payments on large stock sales, mainly Apple.",
+    "zh": "伯克希尔每季经营现金流约 100–140 亿美元，资本开支 40–60 亿（主要在 BNSF 和 BHE），自由现金流约 50–80 亿。2026 年第三季自由现金流约 68 亿：经营现金流 123 亿，资本开支 55 亿。2024 年第三、四季的低点源于大量出售股票（主要是苹果）所缴税款。"
+   },
+   {
+    "en": "I assume capex of about $5.4–6.3B a quarter as BNSF and BHE keep spending and operating cash flow of $11–13B, for about $24B of free cash flow over four quarters. Before more buybacks, acquisitions or stock purchases, that would lift cash and T-bills toward $400B by Sep 2027; at the 2026 pace, buybacks alone could absorb $20–40B.",
+    "zh": "我假设 BNSF 与 BHE 持续投资，每季资本开支约 54–63 亿美元，经营现金流 110–130 亿，四季自由现金流合计约 240 亿。若不计新增回购、收购或股票买入，至 2027 年 9 月现金及国库券将接近 4,000 亿；按 2026 年的节奏，仅回购就可能用掉 200–400 亿。"
+   }
+  ],
+  "out": [
+   {
+    "h": {
+     "en": "Buybacks and acquisitions",
+     "zh": "回购与收购"
+    },
+    "p": {
+     "en": "$13.8B of treasury stock and $16.2B of businesses (OxyChem, Taylor Morrison) in the first nine months of 2026.",
+     "zh": "2026 年前九个月回购股票 138 亿美元，收购企业 162 亿（OxyChem、Taylor Morrison）。"
+    }
+   },
+   {
+    "h": {
+     "en": "Rail and utility capex",
+     "zh": "铁路与公用事业资本开支"
+    },
+    "p": {
+     "en": "BNSF and BHE spent $10.2B in the first nine months; BHE alone $7.5B.",
+     "zh": "BNSF 与 BHE 前九个月开支 102 亿美元，其中 BHE 75 亿。"
+    }
+   }
+  ],
+  "in": [
+   {
+    "h": {
+     "en": "Insurance float",
+     "zh": "保险浮存金"
+    },
+    "p": {
+     "en": "About $178.5B at Sep 30, up $2.1B in 2026, invested mostly in T-bills and stocks.",
+     "zh": "9月30日约 1,785 亿美元，2026 年增加 21 亿，主要投资于国库券和股票。"
+    }
+   },
+   {
+    "h": {
+     "en": "Interest and dividends",
+     "zh": "利息与股息"
+    },
+    "p": {
+     "en": "Insurance investment income was $2.73B after tax in Q3, down as T-bill yields fell.",
+     "zh": "第三季保险投资收益税后 27.3 亿美元，因国库券收益率下降而减少。"
+    }
+   }
+  ],
+  "bridge": [
+   [
+    {
+     "en": "Cash & T-bills, Sep 2026",
+     "zh": "2026年9月现金及国库券"
+    },
+    377435
+   ],
+   [
+    {
+     "en": "Free cash flow, 4 quarters (est.)",
+     "zh": "4季自由现金流（估）"
+    },
+    24000
+   ],
+   [
+    {
+     "en": "October 2026 buybacks (reported, ~$2B)",
+     "zh": "2026年10月回购（已披露，约 20 亿）"
+    },
+    -2000
+   ]
+  ],
+  "bridgeEnd": {
+   "en": "Cash & T-bills, Sep 2027 (est.)",
+   "zh": "2027年9月现金及国库券（估）"
+  },
+  "bridgeNote": {
+   "en": "Excludes further buybacks, acquisitions, stock purchases or sales and the taxes on any gains; includes $20.5B of unsettled T-bill purchases at Sep 30.",
+   "zh": "未计入后续回购、收购、股票买卖及相关税款；含 9月30日未结算的 205 亿美元国库券购买。"
+  },
+  "extraNote": {
+   "en": "",
+   "zh": ""
+  },
+  "src": [
+   [
+    "Q3 2026 Form 10-Q: cash flow statement (Berkshire Hathaway)",
+    "https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf"
+   ],
+   [
+    "Quarterly cash flow history (vcpscanner)",
+    "https://www.vcpscanner.com/stock/brk-b/cash-flow/quarterly"
+   ],
+   [
+    "Quarterly cash flow, Q2 2026 (Open Capital)",
+    "https://www.opencapital.sh/stocks/brk.b/metrics/cash-flow"
+   ]
+  ]
+ }
+}

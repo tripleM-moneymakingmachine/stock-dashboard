@@ -7,6 +7,7 @@
 import { writeFileSync, readFileSync, appendFileSync } from "node:fs";
 
 const SYMBOL = process.argv[2] || "ARM";
+const SYM_DOT = SYMBOL.replace("-", "."); // Robinhood and Nasdaq write share classes as BRK.A, Yahoo as BRK-A
 const OUT = process.argv[3] || "data";
 const RANGE = process.argv[4] || "1y";
 const DAYS = Math.round((parseFloat(RANGE) || 1) * (RANGE.endsWith("mo") ? 31 : 366)) + 5; // calendar days of history
@@ -72,7 +73,7 @@ const sessionAt = (ms) => { const m = nyMin(ms); return m >= 240 && m < 570 ? "p
 // Yahoo, Nasdaq and CNBC publish pre-market and after-hours trades but not overnight ones, so this goes first.
 // Unofficial endpoint, no login; if it fails or changes, the sources below take over.
 async function robinhoodExt() {
-  const j = await (await get(`https://api.robinhood.com/marketdata/quotes/?symbols=${encodeURIComponent(SYMBOL)}&bounds=24_5`, { Accept: "application/json" })).json();
+  const j = await (await get(`https://api.robinhood.com/marketdata/quotes/?symbols=${encodeURIComponent(SYM_DOT)}&bounds=24_5`, { Accept: "application/json" })).json();
   const x = j?.results?.[0];
   const price = num(x?.last_non_reg_trade_price), t = Date.parse(x?.venue_last_non_reg_trade_time || "");
   if (!isFinite(price) || !isFinite(t)) throw new Error("robinhood: no extended-hours trade");
@@ -110,7 +111,7 @@ async function yahooExtChart() {
 }
 // Nasdaq: primaryData carries the pre-market / after-hours trade outside the regular session.
 async function nasdaqExt() {
-  const j = await (await get(`https://api.nasdaq.com/api/quote/${SYMBOL}/info?assetclass=stocks`, NQ)).json();
+  const j = await (await get(`https://api.nasdaq.com/api/quote/${SYM_DOT}/info?assetclass=stocks`, NQ)).json();
   const p = j?.data?.primaryData, st = String(j?.data?.marketStatus || "");
   const price = num(p?.lastSalePrice);
   if (!isFinite(price) || !/pre|after|post|overnight/i.test(st + " " + (p?.lastTradeTimestamp || ""))) throw new Error("nasdaq: not in extended hours");
@@ -130,7 +131,7 @@ async function extended(regTime) {
 // ---------- Nasdaq ----------
 const NQ = { Accept: "application/json, text/plain, */*", Origin: "https://www.nasdaq.com", Referer: "https://www.nasdaq.com/" };
 async function nasdaqQuote() {
-  const j = await (await get(`https://api.nasdaq.com/api/quote/${SYMBOL}/info?assetclass=stocks`, NQ)).json();
+  const j = await (await get(`https://api.nasdaq.com/api/quote/${SYM_DOT}/info?assetclass=stocks`, NQ)).json();
   const p = j?.data?.primaryData;
   const price = num(p?.lastSalePrice);
   if (!isFinite(price)) throw new Error("nasdaq: no price");
@@ -143,7 +144,7 @@ async function nasdaqQuote() {
 }
 async function nasdaqHist() {
   const from = new Date(Date.now() - DAYS * 864e5).toISOString().slice(0, 10);
-  const j = await (await get(`https://api.nasdaq.com/api/quote/${SYMBOL}/historical?assetclass=stocks&fromdate=${from}&limit=${DAYS}`, NQ)).json();
+  const j = await (await get(`https://api.nasdaq.com/api/quote/${SYM_DOT}/historical?assetclass=stocks&fromdate=${from}&limit=${DAYS}`, NQ)).json();
   const rows = j?.data?.tradesTable?.rows || [];
   const d = [], c = [], o = [], h = [], l = [], v = [];
   rows.slice().reverse().forEach((r) => {

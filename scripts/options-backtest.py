@@ -52,7 +52,7 @@ STOCKS = [  # folder, ticker, name
     ("asml", "ASML", "ASML"), ("avgo", "AVGO", "Broadcom"), ("be", "BE", "Bloom Energy"),
     ("cohr", "COHR", "Coherent"), ("glw", "GLW", "Corning"), ("googl", "GOOGL", "Alphabet"),
     ("intc", "INTC", "Intel"), ("lite", "LITE", "Lumentum"), ("meta", "META", "Meta Platforms"),
-    ("mp", "MP", "MP Materials"), ("mrvl", "MRVL", "Marvell Technology"), ("msft", "MSFT", "Microsoft"),
+    ("mrvl", "MRVL", "Marvell Technology"), ("msft", "MSFT", "Microsoft"),
     ("mu", "MU", "Micron Technology"), ("nvda", "NVDA", "NVIDIA"), ("pltr", "PLTR", "Palantir"),
     ("rok", "ROK", "Rockwell Automation"), ("skhy", "SKHY", "SK hynix"), ("sndk", "SNDK", "Sandisk"),
     ("spcx", "SPCX", "SpaceX"), ("ter", "TER", "Teradyne"), ("tesla", "TSLA", "Tesla"),

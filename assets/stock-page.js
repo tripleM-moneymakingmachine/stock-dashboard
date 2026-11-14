@@ -39,7 +39,7 @@ function renderTable() {
   for (let i = Q.length - 1; i >= 0; i--) {
     const q = Q[i], prev = qBy(yearAgo(q[0]));
     const yoy = prev && prev[2] > 0 ? pctS((q[2] / prev[2] - 1) * 100) : "—";
-    const e = q[5] == null ? "—" : (q[5] < 0 ? "−$" : "$") + Math.abs(q[5]).toFixed(2);
+    const e = q[5] == null ? "—" : (q[5] < 0 ? "−$" : "$") + (Math.abs(q[5]) >= 1000 ? Math.round(Math.abs(q[5])).toLocaleString("en-US") : Math.abs(q[5]).toFixed(2));
     h += `<tr><td>${q[0]}</td><td>${q[1]}</td><td><b>${f(q[2])}</b></td><td>${yoy}</td><td>${q[3] == null ? "—" : q[3].toFixed(1) + "%"}</td><td>${q[4] == null ? "—" : q[4].toFixed(1) + "%"}</td><td>${e}</td></tr>`;
   }
   b.innerHTML = h;
@@ -77,7 +77,7 @@ function buildCharts() {
   }
   const QQ = Q.slice(-12), labels = QQ.map(q => q[0]).concat(G ? [G[0]] : []);
   charts.push(new Chart(document.getElementById("cRev"), { data: { labels, datasets: [
-    { type: "line", label: zhOn() ? "毛利率" : "Gross margin", data: QQ.map(q => q[3]).concat(G ? [null] : []), borderColor: cop, backgroundColor: cop, borderWidth: 2, pointRadius: 2.5, yAxisID: "y2", tension: .2, order: 0 },
+    { type: "line", label: typeof GM_LABEL !== "undefined" ? GM_LABEL[zhOn() ? 1 : 0] : (zhOn() ? "毛利率" : "Gross margin"), data: QQ.map(q => q[3]).concat(G ? [null] : []), borderColor: cop, backgroundColor: cop, borderWidth: 2, pointRadius: 2.5, yAxisID: "y2", tension: .2, order: 0 },
     { type: "bar", label: zhOn() ? "营收" : "Revenue", data: QQ.map(q => q[2]).concat(G ? [null] : []), backgroundColor: acc, borderRadius: 2, stack: "s", order: 1 },
     { type: "bar", label: zhOn() ? "指引" : "Guidance", data: QQ.map(() => null).concat(G ? [G[1]] : []), backgroundColor: line, borderColor: mut, borderWidth: 1, borderDash: [3, 3], borderRadius: 2, stack: "s", order: 1 }] },
     options: { maintainAspectRatio: false, animation: false, interaction: { mode: "index", intersect: false },

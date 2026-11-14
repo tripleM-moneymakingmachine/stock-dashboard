@@ -22,7 +22,7 @@ const STOCKS = [
   { t: "BE", q: '"Bloom Energy"', m: /Bloom Energy|NYSE:BE/i },
   { t: "AAOI", q: '"Applied Optoelectronics" OR AAOI', m: /Applied Optoelectronics|AAOI/i },
   { t: "AMD", q: 'AMD (stock OR shares OR earnings OR Instinct OR EPYC OR "Lisa Su")', m: /\bAMD\b|Advanced Micro|Lisa Su|Instinct|EPYC/ },
-  { t: "MP", q: '"MP Materials" OR "Mountain Pass" rare earth', m: /MP Materials|Mountain Pass/i },
+  { t: "BRK.A", q: '"Berkshire Hathaway" OR "Greg Abel"', m: /Berkshire|Greg Abel|Buffett/i },
   { t: "AMZN", q: 'Amazon (stock OR shares OR AMZN OR earnings OR AWS OR Jassy)', m: /Amazon|AMZN|\bAWS\b|Jassy/ },
   { t: "MSFT", q: 'Microsoft (stock OR shares OR MSFT OR earnings OR Azure OR Copilot)', m: /Microsoft|MSFT|Azure|Nadella|Copilot/ },
   { t: "MRVL", q: 'Marvell (stock OR shares OR MRVL OR earnings OR "custom silicon" OR optics)', m: /Marvell|MRVL/ },
