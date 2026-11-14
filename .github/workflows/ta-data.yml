@@ -54,7 +54,7 @@ jobs:
           node scripts/fetch-quote.mjs BE be/data 2y
           node scripts/fetch-quote.mjs AAOI aaoi/data 2y
           node scripts/fetch-quote.mjs AMD amd/data 2y
-          node scripts/fetch-quote.mjs BRK-A brka/data 2y
+          node scripts/fetch-quote.mjs BRK-B brkb/data 2y
           node scripts/fetch-quote.mjs AMZN amzn/data 2y
           node scripts/fetch-quote.mjs MSFT msft/data 2y
           node scripts/fetch-quote.mjs MRVL mrvl/data 2y

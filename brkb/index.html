@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Berkshire Hathaway BRK.B Dashboard</title>
+<meta name="description" content="Berkshire Hathaway (NYSE: BRK.B) investor dashboard: price, quarterly revenue and margins, free cash flow, watch list, news and calendar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="../assets/stock.css?v=2">
+<style>.chart.rev{height:320px} tr.guide td{color:var(--muted);font-style:italic}</style>
+</head>
+<body>
+<header class="bar"><div class="bar-in">
+  <span class="tick">NYSE: BRK.B</span>
+  <span class="bar-px" id="barPx">$592.94</span>
+  <span class="chg" id="barChg"></span>
+  <span class="live" id="barLive"><i class="dot"></i><span id="barTime">snapshot</span></span>
+  <nav class="sec" aria-label="Sections">
+    <a href="../" data-i="n_home">All stocks</a>
+    <a href="#overview" data-i="n_over">Overview</a>
+    <a href="#price" data-i="n_price">Price</a>
+    <a href="#revenue" data-i="n_rev">Revenue</a>
+    <a href="#cashflow" data-i="n_fcf">Cash flow</a>
+    <a href="#watch" data-i="n_watch">Watch list</a>
+    <a href="#news" data-i="n_news">News</a>
+    <a href="#sources" data-i="n_src">Sources</a>
+  </nav>
+  <div class="tools">
+    <button class="tg" id="langBtn" type="button" aria-label="Switch language">中文</button>
+    <button class="tg" id="themeBtn" type="button" aria-label="Switch theme">◐ Auto</button>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div class="hero" id="overview">
+    <div>
+      <div data-i="eyebrow" class="eyebrow">Berkshire Hathaway Inc. · Class B · Omaha, Nebraska</div>
+      <h1 data-ih="title">Buffett's conglomerate, <em>now Abel's to run</em>.</h1>
+      <p data-i="lede" class="lede">Berkshire owns GEICO and other insurers, the BNSF railroad, Berkshire Hathaway Energy and dozens of manufacturing and retail businesses, plus a stock portfolio led by Apple, American Express and Alphabet. Greg Abel became CEO in January 2026. Q3 revenue rose 11% to $105.6B, but operating earnings fell 6% to $12.7B as insurance underwriting dropped 43%. Berkshire bought back a record $9.6B of stock in Q3 and holds $377B of cash and Treasury bills.</p>
+    </div>
+    <div class="pxbox">
+      <div class="eyebrow" id="pxLabel">Last close · Nov 13, 2026</div>
+      <div class="pxbig" id="pxBig">$592.94</div>
+      <div class="chg" id="pxChg"></div>
+      <div class="pxnote" id="pxNote"></div>
+      <div id="tv" style="margin-top:12px"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div></div>
+    </div>
+  </div>
+
+  <div class="cells" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:8px">
+    <div class="cell"><div class="k"><span data-i="k_mcap">Market cap</span></div><div class="v" id="mcap">$1.26T</div><div class="s"><span data-i="s_mcap">at current price</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_52">52-week range</span></div><div class="v" id="r52">$464–597</div><div class="s"><span data-i="s_52">closing low / high</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_val">Price / book</span></div><div class="v">~1.66×</div><div class="s"><span data-i="s_val">book ~$358 per B share (Sep 30) · ~26.7× TTM operating EPS · GAAP P/E ~16.5×</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_ttm">Revenue TTM</span></div><div class="v" id="ttmV"></div><div class="s" id="ttmS"></div></div>
+    <div class="cell"><div class="k"><span data-i="k_an">Q4 2026 consensus</span></div><div class="v">~$5.29</div><div class="s"><span data-i="s_an">operating EPS per B share · avg target ~$565, Buy (3 analysts)</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_er">Next earnings</span></div><div class="v">Late Feb</div><div class="s"><span data-i="s_er">Q4 2026 · with Abel's annual letter, on a Saturday</span></div></div>
+  </div>
+
+  <section id="price">
+    <h2><span data-i="h_price">Price, last 12 months</span></h2>
+    <p data-i="sub_price" class="sub">Daily closes with the 50-day average. Class B closed at a record $592.94 on Nov 13 as investors rotated out of AI stocks; 1,500 B shares equal one A share.</p>
+    <div class="grid">
+      <div class="panel">
+        <div class="range" role="group" aria-label="Range">
+          <button type="button" data-r="66" aria-pressed="false">3M</button>
+          <button type="button" data-r="128" aria-pressed="false">6M</button>
+          <button type="button" data-r="0" aria-pressed="true">1Y</button>
+        </div>
+        <div class="chart"><canvas id="cPrice" aria-label="BRK.B daily close price chart"></canvas></div>
+      </div>
+      <div class="cells">
+        <div class="cell"><div class="k"><span data-i="k_hi">1Y closing high</span></div><div class="v" id="hiV">—</div><div class="s" id="hiS"></div></div>
+        <div class="cell"><div class="k"><span data-i="k_lo">1Y closing low</span></div><div class="v" id="loV">—</div><div class="s" id="loS"></div></div>
+        <div class="cell"><div class="k">SMA 50</div><div class="v" id="s50V">—</div><div class="s" id="s50S"></div></div>
+        <div class="cell"><div class="k">SMA 200</div><div class="v" id="s200V">—</div><div class="s" id="s200S"></div></div>
+        <div class="cell"><div class="k">RSI 14</div><div class="v" id="rsiV">—</div><div class="s" id="rsiS"></div></div>
+        <div class="cell"><div class="k"><span data-i="k_move">Avg daily move</span></div><div class="v" id="mvV">—</div><div class="s"><span data-i="s_move">last 20 sessions</span></div></div>
+        <div class="cell"><div class="k">Beta</div><div class="v">0.57</div><div class="s"><span data-i="s_beta">vs. S&P 500</span></div></div>
+        <div class="cell"><div class="k"><span data-i="k_dd">From peak</span></div><div class="v" id="ddv">—</div><div class="s" id="ddS"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technicals" aria-label="Technical analysis"></section>
+
+  <section id="options" aria-label="Options"></section>
+
+  <section id="revenue">
+    <h2><span data-i="h_rev">Revenue and margins, by quarter</span></h2>
+    <p data-i="sub_rev" class="sub">Revenue in US$ millions. The line is operating earnings (Berkshire's after-tax profit excluding investment gains and losses) as a % of revenue, on the right axis; Berkshire reports no gross margin. Net margin includes gains and losses on its stock portfolio, which Berkshire calls usually meaningless for a single quarter. EPS is GAAP net earnings per Class B share (1/1,500 of a Class A share). Berkshire gives no guidance.</p>
+    <div class="grid">
+      <div class="panel">
+        <div class="legend"><span><i class="sw" style="background:var(--accent)"></i><span data-i="l_rev">Revenue</span></span><span><i class="sw" style="background:var(--copper);height:3px;vertical-align:3px"></i><span data-i="l_gm">Operating earnings margin (right axis)</span></span><span><i class="sw" style="background:var(--line)"></i><span data-i="l_g">Guidance (none given)</span></span></div>
+        <div class="chart rev"><canvas id="cRev" aria-label="Quarterly revenue and gross margin"></canvas></div>
+      </div>
+      <div class="cells"><div class="cell"><div class="k"><span data-i="kc0">Q3 2026 revenue</span></div><div class="v">$105.6B</div><div class="s"><span data-i="sc0">+11% YoY · second straight double-digit quarter</span></div></div><div class="cell"><div class="k"><span data-i="kc1">Operating earnings</span></div><div class="v">$12.7B</div><div class="s"><span data-i="sc1">−6% YoY · $5.94 per B share vs ~$5.88 est.</span></div></div><div class="cell"><div class="k"><span data-i="kc2">Insurance underwriting</span></div><div class="v">$1.35B</div><div class="s"><span data-i="sc2">−43% YoY · GEICO pre-tax $982M vs $1.77B</span></div></div><div class="cell"><div class="k"><span data-i="kc3">Buybacks</span></div><div class="v">$9.6B</div><div class="s"><span data-i="sc3">Q3, a record · $14.4B in 9M, ~$2B more in Oct</span></div></div></div>
+    </div>
+    <div class="panel tbl" style="margin-top:16px">
+      <table>
+        <thead><tr><th><span data-i="t_q">Quarter</span></th><th><span data-i="t_end">Ended</span></th><th><span data-i="t_rev">Revenue, US$M</span></th><th><span data-i="t_yoy">YoY</span></th><th><span data-i="t_gm">Op. earnings margin</span></th><th><span data-i="t_om">Net margin</span></th><th><span data-i="t_eps">EPS per B share (GAAP)</span></th></tr></thead>
+        <tbody id="qBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="cashflow" aria-label="Free cash flow"></section>
+
+  <section id="holders" aria-label="Top shareholders"></section>
+
+  <section id="analysts" aria-label="Analyst ratings"></section>
+
+  <section id="watch">
+    <h2><span data-i="h_watch">Watch list</span></h2>
+    <p data-i="sub_watch" class="sub">What moves the thesis, sorted by direction.</p>
+    <div class="wl"><div class="item"><span class="pill p-plus" data-i="pl_plus">Tailwind</span><div><h3 data-i="w0h">Abel is putting cash to work</h3><p data-i="w0p">Buybacks rose every quarter of 2026 ($235M, $4.5B, $9.6B), and Berkshire bought OxyChem ($9.4B), Taylor Morrison ($6.8B) and a large Alphabet stake.</p></div></div><div class="item"><span class="pill p-plus" data-i="pl_plus">Tailwind</span><div><h3 data-i="w1h">Railroad, energy and industry growing</h3><p data-i="w1p">In Q3 BNSF earnings rose 19% to $1.73B, BHE 8% to $1.61B, and manufacturing, service and retailing 12% to $4.04B. Nine-month operating earnings are up 8% to $37.0B.</p></div></div><div class="item"><span class="pill p-watch" data-i="pl_watch">Watch</span><div><h3 data-i="w2h">$377B cash pile, falling yields</h3><p data-i="w2p">Cash and T-bills rose to $377.4B ($357B net of unsettled T-bill buys). Insurance investment income fell 14% to $2.73B in Q3 as short-term rates fell.</p></div></div><div class="item"><span class="pill p-risk" data-i="pl_risk">Risk</span><div><h3 data-i="w3h">GEICO and wildfire exposure</h3><p data-i="w3p">GEICO's loss ratio rose to 76.6% from 71.5% as it spent more on ads and claims grew. PacifiCorp has booked $2.85B of cumulative probable wildfire losses, with the James appeal still before Oregon's Supreme Court.</p></div></div></div>
+  </section>
+
+  <section id="news" data-src="../data/news.json" data-tickers="BRK.B" aria-label="Latest news"></section>
+
+  <section id="calendar">
+    <h2><span data-i="h_cal">Calendar</span></h2>
+    <div class="cal"><div class="item"><div><div class="date">Nov 16, 2026</div><h3 data-i="c0h">Q3 13F filing</h3><p data-i="c0p">Shows which stocks Berkshire bought and sold in Q3, including any change to its Alphabet stake.</p></div></div><div class="item"><div><div class="date">Late Feb 2027</div><h3 data-i="c1h">Q4 2026 results and annual letter</h3><p data-i="c1p">Abel's second annual letter; watch Q4 buybacks, GEICO margins and how much cash is deployed.</p></div></div><div class="item"><div><div class="date">Early May 2027</div><h3 data-i="c2h">Annual meeting, Omaha</h3><p data-i="c2p">Second meeting with Abel as CEO; questions on capital allocation and succession.</p></div></div><div class="item"><div><div class="date">Pending</div><h3 data-i="c3h">PacifiCorp wildfire appeal</h3><p data-i="c3p">Oregon's Supreme Court heard the James class action appeal on Nov 3, 2026; a ruling could change the wildfire loss estimate.</p></div></div></div>
+  </section>
+
+  <section id="sources">
+    <h2><span data-i="h_src">Sources</span></h2>
+    <ol class="src"><li><a href="https://www.morningstar.com/news/business-wire/20261107409212/berkshire-hathaway-inc-news-release" target="_blank" rel="noopener">Q3 2026 earnings release (Business Wire via Morningstar)</a></li><li><a href="https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf" target="_blank" rel="noopener">Q3 2026 Form 10-Q (Berkshire Hathaway)</a></li><li><a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/11/07/berkshire-hathaway-buys-back-96-billion-of-its-own-stock-but-its-profits-declined" target="_blank" rel="noopener">Q3 buybacks, GEICO and cash (AP)</a></li><li><a href="https://www.asktraders.com/?p=258289" target="_blank" rel="noopener">Q3 segment table and stock move (AskTraders)</a></li><li><a href="https://www.businesswire.com/news/home/20260228505745/en/" target="_blank" rel="noopener">Q4 2025 earnings release (Business Wire)</a></li><li><a href="https://www.ii.co.uk/analysis-commentary/ii-view-berkshire-head-greg-abel-flexes-spending-muscle-ii539944" target="_blank" rel="noopener">Q2 2026 results (interactive investor)</a></li><li><a href="https://ycharts.com/companies/BRK.B/revenues" target="_blank" rel="noopener">Quarterly revenue history (YCharts)</a></li><li><a href="https://www.berkshirehathaway.com/news/2026news.html" target="_blank" rel="noopener">Q3 2026 news release index (Berkshire Hathaway)</a></li></ol>
+  </section>
+
+  <footer><span id="footTime"></span> <span data-i="foot">Fundamentals as of Nov 13, 2026 (Q3 2026 results). For information only, not investment advice. Not affiliated with Berkshire Hathaway Inc.</span></footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const KEY = "brkb", SHARES = 2124519000.0, TV = "NYSE:BRK.B";
+// [quarter, ended, revenue US$M, gross margin %, operating margin %, GAAP EPS]  oldest first
+const Q = [["Q3 2021", "Sep 2021", 70580, 9.2, 14.7, 4.59], ["Q4 2021", "Dec 2021", 71800, 10.1, 55.2, 17.79], ["Q1 2022", "Mar 2022", 70840, 9.9, 7.9, 2.52], ["Q2 2022", "Jun 2022", 76200, 12.2, -57.4, -19.84], ["Q3 2022", "Sep 2022", 76900, 10.1, -3.5, -1.22], ["Q4 2022", "Dec 2022", 78070, 8.6, 23.3, 8.27], ["Q1 2023", "Mar 2023", 85390, 9.4, 41.6, 16.25], ["Q2 2023", "Jun 2023", 92500, 10.9, 38.8, 16.52], ["Q3 2023", "Sep 2023", 93210, 11.5, -13.7, -5.88], ["Q4 2023", "Dec 2023", 93380, 9.1, 40.2, 17.36], ["Q1 2024", "Mar 2024", 89870, 12.5, 14.1, 5.88], ["Q2 2024", "Jun 2024", 93650, 12.4, 32.4, 14.08], ["Q3 2024", "Sep 2024", 93000, 10.9, 28.2, 12.18], ["Q4 2024", "Dec 2024", 94920, 15.3, 20.7, 9.13], ["Q1 2025", "Mar 2025", 89720, 10.7, 5.1, 2.13], ["Q2 2025", "Jun 2025", 92520, 12.1, 13.4, 5.73], ["Q3 2025", "Sep 2025", 94970, 14.2, 32.4, 14.28], ["Q4 2025", "Dec 2025", 94230, 10.8, 20.4, 8.9], ["Q1 2026", "Mar 2026", 93680, 12.1, 10.8, 4.69], ["Q2 2026", "Jun 2026", 101810, 12.8, 25.2, 11.91], ["Q3 2026", "Sep 2026", 105650, 12.0, 20.9, 10.33]];
+// guidance or consensus for the next quarter: [label, revenue US$M, note en, note zh] or null
+const G = null;
+// optional fixed TTM revenue cell when quarters are not consecutive
+const TTM = null;
+const GM_LABEL = ["Operating earnings margin", "经营利润率"];
+let P = {d:[],c:[]};
+const T = {zh:{"n_home": "全部股票", "n_over": "概览", "n_price": "股价", "n_rev": "营收", "n_fcf": "现金流", "n_watch": "关注点", "n_news": "新闻", "n_src": "来源", "k_mcap": "市值", "s_mcap": "按当前股价", "k_52": "52周区间", "s_52": "收盘低 / 高", "k_ttm": "近12月营收", "k_er": "下次财报", "h_price": "近12个月股价", "k_hi": "一年收盘最高", "k_lo": "一年收盘最低", "k_move": "日均波幅", "s_move": "近20个交易日", "s_beta": "相对标普500", "k_dd": "距高点", "h_rev": "季度营收与利润率", "l_rev": "营收", "l_gm": "经营利润率（右轴）", "l_g": "指引（不提供）", "t_q": "季度", "t_end": "截至", "t_rev": "营收（百万美元）", "t_yoy": "同比", "t_gm": "经营利润率", "t_om": "净利率", "t_eps": "每股B股收益（GAAP）", "h_watch": "关注点", "sub_watch": "影响投资逻辑的因素，按方向分类。", "pl_plus": "利好", "pl_watch": "留意", "pl_risk": "风险", "h_cal": "日程", "h_src": "来源", "kc0": "2026 Q3 营收", "sc0": "同比 +11% · 连续第二季双位数增长", "kc1": "经营利润", "sc1": "同比 −6% · 每股 B 股 5.94 美元，预期约 5.88", "kc2": "保险承保利润", "sc2": "同比 −43% · GEICO 税前 9.82 亿，去年同期 17.7 亿", "kc3": "股票回购", "sc3": "第三季，创纪录 · 前九个月 144 亿，10月再回购约 20 亿", "w0h": "阿贝尔开始动用现金", "w0p": "2026 年回购逐季增加（2.35 亿、45 亿、96 亿美元），并收购 OxyChem（94 亿）、Taylor Morrison（68 亿）及大笔 Alphabet 股份。", "w1h": "铁路、能源与工业增长", "w1p": "第三季 BNSF 利润增长 19% 至 17.3 亿美元，BHE 增长 8% 至 16.1 亿，制造、服务及零售增长 12% 至 40.4 亿。前九个月经营利润增长 8% 至 370 亿。", "w2h": "3,770 亿现金，收益率下降", "w2p": "现金及国库券增至 3,774 亿美元（扣除未结算国库券购买后约 3,570 亿）。短期利率下降，第三季保险投资收益下降 14% 至 27.3 亿。", "w3h": "GEICO 与山火风险", "w3p": "GEICO 增加广告投放、理赔上升，赔付率由 71.5% 升至 76.6%。PacifiCorp 已累计计提 28.5 亿美元可能的山火损失，James 案上诉仍在俄勒冈州最高法院审理。", "c0h": "第三季 13F 持仓报告", "c0p": "披露伯克希尔第三季买卖的股票，包括 Alphabet 持股的变化。", "c1h": "2026 第四季业绩及年度致股东信", "c1p": "阿贝尔的第二封年度信；关注第四季回购、GEICO 利润率及现金动用规模。", "c2h": "奥马哈股东大会", "c2p": "阿贝尔任 CEO 后的第二次股东大会；关注资本配置与接班问题。", "c3h": "PacifiCorp 山火上诉", "c3p": "俄勒冈州最高法院于 2026年11月3日审理 James 集体诉讼上诉；裁决可能改变山火损失估计。", "eyebrow": "伯克希尔·哈撒韦 · B类股 · 内布拉斯加州奥马哈", "title": "巴菲特的综合企业，<em>如今由阿贝尔掌舵</em>。", "lede": "伯克希尔旗下拥有 GEICO 等保险公司、BNSF 铁路、伯克希尔·哈撒韦能源及数十家制造与零售企业，另持有以苹果、美国运通和 Alphabet 为首的股票组合。格雷格·阿贝尔于 2026 年 1 月出任 CEO。第三季营收增长 11% 至 1,056 亿美元，但保险承保利润下降 43%，经营利润下降 6% 至 127 亿美元。第三季回购股票创纪录的 96 亿美元，持有现金及美国国库券 3,770 亿美元。", "k_val": "市净率", "s_val": "每股 B 股账面值约 358 美元（9月30日）· 近12月经营每股收益约 26.7 倍 · GAAP 市盈率约 16.5 倍", "k_an": "2026 Q4 一致预期", "s_an": "每股 B 股经营利润 · 平均目标价约 565 美元，买入（3 位分析师）", "s_er": "2026 第四季 · 与阿贝尔致股东信同日发布，周六", "sub_price": "每日收盘价与50日均线。资金撤出 AI 股，B 类股 11月13日收于创纪录的 $592.94；1,500 股 B 类股相当于 1 股 A 类股。", "sub_rev": "营收单位为百万美元。折线为经营利润（伯克希尔剔除投资损益后的税后利润）占营收的百分比，见右轴；伯克希尔不披露毛利率。净利率包含股票组合的损益，伯克希尔称单季投资损益通常没有意义。每股收益为每股 B 类股的 GAAP 净利润（A 类股的 1/1,500）。伯克希尔不提供业绩指引。", "foot": "基本面数据截至 2026年11月13日（2026 第三季业绩）。仅供参考，不构成投资建议。与 Berkshire Hathaway Inc. 无关联。"}};
+</script>
+<script src="../assets/stock-page.js?v=2"></script>
+<script src="fcf-data.js?v=942d1b3d"></script>
+<script src="../assets/fcf.js?v=4"></script>
+<script src="../assets/news.js?v=2"></script>
+<script src="../assets/technicals.js?v=1"></script>
+<script src="../assets/holders.js?v=3"></script>
+<script src="../assets/options.js?v=1"></script>
+<script src="../assets/analysts.js?v=1"></script>
+<script src="../assets/mgmt.js?v=2"></script>
+<script src="../assets/ext-hours.js?v=1"></script>
+<script src="../assets/stock-picker.js?v=3"></script>
+</body>
+</html>

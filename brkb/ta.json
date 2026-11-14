@@ -1,0 +1,59 @@
+{
+ "asof": "Nov 13, 2026",
+ "close": 592.94,
+ "bias": {
+  "en": "Strong uptrend · record close, overbought",
+  "zh": "强势上行 · 创收盘新高，超买"
+ },
+ "read": [
+  {
+   "en": "Berkshire Class B rose 0.5% on Nov 13 to $592.94, a record close, with the 52-week high at $596.92. It is well above the 20-day ($559.03), 50-day ($529.64) and 200-day ($500.43) averages, all rising. MACD (17.8) is above its signal (15.0) and zero with the histogram widening, and RSI is about 81, overbought, with the price at the upper Bollinger band ($598.20).",
+   "zh": "伯克希尔 B 类股 11月13日上涨 0.5% 至 $592.94，创收盘新高，52 周高点为 $596.92。股价远高于 20 日（$559.03）、50 日（$529.64）和 200 日均线（$500.43），三者均在上行。MACD（17.8）位于信号线（15.0）和零轴上方，柱状图扩大；RSI 约 81，处于超买，股价位于布林带上轨（$598.20）。"
+  },
+  {
+   "en": "Resistance is $597–598 (52-week high, upper band), then the round $600. Support is $579 (Nov 4 record close), then $569–571 (Nov 6 close, Nov 9 area) and the 20-day near $559. After a ~16% run since early October with RSI above 80, a pause toward $579 would be normal; a close above $598 targets $600 and beyond, while a close below $569 would point to the 20-day.",
+   "zh": "阻力位于 $597–598（52 周高点、布林带上轨），其次为整数关口 $600。支撑位于 $579（11月4日创纪录收盘），其次为 $569–571（11月6日收盘、11月9日区域）及 20 日均线约 $559。自 10 月初上涨约 16% 且 RSI 超过 80，回调至 $579 属正常；收盘站上 $598 将指向 $600 及以上，收盘跌破 $569 则指向 20 日均线。"
+  }
+ ],
+ "levels": {
+  "r": [
+   [
+    597.5,
+    {
+     "en": "52-week high $596.92; upper Bollinger band $598.20",
+     "zh": "52 周高点 $596.92；布林带上轨 $598.20"
+    }
+   ],
+   [
+    600,
+    {
+     "en": "Round number $600",
+     "zh": "整数关口 $600"
+    }
+   ]
+  ],
+  "s": [
+   [
+    579.1,
+    {
+     "en": "Nov 4 record close $579.09",
+     "zh": "11月4日创纪录收盘 $579.09"
+    }
+   ],
+   [
+    570,
+    {
+     "en": "Nov 6 close $570.89; Nov 9 area",
+     "zh": "11月6日收盘 $570.89；11月9日区域"
+    }
+   ],
+   [
+    559,
+    {
+     "en": "20-day average $559.03",
+     "zh": "20 日均线 $559.03"
+    }
+   ]
+  ]
+ }
+}

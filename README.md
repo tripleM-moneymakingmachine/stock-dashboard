@@ -17,7 +17,7 @@ Investor dashboards, EN / 中文, light / dark:
 - **Bloom Energy (BE)** — `be/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/be/
 - **Applied Optoelectronics (AAOI)** — `aaoi/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/aaoi/
 - **AMD (AMD)** — `amd/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/amd/
-- **Berkshire Hathaway (BRK.A)** — `brka/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/brka/ (replaced MP Materials in November 2026; figures per Class A share, B = 1/1,500; BRK.A has no listed options, so its options section stays empty and it is not in the Options tab)
+- **Berkshire Hathaway (BRK.B)** — `brkb/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/brkb/ (replaced MP Materials in November 2026; per-share figures are per Class B share, 1/1,500 of a Class A share)
 - **Amazon (AMZN)** — `amzn/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/amzn/
 - **Microsoft (MSFT)** — `msft/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/msft/
 - **Marvell (MRVL)** — `mrvl/index.html` → https://triplem-moneymakingmachine.github.io/stock-dashboard/mrvl/
@@ -173,7 +173,7 @@ Note: GitHub pauses scheduled workflows in a repo with no activity for 60 days. 
 For information only, not investment advice. Not affiliated with Arm Holdings plc, Tesla, Inc., Sandisk Corporation or Intel Corporation.
 
 ## Adding a stock
-Newer pages (SPCX, MU, LITE, COHR, GOOGL, META, NVDA, ZS, BE, AAOI, AMD, BRK.A, AMZN, MSFT, MRVL, SKHY, TSM, AVGO, ROK, AMAT, ASML, PLTR, GLW, TER) are generated: edit `specs/<stock>.json` and run `python3 scripts/make-stock-page.py specs/<stock>.json`. Shared code is in `assets/stock-page.js` and `assets/stock.css`; price cells (52-week range, moving averages, RSI, drawdown) are computed from the live price history. For a new stock, copy a spec, generate the page, then write `<stock>/ta.json`, add the fetch line and the folder name in the copy loop of `.github/workflows/deploy.yml`, a card to the root `index.html`, an entry to `STOCKS` in `scripts/fetch-news.mjs` and `assets/movers.js`. TSMC and SK hynix figures are converted to US$ from NT$ and won at each quarter's rate (see the specs).
+Newer pages (SPCX, MU, LITE, COHR, GOOGL, META, NVDA, ZS, BE, AAOI, AMD, BRK.B, AMZN, MSFT, MRVL, SKHY, TSM, AVGO, ROK, AMAT, ASML, PLTR, GLW, TER) are generated: edit `specs/<stock>.json` and run `python3 scripts/make-stock-page.py specs/<stock>.json`. Shared code is in `assets/stock-page.js` and `assets/stock.css`; price cells (52-week range, moving averages, RSI, drawdown) are computed from the live price history. For a new stock, copy a spec, generate the page, then write `<stock>/ta.json`, add the fetch line and the folder name in the copy loop of `.github/workflows/deploy.yml`, a card to the root `index.html`, an entry to `STOCKS` in `scripts/fetch-news.mjs` and `assets/movers.js`. TSMC and SK hynix figures are converted to US$ from NT$ and won at each quarter's rate (see the specs).
 
 Older pages: Copy a stock folder (e.g. `intc/`), edit its `index.html` and seed `data/`, add a fetch line and copy lines to `.github/workflows/deploy.yml`, and add a card to the root `index.html`.
 

@@ -7,7 +7,7 @@
 import { writeFileSync, readFileSync, appendFileSync } from "node:fs";
 
 const SYMBOL = process.argv[2] || "ARM";
-const SYM_DOT = SYMBOL.replace("-", "."); // Robinhood and Nasdaq write share classes as BRK.A, Yahoo as BRK-A
+const SYM_DOT = SYMBOL.replace("-", "."); // Robinhood and Nasdaq write share classes as BRK.B, Yahoo as BRK-B
 const OUT = process.argv[3] || "data";
 const RANGE = process.argv[4] || "1y";
 const DAYS = Math.round((parseFloat(RANGE) || 1) * (RANGE.endsWith("mo") ? 31 : 366)) + 5; // calendar days of history

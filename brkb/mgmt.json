@@ -1,0 +1,72 @@
+{
+ "ticker": "BRK.B",
+ "asof": "2026-11-14",
+ "quarter": {
+  "en": "Q3 2026",
+  "zh": "2026年第三季"
+ },
+ "reported": "2026-11-07",
+ "timing": "bmo",
+ "pre_close": 570.89,
+ "react": {
+  "date": "2026-11-09",
+  "close": null,
+  "pct": null
+ },
+ "since": {
+  "date": "2026-11-13",
+  "close": 592.94,
+  "pct": 3.9
+ },
+ "review": {
+  "en": [
+   "Revenue rose 11% to $105.6B, helped by the OxyChem and Taylor Morrison acquisitions, but operating earnings fell 6% to $12.7B ($5.94 per B share, slightly above the ~$5.88 FactSet estimate). Insurance underwriting fell 43% to $1.35B as GEICO spent more on ads and its loss ratio rose to 76.6%, and insurance investment income fell 14% as T-bill yields dropped. BNSF (+19%), BHE (+8%) and manufacturing, service and retailing (+12%) grew. Berkshire bought back a record $9.6B of stock, about $2B more in October, and says it buys only below intrinsic value; cash and T-bills reached $377B. It gives no guidance and kept warning of 'considerable uncertainty' from tariffs and wars.",
+   "The report came out on Saturday, Nov 7, after a week in which the shares rose 5.2% to record highs while the S&P 500 fell 2.7% in an AI-led tech selloff; Class B closed at $570.89 on Nov 6. On Monday, Nov 9, the stock slipped about 0.4% as the insurance miss offset the record buyback. It then jumped about 2.6% on Nov 10 and kept rising as investors read the buyback as management calling the shares cheap and rotated into cash-rich, defensive names, closing at a record $592.94 on Nov 13."
+  ],
+  "zh": [
+   "营收增长 11% 至 1,056 亿美元，受益于收购 OxyChem 和 Taylor Morrison；但经营利润下降 6% 至 127 亿美元（每股 B 股 5.94 美元，略高于 FactSet 约 5.88 美元的预期）。GEICO 加大广告投放、赔付率升至 76.6%，保险承保利润下降 43% 至 13.5 亿；国库券收益率下降，保险投资收益下降 14%。BNSF（+19%）、BHE（+8%）及制造、服务与零售（+12%）均有增长。伯克希尔回购股票创纪录的 96 亿美元，10月再回购约 20 亿，并表示只在低于内在价值时回购；现金及国库券达 3,770 亿。公司不提供指引，并继续警示关税和战争带来的「相当大的不确定性」。",
+   "业绩于 11月7日（周六）公布。此前一周，在 AI 带动的科技股抛售中标普 500 下跌 2.7%，伯克希尔股价却上涨 5.2% 创历史新高；11月6日 B 类股收于 $570.89。11月9日（周一）保险业务疲弱抵消了创纪录回购的利好，股价微跌约 0.4%。11月10日大涨约 2.6%，此后继续走高：市场将回购解读为管理层认为股价偏低，资金也持续转入现金充裕的防御型股票，11月13日收于创纪录的 $592.94。"
+  ]
+ },
+ "ceo": {
+  "name": {
+   "en": "Greg Abel",
+   "zh": "格雷格·阿贝尔"
+  },
+  "since": "2026",
+  "bio": {
+   "en": "Took over from Warren Buffett as CEO on Jan 1, 2026. Joined Berkshire in 2000 through MidAmerican Energy, ran Berkshire Hathaway Energy as CEO from 2008 to 2018, then oversaw all non-insurance businesses as vice chairman from 2018 to 2025. Canadian-born accountant, previously at PwC.",
+   "zh": "2026年1月1日接替沃伦·巴菲特出任 CEO。2000 年随 MidAmerican Energy 加入伯克希尔，2008–2018 年任伯克希尔·哈撒韦能源 CEO，2018–2025 年任副董事长、主管全部非保险业务。加拿大出生的会计师，曾任职于普华永道。"
+  }
+ },
+ "cfo": {
+  "name": {
+   "en": "Charles C. Chang",
+   "zh": "查尔斯·C·张"
+  },
+  "since": "2026",
+  "bio": {
+   "en": "Succeeded Marc Hamburg, CFO for over three decades, on June 1, 2026; Hamburg stays until he retires in June 2027. Chang was CFO of Berkshire Hathaway Energy from October 2024 and before that a PwC partner from 2002, working on energy clients, SEC reporting and M&A.",
+   "zh": "2026年6月1日接替任职三十余年的 CFO 马克·汉堡；汉堡留任至 2027 年 6 月退休。张自 2024 年 10 月起任伯克希尔·哈撒韦能源 CFO，此前自 2002 年起为普华永道合伙人，负责能源客户、SEC 报告及并购。"
+  }
+ },
+ "sources": [
+  {
+   "t": "Q3 2026 earnings release (Business Wire via Morningstar)",
+   "u": "https://www.morningstar.com/news/business-wire/20261107409212/berkshire-hathaway-inc-news-release"
+  },
+  {
+   "t": "Buybacks, GEICO and the share price (AP)",
+   "u": "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/11/07/berkshire-hathaway-buys-back-96-billion-of-its-own-stock-but-its-profits-declined"
+  },
+  {
+   "t": "Week before the report and segment table (AskTraders)",
+   "u": "https://www.asktraders.com/?p=258289"
+  },
+  {
+   "t": "CFO succession announcement (Carrier Management)",
+   "u": "https://www.carriermanagement.com/news/2025/12/08/282126.htm"
+  }
+ ],
+ "followup_done": false
+}

@@ -37,7 +37,7 @@ WEIGHTS = {  # sum = 1.0
     "risk":     0.10,   # low 60-day vol, small 3m drawdown, low implied vol (higher = safer)
 }
 TIERS = [(62, "bull", "Bullish"), (52, "con", "Constructive"), (42, "neu", "Neutral"), (-1, "cau", "Cautious")]
-DIRS = {"TSLA": "tesla", "BRK.A": "brka"}
+DIRS = {"TSLA": "tesla", "BRK.B": "brkb"}
 
 
 def pct_rank(vals):

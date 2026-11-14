@@ -42,7 +42,7 @@ STOCKS = [
     ("be", "BE", "093712107", r"^BLOOM ENERGY"),
     ("aaoi", "AAOI", "03823U102", r"^APPLIED OPTOELECTRONICS"),
     ("amd", "AMD", "007903107", r"^ADVANCED MICRO DEVICES"),
-    ("brka", "BRK.A", "084670108", r"^BERKSHIRE HATHAWAY"),
+    ("brkb", "BRK.B", "084670702", r"^BERKSHIRE HATHAWAY"),
     ("amzn", "AMZN", "023135106", r"^AMAZON"),
     ("msft", "MSFT", "594918104", r"^MICROSOFT"),
     ("mrvl", "MRVL", "573874104", r"^MARVELL"),

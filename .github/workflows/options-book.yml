@@ -39,7 +39,7 @@ jobs:
 
       - name: Fetch 5 years of daily history
         run: |
-          for t in AAOI AMAT AMD AMZN ARM ASML AVGO BE COHR GLW GOOGL INTC LITE META MRVL MSFT MU NVDA PLTR ROK SKHY SNDK SPCX TER TSLA TSM ZS SPY ^VIX ^IRX; do
+          for t in AAOI AMAT AMD AMZN ARM ASML AVGO BE BRK-B COHR GLW GOOGL INTC LITE META MRVL MSFT MU NVDA PLTR ROK SKHY SNDK SPCX TER TSLA TSM ZS SPY ^VIX ^IRX; do
             mkdir -p "opt-data/$t" && node scripts/fetch-quote.mjs "$t" "opt-data/$t" 5y || true
           done
 

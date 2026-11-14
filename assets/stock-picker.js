@@ -17,7 +17,7 @@
     ["intc", "INTC", "Intel"],
     ["lite", "LITE", "Lumentum"],
     ["meta", "META", "Meta Platforms"],
-    ["brka", "BRK.A", "Berkshire Hathaway"],
+    ["brkb", "BRK.B", "Berkshire Hathaway"],
     ["mrvl", "MRVL", "Marvell Technology"],
     ["msft", "MSFT", "Microsoft"],
     ["mu", "MU", "Micron Technology"],

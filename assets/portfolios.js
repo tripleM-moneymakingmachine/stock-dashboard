@@ -13,7 +13,7 @@
   if (!$("pfL") && !$("pfR")) return;
   const PAGES = { NVDA: "nvda", BE: "be", GOOGL: "googl", AVGO: "avgo", INTC: "intc", AMZN: "amzn", MSFT: "msft", TSLA: "tesla",
     ARM: "arm", MU: "mu", AMD: "amd", META: "meta", PLTR: "pltr", TSM: "tsm", SNDK: "sndk", AAOI: "aaoi", AMAT: "amat",
-    ASML: "asml", COHR: "cohr", GLW: "glw", LITE: "lite", "BRK-A": "brka", "BRK-B": "brka", MRVL: "mrvl", ROK: "rok", SKHY: "skhy", SPCX: "spcx", TER: "ter", ZS: "zs" };
+    ASML: "asml", COHR: "cohr", GLW: "glw", LITE: "lite", "BRK-B": "brkb", MRVL: "mrvl", ROK: "rok", SKHY: "skhy", SPCX: "spcx", TER: "ter", ZS: "zs" };
 
   const st = document.createElement("style");
   st.textContent = `
