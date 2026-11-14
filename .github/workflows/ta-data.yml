@@ -12,6 +12,7 @@ on:
       - .github/workflows/ta-data.yml
       - scripts/ta-snapshot.py
       - scripts/build-portfolios.py
+      - scripts/update-13f.py
       - scripts/momentum-portfolio.py
       - data/portfolios.json
   schedule:
@@ -76,7 +77,12 @@ jobs:
           mkdir -p data/bench/SPY && node scripts/fetch-quote.mjs SPY data/bench/SPY 2y
           python3 scripts/momentum-portfolio.py --text >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Fetch prices for the Pelosi, Trump, Druckenmiller and Thiel panels
+      - name: Refresh auto-updated 13F holdings (Soros panel) from SEC EDGAR
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: python3 scripts/update-13f.py || echo "13F refresh failed"
+
+      - name: Fetch prices for the Pelosi, Trump, Druckenmiller and Soros panels
         run: |
           for t in SPY $(python3 -c "import json;c=json.load(open('data/portfolios.json'));print(' '.join(sorted({h[0] for k in c for h in c[k]['holdings']})))"); do
             mkdir -p pf-data/$t && node scripts/fetch-quote.mjs $t pf-data/$t 1y
@@ -94,7 +100,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add */data/history.json skhy/data/krx/history.json data/ta-snapshot.json data/portfolios-perf.json data/momentum-portfolio.json data/bench/SPY/history.json
+          git add */data/history.json skhy/data/krx/history.json data/ta-snapshot.json data/portfolios.json data/portfolios-perf.json data/momentum-portfolio.json data/bench/SPY/history.json
           if [ -f data/fx-fwd.json ]; then git add data/fx-fwd.json; fi
           if git diff --cached --quiet; then echo "No change."; exit 0; fi
           git config user.name "github-actions[bot]"

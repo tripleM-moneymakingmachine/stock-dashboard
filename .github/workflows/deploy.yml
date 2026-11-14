@@ -73,7 +73,7 @@ jobs:
           node scripts/fetch-quote.mjs GLW glw/data 2y
           node scripts/fetch-quote.mjs TER ter/data 2y
 
-      # Live portfolio panels (Pelosi, Trump, Druckenmiller, Thiel): price every holding on each refresh
+      # Live portfolio panels (Pelosi, Trump, Druckenmiller, Soros): price every holding on each refresh
       # and rebuild data/portfolios-perf.json, so the panels follow the session instead of yesterday's close.
       # Dashboard stocks reuse the quotes fetched above; the rest are fetched 8 at a time without the
       # extended-hours lookup. The SEC / House filing check stays in the after-close ta-data workflow.

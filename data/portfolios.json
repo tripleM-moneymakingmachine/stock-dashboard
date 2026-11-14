@@ -1104,65 +1104,108 @@
    ]
   ]
  },
- "thiel": {
-  "title": "Peter Thiel · Thiel Macro LLC",
+ "soros": {
+  "title": "George Soros · Soros Fund Management",
   "basis": "13F holdings, exact share counts",
-  "cik": 1562087,
-  "accession": "0001315863-26-000593",
-  "period": "2026-06-30",
-  "filed": "2026-08-14",
-  "next_due": "2026-11-16",
-  "note": "13F lists US-listed long positions at quarter end only, filed up to 45 days later; it omits shorts, cash, non-US holdings and Founders Fund. Values now are the filed share counts at today's prices; the fund may have traded since.",
+  "cik": 1029160,
+  "accession": "",
+  "period": "2026-09-30",
+  "filed": "2026-11-13",
+  "next_due": "2027-02-16",
+  "reported_total": 8143628824,
+  "reported_positions": 258,
+  "auto": {
+   "max_rows": 60
+  },
+  "highlights": {
+   "period": "2026-09-30",
+   "text": "Q3: Intel built from 100K to 2.83M shares (now the largest stock row); Micron up 59%; Meta added; Nvidia cut 19% to 859K shares; Amazon and Apple trimmed."
+  },
+  "note": "13F lists US-listed long positions and options at quarter end only, filed up to 45 days later; it omits shorts other than listed puts, cash, currencies, futures and non-US holdings. The table shows the largest stock and call rows (calls at the underlying shares, as filed); puts and convertible notes are summarised above instead. Values now are the filed share counts at today's prices; the fund may have traded since. Refreshed automatically from SEC EDGAR when a new 13F lands.",
+  "previous": "Q3: Intel built from 100K to 2.83M shares (now the largest stock row); Micron up 59%; Meta added; Nvidia cut 19% to 859K shares; Amazon and Apple trimmed. Puts (hedges, not in the table) include XLE $670M, XOP $328M and Expedia $132M notional. Seed rows; the full table loads on the next data run.",
   "holdings": [
+   [
+    "INTC",
+    "Intel",
+    2830000,
+    340300000
+   ],
    [
     "AMZN",
     "Amazon",
-    495000,
-    117978300
+    1100000,
+    262900000
    ],
    [
-    "VIST",
-    "Vista Energy (ADS)",
-    1189792,
-    75908730
+    "TSM",
+    "TSMC (ADS)",
+    548915,
+    250400000
    ],
    [
-    "VST",
-    "Vistra",
-    372755,
-    59130126
+    "TLT",
+    "iShares 20+ Year Treasury Bond ETF",
+    3100000,
+    237200000,
+    "call"
    ],
    [
-    "AEP",
-    "American Electric Power",
-    308617,
-    42221892
+    "XLU",
+    "Utilities Select Sector SPDR",
+    5400000,
+    214800000,
+    "call"
    ],
    [
-    "DTE",
-    "DTE Energy",
-    264450,
-    40294247
+    "GOOGL",
+    "Alphabet",
+    600960,
+    206800000
    ],
    [
-    "FE",
-    "FirstEnergy",
-    839319,
-    39901225
+    "NVDA",
+    "Nvidia",
+    858822,
+    196100000
    ],
    [
-    "CMS",
-    "CMS Energy",
-    517124,
-    39559986
+    "AAPL",
+    "Apple",
+    393680,
+    131100000
    ],
    [
-    "XE",
-    "X-Energy",
-    200000,
-    3672000
+    "META",
+    "Meta Platforms",
+    151505,
+    109900000
+   ],
+   [
+    "ETR",
+    "Entergy",
+    1100000,
+    105800000
+   ],
+   [
+    "SPY",
+    "SPDR S&P 500 ETF",
+    136057,
+    103800000
+   ],
+   [
+    "WDAY",
+    "Workday",
+    500000,
+    95200000,
+    "call"
+   ],
+   [
+    "ESTC",
+    "Elastic",
+    997700,
+    91500000,
+    "call"
    ]
-  ],
-  "previous": "No 13F holdings at Dec 31, 2025 or Mar 31, 2026; all eight positions are new this quarter."
+  ]
  }
 }

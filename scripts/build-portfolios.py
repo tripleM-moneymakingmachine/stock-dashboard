@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds data/portfolios-perf.json for the Pelosi, Trump, Druckenmiller and Thiel panels on the main page.
+"""Builds data/portfolios-perf.json for the Pelosi, Trump, Druckenmiller and Soros panels on the main page.
 
 Inputs
   data/portfolios.json         holdings, weights, trades (edited when a new filing lands)
@@ -8,7 +8,7 @@ Output
   data/portfolios-perf.json    daily performance, per-holding prices/returns, and a check for new filings
 
 Pelosi, Trump (MODELS): model portfolios with fixed estimated weights, rebalanced daily (sum of weight x daily return).
-Druckenmiller, Thiel (F13): the 13F share counts (call rows at their underlying shares) marked to each day's close
+Druckenmiller, Soros (F13): the 13F share counts (call rows at their underlying shares) marked to each day's close
 since the quarter end.
 New-filing check: SEC EDGAR submissions (each 13F filer's latest 13F-HR) and the House Clerk's yearly
 financial-disclosure index (Pelosi periodic transaction reports). Network errors are recorded, not fatal.
@@ -68,7 +68,7 @@ def at(s, d):
 
 
 MODELS = [k for k in ("pelosi", "trump") if k in CFG]
-F13 = [k for k in ("druck", "thiel") if k in CFG]
+F13 = [k for k in ("druck", "soros") if k in CFG]
 S = {t: series(t) for t in {"SPY", *[h[0] for k in MODELS + F13 for h in CFG[k]["holdings"]]}}
 spy_s = S["SPY"]
 out = {"updated": int(time.time()), "session": last, "missing": []}
@@ -116,7 +116,7 @@ def model(P):
 for k in MODELS:
     out[k] = model(CFG[k])
 
-# ---------- Druckenmiller, Thiel: 13F shares marked to market ----------
+# ---------- Druckenmiller, Soros: 13F shares marked to market ----------
 def thirteen_f(T):
     q = T["period"]
     i0 = max(i for i, d in enumerate(dates) if d <= q)

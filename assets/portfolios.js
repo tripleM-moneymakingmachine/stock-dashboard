@@ -3,7 +3,7 @@
    #pfL2 — Donald Trump personal stock book (estimated weights from OGE filings, same model format as Pelosi)
    #pfR  — Stanley Druckenmiller / Duquesne Family Office (13F share counts marked to market since the quarter end;
           call rows at their underlying shares; weight = share of total reported value)
-   #pfR2 — Peter Thiel / Thiel Macro LLC (13F, same format as Druckenmiller)
+   #pfR2 — George Soros / Soros Fund Management (13F, same format as Druckenmiller; holdings refreshed by scripts/update-13f.py)
    Data: data/portfolios.json (holdings, trades, notes; edited when a filing lands) and
    data/portfolios-perf.json (rebuilt with live prices on every price refresh by deploy.yml, plus the after-close
    build with the filing check in the ta-data workflow). The panels reload it every minute.
@@ -149,7 +149,7 @@
     if (cfg.pelosi && perf.pelosi) model($("pfL"), "Pelosi", cfg.pelosi, perf.pelosi, fl.pelosi);
     if (cfg.trump && perf.trump) model($("pfL2"), "Trump", cfg.trump, perf.trump, fl.trump);
     if (cfg.druck) thirteenF($("pfR"), "Druckenmiller", cfg.druck, perf.druck || filed(cfg.druck), fl.druck);
-    if (cfg.thiel) thirteenF($("pfR2"), "Thiel", cfg.thiel, perf.thiel || filed(cfg.thiel), fl.thiel);
+    if (cfg.soros) thirteenF($("pfR2"), "Soros", cfg.soros, perf.soros || filed(cfg.soros), fl.soros);
   }
   load();
   setInterval(load, 60000);
