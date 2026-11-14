@@ -6,10 +6,10 @@
  "shares": 1416346.0,
  "beta": "0.57",
  "snapshot": {
-  "price": "$889,410",
+  "price": "$889,794",
   "date": "Nov 13, 2026",
   "mcap": "$1.26T",
-  "range": "$696K–895K"
+  "range": "$699,965–889,794"
  },
  "eyebrow": {
   "en": "Berkshire Hathaway Inc. · Class A · Omaha, Nebraska",
@@ -53,8 +53,8 @@
   }
  },
  "sub_price": {
-  "en": "Daily closes with the 50-day average. Class A shares hit record highs in November as investors rotated out of AI stocks; one A share equals 1,500 B shares.",
-  "zh": "每日收盘价与50日均线。11月资金撤出 AI 股，A 类股创历史新高；1 股 A 类股相当于 1,500 股 B 类股。"
+  "en": "Daily closes with the 50-day average. Class A closed at a record $889,794 on Nov 13 as investors rotated out of AI stocks; one A share equals 1,500 B shares.",
+  "zh": "每日收盘价与50日均线。资金撤出 AI 股，A 类股 11月13日收于创纪录的 $889,794；1 股 A 类股相当于 1,500 股 B 类股。"
  },
  "sub_rev": {
   "en": "Revenue in US$ millions. The line is operating earnings (Berkshire's after-tax profit excluding investment gains and losses) as a % of revenue, on the right axis; Berkshire reports no gross margin. Net margin includes gains and losses on its stock portfolio, which Berkshire calls usually meaningless for a single quarter. EPS is GAAP net earnings per Class A share (B share = 1/1,500). Berkshire gives no guidance.",

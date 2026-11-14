@@ -7,25 +7,25 @@
  },
  "reported": "2026-11-07",
  "timing": "bmo",
- "pre_close": 861627.07,
+ "pre_close": 856612,
  "react": {
   "date": "2026-11-09",
-  "close": null,
-  "pct": null
+  "close": 853500,
+  "pct": -0.4
  },
  "since": {
   "date": "2026-11-13",
-  "close": 889410,
-  "pct": 3.2
+  "close": 889794,
+  "pct": 3.9
  },
  "review": {
   "en": [
    "Revenue rose 11% to $105.6B, helped by the OxyChem and Taylor Morrison acquisitions, but operating earnings fell 6% to $12.7B ($8,907 per A share, slightly above the ~$8,822 FactSet estimate). Insurance underwriting fell 43% to $1.35B as GEICO spent more on ads and its loss ratio rose to 76.6%, and insurance investment income fell 14% as T-bill yields dropped. BNSF (+19%), BHE (+8%) and manufacturing, service and retailing (+12%) grew. Berkshire bought back a record $9.6B of stock, about $2B more in October, and says it buys only below intrinsic value; cash and T-bills reached $377B. It gives no guidance and kept warning of 'considerable uncertainty' from tariffs and wars.",
-   "The report came out on Saturday, Nov 7, after a week in which the shares rose about 5% to record highs while the S&P 500 fell 2.7% in an AI-led tech selloff; Class A closed at about $861,600 on Nov 6. The stock kept climbing after the results, as the record buyback was read as management calling the shares cheap and investors kept rotating into cash-rich, defensive names. Class B closed at $592.94 on Nov 13, equal to about $889,400 per A share, near the record high and with RSI above 80."
+   "The report came out on Saturday, Nov 7, after a week in which the shares hit record highs while the S&P 500 fell 2.7% in an AI-led tech selloff; Class A closed at $856,612 on Nov 6. On Monday, Nov 9, it slipped 0.4% to $853,500 as the insurance miss offset the record buyback. It then jumped 2.6% on Nov 10 and kept rising as investors read the buyback as management calling the shares cheap and rotated into cash-rich, defensive names, closing at a record $889,794 on Nov 13."
   ],
   "zh": [
    "营收增长 11% 至 1,056 亿美元，受益于收购 OxyChem 和 Taylor Morrison；但经营利润下降 6% 至 127 亿美元（每股 A 股 8,907 美元，略高于 FactSet 约 8,822 美元的预期）。GEICO 加大广告投放、赔付率升至 76.6%，保险承保利润下降 43% 至 13.5 亿；国库券收益率下降，保险投资收益下降 14%。BNSF（+19%）、BHE（+8%）及制造、服务与零售（+12%）均有增长。伯克希尔回购股票创纪录的 96 亿美元，10月再回购约 20 亿，并表示只在低于内在价值时回购；现金及国库券达 3,770 亿。公司不提供指引，并继续警示关税和战争带来的「相当大的不确定性」。",
-   "业绩于 11月7日（周六）公布。此前一周，在 AI 带动的科技股抛售中标普 500 下跌 2.7%，伯克希尔股价却上涨约 5% 创历史新高；11月6日 A 类股收于约 861,600 美元。业绩公布后股价继续走高：市场将创纪录的回购解读为管理层认为股价偏低，资金也持续转入现金充裕的防御型股票。11月13日 B 类股收于 592.94 美元，相当于每股 A 股约 889,400 美元，接近历史高点，RSI 超过 80。"
+   "业绩于 11月7日（周六）公布。此前一周，在 AI 带动的科技股抛售中标普 500 下跌 2.7%，伯克希尔股价却创历史新高；11月6日 A 类股收于 $856,612。11月9日（周一）保险业务疲弱抵消了创纪录回购的利好，股价微跌 0.4% 至 $853,500。11月10日大涨 2.6%，此后继续走高：市场将回购解读为管理层认为股价偏低，资金也持续转入现金充裕的防御型股票，11月13日收于创纪录的 $889,794。"
   ]
  },
  "ceo": {

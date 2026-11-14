@@ -13,7 +13,7 @@
 <body>
 <header class="bar"><div class="bar-in">
   <span class="tick">NYSE: BRK.A</span>
-  <span class="bar-px" id="barPx">$889,410</span>
+  <span class="bar-px" id="barPx">$889,794</span>
   <span class="chg" id="barChg"></span>
   <span class="live" id="barLive"><i class="dot"></i><span id="barTime">snapshot</span></span>
   <nav class="sec" aria-label="Sections">
@@ -41,7 +41,7 @@
     </div>
     <div class="pxbox">
       <div class="eyebrow" id="pxLabel">Last close · Nov 13, 2026</div>
-      <div class="pxbig" id="pxBig">$889,410</div>
+      <div class="pxbig" id="pxBig">$889,794</div>
       <div class="chg" id="pxChg"></div>
       <div class="pxnote" id="pxNote"></div>
       <div id="tv" style="margin-top:12px"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div></div>
@@ -50,7 +50,7 @@
 
   <div class="cells" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:8px">
     <div class="cell"><div class="k"><span data-i="k_mcap">Market cap</span></div><div class="v" id="mcap">$1.26T</div><div class="s"><span data-i="s_mcap">at current price</span></div></div>
-    <div class="cell"><div class="k"><span data-i="k_52">52-week range</span></div><div class="v" id="r52">$696K–895K</div><div class="s"><span data-i="s_52">closing low / high</span></div></div>
+    <div class="cell"><div class="k"><span data-i="k_52">52-week range</span></div><div class="v" id="r52">$699,965–889,794</div><div class="s"><span data-i="s_52">closing low / high</span></div></div>
     <div class="cell"><div class="k"><span data-i="k_val">Price / book</span></div><div class="v">~1.66×</div><div class="s"><span data-i="s_val">book ~$537K per A share (Sep 30) · ~26.7× TTM operating EPS · GAAP P/E ~16.5×</span></div></div>
     <div class="cell"><div class="k"><span data-i="k_ttm">Revenue TTM</span></div><div class="v" id="ttmV"></div><div class="s" id="ttmS"></div></div>
     <div class="cell"><div class="k"><span data-i="k_an">Q4 2026 consensus</span></div><div class="v">~$7,934</div><div class="s"><span data-i="s_an">operating EPS per A share · avg target ~$823K, Hold</span></div></div>
@@ -59,7 +59,7 @@
 
   <section id="price">
     <h2><span data-i="h_price">Price, last 12 months</span></h2>
-    <p data-i="sub_price" class="sub">Daily closes with the 50-day average. Class A shares hit record highs in November as investors rotated out of AI stocks; one A share equals 1,500 B shares.</p>
+    <p data-i="sub_price" class="sub">Daily closes with the 50-day average. Class A closed at a record $889,794 on Nov 13 as investors rotated out of AI stocks; one A share equals 1,500 B shares.</p>
     <div class="grid">
       <div class="panel">
         <div class="range" role="group" aria-label="Range">
@@ -142,7 +142,7 @@ const G = null;
 const TTM = null;
 const GM_LABEL = ["Operating earnings margin", "经营利润率"];
 let P = {d:[],c:[]};
-const T = {zh:{"n_home": "全部股票", "n_over": "概览", "n_price": "股价", "n_rev": "营收", "n_fcf": "现金流", "n_watch": "关注点", "n_news": "新闻", "n_src": "来源", "k_mcap": "市值", "s_mcap": "按当前股价", "k_52": "52周区间", "s_52": "收盘低 / 高", "k_ttm": "近12月营收", "k_er": "下次财报", "h_price": "近12个月股价", "k_hi": "一年收盘最高", "k_lo": "一年收盘最低", "k_move": "日均波幅", "s_move": "近20个交易日", "s_beta": "相对标普500", "k_dd": "距高点", "h_rev": "季度营收与利润率", "l_rev": "营收", "l_gm": "经营利润率（右轴）", "l_g": "指引（不提供）", "t_q": "季度", "t_end": "截至", "t_rev": "营收（百万美元）", "t_yoy": "同比", "t_gm": "经营利润率", "t_om": "净利率", "t_eps": "每股A股收益（GAAP）", "h_watch": "关注点", "sub_watch": "影响投资逻辑的因素，按方向分类。", "pl_plus": "利好", "pl_watch": "留意", "pl_risk": "风险", "h_cal": "日程", "h_src": "来源", "kc0": "2026 Q3 营收", "sc0": "同比 +11% · 连续第二季双位数增长", "kc1": "经营利润", "sc1": "同比 −6% · 每股 A 股 8,907 美元，预期约 8,822", "kc2": "保险承保利润", "sc2": "同比 −43% · GEICO 税前 9.82 亿，去年同期 17.7 亿", "kc3": "股票回购", "sc3": "第三季，创纪录 · 前九个月 144 亿，10月再回购约 20 亿", "w0h": "阿贝尔开始动用现金", "w0p": "2026 年回购逐季增加（2.35 亿、45 亿、96 亿美元），并收购 OxyChem（94 亿）、Taylor Morrison（68 亿）及大笔 Alphabet 股份。", "w1h": "铁路、能源与工业增长", "w1p": "第三季 BNSF 利润增长 19% 至 17.3 亿美元，BHE 增长 8% 至 16.1 亿，制造、服务及零售增长 12% 至 40.4 亿。前九个月经营利润增长 8% 至 370 亿。", "w2h": "3,770 亿现金，收益率下降", "w2p": "现金及国库券增至 3,774 亿美元（扣除未结算国库券购买后约 3,570 亿）。短期利率下降，第三季保险投资收益下降 14% 至 27.3 亿。", "w3h": "GEICO 与山火风险", "w3p": "GEICO 增加广告投放、理赔上升，赔付率由 71.5% 升至 76.6%。PacifiCorp 已累计计提 28.5 亿美元可能的山火损失，James 案上诉仍在俄勒冈州最高法院审理。", "c0h": "第三季 13F 持仓报告", "c0p": "披露伯克希尔第三季买卖的股票，包括 Alphabet 持股的变化。", "c1h": "2026 第四季业绩及年度致股东信", "c1p": "阿贝尔的第二封年度信；关注第四季回购、GEICO 利润率及现金动用规模。", "c2h": "奥马哈股东大会", "c2p": "阿贝尔任 CEO 后的第二次股东大会；关注资本配置与接班问题。", "c3h": "PacifiCorp 山火上诉", "c3p": "俄勒冈州最高法院于 2026年11月3日审理 James 集体诉讼上诉；裁决可能改变山火损失估计。", "eyebrow": "伯克希尔·哈撒韦 · A类股 · 内布拉斯加州奥马哈", "title": "巴菲特的综合企业，<em>如今由阿贝尔掌舵</em>。", "lede": "伯克希尔旗下拥有 GEICO 等保险公司、BNSF 铁路、伯克希尔·哈撒韦能源及数十家制造与零售企业，另持有以苹果、美国运通和 Alphabet 为首的股票组合。格雷格·阿贝尔于 2026 年 1 月出任 CEO。第三季营收增长 11% 至 1,056 亿美元，但保险承保利润下降 43%，经营利润下降 6% 至 127 亿美元。第三季回购股票创纪录的 96 亿美元，持有现金及美国国库券 3,770 亿美元。", "k_val": "市净率", "s_val": "每股 A 股账面值约 53.7 万美元（9月30日）· 近12月经营每股收益约 26.7 倍 · GAAP 市盈率约 16.5 倍", "k_an": "2026 Q4 一致预期", "s_an": "每股 A 股经营利润 · 平均目标价约 82.3 万美元，持有", "s_er": "2026 第四季 · 与阿贝尔致股东信同日发布，周六", "sub_price": "每日收盘价与50日均线。11月资金撤出 AI 股，A 类股创历史新高；1 股 A 类股相当于 1,500 股 B 类股。", "sub_rev": "营收单位为百万美元。折线为经营利润（伯克希尔剔除投资损益后的税后利润）占营收的百分比，见右轴；伯克希尔不披露毛利率。净利率包含股票组合的损益，伯克希尔称单季投资损益通常没有意义。每股收益为每股 A 类股的 GAAP 净利润（B 类股 = 1/1,500）。伯克希尔不提供业绩指引。", "foot": "基本面数据截至 2026年11月13日（2026 第三季业绩）。仅供参考，不构成投资建议。与 Berkshire Hathaway Inc. 无关联。"}};
+const T = {zh:{"n_home": "全部股票", "n_over": "概览", "n_price": "股价", "n_rev": "营收", "n_fcf": "现金流", "n_watch": "关注点", "n_news": "新闻", "n_src": "来源", "k_mcap": "市值", "s_mcap": "按当前股价", "k_52": "52周区间", "s_52": "收盘低 / 高", "k_ttm": "近12月营收", "k_er": "下次财报", "h_price": "近12个月股价", "k_hi": "一年收盘最高", "k_lo": "一年收盘最低", "k_move": "日均波幅", "s_move": "近20个交易日", "s_beta": "相对标普500", "k_dd": "距高点", "h_rev": "季度营收与利润率", "l_rev": "营收", "l_gm": "经营利润率（右轴）", "l_g": "指引（不提供）", "t_q": "季度", "t_end": "截至", "t_rev": "营收（百万美元）", "t_yoy": "同比", "t_gm": "经营利润率", "t_om": "净利率", "t_eps": "每股A股收益（GAAP）", "h_watch": "关注点", "sub_watch": "影响投资逻辑的因素，按方向分类。", "pl_plus": "利好", "pl_watch": "留意", "pl_risk": "风险", "h_cal": "日程", "h_src": "来源", "kc0": "2026 Q3 营收", "sc0": "同比 +11% · 连续第二季双位数增长", "kc1": "经营利润", "sc1": "同比 −6% · 每股 A 股 8,907 美元，预期约 8,822", "kc2": "保险承保利润", "sc2": "同比 −43% · GEICO 税前 9.82 亿，去年同期 17.7 亿", "kc3": "股票回购", "sc3": "第三季，创纪录 · 前九个月 144 亿，10月再回购约 20 亿", "w0h": "阿贝尔开始动用现金", "w0p": "2026 年回购逐季增加（2.35 亿、45 亿、96 亿美元），并收购 OxyChem（94 亿）、Taylor Morrison（68 亿）及大笔 Alphabet 股份。", "w1h": "铁路、能源与工业增长", "w1p": "第三季 BNSF 利润增长 19% 至 17.3 亿美元，BHE 增长 8% 至 16.1 亿，制造、服务及零售增长 12% 至 40.4 亿。前九个月经营利润增长 8% 至 370 亿。", "w2h": "3,770 亿现金，收益率下降", "w2p": "现金及国库券增至 3,774 亿美元（扣除未结算国库券购买后约 3,570 亿）。短期利率下降，第三季保险投资收益下降 14% 至 27.3 亿。", "w3h": "GEICO 与山火风险", "w3p": "GEICO 增加广告投放、理赔上升，赔付率由 71.5% 升至 76.6%。PacifiCorp 已累计计提 28.5 亿美元可能的山火损失，James 案上诉仍在俄勒冈州最高法院审理。", "c0h": "第三季 13F 持仓报告", "c0p": "披露伯克希尔第三季买卖的股票，包括 Alphabet 持股的变化。", "c1h": "2026 第四季业绩及年度致股东信", "c1p": "阿贝尔的第二封年度信；关注第四季回购、GEICO 利润率及现金动用规模。", "c2h": "奥马哈股东大会", "c2p": "阿贝尔任 CEO 后的第二次股东大会；关注资本配置与接班问题。", "c3h": "PacifiCorp 山火上诉", "c3p": "俄勒冈州最高法院于 2026年11月3日审理 James 集体诉讼上诉；裁决可能改变山火损失估计。", "eyebrow": "伯克希尔·哈撒韦 · A类股 · 内布拉斯加州奥马哈", "title": "巴菲特的综合企业，<em>如今由阿贝尔掌舵</em>。", "lede": "伯克希尔旗下拥有 GEICO 等保险公司、BNSF 铁路、伯克希尔·哈撒韦能源及数十家制造与零售企业，另持有以苹果、美国运通和 Alphabet 为首的股票组合。格雷格·阿贝尔于 2026 年 1 月出任 CEO。第三季营收增长 11% 至 1,056 亿美元，但保险承保利润下降 43%，经营利润下降 6% 至 127 亿美元。第三季回购股票创纪录的 96 亿美元，持有现金及美国国库券 3,770 亿美元。", "k_val": "市净率", "s_val": "每股 A 股账面值约 53.7 万美元（9月30日）· 近12月经营每股收益约 26.7 倍 · GAAP 市盈率约 16.5 倍", "k_an": "2026 Q4 一致预期", "s_an": "每股 A 股经营利润 · 平均目标价约 82.3 万美元，持有", "s_er": "2026 第四季 · 与阿贝尔致股东信同日发布，周六", "sub_price": "每日收盘价与50日均线。资金撤出 AI 股，A 类股 11月13日收于创纪录的 $889,794；1 股 A 类股相当于 1,500 股 B 类股。", "sub_rev": "营收单位为百万美元。折线为经营利润（伯克希尔剔除投资损益后的税后利润）占营收的百分比，见右轴；伯克希尔不披露毛利率。净利率包含股票组合的损益，伯克希尔称单季投资损益通常没有意义。每股收益为每股 A 类股的 GAAP 净利润（B 类股 = 1/1,500）。伯克希尔不提供业绩指引。", "foot": "基本面数据截至 2026年11月13日（2026 第三季业绩）。仅供参考，不构成投资建议。与 Berkshire Hathaway Inc. 无关联。"}};
 </script>
 <script src="../assets/stock-page.js?v=2"></script>
 <script src="fcf-data.js?v=942d1b3d"></script>
