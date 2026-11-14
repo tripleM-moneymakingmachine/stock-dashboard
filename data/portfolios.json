@@ -1108,12 +1108,12 @@
   "title": "George Soros · Soros Fund Management",
   "basis": "13F holdings, exact share counts",
   "cik": 1029160,
-  "accession": "",
+  "accession": "0000902664-26-004530",
   "period": "2026-09-30",
   "filed": "2026-11-13",
-  "next_due": "2027-02-16",
-  "reported_total": 8143628824,
-  "reported_positions": 258,
+  "next_due": "2027-02-15",
+  "reported_total": 8508315961,
+  "reported_positions": 263,
   "auto": {
    "max_rows": 60
   },
@@ -1122,89 +1122,371 @@
    "text": "Q3: Intel built from 100K to 2.83M shares (now the largest stock row); Micron up 59%; Meta added; Nvidia cut 19% to 859K shares; Amazon and Apple trimmed."
   },
   "note": "13F lists US-listed long positions and options at quarter end only, filed up to 45 days later; it omits shorts other than listed puts, cash, currencies, futures and non-US holdings. The table shows the largest stock and call rows (calls at the underlying shares, as filed); puts and convertible notes are summarised above instead. Values now are the filed share counts at today's prices; the fund may have traded since. Refreshed automatically from SEC EDGAR when a new 13F lands.",
-  "previous": "Q3: Intel built from 100K to 2.83M shares (now the largest stock row); Micron up 59%; Meta added; Nvidia cut 19% to 859K shares; Amazon and Apple trimmed. Puts (hedges, not in the table) include XLE $670M, XOP $328M and Expedia $132M notional. Seed rows; the full table loads on the next data run.",
+  "previous": "Q3: Intel built from 100K to 2.83M shares (now the largest stock row); Micron up 59%; Meta added; Nvidia cut 19% to 859K shares; Amazon and Apple trimmed. Vs the prior filing: reported value $8.1B → $8.5B, positions 258 → 263. Puts (hedges, not in the table): $1.3B notional, largest XLE $670M, XOP $328M, EXPE $132M, NVDA $80M, CRWV $48M. Convertible notes/bonds left out: $1.2B.",
   "holdings": [
    [
     "INTC",
-    "Intel",
+    "Intel Corp",
     2830000,
-    340300000
+    340250900
    ],
    [
     "AMZN",
-    "Amazon",
-    1100000,
-    262900000
+    "Amazon Com Inc",
+    1055346,
+    262939456
    ],
    [
     "TSM",
-    "TSMC (ADS)",
+    "Taiwan Semiconductor Manufac (ADS)",
     548915,
-    250400000
+    250409534
    ],
    [
     "TLT",
-    "iShares 20+ Year Treasury Bond ETF",
-    3100000,
-    237200000,
+    "Ishares Tr",
+    3050000,
+    237229000,
     "call"
    ],
    [
     "XLU",
-    "Utilities Select Sector SPDR",
-    5400000,
-    214800000,
+    "Select Sector Spdr Tr",
+    5446000,
+    214790240,
     "call"
    ],
    [
     "GOOGL",
-    "Alphabet",
+    "Alphabet Inc",
     600960,
-    206800000
+    206778317
    ],
    [
     "NVDA",
-    "Nvidia",
+    "Nvidia Corporation",
     858822,
-    196100000
+    196137768
    ],
    [
     "AAPL",
-    "Apple",
+    "Apple Inc",
     393680,
-    131100000
+    131103314
    ],
    [
     "META",
-    "Meta Platforms",
+    "Meta Platforms Inc",
     151505,
-    109900000
+    109868396
    ],
    [
     "ETR",
-    "Entergy",
-    1100000,
-    105800000
+    "Entergy Corp New",
+    1065756,
+    105786941
    ],
    [
     "SPY",
-    "SPDR S&P 500 ETF",
+    "State Str Spdr S&P 500 Etf T",
     136057,
-    103800000
+    103761150
    ],
    [
     "WDAY",
-    "Workday",
+    "Workday Inc",
     500000,
-    95200000,
+    95230000,
     "call"
    ],
    [
-    "ESTC",
-    "Elastic",
-    997700,
-    91500000,
+    "AEP",
+    "American Elec Pwr Co Inc",
+    770752,
+    91442017
+   ],
+   [
+    "TKO",
+    "Tko Group Holdings Inc",
+    489487,
+    87970604
+   ],
+   [
+    "MKTX",
+    "Marketaxess Holdings Inc",
+    488804,
+    80124752
+   ],
+   [
+    "DDOG",
+    "Datadog Inc",
+    258747,
+    70857866
+   ],
+   [
+    "NATL",
+    "Ncr Atleos Corporation",
+    1556196,
+    70308935
+   ],
+   [
+    "SUNB",
+    "Sunbelt Rentals Holdings Inc",
+    958737,
+    70189136
+   ],
+   [
+    "IDA",
+    "Idacorp Inc",
+    510249,
+    66704852
+   ],
+   [
+    "MSFT",
+    "Microsoft Corp",
+    122166,
+    62658941
+   ],
+   [
+    "SKHY",
+    "Sk Hynix Inc",
+    325000,
+    59848750
+   ],
+   [
+    "EXPE",
+    "Expedia Group Inc",
+    225843,
+    59478012
+   ],
+   [
+    "AVGO",
+    "Broadcom Inc",
+    163343,
+    57364428
+   ],
+   [
+    "AES",
+    "Aes Corp",
+    3627986,
+    54056991
+   ],
+   [
+    "AAMI",
+    "Acadian Asset Management Inc",
+    583928,
+    53552037
+   ],
+   [
+    "CRWV",
+    "Coreweave Inc",
+    611700,
+    53291304
+   ],
+   [
+    "BRK-B",
+    "Berkshire Hathaway Inc Del",
+    99314,
+    49453406
+   ],
+   [
+    "IEFA",
+    "Ishares Tr",
+    500394,
+    48478171
+   ],
+   [
+    "OGE",
+    "Oge Energy Corp",
+    1000569,
+    45445844
+   ],
+   [
+    "DASH",
+    "Doordash Inc",
+    246996,
+    45336116
+   ],
+   [
+    "CLS",
+    "Celestica Inc",
+    125000,
+    45178750
+   ],
+   [
+    "XEL",
+    "Xcel Energy Inc",
+    637427,
+    44925855
+   ],
+   [
+    "BGC",
+    "Bgc Group Inc",
+    3759170,
+    43343230
+   ],
+   [
+    "WEC",
+    "Wec Energy Group Inc",
+    417002,
+    42025462
+   ],
+   [
+    "EMXC",
+    "Ishares Inc",
+    416048,
+    41222036
+   ],
+   [
+    "OGN",
+    "Organon & Co",
+    2953681,
+    40465430
+   ],
+   [
+    "ITRI",
+    "Itron Inc",
+    460078,
+    39723135
+   ],
+   [
+    "SYY",
+    "Sysco Corp",
+    502698,
+    39190336
+   ],
+   [
+    "JPM",
+    "Jpmorgan Chase & Co",
+    118358,
+    39156377
+   ],
+   [
+    "BHF",
+    "Brighthouse Finl Inc",
+    779942,
+    38919106
+   ],
+   [
+    "ITRI",
+    "Itron Inc",
+    450000,
+    38853000,
     "call"
+   ],
+   [
+    "PAYO",
+    "Payoneer Global Inc",
+    5394360,
+    38515730
+   ],
+   [
+    "MU",
+    "Micron Technology Inc",
+    35618,
+    37937088
+   ],
+   [
+    "LNTH",
+    "Lantheus Holdings Inc",
+    363967,
+    36225636
+   ],
+   [
+    "DT",
+    "Dynatrace Inc",
+    617814,
+    35672580
+   ],
+   [
+    "MDLN",
+    "Medline Inc",
+    1003364,
+    34816731
+   ],
+   [
+    "SAFT",
+    "Safety Ins Group Inc",
+    330142,
+    34196108
+   ],
+   [
+    "SHOP",
+    "Shopify Inc",
+    222745,
+    33033084
+   ],
+   [
+    "XLU",
+    "Select Sector Spdr Tr",
+    835387,
+    32947663
+   ],
+   [
+    "HON",
+    "Honeywell International Inc",
+    149026,
+    31435544
+   ],
+   [
+    "COF",
+    "Capital One Finl Corp",
+    159979,
+    30887146
+   ],
+   [
+    "TSLA",
+    "Tesla Inc",
+    86267,
+    30608394
+   ],
+   [
+    "ETSY",
+    "Etsy Inc",
+    421033,
+    30099649
+   ],
+   [
+    "CRBG",
+    "Corebridge Finl Inc",
+    882063,
+    29213927
+   ],
+   [
+    "BWIN",
+    "The Baldwin Insurance Grp In",
+    917909,
+    29180327
+   ],
+   [
+    "ITT",
+    "Itt Inc",
+    142126,
+    28683869
+   ],
+   [
+    "MCD",
+    "Mcdonalds Corp",
+    123562,
+    28535408
+   ],
+   [
+    "MCHP",
+    "Microchip Technology Inc.",
+    360000,
+    27997200
+   ],
+   [
+    "TEAM",
+    "Atlassian Corporation",
+    154627,
+    27723075
+   ],
+   [
+    "AMD",
+    "Advanced Micro Devices Inc",
+    44631,
+    27303461
    ]
   ]
  }
