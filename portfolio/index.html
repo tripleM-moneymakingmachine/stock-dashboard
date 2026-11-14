@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Portfolio · Stock Dashboards</title>
-<meta name="description" content="A rules-based momentum portfolio of up to five dashboard stocks, rebalanced weekly for the highest expected Sharpe ratio with no stock above 25%, with its track record, drawdowns and forward-looking drawdown risk.">
+<meta name="description" content="A six-stock portfolio: one semiconductor growth engine plus five sector winners that hold up in tech selloffs, with its track record, drawdowns, a daily sector-winner check, daily commentary and the latest earnings of each holding.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
@@ -96,16 +96,36 @@ ul.rules{margin:0;padding-left:20px;max-width:84ch}
 ul.rules li{margin:4px 0}
 footer.pg{font-size:12px;color:var(--muted);margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.why ul{margin:0;padding-left:20px;max-width:90ch}.why li{margin:5px 0}
+.days{display:grid;gap:8px}.day{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+.day .dh{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;font:500 12px var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.day .dh b.dd{font:600 13px var(--f-body);color:var(--ink);min-width:96px}.day .dh .big{font:600 15px var(--f-mono)}
+.day p{margin:6px 0 0;font-size:14px}.day p.ctx{color:var(--muted);font-style:italic}
+.chip.up{border-color:var(--up);color:var(--up)}.chip.down{border-color:var(--down);color:var(--down)}
+table.st tr.hl td{background:var(--accent-soft)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font:500 12px var(--f-mono);color:var(--muted);margin:0 0 8px}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:3px;margin-right:6px}
+.verdict{font:600 10px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:10px}
+.verdict.strong{background:color-mix(in srgb,var(--up) 15%,transparent);color:var(--up)}.verdict.solid{background:var(--accent-soft);color:var(--accent)}.verdict.mixed,.verdict.weak{background:color-mix(in srgb,var(--down) 13%,transparent);color:var(--down)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;min-width:0}
+.card .role{font:600 10.5px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card h3{margin:4px 0 8px}
+.corr td,.corr th{text-align:center!important}
 </style>
 </head>
 <body>
 <main class="wrap">
   <nav class="tabs" aria-label="Dashboard sections"><a href="../">Stocks</a><a href="../macro/">Macro</a><a href="../us/">US</a><a href="../fx/">FX</a><a href="../china/">China</a><a href="../korea/">Korea</a><a href="../indonesia/">Indonesia</a><a href="../datacenter/">Datacenter</a><a href="../robotics/">Robotics</a><a href="../merger/">SpaceX vs Tesla</a><a href="./" aria-current="page">Portfolio</a><a href="../options/">Options</a></nav>
-  <div class="eyebrow">Momentum · Max Sharpe · 5 stocks · 25% cap · Weekly rebalance</div>
-  <h1>Momentum portfolio</h1>
-  <p class="lede" id="lede">A rules-based portfolio built from the stocks on this dashboard. Every Friday it ranks them on risk-adjusted momentum, holds the top five that are in an uptrend, and weights them for the highest expected Sharpe ratio, with no stock above 25%. When the mix gets too volatile it holds part in cash. Rebuilt from the closing prices after every US session.</p>
-
+  <div class="eyebrow">Semis + defensives · 6 stocks · TSM 30% · 14% per sector · Quarterly rebalance</div>
+  <h1>Semis + defensives portfolio</h1>
+  <p class="lede">One semiconductor growth engine plus five sector winners from the S&amp;P 500 and Nasdaq that hold up when tech sells off. It is rebalanced back to target every quarter, or sooner if a weight drifts more than 5 points, and each sector winner is re-checked after every US close. Rebuilt from dividend-adjusted closing prices after every US session.</p>
   <div class="tiles" id="kpi"></div>
+
+  <section aria-labelledby="whyH">
+    <h2 id="whyH">Summary and rationale</h2>
+    <div class="panel why"><ul id="why"></ul></div>
+  </section>
 
   <section aria-labelledby="nowH">
     <h2 id="nowH">What it holds now</h2>
@@ -116,72 +136,74 @@ footer.pg{font-size:12px;color:var(--muted);margin-top:32px;padding-top:16px;bor
     </div>
   </section>
 
+  <section aria-labelledby="chkH">
+    <h2 id="chkH">Should any sector winner change?</h2>
+    <p class="sub" id="chkSub"></p>
+    <div class="panel tw" id="check"></div>
+  </section>
+
+  <section aria-labelledby="dayH">
+    <h2 id="dayH">Daily commentary</h2>
+    <p class="sub">The last 20 sessions, newest first. "Pts" is each stock's contribution to the portfolio's return that day, in percentage points.</p>
+    <div class="tiles" id="per" style="margin-bottom:12px"></div>
+    <div class="days" id="daily"></div>
+  </section>
+
   <section aria-labelledby="perfH">
     <h2 id="perfH">Growth of $100</h2>
-    <p class="sub">The portfolio after trading costs against the same rules without the volatility control, an equal-weight basket of every dashboard stock, and the S&amp;P 500 (SPY). Pick a range to restart every line at $100 there; drag to pan, hover to read.</p>
-    <div class="panel">
-      <div class="ctl">
-        <div class="cg"><span class="cgl">Range</span><div class="seg" id="rng"></div></div>
-        <div class="cg"><span class="cgl">Lines</span><div class="seg" id="lns"></div></div>
-      </div>
-      <div class="readout" id="ro1"></div>
-      <div class="chart" id="perf" role="img" aria-label="Growth of 100 dollars, portfolio versus benchmarks"></div>
-    </div>
+    <p class="sub">The portfolio after trading costs against the same six stocks at equal weight, its semiconductor stock alone, the Nasdaq Composite and the S&amp;P 500 (SPY). Drag to pan, hover to read.</p>
+    <div class="panel"><div class="legend" id="lg1"></div><div class="readout" id="ro1"></div><div class="chart" id="perf" role="img" aria-label="Growth of 100 dollars"></div></div>
   </section>
 
   <section aria-labelledby="ddH">
     <h2 id="ddH">Drawdown</h2>
-    <p class="sub">How far each line sits below its own previous high, over the same range. The red area is the portfolio; the marker shows its deepest point in the range.</p>
-    <div class="panel">
-      <div class="readout" id="ro2"></div>
-      <div class="chart dd" id="ddc" role="img" aria-label="Drawdown from previous high"></div>
-    </div>
+    <p class="sub">How far each line sits below its own previous high.</p>
+    <div class="panel"><div class="legend" id="lg2"></div><div class="readout" id="ro2"></div><div class="chart dd" id="ddc" role="img" aria-label="Drawdown from previous high"></div></div>
   </section>
 
-  <section aria-labelledby="valH">
-    <h2 id="valH">Portfolio value at each close</h2>
-    <p class="sub" id="valSub"></p>
-    <div class="panel">
-      <div class="ctl" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:12px">
-        <label class="cg" for="valCap"><span class="cgl">Starting amount (US$)</span> <input id="valCap" type="text" inputmode="numeric" value="1,000,000" aria-label="Starting amount in US dollars"></label>
-        <div class="cg"><span class="cgl">Show</span><div class="seg" id="valRng" role="group" aria-label="Rows shown"></div></div>
-        <button type="button" class="dlb" id="valDl">Download CSV</button>
-      </div>
-      <div class="tw" id="valTab"></div>
-      <p class="note" id="valNote"></p>
-    </div>
-  </section>
-
-  <section aria-labelledby="mddH">
-    <h2 id="mddH">Max drawdown: the record and the risk ahead</h2>
-    <p class="sub" id="mddSub"></p>
-    <div class="tiles" id="mddK"></div>
-    <div class="panel view" id="view" style="margin-top:16px"></div>
-    <h3 style="margin-top:22px">The five deepest drawdowns</h3>
-    <div class="panel tw" id="eps"></div>
+  <section aria-labelledby="selH">
+    <h2 id="selH">What happened in each selloff</h2>
+    <p class="sub">Every Nasdaq decline deeper than 6%, measured from its peak to its trough.</p>
+    <div class="panel tw" id="sell"></div>
   </section>
 
   <section aria-labelledby="wtH">
-    <h2 id="wtH">How the weights moved</h2>
-    <p class="sub">Target weight of each stock at every weekly rebalance, with cash on top. Hover a week to see the mix.</p>
-    <div class="panel"><div id="wts"></div><div class="wleg" id="wleg" style="margin-top:10px"></div></div>
+    <h2 id="wtH">Choosing the semis weight</h2>
+    <p class="sub">The same holdings and rules with the semiconductor stock at an equal 16.7%, at the 30% target, and at 50%.</p>
+    <div class="panel tw" id="wt"></div>
   </section>
 
-  <section aria-labelledby="scH">
-    <h2 id="scH">Momentum ranking at the latest close</h2>
-    <p class="sub">Every dashboard stock scored on the same rule. A stock qualifies only if it closes above its 100-day average with a positive score; the top five that qualify are the candidates for Friday's rebalance.</p>
-    <div class="panel tw" id="scores"></div>
+  <section aria-labelledby="cdH">
+    <h2 id="cdH">The sector winners and their challengers</h2>
+    <p class="sub">Trailing 12 months. Score = rank of Sharpe + rank of 6-month momentum per unit of risk + half the rank of downside capture (lower is better). Downside capture is the stock's average move on Nasdaq down days divided by the Nasdaq's; below 0 means it tended to rise.</p>
+    <div class="cards" id="cands"></div>
+  </section>
+
+  <section aria-labelledby="erH">
+    <h2 id="erH">Latest quarter check</h2>
+    <p class="sub">The latest reported quarter for each holding and each close challenger. Test 4 of the sector check reads the beat/miss and EPS growth from here.</p>
+    <div class="panel tw" id="earn"></div>
+  </section>
+
+  <section aria-labelledby="coH">
+    <h2 id="coH">How the six move together</h2>
+    <p class="sub">Correlation of daily returns since the start. Blue cells are negative: those two stocks tended to move in opposite directions.</p>
+    <div class="panel tw" id="corr" style="max-width:620px"></div>
+  </section>
+
+  <section aria-labelledby="lgH">
+    <h2 id="lgH">Rebalance log</h2>
+    <div class="panel tw" id="log"></div>
   </section>
 
   <section aria-labelledby="mtH">
     <h2 id="mtH">How it works</h2>
     <div class="panel"><ul class="rules" id="rules"></ul></div>
   </section>
-
   <footer class="pg" id="foot"></footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-<script src="../assets/momentum.js?v=2"></script>
+<script src="../assets/sector-portfolio.js?v=1"></script>
 <script src="../assets/stock-picker.js?v=3"></script>
 </body>
 </html>

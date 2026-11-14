@@ -169,7 +169,7 @@ jobs:
           mkdir -p _site/robotics && cp robotics/index.html _site/robotics/
           mkdir -p _site/merger && cp merger/index.html _site/merger/
           mkdir -p _site/portfolio && cp portfolio/index.html _site/portfolio/
-          if [ -f data/momentum-portfolio.json ]; then cp data/momentum-portfolio.json _site/data/; fi
+          if [ -f data/sector-portfolio.json ]; then cp data/sector-portfolio.json _site/data/; fi
           if [ -f data/portfolios-perf.json ]; then cp data/portfolios-perf.json _site/data/; fi
           mkdir -p _site/options && cp options/index.html _site/options/
           if [ -f data/options-book.json ]; then cp data/options-book.json _site/data/; fi

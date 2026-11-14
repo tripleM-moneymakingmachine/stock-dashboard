@@ -13,7 +13,9 @@ on:
       - scripts/ta-snapshot.py
       - scripts/build-portfolios.py
       - scripts/update-13f.py
-      - scripts/momentum-portfolio.py
+      - scripts/sector-portfolio.py
+      - scripts/fetch-sector-prices.mjs
+      - data/sector-portfolio-config.json
       - data/portfolios.json
   schedule:
     # 21:25 UTC = 5:25pm EDT / 4:25pm EST, Mon–Fri (after the close either way)
@@ -72,10 +74,10 @@ jobs:
       - name: Build indicator snapshot
         run: python3 scripts/ta-snapshot.py
 
-      - name: Build the momentum portfolio (Portfolio tab)
+      - name: Build the sector portfolio (Portfolio tab)
         run: |
-          mkdir -p data/bench/SPY && node scripts/fetch-quote.mjs SPY data/bench/SPY 2y
-          python3 scripts/momentum-portfolio.py --text >> "$GITHUB_STEP_SUMMARY"
+          node scripts/fetch-sector-prices.mjs 2y || echo "sector price fetch failed; using the committed prices"
+          python3 scripts/sector-portfolio.py --text >> "$GITHUB_STEP_SUMMARY"
 
       - name: Refresh auto-updated 13F holdings (Soros panel) from SEC EDGAR
         env:
@@ -100,7 +102,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add */data/history.json skhy/data/krx/history.json data/ta-snapshot.json data/portfolios.json data/portfolios-perf.json data/momentum-portfolio.json data/bench/SPY/history.json
+          git add */data/history.json skhy/data/krx/history.json data/ta-snapshot.json data/portfolios.json data/portfolios-perf.json data/sector-prices.json data/sector-portfolio.json
           if [ -f data/fx-fwd.json ]; then git add data/fx-fwd.json; fi
           if git diff --cached --quiet; then echo "No change."; exit 0; fi
           git config user.name "github-actions[bot]"
