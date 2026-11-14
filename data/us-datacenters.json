@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-14",
- "asofText": "Nov 14, 2026",
+ "asof": "2026-11-15",
+ "asofText": "Nov 15, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1972,7 +1972,7 @@
   },
   "amzn": {
    "grade": "Medium",
-   "view": "Exposure is now larger than it looked: two 1 GW+ Ohio campuses (Jeffersonville, Beech Road) are under construction in a tier-5 state, on top of Georgia's Butts and Covington builds. Trenton's ban hits only the 600-acre township expansion, not the four buildings already rising in the city. AWS has the deepest bench of friendly-state sites (Mississippi, Indiana, Pennsylvania nuclear, ~2 GW in central Virginia), so the cost is timing, not lost demand.",
+   "view": "Exposure is now larger than it looked: two 1 GW+ Ohio campuses (Jeffersonville, Beech Road) are under construction in a tier-5 state, on top of Georgia's Butts and Covington builds. Trenton's ban hits only the 600-acre township expansion, not the four buildings already rising in the city. Virginia, its biggest market, now faces a possible temporary pause on new approvals (on Senate Democrats' 2027 list), which would hit future Northern and central Virginia phases rather than running capacity. AWS still has the deepest bench of friendly-state sites (Mississippi, Indiana, Pennsylvania nuclear, ~2 GW in central Virginia), so the cost is timing, not lost demand.",
    "moves": [
     "Redirect Ohio phases to Indiana/Mississippi",
     "Accelerate Susquehanna nuclear campus",
@@ -2016,12 +2016,12 @@
    ]
   },
   "spcx": {
-   "grade": "Medium",
-   "view": "Live today: ~1.7 GW in Memphis, with Colossus 2 Building 3 (~0.8 GW) in Tennessee/Mississippi where neither governor backs a pause. The $74B plan confirmed Nov 12 splits the next leg: Starbase ($24B) is already under construction on SpaceX-controlled land with its own gas plant, outside ERCOT and Brownsville's moratorium, but still needs TCEQ air permits Hinojosa has signalled she will hold; Cochise County, Arizona ($50B) diversifies out of Texas but needs county approval against loud opposition and water limits. Medium: more sites, more permit fronts, but less single-state risk.",
+   "grade": "Medium-High",
+   "view": "Live today: ~1.7 GW in Memphis, with Colossus 2 Building 3 (~0.8 GW) in Tennessee/Mississippi where neither governor backs a pause. The $74B plan confirmed Nov 12 splits the next leg: Starbase ($24B) is already under construction on SpaceX-controlled land with its own gas plant, outside ERCOT and Brownsville's moratorium, but still needs TCEQ air permits Hinojosa has signalled she will hold; Cochise County, Arizona ($50B) diversifies out of Texas but needs county approval against loud opposition and water limits, and Arizona's new Democratic trifecta now says it will take up a statewide moratorium in January, so the 'safe' second state is turning into a second permit fight. Medium: more sites, more permit fronts, but less single-state risk.",
    "moves": [
     "Keep near-term growth in Memphis/Southaven",
     "Seek the Starbase air permit before Jan 19",
-    "Win Cochise County approval with water and bill commitments"
+    "Lock in Cochise County approval and dry-cooling/co-op power terms before the Arizona session"
    ]
   },
   "crwv": {
@@ -2097,6 +2097,35 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-13",
+   "co": [
+    "spcx",
+    "googl",
+    "msft"
+   ],
+   "t": "Arizona's new Democratic trifecta said it will take up a statewide data center moratorium when the Legislature convenes in January: AG Kris Mayes wants no new developments until power supply is assessed and pledged nuisance and antitrust action against the 100+ projects in the pipeline, and Gov. Hobbs wants the three-year pause on data center tax breaks made permanent. Nothing is law yet, but it puts SpaceX's $50B Cochise County plan in a second contested state.",
+   "src": "https://thecentersquare.com/arizona/article_436ddd41-c892-4e8d-9f15-60b8aabb4a94.html"
+  },
+  {
+   "d": "2026-11-13",
+   "co": [
+    "amzn",
+    "msft",
+    "googl",
+    "qts"
+   ],
+   "t": "Virginia: Senate Majority Leader Scott Surovell said a temporary data center pause until Gov. Spanberger's new rules are in place is on the Senate Democrats' 2027 agenda, alongside Sen. Perry's bill for a three-year approval pause from July 1, 2027, and conservation groups launched a 'Pause to Protect' coalition. A pause would hit new approvals in the largest US market, not the campuses already running.",
+   "src": "https://wric.com/news/politics/capitol-connection/the-politics-behind-calls-for-a-data-center-moratorium-in-virginia"
+  },
+  {
+   "d": "2026-11-13",
+   "co": [
+    "*"
+   ],
+   "t": "Local resistance keeps spreading after the midterms: Prologis sued Trenton, Ohio in federal court, arguing the voter-approved ban cannot apply to its substantially built, permitted project ($42M+ spent); Marietta, Georgia extended its moratorium through 2027 citing Governor-elect Bottoms; Maine Sen. Grohoski refiled a 20 MW+ moratorium through November 2027 that Governor-elect Pingree says she would sign; and Minneapolis passed limits 7-6 ahead of a likely mayoral veto. The Trenton suit is the first test of whether bans can reach projects already under construction.",
+   "src": "https://wysu.org/ohio-news/2026-11-13/developer-sues-trenton-over-voter-approved-data-center-ban"
+  },
   {
    "d": "2026-11-13",
    "co": [
@@ -2601,6 +2630,18 @@
  ],
  "sources": [
   [
+   "Arizona moratorium push (Center Square)",
+   "https://thecentersquare.com/arizona/article_436ddd41-c892-4e8d-9f15-60b8aabb4a94.html"
+  ],
+  [
+   "Virginia pause politics (WRIC)",
+   "https://wric.com/news/politics/capitol-connection/the-politics-behind-calls-for-a-data-center-moratorium-in-virginia"
+  ],
+  [
+   "Prologis sues Trenton (WYSU)",
+   "https://wysu.org/ohio-news/2026-11-13/developer-sues-trenton-over-voter-approved-data-center-ban"
+  ],
+  [
    "Texas interconnection window (Energy Intelligence)",
    "https://energyintel.com/000001a1-d186-d912-a7ab-d98e6c730000"
   ],
@@ -2667,18 +2708,6 @@
   [
    "Converge Digest: CoreWeave letter to Hinojosa",
    "https://convergedigest.com/coreweave-texas-data-centers-governor-elect-hinojosa"
-  ],
-  [
-   "Yahoo: Susquehanna sees 8% of AI capacity at risk",
-   "https://finance.yahoo.com/technology/ai/articles/susquehanna-warns-8-planned-ai-160200860.html"
-  ],
-  [
-   "Bloomberg: Google takes over Crusoe's Wyoming site",
-   "https://bloomberg.com/news/articles/2026-11-06/google-takes-over-wyoming-data-center-that-crusoe-had-pitched"
-  ],
-  [
-   "Heatmap/MLQ: Senate permitting bill data center cost rule",
-   "https://mlq.ai/news/senates-final-permitting-text-makes-transmission-developers-wait-a-year-for-states-keeps-data-center-cost-rule-ahead-of-monday-vote"
   ]
  ],
  "modo": {

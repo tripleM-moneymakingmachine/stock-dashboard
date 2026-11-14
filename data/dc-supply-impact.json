@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-14",
- "asofText": "Nov 14, 2026",
+ "asof": "2026-11-15",
+ "asofText": "Nov 15, 2026",
  "note": "Content per GW, supplier shares and absorption rates are Claude estimates, calibrated so share × content × ~18 GW of global AI capacity a year roughly matches each company’s data center revenue; revenue run-rates are the latest quarter ×4 (Applied Materials FQ4 $10.41B, Vertiv Q3 $4.31B, GE Vernova Q3 $12.6B, Constellation Q3 $9.55B; ~ = estimate). Shares that don’t add to 100% go to an “Other suppliers” bucket. Updated with the daily US data center risk task.",
  "defaults": {
   "delayGW": 8,
