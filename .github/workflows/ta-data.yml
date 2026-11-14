@@ -76,7 +76,7 @@ jobs:
 
       - name: Build the sector portfolio (Portfolio tab)
         run: |
-          node scripts/fetch-sector-prices.mjs 2y || echo "sector price fetch failed; using the committed prices"
+          node scripts/fetch-sector-prices.mjs 3y || echo "sector price fetch failed; using the committed prices"
           python3 scripts/sector-portfolio.py --text >> "$GITHUB_STEP_SUMMARY"
 
       - name: Refresh auto-updated 13F holdings (Soros panel) from SEC EDGAR
