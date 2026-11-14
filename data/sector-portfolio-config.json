@@ -8,38 +8,243 @@
   "rf": 0.04,
   "cost": 0.001
  },
- "benchmarks": {"nasdaq": "^IXIC", "spy": "SPY"},
- "names": {
-  "TSM": "TSMC", "NVDA": "NVIDIA", "AMD": "AMD",
-  "JNJ": "Johnson & Johnson", "ABBV": "AbbVie", "UNH": "UnitedHealth",
-  "KO": "Coca-Cola", "WMT": "Walmart", "COST": "Costco", "PEP": "PepsiCo",
-  "XOM": "ExxonMobil", "CVX": "Chevron",
-  "JPM": "JPMorgan Chase", "GS": "Goldman Sachs", "V": "Visa",
-  "GE": "GE Aerospace", "LMT": "Lockheed Martin",
-  "^IXIC": "Nasdaq Composite", "SPY": "S&P 500 (SPY)"
+ "benchmarks": {
+  "nasdaq": "^IXIC",
+  "spy": "SPY"
  },
- "folders": {"TSM": "tsm", "NVDA": "nvda", "AMD": "amd"},
+ "names": {
+  "TSM": "TSMC",
+  "NVDA": "NVIDIA",
+  "AMD": "AMD",
+  "JNJ": "Johnson & Johnson",
+  "ABBV": "AbbVie",
+  "UNH": "UnitedHealth",
+  "KO": "Coca-Cola",
+  "WMT": "Walmart",
+  "COST": "Costco",
+  "PEP": "PepsiCo",
+  "XOM": "ExxonMobil",
+  "CVX": "Chevron",
+  "JPM": "JPMorgan Chase",
+  "GS": "Goldman Sachs",
+  "V": "Visa",
+  "GE": "GE Aerospace",
+  "LMT": "Lockheed Martin",
+  "^IXIC": "Nasdaq Composite",
+  "SPY": "S&P 500 (SPY)",
+  "MSFT": "Microsoft",
+  "GOOGL": "Alphabet",
+  "META": "Meta Platforms"
+ },
+ "folders": {
+  "TSM": "tsm",
+  "NVDA": "nvda",
+  "AMD": "amd",
+  "MSFT": "msft",
+  "GOOGL": "googl",
+  "META": "meta"
+ },
  "sectors": {
-  "Semis": {"role": "Growth engine", "weight": 0.30, "candidates": ["TSM", "NVDA", "AMD"]},
-  "Healthcare": {"role": "Defensive anchor", "weight": 0.14, "candidates": ["JNJ", "ABBV", "UNH"]},
-  "Consumer Staples": {"role": "Shock absorber", "weight": 0.14, "candidates": ["KO", "WMT", "COST", "PEP"]},
-  "Energy": {"role": "Oil-shock and inflation hedge", "weight": 0.14, "candidates": ["XOM", "CVX"]},
-  "Financials": {"role": "Steady cyclical", "weight": 0.14, "candidates": ["JPM", "V", "GS"]},
-  "Industrials / Aerospace": {"role": "Second growth driver, not AI-linked", "weight": 0.14, "candidates": ["GE", "LMT"]}
+  "Semis": {
+   "role": "Growth engine",
+   "weight": 0.22,
+   "candidates": [
+    "TSM",
+    "NVDA",
+    "AMD"
+   ]
+  },
+  "Cloud & AI Software": {
+   "role": "Second AI growth driver, software not chips",
+   "weight": 0.13,
+   "candidates": [
+    "MSFT",
+    "GOOGL",
+    "META"
+   ]
+  },
+  "Healthcare": {
+   "role": "Defensive anchor",
+   "weight": 0.13,
+   "candidates": [
+    "JNJ",
+    "ABBV",
+    "UNH"
+   ]
+  },
+  "Consumer Staples": {
+   "role": "Shock absorber",
+   "weight": 0.13,
+   "candidates": [
+    "KO",
+    "WMT",
+    "COST",
+    "PEP"
+   ]
+  },
+  "Energy": {
+   "role": "Oil-shock and inflation hedge",
+   "weight": 0.13,
+   "candidates": [
+    "XOM",
+    "CVX"
+   ]
+  },
+  "Financials": {
+   "role": "Steady cyclical",
+   "weight": 0.13,
+   "candidates": [
+    "JPM",
+    "V",
+    "GS"
+   ]
+  },
+  "Industrials / Aerospace": {
+   "role": "Second growth driver, not AI-linked",
+   "weight": 0.13,
+   "candidates": [
+    "GE",
+    "LMT"
+   ]
+  }
  },
  "history": [
-  {"date": "2024-11-13", "hold": {"Semis": "TSM", "Healthcare": "JNJ", "Consumer Staples": "KO", "Energy": "XOM", "Financials": "JPM", "Industrials / Aerospace": "GE"}, "why": "Initial portfolio: the best risk-adjusted stock in each sector that also fell least on Nasdaq down days."},
-  {"date": "2026-11-13", "hold": {"Semis": "TSM", "Healthcare": "JNJ", "Consumer Staples": "KO", "Energy": "XOM", "Financials": "V", "Industrials / Aerospace": "GE"}, "why": "Sector check: Visa replaced JPMorgan in financials after passing all four tests (12-month Sharpe 0.99 vs 0.27, lower downside capture, earnings beat vs JPMorgan's miss). Weights reset to target, topping TSM back up to 30%."}
+  {
+   "date": "2024-11-13",
+   "hold": {
+    "Semis": "TSM",
+    "Cloud & AI Software": "MSFT",
+    "Healthcare": "JNJ",
+    "Consumer Staples": "KO",
+    "Energy": "XOM",
+    "Financials": "JPM",
+    "Industrials / Aerospace": "GE"
+   },
+   "why": "Initial portfolio (redone Nov 14, 2026 as 7 stocks): TSM 22% and MSFT 13% as the AI growth sleeve, plus the best risk-adjusted stock in each of five defensive sectors at 13% each."
+  },
+  {
+   "date": "2026-11-13",
+   "hold": {
+    "Semis": "TSM",
+    "Cloud & AI Software": "MSFT",
+    "Healthcare": "JNJ",
+    "Consumer Staples": "KO",
+    "Energy": "XOM",
+    "Financials": "V",
+    "Industrials / Aerospace": "GE"
+   },
+   "why": "Sector check: Visa replaced JPMorgan in financials after passing all four tests (12-month Sharpe 0.99 vs 0.27, lower downside capture, earnings beat vs JPMorgan's miss). Weights reset to target, topping TSM back up to 22%."
+  }
  ],
  "earnings": {
-  "TSM": {"q": "Q3 26", "date": "2026-10-15", "rev": "US$46.7B, +41% (USD); above top of guidance", "eps": "US$4.60/ADR, +69%; est. $4.42", "guide": "FY26 growth ~44%; Q4 gross margin 65–67%", "take": "AI/HPC ~two-thirds of revenue; 3nm + 2nm = 41% of wafers", "flag": "Gross margin down 1.3 pts q/q on the 2nm ramp and overseas fabs; capex $60–64B", "verdict": "Strong", "beat": true, "epsYoY": 0.69},
-  "JNJ": {"q": "Q3 26", "date": "2026-10-13", "rev": "$25.4B, +5.9%; est. $25.25B", "eps": "Adj. $2.59 (−7.5% on deal costs); est. $2.53. GAAP $0.09", "guide": "Raised: adj. EPS $11.05–11.15", "take": "Innovative Medicine +7.7% offsetting Stelara's loss of exclusivity", "flag": "$5.5B talc charge for a proposed, not final, resolution; MedTech only +2.5%", "verdict": "Solid", "beat": true, "epsYoY": -0.075},
-  "KO": {"q": "Q3 26", "date": "2026-10-27", "rev": "$13.4B, +7%; est. $12.92B", "eps": "Comparable $0.91, +11%; est. $0.88", "guide": "Raised: organic ≥5%, comparable EPS growth ≥11%, FCF ≥$13B", "take": "Unit case volume +5%; comparable operating margin 32.9%", "flag": "US volume flat; valuation already rich", "verdict": "Strong", "beat": true, "epsYoY": 0.11},
-  "XOM": {"q": "Q3 26", "date": "2026-10-30", "rev": "~$113B, +33%; est. ~$103B", "eps": "Adj. $4.23; est. $3.90. GAAP $3.72 vs $1.76", "guide": "$20B buyback planned for 2027; dividend raised to $1.07", "take": "Refining earnings doubled q/q; free cash flow $19.1B", "flag": "Upstream earnings fell q/q on lower crude; profits lean on cyclical refining margins", "verdict": "Strong", "beat": true, "epsYoY": 1.11},
-  "V": {"q": "FQ4 26", "date": "2026-10-27", "rev": "$12.1B, +13%", "eps": "Adj. $3.48, +17%; beat consensus by 1.5%", "guide": "FY27: low-double-digit revenue growth; dividend +16%", "take": "Cross-border volume +14%; value-added services +31%", "flag": "Operating expenses growing about as fast as revenue; $474M litigation provision", "verdict": "Strong", "beat": true, "epsYoY": 0.17},
-  "GE": {"q": "Q3 26", "date": "2026-10-20", "rev": "$14.1B, +16%; est. ~$12.7–12.9B", "eps": "Adj. $2.25, +36%; est. ~$2.02", "guide": "Raised: FY adj. EPS $8.00–8.10 (from $7.65–7.85)", "take": "Orders +49%; commercial services backlog over $170B", "flag": "Quarterly free cash flow −14%; GE9X certification timing", "verdict": "Strong", "beat": true, "epsYoY": 0.36},
-  "JPM": {"q": "Q3 26", "date": "2026-10-13", "rev": "$50.9B managed, +8%", "eps": "GAAP $5.57 (+10%); ex-securities losses $5.75 vs est. $5.94 (miss)", "guide": "Raised FY NII to ~$106.2B", "take": "Net interest income +13%; consumer bank net income +13%", "flag": "Expenses +12%; buybacks cut to $664M", "verdict": "Mixed", "beat": false, "epsYoY": 0.10},
-  "LMT": {"q": "Q3 26", "date": "2026-10-22", "rev": "$20.7B, +11%", "eps": "$7.97, +15%", "guide": "Raised: FY EPS $30.35–30.75", "take": "Record $292B backlog incl. a $52.5B PAC-3 award", "flag": "Lot 20 contract costs now exceed authorized funding", "verdict": "Solid", "beat": true, "epsYoY": 0.15}
+  "TSM": {
+   "q": "Q3 26",
+   "date": "2026-10-15",
+   "rev": "US$46.7B, +41% (USD); above top of guidance",
+   "eps": "US$4.60/ADR, +69%; est. $4.42",
+   "guide": "FY26 growth ~44%; Q4 gross margin 65–67%",
+   "take": "AI/HPC ~two-thirds of revenue; 3nm + 2nm = 41% of wafers",
+   "flag": "Gross margin down 1.3 pts q/q on the 2nm ramp and overseas fabs; capex $60–64B",
+   "verdict": "Strong",
+   "beat": true,
+   "epsYoY": 0.69
+  },
+  "JNJ": {
+   "q": "Q3 26",
+   "date": "2026-10-13",
+   "rev": "$25.4B, +5.9%; est. $25.25B",
+   "eps": "Adj. $2.59 (−7.5% on deal costs); est. $2.53. GAAP $0.09",
+   "guide": "Raised: adj. EPS $11.05–11.15",
+   "take": "Innovative Medicine +7.7% offsetting Stelara's loss of exclusivity",
+   "flag": "$5.5B talc charge for a proposed, not final, resolution; MedTech only +2.5%",
+   "verdict": "Solid",
+   "beat": true,
+   "epsYoY": -0.075
+  },
+  "KO": {
+   "q": "Q3 26",
+   "date": "2026-10-27",
+   "rev": "$13.4B, +7%; est. $12.92B",
+   "eps": "Comparable $0.91, +11%; est. $0.88",
+   "guide": "Raised: organic ≥5%, comparable EPS growth ≥11%, FCF ≥$13B",
+   "take": "Unit case volume +5%; comparable operating margin 32.9%",
+   "flag": "US volume flat; valuation already rich",
+   "verdict": "Strong",
+   "beat": true,
+   "epsYoY": 0.11
+  },
+  "XOM": {
+   "q": "Q3 26",
+   "date": "2026-10-30",
+   "rev": "~$113B, +33%; est. ~$103B",
+   "eps": "Adj. $4.23; est. $3.90. GAAP $3.72 vs $1.76",
+   "guide": "$20B buyback planned for 2027; dividend raised to $1.07",
+   "take": "Refining earnings doubled q/q; free cash flow $19.1B",
+   "flag": "Upstream earnings fell q/q on lower crude; profits lean on cyclical refining margins",
+   "verdict": "Strong",
+   "beat": true,
+   "epsYoY": 1.11
+  },
+  "V": {
+   "q": "FQ4 26",
+   "date": "2026-10-27",
+   "rev": "$12.1B, +13%",
+   "eps": "Adj. $3.48, +17%; beat consensus by 1.5%",
+   "guide": "FY27: low-double-digit revenue growth; dividend +16%",
+   "take": "Cross-border volume +14%; value-added services +31%",
+   "flag": "Operating expenses growing about as fast as revenue; $474M litigation provision",
+   "verdict": "Strong",
+   "beat": true,
+   "epsYoY": 0.17
+  },
+  "GE": {
+   "q": "Q3 26",
+   "date": "2026-10-20",
+   "rev": "$14.1B, +16%; est. ~$12.7–12.9B",
+   "eps": "Adj. $2.25, +36%; est. ~$2.02",
+   "guide": "Raised: FY adj. EPS $8.00–8.10 (from $7.65–7.85)",
+   "take": "Orders +49%; commercial services backlog over $170B",
+   "flag": "Quarterly free cash flow −14%; GE9X certification timing",
+   "verdict": "Strong",
+   "beat": true,
+   "epsYoY": 0.36
+  },
+  "JPM": {
+   "q": "Q3 26",
+   "date": "2026-10-13",
+   "rev": "$50.9B managed, +8%",
+   "eps": "GAAP $5.57 (+10%); ex-securities losses $5.75 vs est. $5.94 (miss)",
+   "guide": "Raised FY NII to ~$106.2B",
+   "take": "Net interest income +13%; consumer bank net income +13%",
+   "flag": "Expenses +12%; buybacks cut to $664M",
+   "verdict": "Mixed",
+   "beat": false,
+   "epsYoY": 0.1
+  },
+  "LMT": {
+   "q": "Q3 26",
+   "date": "2026-10-22",
+   "rev": "$20.7B, +11%",
+   "eps": "$7.97, +15%",
+   "guide": "Raised: FY EPS $30.35–30.75",
+   "take": "Record $292B backlog incl. a $52.5B PAC-3 award",
+   "flag": "Lot 20 contract costs now exceed authorized funding",
+   "verdict": "Solid",
+   "beat": true,
+   "epsYoY": 0.15
+  },
+  "MSFT": {
+   "q": "FQ1 27",
+   "date": "2026-10-28",
+   "rev": "$92.3B, +19%; beat consensus by ~1.9%",
+   "eps": "Non-GAAP $4.89, +18% (excl. OpenAI); GAAP $4.92",
+   "guide": "FQ2 revenue $96.0–97.1B, above consensus",
+   "take": "Azure $33.2B, +48% and accelerating; commercial backlog +73% to $677B",
+   "flag": "Capex $45B in the quarter and rising; Microsoft Cloud gross margin down y/y",
+   "verdict": "Strong",
+   "beat": true,
+   "epsYoY": 0.18
+  }
  },
  "notes": {
   "2026-11-04": "Stocks had their best day in three months as midterm-election uncertainty cleared.",
@@ -47,6 +252,6 @@
  },
  "study": {
   "asof": "2026-11-14",
-  "text": "Hindsight check (one-off study, Nov 2026): picking the sector winners with only the first year of data (Nov 2024–Nov 2025) and holding them through the second year returned +32% to +51% depending on the semis pick, against +9.9% for the Nasdaq, so the selection method held up out of sample. A walk-forward test that rotated sector winners every quarter on price data alone returned slightly less than holding (+72% vs +74% from May 2025), which is why a swap must pass all four tests."
+  "text": "Hindsight check (one-off study, Nov 2026): picking the sector winners with only the first year of data (Nov 2024–Nov 2025) and holding them through the second year returned +32% to +51% depending on the semis pick, against +9.9% for the Nasdaq, so the selection method held up out of sample. A walk-forward test that rotated sector winners every quarter on price data alone returned slightly less than holding (+72% vs +74% from May 2025), which is why a swap must pass all four tests. Seven-stock redo (Nov 14, 2026): adding MSFT at 13% and trimming TSM to 22% and the defensives to 13% lowered the two-year return from about +94% to +83%, but cut volatility (15% vs 17%), the worst drawdown (−15.7% vs −16.7%) and downside capture (38% vs 40%), with almost the same Sharpe ratio (2.07 vs 2.11). In the Oct–Nov 2026 selloff the 7-stock mix lost 3.1% against 5.3% for the 6-stock mix."
  }
 }

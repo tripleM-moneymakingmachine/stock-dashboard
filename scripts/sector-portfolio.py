@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Sector portfolio for the Portfolio tab: data/sector-portfolio.json.
 
-One semiconductor stock as the growth engine plus five sector winners chosen to hold up when tech
+An AI growth sleeve (one semiconductor, one cloud & AI software stock) plus five sector winners chosen to hold up when tech
 sells off (healthcare, consumer staples, energy, financials, industrials/aerospace).
 
 Rules:
   * Holdings: one stock per sector. data/sector-portfolio-config.json `history` lists every change of
-    holdings (applied at that date's close). Targets: semis 30%, every other sector 14%.
+    holdings (applied at that date's close). Targets come from `weight` in the config (semis 22%, cloud & AI software 13%, each defensive sector 13%).
   * Rebalanced back to target at the first close of each quarter, or at any close where a weight has
     drifted more than `driftBand` (5 points) from target. Trading costs 0.10% of the value traded.
   * Sector check, run on every close over the trailing `lookback` sessions (252 = 12 months):

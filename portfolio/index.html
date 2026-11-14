@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Portfolio · Stock Dashboards</title>
-<meta name="description" content="A six-stock portfolio: one semiconductor growth engine plus five sector winners that hold up in tech selloffs, with its track record, drawdowns, a daily sector-winner check, daily commentary and the latest earnings of each holding.">
+<meta name="description" content="A seven-stock portfolio: an AI growth sleeve (one semiconductor, one cloud-software stock) plus five sector winners that hold up in tech selloffs, with its track record, drawdowns, a daily sector-winner check, daily commentary and the latest earnings of each holding.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
@@ -117,9 +117,9 @@ table.st tr.hl td{background:var(--accent-soft)}
 <body>
 <main class="wrap">
   <nav class="tabs" aria-label="Dashboard sections"><a href="../">Stocks</a><a href="../macro/">Macro</a><a href="../us/">US</a><a href="../fx/">FX</a><a href="../china/">China</a><a href="../korea/">Korea</a><a href="../indonesia/">Indonesia</a><a href="../datacenter/">Datacenter</a><a href="../robotics/">Robotics</a><a href="../merger/">SpaceX vs Tesla</a><a href="./" aria-current="page">Portfolio</a><a href="../options/">Options</a></nav>
-  <div class="eyebrow">Semis + defensives · 6 stocks · TSM 30% · 14% per sector · Quarterly rebalance</div>
+  <div class="eyebrow">Semis + defensives · 7 stocks · TSM 22% · MSFT 13% · 13% per defensive sector · Quarterly rebalance</div>
   <h1>Semis + defensives portfolio</h1>
-  <p class="lede">One semiconductor growth engine plus five sector winners from the S&amp;P 500 and Nasdaq that hold up when tech sells off. It is rebalanced back to target every quarter, or sooner if a weight drifts more than 5 points, and each sector winner is re-checked after every US close. Rebuilt from dividend-adjusted closing prices after every US session.</p>
+  <p class="lede">An AI growth sleeve (one semiconductor and one cloud-software stock) plus five sector winners from the S&amp;P 500 and Nasdaq that hold up when tech sells off. It is rebalanced back to target every quarter, or sooner if a weight drifts more than 5 points, and each sector winner is re-checked after every US close. Rebuilt from dividend-adjusted closing prices after every US session.</p>
   <div class="tiles" id="kpi"></div>
 
   <section aria-labelledby="whyH">
@@ -151,7 +151,7 @@ table.st tr.hl td{background:var(--accent-soft)}
 
   <section aria-labelledby="perfH">
     <h2 id="perfH">Growth of $100</h2>
-    <p class="sub">The portfolio after trading costs against the same six stocks at equal weight, its semiconductor stock alone, the Nasdaq Composite and the S&amp;P 500 (SPY). Drag to pan, hover to read.</p>
+    <p class="sub">The portfolio after trading costs against the same seven stocks at equal weight, its semiconductor stock alone, the Nasdaq Composite and the S&amp;P 500 (SPY). Drag to pan, hover to read.</p>
     <div class="panel"><div class="legend" id="lg1"></div><div class="readout" id="ro1"></div><div class="chart" id="perf" role="img" aria-label="Growth of 100 dollars"></div></div>
   </section>
 
@@ -169,7 +169,7 @@ table.st tr.hl td{background:var(--accent-soft)}
 
   <section aria-labelledby="wtH">
     <h2 id="wtH">Choosing the semis weight</h2>
-    <p class="sub">The same holdings and rules with the semiconductor stock at an equal 16.7%, at the 30% target, and at 50%.</p>
+    <p class="sub">The same holdings and rules with every stock at equal weight, at the target weights, and with the semiconductor stock at 50%.</p>
     <div class="panel tw" id="wt"></div>
   </section>
 
@@ -186,7 +186,7 @@ table.st tr.hl td{background:var(--accent-soft)}
   </section>
 
   <section aria-labelledby="coH">
-    <h2 id="coH">How the six move together</h2>
+    <h2 id="coH">How the seven move together</h2>
     <p class="sub">Correlation of daily returns since the start. Blue cells are negative: those two stocks tended to move in opposite directions.</p>
     <div class="panel tw" id="corr" style="max-width:620px"></div>
   </section>
@@ -203,7 +203,7 @@ table.st tr.hl td{background:var(--accent-soft)}
   <footer class="pg" id="foot"></footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-<script src="../assets/sector-portfolio.js?v=1"></script>
+<script src="../assets/sector-portfolio.js?v=2"></script>
 <script src="../assets/stock-picker.js?v=3"></script>
 </body>
 </html>
