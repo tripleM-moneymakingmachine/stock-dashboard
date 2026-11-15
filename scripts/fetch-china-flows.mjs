@@ -15,6 +15,9 @@
 // Back-test: position at week t (+1 long duration / 0 / −1 short duration) earns the 10Y yield change of week t+1
 // (in bp, sign flipped), and the 511090 ETF return; hit rates use the next 4 weeks' 10Y change. No look-ahead.
 //
+// The page reads the daily build (`daily`, see buildDaily): the same signal and back-test recomputed for every
+// Shanghai session, so it moves with each daily update. The weekly build is kept alongside at the top level.
+//
 // Usage: node scripts/fetch-china-flows.mjs            (fetch, then build data/china-flows.json)
 //        node scripts/fetch-china-flows.mjs --raw f.json   (build from a saved raw file, no network)
 // Anything that fails to fetch keeps the series from the previous data/china-flows.json.
@@ -34,15 +37,15 @@ async function getJSON(url, ms = 30000) {
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
-// weekly kline: fields = list of kline field indexes after the date (f53 close, f57 turnover)
-async function kline(secid, fields) {
-  const u = `https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=${secid}&klt=102&fqt=1&beg=${BEG}&end=20500101&fields1=f1&fields2=f51,${fields.join(",")}`;
+// kline (klt 102 = weekly, 101 = daily): fields = list of kline field indexes after the date (f53 close, f57 turnover)
+async function kline(secid, fields, klt = 102) {
+  const u = `https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=${secid}&klt=${klt}&fqt=1&beg=${BEG}&end=20500101&fields1=f1&fields2=f51,${fields.join(",")}`;
   const j = await getJSON(u);
   const k = j?.data?.klines;
   if (!k?.length) throw new Error("no klines for " + secid);
   return k.map((s) => { const p = s.split(","); return [p[0], ...p.slice(1).map(Number)]; });
 }
-async function margin() {
+async function marginDaily() {
   const rows = [];
   for (let page = 1; page <= 5; page++) {
     const u = `https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPTA_RZRQ_LSHJ&columns=DIM_DATE,RZYE&sortColumns=DIM_DATE&sortTypes=1&pageNumber=${page}&pageSize=500&filter=(DIM_DATE%3E%3D%27${BEG.slice(0, 4)}-${BEG.slice(4, 6)}-${BEG.slice(6)}%27)&source=WEB&client=WEB`;
@@ -52,11 +55,9 @@ async function margin() {
     if (page >= (j?.result?.pages || 1)) break;
   }
   if (rows.length < 100) throw new Error("short margin history");
-  // last trading day of each week
-  const wk = new Map();
-  for (const r of rows) wk.set(weekKey(r[0]), r);
-  return [...wk.values()];
+  return rows.sort((a, b) => a[0].localeCompare(b[0]));
 }
+const lastOfWeek = (rows) => { const wk = new Map(); for (const r of rows) wk.set(weekKey(r[0]), r); return [...wk.values()]; };
 
 function weekKey(d) { // Monday of the ISO week, as YYYY-MM-DD
   const t = new Date(d + "T12:00:00Z"), dow = (t.getUTCDay() + 6) % 7;
@@ -66,13 +67,19 @@ function weekKey(d) { // Monday of the ISO week, as YYYY-MM-DD
 
 async function fetchRaw() {
   const p = prev?.raw || {};
-  const tryGet = async (name, fn) => { try { const v = await fn(); log(`${name}: ${v.length} weeks, last ${v.at(-1)[0]}`); return v; } catch (e) { log(`${name} failed (${e.message}); keeping previous`); return p[name] || []; } };
+  const tryGet = async (name, fn) => { try { const v = await fn(); log(`${name}: ${v.length} rows, last ${v.at(-1)[0]}`); return v; } catch (e) { log(`${name} failed (${e.message}); keeping previous`); return p[name] || []; } };
   return {
     csi300: await tryGet("csi300", async () => (await kline("1.000300", ["f53"]))),
     cn10y: await tryGet("cn10y", async () => (await kline("171.CN10Y", ["f53"]))),
-    margin: await tryGet("margin", margin),
+    // daily margin balance; the weekly series is its last trading day of each week
+    ...(await (async () => { const d = await tryGet("marginD", marginDaily); return { marginD: d, margin: d.length ? lastOfWeek(d) : p.margin || [] }; })()),
     etf511090: await tryGet("etf511090", async () => (await kline("1.511090", ["f53", "f57"])).map(([d, c, a]) => [d, c, +(a / 1e9).toFixed(2)])),
     etf510300amt: await tryGet("etf510300amt", async () => (await kline("1.510300", ["f57"])).map(([d, a]) => [d, +(a / 1e9).toFixed(2)])),
+    // daily closes and turnover for the daily build
+    csi300D: await tryGet("csi300D", async () => (await kline("1.000300", ["f53"], 101))),
+    cn10yD: await tryGet("cn10yD", async () => (await kline("171.CN10Y", ["f53"], 101))),
+    etf511090D: await tryGet("etf511090D", async () => (await kline("1.511090", ["f53", "f57"], 101)).map(([d, c, a]) => [d, c, +(a / 1e9).toFixed(3)])),
+    etf510300amtD: await tryGet("etf510300amtD", async () => (await kline("1.510300", ["f57"], 101)).map(([d, a]) => [d, +(a / 1e9).toFixed(3)])),
   };
 }
 
@@ -192,20 +199,126 @@ function build(raw) {
   return { series, backtest: bt, curve, episodes, latest };
 }
 
+// ---------- daily build: same signal and back-test, every Shanghai session ----------
+// Windows are the weekly ones in trading days (4 weeks = 20, 26 weeks = 130, 52 weeks = 260), so the signal means the
+// same thing, re-read after every close. The margin balance for a session is only published the next morning, so each
+// day uses the latest balance dated strictly before it: that is what the daily update can see, and nothing from the
+// future leaks into the back-test. Position after day t's close earns day t+1's 10Y move; hit rates use the next 20 sessions.
+const lastIdx = (sorted, d) => { let lo = 0, hi = sorted.length - 1, ans = -1; while (lo <= hi) { const m = (lo + hi) >> 1; if (sorted[m] <= d) { ans = m; lo = m + 1; } else hi = m - 1; } return ans; };
+function buildDaily(raw) {
+  if (!raw.csi300D?.length || !raw.cn10yD?.length || !raw.marginD?.length) throw new Error("no daily inputs yet");
+  const Y = new Map(raw.cn10yD.map((r) => [r[0], r[1]])), bE = new Map((raw.etf511090D || []).map((r) => [r[0], r])), eE = new Map((raw.etf510300amtD || []).map((r) => [r[0], r[1]]));
+  const mg = raw.marginD.slice().sort((a, b) => a[0].localeCompare(b[0])), mgD = mg.map((r) => r[0]);
+  const D = [];
+  for (const [d, c] of raw.csi300D) {
+    const y = Y.get(d); if (!(y > 0) || !(c > 0)) continue;
+    let im = lastIdx(mgD, d); if (im >= 0 && mgD[im] === d) im--; // strictly before the day
+    const b = bE.get(d), e = eE.get(d);
+    D.push({ date: d, csi: c, y10: y, margin: im >= 0 ? mg[im][1] : null, mDate: im >= 0 ? mgD[im] : null, bpx: b ? b[1] : null, share: b && e != null && b[2] + e > 0 ? b[2] / (b[2] + e) : null });
+  }
+  if (D.length < 300) throw new Error(`only ${D.length} daily rows`);
+  const L = 20, ZWIN = 260, ZMIN = 130, SHW = 130, SHMIN = 65, SH4 = 20, SH4MIN = 15, CW = 130, CMIN = 100, TH = 0.5, H = 20, AN = Math.sqrt(252);
+  for (let i = 0; i < D.length; i++) {
+    const w = D[i], p = D[i - L], q = D[i - 1];
+    w.eq4 = p ? (w.csi / p.csi - 1) * 100 : null;
+    w.dm4 = p?.margin && w.margin ? (w.margin / p.margin - 1) * 100 : null;
+    w.dmAbs = q?.margin && w.margin ? w.margin - q.margin : null;
+    w.dmAbs4 = p?.margin && w.margin ? w.margin - p.margin : null;
+    const sh = D.slice(Math.max(0, i - SHW + 1), i + 1).map((x) => x.share).filter((x) => x != null);
+    const sh4 = D.slice(Math.max(0, i - SH4 + 1), i + 1).map((x) => x.share).filter((x) => x != null);
+    w.bsDev = sh.length >= SHMIN && sh4.length >= SH4MIN ? (mean(sh4) - mean(sh)) * 100 : null;
+    w.dy4 = p ? (w.y10 - p.y10) * 100 : null;
+    w.dy1 = q ? (w.y10 - q.y10) * 100 : null;
+    w.ret1 = q ? (w.csi / q.csi - 1) * 100 : null;
+    const z = (field) => {
+      const hist = D.slice(Math.max(0, i - ZWIN + 1), i + 1).map((x) => x[field]).filter((x) => x != null);
+      if (hist.length < ZMIN || w[field] == null) return null;
+      const s = sd(hist); return s ? (w[field] - mean(hist)) / s : 0;
+    };
+    const zs = [z("eq4"), z("dm4"), z("bsDev"), z("dy4")];
+    w.z = zs.map((x) => r2(x));
+    const parts = [zs[0] == null ? null : -zs[0], zs[1] == null ? null : -zs[1], zs[2], zs[3] == null ? null : -zs[3]].filter((x) => x != null);
+    w.S = parts.length >= 3 ? mean(parts) : null;
+    w.reg = w.S == null ? null : w.S >= TH ? 1 : w.S <= -TH ? -1 : 0;
+    const win = D.slice(Math.max(1, i - CW + 1), i + 1).filter((x) => x.ret1 != null && x.dy1 != null);
+    w.corr = win.length >= CMIN ? corr(win.map((x) => x.ret1), win.map((x) => x.dy1)) : null;
+  }
+  let cumBp = 0, cumHold = 0, cumLong = 0, eq = 1, eqHold = 1, eqLong = 1, peak = 0, mdd = 0, peakEq = 1, mddEq = 0, pkH = 0, mddH = 0, pkL = 0, mddL = 0;
+  const pnlLong = [], pnl = [], holdD = [], curve = [], st = { 1: [], 0: [], [-1]: [] };
+  const first = D.findIndex((w) => w.reg != null);
+  if (first < 0) throw new Error("no daily signal yet");
+  for (let i = first; i < D.length; i++) {
+    const w = D[i], nx = D[i + 1];
+    if (w.reg != null && D[i + H]) st[w.reg].push((D[i + H].y10 - w.y10) * 100);
+    if (!nx) continue;
+    const pos = w.reg ?? 0, dyb = -(nx.y10 - w.y10) * 100, bp = pos * dyb, lpos = pos > 0 ? 1 : 0;
+    cumBp += bp; cumHold += dyb; cumLong += lpos * dyb; pnl.push(bp); pnlLong.push(lpos * dyb); holdD.push(dyb);
+    pkH = Math.max(pkH, cumHold); mddH = Math.min(mddH, cumHold - pkH); pkL = Math.max(pkL, cumLong); mddL = Math.min(mddL, cumLong - pkL);
+    const er = w.bpx && nx.bpx ? nx.bpx / w.bpx - 1 : 0;
+    eq *= 1 + pos * er; eqHold *= 1 + er; eqLong *= 1 + lpos * er;
+    peak = Math.max(peak, cumBp); mdd = Math.min(mdd, cumBp - peak);
+    peakEq = Math.max(peakEq, eq); mddEq = Math.min(mddEq, eq / peakEq - 1);
+    curve.push([nx.date, r2(cumBp, 1), r2(cumHold, 1), r2(cumLong, 1), r2((eq - 1) * 100, 2), r2((eqHold - 1) * 100, 2), r2((eqLong - 1) * 100, 2), pos]);
+  }
+  const hit = (arr, wantNeg) => arr.length ? arr.filter((x) => (wantNeg ? x < 0 : x > 0)).length / arr.length : null;
+  const shp = (a) => r2(a.length > 10 && sd(a) ? (mean(a) / sd(a)) * AN : null, 2);
+  const all = [...st[1], ...st[0], ...st[-1]];
+  const bt = {
+    horizonDays: H, threshold: TH, days: pnl.length, from: D[first].date, to: D.at(-1).date,
+    rally: { n: st[1].length, hit: r2(hit(st[1], true), 3), avgFwdBp: r2(st[1].length ? mean(st[1]) : null, 1) },
+    selloff: { n: st[-1].length, hit: r2(hit(st[-1], false), 3), avgFwdBp: r2(st[-1].length ? mean(st[-1]) : null, 1) },
+    neutral: { n: st[0].length, avgFwdBp: r2(st[0].length ? mean(st[0]) : null, 1) },
+    allAvgFwdBp: r2(all.length ? mean(all) : null, 1),
+    cumBp: r2(cumBp, 1), holdBp: r2(cumHold, 1), longBp: r2(cumLong, 1), maxDdBp: r2(mdd, 1), holdMaxDdBp: r2(mddH, 1), longMaxDdBp: r2(mddL, 1),
+    sharpe: shp(pnl), longSharpe: shp(pnlLong), holdSharpe: shp(holdD), volBp: r2(sd(pnl) * AN, 0),
+    etfLongPct: r2((eqLong - 1) * 100, 2), etfStratPct: r2((eq - 1) * 100, 2), etfHoldPct: r2((eqHold - 1) * 100, 2), etfMaxDdPct: r2(mddEq * 100, 2),
+    timeInMarket: r2(curve.filter((r) => r[7]).length / Math.max(1, curve.length), 3),
+    curveCols: ["date", "strategyBp", "holdBp", "longFlatBp", "etfStrategyPct", "etfHoldPct", "etfLongFlatPct", "position"],
+  };
+  const episodes = [];
+  for (let i = 0; i < D.length; i++) {
+    const r = D[i].reg; if (!r || (i && D[i - 1].reg === r)) continue;
+    let j = i; while (D[j + 1]?.reg === r) j++;
+    const end = D[Math.min(j + H, D.length - 1)];
+    episodes.push({ from: D[i].date, to: D[j].date, type: r > 0 ? "rally" : "selloff", days: j - i + 1, y0: D[i].y10, y1: end.y10, bp: r2((end.y10 - D[i].y10) * 100, 1), open: !D[j + 1] || j + H >= D.length });
+  }
+  const series = D.map((w) => [w.date, w.csi, w.y10, w.margin, r2(w.dmAbs, 1), r2(w.share != null ? w.share * 100 : null, 1), r2(w.S, 2), w.reg, r2(w.corr, 2), w.bpx, r2(w.eq4, 2), r2(w.dm4, 2), r2(w.bsDev, 2), r2(w.dy4, 1), w.z]);
+  const last = D.at(-1), ago = (n) => D[D.length - 1 - n], yr = D.slice(-252);
+  const latest = {
+    date: last.date, csi: last.csi, y10: last.y10, margin: last.margin, marginDate: last.mDate, S: r2(last.S, 2), reg: last.reg, corr: r2(last.corr, 2),
+    z: last.z, eq4: r2(last.eq4, 2), dmAbs4: r2(last.dmAbs4, 1), dm4: r2(last.dm4, 2), bsDev: r2(last.bsDev, 2), dy4: r2(last.dy4, 1),
+    share: r2(last.share != null ? last.share * 100 : null, 1), S20ago: r2(ago(L)?.S, 2), S5ago: r2(ago(5)?.S, 2), S1ago: r2(ago(1)?.S, 2),
+    marginPeak: Math.max(...D.map((w) => w.margin || 0)), marginPeakDate: D.reduce((a, w) => ((w.margin || 0) > (a.margin || 0) ? w : a)).mDate,
+    csiPeak52: Math.max(...yr.map((w) => w.csi)), y10Low52: Math.min(...yr.map((w) => w.y10)), y10High52: Math.max(...yr.map((w) => w.y10)),
+  };
+  return {
+    cols: ["date", "csi300", "cn10y", "marginBn", "marginDayChgBn", "bondEtfSharePct", "signal", "regime", "corr130d", "etf511090", "eq20dPct", "margin20dPct", "bondShareDevPp", "dy20dBp", "z"],
+    method: {
+      window: "20-day changes; z-scores vs trailing 260 sessions (min 130); bond ETF share 20-day avg minus 130-day avg; thresholds ±0.5; hit rates over the next 20 sessions; margin balance as last published (one session behind)",
+      components: ["CSI 300 20-day return (inverted)", "Margin balance 20-day % change (inverted)", "Bond ETF turnover share: 20-day avg minus 130-day avg", "10Y yield 20-day change (inverted)"],
+    },
+    series, backtest: bt, curve, episodes, latest,
+  };
+}
+
 // ---------- run ----------
 const ri = process.argv.indexOf("--raw");
 const raw = ri > 0 ? JSON.parse(readFileSync(process.argv[ri + 1], "utf8")) : await fetchRaw();
 for (const k of ["csi300", "cn10y", "margin"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
 const b = build(raw);
+let daily = null;
+try { daily = buildDaily(raw); log(`daily: ${daily.series.length} sessions to ${daily.latest.date}; signal ${daily.latest.S} (${daily.latest.reg}); long/short ${daily.backtest.cumBp}bp Sharpe ${daily.backtest.sharpe}`); }
+catch (e) { log(`daily build failed (${e.message}); keeping previous`); daily = prev?.daily || null; }
 const out = {
   updated: Math.floor(Date.now() / 1000),
-  src: "Eastmoney: CSI 300 index (000300), China 10Y government bond yield (CN10Y), Shanghai + Shenzhen margin financing balance (融资余额), 30Y CGB ETF 511090 and CSI 300 ETF 510300 weekly turnover. Weekly, last trading day of each week.",
+  src: "Eastmoney: CSI 300 index (000300), China 10Y government bond yield (CN10Y), Shanghai + Shenzhen margin financing balance (融资余额), 30Y CGB ETF 511090 and CSI 300 ETF 510300 turnover. Daily build in `daily` (every Shanghai session); the top-level series are weekly, last trading day of each week.",
   cols: ["date", "csi300", "cn10y", "marginBn", "marginWkChgBn", "bondEtfSharePct", "signal", "regime", "corr26w", "etf511090", "eq4Pct", "margin4Pct", "bondShareDevPp", "dy4Bp", "z"],
   method: {
     window: "4-week changes; z-scores vs trailing 52 weeks (min 26); thresholds ±0.5",
     components: ["CSI 300 4-week return (inverted)", "Margin balance 4-week % change (inverted)", "Bond ETF turnover share: 4-week avg minus 26-week avg", "10Y yield 4-week change (inverted)"],
   },
   ...b,
+  daily,
   notes: prev?.notes || null,
   events: prev?.events || null,
   raw,

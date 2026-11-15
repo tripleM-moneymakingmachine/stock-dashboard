@@ -1,6 +1,7 @@
 /* China tab: "Bond ↔ equity rotation", below the China bond market recap.
-   Weekly fund-flow proxies between China equities and CGBs (CSI 300, 10Y CGB yield, margin financing balance,
-   30Y CGB ETF vs CSI 300 ETF turnover) and the back-tested Bond Rotation Signal. Data: data/china-flows.json,
+   Daily fund-flow proxies between China equities and CGBs (CSI 300, 10Y CGB yield, margin financing balance,
+   30Y CGB ETF vs CSI 300 ETF turnover) and the back-tested Bond Rotation Signal, from the file's `daily` block
+   (one point per Shanghai session; falls back to the weekly build if that block is missing). Data: data/china-flows.json,
    built by scripts/fetch-china-flows.mjs (china-bonds workflow, daily 18:45 SGT). The research narrative lives in
    that file's `notes` / `events` and is preserved across rebuilds. */
 (function () {
@@ -13,31 +14,37 @@
   const sgn = (v, d = 1, u = "") => v == null || !isFinite(v) ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d) + u;
   const fmtD = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
   const REG = { 1: ["Bond rally", "up"], 0: ["Neutral", "mut"], [-1]: ["Bond sell-off", "down"] };
-  const RNG = { "1Y": 52, "2Y": 104, All: 9999 };
+  let RNG = { "1Y": 252, "2Y": 504, All: 99999 }; // trading days; weeks in the weekly fallback
   const st = { rng: "2Y", inv: true, corr: false, bt: "bp" };
-  let D, charts = [], syncing = false;
+  let D, F, DAY = true, charts = [], syncing = false;
+  // wording for the daily build vs the weekly fallback
+  const T = () => DAY
+    ? { per: "day", pers: "days", Pers: "days", n: "20 days", nd: "20d", sh: "20d vs 130d avg", corr: "130-day", at: (d) => fmtD(d), prior: (L) => `prior day ${sgn(L.S1ago, 2)} · 20 days ago ${sgn(L.S20ago, 2)}`, dp: 1 }
+    : { per: "week", pers: "weeks", Pers: "weeks", n: "4 weeks", nd: "4w", sh: "vs 26-week avg", corr: "26-week", at: (d) => "week of " + fmtD(d), prior: (L) => `4 weeks ago ${sgn(L.S4ago, 2)}`, dp: 0 };
 
   fetch("../data/china-flows.json?t=" + Date.now(), { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
     if (!d || !d.series?.length) return;
     D = d; box.hidden = false;
+    DAY = !!d.daily?.series?.length; F = DAY ? d.daily : d;
+    if (!DAY) RNG = { "1Y": 52, "2Y": 104, All: 9999 };
     head(); story(); stats(); draw();
     new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
     matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", draw);
   });
 
-  const rows = () => { const n = RNG[st.rng]; return D.series.slice(-n); };
+  const rows = () => { const n = RNG[st.rng]; return F.series.slice(-n); };
   const C = { date: 0, csi: 1, y: 2, m: 3, dm: 4, sh: 5, S: 6, reg: 7, corr: 8 };
 
   function head() {
-    const L = D.latest, [lab, tone] = REG[L.reg ?? 0];
+    const L = F.latest, t = T(), [lab, tone] = REG[L.reg ?? 0];
     const comp = [
-      ["Equity momentum", "CSI 300, 4 weeks", sgn(L.eq4, 1, "%"), L.z?.[0], -1],
-      ["Leverage flow", "Margin balance, 4 weeks", sgn(L.dmAbs4, 0, " bn"), L.z?.[1], -1],
-      ["Bond ETF share", "vs 26-week avg", sgn(L.bsDev, 1, "pp"), L.z?.[2], 1],
-      ["10Y trend", "4-week change", sgn(L.dy4, 1, "bp"), L.z?.[3], -1],
+      ["Equity momentum", `CSI 300, ${t.n}`, sgn(L.eq4, 1, "%"), L.z?.[0], -1],
+      ["Leverage flow", `Margin balance, ${t.n}`, sgn(L.dmAbs4, 0, " bn"), L.z?.[1], -1],
+      ["Bond ETF share", t.sh, sgn(L.bsDev, 1, "pp"), L.z?.[2], 1],
+      ["10Y trend", DAY ? "20-day change" : "4-week change", sgn(L.dy4, 1, "bp"), L.z?.[3], -1],
     ];
     $("flSig").innerHTML = `
-      <div class="fl-chip ${tone}"><b>Signal · week of ${esc(fmtD(L.date))}</b><span>${esc(lab)}</span><em>${sgn(L.S, 2)}</em><small>4 weeks ago ${sgn(L.S4ago, 2)} · threshold ±${D.backtest.threshold}</small></div>
+      <div class="fl-chip ${tone}"><b>Signal · ${esc(t.at(L.date))}</b><span>${esc(lab)}</span><em>${sgn(L.S, 2)}</em><small>${t.prior(L)} · threshold ±${F.backtest.threshold}</small></div>
       <div class="fl-comp">${comp.map(([t, s, v, z, w]) => {
         const c = z == null ? 0 : w * z, pct = Math.min(50, Math.abs(c) * 20);
         return `<div><b>${esc(t)}</b><small>${esc(s)}</small><span class="v">${esc(v)}</span>
@@ -56,20 +63,20 @@
   }
 
   function stats() {
-    const b = D.backtest;
+    const b = F.backtest, t = T(), nb = DAY ? b.days : b.weeks, hz = DAY ? b.horizonDays : b.horizonWeeks;
     const pc = (x) => x == null ? "—" : Math.round(x * 100) + "%";
     $("flStats").innerHTML = [
-      ["\"Bond rally\" calls", `${pc(b.rally.hit)} right`, `${b.rally.n} weeks · avg next-4w ${sgn(b.rally.avgFwdBp)}bp`],
-      ["\"Bond sell-off\" calls", `${pc(b.selloff.hit)} right`, `${b.selloff.n} weeks · avg next-4w ${sgn(b.selloff.avgFwdBp)}bp`],
-      ["All weeks (base rate)", `${sgn(b.allAvgFwdBp)}bp`, "avg next-4w 10Y change"],
+      ["\"Bond rally\" calls", `${pc(b.rally.hit)} right`, `${b.rally.n} ${t.pers} · avg next-${t.nd} ${sgn(b.rally.avgFwdBp)}bp`],
+      ["\"Bond sell-off\" calls", `${pc(b.selloff.hit)} right`, `${b.selloff.n} ${t.pers} · avg next-${t.nd} ${sgn(b.selloff.avgFwdBp)}bp`],
+      [`All ${t.pers} (base rate)`, `${sgn(b.allAvgFwdBp)}bp`, `avg next-${t.nd} 10Y change`],
       ["Long/flat on signal", `${sgn(b.longBp)}bp`, `Sharpe ${b.longSharpe} · max DD ${b.longMaxDdBp}bp`],
       ["Long/short on signal", `${sgn(b.cumBp)}bp`, `Sharpe ${b.sharpe} · max DD ${b.maxDdBp}bp`],
       ["Always long 10Y", `${sgn(b.holdBp)}bp`, `Sharpe ${b.holdSharpe} · max DD ${b.holdMaxDdBp}bp`],
     ].map(([t, v, s]) => `<div>${esc(t)}<span>${esc(v)}</span><small>${esc(s)}</small></div>`).join("");
-    $("flBtNote").textContent = `Back-test ${fmtD(b.from)} – ${fmtD(b.to)}, ${b.weeks} weeks. Each week's signal is computed only from data up to that week and positions the following week. "Right" means the 10Y moved the called way over the next ${b.horizonWeeks} weeks. P&L is the 10Y yield change captured, in bp (a 1bp fall is +1bp for a long). The long/flat strategy holds duration only in "bond rally" weeks (about ${Math.round((D.curve.filter((r) => r[7] > 0).length / D.curve.length) * 100)}% of the time). In 511090 ETF terms: long/flat ${sgn(b.etfLongPct, 1, "%")}, long/short ${sgn(b.etfStratPct, 1, "%")}, buy-and-hold ${sgn(b.etfHoldPct, 1, "%")}.`;
-    $("flEp").innerHTML = D.episodes.slice().reverse().map((e) => {
+    $("flBtNote").textContent = `Back-test ${fmtD(b.from)} – ${fmtD(b.to)}, ${nb} ${DAY ? "sessions" : "weeks"}. Each ${t.per}'s signal is computed only from data up to that ${DAY ? "close (margin balance as last published, one session behind)" : "week"} and positions the following ${DAY ? "session" : "week"}. "Right" means the 10Y moved the called way over the next ${hz} ${DAY ? "sessions" : "weeks"}. P&L is the 10Y yield change captured, in bp (a 1bp fall is +1bp for a long), before trading costs. The long/flat strategy holds duration only ${DAY ? "on" : "in"} "bond rally" ${t.pers} (about ${Math.round((F.curve.filter((r) => r[7] > 0).length / F.curve.length) * 100)}% of the time). In 511090 ETF terms: long/flat ${sgn(b.etfLongPct, 1, "%")}, long/short ${sgn(b.etfStratPct, 1, "%")}, buy-and-hold ${sgn(b.etfHoldPct, 1, "%")}.`;
+    $("flEp").innerHTML = F.episodes.slice().reverse().map((e) => {
       const ok = e.type === "rally" ? e.bp < 0 : e.bp > 0;
-      return `<tr><td>${esc(fmtD(e.from))}</td><td><span class="fl-tag ${e.type === "rally" ? "up" : "down"}">${e.type === "rally" ? "Bond rally" : "Bond sell-off"}</span></td><td>${e.weeks}</td><td>${e.y0.toFixed(3)}%</td><td>${e.y1.toFixed(3)}%</td><td class="${ok ? "up" : "down"}">${sgn(e.bp)}bp${e.open ? " *" : ""}</td><td>${e.open ? "running" : ok ? "✓" : "✗"}</td></tr>`;
+      return `<tr><td>${esc(fmtD(e.from))}</td><td><span class="fl-tag ${e.type === "rally" ? "up" : "down"}">${e.type === "rally" ? "Bond rally" : "Bond sell-off"}</span></td><td>${e.days ?? e.weeks}</td><td>${e.y0.toFixed(3)}%</td><td>${e.y1.toFixed(3)}%</td><td class="${ok ? "up" : "down"}">${sgn(e.bp)}bp${e.open ? " *" : ""}</td><td>${e.open ? "running" : ok ? "✓" : "✗"}</td></tr>`;
     }).join("");
   }
 
@@ -104,25 +111,25 @@
     a.subscribeCrosshairMove((p) => {
       const r = p?.time ? R.find((x) => x[0] === p.time) : R.at(-1);
       if (!r) return;
-      $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>CSI 300 <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y CGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally weeks</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off weeks</span><span class="mut">week of ${esc(fmtD(r[0]))} · signal ${sgn(r[6], 2)}</span>`;
+      $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>CSI 300 <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y CGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally ${T().pers}</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off ${T().pers}</span><span class="mut">${esc(T().at(r[0]))} · signal ${sgn(r[6], 2)}</span>`;
     });
-    // 2. Flows: weekly margin change + bond ETF turnover share
+    // 2. Flows: margin change per day (per week in the fallback) + bond ETF turnover share
     const b = LightweightCharts.createChart($("flFlow"), { ...opts(), leftPriceScale: { visible: true, borderColor: css("--line") } });
-    const mh = b.addHistogramSeries({ priceScaleId: "left", priceLineVisible: false, lastValueVisible: false, priceFormat: { type: "price", precision: 0, minMove: 1 } });
+    const mh = b.addHistogramSeries({ priceScaleId: "left", priceLineVisible: false, lastValueVisible: false, priceFormat: DAY ? { type: "price", precision: 1, minMove: 0.1 } : { type: "price", precision: 0, minMove: 1 } });
     mh.setData(R.filter((r) => r[4] != null).map((r) => ({ time: r[0], value: r[4], color: r[4] >= 0 ? alpha(c2, 0.85) : alpha(c1, 0.85) })));
     const sh = b.addLineSeries({ color: c3, lineWidth: 2, priceScaleId: "right", priceLineVisible: false, priceFormat: { type: "custom", formatter: (v) => v.toFixed(0) + "%" } });
     sh.setData(R.filter((r) => r[5] != null).map((r) => ({ time: r[0], value: r[5] })));
     b.subscribeCrosshairMove((p) => {
       const r = p?.time ? R.find((x) => x[0] === p.time) : R.at(-1);
       if (!r) return;
-      $("flFlowLeg").innerHTML = `<span><i style="background:${c2};height:8px"></i>Margin debt added <b>${sgn(r[4], 0)} bn</b></span><span><i style="background:${c1};height:8px"></i>Margin debt repaid</span><span class="mut">balance RMB${r[3]?.toFixed(0)} bn</span><span><i style="background:${c3}"></i>30Y CGB ETF share of ETF turnover <b>${r[5] == null ? "—" : r[5].toFixed(1) + "%"}</b></span>`;
+      $("flFlowLeg").innerHTML = `<span><i style="background:${c2};height:8px"></i>Margin debt added <b>${sgn(r[4], T().dp)} bn</b></span><span><i style="background:${c1};height:8px"></i>Margin debt repaid</span><span class="mut">balance RMB${r[3]?.toFixed(0)} bn · ${esc(T().at(r[0]))}</span><span><i style="background:${c3}"></i>30Y CGB ETF share of ETF turnover <b>${r[5] == null ? "—" : r[5].toFixed(1) + "%"}</b></span>`;
     });
     // 3. Signal
     const c = LightweightCharts.createChart($("flSigC"), opts());
     regBand(c, R);
     const s = c.addBaselineSeries({ baseValue: { type: "price", price: 0 }, topLineColor: up, bottomLineColor: dn, topFillColor1: alpha(up, 0.25), topFillColor2: alpha(up, 0.02), bottomFillColor1: alpha(dn, 0.02), bottomFillColor2: alpha(dn, 0.25), lineWidth: 2, priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } });
     s.setData(R.filter((r) => r[6] != null).map((r) => ({ time: r[0], value: r[6] })));
-    [D.backtest.threshold, -D.backtest.threshold].forEach((v) => s.createPriceLine({ price: v, color: css("--muted"), lineStyle: 2, lineWidth: 1, axisLabelVisible: true, title: v > 0 ? "rally" : "sell-off" }));
+    [F.backtest.threshold, -F.backtest.threshold].forEach((v) => s.createPriceLine({ price: v, color: css("--muted"), lineStyle: 2, lineWidth: 1, axisLabelVisible: true, title: v > 0 ? "rally" : "sell-off" }));
     let cs = null;
     if (st.corr) {
       cs = c.addLineSeries({ color: c5, lineWidth: 1.5, lineStyle: 0, priceScaleId: "corr", priceLineVisible: false, priceFormat: { type: "price", precision: 2, minMove: 0.01 } });
@@ -133,10 +140,10 @@
       const r = p?.time ? R.find((x) => x[0] === p.time) : R.at(-1);
       if (!r) return;
       const [lab] = REG[r[7] ?? 0];
-      $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Rotation Signal <b>${sgn(r[6], 2)}</b> → ${esc(lab)}</span>${st.corr ? `<span><i style="background:${c5}"></i>26-week stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">week of ${esc(fmtD(r[0]))}</span>`;
+      $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Rotation Signal <b>${sgn(r[6], 2)}</b> → ${esc(lab)}</span>${st.corr ? `<span><i style="background:${c5}"></i>${T().corr} stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">${esc(T().at(r[0]))}</span>`;
     });
     // 4. Back-test curve
-    const bd = D.curve.filter((r) => r[0] >= R[0][0]), base = D.curve.filter((r) => r[0] < R[0][0]).at(-1);
+    const bd = F.curve.filter((r) => r[0] >= R[0][0]), base = F.curve.filter((r) => r[0] < R[0][0]).at(-1);
     const off = (i) => (base ? base[i] : 0);
     const e = LightweightCharts.createChart($("flBt"), opts());
     const ix = st.bt === "bp" ? [3, 1, 2] : [6, 4, 5], unit = st.bt === "bp" ? "bp" : "%";
@@ -154,14 +161,14 @@
     charts = [a, b, c, e];
     const grp = [a, b, c, e];
     grp.forEach((ch) => { ch.timeScale().fitContent(); ch.timeScale().subscribeVisibleTimeRangeChange((tr) => { if (syncing || !tr) return; syncing = true; grp.forEach((o) => o !== ch && o.timeScale().setVisibleRange(tr)); syncing = false; }); });
-    seedLegends(R, bd, lines, off, unit); // legends show the latest week until the pointer moves
+    seedLegends(R, bd, lines, off, unit); // legends show the latest point until the pointer moves
   }
 
   function seedLegends(R, bd, lines, off, unit) {
     const r = R.at(-1), up = css("--up"), dn = css("--down"), c1 = css("--c1"), c2 = css("--c2"), c3 = css("--c3"), c5 = css("--c5");
-    $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>CSI 300 <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y CGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally weeks</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off weeks</span><span class="mut">week of ${esc(fmtD(r[0]))}</span>`;
-    $("flFlowLeg").innerHTML = `<span><i style="background:${c2};height:8px"></i>Margin debt added <b>${sgn(r[4], 0)} bn</b></span><span><i style="background:${c1};height:8px"></i>Margin debt repaid</span><span class="mut">balance RMB${r[3]?.toFixed(0)} bn</span><span><i style="background:${c3}"></i>30Y CGB ETF share of ETF turnover <b>${r[5] == null ? "—" : r[5].toFixed(1) + "%"}</b></span>`;
-    $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Rotation Signal <b>${sgn(r[6], 2)}</b> → ${esc(REG[r[7] ?? 0][0])}</span>${st.corr ? `<span><i style="background:${c5}"></i>26-week stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}`;
+    $("flMainLeg").innerHTML = `<span><i style="background:${c2}"></i>CSI 300 <b>${r[1].toFixed(0)}</b></span><span><i style="background:${c1}"></i>10Y CGB <b>${r[2].toFixed(3)}%</b>${st.inv ? " (axis inverted)" : ""}</span><span><i style="background:${alpha(up, 0.35)};height:10px"></i>Bond-rally ${T().pers}</span><span><i style="background:${alpha(dn, 0.35)};height:10px"></i>Bond-sell-off ${T().pers}</span><span class="mut">${esc(T().at(r[0]))}</span>`;
+    $("flFlowLeg").innerHTML = `<span><i style="background:${c2};height:8px"></i>Margin debt added <b>${sgn(r[4], T().dp)} bn</b></span><span><i style="background:${c1};height:8px"></i>Margin debt repaid</span><span class="mut">balance RMB${r[3]?.toFixed(0)} bn · ${esc(T().at(r[0]))}</span><span><i style="background:${c3}"></i>30Y CGB ETF share of ETF turnover <b>${r[5] == null ? "—" : r[5].toFixed(1) + "%"}</b></span>`;
+    $("flSigLeg").innerHTML = `<span><i style="background:${up}"></i>Bond Rotation Signal <b>${sgn(r[6], 2)}</b> → ${esc(REG[r[7] ?? 0][0])}</span>${st.corr ? `<span><i style="background:${c5}"></i>${T().corr} stock/yield correlation <b>${sgn(r[8], 2)}</b> (positive = stocks up, yields up)</span>` : ""}<span class="mut">${esc(T().at(r[0]))}</span>`;
     const b = bd.at(-1);
     if (b) $("flBtLeg").innerHTML = lines.map(([, i, col, name]) => `<span><i style="background:${col}"></i>${name} <b>${sgn(b[i] - off(i), 1, unit)}</b></span>`).join("") + `<span class="mut">${st.bt === "bp" ? "10Y bp captured" : "511090 ETF return"} since ${esc(fmtD(bd[0][0]))}</span>`;
   }

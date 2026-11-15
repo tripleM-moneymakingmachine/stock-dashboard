@@ -207,9 +207,9 @@ section.crecap{margin-top:0}
   <section id="crecap" class="crecap" data-src="../data/china-recap.json" data-china="../data/china.json" aria-label="China bond market recap and views" hidden></section>
 
   <section id="flows" class="flows" aria-labelledby="flH" hidden>
-    <div class="eyebrow">Fund flows · China equities vs CGBs · weekly</div>
+    <div class="eyebrow">Fund flows · China equities vs CGBs · daily</div>
     <h2 id="flH">Bond ↔ equity rotation</h2>
-    <p class="sub">China stocks and bonds tend to move inversely: when equities slump, money hides in CGBs, and when policy revives stocks, funds sell duration to buy equities. This panel follows that switch with weekly flow proxies (margin financing debt for leveraged equity money, and the 30Y CGB ETF's share of ETF turnover for bond demand). It combines them with equity and yield momentum into a Bond Rotation Signal, back-tested walk-forward over the full history.</p>
+    <p class="sub">China stocks and bonds tend to move inversely: when equities slump, money hides in CGBs, and when policy revives stocks, funds sell duration to buy equities. This panel follows that switch with daily flow proxies (margin financing debt for leveraged equity money, and the 30Y CGB ETF's share of ETF turnover for bond demand). It combines them with equity and yield momentum into a Bond Rotation Signal, re-read after every Shanghai close and back-tested walk-forward over the full history.</p>
     <p class="fl-head" id="flHead"></p>
     <div class="fl-top" id="flSig"></div>
     <div class="fl-grid">
@@ -217,19 +217,19 @@ section.crecap{margin-top:0}
         <div class="chead"><h3>CSI 300 vs 10Y CGB yield, with signal regimes</h3><div class="ctl" style="margin:0;gap:8px"><div class="btns" id="flInv" role="group" aria-label="Yield axis"></div><div class="btns" id="flRng" role="group" aria-label="Range"></div></div></div>
         <div id="flMain" style="height:380px"></div>
         <div class="leg" id="flMainLeg" aria-live="polite"></div>
-        <p class="note">Shading shows the signal's regime each week. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
+        <p class="note">Shading shows the signal's regime each day. With the yield axis inverted, the two lines rise together when bonds and stocks rally together, and they diverge during a rotation. Arrows mark policy and flow events.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Flows: margin debt vs bond ETF demand</h3></div>
         <div id="flFlow" style="height:240px"></div>
         <div class="leg" id="flFlowLeg" aria-live="polite"></div>
-        <p class="note">Bars: weekly change in the Shanghai + Shenzhen margin financing balance (RMB bn, left axis). Line: 30Y CGB ETF (511090) turnover as a share of 511090 + CSI 300 ETF (510300) turnover (right axis). Rising bars with a falling line means money is moving into equities. Falling bars with a rising line means it is moving back into bonds.</p>
+        <p class="note">Bars: daily change in the Shanghai + Shenzhen margin financing balance (RMB bn, left axis; the exchanges publish it the next morning, so each bar is one session behind). Line: 30Y CGB ETF (511090) turnover as a share of 511090 + CSI 300 ETF (510300) turnover (right axis). Rising bars with a falling line means money is moving into equities. Falling bars with a rising line means it is moving back into bonds.</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Bond Rotation Signal</h3><div class="btns" id="flCorr" role="group" aria-label="Overlay"></div></div>
         <div id="flSigC" style="height:220px"></div>
         <div class="leg" id="flSigLeg" aria-live="polite"></div>
-        <p class="note">Signal = average of four z-scores, each measured against its own trailing 52 weeks: −CSI 300 4-week return, −margin balance 4-week % change, +bond ETF turnover share vs its 26-week average, and −10Y 4-week change. Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 26-week correlation of weekly CSI 300 returns with weekly 10Y yield changes. It runs positive when the rotation is driving prices (stocks up, yields up).</p>
+        <p class="note">One point per trading day, recalculated in each daily update. Signal = average of four z-scores, each measured against its own trailing 260 sessions (about a year): −CSI 300 20-day return, −margin balance 20-day % change, +bond ETF turnover share (20-day average vs its 130-day average), and −10Y 20-day change. Above +0.5 reads as "bond rally" and below −0.5 as "bond sell-off". The optional pink line is the 130-day correlation of daily CSI 300 returns with daily 10Y yield changes. It runs positive when the rotation is driving prices (stocks up, yields up).</p>
       </div>
       <div class="panel">
         <div class="chead"><h3>Back-test</h3><div class="btns" id="flBtMode" role="group" aria-label="Back-test units"></div></div>
@@ -237,8 +237,8 @@ section.crecap{margin-top:0}
         <div id="flBt" style="height:240px;margin-top:12px"></div>
         <div class="leg" id="flBtLeg" aria-live="polite"></div>
         <p class="note" id="flBtNote"></p>
-        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Weeks</th><th>10Y at start</th><th>10Y 4w after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
-        <p class="note">* still running, measured to the latest week.</p>
+        <div style="overflow-x:auto;margin-top:12px"><table class="fl-ep" aria-label="Signal episodes"><thead><tr><th>From</th><th>Call</th><th>Days</th><th>10Y at start</th><th>10Y 20d after end</th><th>Move</th><th>Result</th></tr></thead><tbody id="flEp"></tbody></table></div>
+        <p class="note">* still running, measured to the latest session.</p>
       </div>
       <div class="fl-two">
         <div class="panel fl-now" id="flNow"></div>
