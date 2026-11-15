@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>S&amp;P Sectors · Stock Dashboards</title>
+<meta name="description" content="The 11 S&amp;P 500 sectors through their Select Sector SPDR ETFs: performance, relative strength, a sector rotation map, ETF money flows (creations and redemptions), a quantitative sector model and research commentary.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f5f7;--panel:#fff;--line:#d9dee5;--ink:#141a22;--muted:#5a6573;--accent:#0b6fb8;--accent-soft:#e3eff8;--up:#13804b;--down:#c2362b;--c1:#0b6fb8;--c2:#d97706;--c3:#8b5cf6;--c4:#0f9d8a;--c5:#db2777;--c6:#64748b;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;--f-body:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;--f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0d1117;--panel:#141b24;--line:#26303c;--ink:#e7ecf2;--muted:#93a0b0;--accent:#4fa8e8;--accent-soft:#132a3d;--up:#3ccf86;--down:#f0675b;--c1:#4fa8e8;--c2:#f0a43a;--c3:#a78bfa;--c4:#2dd4bf;--c5:#f472b6;--c6:#94a3b8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1117;--panel:#141b24;--line:#26303c;--ink:#e7ecf2;--muted:#93a0b0;--accent:#4fa8e8;--accent-soft:#132a3d;--up:#3ccf86;--down:#f0675b;--c1:#4fa8e8;--c2:#f0a43a;--c3:#a78bfa;--c4:#2dd4bf;--c5:#f472b6;--c6:#94a3b8;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-body);margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 48px}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--line);margin:0 0 28px}
+.tabs a{font:600 13px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:10px 14px;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs a:hover,.tabs a:focus-visible{color:var(--accent);outline:none}
+.eyebrow{font:600 11px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(30px,5vw,48px)/1.05 var(--f-display);margin:.25em 0 .4em}
+h2{font:700 24px/1.15 var(--f-display);margin:0 0 4px}
+.lede{color:var(--muted);margin:0 0 24px;max-width:72ch}
+.sub{color:var(--muted);font-size:14px;margin:0 0 14px;max-width:84ch}
+section{margin-top:40px}
+.up{color:var(--up)}.down{color:var(--down)}.mut{color:var(--muted)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px;min-width:0}
+.chead{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between;margin-bottom:8px}
+.chead h3{font:600 17px var(--f-body);margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:4px}
+.btns button{font:500 12px var(--f-mono);border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:4px 10px;border-radius:4px;cursor:pointer}
+.btns button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.btns button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.chips button{display:inline-flex;align-items:center;gap:6px}
+.chips button i{display:inline-block;width:9px;height:9px;border-radius:2px}
+.chips button[aria-pressed="true"]{background:var(--accent-soft);color:var(--ink);border-color:var(--accent)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:900px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.cwrap{position:relative}
+svg.ch{display:block;width:100%;touch-action:pan-y}
+svg.ch text{font:500 10.5px var(--f-mono);fill:var(--muted)}
+.tip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:6px 8px;font:500 11.5px var(--f-mono);font-variant-numeric:tabular-nums;box-shadow:0 4px 14px rgba(0,0,0,.12);white-space:nowrap;z-index:3}
+.tip[hidden]{display:none}
+.tip b{font-weight:600}
+.leg{display:flex;flex-wrap:wrap;gap:12px;font:500 11px var(--f-mono);color:var(--muted);margin-top:6px}
+.leg i{display:inline-block;width:12px;height:2px;vertical-align:middle;margin-right:5px}
+.leg i.dash{background:repeating-linear-gradient(90deg,currentColor 0 4px,transparent 4px 7px)!important;height:2px}
+.fstamp{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;margin:0 0 14px;font:500 12.5px var(--f-mono)}
+.fstamp b{font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-size:10.5px;margin-right:4px}
+.fstamp i.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin:0 6px 0 2px;vertical-align:middle}
+.fstamp i.dot.on{background:var(--up);box-shadow:0 0 0 3px color-mix(in srgb,var(--up) 25%,transparent)}
+.twrap{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow-x:auto}
+.st{width:100%;border-collapse:collapse;font:500 12.5px var(--f-mono);font-variant-numeric:tabular-nums;min-width:960px}
+.st th{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:right;padding:9px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.st td{text-align:right;padding:7px 8px;border-bottom:1px solid color-mix(in srgb,var(--line) 55%,transparent);white-space:nowrap}
+.st th:nth-child(-n+2),.st td:nth-child(-n+2){text-align:left}
+.st td.code{font-weight:600}
+.st tbody tr{cursor:pointer}
+.st tbody tr:hover td{background:var(--accent-soft)}
+.st tbody tr[aria-selected="true"] td{background:color-mix(in srgb,var(--accent-soft) 70%,transparent)}
+.st tbody tr[aria-selected="true"] td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.st tr.g td{background:color-mix(in srgb,var(--bg) 60%,var(--panel));font:600 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);padding:10px 8px 6px;text-align:left;cursor:default}
+.st tr.g:hover td{background:color-mix(in srgb,var(--bg) 60%,var(--panel))}
+.st sup{color:var(--muted);margin-left:2px}
+.bar{display:inline-block;vertical-align:middle;height:8px;border-radius:2px;margin-left:6px}
+.pill{display:inline-block;font:600 10px var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:1px 6px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin:10px 0 0;max-width:110ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin:0 0 12px}
+.stats div{border:1px solid var(--line);border-radius:4px;padding:8px 10px;font:500 11.5px var(--f-mono);color:var(--muted);min-width:0}
+.stats span{display:block;font:600 16px var(--f-mono);color:var(--ink);font-variant-numeric:tabular-nums;margin-top:2px}
+.stats small{display:block;font:500 11px var(--f-mono);margin-top:2px}
+/* research recap */
+section.recap{margin-top:0}
+.recap{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:18px 20px;margin:0 0 28px}
+.recap h2{font-size:21px;margin:6px 0 8px;max-width:60ch}
+.r-sum{margin:0 0 12px;max-width:90ch}
+.r-dr{margin:0 0 6px;padding-left:18px;font-size:14px;max-width:96ch}.r-dr li{margin:0 0 6px}
+.r-h3{font:600 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px}
+.r-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.r-two p{margin:0;font-size:14px}
+@media (max-width:820px){.r-two{grid-template-columns:minmax(0,1fr)}.recap{padding:16px 14px}}
+.ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+.idea{border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:13.5px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.idea h4{margin:0;font:600 15px var(--f-body);display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.idea .tag{font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:3px;border:1px solid currentColor}
+.tag.core{color:var(--accent)}.tag.hedge{color:var(--c3)}.tag.avoid{color:var(--c2)}
+.idea dl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:2px 0 0;font:500 12px var(--f-mono);font-variant-numeric:tabular-nums}
+.idea dt{color:var(--muted)}.idea dd{margin:0}
+.idea p{margin:0}.idea .rk{color:var(--muted);font-size:13px}
+.idea .now{font:600 12px var(--f-mono)}
+.watch{width:100%;border-collapse:collapse;font-size:13.5px}
+.watch td{padding:6px 10px 6px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.watch td:first-child{font:600 12px var(--f-mono);white-space:nowrap;color:var(--muted)}
+.watch td:nth-child(2){font-weight:600;white-space:nowrap}
+@media (max-width:640px){.watch tr{display:grid;grid-template-columns:auto 1fr;gap:0 10px;border-bottom:1px solid var(--line);padding:6px 0}.watch td{border:0;padding:2px 0}.watch td:nth-child(2){white-space:normal}.watch td:nth-child(3){grid-column:1/-1;color:var(--muted)}}
+.r-src{font-size:12px;color:var(--muted);margin:12px 0 0}.r-src a{color:var(--accent)}
+.disc{font-size:12px;color:var(--muted);margin:10px 0 0}
+footer{font-size:12px;color:var(--muted);margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+footer a{color:var(--accent)}
+.empty{padding:24px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* S&P sectors */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:8px;margin:0 0 8px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 12px;cursor:pointer;text-align:left;font:inherit;color:inherit;min-width:0;position:relative}
+.tile:hover,.tile:focus-visible{border-color:var(--accent);outline:none}
+.tile[aria-pressed="true"]{box-shadow:inset 0 0 0 1px var(--accent);border-color:var(--accent)}
+.tile .tn{font:600 13px var(--f-body);display:flex;gap:6px;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .tn i{width:9px;height:9px;border-radius:2px;flex:none}
+.tile .tk{font:500 11px var(--f-mono);color:var(--muted)}
+.tile .tp{font:600 18px var(--f-mono);font-variant-numeric:tabular-nums;margin-top:4px}
+.tile .tr{display:flex;justify-content:space-between;gap:6px;font:500 11.5px var(--f-mono);font-variant-numeric:tabular-nums;margin-top:2px}
+.tile svg{display:block;width:100%;height:28px;margin-top:6px}
+.stance{display:inline-block;font:600 9.5px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+.stance.ow{color:var(--up)}.stance.uw{color:var(--down)}.stance.n{color:var(--muted)}
+.st.perf{min-width:1100px}
+.st.perf th{cursor:pointer;user-select:none}
+.st.perf th[aria-sort] ::after{content:""}
+.st.perf th[aria-sort="descending"]::after{content:" ▾"}.st.perf th[aria-sort="ascending"]::after{content:" ▴"}
+.st td.nm{font-family:var(--f-body);font-weight:600}
+.st td.nm i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:7px;vertical-align:0}
+.st tr.bm td{background:color-mix(in srgb,var(--bg) 55%,var(--panel));cursor:default}
+.heat{border-radius:3px;padding:2px 5px}
+.zc{display:inline-block;min-width:44px;text-align:center;border-radius:3px;padding:2px 4px}
+#rel{height:360px}#cf{height:300px}
+.scards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px;align-items:start}
+.scard{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;font-size:13.5px;min-width:0;display:flex;flex-direction:column;gap:7px}
+.scard h4{margin:0;font:600 16px var(--f-body);display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.scard h4 i{width:10px;height:10px;border-radius:2px}
+.scard .kv{display:flex;flex-wrap:wrap;gap:4px 14px;font:500 11.5px var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.scard .kv b{color:var(--ink);font-weight:600}
+.scard p{margin:0}.scard .lab{font:600 10px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-right:6px}
+.scard .rk{color:var(--muted);font-size:13px}
+.r-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.r-three p{margin:0;font-size:14px}
+@media (max-width:980px){.r-three{grid-template-columns:minmax(0,1fr)}}
+.wbar{height:6px;border-radius:2px;background:var(--accent);opacity:.55;display:inline-block;vertical-align:middle;margin-left:6px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <nav class="tabs" aria-label="Dashboard sections"><a href="../">Stocks</a><a href="../macro/">Macro</a><a href="../us/">US</a><a href="./" aria-current="page">S&amp;P Sectors</a><a href="../fx/">FX</a><a href="../china/">China</a><a href="../korea/">Korea</a><a href="../indonesia/">Indonesia</a><a href="../datacenter/">Datacenter</a><a href="../portfolio/">Portfolio</a><a href="../options/">Options</a></nav>
+  <div class="eyebrow">S&amp;P 500 · 11 GICS sectors · Select Sector SPDR ETFs</div>
+  <h1>S&amp;P Sectors</h1>
+  <p class="lede">Each S&amp;P 500 sector through its Select Sector SPDR ETF, against the cap-weighted index (SPY) and the equal-weight index (RSP): performance, relative strength, rotation, money flows into and out of each ETF, and a quantitative model, with a research view on every sector.</p>
+
+  <section id="recap" class="recap" aria-label="Sector research view" hidden></section>
+
+  <section style="margin-top:0" aria-labelledby="tlH">
+    <div class="eyebrow">Delayed quotes · click a sector to focus the charts</div>
+    <h2 id="tlH">Sectors at a glance</h2>
+    <div class="fstamp" id="stamp" aria-live="polite"></div>
+    <div class="tiles" id="tiles"></div>
+    <p class="note" id="wNote"></p>
+  </section>
+
+  <section aria-labelledby="pfH">
+    <div class="eyebrow">Total return (dividends reinvested) · click a column to sort</div>
+    <h2 id="pfH">Performance</h2>
+    <p class="sub">Returns over each window, then return relative to SPY over 3 months, the trend (distance from the 50- and 200-day averages), 14-day RSI, 20-day Chaikin money flow (volume-weighted buying vs selling pressure), and ETF flows. Cells are shaded by rank within each column.</p>
+    <div class="twrap"><table class="st perf" aria-labelledby="pfH"><thead id="pfHead"></thead><tbody id="pfBody"><tr><td colspan="18" class="empty">Loading sector data…</td></tr></tbody></table></div>
+  </section>
+
+  <section aria-labelledby="chH">
+    <div class="grid2">
+      <div class="panel">
+        <div class="chead"><h3 id="chH">Return by sector</h3><div class="btns" id="barRng" role="group" aria-label="Window"></div></div>
+        <div class="cwrap"><svg class="ch" id="bar" height="380" role="img" aria-label="Return by sector for the selected window"></svg><div class="tip" id="barTip" hidden></div></div>
+        <div class="leg"><span><i style="background:var(--ink)"></i>S&amp;P 500 (SPY)</span><span><i class="dash" style="color:var(--muted)"></i>equal weight (RSP)</span></div>
+      </div>
+      <div class="panel">
+        <div class="chead"><h3>Sector rotation map</h3><div class="btns" id="rrgTail" role="group" aria-label="Tail length"></div></div>
+        <div class="cwrap"><svg class="ch" id="rrg" height="380" role="img" aria-label="Relative strength ratio against relative strength momentum for each sector versus the S&amp;P 500"></svg><div class="tip" id="rrgTip" hidden></div></div>
+        <p class="note">Relative-rotation view against SPY. Across: relative strength (sector ÷ SPY, against its own 50-day average; above 100 = outperforming). Up: momentum of that ratio over 10 sessions. Sectors usually rotate clockwise: Improving → Leading → Weakening → Lagging. Ratios use a 10-day EMA of sector ÷ SPY. Tails are weekly points; the dot is today.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="rlH">
+    <div class="panel">
+      <div class="chead"><h3 id="rlH">Relative performance</h3>
+        <div class="btns" id="relMode" role="group" aria-label="Measure"></div></div>
+      <div class="btns chips" id="relPick" role="group" aria-label="Sectors" style="margin-bottom:8px"></div>
+      <div class="btns" id="relRng" role="group" aria-label="Range" style="margin-bottom:8px"></div>
+      <div id="rel"></div>
+      <div class="leg" id="relLeg" aria-live="polite"></div>
+      <p class="note">Total return rebased to zero at the start of the range. "vs S&amp;P 500" shows each sector's return minus SPY's. Pick up to 6 sectors. Drag to pan, scroll or pinch to zoom.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="flH">
+    <div class="eyebrow">ETF creations and redemptions · State Street daily shares outstanding × NAV</div>
+    <h2 id="flH">Money flows</h2>
+    <p class="sub" id="flSub">Net new money into each sector's SPDR ETF. Creations and redemptions are the cleanest public read on where investors are moving money; the files are published with a one-day lag. Splits are excluded.</p>
+    <div class="grid2">
+      <div class="panel">
+        <div class="chead"><h3>Net flows by sector</h3><div class="btns" id="flRng" role="group" aria-label="Window"></div></div>
+        <div class="btns" id="flUnit" role="group" aria-label="Units" style="margin-bottom:8px"></div>
+        <div class="cwrap"><svg class="ch" id="flb" height="360" role="img" aria-label="Net ETF flows by sector"></svg><div class="tip" id="flbTip" hidden></div></div>
+      </div>
+      <div class="panel">
+        <div class="chead"><h3 id="cfT">Cumulative flows</h3><div class="btns" id="cfRng" role="group" aria-label="Range"></div></div>
+        <div id="cf"></div>
+        <div class="leg" id="cfLeg"></div>
+        <p class="note">Bars: daily net creations (+) and redemptions (−) in $ millions. Line: cumulative flow over the range (left axis). Click a sector tile or table row to switch funds.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="mdH">
+    <div class="eyebrow">Quantitative sector model · cross-sectional z-scores</div>
+    <h2 id="mdH">Model scorecard</h2>
+    <p class="sub" id="mdSub"></p>
+    <div class="twrap"><table class="st" style="min-width:1000px" aria-labelledby="mdH"><thead><tr>
+      <th scope="col">Rank</th><th scope="col">Sector</th><th scope="col">Score</th><th scope="col">Momentum 12-1M</th><th scope="col">Rel. strength 3M</th><th scope="col">Trend vs 200d</th><th scope="col">Flows 1M % AUM</th><th scope="col">Fwd P/E</th><th scope="col">EPS growth Q3</th><th scope="col">Research stance</th>
+    </tr></thead><tbody id="mdBody"></tbody></table></div>
+    <p class="note" id="mdNote"></p>
+  </section>
+
+  <section aria-labelledby="scH">
+    <div class="eyebrow">Research view by sector · ordered by model rank</div>
+    <h2 id="scH">Sector commentary</h2>
+    <p class="sub">Each card pairs the model's read (what the numbers say) with the research view (what is driving them and what to do). Stances are relative to the sector's S&amp;P 500 weight.</p>
+    <div class="scards" id="scards"></div>
+  </section>
+
+  <footer id="foot">Prices: Yahoo Finance daily bars for the Select Sector SPDR ETFs, SPY and RSP (total return uses dividend-adjusted closes), refreshed with every dashboard deploy. Flows: State Street Global Advisors daily NAV history (change in shares outstanding × NAV), refreshed daily. Sector weights: Schwab Center for Financial Research (as of Oct 2, 2026), rolled forward by price. Valuation and earnings: FactSet Earnings Insight and Siblis Research. ETFs track the Select Sector indices, which cap single stocks and can differ slightly from the S&amp;P 500 GICS sectors. Commentary is a research view for information only, not investment advice.</footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<script src="../assets/spx-sectors.js?v=1"></script>
+</body>
+</html>

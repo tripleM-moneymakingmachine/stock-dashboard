@@ -124,6 +124,9 @@ jobs:
       - name: Fetch SOFR futures (CME SR3 strip; delayed quotes for the US tab)
         run: node scripts/fetch-sofr.mjs || echo "SOFR futures fetch failed; using the committed file"
 
+      - name: Fetch S&P sector ETF prices (S&P Sectors tab; flows come from spx-sectors.yml)
+        run: node scripts/fetch-spx-sectors.mjs prices || echo "sector price fetch failed; using the committed file"
+
       # Rank trail next to each stock name on the main page (rank in the last 3 rankings),
       # rebuilt from the git history of index.html so it is right even if the re-rank task skips it.
       - name: Rank trails on the main page
@@ -163,6 +166,8 @@ jobs:
           if [ -f data/sofr.json ]; then cp data/sofr.json _site/data/; fi
           if [ -f data/us-recap.json ]; then cp data/us-recap.json _site/data/; fi
           mkdir -p _site/us && cp us/index.html _site/us/
+          for f in spx-sectors spx-sectors-recap; do if [ -f data/$f.json ]; then cp data/$f.json _site/data/; fi; done
+          mkdir -p _site/sectors && cp sectors/index.html _site/sectors/
           cp data/datacenter.json data/ai-debt.json data/us-datacenters.json data/dc-supply-impact.json _site/data/
           if [ -f data/curves.json ]; then cp data/curves.json _site/data/; fi
           mkdir -p _site/datacenter && cp datacenter/index.html _site/datacenter/

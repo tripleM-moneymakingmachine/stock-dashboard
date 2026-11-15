@@ -1,0 +1,61 @@
+name: S&P sectors (prices and State Street ETF flows)
+
+# S&P Sectors tab: rebuilds data/spx-sectors.json with 2 years of daily prices for the 11 Select Sector SPDR ETFs,
+# SPY and RSP (Yahoo) and the daily creations/redemptions of each SPDR fund from State Street's NAV history files
+# (change in shares outstanding x NAV), then commits it and redeploys. State Street posts each day's file the
+# next US morning, so this runs after the close and again before the next open. The deploy workflow refreshes
+# prices on every deploy (mode "prices") and keeps the committed flows.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/fetch-spx-sectors.mjs", ".github/workflows/spx-sectors.yml"]
+  schedule:
+    - cron: "50 21 * * 1-5"   # 05:50 Singapore (16:50 New York, EST)
+    - cron: "15 13 * * 1-5"   # 21:15 Singapore (08:15 New York): picks up the previous day's State Street file
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: spx-sectors
+  cancel-in-progress: false
+
+jobs:
+  sectors:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sector ETF prices and flows
+        run: node scripts/fetch-spx-sectors.mjs all
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          git add data/spx-sectors.json
+          if git diff --cached --quiet; then
+            echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Refresh S&P sector prices and flows ($(TZ=Asia/Singapore date '+%Y-%m-%d %H:%M') SGT)"
+          ok=0
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase --autostash origin main && git push && { ok=1; break; }
+            echo "push rejected (attempt $i); retrying"; sleep $((i * 5))
+          done
+          [ "$ok" = 1 ]
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Redeploy the site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
