@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-15",
- "asofText": "Nov 15, 2026",
+ "asof": "2026-11-16",
+ "asofText": "Nov 16, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -707,7 +707,7 @@
    "status": "op",
    "capexB": null,
    "est": false,
-   "note": "~1.28 GW facility (~946 MW IT) live (Epoch, Jun 2026); Building 3 takes it to ~2.1 GW (~1.5 GW IT) by Q1 2027. Gas turbines across the state line in Southaven, MS",
+   "note": "~1.28 GW facility (~946 MW IT) live (Epoch, Jun 2026); Building 3 takes it to ~2.1 GW (~1.5 GW IT) by Q1 2027. Gas turbines across the state line in Southaven, MS; SemiAnalysis (Nov 14) sees the Memphis/Southaven campus at ~2.4 GW of IT by end-2026 across five buildings",
    "now": 1.28
   },
   {
@@ -1295,13 +1295,13 @@
    "state": "TX",
    "lat": 31,
    "lon": -99,
-   "gw": 8.9,
+   "gw": 8.5,
    "now": 0,
    "status": "pl",
    "capexB": null,
    "est": true,
    "unsited": true,
-   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). Apart from Starbase, no locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map. Reduced by ~0.5 GW for Starbase and ~1.1 GW for Cochise County, Arizona, now shown as disclosed sites."
+   "note": "Balance of Musk's ≥13 GW end-2027 target (13 GW minus ~1.7 GW live and ~0.8 GW at Colossus 2 Building 3). Apart from Starbase and Cochise, no locations or sizes disclosed; SpaceX is reported to be scouting several ground-up sites in Texas, so this sits under the Texas pause. Not drawn on the map. Reduced by ~0.5 GW for Starbase and ~1.5 GW for Cochise County phase one (the full 6 GW Cochise plan runs beyond 2027)."
   },
   {
    "partner": null,
@@ -1489,20 +1489,35 @@
    "owner": "spcx",
    "partner": null,
    "state": "AZ",
-   "lat": 31.9,
-   "lon": -109.9,
-   "gw": 1.1,
+   "lat": 32.06,
+   "lon": -109.89,
+   "gw": 6.0,
    "now": 0,
    "status": "pl",
    "capexB": 50,
-   "est": true,
-   "note": "SpaceX plans ~$50B (5,500 construction, 1,000 permanent jobs); needs Cochise County approval and faces strong local opposition over water and power bills. GW not disclosed (~1.1 GW is Claude's estimate at ~$45B/GW); exact site not disclosed, map position approximate"
+   "est": false,
+   "note": "Cochise Supercomputer Campus near the Willcox Playa: filing (Tombstone Resources) seeks up to 6 GW in four ~1.5 GW phases, nine buildings, dry cooling, 24 GWh BESS and $3.6B of SpaceX-paid grid upgrades via AEPCO/SSVEC; ~$50B. Construction from March 2027 if the county planning commission approves on Dec 9; strong local opposition"
+  },
+  {
+   "id": "goog-vb",
+   "name": "Van Buren Twp (Project Cannoli)",
+   "owner": "googl",
+   "partner": "Panattoni (developer), DTE",
+   "state": "MI",
+   "lat": 42.23,
+   "lon": -83.45,
+   "gw": 1.0,
+   "status": "uc",
+   "capexB": null,
+   "est": false,
+   "now": 0,
+   "note": "~1 GW hyperscale campus on 282 acres; foundations poured from late Oct 2026; state air, wetland and stream permits and an MPSC-approved 20-year DTE contract in hand (AG Nessel challenging it); likely grandfathered under Benson's pause"
   }
  ],
  "risk": {
   "TX": {
    "tier": 5,
-   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk. Abbott has told ERCOT to resume interconnections quickly after the audit pause ends Dec 10, so already-queued projects get a short window before Jan 19; SB 296 (two-year ban plus local votes) is the strictest bill filed.",
+   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk. Abbott has told ERCOT to resume interconnections quickly after the audit pause ends Dec 10, so already-queued projects get a short window before Jan 19; SB 296 (two-year ban plus local votes) is the strictest bill filed. Hinojosa has since said the moratorium covers all state permits, including for permitted projects not yet online, and a Senate majority backs SB 338's low-water cooling rule for ERCOT connections (from Sept 2027).",
    "to": [
     "LA",
     "OK",
@@ -1623,7 +1638,7 @@
   },
   "LA": {
    "tier": 2,
-   "why": "State actively courts projects (Act 730 rebates); prediction markets price ~18.5% chance of a moratorium by end-2027.",
+   "why": "State still courts projects (Act 730 rebates), but Gov. Landry's Nov framework ties the sales-tax exemption to attestations on ratepayer costs, grid reliability and water, and a PSC member wants a moratorium; a lawsuit challenges the Hyperion power-plant fast track. Prediction markets price ~18.5% chance of a moratorium by end-2027.",
    "to": [
     "MS",
     "AR"
@@ -1981,7 +1996,7 @@
   },
   "googl": {
    "grade": "Medium-High",
-   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google is already showing the workaround: two days after the election it took over Crusoe's Wyoming site for $17B and pledged to pay for 100% of the power, mostly from on-site fuel cells. That template (own power, no ratepayer cost, air cooling) is the one most likely to win approvals under the new regimes, but it raises cost per GW, and losing Texas's sales-tax exemption alone is material at this scale. The stock's weakness is mostly sector sentiment; its site risk is real but the most manageable among the big builders.",
+   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google is already showing the workaround: two days after the election it took over Crusoe's Wyoming site for $17B and pledged to pay for 100% of the power, mostly from on-site fuel cells. That template (own power, no ratepayer cost, air cooling) is the one most likely to win approvals under the new regimes, but it raises cost per GW, and losing Texas's sales-tax exemption alone is material at this scale. The stock's weakness is mostly sector sentiment; its site risk is real but the most manageable among the big builders. Michigan is a bright spot: its ~1 GW Van Buren Township campus is already pouring foundations with state permits and a DTE contract in hand, so it should be grandfathered from Benson's pause.",
    "moves": [
     "Move Texas phases to Wyoming, Oklahoma (Mayes) and Arkansas",
     "Self-supply power (Bloom/AEP, Intersect) to sidestep grid-cost fights",
@@ -1999,7 +2014,7 @@
   },
   "orcl": {
    "grade": "High",
-   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states.",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states. Developers are now asking it for multibillion-dollar parent guarantees before signing leases (Applied Digital, per Bloomberg), on top of the $7B+ Wisconsin collateral, and interim Nvidia CEO Kress reportedly opposed a $250B OpenAI credit backstop, so the financing side of its risk keeps widening even where permits are fine.",
    "moves": [
     "Use the Dec 10–Jan 19 ERCOT window for Shackelford",
     "Secure Jupiter's air permit (Dec 7 hearing)",
@@ -2017,16 +2032,16 @@
   },
   "spcx": {
    "grade": "Medium-High",
-   "view": "Live today: ~1.7 GW in Memphis, with Colossus 2 Building 3 (~0.8 GW) in Tennessee/Mississippi where neither governor backs a pause. The $74B plan confirmed Nov 12 splits the next leg: Starbase ($24B) is already under construction on SpaceX-controlled land with its own gas plant, outside ERCOT and Brownsville's moratorium, but still needs TCEQ air permits Hinojosa has signalled she will hold; Cochise County, Arizona ($50B) diversifies out of Texas but needs county approval against loud opposition and water limits, and Arizona's new Democratic trifecta now says it will take up a statewide moratorium in January, so the 'safe' second state is turning into a second permit fight. Medium: more sites, more permit fronts, but less single-state risk.",
+   "view": "Live today: ~1.7 GW in Memphis, and SemiAnalysis sees ~2.4 GW of IT there by year-end in Tennessee/Mississippi, where neither governor backs a pause. The next leg: Starbase ($24B) is under construction on SpaceX land with its own gas plant, outside ERCOT and Brownsville's moratorium, but Hinojosa now says her moratorium covers every state permit, so its air permits are squarely exposed. Cochise County is a 6 GW, four-phase plan with dry cooling and SpaceX-paid grid upgrades, the design most likely to pass new rules, but it needs county approval on Dec 9 against loud opposition and Arizona Democrats plan a moratorium push in January. More sites, more permit fronts, less single-state risk.",
    "moves": [
     "Keep near-term growth in Memphis/Southaven",
     "Seek the Starbase air permit before Jan 19",
-    "Lock in Cochise County approval and dry-cooling/co-op power terms before the Arizona session"
+    "Win the Dec 9 Cochise vote and start phase one before the Arizona session acts"
    ]
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits even started projects still need. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B), but the stock has given back much of the Nov 11 jump: −6.1% on Nov 13 on reports of a $4B+ equipment-backed loan, Microsoft reviewing its neocloud deals (about two-thirds of 2025 revenue) and Nvidia expected to slow new credit support. This is a cost-of-capital problem, not a site problem; bond yields (some above 16%) remain the gauge.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits even started projects still need. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B), but the stock has given back much of the Nov 11 jump: −6.1% on Nov 13 on reports of a $4B+ equipment-backed loan, Microsoft reviewing its neocloud deals (about two-thirds of 2025 revenue) and Nvidia expected to slow new credit support. This is a cost-of-capital problem, not a site problem; bond yields (some above 16%) remain the gauge. Applied Digital, one of its key landlords, now caps capacity for junk-rated tenants, another sign that its credit rating, not demand, limits how fast it can add sites.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Push more customer prepayment structures to fund 2027",
@@ -2053,9 +2068,11 @@
   },
   "apld": {
    "grade": "Low",
-   "view": "North Dakota sites; Harwood voters backed the project 3-to-1, the one industry win on Nov 3. The 14% fall was sentiment; fundamentally a beneficiary as capacity migrates north.",
+   "view": "North Dakota sites (Harwood voters backed it 3-to-1) plus Delta Forge in Louisiana, so almost no exposure to the pause states. Bloomberg's report that it demands multibillion-dollar parent guarantees from Oracle and Meta, caps junk-rated tenants like CoreWeave and targets a 70/30 investment-grade mix shows it pushing grid-cost risk onto tenants, which protects its balance sheet but may slow new lease signings. The real constraint is funding: interest cost already exceeds base rent and ~800 MW still needs financing over the next year (Morgan Stanley cut its target to $25). Recent drops track the neocloud tape, not its sites; Louisiana's new tax-break attestations are a small added hurdle for Delta Forge.",
    "moves": [
-    "Market as the friendly-state alternative"
+    "Market as the friendly-state alternative",
+    "Keep demanding tenant guarantees for grid links",
+    "Lock in project financing for the next ~800 MW"
    ]
   },
   "glxy": {
@@ -2097,6 +2114,61 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-14",
+   "co": [
+    "*"
+   ],
+   "t": "Texas got stricter on two fronts before the session: Governor-elect Hinojosa said her moratorium would cover every state permit, so even already-permitted projects that are not yet online would be on hold if they still need one, and 16 of 31 senators (a majority) filed Sen. Perry's SB 338, which would bar new ERCOT connections for data centers that do not use closed-loop, dry or saline cooling and cap city tax abatements at 50% from Sept 2027. Water-heavy designs now face a bipartisan bill, not just a Democratic governor.",
+   "src": "https://thetexasdispatch.com/sb-338-data-center-water-cooling-grid-tax-breaks"
+  },
+  {
+   "d": "2026-11-14",
+   "co": [
+    "apld",
+    "orcl",
+    "meta",
+    "crwv"
+   ],
+   "t": "Bloomberg reported Applied Digital asks tenants such as Oracle and Meta for multibillion-dollar parent guarantees to lock in power before signing leases, seeks case-by-case guarantees from Nvidia and AMD for grid links, and caps how much it leases to junk-rated neoclouds like CoreWeave (target mix 70% investment grade). It is the clearest sign yet that grid-cost liability is moving onto tenants' balance sheets, which hurts lower-rated builders like Oracle most.",
+   "src": "https://www.bloomberg.com/news/articles/2026-11-14/tech-giants-face-more-grid-cost-pressure-on-democratic-sweep"
+  },
+  {
+   "d": "2026-11-14",
+   "co": [
+    "spcx"
+   ],
+   "t": "SpaceX's Cochise County filing is for up to 6 GW in four ~1.5 GW phases (nine buildings, dry cooling, 24 GWh of batteries, $3.6B of grid upgrades it pays for), with construction from March 2027 if the county's planning commission approves on Dec 9; separately SemiAnalysis estimates its Memphis/Southaven campus goes from 0.4 GW of IT in January to 2.4 GW by year-end, with a possible 300 MW grid shortfall covered by batteries.",
+   "src": "https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/"
+  },
+  {
+   "d": "2026-11-15",
+   "co": [
+    "googl"
+   ],
+   "t": "Google's ~1 GW Project Cannoli in Van Buren Township, Michigan is under construction: foundations have been poured since late October and it already holds its state air, wetland and stream permits plus an approved DTE power contract (which AG Nessel is challenging). Having permits in hand before Governor-elect Benson's conditional pause makes it a likely grandfathered site.",
+   "src": "https://www.mlive.com/news/detroit/2026/11/construction-begins-at-google-hyperscale-data-center-despite-backlash.html"
+  },
+  {
+   "d": "2026-11-14",
+   "co": [
+    "orcl",
+    "crwv",
+    "nbis",
+    "iren"
+   ],
+   "t": "Into Nvidia's Nov 17 results (consensus ~$109B revenue), at least six brokers cut the stock on Nov 12–13 (including Truist, Melius, Oppenheimer and Bernstein), Atreides and another large holder asked the board not to rush a permanent CEO pick, and The Information reported interim CEO Kress had pushed back on a proposed $250B credit backstop for OpenAI. Options imply about a 9% move; what she says about customer financing matters most for Oracle and the neoclouds.",
+   "src": "https://finance.yahoo.com/technology/ai/articles/nvidia-interim-ceo-pushed-back-114212136.html"
+  },
+  {
+   "d": "2026-11-14",
+   "co": [
+    "meta",
+    "apld"
+   ],
+   "t": "Louisiana, the friendliest big state, added conditions: Gov. Landry's new framework makes the data center sales-tax exemption depend on attestations that projects won't raise ratepayer costs, will support grid reliability and protect water, while PSC member Davante Lewis called for a moratorium. Elsewhere local limits keep spreading (a dozen-plus Colorado moratoria, Washington's governor expecting a 2027 law, a Dec 15 vote in Mandan, North Dakota on a 25 MW ban).",
+   "src": "https://wbrz.com/news/landry-announces-new-tax-break-requirements-for-data-centers-which-he-now-calls-digital-factories-"
+  },
   {
    "d": "2026-11-13",
    "co": [
@@ -2570,65 +2642,21 @@
    ],
    "t": "Hinojosa told CNN she is not ruling data centers out but wants a pause until laws protect Texans and give communities a say; markets read it as softer than feared.",
    "src": "https://thehill.com/homenews/state-watch/6203045-texas-hinojosa-data-centers"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "meta"
-   ],
-   "t": "Meta president says data center construction will be very challenging; every hyperscaler weighing building outside the US.",
-   "src": "https://www.aol.com/articles/smart-people-saying-midterms-impact-155405000.html"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "*"
-   ],
-   "t": "Jefferies trims US incremental capacity to 112.8 GW by 2030 from 122.4 GW; expects new starts to migrate to friendlier states.",
-   "src": "https://www.aol.com/articles/smart-people-saying-midterms-impact-155405000.html"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "*"
-   ],
-   "t": "UBS: ~30% of expected 2028 additions at risk, Texas alone 18 GW; data centers more likely to pay for grid upgrades.",
-   "src": "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains"
-  },
-  {
-   "d": "2026-11-04",
-   "co": [
-    "orcl",
-    "sbank",
-    "googl",
-    "meta",
-    "iren",
-    "glxy",
-    "cifr",
-    "frmi"
-   ],
-   "t": "Texas governor-elect Hinojosa promises to extend the data center moratorium until the Legislature passes protections; local communities would get a vote.",
-   "src": "https://www.datacenterdynamics.com/en/news/texas-governor-elect-gina-hinojosa-promises-continued-data-center-moratorium-further-legislation/"
-  },
-  {
-   "d": "2026-11-04",
-   "co": [
-    "amzn",
-    "meta"
-   ],
-   "t": "Ohio: at least 14 municipalities pass bans or limits; Trenton closes annexation route for ~1 GW Amazon campus, Piqua targets 1.4 GW Meta campus.",
-   "src": "https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/"
-  },
-  {
-   "d": "2026-11-04",
-   "co": [
-    "*"
-   ],
-   "t": "GLJ: Texas projects with power but no state permit face 12–18 month delays; projects lacking both could move to Louisiana and Oklahoma.",
-   "src": "https://www.1012industryreport.com/politics/election-results-could-shift-more-data-center-projects-to-louisiana/"
   }
  ],
  "sources": [
+  [
+   "Bloomberg: grid cost pressure, Applied Digital guarantees",
+   "https://www.bloomberg.com/news/articles/2026-11-14/tech-giants-face-more-grid-cost-pressure-on-democratic-sweep"
+  ],
+  [
+   "Texas Dispatch: SB 338 low-water cooling bill",
+   "https://thetexasdispatch.com/sb-338-data-center-water-cooling-grid-tax-breaks"
+  ],
+  [
+   "DCD: SpaceX 6 GW Cochise plan",
+   "https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/"
+  ],
   [
    "Arizona moratorium push (Center Square)",
    "https://thecentersquare.com/arizona/article_436ddd41-c892-4e8d-9f15-60b8aabb4a94.html"
@@ -2696,18 +2724,6 @@
   [
    "The Hill: Senate advances permitting bill 73–25",
    "https://thehill.com/policy/energy-environment/6208626-bipartisan-permitting-reform-bill-energy-infrastructure"
-  ],
-  [
-   "The Advocate: lawsuit targets Louisiana data center power plans",
-   "https://theadvocate.com/baton_rouge/news/politics/lawsuit-targets-louisiana-data-center-power-plans/article_94f8f899-e516-532b-a87f-7ca7cc1b151b.html"
-  ],
-  [
-   "KVIA: Rep. Perez bills on Meta El Paso deal and sales-tax exemption",
-   "https://kvia.com/news/el-paso/2026/11/09/state-rep-perez-challenges-metas-el-paso-tax-deal-tax-exemption-for-data-centers"
-  ],
-  [
-   "Converge Digest: CoreWeave letter to Hinojosa",
-   "https://convergedigest.com/coreweave-texas-data-centers-governor-elect-hinojosa"
   ]
  ],
  "modo": {
