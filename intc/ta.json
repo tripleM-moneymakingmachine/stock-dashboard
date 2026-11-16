@@ -1,64 +1,64 @@
 {
- "asof": "Nov 13, 2026",
- "close": 59.66,
+ "asof": "Nov 16, 2026",
+ "close": 55.47,
  "bias": {
-  "en": "Rebound · slipped under the 5-day, holding the 10-day",
-  "zh": "反弹 · 跌破 5 日均线，守住 10 日均线"
+  "en": "Rebound failed · lost $57–58, oversold above $54.6",
+  "zh": "反弹失败 · 跌破 $57–58，在 $54.6 上方超卖"
  },
  "read": [
   {
-   "en": "Intel fell 2.5% on Nov 13 to $59.66, trading $57.00–61.34 on light volume (0.69x the 20-day average). It is above the 10-day ($58.82) and below the rising 5-day ($60.17), the 30-day ($83.87), 100-day ($98.16) and rising 200-day ($87.40). MACD has been below its signal since Oct 5, below zero, histogram narrowing toward a cross; Parabolic SAR has been bearish since Oct 30 ($74.91), and RSI is 32.4.",
-   "zh": "英特尔 11月13日下跌 2.5%，收于 $59.66，盘中区间 $57.00–61.34，成交量偏低（20 日均量的 0.69 倍）。股价位于 10 日均线（$58.82）上方，位于上行的 5 日均线（$60.17）以及 30 日（$83.87）、100 日（$98.16）和上行的 200 日均线（$87.40）下方。MACD 自 10月5日起位于信号线下方，在零轴下方，柱状图收窄、接近交叉；抛物线 SAR 自 10月30日起看空（$74.91），RSI 为 32.4。"
+   "en": "Intel fell 7.0% on Nov 16 to $55.47, trading $54.90–57.20 on light volume (0.69x the 20-day average). It is below the 5-day ($59.4), 10-day ($58.4), 30-day ($81.8), 100-day ($97.4) and 200-day ($87.4). MACD has been below its signal since Oct 5, below zero, histogram almost closed; Parabolic SAR has been bearish since Oct 30 ($73.04), and RSI is 29.9, oversold.",
+   "zh": "英特尔 11月16日下跌 7.0%，收于 $55.47，盘中区间 $54.90–57.20，成交量偏低（20 日均量的 0.69 倍）。股价位于 5 日（$59.4）、10 日（$58.4）、30 日（$81.8）、100 日（$97.4）和 200 日均线（$87.4）下方。MACD 自 10月5日起位于信号线下方，在零轴下方，柱状图几乎收拢；抛物线 SAR 自 10月30日起看空（$73.04），RSI 为 29.9，处于超卖。"
   },
   {
-   "en": "The close slipped under the 5-day and $60, now resistance, but the dip to $57.00 recovered above the 10-day. Resistance is $60.2–61.3 (5-day, Nov 12–13), then $62.5–62.8 and $64.1. Support is $58.1–58.8 (10-day, Nov 4 and 10 closes), then $56.8–57 (Nov 4–13 lows) and $54.6. A close above $61.3 would target $62.5–62.8; below $58.1, $57.",
-   "zh": "收盘跌破 5 日均线和 $60，该位置转为阻力，但盘中下探 $57.00 后回升至 10 日均线上方。阻力为 $60.2–61.3（5 日均线、11月12–13日），其次 $62.5–62.8 和 $64.1。支撑为 $58.1–58.8（10 日均线、11月4日和10日收盘），其次 $56.8–57（11月4–13日低点）和 $54.6。若收盘站上 $61.3，下一目标看 $62.5–62.8；若跌破 $58.1，则看 $57。"
+   "en": "The drop broke the $56.8–58.8 supports (Nov 4, 10 and 13 lows, 10-day), now resistance; the $54.90 low held above the Nov 6 low ($54.56). Resistance is $56.8–57.3, then $58.1–59.4 (Nov 10 close, 10 and 5-day) and $61.2–62.8. Support is $54.6–54.9, then $52.25 (Nov 5 close) and $51.5 (Nov 5 low). A close above $57.3 would target $58–59.4; below $54.6, $51.5–52.3.",
+   "zh": "此次下跌跌破 $56.8–58.8 支撑（11月4日、10日和13日低点、10 日均线），转为阻力；盘中低点 $54.90 守在 11月6日低点（$54.56）上方。阻力为 $56.8–57.3，其次 $58.1–59.4（11月10日收盘、10 日和 5 日均线）和 $61.2–62.8。支撑为 $54.6–54.9，其次 $52.25（11月5日收盘）和 $51.5（11月5日低点）。若收盘站上 $57.3，下一目标看 $58–59.4；若跌破 $54.6，则看 $51.5–52.3。"
   }
  ],
  "levels": {
   "r": [
    [
-    60.7,
+    57,
     {
-     "en": "5-day average $60.17; Nov 12 close $61.20; Nov 13 high $61.34",
-     "zh": "5日均线 $60.17；11月12日收盘 $61.20；11月13日高点 $61.34"
+     "en": "Nov 4 low $56.77, Nov 10 low $56.85 and Nov 13 low $57.00, lost; Nov 16 high $57.20",
+     "zh": "11月4日低点 $56.77、11月10日低点 $56.85 和11月13日低点 $57.00，已失守；11月16日高点 $57.20"
     }
    ],
    [
-    62.7,
+    58.7,
     {
-     "en": "Nov 11 close $62.50; Nov 3 high $62.59; Nov 12 high $62.76",
-     "zh": "11月11日收盘 $62.50；11月3日高点 $62.59；11月12日高点 $62.76"
+     "en": "Nov 10 close $58.13; 10-day average $58.4; 5-day $59.4",
+     "zh": "11月10日收盘 $58.13；10日均线 $58.4；5日均线 $59.4"
     }
    ],
    [
-    64.1,
+    62,
     {
-     "en": "Nov 11 high $64.06",
-     "zh": "11月11日高点 $64.06"
+     "en": "Nov 12 close $61.20; Nov 11 close $62.50; Nov 12 high $62.76",
+     "zh": "11月12日收盘 $61.20；11月11日收盘 $62.50；11月12日高点 $62.76"
     }
    ]
   ],
   "s": [
    [
-    58.4,
+    54.7,
     {
-     "en": "10-day average $58.82; Nov 10 close $58.13; Nov 4 close $58.27",
-     "zh": "10日均线 $58.82；11月10日收盘 $58.13；11月4日收盘 $58.27"
+     "en": "Nov 6 low $54.56; Nov 16 low $54.90",
+     "zh": "11月6日低点 $54.56；11月16日低点 $54.90"
     }
    ],
    [
-    56.9,
+    52.25,
     {
-     "en": "Nov 13 low $57.00; Nov 4 low $56.77; Nov 10 low $56.85",
-     "zh": "11月13日低点 $57.00；11月4日低点 $56.77；11月10日低点 $56.85"
+     "en": "Nov 5 close $52.25",
+     "zh": "11月5日收盘 $52.25"
     }
    ],
    [
-    54.6,
+    51.5,
     {
-     "en": "Nov 6 low $54.56",
-     "zh": "11月6日低点 $54.56"
+     "en": "Nov 5 low $51.51",
+     "zh": "11月5日低点 $51.51"
     }
    ]
   ]

@@ -1,57 +1,57 @@
 {
- "asof": "Nov 13, 2026",
- "close": 49.89,
+ "asof": "Nov 16, 2026",
+ "close": 45.16,
  "bias": {
-  "en": "Rebound fading · back under the 5-day, SAR at $45.7",
-  "zh": "反弹减弱 · 重新跌破 5 日均线，SAR 位于 $45.7"
+  "en": "Downtrend · SAR flipped bearish, at the Nov 6 low",
+  "zh": "下跌趋势 · 抛物线 SAR 转为看空，位于 11月6日低点"
  },
  "read": [
   {
-   "en": "AAOI fell 5.6% on Nov 13 to $49.89, trading $47.28–53.50. It is below the 5-day ($51.8), 10-day ($54.2), 30-day ($77.4), 100-day ($103.0) and 200-day ($115.0); only the 200-day is rising. MACD has been below its signal since Oct 13, below zero, histogram narrowing; Parabolic SAR has been bullish since Nov 11 ($45.66), and RSI is 34.4.",
-   "zh": "AAOI 11月13日下跌 5.6%，收于 $49.89，盘中区间 $47.28–53.50。股价位于 5 日（$51.8）、10 日（$54.2）、30 日（$77.4）、100 日（$103.0）和 200 日均线（$115.0）下方；仅 200 日均线在上行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月11日起看多（$45.66），RSI 为 34.4。"
+   "en": "AAOI fell 9.5% on Nov 16 to $45.16, trading $44.78–47.88. It is below the 5-day ($50.4), 10-day ($52.4), 30-day ($74.9), 100-day ($102.1) and 200-day ($115.0); all but the 200-day are falling. MACD has been below its signal since Oct 13, below zero, histogram widening again; Parabolic SAR flipped bearish on Nov 16 ($57.94), and RSI is 32.0.",
+   "zh": "AAOI 11月16日下跌 9.5%，收于 $45.16，盘中区间 $44.78–47.88。股价位于 5 日（$50.4）、10 日（$52.4）、30 日（$74.9）、100 日（$102.1）和 200 日均线（$115.0）下方；除 200 日均线外均在下行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图再度放大；抛物线 SAR 于 11月16日转为看空（$57.94），RSI 为 32.0。"
   },
   {
-   "en": "The close lost the $50.8–52.1 support, now resistance; the $47.28 low stayed above the SAR. Resistance is $51.8–53.5 (5-day, Nov 13 high), then $54.2–55.9 (10-day, Nov 12 high, Nov 11 close) and $57.9 (Nov 11 high). Support is $46.4–47.3 (Nov 10 and 13 lows), then $45.2–45.7 (SAR, Nov 6 low). A close above $53.5 would target $54–56; below $45.2, the SAR would flip bearish.",
-   "zh": "收盘跌破 $50.8–52.1 支撑，该区间转为阻力；盘中低点 $47.28 仍在 SAR 上方。阻力为 $51.8–53.5（5 日均线、11月13日高点），其次 $54.2–55.9（10 日均线、11月12日高点、11月11日收盘）和 $57.9（11月11日高点）。支撑为 $46.4–47.3（11月10日和13日低点），其次 $45.2–45.7（SAR、11月6日低点）。若收盘站上 $53.5，下一目标看 $54–56；若跌破 $45.2，SAR 将翻空。"
+   "en": "The drop broke the $45.4–47.3 supports (Nov 10 and 13 lows, the old SAR), now resistance, and the $44.78 low undercut the Nov 6 low ($45.15). Resistance is $46.4–47.9, then $50.4–50.8 (5-day, Nov 12 low) and $52.4–53.5 (10-day, Nov 13 high). Support is $44.8–45.2, then $40–41.4. A close above $47.9 would target $50.4–50.8; below $44.8, $40–41.4.",
+   "zh": "此次下跌跌破 $45.4–47.3 支撑（11月10日和13日低点、原 SAR 位置），转为阻力，盘中低点 $44.78 跌穿 11月6日低点（$45.15）。阻力为 $46.4–47.9，其次 $50.4–50.8（5 日均线、11月12日低点）和 $52.4–53.5（10 日均线、11月13日高点）。支撑为 $44.8–45.2，其次 $40–41.4。若收盘站上 $47.9，下一目标看 $50.4–50.8；若跌破 $44.8，则看 $40–41.4。"
   }
  ],
  "levels": {
   "r": [
    [
-    52.5,
+    47.3,
     {
-     "en": "5-day average $51.8; Nov 12 low $50.80, lost; Nov 13 high $53.50",
-     "zh": "5日均线 $51.8；11月12日低点 $50.80，已失守；11月13日高点 $53.50"
+     "en": "Nov 10 low $46.39 and Nov 13 low $47.28, lost; Nov 16 high $47.88",
+     "zh": "11月10日低点 $46.39 和11月13日低点 $47.28，已失守；11月16日高点 $47.88"
     }
    ],
    [
-    55,
+    50.6,
     {
-     "en": "10-day average $54.2; Nov 12 high $55.65; Nov 11 close $55.86",
-     "zh": "10日均线 $54.2；11月12日高点 $55.65；11月11日收盘 $55.86"
+     "en": "5-day average $50.4; Nov 12 low $50.80",
+     "zh": "5日均线 $50.4；11月12日低点 $50.80"
     }
    ],
    [
-    57.9,
+    52.9,
     {
-     "en": "Nov 11 high $57.94",
-     "zh": "11月11日高点 $57.94"
+     "en": "10-day average $52.4; Nov 13 high $53.50",
+     "zh": "10日均线 $52.4；11月13日高点 $53.50"
     }
    ]
   ],
   "s": [
    [
-    46.8,
+    45,
     {
-     "en": "Nov 13 low $47.28; Nov 10 low $46.39",
-     "zh": "11月13日低点 $47.28；11月10日低点 $46.39"
+     "en": "Nov 16 low $44.78; Nov 6 low $45.15",
+     "zh": "11月16日低点 $44.78；11月6日低点 $45.15"
     }
    ],
    [
-    45.4,
+    41,
     {
-     "en": "Parabolic SAR $45.66; Nov 6 low $45.15",
-     "zh": "抛物线 SAR $45.66；11月6日低点 $45.15"
+     "en": "Jan 5 swing high $41.35; $40 round number",
+     "zh": "1月5日波段高点 $41.35；$40 整数关口"
     }
    ]
   ]

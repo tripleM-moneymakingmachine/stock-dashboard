@@ -1,57 +1,57 @@
 {
- "asof": "Nov 13, 2026",
- "close": 592.94,
+ "asof": "Nov 16, 2026",
+ "close": 592.85,
  "bias": {
-  "en": "Strong uptrend · record close, overbought",
-  "zh": "强势上行 · 创收盘新高，超买"
+  "en": "Strong uptrend · just under the $597 high, overbought",
+  "zh": "强势上涨 · 略低于 $597 高点，超买"
  },
  "read": [
   {
-   "en": "Berkshire Class B rose 0.5% on Nov 13 to $592.94, a record close, with the 52-week high at $596.92. It is well above the 20-day ($559.03), 50-day ($529.64) and 200-day ($500.43) averages, all rising. MACD (17.8) is above its signal (15.0) and zero with the histogram widening, and RSI is about 81, overbought, with the price at the upper Bollinger band ($598.20).",
-   "zh": "伯克希尔 B 类股 11月13日上涨 0.5% 至 $592.94，创收盘新高，52 周高点为 $596.92。股价远高于 20 日（$559.03）、50 日（$529.64）和 200 日均线（$500.43），三者均在上行。MACD（17.8）位于信号线（15.0）和零轴上方，柱状图扩大；RSI 约 81，处于超买，股价位于布林带上轨（$598.20）。"
+   "en": "Berkshire Hathaway B was flat on Nov 16 at $592.85, trading $588.55–595.83. It is above the 5-day ($589.4), 10-day ($580.2), 30-day ($547.8), 100-day ($517.3) and 200-day ($501.0), all rising. MACD has been above its signal since Oct 8, above zero, histogram easing; Parabolic SAR has been bullish since Oct 30 ($573.38), and RSI is 80.8, overbought.",
+   "zh": "伯克希尔 B 股 11月16日持平，收于 $592.85，盘中区间 $588.55–595.83。股价位于 5 日（$589.4）、10 日（$580.2）、30 日（$547.8）、100 日（$517.3）和 200 日均线（$501.0）上方，均在上行。MACD 自 10月8日起位于信号线上方，在零轴上方，柱状图收窄；抛物线 SAR 自 10月30日起看多（$573.38），RSI 为 80.8，处于超买。"
   },
   {
-   "en": "Resistance is $597–598 (52-week high, upper band), then the round $600. Support is $579 (Nov 4 record close), then $569–571 (Nov 6 close, Nov 9 area) and the 20-day near $559. After a ~16% run since early October with RSI above 80, a pause toward $579 would be normal; a close above $598 targets $600 and beyond, while a close below $569 would point to the 20-day.",
-   "zh": "阻力位于 $597–598（52 周高点、布林带上轨），其次为整数关口 $600。支撑位于 $579（11月4日创纪录收盘），其次为 $569–571（11月6日收盘、11月9日区域）及 20 日均线约 $559。自 10 月初上涨约 16% 且 RSI 超过 80，回调至 $579 属正常；收盘站上 $598 将指向 $600 及以上，收盘跌破 $569 则指向 20 日均线。"
+   "en": "No level changed: the $595.83 high stayed under the $596.92 52-week high (Nov 12), and the $588.55 low held above the Nov 11 close. Resistance is $595.8–596.9, then the round $600. Support is $588.2–589.4 (Nov 11 close, Nov 12 low, 5-day), then $579.1–580.2 (Nov 4 close, 10-day) and $570.9–573.4 (Nov 6 close, SAR). A close above $596.9 would target $600; below $588, $579–580.",
+   "zh": "关键价位未变：盘中高点 $595.83 仍低于 52 周高点 $596.92（11月12日），低点 $588.55 守在 11月11日收盘价上方。阻力为 $595.8–596.9，其次 $600 整数关口。支撑为 $588.2–589.4（11月11日收盘、11月12日低点、5 日均线），其次 $579.1–580.2（11月4日收盘、10 日均线）和 $570.9–573.4（11月6日收盘、SAR）。若收盘站上 $596.9，下一目标看 $600；若跌破 $588，则看 $579–580。"
   }
  ],
  "levels": {
   "r": [
    [
-    597.5,
+    596.9,
     {
-     "en": "52-week high $596.92; upper Bollinger band $598.20",
-     "zh": "52 周高点 $596.92；布林带上轨 $598.20"
+     "en": "52-week high $596.92 (Nov 12); Nov 16 high $595.83",
+     "zh": "52周高点 $596.92（11月12日）；11月16日高点 $595.83"
     }
    ],
    [
     600,
     {
      "en": "Round number $600",
-     "zh": "整数关口 $600"
+     "zh": "$600 整数关口"
     }
    ]
   ],
   "s": [
    [
-    579.1,
+    588.8,
     {
-     "en": "Nov 4 record close $579.09",
-     "zh": "11月4日创纪录收盘 $579.09"
+     "en": "Nov 11 close $588.24; Nov 12 low $589.02; 5-day average $589.4",
+     "zh": "11月11日收盘 $588.24；11月12日低点 $589.02；5日均线 $589.4"
     }
    ],
    [
-    570,
+    579.6,
     {
-     "en": "Nov 6 close $570.89; Nov 9 area",
-     "zh": "11月6日收盘 $570.89；11月9日区域"
+     "en": "10-day average $580.2; Nov 4 close $579.09",
+     "zh": "10日均线 $580.2；11月4日收盘 $579.09"
     }
    ],
    [
-    559,
+    572,
     {
-     "en": "20-day average $559.03",
-     "zh": "20 日均线 $559.03"
+     "en": "Parabolic SAR $573.4; Nov 6 close $570.89",
+     "zh": "抛物线 SAR $573.4；11月6日收盘 $570.89"
     }
    ]
   ]
