@@ -1,30 +1,30 @@
 {
- "session": "2026-11-13",
- "asof": "Fri Nov 13, 2026",
+ "session": "2026-11-16",
+ "asof": "Mon Nov 16, 2026",
  "tone": "down",
- "headline": "Chip rally unwinds and the 10-year hits 5.14%; Nasdaq −0.9%, but S&P 500 ends week +2.5%",
- "summary": "Stocks opened higher after a softer-than-expected monthly PPI, then reversed within minutes as chipmakers gave back the week's post-Huang rally; the S&P 500 fell as much as 1.2% (low 7,499.40) and the Nasdaq about 1.8% before trimming losses into the close. Underneath it was a rotation rather than a rout: the equal-weight S&P 500 rose about 0.2%, seven of 11 sectors gained led by consumer staples (+1.4%), and the Dow edged up while tech (−2.0%) took the hit.",
+ "headline": "Nvidia turmoil and new AI-chip curbs sink chips; SOX −5.3%, Nasdaq −2.5% into correction",
+ "summary": "Stocks opened lower and never mounted a recovery: selling built through the afternoon, with the S&P 500 down as much as 2.1% (low 7,400.15) in the final two hours before a small late trim, for its third straight loss. It was broad as well as tech-led — decliners beat advancers about 3.5-to-1 on the NYSE and the Russell 2000 fell 1.9% — while consumer staples (+0.3%) and utilities (+0.2%) were the only sectors to rise and technology (−3.2%) was by far the worst.",
  "stats": [
-  ["S&P 500", "7,561.67", -0.4],
-  ["Nasdaq", "25,136.27", -0.91],
-  ["Dow", "52,347.55", 0.1],
-  ["Russell 2000", "2,790.49", -0.31],
-  ["SOX (chips)", "10,146.3", -3.43],
-  ["VIX", "19.30", 3.21, true],
-  ["US 10Y", "5.14%", "+4bp"],
-  ["WTI crude", "$88.56", -0.2]
+  ["S&P 500", "7,416.59", -1.92],
+  ["Nasdaq", "24,509.76", -2.49],
+  ["Dow", "51,608.17", -1.41],
+  ["Russell 2000", "2,737.56", -1.9],
+  ["SOX (chips)", "9,610.65", -5.28],
+  ["VIX", "22.91", 18.7, true],
+  ["US 10Y", "5.12%", "−4bp"],
+  ["WTI crude", "$85.72", -3.21]
  ],
  "drivers": [
-  ["Chip rally reverses", "After a 10.6% surge over the first four days on bets Nvidia's rivals would gain, the SOX fell 3.4% as investors weighed Nvidia's role in funding the AI build-out: AMD −8.8% to $534 after a 45% five-day run, Sandisk −5.6%, Western Digital −5.0%, Broadcom −4.8% on a Redburn downgrade, Marvell −4.7% and Micron −2.5%. Nvidia slipped again for a sixth straight weekly loss (about −12% on the week, back below $4 trillion) as HSBC cut it to hold with a $170 target, and Arm fell 4.6% after an FT report that Nvidia's board approached its CEO Rene Haas."],
-  ["AI-infrastructure worries spread", "Nebius fell 9.9% and CoreWeave 6.1% on a report that Microsoft is reviewing its neocloud contracts; Dell lost 7.2% after a report traced servers with restricted Nvidia chips to a Shanghai data center, and Treasury Secretary Bessent said Treasury had favored blacklisting Nvidia partner Megaspeed. Cisco dropped 6.2% as a squeeze in gross margin to 63.7% overshadowed record $18.5 billion revenue."],
-  ["Wholesale inflation keeps hike bets intact", "October PPI rose 0.3%, below the 0.4% forecast, but 6.5% from a year earlier, the most since November 2022; Fed Governor Bowman said hikes may be needed and Daly and Collins backed further tightening. The 10-year yield rose about 4bp to 5.14% (high 5.17%), the dollar index reached its highest since April 2025, and a December hike stays fully priced."],
-  ["Money rotates to defensives", "Consumer staples (+1.4%; PepsiCo +2.2%, Coca-Cola +1.9%), communication services (+1.1%, Meta +2.9%) and financials (+0.8%) cushioned the index. Modine jumped 28% on a report Samsung is in talks to buy the data-center cooling maker, Cerebras rose 11% after raising its 2026 outlook, and Nu Holdings gained 12% on record profit; airlines slipped late after an FAA nationwide ground stop."]
+  ["Chip sell-off spreads to all 30 SOX names", "Every stock in the semiconductor index fell as Friday's reversal deepened: Micron −7.6%, Intel −7.1%, Lam Research −6.7%, ASML −5.9%, AMD −5.6% and Applied Materials −5.5%, with Marvell and Arm also down 6% or more. A report that SemiAnalysis cut its 2028 AI-accelerator spending forecast by 28% and its 2028 HBM demand estimate by 30% added to the pressure on memory and equipment names."],
+  ["Nvidia leadership vacuum before results", "Nvidia fell 4.1% to about $156 after a CNBC report that its board is not discussing bringing back Jensen Huang and is instead investigating his conduct and hiring a search firm for a new CEO; Treasury Secretary Bessent also urged an outside successor. Down about 12.6% over five sessions, it reports after Tuesday's close, with analysts looking for revenue near $109 billion."],
+  ["New US curbs on remote AI-chip access", "The Commerce Department issued a rule closing a route that let Chinese firms rent advanced Nvidia-class computing in third-country data centers, adding license requirements for advanced chip exports to Singapore, Malaysia, Thailand, Indonesia and Brazil. AI-infrastructure names fell with chips: Dell −7.0%, Super Micro −6.9%, Nebius −7.6%, CoreWeave −6.1%, and Alphabet, Amazon and Meta lost between 2.4% and 4.1%."],
+  ["Defensive rotation as yields and oil ease", "Money moved into staples and other steady names (Tyson Foods rose about 7% on a profit beat and upbeat 2027 outlook; Coca-Cola and McDonald's gained), while the 10-year yield slipped about 4bp to 5.12% as WTI fell 3.2% to $85.72 on surplus forecasts from the IEA and Goldman. Fed Chair Warsh said disappointing AI returns could slow growth and lift unemployment, but a December hike stays about 96% priced."]
  ],
- "week": "For the week the S&P 500 rose 2.5% (its first weekly gain since early October), the Nasdaq 2.3% (best week since August), the Dow 2.1% and the Russell 2000 1.3%, even as Nvidia lost about 12% and the 10-year yield posted its biggest weekly jump since April 2025; WTI fell about 2.5% on the week as the IEA flagged a fourth-quarter supply surplus.",
- "watch": "Next: October retail sales and Nvidia's third-quarter results (its first under interim CEO Colette Kress) on Tue Nov 17, Palo Alto Networks results and Anthropic's IPO pricing on Wed Nov 18, and the Fed meeting on Dec 8–9.",
+ "week": "The week starts with the S&P 500 down 1.9% and the Nasdaq down 2.5%, leaving the Nasdaq more than 10% below its Oct 6 record close (a correction) and the SOX up about 43% for 2026 versus a 107% gain at its June peak; the 10-year yield remains above 5% after last week's jump on hot inflation data.",
+ "watch": "Next: Nvidia's third-quarter results and Home Depot on Tue Nov 17, Fed minutes and Anthropic's IPO pricing (reportedly six times oversubscribed) on Wed Nov 18, Walmart on Thu Nov 19, and the Fed meeting on Dec 8–9.",
  "sources": [
-  ["AP", "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-friday-11-13-2026"],
-  ["Reuters", "https://lse.co.uk/news/us-stocks-sampp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares-n7xkdvi1b6k09g2.html"],
-  ["MarketWatch", "https://morningstar.com/news/marketwatch/20261113206/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang"]
+  ["Reuters", "https://www.marketscreener.com/news/wall-street-slumps-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo-ce785edfdd8ef425"],
+  ["AP", "https://www.itv.com/news/2026-11-16/more-drops-for-nvidia-and-other-ai-stocks-drag-the-us-market-lower-pulling-the-sp-500-down-2"],
+  ["MarketWatch", "https://morningstar.com/news/marketwatch/20261116101/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies"]
  ]
 }
