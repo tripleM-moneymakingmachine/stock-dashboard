@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-16",
- "asofText": "Nov 16, 2026",
+ "asof": "2026-11-17",
+ "asofText": "Nov 17, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1512,12 +1512,26 @@
    "est": false,
    "now": 0,
    "note": "~1 GW hyperscale campus on 282 acres; foundations poured from late Oct 2026; state air, wetland and stream permits and an MPSC-approved 20-year DTE contract in hand (AG Nessel challenging it); likely grandfathered under Benson's pause"
+  },
+  {
+   "id": "goog-palo",
+   "name": "Palo (Linn County, Duane Arnold)",
+   "owner": "googl",
+   "partner": null,
+   "state": "IA",
+   "lat": 42.09,
+   "lon": -91.78,
+   "gw": 0.6,
+   "status": "pl",
+   "capexB": null,
+   "est": true,
+   "note": "Google petitioned Palo to annex ~650 acres next to the restarting Duane Arnold nuclear plant for up to six buildings, cooling water from the Cedar River; planning commission Nov 30, first building early 2027 if approved. GW is an estimate sized to Duane Arnold (~0.6 GW)"
   }
  ],
  "risk": {
   "TX": {
    "tier": 5,
-   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk. Abbott has told ERCOT to resume interconnections quickly after the audit pause ends Dec 10, so already-queued projects get a short window before Jan 19; SB 296 (two-year ban plus local votes) is the strictest bill filed. Hinojosa has since said the moratorium covers all state permits, including for permitted projects not yet online, and a Senate majority backs SB 338's low-water cooling rule for ERCOT connections (from Sept 2027).",
+   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk. Abbott has told ERCOT to resume interconnections quickly after the audit pause ends Dec 10, so already-queued projects get a short window before Jan 19; SB 296 (two-year ban plus local votes) is the strictest bill filed. Hinojosa first said the moratorium would reach any state permit a project still needs, then (Nov 16) narrowed it to projects without state permits, saying she cannot shut down permitted ones; TCEQ may resume permits after the Dec 17 PUCT review, giving a roughly one-month grandfathering window, and a Senate majority backs SB 338's low-water cooling rule for ERCOT connections (from Sept 2027).",
    "to": [
     "LA",
     "OK",
@@ -1987,19 +2001,19 @@
   },
   "amzn": {
    "grade": "Medium",
-   "view": "Exposure is now larger than it looked: two 1 GW+ Ohio campuses (Jeffersonville, Beech Road) are under construction in a tier-5 state, on top of Georgia's Butts and Covington builds. Trenton's ban hits only the 600-acre township expansion, not the four buildings already rising in the city. Virginia, its biggest market, now faces a possible temporary pause on new approvals (on Senate Democrats' 2027 list), which would hit future Northern and central Virginia phases rather than running capacity. AWS still has the deepest bench of friendly-state sites (Mississippi, Indiana, Pennsylvania nuclear, ~2 GW in central Virginia), so the cost is timing, not lost demand.",
+   "view": "Exposure is now larger than it looked: two 1 GW+ Ohio campuses (Jeffersonville, Beech Road) are under construction in a tier-5 state, on top of Georgia's Butts and Covington builds. Trenton's ban hits only the 600-acre township expansion, not the four buildings already rising in the city. Virginia, its biggest market, now faces a possible temporary pause on new approvals (on Senate Democrats' 2027 list), which would hit future Northern and central Virginia phases rather than running capacity. AWS still has the deepest bench of friendly-state sites (Mississippi, Indiana, Pennsylvania nuclear, ~2 GW in central Virginia), so the cost is timing, not lost demand. The $5B sale of 75% of 647 MW of finished Indiana and Mississippi shells to Blackstone (leased back 12–32 years at a 7% cap rate) shows the funding workaround: recycle capital out of friendly-state campuses into new ones, keeping capex off the balance sheet.",
    "moves": [
     "Redirect Ohio phases to Indiana/Mississippi",
-    "Accelerate Susquehanna nuclear campus",
-    "Offer ratepayer-protection tariffs in Georgia"
+    "Sell-and-lease-back finished shells (Blackstone template) to fund new builds",
+    "Accelerate Susquehanna nuclear campus"
    ]
   },
   "googl": {
    "grade": "Medium-High",
-   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google is already showing the workaround: two days after the election it took over Crusoe's Wyoming site for $17B and pledged to pay for 100% of the power, mostly from on-site fuel cells. That template (own power, no ratepayer cost, air cooling) is the one most likely to win approvals under the new regimes, but it raises cost per GW, and losing Texas's sales-tax exemption alone is material at this scale. The stock's weakness is mostly sector sentiment; its site risk is real but the most manageable among the big builders. Michigan is a bright spot: its ~1 GW Van Buren Township campus is already pouring foundations with state permits and a DTE contract in hand, so it should be grandfathered from Benson's pause.",
+   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google is already showing the workaround: two days after the election it took over Crusoe's Wyoming site for $17B and pledged to pay for 100% of the power, mostly from on-site fuel cells. That template (own power, no ratepayer cost, air cooling) is the one most likely to win approvals under the new regimes, but it raises cost per GW, and losing Texas's sales-tax exemption alone is material at this scale. The stock's weakness is mostly sector sentiment; its site risk is real but the most manageable among the big builders. Michigan is a bright spot: its ~1 GW Van Buren Township campus is already pouring foundations with state permits and a DTE contract in hand, so it should be grandfathered from Benson's pause. It keeps adding friendly-state options: an annexation request in Palo, Iowa for up to six buildings beside the Duane Arnold nuclear plant (vote path starts Nov 30), and a $15B Malaysia plan for 2027–28 that the new export rule does not block for US-headquartered builders.",
    "moves": [
-    "Move Texas phases to Wyoming, Oklahoma (Mayes) and Arkansas",
-    "Self-supply power (Bloom/AEP, Intersect) to sidestep grid-cost fights",
+    "Move Texas phases to Wyoming, Iowa (Palo/Duane Arnold), Oklahoma and Arkansas",
+    "Self-supply power (Bloom/AEP, Intersect, nuclear) to sidestep grid-cost fights",
     "Phase Texas builds to fit grandfathered permits"
    ]
   },
@@ -2014,7 +2028,7 @@
   },
   "orcl": {
    "grade": "High",
-   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states. Developers are now asking it for multibillion-dollar parent guarantees before signing leases (Applied Digital, per Bloomberg), on top of the $7B+ Wisconsin collateral, and interim Nvidia CEO Kress reportedly opposed a $250B OpenAI credit backstop, so the financing side of its risk keeps widening even where permits are fine.",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states. Developers are now asking it for multibillion-dollar parent guarantees before signing leases (Applied Digital, per Bloomberg), on top of the $7B+ Wisconsin collateral, and interim Nvidia CEO Kress reportedly opposed a $250B OpenAI credit backstop, so the financing side of its risk keeps widening even where permits are fine. Lenders are now pricing that risk: HSBC sold a ~$300M slice of Jupiter's $18B construction loan in the mid-80s after the force majeure notice, and the stock fell ~5% to near $119 on Nov 16.",
    "moves": [
     "Use the Dec 10–Jan 19 ERCOT window for Shackelford",
     "Secure Jupiter's air permit (Dec 7 hearing)",
@@ -2041,7 +2055,7 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits even started projects still need. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B), but the stock has given back much of the Nov 11 jump: −6.1% on Nov 13 on reports of a $4B+ equipment-backed loan, Microsoft reviewing its neocloud deals (about two-thirds of 2025 revenue) and Nvidia expected to slow new credit support. This is a cost-of-capital problem, not a site problem; bond yields (some above 16%) remain the gauge. Applied Digital, one of its key landlords, now caps capacity for junk-rated tenants, another sign that its credit rating, not demand, limits how fast it can add sites.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits even started projects still need. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B), but the stock has given back much of the Nov 11 jump: −6.1% on Nov 13 on reports of a $4B+ equipment-backed loan, Microsoft reviewing its neocloud deals (about two-thirds of 2025 revenue) and Nvidia expected to slow new credit support. This is a cost-of-capital problem, not a site problem; bond yields (some above 16%) remain the gauge. Applied Digital, one of its key landlords, now caps capacity for junk-rated tenants, another sign that its credit rating, not demand, limits how fast it can add sites. It fell another ~6% on Nov 16 to about $50 with the sector, with no new site news; Hinojosa now says already-permitted Texas projects will not be stopped, which helps its Helios and Denton tenancies.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Push more customer prepayment structures to fund 2027",
@@ -2059,7 +2073,7 @@
   },
   "iren": {
    "grade": "High",
-   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip is a Microsoft-requested network redesign, not a regulatory block, and Horizon 1 came in 22% faster than benchmark. The new worries are counterparties: Microsoft is reviewing its neocloud deals and Nvidia, a $3.4B contracted customer, is expected to slow new investments (binding contracts should hold); the stock fell 6.7% to $18.17. Abbott's push to restart ERCOT hookups after Dec 10 is the window to energise Sweetwater before Hinojosa takes office.",
+   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip is a Microsoft-requested network redesign, not a regulatory block, and Horizon 1 came in 22% faster than benchmark. The new worries are counterparties: Microsoft is reviewing its neocloud deals and Nvidia, a $3.4B contracted customer, is expected to slow new investments (binding contracts should hold); the stock fell 6.7% to $18.17. Abbott's push to restart ERCOT hookups after Dec 10 is the window to energise Sweetwater before Hinojosa takes office. Another ~10% fall on Nov 16 to about $16.3 (−45% in a month) is financing sentiment around Nvidia and the SemiAnalysis cut; Hinojosa's narrower moratorium (permitted projects spared) is if anything slightly better for Sweetwater.",
    "moves": [
     "Deliver Horizons 2–4 inside Microsoft grace periods",
     "Use the Dec 10–Jan 19 ERCOT window for Sweetwater",
@@ -2114,6 +2128,54 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-16",
+   "co": [
+    "*"
+   ],
+   "t": "SemiAnalysis cut its AI accelerator spending forecast to $627B for 2027 (-19%), $758B for 2028 (-28%) and $923B for 2030 (-40%), and 2028 HBM demand by 30%, citing slower lab revenue growth, tighter financing for projects without hyperscaler offtake, and about 5.8 GW of US capacity due in late 2027 to early 2028 delayed by the midterm results; Nvidia takes two-thirds of the cut. With a new export rule the same day, the chip index fell 5.3% and CoreWeave, Nebius, IREN and Applied Digital lost roughly 6–10% each.",
+   "src": "https://officechai.com/ai/semianalysis-reportedly-cuts-2028-ai-accelerator-spend-forecast-by-28"
+  },
+  {
+   "d": "2026-11-16",
+   "co": [
+    "*"
+   ],
+   "t": "Commerce issued an interim rule requiring licences for advanced AI chips shipped to Malaysia, Singapore, Indonesia, Thailand and Brazil (US-headquartered buyers are exempt if they file monthly reports) and for any data center that gives China-headquartered firms large-scale remote compute, while formally scrapping the AI Diffusion Rule. It narrows the overseas escape route for non-US operators but leaves US hyperscalers free to build abroad, as Google did the same day with a $15B Malaysia plan for 2027–28.",
+   "src": "https://www.cbsnews.com/news/nvidia-jensen-huang-commerce-department-limit-remote-access-ai-chips"
+  },
+  {
+   "d": "2026-11-16",
+   "co": [
+    "amzn"
+   ],
+   "t": "Blackstone's data center REIT agreed to buy 75% of two AWS joint ventures holding 13 new powered shells (647 MW of IT) in northern Indiana and Mississippi for about $5B at a 7% cap rate, with AWS leasing everything back for 12–32 years. Amazon is recycling capital out of finished friendly-state campuses to fund new builds; the trust says it tracks over $300B of US data centers due for delivery in 2027.",
+   "src": "https://www.blackstone.com/news/press/blackstone-digital-infrastructure-trust-announces-5-billion-acquisition-of-stabilized-data-center-portfolio/"
+  },
+  {
+   "d": "2026-11-16",
+   "co": [
+    "orcl"
+   ],
+   "t": "Bloomberg reported HSBC sold a roughly $300M slice of the $18B construction loan for Stargate's Project Jupiter in New Mexico at prices in the mid-80s, shortly after Oracle's force majeure notice, a sign lenders are marking down contested-permit campuses. Oracle fell about 5% to near $119, and co-CEO Mike Sicilia said the industry made a 'classic mistake' in how it sold data centers to local communities.",
+   "src": "https://ph.investing.com/news/stock-market-news/hsbc-offloads-300-million-troubled-ai-data-center-loan-at-steep-discount--report-2703740"
+  },
+  {
+   "d": "2026-11-16",
+   "co": [
+    "*"
+   ],
+   "t": "Texas Governor-elect Hinojosa narrowed her pledge in a Washington Post interview: the Jan 19 moratorium would cover projects that have not yet received state permits, because 'if they've already received state permits, I don't have the power just to shut them down.' Gibson Dunn notes TCEQ could resume permits after the Dec 17 PUCT review of the ERCOT audit, so projects that land permits in that roughly one-month window look grandfathered.",
+   "src": "https://www.detroitnews.com/story/news/politics/2026/11/16/texass-democratic-gov-elect-vows-to-trade-gop-culture-wars-moderation/92809320007/"
+  },
+  {
+   "d": "2026-11-16",
+   "co": [
+    "*"
+   ],
+   "t": "PJM filed its 'Fast Energization' plan with FERC to halve study time for new generation and large loads to about a year and give states the data center–driven transmission costs so they can bill them, while Grid Strategies estimates the Senate permitting bill would charge data centers about $55B in transmission costs over ten years, 82% of it in PJM and MISO. Faster hookups, higher bills: the cost moves onto builders outside Texas.",
+   "src": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half"
+  },
   {
    "d": "2026-11-14",
    "co": [
@@ -2588,63 +2650,25 @@
    ],
    "t": "Modo Energy: 256 GW (40%) of tracked US data center capacity sits in states whose governors back pauses; at face value 11 GW of expected build stops (10 GW in Texas), and 2030 national capacity falls only ~3 GW once projects reallocate to MISO, SPP and the West.",
    "src": "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
-  },
-  {
-   "d": "2026-11-06",
-   "co": [
-    "msft",
-    "orcl"
-   ],
-   "t": "Microsoft is winding down its 2023 deal to rent AI capacity from Oracle, saying the older Nvidia hardware no longer meets its needs.",
-   "src": "https://startupfortune.com/microsoft-winds-down-oracle-deal-to-rent-ai-cloud-capacity"
-  },
-  {
-   "d": "2026-11-06",
-   "co": [
-    "*"
-   ],
-   "t": "Vistra raised 2026 guidance and set 2027 targets; it blamed softer ERCOT prices partly on the Texas data center permit pause, which it does not see as lasting.",
-   "src": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "iren",
-    "msft"
-   ],
-   "t": "IREN pushed its $4B+ run-rate target to January (possibly late February) after Microsoft asked for network changes at Childress; AI cloud revenue nearly tripled and the stock rose 20% the next day.",
-   "src": "https://tipranks.com/news/iren-stock-rallies-after-earnings-as-ai-cloud-revenue-nearly-triples-despite-data-center-delays"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "msft",
-    "nbis",
-    "iren",
-    "crwv"
-   ],
-   "t": "Bloomberg: Microsoft is tightening oversight of neocloud projects (Nebius, IREN, Nscale), walking away from sites it sees as risky and favouring its own data centers over new leases.",
-   "src": "https://finance.yahoo.com/news/microsoft-sours-neoclouds-amid-data-160016061.html"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "orcl",
-    "sbank"
-   ],
-   "t": "ING is auctioning about $500M of data center loans, including a slice of Project Jupiter debt in New Mexico, where Oracle has issued a force majeure notice and an air-permit hearing is set for Dec 7.",
-   "src": "https://bisnow.com/news/national/data-center-capital-markets/ing-unloads-500m-in-data-center-loans-in-wake-of-midterms"
-  },
-  {
-   "d": "2026-11-05",
-   "co": [
-    "*"
-   ],
-   "t": "Hinojosa told CNN she is not ruling data centers out but wants a pause until laws protect Texans and give communities a say; markets read it as softer than feared.",
-   "src": "https://thehill.com/homenews/state-watch/6203045-texas-hinojosa-data-centers"
   }
  ],
  "sources": [
+  [
+   "SemiAnalysis forecast cut (OfficeChai)",
+   "https://officechai.com/ai/semianalysis-reportedly-cuts-2028-ai-accelerator-spend-forecast-by-28"
+  ],
+  [
+   "Blackstone BXDC: $5B AWS portfolio",
+   "https://www.blackstone.com/news/press/blackstone-digital-infrastructure-trust-announces-5-billion-acquisition-of-stabilized-data-center-portfolio/"
+  ],
+  [
+   "PJM Fast Energization filing",
+   "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half"
+  ],
+  [
+   "Gibson Dunn: Texas data center dates",
+   "https://www.gibsondunn.com/texas-data-center-critical-dates-and-procedures-following-the-2026-elections/"
+  ],
   [
    "Bloomberg: grid cost pressure, Applied Digital guarantees",
    "https://www.bloomberg.com/news/articles/2026-11-14/tech-giants-face-more-grid-cost-pressure-on-democratic-sweep"
@@ -2708,22 +2732,6 @@
   [
    "Quartz: SoftBank $3.7B US data center equipment write-down",
    "https://qz.com/softbank-quarterly-loss-us-data-center-write-down-111026"
-  ],
-  [
-   "White & Case: Senate permitting bill data center provisions",
-   "https://whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote"
-  ],
-  [
-   "Texas Tribune: SpaceX $24B Starbase data center and power plant",
-   "https://texastribune.org/2026/11/10/texas-spacex-data-center-power-plant"
-  ],
-  [
-   "CNBC: CoreWeave Q3 2026 results",
-   "https://cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
-  ],
-  [
-   "The Hill: Senate advances permitting bill 73–25",
-   "https://thehill.com/policy/energy-environment/6208626-bipartisan-permitting-reform-bill-energy-infrastructure"
   ]
  ],
  "modo": {
