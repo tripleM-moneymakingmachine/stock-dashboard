@@ -1,48 +1,48 @@
 {
- "session": "2026-11-16",
- "asof": "Mon Nov 16, 2026",
+ "session": "2026-11-17",
+ "asof": "Tue Nov 17, 2026",
  "horizon": "1–2 weeks",
- "headline": "Tech rout and tame Canada CPI lift the dollar to a 19-month high; euro tests 1.10",
- "summary": "The dollar index edged up to about 103.5, its highest since April 2025, as a 2.5% Nasdaq slide on Nvidia's leadership crisis sent investors to the high-yielding dollar and a December Fed hike stayed about 90% priced, even as short-dated yields slipped. The loonie, Aussie, peso and rupiah lagged, with the rupiah at a record low, while the rupee, yuan and won held firm on inflows and exporter selling.",
+ "headline": "Dollar pauses near 19-month high as solid US spending meets AI jitters; rupee hits 7-month high",
+ "summary": "The dollar index set a new 19-month high near 103.7 in Asia, then slipped about 0.1% to around 103.5 as Treasury yields eased with a 1% S&P 500 drop, even though strong retail sales and Musalem's call for several more hikes kept a December Fed hike fully priced. The rupee, peso and Taiwan dollar led on inflows, cheaper oil and central-bank support, while the franc and won lagged.",
  "drivers": [
   [
-   "AI selloff boosts the dollar",
-   "The S&P 500 fell 1.9% and the Nasdaq 2.5% as Nvidia's board ruled out bringing back its former CEO, and the Kospi lost 3.6%. The euro slipped to about 1.0999, a 19-month low, and the Aussie fell about 0.5% to near 0.6735, a 10-month low."
+   "Fed hike bets stay locked in",
+   "October retail sales control group rose 0.6% against 0.3% expected and Musalem said several hikes may be needed by spring, so a December hike stays fully priced; the 10-year yield still eased to about 5.10% as stocks fell."
   ],
   [
-   "Fed hike bets hold; Canada and oil hit the loonie",
-   "A 25bp Fed hike on Dec 9 stays about 90% priced; Warsh skipped policy, and Hammack prefers small steps, cooling 50bp talk. Tamer Canadian CPI and a 3.6% drop in Brent to $92.44 sent USD/CAD to about 1.4310, a 19-month high."
+   "AI selloff deepens, then Nvidia beats",
+   "The Kospi fell 2.6% below 5,000 and the Taiex lost 948 points on foreign selling, pushing USD/TWD briefly through 33. After the bell Nvidia reported $115.8bn in revenue and guided to $130bn, lifting its shares about 2–4% after hours."
   ],
   [
-   "Asia splits on flows",
-   "Taiwan's central bank stepped in as foreign selling pushed USD/TWD to 32.969, and the rupiah closed at a record 18,268. The rupee rose 27 paise to 93.92 on equity inflows, and exporters kept the won and yuan firm."
+   "Asia's defenders and inflows",
+   "Taiwan's central bank turned the Taiwan dollar to a 32.85 close at the day's high, the PBOC fixed at 6.7132, and $6–7bn of recent portfolio inflows lifted the rupee 46 paise to 93.47."
   ]
  ],
  "view": [
   "My dollar view:",
-  "Still bullish for the next 1–2 weeks: the Fed is set to hike in December while the BoC and RBA look done and the ECB is near the end, and the tech selloff adds haven demand, so I keep backing the dollar against the loonie, Aussie and euro. I fade it only against the yen near 160, where Tokyo is on watch and the BoJ may hike. A DXY close back below 102.5, a strong Nvidia report that revives risk appetite, or Fed speakers ruling out more hikes would turn me neutral."
+  "Still bullish for the next 1–2 weeks, but the move is stretched, so I would add on dips rather than chase: the Fed is set to hike in December while the BoC and RBA look done, and I keep backing the dollar against the loonie, euro and Aussie. I fade it against the yen near 160 and now against the rupee on inflows. Nvidia's beat is the first test: a Nasdaq rebound that takes the DXY below 102.5, or FOMC minutes that cool talk of more hikes, would turn me neutral."
  ],
  "ideas": [
   [
    "usdcad",
-   "Hold the long from 1.4080–1.4100 as tame CPI keeps the BoC on hold; for 1.4450, stop raised to 1.4240."
+   "Hold the long from 1.4080–1.4100 with the BoC on hold and the Fed hiking; for 1.4450, stop 1.4240."
   ],
   [
    "eurusd",
-   "Hold the short from 1.1170–1.1190 after the break of 1.10; target extended to 1.0900, stop cut to 1.1060."
+   "Hold the short from 1.1170–1.1190 as the euro sits under 1.10; for 1.0900, stop 1.1060."
   ],
   [
    "usdjpy",
-   "Hold the sale filled at 160.00–160.20 as Tokyo guards 160; for 157.50, stop cut to 160.70."
+   "Hold the sale filled at 160.00–160.20 as Tokyo guards 160; for 157.50, stop 160.70."
   ]
  ],
- "review": "The dollar calls gained again: the EUR/USD short is about 180 pips in favour, AUD/USD about 175 and USD/CAD about 210, so I trail stops and extend targets; the USD/JPY sale is about 60 pips up and the ringgit and rupiah longs are slightly ahead. USD/CHF closed on its 0.8400 cap and turns long, EUR/JPY slipped under 175.5 and turns short, and all other ranges held.",
+ "review": "No target or stop was hit: USD/CAD is about 210 pips in favour, EUR/USD and AUD/USD about 175 each, USD/JPY about 60 and USD/CHF and EUR/JPY about 25, so I hold them and trail the CHF and Aussie stops. The ringgit and rupiah longs are slightly ahead, USD/INR closed below its 93.50 floor and turns short, and all other ranges held, with USD/TWD's dip through 33 reversed by the close.",
  "rows": {
   "eurusd": {
-   "note": "Down about 0.2% to near 1.0999, a fresh 19-month low; the short is about 180 pips in favour.",
-   "why": "The dollar did the moving. A 2.5% Nasdaq slide on Nvidia's leadership turmoil pushed investors into the high-yielding dollar, and Fed hike bets held even as short-dated Treasury yields slipped about 4bp. The ECB set its reference rate at 1.1014, and with no fresh euro news the pair tested 1.10 for the first time since April 2025.",
-   "outlook": "I hold the short, extend the target to 1.0900 and trail the stop to 1.1060: the Fed is still outpacing an ECB near the end of its cycle. A close back above 1.1060 would say the dollar's rally has stalled.",
-   "watch": "German ZEW and ECB's Lane and Cipollone (Nov 17), Nvidia results (Nov 17), euro zone flash PMIs (late Nov).",
+   "note": "Flat near 1.0995 after a new 19-month low of 1.0983; the short is about 180 pips in favour.",
+   "why": "The dollar paused rather than reversed. A stronger German ZEW (35.6 vs 29 expected) gave the euro no lift, while firm US retail sales (control group +0.6% vs +0.3%) and St. Louis Fed's Musalem calling for several more hikes kept the Fed's edge intact. The pair dipped under 1.10 again, but a slight narrowing in short-term rate gaps stopped a deeper break.",
+   "outlook": "I hold the short for 1.0900 with the stop at 1.1060: the Fed is set to keep hiking past December while the ECB's next move after December is priced only for March. A close above 1.1060 would say the dollar's run has stalled.",
+   "watch": "Euro zone final CPI and Lagarde (Nov 18), FOMC minutes (Nov 18), euro zone flash PMIs (late Nov), ECB (Dec 17).",
    "view": {
     "dir": "down",
     "call": "Short from 1.1170–1.1190; Fed outpaces a late-cycle ECB.",
@@ -51,32 +51,32 @@
    }
   },
   "gbpusd": {
-   "note": "Down about 0.15% to near 1.3186, a fifth straight loss and a five-week low, inside my 1.3150–1.3350 range.",
-   "why": "The dollar did the moving. Sterling had no UK data of its own, and weekend hawkish remarks from BoE's Pill and Greene were already priced, so the pound simply tracked the dollar's risk-off rally. It held up better than the euro and Aussie because a second BoE hike on Dec 17 is still seen as likely.",
-   "outlook": "I keep the 1.3150–1.3350 range, but the risk is to the downside: a soft UK jobs or CPI print would break 1.3150 and turn me bearish toward the 2026 lows. Firm wages and a 3.7% or higher CPI would lift it back toward 1.33.",
-   "watch": "UK jobs (Nov 17), UK CPI and Bailey (Nov 18), UK retail sales (Nov 20), BoE (Dec 17).",
+   "note": "Up about 0.15% to near 1.3205, ending a five-day slide; mid-range in my 1.3150–1.3350 band.",
+   "why": "Sterling did the moving, modestly. UK unemployment unexpectedly fell to 4.6% (4.7% expected) even as regular pay growth slowed to 3.5% and payrolls dropped 34,000, a mixed set that ING judged unlikely to derail BoE tightening. The pound dipped to 1.3169 early, then recovered as the dollar eased after US data.",
+   "outlook": "I keep the 1.3150–1.3350 range: BoE hike bets offset a firm Fed. A UK CPI print well below the expected 3.7% would break 1.3150 and turn me bearish; a hot print would lift it toward 1.33.",
+   "watch": "UK CPI and Bailey (Nov 18), UK retail sales (Nov 20), UK flash PMIs (late Nov), BoE (Dec 17).",
    "view": {
     "dir": "range",
     "call": "1.3150–1.3350; BoE hike bets vs firm Fed."
    }
   },
   "audusd": {
-   "note": "Down about 0.5% to near 0.6735, a new 10-month low; the sale is about 175 pips in favour.",
-   "why": "Both sides moved. The Aussie, the market's main risk proxy, fell as the Nasdaq dropped 2.5% and Korean stocks lost over 3%, while option traders paid the most for Aussie puts since April. At home, the RBA's split 6–3 vote to hike to 4.85% points to a pause, so the rate gap keeps moving the dollar's way.",
-   "outlook": "I hold the sale, extend the target to 0.6650 and cut the stop to 0.6790: the RBA looks done, the Fed is hiking and the 0.6749 Fibonacci support has given way. A close above 0.6790, perhaps on a strong Nvidia report or jobs data, would end the call.",
-   "watch": "RBA minutes and Nvidia results (Nov 17), wages (Nov 18), jobs (Nov 19), monthly CPI (Nov 25).",
+   "note": "Steady near 0.6738 after a 10-month low of 0.6725; the sale is about 170 pips in favour.",
+   "why": "Risk mood did the moving. The Aussie hit a new 10-month low in Asia as the Kospi and Taiex slid, then steadied as the dollar eased. RBA minutes showed six of nine members saw 4.85% as not clearly enough to tame inflation, a hawkish lean, but three dissenters warned of a sharper downturn, so traders still see no December hike.",
+   "outlook": "I hold the sale for 0.6650, near the January lows BBH flags at 0.6660, and cut the stop to 0.6780. Nvidia's beat is the main risk: a close above 0.6780 on a tech rebound would end the call.",
+   "watch": "Wage price index (Nov 18), jobs (Nov 19), Nvidia follow-through in Asia, monthly CPI (Nov 25).",
    "view": {
     "dir": "down",
-    "call": "Sale from 0.6900–0.6920; RBA paused, Fed hiking.",
+    "call": "Sale from 0.6900–0.6920; RBA divided, Fed hiking.",
     "target": 0.665,
-    "stop": 0.679
+    "stop": 0.678
    }
   },
   "usdjpy": {
-   "note": "Down about 0.1% to near 159.47; my sale from 160.00–160.20 is about 60 pips in favour.",
-   "why": "The yen did the moving, slightly. Japan's economy shrank 0.1% annualised in the third quarter against 0.3% growth expected, but traders looked past it as Capital Economics and others still see a BoJ hike in December. The stock rout and fear of intervention near 160 led traders to trim yen shorts, offsetting the firm dollar.",
-   "outlook": "I hold the sale for 157.50 and cut the stop to 160.70, just above Friday's 160.19 spike: Tokyo is guarding 160 and the BoJ may hike in December. A close above 160.70 would show officials are standing aside.",
-   "watch": "Tokyo comments near 160, Nvidia results (Nov 17), Japan CPI (Nov 20), BoJ speakers, US yields.",
+   "note": "Flat near 159.48 after an Asian dip to 159.23; my sale from 160.00–160.20 is about 60 pips in favour.",
+   "why": "The two forces cancelled out. Finance Minister Katayama repeated that Tokyo would act on one-sided moves in contact with the US Treasury, which kept traders from pushing through 160, while solid US retail sales and hawkish Fed talk supported the dollar. A 4bp fall in the 10-year Treasury yield to about 5.10% as stocks slid also helped the yen at the margin.",
+   "outlook": "I hold the sale for 157.50 with the stop at 160.70: words alone have capped the pair below 160 all month and a December BoJ hike is still in play. A close above 160.70 would show Tokyo is standing aside.",
+   "watch": "FOMC minutes (Nov 18), Japan CPI (Nov 20), Tokyo comments near 160, BoJ speakers, Japan's monthly intervention data (end-Nov).",
    "view": {
     "dir": "down",
     "call": "Sale filled 160.00–160.20; Tokyo guards 160, BoJ may hike.",
@@ -85,22 +85,22 @@
    }
   },
   "usdchf": {
-   "note": "Up about 0.15% to near 0.8400, a 19-month high, right on my 0.8400 range top.",
-   "why": "The dollar did the moving. Fed hike bets keep the rate gap wide while the SNB holds at 0%, which makes the franc a funding currency for carry trades. Even a 2% drop in the S&P 500 gave the franc little haven support, because higher US yields and the dollar's own haven appeal won out.",
-   "outlook": "The close on the 0.8400 cap turns me long toward 0.8500 with a stop at 0.8340: the rate gap favours the dollar and the franc is no longer acting as a haven. A close back below 0.8340 would say the break has failed.",
-   "watch": "Fed speakers, SNB comments, equity sentiment, Swiss inflation (early Dec).",
+   "note": "Up about 0.25% to near 0.8417, a new 18-month high; my long is about 25 pips in favour.",
+   "why": "The dollar did the moving against a low-yielding franc. Musalem said several more Fed hikes may be needed by spring, while the SNB sits at 0%, so the franc keeps losing as a funding currency. Even with US stocks down again and Treasury yields slipping, the franc drew no haven demand.",
+   "outlook": "I hold the long for 0.8500 and raise the stop to 0.8360: the rate gap is widening and the franc is not acting as a haven. A close back below 0.8360 would say the breakout has failed.",
+   "watch": "FOMC minutes (Nov 18), Fed speakers, SNB comments, Swiss CPI (early Dec).",
    "view": {
     "dir": "up",
     "call": "Long 0.8380–0.8400; rate gap, franc used to fund carry.",
     "target": 0.85,
-    "stop": 0.834
+    "stop": 0.836
    }
   },
   "usdcad": {
-   "note": "Up about 0.25% to near 1.4299 after a 19-month high of about 1.4310; the buy is about 210 pips in favour.",
-   "why": "Both sides moved. Canada's October CPI came in tamer than expected, so economists such as CIBC now see the BoC holding in December, while the Fed is set to hike. Oil added to the loonie's losses: Brent settled 3.6% lower at $92.44 as Hormuz flows recover, and Canada's 10-year yield fell about 4bp to 3.82%.",
-   "outlook": "I hold the buy for 1.4450 and raise the stop to 1.4240, under Monday's lows, to lock in most of the gain: the BoC looks done and the Fed is not. A sharp oil rebound or a dovish Fed turn would be the main risks.",
-   "watch": "BoC speakers, oil and Hormuz headlines, Fed speakers, Canada retail sales (late Nov).",
+   "note": "Flat near 1.4300 after a 19-month high of 1.4316; the buy is about 210 pips in favour.",
+   "why": "Both sides were quiet. The loonie got some help from a 0.8% rebound in Brent to $93.14 on tanker attacks in Hormuz and an extension of Canada-China trade deals, but Monday's tame CPI keeps the Bank of Canada on hold while the Fed hikes. Corpay noted the dollar looks stretched, which explains the pause near 1.43.",
+   "outlook": "I hold the buy for 1.4450 with the stop at 1.4240: the policy gap is the widest in this cycle. A sustained oil rally above $100 or a dovish Fed turn would be the main threats.",
+   "watch": "FOMC minutes (Nov 18), oil and Hormuz headlines, Canada retail sales (Nov 20).",
    "view": {
     "dir": "up",
     "call": "Long from 1.4080–1.4100; tame CPI, BoC on hold, Fed hiking.",
@@ -109,10 +109,10 @@
    }
   },
   "usdcnh": {
-   "note": "Down about 0.15% to near 6.665 offshore as exporters sold dollars despite a still-weak PBOC fixing.",
-   "why": "Exporter flows did the moving. The PBOC set the midpoint at 6.7141, about 370 pips weaker than the 6.6771 estimate, and the higher FX reserve ratio took effect, yet year-end dollar selling by exporters kept the yuan firm. Soft October data, with industrial output up 4.8%, did little to the currency.",
-   "outlook": "I keep the 6.64–6.70 range: the PBOC leans against gains while exporters sell dollars on rallies. A close below 6.64 would show Beijing is letting the rally run; above 6.70 would show it wants a weaker yuan.",
-   "watch": "Daily fixings vs estimates, loan prime rates (Nov 20), US-China summit headlines.",
+   "note": "Little changed near 6.666 offshore, near the strongest yuan level since early November.",
+   "why": "The PBOC and summit hopes held it steady. The midpoint was set at 6.7132, the firmest since February 2023 but still about 420 pips weaker than the 6.6715 estimate, a sign Beijing is slowing gains rather than resisting the dollar. Traders also stayed long yuan into this week's APEC summit in Shenzhen, where Xi and Trump are due to meet.",
+   "outlook": "I keep the 6.64–6.70 range: steady but weak-side fixings lean against a faster rally while exporters sell dollars on bounces. A close below 6.64 after the summit would show Beijing is letting the yuan run.",
+   "watch": "APEC summit and Xi-Trump meeting (Nov 18–19), loan prime rates (Nov 20), daily fixings vs estimates.",
    "view": {
     "dir": "range",
     "call": "6.64–6.70; PBOC slows the yuan, exporters sell USD."
@@ -120,49 +120,49 @@
   },
   "usdhkd": {
    "note": "Steady near 7.8466, about 35 pips from the 7.85 weak edge of the peg.",
-   "why": "Nothing local moved the pair. The gap between US rates and one-month HIBOR, about 2.68%, keeps the carry trade into US dollars attractive and holds the Hong Kong dollar near the weak end of its band. Banks' heavy use of the HKMA discount window shows liquidity is tight, which limits how far the pair can rise.",
-   "outlook": "No trade in 7.83–7.85: the carry gap keeps it near 7.85, and only a jump in HIBOR or HKMA buying at 7.85 would pull it lower.",
-   "watch": "HKMA operations at 7.85, HIBOR, Fed speakers.",
+   "why": "Nothing local moved it. The wide gap between US rates and HIBOR keeps the carry trade into US dollars attractive and holds the Hong Kong dollar near the weak end of its band. Tight interbank liquidity and the HKMA's 7.85 commitment cap the upside.",
+   "outlook": "No trade in 7.83–7.85: carry keeps it pinned near 7.85, and only a HIBOR jump or HKMA buying at 7.85 would pull it lower.",
+   "watch": "HKMA operations at 7.85, HIBOR, FOMC minutes (Nov 18).",
    "view": {
     "dir": "range",
     "call": "7.83–7.85, no trade; carry gap keeps it near 7.85."
    }
   },
   "usdsgd": {
-   "note": "Up about 0.05% to near 1.2888, inside my 1.2780–1.2920 range.",
-   "why": "The dollar did the moving. Fed hike bets and the global tech selloff kept the dollar firm across Asia, but the Singapore dollar lost far less than its neighbours. UOB estimates the S$NEER is about 1.6% above the middle of the MAS band, so the policy path still supports it.",
-   "outlook": "I keep the 1.2780–1.2920 range: the MAS band limits losses, but a Fed set to hike keeps the pair firm. A close above 1.2920 would open a long toward 1.3000; UOB sees support near 1.2840.",
-   "watch": "Singapore final Q3 GDP and non-oil exports, Fed speakers, Asian tech-stock flows.",
+   "note": "Flat near 1.2884, inside my 1.2780–1.2920 range and just under 1.29.",
+   "why": "The dollar did the moving, gently. Fed hike bets kept USD/SGD firm, but UOB's S$NEER model shows the currency about 1.6% above the middle of the MAS band, which limits how far the Singapore dollar can fall against the basket. UOB sees 1.2900 as a cap for now, with strong support near 1.2840.",
+   "outlook": "I keep the 1.2780–1.2920 range: the MAS band anchors the Singapore dollar while a hiking Fed keeps the pair heavy. A close above 1.2920 would open 1.3000.",
+   "watch": "Singapore final Q3 GDP (late Nov), FOMC minutes (Nov 18), Asian tech-stock flows.",
    "view": {
     "dir": "range",
     "call": "1.2780–1.2920; MAS band vs firm Fed."
    }
   },
   "usdkrw": {
-   "note": "Won rose 1.0 to 1,335.7 in Seoul even as the Kospi fell 3.6%; offshore about 1,335.6.",
-   "why": "Exporters did the moving. The Kospi lost 3.59% to 5,100.5 as foreigners sold tech shares over the Nvidia fallout, which would normally hurt the won. Exporters' dollar sales absorbed the outflows and lower oil helped Korea's import bill, so the won held near the strong end of its recent range.",
-   "outlook": "I keep the 1,330–1,365 range: exporter selling favours the won, but foreign stock selling and a Fed set to hike limit gains. A Seoul close below 1,325 would open 1,315; above 1,365 would revive the long.",
-   "watch": "Foreign Kospi flows, Nvidia results (Nov 17), oil and Hormuz headlines, Fed speakers.",
+   "note": "Won fell 2.5 to 1,338.2 in Seoul as the Kospi lost 2.6% to below 5,000; offshore near 1,335.",
+   "why": "Equity outflows did the moving. Foreigners sold a net 1.45 trillion won of Korean shares, pushing the Kospi to 4,968.5, its first close under 5,000 since February, and their dollar buying briefly took the pair toward 1,340. Exporters' dollar sales near those levels and a steady dollar index around 103.5 limited the damage.",
+   "outlook": "I keep the 1,330–1,365 range: exporter selling caps the pair, while foreign stock selling and Fed hikes limit won gains. Nvidia's beat could ease outflows; a Seoul close below 1,325 would open 1,315, above 1,365 would revive the long.",
+   "watch": "Foreign Kospi flows after Nvidia, FOMC minutes (Nov 18), oil, Korea November exports (Dec 1).",
    "view": {
     "dir": "range",
     "call": "1,330–1,365; exporter sales vs equity outflows."
    }
   },
   "usdtwd": {
-   "note": "Taiwan dollar fell 4.8 cents to 32.886 in Taipei after trading 32.870–32.969; offshore near 32.96 later.",
-   "why": "Equity outflows did the moving. The Taiex plunged more than 2,600 points as US tech stocks slid, and heavy foreign selling pushed the pair through 32.9. Local reports said the central bank stepped in near the close, trimming a loss of more than 10 cents to 4.8 cents.",
-   "outlook": "I keep the 32.60–33.05 range: officials are defending 33 again, but foreign selling and Fed hikes cap the Taiwan dollar's gains. A close above 33.05 would show the defence has failed; below 32.60 would open 32.40.",
-   "watch": "Foreign Taiex flows, Nvidia results (Nov 17), central bank action near 33, Fed speakers.",
+   "note": "Taiwan dollar rose 3.6 cents to 32.850 in Taipei, the session high, after touching 33.015.",
+   "why": "The central bank did the moving. Foreign investors sold another NT$38.1bn of shares and the Taiex lost 948 points to 40,092, which pushed the pair through 33 in the morning. Exporters sold dollars near 33 and local reports said the central bank stepped in again late in the day, turning a 12-cent loss into a gain.",
+   "outlook": "I keep the 32.60–33.05 range: officials are clearly defending 33 and exporters see it as a selling point, but foreign outflows cap the Taiwan dollar. A close above 33.05 would show the defence has failed; below 32.60 would open 32.40.",
+   "watch": "Foreign Taiex flows after Nvidia, index futures settlement (Nov 18), central bank action near 33.",
    "view": {
     "dir": "range",
-    "call": "32.60–33.05; officials defend 33, outflows resume."
+    "call": "32.60–33.05; officials defend 33, outflows persist."
    }
   },
   "usdmyr": {
-   "note": "Ringgit eased to 4.0915/0960 at the 6pm KL close from 4.0845/0890; my long is slightly in favour.",
-   "why": "The dollar did the moving. Bank Muamalat said futures fully price a December Fed hike with some chance of 50bp, which lifted demand for dollars across Asia. The ringgit still rose against most major and ASEAN currencies, so the weakness was about the dollar rather than Malaysia.",
-   "outlook": "I hold the long, extend the target to 4.125 and raise the stop to 4.075: Fed hike bets outweigh Bank Negara's steady rate for now. A close back below 4.075 would say the break has failed.",
-   "watch": "Bank Negara comments, regional chip stocks, oil, Fed speakers.",
+   "note": "Ringgit flat at 4.0915/0960 at the 6pm KL close, trading 4.0892–4.0945; my long is slightly ahead.",
+   "why": "Neither side moved much. Bank Muamalat's chief economist said caution over the tech selloff and US-China trade tensions kept the pair in a narrow range, while bets on more aggressive Fed tightening kept dollar demand steady. The ringgit eased against most other majors and ASEAN peers.",
+   "outlook": "I hold the long for 4.125 with the stop at 4.075: Fed hikes outweigh Bank Negara's steady rate for now. A close back below 4.075, perhaps on a tech rebound, would say the break has failed.",
+   "watch": "Malaysia October CPI (late Nov), regional chip stocks after Nvidia, oil, FOMC minutes (Nov 18).",
    "view": {
     "dir": "up",
     "call": "Long 4.080–4.090; break of 4.085 on Fed hike bets.",
@@ -171,20 +171,20 @@
    }
   },
   "usdphp": {
-   "note": "Peso fell 22 centavos to 63.94 at the BAP close, a fourth straight loss and near its record low.",
-   "why": "The dollar did the moving. RCBC's chief economist pointed to Fed hike bets, high Treasury yields and geopolitical risk, and the PSEi's 2% drop to pandemic-era lows added to stagflation worries. Lower oil, with Brent down 3.6%, gave little relief during Manila hours.",
-   "outlook": "I keep the 63.30–64.20 range with the record low as the cap: possible BSP hikes and holiday remittances help, but the Fed weighs. A close above 64.20 would mark a new record and open 64.80.",
-   "watch": "BSP comments, oil and Hormuz headlines, Fed speakers, BSP decision (Dec 17).",
+   "note": "Peso rose 27 centavos to 63.67 at the BAP close, ending a four-day slide after testing 63.99.",
+   "why": "Oil and profit-taking did the moving. RCBC's Ricafort pointed to crude near 2.5-month lows and the resulting cut in local pump prices, which eases the import bill. Traders took profit on dollar longs after the pair retested the highs just below 64, and volume rose to $1.49bn.",
+   "outlook": "I keep the 63.30–64.20 range with the record low as the cap: lower oil, holiday remittances and possible BSP hikes help, but the Fed weighs. A close above 64.20 would mark a new record and open 64.80.",
+   "watch": "Oil and Hormuz headlines, BSP comments, FOMC minutes (Nov 18), BSP decision (Dec 17).",
    "view": {
     "dir": "range",
-    "call": "63.30–64.20; remittances and BSP vs Fed."
+    "call": "63.30–64.20; oil, remittances and BSP vs Fed."
    }
   },
   "usdidr": {
-   "note": "Rupiah fell 62 points to 18,268, a record weak close; JISDOR 18,250. My long is about 40 points up.",
-   "why": "Both sides moved. A stronger dollar on Fed hike bets met local worries: government interest costs have reached Rp494tn so far this year, and political uncertainty after last week's vice-presidential resignation persists. The rupiah fell even though Bank Indonesia had defended it on Friday.",
-   "outlook": "I hold the long for 18,500 and raise the stop to 18,150: Fed bets, MSCI-related outflows and politics outweigh BI's smoothing. A hawkish BI move this week that pulls it back below 18,150 would end the call.",
-   "watch": "Bank Indonesia decision (Nov 18–19), MSCI changes (effective Nov 30), politics, Fed speakers.",
+   "note": "Rupiah edged up 12 points to 18,256 spot, but JISDOR set a record weak 18,264. Long about 30 points up.",
+   "why": "Positioning before Bank Indonesia did the moving. Spot steadied off Monday's record low as traders waited for BI's decision, where analysts expect a fifth straight hold, while the JISDOR reference rate still slipped to a record. High US Treasury yields and Fed hike bets keep the pressure on.",
+   "outlook": "I hold the long for 18,500 with the stop at 18,150: Fed bets, MSCI-related outflows and politics outweigh BI's smoothing. A surprise BI hike that pulls the rupiah below 18,150 would end the call.",
+   "watch": "Bank Indonesia decision (Nov 18), MSCI changes (effective Nov 30), politics, FOMC minutes (Nov 18).",
    "view": {
     "dir": "up",
     "call": "Long 18,200–18,250; Fed, politics and outflows vs BI.",
@@ -193,20 +193,22 @@
    }
   },
   "usdinr": {
-   "note": "Rupee rose 27 paise to 93.92, Asia's best performer, trading 93.91–94.25.",
-   "why": "Flows did the moving. Foreign buying of Indian shares and a rally in local stocks lifted the rupee against the regional trend, and softer oil eased importers' dollar needs. DBS noted steady equity and debt inflows; high US yields and the firm dollar capped the gain.",
-   "outlook": "I keep the 93.50–94.50 range: inflows help the rupee, but state-bank dollar buying and the Fed cap it. A close below 93.50 would open 93.00; above 94.50 would open 95.",
-   "watch": "RBI decision (Dec 4), oil and Hormuz headlines, foreign equity flows, Fed speakers.",
+   "note": "Rupee rose 46 paise to 93.47, its strongest close since April, breaking below my 93.50 range floor.",
+   "why": "Flows did the moving. Foreign portfolio investors have brought in roughly $6–7bn in about two weeks, a Bank of Baroda treasurer said, and local stocks rose. Brent, down about 20% this month to near $93, cuts importers' dollar needs; the rupee is up about 1.6% in November, its best month since March 2025.",
+   "outlook": "The close below 93.50 turns me short USD/INR toward 93.00 with a stop at 93.80: inflows and lower oil are doing the work. RBI dollar buying to rebuild reserves is the main risk; a close above 93.80 would end the call.",
+   "watch": "Foreign equity flows, oil and Hormuz headlines, India flash PMIs (late Nov), RBI decision (Dec 4).",
    "view": {
-    "dir": "range",
-    "call": "93.50–94.50; inflows and oil vs Fed."
+    "dir": "down",
+    "call": "Sell 93.50–93.60; FPI inflows and cheaper oil.",
+    "target": 93.0,
+    "stop": 93.8
    }
   },
   "eurjpy": {
-   "note": "Down about 0.4% to near 175.4, just under my 175.5 range floor, as the euro fell and the yen firmed.",
-   "why": "Both sides moved. The euro slid to a 19-month low against the dollar, while the yen gained as the stock rout and intervention fears near 160 led traders to cut short yen bets. Japan's surprise GDP contraction did not shake expectations of a BoJ hike in December.",
-   "outlook": "The close below 175.5 turns me short toward 174.0 with a stop at 176.3: the euro is losing ground and the yen is protected by Tokyo and BoJ hike bets. A close back above 176.3 would say the range has resumed.",
-   "watch": "Tokyo comments, ECB's Lane (Nov 17), Japan CPI (Nov 20), euro zone PMIs.",
+   "note": "Little changed near 175.35, below the old 175.5 range floor; my sale is about 25 pips in favour.",
+   "why": "Both legs were steady. The euro held near its 19-month low against the dollar despite a strong ZEW, and the yen stayed firm on Tokyo's warnings near 160. With both currencies flat against the dollar, the cross drifted just under 175.5.",
+   "outlook": "I hold the sale for 174.0 with the stop at 176.3: the euro is losing ground and the yen is protected near 160. A close back above 176.3 would say the old range has resumed.",
+   "watch": "Lagarde and euro zone CPI (Nov 18), Japan CPI (Nov 20), Tokyo comments, euro zone PMIs (late Nov).",
    "view": {
     "dir": "down",
     "call": "Sell 175.4–175.8; weak euro, yen guarded near 160.",
@@ -215,60 +217,60 @@
    }
   },
   "cnhjpy": {
-   "note": "Little changed near 23.93, in the upper half of my 23.6–24.2 range.",
-   "why": "Both sides firmed together. The yuan gained about 0.15% against the dollar on exporter selling, and the yen firmed slightly on intervention fears, so the cross barely moved. The PBOC's weak fixing and Tokyo's warnings keep both currencies anchored.",
-   "outlook": "I keep the 23.6–24.2 range: the yuan is held steady, so the cross follows USD/JPY, which Tokyo is likely to cap near 160. A close above 24.2 would show intervention is not coming.",
-   "watch": "PBOC fixings, Tokyo comments near 160, Japan CPI (Nov 20).",
+   "note": "Little changed near 23.92, in the upper half of my 23.6–24.2 range.",
+   "why": "Neither side moved. The yuan held near a two-week high against the dollar on a firm PBOC fixing and summit hopes, and USD/JPY was flat below 160, so the cross barely changed. Both currencies are anchored by officials: Beijing slows the yuan, Tokyo caps the yen's losses.",
+   "outlook": "I keep the 23.6–24.2 range: the cross follows USD/JPY, which Tokyo is likely to cap near 160. A close above 24.2 would show intervention is not coming.",
+   "watch": "APEC Xi-Trump meeting (Nov 18–19), PBOC fixings, Japan CPI (Nov 20).",
    "view": {
     "dir": "range",
     "call": "23.6–24.2; yen near Tokyo's line, yuan held."
    }
   },
   "eurcnh": {
-   "note": "Down about 0.3% to near 7.33 as the euro fell and the yuan firmed.",
-   "why": "Both sides moved it lower. The euro slid to a 19-month low against the dollar on risk aversion and Fed hike bets, while exporters' dollar sales lifted the yuan. The PBOC's weak fixings slow the yuan's gains, but they do not stop the cross from following the euro.",
-   "outlook": "I keep a 7.28–7.40 range with a downward tilt: euro weakness should continue, but the PBOC is leaning against yuan strength. A close below 7.28 would open 7.22.",
-   "watch": "PBOC fixings, ECB speakers, euro zone PMIs, China data.",
+   "note": "Little changed near 7.33, mid-way in my 7.28–7.40 range.",
+   "why": "Neither side moved much. The euro held near its 19-month low against the dollar, and the yuan stayed firm on a strong-for-the-year PBOC fixing and APEC summit hopes. With both legs flat against the dollar, the cross went sideways.",
+   "outlook": "I keep a 7.28–7.40 range with a downward tilt: euro weakness should continue, while the PBOC slows yuan gains. A close below 7.28 would open 7.22.",
+   "watch": "APEC summit (Nov 18–19), PBOC fixings, Lagarde (Nov 18), euro zone PMIs (late Nov).",
    "view": {
     "dir": "range",
     "call": "7.28–7.40; weak euro vs PBOC brake on yuan."
    }
   }
  },
- "watch": "Next: UK jobs, RBA minutes, Nvidia results and ECB's Lane (Nov 17), UK CPI and Australian wages (Nov 18), Bank Indonesia (Nov 18–19), Australia jobs (Nov 19), Japan CPI (Nov 20), then the RBI (Dec 4), Fed (Dec 8–9) and BoE and BSP (Dec 17), plus Tokyo's 160 line and Taiwan's defence of 33.",
+ "watch": "Next: FOMC minutes, UK CPI, Bank Indonesia, Lagarde and Australian wages (Nov 18), the APEC Xi-Trump meeting (Nov 18–19), Australia jobs (Nov 19), Japan CPI and China's loan prime rates (Nov 20), then the RBI (Dec 4), Fed (Dec 8–9) and ECB, BoE and BSP (Dec 17), plus Tokyo's 160 line and Taiwan's defence of 33.",
  "sources": [
   [
-   "Reuters via Korea Times (dollar, NY)",
-   "https://koreatimes.co.kr/world/20261117/dollar-hits-highest-since-april-2025-as-fed-rate-bets-lend-support"
+   "Reuters via MarketScreener (dollar, Asia)",
+   "https://marketscreener.com/news/us-dollar-hits-19-month-peak-on-fed-hike-bets-while-nz-dollar-slumps-ce785edfde8ff220"
   ],
   [
-   "Reuters via Investing.com (markets)",
-   "https://investing.com/news/economy-news/trading-day-ai-jitters-slam-wall-street-5031112"
+   "Reuters via GV Wire (dollar, NY)",
+   "https://gvwire.com/2026/11/17/dollar-lower-after-mixed-us-data-stays-near-april-2025-high"
   ],
   [
-   "Reuters via Globe and Mail (loonie)",
-   "https://theglobeandmail.com/investing/article-canadian-dollar-hits-19-month-low-on-tame-inflation-report"
-  ],
-  [
-   "Reuters via Business Times (yen, Japan GDP)",
-   "https://businesstimes.com.sg/companies-markets/capital-markets-currencies/greenback-extends-rally-yen-looks-past-soft-japan-gdp-data"
+   "Reuters via MarketScreener (loonie)",
+   "https://marketscreener.com/news/canadian-dollar-holds-near-19-month-low-as-greenback-consolidates-recent-gains-ce785edcdc88f127"
   ],
   [
    "Yonhap (won)",
-   "https://en.yna.co.kr/view/AEN20261116007800320?section=k-biz/stocks"
+   "https://en.yna.co.kr/view/AEN20261117007800320"
+  ],
+  [
+   "Liberty Times (Taiwan dollar)",
+   "https://ec.ltn.com.tw/article/breakingnews/5643952"
   ],
   [
    "The Star (ringgit)",
-   "https://thestar.com.my/business/business-news/2026/11/16/ringgit-ends-mostly-higher-against-major-currencies-slips-against-greenback"
+   "https://thestar.com.my/business/business-news/2026/11/17/ringgit-ends-flat-against-us-dollar-eases-against-major-currencies"
   ],
   [
-   "GMA News (peso)",
-   "https://gmanetwork.com/news/money/economy/1009691/peso-closes-at-p63-94-1/story?just_in="
+   "BusinessWorld (peso)",
+   "https://bworldonline.com/banking-finance/2026/11/17/794531/peso-rebounds-on-profit-taking-lower-oil-prices"
   ],
   [
-   "The Hindu BusinessLine (rupee)",
-   "https://thehindubusinessline.com/markets/forex/rupee-rises-27-paise-to-close-at-9392-against-us-dollar/article71707584.ece"
+   "Business Standard (rupee)",
+   "https://business-standard.com/economy/news/rupee-heads-for-best-monthly-gain-in-20-months-on-fpi-inflows-cheaper-oil-126111701161_1.html"
   ]
  ],
- "commentary_asof": "Mon Nov 16, 2026"
+ "commentary_asof": "Tue Nov 17, 2026"
 }
