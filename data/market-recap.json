@@ -1,30 +1,29 @@
 {
- "session": "2026-11-16",
- "asof": "Mon Nov 16, 2026",
+ "session": "2026-11-17",
+ "asof": "Tue Nov 17, 2026",
  "tone": "down",
- "headline": "Nvidia turmoil and new AI-chip curbs sink chips; SOX −5.3%, Nasdaq −2.5% into correction",
- "summary": "Stocks opened lower and never mounted a recovery: selling built through the afternoon, with the S&P 500 down as much as 2.1% (low 7,400.15) in the final two hours before a small late trim, for its third straight loss. It was broad as well as tech-led — decliners beat advancers about 3.5-to-1 on the NYSE and the Russell 2000 fell 1.9% — while consumer staples (+0.3%) and utilities (+0.2%) were the only sectors to rise and technology (−3.2%) was by far the worst.",
+ "headline": "Software rout and blue-chip losses sink Dow 1.6%, S&P −1.0% before Nvidia beat",
+ "summary": "Stocks slipped from the open and the losses deepened into the afternoon, leaving the S&P 500 and Nasdaq with a fourth straight decline and the S&P 500 at its lowest close since July, while the Dow shed nearly 850 points. Selling was broad — decliners beat advancers by more than 3-to-1 on the NYSE and the Russell 2000 fell 1.5% — but chips steadied: Nvidia pared a drop of nearly 4% to −0.4% and the iShares semiconductor ETF finished slightly higher.",
  "stats": [
-  ["S&P 500", "7,416.59", -1.92],
-  ["Nasdaq", "24,509.76", -2.49],
-  ["Dow", "51,608.17", -1.41],
-  ["Russell 2000", "2,737.56", -1.9],
-  ["SOX (chips)", "9,610.65", -5.28],
-  ["VIX", "22.91", 18.7, true],
-  ["US 10Y", "5.12%", "−4bp"],
-  ["WTI crude", "$85.72", -3.21]
+  ["S&P 500", "7,340.53", -1.03],
+  ["Nasdaq", "24,328.38", -0.74],
+  ["Dow", "50,759.42", -1.64],
+  ["Russell 2000", "2,701.87", -1.5],
+  ["VIX", "25.46", 11.1, true],
+  ["US 10Y", "5.10%", "−2bp"],
+  ["WTI crude", "$86.01", 0.34]
  ],
  "drivers": [
-  ["Chip sell-off spreads to all 30 SOX names", "Every stock in the semiconductor index fell as Friday's reversal deepened: Micron −7.6%, Intel −7.1%, Lam Research −6.7%, ASML −5.9%, AMD −5.6% and Applied Materials −5.5%, with Marvell and Arm also down 6% or more. A report that SemiAnalysis cut its 2028 AI-accelerator spending forecast by 28% and its 2028 HBM demand estimate by 30% added to the pressure on memory and equipment names."],
-  ["Nvidia leadership vacuum before results", "Nvidia fell 4.1% to about $156 after a CNBC report that its board is not discussing bringing back Jensen Huang and is instead investigating his conduct and hiring a search firm for a new CEO; Treasury Secretary Bessent also urged an outside successor. Down about 12.6% over five sessions, it reports after Tuesday's close, with analysts looking for revenue near $109 billion."],
-  ["New US curbs on remote AI-chip access", "The Commerce Department issued a rule closing a route that let Chinese firms rent advanced Nvidia-class computing in third-country data centers, adding license requirements for advanced chip exports to Singapore, Malaysia, Thailand, Indonesia and Brazil. AI-infrastructure names fell with chips: Dell −7.0%, Super Micro −6.9%, Nebius −7.6%, CoreWeave −6.1%, and Alphabet, Amazon and Meta lost between 2.4% and 4.1%."],
-  ["Defensive rotation as yields and oil ease", "Money moved into staples and other steady names (Tyson Foods rose about 7% on a profit beat and upbeat 2027 outlook; Coca-Cola and McDonald's gained), while the 10-year yield slipped about 4bp to 5.12% as WTI fell 3.2% to $85.72 on surplus forecasts from the IEA and Goldman. Fed Chair Warsh said disappointing AI returns could slow growth and lift unemployment, but a December hike stays about 96% priced."]
+  ["Software sell-off ahead of Anthropic's IPO", "Application-software stocks were the heaviest drag as investors weighed AI disruption risk a day before Anthropic prices its IPO (range kept at $70–78, trading from Thu): Salesforce −9.5%, Intuit and ServiceNow about −7%, Microsoft −2.3% and the IGV software ETF down more than 3%."],
+  ["Dow blue chips hit across sectors", "Beyond Salesforce, Nike fell 6.3% (reversing an early gain on its long-term targets), UnitedHealth 5.4% as health insurers slid, IBM 4.7%, JPMorgan 2.4% after naming a new CFO, and Home Depot 2.5% after a Q3 beat came with a soft outlook and a CEO change."],
+  ["Nvidia nerves, then a beat after the bell", "Nvidia closed −0.4% after falling nearly 4% intraday, helped late by Jensen Huang saying he would return as CEO if the board asked; Broadcom +2.5% and Marvell +2% offset Micron −0.9%. After the close Nvidia reported revenue of $115.8B (vs about $109B expected) and guided Q4 to $130B ±3% (vs about $125B), though with gross margin guided down to 71–72%; the stock rose 2–3% after hours."],
+  ["Hawkish Fed, steady consumer", "St. Louis Fed's Musalem said several more hikes may be needed before spring 2027, keeping a December hike about 95–98% priced; October retail sales rose 0.2% as expected, with the ex-autos-and-gas measure up 0.6% (vs 0.4%). The 10-year yield still eased about 2bp to 5.10% as money left stocks, while the VIX jumped 11% to about 25.5."]
  ],
- "week": "The week starts with the S&P 500 down 1.9% and the Nasdaq down 2.5%, leaving the Nasdaq more than 10% below its Oct 6 record close (a correction) and the SOX up about 43% for 2026 versus a 107% gain at its June peak; the 10-year yield remains above 5% after last week's jump on hot inflation data.",
- "watch": "Next: Nvidia's third-quarter results and Home Depot on Tue Nov 17, Fed minutes and Anthropic's IPO pricing (reportedly six times oversubscribed) on Wed Nov 18, Walmart on Thu Nov 19, and the Fed meeting on Dec 8–9.",
+ "week": "Two sessions in, the S&P 500 is down 2.9%, the Nasdaq 3.2% and the Dow 3.0% for the week, with Nvidia down 16% since the start of last week and the 10-year yield holding above 5% on expectations of more Fed hikes.",
+ "watch": "Next: the market's reaction to Nvidia's results and outlook, Fed minutes and Anthropic's IPO pricing on Wed Nov 18, Anthropic's Nasdaq debut and Walmart's results on Thu Nov 19, and the Fed meeting on Dec 8–9.",
  "sources": [
-  ["Reuters", "https://www.marketscreener.com/news/wall-street-slumps-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo-ce785edfdd8ef425"],
-  ["AP", "https://www.itv.com/news/2026-11-16/more-drops-for-nvidia-and-other-ai-stocks-drag-the-us-market-lower-pulling-the-sp-500-down-2"],
-  ["MarketWatch", "https://morningstar.com/news/marketwatch/20261116101/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies"]
+  ["Investopedia", "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11172026-12259343"],
+  ["Reuters", "https://www.detroitnews.com/story/business/2026/11/17/wall-street-slips-ahead-of-nvidia-results-anthropic-ipo/92825841007/"],
+  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"]
  ]
 }
