@@ -46,10 +46,10 @@
   }
  },
  "earnings": {
-  "v": "Late Nov",
+  "v": "Dec 2",
   "s": {
-   "en": "Q1 FY27 · date not yet announced",
-   "zh": "FY27 第一季 · 日期未公布"
+   "en": "Q1 FY27 · Wed, after close (1:30pm PT)",
+   "zh": "FY27 第一季 · 周三盘后（太平洋时间下午 1:30）"
   }
  },
  "sub_price": {
@@ -154,14 +154,14 @@
  ],
  "calendar": [
   {
-   "date": "Late Nov 2026",
+   "date": "Dec 2, 2026",
    "h": {
     "en": "Q1 FY27 earnings",
     "zh": "FY27 第一季财报"
    },
    "p": {
-    "en": "Guide: revenue $935–939M, operating income $215–217M, EPS $1.15–1.16.",
-    "zh": "指引：营收 9.35–9.39 亿美元，营业利润 2.15–2.17 亿，每股 $1.15–1.16。"
+    "en": "Confirmed for Dec 2 after the close. Guide: revenue $935–939M, operating income $215–217M, EPS $1.15–1.16.",
+    "zh": "确定于 12 月 2 日盘后发布。指引：营收 9.35–9.39 亿美元，营业利润 2.15–2.17 亿，每股 $1.15–1.16。"
    }
   },
   {
