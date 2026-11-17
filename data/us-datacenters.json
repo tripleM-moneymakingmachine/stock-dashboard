@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-17",
- "asofText": "Nov 17, 2026",
+ "asof": "2026-11-18",
+ "asofText": "Nov 18, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1467,7 +1467,7 @@
    "status": "uc",
    "capexB": 24,
    "est": true,
-   "note": "SpaceX confirmed (Nov 12) ~$24B for a self-powered supercompute campus with its own gas-fired plant on 444 acres de-annexed from Brownsville into Starbase; 3,000+ construction jobs already, tax-break hearing Dec 9. GW not disclosed (~ is Claude's estimate)"
+   "note": "SpaceX confirmed (Nov 12) ~$24B for a self-powered supercompute campus with its own gas-fired plant on 444 acres de-annexed from Brownsville into Starbase; TCEQ issued the air permit on Nov 16 for 35 turbines (750 MW, off-grid, just under the 250 t/yr NOx threshold for a hearing), making it a likely grandfathered site before Jan 19; advocates allege construction began before the permit. Tax-break hearing Dec 9. IT GW not disclosed (~ is Claude's estimate)"
   },
   {
    "id": "sb-pike",
@@ -1531,7 +1531,7 @@
  "risk": {
   "TX": {
    "tier": 5,
-   "why": "Governor-elect Hinojosa backs an immediate moratorium with no firm end date: until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise). Abbott's permit/ERCOT freeze is already in place. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain, Batch Zero likely slips to summer 2027. Jefferies: ~13 GW of announced projects at risk. Abbott has told ERCOT to resume interconnections quickly after the audit pause ends Dec 10, so already-queued projects get a short window before Jan 19; SB 296 (two-year ban plus local votes) is the strictest bill filed. Hinojosa first said the moratorium would reach any state permit a project still needs, then (Nov 16) narrowed it to projects without state permits, saying she cannot shut down permitted ones; TCEQ may resume permits after the Dec 17 PUCT review, giving a roughly one-month grandfathering window, and a Senate majority backs SB 338's low-water cooling rule for ERCOT connections (from Sept 2027).",
+   "why": "Governor-elect Hinojosa backs an immediate moratorium from Jan 19 until the session ends (May 31, 2027) or terms are met (no subsidies, proof household bills won't rise), but says she cannot shut down projects that already hold state permits. That makes the next two months decisive: TCEQ resumed data center permitting on Nov 16 (first: SpaceX's Starbase air permit) after Abbott's office said ERCOT's impact work was done, and ERCOT's audit (Dec 10) and the PUCT review (Dec 17) should reopen interconnections. Modo: ~10 GW of expected build stopped, 24 GW under construction uncertain; Jefferies: ~13 GW of announced projects at risk. Bills: SB 296 (two-year ban plus local votes) and SB 338 (low-water cooling for ERCOT connections, backed by a Senate majority).",
    "to": [
     "LA",
     "OK",
@@ -2046,16 +2046,16 @@
   },
   "spcx": {
    "grade": "Medium-High",
-   "view": "Live today: ~1.7 GW in Memphis, and SemiAnalysis sees ~2.4 GW of IT there by year-end in Tennessee/Mississippi, where neither governor backs a pause. The next leg: Starbase ($24B) is under construction on SpaceX land with its own gas plant, outside ERCOT and Brownsville's moratorium, but Hinojosa now says her moratorium covers every state permit, so its air permits are squarely exposed. Cochise County is a 6 GW, four-phase plan with dry cooling and SpaceX-paid grid upgrades, the design most likely to pass new rules, but it needs county approval on Dec 9 against loud opposition and Arizona Democrats plan a moratorium push in January. More sites, more permit fronts, less single-state risk.",
+   "view": "Live today: ~1.7 GW in Memphis, and SemiAnalysis sees ~2.4 GW of IT there by year-end in Tennessee/Mississippi, where neither governor backs a pause. Starbase ($24B) got its TCEQ air permit on Nov 16 for a 750 MW off-grid gas plant, the first permit after Texas resumed approvals, so it now looks grandfathered under Hinojosa's own test, though advocates are contesting it and alleging early construction. Cochise County is a 6 GW, four-phase plan with dry cooling and SpaceX-paid grid upgrades, the design most likely to pass new rules, but it needs county approval on Dec 9 against loud opposition and Arizona Democrats plan a moratorium push in January. Texas risk fell this week; Arizona is now the bigger open question.",
    "moves": [
     "Keep near-term growth in Memphis/Southaven",
-    "Seek the Starbase air permit before Jan 19",
+    "Build Starbase fast under the permit and defend it against challenges",
     "Win the Dec 9 Cochise vote and start phase one before the Arizona session acts"
    ]
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton) and Hinojosa says she will use the permits even started projects still need. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B), but the stock has given back much of the Nov 11 jump: −6.1% on Nov 13 on reports of a $4B+ equipment-backed loan, Microsoft reviewing its neocloud deals (about two-thirds of 2025 revenue) and Nvidia expected to slow new credit support. This is a cost-of-capital problem, not a site problem; bond yields (some above 16%) remain the gauge. Applied Digital, one of its key landlords, now caps capacity for junk-rated tenants, another sign that its credit rating, not demand, limits how fast it can add sites. It fell another ~6% on Nov 16 to about $50 with the sector, with no new site news; Hinojosa now says already-permitted Texas projects will not be stopped, which helps its Helios and Denton tenancies.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton); with TCEQ issuing permits again and Hinojosa saying permitted projects will not be stopped, those tenancies look safer. Q3 answered demand (backlog $132.5B, 2026 guidance $13.0–13.3B, 'largely sold out through 2027'), and Nvidia's beat and $2.5T backlog comment lifted it ~3–7% after hours. The problem is still cost of capital: Kress says Nvidia's financing will be selective and limited to land, power and shell, Applied Digital caps junk-rated tenants, and unsecured bonds yield near 15%. The recent selloff is financing sentiment, not site risk.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Push more customer prepayment structures to fund 2027",
@@ -2064,7 +2064,7 @@
   },
   "nbis": {
    "grade": "Medium",
-   "view": "Q3 turned the site question into numbers: third-party colocation, not state politics, is what slipped, with Vineland's Microsoft capacity split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Missouri, Birmingham, Finland) are on schedule and none are in Texas, but Highridge sits in tier-4 Pennsylvania. Two more sessions of selling (−17%, then −9.9% on Baird and BofA target cuts) leave it down about 46% in a month; that is now pricing Microsoft-concentration and financing risk (Microsoft's neocloud review, Nvidia slowing backstops) far more than any campus being stopped. Prepayments cover more than 100% of new-deal capex, so the test is delivery dates, not demand.",
+   "view": "Q3 turned the site question into numbers: third-party colocation, not state politics, is what slipped, with Vineland's Microsoft capacity split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Missouri, Birmingham, Finland) are on schedule and none are in Texas, but Highridge sits in tier-4 Pennsylvania. After falling about 46% in a month, it rose ~6–8% after hours on Nvidia's results; the selling priced Microsoft concentration and financing risk (Nvidia now promises only selective land/power/shell support) far more than any campus being stopped. Prepayments cover more than 100% of new-deal capex, so the test is delivery dates, not demand.",
    "moves": [
     "Shift new capacity to owned Missouri/Alabama sites",
     "Bloom fuel cells to bridge Vineland power",
@@ -2128,6 +2128,47 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-17",
+   "co": [
+    "*"
+   ],
+   "t": "Nvidia's first results under interim CEO Kress beat clearly: revenue $115.8B (data center $107.6B, +110%), Q4 guidance $130B against ~$125B expected, about 75% revenue growth guided for FY2028, Vera Rubin at ~$20B in its first quarter, and a cloud backlog put at $2.5T. Kress said customer financing will stay selective and focus on land, power and shell, and the stock rose ~3–4% after hours from $155.46, with CoreWeave, Nebius and IREN up 3–8%; demand is not the problem, the cost of capital for weaker builders still is.",
+   "src": "https://investinglive.com/stocks/nvidia-sees-75-revenue-growth-next-year-as-kress-points-to-2-5-trillion-backlog"
+  },
+  {
+   "d": "2026-11-17",
+   "co": [
+    "spcx",
+    "frmi",
+    "iren",
+    "cifr",
+    "glxy"
+   ],
+   "t": "Texas' environmental regulator (TCEQ) has resumed data center permit reviews after Abbott's office told it Friday that ERCOT had finished its community-impact work, and on Monday issued SpaceX's air permit for 35 gas turbines (750 MW, off-grid) at its $24B Starbase campus. Since Hinojosa says she cannot stop already-permitted projects, every permit TCEQ issues before Jan 19 is now a likely grandfather ticket; advocates are challenging the move and allege SpaceX started building before the permit.",
+   "src": "https://texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume"
+  },
+  {
+   "d": "2026-11-17",
+   "co": [
+    "msft",
+    "amzn",
+    "googl",
+    "meta",
+    "crwv"
+   ],
+   "t": "Reuters reported the administration will press ahead with restricting new Chinese optical transceiver models in US data centers despite Amazon, Google, Meta, Microsoft and CoreWeave warning that compliance could take up to ten years; China makes about two-thirds of the world's transceivers. Coherent rose about 10%, AAOI 9%, Lumentum 8% and Corning 3.5%; for builders it means higher optics cost and a supply risk if Beijing retaliates on indium phosphide.",
+   "src": "https://finance.yahoo.com/markets/stocks/articles/coherent-lumentum-jump-us-presses-130132183.html"
+  },
+  {
+   "d": "2026-11-17",
+   "co": [
+    "amzn",
+    "msft"
+   ],
+   "t": "Builders keep shifting to friendlier ground: AWS broke ground on its $7B Project Rise campus in Wheatfield, Indiana (part of $33B across three Indiana sites, with $98M of taxes paid upfront) and spent over $170M on Loudoun and Fairfax land in Virginia, while Microsoft is doing due diligence on a 1.4 GW phased campus on Monarch's land in Rockford, Illinois, which the city's moratorium does not cover.",
+   "src": "https://idcnova.com/news/AWS-Breaks-Ground-on-7bn-Indiana-Data-Center-Buys-Northern-Virginia-Land"
+  },
   {
    "d": "2026-11-16",
    "co": [
@@ -2613,46 +2654,21 @@
    ],
    "t": "Campus figures moved to total facility power (Epoch AI, Cleanview) and re-verified; added AWS Ohio and central Virginia builds, Google's Wilbarger and Meitner campuses, Crusoe Childress, Nexus Hubbard and Nebius Independence.",
    "src": "https://cleanview.co/data-centers/us"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "amzn"
-   ],
-   "t": "Trenton's 25 MW+ ban passed with ~80% on Nov 3, but AWS's four-building in-city campus is unaffected; only the proposed 600-acre township expansion is blocked.",
-   "src": "https://www.explainx.ai/blog/ohio-voters-pass-data-center-bans-14-municipalities-trenton-80-percent-grove-city-results-2026"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "spcx",
-    "msft",
-    "amzn",
-    "orcl",
-    "meta",
-    "googl"
-   ],
-   "t": "Data check against Epoch AI: Colossus 2 corrected to ~946 MW IT operating in Memphis (was shown as 1 GW under construction in Mississippi); campuses now show operating vs planned GW, Fairwater Atlanta/QTS double count removed, nine Epoch-tracked campuses added.",
-   "src": "https://epoch.ai/graphs/largest-ai-data-centers-by-power-capacity"
-  },
-  {
-   "d": "2026-11-04",
-   "co": [
-    "orcl"
-   ],
-   "t": "New Mexico's governor-elect Haaland has vowed an executive-order moratorium; Modo flags that on-site power permits like Project Jupiter's air permit could stall under-construction builds.",
-   "src": "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
-  },
-  {
-   "d": "2026-11-04",
-   "co": [
-    "*"
-   ],
-   "t": "Modo Energy: 256 GW (40%) of tracked US data center capacity sits in states whose governors back pauses; at face value 11 GW of expected build stops (10 GW in Texas), and 2030 national capacity falls only ~3 GW once projects reallocate to MISO, SPP and the West.",
-   "src": "https://modoenergy.com/research/en/us-data-center-moratorium-midterms"
   }
  ],
  "sources": [
+  [
+   "Texas Tribune: TCEQ resumes data center permits",
+   "https://texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume"
+  ],
+  [
+   "Nvidia Q3 FY27 call: 75% FY28 growth, $2.5T backlog",
+   "https://investinglive.com/stocks/nvidia-sees-75-revenue-growth-next-year-as-kress-points-to-2-5-trillion-backlog"
+  ],
+  [
+   "Investing.com: optics rally on China transceiver curbs",
+   "https://finance.yahoo.com/markets/stocks/articles/coherent-lumentum-jump-us-presses-130132183.html"
+  ],
   [
    "SemiAnalysis forecast cut (OfficeChai)",
    "https://officechai.com/ai/semianalysis-reportedly-cuts-2028-ai-accelerator-spend-forecast-by-28"
@@ -2720,18 +2736,6 @@
   [
    "WSJ: SpaceX $74B Texas and Arizona campuses",
    "https://wsj.com/business/spacex-plans-more-than-74-billion-in-texas-arizona-data-center-investments-b9ff4ba3"
-  ],
-  [
-   "USA Today: Texas bills to end data center tax breaks",
-   "https://usatoday.com/story/news/state/texas/2026/11/11/texas-republican-democrats-look-at-cutting-data-center-tax-breaks/92724455007"
-  ],
-  [
-   "CNN: Nvidia drops after hours on Huang reports",
-   "https://cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang"
-  ],
-  [
-   "Quartz: SoftBank $3.7B US data center equipment write-down",
-   "https://qz.com/softbank-quarterly-loss-us-data-center-write-down-111026"
   ]
  ],
  "modo": {
