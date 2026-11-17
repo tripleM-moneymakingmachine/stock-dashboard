@@ -1,64 +1,64 @@
 {
- "asof": "Nov 16, 2026",
- "close": 137.36,
+ "asof": "Nov 17, 2026",
+ "close": 141.7,
  "bias": {
-  "en": "Range · slipped under the 10-day, holding $135–136.6",
-  "zh": "区间整理 · 小幅跌破 10 日均线，守住 $135–136.6"
+  "en": "Range · back above the 10-day, at the 100-day",
+  "zh": "区间 · 重回 10 日均线上方，位于 100 日均线"
  },
  "read": [
   {
-   "en": "SpaceX fell 1.3% on Nov 16 to $137.36, trading $135.73–139.98. It is just below the 10-day ($137.6) and below the 5-day ($139.9, rising), 30-day ($147.0) and 100-day ($142.3, falling); there is no 200-day yet (109 sessions). MACD has been above its signal since Nov 12, below zero, histogram small; Parabolic SAR has been bullish since Nov 11 ($122.98), and RSI is 44.9.",
-   "zh": "SpaceX 11月16日下跌 1.3%，收于 $137.36，盘中区间 $135.73–139.98。股价略低于 10 日均线（$137.6），并位于 5 日（$139.9，上行）、30 日（$147.0）和 100 日均线（$142.3，下行）下方；上市仅 109 个交易日，尚无 200 日均线。MACD 自 11月12日起位于信号线上方，在零轴下方，柱状图较小；抛物线 SAR 自 11月11日起看多（$122.98），RSI 为 44.9。"
+   "en": "SpaceX rose 3.2% on Nov 17 to $141.70, trading $137.40–142.11. It is above the 5-day ($139.6, rising) and 10-day ($137.7), and just below the 100-day ($142.2) and the 30-day ($146.0), both falling; there is no 200-day yet (110 sessions). MACD has been above its signal since Nov 12, below zero, histogram growing; Parabolic SAR has been bullish since Nov 11 ($123.96), and RSI is 49.0.",
+   "zh": "SpaceX 11月17日上涨 3.2%，收于 $141.70，盘中区间 $137.40–142.11。股价位于 5 日（$139.6，上行）和 10 日均线（$137.7）上方，略低于 100 日（$142.2）和 30 日均线（$146.0），两者均在下行；上市仅 110 个交易日，尚无 200 日均线。MACD 自 11月12日起位于信号线上方，在零轴下方，柱状图扩大；抛物线 SAR 自 11月11日起看多（$123.96），RSI 为 49.0。"
   },
   {
-   "en": "The close slipped under the 10-day, now resistance, but the $135.73 low held the $135.4–136.6 band (Nov 9 and 13 lows). Resistance is $137.6–140 (10 and 5-day, Nov 13 close, Nov 16 high), then $140.7–142.3 (Oct 15 low, Nov 13 high, 100-day) and $143.2–145.2. Support is $135.4–136.6, then $134.3–134.5 (Nov 6 close, Oct 30 low) and $130.2–131.9. A close above $140 would target $141–142.3; below $135.4, $134.3.",
-   "zh": "收盘小幅跌破 10 日均线，转为阻力，但盘中低点 $135.73 守住 $135.4–136.6 区间（11月9日和13日低点）。阻力为 $137.6–140（10 日和 5 日均线、11月13日收盘、11月16日高点），其次 $140.7–142.3（10月15日低点、11月13日高点、100 日均线）和 $143.2–145.2。支撑为 $135.4–136.6，其次 $134.3–134.5（11月6日收盘、10月30日低点）和 $130.2–131.9。若收盘站上 $140，下一目标看 $141–142.3；若跌破 $135.4，则看 $134.3。"
+   "en": "The close reclaimed the 10-day and cleared the $137.6–140.7 resistance band (5-day, Nov 13 close, Oct 15 low), now support, but stopped under the 100-day. Resistance is $142.1–142.3 (Nov 17 high, 100-day, Nov 13 high), then $143.1–145.2 and $146–147.6 (30-day, Nov 12 high). Support is $139.6–140.7, then $137.4–137.7 and $135–135.4. A close above $142.3 would target $143–145; below $139.6, $137.4.",
+   "zh": "收盘收复 10 日均线并突破 $137.6–140.7 阻力带（5 日均线、11月13日收盘、10月15日低点），转为支撑，但受阻于 100 日均线下方。阻力为 $142.1–142.3（11月17日高点、100 日均线、11月13日高点），其次 $143.1–145.2 和 $146–147.6（30 日均线、11月12日高点）。支撑为 $139.6–140.7，其次 $137.4–137.7 和 $135–135.4。若收盘站上 $142.3，下一目标看 $143–145；若跌破 $139.6，则看 $137.4。"
   }
  ],
  "levels": {
   "r": [
    [
-    138.8,
+    142.2,
     {
-     "en": "10-day average $137.6; Nov 13 close $139.11; 5-day $139.9; Nov 16 high $139.98",
-     "zh": "10日均线 $137.6；11月13日收盘 $139.11；5日均线 $139.9；11月16日高点 $139.98"
+     "en": "Nov 17 high $142.11; 100-day average $142.2; Nov 13 high $142.24",
+     "zh": "11月17日高点 $142.11；100日均线 $142.2；11月13日高点 $142.24"
     }
    ],
    [
-    141.6,
+    144,
     {
-     "en": "Oct 15 low $140.66; Nov 13 high $142.24; 100-day average $142.3",
-     "zh": "10月15日低点 $140.66；11月13日高点 $142.24；100日均线 $142.3"
+     "en": "Nov 10 close $143.09; Nov 9 high $143.20; Nov 10 high $144.89; Nov 11 high $145.16",
+     "zh": "11月10日收盘 $143.09；11月9日高点 $143.20；11月10日高点 $144.89；11月11日高点 $145.16"
     }
    ],
    [
-    145.5,
+    146.8,
     {
-     "en": "Nov 9 high $143.2; Nov 10 high $144.89; Nov 11 high $145.16; Nov 12 high $147.60",
-     "zh": "11月9日高点 $143.2；11月10日高点 $144.89；11月11日高点 $145.16；11月12日高点 $147.60"
+     "en": "30-day average $146.0; Nov 12 high $147.60",
+     "zh": "30日均线 $146.0；11月12日高点 $147.60"
     }
    ]
   ],
   "s": [
    [
-    136,
+    140,
     {
-     "en": "Nov 9 low $135.37; Nov 16 low $135.73; Nov 13 low $136.64",
-     "zh": "11月9日低点 $135.37；11月16日低点 $135.73；11月13日低点 $136.64"
+     "en": "5-day average $139.6; Nov 11 close $139.75; Oct 15 low $140.66",
+     "zh": "5日均线 $139.6；11月11日收盘 $139.75；10月15日低点 $140.66"
     }
    ],
    [
-    134.3,
+    137.5,
     {
-     "en": "Nov 6 close $134.27; Oct 30 low $134.5",
-     "zh": "11月6日收盘 $134.27；10月30日低点 $134.5"
+     "en": "Nov 17 low $137.40; 10-day average $137.7",
+     "zh": "11月17日低点 $137.40；10日均线 $137.7"
     }
    ],
    [
-    131,
+    135.2,
     {
-     "en": "Aug 10 and Aug 20 lows ($130.2–130.4); Nov 5 high $131.87",
-     "zh": "8月10日和8月20日低点（$130.2–130.4）；11月5日高点 $131.87"
+     "en": "Nov 16 low $135.00; Nov 9 low $135.37",
+     "zh": "11月16日低点 $135.00；11月9日低点 $135.37"
     }
    ]
   ]

@@ -1,50 +1,50 @@
 {
- "asof": "Nov 16, 2026",
- "close": 626.41,
+ "asof": "Nov 17, 2026",
+ "close": 618.87,
  "bias": {
-  "en": "Range · lost the 100 and 200-day, holding $619–620",
-  "zh": "区间整理 · 跌破 100 日和 200 日均线，守住 $619–620"
+  "en": "Range · lost $619–620, under all averages",
+  "zh": "区间 · 跌破 $619–620，位于全部均线下方"
  },
  "read": [
   {
-   "en": "Meta fell 2.4% on Nov 16 to $626.41, trading $620.14–640.70 on light volume (0.48x the 20-day average). It is below the 5-day ($632.4), 10-day ($627.0), 30-day ($665.2, falling), 100-day ($637.8) and 200-day ($630.3). MACD has been above its signal since Nov 11, below zero, histogram steady; Parabolic SAR has been bullish since Nov 9 ($597.87), and RSI is 43.9.",
-   "zh": "Meta 11月16日下跌 2.4%，收于 $626.41，盘中区间 $620.14–640.70，成交量偏低（20 日均量的 0.48 倍）。股价位于 5 日（$632.4）、10 日（$627.0）、30 日（$665.2，下行）、100 日（$637.8）和 200 日均线（$630.3）下方。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图持平；抛物线 SAR 自 11月9日起看多（$597.87），RSI 为 43.9。"
+   "en": "Meta fell 1.2% on Nov 17 to $618.87, trading $613.51–627.48 on light volume (0.54x the 20-day average). It is below the 10-day ($626.7), 5-day ($627.9), 200-day ($629.9, falling), 100-day ($638.4) and 30-day ($661.2, falling). MACD has been above its signal since Nov 11, below zero, histogram narrowing; Parabolic SAR has been bullish since Nov 9 ($600.91), and RSI is 42.0.",
+   "zh": "Meta 11月17日下跌 1.2%，收于 $618.87，盘中区间 $613.51–627.48，成交清淡（为 20 日均量的 0.54 倍）。股价位于 10 日（$626.7）、5 日（$627.9）、200 日（$629.9，下行）、100 日（$638.4）和 30 日均线（$661.2，下行）下方。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月9日起看多（$600.91），RSI 为 42.0。"
   },
   {
-   "en": "The drop gave back the 100 and 200-day reclaimed on Nov 13, now resistance with the 5 and 10-day; the $620.14 low held the Nov 12 low ($618.92). Resistance is $627–632.4, then $637.8–643.9 (100-day, Nov 13 and 16 highs) and $647.3–648.5. Support is $618.9–620.1, then $605.1–610.2 (Nov 5–6 closes) and $597.9 (SAR). A close above $632.4 would target $638–644; below $618.9, $605–610.",
-   "zh": "此次下跌回吐 11月13日收复的 100 日和 200 日均线，二者与 5 日、10 日均线一起转为阻力；盘中低点 $620.14 守住 11月12日低点（$618.92）。阻力为 $627–632.4，其次 $637.8–643.9（100 日均线、11月13日和16日高点）和 $647.3–648.5。支撑为 $618.9–620.1，其次 $605.1–610.2（11月5–6日收盘）和 $597.9（SAR）。若收盘站上 $632.4，下一目标看 $638–644；若跌破 $618.9，则看 $605–610。"
+   "en": "The close slipped under the $618.9–620.1 support (Nov 12 and 16 lows), now resistance, after a $613.51 low. Resistance is $618.9–620.1, then $626.7–630 (10, 5 and 200-day, Nov 4 close) and $638.4–640.7 (100-day, Nov 16 high). Support is $613.5 (Nov 17 low), then $605.1–610.2 (Nov 5–6 closes) and $600.9 (SAR). A close above $620.1 would target $627–630; below $613.5, $605–610.",
+   "zh": "收盘跌破 $618.9–620.1 支撑（11月12日和16日低点），转为阻力，盘中低点 $613.51。阻力为 $618.9–620.1，其次 $626.7–630（10 日、5 日和 200 日均线，11月4日收盘）和 $638.4–640.7（100 日均线、11月16日高点）。支撑为 $613.5（11月17日低点），其次 $605.1–610.2（11月5–6日收盘）和 $600.9（SAR）。若收盘站上 $620.1，下一目标看 $627–630；若跌破 $613.5，则看 $605–610。"
   }
  ],
  "levels": {
   "r": [
    [
-    630,
+    620,
     {
-     "en": "10-day average $627.0; 200-day $630.3; 5-day $632.4",
-     "zh": "10日均线 $627.0；200日均线 $630.3；5日均线 $632.4"
+     "en": "Nov 12 low $618.92 and Nov 16 low $620.14, lost",
+     "zh": "11月12日低点 $618.92 和 11月16日低点 $620.14，已失守"
     }
    ],
    [
-    640,
+    628.5,
     {
-     "en": "100-day average $637.8; Nov 16 high $640.70; Nov 13 high $643.91",
-     "zh": "100日均线 $637.8；11月16日高点 $640.70；11月13日高点 $643.91"
+     "en": "10-day average $626.7; Nov 17 high $627.48; 5-day $627.9; 200-day $629.9",
+     "zh": "10日均线 $626.7；11月17日高点 $627.48；5日均线 $627.9；200日均线 $629.9"
     }
    ],
    [
-    648,
+    639.5,
     {
-     "en": "Nov 9–10 highs ($647.25–647.28); Nov 11 high $648.45",
-     "zh": "11月9–10日高点（$647.25–647.28）；11月11日高点 $648.45"
+     "en": "100-day average $638.4; Nov 16 high $640.70",
+     "zh": "100日均线 $638.4；11月16日高点 $640.70"
     }
    ]
   ],
   "s": [
    [
-    619.5,
+    613.5,
     {
-     "en": "Nov 12 low $618.92; Nov 16 low $620.14",
-     "zh": "11月12日低点 $618.92；11月16日低点 $620.14"
+     "en": "Nov 17 low $613.51",
+     "zh": "11月17日低点 $613.51"
     }
    ],
    [
@@ -55,10 +55,10 @@
     }
    ],
    [
-    597.9,
+    600.9,
     {
-     "en": "Parabolic SAR $597.87",
-     "zh": "抛物线 SAR $597.87"
+     "en": "Parabolic SAR $600.91",
+     "zh": "抛物线 SAR $600.91"
     }
    ]
   ]

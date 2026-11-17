@@ -1,27 +1,34 @@
 {
- "asof": "Nov 16, 2026",
- "close": 809.11,
+ "asof": "Nov 17, 2026",
+ "close": 797.24,
  "bias": {
-  "en": "Downtrend · lost $835–869, at the Nov 5 low",
-  "zh": "下跌趋势 · 跌破 $835–869，位于 11月5日低点"
+  "en": "Downtrend · lost the Nov 5 low, tested $750",
+  "zh": "下跌趋势 · 跌破 11月5日低点，测试 $750"
  },
  "read": [
   {
-   "en": "Sandisk fell 8.6% on Nov 16 to $809.11, trading $799.00–838.48. It is below the 5-day ($893.9), 10-day ($916.1), 30-day ($1,230.3), 100-day ($1,486.5) and 200-day ($1,283.6); all but the 200-day are falling. MACD has been below its signal since Oct 2, below zero, histogram widening slightly; Parabolic SAR has been bearish since Oct 30 ($1,111.12), and RSI is 31.3.",
-   "zh": "闪迪 11月16日下跌 8.6%，收于 $809.11，盘中区间 $799.00–838.48。股价位于 5 日（$893.9）、10 日（$916.1）、30 日（$1,230.3）、100 日（$1,486.5）和 200 日均线（$1,283.6）下方；除 200 日均线外均在下行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图小幅放大；抛物线 SAR 自 10月30日起看空（$1,111.12），RSI 为 31.3。"
+   "en": "Sandisk fell 1.5% on Nov 17 to $797.24, trading $749.70–821.46. It is below the 5-day ($881.3), 10-day ($883.2), 30-day ($1,201.5), 100-day ($1,473.6) and 200-day ($1,284.3); all but the 200-day are falling. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($1,079.91), and RSI is 30.9.",
+   "zh": "闪迪 11月17日下跌 1.5%，收于 $797.24，盘中区间 $749.70–821.46。股价位于 5 日（$881.3）、10 日（$883.2）、30 日（$1,201.5）、100 日（$1,473.6）和 200 日均线（$1,284.3）下方；除 200 日均线外均在下行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$1,079.91），RSI 为 30.9。"
   },
   {
-   "en": "The drop broke the $835–869 supports (Nov 13 low, Nov 6 and 10 closes), now resistance; the $799 low undercut the Nov 5 low ($803.97) before the close recovered above the Nov 5 close. Resistance is $816.4–838.5, then $848.5–860 (Nov 13 low, Nov 10 close) and $885–894 (Nov 13 close, 5-day). Support is $799–806.4, then $750. A close above $838.5 would target $848.5–860; below $799, $750.",
-   "zh": "此次下跌跌破 $835–869 支撑（11月13日低点、11月6日和10日收盘），转为阻力；盘中低点 $799 一度跌穿 11月5日低点（$803.97），收盘回到 11月5日收盘价上方。阻力为 $816.4–838.5，其次 $848.5–860（11月13日低点、11月10日收盘）和 $885–894（11月13日收盘、5 日均线）。支撑为 $799–806.4，其次 $750。若收盘站上 $838.5，下一目标看 $848.5–860；若跌破 $799，则看 $750。"
+   "en": "The close broke the $799–806.4 support (Nov 16 low, Nov 5 low and close), now resistance, after the $749.70 low tested the round $750 and held. Resistance is $799–806.4, then $816.4–838.5 (Nov 6 low, Nov 17 high, Nov 6 close, Nov 16 high) and $848.5–860. Support is $749.7–750, then $700. A close above $806.4 would target $816–838; below $749.7, $700.",
+   "zh": "收盘跌破 $799–806.4 支撑（11月16日低点、11月5日低点和收盘），转为阻力；盘中低点 $749.70 测试 $750 整数关口后守住。阻力为 $799–806.4，其次 $816.4–838.5（11月6日低点、11月17日高点、11月6日收盘、11月16日高点）和 $848.5–860。支撑为 $749.7–750，其次 $700。若收盘站上 $806.4，下一目标看 $816–838；若跌破 $749.7，则看 $700。"
   }
  ],
  "levels": {
   "r": [
    [
+    803,
+    {
+     "en": "Nov 16 low $799; Nov 5 low $803.97 and close $806.43, lost",
+     "zh": "11月16日低点 $799；11月5日低点 $803.97 和收盘 $806.43，已失守"
+    }
+   ],
+   [
     827,
     {
-     "en": "Nov 6 low $816.42; Nov 6 close $835.06, lost; Nov 16 high $838.48",
-     "zh": "11月6日低点 $816.42；11月6日收盘 $835.06，已失守；11月16日高点 $838.48"
+     "en": "Nov 6 low $816.42; Nov 17 high $821.46; Nov 6 close $835.06; Nov 16 high $838.48",
+     "zh": "11月6日低点 $816.42；11月17日高点 $821.46；11月6日收盘 $835.06；11月16日高点 $838.48"
     }
    ],
    [
@@ -30,28 +37,21 @@
      "en": "Nov 13 low $848.50; Nov 10 close $859.99",
      "zh": "11月13日低点 $848.50；11月10日收盘 $859.99"
     }
-   ],
-   [
-    890,
-    {
-     "en": "Nov 13 close $885.01; 5-day average $893.9",
-     "zh": "11月13日收盘 $885.01；5日均线 $893.9"
-    }
    ]
   ],
   "s": [
    [
-    803,
+    750,
     {
-     "en": "Nov 16 low $799; Nov 5 low $803.97 and close $806.43",
-     "zh": "11月16日低点 $799；11月5日低点 $803.97 和收盘 $806.43"
+     "en": "Nov 17 low $749.70; round number $750",
+     "zh": "11月17日低点 $749.70；$750 整数关口"
     }
    ],
    [
-    750,
+    700,
     {
-     "en": "Round number $750",
-     "zh": "$750 整数关口"
+     "en": "Round number $700",
+     "zh": "$700 整数关口"
     }
    ]
   ]

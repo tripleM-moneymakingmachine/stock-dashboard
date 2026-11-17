@@ -1,57 +1,57 @@
 {
- "asof": "Nov 16, 2026",
- "close": 1406.79,
+ "asof": "Nov 17, 2026",
+ "close": 1383.11,
  "bias": {
-  "en": "Rebound failed · MACD crossed back down, near the SAR",
-  "zh": "反弹失败 · MACD 再度下穿，接近 SAR"
+  "en": "Downtrend · SAR flipped bearish, near the Nov 5 low",
+  "zh": "下跌趋势 · SAR 翻空，接近 11月5日低点"
  },
  "read": [
   {
-   "en": "ASML fell 5.9% on Nov 16 to $1,406.79, trading $1,404.06–1,446.36. It is below the 5-day ($1,488.3), 10-day ($1,478.4), 30-day ($1,604.5), 100-day ($1,702.9) and 200-day ($1,602.1). MACD crossed back below its signal on Nov 16, a session after crossing up, below zero; Parabolic SAR has been bullish since Nov 10 ($1,382.45), and RSI is 36.2.",
-   "zh": "阿斯麦 11月16日下跌 5.9%，收于 $1,406.79，盘中区间 $1,404.06–1,446.36。股价位于 5 日（$1,488.3）、10 日（$1,478.4）、30 日（$1,604.5）、100 日（$1,702.9）和 200 日均线（$1,602.1）下方。MACD 在上穿一个交易日后，于 11月16日再度下穿信号线，在零轴下方；抛物线 SAR 自 11月10日起看多（$1,382.45），RSI 为 36.2。"
+   "en": "ASML fell 1.7% on Nov 17 to $1,383.11, trading $1,351.78–1,408.18 on volume 1.4 times the 20-day average. It is below the 5-day ($1,463.3), 10-day ($1,461.5), 30-day ($1,589.5), 100-day ($1,698.8) and 200-day ($1,601.8). MACD has been below its signal since Nov 16, below zero, histogram widening; Parabolic SAR flipped bearish on Nov 17 ($1,563.46), and RSI is 34.8.",
+   "zh": "阿斯麦 11月17日下跌 1.7%，收于 $1,383.11，盘中区间 $1,351.78–1,408.18，成交量为 20 日均量的 1.4 倍。股价位于 5 日（$1,463.3）、10 日（$1,461.5）、30 日（$1,589.5）、100 日（$1,698.8）和 200 日均线（$1,601.8）下方。MACD 自 11月16日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 于 11月17日翻为看空（$1,563.46），RSI 为 34.8。"
   },
   {
-   "en": "The drop broke the 10-day and the $1,443.5–1,490 supports, plus the Nov 6 low ($1,409.21), all now resistance; the close is 1.8% above the SAR. Resistance is $1,409–1,425, then $1,443.5–1,447.5 (Nov 5, 6 and 16 highs) and $1,478–1,488 (10 and 5-day). Support is $1,382.5 (SAR), then $1,355–1,357 (Nov 5 low and close). A close above $1,447.5 would target $1,478; below $1,382.5, the SAR would flip bearish.",
-   "zh": "此次下跌跌破 10 日均线和 $1,443.5–1,490 支撑，以及 11月6日低点（$1,409.21），均转为阻力；收盘价高于 SAR 1.8%。阻力为 $1,409–1,425，其次 $1,443.5–1,447.5（11月5日、6日和16日高点）和 $1,478–1,488（10 日和 5 日均线）。支撑为 $1,382.5（SAR），其次 $1,355–1,357（11月5日低点和收盘）。若收盘站上 $1,447.5，下一目标看 $1,478；若跌破 $1,382.5，SAR 将转为看空。"
+   "en": "The low broke the $1,382.5 SAR, flipping it bearish, and dipped under the Nov 5 low ($1,355.05) before the close recovered. Resistance is $1,404–1,409 (Nov 16 and 6 lows, Nov 17 high), then $1,425–1,447.5 and $1,461.5–1,463.3 (10 and 5-day). Support is $1,351.8–1,356.7 (Nov 17 and 5 lows, Nov 5 close), then the round $1,300. A close above $1,409 would target $1,425–1,447; below $1,351.8, $1,300.",
+   "zh": "盘中低点跌破 $1,382.5 的 SAR，使其翻为看空，并一度跌破 11月5日低点（$1,355.05），收盘有所回升。阻力为 $1,404–1,409（11月16日和6日低点、11月17日高点），其次 $1,425–1,447.5 和 $1,461.5–1,463.3（10 日和 5 日均线）。支撑为 $1,351.8–1,356.7（11月17日和5日低点、11月5日收盘），其次 $1,300 整数关口。若收盘站上 $1,409，下一目标看 $1,425–1,447；若跌破 $1,351.8，则看 $1,300。"
   }
  ],
  "levels": {
   "r": [
    [
-    1417,
+    1406,
     {
-     "en": "Nov 6 low $1,409.21, lost; Nov 6 close $1,424.75",
-     "zh": "11月6日低点 $1,409.21，已失守；11月6日收盘 $1,424.75"
+     "en": "Nov 16 low $1,404.06; Nov 17 high $1,408.18; Nov 6 low $1,409.21",
+     "zh": "11月16日低点 $1,404.06；11月17日高点 $1,408.18；11月6日低点 $1,409.21"
     }
    ],
    [
-    1445,
+    1436,
     {
-     "en": "Nov 5–6 highs ($1,443.5–1,447.5); Nov 16 high $1,446.36",
-     "zh": "11月5–6日高点（$1,443.5–1,447.5）；11月16日高点 $1,446.36"
+     "en": "Nov 6 close $1,424.75; Nov 5–6 highs ($1,443.5–1,447.5); Nov 16 high $1,446.36",
+     "zh": "11月6日收盘 $1,424.75；11月5–6日高点（$1,443.5–1,447.5）；11月16日高点 $1,446.36"
     }
    ],
    [
-    1483,
+    1462,
     {
-     "en": "10-day average $1,478.4; Nov 4 low $1,478.96; 5-day $1,488.3",
-     "zh": "10日均线 $1,478.4；11月4日低点 $1,478.96；5日均线 $1,488.3"
+     "en": "10-day average $1,461.5; Nov 13 low $1,462.32; 5-day $1,463.3",
+     "zh": "10日均线 $1,461.5；11月13日低点 $1,462.32；5日均线 $1,463.3"
     }
    ]
   ],
   "s": [
    [
-    1382.5,
+    1354,
     {
-     "en": "Parabolic SAR $1,382.45",
-     "zh": "抛物线 SAR $1,382.45"
+     "en": "Nov 17 low $1,351.78; Nov 5 low $1,355.05 and close $1,356.65",
+     "zh": "11月17日低点 $1,351.78；11月5日低点 $1,355.05 和收盘 $1,356.65"
     }
    ],
    [
-    1356,
+    1300,
     {
-     "en": "Nov 5 low $1,355.05 and close $1,356.65",
-     "zh": "11月5日低点 $1,355.05 和收盘 $1,356.65"
+     "en": "Round number $1,300",
+     "zh": "$1,300 整数关口"
     }
    ]
   ]

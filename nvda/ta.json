@@ -1,41 +1,41 @@
 {
- "asof": "Nov 16, 2026",
- "close": 156.14,
+ "asof": "Nov 17, 2026",
+ "close": 155.46,
  "bias": {
-  "en": "Downtrend · lost $158.4, oversold above the $148.8 low",
-  "zh": "下跌趋势 · 跌破 $158.4，在 $148.8 低点上方超卖"
+  "en": "Downtrend · oversold, holding $155 on heavy volume",
+  "zh": "下跌趋势 · 超卖，放量守住 $155"
  },
  "read": [
   {
-   "en": "Nvidia fell 4.1% on Nov 16 to $156.14, trading $155.02–163.00 on heavy volume (1.58x the 20-day average). It is below the 5-day ($165.6), 10-day ($178.2), 30-day ($205.8), 100-day ($211.9) and 200-day ($204.0), all falling. MACD has been below its signal since Oct 12, below zero, histogram flat; Parabolic SAR has been bearish since Oct 13 ($172.00), and RSI is 22.7, deeply oversold.",
-   "zh": "英伟达 11月16日下跌 4.1%，收于 $156.14，盘中区间 $155.02–163.00，成交放量（20 日均量的 1.58 倍）。股价位于 5 日（$165.6）、10 日（$178.2）、30 日（$205.8）、100 日（$211.9）和 200 日均线（$204.0）下方，均在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图持平；抛物线 SAR 自 10月13日起看空（$172.00），RSI 为 22.7，深度超卖。"
+   "en": "Nvidia slipped 0.4% on Nov 17 to $155.46, trading $150.33–158.19 on heavy volume (1.68x the 20-day average). It is below the 5-day ($162.9), 10-day ($173.0), 30-day ($203.0), 200-day ($203.9) and 100-day ($211.5), all falling. MACD has been below its signal since Oct 12, below zero, histogram flat; Parabolic SAR has been bearish since Oct 13 ($170.00), and RSI is 22.5, deeply oversold.",
+   "zh": "英伟达 11月17日微跌 0.4%，收于 $155.46，盘中区间 $150.33–158.19，成交放大（为 20 日均量的 1.68 倍）。股价位于 5 日（$162.9）、10 日（$173.0）、30 日（$203.0）、200 日（$203.9）和 100 日均线（$211.5）下方，均在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图持平；抛物线 SAR 自 10月13日起看空（$170.00），RSI 为 22.5，深度超卖。"
   },
   {
-   "en": "The drop broke the $158.4–160 support (Nov 13 low, round number), now resistance, leaving the Nov 12 low ($148.80) as the next floor. Resistance is $158.4–160, then $163–166.2 (Nov 16 high, 5-day, Nov 12 close) and $170–172 (Nov 13 high, SAR). Support is $155 (Nov 16 low), then $148.8 (52-week low). A close above $163 would target $165.6–166.2; below $155, $148.8.",
-   "zh": "此次下跌跌破 $158.4–160 支撑（11月13日低点、整数关口），转为阻力，下一支撑为 11月12日低点（$148.80）。阻力为 $158.4–160，其次 $163–166.2（11月16日高点、5 日均线、11月12日收盘）和 $170–172（11月13日高点、SAR）。支撑为 $155（11月16日低点），其次 $148.8（52 周低点）。若收盘站上 $163，下一目标看 $165.6–166.2；若跌破 $155，则看 $148.8。"
+   "en": "The $150.33 low undercut the $155 support intraday, but the close held above it. Resistance is $156.1–158.4 (Nov 16 close, Nov 17 high, Nov 13 low), then $162.9–163.2 (5-day, Nov 13 close, Nov 16 high) and $166.2–170 (Nov 12 close, SAR). Support is $155 (Nov 16 low), then $150.3 (Nov 17 low) and $148.8. A close above $158.4 would target $163; below $150.3, $148.8.",
+   "zh": "盘中低点 $150.33 一度跌破 $155 支撑，但收盘守在其上。阻力为 $156.1–158.4（11月16日收盘、11月17日高点、11月13日低点），其次 $162.9–163.2（5 日均线、11月13日收盘、11月16日高点）和 $166.2–170（11月12日收盘、SAR）。支撑为 $155（11月16日低点），其次 $150.3（11月17日低点）和 $148.8。若收盘站上 $158.4，下一目标看 $163；若跌破 $150.3，则看 $148.8。"
   }
  ],
  "levels": {
   "r": [
    [
-    159,
+    157.5,
     {
-     "en": "Nov 13 low $158.39, lost; $160 round number",
-     "zh": "11月13日低点 $158.39，已失守；$160 整数关口"
+     "en": "Nov 16 close $156.14; Nov 17 high $158.19; Nov 13 low $158.39",
+     "zh": "11月16日收盘 $156.14；11月17日高点 $158.19；11月13日低点 $158.39"
     }
    ],
    [
-    164.5,
+    163,
     {
-     "en": "Nov 16 high $163; 5-day average $165.6; Nov 12 close $166.19",
-     "zh": "11月16日高点 $163；5日均线 $165.6；11月12日收盘 $166.19"
+     "en": "Nov 13 close $162.85; 5-day average $162.9; Nov 16 high $163.20",
+     "zh": "11月13日收盘 $162.85；5日均线 $162.9；11月16日高点 $163.20"
     }
    ],
    [
-    171,
+    170,
     {
-     "en": "Nov 13 high $170; Parabolic SAR $172.00",
-     "zh": "11月13日高点 $170；抛物线 SAR $172.00"
+     "en": "Nov 13 high $170; Parabolic SAR $170.00",
+     "zh": "11月13日高点 $170；抛物线 SAR $170.00"
     }
    ]
   ],
@@ -43,15 +43,22 @@
    [
     155,
     {
-     "en": "Nov 16 low $155.02",
-     "zh": "11月16日低点 $155.02"
+     "en": "Nov 16 low $155.01",
+     "zh": "11月16日低点 $155.01"
+    }
+   ],
+   [
+    150.3,
+    {
+     "en": "Nov 17 low $150.33",
+     "zh": "11月17日低点 $150.33"
     }
    ],
    [
     148.8,
     {
      "en": "52-week low (Nov 12)",
-     "zh": "52周低点（11月12日）"
+     "zh": "52 周低点（11月12日）"
     }
    ]
   ]
