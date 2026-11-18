@@ -1,18 +1,18 @@
 {
- "asof": "Nov 17, 2026",
- "close": 349.23,
+ "asof": "Nov 18, 2026",
+ "close": 352.3,
  "bias": {
-  "en": "Rebound fading · $338 low, MACD near a cross",
-  "zh": "反弹减弱 · 盘中低见 $338，MACD 接近交叉"
+  "en": "Rebound fading · holding $338, MACD near a cross",
+  "zh": "反弹乏力 · 守住 $338，MACD 接近交叉"
  },
  "read": [
   {
-   "en": "Applied Materials fell 0.3% on Nov 17 to $349.23, trading $338.00–355.70. It is below the 5-day ($369.2, still rising), 10-day ($361.1), 30-day ($404.8), 100-day ($482.0) and 200-day ($446.8). MACD has been above its signal since Nov 11, below zero, histogram fading toward a cross; Parabolic SAR has been bullish since Nov 11 ($323.76), and RSI is 38.6.",
-   "zh": "应用材料 11月17日下跌 0.3%，收于 $349.23，盘中区间 $338.00–355.70。股价位于 5 日（$369.2，仍在上行）、10 日（$361.1）、30 日（$404.8）、100 日（$482.0）和 200 日均线（$446.8）下方。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图收窄、趋向交叉；抛物线 SAR 自 11月11日起看多（$323.76），RSI 为 38.6。"
+   "en": "Applied Materials rose 0.9% on Nov 18 to $352.30, trading $342.32–356.00 on light volume (0.56x the 20-day average). It is below the 5-day ($360.7, rising), 10-day ($359.3), 30-day ($399.2), 100-day ($478.6) and 200-day ($447.0). MACD has been above its signal since Nov 11, below zero, histogram fading toward a cross; Parabolic SAR has been bullish since Nov 11 ($325.38), and RSI is 39.5.",
+   "zh": "应用材料 11月18日上涨 0.9%，收于 $352.30，盘中区间 $342.32–356.00，成交量偏低（为 20 日均量的 0.56 倍）。股价位于 5 日（$360.7，上行）、10 日（$359.3）、30 日（$399.2）、100 日（$478.6）和 200 日均线（$447.0）下方。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图收窄、接近交叉；抛物线 SAR 自 11月11日起看多（$325.38），RSI 为 39.5。"
   },
   {
-   "en": "The $338.00 low dipped under the $343–346 support (Nov 9 and 16 lows), but the close held above it. Resistance is $355.7–361.1 (Nov 17 high, 10-day), then $369.2–372.5 (5-day, Nov 13 and 10 closes) and $381. Support is $338–343, then $332.7 (Nov 6 close) and $317–324 (Nov 5 low, SAR). A close above $361.1 would target $369–372.5; below $338, $332.7.",
-   "zh": "盘中低点 $338.00 一度跌破 $343–346 支撑（11月9日和16日低点），但收盘守在其上方。阻力为 $355.7–361.1（11月17日高点、10 日均线），其次 $369.2–372.5（5 日均线、11月13日和10日收盘）和 $381。支撑为 $338–343，其次 $332.7（11月6日收盘）和 $317–324（11月5日低点、SAR）。若收盘站上 $361.1，下一目标看 $369–372.5；若跌破 $338，则看 $332.7。"
+   "en": "No level changed: the $342.32 low stayed above Nov 17's $338.00, and the close stayed under the 10-day. Resistance is $356–360.7 (Nov 18 and 16 highs, 10 and 5-day), then $370.5–372.5 (Nov 13 and 10 closes) and $381. Support is $338–343, then $332.7 (Nov 6 close) and $317–325 (Nov 5 low, SAR). A close above $360.7 would target $370.5–372.5; below $338, $332.7.",
+   "zh": "关键位未变：盘中低点 $342.32 守在 11月17日低点 $338.00 上方，收盘仍在 10 日均线下方。阻力为 $356–360.7（11月18日和16日高点、10 日和 5 日均线），其次 $370.5–372.5（11月13日和10日收盘）和 $381。支撑为 $338–343，其次 $332.7（11月6日收盘）和 $317–325（11月5日低点、SAR）。若收盘站上 $360.7，下一目标看 $370.5–372.5；若跌破 $338，则看 $332.7。"
   }
  ],
  "levels": {
@@ -20,15 +20,15 @@
    [
     358.5,
     {
-     "en": "Nov 17 high $355.70; Nov 16 high $358.55; 10-day average $361.1",
-     "zh": "11月17日高点 $355.70；11月16日高点 $358.55；10日均线 $361.1"
+     "en": "Nov 18 high $356.00; Nov 16 high $358.55; 10-day average $359.3; 5-day $360.7",
+     "zh": "11月18日高点 $356.00；11月16日高点 $358.55；10日均线 $359.3；5日均线 $360.7"
     }
    ],
    [
     371,
     {
-     "en": "5-day average $369.2; Nov 13 close $370.50; Nov 10 close $372.53",
-     "zh": "5日均线 $369.2；11月13日收盘 $370.50；11月10日收盘 $372.53"
+     "en": "Nov 13 close $370.50; Nov 10 close $372.53",
+     "zh": "11月13日收盘 $370.50；11月10日收盘 $372.53"
     }
    ],
    [
@@ -43,8 +43,8 @@
    [
     340.5,
     {
-     "en": "Nov 17 low $338.00; Nov 9 low $342.98; Nov 16 low $346.01",
-     "zh": "11月17日低点 $338.00；11月9日低点 $342.98；11月16日低点 $346.01"
+     "en": "Nov 17 low $338.00; Nov 18 low $342.32; Nov 9 low $342.98",
+     "zh": "11月17日低点 $338.00；11月18日低点 $342.32；11月9日低点 $342.98"
     }
    ],
    [
@@ -55,10 +55,10 @@
     }
    ],
    [
-    320.5,
+    321,
     {
-     "en": "Parabolic SAR $323.8; Nov 5 low $316.95",
-     "zh": "抛物线 SAR $323.8；11月5日低点 $316.95"
+     "en": "Parabolic SAR $325.4; Nov 5 low $316.95",
+     "zh": "抛物线 SAR $325.4；11月5日低点 $316.95"
     }
    ]
   ]

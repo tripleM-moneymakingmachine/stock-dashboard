@@ -1,50 +1,50 @@
 {
- "asof": "Nov 17, 2026",
- "close": 506.24,
+ "asof": "Nov 18, 2026",
+ "close": 508.29,
  "bias": {
-  "en": "Pullback · SAR flipped bearish, MACD below zero",
-  "zh": "回调 · SAR 转为看空，MACD 跌至零轴下方"
+  "en": "Pullback · steadied above $501, under the falling short averages",
+  "zh": "回调 · 企稳 $501 上方，受制于下行的短期均线"
  },
  "read": [
   {
-   "en": "Microsoft fell 2.3% on Nov 17 to $506.24, trading $496.51–515.64. It is below the 5-day ($518.5), 10-day ($529.3) and 30-day ($529.5), all falling, and above the 100-day ($483.1) and 200-day ($442.3), both rising. MACD has been below its signal since Nov 10 and is now below zero, histogram widening; Parabolic SAR flipped bearish on Nov 17 ($559.15), and RSI is 41.9.",
-   "zh": "微软 11月17日下跌 2.3%，收于 $506.24，盘中区间 $496.51–515.64。股价位于 5 日（$518.5）、10 日（$529.3）和 30 日均线（$529.5）下方，三者均在下行；位于 100 日（$483.1）和 200 日均线（$442.3）上方，两者均在上行。MACD 自 11月10日起位于信号线下方，现已跌至零轴下方，柱状图放大；抛物线 SAR 于 11月17日转为看空（$559.15），RSI 为 41.9。"
+   "en": "Microsoft rose 0.4% on Nov 18 to $508.29, trading $501.08–510.44. It is below the 5-day ($515.9), 10-day ($524.5) and 30-day ($528.8), all falling, and above the 100-day ($484.5) and 200-day ($442.8), both rising. MACD has been below its signal since Nov 10, below zero, histogram widening; Parabolic SAR has been bearish since Nov 17 ($557.90), and RSI is 42.9.",
+   "zh": "微软 11月18日上涨 0.4%，收于 $508.29，盘中区间 $501.08–510.44。股价位于 5 日（$515.9）、10 日（$524.5）和 30 日均线（$528.8）下方，三者均在下行；位于 100 日（$484.5）和 200 日均线（$442.8）上方，两者均在上行。MACD 自 11月10日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月17日起看空（$557.90），RSI 为 42.9。"
   },
   {
-   "en": "The drop broke the $513–513.8 support (SAR, Nov 13 low), now resistance, flipping the SAR. Resistance is $513.8–515.6, then $518–521.1 (5-day, Nov 16 and 11 closes) and $529.3–529.5 (10 and 30-day). Support is $505 (Nov 2 low), then $496.5 (Nov 17 low) and $483–486 (100-day, Sep 10 low). A close above $515.6 would target $518–521; below $496.5, $483–486.",
-   "zh": "此次下跌跌破 $513–513.8 支撑（SAR、11月13日低点），转为阻力，SAR 随之翻空。阻力为 $513.8–515.6，其次 $518–521.1（5 日均线、11月16日和11日收盘）和 $529.3–529.5（10 日和 30 日均线）。支撑为 $505（11月2日低点），其次 $496.5（11月17日低点）和 $483–486（100 日均线、9月10日低点）。若收盘站上 $515.6，下一目标看 $518–521；若跌破 $496.5，则看 $483–486。"
+   "en": "The $501.08 low dipped under the Nov 2 low ($504.96) intraday, but the close held above it. Resistance is $513.8–515.9 (Nov 13 low, Nov 17 high, 5-day), then $518–521.1 (Nov 16 and 11 closes) and $524.5–528.8 (10 and 30-day). Support is $501–505, then $496.5 (Nov 17 low) and $484.5–486 (100-day, Sep 10 low). A close above $515.9 would target $521–524.5; below $501, $496.5.",
+   "zh": "盘中低点 $501.08 一度跌破 11月2日低点（$504.96），但收盘守在其上方。阻力为 $513.8–515.9（11月13日低点、11月17日高点、5 日均线），其次 $518–521.1（11月16日和11日收盘）和 $524.5–528.8（10 日和 30 日均线）。支撑为 $501–505，其次 $496.5（11月17日低点）和 $484.5–486（100 日均线、9月10日低点）。若收盘站上 $515.9，下一目标看 $521–524.5；若跌破 $501，则看 $496.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    514.7,
+    514.8,
     {
-     "en": "Nov 13 low $513.82, lost; Nov 17 high $515.64",
-     "zh": "11月13日低点 $513.82，已失守；11月17日高点 $515.64"
+     "en": "Nov 13 low $513.82; Nov 17 high $515.64; 5-day average $515.9",
+     "zh": "11月13日低点 $513.82；11月17日高点 $515.64；5日均线 $515.9"
     }
    ],
    [
     520,
     {
-     "en": "5-day average $518.5; Nov 16 close $517.99; Nov 11 close $521.13",
-     "zh": "5日均线 $518.5；11月16日收盘 $517.99；11月11日收盘 $521.13"
+     "en": "Nov 16 close $517.99; Nov 11 close $521.13",
+     "zh": "11月16日收盘 $517.99；11月11日收盘 $521.13"
     }
    ],
    [
-    529.4,
+    526.7,
     {
-     "en": "10-day average $529.3; 30-day $529.5",
-     "zh": "10日均线 $529.3；30日均线 $529.5"
+     "en": "10-day average $524.5; 30-day $528.8",
+     "zh": "10日均线 $524.5；30日均线 $528.8"
     }
    ]
   ],
   "s": [
    [
-    505,
+    503,
     {
-     "en": "Nov 2 low $504.96",
-     "zh": "11月2日低点 $504.96"
+     "en": "Nov 2 low $504.96; Nov 18 low $501.08",
+     "zh": "11月2日低点 $504.96；11月18日低点 $501.08"
     }
    ],
    [
@@ -57,8 +57,8 @@
    [
     485,
     {
-     "en": "Sep 10 low $486; 100-day average $483.1",
-     "zh": "9月10日低点 $486；100日均线 $483.1"
+     "en": "Sep 10 low $486; 100-day average $484.5",
+     "zh": "9月10日低点 $486；100日均线 $484.5"
     }
    ]
   ]

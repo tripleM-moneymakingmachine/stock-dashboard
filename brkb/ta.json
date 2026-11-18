@@ -1,64 +1,64 @@
 {
- "asof": "Nov 17, 2026",
- "close": 586.76,
+ "asof": "Nov 18, 2026",
+ "close": 574.62,
  "bias": {
-  "en": "Uptrend · slipped under $588, holding the 10-day",
-  "zh": "上升趋势 · 跌破 $588，守住 10 日均线"
+  "en": "Uptrend pausing · lost the 10-day, SAR and MACD turned",
+  "zh": "上升趋势暂歇 · 失守 10 日均线，SAR 与 MACD 转弱"
  },
  "read": [
   {
-   "en": "Berkshire Hathaway B fell 1.0% on Nov 17 to $586.76, trading $586.04–592.01. It is just below the 5-day ($590.1) and above the 10-day ($583.2), 30-day ($550.6), 100-day ($518.2) and 200-day ($501.5), all rising. MACD has been above its signal since Oct 8, above zero, histogram narrowing; Parabolic SAR has been bullish since Oct 30 ($577.15), and RSI is 73.1, still overbought but off its 82.7 peak.",
-   "zh": "伯克希尔 B 11月17日下跌 1.0%，收于 $586.76，盘中区间 $586.04–592.01。股价略低于 5 日均线（$590.1），位于 10 日（$583.2）、30 日（$550.6）、100 日（$518.2）和 200 日均线（$501.5）上方，均在上行。MACD 自 10月8日起位于信号线上方，在零轴上方，柱状图收窄；抛物线 SAR 自 10月30日起看多（$577.15），RSI 为 73.1，仍处超买区但已从 82.7 的高位回落。"
+   "en": "Berkshire Hathaway B fell 2.1% on Nov 18 to $574.62, trading $573.09–583.72. It dropped below the 5-day ($587.4) and 10-day ($582.7), both still rising, but stays above the rising 30-day ($552.8), 100-day ($518.9) and 200-day ($501.9). MACD crossed just below its signal on Nov 18, above zero; Parabolic SAR flipped bearish the same day ($596.92), and RSI eased to 60.7 from 79.5 five sessions ago.",
+   "zh": "伯克希尔 B 11月18日下跌 2.1%，收于 $574.62，盘中区间 $573.09–583.72。股价跌破 5 日（$587.4）和 10 日均线（$582.7），两者仍在上行，但仍位于上行的 30 日（$552.8）、100 日（$518.9）和 200 日均线（$501.9）上方。MACD 于 11月18日小幅下穿信号线，在零轴上方；抛物线 SAR 同日翻转看空（$596.92），RSI 从五个交易日前的 79.5 回落至 60.7。"
   },
   {
-   "en": "The dip broke the $588.2–590.1 support (Nov 11 close, Nov 12 low, 5-day), now resistance, while the 10-day held. Resistance is $588.2–590.1, then $595.8–596.9 (Nov 16 high, 52-week high) and the round $600. Support is $583.2–583.3 (10-day, Nov 10 close), then $577.2–579.1 (SAR, Nov 4 close) and $570.9–572.3 (Nov 6 and 5 closes). A close above $590.1 would target $595.8–596.9; below $583, $577–579.",
-   "zh": "此次回落跌破 $588.2–590.1 支撑（11月11日收盘、11月12日低点、5 日均线），转为阻力，但 10 日均线守住。阻力为 $588.2–590.1，其次 $595.8–596.9（11月16日高点、52 周高点）和 $600 整数关口。支撑为 $583.2–583.3（10 日均线、11月10日收盘），其次 $577.2–579.1（SAR、11月4日收盘）和 $570.9–572.3（11月6日和5日收盘）。若收盘站上 $590.1，下一目标看 $595.8–596.9；若跌破 $583，则看 $577–579。"
+   "en": "The drop broke the $583.2 (10-day, Nov 10 close) and $577–579 (Nov 4 close) supports, now resistance; the close sits just above the Nov 5 and 6 closes ($570.9–572.3). Resistance is $577–579, then $582.7–583.7 (10-day, Nov 18 high) and $587.4–590.1. Support is $570.9–573.1, then $562.5 (Nov 4 and 9 lows) and $552.8 (30-day). A close above $583.7 would target $587–590; below $570.9, $562.5.",
+   "zh": "此番下跌跌破 $583.2（10 日均线、11月10日收盘）和 $577–579（11月4日收盘）支撑，转为阻力；收盘价略高于 11月5日和6日收盘价（$570.9–572.3）。阻力为 $577–579，其次 $582.7–583.7（10 日均线、11月18日高点）和 $587.4–590.1。支撑为 $570.9–573.1，其次 $562.5（11月4日和9日低点）和 $552.8（30 日均线）。若收盘站上 $583.7，下一目标看 $587–590；若跌破 $570.9，则看 $562.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    589.5,
+    579,
     {
-     "en": "Nov 11 close $588.24; Nov 12 low $589.02; 5-day average $590.1, lost",
-     "zh": "11月11日收盘 $588.24；11月12日低点 $589.02；5日均线 $590.1，已失守"
+     "en": "Nov 4 close $579.09, lost",
+     "zh": "11月4日收盘 $579.09，已失守"
     }
    ],
    [
-    596.9,
+    583.3,
     {
-     "en": "52-week high $596.92 (Nov 12); Nov 16 high $595.83",
-     "zh": "52周高点 $596.92（11月12日）；11月16日高点 $595.83"
+     "en": "10-day average $582.7; Nov 10 close $583.34; Nov 18 high $583.72",
+     "zh": "10日均线 $582.7；11月10日收盘 $583.34；11月18日高点 $583.72"
     }
    ],
    [
-    600,
+    589,
     {
-     "en": "Round number $600",
-     "zh": "$600 整数关口"
+     "en": "5-day average $587.4; Nov 11 close $588.24; Nov 12 low $589.02",
+     "zh": "5日均线 $587.4；11月11日收盘 $588.24；11月12日低点 $589.02"
     }
    ]
   ],
   "s": [
    [
-    583.2,
+    572,
     {
-     "en": "10-day average $583.2; Nov 10 close $583.34",
-     "zh": "10日均线 $583.2；11月10日收盘 $583.34"
+     "en": "Nov 6 close $570.89; Nov 5 close $572.33; Nov 18 low $573.09",
+     "zh": "11月6日收盘 $570.89；11月5日收盘 $572.33；11月18日低点 $573.09"
     }
    ],
    [
-    578,
+    562.5,
     {
-     "en": "Parabolic SAR $577.2; Nov 4 close $579.09",
-     "zh": "抛物线 SAR $577.2；11月4日收盘 $579.09"
+     "en": "Nov 4 low $562.50; Nov 9 low $562.45",
+     "zh": "11月4日低点 $562.50；11月9日低点 $562.45"
     }
    ],
    [
-    571.5,
+    552.8,
     {
-     "en": "Nov 6 close $570.89; Nov 5 close $572.33",
-     "zh": "11月6日收盘 $570.89；11月5日收盘 $572.33"
+     "en": "30-day average $552.8, rising",
+     "zh": "30日均线 $552.8，上行"
     }
    ]
   ]

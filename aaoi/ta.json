@@ -1,64 +1,57 @@
 {
- "asof": "Nov 17, 2026",
- "close": 45.22,
+ "asof": "Nov 18, 2026",
+ "close": 40.79,
  "bias": {
-  "en": "Downtrend · new low at $42.65, close held $45",
-  "zh": "下跌趋势 · 盘中新低 $42.65，收盘守住 $45"
+  "en": "Downtrend · broke $41, lowest since February",
+  "zh": "下跌趋势 · 跌破 $41，创 2月以来新低"
  },
  "read": [
   {
-   "en": "AAOI rose 0.1% on Nov 17 to $45.22, trading $42.65–48.13. It is below the 5-day ($49.8), 10-day ($50.6), 30-day ($72.1), 100-day ($101.2) and 200-day ($115.0); all but the 200-day are falling. MACD has been below its signal since Oct 13, below zero, histogram narrowing; Parabolic SAR has been bearish since Nov 16 ($57.68), and RSI is 32.1.",
-   "zh": "AAOI 11月17日上涨 0.1%，收于 $45.22，盘中区间 $42.65–48.13。股价位于 5 日（$49.8）、10 日（$50.6）、30 日（$72.1）、100 日（$101.2）和 200 日均线（$115.0）下方，除 200 日外均在下行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月16日起看空（$57.68），RSI 为 32.1。"
+   "en": "AAOI fell 9.8% on Nov 18 to $40.79, trading $37.60–42.32 on heavy volume (1.46x the 20-day average). It is below the 5-day ($46.8), 10-day ($48.7), 30-day ($69.3), 100-day ($100.1) and 200-day ($115.0); all but the 200-day are falling. MACD has been below its signal since Oct 13, below zero, histogram widening; Parabolic SAR has been bearish since Nov 16 ($57.08), and RSI is 29.9.",
+   "zh": "AAOI 11月18日下跌 9.8%，收于 $40.79，盘中区间 $37.60–42.32，成交量放大（为 20 日均量的 1.46 倍）。股价位于 5 日（$46.8）、10 日（$48.7）、30 日（$69.3）、100 日（$100.1）和 200 日均线（$115.0）下方；除 200 日均线外均在下行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月16日起看空（$57.08），RSI 为 29.9。"
   },
   {
-   "en": "The $42.65 low undercut the $44.8–45.2 support (Nov 16 and Nov 6 lows), but the close recovered above it, so it still holds. Resistance is $47.3–48.1 (Nov 13 low, Nov 16 and 17 highs), then $49.8–50.8 (5 and 10-day, Nov 12 low) and $52.9–53.5. Support is $44.8–45.2, then $42.65 (Nov 17 low) and $40–41.4. A close above $48.1 would target $50–50.8; below $44.8, $42.65.",
-   "zh": "盘中低点 $42.65 一度跌破 $44.8–45.2 支撑（11月16日和 11月6日低点），但收盘回到其上方，支撑仍然有效。阻力为 $47.3–48.1（11月13日低点、11月16日和17日高点），其次 $49.8–50.8（5 日和 10 日均线、11月12日低点）和 $52.9–53.5。支撑为 $44.8–45.2，其次 $42.65（11月17日低点）和 $40–41.4。若收盘站上 $48.1，下一目标看 $50–50.8；若跌破 $44.8，则看 $42.65。"
+   "en": "The close broke the $44.8–45.2, $42.65 and $41 supports, now resistance, and the $37.60 low was the lowest since Feb 5. Resistance is $42.3–42.7 (Nov 18 high, Nov 17 low), then $44.8–45.2 (Nov 16 and 6 lows) and $46.8–48.2 (5-day, Nov 16–17 highs). Support is $40, then $37.0–37.6 (Nov 18 and Feb 5 lows). A close above $42.7 would target $45; below $37.6, $37.0.",
+   "zh": "收盘跌破 $44.8–45.2、$42.65 和 $41 支撑，转为阻力，盘中低点 $37.60 为 2月5日以来最低。阻力为 $42.3–42.7（11月18日高点、11月17日低点），其次 $44.8–45.2（11月16日和6日低点）和 $46.8–48.2（5 日均线、11月16–17日高点）。支撑为 $40，其次 $37.0–37.6（11月18日和2月5日低点）。若收盘站上 $42.7，下一目标看 $45；若跌破 $37.6，则看 $37.0。"
   }
  ],
  "levels": {
   "r": [
    [
-    47.7,
+    42.5,
     {
-     "en": "Nov 13 low $47.28; Nov 16 high $47.88; Nov 17 high $48.13",
-     "zh": "11月13日低点 $47.28；11月16日高点 $47.88；11月17日高点 $48.13"
+     "en": "Nov 18 high $42.32; Nov 17 low $42.65, lost",
+     "zh": "11月18日高点 $42.32；11月17日低点 $42.65，已失守"
     }
    ],
    [
-    50.4,
+    45,
     {
-     "en": "5-day average $49.8; 10-day $50.6; Nov 12 low $50.80",
-     "zh": "5日均线 $49.8；10日均线 $50.6；11月12日低点 $50.80"
+     "en": "Nov 16 low $44.78; Nov 6 low $45.15; Nov 17 close $45.22, lost",
+     "zh": "11月16日低点 $44.78；11月6日低点 $45.15；11月17日收盘 $45.22，已失守"
     }
    ],
    [
-    53.2,
+    47.5,
     {
-     "en": "Nov 12 close $52.85; Nov 13 high $53.50",
-     "zh": "11月12日收盘 $52.85；11月13日高点 $53.50"
+     "en": "5-day average $46.8; Nov 16 high $47.88; Nov 17 high $48.22",
+     "zh": "5日均线 $46.8；11月16日高点 $47.88；11月17日高点 $48.22"
     }
    ]
   ],
   "s": [
    [
-    45,
+    40,
     {
-     "en": "Nov 16 low $44.78; Nov 6 low $45.15",
-     "zh": "11月16日低点 $44.78；11月6日低点 $45.15"
+     "en": "Round number $40",
+     "zh": "$40 整数关口"
     }
    ],
    [
-    42.65,
+    37.3,
     {
-     "en": "Nov 17 low $42.65",
-     "zh": "11月17日低点 $42.65"
-    }
-   ],
-   [
-    41,
-    {
-     "en": "Jan 5 swing high $41.35; $40 round number",
-     "zh": "1月5日波段高点 $41.35；$40 整数关口"
+     "en": "Nov 18 low $37.60; Feb 5 low $37.02",
+     "zh": "11月18日低点 $37.60；2月5日低点 $37.02"
     }
    ]
   ]

@@ -1,18 +1,18 @@
 {
- "asof": "Nov 17, 2026",
- "close": 797.24,
+ "asof": "Nov 18, 2026",
+ "close": 776.22,
  "bias": {
-  "en": "Downtrend · lost the Nov 5 low, tested $750",
-  "zh": "下跌趋势 · 跌破 11月5日低点，测试 $750"
+  "en": "Downtrend · holding $750, under $806",
+  "zh": "下跌趋势 · 守住 $750，受制于 $806"
  },
  "read": [
   {
-   "en": "Sandisk fell 1.5% on Nov 17 to $797.24, trading $749.70–821.46. It is below the 5-day ($881.3), 10-day ($883.2), 30-day ($1,201.5), 100-day ($1,473.6) and 200-day ($1,284.3); all but the 200-day are falling. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($1,079.91), and RSI is 30.9.",
-   "zh": "闪迪 11月17日下跌 1.5%，收于 $797.24，盘中区间 $749.70–821.46。股价位于 5 日（$881.3）、10 日（$883.2）、30 日（$1,201.5）、100 日（$1,473.6）和 200 日均线（$1,284.3）下方；除 200 日均线外均在下行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$1,079.91），RSI 为 30.9。"
+   "en": "Sandisk fell 2.6% on Nov 18 to $776.22, trading $753.86–813.18. It is below the 5-day ($841.0), 10-day ($857.1), 30-day ($1,170.9), 100-day ($1,460.9) and 200-day ($1,284.7); all but the 200-day are falling. MACD has been below its signal since Oct 2, below zero, histogram narrowing; Parabolic SAR has been bearish since Oct 30 ($1,040.24), and RSI is 30.1.",
+   "zh": "闪迪 11月18日下跌 2.6%，收于 $776.22，盘中区间 $753.86–813.18。股价位于 5 日（$841.0）、10 日（$857.1）、30 日（$1,170.9）、100 日（$1,460.9）和 200 日均线（$1,284.7）下方，除 200 日均线外均在下行。MACD 自 10月2日起位于信号线下方，在零轴下方，柱状图收窄；抛物线 SAR 自 10月30日起看空（$1,040.24），RSI 为 30.1。"
   },
   {
-   "en": "The close broke the $799–806.4 support (Nov 16 low, Nov 5 low and close), now resistance, after the $749.70 low tested the round $750 and held. Resistance is $799–806.4, then $816.4–838.5 (Nov 6 low, Nov 17 high, Nov 6 close, Nov 16 high) and $848.5–860. Support is $749.7–750, then $700. A close above $806.4 would target $816–838; below $749.7, $700.",
-   "zh": "收盘跌破 $799–806.4 支撑（11月16日低点、11月5日低点和收盘），转为阻力；盘中低点 $749.70 测试 $750 整数关口后守住。阻力为 $799–806.4，其次 $816.4–838.5（11月6日低点、11月17日高点、11月6日收盘、11月16日高点）和 $848.5–860。支撑为 $749.7–750，其次 $700。若收盘站上 $806.4，下一目标看 $816–838；若跌破 $749.7，则看 $700。"
+   "en": "No level changed: the $813.18 high was rejected above the $799–806.4 resistance, and the $753.86 low held above the Nov 17 low ($749.39). Resistance is $799–806.4 (Nov 16 low, Nov 5 low and close), then $813.2–838.5 and $841–857 (5-day, Nov 13 low, 10-day). Support is $749.4–753.9 (Nov 17 and 18 lows, $750), then $700. A close above $806.4 would target $816–838; below $749.4, $700.",
+   "zh": "关键位未变：盘中高点 $813.18 在 $799–806.4 阻力上方受阻回落，低点 $753.86 守在 11月17日低点（$749.39）上方。阻力为 $799–806.4（11月16日低点、11月5日低点和收盘），其次 $813.2–838.5 和 $841–857（5 日均线、11月13日低点、10 日均线）。支撑为 $749.4–753.9（11月17日和18日低点、$750），其次 $700。若收盘站上 $806.4，下一目标看 $816–838；若跌破 $749.4，则看 $700。"
   }
  ],
  "levels": {
@@ -27,24 +27,24 @@
    [
     827,
     {
-     "en": "Nov 6 low $816.42; Nov 17 high $821.46; Nov 6 close $835.06; Nov 16 high $838.48",
-     "zh": "11月6日低点 $816.42；11月17日高点 $821.46；11月6日收盘 $835.06；11月16日高点 $838.48"
+     "en": "Nov 18 high $813.18; Nov 6 low $816.42; Nov 17 high $821.46; Nov 6 close $835.06; Nov 16 high $838.48",
+     "zh": "11月18日高点 $813.18；11月6日低点 $816.42；11月17日高点 $821.46；11月6日收盘 $835.06；11月16日高点 $838.48"
     }
    ],
    [
-    854,
+    849,
     {
-     "en": "Nov 13 low $848.50; Nov 10 close $859.99",
-     "zh": "11月13日低点 $848.50；11月10日收盘 $859.99"
+     "en": "5-day average $841.0; Nov 13 low $848.50; 10-day $857.1",
+     "zh": "5日均线 $841.0；11月13日低点 $848.50；10日均线 $857.1"
     }
    ]
   ],
   "s": [
    [
-    750,
+    751.5,
     {
-     "en": "Nov 17 low $749.70; round number $750",
-     "zh": "11月17日低点 $749.70；$750 整数关口"
+     "en": "Nov 17 low $749.39; Nov 18 low $753.86; round number $750",
+     "zh": "11月17日低点 $749.39；11月18日低点 $753.86；$750 整数关口"
     }
    ],
    [

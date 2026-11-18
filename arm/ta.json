@@ -1,41 +1,41 @@
 {
- "asof": "Nov 17, 2026",
- "close": 183.39,
+ "asof": "Nov 18, 2026",
+ "close": 182.76,
  "bias": {
-  "en": "Bounce · reclaimed $181, testing the 10-day",
-  "zh": "反弹 · 收复 $181，测试 10 日均线"
+  "en": "Bounce stalling · rejected at $191.7, holding $181",
+  "zh": "反弹受阻 · $191.7 遇阻回落，守住 $181"
  },
  "read": [
   {
-   "en": "Arm rose 4.8% on Nov 17 to $183.39, rebounding from a $173.20 low to a $184.93 high. It is below the 5-day ($190.4, rising), 10-day ($185.3), 30-day ($217.5), 100-day ($258.6) and 200-day ($233.6). MACD has been above its signal since Nov 12, below zero, histogram holding steady; Parabolic SAR has been bearish since Oct 30 ($201.44), and RSI is 40.0.",
-   "zh": "Arm 11月17日上涨 4.8%，收于 $183.39，从 $173.20 低点反弹至 $184.93 高点。股价位于 5 日（$190.4，上行）、10 日（$185.3）、30 日（$217.5）、100 日（$258.6）和 200 日均线（$233.6）下方。MACD 自 11月12日起位于信号线上方，在零轴下方，柱状图保持稳定；抛物线 SAR 自 10月30日起看空（$201.44），RSI 为 40.0。"
+   "en": "Arm slipped 0.3% on Nov 18 to $182.76, fading from a $191.65 high to a $181.00 low. It is below the 5-day ($186.3, rising), 10-day ($184.4, falling), 30-day ($213.8), 100-day ($257.0) and 200-day ($233.9). MACD has been above its signal since Nov 12, below zero, histogram widening slightly; Parabolic SAR has been bearish since Oct 30 ($198.37), and RSI is 39.8.",
+   "zh": "Arm 11月18日下跌 0.3%，收于 $182.76，自高点 $191.65 回落至低点 $181.00。股价位于 5 日（$186.3，上行）、10 日（$184.4，下行）、30 日（$213.8）、100 日（$257.0）和 200 日均线（$233.9）下方。MACD 自 11月12日起位于信号线上方，在零轴下方，柱状图小幅放大；抛物线 SAR 自 10月30日起看空（$198.37），RSI 为 39.8。"
   },
   {
-   "en": "After a $173.20 low under the $174.6 support, the stock reclaimed the $180.5–181.7 resistance (Nov 13 low, Nov 10 close, Nov 16 high), now support. Resistance is $184.9–185.3 (Nov 17 high, 10-day), then $188.4–190.5 (Nov 11 low, 5-day, Nov 13 close) and $196–199.8. Support is $180.5–181.5, then $173.2–175 and $163–167. A close above $185.3 would target $188.4–190.5; below $180.5, $173–175.",
-   "zh": "盘中低见 $173.20、跌破 $174.6 支撑后，股价收复 $180.5–181.7 阻力（11月13日低点、11月10日收盘、11月16日高点），转为支撑。阻力为 $184.9–185.3（11月17日高点、10 日均线），其次 $188.4–190.5（11月11日低点、5 日均线、11月13日收盘）和 $196–199.8。支撑为 $180.5–181.5，其次 $173.2–175 和 $163–167。若收盘站上 $185.3，下一目标看 $188.4–190.5；若跌破 $180.5，则看 $173–175。"
+   "en": "The $191.65 high pushed through the 10 and 5-day intraday, but the close fell back below both; the $181.00 low held the $180.5–181.5 support. Resistance is $184.4–186.3 (10 and 5-day, Nov 9 close), then $188.4–191.7 (Nov 11 low, Nov 18 high) and $196–199.4 (SAR). Support is $180.5–181.5, then $173.2–175 and $163–167. A close above $186.3 would target $191.7; below $180.5, $173–175.",
+   "zh": "盘中高点 $191.65 一度突破 10 日和 5 日均线，但收盘回落至两者下方；低点 $181.00 守住 $180.5–181.5 支撑。阻力为 $184.4–186.3（10 日和 5 日均线、11月9日收盘），其次 $188.4–191.7（11月11日低点、11月18日高点）和 $196–199.4（SAR）。支撑为 $180.5–181.5，其次 $173.2–175 和 $163–167。若收盘站上 $186.3，下一目标看 $191.7；若跌破 $180.5，则看 $173–175。"
   }
  ],
  "levels": {
   "r": [
    [
-    185,
+    185.3,
     {
-     "en": "Nov 17 high $184.93; 10-day average $185.3",
-     "zh": "11月17日高点 $184.93；10日均线 $185.3"
+     "en": "10-day average $184.4; 5-day $186.3; Nov 9 close $186.30",
+     "zh": "10日均线 $184.4；5日均线 $186.3；11月9日收盘 $186.30"
     }
    ],
    [
-    189.5,
+    190,
     {
-     "en": "Nov 11 low $188.43; 5-day average $190.4; Nov 13 close $190.53",
-     "zh": "11月11日低点 $188.43；5日均线 $190.4；11月13日收盘 $190.53"
+     "en": "Nov 11 low $188.43; Nov 13 close $190.53; Nov 18 high $191.65",
+     "zh": "11月11日低点 $188.43；11月13日收盘 $190.53；11月18日高点 $191.65"
     }
    ],
    [
-    197,
+    198,
     {
-     "en": "Nov 2 low $196.12 and close $196.79; Nov 13 high $199.39",
-     "zh": "11月2日低点 $196.12 和收盘 $196.79；11月13日高点 $199.39"
+     "en": "Nov 2 low $196.12; Parabolic SAR $198.4; Nov 13 high $199.39",
+     "zh": "11月2日低点 $196.12；抛物线 SAR $198.4；11月13日高点 $199.39"
     }
    ]
   ],
@@ -43,8 +43,8 @@
    [
     181,
     {
-     "en": "Nov 13 low $180.50 and Nov 10 close $181.49, reclaimed",
-     "zh": "11月13日低点 $180.50 和 11月10日收盘 $181.49，已收复"
+     "en": "Nov 13 low $180.50; Nov 18 low $181.00; Nov 10 close $181.49",
+     "zh": "11月13日低点 $180.50；11月18日低点 $181.00；11月10日收盘 $181.49"
     }
    ],
    [
