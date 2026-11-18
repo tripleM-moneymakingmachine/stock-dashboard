@@ -16,7 +16,7 @@ import { readFileSync, writeFileSync, existsSync, appendFileSync } from "node:fs
 const OUT = "data/malaysia-credit.json";
 const BIX = "https://bixmalaysia.com";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
-const DETAIL_MAX = +(process.env.MY_CREDIT_DETAIL || 600);
+const DETAIL_MAX = +(process.env.MY_CREDIT_DETAIL || 400);
 const log = (...a) => console.log(...a);
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };
 const prev = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : {};
