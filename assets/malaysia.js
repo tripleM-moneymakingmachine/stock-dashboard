@@ -121,7 +121,7 @@
   }
 
   // ---------- GII and corporate curves ----------
-  const PBK = ["gii", "aaa", "aa1", "aa", "aa3", "a1", "a", "a3", "bbb"];
+  const PBK = ["gii", "khazanah", "cagamas", "aaa", "aa1", "aa", "aa3", "a1", "a", "a3", "bbb"];
   const pbOk = (k) => !!D?.pb?.[k]?.curve?.pts?.length;
   function pbCurve() {
     const p = D.pb[st.pbK];
@@ -305,37 +305,53 @@
   // ---------- bonds table ----------
   const BUCKETS = [[0, 1, "Up to 1 year"], [1, 3, "1 – 3 years"], [3, 5, "3 – 5 years"], [5, 7, "5 – 7 years"], [7, 10, "7 – 10 years"], [10, 20, "10 – 20 years"], [20, 30, "20 – 30 years"], [30, 99, "Over 30 years"]];
   const bucket = (t) => BUCKETS.findIndex(([, b]) => t <= b + 1e-9);
-  // Table rows: every MGS and GII the dashboard has seen on FAST's MGS Indicative Price list or on the ETP, with the
-  // indicative yield (MGS) and the day's ETP close where it traded. Built once per data load.
-  const ISS = ["All", "MGS", "GII"];
+  // Table rows: every MGS and GII the dashboard has seen on FAST's MGS Indicative Price list or on the ETP (indicative
+  // yield for MGS, the day's ETP close where it traded), plus the financial and SOE bonds and sukuk from BIX Malaysia
+  // (data/malaysia-credit.json: last traded yield, rating, issuer). Built once per data load.
+  const ISS = ["All", "MGS", "GII", "Financial", "SOE"];
   const ageDays = (d) => d ? (Date.now() - Date.parse(d)) / 864e5 : 1e9;
-  let allRows = null, allFor = null;
+  let allRows = null, allFor = null, CR = null;
+  const linF = (pts) => (t) => { if (!pts?.length) return null; if (t <= pts[0][0]) return pts[0][1]; for (let i = 0; i < pts.length - 1; i++) if (t <= pts[i + 1][0]) { const [a, y0] = pts[i], [b, y1] = pts[i + 1]; return y0 + (y1 - y0) * (t - a) / (b - a); } return pts.at(-1)[1]; };
   function allBonds() {
     if (allFor === D && allRows) return allRows;
-    const out = (D.bonds || []).map((b) => ({ ...b, iss: b.iss || "MGS", type: b.type || "MGS" }));
+    const mgsAt = linF(D.curve?.pts), etp = D.etpDay || D.tradeDay;
+    const out = (D.bonds || []).map((b) => ({ ...b, iss: b.iss || "MGS", type: b.type || "MGS", issuer: "Government of Malaysia", rating: "Sovereign", ld: b.trd != null ? etp : null,
+      vsMgs: b.iss === "MGS" ? b.vs : b.last != null && b.ttm >= 1 && mgsAt(b.ttm) != null ? +((b.last - mgsAt(b.ttm)) * 100).toFixed(1) : null }));
     out.forEach((b) => { b.isNew = ageDays(b.issue) <= 30; });
+    const day = D.tradeDay;
+    for (const c of CR?.bonds || []) {
+      if (!c.mat || c.ttm == null || c.ttm <= 0) continue;
+      const today = c.ld && c.ld >= day;
+      out.push({ code: c.code || `BIX ${c.sbid}`, isin: c.isin || null, name: c.name, iss: c.cat, type: c.instrument || "Bond", issuer: c.issuerShort || c.issuer, issuerFull: c.issuer, rating: c.rating || "–",
+        coupon: c.coupon, issue: c.issue || null, mat: c.mat, ttm: c.ttm, out: c.out != null ? c.out * 1e6 : null, curve: c.curve, ref: c.ref, last: c.ly ?? null, ld: c.ld || null,
+        trd: today ? c.ly : null, vol: today ? c.lamt : null, chg: c.py != null && c.ly != null ? +((c.ly - c.py) * 100).toFixed(1) : null, vs: c.vs, vsMgs: c.vsMgs, sbid: c.sbid, isNew: ageDays(c.issue) <= 30 });
+    }
     allFor = D; return (allRows = out);
   }
   const COLS = [
-    ["code", "Stock code", (b) => `<td class="code">${esc(b.code)}${b.bench ? ` <span class="new" title="BNM benchmark">BM</span>` : ""}${b.isNew ? ` <span class="new" title="First seen ${esc(b.issue)}">New</span>` : ""}</td>`],
+    ["code", "Stock code", (b) => `<td class="code">${b.sbid ? `<a href="https://bixmalaysia.com/security-info-page?SBid=${b.sbid}" target="_blank" rel="noopener">${esc(b.code)}</a>` : esc(b.code)}${b.bench ? ` <span class="new" title="BNM benchmark">BM</span>` : ""}${b.isNew ? ` <span class="new" title="Issued or first seen ${esc(b.issue)}">New</span>` : ""}</td>`],
     ["isin", "ISIN", (b) => `<td>${esc(b.isin || "–")}</td>`],
     ["name", "Name", (b) => `<td class="nm" title="${esc(b.name)}">${esc(b.name || "–")}</td>`],
-    ["iss", "Type", (b) => `<td><span class="is ${esc(b.iss)}">${esc(b.iss)}</span></td>`],
+    ["iss", "Category", (b) => `<td><span class="is ${esc(b.iss)}">${esc(b.iss)}</span></td>`],
+    ["issuer", "Issuer", (b) => `<td class="nm" title="${esc(b.issuerFull || b.issuer || "")}">${esc(b.issuer || "–")}</td>`],
+    ["rating", "Rating", (b) => `<td>${esc(b.rating || "–")}</td>`],
     ["coupon", "Coupon %", (b) => `<td>${f2(b.coupon, 3)}</td>`],
     ["mat", "Maturity", (b) => `<td>${esc(b.mat || "–")}</td>`],
     ["ttm", "Left (Y)", (b) => `<td>${f2(b.ttm, 2)}</td>`],
-    ["curve", "Curve %", (b) => `<td>${f2(b.curve, 3)}</td>`],
+    ["curve", "Curve %", (b) => `<td title="${esc(b.ref ? "Reference: " + b.ref : b.iss === "GII" ? "Reference: FAST GII curve" : "Reference: FAST MGS curve")}">${f2(b.curve, 3)}</td>`],
     ["last", "Yield %", (b) => `<td>${f2(b.last, 3)}</td>`],
-    ["trd", "ETP close %", (b) => `<td>${f2(b.trd, 2)}</td>`],
+    ["ld", "Last trade", (b) => `<td>${esc(b.ld || "–")}</td>`],
+    ["trd", "Traded today %", (b) => `<td>${f2(b.trd, 2)}</td>`],
     ["vol", "Traded RM m", (b) => `<td>${b.vol != null ? f2(b.vol, 1) : "–"}</td>`],
-    ["out", "Outstanding RM bn", (b) => `<td>${b.out != null ? f2(b.out / 1e9, 1) : "–"}</td>`],
+    ["out", "Outstanding RM bn", (b) => `<td>${b.out != null ? f2(b.out / 1e9, 2) : "–"}</td>`],
     ["chg", "Chg bp", (b) => `<td class="${cls(b.chg)}">${bp(b.chg, 1)}</td>`],
     ["vs", "vs curve bp", (b) => `<td class="${cls(b.vs)}">${bp(b.vs)}</td>`],
+    ["vsMgs", "vs MGS bp", (b) => `<td class="${cls(b.vsMgs)}">${bp(b.vsMgs)}</td>`],
   ];
   function rows() {
     const q = st.q.trim().toLowerCase();
     return allBonds().filter((b) =>
-      (!q || [b.code, b.isin, b.name].some((x) => String(x || "").toLowerCase().includes(q))) &&
+      (!q || [b.code, b.isin, b.name, b.issuer, b.issuerFull].some((x) => String(x || "").toLowerCase().includes(q))) &&
       (st.iss === "All" || (st.iss === "New" ? b.isNew : b.iss === st.iss)) &&
       (st.type === "All" || b.type === st.type) &&
       (!st.mat || (() => { const [lo, hi] = st.mat.split("-").map(Number); return b.ttm >= lo && b.ttm < hi; })()) &&
@@ -372,17 +388,17 @@
     } else html = R.map(line).join("");
     $("bBody").innerHTML = html;
     const all = allBonds(), n = (k) => all.filter((b) => b.iss === k).length;
-    $("bNote").textContent = `${R.length} of ${all.length} bonds shown (MGS ${n("MGS")}, GII ${n("GII")}) · ${all.filter((b) => b.trd != null).length} traded on the ETP on ${D.etpDay || D.tradeDay || "the latest day"} · ${nNew} first seen in the last 30 days, tagged New; BM marks BNM's benchmark issues. MGS come from FAST's MGS Indicative Price list (stock code, coupon, maturity, amount outstanding, indicative price and yield, published daily by Bank Negara Malaysia). GII have no public indicative list, so a GII appears once it trades on Bursa Malaysia Bonds' ETP and stays listed; its yield is its latest ETP close. ISINs follow the Malaysian rule (MYB + stock code + check digit). "Curve" is the FAST MGS curve (GII: the FAST GII curve) at the bond's remaining term; "Yield" is the indicative yield for MGS and the ETP close for GII; "Chg" is against the previous indicative day. Click a column header to sort.`;
+    $("bNote").textContent = `${R.length} of ${all.length} bonds shown (MGS ${n("MGS")}, GII ${n("GII")}, Financial ${n("Financial")}, SOE ${n("SOE")}) · ${all.filter((b) => b.trd != null).length} traded on ${D.etpDay || D.tradeDay || "the latest day"} · ${nNew} new in the last 30 days; BM marks BNM's benchmark issues. MGS come from FAST's MGS Indicative Price list (Bank Negara Malaysia); GII once they trade on Bursa Malaysia Bonds' ETP. Financial (banks, Cagamas, insurers, finance companies) and SOE (government-linked and statutory issuers such as DanaInfra, Prasarana, PTPTN, LPPSA, Khazanah and the development banks) bonds and sukuk come from BIX Malaysia, which shows each issuer's most recently traded bonds with rating, last trade and amount outstanding; the dashboard keeps every bond it has seen, so the list grows day by day, and stock code and ISIN are read from each bond's BIX page (click a stock code to open it). "Curve" is the bond's reference curve at its remaining term: FAST MGS for MGS, FAST GII for GII, FAST's Cagamas and Khazanah curves for those issuers, FAST's curve for the bond's rating, and MGS for government-guaranteed and unrated SOE bonds (hover for which). "Yield" is the MGS indicative yield, or the last traded yield for everything else (see "Last trade"); spreads are shown only for trades in the last 30 days. "Chg" is against the previous indicative day (MGS) or the previous trade. Click a column header to sort.`;
   }
   $("bQ").oninput = (e) => { st.q = e.target.value; table(); };
   $("bTr").onchange = (e) => { st.traded = e.target.checked; table(); };
   $("bMat").onchange = (e) => { st.mat = e.target.value; table(); };
   $("bDl").onclick = () => {
-    const head = ["stock_code", "isin", "name", "type", "coupon_pct", "first_seen", "maturity", "years_left", "outstanding_rm_bn", "curve_pct", "yield_pct", "etp_close_pct", "traded_rm_m", "chg_bp", "vs_curve_bp"];
+    const head = ["stock_code", "isin", "name", "category", "issuer", "rating", "coupon_pct", "issue_or_first_seen", "maturity", "years_left", "outstanding_rm_bn", "curve_pct", "yield_pct", "last_trade", "traded_today_pct", "traded_rm_m", "chg_bp", "vs_curve_bp", "vs_mgs_bp"];
     const q = (v) => v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v;
-    const body = rows().map((b) => [b.code, b.isin, b.name, b.iss, b.coupon, b.issue, b.mat, b.ttm, b.out != null ? +(b.out / 1e9).toFixed(2) : null, b.curve, b.last, b.trd, b.vol, b.chg, b.vs].map(q).join(","));
+    const body = rows().map((b) => [b.code, b.isin, b.name, b.iss, b.issuerFull || b.issuer, b.rating, b.coupon, b.issue, b.mat, b.ttm, b.out != null ? +(b.out / 1e9).toFixed(3) : null, b.curve, b.last, b.ld, b.trd, b.vol, b.chg, b.vs, b.vsMgs].map(q).join(","));
     const blob = new Blob(["﻿" + [head.join(","), ...body].join("\n")], { type: "text/csv;charset=utf-8" });
-    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `malaysia-mgs-gii-by-code-isin-${D.curve?.date || "latest"}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `malaysia-bonds-by-code-isin-${D.curve?.date || "latest"}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
   };
 
   function rngButtons() {
@@ -403,6 +419,7 @@
       if (!r.ok) throw new Error(r.status);
       const j = await r.json();
       if (!first && D && j.updated === D.updated) return;
+      try { const rc = await fetch(`../data/malaysia-credit.json?t=${Date.now()}`, { cache: "no-store" }); if (rc.ok) CR = await rc.json(); } catch {}
       D = j; for (const key in bondCache) delete bondCache[key]; render(first);
     } catch (e) { if (first) $("lede").textContent = "Malaysia bond data is not available yet. It is rebuilt after Bank Negara Malaysia's FAST publishes each Kuala Lumpur business day; check back in a few minutes."; }
   }

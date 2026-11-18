@@ -94,7 +94,7 @@ section{margin-top:40px}
 .bt tr.g td span{color:var(--muted);letter-spacing:.04em;text-transform:none;font-weight:500;margin-left:8px}
 .bt tr:not(.g):hover td{background:var(--accent-soft)}
 .ty{display:inline-block;font:600 9.5px var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:1px 5px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
-.ty.Special,.ty.Ultra-long{border-color:var(--c3);color:var(--c3)}.is{font-size:11px;font-weight:600;letter-spacing:.02em}.is.MSB{color:var(--c2)}.is.KDB{color:var(--c3)}.is.IBK{color:var(--c5)}.is.KEXIM{color:var(--c4,var(--c1))}.is.Bank{color:var(--c6)}.ty.Bank{border-color:var(--c6);color:var(--c6)}.ty.Inflation-linked,.ty.Green{border-color:var(--c3);color:var(--c3)}.new{display:inline-block;font-size:10px;font-weight:600;padding:0 5px;border-radius:8px;background:var(--up,#2a7);color:#fff;vertical-align:1px}.ty.Discount{border-color:var(--c2);color:var(--c2)}
+.ty.Special,.ty.Ultra-long{border-color:var(--c3);color:var(--c3)}.is{font-size:11px;font-weight:600;letter-spacing:.02em}.is.MSB{color:var(--c2)}.is.KDB{color:var(--c3)}.is.IBK{color:var(--c5)}.is.KEXIM{color:var(--c4,var(--c1))}.is.Bank{color:var(--c6)}.is.GII{color:var(--c4)}.is.Financial{color:var(--c2)}.is.SOE{color:var(--c5)}.ty.Bank{border-color:var(--c6);color:var(--c6)}.ty.Inflation-linked,.ty.Green{border-color:var(--c3);color:var(--c3)}.new{display:inline-block;font-size:10px;font-weight:600;padding:0 5px;border-radius:8px;background:var(--up,#2a7);color:#fff;vertical-align:1px}.ty.Discount{border-color:var(--c2);color:var(--c2)}
 .fstamp{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;margin:0 0 14px;font:500 12.5px var(--f-mono)}
 .fstamp b{font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-size:10.5px;margin-right:4px}
 .fstamp i.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin:0 6px 0 2px;vertical-align:middle}
@@ -398,10 +398,10 @@ section.crecap{margin-top:0}
   </section>
 
   <section aria-labelledby="bH">
-    <h2 id="bH">MGS and GII by stock code and ISIN</h2>
-    <p class="sub" id="bSub">Every MGS on Bank Negara Malaysia's MGS Indicative Price list and every MGS and GII that has traded on Bursa Malaysia Bonds' ETP, one row per stock with its ISIN, coupon, maturity and amount outstanding, the indicative yield (MGS), the day's ETP close and volume, and the spread to the FAST curve (GII: to the GII curve).</p>
+    <h2 id="bH">Bonds by stock code and ISIN: MGS, GII, financial and SOE</h2>
+    <p class="sub" id="bSub">Every MGS on Bank Negara Malaysia's MGS Indicative Price list, every GII that has traded on Bursa Malaysia Bonds' ETP, and ringgit bonds and sukuk of financial institutions (Financial) and state-owned and government-linked issuers (SOE) from BIX Malaysia: one row per stock with its ISIN, category, issuer, rating, coupon, maturity and amount outstanding, its latest yield, and the spread to its reference curve and to MGS.</p>
     <div class="ctl">
-      <input type="search" id="bQ" placeholder="Stock code, ISIN or name" aria-label="Search bonds by stock code, ISIN or name">
+      <input type="search" id="bQ" placeholder="Stock code, ISIN, name or issuer" aria-label="Search bonds by stock code, ISIN, name or issuer">
       <div class="btns" id="bIss" role="group" aria-label="Issuer"></div>
       <div class="btns" id="bType" role="group" aria-label="Bond type" style="display:none"></div>
       <label for="bMat" class="mlab">Maturity <select id="bMat">
@@ -421,10 +421,10 @@ section.crecap{margin-top:0}
     <p class="note" id="bNote"></p>
   </section>
 
-  <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
+  <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Financial and SOE bonds and sukuk: BIX Malaysia (Bond+Sukuk Information Exchange) issuer and security pages; Khazanah and Cagamas curves: FAST consolidated IYTM, corporate bond selected papers. Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-<script src="../assets/malaysia.js?v=1"></script>
+<script src="../assets/malaysia.js?v=2"></script>
 <script src="../assets/malaysia-recap.js?v=1"></script>
 <script src="../assets/malaysia-flows.js?v=1"></script>
 <script src="../assets/malaysia-mm.js?v=1"></script>

@@ -68,66 +68,88 @@ function classify(name) {
   return null;
 }
 
-// ---------- 0. probe (diagnostics while the BIX API mapping is being settled) ----------
-if (process.env.MY_CREDIT_PROBE !== "0") {
-  try {
-    const h = await http(`${BIX}/investor-tools/bix-search`);
-    const i = h.indexOf("function getSearchCriteria"), j = h.indexOf("url: \"/bixapi/Search/SearchBond\"");
-    const g = h.slice(i, i + 9000).replace(/\s+/g, " "); for (let k = 0; k < g.length; k += 1400) log(`PROBE gsc ${k}: ${g.slice(k, k + 1400)}`);
-    const c = h.slice(Math.max(0, j - 3500), j + 100).replace(/\s+/g, " "); for (let k = 0; k < c.length; k += 1400) log(`PROBE cols ${k}: ${c.slice(k, k + 1400)}`);
-  } catch (e) { log(`PROBE bix-search failed: ${e.message}`); }
-  try {
-    const f = new URLSearchParams({ draw: "1", start: "0", length: "3", "order[0][column]": "1", "order[0][dir]": "asc", "columns[0][data]": "issuerCode", "columns[1][data]": "issuerName", "columns[2][data]": "brNo", "searchCriteria[IssuerDescription]": "" });
-    const r = await fetch(`${BIX}/bixapi/portal/SearchIssuer`, { method: "POST", headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest" }, body: f.toString(), signal: AbortSignal.timeout(30000) });
-    log(`PROBE SearchIssuer: HTTP ${r.status} ${(await r.text()).slice(0, 600)}`);
-  } catch (e) { log(`PROBE SearchIssuer failed: ${e.message}`); }
+// ---------- BIX API (DataTables endpoints behind the BIX pages; jQuery-style form posts) ----------
+async function api(path, criteria, { start = 0, length = 500, columns = [] } = {}) {
+  const f = new URLSearchParams({ draw: "1", start: String(start), length: String(length), "search[value]": "", "search[regex]": "false" });
+  columns.forEach((c, i) => { f.set(`columns[${i}][data]`, c); f.set(`columns[${i}][searchable]`, "true"); f.set(`columns[${i}][orderable]`, "true"); f.set(`columns[${i}][search][value]`, ""); f.set(`columns[${i}][search][regex]`, "false"); });
+  for (const [k, v] of Object.entries(criteria)) f.set(`searchCriteria[${k}]`, v);
+  for (let i = 1; i <= 3; i++) {
+    try {
+      const r = await fetch(`${BIX}${path}`, { method: "POST", headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest", Referer: `${BIX}/investor-tools/bix-search` }, body: f.toString(), signal: AbortSignal.timeout(45000) });
+      if (r.status >= 500) return { status: r.status };
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return await r.json();
+    } catch (e) { if (i === 3) return { error: e.message }; await new Promise((s) => setTimeout(s, 1500 * i)); }
+  }
 }
+const isoD = (s) => s ? String(s).slice(0, 10) : null;
 
 // ---------- 1. issuers ----------
 let issuers = prev.issuers || [];
 try {
-  const h = await http(`${BIX}/investor-tools/issuer-search`);
-  const found = new Map();
-  for (const m of h.matchAll(/issuer-info-page\?issuerID=(\d+)[^>]*>([\s\S]*?)<\/a>/gi)) { const nm = strip(m[2]); if (nm && !found.has(m[1])) found.set(m[1], nm); }
-  log(`BIX issuer list: ${found.size} issuers on the page (${h.length} bytes)`);
-  if (found.size < 300) {
-    const i = h.search(/issuer-info-page/i);
-    log(`  page sample: ${h.slice(Math.max(0, i - 600), i + 400).replace(/\s+/g, " ")}`);
-    for (const m of h.matchAll(/(bixapi[^"'\s<>]*|\/api\/[^"'\s<>]*)/gi)) log(`  api ref: ${m[1]}`);
+  const all = [];
+  for (let start = 0; start < 6000; start += 1000) {
+    const j = await api("/bixapi/portal/SearchIssuer", { IssuerDescription: "" }, { start, length: 1000, columns: ["issuerCode", "issuerName", "brNo"] });
+    if (!j?.data?.length) { if (!all.length) log(`BIX SearchIssuer: ${JSON.stringify(j).slice(0, 200)}`); break; }
+    all.push(...j.data); if (all.length >= (j.recordsTotal || 0)) break;
   }
-  if (found.size) {
-    const sel = [...found].map(([id, name]) => ({ id: +id, name, cat: classify(name) })).filter((x) => x.cat);
+  log(`BIX issuers: ${all.length}`);
+  if (all.length) {
+    const sel = all.map((x) => ({ id: x.issuerID, code: x.issuerCode, name: x.issuerName, cat: classify(`${x.issuerName} ${x.issuerCode}`) })).filter((x) => x.cat);
     const keep = new Map(issuers.map((x) => [x.id, x])); for (const x of sel) keep.set(x.id, { ...keep.get(x.id), ...x });
     issuers = [...keep.values()].sort((a, b) => a.name.localeCompare(b.name));
   }
   log(`selected issuers: ${issuers.length} (Financial ${issuers.filter((x) => x.cat === "Financial").length}, SOE ${issuers.filter((x) => x.cat === "SOE").length})`);
+  log(`  SOE: ${issuers.filter((x) => x.cat === "SOE").map((x) => x.code || x.name).join(", ")}`);
+  log(`  Financial: ${issuers.filter((x) => x.cat === "Financial").map((x) => x.code || x.name).join(", ")}`);
 } catch (e) { log(`BIX issuer list failed: ${e.message}; keeping ${issuers.length}`); }
 
-// ---------- 2. each issuer's recently traded bonds ----------
+// ---------- 2. each issuer's bonds ----------
 const reg = new Map((prev.bonds || []).map((b) => [b.sbid, b]));
-let pages = 0, rowsSeen = 0, firstDump = false;
+const today = new Date().toISOString().slice(0, 10);
+const take = (iss, x) => {
+  const id = x.sbid, o = reg.get(id) || { sbid: id, first: prev.bonds ? today : null };
+  const ld = x.ld;
+  reg.set(id, { ...o, name: x.name, issuerId: iss.id, issuer: iss.name, issuerShort: iss.code || o.issuerShort || null, cat: iss.cat, rating: x.rating || o.rating || null, category: x.category || o.category || null, out: x.out ?? o.out ?? null,
+    ...(ld && (!o.ld || ld >= o.ld) ? { ld, ly: x.ly, lpx: x.lpx, lamt: x.lamt, py: ld !== o.ld ? o.ly ?? null : o.py ?? null, pld: ld !== o.ld ? o.ld ?? null : o.pld ?? null } : {}) });
+};
+// SearchBond by issuer name: find which criteria field filters by issuer (checked on the first issuer, kept in the file)
+const BOND_COLS = ["sbDesc", "issuerName", "rating", "category", "lastTradeDate", "lastTradeYield", "lastTradePrice", "lastTradeVolume", "outStandingAmount", "residualTenure"];
+const BASE = { category: "", chkSukuk: "3", chkSpv: "1", allRating: "1", SearchDate: "", LowerAmount: "9999999", UpperAmount: "1000000001" };
+let nameKey = prev.nameKey || null;
+const bondsOf = async (iss) => {
+  const j = await api("/bixapi/Search/SearchBond", { ...BASE, [nameKey]: iss.name }, { length: 1000, columns: BOND_COLS });
+  return j?.data ? j.data.filter((x) => x.issuerID === iss.id || x.issuerName === iss.name) : null;
+};
+if (!nameKey && issuers.length) {
+  const t = issuers.find((x) => /DANAINFRA/i.test(x.name)) || issuers[0];
+  for (const k of ["SearchName", "searchName", "IssuerName", "issuerName", "Issuer", "issuer", "txtIssuer", "IssuerDescription", "SearchIssuer"]) {
+    const j = await api("/bixapi/Search/SearchBond", { ...BASE, [k]: t.name }, { length: 20, columns: BOND_COLS });
+    const n = j?.recordsFiltered ?? null, mine = (j?.data || []).filter((x) => x.issuerID === t.id).length;
+    log(`SearchBond ${k}=${t.name}: ${j?.status || j?.error || `HTTP 200, ${n} records, ${mine}/${j?.data?.length} of the issuer`} ${j?.data?.[0] ? JSON.stringify(j.data[0]).slice(0, 300) : ""}`);
+    if (j?.data?.length && mine === j.data.length) { nameKey = k; break; }
+  }
+}
+let pages = 0, rowsSeen = 0, viaApi = 0;
 await pool(issuers, 4, async (iss) => {
   try {
+    const list = nameKey ? await bondsOf(iss) : null;
+    if (list) {
+      viaApi++;
+      for (const x of list) take(iss, { sbid: x.sbid, name: x.sbDesc, rating: x.rating, category: x.category, ld: isoD(x.lastTradeDate), ly: x.lastTradeYield, lpx: x.lastTradePrice, lamt: x.lastTradeVolume != null ? x.lastTradeVolume / 1e6 : null, out: x.outStandingAmount != null ? x.outStandingAmount / 1e6 : null });
+      rowsSeen += list.length; return;
+    }
+    // fallback: the issuer page (its ten most recently traded bonds)
     const h = await http(`${BIX}/issuer-info-page?issuerID=${iss.id}`); pages++;
     if (!h) return;
-    const short = (strip(h).match(/Issuer Short Name\s*:\s*([^:]+?)\s+Registration/i) || [])[1]?.trim(); if (short) iss.short = short;
-    const trs = h.match(/<tr[\s\S]*?<\/tr>/gi) || [];
-    let n = 0;
-    for (const tr of trs) {
+    for (const tr of h.match(/<tr[\s\S]*?<\/tr>/gi) || []) {
       const sb = tr.match(/security-info-page\?SBID=(\d+)/i); if (!sb) continue;
-      const c = (tr.match(/<td[\s\S]*?<\/td>/gi) || []).map(strip);
-      if (c.length < 8) continue;
-      const id = +sb[1], o = reg.get(id) || { sbid: id, first: prev.bonds ? new Date().toISOString().slice(0, 10) : null };
-      const ld = date(c[3]);
-      reg.set(id, { ...o, name: c[0], issuerId: iss.id, issuer: iss.name, issuerShort: iss.short || o.issuerShort || null, cat: iss.cat, rating: c[1] || null, category: c[2] || null, out: num(c[7]) ?? o.out ?? null,
-        ...(ld && (!o.ld || ld >= o.ld) ? { ld, ly: num(c[4]), lpx: num(c[5]), lamt: num(c[6]), py: ld !== o.ld ? o.ly ?? null : o.py ?? null, pld: ld !== o.ld ? o.ld ?? null : o.pld ?? null } : {}) });
-      n++;
+      const c = (tr.match(/<td[\s\S]*?<\/td>/gi) || []).map(strip); if (c.length < 8) continue;
+      take(iss, { sbid: +sb[1], name: c[0], rating: c[1], category: c[2], ld: date(c[3]), ly: num(c[4]), lpx: num(c[5]), lamt: num(c[6]), out: num(c[7]) }); rowsSeen++;
     }
-    rowsSeen += n;
-    if (!n && !firstDump && /Active Bond/i.test(h)) { firstDump = true; const i = h.search(/ACTIVE BOND \+ SUKUK/i); log(`  no rows parsed for ${iss.name}; sample: ${h.slice(i, i + 900).replace(/\s+/g, " ")}`); }
   } catch (e) { log(`  issuer ${iss.id} ${iss.name} failed: ${e.message}`); }
 });
-log(`issuer pages: ${pages}, bond rows ${rowsSeen}, register ${reg.size}`);
+log(`issuers via API ${viaApi}, via issuer page ${pages}; bond rows ${rowsSeen}, register ${reg.size}`);
 
 // ---------- 3. security details for bonds not yet described ----------
 const need = [...reg.values()].filter((b) => !b.isin && !b.noDetail).sort((a, b) => (b.ld || "").localeCompare(a.ld || "")).slice(0, DETAIL_MAX);
@@ -176,7 +198,7 @@ const bonds = [...reg.values()].filter((b) => !b.mat || b.mat > day).map((b) => 
 const out = {
   updated: Math.floor(Date.now() / 1000), curveDay: day,
   src: "BIX Malaysia (Bond+Sukuk Information Exchange): issuers' active bonds and sukuk with their latest trade, and security details (stock code, ISIN, coupon, dates); reference curves from Bank Negara Malaysia's FAST consolidated indicative yields",
-  issuers, bonds,
+  issuers, bonds, nameKey,
   counts: { issuers: issuers.length, bonds: bonds.length, financial: bonds.filter((b) => b.cat === "Financial").length, soe: bonds.filter((b) => b.cat === "SOE").length, withIsin: bonds.filter((b) => b.isin).length, tradedOn: bonds.filter((b) => b.ld === day).length },
 };
 if (!bonds.length && prev.bonds?.length) { log("No bonds this run; keeping the previous file."); process.exit(0); }
