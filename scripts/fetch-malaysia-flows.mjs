@@ -313,7 +313,7 @@ const raw = process.argv.includes("--raw") ? prev.raw : await fetchRaw();
   raw.idr = lastOfWeek(raw.idrD);
   log(`USD/MYR guard: ${n} day(s) replaced by the KL reference rate`);
 })();
-for (const k of ["klci", "id10", "idr"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
+for (const k of ["jci", "id10", "idr"]) if (!raw[k]?.length) { log(`missing ${k}; leaving ${OUT} unchanged`); process.exit(0); }
 const b = build(raw);
 // US Treasury transmission study with the Malaysian recipe (study() reads ktb10d / ktb3d: here MGS 10Y / 15Y)
 const SPECS = [

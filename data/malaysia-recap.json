@@ -1,0 +1,173 @@
+{
+ "session": "2026-11-17",
+ "asof": "Tue Nov 17, 2026",
+ "commentary_asof": "Tue Nov 17, 2026",
+ "horizon": "1–2 weeks",
+ "headline": "MGS edge lower in quiet trade; belly leads as 5Y benchmark slips 2bp to 3.61%",
+ "summary": "Malaysian government bonds firmed slightly on Tuesday: BNM's benchmark closes showed the 5Y MGS 2bp lower at 3.61% and the 10Y 1bp lower at 3.84%, and FAST's dealer curve eased by about 1bp from 5 to 15 years. Trading stayed light ahead of Nvidia's results and the Fed minutes, with the ringgit steady near 4.09 per dollar. GII tracked MGS, the 10Y GII closing 1bp lower at 3.88%.",
+ "drivers": [
+  [
+   "Quiet, slightly firmer session",
+   "FAST's MGS curve fell 0.6–0.9bp from 5 to 15 years (5Y 3.636%, 10Y 3.854%) while the 1Y and 3Y were unchanged. Benchmark volumes were modest, led by the 3Y MGS (RM301m) and the 10Y GII (RM472m)."
+  ],
+  [
+   "Long-end supply still weighs",
+   "Last week's RM3.5bn reopening of the 15Y GII 7/40 cleared at an average 4.158% with a 2.32x bid-to-cover, about 26bp above its June sale; the 15Y MGS sits at 4.15% on the FAST curve."
+  ],
+  [
+   "OPR on hold at 2.75%",
+   "BNM kept the OPR at 2.75% on Nov 5 with a slightly more hawkish tone, so the front end trades well above the policy rate: the 3Y MGS is about 67bp over the OPR."
+  ],
+  [
+   "Global risk-off kept a bid",
+   "US Treasuries rallied overnight as tech stocks slid before Nvidia's results, which helped local duration at the margin; USD/MYR held near 4.09–4.10."
+  ]
+ ],
+ "data": [
+  [
+   "GII 7/40 15Y reopening (Nov 12–13)",
+   "RM3.5bn sold, average yield 4.158%, bid-to-cover 2.32x (June: 3.898%, 3.41x)",
+   "Weaker demand and a higher clearing yield than earlier sales show investors want more term premium for long ringgit duration."
+  ],
+  [
+   "BNM MPC (Nov 5)",
+   "OPR held at 2.75%",
+   "A firmer tone opens the door to a hike next year; that keeps the front end and belly from rallying far."
+  ]
+ ],
+ "view": [
+  "My view:",
+  "MGS are range-bound and lean slightly firmer while Treasuries rally, but the long end needs better auction demand before it can outperform. Prefer the 5–7Y belly over 15–20Y; stay neutral on the front end while the market weighs a 2027 OPR hike."
+ ],
+ "buckets": [
+  {
+   "name": "Front end 3Y vs OPR",
+   "tag": "Fair",
+   "stance": "Neutral",
+   "m": {
+    "type": "spr",
+    "a": "opr:0",
+    "b": "mgs:3"
+   },
+   "why": "The 3Y MGS is 3.422% on the FAST curve, about 67bp over the 2.75% OPR, which already prices some chance of a hike in 2027. The 3Y benchmark closed flat at 3.41%.",
+   "call": "Neutral. Add only if the 3Y backs up toward 3.55% without a change in BNM's tone."
+  },
+  {
+   "name": "Belly 5Y",
+   "tag": "Fair",
+   "stance": "Mild overweight",
+   "m": {
+    "type": "lvl",
+    "a": "mgs:5"
+   },
+   "why": "The 5Y fell 0.9bp to 3.636% on FAST and the benchmark closed 2bp lower at 3.61%. It carries well over the OPR with less supply risk than the long end.",
+   "call": "Hold a small overweight; take profit near 3.55%, cut above 3.72%."
+  },
+  {
+   "name": "Long end 10s30s",
+   "tag": "Cheap",
+   "stance": "Neutral; wait for supply",
+   "m": {
+    "type": "spr",
+    "a": "mgs:10",
+    "b": "mgs:30"
+   },
+   "why": "The 30Y sits at 4.331%, about 48bp over the 10Y. Recent long-dated GII sales cleared well above earlier levels, so dealers keep a supply premium in the long end.",
+   "call": "Neutral until a long auction draws a stronger bid; then favour flatteners."
+  },
+  {
+   "name": "GII vs MGS 10Y",
+   "tag": "Rich",
+   "stance": "Prefer MGS",
+   "m": {
+    "type": "spr",
+    "a": "mgs:10",
+    "b": "gii:10"
+   },
+   "why": "The 10Y GII is 3.892% against 3.854% for MGS, a gap of under 4bp, tight for GII's usual liquidity premium.",
+   "call": "Prefer MGS over GII at 10Y while the gap is below about 5bp."
+  },
+  {
+   "name": "AAA credit 5Y",
+   "tag": "Fair",
+   "stance": "Neutral",
+   "m": {
+    "type": "spr",
+    "a": "mgs:5",
+    "b": "aaa:5"
+   },
+   "why": "FAST's AAA 5Y curve is 4.114%, about 48bp over the 5Y MGS.",
+   "call": "Neutral; add AAA paper only if the spread widens past about 55bp."
+  }
+ ],
+ "rows": {
+  "mgs:1": {
+   "note": "Flat at 3.063%"
+  },
+  "mgs:3": {
+   "note": "Flat at 3.422%; benchmark close 3.41%"
+  },
+  "mgs:5": {
+   "note": "−0.9bp to 3.636%; benchmark −2bp to 3.61%"
+  },
+  "mgs:7": {
+   "note": "−0.7bp to 3.826%"
+  },
+  "mgs:10": {
+   "note": "−0.8bp to 3.854%; benchmark 3.84%"
+  },
+  "mgs:15": {
+   "note": "−0.6bp to 4.150%"
+  },
+  "mgs:20": {
+   "note": "−0.2bp to 4.254%"
+  },
+  "mgs:30": {
+   "note": "Flat at 4.331%"
+  },
+  "gii:3": {
+   "note": "−0.7bp to 3.437%"
+  },
+  "gii:10": {
+   "note": "−0.7bp to 3.892%; benchmark 3.88%"
+  },
+  "gii:15": {
+   "note": "−0.5bp to 4.149% after last week's 15Y sale"
+  },
+  "opr:0": {
+   "note": "2.75%, held on Nov 5"
+  },
+  "aaa:5": {
+   "note": "AAA 5Y 4.114%"
+  },
+  "aa:5": {
+   "note": "AA 5Y 4.310%"
+  },
+  "a:5": {
+   "note": "A 5Y 4.951%"
+  }
+ },
+ "watch": "Next: Treasuries after Nvidia's results and the Fed minutes, the ringgit, BNM's next auction announcement and month-end flows.",
+ "sources": [
+  [
+   "BNM FMIP benchmark yields",
+   "https://financialmarkets.bnm.gov.my/benchmark-yields"
+  ],
+  [
+   "BNM FAST consolidated IYTM",
+   "https://fast.bnm.gov.my/fastweb/public/FastPublicBrowseServlet.do?mode=MAIN&taskId=PB030100"
+  ],
+  [
+   "BNM government securities daily trading",
+   "https://www.bnm.gov.my/gstdi"
+  ],
+  [
+   "Capital Times (GII 7/40 auction)",
+   "https://capitaltimes.asia/markets/bonds/malaysia-gii-2040-auction-rm8-billion-bids-yield"
+  ],
+  [
+   "Hong Leong Bank weekly (OPR hold)",
+   "https://hlb.com.my/content/dam/hlb/my/docs/pdf/Global_Markets/weekly-market-highlights/2026/06-11-2026.pdf"
+  ]
+ ]
+}

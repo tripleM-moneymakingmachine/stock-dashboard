@@ -80,9 +80,10 @@ const cutoff = new Date(Date.now() - KEEP_DAYS * 864e5).toISOString().slice(0, 1
 const FAST = "https://fast.bnm.gov.my/fastweb/public/PublicInfoServlet.do";
 const CAT = { conv: ["200700000001", "00000091"], isl: ["200700000002", "00000092"], corp: ["200500000021", "00000090"] };
 let ALT = prev.fast?.alt || null; // older conventional pages filed under another category / record id (found by probe)
+const ALTX = prev.fast?.altx || {}, PROBED = prev.fast?.probedx || {}; // the same for the Islamic and corporate pages
 const iytmUrl = (k, d, c = CAT[k]) => `${FAST}?chkBox=${c[0]}%E6${d.slice(8, 10)}%2F${d.slice(5, 7)}%2F${d.slice(0, 4)}%E6${c[1]}&mode=DISPLAY&info=INDYTM&screenId=PB030100`;
 async function iytm(k, d, c) { // → { date, rows: [[label, values...]] } or null when FAST has no page for that day
-  let h; try { h = await http(iytmUrl(k, d, c || (k === "conv" && ALT && d < ALT.before ? ALT.cat : CAT[k])), { tries: 2, timeout: 30000 }); } catch (e) { return { err: e.message }; }
+  let h; try { h = await http(iytmUrl(k, d, c || (k === "conv" && ALT && d < ALT.before ? ALT.cat : ALTX[k] && d < ALTX[k].before ? ALTX[k].cat : CAT[k])), { tries: 2, timeout: 30000 }); } catch (e) { return { err: e.message }; }
   if (!h) return null;
   const at = dmy((strip(h).match(/as at\s+(\d{1,2}\/\d{1,2}\/\d{4})/i) || [])[1] || "");
   if (!at || at !== d) return null;
@@ -99,6 +100,15 @@ async function probeAlt(d) {
     if (p && !p.err && parseGov(p.rows, "MGS").pts.length >= 6) { log(`FAST probe: older conventional pages at ${cc.join("/")} (${d})`); return cc; }
   }
   log(`FAST probe: no older conventional category found for ${d}`); return null;
+}
+async function probeX(k, d) { // Islamic / corporate: same category id, older record ids
+  for (let q = 70; q <= 95; q++) {
+    const cc = [CAT[k][0], String(q).padStart(8, "0")]; if (cc[1] === CAT[k][1]) continue;
+    const p = await iytm(k, d, cc);
+    const ok = p && !p.err && (k === "isl" ? parseGov(p.rows, "GII").pts.length >= 5 : Object.keys(parseCorp(p.rows)).length >= 3);
+    if (ok) { log(`FAST probe: older ${k} pages at ${cc.join("/")} (${d})`); return cc; }
+  }
+  log(`FAST probe: no older ${k} record found for ${d}`); return null;
 }
 const parseGov = (rows, pre) => { // "MGS 10 YEARS" / "GII 1 YEAR" → [[tenor, y]]; bills by band
   const out = [], bills = {};
@@ -148,10 +158,19 @@ let latest = null, fastErr = 0;
   let budget = BACKFILL_MAX, n = 0, gap = 0, d = [...days.conv.keys()].sort()[0] || latest;
   const stop = prev.fast?.backStop || null;
   // Islamic and corporate histories trail the conventional one: fill their gaps over the last year first
-  const yr = new Date(Date.parse(latest || todayKL) - 400 * 864e5).toISOString().slice(0, 10);
+  const fails = { isl: 0, corp: 0 };
   for (const dd of [...days.conv.keys()].sort().reverse()) {
-    if (budget <= 0 || dd < yr) break;
-    for (const k of ["isl", "corp"]) if (!days[k].has(dd) && budget > 0) { budget--; await takeDay(dd, [k]); }
+    if (budget <= 0) break;
+    for (const k of ["isl", "corp"]) {
+      if (days[k].has(dd) || budget <= 0 || (fails[k] >= 15 && (ALTX[k] || PROBED[k]))) continue;
+      budget--; await takeDay(dd, [k]);
+      if (days[k].has(dd)) { fails[k] = 0; continue; }
+      const earliest = [...days[k].keys()].sort()[0];
+      if (++fails[k] >= 5 && earliest && dd < earliest && !ALTX[k] && !PROBED[k]) {
+        PROBED[k] = true; budget -= 25; const cc = await probeX(k, dd);
+        if (cc) { ALTX[k] = { cat: cc, before: earliest }; fails[k] = 0; budget--; await takeDay(dd, [k]); }
+      }
+    }
   }
   let backStop = ALT || prev.fast?.probed ? stop : null;
   if (d && (!stop || (!ALT && !prev.fast?.probed))) {
@@ -365,7 +384,7 @@ const out = {
   indi: indi || prev.indi || null, indiDate: indi ? curveDate : prev.indiDate || null, indiPrev: [...indiPrev],
   pbTradeDay: pb.gii?.curve?.date || curveDate, pbSrc: "GII: FAST consolidated IYTM for Government Securities (Islamic). Corporate AAA–BBB: FAST consolidated IYTM by rating (3–15 years)",
   counts: { register: register.length, mgs: bonds.filter((b) => b.iss === "MGS").length, gii: bonds.filter((b) => b.iss === "GII").length, priced: bonds.filter((b) => b.last != null).length, traded: bonds.filter((b) => b.trd != null).length },
-  fast: { conv: trim(days.conv), isl: trim(days.isl), corp: trim(days.corp), bills: trim(days.bills), miss: [...miss].filter((d) => d >= cutoff).sort(), backStop: days.backStop || null, alt: ALT, probed: days.probed || prev.fast?.probed || false },
+  fast: { conv: trim(days.conv), isl: trim(days.isl), corp: trim(days.corp), bills: trim(days.bills), miss: [...miss].filter((d) => d >= cutoff).sort(), backStop: days.backStop || null, alt: ALT, altx: ALTX, probedx: PROBED, probed: days.probed || prev.fast?.probed || false },
 };
 if (!out.curve) { log("No MGS curve at all; not writing."); process.exit(0); }
 writeFileSync(OUT, JSON.stringify(out));
