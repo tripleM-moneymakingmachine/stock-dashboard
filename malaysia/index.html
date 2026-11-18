@@ -213,7 +213,7 @@ section.crecap{margin-top:0}
 <body>
 <main class="wrap">
   <nav class="tabs" aria-label="Dashboard sections"><a href="../">Stocks</a><a href="../macro/">Macro</a><a href="../us/">US</a><a href="../sectors/">S&amp;P Sectors</a><a href="../fx/">FX</a><a href="../china/">China</a><a href="../korea/">Korea</a><a href="../indonesia/">Indonesia</a><a href="./" aria-current="page">Malaysia</a><a href="../datacenter/">Datacenter</a><a href="../portfolio/">Portfolio</a><a href="../options/">Options</a></nav>
-  <div class="eyebrow">Malaysian government bonds · BNM FAST curves · MGS, GII and credit · foreign flows</div>
+  <div class="eyebrow">Malaysian government bonds · BNM FAST curves · MGS, GII, IRS and credit · foreign flows</div>
   <h1>Malaysia</h1>
   <p class="lede" id="lede">Malaysian Government Securities (MGS) and Government Investment Issues (GII) from Bank Negara Malaysia. The page re-checks every minute.</p>
 
@@ -325,6 +325,23 @@ section.crecap{margin-top:0}
     </div>
   </section>
 
+  <section aria-labelledby="irsH" id="irs" style="margin-top:16px" hidden>
+    <div class="panel">
+      <div class="chead"><h3 id="irsH">MYR interest rate swaps (IRS vs 3M KLIBOR)</h3><div class="btns" id="irsRng" role="group" aria-label="Curve range"></div></div>
+      <div class="curve">
+        <div>
+          <div class="cwrap"><svg id="irscv" role="img" aria-label="Malaysian ringgit interest rate swap curve"></svg><div class="tip" id="irsTip" hidden></div></div>
+          <div class="leg"><span><i style="background:var(--c1);height:2.5px"></i><b id="irsNow">Latest</b></span><span id="irsW1"><i style="background:var(--c2)"></i>1 week ago</span><span id="irsM1"><i style="background:var(--c3)"></i>1 month ago</span><span><i style="background:var(--c6)"></i><span id="irsKtb">MGS curve</span></span></div>
+        </div>
+        <div style="overflow-x:auto"><table class="ctab" aria-label="MYR IRS rate by tenor"><thead><tr><th>Tenor</th><th>IRS %</th><th>1D bp</th><th>1W bp</th><th>1M bp</th><th>1Y bp</th><th title="IRS minus MGS yield at the same tenor, bp">vs MGS</th></tr></thead><tbody id="irsTab"></tbody></table></div>
+      </div>
+      <div class="chead" style="margin-top:14px"><h3 style="font-size:15px">IRS history</h3><div class="btns" id="irsHT" role="group" aria-label="IRS tenors"></div></div>
+      <div id="irsHist" style="height:260px"></div>
+      <div class="leg" id="irsHLeg" aria-live="polite"></div>
+      <p class="note" id="irsNote"></p>
+    </div>
+  </section>
+
   <section aria-labelledby="hH">
     <div class="panel">
       <div class="chead"><h3 id="hH">Tenor history</h3><div class="btns" id="hRng" role="group" aria-label="History range"></div></div>
@@ -421,7 +438,7 @@ section.crecap{margin-top:0}
     <p class="note" id="bNote"></p>
   </section>
 
-  <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Financial and SOE bonds and sukuk: BIX Malaysia (Bond+Sukuk Information Exchange) issuer and security pages; Khazanah and Cagamas curves: FAST consolidated IYTM, corporate bond selected papers. Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
+  <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Financial and SOE bonds and sukuk: BIX Malaysia (Bond+Sukuk Information Exchange) issuer and security pages; Khazanah and Cagamas curves: FAST consolidated IYTM, corporate bond selected papers. Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. MYR IRS (1, 3, 5, 7, 10 years) and 3-month KLIBOR: Hong Leong Bank Fixed Income Daily Market Snapshot; other tenors interpolated by the dashboard. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="../assets/malaysia.js?v=2"></script>
@@ -429,6 +446,7 @@ section.crecap{margin-top:0}
 <script src="../assets/malaysia-flows.js?v=1"></script>
 <script src="../assets/malaysia-mm.js?v=1"></script>
 <script src="../assets/malaysia-bench.js?v=1"></script>
+<script src="../assets/malaysia-irs.js?v=1"></script>
 <script src="../assets/searchselect.js?v=2"></script>
 </body>
 </html>

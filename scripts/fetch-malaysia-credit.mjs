@@ -16,7 +16,7 @@ import { readFileSync, writeFileSync, existsSync, appendFileSync } from "node:fs
 const OUT = "data/malaysia-credit.json";
 const BIX = "https://bixmalaysia.com";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
-const DETAIL_MAX = +(process.env.MY_CREDIT_DETAIL || 350);
+const DETAIL_MAX = +(process.env.MY_CREDIT_DETAIL || 600);
 const log = (...a) => console.log(...a);
 const summary = (s) => { if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, s + "\n"); };
 const prev = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : {};
@@ -60,7 +60,11 @@ const FIN = [
 ];
 const SOE_FIRST = [/BANK PEMBANGUNAN/i, /SME BANK|SMALL MEDIUM ENTERPRISE DEVELOPMENT BANK/i, /BANK SIMPANAN NASIONAL/i, /BANK KERJASAMA RAKYAT/i, /EXPORT-IMPORT BANK OF MALAYSIA|EXIM BANK/i, /AGROBANK|BANK PERTANIAN/i, /BANK NEGARA/i];
 const NOT_SOE = [];
+// left out: the central bank (its bills are money-market paper, some in US dollars) and the federal government itself
+// (MGS / GII / Treasury bills, already listed from FAST)
+const EXCLUDE = [/^BANK NEGARA MALAYSIA/i, /^GOVERNMENT\b/i, /\s(BNM|GOVERNMENT)$/];
 function classify(name) {
+  if (EXCLUDE.some((re) => re.test(name))) return null;
   if (SOE_FIRST.some((re) => re.test(name))) return "SOE";
   if (/CAGAMAS/i.test(name)) return "Financial";
   if (SOE.some((re) => re.test(name)) && !NOT_SOE.some((re) => re.test(name))) return "SOE";
@@ -98,7 +102,7 @@ try {
   if (all.length) {
     const sel = all.map((x) => ({ id: x.issuerID, code: x.issuerCode, name: x.issuerName, cat: classify(`${x.issuerName} ${x.issuerCode}`) })).filter((x) => x.cat);
     const keep = new Map(issuers.map((x) => [x.id, x])); for (const x of sel) keep.set(x.id, { ...keep.get(x.id), ...x });
-    issuers = [...keep.values()].sort((a, b) => a.name.localeCompare(b.name));
+    issuers = [...keep.values()].filter((x) => classify(`${x.name} ${x.code || ""}`)).sort((a, b) => a.name.localeCompare(b.name));
   }
   log(`selected issuers: ${issuers.length} (Financial ${issuers.filter((x) => x.cat === "Financial").length}, SOE ${issuers.filter((x) => x.cat === "SOE").length})`);
   log(`  SOE: ${issuers.filter((x) => x.cat === "SOE").map((x) => x.code || x.name).join(", ")}`);
@@ -106,7 +110,8 @@ try {
 } catch (e) { log(`BIX issuer list failed: ${e.message}; keeping ${issuers.length}`); }
 
 // ---------- 2. each issuer's bonds ----------
-const reg = new Map((prev.bonds || []).map((b) => [b.sbid, b]));
+const keepIss = new Set(issuers.map((x) => x.id));
+const reg = new Map((prev.bonds || []).filter((b) => keepIss.has(b.issuerId)).map((b) => [b.sbid, b]));
 const today = new Date().toISOString().slice(0, 10);
 const take = (iss, x) => {
   const id = x.sbid, o = reg.get(id) || { sbid: id, first: prev.bonds ? today : null };
