@@ -1,5 +1,5 @@
 // Asian NDF forward curves for the FX tab: indicative outright forwards from 1 week to 2 years for
-// USD/IDR, USD/TWD, USD/PHP, USD/INR and USD/KRW. Offshore, these currencies trade forward as
+// USD/IDR, USD/TWD, USD/PHP, USD/INR, USD/KRW and USD/MYR. Offshore, these currencies trade forward as
 // non-deliverable forwards (NDFs), so this is the curve that market prices off.
 // Writes data/fx-fwd.json: { updated, pairs: { usdidr: { time, src, spot, rows, hist }, ... } } with the latest
 // curve per pair plus one end-of-day snapshot per FX day (kept ~400 days), which the page uses for the
@@ -26,6 +26,7 @@ const PAIRS = [
   { k: "usdphp", slug: "usd-php", inv: "USDPHP", ptsScale: 1, dp: 4 },
   { k: "usdinr", slug: "usd-inr", inv: "USDINR", ptsScale: 100, dp: 4 },
   { k: "usdkrw", slug: "usd-krw", inv: "USDKRW", ptsScale: 100, dp: 2 },
+  { k: "usdmyr", slug: "usd-myr", inv: "USDMYR", ptsScale: 10000, dp: 4 },
 ];
 
 // days = approximate tenor length used for the annualised carry; inv = labels tried on Investing.com

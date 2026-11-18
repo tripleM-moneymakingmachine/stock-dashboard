@@ -14,6 +14,7 @@
     usdphp: { label: "USD/PHP", ccy: "peso", dp: 4, pdp: 4 },
     usdinr: { label: "USD/INR", ccy: "rupee", dp: 4, pdp: 4 },
     usdkrw: { label: "USD/KRW", ccy: "won", dp: 2, pdp: 2 },
+    usdmyr: { label: "USD/MYR", ccy: "ringgit", dp: 4, pdp: 4 },
   };
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const fd = (v, d) => v == null || !isFinite(v) ? "–" : v.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });

@@ -416,6 +416,14 @@ section.crecap{margin-top:0}
       <div class="chead"><h3 id="mmtH">Latest close</h3></div>
       <div style="overflow-x:auto"><table class="ctab" aria-labelledby="mmtH"><thead><tr><th>Rate</th><th>Yield %</th><th>1D bp</th><th>1W bp</th><th>1M bp</th><th>1Y bp</th><th>1Y range %</th></tr></thead><tbody id="mmTab"></tbody></table></div>
     </div>
+    <div class="panel" style="margin-top:16px" id="fxs">
+      <div class="chead"><h3 id="fxsH">FX-swap implied ringgit yields (USD/MYR forwards)</h3></div>
+      <div style="overflow-x:auto"><table class="ctab" aria-labelledby="fxsH"><thead><tr><th>Tenor</th><th>Outright</th><th>Points (pips)</th><th>US Treasury %</th><th>Implied MYR %</th><th>1D bp</th><th>1W bp</th><th>1M bp</th><th>Onshore %</th><th title="Implied minus onshore, bp">Gap bp</th></tr></thead><tbody id="fxsTab"></tbody></table></div>
+      <div class="chead" style="margin-top:14px"><h3 style="font-size:15px">Implied yield history</h3><div class="btns" id="fxsBtns" role="group" aria-label="Tenors"></div></div>
+      <div id="fxsChart" style="height:260px"></div>
+      <div class="leg" id="fxsLeg" aria-live="polite"></div>
+      <p class="note" id="fxsNote"></p>
+    </div>
   </section>
 
   <section aria-labelledby="bH">
@@ -442,7 +450,7 @@ section.crecap{margin-top:0}
     <p class="note" id="bNote"></p>
   </section>
 
-  <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Financial and SOE bonds and sukuk: BIX Malaysia (Bond+Sukuk Information Exchange) issuer and security pages; Khazanah and Cagamas curves: FAST consolidated IYTM, corporate bond selected papers. Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. MYR IRS (1, 3, 5, 7, 10 years) and 3-month KLIBOR: Hong Leong Bank Fixed Income Daily Market Snapshot; other tenors interpolated by the dashboard. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
+  <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Financial and SOE bonds and sukuk: BIX Malaysia (Bond+Sukuk Information Exchange) issuer and security pages; Khazanah and Cagamas curves: FAST consolidated IYTM, corporate bond selected papers. Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. FX-swap implied ringgit yields: USD/MYR forwards from FXEmpire and US Treasury par yields (home.treasury.gov), computed by the dashboard. MYR IRS (1, 3, 5, 7, 10 years) and 3-month KLIBOR: Hong Leong Bank Fixed Income Daily Market Snapshot; other tenors interpolated by the dashboard. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script src="../assets/malaysia.js?v=3"></script>
@@ -451,6 +459,7 @@ section.crecap{margin-top:0}
 <script src="../assets/malaysia-mm.js?v=1"></script>
 <script src="../assets/malaysia-bench.js?v=1"></script>
 <script src="../assets/malaysia-irs.js?v=2"></script>
+<script src="../assets/malaysia-fxswap.js?v=1"></script>
 <script src="../assets/searchselect.js?v=2"></script>
 </body>
 </html>
