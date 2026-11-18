@@ -1,29 +1,29 @@
 {
- "session": "2026-11-17",
- "asof": "Tue Nov 17, 2026",
- "tone": "down",
- "headline": "Software rout and blue-chip losses sink Dow 1.6%, S&P −1.0% before Nvidia beat",
- "summary": "Stocks slipped from the open and the losses deepened into the afternoon, leaving the S&P 500 and Nasdaq with a fourth straight decline and the S&P 500 at its lowest close since July, while the Dow shed nearly 850 points. Selling was broad — decliners beat advancers by more than 3-to-1 on the NYSE and the Russell 2000 fell 1.5% — but chips steadied: Nvidia pared a drop of nearly 4% to −0.4% and the iShares semiconductor ETF finished slightly higher.",
+ "session": "2026-11-18",
+ "asof": "Wed Nov 18, 2026",
+ "tone": "mixed",
+ "headline": "Nvidia fades after its beat and Fed minutes bite: Dow −1.1%, S&P −0.2%, Nasdaq +0.4%",
+ "summary": "Stocks opened higher on Nvidia's beat-and-raise, but the gains faded as the chipmaker reversed lower and the S&P 500 slipped back into the red after the 2 p.m. Fed minutes, leaving it with a fifth straight loss, its longest losing streak since June. The rotation underneath was stark: the Dow lost 561 points on health insurers, energy and miners, while the Nasdaq snapped its losing run on cybersecurity, retail and selected chip gains and the Russell 2000 rose 0.5%.",
  "stats": [
-  ["S&P 500", "7,340.53", -1.03],
-  ["Nasdaq", "24,328.38", -0.74],
-  ["Dow", "50,759.42", -1.64],
-  ["Russell 2000", "2,701.87", -1.5],
-  ["VIX", "25.46", 11.1, true],
-  ["US 10Y", "5.10%", "−2bp"],
-  ["WTI crude", "$86.01", 0.34]
+  ["S&P 500", "7,323.63", -0.23],
+  ["Nasdaq", "24,429.88", 0.42],
+  ["Dow", "50,198.17", -1.11],
+  ["Russell 2000", "2,714.31", 0.46],
+  ["VIX", "24.56", -3.5, true],
+  ["US 10Y", "5.07%", "−4bp"],
+  ["WTI crude", "$83.26", -3.2]
  ],
  "drivers": [
-  ["Software sell-off ahead of Anthropic's IPO", "Application-software stocks were the heaviest drag as investors weighed AI disruption risk a day before Anthropic prices its IPO (range kept at $70–78, trading from Thu): Salesforce −9.5%, Intuit and ServiceNow about −7%, Microsoft −2.3% and the IGV software ETF down more than 3%."],
-  ["Dow blue chips hit across sectors", "Beyond Salesforce, Nike fell 6.3% (reversing an early gain on its long-term targets), UnitedHealth 5.4% as health insurers slid, IBM 4.7%, JPMorgan 2.4% after naming a new CFO, and Home Depot 2.5% after a Q3 beat came with a soft outlook and a CEO change."],
-  ["Nvidia nerves, then a beat after the bell", "Nvidia closed −0.4% after falling nearly 4% intraday, helped late by Jensen Huang saying he would return as CEO if the board asked; Broadcom +2.5% and Marvell +2% offset Micron −0.9%. After the close Nvidia reported revenue of $115.8B (vs about $109B expected) and guided Q4 to $130B ±3% (vs about $125B), though with gross margin guided down to 71–72%; the stock rose 2–3% after hours."],
-  ["Hawkish Fed, steady consumer", "St. Louis Fed's Musalem said several more hikes may be needed before spring 2027, keeping a December hike about 95–98% priced; October retail sales rose 0.2% as expected, with the ex-autos-and-gas measure up 0.6% (vs 0.4%). The 10-year yield still eased about 2bp to 5.10% as money left stocks, while the VIX jumped 11% to about 25.5."]
+  ["Nvidia's post-earnings reversal", "Nvidia was up about 4% before the open after beating estimates, guiding Q4 to $130B and lifting its next-year growth outlook to 75% plus a bigger buyback, but it closed −2.9% at $150.96 as leadership uncertainty after Jensen Huang's exit weighed. Chips split: AMD +5.3% and Broadcom +3.6%, while Micron (−1.0%) and Intel (−0.9%) slipped."],
+  ["Health insurers and defensives sink the Dow", "UnitedHealth fell 10.2% and Humana about 13% on worries over tougher regulatory scrutiny of insurers, with Merck −3.9%, Amgen −3.1% and Caterpillar −2.1% adding to the Dow's 561-point drop."],
+  ["Commodity slide hits energy and miners", "WTI fell 3.2% to $83.26, its lowest since late August, after a surprise 3.4M-barrel US crude build, dragging the S&P energy sector down about 3.5% (Chevron −4.0%, refiners about −5%); copper fell about 6% and gold about 3.5%, sending Freeport-McMoRan and Newmont down more than 6%."],
+  ["Hawkish Fed minutes, but lower yields", "The October minutes showed almost all officials expect further hikes and a few open to a 50bp move in December if inflation data disappoint, which knocked the S&P off its highs; the oil slide still pulled the 10-year yield down about 4bp to 5.07%, and the VIX eased 3.5%. Anthropic priced its IPO after the close at $83, above its $70–78 range, while cybersecurity (Palo Alto +10%, CrowdStrike +8%) and retailers TJX (+8%) and Target (+4%) on earnings beats propped up the Nasdaq."]
  ],
- "week": "Two sessions in, the S&P 500 is down 2.9%, the Nasdaq 3.2% and the Dow 3.0% for the week, with Nvidia down 16% since the start of last week and the 10-year yield holding above 5% on expectations of more Fed hikes.",
- "watch": "Next: the market's reaction to Nvidia's results and outlook, Fed minutes and Anthropic's IPO pricing on Wed Nov 18, Anthropic's Nasdaq debut and Walmart's results on Thu Nov 19, and the Fed meeting on Dec 8–9.",
+ "week": "Three sessions in, the S&P 500 is down 3.1%, the Nasdaq 2.8%, the Dow 4.1% and the Russell 2000 2.7% for the week, with the 10-year yield still above 5% and a December Fed hike almost fully priced.",
+ "watch": "Next: Anthropic's Nasdaq debut under ANT and Walmart's results on Thu Nov 19, the December WTI contract expiry on Fri Nov 20, and the Fed meeting on Dec 8–9.",
  "sources": [
-  ["Investopedia", "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11172026-12259343"],
-  ["Reuters", "https://www.detroitnews.com/story/business/2026/11/17/wall-street-slips-ahead-of-nvidia-results-anthropic-ipo/92825841007/"],
-  ["Yahoo Finance", "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html"]
+  ["Investopedia", "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11182026-12261593"],
+  ["Reuters", "https://lufkindailynews.com/news_reuters/business/wall-street-ends-mixed-after-nvidia-earnings-fed-minutes/article_757d7e1e-451b-5fc3-914c-44086229e225.html"],
+  ["AP / Yahoo Finance", "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-212009825.html"]
  ]
 }
