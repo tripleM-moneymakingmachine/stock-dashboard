@@ -80,14 +80,15 @@ log(`HLB back-fill: +${back} days, earliest ${[...days.keys()].sort()[0]}`);
 rmSync(tmp, { recursive: true, force: true });
 if (!days.size) { log("No IRS data; not writing."); process.exit(0); }
 
-const keys = [...days.keys()].sort();
-const series = Object.fromEntries(TEN.map((t) => [t, keys.filter((k) => days.get(k)[t]).map((k) => [k, days.get(k)[t][0]])]));
-const klibor = keys.filter((k) => days.get(k).klibor != null).map((k) => [k, days.get(k).klibor]);
+// HLB dates each snapshot by its publication morning; the closes in it are the previous Kuala Lumpur business day's
+const keys = [...days.keys()].sort(), close = (k) => prevWk(k);
+const series = Object.fromEntries(TEN.map((t) => [t, keys.filter((k) => days.get(k)[t]).map((k) => [close(k), days.get(k)[t][0]])]));
+const klibor = keys.filter((k) => days.get(k).klibor != null).map((k) => [close(k), days.get(k).klibor]);
 const L = days.get(keys.at(-1));
 const out = {
   updated: Math.floor(Date.now() / 1000),
   src: "Hong Leong Bank, Fixed Income Daily Market Snapshot (MYR IRS closing rates, 3-month KLIBOR); compiled by the dashboard",
-  date: keys.at(-1), latest: Object.fromEntries(TEN.filter((t) => L[t]).map((t) => [t, { y: L[t][0], chg: L[t][1] }])), klibor3m: L.klibor ?? null,
+  date: close(keys.at(-1)), snapshot: keys.at(-1), latest: Object.fromEntries(TEN.filter((t) => L[t]).map((t) => [t, { y: L[t][0], chg: L[t][1] }])), klibor3m: L.klibor ?? null,
   tenors: series, klibor, ndirs: null,
   days: Object.fromEntries(keys.map((k) => [k, days.get(k)])), miss: [...miss].filter((x) => x >= KEEP_FROM).sort(), backStop: gap >= 25 ? d : prev.backStop || null,
 };
