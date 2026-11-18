@@ -69,8 +69,9 @@ function classify(name) {
 }
 
 // ---------- BIX API (DataTables endpoints behind the BIX pages; jQuery-style form posts) ----------
-async function api(path, criteria, { start = 0, length = 500, columns = [] } = {}) {
+async function api(path, criteria, { start = 0, length = 500, columns = [], order = null } = {}) {
   const f = new URLSearchParams({ draw: "1", start: String(start), length: String(length), "search[value]": "", "search[regex]": "false" });
+  if (order) { f.set("order[0][column]", String(order[0])); f.set("order[0][dir]", order[1]); }
   columns.forEach((c, i) => { f.set(`columns[${i}][data]`, c); f.set(`columns[${i}][searchable]`, "true"); f.set(`columns[${i}][orderable]`, "true"); f.set(`columns[${i}][search][value]`, ""); f.set(`columns[${i}][search][regex]`, "false"); });
   for (const [k, v] of Object.entries(criteria)) f.set(`searchCriteria[${k}]`, v);
   for (let i = 1; i <= 3; i++) {
@@ -83,21 +84,6 @@ async function api(path, criteria, { start = 0, length = 500, columns = [] } = {
   }
 }
 const isoD = (s) => s ? String(s).slice(0, 10) : null;
-
-// ---------- probe (diagnostics, removed once the mapping is settled) ----------
-if (!prev.probed2) {
-  try {
-    const h = await http(`${BIX}/investor-tools/bix-search`);
-    const i = h.indexOf("function getSearchCriteria"); const g = h.slice(i, i + 12000).replace(/\s+/g, " ");
-    for (let k = 0; k < g.length; k += 1500) log(`PROBE gsc ${k}: ${g.slice(k, k + 1500)}`);
-  } catch (e) { log(`PROBE gsc failed: ${e.message}`); }
-  try {
-    const h = await http(`${BIX}/issuer-info-page?issuerID=769`);
-    const i = h.search(/ACTIVE BOND \+ SUKUK/i); const g = h.slice(Math.max(0, i - 200), i + 4500).replace(/\s+/g, " ");
-    for (let k = 0; k < g.length; k += 1500) log(`PROBE issuer ${k}: ${g.slice(k, k + 1500)}`);
-    for (const m of h.matchAll(/bixapi\/[A-Za-z]+\/[A-Za-z]+/g)) log(`PROBE issuer api: ${m[0]} :: ${h.slice(m.index - 200, m.index + 400).replace(/\s+/g, " ")}`);
-  } catch (e) { log(`PROBE issuer failed: ${e.message}`); }
-}
 
 // ---------- 1. issuers ----------
 let issuers = prev.issuers || [];
@@ -128,47 +114,21 @@ const take = (iss, x) => {
   reg.set(id, { ...o, name: x.name, issuerId: iss.id, issuer: iss.name, issuerShort: iss.code || o.issuerShort || null, cat: iss.cat, rating: x.rating || o.rating || null, category: x.category || o.category || null, out: x.out ?? o.out ?? null,
     ...(ld && (!o.ld || ld >= o.ld) ? { ld, ly: x.ly, lpx: x.lpx, lamt: x.lamt, py: ld !== o.ld ? o.ly ?? null : o.py ?? null, pld: ld !== o.ld ? o.ld ?? null : o.pld ?? null } : {}) });
 };
-// SearchBond by issuer name: find which criteria field filters by issuer (checked on the first issuer, kept in the file)
-const BOND_COLS = ["sbDesc", "issuerName", "rating", "category", "lastTradeDate", "lastTradeYield", "lastTradePrice", "lastTradeVolume", "outStandingAmount", "residualTenure"];
-const BASE = { category: "", chkSukuk: "3", chkSpv: "1", allRating: "1", SearchDate: "", LowerAmount: "9999999", UpperAmount: "1000000001" };
-let nameKey = prev.nameKey || null;
-const bondsOf = async (iss) => {
-  const j = await api("/bixapi/Search/SearchBond", { ...BASE, [nameKey]: iss.name }, { length: 1000, columns: BOND_COLS });
-  return j?.data ? j.data.filter((x) => x.issuerID === iss.id || x.issuerName === iss.name) : null;
-};
-if (!nameKey && issuers.length) {
-  const t = issuers.find((x) => /DANAINFRA/i.test(x.name)) || issuers[0];
-  for (const k of ["SearchName", "searchName", "IssuerName", "issuerName", "Issuer", "issuer", "txtIssuer", "IssuerDescription", "SearchIssuer"]) {
-    const j = await api("/bixapi/Search/SearchBond", { ...BASE, [k]: t.name }, { length: 20, columns: BOND_COLS });
-    const n = j?.recordsFiltered ?? null, mine = (j?.data || []).filter((x) => x.issuerID === t.id).length;
-    log(`SearchBond ${k}=${t.name}: ${j?.status || j?.error || `HTTP 200, ${n} records, ${mine}/${j?.data?.length} of the issuer`} ${j?.data?.[0] ? JSON.stringify(j.data[0]).slice(0, 300) : ""}`);
-    if (j?.data?.length && mine === j.data.length) { nameKey = k; break; }
-  }
-}
-let pages = 0, rowsSeen = 0, viaApi = 0;
+// every active bond of an issuer, with its latest trade (the issuer page's own table endpoint)
+const BOND_COLS = ["sbDesc", "rating", "category", "lastTradeDate", "lastTradeYield", "lastTradePrice", "lastTradeVolume", "outstandingAmount", "residualTenure"];
+let viaApi = 0, rowsSeen = 0, failed = 0;
 await pool(issuers, 4, async (iss) => {
-  try {
-    const list = nameKey ? await bondsOf(iss) : null;
-    if (list) {
-      viaApi++;
-      for (const x of list) take(iss, { sbid: x.sbid, name: x.sbDesc, rating: x.rating, category: x.category, ld: isoD(x.lastTradeDate), ly: x.lastTradeYield, lpx: x.lastTradePrice, lamt: x.lastTradeVolume != null ? x.lastTradeVolume / 1e6 : null, out: x.outStandingAmount != null ? x.outStandingAmount / 1e6 : null });
-      rowsSeen += list.length; return;
-    }
-    // fallback: the issuer page (its ten most recently traded bonds)
-    const h = await http(`${BIX}/issuer-info-page?issuerID=${iss.id}`); pages++;
-    if (!h) return;
-    for (const tr of h.match(/<tr[\s\S]*?<\/tr>/gi) || []) {
-      const sb = tr.match(/security-info-page\?SBID=(\d+)/i); if (!sb) continue;
-      const c = (tr.match(/<td[\s\S]*?<\/td>/gi) || []).map(strip); if (c.length < 8) continue;
-      take(iss, { sbid: +sb[1], name: c[0], rating: c[1], category: c[2], ld: date(c[3]), ly: num(c[4]), lpx: num(c[5]), lamt: num(c[6]), out: num(c[7]) }); rowsSeen++;
-    }
-  } catch (e) { log(`  issuer ${iss.id} ${iss.name} failed: ${e.message}`); }
+  const j = await api("/bixapi/search/GetIssuerPageActiveBond", { issuerID: String(iss.id) }, { length: 2000, columns: BOND_COLS, order: [3, "desc"] });
+  if (!j?.data) { failed++; if (failed <= 3) log(`  issuer ${iss.id} ${iss.name}: ${JSON.stringify(j).slice(0, 200)}`); return; }
+  viaApi++; iss.active = j.recordsTotal ?? j.data.length;
+  for (const x of j.data) take(iss, { sbid: x.sbid, name: x.sbDesc, rating: x.rating, category: x.category, ld: isoD(x.lastTradeDate), ly: x.lastTradeYield || null, lpx: x.lastTradePrice || null, lamt: x.lastTradeVolume != null ? x.lastTradeVolume / 1e6 : null, out: x.outstandingAmount != null ? x.outstandingAmount / 1e6 : null });
+  rowsSeen += j.data.length;
 });
-log(`issuers via API ${viaApi}, via issuer page ${pages}; bond rows ${rowsSeen}, register ${reg.size}`);
+log(`issuers read ${viaApi} (${failed} failed); bond rows ${rowsSeen}, register ${reg.size}`);
 
 // ---------- 3. security details for bonds not yet described ----------
 const need = [...reg.values()].filter((b) => !b.isin && !b.noDetail).sort((a, b) => (b.ld || "").localeCompare(a.ld || "")).slice(0, DETAIL_MAX);
-let got = 0;
+let got = 0, miss1 = 0;
 await pool(need, 4, async (b) => {
   try {
     const h = await http(`${BIX}/security-info-page?SBid=${b.sbid}`); if (!h) { b.noDetail = true; return; }
@@ -183,7 +143,7 @@ await pool(need, 4, async (b) => {
     b.coupon = num(f(/Coupon Rate\s+([\d.]+)/i));
     b.ctype = f(/Coupon Type\s+([A-Za-z -]+?)\s+Coupon Frequency/i);
     b.issued = num(f(/Amount Issued \(RM'mil\)\s+([\d,.]+)/i));
-    if (b.isin || b.code) got++; else b.noDetail = true;
+    if (b.isin || b.code) got++; else if (!miss1++) log(`  no details parsed for SBID ${b.sbid}; page text: ${t.slice(t.search(/SECURITY INFORMATION/i), t.search(/SECURITY INFORMATION/i) + 700)}`);
   } catch (e) { /* retried next run */ }
 });
 log(`security details: ${got} of ${need.length} read; ${[...reg.values()].filter((b) => !b.isin).length} still without ISIN`);
@@ -213,7 +173,7 @@ const bonds = [...reg.values()].filter((b) => !b.mat || b.mat > day).map((b) => 
 const out = {
   updated: Math.floor(Date.now() / 1000), curveDay: day,
   src: "BIX Malaysia (Bond+Sukuk Information Exchange): issuers' active bonds and sukuk with their latest trade, and security details (stock code, ISIN, coupon, dates); reference curves from Bank Negara Malaysia's FAST consolidated indicative yields",
-  issuers, bonds, nameKey,
+  issuers, bonds,
   counts: { issuers: issuers.length, bonds: bonds.length, financial: bonds.filter((b) => b.cat === "Financial").length, soe: bonds.filter((b) => b.cat === "SOE").length, withIsin: bonds.filter((b) => b.isin).length, tradedOn: bonds.filter((b) => b.ld === day).length },
 };
 if (!bonds.length && prev.bonds?.length) { log("No bonds this run; keeping the previous file."); process.exit(0); }
