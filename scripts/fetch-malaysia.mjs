@@ -79,14 +79,26 @@ const cutoff = new Date(Date.now() - KEEP_DAYS * 864e5).toISOString().slice(0, 1
 // =====================================================================================================
 const FAST = "https://fast.bnm.gov.my/fastweb/public/PublicInfoServlet.do";
 const CAT = { conv: ["200700000001", "00000091"], isl: ["200700000002", "00000092"], corp: ["200500000021", "00000090"] };
-const iytmUrl = (k, d) => `${FAST}?chkBox=${CAT[k][0]}%E6${d.slice(8, 10)}%2F${d.slice(5, 7)}%2F${d.slice(0, 4)}%E6${CAT[k][1]}&mode=DISPLAY&info=INDYTM&screenId=PB030100`;
-async function iytm(k, d) { // → { date, rows: [[label, values...]] } or null when FAST has no page for that day
-  let h; try { h = await http(iytmUrl(k, d), { tries: 2, timeout: 30000 }); } catch (e) { return { err: e.message }; }
+let ALT = prev.fast?.alt || null; // older conventional pages filed under another category / record id (found by probe)
+const iytmUrl = (k, d, c = CAT[k]) => `${FAST}?chkBox=${c[0]}%E6${d.slice(8, 10)}%2F${d.slice(5, 7)}%2F${d.slice(0, 4)}%E6${c[1]}&mode=DISPLAY&info=INDYTM&screenId=PB030100`;
+async function iytm(k, d, c) { // → { date, rows: [[label, values...]] } or null when FAST has no page for that day
+  let h; try { h = await http(iytmUrl(k, d, c || (k === "conv" && ALT && d < ALT.before ? ALT.cat : CAT[k])), { tries: 2, timeout: 30000 }); } catch (e) { return { err: e.message }; }
   if (!h) return null;
   const at = dmy((strip(h).match(/as at\s+(\d{1,2}\/\d{1,2}\/\d{4})/i) || [])[1] || "");
   if (!at || at !== d) return null;
   const rows = trs(h).filter((r) => r.length >= 2 && /[A-Z]/.test(r[0]) && r.slice(1).some((c) => num(c) != null));
   return rows.length ? { date: at, rows } : null;
+}
+// FAST renamed its government categories ("... New") in early 2026; older days sit under another id. Probe a few
+// candidates on one older weekday and use the first that returns MGS rows.
+async function probeAlt(d) {
+  const cats = ["200700000001", "200500000019", "200500000018", "200500000017", "200500000016", "200500000022", "200500000023"];
+  for (const c of cats) for (let q = 70; q <= 95; q++) {
+    const cc = [c, String(q).padStart(8, "0")]; if (cc[0] === CAT.conv[0] && cc[1] === CAT.conv[1]) continue;
+    const p = await iytm("conv", d, cc);
+    if (p && !p.err && parseGov(p.rows, "MGS").pts.length >= 6) { log(`FAST probe: older conventional pages at ${cc.join("/")} (${d})`); return cc; }
+  }
+  log(`FAST probe: no older conventional category found for ${d}`); return null;
 }
 const parseGov = (rows, pre) => { // "MGS 10 YEARS" / "GII 1 YEAR" → [[tenor, y]]; bills by band
   const out = [], bills = {};
@@ -141,14 +153,21 @@ let latest = null, fastErr = 0;
     if (budget <= 0 || dd < yr) break;
     for (const k of ["isl", "corp"]) if (!days[k].has(dd) && budget > 0) { budget--; await takeDay(dd, [k]); }
   }
-  let backStop = stop;
-  if (d && !stop) {
+  let backStop = ALT || prev.fast?.probed ? stop : null;
+  if (d && (!stop || (!ALT && !prev.fast?.probed))) {
     while (budget > 0 && d > cutoff) {
       d = prevWeekday(d);
       if (miss.has(d)) continue;
       budget--; const r = await takeDay(d, ["conv"]);
       if (days.conv.has(d)) { n++; gap = 0; } else if (!r.err) { miss.add(d); gap++; }
-      if (gap >= 20) { backStop = d; log(`FAST back-fill: 20 weekdays without a page before ${d}; history starts after it`); break; }
+      if (gap >= 20) {
+        const earliest = [...days.conv.keys()].sort()[0];
+        if (!ALT && !prev.fast?.probed) {
+          days.probed = true; const cc = await probeAlt(d); budget -= 40;
+          if (cc) { ALT = { cat: cc, before: earliest }; for (const x of [...miss]) if (x < earliest) miss.delete(x); d = earliest; gap = 0; continue; }
+        }
+        backStop = d; log(`FAST back-fill: 20 weekdays without a page before ${d}; history starts after it`); break;
+      }
     }
     if (d <= cutoff) backStop = cutoff;
   }
@@ -346,7 +365,7 @@ const out = {
   indi: indi || prev.indi || null, indiDate: indi ? curveDate : prev.indiDate || null, indiPrev: [...indiPrev],
   pbTradeDay: pb.gii?.curve?.date || curveDate, pbSrc: "GII: FAST consolidated IYTM for Government Securities (Islamic). Corporate AAA–BBB: FAST consolidated IYTM by rating (3–15 years)",
   counts: { register: register.length, mgs: bonds.filter((b) => b.iss === "MGS").length, gii: bonds.filter((b) => b.iss === "GII").length, priced: bonds.filter((b) => b.last != null).length, traded: bonds.filter((b) => b.trd != null).length },
-  fast: { conv: trim(days.conv), isl: trim(days.isl), corp: trim(days.corp), bills: trim(days.bills), miss: [...miss].filter((d) => d >= cutoff).sort(), backStop: days.backStop || null },
+  fast: { conv: trim(days.conv), isl: trim(days.isl), corp: trim(days.corp), bills: trim(days.bills), miss: [...miss].filter((d) => d >= cutoff).sort(), backStop: days.backStop || null, alt: ALT, probed: days.probed || prev.fast?.probed || false },
 };
 if (!out.curve) { log("No MGS curve at all; not writing."); process.exit(0); }
 writeFileSync(OUT, JSON.stringify(out));
