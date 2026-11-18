@@ -79,7 +79,9 @@ Port of the Indonesia tab (itself built from the China and Korea tabs), with eve
 - **KLCI ↔ MGS flows** (`data/malaysia-flows.json`, `scripts/fetch-malaysia-flows.mjs`, `assets/malaysia-flows.js`): the Indonesia signal and US Treasury transmission study on KLCI (`^KLSE`), USD/MYR (guarded by the KL reference rate) and the FAST 10Y / 15Y MGS. It needs about a year of MGS history, which the back-fill supplies over the first few runs.
 - **Benchmarks and relative value** (`assets/malaysia-bench.js`) takes the place of the futures section; **Funding and credit** (`assets/malaysia-mm.js`) shows the OPR, bills, GII − MGS, credit spreads and USD/MYR.
 - **Recap** (`data/malaysia-recap.json`, `assets/malaysia-recap.js`): same schema as the Indonesia recap; row and metric keys `<issuer>:<tenor>` with issuer `mgs`, `gii`, `aaa`, `aa1`, `aa`, `aa3`, `a1`, `a`, `a3`, `bbb`, or `opr:0`.
-- **Refresh**: `.github/workflows/malaysia-bonds.yml`, weekdays 19:25 and 22:45 SGT with an 08:55 SGT safety net; it commits both data files and redeploys.
+- **MYR IRS** (`data/malaysia-irs.json`, `scripts/fetch-malaysia-irs.mjs`, `assets/malaysia-irs.js`): 1/3/5/7/10Y closes vs 3-month KLIBOR from Hong Leong Bank's Fixed Income Daily Market Snapshot (published the next morning; dated to the trading day), back-filled run by run; 2/4/6/8/9Y interpolated and labelled. They also overlay the tenor history chart with a swap spread chart and table. Offshore NDIRS has no free source.
+- **Financial and SOE bonds** (`data/malaysia-credit.json`, `scripts/fetch-malaysia-credit.mjs`): BIX Malaysia issuers classified by name, every active bond with its last trade from BIX's issuer-page endpoint, stock code / ISIN from each security page.
+- **Refresh**: `.github/workflows/malaysia-bonds.yml`, weekdays 19:25 and 22:45 SGT, plus 08:55 and 09:18 SGT the next morning (the IRS snapshot); it commits the data files and redeploys. Claude rewrites the recap and flow notes at ~09:37 SGT Tue–Sat (scheduled task "Stock dashboard: daily Malaysia bond recap").
 
 ## US tab: SOFR futures and research view (`us/`)
 
