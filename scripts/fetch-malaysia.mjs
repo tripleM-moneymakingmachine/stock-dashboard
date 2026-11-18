@@ -78,7 +78,7 @@ const cutoff = new Date(Date.now() - KEEP_DAYS * 864e5).toISOString().slice(0, 1
 // 1. FAST Consolidated IYTM pages (one per category and day)
 // =====================================================================================================
 const FAST = "https://fast.bnm.gov.my/fastweb/public/PublicInfoServlet.do";
-const CAT = { conv: ["200700000001", "00000091"], isl: ["200700000002", "00000092"], corp: ["200500000021", "00000090"] };
+const CAT = { conv: ["200700000001", "00000091"], isl: ["200700000002", "00000092"], corp: ["200500000021", "00000090"], sel: ["200500000020", "00000089"] };
 let ALT = prev.fast?.alt || null; // older conventional pages filed under another category / record id (found by probe)
 const ALTX = prev.fast?.altx || {}, PROBED = prev.fast?.probedx || {}; // the same for the Islamic and corporate pages
 const iytmUrl = (k, d, c = CAT[k]) => `${FAST}?chkBox=${c[0]}%E6${d.slice(8, 10)}%2F${d.slice(5, 7)}%2F${d.slice(0, 4)}%E6${c[1]}&mode=DISPLAY&info=INDYTM&screenId=PB030100`;
@@ -105,7 +105,7 @@ async function probeX(k, d) { // Islamic / corporate: same category id, older re
   for (let q = 70; q <= 95; q++) {
     const cc = [CAT[k][0], String(q).padStart(8, "0")]; if (cc[1] === CAT[k][1]) continue;
     const p = await iytm(k, d, cc);
-    const ok = p && !p.err && (k === "isl" ? parseGov(p.rows, "GII").pts.length >= 5 : Object.keys(parseCorp(p.rows)).length >= 3);
+    const ok = p && !p.err && (k === "isl" ? parseGov(p.rows, "GII").pts.length >= 5 : k === "sel" ? Object.keys(parseSel(p.rows)).length >= 1 : Object.keys(parseCorp(p.rows)).length >= 3);
     if (ok) { log(`FAST probe: older ${k} pages at ${cc.join("/")} (${d})`); return cc; }
   }
   log(`FAST probe: no older ${k} record found for ${d}`); return null;
@@ -121,12 +121,15 @@ const parseGov = (rows, pre) => { // "MGS 10 YEARS" / "GII 1 YEAR" → [[tenor, 
 };
 const CORP = [["aaa", /^AAA/], ["aa1", /^AA1/], ["aa", /^AA2/], ["aa3", /^AA3/], ["a1", /^A1/], ["a", /^A2/], ["a3", /^A3/], ["bbb", /^BBB/]];
 const CORP_T = [3, 5, 7, 10, 15];
+// FAST "Corporate Bond Selected Papers": Khazanah bonds and Cagamas securities, 3/5/7/10 years
+const SEL_T = [3, 5, 7, 10];
+const parseSel = (rows) => { const o = {}; for (const r of rows) { const k = /^KHAZANAH/i.test(r[0]) ? "khazanah" : /^CAGAMAS.*NEW/i.test(r[0]) ? "cagamas" : null; if (!k) continue; const v = r.slice(1, 5).map(num); if (v.filter((x) => x != null).length >= 3) o[k] = SEL_T.map((t, i) => [t, v[i]]).filter(([, y]) => y != null); } return o; };
 const parseCorp = (rows) => { const o = {}; for (const r of rows) { const k = CORP.find(([, re]) => re.test(r[0]))?.[0]; if (!k) continue; const v = r.slice(1, 6).map(num); if (v.filter((x) => x != null).length >= 3) o[k] = CORP_T.map((t, i) => [t, v[i]]).filter(([, y]) => y != null); } return o; };
 
 // day stores: { conv: {date: [[t,y]]}, isl: {...}, corp: {date: {aaa: [[t,y]]...}}, bills: {date: {...}} }
-const days = { conv: new Map(Object.entries(prev.fast?.conv || {})), isl: new Map(Object.entries(prev.fast?.isl || {})), corp: new Map(Object.entries(prev.fast?.corp || {})), bills: new Map(Object.entries(prev.fast?.bills || {})) };
+const days = { conv: new Map(Object.entries(prev.fast?.conv || {})), isl: new Map(Object.entries(prev.fast?.isl || {})), corp: new Map(Object.entries(prev.fast?.corp || {})), bills: new Map(Object.entries(prev.fast?.bills || {})), sel: new Map(Object.entries(prev.fast?.sel || {})) };
 const miss = new Set(prev.fast?.miss || []); // weekdays FAST has no conventional page for (holidays)
-async function takeDay(d, cats = ["conv", "isl", "corp"]) {
+async function takeDay(d, cats = ["conv", "isl", "corp", "sel"]) {
   let got = 0, err = 0;
   for (const k of cats) {
     if (days[k].has(d)) { got++; continue; }
@@ -135,6 +138,7 @@ async function takeDay(d, cats = ["conv", "isl", "corp"]) {
     if (!p) continue;
     if (k === "conv") { const g = parseGov(p.rows, "MGS"); if (g.pts.length >= 6) { days.conv.set(d, g.pts); if (Object.keys(g.bills).length) days.bills.set(d, g.bills); got++; } }
     else if (k === "isl") { const g = parseGov(p.rows, "GII"); if (g.pts.length >= 5) { days.isl.set(d, g.pts); const b = days.bills.get(d) || {}; days.bills.set(d, { ...b, ...g.bills }); got++; } }
+    else if (k === "sel") { const c = parseSel(p.rows); if (Object.keys(c).length) { days.sel.set(d, c); got++; } }
     else { const c = parseCorp(p.rows); if (Object.keys(c).length >= 3) { days.corp.set(d, c); got++; } }
   }
   return { got, err };
@@ -158,10 +162,10 @@ let latest = null, fastErr = 0;
   let budget = BACKFILL_MAX, n = 0, gap = 0, d = [...days.conv.keys()].sort()[0] || latest;
   const stop = prev.fast?.backStop || null;
   // Islamic and corporate histories trail the conventional one: fill their gaps over the last year first
-  const fails = { isl: 0, corp: 0 };
+  const fails = { isl: 0, corp: 0, sel: 0 };
   for (const dd of [...days.conv.keys()].sort().reverse()) {
     if (budget <= 0) break;
-    for (const k of ["isl", "corp"]) {
+    for (const k of ["isl", "corp", "sel"]) {
       if (days[k].has(dd) || budget <= 0 || (fails[k] >= 15 && (ALTX[k] || PROBED[k]))) continue;
       budget--; await takeDay(dd, [k]);
       if (days[k].has(dd)) { fails[k] = 0; continue; }
@@ -314,6 +318,15 @@ const pb = {};
     pb[k] = { short: k === "aaa" ? "AAA" : NAMES[k].split(" ")[0], name: `Corporate ${NAMES[k]} (ringgit, rated by RAM / MARC)`, local: "FAST consolidated IYTM, corporate bond ratings", fitted: false, curve: { date: dC, pts: ptsOf(f, p[0][0], p.at(-1)[0]) }, tenors: Object.fromEntries(CORP_T.map((t) => [t, toSer(mm[t], cutoff)]).filter(([, s]) => s.length)), bonds: [] };
   }
 }
+{
+  const selDays = [...days.sel.keys()].sort(), dS = selDays.at(-1);
+  for (const [k, short, name] of [["khazanah", "Khazanah", "Khazanah Nasional bonds (sovereign wealth fund, SOE)"], ["cagamas", "Cagamas", "Cagamas securities (national mortgage corporation, financial)"]]) {
+    const mm = Object.fromEntries(SEL_T.map((t) => [t, new Map()]));
+    for (const d of selDays) { const q = days.sel.get(d)?.[k]; if (q) for (const [t, y] of q) putSer(mm[t], d, y); }
+    const q = dS && days.sel.get(dS)?.[k]; if (!q || q.length < 3) continue;
+    pb[k] = { short, name, local: "FAST consolidated IYTM, corporate bond selected papers", fitted: false, curve: { date: dS, pts: ptsOf(mono(q), q[0][0], q.at(-1)[0]) }, tenors: Object.fromEntries(SEL_T.map((t) => [t, toSer(mm[t], cutoff)]).filter(([, x]) => x.length)), bonds: [] };
+  }
+}
 if (!Object.keys(pb).length && prev.pb) Object.assign(pb, prev.pb);
 const fGii = pb.gii ? mono(days.isl.get(pb.gii.curve.date) || []) : null;
 
@@ -384,7 +397,7 @@ const out = {
   indi: indi || prev.indi || null, indiDate: indi ? curveDate : prev.indiDate || null, indiPrev: [...indiPrev],
   pbTradeDay: pb.gii?.curve?.date || curveDate, pbSrc: "GII: FAST consolidated IYTM for Government Securities (Islamic). Corporate AAA–BBB: FAST consolidated IYTM by rating (3–15 years)",
   counts: { register: register.length, mgs: bonds.filter((b) => b.iss === "MGS").length, gii: bonds.filter((b) => b.iss === "GII").length, priced: bonds.filter((b) => b.last != null).length, traded: bonds.filter((b) => b.trd != null).length },
-  fast: { conv: trim(days.conv), isl: trim(days.isl), corp: trim(days.corp), bills: trim(days.bills), miss: [...miss].filter((d) => d >= cutoff).sort(), backStop: days.backStop || null, alt: ALT, altx: ALTX, probedx: PROBED, probed: days.probed || prev.fast?.probed || false },
+  fast: { conv: trim(days.conv), isl: trim(days.isl), corp: trim(days.corp), sel: trim(days.sel), bills: trim(days.bills), miss: [...miss].filter((d) => d >= cutoff).sort(), backStop: days.backStop || null, alt: ALT, altx: ALTX, probedx: PROBED, probed: days.probed || prev.fast?.probed || false },
 };
 if (!out.curve) { log("No MGS curve at all; not writing."); process.exit(0); }
 writeFileSync(OUT, JSON.stringify(out));

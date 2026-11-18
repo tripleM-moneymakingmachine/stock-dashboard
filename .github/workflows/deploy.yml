@@ -163,7 +163,7 @@ jobs:
           mkdir -p _site/korea && cp korea/index.html _site/korea/
           for f in indonesia indonesia-recap indonesia-flows; do if [ -f data/$f.json ]; then cp data/$f.json _site/data/; fi; done
           mkdir -p _site/indonesia && cp indonesia/index.html _site/indonesia/
-          for f in malaysia malaysia-recap malaysia-flows; do if [ -f data/$f.json ]; then cp data/$f.json _site/data/; fi; done
+          for f in malaysia malaysia-recap malaysia-flows malaysia-credit; do if [ -f data/$f.json ]; then cp data/$f.json _site/data/; fi; done
           [ -f malaysia/index.html ] && mkdir -p _site/malaysia && cp malaysia/index.html _site/malaysia/ || true
           if [ -f data/sofr.json ]; then cp data/sofr.json _site/data/; fi
           if [ -f data/us-recap.json ]; then cp data/us-recap.json _site/data/; fi

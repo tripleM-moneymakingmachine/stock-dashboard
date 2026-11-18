@@ -12,6 +12,7 @@ on:
     paths:
       - scripts/fetch-malaysia.mjs
       - scripts/fetch-malaysia-flows.mjs
+      - scripts/fetch-malaysia-credit.mjs
       - scripts/ust-transmission.mjs
       - .github/workflows/malaysia-bonds.yml
   schedule:
@@ -41,13 +42,16 @@ jobs:
       - name: MGS / GII / corporate curves (FAST), bonds by stock code and ISIN, benchmarks, OPR and USD/MYR (BNM)
         run: node scripts/fetch-malaysia.mjs || echo "malaysia fetch failed; keeping the committed file"
 
+      - name: Financial and SOE bonds (BIX Malaysia)
+        run: node scripts/fetch-malaysia-credit.mjs || echo "credit fetch failed; keeping the committed file"
+
       - name: KLCI <-> MGS flows and US Treasury transmission
         run: node scripts/fetch-malaysia-flows.mjs || echo "flows build failed; keeping the committed file"
 
       - name: Commit if changed
         id: commit
         run: |
-          for f in data/malaysia.json data/malaysia-flows.json; do [ -f "$f" ] && git add "$f"; done
+          for f in data/malaysia.json data/malaysia-flows.json data/malaysia-credit.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --cached --quiet; then
             echo "No changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
