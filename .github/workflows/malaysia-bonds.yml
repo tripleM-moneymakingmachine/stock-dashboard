@@ -17,7 +17,7 @@ on:
       - scripts/ust-transmission.mjs
       - .github/workflows/malaysia-bonds.yml
   schedule:
-    - cron: "25 11 * * 1-5"   # 19:25 Singapore / Kuala Lumpur, after FAST's evening release and the final ETP trades
+    - cron: "35 10 * * 1-5"   # 18:35 Singapore / Kuala Lumpur, after FAST's release and the final ETP trades (18:00), before the 19:22 recap task
     - cron: "45 14 * * 1-5"   # 22:45, late releases
     - cron: "55 0 * * 2-6"    # 08:55 next morning, safety net (also picks up the overnight US Treasury close)
     - cron: "18 1 * * 2-6"    # 09:18, after Hong Leong Bank posts its morning IRS snapshot (before the 09:37 recap task)
