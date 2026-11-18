@@ -68,6 +68,20 @@ function classify(name) {
   return null;
 }
 
+// ---------- 0. probe (diagnostics while the BIX API mapping is being settled) ----------
+if (process.env.MY_CREDIT_PROBE !== "0") {
+  for (const u of [`${BIX}/investor-tools/issuer-search`, `${BIX}/issuer-info-page?issuerID=769`, `${BIX}/security-info-page?SBid=12499`]) {
+    try {
+      const h = await http(u);
+      for (const sc of h.match(/<script[^>]*>[\s\S]*?<\/script>/gi) || []) if (/bixapi|ajax/i.test(sc) && !/recaptcha|gtag|google/i.test(sc)) { const i = Math.max(0, sc.search(/ajax/i) - 1200); log(`PROBE ${u.split("/").pop()}: ${sc.slice(i, i + 2600).replace(/\s+/g, " ")}`); }
+    } catch (e) { log(`PROBE ${u} failed: ${e.message}`); }
+  }
+  const dt = (extra = {}) => { const f = new URLSearchParams({ draw: "1", start: "0", length: "25", "order[0][column]": "1", "order[0][dir]": "asc", "search[value]": "", "search[regex]": "false", ...extra }); ["issuerCode", "issuerName", "brNo"].forEach((c, i) => { f.set(`columns[${i}][data]`, c); f.set(`columns[${i}][name]`, ""); f.set(`columns[${i}][searchable]`, "true"); f.set(`columns[${i}][orderable]`, "true"); f.set(`columns[${i}][search][value]`, ""); f.set(`columns[${i}][search][regex]`, "false"); }); return f; };
+  for (const [ct, body] of [["application/x-www-form-urlencoded; charset=UTF-8", dt().toString()], ["application/json", JSON.stringify(Object.fromEntries(dt()))]]) {
+    try { const r = await fetch(`${BIX}/bixapi/portal/SearchIssuer`, { method: "POST", headers: { "User-Agent": UA, "Content-Type": ct, "X-Requested-With": "XMLHttpRequest", Referer: `${BIX}/investor-tools/issuer-search` }, body, signal: AbortSignal.timeout(30000) }); log(`PROBE SearchIssuer ${ct.split(";")[0]}: HTTP ${r.status} ${(await r.text()).slice(0, 700)}`); } catch (e) { log(`PROBE SearchIssuer failed: ${e.message}`); }
+  }
+}
+
 // ---------- 1. issuers ----------
 let issuers = prev.issuers || [];
 try {
