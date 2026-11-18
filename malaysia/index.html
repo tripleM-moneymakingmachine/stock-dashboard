@@ -8,10 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-:root{--bg:#f3f5f7;--panel:#fff;--line:#d9dee5;--ink:#141a22;--muted:#5a6573;--accent:#0b6fb8;--accent-soft:#e3eff8;--up:#13804b;--down:#c2362b;--c1:#0b6fb8;--c2:#d97706;--c3:#8b5cf6;--c4:#0f9d8a;--c5:#db2777;--c6:#64748b;
+:root{--bg:#f3f5f7;--i1:#7c3aed;--i3:#0891b2;--i5:#ea580c;--i7:#16a34a;--i10:#be123c;--panel:#fff;--line:#d9dee5;--ink:#141a22;--muted:#5a6573;--accent:#0b6fb8;--accent-soft:#e3eff8;--up:#13804b;--down:#c2362b;--c1:#0b6fb8;--c2:#d97706;--c3:#8b5cf6;--c4:#0f9d8a;--c5:#db2777;--c6:#64748b;
   --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;--f-body:"Instrument Sans",ui-sans-serif,system-ui,sans-serif;--f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0d1117;--panel:#141b24;--line:#26303c;--ink:#e7ecf2;--muted:#93a0b0;--accent:#4fa8e8;--accent-soft:#132a3d;--up:#3ccf86;--down:#f0675b;--c1:#4fa8e8;--c2:#f0a43a;--c3:#a78bfa;--c4:#2dd4bf;--c5:#f472b6;--c6:#94a3b8;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0d1117;--panel:#141b24;--line:#26303c;--ink:#e7ecf2;--muted:#93a0b0;--accent:#4fa8e8;--accent-soft:#132a3d;--up:#3ccf86;--down:#f0675b;--c1:#4fa8e8;--c2:#f0a43a;--c3:#a78bfa;--c4:#2dd4bf;--c5:#f472b6;--c6:#94a3b8;color-scheme:dark}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0d1117;--i1:#a78bfa;--i3:#22d3ee;--i5:#fb923c;--i7:#4ade80;--i10:#fb7185;--panel:#141b24;--line:#26303c;--ink:#e7ecf2;--muted:#93a0b0;--accent:#4fa8e8;--accent-soft:#132a3d;--up:#3ccf86;--down:#f0675b;--c1:#4fa8e8;--c2:#f0a43a;--c3:#a78bfa;--c4:#2dd4bf;--c5:#f472b6;--c6:#94a3b8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1117;--i1:#a78bfa;--i3:#22d3ee;--i5:#fb923c;--i7:#4ade80;--i10:#fb7185;--panel:#141b24;--line:#26303c;--ink:#e7ecf2;--muted:#93a0b0;--accent:#4fa8e8;--accent-soft:#132a3d;--up:#3ccf86;--down:#f0675b;--c1:#4fa8e8;--c2:#f0a43a;--c3:#a78bfa;--c4:#2dd4bf;--c5:#f472b6;--c6:#94a3b8;color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--f-body);margin:0}
 .wrap{max-width:1180px;margin:0 auto;padding:28px 16px 48px}
@@ -362,11 +362,15 @@ section.crecap{margin-top:0}
         <label><i class="hsw" style="background:var(--c4)"></i>Line C <select id="hC" aria-label="Line C: tenor or bond with a yield today"></select></label>
         <label><i class="hsw" style="background:var(--c5)"></i>Line D <select id="hD" aria-label="Line D: tenor or bond with a yield today"></select></label>
       </div>
+      <div class="ctl" style="margin-bottom:10px;gap:10px"><span class="mut" style="font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase">MYR IRS overlay</span><div class="btns" id="hIrs" role="group" aria-label="MYR IRS tenors shown"></div><span class="mut" style="font:600 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase">Spread chart</span><div class="btns" id="hIrsSp" role="group" aria-label="IRS spread shown"></div></div>
       <div id="hist"></div>
       <div class="leg" id="hLeg" aria-live="polite"></div>
       <div id="hDWrap" style="display:none;margin-top:4px"><div class="mut" id="hDH" style="font:500 11px var(--f-mono);margin:4px 0 2px">Spread B − A (bp)</div><div id="hDiff" style="height:160px"></div><div class="leg" id="hDLeg" aria-live="polite"></div></div>
       <div class="stats" id="hStats"></div>
       <div style="overflow-x:auto;margin-top:10px"><table class="ctab" id="hSTab" style="display:none" aria-label="Spreads against Line A"><thead><tr><th>Spread vs Line A</th><th>Latest bp</th><th>Range change</th><th>High</th><th>Low</th><th>Average</th></tr></thead><tbody></tbody></table></div>
+      <div id="hIrsWrap" style="display:none;margin-top:14px"><h3 style="font:600 15px var(--f-body);margin:0 0 6px">MYR swap spreads (IRS − MGS)</h3>
+        <div style="overflow-x:auto"><table class="ctab" id="hIrsTab" aria-label="MYR IRS swap spreads to MGS"><thead><tr><th>Tenor</th><th>IRS %</th><th>MGS %</th><th>Swap spread bp</th><th>1D bp</th><th>1W bp</th><th>1M bp</th><th>Range avg</th><th>Range high</th><th>Range low</th><th>Percentile</th><th>vs Line A bp</th></tr></thead><tbody></tbody></table></div>
+        <p class="note" id="hIrsNote"></p></div>
     </div>
   </section>
 
@@ -441,7 +445,7 @@ section.crecap{margin-top:0}
   <footer id="foot">MGS curve and tenor history: Bank Negara Malaysia, FAST (Fully Automated System for Issuing/Tendering) consolidated indicative yield-to-maturity for Government Securities (Conventional), the average of the principal dealers' contributed yields, 1–10, 15, 20 and 30 years; GII curve: the same for Government Securities (Islamic); corporate AAA–BBB curves: FAST consolidated IYTM by rating. FAST keeps each day on its own page, so the dashboard back-fills older days run by run. MGS list, coupons, maturities, amounts outstanding and indicative prices and yields: FAST MGS Indicative Price. ETP closes and volumes: BNM Government Securities Daily Trading Information (source Bursa Malaysia Bonds). Financial and SOE bonds and sukuk: BIX Malaysia (Bond+Sukuk Information Exchange) issuer and security pages; Khazanah and Cagamas curves: FAST consolidated IYTM, corporate bond selected papers. Benchmarks and Treasury bill / BNM note yields: BNM Financial Markets Investor Portal. MYR IRS (1, 3, 5, 7, 10 years) and 3-month KLIBOR: Hong Leong Bank Fixed Income Daily Market Snapshot; other tenors interpolated by the dashboard. ISINs: MYB + stock code + check digit. OPR: BNM Monetary Policy Committee decisions and the BNM Open API. KL USD/MYR reference rate: BNM Open API; before the first stored day, Yahoo Finance USD/MYR. KLCI ↔ MGS flows: Yahoo Finance (^KLSE, MYR=X), US Treasury daily par yields; signal and back-tests computed by the dashboard. Indicative, not an offer to trade.</footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
-<script src="../assets/malaysia.js?v=2"></script>
+<script src="../assets/malaysia.js?v=3"></script>
 <script src="../assets/malaysia-recap.js?v=1"></script>
 <script src="../assets/malaysia-flows.js?v=1"></script>
 <script src="../assets/malaysia-mm.js?v=1"></script>

@@ -218,7 +218,12 @@
   const tkey = (p) => { if (p?.time == null) return null; const t = p.time; return typeof t === "object" ? `${t.year}-${String(t.month).padStart(2, "0")}-${String(t.day).padStart(2, "0")}` : t; };
   // Lines: A (set by tenor buttons/tiles), B, C, D. C and D list tenors plus only the bonds with a yield on the latest day.
   const LEGS = [["hA", "A", "--c1"], ["hB", "B", "--c2"], ["hC", "C", "--c4"], ["hD", "D", "--c5"]];
-  let ch = null, dc = null, dpad = null, mser = [], dser = [], hl = [], dl = [];
+  let ch = null, dc = null, dpad = null, mser = [], dser = [], hl = [], dl = [], iser = [];
+  // MYR IRS overlay (data/malaysia-irs.json): dashed lines on the yield chart, swap spreads in the spread chart and table
+  const IRS_T = [1, 3, 5, 7, 10];
+  let IRS = null;
+  st.irs = IRS_T.map(String); st.irsSp = "mgs";
+  const irsSer = (t) => IRS?.tenors?.[t] || [];
   const chartOpts = () => ({ layout: { background: { color: "transparent" }, textColor: css("--muted"), fontFamily: css("--f-mono") }, grid: { vertLines: { color: css("--line") }, horzLines: { color: css("--line") } }, rightPriceScale: { borderColor: css("--line") }, timeScale: { borderColor: css("--line") }, crosshair: { mode: 1 } });
   function hLegends(k) {
     const row = (l, u) => { const v = k ? l.data.find(([d]) => d === k) : l.data.at(-1); return `<span><i style="background:${l.col};height:2.5px"></i>${esc(l.label)} <b>${v ? (u === "bp" ? bp(v[1]) + " bp" : f2(v[1], u === "bpS" ? 1 : 3) + (u === "bpS" ? " bp" : "%")) : "–"}</b><span class="mut">${v ? " " + v[0] : ""}</span></span>`; };
@@ -230,6 +235,26 @@
     const v = k && data.find(([d]) => d === k);
     if (!v) { chart.clearCrosshairPosition?.(); return; }
     try { chart.setCrosshairPosition(v[1], k, series); } catch {}
+  }
+  // swap spread table: every IRS tenor against MGS at the same tenor and against Line A, over the chart's range
+  function irsTable(A, cut) {
+    const w = $("hIrsWrap"); if (!w) return;
+    if (!IRS) { w.style.display = "none"; return; }
+    w.style.display = "";
+    const mA = new Map(A?.s || []), lastA = A?.s?.at(-1);
+    const back = (s, days) => { if (!s.length) return null; const c = new Date(Date.parse(s.at(-1)[0]) - days * 864e5).toISOString().slice(0, 10); for (let i = s.length - 1; i >= 0; i--) if (s[i][0] <= c) return s[i][1]; return null; };
+    const rows = IRS_T.map((t) => {
+      const ir = irsSer(t), mg = new Map(ser(t)); if (!ir.length) return "";
+      const sp = ir.filter(([d]) => mg.has(d)).map(([d, y]) => [d, (y - mg.get(d)) * 100]);
+      const L = sp.at(-1), inR = sp.filter(([d]) => d >= cut).map((x) => x[1]);
+      const ch = (n) => { const p = n === 1 ? sp.at(-2)?.[1] : back(sp, n); return L && p != null ? L[1] - p : null; };
+      const avg = inR.length ? inR.reduce((a, b) => a + b, 0) / inR.length : null, pct = inR.length && L ? Math.round(inR.filter((x) => x <= L[1]).length / inR.length * 100) : null;
+      const irA = ir.filter(([d]) => mA.has(d)).at(-1), vsA = irA ? (irA[1] - mA.get(irA[0])) * 100 : null;
+      const sel = st.irs.includes(String(t));
+      return `<tr${sel ? "" : ' class="mut"'}><td><i style="display:inline-block;width:12px;height:0;border-top:2px dashed var(--i${t});vertical-align:middle;margin-right:6px"></i>${t}Y</td><td>${f2(ir.at(-1)[1], 3)}</td><td>${L ? f2(mg.get(L[0]), 3) : "–"}</td><td class="${cls(L?.[1])}"><b>${L ? bp(L[1]) : "–"}</b></td><td class="${cls(ch(1))}">${bp(ch(1))}</td><td class="${cls(ch(7))}">${bp(ch(7))}</td><td class="${cls(ch(30))}">${bp(ch(30))}</td><td>${avg != null ? bp(avg) : "–"}</td><td>${inR.length ? bp(Math.max(...inR)) : "–"}</td><td>${inR.length ? bp(Math.min(...inR)) : "–"}</td><td>${pct != null ? pct + "%" : "–"}</td><td class="${cls(vsA)}">${bp(vsA)}</td></tr>`;
+    }).join("");
+    $("hIrsTab").querySelector("tbody").innerHTML = rows;
+    $("hIrsNote").textContent = `Swap spread = MYR IRS (fixed vs 3-month KLIBOR, Hong Leong Bank's daily closes) minus the FAST MGS yield at the same tenor, in bp, on days both exist; negative means swaps pay less than MGS. Changes are over 1 day, 1 week and 1 month; average, high, low and percentile cover the chart's range (${st.hR}). "vs Line A" is each IRS minus the line now in Line A (${A ? legShort(A.key) : "–"}${lastA ? ", " + lastA[0] : ""}). Click the IRS buttons above to show or hide a tenor on the charts.`;
   }
   function hist(fit) {
     const k = String(st.hT), isS = k.startsWith("s");
@@ -245,7 +270,15 @@
     legs.forEach((l) => { l.v = l.s.filter(([d]) => d >= cut); });
     const A = legs[0], mA = new Map(A.v);
     const sprs = isS ? [] : legs.slice(1).map((l) => ({ label: `${legShort(l.key)} − ${legShort(A.key)}`, L: l.L, col: l.col, data: l.v.filter(([d]) => mA.has(d)).map(([d, y]) => [d, +((y - mA.get(d)) * 100).toFixed(1)]) }));
-    const cmp = sprs.length > 0;
+    // IRS overlays and their spreads: IRS − MGS at the same tenor (swap spread), or IRS − Line A
+    const irsL = isS || !IRS ? [] : st.irs.map(Number).sort((a, b) => a - b).map((t) => ({ t, label: `MYR IRS ${t}Y`, col: css(`--i${t}`), v: irsSer(t).filter(([d]) => d >= cut) })).filter((x) => x.v.length);
+    const irsD = irsL.map((x) => { const m = st.irsSp === "a" ? mA : new Map(ser(x.t)); return { label: st.irsSp === "a" ? `IRS ${x.t}Y − ${legShort(A.key)}` : `IRS ${x.t}Y − MGS ${x.t}Y`, col: x.col, dash: true, data: x.v.filter(([d]) => m.has(d)).map(([d, y]) => [d, +((y - m.get(d)) * 100).toFixed(1)]) }; });
+    const allD = [...sprs, ...irsD];
+    const cmp = sprs.length > 0, cmpAny = allD.length > 0;
+    $("hIrs").innerHTML = IRS_T.map((t) => `<button type="button" data-k="${t}" aria-pressed="${st.irs.includes(String(t))}"${IRS && !isS ? "" : " disabled"}><i class="hsw" style="background:var(--i${t})"></i>${t}Y</button>`).join("") + `<button type="button" data-k="all">All</button><button type="button" data-k="none">None</button>`;
+    $("hIrs").querySelectorAll("button").forEach((b) => b.onclick = () => { const k = b.dataset.k; st.irs = k === "all" ? IRS_T.map(String) : k === "none" ? [] : st.irs.includes(k) ? st.irs.filter((x) => x !== k) : [...st.irs, k]; hist(false); });
+    $("hIrsSp").innerHTML = [["mgs", "IRS − MGS same tenor"], ["a", "IRS − Line A"]].map(([k, l]) => `<button type="button" data-k="${k}" aria-pressed="${st.irsSp === k}"${IRS && !isS ? "" : " disabled"}>${l}</button>`).join("");
+    $("hIrsSp").querySelectorAll("button").forEach((b) => b.onclick = () => { st.irsSp = b.dataset.k; hist(false); });
     $("hH").textContent = isS ? `${k === "s10_1" ? "10Y – 3Y" : "30Y – 10Y"} spread history (bp)` : `${legs.map((l) => legName(l.key)).join(" vs ")} yield history (%)`;
     $("hTen").innerHTML = TEN.filter((t) => ser(t).length).map((t) => `<button type="button" data-k="${t}" aria-pressed="${!isS && st.hA === `t:${t}`}">${lab(t)}</button>`).join("") + `<button type="button" data-k="s10_1" aria-pressed="${k === "s10_1"}">10Y–3Y</button><button type="button" data-k="s30_10" aria-pressed="${k === "s30_10"}">30Y–10Y</button>`;
     $("hTen").querySelectorAll("button").forEach((b) => b.onclick = () => { st.hT = b.dataset.k; tiles(); hist(true); });
@@ -267,9 +300,10 @@
         ch.timeScale().subscribeVisibleLogicalRangeChange((r) => { if (dc && r) try { dc.timeScale().setVisibleLogicalRange(r); } catch {} });
       } else ch.applyOptions(o);
       mser.forEach((x) => ch.removeSeries(x)); mser = legs.map((l) => { const x = ch.addLineSeries({ color: l.col, lineWidth: 2, priceLineVisible: false, priceFormat: pf }); x.setData(l.v.map(([time, value]) => ({ time, value }))); return x; });
+      iser.forEach((x) => ch.removeSeries(x)); iser = irsL.map((l) => { const x = ch.addLineSeries({ color: l.col, lineWidth: 2, lineStyle: 2, priceLineVisible: false, lastValueVisible: true, priceFormat: pf }); x.setData(l.v.map(([time, value]) => ({ time, value }))); return x; });
       if (fit) ch.timeScale().fitContent();
-      $("hDWrap").style.display = cmp ? "" : "none";
-      if (cmp) {
+      $("hDWrap").style.display = cmpAny ? "" : "none";
+      if (cmpAny) {
         if (!dc) {
           dc = LightweightCharts.createChart($("hDiff"), { ...o, autoSize: true, localization: { locale: "en-US" }, handleScroll: false, handleScale: false });
           dpad = dc.addLineSeries({ visible: false, priceLineVisible: false, lastValueVisible: false, priceFormat: pf1 });
@@ -277,18 +311,21 @@
         } else dc.applyOptions(o);
         dser.forEach((x) => dc.removeSeries(x));
         // same dates as the main chart so the two x-axes line up bar for bar
-        dpad.setData([...new Set(legs.flatMap((l) => l.v.map(([d]) => d)))].sort().map((time) => ({ time })));
-        dser = sprs.map((sp, i) => { const x = dc.addLineSeries({ color: sp.col, lineWidth: 2, priceLineVisible: false, priceFormat: pf1 }); x.setData(sp.data.map(([time, value]) => ({ time, value }))); if (!i) x.createPriceLine({ price: 0, color: css("--muted"), lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: "" }); return x; });
+        dpad.setData([...new Set([...legs, ...irsL].flatMap((l) => l.v.map(([d]) => d)))].sort().map((time) => ({ time })));
+        dser = allD.map((sp, i) => { const x = dc.addLineSeries({ color: sp.col, lineWidth: 2, lineStyle: sp.dash ? 2 : 0, priceLineVisible: false, priceFormat: pf1 }); x.setData(sp.data.map(([time, value]) => ({ time, value }))); if (!i) x.createPriceLine({ price: 0, color: css("--muted"), lineWidth: 1, lineStyle: 2, axisLabelVisible: false, title: "" }); return x; });
         requestAnimationFrame(() => requestAnimationFrame(() => {
           const w = ch.priceScale("right").width(); if (w) dc.applyOptions({ rightPriceScale: { minimumWidth: w } });
           const r = ch.timeScale().getVisibleLogicalRange(); if (r) try { dc.timeScale().setVisibleLogicalRange(r); } catch {}
         }));
-        $("hDH").textContent = sprs.length === 1 ? `Spread: ${sprs[0].label} (bp)` : `Spreads against Line A (${legShort(A.key)}), bp`;
+        $("hDH").textContent = !irsD.length ? (sprs.length === 1 ? `Spread: ${sprs[0].label} (bp)` : `Spreads against Line A (${legShort(A.key)}), bp`)
+          : `Spreads, bp: ${[sprs.length ? `Lines B–D − A (solid)` : "", st.irsSp === "a" ? `MYR IRS − Line A (dashed)` : `MYR IRS − MGS at the same tenor, the swap spread (dashed)`].filter(Boolean).join(" · ")}`;
       }
     }
     hl = legs.map((l) => ({ label: isS ? $("hH").textContent.replace(" history (bp)", "") : `${isS || legs.length === 1 ? "" : l.L + ": "}${legName(l.key)}`, data: l.v, col: l.col, u: isS ? "bpS" : "%" }));
-    dl = sprs;
+    hl = hl.concat(irsL.map((l) => ({ label: l.label, data: l.v, col: l.col, u: "%" })));
+    dl = allD;
     hLegends(null);
+    irsTable(A, cut);
     // stats boxes: single line or the 10Y–1Y / 30Y–10Y spread; with one comparison, that spread; with more, a table
     const stat = (S, sp) => { const ys = S.map((p) => p[1]), fmt = (x) => sp ? bp(x) + " bp" : f2(x, 3) + "%"; return { last: S.at(-1), chg: (S.at(-1)[1] - S[0][1]) * (sp ? 1 : 100), hi: fmt(Math.max(...ys)), lo: fmt(Math.min(...ys)), avg: fmt(ys.reduce((a, b) => a + b, 0) / ys.length), fmt }; };
     $("hSTab").style.display = sprs.length > 1 ? "" : "none";
@@ -420,6 +457,7 @@
       const j = await r.json();
       if (!first && D && j.updated === D.updated) return;
       try { const rc = await fetch(`../data/malaysia-credit.json?t=${Date.now()}`, { cache: "no-store" }); if (rc.ok) CR = await rc.json(); } catch {}
+      try { const ri = await fetch(`../data/malaysia-irs.json?t=${Date.now()}`, { cache: "no-store" }); if (ri.ok) IRS = await ri.json(); } catch {}
       D = j; for (const key in bondCache) delete bondCache[key]; render(first);
     } catch (e) { if (first) $("lede").textContent = "Malaysia bond data is not available yet. It is rebuilt after Bank Negara Malaysia's FAST publishes each Kuala Lumpur business day; check back in a few minutes."; }
   }
