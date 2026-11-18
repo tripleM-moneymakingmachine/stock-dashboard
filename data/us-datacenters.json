@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-18",
- "asofText": "Nov 18, 2026",
+ "asof": "2026-11-19",
+ "asofText": "Nov 19, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -1574,7 +1574,7 @@
   },
   "VA": {
    "tier": 3,
-   "why": "No ban, but tax-break review and Dominion grid queue; Loudoun limits.",
+   "why": "No statewide ban, but the pressure stepped up: Loudoun County (the biggest market) formally adopted a pause of up to 12 months on data center and substation rezonings on Nov 17, covering 33 applications until new rules land around summer 2027 (grandfathered and by-right projects continue). Senate Democrats put a temporary statewide pause on the 2027 agenda and Sen. Perry's bill would pause approvals for three years from July 2027; Dominion's grid queue and the tax-break review remain.",
    "to": [
     "NC",
     "WV"
@@ -2037,7 +2037,7 @@
   },
   "sbank": {
    "grade": "High",
-   "view": "SoftBank now carries the largest single at-risk campus on the map: PORTS-Pike in Ohio (8 GW IT, tier-5 state, Acton's conditional moratorium), plus Milam County (Texas) and Lordstown (Ohio, town ban). The $3.7B write-off on power equipment it rushed to reserve is the first hard cost of the policy shift showing up in a P&L, and the 'reassessment' language plus SB Energy's IPO slipping to 2027 say the Ohio schedule is soft. Owning the generation is its best defence under Acton's pay-your-own-way terms, but OpenAI's funding chain is leveraged and every month of delay compounds. The stock's fall is mostly real exposure, not just sentiment.",
+   "view": "SoftBank carries the largest single at-risk campus on the map: PORTS-Pike in Ohio (8 GW IT, tier-5 state, Acton's conditional moratorium), plus Milam County (Texas, first building now 2027) and Lordstown (Ohio, cut to a 42 MW proof of concept). Nvidia's filing helps the financing story: it guarantees up to $105B of OpenAI's 20-year leases on about 4.25 GW of PORTS-Pike, but each guarantee only starts once a building is ready (first in fiscal 2029), so it does nothing for permitting or Acton's pay-your-own-way terms. The $3.7B power-equipment write-off and SB Energy's IPO slipping to 2027 still say the Ohio schedule is soft. The stock's fall is mostly real exposure, with the Nvidia backstop a partial offset to lender worries rather than to site risk.",
    "moves": [
     "Re-scope PORTS-Pike phases to fit Acton's cost and labour terms",
     "Use SB Energy generation to avoid grid-cost fights",
@@ -2120,7 +2120,7 @@
   },
   "qts": {
    "grade": "Medium",
-   "view": "QTS built Microsoft's Fairwater Atlanta (previously double-counted here as a separate Fayetteville campus). Its own large AI footprint is Richmond, Virginia (~560 MW IT live), a mixed-risk state, so direct exposure is the Georgia pause hitting future Atlanta phases.",
+   "view": "QTS built Microsoft's Fairwater Atlanta (previously double-counted here as a separate Fayetteville campus). Its own large AI footprint is Richmond, Virginia (~560 MW IT live), outside Loudoun's new 12-month rezoning pause, so the Virginia hit is to new Northern Virginia land, not live capacity. Direct exposure is the Georgia pause hitting future Atlanta phases; scarcer approved Virginia capacity supports rents on what it already has.",
    "moves": [
     "Shift new Atlanta phases to Alabama/Mississippi",
     "Keep expanding Richmond"
@@ -2128,6 +2128,45 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-18",
+   "co": [
+    "amzn",
+    "msft",
+    "googl",
+    "qts"
+   ],
+   "t": "Loudoun County, the world's largest data center market, formally adopted (7-1-1) a pause of up to 12 months on board votes for data center and substation rezonings, retroactive to Sept. 15 and covering 33 active applications until its siting, on-site power and noise rules are done around summer 2027; at least 17 grandfathered cases and administrative site plans keep moving. The same week San José unanimously froze approvals for 12 projects including Google's 250 MW Alviso site until rules pass (Dec 8 vote), while Michigan City, Indiana's new moratorium leaves Google's project untouched. New Northern Virginia supply slips, which raises the value of already-approved capacity.",
+   "src": "https://voltgridnews.com/story/loudoun-data-center-pause-adopted-7-1-1-lasting-up-to-12-months"
+  },
+  {
+   "d": "2026-11-18",
+   "co": [
+    "sbank",
+    "crwv",
+    "nbis",
+    "iren",
+    "apld"
+   ],
+   "t": "Nvidia's CFO commentary puts its maximum guarantee exposure at $118B: $105B backs about 4.25 GW across nine buildings at SB Energy's PORTS-Pike campus in Ohio leased to OpenAI for 20 years (each guarantee starts only when its building is ready, the first in fiscal 2029), with just $3.5B of land, power and shell support for neoclouds. Kress said Nvidia is 'taking a very strong look' at whom it helps finance, and the stock reversed from +3% to close down 2.9% at about $151, with CoreWeave -4% to $47.83 and IREN -3%, while AMD rose 5% and Broadcom 4%.",
+   "src": "https://aibusinessweekly.net/p/nvidia-neocloud-financing-guarantees-kress"
+  },
+  {
+   "d": "2026-11-18",
+   "co": [
+    "*"
+   ],
+   "t": "The political pressure is building from both ends: House Democrats and members-elect called for passing the Sanders/Ocasio-Cortez national data center moratorium bill as advocates delivered 250,000 petitions, and TD Cowen said Abbott's lame-duck permit push (TCEQ confirmed Wednesday it is issuing air permits again) will harden Democrats' demand that Hinojosa take a firm line, lowering the odds of a quick deal between her and developers. A federal moratorium has little chance of becoming law under Trump, but it frames the 2027 Congress and keeps Texas permits issued before Jan 19 contested.",
+   "src": "https://coloradonewsline.com/2026/11/18/repub/house-dems-moratorium-data-centers"
+  },
+  {
+   "d": "2026-11-17",
+   "co": [
+    "*"
+   ],
+   "t": "Sam Altman said AI chip demand is being double-counted because many chipmakers each assume OpenAI and Anthropic will buy most of their output, though he called data center construction demand 'solid'; the same day Bank of America said NAND spot prices fell about 20% in a month and GF Securities forecast a NAND glut in 2027, sending Sandisk and Micron down about 4%. DRAM and HBM pricing still look firm (BofA sees DRAM +8% in Q4), so the crack is in storage and in out-year volumes, not today's builds.",
+   "src": "https://en.sedaily.com/business/2026/11/17/altman-warns-ai-chip-demand-is-being-double-counted"
+  },
   {
    "d": "2026-11-17",
    "co": [
@@ -2619,44 +2658,21 @@
    ],
    "t": "Neoclouds bounced Friday (IREN +16% on doubled AI revenue, CoreWeave +6.6%, Applied Digital +9%) but remain roughly half their October levels; Bernstein cut IREN's target to $55 and named IREN and Cipher the most Texas-exposed. CoreWeave reports Nov 10, Nebius Nov 12.",
    "src": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
-  },
-  {
-   "d": "2026-11-06",
-   "co": [
-    "*"
-   ],
-   "t": "Bloomberg Intelligence expects the election to cut 2027 AI infrastructure spending by 5–7% of ~$1.4T and up to 10 GW of capacity to miss next year's online dates.",
-   "src": "https://insurancejournal.com/news/southcentral/2026/11/06/891870.htm"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "nbis",
-    "apld",
-    "cifr",
-    "orcl"
-   ],
-   "t": "Added named campuses from filings: Nebius Independence (1.2 GW, approved), Pennsylvania Highridge (1.2 GW) and Birmingham; Applied Digital Delta Forge 1 (LA) and Polaris Forge 3 (ND); Cipher Black Pearl and Stingray (AWS) and Colchis. Company targets beyond named sites (SpaceX, Oracle, Nebius) now show as Planned, not yet sited.",
-   "src": "https://parameter.io/nebius-group-nbis-stock-jumps-as-missouri-greenlights-major-ai-data-center-project"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "spcx"
-   ],
-   "t": "SpaceX reported 1.7 GW of nameplate compute at Sep 30 (1.4 GW in June); on the Q3 call Musk targeted 2.5–3 GW by end-2026 and at least 13 GW by end-2027.",
-   "src": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "*"
-   ],
-   "t": "Campus figures moved to total facility power (Epoch AI, Cleanview) and re-verified; added AWS Ohio and central Virginia builds, Google's Wilbarger and Meitner campuses, Crusoe Childress, Nexus Hubbard and Nebius Independence.",
-   "src": "https://cleanview.co/data-centers/us"
   }
  ],
  "sources": [
+  [
+   "Voltgrid: Loudoun adopts 12-month data center pause",
+   "https://voltgridnews.com/story/loudoun-data-center-pause-adopted-7-1-1-lasting-up-to-12-months"
+  ],
+  [
+   "AI Business Weekly: Nvidia's $118B guarantees and neocloud limits",
+   "https://aibusinessweekly.net/p/nvidia-neocloud-financing-guarantees-kress"
+  ],
+  [
+   "States Newsroom: House Dems urge national moratorium",
+   "https://coloradonewsline.com/2026/11/18/repub/house-dems-moratorium-data-centers"
+  ],
   [
    "Texas Tribune: TCEQ resumes data center permits",
    "https://texastribune.org/2026/11/17/tceq-environmental-data-center-permits-resume"
@@ -2724,18 +2740,6 @@
   [
    "Nvidia CEO transition (LA Times)",
    "https://latimes.com/business/story/2026-11-12/nvidia-shares-tumble-after-jensen-huang-resigns-as-ceo"
-  ],
-  [
-   "Nebius Q3 2026 shareholder letter",
-   "https://assets.nebius.com/assets/65994da2-e220-40cd-bb5d-72e9654a237d/Q3%202026%20SHL.pdf"
-  ],
-  [
-   "Fermi Q3 2026 results and hyperscaler agreements",
-   "https://irp.cdn-website.com/4ee5afac/files/uploaded/Fermi+Q326+ER+11-12-26+vF.pdf"
-  ],
-  [
-   "WSJ: SpaceX $74B Texas and Arizona campuses",
-   "https://wsj.com/business/spacex-plans-more-than-74-billion-in-texas-arizona-data-center-investments-b9ff4ba3"
   ]
  ],
  "modo": {
