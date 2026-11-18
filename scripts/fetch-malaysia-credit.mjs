@@ -70,16 +70,17 @@ function classify(name) {
 
 // ---------- 0. probe (diagnostics while the BIX API mapping is being settled) ----------
 if (process.env.MY_CREDIT_PROBE !== "0") {
-  for (const u of [`${BIX}/investor-tools/issuer-search`, `${BIX}/investor-tools/bix-search`]) {
-    try {
-      const h = await http(u);
-      for (const m of h.matchAll(/searchCriteria|bixapi\/[A-Za-z]+\/[A-Za-z]+/g)) { const i = Math.max(0, m.index - 300); log(`PROBE ${u.split("/").pop()} @${m.index}: ${h.slice(i, i + 1500).replace(/\s+/g, " ")}`); }
-      const sel = [...h.matchAll(/<select[^>]*id="([^"]+)"[\s\S]*?<\/select>/gi)].map((m) => `${m[1]}: ${strip(m[0]).slice(0, 300)}`); log(`PROBE selects ${u.split("/").pop()}: ${sel.join(" | ")}`);
-    } catch (e) { log(`PROBE ${u} failed: ${e.message}`); }
-  }
-  const post = async (path, form) => { try { const r = await fetch(`${BIX}${path}`, { method: "POST", headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest" }, body: new URLSearchParams(form).toString(), signal: AbortSignal.timeout(30000) }); log(`PROBE POST ${path}: HTTP ${r.status} ${(await r.text()).slice(0, 900)}`); } catch (e) { log(`PROBE ${path} failed: ${e.message}`); } };
-  await post("/bixapi/search/GetTradingActivities", { draw: "1", start: "0", length: "3", "searchCriteria[sbid]": "12499" });
-  await post("/bixapi/search/GetSearchChartSukukBond", { draw: "1", start: "0", length: "5", "searchCriteria[sbid]": "12499", "searchCriteria[chkSukuk]": "3", "searchCriteria[category]": "", "searchCriteria[searchName]": "DANAINFRA" });
+  try {
+    const h = await http(`${BIX}/investor-tools/bix-search`);
+    const i = h.indexOf("function getSearchCriteria"), j = h.indexOf("url: \"/bixapi/Search/SearchBond\"");
+    const g = h.slice(i, i + 9000).replace(/\s+/g, " "); for (let k = 0; k < g.length; k += 1400) log(`PROBE gsc ${k}: ${g.slice(k, k + 1400)}`);
+    const c = h.slice(Math.max(0, j - 3500), j + 100).replace(/\s+/g, " "); for (let k = 0; k < c.length; k += 1400) log(`PROBE cols ${k}: ${c.slice(k, k + 1400)}`);
+  } catch (e) { log(`PROBE bix-search failed: ${e.message}`); }
+  try {
+    const f = new URLSearchParams({ draw: "1", start: "0", length: "3", "order[0][column]": "1", "order[0][dir]": "asc", "columns[0][data]": "issuerCode", "columns[1][data]": "issuerName", "columns[2][data]": "brNo", "searchCriteria[IssuerDescription]": "" });
+    const r = await fetch(`${BIX}/bixapi/portal/SearchIssuer`, { method: "POST", headers: { "User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest" }, body: f.toString(), signal: AbortSignal.timeout(30000) });
+    log(`PROBE SearchIssuer: HTTP ${r.status} ${(await r.text()).slice(0, 600)}`);
+  } catch (e) { log(`PROBE SearchIssuer failed: ${e.message}`); }
 }
 
 // ---------- 1. issuers ----------
