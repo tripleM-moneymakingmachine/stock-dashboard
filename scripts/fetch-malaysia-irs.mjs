@@ -80,8 +80,16 @@ log(`HLB back-fill: +${back} days, earliest ${[...days.keys()].sort()[0]}`);
 rmSync(tmp, { recursive: true, force: true });
 if (!days.size) { log("No IRS data; not writing."); process.exit(0); }
 
+// drop misread snapshots (columns shifted in the PDF text): any tenor more than 25bp away from the same tenor on both
+// neighbouring stored days, or a yield curve out of any plausible shape
+const all = [...days.keys()].sort(), bad = new Set();
+all.forEach((k, i) => {
+  const o = days.get(k), nb = [days.get(all[i - 1]), days.get(all[i + 1])].filter(Boolean);
+  for (const t of TEN) { const y = o[t]?.[0]; if (y == null) continue; if (y < 1 || y > 8) bad.add(k); const far = nb.filter((n) => n[t] && Math.abs(n[t][0] - y) > 0.25); if (nb.length && far.length === nb.length) bad.add(k); }
+});
+if (bad.size) log(`dropped ${bad.size} misread snapshot(s): ${[...bad].join(", ")}`);
 // HLB dates each snapshot by its publication morning; the closes in it are the previous Kuala Lumpur business day's
-const keys = [...days.keys()].sort(), close = (k) => prevWk(k);
+const keys = all.filter((k) => !bad.has(k)), close = (k) => prevWk(k);
 const series = Object.fromEntries(TEN.map((t) => [t, keys.filter((k) => days.get(k)[t]).map((k) => [close(k), days.get(k)[t][0]])]));
 const klibor = keys.filter((k) => days.get(k).klibor != null).map((k) => [close(k), days.get(k).klibor]);
 const L = days.get(keys.at(-1));
