@@ -84,6 +84,21 @@ async function api(path, criteria, { start = 0, length = 500, columns = [] } = {
 }
 const isoD = (s) => s ? String(s).slice(0, 10) : null;
 
+// ---------- probe (diagnostics, removed once the mapping is settled) ----------
+if (!prev.probed2) {
+  try {
+    const h = await http(`${BIX}/investor-tools/bix-search`);
+    const i = h.indexOf("function getSearchCriteria"); const g = h.slice(i, i + 12000).replace(/\s+/g, " ");
+    for (let k = 0; k < g.length; k += 1500) log(`PROBE gsc ${k}: ${g.slice(k, k + 1500)}`);
+  } catch (e) { log(`PROBE gsc failed: ${e.message}`); }
+  try {
+    const h = await http(`${BIX}/issuer-info-page?issuerID=769`);
+    const i = h.search(/ACTIVE BOND \+ SUKUK/i); const g = h.slice(Math.max(0, i - 200), i + 4500).replace(/\s+/g, " ");
+    for (let k = 0; k < g.length; k += 1500) log(`PROBE issuer ${k}: ${g.slice(k, k + 1500)}`);
+    for (const m of h.matchAll(/bixapi\/[A-Za-z]+\/[A-Za-z]+/g)) log(`PROBE issuer api: ${m[0]} :: ${h.slice(m.index - 200, m.index + 400).replace(/\s+/g, " ")}`);
+  } catch (e) { log(`PROBE issuer failed: ${e.message}`); }
+}
+
 // ---------- 1. issuers ----------
 let issuers = prev.issuers || [];
 try {
