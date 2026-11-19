@@ -1,38 +1,43 @@
 {
-  "session": "2026-11-18",
-  "asof": "Wed Nov 18, 2026",
-  "commentary_asof": "Wed Nov 18, 2026",
+  "session": "2026-11-19",
+  "asof": "Thu Nov 19, 2026",
+  "commentary_asof": "Thu Nov 19, 2026",
   "horizon": "1–2 weeks",
-  "headline": "BI's 25bp hike to 6.00% leaves the 1Y unmoved (−1.1bp) but pushes the 3–5Y up 3.5–4.0bp and the 10Y to 7.73%, its highest since at least Nov 2021, despite a 2bp Treasury rally; JISDOR eases to 18,252 and the daily flow signal is −0.79",
-  "summary": "PHEI's IGSYC bear-steepened through the belly after BI's hike: the 1Y slipped 1.1bp to 6.709% and the 1M 1.4bp to 6.162%, while the 2Y rose 1.7bp to 7.028%, the 3Y 3.5bp to 7.258%, the 5Y 3.7bp to 7.550% and the 10Y 1.1bp to 7.729%, the highest on the dashboard's history since Nov 2021. 2s5s widened 2.0bp to 52.2bp and 1s2s 2.8bp to 31.9bp, both the widest of 15 stored days, and the 2s5s10s fly rose 4.5bp to 34.3bp; 5s10s flattened 2.5bp to 17.9bp. With the BI-Rate 25bp higher, the 1Y now sits only 70.9bp over it, the narrowest stored. FR0109 lost 2.6bp to 7.557% (8.4bp cheap to the curve) and FR0108 6.3bp to 7.725% (on the curve, from 5.1bp rich); the fitted PBS 5Y moved to 0.8bp through IGSYC from 0.4bp over, the retail fit is 14.3bp rich at 5Y, and PHEI's corporate curves moved with IGSYC, leaving AAA 3Y at 48.7bp over.",
+  "headline": "A day after BI's hike the 1Y reprices 8.9bp higher and the 5Y adds 2.6bp, while the 10Y edges to a new high of 7.739% even as Treasuries rally 3bp; JISDOR sets a record 18,269 and the daily flow signal is −0.73",
+  "summary": "PHEI's IGSYC caught up with BI's hike at the front: the 1Y rose 8.9bp to 6.798% after barely moving on Wednesday, the 2Y was flat at 7.029% (+0.1bp) and the 3Y slipped 0.7bp to 7.252%, while the belly kept cheapening, the 5Y up 2.6bp to 7.576% (+10.7bp this week) and the 7Y 2.4bp to 7.700%. The 10Y rose 1.0bp to 7.739%, the highest on the dashboard's history since Nov 2021, and the 15–30Y 0.4bp to 7.743%. 2s5s widened 2.6bp to 54.8bp, the widest of 16 stored days, and the 2s5s10s fly rose 4.3bp to 38.5bp, while 1s2s fell 8.9bp to 23.0bp and the 1Y now sits 79.8bp over the 6.00% BI-Rate. FR0109 rallied 2.9bp to 7.528% (3.6bp cheap, from 8.4bp) and PBS040 2.4bp to 7.528% (7.2bp cheap); the fitted PBS 5Y is on the curve (0.1bp through), retail 14.5bp rich at 5Y, and AAA 3Y 48.5bp over, the narrowest of 15 stored days.",
   "drivers": [
     [
-      "BI hiked 25bp; the belly took it",
-      "Bank Indonesia raised the BI-Rate to 6.00% and the deposit and lending facilities to 5.25% and 6.75%, its fourth hike this year and 125bp since May; Reuters' poll had 10 of 27 economists expecting it, so most saw a hold. BI also sweetened DNDF hedging incentives (premium discounts to 45% at 6 months and 50% at 12 months). The 1M and 1Y fell 1.1–1.4bp, so the front end had largely priced the move, while the 3–5Y rose 3.5–4.0bp; analysts at Barclays and Capital Economics now pencil in a 6.50–6.75% peak, which is what the belly appears to be pricing."
+      "The front end priced the hike a day late; the belly kept selling",
+      "After a 1.1bp dip on decision day, the 1Y rose 8.9bp to 6.798% and the 1Y−BI-Rate gap widened back to 79.8bp, still the 12th percentile of 16 stored days (average 103.6bp). Reuters-cited analysts see BI tightening into 2027, and Governor Destry Damayanti said today that global rates will stay higher for longer; the 4–7Y rose 1.4–2.6bp and 2s5s hit 54.8bp, which reads as the market pricing more than one further hike. The 3Y slipped 0.7bp, so the move was concentrated at 1Y and 5–7Y."
     ],
     [
-      "Rupiah steadier, not yet turned",
-      "JISDOR fixed 0.07% firmer at 18,252 after Tuesday's 18,264 record, and spot closed 0.13% stronger at 18,232 (Kontan, Bloomberg data). That is a small move for a hike, and JISDOR is still 0.63% weaker this month; whether BI's step brings foreign bond buyers back is not yet visible in published data. BI says Q4 portfolio flows to Nov 16 are a net $4.8bn inflow, led by the government's global bonds and sukuk and SBN, against a $0.9bn equity outflow; that does not rule out selling since."
+      "The rupiah gave back the hike bounce",
+      "JISDOR fixed 0.09% weaker at a record 18,269 and spot closed 0.12% weaker at 18,254 while most Asian currencies firmed (Kontan, Bloomberg data); BI's hike has not yet put a floor under the currency. Commentators pointed to hawkish Fed talk (Governor Waller floated a 50bp December hike) and US–Iran tension. JISDOR is 0.72% weaker this month and the 20-session USD/IDR change is +1.83%, which keeps the rupiah part of the flow signal bond-bearish."
     ],
     [
       "Treasuries rallied again; INDOGBs did not follow",
-      "The US 10Y fell about 2bp on Tuesday to 5.10% after in-line October retail sales (+0.2% m/m) and softer stocks. At the 1-year daily beta of 0.28 that implies −0.6bp for the INDOGB 10Y; it rose 1.1bp, so Treasuries explain none of today's move. The INDOGB − UST spread widened to 262.9bp from 259.8bp (81st percentile of 52 weeks, range 191–286bp), a nominal pick-up before currency risk."
+      "The US 10Y fell about 3–4.5bp on Wednesday to 5.06–5.07% on lower oil, despite hawkish FOMC minutes in which almost all officials saw further hikes as likely. At the 1-year daily beta of 0.28 that implies −0.8bp for the INDOGB 10Y; it rose 1.0bp, so Treasuries explain none of today's move, the third session running. The INDOGB − UST spread widened to 266.9bp from 262.9bp (85th percentile of 52 weeks, range 191–286bp), a nominal pick-up before currency risk."
     ],
     [
-      "Stocks sold off after the decision",
-      "The JCI reversed from an intraday high of 5,374 to close 1.07% lower at 5,247.88, with materials, energy and industrials down 2.7–3.0% (Kontan). Foreigners were net sellers of Rp338bn in the morning session (CNBC Indonesia, Stockbit data); a full-day count was not in my sources. Over 20 sessions the JCI is down 13.9% and USD/IDR up 1.97%, which keeps the equity and rupiah parts of the flow signal bearish."
+      "Stocks fell a fourth day; foreigners sold equities, not (per BI) bonds",
+      "The JCI lost 1.02% to 5,194.14, with foreign net selling of Rp563.6bn across the market (Kontan). BI's Destry put the year-to-date foreign equity outflow at Rp81.6tn against Rp143tn of inflows into SBN and SRBI, and Kontan cites Rp43tn of foreign SBN inflow to Nov 11; that does not rule out bond selling since, and who traded bonds today is not published. Over 20 sessions the JCI is down 12.5%, the equity part of the signal's most bearish input after the 10Y trend."
     ]
   ],
   "data": [
     [
       "BI decision (Nov 18)",
       "BI-Rate 6.00%, +25bp; DF 5.25%, LF 6.75% (f split: 10 of 27 for a hike, rest hold; p 5.75%)",
-      "Front end had priced it; 3–5Y +3.5–4.0bp, JISDOR 0.07% firmer."
+      "1Y repriced +8.9bp a day later; JISDOR at a record 18,269."
+    ],
+    [
+      "FOMC minutes, Oct 27–28 meeting (Nov 18)",
+      "Almost all saw further hikes as likely; a couple open to >25bp in Dec (f hawkish lean, p held 3.75–4.00%, 10–2)",
+      "Treasuries still rallied 3–4.5bp on oil; no pass-through to INDOGBs."
     ],
     [
       "US October retail sales (Nov 17)",
       "+0.2% m/m (f +0.2%, p +0.8%); ex autos and gas +0.6% (f +0.4%)",
-      "Firm core spending; Treasuries still rallied ~2bp into the close."
+      "Firm core spending; Treasuries rallied ~2bp into the close."
     ],
     [
       "BI capital flows, Q4 to Nov 16 (Nov 18)",
@@ -45,24 +50,19 @@
       "Demand skewed to short bills; long PBS bids were selective."
     ],
     [
-      "Q3 external debt (Nov 16)",
-      "$458.9bn (f n/a, p $455.4bn)",
-      "Government external debt rose to $220.2bn, partly foreign SBN buying; little direct read for yields."
-    ],
-    [
       "Budget through October (Nov 13)",
       "Deficit 1.47% of GDP (f n/a, p 1.24% through Sep)",
-      "On track; Nov–Dec auctions keep supply steady."
+      "On track, but Rp164tn of Q4 auction issuance is still to come (Kontan)."
     ],
     [
       "SUN auction (Nov 10)",
       "Bids Rp79.71tn (p Rp31.09tn); awarded Rp35tn vs Rp30tn target; FR0110 7.44%, FR0111 7.68%",
-      "Strong conventional demand at higher yields; the next SUN book tests it after the hike."
+      "Strong demand at higher yields; the next SUN book is the first test after the hike."
     ]
   ],
   "view": [
     "My view:",
-    "BI has bought the rupiah some time, but the curve says the market expects more: the 1Y held while the 3–5Y cheapened and 2s5s hit 52.2bp, and the 10Y at 7.729% sits 2.1bp under my 7.75% underweight trigger with Treasuries giving no help. The daily Bond Flow Signal is −0.79 (sell-off; −0.86 yesterday on today's rebuild): the 10Y trend part is the most bearish (z +1.60, +48.1bp over 20 sessions), then the JCI (z −1.38, −13.9%) and the rupiah (z +0.75, +1.97%), while the spread, 16.2bp above its 130-day average (z +0.57), leans bond-bullish; the daily build's sell-off episode runs from Sep 28 (28 sessions, +52.2bp). Since July 2022 the daily signal scores a Sharpe of 0.80 outright (200.7bp) and 0.85 hedged against Treasuries (208.3bp), against −44.1bp for holding the 10Y, but sell-off calls were right only 52.1% of the time over the next 20 sessions (hedged 51.6%; rally calls 57.9%, hedged 64.8%) and the 10Y fell 0.2bp on average after them; on the same daily build the outright Sharpe was 1.01 in Jul 2022–Aug 2024 and 0.65 since. The weekly build scores 0.57 and 0.75; a variant using the US 10Y trend reaches 0.92 and 0.95 on the weekly build but was chosen after the fact and is not live, and all of these are in-sample back-tests. Over four weeks the INDOGB 10Y is up 27.2bp and the US 10Y 14bp, yet at the weekly beta of −0.12 the Treasury-linked part is −1.7bp and +28.9bp is residual, the part Treasuries do not explain. I stay neutral on the 10Y in a 7.60–7.85% range, keep the 5Y as the curve trade now that BI has moved (buy FR0109 at 7.60–7.70%, 4bp away), and keep the 1Y, only 71bp over the new BI-Rate, as the bucket with the least cushion."
+    "The hike has not turned the rupiah, and the curve is pricing more: the 1Y caught up, 2s5s is the widest stored at 54.8bp and the 10Y at 7.739% is 1.1bp under my 7.75% underweight trigger with Treasuries again no help. The daily Bond Flow Signal is −0.73 (sell-off; −0.88 yesterday on today's rebuild): the 10Y trend part is the most bearish (z +1.77, +52.8bp over 20 sessions), then the JCI (z −1.21, −12.5%) and the rupiah (z +0.65, +1.83%), while the spread, 20.0bp above its 130-day average (z +0.70), leans bond-bullish; the sell-off episode runs from Sep 28 (29 sessions, +53.1bp). Since July 2022 the daily signal scores a Sharpe of 0.80 outright (201.6bp) and 0.86 hedged against Treasuries (210.2bp), against −45.0bp for holding the 10Y, but sell-off calls were right only 52.3% of the time over the next 20 sessions (hedged 51.9%; rally calls 57.9%, hedged 64.8%) and the 10Y rose just 0.1bp on average after them; on the same daily build the outright Sharpe was 1.01 in Jul 2022–Aug 2024 and 0.66 since. The weekly build scores 0.57 and 0.75; a variant using the US 10Y trend reaches 0.92 and 0.95 on the weekly build but was chosen after the fact and is not live, and all of these are in-sample back-tests. Over four weeks the INDOGB 10Y is up 28.1bp and the US 10Y 11bp, yet at the weekly beta of −0.13 the Treasury-linked part is −1.4bp and +29.5bp is residual, the part Treasuries do not explain. I stay neutral on the 10Y in a 7.60–7.85% range, keep the 5Y as the curve trade (buy FR0109 at 7.60–7.70%, now 7.2bp away after its rally), and treat the 1–2Y as the bucket most exposed to a December hike."
   ],
   "buckets": [
     {
@@ -74,8 +74,8 @@
         "a": "bi:0",
         "b": "igs:1"
       },
-      "why": "The hike lifted the BI-Rate to 6.00% while the IGSYC 1Y slipped 1.1bp to 6.709%, so the spread collapsed 26.1bp to 70.9bp, the narrowest of 15 stored days (7th percentile, average 105.1bp); the 2Y rose 1.7bp to 7.028%, 102.8bp over. The 3M (0.25Y) is 6.26% and the 1M 6.16%, just 16bp over the policy rate. The previous 7.10% add level was not reached (39bp away); no position. Yesterday's warning that a hike would leave the 1Y ~72bp over the rate was borne out.",
-      "call": "Neutral. Add 1–2Y at 1Y 7.00% (lowered from 7.10% for a reason: it is now 100bp over the new BI-Rate, near the stored average), target 6.75%, stop 7.25%; the bucket stays most exposed to a December hike."
+      "why": "The 1Y rose 8.9bp to 6.798%, so the gap over the 6.00% BI-Rate widened to 79.8bp from 70.9bp, still the 12th percentile of 16 stored days (average 103.6bp); the 2Y is 7.029%, 102.9bp over. The 3M (0.25Y) is 6.27% and the 1M 6.16%, 16bp over the policy rate. The 7.00% add level was not reached (1Y 20bp away); no position. Wednesday's flat 1Y proved a lag rather than a verdict.",
+      "call": "Neutral. Add 1–2Y at 1Y 7.00%, target 6.75%, stop 7.25%; unchanged, since the 1Y is still well inside its stored average gap to the policy rate."
     },
     {
       "name": "Belly 5Y (FR0109 / PBS040)",
@@ -85,8 +85,8 @@
         "type": "lvl",
         "a": "igs:5"
       },
-      "why": "The IGSYC 5Y rose 3.7bp to 7.550% (80th percentile of 15 stored days, average 7.497%), +8.1bp this week, and the 2s5s10s fly rose 4.5bp to 34.3bp (80th percentile, average 26.2bp). FR0109 lost 2.6bp to 7.557% and is 8.4bp cheap to the curve. BI has now hiked, meeting the trigger, but FR0109's entry (7.60–7.70%) is 4.3bp away and not filled.",
-      "call": "Keep: buy FR0109 at 7.60–7.70%; target 7.35%, stop 7.95%. The belly carries the hike premium the front end does not."
+      "why": "The IGSYC 5Y rose 2.6bp to 7.576% (81st percentile of 16 stored days, average 7.502%), +10.7bp this week, and the 2s5s10s fly rose 4.3bp to 38.5bp (88th percentile, average 27.0bp). FR0109 bucked it, rallying 2.9bp to 7.528% and richening to 3.6bp cheap from 8.4bp, so the entry (7.60–7.70%) moved 7.2bp away and is not filled.",
+      "call": "Keep: buy FR0109 at 7.60–7.70%; target 7.35%, stop 7.95%. The curve point is cheap; the bond needs to cheapen back to it."
     },
     {
       "name": "10Y outright",
@@ -96,8 +96,8 @@
         "type": "lvl",
         "a": "igs:10"
       },
-      "why": "The IGSYC 10Y rose 1.1bp to 7.729%, the top of the past year (100th percentile of 178 days, average 6.87%) and of the stored history since Nov 2021, against a 2bp US rally. The signal is −0.79, but the underweight rule also needs a 10Y close above 7.75%, 2.1bp away, so it is not triggered. FR0108 rose 6.3bp to 7.725% and is now on the curve after 5.1bp rich.",
-      "call": "Neutral, range 7.60–7.85% (raised 5bp: the 10Y has held above 7.60% all week). Underweight if the signal stays below −0.5 and the 10Y closes above 7.75%; tactical long only above 7.85% (stop 8.05%) or once the signal is above 0 with JISDOR below 18,000."
+      "why": "The IGSYC 10Y rose 1.0bp to 7.739%, a fresh top of the stored history since Nov 2021 (100th percentile of 1,124 days, average 6.79%), against a 3bp US rally; +11.1bp this month. The signal is −0.73, but the underweight rule also needs a 10Y close above 7.75%, 1.1bp away, so it is not triggered. FR0108 rose 1.1bp to 7.736%, on the curve.",
+      "call": "Neutral, range 7.60–7.85%. Underweight if the signal stays below −0.5 and the 10Y closes above 7.75%; tactical long only above 7.85% (stop 8.05%) or once the signal is above 0 with JISDOR below 18,000."
     },
     {
       "name": "10s20s curve (FR0108 vs FR0107)",
@@ -108,20 +108,20 @@
         "a": "igs:10",
         "b": "igs:20"
       },
-      "why": "IGSYC 10s20s is 1.0bp (40th percentile of 15 stored days, average 1.4bp, range 0.1–2.9bp); the long end is flat. The benchmark spread FR0107 − FR0108 narrowed to 0.2bp from 4.7bp as FR0108 lost 6.3bp and FR0107 1.9bp, now 5.2bp from the −5bp re-entry.",
+      "why": "IGSYC 10s20s is 0.4bp (38th percentile of 16 stored days, average 1.3bp, range 0.1–2.9bp); the long end is flat. The benchmark spread FR0107 − FR0108 is 0.7bp (from 0.2bp), 5.7bp from the −5bp re-entry.",
       "call": "Wait. Re-enter the FR0108/FR0107 steepener duration-weighted at −5bp or lower, target +5bp, stop −12bp."
     },
     {
       "name": "PBS sukuk vs FR",
       "tag": "Fair",
-      "stance": "Hold FR over PBS034; PBS040 entered",
+      "stance": "Hold PBS040; FR-over-PBS034 on watch",
       "m": {
         "type": "spr",
         "a": "igs:5",
         "b": "sbsn:5"
       },
-      "why": "The fitted PBS 5Y is 0.8bp through IGSYC (43rd percentile of 14 stored days, average −1.5bp), back from yesterday's 0.4bp over; the fit rests on four series (level −2.8bp, slope 5.5bp), so confidence is limited. PBS034 fell 1.7bp to 7.683% and is 3.5bp rich; on the benchmark-history measure its richness rose 2.5bp, a 2.5bp loss for the FR-over-PBS034 switch, which stays open with the switch-back (PBS034 5bp cheap) 8.5bp away. The PBS040 add zone was live at Tuesday's 7.519% close; PBS040 is now 7.552%, 3.3bp against, and 12.8bp cheap to the curve.",
-      "call": "Hold FR over PBS034; switch back once PBS034 is 5bp cheap to IGSYC. Hold PBS040 from 7.52%: target 7.30%, stop 7.80%."
+      "why": "The fitted PBS 5Y is 0.1bp through IGSYC (73rd percentile of 15 stored days, average −1.4bp); the fit rests on four series (level −8.8bp, slope 23.8bp), so confidence is limited. PBS034 rallied 4.4bp to 7.639% and is 5.3bp rich; on the benchmark-history measure its richness rose 4.9bp, another loss for the FR-over-PBS034 switch, with the switch-back (PBS034 5bp cheap) 10.3bp away. PBS040, held from 7.52%, is 7.528%, 0.9bp against, and 7.2bp cheap to the curve; PBS030 lost 13.1bp to 7.006% with the front end.",
+      "call": "Hold PBS040 from 7.52%: target 7.30%, stop 7.80%. Hold FR over PBS034 but add a stop (new, after two losing days): close if PBS034 is more than 10bp rich to IGSYC; switch back once it is 5bp cheap."
     },
     {
       "name": "Corporate credit (AAA 3Y)",
@@ -132,7 +132,7 @@
         "a": "igs:3",
         "b": "aaa:3"
       },
-      "why": "PHEI's AAA 3Y rose 3.5bp to 7.745%, matching IGSYC, so the spread held at 48.7bp, the narrowest of 14 stored days (14th percentile, average 50.1bp). AA is 90.2bp over (86th percentile, average 86.6bp), A 151.6bp and BBB 223.2bp over AA (21st percentile, average 237.5bp). Fourteen days is a thin base, and PHEI's corporate curves move almost one-for-one with IGSYC day to day; the add level (AAA 3Y past 70bp) was not reached.",
+      "why": "PHEI's AAA 3Y slipped 0.8bp to 7.737%, in line with IGSYC, so the spread is 48.5bp, the narrowest of 15 stored days (7th percentile, average 50.0bp). AA is 90.3bp over, the widest stored (average 86.9bp), A 151.9bp and BBB 223.1bp over AA (13th percentile, average 236.6bp). Fifteen days is a thin base and PHEI's corporate curves track IGSYC almost one-for-one; the add level (AAA 3Y past 70bp) was not reached.",
       "call": "Hold AAA/AA; add only if AAA 3Y widens past 70bp. Avoid BBB while funding costs rise with the BI-Rate."
     },
     {
@@ -144,61 +144,61 @@
         "a": "igs:5",
         "b": "retail:5"
       },
-      "why": "The fitted retail curve is 14.3bp through IGSYC at 5Y (50th percentile of 14 stored days, average −13.4bp) and 5.3bp over at 2Y; the fit uses 25 series with a 74bp slope, so part of this is fit artefact. Secondary spreads run from 52bp rich (SR024T3) to 64bp cheap (ORI027T3, which lost 16.4bp to 7.58%); ORI026T6 is 7.666%, 34bp over. ST017 (open to Dec 2) floors at 6.95% (2Y) and 7.05% (4Y), now below the IGSYC 2Y (7.03%).",
+      "why": "The fitted retail curve is 14.5bp through IGSYC at 5Y (40th percentile of 15 stored days, average −13.5bp) and 5.5bp over at 2Y; the fit uses 25 series with a 75bp slope, so part of this is fit artefact. Secondary spreads run from 52bp rich (SR024T3) to 61bp cheap (ORI027T3, 7.635%); ORI026T6 is 7.681%, 34bp over. ST017 (open to Dec 2) floors at 6.95% (2Y) and 7.05% (4Y), below the IGSYC 2Y (7.03%).",
       "call": "New money: FR0109 or PBS040 for liquidity; ST017 for hold-to-maturity buyers who want further BI-hike upside. Buy secondary retail only at the cheap end (ORI026T6, ~34bp over)."
     }
   ],
   "rows": {
     "igs:0.1": {
-      "note": "1M −1.4bp to 6.16%; 3M 6.26%"
+      "note": "1M −0.4bp to 6.16%; 3M 6.27%"
     },
     "igs:1": {
-      "note": "−1.1bp to 6.71%; 71bp over 6% BI-Rate, narrowest"
+      "note": "+8.9bp to 6.80%; 80bp over 6% BI-Rate"
     },
     "igs:2": {
-      "note": "+1.7bp to 7.03%; 1s2s 31.9bp, widest stored"
+      "note": "+0.1bp to 7.03%; 1s2s 23.0bp"
     },
     "igs:3": {
-      "note": "+3.5bp to 7.26%; AAA 3Y 49bp over"
+      "note": "−0.7bp to 7.25%; AAA 3Y 49bp over"
     },
     "igs:5": {
-      "note": "+3.7bp to 7.55%; 2s5s 52.2bp; FR0109 8bp cheap"
+      "note": "+2.6bp to 7.58%; 2s5s 54.8bp, widest stored"
     },
     "igs:7": {
-      "note": "+2.4bp to 7.68%; 5s10s 17.9bp"
+      "note": "+2.4bp to 7.70%; 5s10s 16.2bp"
     },
     "igs:10": {
-      "note": "+1.1bp to 7.73% vs −0.6bp implied by UST"
+      "note": "+1.0bp to 7.74%, a new high, vs −0.8bp UST-implied"
     },
     "igs:15": {
-      "note": "+0.8bp; +11bp this month"
+      "note": "+0.4bp; +11bp this month"
     },
     "igs:20": {
-      "note": "+0.7bp; 10s20s 1.0bp"
+      "note": "+0.4bp; 10s20s 0.4bp"
     },
     "igs:30": {
       "note": "Flat to 20Y on IGSYC"
     },
     "sbsn:5": {
-      "note": "Fitted 0.8bp through; PBS040 13bp cheap"
+      "note": "Fitted 0.1bp through; PBS040 7bp cheap"
     },
     "sbsn:10": {
-      "note": "1.8bp through; PBS034 −1.7bp, 3.5bp rich"
+      "note": "4.1bp through; PBS034 −4.4bp, 5.3bp rich"
     },
     "retail:2": {
-      "note": "5.3bp over IGSYC; ST017 floor 6.95%"
+      "note": "5.5bp over IGSYC; ST017 floor 6.95%"
     },
     "retail:5": {
       "note": "14bp rich on a 25-bond fit"
     },
     "bi:0": {
-      "note": "6.00% after +25bp Nov 18; JISDOR 18,252"
+      "note": "6.00%; JISDOR record 18,269"
     },
     "aaa:3": {
-      "note": "49bp, narrowest of 14 days"
+      "note": "49bp, narrowest of 15 days"
     },
     "aa:3": {
-      "note": "90bp over, near widest stored"
+      "note": "90bp over, widest stored"
     },
     "a:3": {
       "note": "152bp over, near narrowest stored"
@@ -207,40 +207,40 @@
       "note": "223bp over AA"
     }
   },
-  "watch": "Next: FOMC minutes and Nvidia results (Wed Nov 18, New York), Indonesia's Q3 balance of payments (Fri Nov 20), the next SUN auction as the first test of demand after the hike, MSCI changes after the Nov 30 close, the ST017 book closing Dec 2, the Fed decision on Dec 9 and FTSE deletions on Dec 21; a 10Y close above 7.75% would trigger the underweight, while JISDOR back below 18,000 would argue against a December BI hike.",
+  "watch": "Next: US weekly jobless claims tonight (Thu Nov 19), Indonesia's Q3 balance of payments (Fri Nov 20; current-account deficit seen at $3.3bn from $12.5bn), the next SUN auction as the first test of demand after the hike, MSCI changes after the Nov 30 close, the ST017 book closing Dec 2, the Fed decision on Dec 9 and FTSE deletions on Dec 21; a 10Y close above 7.75% would trigger the underweight, while JISDOR back below 18,000 would argue against a December BI hike.",
   "sources": [
     [
-      "Reuters via The Bradenton Herald (BI decision, Nov 18)",
-      "https://bnd.com/news/nation-world/national/article318131601.html"
+      "Kontan (SUN market, MNC Sekuritas, Nov 19)",
+      "https://investasi.kontan.co.id/news/bi-rate-naik-jadi-6-yield-sun-tenor-10-tahun-melonjak-55-bps"
     ],
     [
-      "Morningstar / Dow Jones (BI hike, analyst forecasts, Nov 18)",
-      "https://morningstar.com/news/dow-jones/202611182055/indonesia-resumes-rate-hikes-to-aid-rupiah-update"
+      "Kontan (rupiah spot and JISDOR, Nov 19)",
+      "https://pusatdata.kontan.co.id/news/kurs-rupiah-tertekan-saat-mata-uang-asia-kompak-menguat-hari-ini-1911"
     ],
     [
-      "CNBC Indonesia (BI measures, DNDF incentives, Nov 18)",
-      "https://cnbcindonesia.com/market/20261118144710-17-786326/tak-cuma-suku-bunga-bi-keluarkan-jurus-ini-amankan-rupiah-inflasi"
+      "Kontan (JCI close and foreign flows, Nov 19)",
+      "https://pusatdata.kontan.co.id/news/ihsg-turun-4-hari-beruntun-ditutup-di-bawah-5200-pada-kamis-1911"
     ],
     [
-      "Kontan (rupiah spot and JISDOR, Nov 18)",
-      "https://investasi.kontan.co.id/news/bi-kerek-suku-bunga-ke-6-angkat-rupiah-ini-proyeksi-pergerakan-kamis-1911"
+      "CNBC Indonesia (BI on equity outflows and SBN/SRBI inflows, Nov 19)",
+      "https://cnbcindonesia.com/market/20261119160420-17-786679/bursa-ri-belum-pulih-aliran-dana-keluar-capai-rp816-triliun"
     ],
     [
-      "Kontan (SUN market and sukuk auction detail, MNC Sekuritas, Nov 18)",
-      "https://investasi.kontan.co.id/news/pasar-obligasi-tertekan-yield-sun-10-tahun-diprediksi-sentuh-775"
+      "CNBC Indonesia (BI on higher-for-longer global rates, Nov 19)",
+      "https://cnbcindonesia.com/market/20261119150428-17-786654/bos-bi-warning-tekanan-suku-bunga-acuan-global-masih-akan-terus-naik"
     ],
     [
-      "Kontan (JCI close and sectors, Nov 18)",
-      "https://investasi.kontan.co.id/news/ihsg-ditutup-turun-107-ke-5247-pada-rabu-1811-bumi-indy-mbma-top-losers-lq45"
+      "Kontan (foreign SBN inflows year to date, Nov 19)",
+      "https://investasi.kontan.co.id/news/aliran-dana-asing-di-sbn-capai-rp-43-triliun-begini-prospek-dan-tantangannya"
     ],
     [
-      "Kompas (BI capital-flow data, Nov 18)",
-      "https://money.kompas.com/read/2026/11/18/163327326/bi-catat-modal-asing-masuk-48-miliar-dollar-as-saham-masih-alami-arus-keluar"
+      "Reuters via Yahoo Finance (more BI tightening seen, Nov 18)",
+      "https://finance.yahoo.com/news/indonesia-central-bank-hikes-rates-074530149.html"
     ],
     [
-      "Livemint / Reuters (Treasuries and retail sales, Nov 17)",
-      "https://livemint.com/market/us-yields-ease-as-equities-drop-before-nvidia-results-11794948835861.html"
+      "Newsquawk (Treasury settlement and FOMC minutes, Nov 18)",
+      "https://newsquawk.com/headlines/treasury-wrap-t-note-futures-z6-settle-5-ticks-higher-at-105-25"
     ]
   ],
-  "corrections": "Nov 18: the workflow's Nov 18 rebuild of the daily flows build restates recent figures: the Nov 17 signal is −0.86 (not −0.84); the open sell-off episode now dates from Sep 28 (not Sep 30) and stands at +52.2bp over 28 sessions; the daily back-test now covers 960 sessions with Sharpe 0.80 outright and 0.85 hedged (was 0.65 and 0.72); the weekly build scores 0.57 and 0.75 (was 0.44 and 0.54) and the best US-trend variant 0.92 and 0.95 (was 0.89 and 0.91); the 1-year daily UST beta is 0.28 (was 0.30) and the 26-week weekly beta −0.12 (was −0.21). Nov 17: the workflow's Nov 17 rebuild of the daily flows build restates recent figures: the Nov 16 signal is −0.77 (not −0.91) and Nov 13 −0.83 (not −0.81); the open sell-off episode now dates from Sep 30 (not Sep 28; Sep 28 is a separate one-day episode); the daily back-test now covers 953 sessions with Sharpe 0.65 outright and 0.72 hedged (was 0.80 and 0.84); the weekly build scores 0.44 and 0.54 (was 0.45 and 0.62) and the best US-trend variant 0.89 and 0.91 (was 0.80 and 0.81); the 1-year daily UST beta is 0.30 (was 0.28) and the 26-week weekly beta −0.21 (was −0.13). Nov 16: the workflow's Nov 14 and Nov 16 rebuilds of the daily flows build restate Friday's figures: the Nov 13 signal is −0.81 (not −0.76) and Nov 12 −0.71 (not −0.85); the open sell-off episode now dates from Sep 28 (not Sep 30); the daily back-test is now Sharpe 0.80 outright and 0.84 hedged (was 0.67 and 0.76) and the weekly build 0.45 and 0.62 (was 0.35 and 0.44). Nov 13: the daily flows build was rebuilt with four more stored sessions (Sep 14, Sep 22, Sep 23, Oct 23) and a re-estimated 10Y splice (pre-Oct 29 yields about 1.6bp lower), which shifts every 20-session window. Restated: the Nov 12 signal is −0.85 (not −0.67), Nov 9 −0.91 (not −0.50); the sell-off episode is now one run from Sep 30 rather than Oct 7–Nov 6 plus a new one from Nov 10; the daily back-test is now Sharpe 0.67 outright and 0.76 hedged (was 0.74 and 0.87) and the weekly build 0.35 and 0.44 (was 0.42 and 0.57). Nov 12: the daily build now has the Nov 9 signal at −0.50, which is neutral, so the Oct 7 sell-off episode ended Nov 6 (15 sessions, +51.0bp) rather than staying open as stated on Nov 10–11; a new sell-off episode began Nov 10. Nov 11: the Nov 10 daily signal is restated at −0.66 (not −0.64) after the daily rebuild; the Oct 7 sell-off episode is unaffected. Nov 10: the Nov 9 daily signal is restated at −0.50 (not −0.49) after the USD/IDR input was rebuilt, so the Oct 7 sell-off episode did not close; it remains open. Nov 8: USD/IDR input corrected (Yahoo printed ~17,480 from Nov 3; replaced by JISDOR ~18,130) and the flows rebuilt; signal and back-test figures restated from the daily build the page shows; 3M tenor corrected; flow and buyer attributions labelled as hypotheses; BI levels marked as our read."
+  "corrections": "Nov 19: the workflow's Nov 19 rebuild of the daily flows build restates recent figures: the Nov 18 signal is −0.88 (not −0.79); the daily back-test now covers 961 sessions with Sharpe 0.80 outright and 0.86 hedged (was 0.80 and 0.85); the 26-week weekly UST beta is −0.13 (was −0.12). Nov 18: the workflow's Nov 18 rebuild of the daily flows build restates recent figures: the Nov 17 signal is −0.86 (not −0.84); the open sell-off episode now dates from Sep 28 (not Sep 30) and stands at +52.2bp over 28 sessions; the daily back-test now covers 960 sessions with Sharpe 0.80 outright and 0.85 hedged (was 0.65 and 0.72); the weekly build scores 0.57 and 0.75 (was 0.44 and 0.54) and the best US-trend variant 0.92 and 0.95 (was 0.89 and 0.91); the 1-year daily UST beta is 0.28 (was 0.30) and the 26-week weekly beta −0.12 (was −0.21). Nov 17: the workflow's Nov 17 rebuild of the daily flows build restates recent figures: the Nov 16 signal is −0.77 (not −0.91) and Nov 13 −0.83 (not −0.81); the open sell-off episode now dates from Sep 30 (not Sep 28; Sep 28 is a separate one-day episode); the daily back-test now covers 953 sessions with Sharpe 0.65 outright and 0.72 hedged (was 0.80 and 0.84); the weekly build scores 0.44 and 0.54 (was 0.45 and 0.62) and the best US-trend variant 0.89 and 0.91 (was 0.80 and 0.81); the 1-year daily UST beta is 0.30 (was 0.28) and the 26-week weekly beta −0.21 (was −0.13). Nov 16: the workflow's Nov 14 and Nov 16 rebuilds of the daily flows build restate Friday's figures: the Nov 13 signal is −0.81 (not −0.76) and Nov 12 −0.71 (not −0.85); the open sell-off episode now dates from Sep 28 (not Sep 30); the daily back-test is now Sharpe 0.80 outright and 0.84 hedged (was 0.67 and 0.76) and the weekly build 0.45 and 0.62 (was 0.35 and 0.44). Nov 13: the daily flows build was rebuilt with four more stored sessions (Sep 14, Sep 22, Sep 23, Oct 23) and a re-estimated 10Y splice (pre-Oct 29 yields about 1.6bp lower), which shifts every 20-session window. Restated: the Nov 12 signal is −0.85 (not −0.67), Nov 9 −0.91 (not −0.50); the sell-off episode is now one run from Sep 30 rather than Oct 7–Nov 6 plus a new one from Nov 10; the daily back-test is now Sharpe 0.67 outright and 0.76 hedged (was 0.74 and 0.87) and the weekly build 0.35 and 0.44 (was 0.42 and 0.57). Nov 12: the daily build now has the Nov 9 signal at −0.50, which is neutral, so the Oct 7 sell-off episode ended Nov 6 (15 sessions, +51.0bp) rather than staying open as stated on Nov 10–11; a new sell-off episode began Nov 10. Nov 11: the Nov 10 daily signal is restated at −0.66 (not −0.64) after the daily rebuild; the Oct 7 sell-off episode is unaffected. Nov 10: the Nov 9 daily signal is restated at −0.50 (not −0.49) after the USD/IDR input was rebuilt, so the Oct 7 sell-off episode did not close; it remains open. Nov 8: USD/IDR input corrected (Yahoo printed ~17,480 from Nov 3; replaced by JISDOR ~18,130) and the flows rebuilt; signal and back-test figures restated from the daily build the page shows; 3M tenor corrected; flow and buyer attributions labelled as hypotheses; BI levels marked as our read."
 }
