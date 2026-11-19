@@ -1,6 +1,6 @@
 {
  "ticker": "ROK",
- "asof": "2026-11-19",
+ "asof": "2026-11-20",
  "quarter": {
   "en": "Q4 FY2026 (September quarter)",
   "zh": "2026 财年第四季（9 月季度）"
@@ -14,9 +14,9 @@
   "pct": -14.2
  },
  "since": {
-  "date": "2026-11-18",
-  "close": 395.86,
-  "pct": -10.8
+  "date": "2026-11-19",
+  "close": 383.1,
+  "pct": -13.7
  },
  "review": {
   "en": [

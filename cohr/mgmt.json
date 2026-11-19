@@ -1,6 +1,6 @@
 {
  "ticker": "COHR",
- "asof": "2026-11-19",
+ "asof": "2026-11-20",
  "quarter": {
   "en": "Q1 FY2027 (September quarter)",
   "zh": "2027 财年第一季（9 月季度）"
@@ -14,9 +14,9 @@
   "pct": -13.0
  },
  "since": {
-  "date": "2026-11-18",
-  "close": 212.84,
-  "pct": 9.1
+  "date": "2026-11-19",
+  "close": 214.94,
+  "pct": 10.2
  },
  "review": {
   "en": [

@@ -46,10 +46,10 @@
   }
  },
  "earnings": {
-  "v": "Early Dec",
+  "v": "Dec 1",
   "s": {
-   "en": "Q3 FY27 · date not yet announced",
-   "zh": "FY27 第三季 · 日期未公布"
+   "en": "Q3 FY27 · Tue, after close (1:30pm PT)",
+   "zh": "FY27 第三季 · 周二盘后（太平洋时间下午 1:30）"
   }
  },
  "sub_price": {
@@ -198,14 +198,14 @@
  ],
  "calendar": [
   {
-   "date": "Early Dec 2026",
+   "date": "Dec 1, 2026",
    "h": {
     "en": "Q3 FY27 earnings",
     "zh": "FY27 第三季财报"
    },
    "p": {
-    "en": "Guide: $3.15B ±5% revenue, 57.5–58.5% non-GAAP gross margin, EPS $1.10 ±$0.05.",
-    "zh": "指引：营收 31.5 亿美元 ±5%，非GAAP毛利率 57.5–58.5%，每股 $1.10 ±$0.05。"
+    "en": "Confirmed for Dec 1 after the close. Guide: $3.15B ±5% revenue, 57.5–58.5% non-GAAP gross margin, EPS $1.10 ±$0.05.",
+    "zh": "确定于 12 月 1 日盘后发布。指引：营收 31.5 亿美元 ±5%，非GAAP毛利率 57.5–58.5%，每股 $1.10 ±$0.05。"
    }
   },
   {
