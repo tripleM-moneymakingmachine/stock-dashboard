@@ -1,29 +1,30 @@
 {
- "session": "2026-11-18",
- "asof": "Wed Nov 18, 2026",
- "tone": "mixed",
- "headline": "Nvidia fades after its beat and Fed minutes bite: Dow −1.1%, S&P −0.2%, Nasdaq +0.4%",
- "summary": "Stocks opened higher on Nvidia's beat-and-raise, but the gains faded as the chipmaker reversed lower and the S&P 500 slipped back into the red after the 2 p.m. Fed minutes, leaving it with a fifth straight loss, its longest losing streak since June. The rotation underneath was stark: the Dow lost 561 points on health insurers, energy and miners, while the Nasdaq snapped its losing run on cybersecurity, retail and selected chip gains and the Russell 2000 rose 0.5%.",
+ "session": "2026-11-19",
+ "asof": "Thu Nov 19, 2026",
+ "tone": "down",
+ "headline": "Anthropic's debut can't save the AI trade: S&P −2.0%, Nasdaq −2.3%, Dow −1,101 points",
+ "summary": "Stocks opened higher on enthusiasm for Anthropic's record IPO, with the S&P 500 up as much as 1.3%, but the rally collapsed after the stock began trading shortly before noon and AI names reversed hard into the close. The selling was broad: more than 90% of S&P 500 members fell, decliners beat advancers about 4.5-to-1 on the NYSE, only one Dow stock rose, and the S&P 500 logged a sixth straight loss, its longest losing streak since April 2024, leaving it 8.2% below last month's record.",
  "stats": [
-  ["S&P 500", "7,323.63", -0.23],
-  ["Nasdaq", "24,429.88", 0.42],
-  ["Dow", "50,198.17", -1.11],
-  ["Russell 2000", "2,714.31", 0.46],
-  ["VIX", "24.56", -3.5, true],
-  ["US 10Y", "5.07%", "−4bp"],
-  ["WTI crude", "$83.26", -3.2]
+  ["S&P 500", "7,175.83", -2.02],
+  ["Nasdaq", "23,879.20", -2.25],
+  ["Dow", "49,097.06", -2.19],
+  ["Russell 2000", "2,655.11", -2.18],
+  ["SOX (chips)", "9,419.72", -2.41],
+  ["VIX", "28.44", 15.8, true],
+  ["US 10Y", "5.05%", "−1bp"],
+  ["WTI crude", "$83.21", -0.06]
  ],
  "drivers": [
-  ["Nvidia's post-earnings reversal", "Nvidia was up about 4% before the open after beating estimates, guiding Q4 to $130B and lifting its next-year growth outlook to 75% plus a bigger buyback, but it closed −2.9% at $150.96 as leadership uncertainty after Jensen Huang's exit weighed. Chips split: AMD +5.3% and Broadcom +3.6%, while Micron (−1.0%) and Intel (−0.9%) slipped."],
-  ["Health insurers and defensives sink the Dow", "UnitedHealth fell 10.2% and Humana about 13% on worries over tougher regulatory scrutiny of insurers, with Merck −3.9%, Amgen −3.1% and Caterpillar −2.1% adding to the Dow's 561-point drop."],
-  ["Commodity slide hits energy and miners", "WTI fell 3.2% to $83.26, its lowest since late August, after a surprise 3.4M-barrel US crude build, dragging the S&P energy sector down about 3.5% (Chevron −4.0%, refiners about −5%); copper fell about 6% and gold about 3.5%, sending Freeport-McMoRan and Newmont down more than 6%."],
-  ["Hawkish Fed minutes, but lower yields", "The October minutes showed almost all officials expect further hikes and a few open to a 50bp move in December if inflation data disappoint, which knocked the S&P off its highs; the oil slide still pulled the 10-year yield down about 4bp to 5.07%, and the VIX eased 3.5%. Anthropic priced its IPO after the close at $83, above its $70–78 range, while cybersecurity (Palo Alto +10%, CrowdStrike +8%) and retailers TJX (+8%) and Target (+4%) on earnings beats propped up the Nasdaq."]
+  ["AI trade reverses after Anthropic's debut", "Anthropic opened at $111.50, 34% above its $83 IPO price, briefly topped $115 and closed at $97.17 (+17.1%), but the early AI bounce faded as it traded: Nvidia went from +4.7% to −3.3% at $145.98, Micron from +7.8% to −2.1%, CoreWeave from +10.5% to −6.1%, and the SOX fell 2.4% with 27 of its 30 members lower."],
+  ["AMD sinks on a short-seller report", "AMD fell 7.7% to $489.19 after Hunterbrook disclosed a short and alleged blacklisted Chinese server maker IEIT kept receiving AMD firmware, plus heavy financing commitments to AI customers; Marvell lost 4.9%, while Intel bucked the tape, up 1.9%."],
+  ["Retail and health care add to the losses", "Williams-Sonoma dropped about 15% on a slight revenue miss and an unchanged outlook, Walmart slipped 1% despite a beat and raised guidance, and UnitedHealth fell 5.6% as worries over a proposed Medicare Advantage audit rule kept pressure on insurers."],
+  ["Softer data trims yields only slightly", "Initial jobless claims rose to 203,000 and continuing claims jumped 70,000 to a ten-week high of 1.763 million, while the Philly Fed index slowed to 6.3 from 20.9; the 10-year yield eased about 1bp to 5.05% and the VIX jumped 15.8% to a six-month high. Palo Alto (+6.4%) and CrowdStrike (+2.7%) were rare gainers."]
  ],
- "week": "Three sessions in, the S&P 500 is down 3.1%, the Nasdaq 2.8%, the Dow 4.1% and the Russell 2000 2.7% for the week, with the 10-year yield still above 5% and a December Fed hike almost fully priced.",
- "watch": "Next: Anthropic's Nasdaq debut under ANT and Walmart's results on Thu Nov 19, the December WTI contract expiry on Fri Nov 20, and the Fed meeting on Dec 8–9.",
+ "week": "Four sessions in, the S&P 500 is down 5.1%, the Nasdaq 5.0%, the Dow 6.2% and the Russell 2000 4.9% for the week, with the 10-year yield still above 5% and a December Fed hike widely expected after hawkish minutes.",
+ "watch": "Next: reactions to Intuit, Gap and Ross Stores results and the expiry of December WTI on Fri Nov 20, Dell's results on Tue Nov 24, a shortened Thanksgiving week, and the Fed meeting on Dec 8–9.",
  "sources": [
-  ["Investopedia", "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11182026-12261593"],
-  ["Reuters", "https://lufkindailynews.com/news_reuters/business/wall-street-ends-mixed-after-nvidia-earnings-fed-minutes/article_757d7e1e-451b-5fc3-914c-44086229e225.html"],
-  ["AP / Yahoo Finance", "https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-212009825.html"]
+  ["AP", "https://www.oaoa.com/local-news/business/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-the-dow-drops-1100-points/"],
+  ["Reuters", "https://www.thehindu.com/business/markets/wall-street-ends-sharply-lower-as-anthropics-debut-fails-to-revive-ai-fervour/article71721814.ece"],
+  ["TradingKey", "https://www.tradingkey.com/analysis/stocks/us-stocks/262313953-us-stock-nasdaq-falls-anthropic-ipo-debut-amd-short-report-tradingkey"]
  ]
 }
