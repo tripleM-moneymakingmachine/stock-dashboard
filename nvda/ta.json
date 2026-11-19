@@ -1,57 +1,64 @@
 {
- "asof": "Nov 18, 2026",
- "close": 150.96,
+ "asof": "Nov 19, 2026",
+ "close": 145.98,
  "bias": {
-  "en": "Downtrend · lost $155, lowest close since June 2025",
-  "zh": "下跌趋势 · 失守 $155，收盘创 2025年6月以来新低"
+  "en": "Downtrend · new 52-week low, lowest close since June 2025",
+  "zh": "下跌趋势 · 创 52 周新低，收盘创 2025年6月以来新低"
  },
  "read": [
   {
-   "en": "Nvidia fell 2.9% on Nov 18 to $150.96, trading $150.40–159.70 on heavy volume (1.45x the 20-day average). It is below the 5-day ($158.3), 10-day ($168.1), 30-day ($200.1), 200-day ($203.7) and 100-day ($211.1), all falling. MACD has been below its signal since Oct 12, below zero, histogram little changed; Parabolic SAR has been bearish since Oct 13 ($165.76), and RSI is 21.1, deeply oversold.",
-   "zh": "英伟达 11月18日下跌 2.9%，收于 $150.96，盘中区间 $150.40–159.70，成交量放大（为 20 日均量的 1.45 倍）。股价位于 5 日（$158.3）、10 日（$168.1）、30 日（$200.1）、200 日（$203.7）和 100 日均线（$211.1）下方，均在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图变化不大；抛物线 SAR 自 10月13日起看空（$165.76），RSI 为 21.1，深度超卖。"
+   "en": "Nvidia fell 3.3% on Nov 19 to $145.98, trading $145.71–158.13 (a new 52-week low), its lowest close since Jun 23, 2025. It is below the 5-day ($154.3), 10-day ($164.6), 30-day ($197.3), 200-day ($203.6) and 100-day ($210.5), all falling. MACD has been below its signal since Oct 12, below zero, histogram narrowing slightly; Parabolic SAR has been bearish since Oct 13 ($162.37), and RSI is 19.6, deeply oversold.",
+   "zh": "英伟达 11月19日下跌 3.3%，收于 $145.98，盘中区间 $145.71–158.13（创 52 周新低），为 2025年6月23日以来最低收盘。股价位于 5 日（$154.3）、10 日（$164.6）、30 日（$197.3）、200 日（$203.6）和 100 日均线（$210.5）下方，均在下行。MACD 自 10月12日起位于信号线下方，在零轴下方，柱状图略有收窄；抛物线 SAR 自 10月13日起看空（$162.37），RSI 为 19.6，深度超卖。"
   },
   {
-   "en": "The close broke the $155 support (Nov 16 low), now resistance, and is the lowest since June 2025. Resistance is $155–156.1 (Nov 16 low, Nov 16–17 closes), then $158.3–159.7 (5-day, Nov 18 high) and $162.9–163.2. Support is $150.3–150.4 (Nov 17–18 lows), then the $148.8 52-week low. A close above $156.1 would target $158–160; below $148.8 would set a new 52-week low.",
-   "zh": "收盘跌破 $155 支撑（11月16日低点），转为阻力，为 2025年6月以来最低收盘。阻力为 $155–156.1（11月16日低点、11月16–17日收盘），其次 $158.3–159.7（5 日均线、11月18日高点）和 $162.9–163.2。支撑为 $150.3–150.4（11月17–18日低点），其次 $148.8 的 52 周低点。若收盘站上 $156.1，下一目标看 $158–160；若跌破 $148.8，将创 52 周新低。"
+   "en": "The close broke the $150.3–150.4 support and the $148.8 Nov 12 low, both now resistance; the $158.13 high stalled under the Nov 18 high. Resistance is $148.8–150.4, then $154.3–156.1 (5-day, Nov 16–17 closes) and $158.1–159.7 (Nov 18–19 highs). Support is $144.2–144.7 (June 2025 closes), then $142–142.7 and $140–141. A close above $150.4 would target $154–156; below $144.2, $142.",
+   "zh": "收盘跌破 $150.3–150.4 支撑和 11月12日低点 $148.8，两者均转为阻力；盘中高点 $158.13 受制于 11月18日高点下方。阻力为 $148.8–150.4，其次 $154.3–156.1（5 日均线、11月16–17日收盘）和 $158.1–159.7（11月18–19日高点）。支撑为 $144.2–144.7（2025年6月收盘价），其次 $142–142.7 和 $140–141。若收盘站上 $150.4，下一目标看 $154–156；若跌破 $144.2，则看 $142。"
   }
  ],
  "levels": {
   "r": [
    [
-    155.5,
+    149.6,
     {
-     "en": "Nov 16 low $155.01, lost; Nov 17 close $155.46; Nov 16 close $156.14",
-     "zh": "11月16日低点 $155.01，已失守；11月17日收盘 $155.46；11月16日收盘 $156.14"
+     "en": "Nov 12 low $148.80; Nov 17 low $150.33; Nov 18 low $150.40, all lost",
+     "zh": "11月12日低点 $148.80；11月17日低点 $150.33；11月18日低点 $150.40，均已失守"
+    }
+   ],
+   [
+    155.2,
+    {
+     "en": "5-day average $154.3; Nov 17 close $155.46; Nov 16 close $156.14",
+     "zh": "5日均线 $154.3；11月17日收盘 $155.46；11月16日收盘 $156.14"
     }
    ],
    [
     159,
     {
-     "en": "5-day average $158.3; Nov 18 high $159.70",
-     "zh": "5日均线 $158.3；11月18日高点 $159.70"
-    }
-   ],
-   [
-    163,
-    {
-     "en": "Nov 13 close $162.85; Nov 16 high $163.20",
-     "zh": "11月13日收盘 $162.85；11月16日高点 $163.20"
+     "en": "Nov 19 high $158.13; Nov 18 high $159.70",
+     "zh": "11月19日高点 $158.13；11月18日高点 $159.70"
     }
    ]
   ],
   "s": [
    [
-    150.35,
+    144.2,
     {
-     "en": "Nov 17 low $150.33; Nov 18 low $150.40",
-     "zh": "11月17日低点 $150.33；11月18日低点 $150.40"
+     "en": "Jun 23, 2025 close $144.17; Jun 16, 2025 close $144.69",
+     "zh": "2025年6月23日收盘 $144.17；2025年6月16日收盘 $144.69"
     }
    ],
    [
-    148.8,
+    142.3,
     {
-     "en": "52-week low (Nov 12)",
-     "zh": "52周低点（11月12日）"
+     "en": "Jun 23, 2025 low $142.03; Jun 20, 2025 low $142.65",
+     "zh": "2025年6月23日低点 $142.03；2025年6月20日低点 $142.65"
+    }
+   ],
+   [
+    140.5,
+    {
+     "en": "Jun 13, 2025 low $140.85; round number $140",
+     "zh": "2025年6月13日低点 $140.85；$140 整数关口"
     }
    ]
   ]

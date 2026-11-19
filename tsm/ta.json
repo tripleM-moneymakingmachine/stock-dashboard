@@ -1,57 +1,57 @@
 {
- "asof": "Nov 18, 2026",
- "close": 362.62,
+ "asof": "Nov 19, 2026",
+ "close": 352.09,
  "bias": {
-  "en": "Downtrend · above the Nov 5 low, capped at $368–373",
-  "zh": "下跌趋势 · 守在 11月5日低点上方，受制于 $368–373"
+  "en": "Downtrend · testing the Nov 5 low, rejected at $373",
+  "zh": "下跌趋势 · 测试 11月5日低点，在 $373 受阻"
  },
  "read": [
   {
-   "en": "TSMC rose 0.8% on Nov 18 to $362.62, trading $356.77–368.85. It is below the 5-day ($380.0), 10-day ($382.7), 30-day ($411.3) and 100-day ($423.1), all falling, and the rising 200-day ($403.5). MACD has been below its signal since Nov 16, below zero, histogram widening; Parabolic SAR has been bearish since Nov 17 ($415.53), and RSI is 36.8.",
-   "zh": "台积电 11月18日上涨 0.8%，收于 $362.62，盘中区间 $356.77–368.85。股价位于下行的 5 日（$380.0）、10 日（$382.7）、30 日（$411.3）和 100 日均线（$423.1）以及上行的 200 日均线（$403.5）下方。MACD 自 11月16日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月17日起看空（$415.53），RSI 为 36.8。"
+   "en": "TSMC fell 2.9% on Nov 19 to $352.09, its lowest close since Apr 7, trading $351.14–374.77. It is below the 5-day ($369.3), 10-day ($382.6), 30-day ($407.8) and 100-day ($421.8), all falling, and the rising 200-day ($403.6). MACD has been below its signal since Nov 16, below zero, histogram widening; Parabolic SAR has been bearish since Nov 17 ($414.29), and RSI is 34.4.",
+   "zh": "台积电 11月19日下跌 2.9%，收于 $352.09，为 4月7日以来最低收盘，盘中区间 $351.14–374.77。股价位于 5 日（$369.3）、10 日（$382.6）、30 日（$407.8）和 100 日均线（$421.8）下方，四者均在下行，并低于上行的 200 日均线（$403.6）。MACD 自 11月16日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月17日起看空（$414.29），RSI 为 34.4。"
   },
   {
-   "en": "No level changed: the $368.85 high stalled in the $368–373 resistance, and the $356.77 low stayed above the Nov 5 low ($351.19). Resistance is $368–373 (Nov 6, 16 and Jul 29 lows, Nov 17 high), then $375.4–382.7 (Nov 6 close, 5-day, 10-day) and $385.5–388.6. Support is $351.2–356.8, then $338.6–341.8 (early April) and $326.8. A close above $373 would target $375–383; below $351.2, $340.",
-   "zh": "关键位未变：盘中高点 $368.85 受阻于 $368–373 阻力，低点 $356.77 守在 11月5日低点（$351.19）上方。阻力为 $368–373（11月6日低点、11月16日低点、11月17日高点、7月29日低点），其次 $375.4–382.7（11月6日收盘、5 日均线、10 日均线）和 $385.5–388.6。支撑为 $351.2–356.8，其次 $338.6–341.8（4月初低点和收盘）和 $326.8。若收盘站上 $373，下一目标看 $375–383；若跌破 $351.2，则看 $340。"
+   "en": "The $374.77 high poked through the $368–373 resistance and reversed, and the close broke the $353.1–356.8 support (Nov 5 close, Nov 17 and 18 lows), now resistance, while the Nov 5 low ($351.19) held. Resistance is $353.1–356.8, then $368–374.8 (5-day) and $375.4–382.6 (10-day). Support is $351.1–351.2, then $338.6–341.8 and $326.8. A close above $356.8 would target $368–373; below $351.1, $340.",
+   "zh": "盘中高点 $374.77 一度穿越 $368–373 阻力后回落，收盘跌破 $353.1–356.8 支撑（11月5日收盘、11月17日和18日低点），转为阻力，但 11月5日低点（$351.19）守住。阻力为 $353.1–356.8，其次 $368–374.8（5 日均线）和 $375.4–382.6（10 日均线）。支撑为 $351.1–351.2，其次 $338.6–341.8 和 $326.8。若收盘站上 $356.8，下一目标看 $368–373；若跌破 $351.1，则看 $340。"
   }
  ],
  "levels": {
   "r": [
    [
+    355,
+    {
+     "en": "Nov 5 close $353.10; Nov 17 low $353.50; Nov 18 low $356.77, lost",
+     "zh": "11月5日收盘 $353.10；11月17日低点 $353.50；11月18日低点 $356.77，已失守"
+    }
+   ],
+   [
     370.5,
     {
-     "en": "Nov 6 low $367.95; Nov 18 high $368.85; Nov 16 low $372.46; Jul 29 low $372.72; Nov 17 high $373.10",
-     "zh": "11月6日低点 $367.95；11月18日高点 $368.85；11月16日低点 $372.46；7月29日低点 $372.72；11月17日高点 $373.10"
+     "en": "Nov 6 low $367.95; 5-day average $369.3; Nov 16 low $372.46; Nov 17 high $373.10; Nov 19 high $374.77",
+     "zh": "11月6日低点 $367.95；5日均线 $369.3；11月16日低点 $372.46；11月17日高点 $373.10；11月19日高点 $374.77"
     }
    ],
    [
     379,
     {
-     "en": "Nov 6 close $375.44; 5-day average $380.0; Nov 9 low $380.33; 10-day $382.7",
-     "zh": "11月6日收盘 $375.44；5日均线 $380.0；11月9日低点 $380.33；10日均线 $382.7"
-    }
-   ],
-   [
-    387,
-    {
-     "en": "Nov 16 high $385.47; Nov 10 low $387.20; Nov 9 close $388.62",
-     "zh": "11月16日高点 $385.47；11月10日低点 $387.20；11月9日收盘 $388.62"
+     "en": "Nov 6 close $375.44; Nov 9 low $380.33; 10-day average $382.6",
+     "zh": "11月6日收盘 $375.44；11月9日低点 $380.33；10日均线 $382.6"
     }
    ]
   ],
   "s": [
    [
-    353.5,
+    351.2,
     {
-     "en": "Nov 5 low $351.19 and close $353.10; Nov 17 low $353.50; Nov 18 low $356.77",
-     "zh": "11月5日低点 $351.19 和收盘 $353.10；11月17日低点 $353.50；11月18日低点 $356.77"
+     "en": "Nov 5 low $351.19; Nov 19 low $351.14",
+     "zh": "11月5日低点 $351.19；11月19日低点 $351.14"
     }
    ],
    [
     340,
     {
      "en": "Early-April lows and closes ($338.6–341.8)",
-     "zh": "4月初低点和收盘（$338.6–341.8）"
+     "zh": "4月初低点和收盘价（$338.6–341.8）"
     }
    ],
    [

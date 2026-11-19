@@ -1,64 +1,64 @@
 {
- "asof": "Nov 18, 2026",
- "close": 530.14,
+ "asof": "Nov 19, 2026",
+ "close": 489.19,
  "bias": {
-  "en": "Rebound · reclaimed the 10 and 100-day, at the 5 and 30-day",
-  "zh": "反弹 · 收复 10 日和 100 日均线，触及 5 日和 30 日均线"
+  "en": "Rebound failing · lost the 10 and 100-day after a reversal from $555",
+  "zh": "反弹受挫 · 自 $555 回落，失守 10 日和 100 日均线"
  },
  "read": [
   {
-   "en": "AMD rose 5.3% on Nov 18 to $530.14, trading $495.20–532.17. It is above the 10-day ($508.7), 100-day ($526.9) and 200-day ($427.2), all rising, and just below the 5-day ($531.4) and 30-day ($533.6, falling). MACD has been above its signal since Nov 11, below zero, histogram widening again; Parabolic SAR has been bullish since Nov 10 ($451.40), and RSI is 50.3.",
-   "zh": "AMD 11月18日上涨 5.3%，收于 $530.14，盘中区间 $495.20–532.17。股价位于 10 日（$508.7）、100 日（$526.9）和 200 日均线（$427.2）上方，三者均在上行，并略低于 5 日（$531.4）和 30 日均线（$533.6，下行）。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图再度放大；抛物线 SAR 自 11月10日起看多（$451.40），RSI 为 50.3。"
+   "en": "AMD fell 7.7% on Nov 19 to $489.19, reversing from $555.01 to $470.56 on heavy volume (1.89x the 20-day average). It is below the 5-day ($512.2), 10-day ($517.2, rising), 30-day ($529.2) and 100-day ($526.0), and above the rising 200-day ($428.6). MACD has been above its signal since Nov 11, below zero, histogram narrowing; Parabolic SAR has been bullish since Nov 10 ($459.96), and RSI is 45.2.",
+   "zh": "AMD 11月19日下跌 7.7%，收于 $489.19，盘中从 $555.01 回落至 $470.56，成交量放大（为 20 日均量的 1.89 倍）。股价位于 5 日（$512.2）、10 日（$517.2，上行）、30 日（$529.2）和 100 日均线（$526.0）下方，守在上行的 200 日均线（$428.6）上方。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图收窄；抛物线 SAR 自 11月10日起看多（$459.96），RSI 为 45.2。"
   },
   {
-   "en": "The close reclaimed the $504.6–511.9 and $520–531 resistances (10-day, 100-day), now support. Resistance is $531.4–533.6 (5 and 30-day, Nov 18 high), then $552.9 (Nov 11 close) and $567.7–571.1 (Nov 11 and 13 highs). Support is $520–527, then $501.3–508.7 (10-day, Oct 22 and Nov 16 lows) and $480.5–495.2. A close above $533.6 would target $553; below $520, $502–509.",
-   "zh": "收盘收复 $504.6–511.9 和 $520–531 阻力（10 日、100 日均线），转为支撑。阻力为 $531.4–533.6（5 日和 30 日均线、11月18日高点），其次 $552.9（11月11日收盘）和 $567.7–571.1（11月11日和13日高点）。支撑为 $520–527，其次 $501.3–508.7（10 日均线、10月22日和11月16日低点）和 $480.5–495.2。若收盘站上 $533.6，下一目标看 $553；若跌破 $520，则看 $502–509。"
+   "en": "The $555.01 high briefly topped the Nov 11 close ($552.90), but the close lost the $520–527 and $501–509 supports, now resistance, and held the $480.5–488.8 band. Resistance is $501.3–504.3, then $512.2–517.2 (5 and 10-day) and $526–532.2 (100 and 30-day, Nov 18 high). Support is $480.5–488.8, then $470.6 (Nov 19 low) and $460 (SAR). A close above $504.3 would target $512–517; below $480.5, $460–470.6.",
+   "zh": "盘中高点 $555.01 一度越过 11月11日收盘（$552.90），但收盘失守 $520–527 和 $501–509 支撑，转为阻力，守在 $480.5–488.8 区间。阻力为 $501.3–504.3，其次 $512.2–517.2（5 日、10 日均线）和 $526–532.2（100 日、30 日均线、11月18日高点）。支撑为 $480.5–488.8，其次 $470.6（11月19日低点）和 $460（SAR）。若收盘站上 $504.3，下一目标看 $512–517；若跌破 $480.5，则看 $460–470.6。"
   }
  ],
  "levels": {
   "r": [
    [
-    533,
+    503,
     {
-     "en": "5-day average $531.4; Nov 18 high $532.17; 30-day $533.6",
-     "zh": "5日均线 $531.4；11月18日高点 $532.17；30日均线 $533.6"
+     "en": "Nov 16 low $501.30; Nov 17 close $503.41; Nov 16 close $504.28",
+     "zh": "11月16日低点 $501.30；11月17日收盘 $503.41；11月16日收盘 $504.28"
     }
    ],
    [
-    553,
+    515,
     {
-     "en": "Nov 11 close $552.90",
-     "zh": "11月11日收盘 $552.90"
+     "en": "5-day average $512.2; 10-day $517.2, lost",
+     "zh": "5日均线 $512.2；10日均线 $517.2，已失守"
     }
    ],
    [
-    569,
+    529,
     {
-     "en": "Nov 11 high $567.65; Nov 13 high $571.14",
-     "zh": "11月11日高点 $567.65；11月13日高点 $571.14"
+     "en": "100-day average $526.0, lost; 30-day $529.2; Nov 18 high $532.17",
+     "zh": "100日均线 $526.0，已失守；30日均线 $529.2；11月18日高点 $532.17"
     }
    ]
   ],
   "s": [
    [
-    523.5,
+    485,
     {
-     "en": "100-day average $526.9, reclaimed; Nov 13 low $520.01",
-     "zh": "100日均线 $526.9，已收复；11月13日低点 $520.01"
+     "en": "Nov 17 low $480.50; Nov 4 close $488.78",
+     "zh": "11月17日低点 $480.50；11月4日收盘 $488.78"
     }
    ],
    [
-    505,
+    470.6,
     {
-     "en": "10-day average $508.7; Oct 22 low $502.60; Nov 16 low $501.30",
-     "zh": "10日均线 $508.7；10月22日低点 $502.60；11月16日低点 $501.30"
+     "en": "Nov 19 low $470.56",
+     "zh": "11月19日低点 $470.56"
     }
    ],
    [
-    488,
+    460,
     {
-     "en": "Nov 17 low $480.50; Nov 4 close $488.78; Nov 18 low $495.20",
-     "zh": "11月17日低点 $480.50；11月4日收盘 $488.78；11月18日低点 $495.20"
+     "en": "Parabolic SAR $460.0; Nov 6 high $459.80",
+     "zh": "抛物线 SAR $460.0；11月6日高点 $459.80"
     }
    ]
   ]
