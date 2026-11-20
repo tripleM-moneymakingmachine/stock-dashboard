@@ -1,64 +1,64 @@
 {
- "asof": "Nov 19, 2026",
- "close": 338.93,
+ "asof": "Nov 20, 2026",
+ "close": 302.63,
  "bias": {
-  "en": "Rebound fading · closed under $340, MACD about to cross down",
-  "zh": "反弹乏力 · 收盘跌破 $340，MACD 即将下穿"
+  "en": "Downtrend · broke $317, MACD and SAR turned down",
+  "zh": "下跌趋势 · 跌破 $317，MACD 与 SAR 同步转空"
  },
  "read": [
   {
-   "en": "Applied Materials fell 3.8% on Nov 19 to $338.93, trading $337.88–367.53 after opening near the high. It is below the 5-day ($352.2), 10-day ($361.3), 30-day ($393.5) and 100-day ($474.7), all falling, and the rising 200-day ($447.2). MACD has been above its signal since Nov 11, below zero, histogram fading toward a cross; Parabolic SAR has been bullish since Nov 11 ($326.97), and RSI is 36.9.",
-   "zh": "应用材料 11月19日下跌 3.8%，收于 $338.93，开盘接近高点后回落，盘中区间 $337.88–367.53。股价位于 5 日（$352.2）、10 日（$361.3）、30 日（$393.5）和 100 日均线（$474.7）下方，四者均在下行，也低于上行的 200 日均线（$447.2）。MACD 自 11月11日起位于信号线上方，在零轴下方，柱状图收窄、接近交叉；抛物线 SAR 自 11月11日起看多（$326.97），RSI 为 36.9。"
+   "en": "Applied Materials fell 10.7% on Nov 20 to $302.63, its lowest close since Feb 4, trading $300.62–330.50 on heavy volume (1.73x the 20-day average). It is below the 5-day ($338.7), 10-day ($358.3), 30-day ($386.7) and 100-day ($471.3), all falling, and the rising 200-day ($447.2). MACD crossed below its signal on Nov 20, below zero; Parabolic SAR turned bearish the same day ($404.71), and RSI is 30.8.",
+   "zh": "应用材料 11月20日下跌 10.7%，收于 $302.63，为 2月4日以来最低收盘，盘中区间 $300.62–330.50，成交放量（为 20 日均量的 1.73 倍）。股价位于 5 日（$338.7）、10 日（$358.3）、30 日（$386.7）和 100 日均线（$471.3）下方，均在下行，并低于上行的 200 日均线（$447.2）。MACD 于 11月20日下穿信号线，在零轴下方；抛物线 SAR 同日转为看空（$404.71），RSI 为 30.8。"
   },
   {
-   "en": "The $367.53 high stalled under the $370.5–372.5 closes, and the close broke the $338–343 support, now resistance, the lowest since Nov 6. Resistance is $342.3–343, then $350.3–352.3 (Nov 16 and 18 closes, 5-day) and $358.5–361.3 (Nov 16 high, 10-day). Support is $332.7 (Nov 6 close), then $327–329.3 (SAR, Nov 6 low) and $317–319 (Nov 5). A close above $343 would target $350–352; below $332.7, $327–329.",
-   "zh": "盘中高点 $367.53 在 $370.5–372.5 收盘位下方受阻，收盘跌破 $338–343 支撑，转为阻力，为 11月6日以来最低。阻力为 $342.3–343，其次 $350.3–352.3（11月16日和18日收盘、5 日均线）和 $358.5–361.3（11月16日高点、10 日均线）。支撑为 $332.7（11月6日收盘），其次 $327–329.3（SAR、11月6日低点）和 $317–319（11月5日）。若收盘站上 $343，下一目标看 $350–352；若跌破 $332.7，则看 $327–329。"
+   "en": "The close broke all three written supports, $316.95–332.7 (Nov 5 low, Nov 6 low and close), now resistance. Resistance is $311–317 (Jan 23, Mar 9 and Nov 5 lows), then $329–332.7 and $338–339 (5-day, Nov 19 close). Support is $300 (Nov 20 low), then $287.5 (Feb 4 low) and $276. A close above $317 would target $329–332.7; below $300, $287.5.",
+   "zh": "收盘跌破此前三道支撑 $316.95–332.7（11月5日低点、11月6日低点和收盘），转为阻力。阻力为 $311–317（1月23日、3月9日和11月5日低点），其次 $329–332.7 和 $338–339（5 日均线、11月19日收盘）。支撑为 $300（11月20日低点），其次 $287.5（2月4日低点）和 $276。若收盘站上 $317，下一目标看 $329–332.7；若跌破 $300，则看 $287.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    342.6,
+    314,
     {
-     "en": "Nov 18 low $342.32; Nov 9 low $342.98, lost",
-     "zh": "11月18日低点 $342.32；11月9日低点 $342.98，已失守"
+     "en": "Jan 23 low $311.07; Mar 9 low $316.66; Nov 5 low $316.95, lost",
+     "zh": "1月23日低点 $311.07；3月9日低点 $316.66；11月5日低点 $316.95，已失守"
     }
    ],
    [
-    351,
+    331,
     {
-     "en": "Nov 16 close $350.25; 5-day average $352.2; Nov 18 close $352.30",
-     "zh": "11月16日收盘 $350.25；5日均线 $352.2；11月18日收盘 $352.30"
+     "en": "Nov 6 low $329.29 and close $332.72; Nov 20 high $330.50",
+     "zh": "11月6日低点 $329.29 和收盘 $332.72；11月20日高点 $330.50"
     }
    ],
    [
-    360,
+    338.5,
     {
-     "en": "Nov 16 high $358.55; 10-day average $361.3",
-     "zh": "11月16日高点 $358.55；10日均线 $361.3"
+     "en": "5-day average $338.7; Nov 17 low $338.00; Nov 19 close $338.93",
+     "zh": "5日均线 $338.7；11月17日低点 $338.00；11月19日收盘 $338.93"
     }
    ]
   ],
   "s": [
    [
-    332.7,
+    300,
     {
-     "en": "Nov 6 close $332.72",
-     "zh": "11月6日收盘 $332.72"
+     "en": "Round number $300; Nov 20 low $300.62",
+     "zh": "$300 整数关口；11月20日低点 $300.62"
     }
    ],
    [
-    328,
+    287.5,
     {
-     "en": "Parabolic SAR $327.0; Nov 6 low $329.29",
-     "zh": "抛物线 SAR $327.0；11月6日低点 $329.29"
+     "en": "Feb 4 low $287.49",
+     "zh": "2月4日低点 $287.49"
     }
    ],
    [
-    318,
+    276,
     {
-     "en": "Nov 5 low $316.95 and close $319.25",
-     "zh": "11月5日低点 $316.95 和收盘 $319.25"
+     "en": "Dec 10, 2025 high $276.10",
+     "zh": "2025年12月10日高点 $276.10"
     }
    ]
   ]

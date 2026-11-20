@@ -1,57 +1,57 @@
 {
- "asof": "Nov 19, 2026",
- "close": 39.46,
+ "asof": "Nov 20, 2026",
+ "close": 32.93,
  "bias": {
-  "en": "Downtrend · lost $40, lowest close since February",
-  "zh": "下跌趋势 · 跌破 $40，收盘创 2月以来新低"
+  "en": "Downtrend · broke $35.4, lowest close since December",
+  "zh": "下跌趋势 · 跌破 $35.4，收盘创去年 12月以来新低"
  },
  "read": [
   {
-   "en": "AAOI fell 3.3% on Nov 19 to $39.46, trading $39.38–43.62. It is below the 5-day ($44.1), 10-day ($48.0), 30-day ($67.1), 100-day ($99.0) and 200-day ($115.0); all but the 200-day are falling. MACD has been below its signal since Oct 13, below zero, histogram widening; Parabolic SAR has been bearish since Nov 16 ($55.91), and RSI is 29.2.",
-   "zh": "AAOI 11月19日下跌 3.3%，收于 $39.46，盘中区间 $39.38–43.62。股价位于 5 日（$44.1）、10 日（$48.0）、30 日（$67.1）、100 日（$99.0）和 200 日均线（$115.0）下方；除 200 日均线外均在下行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月16日起看空（$55.91），RSI 为 29.2。"
+   "en": "AAOI fell 16.5% on Nov 20 to $32.93, its lowest close since Dec 19, 2025, trading $32.62–37.69. It is below the 5-day ($40.71), 10-day ($46.26), 30-day ($64.55), 100-day ($97.93) and 200-day ($114.94), all falling. MACD has been below its signal since Oct 13, below zero, histogram widening; Parabolic SAR has been bearish since Nov 16 ($54.81), and RSI is 26.2, oversold.",
+   "zh": "AAOI 11月20日下跌 16.5%，收于 $32.93，为 2025年12月19日以来最低收盘，盘中区间 $32.62–37.69。股价位于 5 日（$40.71）、10 日（$46.26）、30 日（$64.55）、100 日（$97.93）和 200 日均线（$114.94）下方，均在下行。MACD 自 10月13日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月16日起看空（$54.81），RSI 为 26.2，处于超卖区。"
   },
   {
-   "en": "The $43.62 high was rejected above the $42.3–42.7 band, and the close broke the $40 support, now resistance, the lowest close since Feb 5. Resistance is $40–40.8 (round number, Nov 18 close), then $42.3–43.6 (Nov 18 high, Nov 17 low, Nov 19 high) and $44.1–45.2 (5-day, Nov 16 low). Support is $37.0–37.6, then $35.4–35.7 (January lows). A close above $40.8 would target $42.3–43.6; below $37.0, $35.4–35.7.",
-   "zh": "盘中高点 $43.62 在 $42.3–42.7 区间上方受阻回落，收盘跌破 $40 支撑，转为阻力，为 2月5日以来最低收盘。阻力为 $40–40.8（整数关口、11月18日收盘），其次 $42.3–43.6（11月18日高点、11月17日低点、11月19日高点）和 $44.1–45.2（5 日均线、11月16日低点）。支撑为 $37.0–37.6，其次 $35.4–35.7（1月低点）。若收盘站上 $40.8，下一目标看 $42.3–43.6；若跌破 $37.0，则看 $35.4–35.7。"
+   "en": "The drop broke both written supports, $37.0–37.6 (Nov 18 and Feb 5 lows) and $35.4–35.7 (January lows), now resistance. Resistance is $34.5–35.7, then $37.0–37.7 (Nov 20 high) and $39.5–40.8. Support is $31.3–31.7 (Jan 8 and December 2024 lows), then $30. A close above $37.7 would target $39.5–40.8; below $31.3, $30.",
+   "zh": "此次下跌跌破两道支撑：$37.0–37.6（11月18日和2月5日低点）和 $35.4–35.7（1月低点），均转为阻力。阻力为 $34.5–35.7，其次 $37.0–37.7（11月20日高点）和 $39.5–40.8。支撑为 $31.3–31.7（1月8日及 2024年12月低点），其次 $30。若收盘站上 $37.7，下一目标看 $39.5–40.8；若跌破 $31.3，则看 $30。"
   }
  ],
  "levels": {
   "r": [
    [
-    40.4,
+    35.3,
     {
-     "en": "Round number $40, lost; Nov 18 close $40.79",
-     "zh": "$40 整数关口，已失守；11月18日收盘 $40.79"
+     "en": "Jan 20–23 lows $35.37–35.68, lost; Jan 26 low $34.54",
+     "zh": "1月20日至23日低点 $35.37–35.68，已失守；1月26日低点 $34.54"
     }
    ],
    [
-    43,
+    37.4,
     {
-     "en": "Nov 18 high $42.32; Nov 17 low $42.65; Nov 19 high $43.62",
-     "zh": "11月18日高点 $42.32；11月17日低点 $42.65；11月19日高点 $43.62"
+     "en": "Feb 5 low $37.02; Nov 18 low $37.60; Nov 20 high $37.69",
+     "zh": "2月5日低点 $37.02；11月18日低点 $37.60；11月20日高点 $37.69"
     }
    ],
    [
-    44.8,
+    40.1,
     {
-     "en": "5-day average $44.1; Nov 16 low $44.78; Nov 17 close $45.22",
-     "zh": "5日均线 $44.1；11月16日低点 $44.78；11月17日收盘 $45.22"
+     "en": "Nov 19 close $39.46; round number $40; Nov 18 close $40.79",
+     "zh": "11月19日收盘 $39.46；$40 整数关口；11月18日收盘 $40.79"
     }
    ]
   ],
   "s": [
    [
-    37.3,
+    31.5,
     {
-     "en": "Nov 18 low $37.60; Feb 5 low $37.02",
-     "zh": "11月18日低点 $37.60；2月5日低点 $37.02"
+     "en": "Jan 8 low $31.67; Dec 2024 lows $31.33–31.44",
+     "zh": "1月8日低点 $31.67；2024年12月低点 $31.33–31.44"
     }
    ],
    [
-    35.5,
+    30,
     {
-     "en": "Jan 20 low $35.37; Jan 21 low $35.54; Jan 23 low $35.68",
-     "zh": "1月20日低点 $35.37；1月21日低点 $35.54；1月23日低点 $35.68"
+     "en": "Round number $30",
+     "zh": "$30 整数关口"
     }
    ]
   ]

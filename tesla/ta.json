@@ -1,64 +1,64 @@
 {
- "asof": "Nov 19, 2026",
- "close": 374.41,
+ "asof": "Nov 20, 2026",
+ "close": 345.82,
  "bias": {
-  "en": "Pullback · rejected at $388, back under the averages",
-  "zh": "回调 · 在 $388 受阻，重回均线下方"
+  "en": "Downtrend · broke $360, SAR turned bearish",
+  "zh": "下跌趋势 · 跌破 $360，SAR 转为看空"
  },
  "read": [
   {
-   "en": "Tesla fell 2.4% on Nov 19 to $374.41, trading $370.81–393.60 on light volume (0.68x the 20-day average). It slipped back under the tight cluster of the 5-day ($381.6, rising), 10-day ($381.3, falling), 30-day ($381.5, rising) and 200-day ($381.9, falling), holding above the 100-day ($365.9). MACD has been below its signal since Nov 5, above zero, histogram widening; Parabolic SAR has been bullish since Nov 12 ($349.20), and RSI is 47.2.",
-   "zh": "特斯拉 11月19日下跌 2.4%，收于 $374.41，盘中区间 $370.81–393.60，成交量偏低（为 20 日均量的 0.68 倍）。股价重新跌破密集的 5 日（$381.6，上行）、10 日（$381.3，下行）、30 日（$381.5，上行）和 200 日均线（$381.9，下行），守在 100 日均线（$365.9）上方。MACD 自 11月5日起位于信号线下方，在零轴上方，柱状图放大；抛物线 SAR 自 11月12日起看多（$349.20），RSI 为 47.2。"
+   "en": "Tesla fell 7.6% on Nov 20 to $345.82, its lowest close since Nov 5, trading $344.33–373.88. It is below the 5-day ($372.8), 10-day ($380.0), 30-day ($380.3), 100-day ($365.1) and 200-day ($381.7), all falling. MACD has been below its signal since Nov 5 and has dropped below zero, histogram widening; Parabolic SAR turned bearish on Nov 20 ($404.40), and RSI is 37.8, down from 53.5 five sessions ago.",
+   "zh": "特斯拉 11月20日下跌 7.6%，收于 $345.82，为 11月5日以来最低收盘，盘中区间 $344.33–373.88。股价位于 5 日（$372.8）、10 日（$380.0）、30 日（$380.3）、100 日（$365.1）和 200 日均线（$381.7）下方，均在下行。MACD 自 11月5日起位于信号线下方，现已跌至零轴下方，柱状图放大；抛物线 SAR 于 11月20日转为看空（$404.40），RSI 为 37.8，五个交易日前为 53.5。"
   },
   {
-   "en": "The $393.60 high broke above the $388 cap intraday but reversed, and the close lost the $378–382.8 support (averages, Nov 18 low), now resistance, holding just above the Nov 17 low ($374.13). Resistance is $378–382.8, then $388–393.6 and $397.5–401.2. Support is $370.4–370.8 (Nov 10 and 19 lows), then $365.3–365.9 (100-day, Oct 23 low) and $360. A close above $382.8 would target $388–393.6; below $370.4, $365–366.",
-   "zh": "盘中高点 $393.60 一度突破 $388 上限后回落，收盘跌破 $378–382.8 支撑（均线群、11月18日低点），转为阻力，仅守在 11月17日低点（$374.13）上方。阻力为 $378–382.8，其次 $388–393.6 和 $397.5–401.2。支撑为 $370.4–370.8（11月10日和19日低点），其次 $365.3–365.9（100 日均线、10月23日低点）和 $360。若收盘站上 $382.8，下一目标看 $388–393.6；若跌破 $370.4，则看 $365–366。"
+   "en": "The drop broke all three written supports, $370.4–370.8, $365.3–365.9 (100-day, Oct 23 low) and $360, now resistance; the $388 cap stays well overhead. Resistance is $345.9–354 (September, October and March lows), then $360–365.9 and $370.4–374 (5-day, Nov 20 high). Support is $338–344.3 (Nov 5 low and close, Aug 26 low), then $331.4–337.2 and $326.6. A close above $354 would target $360–366; below $338, $331–337.",
+   "zh": "此次下跌跌破此前三道支撑 $370.4–370.8、$365.3–365.9（100 日均线、10月23日低点）和 $360，均转为阻力；$388 上限仍远在上方。阻力为 $345.9–354（9月、10月和3月低点），其次 $360–365.9 和 $370.4–374（5 日均线、11月20日高点）。支撑为 $338–344.3（11月5日低点和收盘、8月26日低点），其次 $331.4–337.2 和 $326.6。若收盘站上 $354，下一目标看 $360–366；若跌破 $338，则看 $331–337。"
   }
  ],
  "levels": {
   "r": [
    [
-    381.5,
+    351.5,
     {
-     "en": "5-, 10-, 30- and 200-day averages $381.3–381.9, lost; Nov 9 close $378.05; Nov 17 high $382.84",
-     "zh": "5日、10日、30日和200日均线 $381.3–381.9，已失守；11月9日收盘 $378.05；11月17日高点 $382.84"
+     "en": "Sep 30 low $345.88; Oct 16 low $349.33; Mar 30 low $352.14; Sep 15 low $354.05",
+     "zh": "9月30日低点 $345.88；10月16日低点 $349.33；3月30日低点 $352.14；9月15日低点 $354.05"
     }
    ],
    [
-    388,
+    363,
     {
-     "en": "$388 cap since March; Oct 9 high $388.56; Nov 18 high $389.27; Nov 16 high $389.80; Nov 19 high $393.60",
-     "zh": "3月以来 $388 上限；10月9日高点 $388.56；11月18日高点 $389.27；11月16日高点 $389.80；11月19日高点 $393.60"
+     "en": "Nov 9 low $360.02; 100-day average $365.1; Oct 23 low $365.27, lost",
+     "zh": "11月9日低点 $360.02；100日均线 $365.1；10月23日低点 $365.27，已失守"
     }
    ],
    [
-    399,
+    372,
     {
-     "en": "Nov 12 close $397.45; Nov 3 close $398.50; Nov 12 high $401.22",
-     "zh": "11月12日收盘 $397.45；11月3日收盘 $398.50；11月12日高点 $401.22"
+     "en": "Nov 10 low $370.40; 5-day average $372.8; Nov 20 high $373.88",
+     "zh": "11月10日低点 $370.40；5日均线 $372.8；11月20日高点 $373.88"
     }
    ]
   ],
   "s": [
    [
-    370.6,
+    341,
     {
-     "en": "Nov 10 low $370.40; Nov 19 low $370.81",
-     "zh": "11月10日低点 $370.40；11月19日低点 $370.81"
+     "en": "Nov 20 low $344.33; Nov 5 close $343.69; Aug 26 low $342.53; Nov 5 low $338.15",
+     "zh": "11月20日低点 $344.33；11月5日收盘 $343.69；8月26日低点 $342.53；11月5日低点 $338.15"
     }
    ],
    [
-    365.9,
+    334.5,
     {
-     "en": "100-day average $365.9; Oct 23 low $365.27",
-     "zh": "100日均线 $365.9；10月23日低点 $365.27"
+     "en": "Apr 7 low $337.24; May 22, 2025 low $331.39",
+     "zh": "4月7日低点 $337.24；2025年5月22日低点 $331.39"
     }
    ],
    [
-    360,
+    326.6,
     {
-     "en": "Nov 9 low $360.02; round number $360",
-     "zh": "11月9日低点 $360.02；$360 整数关口"
+     "en": "Nov 27, 2024 low $326.59",
+     "zh": "2024年11月27日低点 $326.59"
     }
    ]
   ]

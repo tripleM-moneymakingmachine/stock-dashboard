@@ -1,64 +1,64 @@
 {
- "asof": "Nov 19, 2026",
- "close": 383.1,
+ "asof": "Nov 20, 2026",
+ "close": 361.93,
  "bias": {
-  "en": "Downtrend · rebound failed at $400, back under $384",
-  "zh": "下跌趋势 · 反弹受阻 $400，回落至 $384 下方"
+  "en": "Downtrend · broke $370.7, testing $360",
+  "zh": "下跌趋势 · 跌破 $370.7，测试 $360"
  },
  "read": [
   {
-   "en": "Rockwell Automation fell 3.2% on Nov 19 to $383.10, trading $382.40–400.62, its lowest close since Nov 6. It is below the 5-day ($391.5), 10-day ($393.0), 30-day ($418.5), 200-day ($425.8) and 100-day ($437.0), all falling. MACD has been below its signal since Nov 5, below zero, histogram widening slightly; Parabolic SAR has been bearish since Nov 5 ($427.41), and RSI is 37.7.",
-   "zh": "罗克韦尔自动化 11月19日下跌 3.2%，收于 $383.10，盘中区间 $382.40–400.62，为 11月6日以来最低收盘。股价位于 5 日（$391.5）、10 日（$393.0）、30 日（$418.5）、200 日（$425.8）和 100 日均线（$437.0）下方，均在下行。MACD 自 11月5日起位于信号线下方，在零轴下方，柱状图略有放大；抛物线 SAR 自 11月5日起看空（$427.41），RSI 为 37.7。"
+   "en": "Rockwell fell 5.5% on Nov 20 to $361.93, its lowest close since Mar 31, trading $360.47–383.10. It is below the 5-day ($383.4), 10-day ($391.6), 30-day ($416.1), 100-day ($435.8) and 200-day ($425.6), all falling. MACD has been below its signal since Nov 5, below zero, histogram widening; Parabolic SAR has been bearish since Nov 5 ($425.14), and RSI is 31.9, down from 42.3 five sessions ago.",
+   "zh": "罗克韦尔 11月20日下跌 5.5%，收于 $361.93，为 3月31日以来最低收盘，盘中区间 $360.47–383.10。股价位于 5 日（$383.4）、10 日（$391.6）、30 日（$416.1）、100 日（$435.8）和 200 日均线（$425.6）下方，均在下行。MACD 自 11月5日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月5日起看空（$425.14），RSI 为 31.9，五个交易日前为 42.3。"
   },
   {
-   "en": "The $400.62 high stalled under $401.7 again, and the close gave up the 5 and 10-day averages and broke the $394, $389.5 and $384 supports, now resistance. Resistance is $383.1–384.9, then $388.4–391.5 (5-day) and $393–395.9 (10-day, Nov 18 close). Support is $375.9–378.3 (Nov 6 close, Nov 5 low), then $370.7 (Nov 6 low) and $360. A close above $384.9 would target $388–391; below $375.9, $370.7.",
-   "zh": "盘中高点 $400.62 再度受阻于 $401.7 下方，收盘失守 5 日和 10 日均线，跌破 $394、$389.5 和 $384 三道支撑，转为阻力。阻力为 $383.1–384.9，其次 $388.4–391.5（5 日均线）和 $393–395.9（10 日均线、11月18日收盘）。支撑为 $375.9–378.3（11月6日收盘、11月5日低点），其次 $370.7（11月6日低点）和 $360。若收盘站上 $384.9，下一目标看 $388–391；若跌破 $375.9，则看 $370.7。"
+   "en": "The drop broke the $370.7–377 supports (Nov 5 and 6 lows), now resistance, and held just above the $360 round number. Resistance is $363.9–371.7 (Nov 6 low, Mar 25 and Apr 1 highs), then $375–378.3 and $383–383.4 (Nov 20 high, 5-day). Support is $358.9–360.9 ($360, Mar 31 close), then $354–357.4 and $347.5 (52-week low). A close above $371.7 would target $375–378; below $358.9, $354–357.",
+   "zh": "此次下跌跌破 $370.7–377 支撑（11月5日和6日低点），转为阻力，仅守在 $360 整数关口上方。阻力为 $363.9–371.7（11月6日低点、3月25日和4月1日高点），其次 $375–378.3 和 $383–383.4（11月20日高点、5 日均线）。支撑为 $358.9–360.9（$360、3月31日收盘），其次 $354–357.4 和 $347.5（52 周低点）。若收盘站上 $371.7，下一目标看 $375–378；若跌破 $358.9，则看 $354–357。"
   }
  ],
  "levels": {
   "r": [
    [
-    384,
+    367.5,
     {
-     "en": "Nov 9 low $383.13; Nov 16 low $383.72; Nov 16 close $384.90, lost",
-     "zh": "11月9日低点 $383.13；11月16日低点 $383.72；11月16日收盘 $384.90，已失守"
+     "en": "Nov 18, 2025 low $363.92; Mar 25 high $368.20; Nov 6 low $370.65, lost; Apr 1 high $371.73",
+     "zh": "2025年11月18日低点 $363.92；3月25日高点 $368.20；11月6日低点 $370.65，已失守；4月1日高点 $371.73"
     }
    ],
    [
-    390,
+    376.5,
     {
-     "en": "Nov 10 low $388.41; Nov 17 close $391.26; 5-day average $391.5",
-     "zh": "11月10日低点 $388.41；11月17日收盘 $391.26；5日均线 $391.5"
+     "en": "Oct 30, 2025 high $375.02; Feb 17 low $375.72; Nov 6 close $375.86; Nov 5 low $378.31",
+     "zh": "2025年10月30日高点 $375.02；2月17日低点 $375.72；11月6日收盘 $375.86；11月5日低点 $378.31"
     }
    ],
    [
-    394.5,
+    383.2,
     {
-     "en": "10-day average $393.0; Nov 16 high $395.14; Nov 18 close $395.86",
-     "zh": "10日均线 $393.0；11月16日高点 $395.14；11月18日收盘 $395.86"
+     "en": "Nov 20 high and Nov 19 close $383.10; 5-day average $383.4",
+     "zh": "11月20日高点和11月19日收盘 $383.10；5日均线 $383.4"
     }
    ]
   ],
   "s": [
    [
-    377,
-    {
-     "en": "Nov 6 close $375.86; Nov 5 low $378.31",
-     "zh": "11月6日收盘 $375.86；11月5日低点 $378.31"
-    }
-   ],
-   [
-    370.7,
-    {
-     "en": "Nov 6 low $370.65",
-     "zh": "11月6日低点 $370.65"
-    }
-   ],
-   [
     360,
     {
-     "en": "Round number $360",
-     "zh": "$360 整数关口"
+     "en": "Round number $360; Nov 20 low $360.47; Jul 24, 2025 high $360.92; Mar 31 close $358.88",
+     "zh": "$360 整数关口；11月20日低点 $360.47；2025年7月24日高点 $360.92；3月31日收盘 $358.88"
+    }
+   ],
+   [
+    355.5,
+    {
+     "en": "Nov 5, 2025 low $354.11; Oct 2, 2025 high $354.98; Aug 26, 2025 high $357.36",
+     "zh": "2025年11月5日低点 $354.11；2025年10月2日高点 $354.98；2025年8月26日高点 $357.36"
+    }
+   ],
+   [
+    347.5,
+    {
+     "en": "52-week low $347.53 (Mar 30)",
+     "zh": "52周低点 $347.53（3月30日）"
     }
    ]
   ]

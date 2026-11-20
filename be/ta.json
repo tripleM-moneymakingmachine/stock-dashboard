@@ -1,64 +1,64 @@
 {
- "asof": "Nov 19, 2026",
- "close": 168.11,
+ "asof": "Nov 20, 2026",
+ "close": 142.39,
  "bias": {
-  "en": "Downtrend · rejected at $187, holding $166–168",
-  "zh": "下跌趋势 · 在 $187 受阻，守住 $166–168"
+  "en": "Downtrend · broke $156, lowest close since April",
+  "zh": "下跌趋势 · 跌破 $156，收盘创 4月以来新低"
  },
  "read": [
   {
-   "en": "Bloom Energy fell 1.7% on Nov 19 to $168.11 after opening at $181 and spiking to $187, a $166.17–187.00 range. It is below the 5-day ($176.4), 10-day ($184.6) and 30-day ($210.1), all falling, and the 100-day ($231.3, falling) and 200-day ($223.9, rising). MACD has been below its signal since Nov 17, below zero, histogram widening; Parabolic SAR has been bearish since Nov 4 ($208.53), and RSI is 38.0.",
-   "zh": "Bloom Energy 11月19日下跌 1.7%，收于 $168.11，开盘 $181 后一度冲高至 $187，盘中区间 $166.17–187.00。股价位于 5 日（$176.4）、10 日（$184.6）和 30 日均线（$210.1）下方，三者均在下行，也低于 100 日（$231.3，下行）和 200 日均线（$223.9，上行）。MACD 自 11月17日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月4日起看空（$208.53），RSI 为 38.0。"
+   "en": "Bloom Energy fell 15.3% on Nov 20 to $142.39, its lowest close since Apr 7, trading $140.69–163.51 on heavy volume (1.57x the 20-day average). It is below the 5-day ($166.4), 10-day ($181.5), 30-day ($205.5) and 100-day ($229.9), all falling, and the rising 200-day ($223.9). MACD has been below its signal since Nov 17, below zero, histogram widening; Parabolic SAR has been bearish since Nov 4 ($206.43), and RSI is 32.4.",
+   "zh": "Bloom Energy 11月20日下跌 15.3%，收于 $142.39，为 4月7日以来最低收盘，盘中区间 $140.69–163.51，成交放量（为 20 日均量的 1.57 倍）。股价位于 5 日（$166.4）、10 日（$181.5）、30 日（$205.5）和 100 日均线（$229.9）下方，均在下行，并低于上行的 200 日均线（$223.9）。MACD 自 11月17日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 自 11月4日起看空（$206.43），RSI 为 32.4。"
   },
   {
-   "en": "No level changed on the close: the $187 high was rejected above the 10-day, and the $166.17 low dipped under $167.4 but the close held the $167.4–168.8 band. Resistance is $173.2–173.9 (Nov 6 and 17 closes, Nov 16 low), then $176.4–177.3 (5-day, Nov 16 close) and $184.6–187 (10-day, Nov 10 close, Nov 19 high). Support is $166.2–167.5, then $162.9 (Nov 17 low) and $156 (Nov 5 low). A close above $173.9 would target $177; below $166.2, $162.9.",
-   "zh": "收盘关键位未变：盘中高点 $187 在 10 日均线上方受阻，低点 $166.17 一度跌破 $167.4，但收盘守住 $167.4–168.8 区间。阻力为 $173.2–173.9（11月6日和17日收盘、11月16日低点），其次 $176.4–177.3（5 日均线、11月16日收盘）和 $184.6–187（10 日均线、11月10日收盘、11月19日高点）。支撑为 $166.2–167.5，其次 $162.9（11月17日低点）和 $156（11月5日低点）。若收盘站上 $173.9，下一目标看 $177；若跌破 $166.2，则看 $162.9。"
+   "en": "The drop broke all three written supports, $156–167 (Nov 5, 17 and 19 lows), now resistance. Resistance is $147.8 (November 2025 highs), then $156–157.3 (Jan 21 high, Nov 5 low) and $163–166.4 (Nov 20 high, 5-day). Support is $136–140.7 (Nov 20 and Jan 27 lows), then $131–132.5 (February and March lows) and $125.8. A close above $147.9 would target $156–157; below $136, $131–132.5.",
+   "zh": "此次下跌跌破此前三道支撑 $156–167（11月5日、17日和19日低点），转为阻力。阻力为 $147.8（2025年11月高点），其次 $156–157.3（1月21日高点、11月5日低点）和 $163–166.4（11月20日高点、5 日均线）。支撑为 $136–140.7（11月20日和1月27日低点），其次 $131–132.5（2月和3月低点）和 $125.8。若收盘站上 $147.9，下一目标看 $156–157；若跌破 $136，则看 $131–132.5。"
   }
  ],
  "levels": {
   "r": [
    [
-    173.7,
+    147.8,
     {
-     "en": "Nov 6 close $173.24; Nov 17 close $173.46; Nov 16 low $173.90",
-     "zh": "11月6日收盘 $173.24；11月17日收盘 $173.46；11月16日低点 $173.90"
+     "en": "Nov 3 and Nov 10, 2025 highs $147.82–147.86",
+     "zh": "2025年11月3日和10日高点 $147.82–147.86"
     }
    ],
    [
-    177,
+    156.4,
     {
-     "en": "5-day average $176.4; Nov 16 close $177.28",
-     "zh": "5日均线 $176.4；11月16日收盘 $177.28"
+     "en": "Jan 21 high $155.87; Nov 5 low $156.00, lost; Jul 29 low $157.33",
+     "zh": "1月21日高点 $155.87；11月5日低点 $156.00，已失守；7月29日低点 $157.33"
     }
    ],
    [
-    185,
+    165,
     {
-     "en": "10-day average $184.6; Nov 10 close $185.42; Nov 19 high $187.00",
-     "zh": "10日均线 $184.6；11月10日收盘 $185.42；11月19日高点 $187.00"
+     "en": "Nov 17 low $162.93; Nov 20 high $163.51; 5-day average $166.4",
+     "zh": "11月17日低点 $162.93；11月20日高点 $163.51；5日均线 $166.4"
     }
    ]
   ],
   "s": [
    [
-    167,
+    138,
     {
-     "en": "Nov 19 low $166.17; Nov 18 low $167.36; Nov 5 close $167.52",
-     "zh": "11月19日低点 $166.17；11月18日低点 $167.36；11月5日收盘 $167.52"
+     "en": "Nov 20 low $140.69; Jan 27 low $136.25; Apr 7 close $135.91",
+     "zh": "11月20日低点 $140.69；1月27日低点 $136.25；4月7日收盘 $135.91"
     }
    ],
    [
-    162.9,
+    131.8,
     {
-     "en": "Nov 17 low $162.93",
-     "zh": "11月17日低点 $162.93"
+     "en": "Feb 13 low $131.00; Feb 5 low $131.66; Mar 9 low $132.50",
+     "zh": "2月13日低点 $131.00；2月5日低点 $131.66；3月9日低点 $132.50"
     }
    ],
    [
-    156,
+    125.8,
     {
-     "en": "Nov 5 low",
-     "zh": "11月5日低点"
+     "en": "Oct 15, 2025 high $125.75",
+     "zh": "2025年10月15日高点 $125.75"
     }
    ]
   ]

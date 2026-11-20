@@ -1,57 +1,64 @@
 {
- "asof": "Nov 19, 2026",
- "close": 105.97,
+ "asof": "Nov 20, 2026",
+ "close": 94.38,
  "bias": {
-  "en": "Downtrend · MACD crossed down, lost $106",
-  "zh": "下跌趋势 · MACD 下穿，跌破 $106"
+  "en": "Downtrend · broke $101.8, lowest close since January",
+  "zh": "下跌趋势 · 跌破 $101.8，收盘创 1月以来新低"
  },
  "read": [
   {
-   "en": "Corning fell 2.0% on Nov 19 to $105.97, trading $105.83–114.00 on light volume (0.67x the 20-day average). It is below the 5-day ($108.6), 10-day ($111.7), 30-day ($124.6) and 100-day ($148.8), all falling, and the 200-day ($156.6, rising). MACD crossed below its signal on Nov 19, below zero; Parabolic SAR has been bullish since Nov 11 ($104.35), and RSI is 36.5.",
-   "zh": "康宁 11月19日下跌 2.0%，收于 $105.97，盘中区间 $105.83–114.00，成交量偏低（为 20 日均量的 0.67 倍）。股价位于 5 日（$108.6）、10 日（$111.7）、30 日（$124.6）和 100 日均线（$148.8）下方，四者均在下行，也低于 200 日均线（$156.6，上行）。MACD 于 11月19日下穿信号线，在零轴下方；抛物线 SAR 自 11月11日起看多（$104.35），RSI 为 36.5。"
+   "en": "Corning fell 10.9% on Nov 20 to $94.38, its lowest close since Jan 23, trading $93.49–103.88 on heavy volume (1.53x the 20-day average). It is below the 5-day ($104.6), 10-day ($110.5), 30-day ($122.5), 100-day ($147.5) and 200-day ($156.5), all falling. MACD has been below its signal since Nov 19, below zero, histogram widening; Parabolic SAR turned bearish on Nov 20 ($123.87), and RSI is 30.5.",
+   "zh": "康宁 11月20日下跌 10.9%，收于 $94.38，为 1月23日以来最低收盘，盘中区间 $93.49–103.88，成交放量（为 20 日均量的 1.53 倍）。股价位于 5 日（$104.6）、10 日（$110.5）、30 日（$122.5）、100 日（$147.5）和 200 日均线（$156.5）下方，均在下行。MACD 自 11月19日起位于信号线下方，在零轴下方，柱状图放大；抛物线 SAR 于 11月20日转为看空（$123.87），RSI 为 30.5。"
   },
   {
-   "en": "The $114 high was rejected at the Nov 13 close ($114.08), and the close broke the $106.1–106.2 support (Nov 6 and 16 closes, Nov 18 low), now resistance. Resistance is $106.1–106.2, then $108.2–108.6 (Nov 17 and 18 closes, 5-day) and $111.4–112.1 (10-day, Nov 18 high, Nov 10 close). Support is $104.1–104.4 (SAR, Nov 6 and 17 lows), then $101.8–103.4 (Nov 5). A close above $108.6 would target $111.7; below $104.35, the SAR would flip bearish.",
-   "zh": "盘中高点 $114 在 11月13日收盘价（$114.08）受阻，收盘跌破 $106.1–106.2 支撑（11月6日和16日收盘、11月18日低点），转为阻力。阻力为 $106.1–106.2，其次 $108.2–108.6（11月17日和18日收盘、5 日均线）和 $111.4–112.1（10 日均线、11月18日高点、11月10日收盘）。支撑为 $104.1–104.4（SAR、11月6日和17日低点），其次 $101.8–103.4（11月5日）。若收盘站上 $108.6，下一目标看 $111.7；若跌破 $104.35，抛物线 SAR 将转为看空。"
+   "en": "The drop broke both written supports, $101.8–104.4 (Nov 5, 6 and 17 lows), now resistance. Resistance is $95–96.6 (Jan 15 and Dec 11 highs), then $101.8–104.6 (Nov 20 high, 5-day) and $106–108.2. Support is $91–93.6 (Nov 20 and Jan 23 lows), then $90–90.6 and $84.6–84.8 (December 2025 low). A close above $96.6 would target $101.8–104.6; below $90, $84.6–84.8.",
+   "zh": "此次下跌跌破两道支撑 $101.8–104.4（11月5日、6日和17日低点），转为阻力。阻力为 $95–96.6（1月15日和去年12月11日高点），其次 $101.8–104.6（11月20日高点、5 日均线）和 $106–108.2。支撑为 $91–93.6（11月20日和1月23日低点），其次 $90–90.6 和 $84.6–84.8（2025年12月低点）。若收盘站上 $96.6，下一目标看 $101.8–104.6；若跌破 $90，则看 $84.6–84.8。"
   }
  ],
  "levels": {
   "r": [
    [
-    106.2,
+    95.8,
     {
-     "en": "Nov 18 low $106.09; Nov 6 close $106.13; Nov 16 close $106.17, lost",
-     "zh": "11月18日低点 $106.09；11月6日收盘 $106.13；11月16日收盘 $106.17，已跌破"
+     "en": "Jan 15 high $94.98; Dec 11, 2025 high $96.64",
+     "zh": "1月15日高点 $94.98；2025年12月11日高点 $96.64"
     }
    ],
    [
-    108.5,
+    103,
     {
-     "en": "Nov 18 close $108.15; Nov 17 close $108.49; 5-day average $108.6",
-     "zh": "11月18日收盘 $108.15；11月17日收盘 $108.49；5日均线 $108.6"
+     "en": "Nov 5 low $101.83, lost; Nov 20 high $103.88; 5-day average $104.6",
+     "zh": "11月5日低点 $101.83，已失守；11月20日高点 $103.88；5日均线 $104.6"
     }
    ],
    [
-    111.7,
+    107,
     {
-     "en": "Nov 18 high $111.35; 10-day average $111.7; Nov 10 close $112.13",
-     "zh": "11月18日高点 $111.35；10日均线 $111.7；11月10日收盘 $112.13"
+     "en": "Nov 16 close $106.17; Nov 18 close $108.15",
+     "zh": "11月16日收盘 $106.17；11月18日收盘 $108.15"
     }
    ]
   ],
   "s": [
    [
-    104.2,
+    92.3,
     {
-     "en": "Nov 6 low $104.07; Parabolic SAR $104.35; Nov 17 low $104.42",
-     "zh": "11月6日低点 $104.07；抛物线 SAR $104.35；11月17日低点 $104.42"
+     "en": "Nov 20 low $93.49; Jan 5 high $93.58; Jan 23 low $91.01",
+     "zh": "11月20日低点 $93.49；1月5日高点 $93.58；1月23日低点 $91.01"
     }
    ],
    [
-    102.7,
+    90.3,
     {
-     "en": "Nov 5 close $103.43; Nov 5 low $101.83",
-     "zh": "11月5日收盘 $103.43；11月5日低点 $101.83"
+     "en": "Nov 12 and Dec 26, 2025 highs $90.14–90.62; round number $90",
+     "zh": "2025年11月12日和12月26日高点 $90.14–90.62；$90 整数关口"
+    }
+   ],
+   [
+    84.7,
+    {
+     "en": "Dec 17, 2025 low $84.82; Nov 20, 2025 high $84.59",
+     "zh": "2025年12月17日低点 $84.82；2025年11月20日高点 $84.59"
     }
    ]
   ]
