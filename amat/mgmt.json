@@ -1,6 +1,6 @@
 {
  "ticker": "AMAT",
- "asof": "2026-11-20",
+ "asof": "2026-11-21",
  "quarter": {
   "en": "Q4 FY2026 (October quarter)",
   "zh": "2026 财年第四季（10 月季度）"
@@ -14,18 +14,18 @@
   "pct": -2.7
  },
  "since": {
-  "date": "2026-11-19",
-  "close": 338.93,
-  "pct": -11.0
+  "date": "2026-11-20",
+  "close": 302.63,
+  "pct": -20.6
  },
  "review": {
   "en": [
    "A record quarter: revenue rose 53% to $10.41B against ~$10.3B expected, and non-GAAP EPS of $4.16 beat $4.06, as DRAM reached a third of chip-tool sales and advanced packaging hit a record. The Q1 guide of $11.1B ±$0.5B and $4.35 EPS tops the ~$10.85B and ~$4.24 consensus, with gross margin edging up to about 50.8%. CEO Gary Dickerson expects chip-tool spending to grow over 30% in 2027, led by DRAM and leading-edge logic, and plans to double systems output by 2028 as cleanroom space gates the pace.",
-   "The stock fell 3.6% to $380.95 on Nov 12 as chip stocks slid on the day Nvidia's CEO resigned, then rose about 1–1.5% after hours on the beat and guide. The gain did not hold: on Nov 13 AMAT closed down 2.7% at $370.50 as the Nvidia fallout and AI-valuation worries kept pressure on chip names, and Stifel and Mizuho trimmed price targets. The shares sit near half their June high despite the stronger outlook."
+   "The stock fell 3.6% to $380.95 on Nov 12 as chip stocks slid on Nvidia's CEO exit, then rose about 1–1.5% after hours on the beat and guide. It closed Nov 13 down 2.7% at $370.50 as Stifel and Mizuho trimmed targets. The next week was worse: AMAT lost 5.5% on Nov 16 and 10.7% on Nov 20, when the chip index fell 10.7% on a reported SEC look at Nvidia's accounting and new US export limits, closing at $302.63, 18.3% below the first-session close."
   ],
   "zh": [
    "创纪录的一季：营收增长 53% 至 104.1 亿美元，高于约 103 亿美元的预期；非 GAAP 每股收益 4.16 美元，超过 4.06 美元的预期。DRAM 占芯片设备销售的三分之一，先进封装收入创新高。第一季指引营收 111 亿美元（±5 亿）、每股收益 4.35 美元，高于约 108.5 亿美元和约 4.24 美元的市场预期，毛利率小幅升至约 50.8%。CEO 盖瑞·迪克森预计 2027 年芯片设备支出增长逾 30%，DRAM 和先进逻辑领跑；洁净室空间制约扩张速度，公司计划到 2028 年将系统产能翻倍。",
-   "11 月 12 日英伟达 CEO 辞职当天芯片股走低，应用材料下跌 3.6% 至 380.95 美元；财报超预期、指引强劲，盘后上涨约 1–1.5%。但涨幅未能保持：11 月 13 日，英伟达风波余震和 AI 估值担忧继续压制芯片股，股价收跌 2.7% 至 370.50 美元，Stifel 和瑞穗下调目标价。尽管展望更强，股价仍仅约为 6 月高点的一半。"
+   "11 月 12 日英伟达 CEO 离职当天芯片股走低，应用材料下跌 3.6% 至 380.95 美元；财报超预期、指引强劲，盘后上涨约 1–1.5%。11 月 13 日收跌 2.7% 至 370.50 美元，Stifel 和瑞穗下调目标价。随后一周跌势加剧：11 月 16 日下跌 5.5%；11 月 20 日，因有报道称美国证交会关注英伟达会计问题、美国新出口限制生效，费城半导体指数暴跌 10.7%，应用材料下跌 10.7%，收于 302.63 美元，较财报后首日收盘低 18.3%。"
   ]
  },
  "ceo": {
@@ -62,6 +62,11 @@
   {
    "t": "Guide vs consensus and after-hours move (Investing.com)",
    "u": "https://investing.com/news/earnings/applied-materials-shares-trade-lower-depite-q4-beat-5023202"
+  },
+  {
+   "t": "Nov 20 chip selloff: Nvidia SEC report, SOX −10.7% (Fortune)",
+   "u": "https://fortune.com/2026/11/20/sp-500-correction-panic-selling-ai-selloff-nasdaq-2026-gains-bnp-paribas"
   }
- ]
+ ],
+ "followup_done": true
 }

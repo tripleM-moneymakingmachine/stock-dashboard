@@ -1,31 +1,31 @@
 {
  "ticker": "SNDK",
- "asof": "2026-11-20",
+ "asof": "2026-11-21",
  "quarter": {
   "en": "Q1 FY2027 (September quarter, ended Oct 2)",
   "zh": "2027 财年第一季（9 月季度，截至 10 月 2 日）"
  },
  "reported": "2026-10-29",
  "timing": "amc",
- "pre_close": 1330.05,
+ "pre_close": 166.26,
  "react": {
   "date": "2026-10-30",
-  "close": 1150.89,
+  "close": 143.86,
   "pct": -13.5
  },
  "since": {
-  "date": "2026-11-19",
-  "close": 755.16,
-  "pct": -43.2
+  "date": "2026-11-20",
+  "close": 79.24,
+  "pct": -52.3
  },
  "review": {
   "en": [
    "Revenue rose 378% to $11.0B against $10.7B expected, and non-GAAP EPS of $49.51 beat the ~$47.15 consensus, both above the company's own range. Data-center revenue jumped 61% in a quarter to $4.8B, and gross margin edged up to 85.1%. The Q2 guide of $12.2–12.6B and $55–57 EPS (pre-split) topped consensus of about $12.3B and $53.3. CEO David Goeckeler said demand keeps growing; CFO Luis Visoso said about half of FY27 bits are under long-term deals and the pipeline exceeds supply through the decade. The board approved an 8-for-1 split.",
-   "Shares fell 5.3% to $1,330.05 before the report. On Oct 30 they slid 13.5% to $1,150.89 despite the beat, the higher guide, a $5B buyback and the 8-for-1 split (split-adjusted trading from Nov 20), as investors questioned how long memory prices can stay this high. The slide deepened the next week: after the midterms stoked fears of slower data center building, the stock dropped 22% on Nov 5 to $806.43, and closed Nov 6 at $835.06, 27.4% below the first-session close."
+   "All prices split-adjusted for the 8-for-1 split of Nov 20. Shares fell 5.3% to $166.26 before the report. On Oct 30 they slid 13.5% to $143.86 despite the beat, the higher guide and a $5B buyback, as investors questioned how long memory prices can stay this high. The slide deepened the next week: after the midterms stoked fears of slower data center building, the stock dropped 22% on Nov 5 to $100.80, and closed Nov 6 at $104.38, 27.4% below the first-session close."
   ],
   "zh": [
    "营收增长 378% 至 110 亿美元，高于 107 亿美元的预期；非 GAAP 每股收益 49.51 美元，高于约 47.15 美元的一致预期，两者均超出公司自身指引。数据中心营收单季环比增长 61% 至 48 亿美元，毛利率小幅升至 85.1%。第二季指引营收 122–126 亿美元、每股收益 55–57 美元（拆股前），高于约 123 亿美元和 53.3 美元的预期。CEO 大卫·格克勒称需求持续增长；CFO 路易斯·维索索表示 FY27 约一半出货位元已纳入长期协议，潜在需求在本十年内都超过供给。董事会批准 1 拆 8 股票分割。",
-   "股价在财报前的交易时段下跌 5.3% 至 1,330.05 美元。10 月 30 日，尽管业绩超预期、指引上调、回购 50 亿美元并宣布 1 拆 8（11 月 20 日起按拆股后价格交易），股价仍下跌 13.5% 至 1,150.89 美元，投资者质疑内存高价还能维持多久。此后一周跌势加剧：中期选举引发数据中心建设放缓的担忧，11 月 5 日股价暴跌 22% 至 806.43 美元；11 月 6 日收于 835.06 美元，较财报后首日收盘低 27.4%。"
+   "以下价格均按 11 月 20 日 1 拆 8 股票分割调整。股价在财报前的交易时段下跌 5.3% 至 166.26 美元。10 月 30 日，尽管业绩超预期、指引上调并回购 50 亿美元，股价仍下跌 13.5% 至 143.86 美元，投资者质疑内存高价还能维持多久。此后一周跌势加剧：中期选举引发数据中心建设放缓的担忧，11 月 5 日股价暴跌 22% 至 100.80 美元；11 月 6 日收于 104.38 美元，较财报后首日收盘低 27.4%。"
   ]
  },
  "ceo": {
