@@ -141,6 +141,7 @@ jobs:
           cp data/news.json _site/data/
           if [ -f data/ranking.json ]; then cp data/ranking.json _site/data/; fi
           if [ -f data/market-recap.json ]; then cp data/market-recap.json _site/data/; fi
+          if [ -f data/fear-greed.json ]; then cp data/fear-greed.json _site/data/; fi
           if [ -f data/macro-recap.json ]; then cp data/macro-recap.json _site/data/; fi
           if [ -f data/fx-recap.json ]; then cp data/fx-recap.json _site/data/; fi
           cp data/portfolios.json _site/data/

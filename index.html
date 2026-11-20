@@ -70,6 +70,19 @@ a.card.t-bull .rk{color:var(--up)}a.card.t-cau .rk{color:var(--down)}
 .rc-dr{margin:0 0 10px;padding-left:18px;font-size:14px}.rc-dr li{margin:0 0 6px}
 .rc-note{font-size:13.5px;color:var(--muted);margin:0 0 6px;max-width:90ch}
 .rc-src{font-size:12px;color:var(--muted);margin:8px 0 0}.rc-src a{color:var(--accent)}
+.fgp .fg-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:6px 0 10px}
+.fg-sc{display:flex;align-items:baseline;gap:6px}.fg-num{font:700 46px/1 var(--f-display);font-variant-numeric:tabular-nums}.fg-of{font:500 13px var(--f-mono);color:var(--muted)}
+.fgp .fg-zw h2{margin:0 0 2px}
+.fg-gauge{position:relative;height:10px;border-radius:5px;margin:0 0 4px;background:linear-gradient(90deg,var(--down) 0 25%,color-mix(in srgb,var(--down) 45%,var(--panel)) 25% 45%,var(--line) 45% 55%,color-mix(in srgb,var(--up) 45%,var(--panel)) 55% 75%,var(--up) 75% 100%)}
+.fg-gauge i{position:absolute;top:-5px;width:4px;height:20px;margin-left:-2px;border-radius:2px;background:var(--ink);box-shadow:0 0 0 2px var(--panel)}
+.fg-gl{display:flex;justify-content:space-between;font:600 10px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.fg-comp .rc-v{display:block;font-size:18px;margin:2px 0}.fg-comp .rc-c{display:block;font-size:11px;line-height:1.35}
+.fg-ch{position:relative;min-height:190px;margin:0 0 6px;touch-action:pan-y}.fg-ax{font:500 10px var(--f-mono);fill:var(--muted)}
+.fg-tip{position:absolute;top:6px;pointer-events:none;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:6px 8px;font:500 11.5px/1.5 var(--f-mono);white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.fg-more summary{cursor:pointer;font-size:13.5px;color:var(--accent);margin:6px 0}.fg-more h3{font-size:14px;margin:16px 0 6px}
+.fg-tw{overflow-x:auto;margin:0 0 6px}.fg-t{border-collapse:collapse;width:100%;font:500 12px var(--f-mono);font-variant-numeric:tabular-nums}
+.fg-t th,.fg-t td{text-align:right;padding:5px 8px;border-bottom:1px solid var(--line);white-space:nowrap}.fg-t th{color:var(--muted);font-weight:600}
+.fg-t th:first-child,.fg-t td:first-child{text-align:left}.fg-t td.up{color:var(--up)}.fg-t td.down{color:var(--down)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -81,6 +94,7 @@ a.card.t-bull .rk{color:var(--up)}a.card.t-cau .rk{color:var(--down)}
   <div class="eyebrow">Investor dashboards · EN / 中文</div>
   <h1>Stock dashboards</h1>
   <p class="lede">Price, technical analysis, revenue, cash flow, watch list, news and calendar for each stock, plus live charts of the latest session's five biggest gainers (left) and five biggest losers (right). Prices refresh about every 10 minutes during US market hours; outside them each card also shows the pre-market or after-hours price, refreshed about every 15 minutes.</p>
+  <section id="feargreed" class="recap fgp" data-src="data/fear-greed.json" aria-label="Nasdaq fear and greed factor" hidden></section>
   <section id="recap" class="recap" data-src="data/market-recap.json" aria-label="Previous US session recap" hidden></section>
   <h2 class="rank-h">Most to least bullish</h2>
   <p class="sub">Ranked by Claude as of Nov 19, 2026 with a six-factor quant score (0–100): momentum 25%, trend 15%, growth &amp; quality 20%, value 10%, analyst revisions 20%, risk 10%. Each factor is a percentile against the other 27 stocks, so the order moves when the data does. <a href="data/ranking.json">Full factor table</a>. Not advice.</p>
@@ -142,6 +156,7 @@ const refresh=()=>cards.forEach(cardPx);
 refresh();setInterval(refresh,60000);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)refresh();});
 </script>
+<script src="assets/fear-greed.js?v=1"></script>
 <script src="assets/market-recap.js?v=1"></script>
 <script src="assets/news.js?v=5"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
