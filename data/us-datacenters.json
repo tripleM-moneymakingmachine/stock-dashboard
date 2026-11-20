@@ -1,6 +1,6 @@
 {
- "asof": "2026-11-20",
- "asofText": "Nov 20, 2026",
+ "asof": "2026-11-21",
+ "asofText": "Nov 21, 2026",
  "note": "Each campus shows planned build-out and power operating today, both as total facility power (grid draw), from Epoch AI, Cleanview, company announcements and filings; GW marked ~ are Claude estimates where nothing is disclosed. Risk tiers, costs and views are Claude's assessment, updated daily.",
  "owners": {
   "msft": {
@@ -608,7 +608,7 @@
    "status": "uc",
    "capexB": null,
    "est": false,
-   "note": "Vantage Frontier: ~1.82 GW (Cleanview; Vantage cites 1.4 GW IT); first building late 2026, full build Q4 2028"
+   "note": "Vantage Frontier: ~1.82 GW (Cleanview; Vantage cites 1.4 GW IT); Oracle says fully permitted (Nov 20); first building late 2026, full build Q4 2028"
   },
   {
    "id": "sg-mil",
@@ -1540,7 +1540,7 @@
   },
   "GA": {
    "tier": 5,
-   "why": "Governor-elect Lance Bottoms backs an immediate statewide pause on large data centers; PSC races also turned on Georgia Power's data center expansion.",
+   "why": "Governor-elect Lance Bottoms (sworn in Jan 11, the first day of the session) will sign an executive order pausing new data center development, her office confirmed Nov 19; the length is not yet set. The PSC gets its first Democratic majority in 30 years, and new commissioner Edwards backs the pause, so Georgia Power's data center expansion terms are also in play.",
    "to": [
     "AL",
     "MS",
@@ -2010,11 +2010,11 @@
   },
   "googl": {
    "grade": "Medium-High",
-   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, all under Hinojosa's pause. Google is already showing the workaround: two days after the election it took over Crusoe's Wyoming site for $17B and pledged to pay for 100% of the power, mostly from on-site fuel cells. That template (own power, no ratepayer cost, air cooling) is the one most likely to win approvals under the new regimes, but it raises cost per GW, and losing Texas's sales-tax exemption alone is material at this scale. The stock's weakness is mostly sector sentiment; its site risk is real but the most manageable among the big builders. Michigan is a bright spot: its ~1 GW Van Buren Township campus is already pouring foundations with state permits and a DTE contract in hand, so it should be grandfathered from Benson's pause. It keeps adding friendly-state options: an annexation request in Palo, Iowa for up to six buildings beside the Duane Arnold nuclear plant (vote path starts Nov 30), and a $15B Malaysia plan for 2027–28 that the new export rule does not block for US-headquartered builders. Anthropic's listing adds a second engine: Alphabet holds a large stake, the prospectus shows at least $121B of commitments to Google, and Google is now lending its credit rating to TeraWulf's $19B Kentucky campus for Anthropic, moving demand into a friendly state at the cost of a contingent liability.",
+   "view": "Texas is the problem: Armstrong (~1.07 GW), Wilbarger (~0.85 GW) and Meitner in Gray County (~0.84 GW) are under construction and Haskell is planned, and Hinojosa says she will ban new permits while conceding she cannot stop projects already under construction. Google's workaround is clear: it took over Crusoe's Wyoming site for $17B with mostly on-site fuel-cell power, is pouring foundations in Van Buren Township, Michigan with permits and a DTE contract, and is pursuing Palo, Iowa beside the Duane Arnold nuclear plant. The new wrinkle is the overseas route: Trump singled out its ~$15B Finland plan on Nov 20 and threatened a ban or 'tremendous tax' on US firms building abroad, which puts Finland and the $15B Malaysia plan in question, though nothing has been issued. The stock held up best among the builders (about −1% on Nov 20), helped by its Anthropic stake and at least $121B of commitments; site risk is real but the most manageable.",
    "moves": [
     "Move Texas phases to Wyoming, Iowa (Palo/Duane Arnold), Oklahoma and Arkansas",
     "Self-supply power (Bloom/AEP, Intersect, nuclear) to sidestep grid-cost fights",
-    "Phase Texas builds to fit grandfathered permits"
+    "Hold overseas plans flexible until any White House rule is written"
    ]
   },
   "meta": {
@@ -2028,9 +2028,9 @@
   },
   "orcl": {
    "grade": "High",
-   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is now in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). Most are under construction and should be grandfathered from new approvals, but state permits, on-site power permits and ERCOT large-load service are still exposed. Oracle already sent a force majeure notice at Jupiter, lenders are testing its debt, and Microsoft is winding down its older rented capacity. Debt-funded with negative free cash flow, Oracle is the hyperscaler where financing and permits compound. Oracle is guiding to ~10 GW of AI data center capacity by May 2028, so most of that target runs through these pause states. Developers are now asking it for multibillion-dollar parent guarantees before signing leases (Applied Digital, per Bloomberg), on top of the $7B+ Wisconsin collateral, and interim Nvidia CEO Kress reportedly opposed a $250B OpenAI credit backstop, so the financing side of its risk keeps widening even where permits are fine. Lenders are now pricing that risk: HSBC sold a ~$300M slice of Jupiter's $18B construction loan in the mid-80s after the force majeure notice, and the stock fell ~5% to near $119 on Nov 16.",
+   "view": "Three Stargate sites in Texas (Abilene, Shackelford 2 GW) and every hedge site is in a pause state: Michigan (Benson, conditional), Wisconsin's Lighthouse (Crowley, conditional) and New Mexico's Jupiter (Haaland, immediate moratorium). The Nov 20 update helps on both fronts: Oracle says the OpenAI contract is fully funded (the $20B raise plus vendor financing in place), Abilene is nearly complete and Shackelford is fully permitted, which matters because Hinojosa concedes she cannot stop permitted, under-construction projects. Jupiter's force majeure, the Dec 7 air-permit hearing and lender pricing (CDS near 328 bp, a one-month high) remain the weak spots. The ~6% fall to about $104 on Nov 20 was the sector rout; the after-hours bounce on the funding news is the better read of its site and financing risk, which eased today.",
    "moves": [
-    "Use the Dec 10–Jan 19 ERCOT window for Shackelford",
+    "Build Shackelford under its existing permits before Jan 19",
     "Secure Jupiter's air permit (Dec 7 hearing)",
     "Re-sell freed Microsoft capacity to OpenAI"
    ]
@@ -2055,7 +2055,7 @@
   },
   "crwv": {
    "grade": "Medium",
-   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton). Q3 answered demand (backlog $132.5B, 'largely sold out through 2027') and Anthropic, a customer, just listed at a $1.76T valuation with about $901B of data center commitments. The stock still fell 6–7% to about $45 on Nov 19, even after co-founder Venturo bought $30M of its 2031 bonds: the market is pricing cost of capital (Q3 interest $846M vs $207M operating income, ~$11B of principal due 2027, Nvidia's financing now selective) rather than any campus being stopped. The selloff is financing sentiment, not site risk; a cheaper debt raise would be the catalyst.",
+   "view": "CoreWeave's own sites are mostly outside Texas, but it is the tenant at Texas developer sites (Galaxy Helios, Core Scientific Denton). Q3 answered demand (backlog $132.5B, 'largely sold out through 2027') and Anthropic, a customer, now trades publicly with about $901B of data center commitments. Yet the stock fell another 12.1% on Nov 20 and its five-year CDS widened to about 1,233 bp (pricing more than a 65% five-year default chance) as the Nvidia SEC report and the market correction hit funding confidence. Nothing changed at its sites; the risk is the cost and availability of capital (Q3 interest $846M, ~$11B due 2027, Nvidia guarantees now selective), so the ~$9B of expected customer prepayments and the delayed-draw loan pricing (guided at 7–7.5%) are the catalysts.",
    "moves": [
     "Lock in grandfathering for permitted Texas builds with the transition team",
     "Push more customer prepayment structures to fund 2027",
@@ -2064,7 +2064,7 @@
   },
   "nbis": {
    "grade": "Medium",
-   "view": "Third-party colocation, not state politics, is what slipped: Vineland's Microsoft capacity is split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Missouri, Birmingham, Finland) are on schedule and none are in Texas, though Highridge sits in tier-4 Pennsylvania. The stock fell another 9.5% to about $97 on Nov 19 as money rotated into Anthropic's listing; with prepayments covering more than 100% of new-deal capex, that is funding and positioning sentiment, not site risk. Delivery dates against the $40–45B 2027 capex plan are the test.",
+   "view": "Third-party colocation, not state politics, is what slipped: Vineland's Microsoft capacity is split across year-end and Q2 2027 while the operator moves to Bloom fuel cells. Owned sites (Missouri, Birmingham, Finland) are on schedule and none are in Texas, though Highridge sits in tier-4 Pennsylvania. The stock fell 16.1% on Nov 20 (about 65% below its October high) in the Nvidia-led rout; with prepayments covering more than 100% of new-deal capex and cash about 40 times its debt due within a year, that is sentiment and positioning, not site risk. Trump's threat to tax US firms building abroad is a small new question for Finland, though Nebius is Dutch-listed.",
    "moves": [
     "Shift new capacity to owned Missouri/Alabama sites",
     "Bloom fuel cells to bridge Vineland power",
@@ -2073,7 +2073,7 @@
   },
   "iren": {
    "grade": "High",
-   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip is a Microsoft-requested network redesign, not a regulatory block. The counterparty worry persists (Microsoft reviewing neocloud deals, Nvidia financing more selective), and IREN still has about $6B of this year's $15B capex unfunded. It fell 5.5% to about $14.4 on Nov 19 (around 79% below its 2025 high) on the post-Anthropic rotation. TD Securities' view that Hinojosa may revisit permits issued after the election is the new Texas risk for Sweetwater, so the Dec 10–Jan 19 ERCOT window matters more, not less.",
+   "view": "Childress (750 MW, energised) and the 2 GW Sweetwater site are both in Texas. The Childress slip is a Microsoft-requested network redesign, not a regulatory block. IREN still has about $6B of planned capex to fund and fell roughly 15% to about $12 on Nov 20 in the neocloud rout, so financing, not permits, is the near-term risk. Hinojosa's Fox comments (ban on new permits, no power over projects under construction) make it more urgent to get Sweetwater under construction and through the Dec 10–Jan 19 ERCOT window.",
    "moves": [
     "Deliver Horizons 2–4 inside Microsoft grace periods",
     "Use the Dec 10–Jan 19 ERCOT window for Sweetwater",
@@ -2082,7 +2082,7 @@
   },
   "apld": {
    "grade": "Low",
-   "view": "North Dakota sites (Harwood voters backed it 3-to-1) plus Delta Forge in Louisiana, so almost no exposure to the pause states. Bloomberg's report that it demands multibillion-dollar parent guarantees from Oracle and Meta, caps junk-rated tenants like CoreWeave and targets a 70/30 investment-grade mix shows it pushing grid-cost risk onto tenants, which protects its balance sheet but may slow new lease signings. The real constraint is funding: interest cost already exceeds base rent and ~800 MW still needs financing over the next year (Morgan Stanley cut its target to $25). Recent drops track the neocloud tape, not its sites; Louisiana's new tax-break attestations are a small added hurdle for Delta Forge.",
+   "view": "North Dakota sites (Harwood voters backed it 3-to-1) plus Delta Forge in Louisiana, so almost no exposure to the pause states. The constraint is funding: interest and financing costs run about 2.6 times base rent, ~800 MW still needs financing, and CoreWeave (about 30% of contracted revenue) has bonds near 16% and CDS above 1,200 bp, which is the benchmark lenders will use when it refinances. The ~14% drop to about $12 on Nov 20 tracks the neocloud credit tape, not its sites, but tenant credit is now the real risk, which is why it is pushing for investment-grade parent guarantees.",
    "moves": [
     "Market as the friendly-state alternative",
     "Keep demanding tenant guarantees for grid links",
@@ -2098,7 +2098,7 @@
   },
   "cifr": {
    "grade": "Medium-High",
-   "view": "All Texas: Barber Lake (Fluidstack, Google backstop), Black Pearl (300 MW for AWS, first phase live) and Stingray (100 MW for Amazon) are under the Texas pause, and Colchis (1 GW conditional ERCOT base load, 2028) is further out. Long AWS and Google-backed leases lower financing risk, but every site needs Texas permits and ERCOT service.",
+   "view": "All Texas: Barber Lake (Fluidstack, Google backstop), Black Pearl (300 MW for AWS, first phase live) and Stingray (100 MW for Amazon) are under the Texas pause, and Colchis (1 GW conditional ERCOT base load, 2028) is further out. Long AWS and Google-backed leases ($16.6B contracted) lower financing risk, but every new phase needs Texas permits and ERCOT service. It fell about 12% to under $6 on Nov 20 with the neocloud group; Hinojosa's concession that she cannot stop projects under construction protects Barber Lake and Black Pearl more than Colchis.",
    "moves": [
     "Lean on AWS and Google-backed leases",
     "Energise Black Pearl and Stingray before new rules"
@@ -2128,6 +2128,71 @@
   }
  },
  "dev": [
+  {
+   "d": "2026-11-20",
+   "co": [
+    "crwv",
+    "nbis",
+    "iren",
+    "apld",
+    "cifr",
+    "orcl"
+   ],
+   "t": "The AI selloff deepened on Friday and the S&P 500 and Dow closed in correction: Nvidia fell about 14% after Reuters reported that the SEC probe is examining possible accounting issues, Anthropic gave back 9.1% on its second day, CoreWeave fell 12.1% and Nebius 16.1%, while IREN, Applied Digital and Cipher lost roughly 12–15%. CoreWeave's five-year credit default swap widened to about 1,233 bp and Oracle's to about 328 bp; this is a funding and confidence shock, not new site risk.",
+   "src": "https://asia.nikkei.com/business/markets/equities/us-stocks-end-sharply-lower-on-ai-selloff-s-p-500-dow-in-correction"
+  },
+  {
+   "d": "2026-11-20",
+   "co": [
+    "*"
+   ],
+   "t": "The Senate passed the BAAJA permitting bill 62-33 on Nov 19: it speeds federal reviews for power plants and transmission, limits how agencies can pull issued permits, and makes large data centers pay both for their power and for the grid upgrades built for them (about $35B more over ten years, per Grid Strategies). It now goes to the House, which passed a narrower, industry-friendly version last year; if both chambers don't agree before the new Congress in January, it must start over.",
+   "src": "https://usatoday.com/story/news/politics/2026/11/19/senate-permitting-reform-bill-passes-data-centers-clean-energy/92871719007"
+  },
+  {
+   "d": "2026-11-20",
+   "co": [
+    "googl",
+    "msft",
+    "amzn",
+    "meta",
+    "orcl"
+   ],
+   "t": "President Trump said at a White House news conference that US companies would be barred from building data centers abroad or face a 'tremendous tax', and singled out Google's planned ~$15B Finland investment for 2027–28. No order or rule was published and staff appeared surprised, but it threatens the overseas-relocation escape route builders were using to get around state pauses.",
+   "src": "https://www.usnews.com/news/business/articles/2026-11-20/trump-says-he-plans-to-penalize-us-tech-companies-that-build-ai-data-centers-in-other-countries"
+  },
+  {
+   "d": "2026-11-20",
+   "co": [
+    "orcl"
+   ],
+   "t": "Oracle said its OpenAI infrastructure contract is fully funded after its $20B raise (about $10B stock, $10B debt) plus vendor financing, that Abilene is nearly complete and that its next gigawatt campus in Shackelford County, Texas is fully permitted; the shares rose as much as 3.3% after hours. A fully permitted Shackelford is the key point under Hinojosa's coming pause, since she says she cannot stop projects that already hold permits.",
+   "src": "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
+  },
+  {
+   "d": "2026-11-20",
+   "co": [
+    "spcx",
+    "orcl",
+    "frmi",
+    "iren",
+    "cifr",
+    "glxy",
+    "googl",
+    "msft",
+    "meta"
+   ],
+   "t": "Texas Governor-elect Hinojosa told Fox News she wants a ban on new data center permits until the Legislature passes protections but conceded she cannot stop projects already under construction, adding 'I don't hate data centers' and offering to talk with Musk. In Georgia, Governor-elect Bottoms' office confirmed she will sign an executive order pausing new data center development after taking office on Jan 11, with the length not yet set; the new Democratic-majority PSC backs it.",
+   "src": "https://www.kcbd.com/2026/11/20/hinojosa-calls-data-center-moratorium-perry-files-senate-bill"
+  },
+  {
+   "d": "2026-11-20",
+   "co": [
+    "*"
+   ],
+   "t": "TrendForce now expects NAND contract prices to start falling in Q1 2027 (0–5% down, every category lower from Q2) as Chinese cloud buyers cut orders, while it still sees conventional DRAM up 5–10% in Q1; Sandisk fell about 14% and Micron about 12% in Friday's rout. For data center builders this slightly lowers storage costs; for suppliers it splits memory into tight HBM/DRAM and loosening NAND.",
+   "src": "https://finance.yahoo.com/markets/stocks/articles/sandisk-tumbles-8-trendforce-turns-140929574.html"
+  },
   {
    "d": "2026-11-19",
    "co": [
@@ -2614,58 +2679,29 @@
    ],
    "t": "Louisiana landowner and citizen groups sued the state utility commission over the 'Lightning Directive' fast track that Entergy plans to use on Dec 10 to approve seven gas plants and transmission for Meta's Hyperion; the same pathway is used for Applied Digital's Rapides Parish site.",
    "src": "https://theadvocate.com/baton_rouge/news/politics/lawsuit-targets-louisiana-data-center-power-plans/article_94f8f899-e516-532b-a87f-7ca7cc1b151b.html"
-  },
-  {
-   "d": "2026-11-09",
-   "co": [
-    "*"
-   ],
-   "t": "The Senate held its first 60-vote test Monday evening on the permitting bill that makes 20 MW+ data centers pay their full grid costs; TD Cowen cut its odds of the bill passing to 25% from 40% after the election.",
-   "src": "https://yahoo.com/news/politics/articles/bill-data-centers-pay-grid-184834747.html"
-  },
-  {
-   "d": "2026-11-09",
-   "co": [
-    "amzn",
-    "googl"
-   ],
-   "t": "Constellation beat estimates and raised 2026 guidance, with about 8.5 GW of long-term power deals signed this year including Amazon and Google; power names rebounded (Constellation +10%, Bloom +14%, Vertiv +10%, GE Vernova +7%) as buyers are clearly still signing.",
-   "src": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-soars-7-constellation-154818525.html"
-  },
-  {
-   "d": "2026-11-09",
-   "co": [
-    "googl"
-   ],
-   "t": "Nvidia fell 4.3% after its board opened an investigation into CEO Jensen Huang over an alleged Chinese intelligence contact, while AMD jumped 13% on an Oppenheimer upgrade and Google choosing EPYC CPUs to host its new TPU 8tx; the S&P 500 rose 2.3% and CoreWeave 5.6% (Wayve deal) before Tuesday's earnings.",
-   "src": "https://nvdaily.com/associated_press_national/us-futures-climb-nvidia-slides-amid-burgeoning-investigation-involving-ceo-jensen-huang/article_32f4403f-890d-5b72-a3ce-9d9f0f2dd843.html"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "crwv"
-   ],
-   "t": "CoreWeave's CEO wrote to Texas governor-elect Hinojosa asking that already-permitted projects be allowed to finish and offering to help write standards for new ones; the letter names its Austin, Denton, Dickens County, Plano, Richardson and Round Rock sites.",
-   "src": "https://convergedigest.com/coreweave-texas-data-centers-governor-elect-hinojosa"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "*"
-   ],
-   "t": "Kansas: Democrat Cindy Holscher's lead held at about 7,600 votes after the mail-ballot deadline and several outlets have called the race for her, though a close-race audit is still running and Masterson has not conceded.",
-   "src": "https://poliwave.com/us/live/midterms-2026/governors/kansas"
-  },
-  {
-   "d": "2026-11-07",
-   "co": [
-    "spcx"
-   ],
-   "t": "Hinojosa asked Texas Parks and Wildlife to take no action during the transition on selling 1,300 acres of Boca Chica state park land next to SpaceX's Starbase, an early sign she will use agency appointees to slow Musk-linked projects.",
-   "src": "https://houstonchronicle.com/business/article/hinojosa-spacex-state-park-land-sale-22516892.php"
   }
  ],
  "sources": [
+  [
+   "Nikkei/Reuters: S&P 500, Dow in correction on AI selloff",
+   "https://asia.nikkei.com/business/markets/equities/us-stocks-end-sharply-lower-on-ai-selloff-s-p-500-dow-in-correction"
+  ],
+  [
+   "USA Today: Senate passes BAAJA 62-33",
+   "https://usatoday.com/story/news/politics/2026/11/19/senate-permitting-reform-bill-passes-data-centers-clean-energy/92871719007"
+  ],
+  [
+   "US News/AP: Trump threatens firms building data centers abroad",
+   "https://www.usnews.com/news/business/articles/2026-11-20/trump-says-he-plans-to-penalize-us-tech-companies-that-build-ai-data-centers-in-other-countries"
+  ],
+  [
+   "Investing.com/Reuters: Oracle says OpenAI deal fully funded",
+   "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
+  ],
+  [
+   "Center Square: Bottoms to sign Georgia pause order",
+   "https://thecentersquare.com/georgia/article_2b4da2d0-ec81-4313-ab72-1bc81108bd81.html"
+  ],
   [
    "CNN: Anthropic closes first day at $97.17",
    "https://edition.cnn.com/2026/11/19/business/live-news/anthropic-ipo"
@@ -2725,26 +2761,6 @@
   [
    "Texas Dispatch: SB 338 low-water cooling bill",
    "https://thetexasdispatch.com/sb-338-data-center-water-cooling-grid-tax-breaks"
-  ],
-  [
-   "DCD: SpaceX 6 GW Cochise plan",
-   "https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/"
-  ],
-  [
-   "Arizona moratorium push (Center Square)",
-   "https://thecentersquare.com/arizona/article_436ddd41-c892-4e8d-9f15-60b8aabb4a94.html"
-  ],
-  [
-   "Virginia pause politics (WRIC)",
-   "https://wric.com/news/politics/capitol-connection/the-politics-behind-calls-for-a-data-center-moratorium-in-virginia"
-  ],
-  [
-   "Prologis sues Trenton (WYSU)",
-   "https://wysu.org/ohio-news/2026-11-13/developer-sues-trenton-over-voter-approved-data-center-ban"
-  ],
-  [
-   "Texas interconnection window (Energy Intelligence)",
-   "https://energyintel.com/000001a1-d186-d912-a7ab-d98e6c730000"
   ]
  ],
  "modo": {
