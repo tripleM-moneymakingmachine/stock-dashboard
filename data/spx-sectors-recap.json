@@ -1,39 +1,39 @@
 {
-  "session": "2026-11-19",
-  "asof": "Thu Nov 19, 2026 close",
-  "headline": "Anthropic's debut fails to lift the AI trade and all 11 sectors fall; energy holds up best, discretionary and communication services lead the slide",
-  "summary": "SPY fell 2.0% on Thursday and the equal-weight RSP 1.8%, a sixth straight loss for the S&P 500; over the past month SPY is down 7.4% and RSP 2.3%. Every sector fell: energy lost least (−0.7%), then utilities (−1.2%) and staples (−1.4%), while discretionary (−2.8%), communication services (−2.7%) and materials (−2.1%) fell most. Over the month staples (+3.2%), utilities (+2.4%) and real estate (+1.9%) lead, and tech (−14.8%), energy (−10.7%) and communication services (−5.7%) lag. The trigger was the AI complex reversing after Anthropic began trading, with a short report on AMD, more managed-care selling and a soft jobs and Philly Fed print that only nudged the 10-year down to 5.05%.",
+  "session": "2026-11-20",
+  "asof": "Fri Nov 20, 2026 close",
+  "headline": "A report of an SEC accounting probe sinks Nvidia 14% and XLK 7.4%; the S&P 500 enters a correction and staples are the only sector to rise",
+  "summary": "SPY fell 3.8% on Friday against 2.1% for the equal-weight RSP, a seventh straight loss that put the S&P 500 in a correction; over the past month SPY is down 9.9% and RSP 5.1%. Staples were the only sector to rise (+0.6%), with health care (−0.3%), energy (−0.8%) and utilities (−0.8%) close behind, while tech (−7.4%), industrials (−3.3%) and discretionary (−3.1%) fell most. Over the month staples (+0.4%), real estate (−0.2%) and utilities (−0.5%) hold up best, and tech (−18.4%), energy (−10.6%) and communication services (−7.0%) lag. The driver was a chip rout (SOX −10.7%) after Reuters reported SEC staff are examining Nvidia's accounting, which pushed money into Treasuries: the 10-year fell 14bp to 4.91% and the VIX jumped 26% to 35.89.",
   "drivers": [
     [
-      "The AI trade reverses after Anthropic's debut",
-      "Anthropic opened 34% above its $83 IPO price but closed +17.1% as the early AI bounce faded: Nvidia went from +4.7% to −3.3% and AMD fell 7.7% on a Hunterbrook short report, leaving XLK −1.9%. Money raised for the record IPO had to come from somewhere, and Amazon (about −2.7%) and Alphabet (−3.5%), the two biggest outside holders, were sold, which put XLY (−2.8%) and XLC (−2.7%) at the bottom."
+      "Nvidia probe report turns the chip slide into a rout",
+      "Nvidia was already down 6–7% when Reuters reported the SEC is looking at possible accounting issues; it closed −14.0% at $125.53, its worst day since January 2025. AMD, Micron and Broadcom each fell more than 12%, Broadcom on an unconfirmed report that Google will cut next year's custom-chip orders, and XLK lost 7.4%, its RSI now 28 and the price 19.3% below its 50-day."
     ],
     [
-      "Defensives give no shelter",
-      "Health care fell 2.0% as UnitedHealth lost another 5.6% on the Medicare Advantage audit proposal, and Walmart slipped about 1% despite a beat and its third guidance raise of the year; staples still fell 1.4%. Williams-Sonoma's roughly 15% drop added to discretionary's losses. More than 90% of S&P 500 members fell and the VIX rose 15.8% to 28.44."
+      "AI losses spread to software, cyclicals and Anthropic",
+      "Intuit dropped more than 10% after cutting its fiscal 2027 revenue outlook, and Anthropic fell 8.5% to $88.91, close to its $83 IPO price. Industrials (−3.3%), discretionary (−3.1%) and communication services (−2.8%) followed tech lower; over the week SPY lost 8.7% and RSP 6.3%."
     ],
     [
-      "Energy loses least as oil steadies",
-      "WTI was flat at $83.21 as Iranian claims of tankers hitting mines near Hormuz offset surplus worries, so XLE fell only 0.7%. It is still −13.0% month to date with RSI 21, the most oversold reading on the page."
+      "Defensives hold up as bonds rally",
+      "The 10-year fell 14bp to 4.91% and the 2-year 17bp to 4.61%, trimming December hike odds. Staples rose 0.6% and health care slipped only 0.3% as TD Cowen upgraded UnitedHealth and Humana to buy, but rate-sensitive utilities (−0.8%) and real estate (−1.0%) still fell in the broad selling."
     ],
     [
-      "Softer data, little rate relief",
-      "Continuing jobless claims jumped to a ten-week high of 1.763m and the Philly Fed index slowed to 6.3, but the 10-year eased only about 1bp to 5.05% with a December hike almost fully priced. Financials fell 1.5% and closed below their 50-day average."
+      "Energy steadies with crude",
+      "WTI rose 0.9% to $83.98, so XLE fell only 0.8%; it is still −13.7% month to date with RSI 25 and 6.6% below its 50-day."
     ]
   ],
-  "rotation": "Materials moved from Leading to Weakening since the last recap: its 3-month relative strength turned negative (−1.0 points) with the price 3.0% below its 200-day. That leaves seven sectors in Leading (staples, utilities, health care, financials, real estate, discretionary and industrials), energy and materials in Weakening, communication services in Improving and tech in Lagging. Inside Leading the defensives are the strongest, with staples at +11.5 points and health care at +8.3, though health care is now only 0.7% above its 50-day with RSI 37. Energy's relative strength is down to +2.5 points but it is falling less than SPY, while tech is at −6.0 points and 13.2% below its 50-day. The defensive rotation ends when XLK reclaims its 50-day average with creations continuing and staples and utilities start to lose relative strength; Thursday's reversal pushed that further out.",
-  "flows": "State Street flows to Nov 18 show ETF holders still buying tech into the slide: XLK took in $595m in a week (0.5% of assets), $2.05bn in a month (1.9%) and $3.59bn over 3 months (3.3%) while its price fell 14.8% in a month. The heaviest selling is in the havens that are rallying: utilities lost $1.75bn in a month (7.5% of assets) and staples $784m (5.3%) despite monthly gains of 2.4% and 3.2%, so the defensive bid looks like institutional positioning that the ETF holders are fading. Financials keep bleeding: −$308m in a week, −$1.14bn in a month (2.2%) and −$3.13bn over 3 months (6.0%), and energy lost $501m in a week (1.3%), its fastest pace on the page. Materials took in $325m in a month (4.0% of assets) and health care $313m (0.7%), though health care saw $189m leave in the latest week. For scale, SPY took in $8.70bn in the week (1.1% of its $0.78tn) and $5.68bn over the month, so broad beta is being bought while sector money rotates.",
-  "model": "The six-factor model still ranks energy first, with its score edging up to 77 from 75; health care is second (64, down from 68), then staples (54), materials (53), tech (52) and financials (51). Real estate (48) and discretionary (44) follow, utilities rose to ninth (39) past industrials (37), and communication services stays last (31). Energy's lead rests on +54% 12-1 month momentum, a 12.2x forward P/E and 151% Q3 earnings growth, while its 1-month flows (−2.0% of assets) and RSI 21 point the other way, so I stay neutral. Utilities and staples are held back by the worst flow scores (−7.5% and −5.3% of assets). I differ on tech, where 1.9% inflows and oversold readings make me more constructive than fifth, and I have now cut financials to neutral, in line with the model's mid-table rank, after the 50-day break.",
+  "rotation": "Communication services moved from Improving into Leading since the last recap, the only quadrant change; its 3-month relative strength is still −1.2 points, so the move reflects the cap-weighted index falling faster rather than strength of its own. That leaves eight sectors in Leading (staples, health care, utilities, financials, real estate, discretionary, industrials and communication services), energy and materials in Weakening and tech alone in Lagging. Staples (+13.6 points), health care (+11.3) and utilities (+9.0) remain the strongest, energy's relative strength rose to +5.9 points as it fell less than SPY, and materials crept back to +0.1. Tech is at −7.7 points and 19.3% below its 50-day, the widest gap on the page. The defensive rotation ends when XLK reclaims its 50-day average with creations continuing and staples and health care start losing relative strength; Friday pushed that further out.",
+  "flows": "State Street flows to Nov 19 show ETF holders still buying tech into the slide: XLK took in $300m in a week, $2.66bn in a month (2.5% of assets) and $3.93bn over 3 months, while its price fell 18.4% in a month. The selling has spread to the sectors that held up: health care lost $912m in a week (1.9% of assets) and energy $1.14bn (3.0%), taking energy's monthly outflow to $1.72bn (4.4%). Utilities lost $1.67bn in a month (7.2% of assets) and staples $379m (2.6%) even as they led on price, so the defensive bid looks institutional rather than ETF-driven. Financials keep bleeding ($713m in a week, $3.19bn over 3 months), while materials took in $351m in a month (4.4% of assets, the most on the page). For scale, SPY lost $6.96bn in the week (0.9% of its $0.76tn) and $3.30bn over the month, so broad beta is now being sold while sector ETF buyers keep averaging into tech.",
+  "model": "The six-factor model, now using FactSet's Nov 20 valuations, still ranks energy first (77), then health care (62), staples (58), materials (55), financials (50) and real estate (50, up from seventh after gaining a valuation input). Tech slipped to seventh (48) from fifth as its 3-month relative strength fell to −7.7 points, utilities (41) moved past discretionary (41) into eighth, and industrials (37) and communication services (32) stay at the bottom. Energy's lead rests on +55% 12-1 month momentum, an 11.5x forward P/E and 151% Q3 earnings growth, while its 1-month outflows (4.4% of assets) and RSI 25 point the other way, so I stay neutral. Utilities are held back by the worst flow score (−7.2% of assets). I am more constructive than the model on tech, where 73% Q3 earnings growth, a 16.7x forward P/E and continuing inflows offset the trend, but I am not adding while the Nvidia probe is unresolved.",
   "idx": {
-    "pe": 18.3,
+    "pe": 17.1,
     "pe5": 19.8,
     "pe10": 19.1,
-    "epsQ3": 31.9,
-    "revQ3": 14.4,
-    "epsQ4": 28.3,
-    "epsCY26": 33.3,
-    "epsCY27": 16.2,
-    "src": "FactSet Earnings Insight, Nov 13, 2026"
+    "epsQ3": 32.9,
+    "revQ3": 14.6,
+    "epsQ4": 28.9,
+    "epsCY26": 33.7,
+    "epsCY27": 16.4,
+    "src": "FactSet Earnings Insight, Nov 20, 2026"
   },
   "weightsAsOf": "2026-10-02",
   "weights": {
@@ -53,130 +53,130 @@
   "sectors": {
     "XLV": {
       "stance": "Overweight",
-      "pe": 19.4,
-      "peSrc": "BNP Paribas Wealth Management, Nov 2026",
+      "pe": 19.7,
+      "peSrc": "FactSet via MarketWatch, Nov 17, 2026",
       "eps": 9.3,
-      "view": "Health care fell 2.0% as UnitedHealth dropped another 5.6% on the Medicare Advantage audit proposal, so the sector traded with the market rather than as a haven; XLV is −0.8% over a month. Pharma and tools carry less of this risk, and BofA's November survey shows fund managers lifting their health care overweight to a net 34% from 23%. That positioning support is why I keep the overweight despite the managed-care drag.",
-      "modelView": "Second (64, down from 68): +8.3 points of 3-month relative strength and the strongest trend (11.0% above the 200-day), with 1-month inflows of 0.7% of assets. Weak spots are 9% Q3 earnings growth, RSI 37 and $189m of outflows in the latest week.",
-      "trade": "Hold the overweight through pharma and tools; cut to neutral on a close below the 50-day average (now just 0.7% below the price), and avoid managed care until the CRUSH rule's comment period (to Jan 19) clarifies the audit exposure.",
-      "risk": "The audit rule spreading to a wider Medicare Advantage squeeze; crowded defensive positioning unwinding if tech rebounds."
+      "view": "Health care slipped only 0.3% as TD Cowen upgraded UnitedHealth and Humana to buy and named UnitedHealth its best idea for 2027, which eased some of the pressure from the Medicare Advantage audit proposal. XLV is −2.4% over a month against −9.9% for SPY, and fund managers raised their health care overweight in BofA's November survey. At 19.7x forward earnings it is cheaper than staples, which is why I keep the overweight.",
+      "modelView": "Second (62, down from 64): +11.3 points of 3-month relative strength and the strongest trend (10.6% above the 200-day). Weak spots are 9% Q3 earnings growth, RSI 37 and $912m of redemptions in the latest week (1.9% of assets).",
+      "trade": "Hold the overweight through pharma, tools and now the large managed-care names; cut to neutral on a close below the 50-day average (the price is just 0.3% above it).",
+      "risk": "The audit rule spreading to a wider Medicare Advantage squeeze; crowded defensive positioning unwinding if tech rebounds sharply."
     },
     "XLF": {
       "stance": "Neutral",
-      "pe": 15.1,
-      "peSrc": "FactSet, Nov 13, 2026",
+      "pe": 14.4,
+      "peSrc": "FactSet, Nov 20, 2026",
       "eps": 6.4,
-      "view": "Cut to neutral from overweight: XLF fell 1.5% on Thursday and closed 0.6% below its 50-day average, the trigger set in the last recap, and redemptions keep building ($3.13bn over 3 months). A 10-year above 5% still supports bank margins and at 15.1x forward earnings the sector is cheap, but a December hike and private-credit worries are weighing on the group.",
-      "modelView": "Sixth (51): +3.3 points of 3-month relative strength and 3.4% above the 200-day, held back by flows ($1.14bn out in a month, 2.2% of assets) and modest 12-1 month momentum (+11%).",
+      "view": "Financials fell 2.0% and are 2.5% below the 50-day average, so the neutral stance set on Thursday holds. The bond rally (10-year −14bp to 4.91%) trims the margin tailwind, and ETF redemptions continue ($713m in a week). At 14.4x forward earnings (FactSet) the sector is the second cheapest after energy.",
+      "modelView": "Fifth (50, from sixth): +3.5 points of 3-month relative strength and 1.4% above the 200-day, held back by flows ($886m out in a month, 1.7% of assets) and modest 12-1 month momentum (+12%).",
       "trade": "Neutral; move back to overweight on a close above the 50-day average with weekly redemptions stopping, and prefer large money-centre banks and brokers over regionals.",
-      "risk": "Private-credit or commercial real estate losses; a flatter curve if the Fed hikes 50bp."
+      "risk": "Private-credit or commercial real estate losses; trading and deal activity slowing if the correction deepens."
     },
     "XLK": {
       "stance": "Neutral, accumulate",
-      "pe": 17.3,
-      "peSrc": "FactSet, Nov 5, 2026",
-      "eps": 69.4,
-      "view": "Tech fell 1.9% as the AI bounce on Anthropic's debut reversed: Nvidia closed −3.3% and AMD −7.7% on a short report, while Palo Alto (+6.4%) and CrowdStrike gained. BofA's November survey shows managers cut tech to a net 12% overweight from 37%, the biggest drop since 2006; the survey's best entry points have come when tech goes underweight, which has not happened yet. XLK is −14.8% over a month with RSI 32, earned 69% Q3 earnings growth and trades below the market multiple.",
-      "modelView": "Fifth (52): the second-best 12-1 month momentum (+36%), a strong valuation score and 1-month inflows of 1.9% of assets offset the worst 3-month relative strength (−6.0 points) and a price 6.0% below the 200-day.",
-      "trade": "Keep building towards benchmark in thirds: the first tranche is in; the second on a close back above the 50-day average (13.2% above), the third on a retest of the low that holds.",
-      "risk": "ETF dip-buyers capitulating if Nvidia and AMD keep falling; a hyperscaler capex cut, which 52% of BofA's surveyed managers expect within six months."
+      "pe": 16.7,
+      "peSrc": "FactSet via MarketWatch, Nov 17, 2026",
+      "eps": 72.7,
+      "view": "Tech fell 7.4% as Nvidia dropped 14% on the report of an SEC accounting review and chip names fell more than 12%, while Intuit's outlook cut dragged on software. XLK is −18.4% over a month and RSI 28, yet Q3 earnings grew 73% (FactSet) and the sector trades at about 16.7x forward earnings, below the market. The probe adds a governance risk to the biggest AI holding that valuation alone cannot price, so I keep the stance but pause new buying.",
+      "modelView": "Seventh (48, down from fifth): the worst 3-month relative strength (−7.7 points) and a price 13.0% below the 200-day now outweigh +30% 12-1 month momentum, strong valuation and earnings scores and 1-month inflows of 2.5% of assets.",
+      "trade": "Neutral with one tranche in; add the second only after a close back above the 50-day average (19.3% above) or clarity on the Nvidia review, whichever comes first.",
+      "risk": "Confirmation of accounting problems at Nvidia, or a hyperscaler capex cut, which 52% of BofA's surveyed managers expect within six months."
     },
     "XLP": {
       "stance": "Neutral, trim",
-      "pe": 23.7,
-      "peSrc": "FactSet, Nov 13, 2026",
+      "pe": 23.3,
+      "peSrc": "FactSet, Nov 20, 2026",
       "eps": null,
-      "view": "Staples fell 1.4% on Thursday but are +3.2% over the month as a haven. Walmart beat and raised its full-year outlook for the third time but slipped about 1%, a sign that defensive leaders are priced for good news. At 23.7x forward earnings the sector costs about 30% more than the market, and ETF holders are selling ($784m out in a month).",
-      "modelView": "Third (54, down from 59): the strongest 3-month relative strength (+11.5 points) and trend (6.7% above the 200-day), with a weak valuation score and the second-worst flow score (−5.3% of assets in a month).",
+      "view": "Staples were the only sector to rise on Friday (+0.6%) and lead the month (+0.4%), with Walmart extending gains after its raised outlook. At 23.3x forward earnings (FactSet) the sector costs about 36% more than the market, and ETF holders are still selling ($379m out in a month).",
+      "modelView": "Third (58, up from 54): the strongest 3-month relative strength (+13.6 points) and 7.3% above the 200-day, with a weak valuation score and outflows of 2.6% of assets in a month.",
       "trade": "Neutral; keep trimming into haven rallies and rotate into pharma within health care.",
       "risk": "A deeper growth scare would extend the defensive bid."
     },
     "XLE": {
       "stance": "Neutral",
-      "pe": 12.2,
-      "peSrc": "FactSet, Nov 13, 2026",
+      "pe": 11.5,
+      "peSrc": "FactSet, Nov 20, 2026",
       "eps": 151.2,
-      "view": "Energy fell least on Thursday (−0.7%) as WTI held $83.21, steadied by Iranian claims of tanker incidents near Hormuz against surplus worries. It is the cheapest sector (12.2x) with the fastest earnings growth (151% in Q3 per FactSet), but XLE is −13.0% month to date and RSI 21, and ETF holders pulled $501m in a week. Crude still has not regained the mid-$80s.",
-      "modelView": "First in the model (77, up from 75): valuation, earnings and 12-1 month momentum (+54%) carry it, while price (−10.7% in a month), flows (−2.0% of assets) and the Weakening quadrant point the other way, which is why I don't follow the model's overweight.",
-      "trade": "Neutral; don't add until WTI regains $85 and XLE recloses above its 50-day average (now 6.0% below it); oversold readings alone are not a signal.",
+      "view": "Energy fell 0.8% as WTI rose 0.9% to $83.98. It is the cheapest sector (11.5x forward earnings) with the fastest Q3 earnings growth (151%, FactSet), but XLE is −13.7% month to date, RSI 25, and ETF holders pulled $1.14bn in a week. Crude still has not regained the mid-$80s.",
+      "modelView": "First in the model (77): valuation, earnings and 12-1 month momentum (+55%) carry it, while price (−10.6% in a month), flows (−4.4% of assets in a month) and the Weakening quadrant point the other way, which is why I don't follow the model's overweight.",
+      "trade": "Neutral; don't add until WTI regains $85 and XLE recloses above its 50-day average (now 6.6% below it); oversold readings alone are not a signal.",
       "risk": "Further surplus-driven oil weakness; Gulf escalation is the upside risk."
     },
     "XLB": {
       "stance": "Neutral",
-      "pe": 17.9,
-      "peSrc": "Siblis Research, Aug 2026",
+      "pe": 16.9,
+      "peSrc": "FactSet via MarketWatch, Nov 17, 2026",
       "eps": 29.8,
-      "view": "Materials fell 2.1% as gold dropped about 2.7% and silver almost 5% on hike pricing and a dollar near a 19-month high. XLB moved into the Weakening quadrant and is 3.0% below its 200-day, though Q3 earnings grew about 30% (FactSet). ETF buyers are still adding, with $325m in a month.",
-      "modelView": "Fourth (53, up from 52): 1-month inflows of 4.0% of assets, the best flow score on the page, and +22% 12-1 month momentum, against −1.0 points of 3-month relative strength and a price 3.0% below the 200-day.",
-      "trade": "Neutral; wait for a close back above the 200-day before adding, and prefer data-center materials over miners while metals break down.",
+      "view": "Materials fell 2.3% with the cyclicals and are −8.5% month to date, 5.2% below the 200-day with RSI 24. Q3 earnings grew about 30% (FactSet) and the sector trades at about 16.9x forward earnings, and ETF buyers keep adding ($351m in a month).",
+      "modelView": "Fourth (55): 1-month inflows of 4.4% of assets, the best flow score on the page, and +23% 12-1 month momentum, against flat 3-month relative strength (+0.1 points) and a price 5.2% below the 200-day.",
+      "trade": "Neutral; wait for a close back above the 200-day before adding, and prefer data-center materials over miners.",
       "risk": "A stronger dollar and slower China demand."
     },
     "XLC": {
       "stance": "Neutral",
-      "pe": 17.8,
-      "peSrc": "Siblis Research, Aug 2026",
-      "eps": 18.2,
-      "view": "Communication services fell 2.7% as Alphabet dropped 3.5%, with investors likely selling it to fund Anthropic shares even as the IPO put a higher value on its stake. The sector is −11.9% this year and 7.9% below its 200-day as investors question returns on AI spending, though earnings grew about 18% in Q3 and it trades at about 18x forward earnings. Wells Fargo is overweight for 2027.",
-      "modelView": "Last (31): flat 12-1 month momentum (−1%), 7.9% below the 200-day and $800m of outflows in a month (3.7% of assets). Valuation and earnings are the positives, and it stays in Improving on the rotation map.",
+      "pe": 16.2,
+      "peSrc": "FactSet via MarketWatch, Nov 17, 2026",
+      "eps": 18.3,
+      "view": "Communication services fell 2.8% as AI-linked names slid with Anthropic; XLC is −7.0% over a month and −14.4% this year. Q3 earnings grew about 18% (FactSet) and the sector trades at about 16.2x forward earnings, the cheapest after energy and financials, and ETF buyers added $196m in the latest week.",
+      "modelView": "Last (32): flat 12-1 month momentum (−2%), 10.4% below the 200-day and $565m of outflows in a month (2.7% of assets). It moved into Leading on the rotation map only because SPY fell faster.",
       "trade": "Neutral; a bounce candidate if tech turns, but it needs to reclaim its 200-day average first.",
-      "risk": "More capex without matching revenue; advertising slowing if the consumer weakens."
+      "risk": "More AI capex without matching revenue; advertising slowing if the consumer weakens."
     },
     "XLI": {
       "stance": "Underweight",
-      "pe": 22.5,
-      "peSrc": "FactSet, Nov 13, 2026",
+      "pe": 21.3,
+      "peSrc": "FactSet, Nov 20, 2026",
       "eps": null,
-      "view": "Industrials fell 2.1% and are −10.2% over three months as the AI-power equipment trade unwound and growth data softened (Philly Fed 6.3 from 20.9). At 22.5x forward earnings they trade at a premium to the market. Morgan Stanley picks the sector for 2027, while Wells Fargo has it at equal weight.",
-      "modelView": "Tenth (37), down one place: −4.0 points of 3-month relative strength, 6.6% below the 200-day and a poor valuation score. Flows are small: $114m in over a month, $182m out in the latest week.",
+      "view": "Industrials fell 3.3%, the second-worst sector, and are −12.6% over three months as the AI-power equipment trade keeps unwinding. At 21.3x forward earnings (FactSet) they still trade at a premium to the market. Morgan Stanley picks the sector for 2027.",
+      "modelView": "Tenth (37): −3.0 points of 3-month relative strength, 9.6% below the 200-day, RSI 30 and a poor valuation score. Flows are small: $48m in over a month, $114m out in the latest week.",
       "trade": "Underweight; keep aerospace and defence, and revisit electrical equipment only on a close back above the 200-day.",
       "risk": "A fast AI-capex rebound would lift the electrical-equipment names first."
     },
     "XLY": {
       "stance": "Underweight",
-      "pe": 25.1,
-      "peSrc": "FactSet, Nov 13, 2026",
+      "pe": 24.2,
+      "peSrc": "FactSet, Nov 20, 2026",
       "eps": null,
-      "view": "Discretionary was the worst sector on Thursday (−2.8%): Amazon fell about 2.7% as money moved into Anthropic, and Williams-Sonoma dropped about 15% on a revenue miss. Walmart's raised outlook did not help the group. At 25.1x forward earnings it is the most expensive sector and −2.4% this year; BofA's survey shows managers adding to the consumer sectors from an underweight.",
-      "modelView": "Eighth (44): +4.7 points of 3-month relative strength and 0.7% above the 200-day, but weak 12-1 month momentum (+4%) and the weakest valuation score; $100m of creations in a month.",
-      "trade": "Underweight; move to neutral only if Black Friday and Cyber Monday data confirm spending and XLY holds its 200-day average.",
+      "view": "Discretionary fell 3.1%, the third-worst sector, as the selling spread from tech into cyclicals; XLY is −5.4% this year. At 24.2x forward earnings (FactSet) it is the most expensive sector, and the holiday season now decides the call.",
+      "modelView": "Ninth (41, down from eighth): +4.7 points of 3-month relative strength but 2.4% below the 200-day, weak 12-1 month momentum (+3%) and the weakest valuation score; $112m of creations in a month.",
+      "trade": "Underweight; move to neutral only if Black Friday and Cyber Monday data confirm spending and XLY regains its 200-day average.",
       "risk": "A strong holiday season or an Amazon-led re-rating forcing the move to neutral sooner."
     },
     "XLU": {
       "stance": "Underweight",
-      "pe": null,
-      "peSrc": "",
+      "pe": 16.8,
+      "peSrc": "FactSet via MarketWatch, Nov 17, 2026",
       "eps": null,
-      "view": "Utilities fell 1.2% on Thursday, the second-smallest loss, and are +2.4% over the month as a haven. But ETF holders keep selling into strength: $219m out in a week and $1.75bn in a month. Morgan Stanley is overweight on power demand; a December hike caps the bond-proxy bid.",
-      "modelView": "Ninth (39, up from tenth): +7.6 points of 3-month relative strength, but weak 12-1 month momentum (−3%) and the worst flow score (−7.5% of assets in a month); RSI 44 and 2.0% below the 200-day.",
-      "trade": "Underweight; use haven bounces to reduce.",
-      "risk": "A bond rally if the Fed turns dovish, or a sharper risk-off move."
+      "view": "Utilities fell 0.8% despite the 14bp drop in the 10-year, and ETF holders keep selling ($148m in a week, $1.67bn in a month). At about 16.8x forward earnings they are no longer expensive, and Morgan Stanley is overweight on power demand, but the AI-power link cuts both ways in this selloff.",
+      "modelView": "Eighth (41, up from ninth after gaining a valuation input): +9.0 points of 3-month relative strength, but flat 12-1 month momentum and the worst flow score (−7.2% of assets in a month); RSI 37 and 2.9% below the 200-day.",
+      "trade": "Underweight; use haven bounces to reduce, and revisit if monthly redemptions stop with the 10-year below 5%.",
+      "risk": "A sustained bond rally or a sharper risk-off move."
     },
     "XLRE": {
       "stance": "Underweight",
-      "pe": null,
-      "peSrc": "",
+      "pe": 17.7,
+      "peSrc": "FactSet via MarketWatch, Nov 17, 2026",
       "eps": null,
-      "view": "Real estate fell 1.7% on Thursday but is +1.9% over the month. It is the most rate-sensitive sector with a December hike almost fully priced, and office and retail still face refinancing at much higher rates.",
-      "modelView": "Seventh (48): +2.2 points of relative strength, the best 20-day money flow (CMF +0.06) and $75m of creations in a month, but weak 12-1 month momentum (+7%) and no valuation input.",
-      "trade": "Underweight the sector; prefer data-center and health-care REITs if exposure is needed.",
-      "risk": "A fall in long yields would spark a sharp short-covering rally."
+      "view": "Real estate fell 1.0% even as the 10-year dropped to 4.91%, and is −0.2% over the month. At about 17.7x forward earnings it trades just above the market, and office and retail still face refinancing at much higher rates.",
+      "modelView": "Sixth (50, up from seventh after gaining a valuation input): +4.0 points of relative strength, a positive 20-day money flow (CMF +0.05) and $45m of creations in a month, against weak 12-1 month momentum (+9%) and a price 1.4% below the 200-day.",
+      "trade": "Underweight the sector; prefer data-center and health-care REITs if exposure is needed, and move to neutral if the 10-year holds below 4.9% and XLRE regains its 200-day.",
+      "risk": "A further fall in long yields would spark a sharp short-covering rally."
     }
   },
   "watch": [
     [
-      "Fri Nov 20",
-      "FactSet Earnings Insight; Dec WTI expiry; Intuit, Gap and Ross reactions",
-      "Updated sector forward P/Es after Nvidia; whether crude holds the low $80s for energy; software and consumer reads."
-    ],
-    [
       "Tue Nov 24",
-      "Dell results",
-      "AI server demand after the Nvidia and AMD slide."
+      "Dell and HP results",
+      "AI server demand and pricing after the Nvidia probe report and the chip rout."
     ],
     [
       "Wed Nov 25",
-      "October PCE inflation",
-      "The last major inflation print before the Fed; a hot core reading favours financials over rate-sensitive sectors."
+      "October PCE inflation, Q3 GDP revision, durable goods, Beige Book",
+      "A hot core reading keeps a December hike on and favours financials over utilities and real estate."
+    ],
+    [
+      "Thu–Fri Nov 26–27",
+      "Thanksgiving close, then a half-day session",
+      "Thin liquidity after a high-volatility week (VIX 35.89) can exaggerate moves."
     ],
     [
       "Nov 27–30",
@@ -186,7 +186,7 @@
     [
       "Dec 8–9",
       "FOMC",
-      "A hike is almost fully priced; 25bp versus 50bp decides financials versus utilities and real estate."
+      "25bp versus 50bp, or a pause after the bond rally, decides financials versus utilities and real estate."
     ],
     [
       "Jan 19, 2027",
@@ -196,36 +196,36 @@
   ],
   "sources": [
     [
-      "Reuters: Wall Street ends sharply lower as Anthropic's debut fails to revive AI fervor",
-      "https://investing.com/news/stock-market-news/wall-street-ends-sharply-lower-asanthropics-debut-fails-to-revive-ai-fervor-5040108"
+      "Newsquawk: US market wrap, S&P 500 enters correction (sector returns)",
+      "https://newsquawk.com/headlines/us-market-wrap-aggressive-equity-sell-off-sees-spx-enter-correction-and-ndx-test-bear-market"
     ],
     [
-      "AP: Wall Street tumbles to its longest losing streak since 2024",
-      "https://latimes.com/business/story/2026-11-19/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-dow-drops-1-100-points"
+      "Xinhua: U.S. stocks plunge as AI rout deepens",
+      "https://english.news.cn/northamerica/20261121/d430ca07d548446d9bdcea768da1add2/c.html"
     ],
     [
-      "Stock market today: energy leads while S&P 500 slips (sector returns)",
-      "https://tradersagency.com/blog/stock-market-today-energy-leads-while-sandp-500-slips-o1lvlu"
+      "Yahoo Finance: Nvidia rout deepens on SEC accounting probe report",
+      "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-20-215502847.html"
     ],
     [
-      "Motley Fool: Alphabet falls as Anthropic debut values its stake",
-      "https://fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-alphabet-shares-fall-as-anthropic-nasdaq-debut-puts-fresh-value-on-googles-stake"
+      "Investing.com: TD Cowen upgrades UnitedHealth and Humana",
+      "https://investing.com/news/stock-market-news/td-cowen-lifts-unitedhealth-humana-to-buy-on-improved-earnings-outlook-5042157"
     ],
     [
-      "CNBC: Walmart Q3 results and raised guidance",
-      "https://cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html"
+      "MarketWatch: sector forward P/Es (FactSet data)",
+      "https://marketwatch.com/story/worried-investors-are-paying-up-for-these-stocks-some-with-up-to-49-upside-analysts-say-ea8f2c6f"
     ],
     [
-      "Reuters: investors slash tech allocations by most since 2006 (BofA survey)",
-      "https://investing.com/news/economy-news/investors-slashed-tech-exposure-allocations-by-most-since-2006-anticipate-less-capital-spending-5032364"
+      "Fortune: BofA survey, tech cut by most since 2006",
+      "https://fortune.com/2026/11/17/ai-bubble-popping-bofa-fund-manager-survey-largest-cut-since-2006"
     ],
     [
-      "Benzinga: fund managers dump tech, rotate to defensives",
-      "https://benzinga.com/etfs/sector-etfs/26/11/63390257/fund-managers-dump-tech-fastest-since-2006"
+      "Newsquawk: weekly economic calendar, Nov 23–27",
+      "https://newsquawk.com/headlines/newsquawk-weekly-economic-calendar---23rd-27th-november-2026"
     ],
     [
-      "FactSet Earnings Insight (Nov 13, 2026)",
-      "https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_111326.pdf"
+      "FactSet Earnings Insight (Nov 20, 2026)",
+      "https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_112026.pdf"
     ]
   ],
   "disclaimer": "Research view written as a model builder and market researcher, for information only, not investment advice. Stances are relative to S&P 500 sector weights."
