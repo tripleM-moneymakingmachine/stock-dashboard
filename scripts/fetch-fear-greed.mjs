@@ -49,7 +49,9 @@ async function yahoo(sym) {
       const res = (await r.json())?.chart?.result?.[0];
       if (!res?.timestamp?.length) throw new Error("empty");
       const c = res.indicators.quote[0].close, out = {};
-      res.timestamp.forEach((t, i) => { if (c[i] != null) out[nyDate(t * 1000)] = c[i]; });
+      // Keep the first bar of each New York date: once gold's next session opens (18:00 New York), Yahoo adds a live bar
+      // stamped with the current time, which would otherwise overwrite that day's completed close.
+      res.timestamp.forEach((t, i) => { const k = nyDate(t * 1000); if (c[i] != null && !(k in out)) out[k] = c[i]; });
       return out;
     } catch (e) { err = e; }
   }
