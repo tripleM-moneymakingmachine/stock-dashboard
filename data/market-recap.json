@@ -1,30 +1,30 @@
 {
- "session": "2026-11-19",
- "asof": "Thu Nov 19, 2026",
+ "session": "2026-11-20",
+ "asof": "Fri Nov 20, 2026",
  "tone": "down",
- "headline": "Anthropic's debut can't save the AI trade: S&P −2.0%, Nasdaq −2.3%, Dow −1,101 points",
- "summary": "Stocks opened higher on enthusiasm for Anthropic's record IPO, with the S&P 500 up as much as 1.3%, but the rally collapsed after the stock began trading shortly before noon and AI names reversed hard into the close. The selling was broad: more than 90% of S&P 500 members fell, decliners beat advancers about 4.5-to-1 on the NYSE, only one Dow stock rose, and the S&P 500 logged a sixth straight loss, its longest losing streak since April 2024, leaving it 8.2% below last month's record.",
+ "headline": "Chip rout and Nvidia SEC probe report sink Nasdaq 5.3%; S&P 500 and Dow close in correction",
+ "summary": "Stocks opened mixed, with the S&P 500 up as much as 0.3% and the Dow briefly higher, but selling in chip and AI names widened through the afternoon and the indexes closed near their lows. The damage was concentrated in mega-cap tech: the equal-weight S&P 500 fell about 2% versus 3.7% for the cap-weighted index, consumer staples was the only sector to rise, and the S&P 500 posted a seventh straight loss, its longest losing streak since February 2020, while the Nasdaq Composite turned negative for 2026.",
  "stats": [
-  ["S&P 500", "7,175.83", -2.02],
-  ["Nasdaq", "23,879.20", -2.25],
-  ["Dow", "49,097.06", -2.19],
-  ["Russell 2000", "2,655.11", -2.18],
-  ["SOX (chips)", "9,419.72", -2.41],
-  ["VIX", "28.44", 15.8, true],
-  ["US 10Y", "5.05%", "−1bp"],
-  ["WTI crude", "$83.21", -0.06]
+  ["S&P 500", "6,910.39", -3.7],
+  ["Nasdaq", "22,617.73", -5.28],
+  ["Dow", "48,147.33", -1.93],
+  ["Russell 2000", "2,581.79", -2.76],
+  ["SOX (chips)", "8,408.6", -10.74],
+  ["VIX", "35.89", 26.2, true],
+  ["US 10Y", "4.91%", "−14bp"],
+  ["WTI crude", "$83.98", 0.93]
  ],
  "drivers": [
-  ["AI trade reverses after Anthropic's debut", "Anthropic opened at $111.50, 34% above its $83 IPO price, briefly topped $115 and closed at $97.17 (+17.1%), but the early AI bounce faded as it traded: Nvidia went from +4.7% to −3.3% at $145.98, Micron from +7.8% to −2.1%, CoreWeave from +10.5% to −6.1%, and the SOX fell 2.4% with 27 of its 30 members lower."],
-  ["AMD sinks on a short-seller report", "AMD fell 7.7% to $489.19 after Hunterbrook disclosed a short and alleged blacklisted Chinese server maker IEIT kept receiving AMD firmware, plus heavy financing commitments to AI customers; Marvell lost 4.9%, while Intel bucked the tape, up 1.9%."],
-  ["Retail and health care add to the losses", "Williams-Sonoma dropped about 15% on a slight revenue miss and an unchanged outlook, Walmart slipped 1% despite a beat and raised guidance, and UnitedHealth fell 5.6% as worries over a proposed Medicare Advantage audit rule kept pressure on insurers."],
-  ["Softer data trims yields only slightly", "Initial jobless claims rose to 203,000 and continuing claims jumped 70,000 to a ten-week high of 1.763 million, while the Philly Fed index slowed to 6.3 from 20.9; the 10-year yield eased about 1bp to 5.05% and the VIX jumped 15.8% to a six-month high. Palo Alto (+6.4%) and CrowdStrike (+2.7%) were rare gainers."]
+  ["Semiconductor crash deepens", "The SOX fell about 10.7% and about 17% for the week, its worst since 2001, as worries about AI data-center spending, tighter US chip-export rules and unconfirmed reports of Google shifting custom-chip orders hit the group: AMD lost about 13%, Broadcom 12.2% and Micron about 13%, with memory names such as Western Digital and SanDisk also down double digits."],
+  ["Nvidia plunges 14% on SEC accounting probe report", "Nvidia was already down about 6–7% when Reuters reported that SEC enforcement staff are examining potential accounting issues; it closed down 14% near $125.5, its seventh straight weekly loss and roughly $490 billion of market value erased in a day, adding to pressure after Jensen Huang's resignation."],
+  ["Anthropic slides, AI trust fades", "Anthropic fell about 8.5% to $88.91 on its second day of trading, after dipping close to its $83 IPO price, as its debut and Nvidia's strong results this week failed to steady the AI trade; Intuit dropped more than 10% after cutting its fiscal 2027 revenue outlook and agreeing to sell Mailchimp."],
+  ["Flight to safety in bonds and defensives", "The 10-year yield fell about 14bp to 4.91%, its biggest one-day drop since Oct 22, and the 2-year about 17bp to 4.61%, trimming December hike odds slightly despite hawkish Fed talk; staples and health care held up (UnitedHealth and Humana rose on upgrades), while the VIX jumped 26% to 35.89 after touching 40 intraday."]
  ],
- "week": "Four sessions in, the S&P 500 is down 5.1%, the Nasdaq 5.0%, the Dow 6.2% and the Russell 2000 4.9% for the week, with the 10-year yield still above 5% and a December Fed hike widely expected after hawkish minutes.",
- "watch": "Next: reactions to Intuit, Gap and Ross Stores results and the expiry of December WTI on Fri Nov 20, Dell's results on Tue Nov 24, a shortened Thanksgiving week, and the Fed meeting on Dec 8–9.",
+ "week": "For the week the S&P 500 fell 8.6%, the Nasdaq 10.0%, the Dow 8.0% and the Russell 2000 7.5%, the largest weekly losses since April 2025, while the 10-year yield dropped about 24bp and markets still price a December Fed hike.",
+ "watch": "Next: a holiday-shortened week with Dell's results on Tue Nov 24, US markets shut for Thanksgiving on Thu Nov 26 and an early close on Fri Nov 27, then the Fed meeting on Dec 8–9.",
  "sources": [
-  ["AP", "https://www.oaoa.com/local-news/business/wall-street-tumbles-to-its-longest-losing-streak-since-2024-as-the-dow-drops-1100-points/"],
-  ["Reuters", "https://www.thehindu.com/business/markets/wall-street-ends-sharply-lower-as-anthropics-debut-fails-to-revive-ai-fervour/article71721814.ece"],
-  ["TradingKey", "https://www.tradingkey.com/analysis/stocks/us-stocks/262313953-us-stock-nasdaq-falls-anthropic-ipo-debut-amd-short-report-tradingkey"]
+  ["AP", "https://local10.com/news/2026/11/20/sp-500-sinks-37-and-the-nasdaq-composite-goes-negative-for-the-year-as-rout-in-tech-stocks-tanks-the-market"],
+  ["Reuters", "https://marketscreener.com/news/wall-st-ends-sharply-lower-on-ai-selloff-s-p-500-dow-in-correction-ce785ed3dd80f527"],
+  ["CNBC", "https://cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html"]
  ]
 }
