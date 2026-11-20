@@ -1,48 +1,53 @@
 {
- "session": "2026-11-19",
- "asof": "Thu Nov 19, 2026",
- "commentary_asof": "Thu Nov 19, 2026",
+ "session": "2026-11-20",
+ "asof": "Fri Nov 20, 2026",
+ "commentary_asof": "Fri Nov 20, 2026",
  "horizon": "1–2 weeks",
- "headline": "MGS belly extends its rally as October CPI undershoots; the 5Y falls 2.2bp to 3.598% while the 10Y stalls",
- "summary": "Malaysian government bonds firmed again on Thursday, led by the front end and belly: on FAST's curve the 3Y fell 1.7bp to 3.401%, the 5Y 2.2bp to 3.598% (−4.9bp on the week) and the 10Y only 0.1bp to 3.841%, steepening 3s10s by 1.6bp to 44.0bp. The 10Y GII eased 0.7bp to 3.873%, 3.2bp over MGS. Hong Leong Bank's IRS closes as of Nov 18 were mixed (5Y +1bp to 3.60%, 10Y −4bp to 3.76%), leaving the 5Y swap spread at −2.0bp and the 10Y at −8.2bp, both near one-year lows. FX-swap implied ringgit yields (Nov 19, indicative) were 2.90% at 3 months and 3.02% at 1 year, 4.9bp and 2.6bp under the onshore curve, a gap that narrowed 0.6bp and 1.5bp on the day. Financial and SOE trading was light (15 trades), with government-guaranteed DanaInfra and TPSB paper 35–39bp over MGS; FAST's corporate curves were still dated Nov 18 at this run.",
+ "headline": "The belly rallies again as Treasuries slip and stocks slide: the 5Y MGS falls 4.7bp to 3.551% and the 3s5s10s fly hits a one-year low",
+ "summary": "Malaysian government bonds gained across the curve on Friday, led again by the belly: on FAST's curve the 3Y fell 2.9bp to 3.372%, the 5Y 4.7bp to 3.551% (−9.8bp on the week) and the 10Y 1.8bp to 3.823%, so the 3s5s10s fly dropped to −9.3bp, the 2nd percentile of the past year. GII lagged, leaving the 10Y GII at 3.863%, 4.0bp over MGS, and the 5Y GII 4.7bp over, the widest gap of the year. Hong Leong Bank's IRS closes as of Nov 19 were flat to 1bp higher (5Y 3.60%, 10Y 3.77%), which put the 5Y swap spread at +0.2bp and the 10Y at −7.1bp, both still in the bottom 5% of the past year. FX-swap implied ringgit yields (Nov 20, indicative) were 2.90% at 3 months and 3.02% at 1 year, 5.4bp and 3.2bp under onshore rates, about 0.5bp further under than on Thursday. Financial and SOE trading was thin (three trades by this run), with government-guaranteed DanaInfra paper at 38–39bp over MGS, and FAST's corporate curves still carry Nov 19 levels.",
  "drivers": [
   [
-   "Belly bid on heavy volume; front end firms into the 3Y reopening",
-   "Buying carried over from Wednesday, when HLB counted RM6.91bn of govvies traded (+66%) and the GII share rose to 42%; today the 1Y and 3Y fell 1.7bp and the 5Y 2.2bp, so the RM5bn reopening of the 3Y MGS 3/29 met a firmer, not cheaper, market (the auction result was not yet published when this was written). AmBank argues bond prices have largely priced the next potential hikes. The 3s5s10s fly dropped 2.6bp to −4.6bp (20th percentile), so the belly is now rich to the wings."
+   "Belly squeeze after the 3Y reopening, with no auction next week",
+   "The RM5bn reopening of the 3Y MGS 3/29 on Thursday went well enough for Hong Leong Bank to call it decent, and its tender calendar shows no government auction next week, so dealers bought duration into a supply break. On Thursday govvies volume eased 8% to RM6.34bn and the GII share fell to 27%, with the 5Y MGS 6/31 down 3bp; on Friday the 5Y fell another 4.7bp and the 7Y 3.2bp against 1.8bp at 10Y and 0.1bp at 30Y. The 3s5s10s fly is now −9.3bp, 4.7bp lower on the day and near its one-year low of −10.2bp (average −1.2bp), so the belly is rich to the wings."
   ],
   [
-   "CPI a touch below forecast; Q1 2027 hike still the consensus",
-   "October CPI rose 1.9% y/y against a 2.0% Reuters median (September 1.8%), with transport (4.2%) and electricity, gas and fuel (4.7%) the drivers and food easing to 1.7%. HSBC, ANZ and Kenanga still expect a 25bp OPR hike to 3.00% in Q1 2027 after the Q3 GDP beat, but the mild print helped the front end: the 3Y MGS is 65.1bp over the 2.75% OPR, down 1.7bp on the day (80th percentile, one-year average 48.1bp)."
+   "Treasuries and the equity rout outweighed record exports",
+   "October exports rose 61.1% y/y to a record RM239.2bn against a 48.7% consensus (September 54.5%), led by E&E shipments up 87.2%, a growth beat that supports the Q1 2027 hike calls from HSBC, ANZ and Kenanga; bonds ignored it. The KLCI fell 0.61% to 1,556.51, a 15-month low, on data-centre and tech selling, and international reserves eased to US$132.1bn at Nov 13 from US$132.6bn. The risk-off tone and a weaker US session (below) did more for MGS than the data did."
   ],
   [
-   "Treasuries rally on oil; ringgit steadies",
-   "The US 10Y fell 4.5bp to 5.064% at Wednesday's settlement as oil slid, despite Governor Waller calling for a 50bp December hike and hawkish Fed minutes; at the one-year daily beta of 0.15 that implies −0.7bp for the 10Y MGS, which fell 0.1bp, so the long end lagged and the belly did the work. BNM's reference rate put USD/MYR at 4.1106 (+0.12%, +0.74% on the week), though the ringgit closed firmer at 4.1100 at 6pm. The FX-swap gap to onshore narrowed only 0.5–1.5bp across 1M–1Y, too small to read on indicative quotes."
+   "US yields lower; ringgit and FX swap barely move",
+   "The US 10Y closed 3bp lower at 5.04% on Thursday after jobless claims of 203k (f 197k) and a Philadelphia Fed index of 6.3 (f 20.1), and traded near 4.99% in Asia on Friday as stocks fell. At the one-year daily beta of 0.15 that implies only −0.5bp for the 10Y MGS, which fell 1.8bp, so most of the day's rally was local. USD/MYR was flat at 4.1105 at 6pm (BNM reference 4.1125, +0.05%; +0.69% on the week). The FX-swap implied curve moved by 0.1bp on the day and the gap to onshore by about 0.5bp, too small to read on indicative quotes; FXEmpire's forward points have not changed since Nov 18, so the implied moves are mostly the US bill yields."
   ],
   [
-   "10Y IRS keeps falling; swap spreads near lows",
-   "On Hong Leong Bank's Nov 18 snapshot the 10Y IRS fell 4bp to 3.76% (−19bp in a month) while the 5Y rose 1bp to 3.60% and the 1Y 2bp to 3.63%, so the curve is 1s5s −3bp and 5s10s +16bp. The 10Y swap spread fell 2.8bp to −8.2bp (3rd percentile, one-year average +8.1bp), while the 5Y bounced 2.6bp to −2.0bp (1st percentile, average +10.3bp). These are one bank's indicative closes, and the 1–4bp daily moves are within its noise."
+   "IRS steady while MGS rally: swap spreads off the lows",
+   "On Hong Leong Bank's Nov 19 snapshot the IRS curve closed 3.64% (1Y), 3.58% (3Y), 3.60% (5Y), 3.67% (7Y) and 3.77% (10Y), flat to +1bp on the day but 5–7bp lower on the week and 12–18bp lower on the month; 1s5s is −4bp and 5s10s +17bp. With MGS rallying underneath, the 5Y swap spread rose 2.2bp to +0.2bp (3rd percentile, one-year average +10.2bp) and the 10Y 1.1bp to −7.1bp (4th percentile, average +8.0bp). These are one bank's indicative closes and 1–2bp daily moves are within its noise; if the IRS holds on Monday's snapshot, Friday's 4.7bp MGS rally would widen the 5Y spread further."
   ]
  ],
  "data": [
   [
+   "October trade (Nov 20)",
+   "Exports 61.1% y/y (f 48.7%, p 54.5%); surplus RM41.8bn",
+   "Record exports on E&E; firms the growth case for a Q1 2027 hike, but MGS rallied anyway."
+  ],
+  [
+   "International reserves, Nov 13 (BNM, Nov 20)",
+   "US$132.1bn (p US$132.6bn at Oct 30)",
+   "Small dip; still ample cover for ringgit smoothing."
+  ],
+  [
+   "3Y MGS 3/29 reopening (Nov 19)",
+   "RM5bn; HLB calls it decent (cover ratio not found in sources)",
+   "Cleared without a cheapening; next week has no government tender."
+  ],
+  [
    "October CPI (Nov 19)",
    "1.9% y/y (f 2.0%, p 1.8%)",
-   "Slightly soft; transport and utility costs up, food easing. Keeps a Q1 2027 hike likely but not urgent."
+   "Slightly soft; keeps a Q1 2027 hike likely but not urgent."
   ],
   [
    "Q3 GDP, final (Nov 18)",
    "5.5% y/y (f 5.3%, p 6.0%)",
-   "A beat led by investment and E&E exports; it firmed Q1 2027 hike calls from HSBC and ANZ."
-  ],
-  [
-   "BNM MPC (Nov 5)",
-   "OPR 2.75% (f 2.75%, p 2.75%)",
-   "Held with a firmer tone; the Governor says incoming data decide any 2027 move."
-  ],
-  [
-   "GII 7/40 15Y reopening (Nov 12)",
-   "RM3.5bn at 4.158%, bid-to-cover 2.32x (p June: 3.898%, 3.41x)",
-   "Weaker long-end demand at a higher yield keeps a supply premium in 15–20Y."
+   "A beat led by investment and E&E exports; firmed Q1 2027 hike calls."
   ],
   [
    "Foreign holdings, October (BNM, Nov 11)",
@@ -50,65 +55,62 @@
    "Foreign demand for MGS remains the anchor for the belly and the 10Y."
   ],
   [
-   "Sep industrial production (week of Nov 10)",
-   "6.3% y/y (f 5.8%, p 5.0%)",
-   "Strong activity data fed the GDP upgrade."
-  ],
-  [
-   "FX reserves, end-October",
-   "US$132.6bn (p US$131.8bn)",
-   "First rise in four months; gives BNM room to smooth the ringgit."
+   "BNM MPC (Nov 5)",
+   "OPR 2.75% (f 2.75%, p 2.75%)",
+   "Held with a firmer tone; next meeting Jan 21, 2027."
   ]
  ],
  "view": [
   "My view:",
-  "Keep the modest belly long and stay neutral at 10Y: the 5Y overweight from 3.636% (Nov 17) is now 3.8bp in the money at 3.598% and stays open (target 3.55%, stop 3.72%), but with the 3s5s10s fly at −4.6bp (20th percentile) the easy part of the belly outperformance is done, and I expect the 10Y to hold 3.78–3.90% over the next two weeks. The pay-5Y-IRS-vs-long-5Y-MGS swap-spread trade from −4.6bp is 2.6bp in the money at −2.0bp (as of Nov 18; target +3bp, stop −12bp); I would not add a 10Y version yet, because the 10Y spread is still falling (−8.2bp, −18.7bp in a month) as receivers lean on the 10Y IRS. The FX swap still prices ringgit under onshore rates (3M implied 2.90%, gap −4.9bp; 1Y 3.02%, gap −2.6bp) and only about 15bp over the OPR at 3 months, so offshore money is not paying for an early hike while the 3Y MGS sits 65bp over the OPR: the front end is cheap to the swap market, but the 3Y did not cheapen into the reopening, so the 3.45% buy trigger was not reached and I keep it. The 10Y GII at 3.2bp over MGS (85th percentile) is 0.6bp in the money on the 'prefer GII' call (target 1.5bp, stop 6.5bp). In credit, SOE paper traded 50.0bp over MGS on average over five sessions against 75.7bp for financial issuers, and government-guaranteed names (DanaInfra 35.9bp, LPPSA 37.0bp) remain the cleaner value; the AAA and Cagamas 5Y entries are 2.2bp offside on the page, mostly because FAST's corporate curves still carry Nov 18 levels against today's lower MGS. Treasuries explain little: over four weeks the 10Y MGS is down 3.9bp while the US 10Y rose 11bp, a +3.5bp Treasury-linked part and −7.4bp local, and the daily flow signal sits at −0.50, on the sell-off line; its sell-off calls were right only 38.4% of the time since 2022 in an in-sample back-test, so I do not lean on it."
+  "Take profit on the belly and fade its richness: the 5Y overweight from 3.636% (Nov 17) closes at 3.551% for +8.5bp, 0.1bp short of the 3.55% target, because the 3s5s10s fly at −9.3bp (2nd percentile, average −1.2bp) now prices the supply break in full; the new trade sells the 5Y against the 3Y and 10Y (pay the fly) at −9.3bp, target −3bp, stop −13bp. I expect the 10Y to hold 3.76–3.88% over the next two weeks and would buy it only at 3.88%. The pay-5Y-IRS-vs-long-5Y-MGS swap-spread trade from −4.6bp is 4.8bp in the money at +0.2bp (as of Nov 19); keep the +3bp target and raise the stop to −4bp, and stay out of the 10Y version while it sits at −7.1bp (−16.0bp in a month) with receivers still active. The FX swap prices ringgit under onshore rates beyond one month (3M implied 2.90%, gap −5.4bp; 1Y 3.02%, gap −3.2bp; 1M 2.95%, +1.9bp) and only about 15bp over the OPR at 3 months, which fits steady demand to hold ringgit rather than dollar stress; with the 3Y still 62.2bp over the OPR (77th percentile, average 48.3bp), the front end is cheap to the swap market, and I lower the 3Y buy level to 3.42%. GII lagged the rally: the 10Y GII is 4.0bp over MGS (92nd percentile), 0.2bp offside on the prefer-GII call from 3.8bp (target 1.5bp, stop 6.5bp), and the 5Y GII gap of 4.7bp is the widest of the year. In credit, SOE trades averaged 50.0bp over MGS over five sessions against 73.9bp for financial issuers, with government-guaranteed DanaInfra at 38.0bp the cleaner value; the AAA and Cagamas 5Y spreads on the page (55.6bp and 44.1bp) compare stale Nov 19 corporate curves with today's lower MGS, and like-for-like they were 50.9bp and 39.4bp, so I hold and do not add. Treasuries explain little: over four weeks the 10Y MGS is down 5.7bp while the US 10Y rose 8bp, a +2.6bp Treasury-linked part and −8.3bp local; the daily flow signal is −0.50, on the sell-off line with the regime neutral, and its sell-off calls were right only 38.5% of the time since mid-2022 in an in-sample back-test (Sharpe 1.07 outright, 1.33 hedged, but 0.27 hedged since September 2024), so I do not lean on it."
  ],
  "buckets": [
   {
    "name": "Front end 3Y vs OPR",
    "tag": "Cheap",
-   "stance": "Neutral; buy only on a cheapening",
+   "stance": "Neutral; buy on a cheapening",
    "m": {
     "type": "spr",
     "a": "opr:0",
     "b": "mgs:3"
    },
-   "why": "The 3Y MGS is 3.401% (−1.7bp), 65.1bp over the 2.75% OPR, the 80th percentile of the past year (average 48.1bp). FX-swap implied 1M and 3M yields of 2.85% and 2.90% sit only 10–15bp over the OPR and 7.5bp / 4.9bp under onshore rates (gaps 0.5–0.6bp narrower on the day), so the swap market is not paying for an early hike. Nov 18 call (buy if the RM5bn reopening clears at 3.45% or above): not triggered, with the secondary 3Y at 3.40%.",
-   "call": "Buy the 3Y MGS 3/29 at 3.45%; target 3.35%, stop 3.55%."
+   "why": "The 3Y MGS is 3.372% (−2.9bp, −4.6bp on the week), 62.2bp over the 2.75% OPR, the 77th percentile of the past year (average 48.3bp). FX-swap implied yields of 2.95% at 1 month and 2.90% at 3 months sit only 15–20bp over the OPR, +1.9bp and −5.4bp against onshore rates (the 3M gap 0.5bp wider under on the day), so the swap market is not paying for an early hike. Nov 19 call (buy at 3.45%): not triggered; the 3Y kept rallying after its reopening.",
+   "call": "Buy the 3Y MGS 3/29 at 3.42% (lowered from 3.45%); target 3.33%, stop 3.50%."
   },
   {
-   "name": "Belly 5Y",
-   "tag": "Fair",
-   "stance": "Mild overweight",
+   "name": "Belly 5Y (3s5s10s fly)",
+   "tag": "Rich",
+   "stance": "Took profit; now pay the fly",
    "m": {
-    "type": "lvl",
-    "a": "mgs:5"
+    "type": "fly",
+    "a": "mgs:3",
+    "b": "mgs:5",
+    "c": "mgs:10"
    },
-   "why": "The 5Y fell 2.2bp to 3.598% (77th percentile, one-year average 3.445%) and leads the week (−4.9bp); the 3s5s10s fly is −4.6bp, 20th percentile (average −1.1bp), so the belly is rich to the wings. The 5Y swap spread was −2.0bp on Nov 18 (+2.6bp on the day), 1st percentile against a +10.3bp average. Nov 17 overweight from 3.636%: open, +3.8bp.",
-   "call": "Keep the overweight: target 3.55%, stop 3.72%. Swap-spread trade (pay 5Y IRS vs long 5Y MGS) from −4.6bp: open at −2.0bp, target +3bp, stop −12bp."
+   "why": "The 5Y fell 4.7bp to 3.551% (−9.8bp on the week; 75th percentile, average 3.446%) and the fly is −9.3bp, the 2nd percentile (average −1.2bp, low −10.2bp). The Nov 17 overweight from 3.636% reached 3.551%, 0.1bp short of target: closed for +8.5bp. The 5Y swap spread was +0.2bp on Nov 19 (+2.2bp on the day, 3rd percentile, average +10.2bp).",
+   "call": "Pay the fly (sell 5Y vs 3Y and 10Y, duration-weighted) at −9.3bp; target −3bp, stop −13bp. Swap-spread trade (pay 5Y IRS vs long 5Y MGS) from −4.6bp: open at +0.2bp, target +3bp, stop raised to −4bp."
   },
   {
    "name": "10Y outright",
    "tag": "Fair",
-   "stance": "Neutral; range 3.78–3.90%",
+   "stance": "Neutral; range 3.76–3.88%",
    "m": {
     "type": "lvl",
     "a": "mgs:10"
    },
-   "why": "The 10Y is 3.841% (−0.1bp), the 78th percentile of the past year (average 3.670%, range 3.44–4.18%). It yields 122.9bp less than the US 10Y, near the tightest of the year; the 10Y swap spread fell to −8.2bp on Nov 18 (3rd percentile, average +8.1bp). Nov 18 buy level (3.90%) not reached.",
-   "call": "Buy at 3.90%, target 3.80%, stop 3.97%; no position in the middle of the range."
+   "why": "The 10Y is 3.823% (−1.8bp, −3.9bp on the week), the 77th percentile of the past year (average 3.671%, range 3.440–4.184%). It yields 121.7bp less than the US 10Y, 22.3bp below its 130-day average gap and in the bottom 6% of the year; the 10Y swap spread is −7.1bp (Nov 19, 4th percentile, average +8.0bp). Nov 19 buy level (3.90%) not reached.",
+   "call": "Buy at 3.88%, target 3.80%, stop 3.95%; no position in the middle of the range."
   },
   {
    "name": "Long end 10s30s",
    "tag": "Fair",
-   "stance": "Neutral; wait for supply",
+   "stance": "Neutral",
    "m": {
     "type": "spr",
     "a": "mgs:10",
     "b": "mgs:30"
    },
-   "why": "10s30s is 49.7bp (+0.9bp), the 74th percentile (average 46.9bp), as the 30Y rose 0.8bp while the 15Y and 20Y fell 1.2bp and 0.9bp. The GII 7/40 cleared at 4.158% with a 2.32x cover, so long-end demand is still soft. Nov 18 neutral call unchanged.",
+   "why": "10s30s is 51.4bp (+1.7bp, +4.4bp on the week), the 86th percentile (average 46.9bp), as the 30Y held at 4.337% (−0.1bp) while the 20Y fell 2.1bp. The GII 7/40 cleared at 4.158% with a 2.32x cover on Nov 12, and with no tender next week the long end has no supply test. Nov 19 neutral call unchanged.",
    "call": "Neutral; switch to flatteners after a long auction draws a cover above 2.5x."
   },
   {
@@ -120,8 +122,8 @@
     "a": "mgs:10",
     "b": "gii:10"
    },
-   "why": "The 10Y GII at 3.873% is 3.2bp over MGS (−0.6bp), the 85th percentile of the past year (average 1.0bp); the 5Y GII gap is 2.5bp, 98th percentile. GII took 42% of govvies trading on Nov 18 (HLB). Nov 18 call from 3.8bp: open, +0.6bp.",
-   "call": "Prefer 10Y GII over MGS; target 1.5bp, stop 6.5bp."
+   "why": "The 10Y GII at 3.863% (−1.0bp) is 4.0bp over MGS (+0.8bp), the 92nd percentile of the past year (average 1.0bp); the 5Y GII gap is 4.7bp, the widest of the year (average −1.3bp), as GII lagged the belly rally and its share of trading fell to 27% on Thursday (HLB). Nov 18 call from 3.8bp: 0.2bp offside.",
+   "call": "Prefer 10Y GII over MGS; target 1.5bp, stop 6.5bp. Same preference at 5Y."
   },
   {
    "name": "AAA credit 5Y",
@@ -132,8 +134,8 @@
     "a": "mgs:5",
     "b": "aaa:5"
    },
-   "why": "FAST's AAA 5Y (4.114%, still dated Nov 18) is 51.6bp over today's 5Y MGS, a one-year high (average 28.0bp); like-for-like on Nov 18 it was 49.4bp, so most of today's widening is the MGS rally against a curve that has not updated. Nov 18 first slice at about 49bp: 2.2bp offside.",
-   "call": "Add the rest at 55bp; target 40bp, stop 62bp."
+   "why": "FAST's AAA 5Y (4.107%, still dated Nov 19) shows 55.6bp over today's 5Y MGS, a one-year high (average 28.1bp), but like-for-like on Nov 19 it was 50.9bp: most of the widening is the MGS rally against a curve that has not updated. Nov 18 first slice at about 49bp: 1.9bp offside like-for-like. UOB Malaysia's AAA ratings were affirmed (HLB).",
+   "call": "Add the rest at 55bp on a same-day print; target 40bp, stop 62bp."
   },
   {
    "name": "Cagamas 5Y vs MGS",
@@ -144,92 +146,92 @@
     "a": "mgs:5",
     "b": "cagamas:5"
    },
-   "why": "Cagamas 5Y at 4.000% (Nov 18) is 40.2bp over today's MGS, the top of its one-year range (average 22.5bp); Khazanah 5Y is 33.1bp over. Over five sessions, financial issuers traded 75.7bp over MGS on average (23 trades) and SOEs 50.0bp (40 trades; DanaInfra 35.9bp across 14). Nov 18 entry at about 38bp: 2.2bp offside.",
-   "call": "Hold Cagamas 5Y; target 30bp, stop 46bp."
+   "why": "Cagamas 5Y at 3.992% (Nov 19) shows 44.1bp over today's MGS on the page (one-year high, average 22.6bp) and 39.4bp like-for-like; Khazanah 5Y was 32.3bp over on Nov 19. Over five sessions financial issuers traded 73.9bp over MGS (23 trades) and SOEs 50.0bp (38 trades; DanaInfra 38.0bp across 14, Prasarana 41.6bp, LPPSA 39.7bp). Nov 18 entry at about 38bp: 1.4bp offside like-for-like.",
+   "call": "Hold Cagamas 5Y; target 30bp, stop 46bp (like-for-like)."
   }
  ],
  "rows": {
   "mgs:1": {
-   "note": "−1.7bp to 3.043%"
+   "note": "+0.7bp to 3.050%; FX-swap 1Y implied 3.02%"
   },
   "mgs:3": {
-   "note": "−1.7bp to 3.401%; 65.1bp over OPR"
+   "note": "−2.9bp to 3.372%; 62.2bp over OPR"
   },
   "mgs:5": {
-   "note": "−2.2bp to 3.598%; swap spread −2.0bp (Nov 18)"
+   "note": "−4.7bp to 3.551%; −9.8bp on the week"
   },
   "mgs:7": {
-   "note": "−1.4bp to 3.796%"
+   "note": "−3.2bp to 3.764%"
   },
   "mgs:10": {
-   "note": "−0.1bp to 3.841%; swap spread −8.2bp (Nov 18)"
+   "note": "−1.8bp to 3.823%; swap spread −7.1bp (Nov 19)"
   },
   "mgs:15": {
-   "note": "−1.2bp to 4.127%"
+   "note": "−1.2bp to 4.115%"
   },
   "mgs:20": {
-   "note": "−0.9bp to 4.257%"
+   "note": "−2.1bp to 4.236%"
   },
   "mgs:30": {
-   "note": "+0.8bp to 4.338%"
+   "note": "−0.1bp to 4.337%; 10s30s 51.4bp"
   },
   "gii:3": {
-   "note": "−1.3bp to 3.421%"
+   "note": "−1.5bp to 3.406%"
   },
   "gii:10": {
-   "note": "−0.7bp to 3.873%; 3.2bp over MGS"
+   "note": "−1.0bp to 3.863%; 4.0bp over MGS"
   },
   "gii:15": {
-   "note": "−0.5bp to 4.127%, level with the 15Y MGS"
+   "note": "−1.0bp to 4.117%"
   },
   "opr:0": {
    "note": "2.75%; FX-swap 3M implied 2.90%"
   },
   "cagamas:5": {
-   "note": "4.000% (Nov 18), 40.2bp over MGS"
+   "note": "3.992% (Nov 19), 39.4bp over MGS that day"
   },
   "khazanah:5": {
-   "note": "3.929% (Nov 18), 33.1bp over MGS"
+   "note": "3.921% (Nov 19), 32.3bp over MGS that day"
   },
   "aaa:5": {
-   "note": "4.114% (Nov 18); 51.6bp over MGS"
+   "note": "4.107% (Nov 19), 50.9bp over MGS that day"
   },
   "aa:5": {
-   "note": "4.310% (Nov 18)"
+   "note": "4.303% (Nov 19)"
   },
   "a:5": {
-   "note": "4.951% (Nov 18)"
+   "note": "4.944% (Nov 19)"
   }
  },
- "watch": "Next: the result of the RM5bn 3Y MGS 3/29 reopening (Nov 19), Malaysia's October trade data (due in the coming days after September's 54.5% export jump), US jobless claims and the Philadelphia Fed survey (Nov 19 US) and November flash PMIs (Nov 20 US), then the Fed's Dec 8–9 meeting, where Governor Waller argues for a 50bp hike.",
+ "watch": "Next: Fed Governor Waller's speech (Nov 20 US), a week with no MGS/GII tender (HLB calendar), US Thanksgiving (Nov 26), the Fed's Dec 8–9 meeting where Waller argues for 50bp, and BNM's next MPC on Jan 21, 2027.",
  "sources": [
   [
-   "Hong Leong Bank fixed income snapshot (Nov 19)",
-   "https://hlb.com.my/content/dam/hlb/my/docs/pdf/Global_Markets/fixed-income-daily-market-snapshot/2026/19-11-2026.pdf"
+   "Hong Leong Bank fixed income snapshot (Nov 20)",
+   "https://hlb.com.my/content/dam/hlb/my/docs/pdf/Global_Markets/fixed-income-daily-market-snapshot/2026/20-11-2026.pdf"
   ],
   [
-   "AmBank daily market snapshot (Nov 19, BIX)",
-   "https://bixmalaysia.com/CMSPages/GetFile.aspx?guid=fdd3f1f7-54b7-4d9a-a4b7-73f065f3e59d"
+   "BIX Malaysia news update (Nov 20)",
+   "https://bixmalaysia.com/CMSPages/GetFile.aspx?guid=ac460ca6-80b1-4878-9d82-9e80f2e3452f"
   ],
   [
-   "Business Times: October CPI 1.9%",
-   "https://businesstimes.com.sg/international/asean/malaysias-october-cpi-rises-1-9-yy-slightly-lower-forecast"
+   "The Edge: October exports surge 61%",
+   "https://theedgemalaysia.com/node/826611"
   ],
   [
-   "The Edge: OPR hike expectations for 2027",
-   "https://theedgemalaysia.com/node/826337"
+   "The Star: BNM reserves at US$132.1bn",
+   "https://thestar.com.my/business/business-news/2026/11/20/bank-negara039s-international-reserves-at-us1321bil-as-at-nov-13"
   ],
   [
-   "Newsquawk Treasury wrap (Nov 18)",
-   "https://newsquawk.com/headlines/treasury-wrap-t-note-futures-z6-settle-5-ticks-higher-at-105-25"
+   "FMT: ringgit unchanged against the dollar",
+   "https://freemalaysiatoday.com/category/business/2026/11/20/ringgit-unchanged-against-greenback-higher-against-other-currencies"
   ],
   [
-   "FMT: ringgit ends higher",
-   "https://freemalaysiatoday.com/category/business/2026/11/19/ringgit-ends-higher-on-stronger-q3-gdp-growth"
+   "The Star: Bursa ends week lower",
+   "https://thestar.com.my/business/business-news/2026/11/20/bursa-malaysia-ends-week-lower-on-continued-heavyweight-selling"
   ],
   [
-   "Malay Mail: Bursa close",
-   "https://malaymail.com/news/money/2026/11/19/banks-to-the-rescue-as-bursa-claws-back-most-of-the-days-losses/243951"
+   "CNBC: Treasury yields fall as stocks sell off",
+   "https://cnbc.com/2026/11/20/treasury-yields-bonds-inflation.html"
   ],
   [
    "BNM FAST consolidated IYTM",
